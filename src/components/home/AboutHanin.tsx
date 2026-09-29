@@ -22,7 +22,7 @@ export default function AboutHanin() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent" />
               <div className="absolute top-4 left-4 bg-white/95 backdrop-blur-md px-2.5 py-1 rounded shadow-sm border border-slate-200">
-                <span className="text-[10px] text-orange-600 uppercase tracking-widest font-mono font-bold">
+                <span className="text-[10px] text-steel-600 uppercase tracking-widest font-mono font-bold">
                   HỆ THỐNG KCS // BỂ MẠ SỐ 04
                 </span>
               </div>
@@ -35,15 +35,15 @@ export default function AboutHanin() {
                     TIÊU CHUẨN XỬ LÝ BỀ MẶT CÔNG NGHIỆP
                   </p>
                 </div>
-                <span className="material-symbols-outlined text-orange-600 text-[20px]">verified</span>
+                <span className="material-symbols-outlined text-steel-600 text-[20px]">verified</span>
               </div>
             </div>
           </div>
 
           <div className="lg:col-span-7 flex flex-col gap-space-md">
             <div className="flex items-center gap-2">
-              <span className="w-6 h-[2px] bg-orange-600" />
-              <span className="text-label-technical uppercase tracking-[0.2em] text-orange-600 font-bold">
+              <span className="w-6 h-[2px] bg-steel-600" />
+              <span className="text-label-technical uppercase tracking-[0.2em] text-steel-600 font-bold">
                 VỀ HANIN VIỆT NAM
               </span>
             </div>
@@ -63,7 +63,7 @@ export default function AboutHanin() {
             <div className="grid grid-cols-2 gap-space-md pt-space-xs text-body-sm text-slate-700">
               {HIGHLIGHTS.map((item) => (
                 <div key={item} className="flex items-start gap-2">
-                  <span className="material-symbols-outlined text-orange-600 text-[18px]">
+                  <span className="material-symbols-outlined text-steel-600 text-[18px]">
                     check_circle
                   </span>
                   <span>{item}</span>
@@ -73,7 +73,7 @@ export default function AboutHanin() {
             <div className="pt-space-sm">
               <Link
                 href="/gioi-thieu"
-                className="inline-flex items-center gap-2 text-title-md uppercase tracking-wider text-orange-600 hover:text-orange-700 transition-colors group"
+                className="inline-flex items-center gap-2 text-title-md uppercase tracking-wider text-steel-600 hover:text-steel-700 transition-colors group"
               >
                 <span>XEM THÊM VỀ HANIN</span>
                 <span className="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">

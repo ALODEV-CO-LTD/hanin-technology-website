@@ -13,10 +13,10 @@ export default function CompanySnapshot() {
           {STATS.map((stat) => (
             <div
               key={stat.label2}
-              className="flex flex-col gap-1 p-space-md bg-slate-50 border border-slate-200/80 rounded transition-colors hover:border-orange-200 hover:bg-orange-50/30"
+              className="flex flex-col gap-1 p-space-md bg-slate-50 border border-slate-200/80 rounded transition-colors hover:border-steel-200 hover:bg-steel-50/30"
             >
               <div className="flex items-baseline gap-1">
-                <span className="text-headline-xl text-orange-600 font-bold">{stat.value}</span>
+                <span className="text-headline-xl text-steel-600 font-bold">{stat.value}</span>
                 <span className="text-xs text-slate-500 uppercase font-semibold">{stat.label1}</span>
               </div>
               <span className="text-label-technical text-slate-600 uppercase tracking-wider">

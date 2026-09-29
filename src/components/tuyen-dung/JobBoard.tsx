@@ -62,7 +62,7 @@ export default function JobBoard() {
       <div className="max-w-[1280px] mx-auto px-margin flex flex-col gap-space-lg">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-space-md pb-space-sm">
           <div className="flex flex-col gap-2 max-w-2xl">
-            <div className="flex items-center gap-2 text-orange-600 text-label-technical uppercase tracking-widest">
+            <div className="flex items-center gap-2 text-steel-600 text-label-technical uppercase tracking-widest">
               <span className="material-symbols-outlined text-[16px]">work_outline</span>
               <span>OPPORTUNITIES // VỊ TRÍ TUYỂN DỤNG</span>
             </div>
@@ -87,7 +87,7 @@ export default function JobBoard() {
               search
             </span>
             <input
-              className="w-full pl-12 pr-space-md h-11 bg-slate-50 border border-slate-200 rounded text-slate-900 placeholder:text-slate-400 text-body-md focus:outline-none focus:ring-2 focus:ring-orange-600/40 transition-all"
+              className="w-full pl-12 pr-space-md h-11 bg-slate-50 border border-slate-200 rounded text-slate-900 placeholder:text-slate-400 text-body-md focus:outline-none focus:ring-2 focus:ring-steel-600/40 transition-all"
               placeholder="Tìm kiếm vị trí công việc, chức danh kỹ thuật, từ khóa (ví dụ: PLC, R&D, QA, Cơ khí)..."
               type="text"
               value={query}
@@ -102,7 +102,7 @@ export default function JobBoard() {
               </label>
               <div className="relative">
                 <select
-                  className="w-full appearance-none h-10 px-space-sm bg-slate-50 border border-slate-200 rounded text-slate-900 text-body-md focus:outline-none focus:ring-2 focus:ring-orange-600/40 cursor-pointer"
+                  className="w-full appearance-none h-10 px-space-sm bg-slate-50 border border-slate-200 rounded text-slate-900 text-body-md focus:outline-none focus:ring-2 focus:ring-steel-600/40 cursor-pointer"
                   value={department}
                   onChange={(e) => setDepartment(e.target.value as "all" | JobDepartment)}
                 >
@@ -124,7 +124,7 @@ export default function JobBoard() {
               </label>
               <div className="relative">
                 <select
-                  className="w-full appearance-none h-10 px-space-sm bg-slate-50 border border-slate-200 rounded text-slate-900 text-body-md focus:outline-none focus:ring-2 focus:ring-orange-600/40 cursor-pointer"
+                  className="w-full appearance-none h-10 px-space-sm bg-slate-50 border border-slate-200 rounded text-slate-900 text-body-md focus:outline-none focus:ring-2 focus:ring-steel-600/40 cursor-pointer"
                   value={type}
                   onChange={(e) => setType(e.target.value as "all" | JobType)}
                 >
@@ -146,7 +146,7 @@ export default function JobBoard() {
               </label>
               <div className="relative">
                 <select
-                  className="w-full appearance-none h-10 px-space-sm bg-slate-50 border border-slate-200 rounded text-slate-900 text-body-md focus:outline-none focus:ring-2 focus:ring-orange-600/40 cursor-pointer"
+                  className="w-full appearance-none h-10 px-space-sm bg-slate-50 border border-slate-200 rounded text-slate-900 text-body-md focus:outline-none focus:ring-2 focus:ring-steel-600/40 cursor-pointer"
                   value={location}
                   onChange={(e) => setLocation(e.target.value as "all" | JobLocation)}
                 >
@@ -173,7 +173,7 @@ export default function JobBoard() {
             <button
               type="button"
               onClick={resetFilters}
-              className="hover:text-orange-600 transition-colors underline uppercase tracking-wider"
+              className="hover:text-steel-600 transition-colors underline uppercase tracking-wider"
             >
               Đặt lại bộ lọc
             </button>
@@ -185,7 +185,7 @@ export default function JobBoard() {
           {filteredJobs.map((job) => (
             <article
               key={job.id}
-              className="group p-space-lg rounded bg-white border border-slate-200 shadow-sm hover:shadow-md hover:border-orange-300 transition-all duration-300 flex flex-col lg:flex-row lg:items-center justify-between gap-space-md"
+              className="group p-space-lg rounded bg-white border border-slate-200 shadow-sm hover:shadow-md hover:border-steel-300 transition-all duration-300 flex flex-col lg:flex-row lg:items-center justify-between gap-space-md"
             >
               <div className="flex flex-col gap-space-sm max-w-3xl">
                 <div className="flex flex-wrap items-center gap-2">
@@ -203,12 +203,12 @@ export default function JobBoard() {
                   </span>
                 </div>
 
-                <h3 className="text-headline-sm text-slate-900 uppercase font-semibold group-hover:text-orange-600 transition-colors">
+                <h3 className="text-headline-sm text-slate-900 uppercase font-semibold group-hover:text-steel-600 transition-colors">
                   {job.title}
                 </h3>
 
                 <div className="flex flex-wrap items-center gap-2 pt-1">
-                  <span className="px-2 py-1 rounded bg-orange-50 text-orange-700 text-label-technical font-bold">
+                  <span className="px-2 py-1 rounded bg-steel-50 text-steel-700 text-label-technical font-bold">
                     {job.salary}
                   </span>
                   {job.tags.map((tag) => (
@@ -229,7 +229,7 @@ export default function JobBoard() {
                 <button
                   type="button"
                   onClick={() => openApplyModal(job.title, job.departmentLabel)}
-                  className="inline-flex items-center gap-2 px-space-md py-space-sm bg-orange-600 hover:bg-orange-700 text-white text-title-md rounded shadow-sm transition-colors uppercase tracking-wider"
+                  className="inline-flex items-center gap-2 px-space-md py-space-sm bg-steel-600 hover:bg-steel-700 text-white text-title-md rounded shadow-sm transition-colors uppercase tracking-wider"
                 >
                   <span>ỨNG TUYỂN NGAY</span>
                   <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
@@ -258,7 +258,7 @@ export default function JobBoard() {
           >
             <div className="flex items-start justify-between">
               <div className="flex flex-col gap-1">
-                <span className="text-label-sm text-orange-600 uppercase tracking-widest font-bold">
+                <span className="text-label-sm text-steel-600 uppercase tracking-widest font-bold">
                   HỒ SƠ ỨNG TUYỂN
                 </span>
                 <h3 className="text-title-md text-slate-900 uppercase font-semibold">{selectedJob.title}</h3>
@@ -268,7 +268,7 @@ export default function JobBoard() {
                 type="button"
                 onClick={closeApplyModal}
                 aria-label="Đóng"
-                className="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-slate-600 hover:text-orange-600 transition-colors"
+                className="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-slate-600 hover:text-steel-600 transition-colors"
               >
                 <span className="material-symbols-outlined text-[20px]">close</span>
               </button>
@@ -279,7 +279,7 @@ export default function JobBoard() {
                 <div className="flex flex-col gap-1">
                   <label className="text-label-sm text-slate-500 uppercase font-semibold">Họ và tên *</label>
                   <input
-                    className="h-10 px-space-sm rounded border border-slate-200 bg-slate-50 text-slate-900 text-body-md focus:outline-none focus:ring-2 focus:ring-orange-600/40"
+                    className="h-10 px-space-sm rounded border border-slate-200 bg-slate-50 text-slate-900 text-body-md focus:outline-none focus:ring-2 focus:ring-steel-600/40"
                     placeholder="Ví dụ: Nguyễn Văn An"
                     required
                     type="text"
@@ -291,7 +291,7 @@ export default function JobBoard() {
                       Số điện thoại *
                     </label>
                     <input
-                      className="h-10 px-space-sm rounded border border-slate-200 bg-slate-50 text-slate-900 text-body-md focus:outline-none focus:ring-2 focus:ring-orange-600/40"
+                      className="h-10 px-space-sm rounded border border-slate-200 bg-slate-50 text-slate-900 text-body-md focus:outline-none focus:ring-2 focus:ring-steel-600/40"
                       placeholder="09xx xxx xxx"
                       required
                       type="tel"
@@ -300,7 +300,7 @@ export default function JobBoard() {
                   <div className="flex flex-col gap-1">
                     <label className="text-label-sm text-slate-500 uppercase font-semibold">Email *</label>
                     <input
-                      className="h-10 px-space-sm rounded border border-slate-200 bg-slate-50 text-slate-900 text-body-md focus:outline-none focus:ring-2 focus:ring-orange-600/40"
+                      className="h-10 px-space-sm rounded border border-slate-200 bg-slate-50 text-slate-900 text-body-md focus:outline-none focus:ring-2 focus:ring-steel-600/40"
                       placeholder="ten@email.com"
                       required
                       type="email"
@@ -311,7 +311,7 @@ export default function JobBoard() {
                   <label className="text-label-sm text-slate-500 uppercase font-semibold">
                     Số năm kinh nghiệm
                   </label>
-                  <select className="h-10 px-space-sm rounded border border-slate-200 bg-slate-50 text-slate-900 text-body-md focus:outline-none focus:ring-2 focus:ring-orange-600/40">
+                  <select className="h-10 px-space-sm rounded border border-slate-200 bg-slate-50 text-slate-900 text-body-md focus:outline-none focus:ring-2 focus:ring-steel-600/40">
                     <option>Mới tốt nghiệp / Dưới 1 năm</option>
                     <option>1 - 2 năm kinh nghiệm</option>
                     <option>3 - 5 năm kinh nghiệm</option>
@@ -323,7 +323,7 @@ export default function JobBoard() {
                     Đính kèm CV (PDF, DOCX) *
                   </label>
                   <label className="p-space-md rounded border border-dashed border-slate-300 bg-slate-50 flex flex-col items-center justify-center gap-1 cursor-pointer hover:bg-slate-100 transition-colors">
-                    <span className="material-symbols-outlined text-orange-600 text-[28px]">upload_file</span>
+                    <span className="material-symbols-outlined text-steel-600 text-[28px]">upload_file</span>
                     <span className="text-body-md text-slate-900">Kéo thả tệp hoặc bấm để chọn CV</span>
                     <span className="text-label-sm text-slate-500">Tối đa 15MB (.pdf, .doc, .docx)</span>
                     <input className="hidden" required type="file" />
@@ -334,7 +334,7 @@ export default function JobBoard() {
                     Lời nhắn / Giới thiệu bản thân
                   </label>
                   <textarea
-                    className="p-space-sm rounded border border-slate-200 bg-slate-50 text-slate-900 text-body-md focus:outline-none focus:ring-2 focus:ring-orange-600/40"
+                    className="p-space-sm rounded border border-slate-200 bg-slate-50 text-slate-900 text-body-md focus:outline-none focus:ring-2 focus:ring-steel-600/40"
                     placeholder="Tóm tắt ngắn gọn thế mạnh kỹ thuật hoặc mong muốn nghề nghiệp của bạn..."
                     rows={3}
                   />
@@ -349,14 +349,14 @@ export default function JobBoard() {
                   </button>
                   <button
                     type="submit"
-                    className="px-space-md py-space-sm rounded bg-orange-600 text-white hover:bg-orange-700 text-title-md uppercase tracking-wider transition-colors"
+                    className="px-space-md py-space-sm rounded bg-steel-600 text-white hover:bg-steel-700 text-title-md uppercase tracking-wider transition-colors"
                   >
                     Gửi đơn ứng tuyển
                   </button>
                 </div>
               </form>
             ) : (
-              <div className="p-space-md rounded bg-orange-50 text-orange-700 text-body-md text-center">
+              <div className="p-space-md rounded bg-steel-50 text-steel-700 text-body-md text-center">
                 ✓ Hồ sơ ứng tuyển đã được tiếp nhận thành công. Bộ phận Nhân sự HANIN sẽ liên hệ với bạn trong
                 vòng 48 giờ làm việc!
               </div>

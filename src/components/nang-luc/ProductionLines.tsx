@@ -48,7 +48,7 @@ export default function ProductionLines() {
     <section className="w-full py-space-xl bg-white border-t border-slate-200" id="day-chuyen">
       <div className="max-w-[1280px] mx-auto px-margin w-full">
         <div className="max-w-2xl mb-space-xl">
-          <div className="text-label-technical text-orange-600 font-semibold tracking-widest uppercase mb-1">
+          <div className="text-label-technical text-steel-600 font-semibold tracking-widest uppercase mb-1">
             PRODUCTION INFRASTRUCTURE
           </div>
           <h2 className="text-headline-lg text-slate-900 uppercase tracking-tight mb-space-xs">
@@ -64,7 +64,7 @@ export default function ProductionLines() {
           {LINES.map((line) => (
             <div
               key={line.tag}
-              className="grid grid-cols-1 lg:grid-cols-12 bg-slate-50 border border-slate-200 rounded-lg overflow-hidden shadow-sm hover:border-orange-300 hover:shadow-md transition-all group"
+              className="grid grid-cols-1 lg:grid-cols-12 bg-slate-50 border border-slate-200 rounded-lg overflow-hidden shadow-sm hover:border-steel-300 hover:shadow-md transition-all group"
             >
               <div className={`lg:col-span-5 relative min-h-[260px] bg-slate-200 ${line.imageOrder}`}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -77,7 +77,7 @@ export default function ProductionLines() {
               <div className="lg:col-span-7 p-space-xl flex flex-col justify-between">
                 <div>
                   <div className="flex items-center justify-between gap-space-sm mb-space-xs">
-                    <span className="text-label-technical text-orange-600 tracking-widest uppercase font-semibold">
+                    <span className="text-label-technical text-steel-600 tracking-widest uppercase font-semibold">
                       {line.tag}
                     </span>
                     <span className="px-space-xs py-0.5 bg-slate-200/80 text-slate-700 rounded text-label-technical">
@@ -90,13 +90,13 @@ export default function ProductionLines() {
                 <div className="pt-space-md bg-white border border-slate-200 p-space-md rounded flex flex-wrap items-center justify-between gap-space-sm">
                   <div className="text-label-technical text-slate-800">
                     <span className="text-slate-500">{line.specLabel1}</span>{" "}
-                    <span className="text-orange-600 font-bold">{line.specValue1}</span>
+                    <span className="text-steel-600 font-bold">{line.specValue1}</span>
                     {" // "}
                     <span className="text-slate-500">{line.specLabel2}</span>{" "}
                     <span className="text-slate-900 font-bold">{line.specValue2}</span>
                   </div>
                   <a
-                    className="inline-flex items-center gap-1 text-label-technical text-orange-600 hover:text-slate-900 font-semibold uppercase transition-colors"
+                    className="inline-flex items-center gap-1 text-label-technical text-steel-600 hover:text-slate-900 font-semibold uppercase transition-colors"
                     href="#"
                   >
                     XEM THÔNG SỐ DÂY CHUYỀN →

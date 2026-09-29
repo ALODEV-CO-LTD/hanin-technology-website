@@ -32,8 +32,8 @@ export default function QualityStandardsPreview() {
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-xl">
           <div>
-            <div className="flex items-center gap-space-xs text-label-technical tracking-widest text-orange-600 uppercase mb-space-xs font-bold">
-              <span className="w-2 h-0.5 bg-orange-600" />
+            <div className="flex items-center gap-space-xs text-label-technical tracking-widest text-steel-600 uppercase mb-space-xs font-bold">
+              <span className="w-2 h-0.5 bg-steel-600" />
               CHỨNG NHẬN &amp; CAM KẾT CHẤT LƯỢNG
             </div>
             <h2 className="text-headline-lg md:text-headline-xl text-slate-900 uppercase tracking-tight font-bold">
@@ -54,7 +54,7 @@ export default function QualityStandardsPreview() {
             >
               <div>
                 <div className="flex items-center justify-between mb-space-md">
-                  <span className="text-[11px] text-orange-600 font-bold uppercase tracking-widest px-2 py-0.5 rounded bg-orange-100/70 border border-orange-200">
+                  <span className="text-[11px] text-steel-600 font-bold uppercase tracking-widest px-2 py-0.5 rounded bg-steel-100/70 border border-steel-200">
                     {cert.tag}
                   </span>
                   <span className="material-symbols-outlined text-slate-500">{cert.icon}</span>
@@ -73,7 +73,7 @@ export default function QualityStandardsPreview() {
         {/* CTA */}
         <div className="flex justify-center">
           <a
-            className="inline-flex items-center gap-space-sm text-label-technical text-orange-600 hover:text-slate-900 transition-colors uppercase tracking-widest font-bold"
+            className="inline-flex items-center gap-space-sm text-label-technical text-steel-600 hover:text-slate-900 transition-colors uppercase tracking-widest font-bold"
             href="#"
           >
             XEM CHỨNG NHẬN

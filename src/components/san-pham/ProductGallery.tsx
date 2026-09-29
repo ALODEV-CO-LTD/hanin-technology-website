@@ -14,7 +14,7 @@ export default function ProductGallery() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-space-sm mb-space-lg">
           <div>
-            <span className="text-label-technical text-orange-600 uppercase tracking-widest block mb-1">
+            <span className="text-label-technical text-steel-600 uppercase tracking-widest block mb-1">
               KIỂM THIỂU QUANG HỌC &amp; GIÁM SÁT DÂY CHUYỀN
             </span>
             <h2 className="text-headline-lg text-slate-900 uppercase tracking-tight">
@@ -41,14 +41,14 @@ export default function ProductGallery() {
           <div className="absolute top-space-sm right-space-sm flex items-center gap-space-xs">
             <button
               type="button"
-              className="w-9 h-9 bg-white/90 backdrop-blur-md border border-slate-200 rounded text-slate-700 hover:text-orange-600 hover:border-orange-500 transition-all flex items-center justify-center shadow-sm"
+              className="w-9 h-9 bg-white/90 backdrop-blur-md border border-slate-200 rounded text-slate-700 hover:text-steel-600 hover:border-steel-500 transition-all flex items-center justify-center shadow-sm"
               aria-label="Phóng to ảnh"
             >
               <span className="material-symbols-outlined text-[18px]">zoom_in</span>
             </button>
             <button
               type="button"
-              className="w-9 h-9 bg-white/90 backdrop-blur-md border border-slate-200 rounded text-slate-700 hover:text-orange-600 hover:border-orange-500 transition-all flex items-center justify-center shadow-sm"
+              className="w-9 h-9 bg-white/90 backdrop-blur-md border border-slate-200 rounded text-slate-700 hover:text-steel-600 hover:border-steel-500 transition-all flex items-center justify-center shadow-sm"
               aria-label="Xem toàn màn hình"
             >
               <span className="material-symbols-outlined text-[18px]">fullscreen</span>
@@ -56,7 +56,7 @@ export default function ProductGallery() {
           </div>
           <div className="absolute bottom-0 left-0 right-0 p-space-sm bg-gradient-to-t from-slate-950/80 via-slate-950/60 to-transparent flex flex-col md:flex-row md:items-center justify-between gap-space-xs text-label-sm text-slate-200">
             <div className="flex items-center gap-space-sm">
-              <span className="px-2 py-0.5 bg-orange-600 text-white font-mono rounded">
+              <span className="px-2 py-0.5 bg-steel-600 text-white font-mono rounded">
                 FRAME #{String(active.id).padStart(2, "0")}
               </span>
               <span className="text-white text-title-md">{active.caption}</span>
@@ -79,8 +79,8 @@ export default function ProductGallery() {
                 onClick={() => setActiveId(item.id)}
                 className={
                   isActive
-                    ? "text-left cursor-pointer p-1.5 bg-white rounded transition-all hover:shadow-md flex flex-col gap-1.5 shadow-sm border-orange-600 border-2"
-                    : "text-left cursor-pointer p-1.5 bg-white border border-slate-200 rounded transition-all hover:border-orange-500 hover:shadow-md flex flex-col gap-1.5 shadow-sm"
+                    ? "text-left cursor-pointer p-1.5 bg-white rounded transition-all hover:shadow-md flex flex-col gap-1.5 shadow-sm border-steel-600 border-2"
+                    : "text-left cursor-pointer p-1.5 bg-white border border-slate-200 rounded transition-all hover:border-steel-500 hover:shadow-md flex flex-col gap-1.5 shadow-sm"
                 }
               >
                 <div className="w-full aspect-[16/10] bg-slate-100 overflow-hidden rounded">
@@ -90,7 +90,7 @@ export default function ProductGallery() {
                 <span
                   className={
                     isActive
-                      ? "text-label-sm truncate text-orange-600 font-semibold"
+                      ? "text-label-sm truncate text-steel-600 font-semibold"
                       : "text-label-sm truncate text-slate-600"
                   }
                 >

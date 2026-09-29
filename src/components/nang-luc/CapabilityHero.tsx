@@ -16,25 +16,25 @@ export default function CapabilityHero() {
       <div className="relative max-w-[1280px] mx-auto px-margin w-full">
         <div className="flex flex-wrap items-center justify-between gap-3 pb-6">
           <div className="flex items-center gap-1.5 text-xs font-semibold text-slate-500 uppercase tracking-widest">
-            <Link className="hover:text-orange-600 transition-colors" href="/">
+            <Link className="hover:text-steel-600 transition-colors" href="/">
               Trang chủ
             </Link>
             <span className="text-slate-300">/</span>
-            <span className="text-orange-600 font-semibold">Năng lực sản xuất</span>
+            <span className="text-steel-600 font-semibold">Năng lực sản xuất</span>
           </div>
           <div className="flex items-center gap-4">
             <span className="text-xs font-semibold text-slate-600 bg-white border border-slate-200 px-3 py-1 rounded shadow-sm">
               FACILITY CODE: HN-MFG // LAT: 21.2025° N, 105.7725° E
             </span>
-            <div className="inline-flex items-center gap-1.5 px-3 py-1 bg-orange-50 border border-orange-200 rounded">
-              <span className="w-2 h-2 rounded-full bg-orange-600 animate-pulse" />
-              <span className="text-xs font-bold text-orange-700 uppercase">OPERATIONAL // 100% ONLINE</span>
+            <div className="inline-flex items-center gap-1.5 px-3 py-1 bg-steel-50 border border-steel-200 rounded">
+              <span className="w-2 h-2 rounded-full bg-steel-600 animate-pulse" />
+              <span className="text-xs font-bold text-steel-700 uppercase">OPERATIONAL // 100% ONLINE</span>
             </div>
           </div>
         </div>
 
         <div className="max-w-3xl pt-4">
-          <div className="inline-block mb-3 text-xs tracking-[0.2em] text-orange-700 font-bold uppercase bg-orange-50 border border-orange-200 px-3 py-1 rounded">
+          <div className="inline-block mb-3 text-xs tracking-[0.2em] text-steel-700 font-bold uppercase bg-steel-50 border border-steel-200 px-3 py-1 rounded">
             MANUFACTURING CAPABILITY // INFRASTRUCTURE &amp; METROLOGY
           </div>
           <h1 className="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight uppercase mb-4">
@@ -48,7 +48,7 @@ export default function CapabilityHero() {
 
         <div className="flex flex-wrap items-center gap-4 pt-8">
           <a
-            className="inline-flex items-center gap-2 px-6 py-3 bg-orange-600 hover:bg-orange-700 text-white text-xs font-bold uppercase tracking-wider rounded transition-all active:scale-[0.99] shadow-sm"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-steel-600 hover:bg-steel-700 text-white text-xs font-bold uppercase tracking-wider rounded transition-all active:scale-[0.99] shadow-sm"
             href="#he-thong-nha-may"
           >
             KHÁM PHÁ NHÀ MÁY →

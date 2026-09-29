@@ -38,8 +38,8 @@ export default function WhyHanin() {
     <section className="w-full py-space-xl bg-white">
       <div className="max-w-[1280px] mx-auto px-margin">
         <div className="flex flex-col gap-2 max-w-3xl mb-space-xl">
-          <div className="flex items-center gap-2 text-orange-600 text-label-technical uppercase tracking-widest">
-            <span className="w-3 h-[2px] bg-orange-600" />
+          <div className="flex items-center gap-2 text-steel-600 text-label-technical uppercase tracking-widest">
+            <span className="w-3 h-[2px] bg-steel-600" />
             <span>CULTURE &amp; WORKPLACE // TẠI SAO CHỌN HANIN?</span>
           </div>
           <h2 className="text-headline-xl-mobile md:text-headline-xl text-slate-900 tracking-tight uppercase font-bold">
@@ -55,14 +55,14 @@ export default function WhyHanin() {
           {PILLARS.map((pillar) => (
             <div
               key={pillar.tag}
-              className="group p-space-lg rounded bg-slate-50 border border-slate-200 shadow-sm hover:shadow-md hover:border-orange-300 transition-all duration-300 flex flex-col justify-between"
+              className="group p-space-lg rounded bg-slate-50 border border-slate-200 shadow-sm hover:shadow-md hover:border-steel-300 transition-all duration-300 flex flex-col justify-between"
             >
               <div className="flex flex-col gap-space-md">
-                <div className="w-12 h-12 rounded bg-white flex items-center justify-center text-orange-600 group-hover:bg-orange-600 group-hover:text-white transition-colors">
+                <div className="w-12 h-12 rounded bg-white flex items-center justify-center text-steel-600 group-hover:bg-steel-600 group-hover:text-white transition-colors">
                   <span className="material-symbols-outlined text-[26px]">{pillar.icon}</span>
                 </div>
                 <div className="flex flex-col gap-1">
-                  <span className="text-label-sm font-semibold text-orange-600 uppercase tracking-widest">
+                  <span className="text-label-sm font-semibold text-steel-600 uppercase tracking-widest">
                     {pillar.tag}
                   </span>
                   <h3 className="text-title-md text-slate-900 uppercase font-semibold">{pillar.title}</h3>

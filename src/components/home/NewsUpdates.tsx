@@ -31,8 +31,8 @@ export default function NewsUpdates() {
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
           <div className="flex flex-col gap-2">
             <div className="flex items-center gap-2">
-              <span className="w-2 h-2 rounded-full bg-orange-600" />
-              <span className="text-label-technical uppercase tracking-[0.2em] text-orange-600 font-bold">
+              <span className="w-2 h-2 rounded-full bg-steel-600" />
+              <span className="text-label-technical uppercase tracking-[0.2em] text-steel-600 font-bold">
                 TIN TỨC &amp; BẢN TIN KỸ THUẬT
               </span>
             </div>
@@ -40,7 +40,7 @@ export default function NewsUpdates() {
           </div>
           <Link
             href="/tin-tuc"
-            className="inline-flex items-center gap-2 text-label-technical uppercase tracking-wider text-slate-600 hover:text-orange-600 transition-colors font-semibold"
+            className="inline-flex items-center gap-2 text-label-technical uppercase tracking-wider text-slate-600 hover:text-steel-600 transition-colors font-semibold"
           >
             <span>XEM TẤT CẢ</span>
             <span className="material-symbols-outlined text-[16px]">arrow_forward</span>
@@ -51,21 +51,21 @@ export default function NewsUpdates() {
           {ARTICLES.map((article) => (
             <article
               key={article.title}
-              className="p-space-lg bg-white border border-slate-200 rounded shadow-sm hover:shadow-xl hover:border-orange-300 transition-all duration-200 flex flex-col justify-between group"
+              className="p-space-lg bg-white border border-slate-200 rounded shadow-sm hover:shadow-xl hover:border-steel-300 transition-all duration-200 flex flex-col justify-between group"
             >
               <div className="flex flex-col gap-space-sm">
                 <div className="flex items-center justify-between text-slate-500">
-                  <span className="text-[10px] px-2 py-0.5 rounded bg-orange-50 text-orange-700 uppercase font-semibold">
+                  <span className="text-[10px] px-2 py-0.5 rounded bg-steel-50 text-steel-700 uppercase font-semibold">
                     {article.tag}
                   </span>
                   <span className="text-xs font-mono">{article.year}</span>
                 </div>
-                <h3 className="text-title-md text-slate-900 font-bold group-hover:text-orange-600 transition-colors leading-snug">
+                <h3 className="text-title-md text-slate-900 font-bold group-hover:text-steel-600 transition-colors leading-snug">
                   {article.title}
                 </h3>
                 <p className="text-body-sm text-slate-600 leading-relaxed">{article.excerpt}</p>
               </div>
-              <div className="pt-space-md flex items-center gap-2 text-orange-600 text-[11px] uppercase tracking-wider font-semibold">
+              <div className="pt-space-md flex items-center gap-2 text-steel-600 text-[11px] uppercase tracking-wider font-semibold">
                 <span>ĐỌC BÀI VIẾT</span>
                 <span className="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">
                   east

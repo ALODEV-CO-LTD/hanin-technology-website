@@ -4,11 +4,11 @@ export default function RfqFormDetail() {
   return (
     <section className="w-full mb-space-xl" id="rfq-form">
       <div className="bg-white border border-slate-200 p-space-lg rounded shadow-sm relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-32 h-32 bg-orange-100/60 rounded-full blur-2xl pointer-events-none" />
+        <div className="absolute top-0 right-0 w-32 h-32 bg-steel-100/60 rounded-full blur-2xl pointer-events-none" />
 
         <div className="flex flex-col md:flex-row md:items-start justify-between pb-space-md mb-space-md bg-slate-50 border border-slate-200 p-space-md rounded">
           <div>
-            <div className="flex items-center gap-space-xs text-orange-600 text-label-sm uppercase font-semibold">
+            <div className="flex items-center gap-space-xs text-steel-600 text-label-sm uppercase font-semibold">
               <span className="material-symbols-outlined text-[16px]">terminal</span>
               CỔNG TIẾP NHẬN YÊU CẦU BÁO GIÁ KỸ THUẬT (RFQ)
             </div>
@@ -21,7 +21,7 @@ export default function RfqFormDetail() {
             </p>
           </div>
           <div className="mt-space-sm md:mt-0 text-label-sm text-slate-500 bg-white border border-slate-200 px-3 py-2 rounded">
-            HOTLINE KỸ THUẬT: <strong className="text-orange-600 font-bold">+84 (0) 211 388 9021</strong>
+            HOTLINE KỸ THUẬT: <strong className="text-steel-600 font-bold">+84 (0) 211 388 9021</strong>
           </div>
         </div>
 
@@ -35,10 +35,10 @@ export default function RfqFormDetail() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-space-md">
             <div className="flex flex-col gap-1">
               <label className="text-label-sm text-slate-900 font-semibold uppercase">
-                Tên Doanh Nghiệp / Khách Hàng <span className="text-orange-600">*</span>
+                Tên Doanh Nghiệp / Khách Hàng <span className="text-steel-600">*</span>
               </label>
               <input
-                className="w-full h-10 px-3 bg-slate-50 border border-slate-200 text-slate-900 text-body-md rounded focus:outline-none focus:bg-white focus:border-orange-300 transition-colors"
+                className="w-full h-10 px-3 bg-slate-50 border border-slate-200 text-slate-900 text-body-md rounded focus:outline-none focus:bg-white focus:border-steel-300 transition-colors"
                 placeholder="VD: Tập Đoàn Chế Tạo Cơ Khí Samtech VN"
                 required
                 type="text"
@@ -46,10 +46,10 @@ export default function RfqFormDetail() {
             </div>
             <div className="flex flex-col gap-1">
               <label className="text-label-sm text-slate-900 font-semibold uppercase">
-                Kỹ Sư Phụ Trách / Người Liên Hệ <span className="text-orange-600">*</span>
+                Kỹ Sư Phụ Trách / Người Liên Hệ <span className="text-steel-600">*</span>
               </label>
               <input
-                className="w-full h-10 px-3 bg-slate-50 border border-slate-200 text-slate-900 text-body-md rounded focus:outline-none focus:bg-white focus:border-orange-300 transition-colors"
+                className="w-full h-10 px-3 bg-slate-50 border border-slate-200 text-slate-900 text-body-md rounded focus:outline-none focus:bg-white focus:border-steel-300 transition-colors"
                 placeholder="VD: Kỹ sư Nguyễn Văn A"
                 required
                 type="text"
@@ -57,10 +57,10 @@ export default function RfqFormDetail() {
             </div>
             <div className="flex flex-col gap-1">
               <label className="text-label-sm text-slate-900 font-semibold uppercase">
-                Email Kỹ Thuật / Báo Giá <span className="text-orange-600">*</span>
+                Email Kỹ Thuật / Báo Giá <span className="text-steel-600">*</span>
               </label>
               <input
-                className="w-full h-10 px-3 bg-slate-50 border border-slate-200 text-slate-900 text-body-md rounded focus:outline-none focus:bg-white focus:border-orange-300 transition-colors"
+                className="w-full h-10 px-3 bg-slate-50 border border-slate-200 text-slate-900 text-body-md rounded focus:outline-none focus:bg-white focus:border-steel-300 transition-colors"
                 placeholder="eng-procurement@company.com"
                 required
                 type="email"
@@ -71,10 +71,10 @@ export default function RfqFormDetail() {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-space-md">
             <div className="flex flex-col gap-1">
               <label className="text-label-sm text-slate-900 font-semibold uppercase">
-                Vật Liệu Nền (Substrate) <span className="text-orange-600">*</span>
+                Vật Liệu Nền (Substrate) <span className="text-steel-600">*</span>
               </label>
               <select
-                className="w-full h-10 px-3 bg-slate-50 border border-slate-200 text-slate-900 text-body-md rounded focus:outline-none focus:bg-white focus:border-orange-300 transition-colors"
+                className="w-full h-10 px-3 bg-slate-50 border border-slate-200 text-slate-900 text-body-md rounded focus:outline-none focus:bg-white focus:border-steel-300 transition-colors"
                 defaultValue="S45C"
               >
                 <option value="S45C">Thép Cacbon (S45C, S50C, SS400)</option>
@@ -88,7 +88,7 @@ export default function RfqFormDetail() {
             <div className="flex flex-col gap-1">
               <label className="text-label-sm text-slate-900 font-semibold uppercase">Cấp Độ Phosphor Yêu Cầu</label>
               <select
-                className="w-full h-10 px-3 bg-slate-50 border border-slate-200 text-slate-900 text-body-md rounded focus:outline-none focus:bg-white focus:border-orange-300 transition-colors"
+                className="w-full h-10 px-3 bg-slate-50 border border-slate-200 text-slate-900 text-body-md rounded focus:outline-none focus:bg-white focus:border-steel-300 transition-colors"
                 defaultValue="HIGH_PHOS"
               >
                 <option value="HIGH_PHOS">High Phos (&gt;10% P) — Kháng ăn mòn cực đại</option>
@@ -100,7 +100,7 @@ export default function RfqFormDetail() {
             <div className="flex flex-col gap-1">
               <label className="text-label-sm text-slate-900 font-semibold uppercase">Chiều Dày Lớp Mạ (µm)</label>
               <input
-                className="w-full h-10 px-3 bg-slate-50 border border-slate-200 text-slate-900 text-body-md rounded focus:outline-none focus:bg-white focus:border-orange-300 transition-colors"
+                className="w-full h-10 px-3 bg-slate-50 border border-slate-200 text-slate-900 text-body-md rounded focus:outline-none focus:bg-white focus:border-steel-300 transition-colors"
                 placeholder="VD: 15 µm ± 1.5 µm"
                 type="text"
               />
@@ -108,7 +108,7 @@ export default function RfqFormDetail() {
             <div className="flex flex-col gap-1">
               <label className="text-label-sm text-slate-900 font-semibold uppercase">Sản Lượng Dự Kiến</label>
               <input
-                className="w-full h-10 px-3 bg-slate-50 border border-slate-200 text-slate-900 text-body-md rounded focus:outline-none focus:bg-white focus:border-orange-300 transition-colors"
+                className="w-full h-10 px-3 bg-slate-50 border border-slate-200 text-slate-900 text-body-md rounded focus:outline-none focus:bg-white focus:border-steel-300 transition-colors"
                 placeholder="VD: 2,500 chiếc/tháng (hoặc Mẫu test)"
                 type="text"
               />
@@ -121,7 +121,7 @@ export default function RfqFormDetail() {
                 Ghi Chú Kỹ Thuật (Vị trí ren cần che, yêu cầu xử lý nhiệt, tiêu chuẩn thử nghiệm)
               </label>
               <textarea
-                className="w-full p-3 bg-slate-50 border border-slate-200 text-slate-900 text-body-md rounded focus:outline-none focus:bg-white focus:border-orange-300 transition-colors"
+                className="w-full p-3 bg-slate-50 border border-slate-200 text-slate-900 text-body-md rounded focus:outline-none focus:bg-white focus:border-steel-300 transition-colors"
                 placeholder="Ghi rõ các yêu cầu masking (bịt lỗ ren), nhiệt độ ủ Baking khử giòn hydro hoặc yêu cầu chứng chỉ kiểm tra muối ASTM B117..."
                 rows={3}
               />
@@ -132,7 +132,7 @@ export default function RfqFormDetail() {
                 <p className="text-label-sm text-slate-500">Hỗ trợ STEP, IGES, DWG, PDF (Tối đa 50MB, bảo mật NDA)</p>
               </div>
               <label className="cursor-pointer mt-2 w-full py-2.5 px-3 bg-white hover:bg-slate-100 border border-slate-200 text-slate-800 text-center text-label-technical uppercase rounded transition-colors flex items-center justify-center gap-1.5 shadow-sm">
-                <span className="material-symbols-outlined text-orange-600 text-[18px]">cloud_upload</span>
+                <span className="material-symbols-outlined text-steel-600 text-[18px]">cloud_upload</span>
                 <span>CHỌN FILE BẢN VẼ...</span>
                 <input className="hidden" type="file" />
               </label>
@@ -141,11 +141,11 @@ export default function RfqFormDetail() {
 
           <div className="flex flex-wrap items-center justify-between gap-space-sm pt-space-xs">
             <div className="flex items-center gap-2 text-slate-500 text-label-sm">
-              <span className="material-symbols-outlined text-orange-600 text-[16px]">lock</span>
+              <span className="material-symbols-outlined text-steel-600 text-[16px]">lock</span>
               <span>Cam kết bảo mật dữ liệu bản vẽ công nghệ theo thỏa thuận NDA quốc tế.</span>
             </div>
             <button
-              className="inline-flex items-center gap-space-xs bg-orange-600 hover:bg-orange-700 text-white px-space-lg py-3 rounded text-label-technical uppercase tracking-wider shadow-sm transition-all"
+              className="inline-flex items-center gap-space-xs bg-steel-600 hover:bg-steel-700 text-white px-space-lg py-3 rounded text-label-technical uppercase tracking-wider shadow-sm transition-all"
               type="submit"
             >
               <span>GỬI YÊU CẦU BÁO GIÁ DỊCH VỤ MẠ ENP (24H RESPONSE)</span>

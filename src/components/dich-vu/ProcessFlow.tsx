@@ -40,7 +40,7 @@ export default function ProcessFlow() {
   return (
     <section className="w-full bg-white border border-slate-200 rounded p-space-md lg:p-space-xl mb-space-xl shadow-sm">
       <div className="flex flex-col mb-space-lg">
-        <span className="text-label-sm text-orange-600 uppercase font-bold tracking-wider">
+        <span className="text-label-sm text-steel-600 uppercase font-bold tracking-wider">
           QUY TRÌNH TIÊU CHUẨN ĐỒNG BỘ
         </span>
         <h2 className="text-headline-sm md:text-headline-lg text-slate-900 uppercase font-bold">
@@ -59,7 +59,7 @@ export default function ProcessFlow() {
             className="bg-slate-50 hover:bg-slate-100 border border-slate-200 p-space-md rounded flex flex-col justify-between transition-colors"
           >
             <div className="flex items-center justify-between mb-space-sm">
-              <span className="text-headline-md text-orange-600 font-bold">{step.index}</span>
+              <span className="text-headline-md text-steel-600 font-bold">{step.index}</span>
               <span className="material-symbols-outlined text-slate-500 text-[24px]">{step.icon}</span>
             </div>
             <div>

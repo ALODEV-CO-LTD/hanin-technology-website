@@ -8,7 +8,7 @@ export default function RelatedServices({ currentSlug }: { currentSlug: string }
     <section className="w-full mb-space-lg">
       <div className="flex items-center justify-between pb-space-sm mb-space-md flex-wrap gap-space-sm">
         <div>
-          <span className="text-orange-600 text-label-sm uppercase tracking-wider font-semibold block mb-1">
+          <span className="text-steel-600 text-label-sm uppercase tracking-wider font-semibold block mb-1">
             HỆ SINH THÁI GIA CÔNG BỀ MẶT
           </span>
           <h3 className="text-headline-sm text-slate-900 tracking-tight uppercase font-bold">
@@ -17,7 +17,7 @@ export default function RelatedServices({ currentSlug }: { currentSlug: string }
         </div>
         <Link
           href="/dich-vu-gia-cong-ma"
-          className="text-label-technical text-orange-600 uppercase font-semibold flex items-center gap-1 hover:underline"
+          className="text-label-technical text-steel-600 uppercase font-semibold flex items-center gap-1 hover:underline"
         >
           <span>XEM TOÀN BỘ DANH MỤC</span>
           <span className="material-symbols-outlined text-[16px]">chevron_right</span>
@@ -33,12 +33,12 @@ export default function RelatedServices({ currentSlug }: { currentSlug: string }
           >
             <div>
               <div className="flex items-center justify-between text-slate-500 mb-2">
-                <span className="text-label-sm text-orange-600 uppercase font-semibold">{service.code}</span>
+                <span className="text-label-sm text-steel-600 uppercase font-semibold">{service.code}</span>
                 <span className="material-symbols-outlined group-hover:translate-x-1 transition-transform text-[20px]">
                   arrow_forward
                 </span>
               </div>
-              <h4 className="text-title-md text-slate-900 uppercase group-hover:text-orange-600 transition-colors font-bold">
+              <h4 className="text-title-md text-slate-900 uppercase group-hover:text-steel-600 transition-colors font-bold">
                 {service.title}
               </h4>
               <p className="text-body-md text-slate-600 mt-2">{service.description}</p>

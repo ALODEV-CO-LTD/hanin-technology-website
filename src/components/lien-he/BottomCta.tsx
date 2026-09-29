@@ -3,7 +3,7 @@ export default function BottomCta() {
     <section className="w-full bg-slate-900 text-white py-space-xl">
       <div className="max-w-[1280px] mx-auto px-margin flex flex-col md:flex-row items-center justify-between gap-space-lg">
         <div className="flex flex-col gap-2">
-          <span className="text-label-sm uppercase tracking-widest text-orange-500 font-bold">
+          <span className="text-label-sm uppercase tracking-widest text-steel-500 font-bold">
             READY FOR HIGH-PRECISION DELIVERY
           </span>
           <h2 className="text-headline-md font-bold text-white tracking-tight uppercase">
@@ -17,7 +17,7 @@ export default function BottomCta() {
         <div className="flex flex-wrap items-center gap-space-md shrink-0">
           <a
             href="#rfq-form"
-            className="px-space-lg py-3.5 bg-orange-600 hover:bg-orange-700 text-white text-label-md uppercase tracking-wider font-bold rounded shadow-md transition-all"
+            className="px-space-lg py-3.5 bg-steel-600 hover:bg-steel-700 text-white text-label-md uppercase tracking-wider font-bold rounded shadow-md transition-all"
           >
             GỬI BẢN VẼ NGAY
           </a>

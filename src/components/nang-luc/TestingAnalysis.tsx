@@ -21,7 +21,7 @@ export default function TestingAnalysis() {
     <section className="w-full py-space-xl bg-slate-50 border-t border-slate-200" id="kiem-nghiem">
       <div className="max-w-[1280px] mx-auto px-margin w-full">
         <div className="mb-space-xl">
-          <span className="text-label-technical text-orange-600 font-semibold tracking-widest uppercase block mb-1">
+          <span className="text-label-technical text-steel-600 font-semibold tracking-widest uppercase block mb-1">
             METROLOGY &amp; VALIDATION
           </span>
           <h2 className="text-headline-lg text-slate-900 uppercase tracking-tight">PHÂN TÍCH &amp; KIỂM NGHIỆM</h2>
@@ -42,7 +42,7 @@ export default function TestingAnalysis() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent" />
             <div className="relative z-10 flex flex-wrap gap-space-xs">
-              <span className="bg-white/95 backdrop-blur-md px-space-sm py-1 rounded text-label-technical text-orange-600 uppercase font-semibold shadow-sm">
+              <span className="bg-white/95 backdrop-blur-md px-space-sm py-1 rounded text-label-technical text-steel-600 uppercase font-semibold shadow-sm">
                 QA/QC LABORATORY // ISO/IEC 17025 STANDARD READY
               </span>
             </div>
@@ -53,10 +53,10 @@ export default function TestingAnalysis() {
             {ITEMS.map((item) => (
               <div
                 key={item.no}
-                className="p-space-lg bg-white border border-slate-200 rounded-lg shadow-sm hover:border-orange-300 transition-colors"
+                className="p-space-lg bg-white border border-slate-200 rounded-lg shadow-sm hover:border-steel-300 transition-colors"
               >
                 <div className="flex items-center gap-space-sm mb-space-xs">
-                  <span className="w-7 h-7 rounded bg-orange-100 text-orange-600 flex items-center justify-center text-label-technical font-bold">
+                  <span className="w-7 h-7 rounded bg-steel-100 text-steel-600 flex items-center justify-center text-label-technical font-bold">
                     {item.no}
                   </span>
                   <h3 className="text-headline-sm text-slate-900 uppercase">{item.title}</h3>

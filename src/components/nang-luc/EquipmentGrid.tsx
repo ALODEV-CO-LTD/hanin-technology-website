@@ -9,7 +9,7 @@ const MACHINES = [
         <br />
         Ổn định: <span className="text-slate-900 font-semibold">[±1%]</span>
         {" // "}Điều khiển:{" "}
-        <span className="text-orange-600 font-semibold">[PLC]</span>
+        <span className="text-steel-600 font-semibold">[PLC]</span>
       </>
     ),
     image:
@@ -26,7 +26,7 @@ const MACHINES = [
         <br />
         Gia nhiệt: <span className="text-slate-900 font-semibold">[Tự động]</span>
         {" // "}Thể tích:{" "}
-        <span className="text-orange-600 font-semibold">850 m³</span>
+        <span className="text-steel-600 font-semibold">850 m³</span>
       </>
     ),
     image:
@@ -43,7 +43,7 @@ const MACHINES = [
         <br />
         Tốc độ: <span className="text-slate-900 font-semibold">[Tùy biến PLC]</span>
         {" // "}Cảm biến:{" "}
-        <span className="text-orange-600 font-semibold">[Laser]</span>
+        <span className="text-steel-600 font-semibold">[Laser]</span>
       </>
     ),
     image:
@@ -60,7 +60,7 @@ const MACHINES = [
         <br />
         Cảm biến: <span className="text-slate-900 font-semibold">[PID Digital]</span>
         {" // "}Chuẩn:{" "}
-        <span className="text-orange-600 font-semibold">[ASTM F519]</span>
+        <span className="text-steel-600 font-semibold">[ASTM F519]</span>
       </>
     ),
     image:
@@ -75,7 +75,7 @@ export default function EquipmentGrid() {
       <div className="max-w-[1280px] mx-auto px-margin w-full">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-xl">
           <div>
-            <span className="text-label-technical text-orange-600 font-semibold tracking-widest uppercase block mb-1">
+            <span className="text-label-technical text-steel-600 font-semibold tracking-widest uppercase block mb-1">
               HARDWARE ASSETS
             </span>
             <h2 className="text-headline-lg text-slate-900 uppercase tracking-tight">
@@ -92,12 +92,12 @@ export default function EquipmentGrid() {
           {MACHINES.map((m) => (
             <div
               key={m.title}
-              className="bg-slate-50 border border-slate-200 rounded-lg overflow-hidden flex flex-col justify-between shadow-sm hover:border-orange-300 hover:shadow-md transition-all"
+              className="bg-slate-50 border border-slate-200 rounded-lg overflow-hidden flex flex-col justify-between shadow-sm hover:border-steel-300 hover:shadow-md transition-all"
             >
               <div className="relative h-44 bg-slate-200 overflow-hidden">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img className="w-full h-full object-cover" alt={m.alt} src={m.image} />
-                <span className="absolute bottom-2 left-2 px-space-xs py-0.5 bg-white/90 border border-slate-200 text-orange-600 font-semibold rounded text-label-sm shadow-sm">
+                <span className="absolute bottom-2 left-2 px-space-xs py-0.5 bg-white/90 border border-slate-200 text-steel-600 font-semibold rounded text-label-sm shadow-sm">
                   {m.badge}
                 </span>
               </div>

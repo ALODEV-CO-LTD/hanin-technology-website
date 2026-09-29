@@ -8,7 +8,7 @@ export default function RelatedServices() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-space-sm mb-space-lg">
           <div>
-            <span className="text-label-technical text-orange-600 uppercase tracking-widest block mb-1">
+            <span className="text-label-technical text-steel-600 uppercase tracking-widest block mb-1">
               CAPABILITIES EXPANSION
             </span>
             <h2 className="text-headline-lg text-slate-900 uppercase tracking-tight">
@@ -19,7 +19,7 @@ export default function RelatedServices() {
             </p>
           </div>
           <a
-            className="inline-flex items-center gap-space-xs text-label-technical text-orange-600 hover:text-orange-700 transition-colors shrink-0 uppercase tracking-wider font-semibold"
+            className="inline-flex items-center gap-space-xs text-label-technical text-steel-600 hover:text-steel-700 transition-colors shrink-0 uppercase tracking-wider font-semibold"
             href="#"
           >
             <span>XEM TẤT CẢ DỊCH VỤ GIA CÔNG MẠ</span>
@@ -30,24 +30,24 @@ export default function RelatedServices() {
           {relatedServices.map((service) => (
             <div
               key={service.code}
-              className="p-space-md bg-slate-50 border border-slate-200 rounded flex flex-col justify-between gap-space-md hover:border-orange-500 hover:shadow-md transition-all group"
+              className="p-space-md bg-slate-50 border border-slate-200 rounded flex flex-col justify-between gap-space-md hover:border-steel-500 hover:shadow-md transition-all group"
             >
               <div className="flex flex-col gap-space-sm">
                 <div className="flex items-center justify-between">
-                  <span className="material-symbols-outlined text-orange-600 text-[28px]">
+                  <span className="material-symbols-outlined text-steel-600 text-[28px]">
                     {service.icon}
                   </span>
                   <span className="font-mono text-label-sm text-slate-500 font-medium">
                     {service.code}
                   </span>
                 </div>
-                <h3 className="text-headline-sm text-slate-900 group-hover:text-orange-600 transition-colors uppercase">
+                <h3 className="text-headline-sm text-slate-900 group-hover:text-steel-600 transition-colors uppercase">
                   {service.title}
                 </h3>
                 <p className="text-body-sm text-slate-600 leading-relaxed">{service.description}</p>
               </div>
               <a
-                className="inline-flex items-center gap-1 text-label-sm text-orange-600 hover:text-orange-700 font-semibold transition-colors"
+                className="inline-flex items-center gap-1 text-label-sm text-steel-600 hover:text-steel-700 font-semibold transition-colors"
                 href="#"
               >
                 <span>{service.cta}</span>

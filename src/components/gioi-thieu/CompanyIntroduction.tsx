@@ -3,7 +3,7 @@ const METADATA_GRID = [
     label: "LĨNH VỰC",
     value: "Gia công mạ kim loại",
     note: "Mạ điện & Hoàn thiện bề mặt",
-    noteClass: "text-orange-600",
+    noteClass: "text-steel-600",
   },
   {
     label: "ĐỐI TƯỢNG",
@@ -39,7 +39,7 @@ export default function CompanyIntroduction() {
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900/40 via-transparent to-transparent" />
               {/* Technical Overlay Badges */}
               <div className="absolute top-4 left-4 inline-flex items-center gap-2 px-2.5 py-1 rounded bg-white/95 backdrop-blur-md border border-slate-200 shadow-sm">
-                <span className="material-symbols-outlined text-orange-600 text-[14px]">factory</span>
+                <span className="material-symbols-outlined text-steel-600 text-[14px]">factory</span>
                 <span className="text-[10px] text-slate-800 uppercase tracking-wider font-semibold">
                   QUY MÔ: KHUÔN VIÊN NHÀ MÁY // KCN QUANG MINH
                 </span>
@@ -57,8 +57,8 @@ export default function CompanyIntroduction() {
 
           {/* Right: Editorial & Mission */}
           <div className="lg:col-span-7 flex flex-col gap-space-md">
-            <div className="flex items-center gap-space-xs text-label-technical tracking-widest text-orange-600 uppercase font-bold">
-              <span className="w-2 h-0.5 bg-orange-600" />
+            <div className="flex items-center gap-space-xs text-label-technical tracking-widest text-steel-600 uppercase font-bold">
+              <span className="w-2 h-0.5 bg-steel-600" />
               HANIN TECHNOLOGY VIỆT NAM
             </div>
             <h2 className="text-headline-lg md:text-headline-xl text-slate-900 uppercase tracking-tight font-bold">

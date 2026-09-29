@@ -15,8 +15,8 @@ export default function ProfileDownloadCta() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center relative z-10">
             {/* Left Content */}
             <div className="lg:col-span-7 flex flex-col gap-space-md">
-              <div className="inline-flex items-center gap-2 px-2 py-0.5 rounded bg-orange-50 border border-orange-200 w-max">
-                <span className="text-[10px] uppercase tracking-wider text-orange-600 font-bold">
+              <div className="inline-flex items-center gap-2 px-2 py-0.5 rounded bg-steel-50 border border-steel-200 w-max">
+                <span className="text-[10px] uppercase tracking-wider text-steel-600 font-bold">
                   TÀI LIỆU CHÍNH THỨC // 2026
                 </span>
               </div>
@@ -29,7 +29,7 @@ export default function ProfileDownloadCta() {
               </p>
               <div className="pt-space-xs">
                 <a
-                  className="inline-flex items-center gap-space-sm px-space-lg py-space-sm rounded bg-orange-600 hover:bg-orange-700 text-white text-label-technical uppercase tracking-wider transition-all duration-150 active:scale-[0.99] shadow-md shadow-orange-500/20"
+                  className="inline-flex items-center gap-space-sm px-space-lg py-space-sm rounded bg-steel-600 hover:bg-steel-700 text-white text-label-technical uppercase tracking-wider transition-all duration-150 active:scale-[0.99] shadow-md shadow-steel-500/20"
                   href="#"
                 >
                   <span className="material-symbols-outlined text-[18px]">download</span>
@@ -40,27 +40,27 @@ export default function ProfileDownloadCta() {
 
             {/* Right: Profile Preview Card */}
             <div className="lg:col-span-5 flex justify-center">
-              <div className="relative w-full max-w-[340px] aspect-[1/1.3] rounded-lg bg-slate-50 border border-slate-200 shadow-lg p-space-md flex flex-col justify-between group hover:border-orange-600/50 transition-all duration-300">
+              <div className="relative w-full max-w-[340px] aspect-[1/1.3] rounded-lg bg-slate-50 border border-slate-200 shadow-lg p-space-md flex flex-col justify-between group hover:border-steel-600/50 transition-all duration-300">
                 <div className="flex items-center justify-between border-b border-slate-200 pb-space-sm">
                   <div className="flex items-center gap-2">
-                    <div className="w-6 h-6 rounded bg-orange-600 flex items-center justify-center font-bold text-white text-xs">
+                    <div className="w-6 h-6 rounded bg-steel-600 flex items-center justify-center font-bold text-white text-xs">
                       H
                     </div>
                     <span className="text-xs font-bold tracking-wider text-slate-900 uppercase">
                       HANIN VIỆT NAM
                     </span>
                   </div>
-                  <span className="text-[9px] text-orange-600 font-bold font-mono">CATALOG DOANH NGHIỆP</span>
+                  <span className="text-[9px] text-steel-600 font-bold font-mono">CATALOG DOANH NGHIỆP</span>
                 </div>
                 <div className="my-space-md p-space-sm bg-white rounded border border-slate-200 flex flex-col items-center justify-center text-center shadow-sm">
-                  <span className="material-symbols-outlined text-orange-600 text-[36px] mb-2 opacity-90">
+                  <span className="material-symbols-outlined text-steel-600 text-[36px] mb-2 opacity-90">
                     menu_book
                   </span>
                   <span className="text-xs font-bold text-slate-900 uppercase">HỒ SƠ NĂNG LỰC HANIN</span>
                   <span className="text-[10px] text-slate-500 font-mono mt-1">
                     PHIÊN BẢN 2026 // TÀI LIỆU KỸ THUẬT
                   </span>
-                  <div className="w-16 h-0.5 bg-orange-600 my-2" />
+                  <div className="w-16 h-0.5 bg-steel-600 my-2" />
                   <span className="text-[9px] text-slate-400 font-mono">
                     THÔNG SỐ KỸ THUẬT &amp; CÁC DỰ ÁN TIÊU BIỂU
                   </span>

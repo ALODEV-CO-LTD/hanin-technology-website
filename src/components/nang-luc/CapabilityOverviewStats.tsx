@@ -34,14 +34,14 @@ export default function CapabilityOverviewStats() {
           {STATS.map((stat) => (
             <div
               key={stat.label}
-              className="p-space-lg bg-slate-50 border border-slate-200/80 rounded-lg shadow-sm hover:border-orange-300 hover:bg-orange-50/20 transition-all"
+              className="p-space-lg bg-slate-50 border border-slate-200/80 rounded-lg shadow-sm hover:border-steel-300 hover:bg-steel-50/20 transition-all"
             >
-              <div className="text-label-technical text-orange-600 tracking-widest uppercase mb-1">
+              <div className="text-label-technical text-steel-600 tracking-widest uppercase mb-1">
                 {stat.label}
               </div>
               <div
                 className={`text-headline-xl font-bold tracking-tight ${
-                  stat.accent ? "text-orange-600" : "text-slate-900"
+                  stat.accent ? "text-steel-600" : "text-slate-900"
                 }`}
               >
                 {stat.value}

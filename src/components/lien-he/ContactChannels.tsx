@@ -4,7 +4,7 @@ export default function ContactChannels() {
       <div className="max-w-[1280px] mx-auto px-margin">
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-space-md mb-space-xl">
           <div>
-            <span className="text-label-technical uppercase tracking-widest text-orange-600 font-bold">
+            <span className="text-label-technical uppercase tracking-widest text-steel-600 font-bold">
               SECTION 01 // DIRECT CHANNELS
             </span>
             <h2 className="text-headline-md font-bold text-slate-900 uppercase tracking-tight">
@@ -19,9 +19,9 @@ export default function ContactChannels() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
           {/* Card 1: Headquarter & manufacturing plant */}
           <div className="bg-white border border-slate-200 p-space-lg rounded shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow relative overflow-hidden">
-            <div className="absolute top-0 left-0 right-0 h-1 bg-orange-600" />
+            <div className="absolute top-0 left-0 right-0 h-1 bg-steel-600" />
             <div>
-              <div className="w-10 h-10 rounded bg-slate-100 flex items-center justify-center text-orange-600 mb-space-md">
+              <div className="w-10 h-10 rounded bg-slate-100 flex items-center justify-center text-steel-600 mb-space-md">
                 <span className="material-symbols-outlined text-[24px]">factory</span>
               </div>
               <span className="text-label-sm uppercase tracking-wider text-slate-500 font-semibold block mb-1">
@@ -62,7 +62,7 @@ export default function ContactChannels() {
                   <span className="text-label-sm text-slate-500 block">Hotline Phòng Báo Giá:</span>
                   <a
                     href="tel:02438186868"
-                    className="font-bold text-orange-600 hover:underline text-title-md block"
+                    className="font-bold text-steel-600 hover:underline text-title-md block"
                   >
                     (+84) 24 3818 6868
                   </a>
@@ -85,9 +85,9 @@ export default function ContactChannels() {
 
           {/* Card 3: Dedicated email channels */}
           <div className="bg-white border border-slate-200 p-space-lg rounded shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow relative overflow-hidden">
-            <div className="absolute top-0 left-0 right-0 h-1 bg-orange-600" />
+            <div className="absolute top-0 left-0 right-0 h-1 bg-steel-600" />
             <div>
-              <div className="w-10 h-10 rounded bg-slate-100 flex items-center justify-center text-orange-600 mb-space-md">
+              <div className="w-10 h-10 rounded bg-slate-100 flex items-center justify-center text-steel-600 mb-space-md">
                 <span className="material-symbols-outlined text-[24px]">mark_email_read</span>
               </div>
               <span className="text-label-sm uppercase tracking-wider text-slate-500 font-semibold block mb-1">
@@ -103,7 +103,7 @@ export default function ContactChannels() {
                   </span>
                   <a
                     href="mailto:sales@hanintech.vn"
-                    className="font-semibold text-orange-600 hover:underline block"
+                    className="font-semibold text-steel-600 hover:underline block"
                   >
                     sales@hanintech.vn
                   </a>

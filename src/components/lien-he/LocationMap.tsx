@@ -1,7 +1,7 @@
 const DISTANCES = [
   {
     icon: "flight_takeoff",
-    color: "text-orange-600",
+    color: "text-steel-600",
     label: "Sân bay Quốc tế Nội Bài",
     value: "12 km (~15 phút)",
   },
@@ -27,7 +27,7 @@ export default function LocationMap() {
           {/* Map info & logistics instructions */}
           <div className="lg:col-span-5 flex flex-col justify-between bg-white border border-slate-200 p-space-xl rounded shadow-sm">
             <div>
-              <span className="text-label-technical uppercase tracking-widest text-orange-600 font-bold block mb-1">
+              <span className="text-label-technical uppercase tracking-widest text-steel-600 font-bold block mb-1">
                 VỊ TRÍ CHIẾN LƯỢC // LOGISTICS ROUTE
               </span>
               <h2 className="text-headline-md font-bold text-slate-900 uppercase tracking-tight mb-space-md">
@@ -51,7 +51,7 @@ export default function LocationMap() {
                       </span>
                       <span>{item.label}</span>
                     </span>
-                    <span className="text-orange-600 font-bold text-body-sm">{item.value}</span>
+                    <span className="text-steel-600 font-bold text-body-sm">{item.value}</span>
                   </div>
                 ))}
               </div>
@@ -59,7 +59,7 @@ export default function LocationMap() {
 
             <div className="flex flex-col sm:flex-row gap-space-sm pt-space-md bg-slate-50 -mx-space-xl -mb-space-xl p-space-lg">
               <a
-                className="flex-1 py-space-sm px-space-md bg-orange-600 hover:bg-orange-700 text-white rounded text-label-md uppercase tracking-wider font-bold text-center transition-colors flex items-center justify-center gap-2"
+                className="flex-1 py-space-sm px-space-md bg-steel-600 hover:bg-steel-700 text-white rounded text-label-md uppercase tracking-wider font-bold text-center transition-colors flex items-center justify-center gap-2"
                 href="https://maps.google.com"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -89,8 +89,8 @@ export default function LocationMap() {
               aria-label="Ảnh vệ tinh minh họa vị trí KCN Quang Minh, Mê Linh, Hà Nội (ảnh minh họa, sẽ thay bằng bản đồ Google Maps nhúng thật)"
             >
               <div className="absolute top-4 left-4 bg-slate-900/90 text-white p-space-md rounded backdrop-blur-md max-w-xs shadow-md">
-                <div className="flex items-center gap-2 text-orange-500 mb-1">
-                  <span className="w-2.5 h-2.5 rounded-full bg-orange-500 animate-pulse" />
+                <div className="flex items-center gap-2 text-steel-500 mb-1">
+                  <span className="w-2.5 h-2.5 rounded-full bg-steel-500 animate-pulse" />
                   <span className="text-label-sm uppercase tracking-wider font-bold">
                     HANIN FACILITY GATE 1
                   </span>
@@ -101,7 +101,7 @@ export default function LocationMap() {
                 </p>
               </div>
               <div className="absolute bottom-4 right-4 bg-white/95 p-space-sm rounded text-slate-900 shadow-sm text-label-sm flex items-center gap-3">
-                <span className="material-symbols-outlined text-orange-600 text-[20px]">
+                <span className="material-symbols-outlined text-steel-600 text-[20px]">
                   explore
                 </span>
                 <div>

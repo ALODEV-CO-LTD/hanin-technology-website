@@ -21,7 +21,7 @@ export default function NewsFilterBar() {
                   onClick={() => setActiveCategory(category.key)}
                   className={
                     isActive
-                      ? "px-space-md py-space-xs rounded-lg text-title-md bg-orange-600 text-white transition-all shadow-sm flex items-center gap-1.5"
+                      ? "px-space-md py-space-xs rounded-lg text-title-md bg-steel-600 text-white transition-all shadow-sm flex items-center gap-1.5"
                       : "px-space-md py-space-xs rounded-lg text-title-md bg-slate-100 text-slate-500 hover:text-slate-900 hover:bg-slate-200 transition-all"
                   }
                 >
@@ -51,7 +51,7 @@ export default function NewsFilterBar() {
               <input
                 type="text"
                 placeholder="Tìm kiếm chuyên đề kỹ thuật..."
-                className="w-full pl-9 pr-3 py-1.5 bg-slate-50 border border-slate-200 rounded-lg text-body-md text-slate-900 placeholder:text-slate-500 focus:outline-none focus:bg-white focus:border-orange-300"
+                className="w-full pl-9 pr-3 py-1.5 bg-slate-50 border border-slate-200 rounded-lg text-body-md text-slate-900 placeholder:text-slate-500 focus:outline-none focus:bg-white focus:border-steel-300"
               />
             </div>
             <span className="hidden xl:inline-block text-label-sm text-slate-500 whitespace-nowrap">

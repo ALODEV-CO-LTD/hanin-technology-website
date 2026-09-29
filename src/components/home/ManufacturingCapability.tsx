@@ -29,8 +29,8 @@ export default function ManufacturingCapability() {
       <div className="max-w-[1280px] mx-auto px-margin flex flex-col gap-space-xl">
         <div className="flex flex-col gap-2 max-w-3xl">
           <div className="flex items-center gap-2">
-            <span className="w-2 h-2 rounded-full bg-orange-600" />
-            <span className="text-label-technical uppercase tracking-[0.2em] text-orange-600 font-bold">
+            <span className="w-2 h-2 rounded-full bg-steel-600" />
+            <span className="text-label-technical uppercase tracking-[0.2em] text-steel-600 font-bold">
               CƠ SỞ VẬT CHẤT &amp; VẬN HÀNH
             </span>
           </div>
@@ -62,12 +62,12 @@ export default function ManufacturingCapability() {
               <div className="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur-md border border-slate-200 p-space-md rounded flex items-center justify-around text-xs text-slate-800 shadow-md">
                 <div className="flex flex-col items-center">
                   <span className="text-slate-500 font-semibold">NHIỆT ĐỘ BỂ</span>
-                  <span className="font-bold text-orange-600">58.4 °C</span>
+                  <span className="font-bold text-steel-600">58.4 °C</span>
                 </div>
                 <div className="w-px h-6 bg-slate-200" />
                 <div className="flex flex-col items-center">
                   <span className="text-slate-500 font-semibold">ĐIỆN ÁP HIỆU DỤNG</span>
-                  <span className="font-bold text-orange-600">12.8 V</span>
+                  <span className="font-bold text-steel-600">12.8 V</span>
                 </div>
                 <div className="w-px h-6 bg-slate-200" />
                 <div className="flex flex-col items-center">
@@ -83,9 +83,9 @@ export default function ManufacturingCapability() {
               {SPECS.map((spec) => (
                 <div
                   key={spec.tag}
-                  className="p-space-md bg-white border border-slate-200 rounded flex flex-col gap-1 transition-colors hover:border-orange-300 hover:shadow-sm"
+                  className="p-space-md bg-white border border-slate-200 rounded flex flex-col gap-1 transition-colors hover:border-steel-300 hover:shadow-sm"
                 >
-                  <span className="text-label-technical uppercase tracking-wider text-orange-600 font-bold">
+                  <span className="text-label-technical uppercase tracking-wider text-steel-600 font-bold">
                     {spec.tag}
                   </span>
                   <span className="text-headline-sm text-slate-900 font-semibold">{spec.title}</span>
@@ -96,7 +96,7 @@ export default function ManufacturingCapability() {
             <div className="pt-space-xs">
               <Link
                 href="/nang-luc-san-xuat"
-                className="inline-flex items-center gap-2 px-6 py-3 bg-orange-600 hover:bg-orange-700 text-white text-title-md uppercase tracking-wider rounded transition-all duration-150 shadow-sm"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-steel-600 hover:bg-steel-700 text-white text-title-md uppercase tracking-wider rounded transition-all duration-150 shadow-sm"
               >
                 KHÁM PHÁ NĂNG LỰC →
               </Link>

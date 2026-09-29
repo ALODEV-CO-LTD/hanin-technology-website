@@ -42,7 +42,7 @@ export default function DetailQaTable() {
       <div className="bg-white border border-slate-200 p-space-lg rounded shadow-sm">
         <div className="flex flex-col md:flex-row md:items-end justify-between pb-space-sm mb-space-md gap-space-sm">
           <div>
-            <span className="text-orange-600 text-label-sm uppercase tracking-wider font-semibold block mb-1">
+            <span className="text-steel-600 text-label-sm uppercase tracking-wider font-semibold block mb-1">
               PHÒNG ĐO KIỂM &amp; THỬ NGHIỆM ĐỘC LẬP
             </span>
             <h2 className="text-headline-md text-slate-900 tracking-tight uppercase font-bold">
@@ -68,7 +68,7 @@ export default function DetailQaTable() {
                 <tr key={row.item} className="hover:bg-slate-50 transition-colors">
                   <td className="py-3 px-4 font-semibold text-slate-900">
                     <span className="inline-flex items-center gap-2">
-                      <span className="w-2 h-2 rounded-full bg-orange-600" />
+                      <span className="w-2 h-2 rounded-full bg-steel-600" />
                       {row.item}
                     </span>
                   </td>

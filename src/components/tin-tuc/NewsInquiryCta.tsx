@@ -9,12 +9,12 @@ export default function NewsInquiryCta() {
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center relative z-10">
             <div className="lg:col-span-8 flex flex-col gap-space-sm">
-              <div className="flex items-center gap-space-xs text-orange-600 text-label-technical uppercase font-semibold">
-                <span className="w-2 h-2 rounded-full bg-orange-600" />
+              <div className="flex items-center gap-space-xs text-steel-600 text-label-technical uppercase font-semibold">
+                <span className="w-2 h-2 rounded-full bg-steel-600" />
                 KẾT NỐI VỚI CHUYÊN GIA KỸ THUẬT
               </div>
               <h2 className="text-headline-xl text-slate-900 uppercase tracking-tight font-bold">
-                CẦN TRAO ĐỔI VỀ <span className="text-orange-600">SẢN PHẨM / DỰ ÁN?</span>
+                CẦN TRAO ĐỔI VỀ <span className="text-steel-600">SẢN PHẨM / DỰ ÁN?</span>
               </h2>
               <p className="text-body-lg text-slate-600 max-w-3xl">
                 Đội ngũ chuyên gia kỹ sư hóa học và gia công xử lý bề mặt kim loại của HANIN luôn sẵn
@@ -23,7 +23,7 @@ export default function NewsInquiryCta() {
               </p>
               <div className="flex flex-wrap items-center gap-space-md pt-space-xs">
                 <div className="flex items-center gap-space-xs text-title-md text-slate-900">
-                  <span className="material-symbols-outlined text-orange-600 text-[20px]">
+                  <span className="material-symbols-outlined text-steel-600 text-[20px]">
                     call
                   </span>
                   <span>
@@ -32,7 +32,7 @@ export default function NewsInquiryCta() {
                 </div>
                 <span className="text-slate-300 hidden sm:inline">|</span>
                 <div className="flex items-center gap-space-xs text-title-md text-slate-900">
-                  <span className="material-symbols-outlined text-orange-600 text-[20px]">
+                  <span className="material-symbols-outlined text-steel-600 text-[20px]">
                     mail
                   </span>
                   <span>
@@ -44,7 +44,7 @@ export default function NewsInquiryCta() {
             <div className="lg:col-span-4 flex flex-col gap-space-sm justify-center">
               <a
                 href="#lien-he"
-                className="inline-flex items-center justify-center gap-space-xs px-space-lg py-space-md bg-orange-600 text-white text-title-md rounded-lg shadow-sm hover:bg-orange-700 transition-all uppercase tracking-wider text-center"
+                className="inline-flex items-center justify-center gap-space-xs px-space-lg py-space-md bg-steel-600 text-white text-title-md rounded-lg shadow-sm hover:bg-steel-700 transition-all uppercase tracking-wider text-center"
               >
                 <span>LIÊN HỆ HANIN</span>
                 <span className="material-symbols-outlined text-[20px]">arrow_forward</span>

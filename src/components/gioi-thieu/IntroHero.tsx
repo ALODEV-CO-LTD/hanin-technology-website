@@ -18,17 +18,17 @@ export default function IntroHero() {
       <div className="relative z-10 w-full max-w-[1280px] mx-auto px-margin pb-space-xl">
         {/* Breadcrumb */}
         <nav className="flex items-center gap-space-xs text-label-technical tracking-wider text-slate-500 mb-space-sm uppercase">
-          <a className="hover:text-orange-600 transition-colors" href="#">
+          <a className="hover:text-steel-600 transition-colors" href="#">
             Trang chủ
           </a>
           <span className="text-slate-300">/</span>
-          <span className="text-orange-600 font-bold">Giới thiệu</span>
+          <span className="text-steel-600 font-bold">Giới thiệu</span>
         </nav>
 
         {/* Eyebrow Badge */}
         <div className="inline-flex items-center gap-2 px-2.5 py-1 rounded bg-white/90 border border-slate-200 shadow-sm backdrop-blur-md mb-space-sm">
-          <span className="w-1.5 h-1.5 rounded-full bg-orange-600 animate-pulse" />
-          <span className="text-[11px] uppercase tracking-widest text-orange-600 font-bold">
+          <span className="w-1.5 h-1.5 rounded-full bg-steel-600 animate-pulse" />
+          <span className="text-[11px] uppercase tracking-widest text-steel-600 font-bold">
             GIỚI THIỆU HANIN // HỒ SƠ 2026
           </span>
         </div>

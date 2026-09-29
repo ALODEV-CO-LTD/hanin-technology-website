@@ -4,7 +4,7 @@ export default function CategoryHero() {
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center">
         <div className="lg:col-span-7 flex flex-col gap-space-md">
           <div className="flex flex-wrap items-center gap-space-xs">
-            <span className="bg-orange-100 text-orange-700 px-2.5 py-1 rounded text-label-sm font-bold tracking-wider uppercase">
+            <span className="bg-steel-100 text-steel-700 px-2.5 py-1 rounded text-label-sm font-bold tracking-wider uppercase">
               INDUSTRIAL SURFACE TREATMENT
             </span>
             <span className="bg-slate-100 text-slate-600 px-2.5 py-1 rounded text-label-sm uppercase">
@@ -22,7 +22,7 @@ export default function CategoryHero() {
           <div className="grid grid-cols-3 gap-space-sm bg-slate-50 border border-slate-200 p-space-sm rounded">
             <div className="flex flex-col">
               <span className="text-label-sm text-slate-500 uppercase">Dung sai bề dày</span>
-              <span className="text-title-md text-orange-600 font-bold tracking-tight">±0.1 µm</span>
+              <span className="text-title-md text-steel-600 font-bold tracking-tight">±0.1 µm</span>
               <span className="text-label-sm text-slate-500">Kiểm soát dòng vi mô</span>
             </div>
             <div className="flex flex-col">
@@ -40,7 +40,7 @@ export default function CategoryHero() {
           <div className="flex flex-wrap items-center gap-space-sm pt-space-xs">
             <a
               href="#rfq-form"
-              className="inline-flex items-center gap-2 bg-orange-600 hover:bg-orange-700 text-white px-space-lg py-3 rounded text-title-md shadow-sm transition-all"
+              className="inline-flex items-center gap-2 bg-steel-600 hover:bg-steel-700 text-white px-space-lg py-3 rounded text-title-md shadow-sm transition-all"
             >
               <span>YÊU CẦU BÁO GIÁ KỸ THUẬT (RFQ)</span>
               <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
@@ -69,7 +69,7 @@ export default function CategoryHero() {
                 <p className="text-label-sm text-slate-500 uppercase">DÂY CHUYỀN TỰ ĐỘNG HÓA #04</p>
                 <p className="text-title-md text-slate-900 font-bold">SCADA Automated Rack Plating</p>
               </div>
-              <span className="bg-orange-100 text-orange-700 text-label-sm px-2 py-1 rounded font-bold uppercase">
+              <span className="bg-steel-100 text-steel-700 text-label-sm px-2 py-1 rounded font-bold uppercase">
                 READY ACTIVE
               </span>
             </div>

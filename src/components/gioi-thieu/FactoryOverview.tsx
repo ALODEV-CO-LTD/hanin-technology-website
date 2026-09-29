@@ -5,8 +5,8 @@ export default function FactoryOverview() {
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-xl">
           <div>
-            <div className="flex items-center gap-space-xs text-label-technical tracking-widest text-orange-600 uppercase mb-space-xs font-bold">
-              <span className="w-2 h-0.5 bg-orange-600" />
+            <div className="flex items-center gap-space-xs text-label-technical tracking-widest text-steel-600 uppercase mb-space-xs font-bold">
+              <span className="w-2 h-0.5 bg-steel-600" />
               CƠ SỞ HẠ TẦNG &amp; VẬN HÀNH
             </div>
             <h2 className="text-headline-lg md:text-headline-xl text-slate-900 uppercase tracking-tight font-bold">
@@ -33,8 +33,8 @@ export default function FactoryOverview() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent" />
             <div className="absolute top-4 left-4 inline-flex items-center gap-2 px-2.5 py-1 rounded bg-white/90 backdrop-blur-sm border border-slate-200 shadow-sm">
-              <span className="w-2 h-2 rounded-full bg-orange-600 animate-ping" />
-              <span className="text-[10px] text-orange-600 uppercase tracking-widest font-bold">
+              <span className="w-2 h-2 rounded-full bg-steel-600 animate-ping" />
+              <span className="text-[10px] text-steel-600 uppercase tracking-widest font-bold">
                 PHÂN KHU 01: DÂY CHUYỀN MẠ
               </span>
             </div>
@@ -66,7 +66,7 @@ export default function FactoryOverview() {
               />
               <div className="absolute inset-0 bg-gradient-to-r from-slate-900/80 via-slate-900/30 to-transparent" />
               <div className="absolute bottom-3 left-3">
-                <span className="text-[9px] uppercase tracking-wider text-orange-600 bg-white/95 px-1.5 py-0.5 rounded border border-slate-200 block w-max mb-1 font-bold">
+                <span className="text-[9px] uppercase tracking-wider text-steel-600 bg-white/95 px-1.5 py-0.5 rounded border border-slate-200 block w-max mb-1 font-bold">
                   PHÂN KHU 02: PHÒNG LAB &amp; KCS
                 </span>
                 <p className="text-xs text-white font-semibold">Phòng giám sát &amp; Điều phối</p>
@@ -83,7 +83,7 @@ export default function FactoryOverview() {
               />
               <div className="absolute inset-0 bg-gradient-to-r from-slate-900/80 via-slate-900/30 to-transparent" />
               <div className="absolute bottom-3 left-3">
-                <span className="text-[9px] uppercase tracking-wider text-orange-600 bg-white/95 px-1.5 py-0.5 rounded border border-slate-200 block w-max mb-1 font-bold">
+                <span className="text-[9px] uppercase tracking-wider text-steel-600 bg-white/95 px-1.5 py-0.5 rounded border border-slate-200 block w-max mb-1 font-bold">
                   PHÂN KHU 03: ĐỒ GÁ &amp; KIỂM ĐỊNH
                 </span>
                 <p className="text-xs text-white font-semibold">Bàn kiểm nghiệm đo lường dưỡng đo</p>
@@ -103,7 +103,7 @@ export default function FactoryOverview() {
               />
               <div className="absolute inset-0 bg-gradient-to-r from-slate-900/80 via-slate-900/30 to-transparent" />
               <div className="absolute bottom-3 left-3">
-                <span className="text-[9px] uppercase tracking-wider text-orange-600 bg-white/95 px-1.5 py-0.5 rounded border border-slate-200 block w-max mb-1 font-bold">
+                <span className="text-[9px] uppercase tracking-wider text-steel-600 bg-white/95 px-1.5 py-0.5 rounded border border-slate-200 block w-max mb-1 font-bold">
                   PHÂN KHU 04: CẨU TRỤC TỰ ĐỘNG
                 </span>
                 <p className="text-xs text-white font-semibold">Khu vực cẩu trục gắp phôi tự động</p>
@@ -115,11 +115,11 @@ export default function FactoryOverview() {
         {/* Section CTA */}
         <div className="flex justify-center">
           <a
-            className="inline-flex items-center gap-space-sm px-space-lg py-space-sm rounded bg-white hover:bg-slate-50 text-slate-800 text-label-technical uppercase tracking-wider border border-slate-300 hover:border-orange-600 transition-all shadow-sm"
+            className="inline-flex items-center gap-space-sm px-space-lg py-space-sm rounded bg-white hover:bg-slate-50 text-slate-800 text-label-technical uppercase tracking-wider border border-slate-300 hover:border-steel-600 transition-all shadow-sm"
             href="#"
           >
             KHÁM PHÁ NĂNG LỰC SẢN XUẤT
-            <span className="material-symbols-outlined text-[16px] text-orange-600">arrow_forward</span>
+            <span className="material-symbols-outlined text-[16px] text-steel-600">arrow_forward</span>
           </a>
         </div>
       </div>

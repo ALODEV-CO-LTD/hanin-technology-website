@@ -8,7 +8,7 @@ const GRID_PRODUCTS = getGridProducts();
 
 function ProductCardFeatured({ product }: { product: Product }) {
   return (
-    <div className="lg:col-span-8 flex flex-col md:flex-row bg-white border border-slate-200 rounded overflow-hidden shadow-sm hover:shadow-xl hover:border-orange-300 transition-all duration-300">
+    <div className="lg:col-span-8 flex flex-col md:flex-row bg-white border border-slate-200 rounded overflow-hidden shadow-sm hover:shadow-xl hover:border-steel-300 transition-all duration-300">
       <div className="md:w-1/2 relative min-h-[260px] md:min-h-full overflow-hidden bg-slate-100">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
@@ -16,7 +16,7 @@ function ProductCardFeatured({ product }: { product: Product }) {
           className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
           src={product.image}
         />
-        <div className="absolute top-space-sm left-space-sm px-space-xs py-0.5 bg-white/90 border border-slate-200 backdrop-blur-sm rounded text-label-technical text-orange-600 font-bold">
+        <div className="absolute top-space-sm left-space-sm px-space-xs py-0.5 bg-white/90 border border-slate-200 backdrop-blur-sm rounded text-label-technical text-steel-600 font-bold">
           {product.imageBadge}
         </div>
       </div>
@@ -25,7 +25,7 @@ function ProductCardFeatured({ product }: { product: Product }) {
           <span className="text-label-technical text-sky-700 uppercase tracking-wider font-semibold">
             LÔ SẢN XUẤT #{product.lot}
           </span>
-          <h3 className="text-headline-md text-slate-900 uppercase hover:text-orange-600 transition-colors font-bold">
+          <h3 className="text-headline-md text-slate-900 uppercase hover:text-steel-600 transition-colors font-bold">
             {product.title}
           </h3>
           <p className="text-body-md text-slate-600 leading-relaxed">{product.description}</p>
@@ -40,7 +40,7 @@ function ProductCardFeatured({ product }: { product: Product }) {
           </div>
           <Link
             href={`/san-pham-du-an/${product.slug}`}
-            className="inline-flex items-center gap-space-xs text-label-technical uppercase tracking-wider text-orange-600 hover:translate-x-1 transition-transform font-bold"
+            className="inline-flex items-center gap-space-xs text-label-technical uppercase tracking-wider text-steel-600 hover:translate-x-1 transition-transform font-bold"
           >
             XEM CHI TIẾT SẢN PHẨM →
           </Link>
@@ -52,7 +52,7 @@ function ProductCardFeatured({ product }: { product: Product }) {
 
 function ProductCardStandard({ product }: { product: Product }) {
   return (
-    <div className="lg:col-span-4 flex flex-col bg-white border border-slate-200 rounded overflow-hidden shadow-sm hover:shadow-xl hover:border-orange-300 transition-all duration-300">
+    <div className="lg:col-span-4 flex flex-col bg-white border border-slate-200 rounded overflow-hidden shadow-sm hover:shadow-xl hover:border-steel-300 transition-all duration-300">
       <div className="relative h-56 overflow-hidden bg-slate-100">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
@@ -60,13 +60,13 @@ function ProductCardStandard({ product }: { product: Product }) {
           className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
           src={product.image}
         />
-        <div className="absolute top-space-sm left-space-sm px-space-xs py-0.5 bg-white/90 border border-slate-200 backdrop-blur-sm rounded text-label-technical text-orange-600 font-bold">
+        <div className="absolute top-space-sm left-space-sm px-space-xs py-0.5 bg-white/90 border border-slate-200 backdrop-blur-sm rounded text-label-technical text-steel-600 font-bold">
           {product.imageBadge}
         </div>
       </div>
       <div className="p-space-md flex flex-col flex-1 justify-between bg-white">
         <div className="flex flex-col gap-space-xs">
-          <h3 className="text-headline-sm text-slate-900 uppercase hover:text-orange-600 transition-colors font-bold">
+          <h3 className="text-headline-sm text-slate-900 uppercase hover:text-steel-600 transition-colors font-bold">
             {product.title}
           </h3>
           <p className="text-body-sm text-slate-600 leading-relaxed">{product.description}</p>
@@ -78,7 +78,7 @@ function ProductCardStandard({ product }: { product: Product }) {
           </span>
           <Link
             href={`/san-pham-du-an/${product.slug}`}
-            className="w-8 h-8 rounded-full bg-slate-50 border border-slate-200 flex items-center justify-center text-orange-600 hover:bg-orange-600 hover:text-white transition-colors shrink-0"
+            className="w-8 h-8 rounded-full bg-slate-50 border border-slate-200 flex items-center justify-center text-steel-600 hover:bg-steel-600 hover:text-white transition-colors shrink-0"
             aria-label={`Xem chi tiết ${product.title}`}
           >
             →
@@ -121,7 +121,7 @@ export default function ProductCatalog() {
                 onClick={() => setActiveCategory(tab.value)}
                 className={
                   activeCategory === tab.value
-                    ? "px-space-md py-space-xs bg-orange-600 text-white text-label-technical uppercase tracking-wider rounded shrink-0 transition-all shadow-sm font-semibold"
+                    ? "px-space-md py-space-xs bg-steel-600 text-white text-label-technical uppercase tracking-wider rounded shrink-0 transition-all shadow-sm font-semibold"
                     : "px-space-md py-space-xs bg-slate-50 hover:bg-slate-100 text-slate-600 hover:text-slate-900 border border-slate-200 text-label-technical uppercase tracking-wider rounded shrink-0 transition-colors font-semibold"
                 }
               >
@@ -135,7 +135,7 @@ export default function ProductCatalog() {
                 search
               </span>
               <input
-                className="w-full sm:w-64 bg-slate-50 text-slate-900 placeholder:text-slate-400 border border-slate-200 text-body-sm pl-9 pr-space-sm py-space-xs rounded focus:outline-none focus:border-orange-600 focus:bg-white transition-all"
+                className="w-full sm:w-64 bg-slate-50 text-slate-900 placeholder:text-slate-400 border border-slate-200 text-body-sm pl-9 pr-space-sm py-space-xs rounded focus:outline-none focus:border-steel-600 focus:bg-white transition-all"
                 placeholder="Tìm kiếm sản phẩm / dự án..."
                 type="text"
                 value={search}

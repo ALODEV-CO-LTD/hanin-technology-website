@@ -39,13 +39,13 @@ export default function DetailCapability() {
             </div>
             <div className="flex flex-col text-right">
               <span className="text-label-sm text-slate-500 uppercase">KÍCH THƯỚC BỂ TỐI ĐA</span>
-              <span className="text-title-md text-orange-600 font-bold">1800 x 900 x 1200 mm</span>
+              <span className="text-title-md text-steel-600 font-bold">1800 x 900 x 1200 mm</span>
             </div>
           </div>
         </div>
 
         <div className="lg:col-span-6 flex flex-col justify-center bg-white border border-slate-200 p-space-lg rounded shadow-sm">
-          <span className="text-orange-600 text-label-sm uppercase tracking-wider font-semibold mb-1">
+          <span className="text-steel-600 text-label-sm uppercase tracking-wider font-semibold mb-1">
             DÂY CHUYỀN TỰ ĐỘNG HÓA CAO CẤP
           </span>
           <h2 className="text-headline-md text-slate-900 tracking-tight uppercase mb-space-sm font-bold">
@@ -59,7 +59,7 @@ export default function DetailCapability() {
           <div className="space-y-space-sm text-body-md text-slate-600">
             {FEATURES.map((feature) => (
               <div key={feature.title} className="flex items-start gap-space-xs">
-                <span className="material-symbols-outlined text-orange-600 text-[20px] mt-0.5">{feature.icon}</span>
+                <span className="material-symbols-outlined text-steel-600 text-[20px] mt-0.5">{feature.icon}</span>
                 <div>
                   <strong className="text-slate-900 font-semibold">{feature.title}</strong> {feature.desc}
                 </div>

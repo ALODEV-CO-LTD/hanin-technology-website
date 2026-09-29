@@ -37,8 +37,8 @@ export default function Header() {
                 href={link.href}
                 className={
                   isActive(link.href)
-                    ? "py-1 text-body-sm text-orange-600 font-semibold border-b-2 border-orange-600 whitespace-nowrap"
-                    : "py-1 text-body-sm text-slate-600 hover:text-orange-600 transition-colors whitespace-nowrap"
+                    ? "py-1 text-body-sm text-steel-600 font-semibold border-b-2 border-steel-600 whitespace-nowrap"
+                    : "py-1 text-body-sm text-slate-600 hover:text-steel-600 transition-colors whitespace-nowrap"
                 }
               >
                 {link.label}
@@ -50,7 +50,7 @@ export default function Header() {
         <div className="flex items-center gap-space-md">
           <Link
             href="/lien-he"
-            className="hidden sm:inline-flex items-center justify-center px-5 py-2.5 bg-orange-600 hover:bg-orange-700 text-white rounded text-label-technical uppercase tracking-wider transition-all duration-150 active:scale-[0.99] shadow-sm font-semibold whitespace-nowrap"
+            className="hidden sm:inline-flex items-center justify-center px-5 py-2.5 bg-steel-600 hover:bg-steel-700 text-white rounded text-label-technical uppercase tracking-wider transition-all duration-150 active:scale-[0.99] shadow-sm font-semibold whitespace-nowrap"
           >
             NHẬN BÁO GIÁ KỸ THUẬT →
           </Link>
@@ -77,8 +77,8 @@ export default function Header() {
               onClick={() => setMobileOpen(false)}
               className={
                 isActive(link.href)
-                  ? "py-space-xs text-body-md text-orange-600 font-semibold"
-                  : "py-space-xs text-body-md text-slate-600 hover:text-orange-600 transition-colors"
+                  ? "py-space-xs text-body-md text-steel-600 font-semibold"
+                  : "py-space-xs text-body-md text-slate-600 hover:text-steel-600 transition-colors"
               }
             >
               {link.label}
@@ -87,7 +87,7 @@ export default function Header() {
           <Link
             href="/lien-he"
             onClick={() => setMobileOpen(false)}
-            className="mt-space-sm inline-flex items-center justify-center px-space-md py-space-sm bg-orange-600 text-white rounded text-label-technical uppercase tracking-wider font-semibold"
+            className="mt-space-sm inline-flex items-center justify-center px-space-md py-space-sm bg-steel-600 text-white rounded text-label-technical uppercase tracking-wider font-semibold"
           >
             NHẬN BÁO GIÁ KỸ THUẬT →
           </Link>

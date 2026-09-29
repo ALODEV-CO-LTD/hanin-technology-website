@@ -34,7 +34,7 @@ export default function QualityStandards() {
       <div className="max-w-[1280px] mx-auto px-margin w-full">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-xl">
           <div>
-            <span className="text-label-technical text-orange-600 font-semibold tracking-widest uppercase block mb-1">
+            <span className="text-label-technical text-steel-600 font-semibold tracking-widest uppercase block mb-1">
               MANAGEMENT STANDARDS
             </span>
             <h2 className="text-headline-lg text-slate-900 uppercase tracking-tight">CHẤT LƯỢNG &amp; TIÊU CHUẨN</h2>
@@ -49,19 +49,19 @@ export default function QualityStandards() {
           {CARDS.map((card) => (
             <div
               key={card.title}
-              className="p-space-lg bg-slate-50 border border-slate-200 rounded-lg shadow-sm hover:border-orange-300 hover:shadow-md transition-all flex flex-col justify-between"
+              className="p-space-lg bg-slate-50 border border-slate-200 rounded-lg shadow-sm hover:border-steel-300 hover:shadow-md transition-all flex flex-col justify-between"
             >
               <div>
                 <div
                   className={`w-10 h-10 rounded flex items-center justify-center mb-space-md font-bold ${
-                    card.iconAccent ? "bg-orange-100 text-orange-600" : "bg-slate-200/80 text-slate-700"
+                    card.iconAccent ? "bg-steel-100 text-steel-600" : "bg-slate-200/80 text-slate-700"
                   }`}
                 >
                   <span className="material-symbols-outlined">{card.icon}</span>
                 </div>
                 <div
                   className={`text-label-technical tracking-widest uppercase mb-1 font-semibold ${
-                    card.tagAccent ? "text-orange-600" : "text-slate-600"
+                    card.tagAccent ? "text-steel-600" : "text-slate-600"
                   }`}
                 >
                   {card.tagLabel}
@@ -78,7 +78,7 @@ export default function QualityStandards() {
 
         <div className="flex justify-end">
           <a
-            className="inline-flex items-center gap-1 text-label-technical text-orange-600 hover:text-slate-900 font-semibold uppercase tracking-wider transition-colors"
+            className="inline-flex items-center gap-1 text-label-technical text-steel-600 hover:text-slate-900 font-semibold uppercase tracking-wider transition-colors"
             href="#"
           >
             XEM CHI TIẾT CHỨNG NHẬN →

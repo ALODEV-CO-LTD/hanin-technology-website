@@ -36,12 +36,12 @@ export default function CapabilitySnapshot() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-gutter divide-y md:divide-y-0 md:divide-x divide-slate-200">
           {SNAPSHOT_STATS.map((stat) => (
             <div key={stat.label} className="flex flex-col p-space-sm md:p-space-md">
-              <span className="text-[10px] text-orange-600 uppercase tracking-widest mb-1 font-bold">
+              <span className="text-[10px] text-steel-600 uppercase tracking-widest mb-1 font-bold">
                 {stat.label}
               </span>
               <div className="text-headline-xl md:text-display-hero text-slate-900 font-bold tracking-tight font-mono">
                 {stat.value}
-                <span className="text-orange-600">{stat.suffix}</span>
+                <span className="text-steel-600">{stat.suffix}</span>
               </div>
               <span className="text-body-sm text-slate-600 mt-1">{stat.desc}</span>
               <span className="text-[10px] text-slate-400 mt-1 font-mono">{stat.note}</span>

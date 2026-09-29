@@ -10,7 +10,7 @@ export default function ProductHero({ product }: { product: Product }) {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
           <div className="lg:col-span-7 flex flex-col gap-5">
             <div className="flex flex-wrap items-center gap-2">
-              <span className="px-2.5 py-1 bg-orange-50 border border-orange-200 text-orange-700 font-mono text-xs uppercase font-semibold">
+              <span className="px-2.5 py-1 bg-steel-50 border border-steel-200 text-steel-700 font-mono text-xs uppercase font-semibold">
                 PROJECT DOSSIER // {product.lot}
               </span>
               <span className="px-2.5 py-1 bg-slate-100 border border-slate-200 text-slate-600 font-mono text-xs uppercase">
@@ -22,12 +22,12 @@ export default function ProductHero({ product }: { product: Product }) {
             </h1>
             <p className="text-slate-600 leading-relaxed text-sm md:text-base">{heroDescription}</p>
             <div className="grid grid-cols-3 gap-3 p-4 bg-slate-50 border border-slate-200 rounded">
-              {(["orange", "sky", "slate"] as const).map((color, index) => {
+              {(["steel", "sky", "slate"] as const).map((color, index) => {
                 const stat = heroStats[index];
                 if (!stat) return null;
                 const valueColor =
-                  color === "orange"
-                    ? "text-orange-600"
+                  color === "steel"
+                    ? "text-steel-600"
                     : color === "sky"
                     ? "text-sky-700"
                     : "text-slate-900";
@@ -50,7 +50,7 @@ export default function ProductHero({ product }: { product: Product }) {
             </div>
             <div className="flex flex-wrap items-center gap-4 pt-1">
               <a
-                className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-orange-600 text-white font-semibold text-sm uppercase tracking-wider rounded hover:bg-orange-700 active:scale-95 transition-all shadow-md"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-steel-600 text-white font-semibold text-sm uppercase tracking-wider rounded hover:bg-steel-700 active:scale-95 transition-all shadow-md"
                 href="#quote-form"
               >
                 <span>LIÊN HỆ BÁO GIÁ DỰ ÁN</span>
@@ -60,7 +60,7 @@ export default function ProductHero({ product }: { product: Product }) {
                 className="inline-flex items-center justify-center gap-2 px-5 py-3 bg-slate-50 border border-slate-200 text-slate-800 font-semibold text-sm uppercase tracking-wider rounded hover:bg-slate-100 hover:border-slate-300 transition-all"
                 href="#"
               >
-                <span className="material-symbols-outlined text-orange-600 text-[18px]">download</span>
+                <span className="material-symbols-outlined text-steel-600 text-[18px]">download</span>
                 <span>TẢI BẢN VẼ KỸ THUẬT / SPEC SHEET (PDF)</span>
               </a>
             </div>
@@ -74,7 +74,7 @@ export default function ProductHero({ product }: { product: Product }) {
                 <span className="text-slate-700 font-medium font-sans">ROHS &amp; REACH COMPLIANT</span>
               </div>
               <div className="flex items-center gap-1.5">
-                <span className="material-symbols-outlined text-orange-600 text-[16px]">biotech</span>
+                <span className="material-symbols-outlined text-steel-600 text-[16px]">biotech</span>
                 <span className="text-slate-700 font-medium font-sans">XRF COATING ASSAY</span>
               </div>
             </div>
@@ -92,11 +92,11 @@ export default function ProductHero({ product }: { product: Product }) {
                   <span className="w-2 h-2 rounded-full bg-emerald-500 animate-ping" />
                   <span className="text-slate-900 font-medium">METROLOGY: 100% INSPECTED</span>
                 </div>
-                <span className="text-orange-600 font-semibold">TOLERANCE: ±0.1 µM</span>
+                <span className="text-steel-600 font-semibold">TOLERANCE: ±0.1 µM</span>
               </div>
               <div className="absolute bottom-3 left-3 right-3 p-3 bg-white/95 backdrop-blur-md border border-slate-200 rounded flex items-center justify-between text-xs shadow-sm">
                 <div className="flex items-center gap-2 text-slate-600">
-                  <span className="material-symbols-outlined text-orange-600 text-[18px]">straighten</span>
+                  <span className="material-symbols-outlined text-steel-600 text-[18px]">straighten</span>
                   <span className="font-mono font-medium">PANME DIGITAL CALLOUT: 12.74mm</span>
                 </div>
                 <span className="text-emerald-700 font-mono font-semibold">ROBUST PASS</span>
@@ -104,12 +104,12 @@ export default function ProductHero({ product }: { product: Product }) {
             </div>
             <div className="p-3 bg-slate-50 border border-slate-200 flex items-center justify-between rounded">
               <div className="flex items-center gap-2">
-                <span className="material-symbols-outlined text-orange-600 text-[20px]">science</span>
+                <span className="material-symbols-outlined text-steel-600 text-[20px]">science</span>
                 <span className="text-sm text-slate-700 font-medium">
                   Độ cứng vi mô sau nhiệt luyện hydro:
                 </span>
               </div>
-              <span className="text-base font-bold text-orange-600 font-mono">850 - 920 HV</span>
+              <span className="text-base font-bold text-steel-600 font-mono">850 - 920 HV</span>
             </div>
           </div>
         </div>

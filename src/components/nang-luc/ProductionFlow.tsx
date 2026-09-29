@@ -42,7 +42,7 @@ export default function ProductionFlow() {
     <section className="w-full py-space-xl bg-white border-t border-slate-200">
       <div className="max-w-[1280px] mx-auto px-margin w-full">
         <div className="max-w-2xl mb-space-xl">
-          <span className="text-label-technical text-orange-600 font-semibold tracking-widest uppercase block mb-1">
+          <span className="text-label-technical text-steel-600 font-semibold tracking-widest uppercase block mb-1">
             STANDARD WORKFLOW
           </span>
           <h2 className="text-headline-lg text-slate-900 uppercase tracking-tight mb-space-xs">
@@ -58,12 +58,12 @@ export default function ProductionFlow() {
           {STEPS.map((s) => (
             <div
               key={s.step}
-              className="p-space-lg bg-slate-50 border border-slate-200 rounded-lg shadow-sm hover:border-orange-300 hover:shadow-md transition-all flex flex-col justify-between"
+              className="p-space-lg bg-slate-50 border border-slate-200 rounded-lg shadow-sm hover:border-steel-300 hover:shadow-md transition-all flex flex-col justify-between"
             >
               <div>
                 <div className="flex items-center justify-between gap-space-sm mb-space-sm">
-                  <span className="text-label-technical text-orange-600 font-bold">{s.step}</span>
-                  <span className="w-2 h-2 rounded-full bg-orange-600" />
+                  <span className="text-label-technical text-steel-600 font-bold">{s.step}</span>
+                  <span className="w-2 h-2 rounded-full bg-steel-600" />
                 </div>
                 <h3 className="text-headline-sm text-slate-900 uppercase mb-space-xs">{s.title}</h3>
                 <p className="text-body-sm text-slate-600 leading-relaxed">{s.desc}</p>

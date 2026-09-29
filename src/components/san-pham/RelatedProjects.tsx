@@ -12,7 +12,7 @@ export default function RelatedProjects({ currentSlug }: { currentSlug: string }
     <section className="w-full bg-slate-50 py-space-xl border-b border-slate-200">
       <div className="max-w-7xl mx-auto px-6">
         <div className="mb-space-lg">
-          <span className="text-label-technical text-orange-600 uppercase tracking-widest block mb-1">
+          <span className="text-label-technical text-steel-600 uppercase tracking-widest block mb-1">
             PROVEN INDUSTRIAL ARCHIVE
           </span>
           <h2 className="text-headline-lg text-slate-900 uppercase tracking-tight">
@@ -28,7 +28,7 @@ export default function RelatedProjects({ currentSlug }: { currentSlug: string }
             <Link
               key={project.slug}
               href={`/san-pham-du-an/${project.slug}`}
-              className="group flex flex-col bg-white border border-slate-200 rounded overflow-hidden hover:border-orange-600 hover:shadow-md transition-all shadow-sm"
+              className="group flex flex-col bg-white border border-slate-200 rounded overflow-hidden hover:border-steel-600 hover:shadow-md transition-all shadow-sm"
             >
               <div className="w-full aspect-[16/10] bg-slate-100 relative overflow-hidden">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -37,7 +37,7 @@ export default function RelatedProjects({ currentSlug }: { currentSlug: string }
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   src={project.image}
                 />
-                <span className="absolute top-2 left-2 px-space-xs py-0.5 bg-white/95 backdrop-blur font-mono text-label-sm text-orange-600 font-semibold rounded shadow-sm">
+                <span className="absolute top-2 left-2 px-space-xs py-0.5 bg-white/95 backdrop-blur font-mono text-label-sm text-steel-600 font-semibold rounded shadow-sm">
                   LOT #{project.lot}
                 </span>
               </div>
@@ -45,11 +45,11 @@ export default function RelatedProjects({ currentSlug }: { currentSlug: string }
                 <span className="text-label-sm text-slate-500 uppercase">
                   {project.category}
                 </span>
-                <h3 className="text-title-md text-slate-900 group-hover:text-orange-600 transition-colors uppercase leading-snug">
+                <h3 className="text-title-md text-slate-900 group-hover:text-steel-600 transition-colors uppercase leading-snug">
                   {project.title}
                 </h3>
                 <p className="text-body-sm text-slate-600 line-clamp-2 mt-1">{project.description}</p>
-                <div className="flex items-center gap-space-xs pt-space-xs text-orange-600 text-label-sm font-semibold">
+                <div className="flex items-center gap-space-xs pt-space-xs text-steel-600 text-label-sm font-semibold">
                   <span>XEM CHI TIẾT DỰ ÁN</span>
                   <span className="material-symbols-outlined text-[14px]">arrow_forward</span>
                 </div>

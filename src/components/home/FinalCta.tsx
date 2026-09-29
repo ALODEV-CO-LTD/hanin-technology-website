@@ -8,8 +8,8 @@ export default function FinalCta() {
         <div className="p-space-lg md:p-space-xl rounded bg-white border border-slate-200 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-space-xl shadow-lg">
           <div className="flex flex-col gap-space-md max-w-2xl">
             <div className="flex items-center gap-2">
-              <span className="w-2.5 h-2.5 rounded bg-orange-600" />
-              <span className="text-label-technical uppercase tracking-[0.2em] text-orange-600 font-bold">
+              <span className="w-2.5 h-2.5 rounded bg-steel-600" />
+              <span className="text-label-technical uppercase tracking-[0.2em] text-steel-600 font-bold">
                 TƯ VẤN KỸ THUẬT &amp; DỰ ÁN
               </span>
             </div>
@@ -23,7 +23,7 @@ export default function FinalCta() {
             <div className="pt-space-xs flex flex-wrap items-center gap-space-md">
               <Link
                 href="/lien-he"
-                className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-orange-600 hover:bg-orange-700 text-white text-title-md uppercase tracking-wider rounded transition-all duration-150 shadow-md"
+                className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-steel-600 hover:bg-steel-700 text-white text-title-md uppercase tracking-wider rounded transition-all duration-150 shadow-md"
               >
                 <span>GỬI YÊU CẦU BÁO GIÁ</span>
                 <span className="material-symbols-outlined text-[20px]">send</span>
@@ -32,18 +32,18 @@ export default function FinalCta() {
           </div>
 
           <div className="w-full lg:w-auto flex flex-col gap-space-sm p-space-md bg-slate-50 border border-slate-200 rounded lg:min-w-[320px]">
-            <span className="text-label-technical uppercase tracking-widest text-orange-600 font-bold pb-1">
+            <span className="text-label-technical uppercase tracking-widest text-steel-600 font-bold pb-1">
               LIÊN HỆ TRỰC TIẾP
             </span>
             <div className="flex items-center gap-3 py-1">
-              <span className="material-symbols-outlined text-orange-600 text-[20px]">call</span>
+              <span className="material-symbols-outlined text-steel-600 text-[20px]">call</span>
               <div className="flex flex-col">
                 <span className="text-[10px] text-slate-500 uppercase">HOTLINE HỖ TRỢ</span>
                 <span className="text-title-md text-slate-900 font-bold">(+84) 24 3818 6868</span>
               </div>
             </div>
             <div className="flex items-center gap-3 py-1">
-              <span className="material-symbols-outlined text-orange-600 text-[20px]">chat</span>
+              <span className="material-symbols-outlined text-steel-600 text-[20px]">chat</span>
               <div className="flex flex-col">
                 <span className="text-[10px] text-slate-500 uppercase">ZALO KỸ THUẬT</span>
                 <Link href="/lien-he" className="text-title-md text-sky-700 hover:underline font-semibold">
@@ -52,7 +52,7 @@ export default function FinalCta() {
               </div>
             </div>
             <div className="flex items-center gap-3 py-1">
-              <span className="material-symbols-outlined text-orange-600 text-[20px]">mail</span>
+              <span className="material-symbols-outlined text-steel-600 text-[20px]">mail</span>
               <div className="flex flex-col">
                 <span className="text-[10px] text-slate-500 uppercase">HỘP THƯ BÁO GIÁ</span>
                 <span className="text-body-md text-slate-800 font-mono">sales@hanintech.vn</span>

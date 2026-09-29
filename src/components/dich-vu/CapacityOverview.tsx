@@ -1,13 +1,13 @@
 const CAPABILITIES = [
   {
     icon: "precision_manufacturing",
-    iconBg: "bg-orange-100",
-    iconColor: "text-orange-600",
+    iconBg: "bg-steel-100",
+    iconColor: "text-steel-600",
     title: "Dây Chuyền SCADA Tự Động",
     desc: "Điều khiển hành trình cẩu trục, mật độ dòng điện A/dm² và thời gian nhúng bể chính xác bằng phần mềm PLC đồng bộ, loại bỏ sai lệch con người.",
     statLeft: "Sản lượng: 450 Tấn/Tháng",
     statRight: "0% Lỗi bọt khí",
-    statRightColor: "text-orange-600",
+    statRightColor: "text-steel-600",
   },
   {
     icon: "science",
@@ -37,7 +37,7 @@ export default function CapacityOverview() {
       <div className="bg-slate-50 border border-slate-200 rounded p-space-md lg:p-space-lg">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-space-sm mb-space-lg">
           <div>
-            <span className="text-label-sm text-orange-600 uppercase font-bold tracking-wider">
+            <span className="text-label-sm text-steel-600 uppercase font-bold tracking-wider">
               TỔNG QUAN NĂNG LỰC NHÀ MÁY
             </span>
             <h2 className="text-headline-sm md:text-headline-lg text-slate-900 uppercase font-bold">

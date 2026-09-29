@@ -33,7 +33,7 @@ const STRENGTHS = [
     desc: "[Thông tin hỗ trợ kỹ thuật — Tư vấn giải pháp xi mạ chuyên sâu, tối ưu quy trình theo bản vẽ và yêu cầu kỹ thuật khắt khe của từng cấu kiện cơ khí.]",
     metricLabel: "TƯ VẤN KỸ THUẬT CHUYÊN SÂU",
     metricValue: "HỖ TRỢ DOANH NGHIỆP 24/7",
-    metricClass: "text-orange-600 font-bold",
+    metricClass: "text-steel-600 font-bold",
   },
 ];
 
@@ -43,8 +43,8 @@ export default function CoreStrengths() {
       <div className="max-w-[1280px] mx-auto px-margin">
         {/* Section Header */}
         <div className="flex flex-col mb-space-xl">
-          <div className="flex items-center gap-space-xs text-label-technical tracking-widest text-orange-600 uppercase mb-space-xs font-bold">
-            <span className="w-2 h-0.5 bg-orange-600" />
+          <div className="flex items-center gap-space-xs text-label-technical tracking-widest text-steel-600 uppercase mb-space-xs font-bold">
+            <span className="w-2 h-0.5 bg-steel-600" />
             LỢI THẾ CÔNG NGHIỆP
           </div>
           <h2 className="text-headline-lg md:text-headline-xl text-slate-900 uppercase tracking-tight font-bold">
@@ -57,14 +57,14 @@ export default function CoreStrengths() {
           {STRENGTHS.map((item) => (
             <div
               key={item.index}
-              className="p-space-lg rounded bg-slate-50 border border-slate-200 hover:border-orange-600/60 shadow-sm hover:shadow-md transition-all duration-300 group flex flex-col justify-between"
+              className="p-space-lg rounded bg-slate-50 border border-slate-200 hover:border-steel-600/60 shadow-sm hover:shadow-md transition-all duration-300 group flex flex-col justify-between"
             >
               <div>
                 <div className="flex items-center justify-between border-b border-slate-200 pb-space-sm mb-space-md">
-                  <span className="text-label-technical text-orange-600 font-bold tracking-widest">
+                  <span className="text-label-technical text-steel-600 font-bold tracking-widest">
                     THẾ MẠNH // {item.index}
                   </span>
-                  <span className="material-symbols-outlined text-slate-400 group-hover:text-orange-600 transition-colors">
+                  <span className="material-symbols-outlined text-slate-400 group-hover:text-steel-600 transition-colors">
                     {item.icon}
                   </span>
                 </div>

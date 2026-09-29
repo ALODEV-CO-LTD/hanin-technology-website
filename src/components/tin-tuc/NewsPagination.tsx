@@ -17,7 +17,7 @@ export default function NewsPagination() {
           </button>
           <button
             type="button"
-            className="w-9 h-9 rounded-lg bg-orange-600 text-white text-title-md font-bold transition-all shadow-sm"
+            className="w-9 h-9 rounded-lg bg-steel-600 text-white text-title-md font-bold transition-all shadow-sm"
           >
             1
           </button>

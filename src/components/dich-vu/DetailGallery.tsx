@@ -27,7 +27,7 @@ export default function DetailGallery() {
     <section className="w-full mb-space-xl">
       <div className="flex items-center justify-between pb-space-sm mb-space-md flex-wrap gap-space-sm">
         <div>
-          <span className="text-orange-600 text-label-sm uppercase tracking-wider font-semibold block mb-1">
+          <span className="text-steel-600 text-label-sm uppercase tracking-wider font-semibold block mb-1">
             THỰC TẾ XƯỞNG SẢN XUẤT
           </span>
           <h2 className="text-headline-md text-slate-900 tracking-tight uppercase font-bold">

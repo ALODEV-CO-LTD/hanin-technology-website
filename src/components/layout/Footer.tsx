@@ -45,13 +45,13 @@ export default function Footer() {
           </div>
 
           <div className="lg:col-span-2 flex flex-col gap-space-sm">
-            <h3 className="text-label-technical uppercase tracking-widest text-orange-600 font-bold pb-space-xs border-b border-slate-200">
+            <h3 className="text-label-technical uppercase tracking-widest text-steel-600 font-bold pb-space-xs border-b border-slate-200">
               Doanh nghiệp
             </h3>
             <ul className="flex flex-col gap-space-xs text-body-sm">
               {COMPANY_LINKS.map((link) => (
                 <li key={link.label} className="py-0.5">
-                  <Link href={link.href} className="text-slate-600 hover:text-orange-600 transition-colors">
+                  <Link href={link.href} className="text-slate-600 hover:text-steel-600 transition-colors">
                     {link.label}
                   </Link>
                 </li>
@@ -60,13 +60,13 @@ export default function Footer() {
           </div>
 
           <div className="lg:col-span-3 flex flex-col gap-space-sm">
-            <h3 className="text-label-technical uppercase tracking-widest text-orange-600 font-bold pb-space-xs border-b border-slate-200">
+            <h3 className="text-label-technical uppercase tracking-widest text-steel-600 font-bold pb-space-xs border-b border-slate-200">
               Dịch vụ &amp; Sản phẩm
             </h3>
             <ul className="flex flex-col gap-space-xs text-body-sm">
               {SERVICE_LINKS.map((link) => (
                 <li key={link.label} className="py-0.5">
-                  <Link href={link.href} className="text-slate-600 hover:text-orange-600 transition-colors">
+                  <Link href={link.href} className="text-slate-600 hover:text-steel-600 transition-colors">
                     {link.label}
                   </Link>
                 </li>
@@ -75,7 +75,7 @@ export default function Footer() {
           </div>
 
           <div className="lg:col-span-3 flex flex-col gap-space-sm">
-            <h3 className="text-label-technical uppercase tracking-widest text-orange-600 font-bold pb-space-xs border-b border-slate-200">
+            <h3 className="text-label-technical uppercase tracking-widest text-steel-600 font-bold pb-space-xs border-b border-slate-200">
               Liên hệ kỹ thuật
             </h3>
             <div className="flex flex-col gap-space-xs text-body-sm text-slate-600">
@@ -115,11 +115,11 @@ export default function Footer() {
           </div>
           <p>© 2026 HANIN TECHNOLOGY VIỆT NAM. Tất cả quyền được bảo lưu. Chuẩn ISO 9001:2015.</p>
           <div className="flex items-center gap-space-md">
-            <a href="#" className="hover:text-orange-600 transition-colors">
+            <a href="#" className="hover:text-steel-600 transition-colors">
               Chính sách bảo mật
             </a>
             <span className="text-slate-300">|</span>
-            <a href="#" className="hover:text-orange-600 transition-colors">
+            <a href="#" className="hover:text-steel-600 transition-colors">
               Điều khoản dịch vụ
             </a>
           </div>

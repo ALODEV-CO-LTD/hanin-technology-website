@@ -4,10 +4,10 @@ export default function DetailHero() {
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
         {/* Cột trái: Nội dung kỹ thuật */}
         <div className="lg:col-span-7 flex flex-col justify-between bg-white border border-slate-200 p-space-lg rounded shadow-sm relative overflow-hidden">
-          <div className="absolute top-0 left-0 w-1.5 h-full bg-orange-600" />
+          <div className="absolute top-0 left-0 w-1.5 h-full bg-steel-600" />
           <div className="flex flex-col gap-space-sm">
             <div className="flex flex-wrap items-center gap-space-xs">
-              <span className="bg-orange-600 text-white text-label-sm px-2 py-0.5 rounded uppercase">
+              <span className="bg-steel-600 text-white text-label-sm px-2 py-0.5 rounded uppercase">
                 CHUYÊN ĐỀ DỊCH VỤ GIA CÔNG MẠ CHÍNH XÁC
               </span>
               <span className="bg-slate-100 text-slate-600 text-label-sm px-2 py-0.5 rounded">
@@ -16,7 +16,7 @@ export default function DetailHero() {
             </div>
             <h1 className="text-headline-lg text-slate-900 tracking-tight uppercase mt-space-xs font-bold">
               MẠ NIKEN HÓA HỌC KHÔNG DÙNG ĐIỆN
-              <span className="block text-orange-600 text-headline-md mt-1 font-bold">
+              <span className="block text-steel-600 text-headline-md mt-1 font-bold">
                 (ELECTROLESS NICKEL PLATING — ENP)
               </span>
             </h1>
@@ -30,7 +30,7 @@ export default function DetailHero() {
               <div className="flex flex-col">
                 <span className="text-label-sm text-slate-500 uppercase">HÀM LƯỢNG PHOS</span>
                 <span className="text-title-md text-slate-900 font-bold">6-9% // &gt;10.5%</span>
-                <span className="text-label-sm text-orange-600">Medium / High Phos</span>
+                <span className="text-label-sm text-steel-600">Medium / High Phos</span>
               </div>
               <div className="flex flex-col">
                 <span className="text-label-sm text-slate-500 uppercase">ĐỘ CỨNG SAU NHIỆT</span>
@@ -44,7 +44,7 @@ export default function DetailHero() {
               </div>
               <div className="flex flex-col">
                 <span className="text-label-sm text-slate-500 uppercase">DUNG SAI CHIỀU DÀY</span>
-                <span className="text-title-md text-orange-600 font-bold">±1.0 µm</span>
+                <span className="text-title-md text-steel-600 font-bold">±1.0 µm</span>
                 <span className="text-label-sm text-slate-500">Calibrated XRF</span>
               </div>
             </div>
@@ -53,7 +53,7 @@ export default function DetailHero() {
           <div className="flex flex-wrap items-center gap-space-sm pt-space-sm mt-space-sm">
             <a
               href="#rfq-form"
-              className="inline-flex items-center gap-space-xs bg-orange-600 hover:bg-orange-700 text-white px-space-md py-3 rounded text-label-technical uppercase tracking-wider shadow-sm transition-all"
+              className="inline-flex items-center gap-space-xs bg-steel-600 hover:bg-steel-700 text-white px-space-md py-3 rounded text-label-technical uppercase tracking-wider shadow-sm transition-all"
             >
               <span>YÊU CẦU BÁO GIÁ KỸ THUẬT (RFQ)</span>
               <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
@@ -66,7 +66,7 @@ export default function DetailHero() {
               <span>TẢI SPEC SHEET PDF (AMS 2404)</span>
             </button>
             <div className="flex items-center gap-1.5 ml-auto text-slate-500 text-label-sm">
-              <span className="material-symbols-outlined text-orange-600 text-[18px]">verified</span>
+              <span className="material-symbols-outlined text-steel-600 text-[18px]">verified</span>
               <span>KIỂM TRA CHỨNG CHỈ LÔ HÀNG 100%</span>
             </div>
           </div>
@@ -83,7 +83,7 @@ export default function DetailHero() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-slate-900/85 via-transparent to-transparent" />
             <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-md px-space-sm py-1 rounded text-slate-900 text-label-sm shadow-sm flex items-center gap-1">
-              <span className="material-symbols-outlined text-orange-600 text-[16px]">biotech</span>
+              <span className="material-symbols-outlined text-steel-600 text-[16px]">biotech</span>
               <span>QUANG PHỔ TIA X (XRF): 8.5 µm ± 0.4</span>
             </div>
             <div className="absolute bottom-4 left-4 right-4 text-white">

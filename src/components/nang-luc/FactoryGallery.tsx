@@ -31,7 +31,7 @@ export default function FactoryGallery() {
       <div className="max-w-[1280px] mx-auto px-margin w-full">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-xl">
           <div>
-            <span className="text-label-technical text-orange-600 font-semibold tracking-widest uppercase block mb-1">
+            <span className="text-label-technical text-steel-600 font-semibold tracking-widest uppercase block mb-1">
               PHOTO DOCUMENTATION
             </span>
             <h2 className="text-headline-lg text-slate-900 uppercase tracking-tight">
@@ -57,7 +57,7 @@ export default function FactoryGallery() {
             <span className="px-space-sm py-1 bg-white/95 backdrop-blur rounded text-label-technical text-slate-900 font-semibold uppercase shadow-sm">
               AUTOMATED PLATING CORRIDOR // KHU VỰC VẬN HÀNH TRUNG TÂM
             </span>
-            <span className="hidden sm:inline-block text-label-technical text-orange-400 font-semibold">
+            <span className="hidden sm:inline-block text-label-technical text-steel-400 font-semibold">
               HANIN TECH INDUSTRIAL CAMPUS
             </span>
           </div>

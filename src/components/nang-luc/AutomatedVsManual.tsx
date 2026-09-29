@@ -3,7 +3,7 @@ export default function AutomatedVsManual() {
     <section className="w-full py-space-xl bg-slate-50 border-t border-slate-200">
       <div className="max-w-[1280px] mx-auto px-margin w-full">
         <div className="mb-space-xl text-center max-w-2xl mx-auto">
-          <span className="text-label-technical text-orange-600 font-semibold tracking-widest uppercase block mb-1">
+          <span className="text-label-technical text-steel-600 font-semibold tracking-widest uppercase block mb-1">
             OPERATIONAL METHODOLOGY
           </span>
           <h2 className="text-headline-lg text-slate-900 uppercase tracking-tight">
@@ -26,7 +26,7 @@ export default function AutomatedVsManual() {
                   alt="Dây chuyền mạ tự động với màn hình điều khiển PLC SCADA và cẩu trục robot di chuyển chi tiết cơ khí vào bể xử lý hóa chất (ảnh minh họa, sẽ thay bằng ảnh thực tế)"
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVT-9zhcvu2BzRYn6t-Ha5sPn3PYQhlp4Kp1gsR7rcI0QQZJ4BT7zXXiCl6oNStYgNE9VZcacy23mGZoyLIb5j6MrPBvgLvcU2PqW18U0VAJ9MVOnhnxD880RoaWYp1CKf61l4ho0f9GeQuTAeDjnHSf-GpovsTk-cIxB8gY4qNwL2_qFfP6M8aNPO1daRz4JpjvUgA2hbi-WYzB6t-WRHPEFGP5CmKlbQWSCLcJWkFJu_8_gutmHO9w"
                 />
-                <div className="absolute top-2 left-2 px-space-xs py-0.5 bg-white/90 backdrop-blur border border-slate-200 rounded text-label-technical text-orange-600 font-semibold shadow-sm">
+                <div className="absolute top-2 left-2 px-space-xs py-0.5 bg-white/90 backdrop-blur border border-slate-200 rounded text-label-technical text-steel-600 font-semibold shadow-sm">
                   SYSTEM: SCADA AUTOMATED
                 </div>
               </div>
@@ -41,15 +41,15 @@ export default function AutomatedVsManual() {
             </div>
             <div className="space-y-space-xs bg-slate-50 border border-slate-200 p-space-md rounded text-label-technical text-slate-700">
               <div className="flex items-center gap-2">
-                <span className="text-orange-600 material-symbols-outlined text-[16px]">check_circle</span>
+                <span className="text-steel-600 material-symbols-outlined text-[16px]">check_circle</span>
                 <span>Kiểm soát tự động qua PLC &amp; SCADA đồng bộ</span>
               </div>
               <div className="flex items-center gap-2">
-                <span className="text-orange-600 material-symbols-outlined text-[16px]">check_circle</span>
+                <span className="text-steel-600 material-symbols-outlined text-[16px]">check_circle</span>
                 <span>Đồng đều 100% độ dày trên từng mẻ gia công</span>
               </div>
               <div className="flex items-center gap-2">
-                <span className="text-orange-600 material-symbols-outlined text-[16px]">check_circle</span>
+                <span className="text-steel-600 material-symbols-outlined text-[16px]">check_circle</span>
                 <span>Tối ưu chu kỳ sản xuất &amp; loại bỏ hoàn toàn sai số thao tác</span>
               </div>
             </div>

@@ -29,8 +29,8 @@ export default function CompanyJourney() {
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-xl">
           <div>
-            <div className="flex items-center gap-space-xs text-label-technical tracking-widest text-orange-600 uppercase mb-space-xs font-bold">
-              <span className="w-2 h-0.5 bg-orange-600" />
+            <div className="flex items-center gap-space-xs text-label-technical tracking-widest text-steel-600 uppercase mb-space-xs font-bold">
+              <span className="w-2 h-0.5 bg-steel-600" />
               LỊCH SỬ PHÁT TRIỂN
             </div>
             <h2 className="text-headline-lg md:text-headline-xl text-slate-900 uppercase tracking-tight font-bold">
@@ -46,7 +46,7 @@ export default function CompanyJourney() {
         <div className="relative pt-6">
           {/* Connecting Technical Ruler Line */}
           <div className="hidden lg:block absolute top-10 left-6 right-6 h-px bg-slate-200">
-            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-orange-600/30 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-steel-600/30 to-transparent" />
           </div>
 
           {/* 4 Milestone Cards */}
@@ -54,10 +54,10 @@ export default function CompanyJourney() {
             {MILESTONES.map((item) => (
               <div
                 key={item.index}
-                className="relative flex flex-col p-space-md rounded bg-white border border-slate-200 hover:border-orange-600/60 shadow-sm hover:shadow-md transition-all duration-300 group"
+                className="relative flex flex-col p-space-md rounded bg-white border border-slate-200 hover:border-steel-600/60 shadow-sm hover:shadow-md transition-all duration-300 group"
               >
                 <div className="flex items-center justify-between mb-space-sm">
-                  <span className="w-8 h-8 rounded bg-slate-100 border border-slate-200 flex items-center justify-center text-label-technical text-orange-600 font-bold group-hover:bg-orange-600 group-hover:text-white transition-colors">
+                  <span className="w-8 h-8 rounded bg-slate-100 border border-slate-200 flex items-center justify-center text-label-technical text-steel-600 font-bold group-hover:bg-steel-600 group-hover:text-white transition-colors">
                     {item.index}
                   </span>
                   <span className="text-[11px] uppercase tracking-wider text-slate-600 px-2 py-0.5 bg-slate-100 rounded border border-slate-200">
@@ -65,7 +65,7 @@ export default function CompanyJourney() {
                   </span>
                 </div>
                 <div className="text-xs font-mono text-slate-400 mb-2">{item.phase}</div>
-                <h3 className="text-title-md text-slate-900 font-semibold mb-2 group-hover:text-orange-600 transition-colors">
+                <h3 className="text-title-md text-slate-900 font-semibold mb-2 group-hover:text-steel-600 transition-colors">
                   {item.title}
                 </h3>
                 <p className="text-body-sm text-slate-600 leading-relaxed">{item.desc}</p>

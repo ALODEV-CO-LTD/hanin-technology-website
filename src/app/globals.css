@@ -1,6 +1,19 @@
 @import "tailwindcss";
 
 @theme {
+  /* ---- Steel blue accent (thay cho cam) — xanh thép + bạc + trắng ---- */
+  --color-steel-50: #eef4f8;
+  --color-steel-100: #dbe8f0;
+  --color-steel-200: #b7d1e2;
+  --color-steel-300: #8bb3cd;
+  --color-steel-400: #5c8fb0;
+  --color-steel-500: #3d7194;
+  --color-steel-600: #2b5a7a;
+  --color-steel-700: #234862;
+  --color-steel-800: #1c3a4f;
+  --color-steel-900: #172f40;
+  --color-steel-950: #0d1e2b;
+
   /* ---- Spacing scale ---- */
   --spacing-space-xs: 0.25rem;
   --spacing-space-sm: 0.5rem;

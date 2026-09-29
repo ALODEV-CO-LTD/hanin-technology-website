@@ -20,8 +20,8 @@ export default function FeaturedProjectSpotlight() {
               <div className="px-space-sm py-space-xs bg-white/90 border border-slate-200 backdrop-blur-md rounded text-label-technical text-sky-700 font-bold shadow-sm">
                 {project.imageBadge}
               </div>
-              <div className="px-space-sm py-space-xs bg-white/90 border border-slate-200 backdrop-blur-md rounded text-label-technical text-orange-600 flex items-center gap-1.5 font-bold shadow-sm">
-                <span className="w-1.5 h-1.5 rounded-full bg-orange-600 animate-ping" /> NHIỆT ĐỘ BỂ
+              <div className="px-space-sm py-space-xs bg-white/90 border border-slate-200 backdrop-blur-md rounded text-label-technical text-steel-600 flex items-center gap-1.5 font-bold shadow-sm">
+                <span className="w-1.5 h-1.5 rounded-full bg-steel-600 animate-ping" /> NHIỆT ĐỘ BỂ
                 MẠ: 58.4°C
               </div>
             </div>
@@ -32,7 +32,7 @@ export default function FeaturedProjectSpotlight() {
           </div>
           <div className="lg:col-span-5 p-space-lg lg:p-space-xl flex flex-col gap-space-md">
             <div className="flex flex-col gap-space-xs">
-              <span className="text-label-technical text-orange-600 uppercase tracking-wider font-bold">
+              <span className="text-label-technical text-steel-600 uppercase tracking-wider font-bold">
                 DỰ ÁN ĐIỂN HÌNH &amp; ĐIỂM SÁNG KỸ THUẬT
               </span>
               <h2 className="text-headline-lg text-slate-900 uppercase leading-snug font-bold">
@@ -56,7 +56,7 @@ export default function FeaturedProjectSpotlight() {
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-space-sm pt-space-sm">
               <Link
                 href={`/san-pham-du-an/${project.slug}`}
-                className="inline-flex items-center justify-center px-space-md py-space-sm bg-orange-600 text-white text-label-technical uppercase tracking-wider rounded hover:bg-orange-700 active:scale-95 transition-all shadow-md font-bold"
+                className="inline-flex items-center justify-center px-space-md py-space-sm bg-steel-600 text-white text-label-technical uppercase tracking-wider rounded hover:bg-steel-700 active:scale-95 transition-all shadow-md font-bold"
               >
                 XEM CHI TIẾT DỰ ÁN NÀY →
               </Link>

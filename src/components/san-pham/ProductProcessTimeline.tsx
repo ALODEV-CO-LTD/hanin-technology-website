@@ -7,7 +7,7 @@ export default function ProductProcessTimeline() {
     <section className="w-full bg-slate-50 py-space-xl border-b border-slate-200">
       <div className="max-w-7xl mx-auto px-6">
         <div className="mb-space-lg">
-          <span className="text-label-technical text-orange-600 uppercase tracking-widest block mb-1">
+          <span className="text-label-technical text-steel-600 uppercase tracking-widest block mb-1">
             FLOW &amp; CONTROL ARCHITECTURE
           </span>
           <h2 className="text-headline-lg text-slate-900 uppercase tracking-tight">
@@ -22,18 +22,18 @@ export default function ProductProcessTimeline() {
           {process.map((item, index) => (
             <div
               key={item.step}
-              className="p-space-md bg-white border border-slate-200 rounded flex flex-col justify-between gap-space-md relative group hover:border-orange-600 hover:shadow-md transition-all shadow-sm"
+              className="p-space-md bg-white border border-slate-200 rounded flex flex-col justify-between gap-space-md relative group hover:border-steel-600 hover:shadow-md transition-all shadow-sm"
             >
               <div className="flex flex-col gap-space-sm">
                 <div className="flex items-center justify-between">
-                  <span className="text-headline-lg text-orange-600 font-mono font-bold leading-none">
+                  <span className="text-headline-lg text-steel-600 font-mono font-bold leading-none">
                     {item.step}
                   </span>
                   <span
                     className={
                       index === process.length - 1
                         ? "w-3 h-3 rounded-full bg-emerald-500"
-                        : "w-3 h-3 rounded-full bg-orange-600"
+                        : "w-3 h-3 rounded-full bg-steel-600"
                     }
                   />
                 </div>

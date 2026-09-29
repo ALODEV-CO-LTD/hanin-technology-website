@@ -29,7 +29,7 @@ export default function QualityCertification() {
     <section className="w-full py-space-xl bg-white border-y border-slate-200">
       <div className="max-w-[1280px] mx-auto px-margin flex flex-col gap-space-xl">
         <div className="flex flex-col items-center text-center gap-2 max-w-2xl mx-auto">
-          <span className="text-label-technical uppercase tracking-[0.2em] text-orange-600 font-bold">
+          <span className="text-label-technical uppercase tracking-[0.2em] text-steel-600 font-bold">
             CHẤT LƯỢNG &amp; CHỨNG NHẬN
           </span>
           <h2 className="text-headline-xl text-slate-900 font-bold">
@@ -45,13 +45,13 @@ export default function QualityCertification() {
           {CERTS.map((cert) => (
             <div
               key={cert.title}
-              className="p-space-lg bg-slate-50 border border-slate-200 rounded shadow-sm flex flex-col gap-space-md relative overflow-hidden group hover:border-orange-300 hover:bg-white hover:shadow-md transition-all"
+              className="p-space-lg bg-slate-50 border border-slate-200 rounded shadow-sm flex flex-col gap-space-md relative overflow-hidden group hover:border-steel-300 hover:bg-white hover:shadow-md transition-all"
             >
-              <div className="w-12 h-12 rounded bg-orange-100 flex items-center justify-center text-orange-600 font-bold shadow-sm">
+              <div className="w-12 h-12 rounded bg-steel-100 flex items-center justify-center text-steel-600 font-bold shadow-sm">
                 <span className="material-symbols-outlined text-[26px]">{cert.icon}</span>
               </div>
               <div className="flex flex-col gap-1.5">
-                <span className="text-headline-md text-orange-600 font-bold">{cert.label}</span>
+                <span className="text-headline-md text-steel-600 font-bold">{cert.label}</span>
                 <h3 className="text-title-md text-slate-900 font-semibold">{cert.title}</h3>
                 <p className="text-body-sm text-slate-600 leading-relaxed">{cert.desc}</p>
               </div>

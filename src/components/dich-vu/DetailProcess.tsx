@@ -55,7 +55,7 @@ export default function DetailProcess() {
       <div className="bg-white border border-slate-200 p-space-lg rounded shadow-sm">
         <div className="flex items-center justify-between pb-space-sm mb-space-lg flex-wrap gap-space-sm">
           <div>
-            <span className="text-orange-600 text-label-sm uppercase tracking-wider font-semibold block mb-1">
+            <span className="text-steel-600 text-label-sm uppercase tracking-wider font-semibold block mb-1">
               TIÊU CHUẨN KIỂM SOÁT QUY TRÌNH KỸ THUẬT
             </span>
             <h2 className="text-headline-md text-slate-900 tracking-tight uppercase font-bold">
@@ -72,10 +72,10 @@ export default function DetailProcess() {
             <div
               key={step.index}
               className={`flex flex-col p-space-sm rounded ${
-                step.highlight ? "bg-orange-50 border border-orange-100" : "bg-slate-50 border border-slate-200"
+                step.highlight ? "bg-steel-50 border border-steel-100" : "bg-slate-50 border border-slate-200"
               }`}
             >
-              <div className="flex items-center justify-between text-orange-600 text-title-md mb-2">
+              <div className="flex items-center justify-between text-steel-600 text-title-md mb-2">
                 <span className="font-bold">{step.index}</span>
                 <span className="material-symbols-outlined text-[20px]">{step.icon}</span>
               </div>
@@ -83,7 +83,7 @@ export default function DetailProcess() {
               <p className="text-body-md text-slate-600">{step.desc}</p>
               <div
                 className={`mt-auto pt-space-xs text-label-sm ${
-                  step.highlight ? "text-orange-600 font-semibold" : "text-slate-500"
+                  step.highlight ? "text-steel-600 font-semibold" : "text-slate-500"
                 }`}
               >
                 {step.note}

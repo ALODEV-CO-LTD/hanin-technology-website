@@ -19,7 +19,7 @@ const VOLUME_OPTIONS = [
 ];
 
 const inputClass =
-  "w-full h-11 px-3.5 bg-slate-50 border border-slate-200 rounded text-slate-900 text-body-md focus:bg-white focus:outline-none focus:ring-2 focus:ring-orange-600 shadow-sm placeholder:text-slate-400";
+  "w-full h-11 px-3.5 bg-slate-50 border border-slate-200 rounded text-slate-900 text-body-md focus:bg-white focus:outline-none focus:ring-2 focus:ring-steel-600 shadow-sm placeholder:text-slate-400";
 
 type SubmitStatus = "idle" | "submitting" | "success" | "error";
 
@@ -99,7 +99,7 @@ export default function RfqForm() {
           <div className="bg-slate-900 text-white px-space-xl py-space-lg flex flex-col md:flex-row md:items-center justify-between gap-space-md">
             <div>
               <div className="flex items-center gap-2 mb-1">
-                <span className="px-2 py-0.5 bg-orange-600 text-white text-label-sm rounded font-semibold">
+                <span className="px-2 py-0.5 bg-steel-600 text-white text-label-sm rounded font-semibold">
                   FORM CHUYÊN DỤNG
                 </span>
                 <span className="text-slate-300 text-label-sm uppercase">
@@ -111,7 +111,7 @@ export default function RfqForm() {
               </h2>
             </div>
             <div className="flex items-center gap-2 text-slate-300 text-label-sm bg-slate-800 px-3 py-1.5 rounded">
-              <span className="material-symbols-outlined text-orange-500 text-[18px]">lock</span>
+              <span className="material-symbols-outlined text-steel-500 text-[18px]">lock</span>
               <span>Chuẩn bảo mật SSL 256-bit // NDA Protected</span>
             </div>
           </div>
@@ -180,7 +180,7 @@ export default function RfqForm() {
             {/* Step 1: Corporate & contact info */}
             <div>
               <div className="flex items-center gap-3 mb-space-lg bg-slate-50 px-space-md py-space-sm rounded">
-                <span className="w-6 h-6 rounded bg-orange-600 text-white font-bold flex items-center justify-center text-label-sm">
+                <span className="w-6 h-6 rounded bg-steel-600 text-white font-bold flex items-center justify-center text-label-sm">
                   01
                 </span>
                 <span className="text-title-md font-bold text-slate-900 uppercase tracking-wider">
@@ -190,7 +190,7 @@ export default function RfqForm() {
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
                 <div className="flex flex-col gap-1.5">
                   <label className="text-label-md text-slate-900 font-semibold" htmlFor="fullName">
-                    Họ và tên người liên hệ <span className="text-orange-600">*</span>
+                    Họ và tên người liên hệ <span className="text-steel-600">*</span>
                   </label>
                   <input
                     id="fullName"
@@ -204,7 +204,7 @@ export default function RfqForm() {
                 </div>
                 <div className="flex flex-col gap-1.5">
                   <label className="text-label-md text-slate-900 font-semibold" htmlFor="company">
-                    Tên công ty / Doanh nghiệp <span className="text-orange-600">*</span>
+                    Tên công ty / Doanh nghiệp <span className="text-steel-600">*</span>
                   </label>
                   <input
                     id="company"
@@ -218,7 +218,7 @@ export default function RfqForm() {
                 </div>
                 <div className="flex flex-col gap-1.5">
                   <label className="text-label-md text-slate-900 font-semibold" htmlFor="email">
-                    Email công vụ / Nhận báo giá <span className="text-orange-600">*</span>
+                    Email công vụ / Nhận báo giá <span className="text-steel-600">*</span>
                   </label>
                   <input
                     id="email"
@@ -232,7 +232,7 @@ export default function RfqForm() {
                 </div>
                 <div className="flex flex-col gap-1.5">
                   <label className="text-label-md text-slate-900 font-semibold" htmlFor="phone">
-                    Số điện thoại di động / Zalo <span className="text-orange-600">*</span>
+                    Số điện thoại di động / Zalo <span className="text-steel-600">*</span>
                   </label>
                   <input
                     id="phone"
@@ -250,7 +250,7 @@ export default function RfqForm() {
             {/* Step 2: Technical specifications */}
             <div>
               <div className="flex items-center gap-3 mb-space-lg bg-slate-50 px-space-md py-space-sm rounded">
-                <span className="w-6 h-6 rounded bg-orange-600 text-white font-bold flex items-center justify-center text-label-sm">
+                <span className="w-6 h-6 rounded bg-steel-600 text-white font-bold flex items-center justify-center text-label-sm">
                   02
                 </span>
                 <span className="text-title-md font-bold text-slate-900 uppercase tracking-wider">
@@ -273,7 +273,7 @@ export default function RfqForm() {
                 </div>
                 <div className="flex flex-col gap-1.5">
                   <label className="text-label-md text-slate-900 font-semibold" htmlFor="platingService">
-                    Dịch vụ xi mạ quan tâm <span className="text-orange-600">*</span>
+                    Dịch vụ xi mạ quan tâm <span className="text-steel-600">*</span>
                   </label>
                   <select
                     id="platingService"
@@ -319,7 +319,7 @@ export default function RfqForm() {
                 </label>
                 <textarea
                   id="description"
-                  className="w-full p-3.5 bg-slate-50 border border-slate-200 rounded text-slate-900 text-body-md focus:bg-white focus:outline-none focus:ring-2 focus:ring-orange-600 shadow-sm placeholder:text-slate-400"
+                  className="w-full p-3.5 bg-slate-50 border border-slate-200 rounded text-slate-900 text-body-md focus:bg-white focus:outline-none focus:ring-2 focus:ring-steel-600 shadow-sm placeholder:text-slate-400"
                   placeholder="Ví dụ: Vật liệu nền Thép S45C; Lớp mạ Crom cứng dày 30-40 µm; Độ cứng yêu cầu ≥ 850 HV; Yêu cầu thử phun sương muối ASTM B117 đạt 96 giờ không rỉ sét; Địa điểm giao hàng: Bắc Ninh..."
                   rows={4}
                   value={form.description}
@@ -331,7 +331,7 @@ export default function RfqForm() {
             {/* Step 3: CAD file upload */}
             <div>
               <div className="flex items-center gap-3 mb-space-lg bg-slate-50 px-space-md py-space-sm rounded">
-                <span className="w-6 h-6 rounded bg-orange-600 text-white font-bold flex items-center justify-center text-label-sm">
+                <span className="w-6 h-6 rounded bg-steel-600 text-white font-bold flex items-center justify-center text-label-sm">
                   03
                 </span>
                 <span className="text-title-md font-bold text-slate-900 uppercase tracking-wider">
@@ -347,7 +347,7 @@ export default function RfqForm() {
                   onChange={handleFileChange}
                 />
                 <div className="flex flex-col items-center justify-center gap-space-sm pointer-events-none">
-                  <div className="w-14 h-14 rounded-full bg-white text-orange-600 flex items-center justify-center shadow-sm group-hover:scale-105 transition-transform">
+                  <div className="w-14 h-14 rounded-full bg-white text-steel-600 flex items-center justify-center shadow-sm group-hover:scale-105 transition-transform">
                     <span className="material-symbols-outlined text-[32px]">cloud_upload</span>
                   </div>
                   <div>
@@ -377,13 +377,13 @@ export default function RfqForm() {
               </div>
               <div className="mt-space-sm flex items-center justify-between p-space-sm bg-slate-50 rounded text-slate-500 text-label-md">
                 <div className="flex items-center gap-2">
-                  <span className="material-symbols-outlined text-orange-600 text-[18px]">
+                  <span className="material-symbols-outlined text-steel-600 text-[18px]">
                     attach_file
                   </span>
                   <span>
                     {files.length > 0 ? (
                       <>
-                        <span className="text-orange-600 font-semibold">
+                        <span className="text-steel-600 font-semibold">
                           Đã chọn {files.length} tập tin:
                         </span>{" "}
                         {files
@@ -405,7 +405,7 @@ export default function RfqForm() {
             <div className="bg-slate-50 p-space-lg rounded flex flex-col md:flex-row items-center justify-between gap-space-lg">
               <div className="flex items-start gap-3">
                 <input
-                  className="mt-1 w-4 h-4 rounded text-orange-600 focus:ring-orange-600 cursor-pointer"
+                  className="mt-1 w-4 h-4 rounded text-steel-600 focus:ring-steel-600 cursor-pointer"
                   id="nda-checkbox"
                   required
                   type="checkbox"
@@ -424,7 +424,7 @@ export default function RfqForm() {
                 </label>
               </div>
               <button
-                className="w-full md:w-auto shrink-0 px-space-xl py-space-md bg-orange-600 hover:bg-orange-700 text-white text-title-md uppercase tracking-wider rounded font-bold shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-3 active:translate-y-px disabled:opacity-60"
+                className="w-full md:w-auto shrink-0 px-space-xl py-space-md bg-steel-600 hover:bg-steel-700 text-white text-title-md uppercase tracking-wider rounded font-bold shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-3 active:translate-y-px disabled:opacity-60"
                 id="submit-btn"
                 type="submit"
                 disabled={status === "submitting"}

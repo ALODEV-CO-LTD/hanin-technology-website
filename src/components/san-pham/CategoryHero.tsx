@@ -15,7 +15,7 @@ export default function CategoryHero() {
           <div className="flex flex-wrap items-center gap-space-sm text-label-technical tracking-widest uppercase">
             <span className="text-slate-500 font-medium">Trang chủ</span>
             <span className="text-slate-400">/</span>
-            <span className="text-orange-600 font-bold">Sản phẩm &amp; Dự án</span>
+            <span className="text-steel-600 font-bold">Sản phẩm &amp; Dự án</span>
             <span className="text-slate-400">{"//"}</span>
             <span className="text-slate-500">
               DANH MỤC DỰ ÁN &amp; CHI TIẾT GIA CÔNG // TIÊU CHUẨN: B2B_METALLIC
@@ -37,7 +37,7 @@ export default function CategoryHero() {
             </span>
           </div>
           <div className="inline-flex items-center gap-space-sm px-space-md py-space-xs bg-white border border-slate-200 rounded shadow-sm">
-            <span className="material-symbols-outlined text-orange-600 text-[16px]">verified</span>
+            <span className="material-symbols-outlined text-steel-600 text-[16px]">verified</span>
             <span className="text-label-technical text-slate-900 uppercase tracking-wider font-semibold">
               TỶ LỆ ĐẠT CHẤT LƯỢNG: 99.8%
             </span>

@@ -49,7 +49,7 @@ export default function QualityMetrology() {
       <div className="bg-slate-50 border border-slate-200 rounded p-space-md lg:p-space-xl">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center">
           <div className="lg:col-span-5">
-            <span className="text-label-sm text-orange-600 uppercase font-bold tracking-wider">
+            <span className="text-label-sm text-steel-600 uppercase font-bold tracking-wider">
               HỆ THỐNG ĐO LƯỜNG VÀ KIỂM SOÁT
             </span>
             <h2 className="text-headline-sm md:text-headline-lg text-slate-900 uppercase font-bold mb-space-sm">
@@ -62,7 +62,7 @@ export default function QualityMetrology() {
             <div className="flex flex-col gap-space-sm">
               {LAB_ITEMS.map((item) => (
                 <div key={item.title} className="flex items-start gap-space-sm bg-white border border-slate-200 p-space-sm rounded shadow-sm">
-                  <span className="material-symbols-outlined text-orange-600 text-[24px]">{item.icon}</span>
+                  <span className="material-symbols-outlined text-steel-600 text-[24px]">{item.icon}</span>
                   <div>
                     <span className="text-title-md text-slate-900 font-bold block">{item.title}</span>
                     <p className="text-body-md text-slate-600">{item.desc}</p>
@@ -95,7 +95,7 @@ export default function QualityMetrology() {
                       <tr key={row.method} className="hover:bg-slate-50/50">
                         <td className="py-2.5 px-3 font-medium text-slate-900">{row.method}</td>
                         <td className="py-2.5 px-3 text-slate-500">{row.standard}</td>
-                        <td className="py-2.5 px-3 text-orange-600 font-bold">{row.criteria}</td>
+                        <td className="py-2.5 px-3 text-steel-600 font-bold">{row.criteria}</td>
                         <td className="py-2.5 px-3 text-slate-500">{row.frequency}</td>
                       </tr>
                     ))}

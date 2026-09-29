@@ -10,31 +10,31 @@ export default function PageHero() {
           backgroundSize: "24px 24px",
         }}
       />
-      <div className="absolute -right-24 -top-24 w-96 h-96 rounded-full bg-orange-600/5 blur-3xl pointer-events-none" />
+      <div className="absolute -right-24 -top-24 w-96 h-96 rounded-full bg-steel-600/5 blur-3xl pointer-events-none" />
 
       <div className="max-w-[1280px] mx-auto px-margin pt-space-xl pb-space-xl relative z-10">
         <div className="flex flex-wrap items-center justify-between gap-space-sm pb-space-lg">
           <div className="flex items-center gap-2 text-label-technical text-slate-500 tracking-wider uppercase">
-            <Link className="hover:text-orange-600 transition-colors" href="/">
+            <Link className="hover:text-steel-600 transition-colors" href="/">
               Trang chủ
             </Link>
             <span className="text-slate-300">/</span>
-            <span className="text-orange-600 font-bold">Tuyển dụng</span>
+            <span className="text-steel-600 font-bold">Tuyển dụng</span>
           </div>
           <div className="inline-flex items-center gap-2 px-space-sm py-1 rounded bg-white shadow-sm text-slate-500 text-label-sm font-semibold tracking-widest uppercase">
-            <span className="w-2 h-2 rounded-full bg-orange-600 animate-pulse" />
+            <span className="w-2 h-2 rounded-full bg-steel-600 animate-pulse" />
             <span>PORTAL: TALENT &amp; CAREERS // STATUS: ACTIVE RECRUITMENT</span>
           </div>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center pt-space-sm">
           <div className="lg:col-span-7 flex flex-col gap-space-md">
-            <div className="inline-flex items-center gap-2 text-orange-600 text-label-technical tracking-widest uppercase">
+            <div className="inline-flex items-center gap-2 text-steel-600 text-label-technical tracking-widest uppercase">
               <span className="material-symbols-outlined text-[16px]">precision_manufacturing</span>
               <span>CAREERS // HANIN TECHNOLOGY</span>
             </div>
             <h1 className="text-display-hero-mobile md:text-display-hero text-slate-900 tracking-tight uppercase font-bold">
-              CƠ HỘI <span className="text-orange-600">NGHỀ NGHIỆP</span>
+              CƠ HỘI <span className="text-steel-600">NGHỀ NGHIỆP</span>
             </h1>
             <p className="text-body-lg text-slate-600 max-w-2xl leading-relaxed">
               Gia nhập <strong className="text-slate-900 font-semibold">HANIN TECHNOLOGY VIỆT NAM</strong> — Nơi kỹ
@@ -73,19 +73,19 @@ export default function PageHero() {
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent" />
               <div className="absolute bottom-space-md left-space-md right-space-md flex items-center justify-between gap-space-sm text-white">
                 <div className="flex flex-col">
-                  <span className="text-label-sm text-orange-300 uppercase tracking-wider">
+                  <span className="text-label-sm text-steel-300 uppercase tracking-wider">
                     DÂY CHUYỀN TỰ ĐỘNG
                   </span>
                   <span className="text-title-md">Tổ hợp sản xuất &amp; mạ kỹ thuật cao</span>
                 </div>
-                <span className="px-2 py-1 rounded bg-orange-600 text-white text-label-sm uppercase tracking-widest font-bold shrink-0">
+                <span className="px-2 py-1 rounded bg-steel-600 text-white text-label-sm uppercase tracking-widest font-bold shrink-0">
                   HI-TECH LAB
                 </span>
               </div>
             </div>
 
             <div className="absolute -bottom-6 -left-6 hidden sm:flex items-center gap-space-sm px-space-md py-space-sm bg-white rounded shadow-lg">
-              <div className="w-10 h-10 rounded bg-orange-100 flex items-center justify-center text-orange-600 shrink-0">
+              <div className="w-10 h-10 rounded bg-steel-100 flex items-center justify-center text-steel-600 shrink-0">
                 <span className="material-symbols-outlined text-[24px]">verified</span>
               </div>
               <div className="flex flex-col">

@@ -6,7 +6,7 @@ export default function ServiceCategories() {
     <section className="w-full mb-space-xl">
       <div className="flex items-center justify-between mb-space-md">
         <div>
-          <span className="text-label-sm text-orange-600 uppercase font-bold tracking-wider">
+          <span className="text-label-sm text-steel-600 uppercase font-bold tracking-wider">
             DANH MỤC DỊCH VỤ CHI TIẾT
           </span>
           <h2 className="text-headline-sm md:text-headline-lg text-slate-900 uppercase font-bold">
@@ -48,10 +48,10 @@ export default function ServiceCategories() {
                 <p className="text-body-md text-slate-800 font-medium">{service.applicationText}</p>
               </div>
               <div className="flex items-center justify-between pt-2">
-                <span className="text-label-sm text-orange-600 font-bold">{service.statLabel}</span>
+                <span className="text-label-sm text-steel-600 font-bold">{service.statLabel}</span>
                 <Link
                   href={`/dich-vu-gia-cong-ma/${service.slug}`}
-                  className="text-orange-600 text-label-technical font-bold uppercase inline-flex items-center gap-1 hover:underline"
+                  className="text-steel-600 text-label-technical font-bold uppercase inline-flex items-center gap-1 hover:underline"
                 >
                   Chi tiết <span className="material-symbols-outlined text-[14px]">arrow_forward</span>
                 </Link>

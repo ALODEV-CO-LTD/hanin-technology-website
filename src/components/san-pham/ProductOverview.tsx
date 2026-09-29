@@ -7,7 +7,7 @@ export default function ProductOverview() {
     <section className="w-full bg-white py-space-xl border-b border-slate-200">
       <div className="max-w-7xl mx-auto px-6">
         <div className="mb-space-lg">
-          <span className="text-label-technical text-orange-600 uppercase tracking-widest block mb-1">
+          <span className="text-label-technical text-steel-600 uppercase tracking-widest block mb-1">
             METALLURGICAL RIGOR // SPECIFICATIONS
           </span>
           <h2 className="text-headline-lg text-slate-900 uppercase tracking-tight">
@@ -27,7 +27,7 @@ export default function ProductOverview() {
                   key={item.title}
                   className="flex items-start gap-space-sm p-space-sm bg-slate-50 border border-slate-200 rounded"
                 >
-                  <span className="material-symbols-outlined text-orange-600 text-[20px] shrink-0 mt-0.5">
+                  <span className="material-symbols-outlined text-steel-600 text-[20px] shrink-0 mt-0.5">
                     check_circle
                   </span>
                   <div className="flex flex-col">
@@ -42,7 +42,7 @@ export default function ProductOverview() {
           <div className="lg:col-span-5 flex flex-col bg-white border border-slate-200 rounded overflow-hidden shadow-sm">
             <div className="p-space-sm bg-slate-50 border-b border-slate-200 flex items-center justify-between">
               <div className="flex items-center gap-space-xs text-label-technical uppercase tracking-wider text-slate-900">
-                <span className="material-symbols-outlined text-orange-600 text-[18px]">terminal</span>
+                <span className="material-symbols-outlined text-steel-600 text-[18px]">terminal</span>
                 <span>BẢNG THÔNG SỐ KỸ THUẬT (CMS SPEC SHEET)</span>
               </div>
               <span className="font-mono text-label-sm text-sky-700 font-semibold">REV: 2.4</span>
@@ -54,7 +54,7 @@ export default function ProductOverview() {
                   <span
                     className={
                       row.accent
-                        ? "text-orange-600 font-semibold"
+                        ? "text-steel-600 font-semibold"
                         : row.technical
                         ? "text-sky-700 font-semibold"
                         : "text-slate-900 font-semibold"

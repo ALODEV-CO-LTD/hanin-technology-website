@@ -13,7 +13,7 @@ export default function DetailOverview() {
       <div className="bg-white border border-slate-200 p-space-lg rounded shadow-sm">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-space-sm pb-space-md mb-space-md bg-slate-50 border border-slate-200 p-space-md rounded">
           <div>
-            <span className="text-orange-600 text-label-sm uppercase tracking-wider font-semibold block mb-1">
+            <span className="text-steel-600 text-label-sm uppercase tracking-wider font-semibold block mb-1">
               CƠ CHẾ KỸ THUẬT NỀN TẢNG
             </span>
             <h2 className="text-headline-md text-slate-900 tracking-tight uppercase font-bold">
@@ -21,7 +21,7 @@ export default function DetailOverview() {
             </h2>
           </div>
           <div className="text-label-sm text-slate-500 flex items-center gap-2">
-            <span className="material-symbols-outlined text-orange-600 text-[18px]">verified_user</span>
+            <span className="material-symbols-outlined text-steel-600 text-[18px]">verified_user</span>
             <span>ROHS &amp; REACH COMPLIANT (LEAD &amp; CADMIUM FREE)</span>
           </div>
         </div>
@@ -30,7 +30,7 @@ export default function DetailOverview() {
           {/* Cột 1: Bản chất cơ chế phản ứng */}
           <div className="flex flex-col gap-space-xs bg-slate-50/60 p-space-md rounded">
             <div className="flex items-center gap-space-xs mb-1">
-              <div className="w-8 h-8 rounded bg-orange-600 flex items-center justify-center text-white text-title-md">
+              <div className="w-8 h-8 rounded bg-steel-600 flex items-center justify-center text-white text-title-md">
                 01
               </div>
               <h3 className="text-title-md text-slate-900 uppercase font-bold">Bản Chất Cơ Chế Phản Ứng</h3>
@@ -63,19 +63,19 @@ export default function DetailOverview() {
             </p>
             <ul className="flex flex-col gap-1.5 text-body-md text-slate-600 mt-1">
               <li className="flex items-start gap-2">
-                <span className="material-symbols-outlined text-orange-600 text-[18px] mt-0.5">check_circle</span>
+                <span className="material-symbols-outlined text-steel-600 text-[18px] mt-0.5">check_circle</span>
                 <span>
                   <strong>Dầu khí &amp; Khí hóa lỏng:</strong> Van bi áp lực cao, ống dẫn chống khí H2S/CO2.
                 </span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="material-symbols-outlined text-orange-600 text-[18px] mt-0.5">check_circle</span>
+                <span className="material-symbols-outlined text-steel-600 text-[18px] mt-0.5">check_circle</span>
                 <span>
                   <strong>Khuôn mẫu chính xác:</strong> Khuôn ép nhựa quang học không sinh khuyết tật bám dính.
                 </span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="material-symbols-outlined text-orange-600 text-[18px] mt-0.5">check_circle</span>
+                <span className="material-symbols-outlined text-steel-600 text-[18px] mt-0.5">check_circle</span>
                 <span>
                   <strong>Bán dẫn &amp; Thiết bị chân không:</strong> Giảm thoát khí vật liệu (outgassing).
                 </span>

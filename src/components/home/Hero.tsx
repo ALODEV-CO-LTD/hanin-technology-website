@@ -16,8 +16,8 @@ export default function Hero() {
       <div className="relative z-10 max-w-[1280px] w-full mx-auto px-margin py-space-xl flex flex-col justify-between h-full">
         <div className="max-w-3xl flex flex-col gap-space-md pt-space-lg">
           <div className="inline-flex items-center gap-2.5 px-3 py-1.5 rounded bg-white/10 backdrop-blur-md border border-white/15 shadow-sm w-fit">
-            <span className="w-2 h-2 rounded-full bg-orange-500 animate-pulse" />
-            <span className="text-label-technical tracking-[0.16em] uppercase text-orange-400 font-semibold">
+            <span className="w-2 h-2 rounded-full bg-steel-500 animate-pulse" />
+            <span className="text-label-technical tracking-[0.16em] uppercase text-steel-400 font-semibold">
               HANIN TECHNOLOGY VIỆT NAM
             </span>
             <span className="text-[10px] text-slate-300 tracking-widest pl-2 border-l border-white/20">
@@ -27,7 +27,7 @@ export default function Hero() {
 
           <div className="flex flex-col gap-2">
             <h1 className="text-display-hero-mobile xl:text-display-hero text-white uppercase tracking-tight font-bold">
-              GIA CÔNG XI MẠ <span className="text-orange-500">CHÍNH XÁC</span>
+              GIA CÔNG XI MẠ <span className="text-steel-500">CHÍNH XÁC</span>
             </h1>
             <p className="text-headline-md text-slate-200 font-semibold tracking-tight">
               Giải pháp gia công mạ kim loại cho công nghiệp hiện đại.
@@ -43,7 +43,7 @@ export default function Hero() {
           <div className="flex flex-wrap items-center gap-space-md pt-space-sm">
             <a
               href="#nang-luc"
-              className="inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-orange-600 hover:bg-orange-700 text-white text-title-md uppercase tracking-wider rounded transition-all duration-150 shadow-lg shadow-orange-950/30"
+              className="inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-steel-600 hover:bg-steel-700 text-white text-title-md uppercase tracking-wider rounded transition-all duration-150 shadow-lg shadow-steel-950/30"
             >
               KHÁM PHÁ NĂNG LỰC
               <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
@@ -60,21 +60,21 @@ export default function Hero() {
         <div className="pt-space-xl flex flex-col md:flex-row items-start md:items-end justify-between gap-space-md">
           <div className="flex items-center gap-space-lg text-label-technical text-slate-300">
             <div className="flex items-center gap-2">
-              <span className="text-orange-400">DÂY CHUYỀN:</span>
+              <span className="text-steel-400">DÂY CHUYỀN:</span>
               <span>TỰ ĐỘNG KHỨP 04</span>
             </div>
             <div className="flex items-center gap-2">
-              <span className="text-orange-400">DUNG SAI:</span>
+              <span className="text-steel-400">DUNG SAI:</span>
               <span>±0.002 MM</span>
             </div>
             <div className="hidden sm:flex items-center gap-2">
-              <span className="text-orange-400">ĐỊA ĐIỂM:</span>
+              <span className="text-steel-400">ĐỊA ĐIỂM:</span>
               <span>KCN QUANG MINH, HN</span>
             </div>
           </div>
           <a
             href="#company-snapshot"
-            className="inline-flex items-center gap-2 text-label-technical uppercase tracking-widest text-slate-300 hover:text-orange-400 transition-colors"
+            className="inline-flex items-center gap-2 text-label-technical uppercase tracking-widest text-slate-300 hover:text-steel-400 transition-colors"
           >
             <span>CUỘN XUỐNG KHÁM PHÁ</span>
             <span className="material-symbols-outlined text-[16px] animate-bounce">

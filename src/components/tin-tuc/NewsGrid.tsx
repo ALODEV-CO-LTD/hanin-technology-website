@@ -43,7 +43,7 @@ export default function NewsGrid() {
                       {article.readTime}
                     </span>
                   </div>
-                  <h3 className="text-headline-sm text-slate-900 group-hover:text-orange-600 transition-colors leading-snug line-clamp-2 font-bold">
+                  <h3 className="text-headline-sm text-slate-900 group-hover:text-steel-600 transition-colors leading-snug line-clamp-2 font-bold">
                     {article.title}
                   </h3>
                   <p className="text-body-md text-slate-600 line-clamp-3">{article.excerpt}</p>
@@ -53,7 +53,7 @@ export default function NewsGrid() {
                 <span className="text-label-sm text-slate-500">{article.author}</span>
                 <a
                   href="#"
-                  className="inline-flex items-center gap-1 text-title-md text-orange-600 group-hover:translate-x-1 transition-all"
+                  className="inline-flex items-center gap-1 text-title-md text-steel-600 group-hover:translate-x-1 transition-all"
                 >
                   <span>Đọc tiếp</span>
                   <span className="material-symbols-outlined text-[16px]">arrow_forward</span>
