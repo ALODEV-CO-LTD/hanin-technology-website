@@ -5,7 +5,7 @@ export default function BottomCta() {
 
   return (
     <section className="w-full bg-slate-900 text-white py-space-xl">
-      <div className="max-w-[1280px] mx-auto px-margin flex flex-col md:flex-row items-center justify-between gap-space-lg">
+      <div className="mx-auto px-margin flex flex-col md:flex-row items-center justify-between gap-space-lg">
         <div className="flex flex-col gap-2">
           <h2 className="text-headline-md font-bold text-white tracking-tight uppercase">
             {t("heading")}

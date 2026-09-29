@@ -5,7 +5,7 @@ export default function FactoryOverview() {
 
   return (
     <section className="w-full py-space-xl bg-slate-50" id="he-thong-nha-may">
-      <div className="max-w-[1280px] mx-auto px-margin w-full">
+      <div className="mx-auto px-margin w-full">
         <div className="flex items-center gap-space-sm mb-space-xl">
           <span className="w-2.5 h-2.5 bg-steel-600 rounded-sm" />
           <h2 className="text-headline-lg text-slate-900 uppercase tracking-tight">{t("sectionTitle")}</h2>

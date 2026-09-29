@@ -12,7 +12,7 @@ export default function CompanySnapshot() {
 
   return (
     <section className="w-full bg-white py-space-lg border-y border-slate-200" id="company-snapshot">
-      <div className="max-w-[1280px] mx-auto px-margin">
+      <div className="mx-auto px-margin">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-gutter">
           {STATS.map((stat) => (
             <div

@@ -17,7 +17,7 @@ export default function Hero() {
         <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-[size:40px_40px] pointer-events-none" />
       </div>
 
-      <div className="relative z-10 max-w-[1280px] w-full mx-auto px-margin py-space-xl flex flex-col justify-center h-full">
+      <div className="relative z-10 w-full mx-auto px-margin py-space-xl flex flex-col justify-center h-full">
         <div className="max-w-3xl flex flex-col gap-space-md">
           <div className="flex flex-col gap-2">
             <h1 className="text-display-hero-mobile xl:text-display-hero text-white uppercase tracking-tight font-bold">
@@ -51,7 +51,7 @@ export default function Hero() {
 
       </div>
 
-      <div className="absolute bottom-0 left-0 right-0 z-10 max-w-[1280px] w-full mx-auto px-margin pb-space-lg flex flex-col md:flex-row items-start md:items-end justify-between gap-space-md">
+      <div className="absolute bottom-0 left-0 right-0 z-10 w-full mx-auto px-margin pb-space-lg flex flex-col md:flex-row items-start md:items-end justify-between gap-space-md">
         <div className="flex items-center gap-space-lg text-label-technical text-slate-300">
           <div className="flex items-center gap-2">
             <span className="text-steel-400">{t("lineLabel")}</span>

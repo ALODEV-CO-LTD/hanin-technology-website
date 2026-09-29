@@ -7,7 +7,7 @@ export default function ProductBreadcrumbBar({ product }: { product: Product }) 
 
   return (
     <section className="w-full bg-white border-b border-slate-200">
-      <div className="max-w-[1280px] mx-auto px-margin py-3">
+      <div className="mx-auto px-margin py-3">
         <PageBreadcrumb
           items={[
             { label: tc("home"), href: "/" },

@@ -11,7 +11,7 @@ export default function TestingAnalysis() {
 
   return (
     <section className="w-full py-space-xl bg-slate-50 border-t border-slate-200" id="kiem-nghiem">
-      <div className="max-w-[1280px] mx-auto px-margin w-full">
+      <div className="mx-auto px-margin w-full">
         <div className="mb-space-xl">
           <h2 className="text-headline-lg text-slate-900 uppercase tracking-tight">{t("sectionTitle")}</h2>
           <p className="text-body-md text-slate-600 max-w-3xl mt-1">{t("sectionDescription")}</p>

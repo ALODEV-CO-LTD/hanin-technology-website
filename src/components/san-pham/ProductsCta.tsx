@@ -5,7 +5,7 @@ export default function ProductsCta() {
 
   return (
     <section className="w-full bg-slate-100 border-y border-slate-200 py-space-xl my-space-lg">
-      <div className="max-w-[1280px] mx-auto px-margin flex flex-col items-center text-center">
+      <div className="mx-auto px-margin flex flex-col items-center text-center">
         <h2 className="text-headline-xl-mobile lg:text-headline-xl uppercase text-slate-900 max-w-2xl font-bold">
           {t("title")}
         </h2>

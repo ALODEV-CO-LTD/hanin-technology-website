@@ -24,7 +24,7 @@ export default function WhyHanin() {
 
   return (
     <section className="w-full py-space-xl bg-white">
-      <div className="max-w-[1280px] mx-auto px-margin">
+      <div className="mx-auto px-margin">
         <div className="flex flex-col gap-2 max-w-3xl mb-space-xl">
           <h2 className="text-headline-xl-mobile md:text-headline-xl text-slate-900 tracking-tight uppercase font-bold">
             {t("title")}

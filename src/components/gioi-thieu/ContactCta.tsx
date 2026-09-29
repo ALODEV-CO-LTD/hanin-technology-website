@@ -5,7 +5,7 @@ export default function ContactCta() {
 
   return (
     <section className="w-full bg-white py-space-xl border-t border-slate-200">
-      <div className="max-w-[1280px] mx-auto px-margin text-center flex flex-col items-center">
+      <div className="mx-auto px-margin text-center flex flex-col items-center">
         <h2 className="text-headline-lg md:text-headline-xl text-slate-900 uppercase tracking-tight max-w-2xl mb-space-sm font-bold">
           {t("heading")}
         </h2>

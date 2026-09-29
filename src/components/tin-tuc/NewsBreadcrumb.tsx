@@ -6,7 +6,7 @@ export default function NewsBreadcrumb() {
 
   return (
     <section className="w-full bg-slate-50 border-b border-slate-200">
-      <div className="max-w-[1280px] mx-auto px-margin py-space-sm">
+      <div className="mx-auto px-margin py-space-sm">
         <PageBreadcrumb
           items={[
             { label: t("home"), href: "/" },

@@ -13,7 +13,7 @@ export default function NewsUpdates() {
 
   return (
     <section className="w-full py-space-xl bg-slate-50">
-      <div className="max-w-[1280px] mx-auto px-margin flex flex-col gap-space-xl">
+      <div className="mx-auto px-margin flex flex-col gap-space-xl">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
           <div className="flex flex-col gap-2">
             <h2 className="text-headline-xl text-slate-900 font-bold">{t("title")}</h2>

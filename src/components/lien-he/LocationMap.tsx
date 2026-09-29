@@ -15,7 +15,7 @@ export default function LocationMap() {
 
   return (
     <section className="w-full bg-slate-50 py-space-xl" id="map-section">
-      <div className="max-w-[1280px] mx-auto px-margin">
+      <div className="mx-auto px-margin">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-stretch">
           {/* Map info & logistics instructions */}
           <div className="lg:col-span-5 flex flex-col justify-between bg-white border border-slate-200 p-space-xl rounded shadow-sm">

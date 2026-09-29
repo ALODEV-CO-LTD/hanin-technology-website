@@ -5,7 +5,7 @@ export default function NewsInquiryCta() {
 
   return (
     <section className="w-full bg-slate-50 py-space-xl">
-      <div className="max-w-[1280px] mx-auto px-margin">
+      <div className="mx-auto px-margin">
         <div className="bg-white border border-slate-200 rounded-xl p-space-lg lg:p-space-xl shadow-sm relative overflow-hidden">
           {/* Subtle industrial background watermark */}
           <div className="absolute -right-10 -bottom-10 opacity-5 pointer-events-none text-slate-900 select-none">

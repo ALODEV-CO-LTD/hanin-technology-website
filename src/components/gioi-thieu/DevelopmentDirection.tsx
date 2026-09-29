@@ -11,7 +11,7 @@ export default function DevelopmentDirection() {
 
   return (
     <section className="w-full bg-[#f8fafc] py-space-xl">
-      <div className="max-w-[1280px] mx-auto px-margin">
+      <div className="mx-auto px-margin">
         {/* Section Layout: Split Header */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-gutter mb-space-xl">
           <div className="lg:col-span-5">

@@ -5,7 +5,7 @@ export default function NewsPagination() {
 
   return (
     <section className="w-full bg-white py-space-lg">
-      <div className="max-w-[1280px] mx-auto px-margin flex flex-col sm:flex-row items-center justify-between gap-space-md">
+      <div className="mx-auto px-margin flex flex-col sm:flex-row items-center justify-between gap-space-md">
         <div className="text-label-md text-slate-500">
           {t("showingPrefix")} <span className="text-slate-900 font-bold">{t("pageInfo")}</span>{" "}
           {t("totalInfo")}

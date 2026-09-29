@@ -68,7 +68,7 @@ export default function JobBoard() {
 
   return (
     <section className="w-full py-space-xl bg-slate-50 scroll-mt-20" id="open-positions">
-      <div className="max-w-[1280px] mx-auto px-margin flex flex-col gap-space-lg">
+      <div className="mx-auto px-margin flex flex-col gap-space-lg">
         <div className="flex flex-col gap-2 max-w-2xl pb-space-sm">
           <h2 className="text-headline-xl-mobile md:text-headline-xl text-slate-900 tracking-tight uppercase font-bold">
             {tb("title")}

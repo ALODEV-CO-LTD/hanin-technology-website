@@ -12,7 +12,7 @@ export default function NewsFilterBar() {
 
   return (
     <section className="w-full bg-white sticky top-20 z-40 shadow-sm border-b border-slate-200">
-      <div className="max-w-[1280px] mx-auto px-margin py-space-md">
+      <div className="mx-auto px-margin py-space-md">
         <div className="flex flex-col md:flex-row items-center justify-between gap-space-md">
           {/* Tab Filters */}
           <div className="flex flex-wrap items-center gap-space-xs w-full md:w-auto">

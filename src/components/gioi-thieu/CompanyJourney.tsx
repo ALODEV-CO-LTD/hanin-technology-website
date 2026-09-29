@@ -7,7 +7,7 @@ export default function CompanyJourney() {
 
   return (
     <section className="w-full bg-[#f8fafc] py-space-xl border-y border-slate-200">
-      <div className="max-w-[1280px] mx-auto px-margin">
+      <div className="mx-auto px-margin">
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-xl">
           <div>

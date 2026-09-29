@@ -8,7 +8,7 @@ export default function FeaturedArticle() {
 
   return (
     <section className="w-full bg-slate-50 py-space-xl">
-      <div className="max-w-[1280px] mx-auto px-margin">
+      <div className="mx-auto px-margin">
         <div className="flex items-center justify-between mb-space-md">
           <div className="flex items-center gap-space-xs">
             <span className="w-2 h-4 bg-steel-600 rounded-sm" />

@@ -5,7 +5,7 @@ export default function ProfileDownloadCta() {
 
   return (
     <section className="w-full bg-[#f8fafc] py-space-xl border-t border-slate-200">
-      <div className="max-w-[1280px] mx-auto px-margin">
+      <div className="mx-auto px-margin">
         {/* High Contrast Industrial Block */}
         <div className="p-space-lg md:p-space-xl rounded-lg bg-white border border-slate-200 shadow-xl relative overflow-hidden">
           {/* Background Grid Watermark */}

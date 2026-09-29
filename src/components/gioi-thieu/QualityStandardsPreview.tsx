@@ -11,7 +11,7 @@ export default function QualityStandardsPreview() {
 
   return (
     <section className="w-full bg-white py-space-xl border-t border-slate-200">
-      <div className="max-w-[1280px] mx-auto px-margin">
+      <div className="mx-auto px-margin">
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-xl">
           <div>

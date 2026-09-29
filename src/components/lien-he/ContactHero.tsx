@@ -15,7 +15,7 @@ export default function ContactHero() {
     <>
       {/* Breadcrumb */}
       <section className="w-full bg-slate-100 border-b border-slate-200">
-        <div className="max-w-[1280px] mx-auto px-margin py-space-sm">
+        <div className="mx-auto px-margin py-space-sm">
           <PageBreadcrumb
             items={[
               { label: t("breadcrumbHome"), href: "/" },
@@ -27,7 +27,7 @@ export default function ContactHero() {
 
       {/* Page hero: technical contact & RFQ portal */}
       <section className="w-full bg-white py-space-xl">
-        <div className="max-w-[1280px] mx-auto px-margin">
+        <div className="mx-auto px-margin">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
             {/* Left hero content */}
             <div className="lg:col-span-7 flex flex-col gap-space-md">

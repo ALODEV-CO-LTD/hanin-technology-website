@@ -32,7 +32,7 @@ export default function CapabilityOverviewStats() {
 
   return (
     <section className="w-full bg-white border-b border-slate-200 py-space-xl">
-      <div className="max-w-[1280px] mx-auto px-margin w-full">
+      <div className="mx-auto px-margin w-full">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
           {STATS.map((stat) => (
             <div

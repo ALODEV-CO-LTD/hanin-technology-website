@@ -11,7 +11,7 @@ export default function CompanyIntroduction() {
 
   return (
     <section className="w-full bg-white py-space-xl">
-      <div className="max-w-[1280px] mx-auto px-margin">
+      <div className="mx-auto px-margin">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
           {/* Left: Precision Factory Campus Visual */}
           <div className="lg:col-span-5 relative group">

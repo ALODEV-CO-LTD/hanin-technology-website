@@ -5,7 +5,7 @@ export default function ApplicationCta() {
 
   return (
     <section className="w-full py-space-xl bg-slate-100 relative">
-      <div className="max-w-[1280px] mx-auto px-margin">
+      <div className="mx-auto px-margin">
         <div className="relative p-space-xl md:p-12 rounded bg-white border border-slate-200 shadow-md overflow-hidden">
           <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-steel-600 via-steel-400 to-steel-600" />
           <div className="absolute -right-20 -bottom-20 w-80 h-80 rounded-full bg-steel-600/5 blur-3xl pointer-events-none" />

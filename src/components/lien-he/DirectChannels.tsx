@@ -16,7 +16,7 @@ export default function DirectChannels() {
 
   return (
     <section className="w-full bg-white py-space-xl">
-      <div className="max-w-[1280px] mx-auto px-margin">
+      <div className="mx-auto px-margin">
         <div className="text-center max-w-3xl mx-auto mb-space-xl">
           <h2 className="text-headline-md font-bold text-slate-900 uppercase tracking-tight">
             {t("heading")}

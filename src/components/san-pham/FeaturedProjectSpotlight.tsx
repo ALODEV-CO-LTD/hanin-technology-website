@@ -9,7 +9,7 @@ export default function FeaturedProjectSpotlight() {
 
   return (
     <section className="w-full bg-slate-100 border-y border-slate-200 py-space-xl overflow-hidden">
-      <div className="max-w-[1280px] mx-auto px-margin">
+      <div className="mx-auto px-margin">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center bg-white border border-slate-200 rounded overflow-hidden shadow-md">
           <div className="lg:col-span-7 relative min-h-[380px] lg:min-h-[520px] h-full overflow-hidden bg-slate-100">
             {/* eslint-disable-next-line @next/next/no-img-element */}

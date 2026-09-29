@@ -116,7 +116,7 @@ export default function ProductCatalog() {
   return (
     <>
       <section className="sticky top-20 z-30 w-full bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm">
-        <div className="max-w-[1280px] mx-auto px-margin py-space-sm flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-space-md">
+        <div className="mx-auto px-margin py-space-sm flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-space-md">
           <div className="flex items-center gap-space-xs overflow-x-auto no-scrollbar py-1">
             {CATEGORY_TABS.map((tab) => (
               <button
@@ -153,7 +153,7 @@ export default function ProductCatalog() {
         </div>
       </section>
 
-      <section className="w-full max-w-[1280px] mx-auto px-margin py-space-xl">
+      <section className="w-full mx-auto px-margin py-space-xl">
         {filtered.length === 0 ? (
           <p className="text-body-md text-slate-500 text-center py-space-xl">{t("emptyState")}</p>
         ) : (

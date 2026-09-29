@@ -5,7 +5,7 @@ export default function ContactChannels() {
 
   return (
     <section className="w-full bg-slate-50 py-space-xl">
-      <div className="max-w-[1280px] mx-auto px-margin">
+      <div className="mx-auto px-margin">
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-space-md mb-space-xl">
           <div>
             <h2 className="text-headline-md font-bold text-slate-900 uppercase tracking-tight">

@@ -13,7 +13,7 @@ export default function QualityCertification() {
 
   return (
     <section className="w-full py-space-xl bg-white border-y border-slate-200">
-      <div className="max-w-[1280px] mx-auto px-margin flex flex-col gap-space-xl">
+      <div className="mx-auto px-margin flex flex-col gap-space-xl">
         <div className="flex flex-col items-center text-center gap-2 max-w-2xl mx-auto">
           <h2 className="text-headline-xl text-slate-900 font-bold">
             {t("title")}

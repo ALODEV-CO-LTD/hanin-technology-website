@@ -82,7 +82,7 @@ export default function RfqForm() {
 
   return (
     <section className="w-full bg-white py-space-xl" id="rfq-form">
-      <div className="max-w-[1280px] mx-auto px-margin">
+      <div className="mx-auto px-margin">
         <div className="bg-white border border-slate-200 rounded shadow-lg overflow-hidden">
           {/* Form header ribbon */}
           <div className="bg-slate-900 text-white px-space-xl py-space-lg flex flex-col md:flex-row md:items-center justify-between gap-space-md">

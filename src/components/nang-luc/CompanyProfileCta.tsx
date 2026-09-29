@@ -5,7 +5,7 @@ export default function CompanyProfileCta() {
 
   return (
     <section className="w-full py-space-xl bg-slate-900 text-white">
-      <div className="max-w-[1280px] mx-auto px-margin w-full">
+      <div className="mx-auto px-margin w-full">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
           {/* LEFT: Text & Button */}
           <div className="lg:col-span-7">

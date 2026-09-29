@@ -5,7 +5,7 @@ export default function AutomatedVsManual() {
 
   return (
     <section className="w-full py-space-xl bg-slate-50 border-t border-slate-200">
-      <div className="max-w-[1280px] mx-auto px-margin w-full">
+      <div className="mx-auto px-margin w-full">
         <div className="mb-space-xl text-center max-w-2xl mx-auto">
           <h2 className="text-headline-lg text-slate-900 uppercase tracking-tight">{t("title")}</h2>
           <p className="text-body-md text-slate-600 mt-2">{t("description")}</p>

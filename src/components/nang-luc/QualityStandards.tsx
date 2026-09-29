@@ -32,7 +32,7 @@ export default function QualityStandards() {
 
   return (
     <section className="w-full py-space-xl bg-white border-t border-slate-200">
-      <div className="max-w-[1280px] mx-auto px-margin w-full">
+      <div className="mx-auto px-margin w-full">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-xl">
           <div>
             <h2 className="text-headline-lg text-slate-900 uppercase tracking-tight">{t("sectionTitle")}</h2>

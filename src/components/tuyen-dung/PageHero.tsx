@@ -15,7 +15,7 @@ export default function PageHero() {
       />
       <div className="absolute -right-24 -top-24 w-96 h-96 rounded-full bg-steel-600/5 blur-3xl pointer-events-none" />
 
-      <div className="max-w-[1280px] mx-auto px-margin pt-space-xl pb-space-xl relative z-10">
+      <div className="mx-auto px-margin pt-space-xl pb-space-xl relative z-10">
         <PageBreadcrumb
           className="pb-space-lg"
           items={[

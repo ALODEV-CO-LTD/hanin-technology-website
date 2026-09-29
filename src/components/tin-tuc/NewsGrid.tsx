@@ -7,7 +7,7 @@ export default function NewsGrid() {
   const NEWS_ARTICLES = getNewsArticles(t);
   return (
     <section className="w-full bg-slate-50 py-space-xl">
-      <div className="max-w-[1280px] mx-auto px-margin">
+      <div className="mx-auto px-margin">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
           {NEWS_ARTICLES.map((article) => (
             <article

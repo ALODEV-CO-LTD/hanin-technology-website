@@ -7,7 +7,7 @@ export default function AboutHanin() {
 
   return (
     <section className="w-full py-space-xl bg-slate-50">
-      <div className="max-w-[1280px] mx-auto px-margin">
+      <div className="mx-auto px-margin">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
           <div className="lg:col-span-5 relative group">
             <div className="relative overflow-hidden rounded border border-slate-200 shadow-md bg-white aspect-[4/3] lg:aspect-square">
