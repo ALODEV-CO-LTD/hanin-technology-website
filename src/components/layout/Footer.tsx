@@ -30,7 +30,7 @@ export default function Footer() {
               <img
                 src="/hanin-logo.png"
                 alt="HANIN Plating"
-                className="h-10 w-auto transition-transform duration-200 ease-out group-hover:scale-105 group-active:scale-95"
+                className="h-12 w-auto transition-transform duration-200 ease-out group-hover:scale-105 group-active:scale-95"
               />
             </Link>
             <p className="text-body-sm text-slate-600 leading-relaxed max-w-sm">{t("description")}</p>

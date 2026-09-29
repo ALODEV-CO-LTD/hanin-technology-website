@@ -54,7 +54,7 @@ export default function Header() {
             <img
               src="/hanin-logo.png"
               alt="HANIN Plating"
-              className={`h-11 w-auto transition-transform duration-200 ease-out group-hover:scale-105 group-active:scale-95 ${
+              className={`h-14 w-auto transition-transform duration-200 ease-out group-hover:scale-105 group-active:scale-95 ${
                 logoPulsing ? "logo-click-pulse" : ""
               }`}
             />
