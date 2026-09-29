@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function FinalCta() {
   return (
     <section className="w-full py-space-xl bg-slate-50 relative overflow-hidden" id="bao-gia">
@@ -19,13 +21,13 @@ export default function FinalCta() {
               với các thông số kỹ thuật tối ưu.
             </p>
             <div className="pt-space-xs flex flex-wrap items-center gap-space-md">
-              <a
-                href="#nhan-bao-gia"
+              <Link
+                href="/lien-he"
                 className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-orange-600 hover:bg-orange-700 text-white text-title-md uppercase tracking-wider rounded transition-all duration-150 shadow-md"
               >
                 <span>GỬI YÊU CẦU BÁO GIÁ</span>
                 <span className="material-symbols-outlined text-[20px]">send</span>
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -44,16 +46,16 @@ export default function FinalCta() {
               <span className="material-symbols-outlined text-orange-600 text-[20px]">chat</span>
               <div className="flex flex-col">
                 <span className="text-[10px] text-slate-500 uppercase">ZALO KỸ THUẬT</span>
-                <a href="#" className="text-title-md text-sky-700 hover:underline font-semibold">
+                <Link href="/lien-he" className="text-title-md text-sky-700 hover:underline font-semibold">
                   CHAT VỚI HANIN
-                </a>
+                </Link>
               </div>
             </div>
             <div className="flex items-center gap-3 py-1">
               <span className="material-symbols-outlined text-orange-600 text-[20px]">mail</span>
               <div className="flex flex-col">
                 <span className="text-[10px] text-slate-500 uppercase">HỘP THƯ BÁO GIÁ</span>
-                <span className="text-body-md text-slate-800 font-mono">baogia@hanintech.vn</span>
+                <span className="text-body-md text-slate-800 font-mono">sales@hanintech.vn</span>
               </div>
             </div>
             <div className="flex items-start gap-3 pt-2 text-slate-600 border-t border-slate-200">
@@ -63,7 +65,7 @@ export default function FinalCta() {
               <div className="flex flex-col">
                 <span className="text-[10px] text-slate-500 uppercase">ĐỊA CHỈ NHÀ XƯỞNG</span>
                 <span className="text-body-sm text-slate-800 leading-tight">
-                  Lô 660 KCN Quang Minh, Xã Quang Minh, TP Hà Nội
+                  Lô CN-08, KCN Quang Minh, Huyện Mê Linh, Hà Nội
                 </span>
               </div>
             </div>

@@ -1,17 +1,19 @@
+import Link from "next/link";
+
 const COMPANY_LINKS = [
-  { label: "Trang Chủ", href: "#" },
-  { label: "Giới thiệu doanh nghiệp", href: "#gioi-thieu" },
-  { label: "Năng lực sản xuất", href: "#nang-luc" },
-  { label: "Tin tức & Sự kiện", href: "#tin-tuc" },
-  { label: "Cơ hội tuyển dụng", href: "#tuyen-dung" },
+  { label: "Trang Chủ", href: "/" },
+  { label: "Giới thiệu doanh nghiệp", href: "/gioi-thieu" },
+  { label: "Năng lực sản xuất", href: "/nang-luc-san-xuat" },
+  { label: "Tin tức & Sự kiện", href: "/tin-tuc" },
+  { label: "Cơ hội tuyển dụng", href: "/tuyen-dung" },
 ];
 
 const SERVICE_LINKS = [
-  { label: "Mạ Niken kỹ thuật (Electroless Nickel)", href: "#dich-vu-gia-cong-ma" },
-  { label: "Mạ Crom cứng công nghiệp (Hard Chrome)", href: "#dich-vu-gia-cong-ma" },
-  { label: "Anodizing nhôm & Hard Anodize", href: "#dich-vu-gia-cong-ma" },
-  { label: "Mạ Kẽm - Niken chống ăn mòn cao", href: "#dich-vu-gia-cong-ma" },
-  { label: "Bảng thông số tra cứu dung sai micron", href: "#nang-luc" },
+  { label: "Mạ Niken kỹ thuật (Electroless Nickel)", href: "/dich-vu-gia-cong-ma/ma-niken-hoa-hoc-enp" },
+  { label: "Mạ Crom cứng công nghiệp (Hard Chrome)", href: "/dich-vu-gia-cong-ma/ma-crom-cung-cong-nghiep" },
+  { label: "Anodizing nhôm & Hard Anodize", href: "/dich-vu-gia-cong-ma/xu-ly-nhom-ma-kim-loai-khac" },
+  { label: "Mạ Kẽm - Niken chống ăn mòn cao", href: "/dich-vu-gia-cong-ma/ma-kem-hop-kim-kem-niken" },
+  { label: "Bảng thông số tra cứu dung sai micron", href: "/nang-luc-san-xuat" },
 ];
 
 export default function Footer() {
@@ -20,10 +22,10 @@ export default function Footer() {
       <div className="max-w-[1440px] mx-auto px-margin pt-space-xl pb-space-lg">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-gutter">
           <div className="lg:col-span-4 flex flex-col gap-space-md">
-            <div className="flex items-center">
+            <Link href="/" className="flex items-center w-fit">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img src="/hanin-logo.svg" alt="HANIN Plating" className="h-10 w-auto" />
-            </div>
+            </Link>
             <p className="text-body-sm text-slate-600 leading-relaxed max-w-sm">
               HANIN TECHNOLOGY VIỆT NAM — Nhà máy gia công xi mạ kỹ thuật cao,
               xử lý bề mặt kim loại cơ khí chính xác theo tiêu chuẩn công
@@ -49,9 +51,9 @@ export default function Footer() {
             <ul className="flex flex-col gap-space-xs text-body-sm">
               {COMPANY_LINKS.map((link) => (
                 <li key={link.label} className="py-0.5">
-                  <a href={link.href} className="text-slate-600 hover:text-orange-600 transition-colors">
+                  <Link href={link.href} className="text-slate-600 hover:text-orange-600 transition-colors">
                     {link.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -64,9 +66,9 @@ export default function Footer() {
             <ul className="flex flex-col gap-space-xs text-body-sm">
               {SERVICE_LINKS.map((link) => (
                 <li key={link.label} className="py-0.5">
-                  <a href={link.href} className="text-slate-600 hover:text-orange-600 transition-colors">
+                  <Link href={link.href} className="text-slate-600 hover:text-orange-600 transition-colors">
                     {link.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -94,13 +96,13 @@ export default function Footer() {
                 Thứ 2 - Thứ 7: 08:00 - 17:30 (Trực ca 24/7)
               </p>
               <div className="flex items-center gap-space-sm pt-space-xs">
-                <a href="#" className="text-label-technical text-sky-700 hover:underline">
+                <Link href="/lien-he" className="text-label-technical text-sky-700 hover:underline">
                   Zalo Chat Kỹ Thuật
-                </a>
+                </Link>
                 <span className="text-slate-300">•</span>
-                <a href="#" className="text-label-technical text-sky-700 hover:underline">
+                <Link href="/lien-he" className="text-label-technical text-sky-700 hover:underline">
                   Google Maps Chỉ Đường
-                </a>
+                </Link>
               </div>
             </div>
           </div>

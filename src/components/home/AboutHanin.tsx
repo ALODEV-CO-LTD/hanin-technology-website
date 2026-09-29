@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const HIGHLIGHTS = [
   "Độ bám dính & chống ăn mòn vượt trội",
   "Kiểm định độ dày micron chuẩn xác",
@@ -69,15 +71,15 @@ export default function AboutHanin() {
               ))}
             </div>
             <div className="pt-space-sm">
-              <a
-                href="#"
+              <Link
+                href="/gioi-thieu"
                 className="inline-flex items-center gap-2 text-title-md uppercase tracking-wider text-orange-600 hover:text-orange-700 transition-colors group"
               >
                 <span>XEM THÊM VỀ HANIN</span>
                 <span className="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">
                   arrow_forward
                 </span>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

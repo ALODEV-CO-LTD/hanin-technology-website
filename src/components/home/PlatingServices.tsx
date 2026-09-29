@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const SERVICES = [
   {
     index: "01",
@@ -41,19 +43,20 @@ export default function PlatingServices() {
               Giải pháp gia công mạ cho nhiều nhu cầu công nghiệp.
             </h2>
           </div>
-          <a
-            href="#"
+          <Link
+            href="/dich-vu-gia-cong-ma"
             className="inline-flex items-center gap-2 text-label-technical uppercase tracking-wider text-slate-600 hover:text-orange-600 transition-colors whitespace-nowrap"
           >
             <span>XEM TẤT CẢ DỊCH VỤ</span>
             <span className="material-symbols-outlined text-[16px]">arrow_forward</span>
-          </a>
+          </Link>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
           {SERVICES.map((service) => (
-            <div
+            <Link
               key={service.index}
+              href="/dich-vu-gia-cong-ma"
               className="flex flex-col justify-between p-space-lg bg-slate-50 border border-slate-200 rounded hover:border-orange-300 hover:shadow-lg hover:bg-white transition-all duration-200 group"
             >
               <div className="flex flex-col gap-space-md">
@@ -78,7 +81,7 @@ export default function PlatingServices() {
                   east
                 </span>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

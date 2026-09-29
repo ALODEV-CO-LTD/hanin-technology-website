@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const CERTS = [
   {
     icon: "workspace_premium",
@@ -62,13 +64,13 @@ export default function QualityCertification() {
         </div>
 
         <div className="flex justify-center pt-space-xs">
-          <a
-            href="#"
+          <Link
+            href="/nang-luc-san-xuat"
             className="inline-flex items-center gap-2 px-6 py-3 bg-slate-100 hover:bg-slate-200 text-slate-800 border border-slate-300 text-label-technical uppercase tracking-wider rounded transition-colors shadow-sm"
           >
             <span>XEM CHỨNG NHẬN</span>
             <span className="material-symbols-outlined text-[16px]">arrow_forward</span>
-          </a>
+          </Link>
         </div>
       </div>
     </section>

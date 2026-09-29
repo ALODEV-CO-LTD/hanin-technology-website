@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function ProductsProjects() {
   return (
     <section className="w-full py-space-xl bg-slate-50">
@@ -17,17 +19,20 @@ export default function ProductsProjects() {
               Khám phá các sản phẩm và dự án gia công được thực hiện bởi HANIN.
             </p>
           </div>
-          <a
-            href="#"
+          <Link
+            href="/san-pham-du-an"
             className="inline-flex items-center gap-2 text-label-technical uppercase tracking-wider text-slate-600 hover:text-orange-600 transition-colors whitespace-nowrap font-semibold"
           >
             <span>XEM TẤT CẢ DỰ ÁN</span>
             <span className="material-symbols-outlined text-[16px]">arrow_forward</span>
-          </a>
+          </Link>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-stretch">
-          <div className="lg:col-span-7 flex flex-col bg-white border border-slate-200 rounded overflow-hidden group shadow-sm hover:shadow-xl hover:border-orange-300 transition-all duration-300">
+          <Link
+            href="/san-pham-du-an/banh-rang-truc-vit-ma-niken-hoa-hoc"
+            className="lg:col-span-7 flex flex-col bg-white border border-slate-200 rounded overflow-hidden group shadow-sm hover:shadow-xl hover:border-orange-300 transition-all duration-300"
+          >
             <div className="relative h-[340px] md:h-[400px] overflow-hidden bg-slate-100">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
@@ -71,10 +76,13 @@ export default function ProductsProjects() {
                 <span className="material-symbols-outlined text-[18px]">open_in_new</span>
               </div>
             </div>
-          </div>
+          </Link>
 
           <div className="lg:col-span-5 flex flex-col gap-gutter">
-            <div className="flex-1 flex flex-col justify-between p-space-lg bg-white border border-slate-200 rounded group shadow-sm hover:shadow-xl hover:border-orange-300 transition-all duration-300">
+            <Link
+              href="/san-pham-du-an/truc-piston-ty-ben-thuy-luc-o-to"
+              className="flex-1 flex flex-col justify-between p-space-lg bg-white border border-slate-200 rounded group shadow-sm hover:shadow-xl hover:border-orange-300 transition-all duration-300"
+            >
               <div className="flex flex-col gap-space-md">
                 <div className="flex items-center justify-between">
                   <span className="text-label-technical text-orange-600 uppercase font-bold">
@@ -103,9 +111,12 @@ export default function ProductsProjects() {
                   east
                 </span>
               </div>
-            </div>
+            </Link>
 
-            <div className="flex-1 flex flex-col justify-between p-space-lg bg-white border border-slate-200 rounded group shadow-sm hover:shadow-xl hover:border-orange-300 transition-all duration-300">
+            <Link
+              href="/san-pham-du-an/thanh-busbar-dong-ma-thiec-dan-dien"
+              className="flex-1 flex flex-col justify-between p-space-lg bg-white border border-slate-200 rounded group shadow-sm hover:shadow-xl hover:border-orange-300 transition-all duration-300"
+            >
               <div className="flex flex-col gap-space-md">
                 <div className="flex items-center justify-between">
                   <span className="text-label-technical text-orange-600 uppercase font-bold">
@@ -134,7 +145,7 @@ export default function ProductsProjects() {
                   east
                 </span>
               </div>
-            </div>
+            </Link>
           </div>
         </div>
       </div>

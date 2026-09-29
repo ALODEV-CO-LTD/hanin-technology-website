@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const ARTICLES = [
   {
     tag: "Tin tức doanh nghiệp",
@@ -36,13 +38,13 @@ export default function NewsUpdates() {
             </div>
             <h2 className="text-headline-xl text-slate-900 font-bold">Tin tức &amp; cập nhật</h2>
           </div>
-          <a
-            href="#"
+          <Link
+            href="/tin-tuc"
             className="inline-flex items-center gap-2 text-label-technical uppercase tracking-wider text-slate-600 hover:text-orange-600 transition-colors font-semibold"
           >
             <span>XEM TẤT CẢ</span>
             <span className="material-symbols-outlined text-[16px]">arrow_forward</span>
-          </a>
+          </Link>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-gutter">

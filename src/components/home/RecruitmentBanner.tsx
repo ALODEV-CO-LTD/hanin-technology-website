@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function RecruitmentBanner() {
   return (
     <section className="w-full py-space-lg bg-white border-y border-slate-200">
@@ -26,13 +28,13 @@ export default function RecruitmentBanner() {
                 VỊ TRÍ ĐANG TUYỂN
               </span>
             </div>
-            <a
-              href="#"
+            <Link
+              href="/tuyen-dung"
               className="inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-orange-600 hover:bg-orange-700 text-white text-title-md uppercase tracking-wider rounded transition-all duration-150 shadow-md whitespace-nowrap"
             >
               <span>XEM VỊ TRÍ TUYỂN DỤNG</span>
               <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
-            </a>
+            </Link>
           </div>
         </div>
       </div>

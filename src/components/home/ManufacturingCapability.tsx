@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const SPECS = [
   {
     tag: "DÂY CHUYỀN MẠ",
@@ -92,12 +94,12 @@ export default function ManufacturingCapability() {
               ))}
             </div>
             <div className="pt-space-xs">
-              <a
-                href="#"
+              <Link
+                href="/nang-luc-san-xuat"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-orange-600 hover:bg-orange-700 text-white text-title-md uppercase tracking-wider rounded transition-all duration-150 shadow-sm"
               >
                 KHÁM PHÁ NĂNG LỰC →
-              </a>
+              </Link>
             </div>
           </div>
         </div>
