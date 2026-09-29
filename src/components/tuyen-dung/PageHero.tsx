@@ -1,5 +1,5 @@
-import Link from "next/link";
 import { useTranslations } from "next-intl";
+import PageBreadcrumb from "@/components/layout/PageBreadcrumb";
 
 export default function PageHero() {
   const t = useTranslations("TuyenDung.PageHero");
@@ -16,19 +16,13 @@ export default function PageHero() {
       <div className="absolute -right-24 -top-24 w-96 h-96 rounded-full bg-steel-600/5 blur-3xl pointer-events-none" />
 
       <div className="max-w-[1280px] mx-auto px-margin pt-space-xl pb-space-xl relative z-10">
-        <div className="flex flex-wrap items-center justify-between gap-space-sm pb-space-lg">
-          <div className="flex items-center gap-2 text-label-technical text-slate-500 tracking-wider uppercase">
-            <Link className="hover:text-steel-600 transition-colors" href="/">
-              {t("breadcrumbHome")}
-            </Link>
-            <span className="text-slate-300">/</span>
-            <span className="text-steel-600 font-bold">{t("breadcrumbCurrent")}</span>
-          </div>
-          <div className="inline-flex items-center gap-2 px-space-sm py-1 rounded bg-white shadow-sm text-slate-500 text-label-sm font-semibold tracking-widest uppercase">
-            <span className="w-2 h-2 rounded-full bg-steel-600 animate-pulse" />
-            <span>{t("statusBadge")}</span>
-          </div>
-        </div>
+        <PageBreadcrumb
+          className="pb-space-lg"
+          items={[
+            { label: t("breadcrumbHome"), href: "/" },
+            { label: t("breadcrumbCurrent") },
+          ]}
+        />
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center pt-space-sm">
           <div className="lg:col-span-7 flex flex-col gap-space-md">

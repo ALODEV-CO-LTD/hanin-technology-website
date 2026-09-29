@@ -1,5 +1,5 @@
-import Link from "next/link";
 import { useTranslations } from "next-intl";
+import PageBreadcrumb from "@/components/layout/PageBreadcrumb";
 
 const SPEC_HIGHLIGHT_KEYS = ["nda", "cad", "consulting"] as const;
 const SPEC_HIGHLIGHT_ICONS: Record<(typeof SPEC_HIGHLIGHT_KEYS)[number], string> = {
@@ -13,23 +13,15 @@ export default function ContactHero() {
 
   return (
     <>
-      {/* Breadcrumb & SLA status strip */}
+      {/* Breadcrumb */}
       <section className="w-full bg-slate-100 border-b border-slate-200">
-        <div className="max-w-[1280px] mx-auto px-margin py-space-sm flex flex-wrap items-center justify-between gap-3">
-          <div className="flex items-center gap-2 text-slate-600 text-body-sm">
-            <Link href="/" className="hover:text-steel-600 transition-colors flex items-center gap-1">
-              <span className="material-symbols-outlined text-[16px]">home</span>
-              <span>{t("breadcrumbHome")}</span>
-            </Link>
-            <span className="material-symbols-outlined text-[14px] text-slate-300">chevron_right</span>
-            <span className="text-slate-900 font-semibold">{t("breadcrumbCurrent")}</span>
-          </div>
-          <div className="inline-flex items-center gap-2 px-3 py-1 bg-white rounded shadow-sm">
-            <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-            <span className="text-label-sm uppercase tracking-wider text-slate-600">
-              {t("slaStatus")}
-            </span>
-          </div>
+        <div className="max-w-[1280px] mx-auto px-margin py-space-sm">
+          <PageBreadcrumb
+            items={[
+              { label: t("breadcrumbHome"), href: "/" },
+              { label: t("breadcrumbCurrent") },
+            ]}
+          />
         </div>
       </section>
 

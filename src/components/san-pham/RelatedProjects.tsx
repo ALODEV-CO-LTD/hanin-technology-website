@@ -13,7 +13,7 @@ export default function RelatedProjects({ currentSlug }: { currentSlug: string }
 
   return (
     <section className="w-full bg-slate-50 py-space-xl border-b border-slate-200">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-[1280px] mx-auto px-margin">
         <div className="mb-space-lg">
           <h2 className="text-headline-lg text-slate-900 uppercase tracking-tight">
             {t("title")}

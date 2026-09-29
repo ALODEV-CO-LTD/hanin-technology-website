@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import PageBreadcrumb from "@/components/layout/PageBreadcrumb";
 
 export default function IntroHero() {
   const t = useTranslations("GioiThieu.IntroHero");
@@ -20,14 +21,13 @@ export default function IntroHero() {
 
       {/* Content Container */}
       <div className="relative z-10 w-full max-w-[1280px] mx-auto px-margin pb-space-xl">
-        {/* Breadcrumb */}
-        <nav className="flex items-center gap-space-xs text-label-technical tracking-wider text-slate-500 mb-space-sm uppercase">
-          <a className="hover:text-steel-600 transition-colors" href="#">
-            {t("breadcrumbHome")}
-          </a>
-          <span className="text-slate-300">/</span>
-          <span className="text-steel-600 font-bold">{t("breadcrumbCurrent")}</span>
-        </nav>
+        <PageBreadcrumb
+          className="mb-space-sm"
+          items={[
+            { label: t("breadcrumbHome"), href: "/" },
+            { label: t("breadcrumbCurrent") },
+          ]}
+        />
 
         {/* Main Heading */}
         <h1 className="text-headline-xl-mobile md:text-display-hero text-slate-900 uppercase tracking-tight max-w-3xl mb-space-sm font-bold">
@@ -36,12 +36,6 @@ export default function IntroHero() {
 
         {/* Supporting Deck */}
         <p className="text-body-md md:text-body-lg text-slate-600 max-w-2xl leading-relaxed">{t("subtitle")}</p>
-      </div>
-
-      {/* Technical Coordinate Hairline Rule */}
-      <div className="absolute bottom-0 left-0 right-0 h-px bg-slate-200 flex justify-between items-center px-margin pointer-events-none">
-        <span className="text-[9px] text-slate-400 font-mono">SEC-01 // COORD: 21°12&apos;N 105°47&apos;E</span>
-        <span className="text-[9px] text-slate-400 font-mono">SYS.VER: 4.8.2</span>
       </div>
     </section>
   );

@@ -36,6 +36,9 @@ export default function Header() {
   const handleLogoClick = () => {
     setLogoPulsing(true);
     window.setTimeout(() => setLogoPulsing(false), 450);
+    if (pathname === "/") {
+      window.location.reload();
+    }
   };
 
   return (
@@ -44,7 +47,7 @@ export default function Header() {
         scrolled ? "border-slate-200 shadow-md" : "border-slate-200/70 shadow-sm"
       }`}
     >
-      <div className="h-20 max-w-[1440px] mx-auto px-margin flex items-center justify-between gap-gutter">
+      <div className="h-20 max-w-[1280px] mx-auto px-margin flex items-center justify-between gap-gutter">
         <div className="flex items-center gap-space-xl">
           <Link href="/" className="flex items-center group" onClick={handleLogoClick}>
             {/* eslint-disable-next-line @next/next/no-img-element */}

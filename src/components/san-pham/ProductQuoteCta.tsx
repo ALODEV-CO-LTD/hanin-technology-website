@@ -5,7 +5,7 @@ export default function ProductQuoteCta() {
 
   return (
     <section className="w-full bg-slate-100 py-space-xl" id="quote-form">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-[1280px] mx-auto px-margin">
         <div className="p-space-xl bg-white border border-slate-200 rounded relative overflow-hidden shadow-sm">
           <div className="absolute right-0 top-0 bottom-0 w-1/3 opacity-5 pointer-events-none flex items-center justify-end pr-space-md">
             <svg className="text-steel-600" fill="currentColor" height="400" viewBox="0 0 100 100" width="400">

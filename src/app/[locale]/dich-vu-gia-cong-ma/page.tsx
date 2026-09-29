@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
-import Breadcrumb from "@/components/dich-vu/Breadcrumb";
+import PageBreadcrumb from "@/components/layout/PageBreadcrumb";
 import CategoryHero from "@/components/dich-vu/CategoryHero";
 import CapacityOverview from "@/components/dich-vu/CapacityOverview";
 import ServiceCategories from "@/components/dich-vu/ServiceCategories";
@@ -21,7 +21,8 @@ export default async function DichVuGiaCongMaPage() {
 
   return (
     <div className="max-w-[1280px] mx-auto px-margin py-space-lg flex flex-col w-full">
-      <Breadcrumb
+      <PageBreadcrumb
+        className="mb-space-md"
         items={[
           { label: tNav("trangChu"), href: "/" },
           { label: t("breadcrumbCategory") },

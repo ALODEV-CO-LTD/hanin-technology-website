@@ -9,7 +9,7 @@ export default function ProductHero({ product }: { product: Product }) {
 
   return (
     <section className="w-full bg-white py-space-xl border-b border-slate-200">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-[1280px] mx-auto px-margin">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
           <div className="lg:col-span-7 flex flex-col gap-5">
             <h1 className="text-2xl md:text-3xl font-bold text-slate-900 uppercase tracking-tight leading-tight">
