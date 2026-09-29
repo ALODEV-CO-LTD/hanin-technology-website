@@ -9,21 +9,22 @@ import QualityCertification from "@/components/home/QualityCertification";
 import NewsUpdates from "@/components/home/NewsUpdates";
 import RecruitmentBanner from "@/components/home/RecruitmentBanner";
 import FinalCta from "@/components/home/FinalCta";
+import Reveal from "@/components/ui/Reveal";
 
 export default function Home() {
   return (
     <div className="flex flex-col w-full text-on-surface">
       <Hero />
-      <CompanySnapshot />
-      <AboutHanin />
-      <PlatingServices />
-      <ManufacturingCapability />
-      <FactoryShowcase />
-      <ProductsProjects />
-      <QualityCertification />
-      <NewsUpdates />
-      <RecruitmentBanner />
-      <FinalCta />
+      <Reveal><CompanySnapshot /></Reveal>
+      <Reveal><AboutHanin /></Reveal>
+      <Reveal><PlatingServices /></Reveal>
+      <Reveal><ManufacturingCapability /></Reveal>
+      <Reveal><FactoryShowcase /></Reveal>
+      <Reveal><ProductsProjects /></Reveal>
+      <Reveal><QualityCertification /></Reveal>
+      <Reveal><NewsUpdates /></Reveal>
+      <Reveal><RecruitmentBanner /></Reveal>
+      <Reveal><FinalCta /></Reveal>
     </div>
   );
 }

@@ -22,9 +22,13 @@ export default function Footer() {
       <div className="max-w-[1440px] mx-auto px-margin pt-space-xl pb-space-lg">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-gutter">
           <div className="lg:col-span-4 flex flex-col gap-space-md">
-            <Link href="/" className="flex items-center w-fit">
+            <Link href="/" className="flex items-center w-fit group">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/hanin-logo.svg" alt="HANIN Plating" className="h-10 w-auto" />
+              <img
+                src="/hanin-logo.svg"
+                alt="HANIN Plating"
+                className="h-10 w-auto transition-transform duration-200 ease-out group-hover:scale-105 group-active:scale-95"
+              />
             </Link>
             <p className="text-body-sm text-slate-600 leading-relaxed max-w-sm">
               HANIN TECHNOLOGY VIỆT NAM: nhà máy gia công xi mạ và xử lý bề

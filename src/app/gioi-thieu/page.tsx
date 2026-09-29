@@ -9,6 +9,7 @@ import DevelopmentDirection from "@/components/gioi-thieu/DevelopmentDirection";
 import QualityStandardsPreview from "@/components/gioi-thieu/QualityStandardsPreview";
 import ProfileDownloadCta from "@/components/gioi-thieu/ProfileDownloadCta";
 import ContactCta from "@/components/gioi-thieu/ContactCta";
+import Reveal from "@/components/ui/Reveal";
 
 export const metadata: Metadata = {
   title: "Giới thiệu | HANIN TECHNOLOGY VIỆT NAM",
@@ -20,15 +21,15 @@ export default function GioiThieuPage() {
   return (
     <div className="flex flex-col w-full">
       <IntroHero />
-      <CompanyIntroduction />
-      <CompanyJourney />
-      <CoreStrengths />
-      <FactoryOverview />
-      <CapabilitySnapshot />
-      <DevelopmentDirection />
-      <QualityStandardsPreview />
-      <ProfileDownloadCta />
-      <ContactCta />
+      <Reveal><CompanyIntroduction /></Reveal>
+      <Reveal><CompanyJourney /></Reveal>
+      <Reveal><CoreStrengths /></Reveal>
+      <Reveal><FactoryOverview /></Reveal>
+      <Reveal><CapabilitySnapshot /></Reveal>
+      <Reveal><DevelopmentDirection /></Reveal>
+      <Reveal><QualityStandardsPreview /></Reveal>
+      <Reveal><ProfileDownloadCta /></Reveal>
+      <Reveal><ContactCta /></Reveal>
     </div>
   );
 }

@@ -3,6 +3,7 @@ import "./globals.css";
 import { gilroy } from "@/fonts";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import PageFade from "@/components/ui/PageFade";
 
 export const metadata: Metadata = {
   title: "HANIN TECHNOLOGY VIỆT NAM",
@@ -23,7 +24,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body className="bg-slate-50 text-slate-800 antialiased selection:bg-steel-600 selection:text-white">
         <Header />
-        <main className="w-full pt-20 bg-slate-50 min-h-screen">{children}</main>
+        <main className="w-full pt-20 bg-slate-50 min-h-screen">
+          <PageFade>{children}</PageFade>
+        </main>
         <Footer />
       </body>
     </html>

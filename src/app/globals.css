@@ -99,11 +99,93 @@
   --text-display-hero--font-weight: 700;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: #f8fafc;
   color: #1e293b;
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
+}
+
+/* ---- Focus visibility (bàn phím) ---- */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid var(--color-steel-500);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* ---- Page load / route fade ---- */
+@keyframes page-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.page-fade-in {
+  animation: page-fade-in 0.45s ease-out both;
+}
+
+/* ---- Scroll reveal ---- */
+@keyframes reveal-up {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.reveal {
+  opacity: 0;
+}
+.reveal.reveal-in {
+  animation: reveal-up 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+/* ---- Logo click micro-interaction ---- */
+@keyframes logo-click-pulse {
+  0% {
+    transform: scale(1);
+  }
+  35% {
+    transform: scale(0.88);
+  }
+  70% {
+    transform: scale(1.08);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.logo-click-pulse {
+  animation: logo-click-pulse 0.45s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .page-fade-in,
+  .reveal.reveal-in,
+  .logo-click-pulse {
+    animation: none !important;
+  }
+  .reveal {
+    opacity: 1;
+  }
 }
 
 .material-symbols-outlined {

@@ -4,6 +4,7 @@ import ProductCatalog from "@/components/san-pham/ProductCatalog";
 import FeaturedProjectSpotlight from "@/components/san-pham/FeaturedProjectSpotlight";
 import SpecTrustNote from "@/components/san-pham/SpecTrustNote";
 import ProductsCta from "@/components/san-pham/ProductsCta";
+import Reveal from "@/components/ui/Reveal";
 
 export const metadata: Metadata = {
   title: "Sản phẩm & Dự án | HANIN TECHNOLOGY VIỆT NAM",
@@ -15,10 +16,10 @@ export default function SanPhamDuAnPage() {
   return (
     <div className="flex flex-col w-full">
       <CategoryHero />
-      <ProductCatalog />
-      <FeaturedProjectSpotlight />
-      <SpecTrustNote />
-      <ProductsCta />
+      <Reveal><ProductCatalog /></Reveal>
+      <Reveal><FeaturedProjectSpotlight /></Reveal>
+      <Reveal><SpecTrustNote /></Reveal>
+      <Reveal><ProductsCta /></Reveal>
     </div>
   );
 }

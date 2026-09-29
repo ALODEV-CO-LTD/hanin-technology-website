@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -17,18 +17,42 @@ const NAV_LINKS = [
 
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const [logoPulsing, setLogoPulsing] = useState(false);
   const pathname = usePathname();
 
   const isActive = (href: string) =>
     href === "/" ? pathname === "/" : pathname.startsWith(href);
 
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 8);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  const handleLogoClick = () => {
+    setLogoPulsing(true);
+    window.setTimeout(() => setLogoPulsing(false), 450);
+  };
+
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-xl border-b border-slate-200 shadow-sm">
+    <header
+      className={`fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-xl border-b transition-shadow duration-300 ${
+        scrolled ? "border-slate-200 shadow-md" : "border-slate-200/70 shadow-sm"
+      }`}
+    >
       <div className="h-20 max-w-[1440px] mx-auto px-margin flex items-center justify-between gap-gutter">
         <div className="flex items-center gap-space-xl">
-          <Link href="/" className="flex items-center group">
+          <Link href="/" className="flex items-center group" onClick={handleLogoClick}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/hanin-logo.svg" alt="HANIN Plating" className="h-11 w-auto" />
+            <img
+              src="/hanin-logo.svg"
+              alt="HANIN Plating"
+              className={`h-11 w-auto transition-transform duration-200 ease-out group-hover:scale-105 group-active:scale-95 ${
+                logoPulsing ? "logo-click-pulse" : ""
+              }`}
+            />
           </Link>
           <nav className="hidden xl:flex items-center gap-space-lg">
             {NAV_LINKS.map((link) => (
@@ -37,8 +61,8 @@ export default function Header() {
                 href={link.href}
                 className={
                   isActive(link.href)
-                    ? "py-1 text-body-sm text-steel-600 font-semibold border-b-2 border-steel-600 whitespace-nowrap"
-                    : "py-1 text-body-sm text-slate-600 hover:text-steel-600 transition-colors whitespace-nowrap"
+                    ? "relative py-1 text-body-sm text-steel-600 font-semibold whitespace-nowrap after:absolute after:left-0 after:-bottom-[1px] after:h-[2px] after:w-full after:bg-steel-600"
+                    : "relative py-1 text-body-sm text-slate-600 whitespace-nowrap transition-colors duration-200 hover:text-steel-600 after:absolute after:left-0 after:-bottom-[1px] after:h-[2px] after:w-0 after:bg-steel-600 after:transition-all after:duration-300 hover:after:w-full"
                 }
               >
                 {link.label}
@@ -50,7 +74,7 @@ export default function Header() {
         <div className="flex items-center gap-space-md">
           <Link
             href="/lien-he"
-            className="hidden sm:inline-flex items-center justify-center px-5 py-2.5 bg-steel-600 hover:bg-steel-700 text-white rounded text-label-technical uppercase tracking-wider transition-all duration-150 active:scale-[0.99] shadow-sm font-semibold whitespace-nowrap"
+            className="hidden sm:inline-flex items-center justify-center px-5 py-2.5 bg-steel-600 hover:bg-steel-700 text-white rounded text-label-technical uppercase tracking-wider transition-all duration-200 hover:shadow-md hover:-translate-y-px active:scale-[0.97] shadow-sm font-semibold whitespace-nowrap"
           >
             NHẬN BÁO GIÁ KỸ THUẬT →
           </Link>
@@ -59,40 +83,49 @@ export default function Header() {
             aria-label="Mở menu"
             aria-expanded={mobileOpen}
             onClick={() => setMobileOpen((open) => !open)}
-            className="xl:hidden flex items-center justify-center w-9 h-9 rounded bg-slate-100 border border-slate-200 text-slate-600"
+            className="xl:hidden flex items-center justify-center w-9 h-9 rounded bg-slate-100 border border-slate-200 text-slate-600 transition-all duration-200 hover:bg-steel-50 hover:border-steel-200 hover:text-steel-600 active:scale-95"
           >
-            <span className="material-symbols-outlined text-[22px]">
+            <span
+              className={`material-symbols-outlined text-[22px] transition-transform duration-300 ${
+                mobileOpen ? "rotate-90" : "rotate-0"
+              }`}
+            >
               {mobileOpen ? "close" : "menu"}
             </span>
           </button>
         </div>
       </div>
 
-      {mobileOpen && (
-        <nav className="xl:hidden border-t border-slate-200 bg-white/95 backdrop-blur-xl px-margin py-space-md flex flex-col gap-space-sm">
-          {NAV_LINKS.map((link) => (
-            <Link
-              key={link.label}
-              href={link.href}
-              onClick={() => setMobileOpen(false)}
-              className={
-                isActive(link.href)
-                  ? "py-space-xs text-body-md text-steel-600 font-semibold"
-                  : "py-space-xs text-body-md text-slate-600 hover:text-steel-600 transition-colors"
-              }
-            >
-              {link.label}
-            </Link>
-          ))}
+      <nav
+        className={`xl:hidden overflow-hidden border-t border-slate-200 bg-white/95 backdrop-blur-xl px-margin transition-[max-height,opacity] duration-300 ease-out ${
+          mobileOpen ? "max-h-[560px] opacity-100 py-space-md" : "max-h-0 opacity-0 py-0"
+        } flex flex-col gap-space-sm`}
+      >
+        {NAV_LINKS.map((link, i) => (
           <Link
-            href="/lien-he"
+            key={link.label}
+            href={link.href}
             onClick={() => setMobileOpen(false)}
-            className="mt-space-sm inline-flex items-center justify-center px-space-md py-space-sm bg-steel-600 text-white rounded text-label-technical uppercase tracking-wider font-semibold"
+            style={{ transitionDelay: mobileOpen ? `${i * 30}ms` : "0ms" }}
+            className={`transition-all duration-300 ${
+              mobileOpen ? "translate-x-0 opacity-100" : "-translate-x-2 opacity-0"
+            } ${
+              isActive(link.href)
+                ? "py-space-xs text-body-md text-steel-600 font-semibold"
+                : "py-space-xs text-body-md text-slate-600 hover:text-steel-600 transition-colors"
+            }`}
           >
-            NHẬN BÁO GIÁ KỸ THUẬT →
+            {link.label}
           </Link>
-        </nav>
-      )}
+        ))}
+        <Link
+          href="/lien-he"
+          onClick={() => setMobileOpen(false)}
+          className="mt-space-sm inline-flex items-center justify-center px-space-md py-space-sm bg-steel-600 hover:bg-steel-700 text-white rounded text-label-technical uppercase tracking-wider font-semibold transition-colors duration-200 active:scale-95"
+        >
+          NHẬN BÁO GIÁ KỸ THUẬT →
+        </Link>
+      </nav>
     </header>
   );
 }

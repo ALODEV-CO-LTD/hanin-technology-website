@@ -6,6 +6,7 @@ import ServiceCategories from "@/components/dich-vu/ServiceCategories";
 import ProcessFlow from "@/components/dich-vu/ProcessFlow";
 import QualityMetrology from "@/components/dich-vu/QualityMetrology";
 import RfqFormCategory from "@/components/dich-vu/RfqFormCategory";
+import Reveal from "@/components/ui/Reveal";
 
 export const metadata: Metadata = {
   title: "Dịch Vụ Gia Công Mạ & Xử Lý Bề Mặt | HANIN TECHNOLOGY VIỆT NAM",
@@ -23,11 +24,11 @@ export default function DichVuGiaCongMaPage() {
         ]}
       />
       <CategoryHero />
-      <CapacityOverview />
-      <ServiceCategories />
-      <ProcessFlow />
-      <QualityMetrology />
-      <RfqFormCategory />
+      <Reveal><CapacityOverview /></Reveal>
+      <Reveal><ServiceCategories /></Reveal>
+      <Reveal><ProcessFlow /></Reveal>
+      <Reveal><QualityMetrology /></Reveal>
+      <Reveal><RfqFormCategory /></Reveal>
     </div>
   );
 }

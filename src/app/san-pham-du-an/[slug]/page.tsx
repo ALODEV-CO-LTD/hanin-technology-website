@@ -8,6 +8,7 @@ import ProductProcessTimeline from "@/components/san-pham/ProductProcessTimeline
 import RelatedServices from "@/components/san-pham/RelatedServices";
 import RelatedProjects from "@/components/san-pham/RelatedProjects";
 import ProductQuoteCta from "@/components/san-pham/ProductQuoteCta";
+import Reveal from "@/components/ui/Reveal";
 
 type PageProps = {
   params: Promise<{ slug: string }>;
@@ -38,12 +39,12 @@ export default async function ProductDetailPage({ params }: PageProps) {
     <div className="flex flex-col w-full">
       <ProductBreadcrumbBar product={product} />
       <ProductHero product={product} />
-      <ProductGallery />
-      <ProductOverview />
-      <ProductProcessTimeline />
-      <RelatedServices />
-      <RelatedProjects currentSlug={product.slug} />
-      <ProductQuoteCta />
+      <Reveal><ProductGallery /></Reveal>
+      <Reveal><ProductOverview /></Reveal>
+      <Reveal><ProductProcessTimeline /></Reveal>
+      <Reveal><RelatedServices /></Reveal>
+      <Reveal><RelatedProjects currentSlug={product.slug} /></Reveal>
+      <Reveal><ProductQuoteCta /></Reveal>
     </div>
   );
 }

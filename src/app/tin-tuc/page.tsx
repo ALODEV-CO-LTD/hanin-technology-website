@@ -6,6 +6,7 @@ import NewsFilterBar from "@/components/tin-tuc/NewsFilterBar";
 import NewsGrid from "@/components/tin-tuc/NewsGrid";
 import NewsPagination from "@/components/tin-tuc/NewsPagination";
 import NewsInquiryCta from "@/components/tin-tuc/NewsInquiryCta";
+import Reveal from "@/components/ui/Reveal";
 
 export const metadata: Metadata = {
   title: "Tin tức & Bản tin kỹ thuật | HANIN TECHNOLOGY VIỆT NAM",
@@ -18,11 +19,11 @@ export default function TinTucPage() {
     <div className="flex flex-col w-full text-slate-900">
       <NewsBreadcrumb />
       <NewsIntro />
-      <FeaturedArticle />
-      <NewsFilterBar />
-      <NewsGrid />
-      <NewsPagination />
-      <NewsInquiryCta />
+      <Reveal><FeaturedArticle /></Reveal>
+      <Reveal><NewsFilterBar /></Reveal>
+      <Reveal><NewsGrid /></Reveal>
+      <Reveal><NewsPagination /></Reveal>
+      <Reveal><NewsInquiryCta /></Reveal>
     </div>
   );
 }

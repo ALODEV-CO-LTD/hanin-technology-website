@@ -4,6 +4,7 @@ import WhyHanin from "@/components/tuyen-dung/WhyHanin";
 import JobBoard from "@/components/tuyen-dung/JobBoard";
 import WorkEnvironment from "@/components/tuyen-dung/WorkEnvironment";
 import ApplicationCta from "@/components/tuyen-dung/ApplicationCta";
+import Reveal from "@/components/ui/Reveal";
 
 export const metadata: Metadata = {
   title: "Tuyển dụng | HANIN TECHNOLOGY VIỆT NAM",
@@ -15,10 +16,10 @@ export default function TuyenDungPage() {
   return (
     <div className="flex flex-col w-full text-slate-800">
       <PageHero />
-      <WhyHanin />
-      <JobBoard />
-      <WorkEnvironment />
-      <ApplicationCta />
+      <Reveal><WhyHanin /></Reveal>
+      <Reveal><JobBoard /></Reveal>
+      <Reveal><WorkEnvironment /></Reveal>
+      <Reveal><ApplicationCta /></Reveal>
     </div>
   );
 }

@@ -11,6 +11,7 @@ import FactoryGallery from "@/components/nang-luc/FactoryGallery";
 import QualityStandards from "@/components/nang-luc/QualityStandards";
 import CompanyProfileCta from "@/components/nang-luc/CompanyProfileCta";
 import NangLucFinalCta from "@/components/nang-luc/NangLucFinalCta";
+import Reveal from "@/components/ui/Reveal";
 
 export const metadata: Metadata = {
   title: "Năng lực sản xuất | HANIN TECHNOLOGY VIỆT NAM",
@@ -22,17 +23,17 @@ export default function NangLucSanXuatPage() {
   return (
     <div className="flex flex-col w-full">
       <CapabilityHero />
-      <CapabilityOverviewStats />
-      <FactoryOverview />
-      <ProductionLines />
-      <AutomatedVsManual />
-      <EquipmentGrid />
-      <TestingAnalysis />
-      <ProductionFlow />
-      <FactoryGallery />
-      <QualityStandards />
-      <CompanyProfileCta />
-      <NangLucFinalCta />
+      <Reveal><CapabilityOverviewStats /></Reveal>
+      <Reveal><FactoryOverview /></Reveal>
+      <Reveal><ProductionLines /></Reveal>
+      <Reveal><AutomatedVsManual /></Reveal>
+      <Reveal><EquipmentGrid /></Reveal>
+      <Reveal><TestingAnalysis /></Reveal>
+      <Reveal><ProductionFlow /></Reveal>
+      <Reveal><FactoryGallery /></Reveal>
+      <Reveal><QualityStandards /></Reveal>
+      <Reveal><CompanyProfileCta /></Reveal>
+      <Reveal><NangLucFinalCta /></Reveal>
     </div>
   );
 }

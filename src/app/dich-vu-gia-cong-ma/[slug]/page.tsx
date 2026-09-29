@@ -10,6 +10,7 @@ import DetailGallery from "@/components/dich-vu/DetailGallery";
 import RfqFormDetail from "@/components/dich-vu/RfqFormDetail";
 import RelatedServices from "@/components/dich-vu/RelatedServices";
 import { DETAIL_TEMPLATE_SLUG, getServiceBySlug } from "@/lib/services-data";
+import Reveal from "@/components/ui/Reveal";
 
 type PageParams = { slug: string };
 
@@ -49,14 +50,14 @@ export default async function DichVuChiTietPage({
         ]}
       />
       <DetailHero />
-      <DetailOverview />
-      <DetailProcess />
-      <DetailCapability />
-      <DetailApplications />
-      <DetailQaTable />
-      <DetailGallery />
-      <RfqFormDetail />
-      <RelatedServices currentSlug={service?.slug ?? DETAIL_TEMPLATE_SLUG} />
+      <Reveal><DetailOverview /></Reveal>
+      <Reveal><DetailProcess /></Reveal>
+      <Reveal><DetailCapability /></Reveal>
+      <Reveal><DetailApplications /></Reveal>
+      <Reveal><DetailQaTable /></Reveal>
+      <Reveal><DetailGallery /></Reveal>
+      <Reveal><RfqFormDetail /></Reveal>
+      <Reveal><RelatedServices currentSlug={service?.slug ?? DETAIL_TEMPLATE_SLUG} /></Reveal>
     </div>
   );
 }
