@@ -8,7 +8,7 @@ import ProductsCta from "@/components/san-pham/ProductsCta";
 export const metadata: Metadata = {
   title: "Sản phẩm & Dự án | HANIN TECHNOLOGY VIỆT NAM",
   description:
-    "Khám phá các sản phẩm và dự án gia công mạ kim loại kỹ thuật cao được thực hiện bởi HANIN TECHNOLOGY VIỆT NAM — kiểm soát dung sai micron, độ đồng đều lớp phủ và độ bền môi trường khắt khe.",
+    "Sản phẩm và dự án gia công mạ kim loại kỹ thuật cao của HANIN TECHNOLOGY VIỆT NAM: kiểm soát dung sai micron, độ đồng đều lớp phủ và độ bền môi trường khắt khe.",
 };
 
 export default function SanPhamDuAnPage() {

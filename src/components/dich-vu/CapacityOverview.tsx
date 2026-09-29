@@ -45,8 +45,8 @@ export default function CapacityOverview() {
             </h2>
           </div>
           <p className="text-body-md text-slate-600 max-w-lg">
-            Vận hành 02 xưởng sản xuất hiện đại tích hợp hệ thống xử lý nước thải tuần hoàn khép kín, kiểm soát nồng
-            độ bể mạ điện tử và phân tích quang học trực tiếp.
+            02 xưởng sản xuất tích hợp hệ thống xử lý nước thải tuần hoàn khép kín, kiểm soát nồng độ bể mạ điện tử
+            và phân tích quang học trực tiếp.
           </p>
         </div>
 

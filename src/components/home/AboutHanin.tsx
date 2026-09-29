@@ -1,8 +1,8 @@
 import Link from "next/link";
 
 const HIGHLIGHTS = [
-  "Độ bám dính & chống ăn mòn vượt trội",
-  "Kiểm định độ dày micron chuẩn xác",
+  "Độ bám dính cao, chống ăn mòn bề mặt",
+  "Kiểm định độ dày lớp mạ theo micron",
   "Gia công quy mô công nghiệp hàng loạt",
   "Hệ thống xử lý nước thải đạt chuẩn",
 ];

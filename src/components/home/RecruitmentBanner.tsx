@@ -17,8 +17,7 @@ export default function RecruitmentBanner() {
               Cùng xây dựng tương lai công nghiệp.
             </h2>
             <p className="text-body-md text-slate-600">
-              Khám phá các cơ hội nghề nghiệp tại HANIN. Gia nhập đội ngũ kỹ
-              thuật và vận hành công nghệ cao.
+              Gia nhập đội ngũ kỹ thuật và vận hành tại HANIN.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row items-center gap-space-md shrink-0">

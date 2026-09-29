@@ -27,9 +27,9 @@ export default function Footer() {
               <img src="/hanin-logo.svg" alt="HANIN Plating" className="h-10 w-auto" />
             </Link>
             <p className="text-body-sm text-slate-600 leading-relaxed max-w-sm">
-              HANIN TECHNOLOGY VIỆT NAM — Nhà máy gia công xi mạ kỹ thuật cao,
-              xử lý bề mặt kim loại cơ khí chính xác theo tiêu chuẩn công
-              nghiệp Nhật Bản và quốc tế.
+              HANIN TECHNOLOGY VIỆT NAM: nhà máy gia công xi mạ và xử lý bề
+              mặt kim loại cơ khí chính xác, theo tiêu chuẩn công nghiệp Nhật
+              Bản và quốc tế.
             </p>
             <div className="flex flex-wrap items-center gap-space-xs pt-space-xs">
               <span className="text-label-technical text-slate-700 uppercase px-2.5 py-0.5 bg-slate-100 rounded border border-slate-200 font-semibold">

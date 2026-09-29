@@ -37,7 +37,7 @@ export const PLATING_SERVICES: PlatingService[] = [
     title: "Mạ Crom Cứng Công Nghiệp",
     titleEn: "Hard Chrome Plating (Cr)",
     description:
-      "Tạo lớp mạ có độ cứng bề mặt vượt trội (65 - 72 HRC), hệ số ma sát cực thấp, chống xước cơ học và ổn định nhiệt độ làm việc khắc nghiệt.",
+      "Tạo lớp mạ cứng 65 - 72 HRC, hệ số ma sát cực thấp, chống xước cơ học và ổn định ở nhiệt độ làm việc khắc nghiệt.",
     applicationLabel: "ỨNG DỤNG ĐIỂN HÌNH:",
     applicationText: "Trục piston xilanh thủy lực, con lăn cán thép công nghiệp, khuôn dập chính xác.",
     statLabel: "Độ cứng: 65 - 72 HRC | Bề dày đến 300µm",
@@ -65,7 +65,7 @@ export const PLATING_SERVICES: PlatingService[] = [
     title: "Mạ Kẽm & Hợp Kim Kẽm-Niken",
     titleEn: "Zinc & Zinc-Nickel Plating (Zn-Ni)",
     description:
-      "Bảo vệ catốt hy sinh vượt trội. Công nghệ Zn-Ni kháng phun muối lên đến 1,500 giờ trước gỉ đỏ, chịu nhiệt độ cao trong khoang động cơ xe.",
+      "Công nghệ Zn-Ni bảo vệ catốt hy sinh, kháng phun muối đến 1.500 giờ trước khi xuất hiện gỉ đỏ, chịu nhiệt độ cao trong khoang động cơ xe.",
     applicationLabel: "ỨNG DỤNG ĐIỂN HÌNH:",
     applicationText: "Bulong, ecu cường độ cao, linh kiện dập gầm ô tô xe máy, phụ tùng phanh.",
     statLabel: "Kháng muối: >1200h ASTM B117",
@@ -107,7 +107,7 @@ export function getServiceBySlug(slug: string): PlatingService | undefined {
   return PLATING_SERVICES.find((service) => service.slug === slug);
 }
 
-/** Dịch vụ có nội dung trang chi tiết đầy đủ (mẫu ENP) — dùng làm fallback cho các slug khác. */
+/** Dịch vụ có nội dung trang chi tiết đầy đủ (mẫu ENP), dùng làm fallback cho các slug khác. */
 export const DETAIL_TEMPLATE_SLUG = "ma-niken-hoa-hoc-enp";
 
 export function getRelatedServices(currentSlug: string, limit = 3): PlatingService[] {

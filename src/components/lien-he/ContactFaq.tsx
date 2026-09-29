@@ -6,28 +6,28 @@ const FAQS = [
   {
     question: "1. Thời gian HANIN phản hồi báo giá kỹ thuật chi tiết là bao lâu?",
     answer:
-      "Đối với các bản vẽ tiêu chuẩn 2D (PDF, DWG) hoặc mô hình 3D (STEP) có đầy đủ thông số vật liệu nền và độ dày lớp mạ, đội ngũ kỹ sư bán hàng của HANIN cam kết phản hồi báo giá hoàn chỉnh trong vòng 04 giờ làm việc. Đối với các đơn hàng gia công tổ hợp yêu cầu xử lý nhiệt đặc biệt hoặc tiêu chuẩn ASTM khắt khe, thời gian phản hồi tối đa là 24 giờ.",
+      "Với bản vẽ 2D (PDF, DWG) hoặc 3D (STEP) đầy đủ thông số vật liệu nền và độ dày lớp mạ, HANIN phản hồi báo giá trong vòng 04 giờ làm việc. Đơn hàng tổ hợp cần xử lý nhiệt đặc biệt hoặc tiêu chuẩn ASTM khắt khe: tối đa 24 giờ.",
   },
   {
     question: "2. HANIN hỗ trợ những định dạng bản vẽ kỹ thuật nào khi tiếp nhận qua website?",
     answer:
-      "Hệ thống máy chủ kỹ thuật của chúng tôi đồng bộ với các phần mềm CAD/CAM hàng đầu (SolidWorks, Inventor, AutoCAD, Creo). Chúng tôi tiếp nhận trực tiếp các tệp: .STEP, .STP, .DWG, .DXF, .IGES, .X_T, .PDF và các tệp nén .ZIP / .RAR lên tới 50MB. Nếu bản vẽ có dung lượng lớn hơn, quý khách vui lòng gửi link điện toán đám mây đến email engineering@hanintech.vn.",
+      "HANIN nhận trực tiếp các tệp .STEP, .STP, .DWG, .DXF, .IGES, .X_T, .PDF và file nén .ZIP/.RAR tới 50MB, tương thích SolidWorks, Inventor, AutoCAD, Creo. Bản vẽ dung lượng lớn hơn, gửi link cloud đến email engineering@hanintech.vn.",
   },
   {
     question: "3. Chính sách bảo mật bản vẽ (NDA) của HANIN được thực hiện như thế nào?",
     answer:
-      "HANIN cam kết 100% tuân thủ thỏa thuận bảo mật thông tin (Non-Disclosure Agreement - NDA) với đối tác trước hoặc ngay khi tiếp nhận dữ liệu. Toàn bộ bản vẽ, mô hình 3D và thông số bí mật công nghệ đều được lưu trữ trên máy chủ nội bộ cô lập, chỉ mở quyền truy cập cho kỹ sư phụ trách trực tiếp và cam kết không tiết lộ cho bất kỳ bên thứ ba nào.",
+      "HANIN ký thỏa thuận bảo mật (Non-Disclosure Agreement - NDA) trước hoặc ngay khi tiếp nhận dữ liệu. Bản vẽ, mô hình 3D và thông số kỹ thuật được lưu trên máy chủ nội bộ cô lập, chỉ kỹ sư phụ trách trực tiếp có quyền truy cập và không chia sẻ cho bên thứ ba.",
   },
   {
     question: "4. Số lượng đơn hàng tối thiểu (MOQ) cho các chi tiết xi mạ là bao nhiêu?",
     answer:
-      "Chúng tôi có chính sách MOQ vô cùng linh hoạt nhằm hỗ trợ tối đa chu kỳ phát triển sản phẩm của doanh nghiệp. HANIN sẵn sàng nhận gia công từ 01 chi tiết mẫu thử R&D cho đến các lô thử nghiệm 500 – 1.000 chi tiết và hợp đồng cung ứng hàng loạt lên đến hàng trăm nghìn chi tiết mỗi tháng với bể mạ dung tích lớn.",
+      "MOQ linh hoạt: HANIN nhận gia công từ 01 chi tiết mẫu thử R&D, lô thử nghiệm 500 - 1.000 chi tiết, đến hợp đồng cung ứng hàng loạt hàng trăm nghìn chi tiết mỗi tháng với bể mạ dung tích lớn.",
   },
   {
     question:
       "5. HANIN có hỗ trợ gia công mẫu thử nghiệm (Sampling) trước khi ký hợp đồng không?",
     answer:
-      "Có. Đối với các đơn hàng số lượng lớn hoặc linh kiện có yêu cầu kỹ thuật đặc thù, HANIN sẽ tiến hành mạ mẫu thử (Sampling), đo kiểm độ dày lớp mạ bằng máy huỳnh quang tia X (XRF), kiểm tra thử nghiệm độ bám dính và phun sương muối kiểm tra ăn mòn (Salt Spray Test theo ASTM B117) kèm biên bản kiểm định đầy đủ gửi quý khách phê duyệt trước khi đi vào sản xuất hàng loạt.",
+      "Có. Với đơn hàng số lượng lớn hoặc linh kiện có yêu cầu kỹ thuật đặc thù, HANIN mạ mẫu thử (Sampling), đo độ dày lớp mạ bằng máy huỳnh quang tia X (XRF), kiểm tra độ bám dính và thử phun sương muối (Salt Spray Test theo ASTM B117), kèm biên bản kiểm định gửi quý khách phê duyệt trước khi sản xuất hàng loạt.",
   },
 ];
 

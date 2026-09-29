@@ -56,8 +56,7 @@ export default function QualityMetrology() {
               PHÒNG THÍ NGHIỆM ĐO ĐỘ BỀN &amp; QUANG PHỔ XRF
             </h2>
             <p className="text-body-lg text-slate-600 mb-space-md">
-              Chất lượng không chỉ dựa vào mắt nhìn. Mỗi lô thành phẩm đều được đối chiếu tiêu chuẩn quốc tế và cấp
-              chứng nhận Certificate of Analysis (CoA) chi tiết.
+              Mỗi lô thành phẩm được đối chiếu tiêu chuẩn quốc tế và cấp chứng nhận Certificate of Analysis (CoA).
             </p>
             <div className="flex flex-col gap-space-sm">
               {LAB_ITEMS.map((item) => (

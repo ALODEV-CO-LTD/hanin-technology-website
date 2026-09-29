@@ -17,13 +17,12 @@ export default function DetailHero() {
             <h1 className="text-headline-lg text-slate-900 tracking-tight uppercase mt-space-xs font-bold">
               MẠ NIKEN HÓA HỌC KHÔNG DÙNG ĐIỆN
               <span className="block text-steel-600 text-headline-md mt-1 font-bold">
-                (ELECTROLESS NICKEL PLATING — ENP)
+                (ELECTROLESS NICKEL PLATING, ENP)
               </span>
             </h1>
             <p className="text-body-lg text-slate-600 mt-space-xs">
-              Giải pháp xử lý bề mặt bằng phản ứng khử hóa học tự xúc tác Ni-P tiên tiến. Mang lại độ dày lớp phủ
-              đồng đều 100% trên toàn bộ các biên dạng phức tạp, ren trong, lỗ mù và hốc sâu mà phương pháp mạ điện
-              phân cực thông thường hoàn toàn không thể tiếp cận.
+              Phản ứng khử hóa học tự xúc tác Ni-P tạo lớp phủ đồng đều trên mọi biên dạng phức tạp, ren trong, lỗ
+              mù và hốc sâu, những vị trí mà mạ điện phân thông thường không tiếp cận được.
             </p>
 
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-space-sm my-space-md pt-space-sm bg-slate-50 border border-slate-200 p-space-sm rounded">
@@ -34,7 +33,7 @@ export default function DetailHero() {
               </div>
               <div className="flex flex-col">
                 <span className="text-label-sm text-slate-500 uppercase">ĐỘ CỨNG SAU NHIỆT</span>
-                <span className="text-title-md text-slate-900 font-bold">65 — 68 HRC</span>
+                <span className="text-title-md text-slate-900 font-bold">65-68 HRC</span>
                 <span className="text-label-sm text-slate-500">Baking 400°C x 1h</span>
               </div>
               <div className="flex flex-col">
@@ -92,8 +91,7 @@ export default function DetailHero() {
                 <span>LỚP PHỦ: HIGH-PHOSPHORUS (11.2% P)</span>
               </div>
               <p className="text-body-md text-slate-100 line-clamp-2">
-                Bộ bánh răng hành tinh và chi tiết van phân phối sau khi hoàn tất chu trình mạ ENP và sấy khử ứng
-                suất hydro.
+                Bánh răng hành tinh và van phân phối sau khi mạ ENP và sấy khử ứng suất hydro.
               </p>
             </div>
           </div>

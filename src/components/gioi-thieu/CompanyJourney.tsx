@@ -4,21 +4,21 @@ const MILESTONES = [
     yearTag: "[NĂM KHỞI ĐẦU]",
     phase: "GIAI ĐOẠN 01 // KHỞI ĐẦU NỀN TẢNG",
     title: "Thành lập cơ sở & xây dựng quy chuẩn",
-    desc: "Thành lập cơ sở & xây dựng quy chuẩn mạ kim loại công nghiệp ban đầu, tối ưu hóa công thức hóa chất xử lý ban đầu.",
+    desc: "Thành lập cơ sở, xây dựng quy chuẩn mạ kim loại và tối ưu công thức hóa chất xử lý.",
   },
   {
     index: "02",
     yearTag: "[NĂM PHÁT TRIỂN]",
     phase: "GIAI ĐOẠN 02 // MỞ RỘNG DÂY CHUYỀN",
     title: "Mở rộng hệ thống dây chuyền tự động",
-    desc: "Mở rộng hệ thống dây chuyền mạ tự động & nâng cấp phòng kiểm soát chất lượng đạt chuẩn đo lường kỹ thuật cao.",
+    desc: "Mở rộng dây chuyền mạ tự động và nâng cấp phòng kiểm soát chất lượng theo chuẩn đo lường kỹ thuật.",
   },
   {
     index: "03",
     yearTag: "[NĂM CHUẨN HÓA]",
     phase: "GIAI ĐOẠN 03 // CHUẨN HÓA QUỐC TẾ",
     title: "Kiểm nghiệm Micron & Đồng bộ B2B",
-    desc: "Đạt quy chuẩn kiểm nghiệm độ dày micron và đồng bộ giải pháp xử lý bề mặt B2B cho các tập đoàn đối tác quốc tế.",
+    desc: "Đạt chuẩn kiểm nghiệm độ dày micron và đồng bộ quy trình xử lý bề mặt cho khách hàng B2B quốc tế.",
   },
 ];
 
@@ -72,7 +72,7 @@ export default function CompanyJourney() {
               </div>
             ))}
 
-            {/* Card 04 — Current & Future */}
+            {/* Card 04 - Current & Future */}
             <div className="relative flex flex-col p-space-md rounded bg-[#F0F6FB] border border-[#CFE1F3] hover:border-[#2F80C0] shadow-sm hover:shadow-md transition-all duration-300 group">
               <div className="flex items-center justify-between mb-space-sm">
                 <span className="w-8 h-8 rounded bg-[#2F80C0] flex items-center justify-center text-label-technical text-white font-bold">
@@ -89,7 +89,7 @@ export default function CompanyJourney() {
                 Đối tác gia công mạ tin cậy
               </h3>
               <p className="text-body-sm text-slate-600 leading-relaxed">
-                Định vị đối tác gia công mạ tin cậy cho các chuỗi sản xuất công nghiệp phụ trợ, mở rộng quy chuẩn
+                Mở rộng vai trò đối tác gia công mạ cho chuỗi sản xuất công nghiệp phụ trợ, hướng tới quy chuẩn
                 bền vững và công nghệ sạch.
               </p>
             </div>

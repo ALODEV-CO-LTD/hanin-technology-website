@@ -11,8 +11,8 @@ export default function WorkEnvironment() {
             HÌNH ẢNH MÔI TRƯỜNG LÀM VIỆC THỰC TẾ
           </h2>
           <p className="text-body-lg text-slate-600">
-            Không gian sản xuất hiện đại, an toàn và chuyên nghiệp tại tổ hợp nhà máy HANIN TECHNOLOGY VIỆT NAM —
-            Nơi công nghệ tự động hoá đồng hành cùng kỷ luật lao động.
+            Hình ảnh thực tế tại nhà máy HANIN TECHNOLOGY VIỆT NAM: dây chuyền tự động hóa vận hành theo kỷ luật
+            lao động nghiêm ngặt.
           </p>
         </div>
 

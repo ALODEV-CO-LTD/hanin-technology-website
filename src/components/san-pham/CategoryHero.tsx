@@ -25,8 +25,8 @@ export default function CategoryHero() {
             Sản phẩm &amp; Dự án
           </h1>
           <p className="text-body-lg text-slate-600 max-w-3xl leading-relaxed mt-space-xs">
-            Khám phá các sản phẩm và dự án gia công mạ kim loại kỹ thuật cao được thực hiện bởi
-            HANIN — kiểm soát dung sai micron, độ đồng đều lớp phủ và độ bền môi trường khắt khe.
+            Sản phẩm và dự án gia công mạ kim loại kỹ thuật cao thực hiện bởi HANIN: kiểm soát
+            dung sai micron, độ đồng đều lớp phủ và độ bền môi trường khắt khe.
           </p>
         </div>
         <div className="flex flex-wrap items-center gap-space-md">

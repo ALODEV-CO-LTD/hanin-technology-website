@@ -8,7 +8,7 @@ import ApplicationCta from "@/components/tuyen-dung/ApplicationCta";
 export const metadata: Metadata = {
   title: "Tuyển dụng | HANIN TECHNOLOGY VIỆT NAM",
   description:
-    "Khám phá các vị trí tuyển dụng đang mở tại HANIN TECHNOLOGY VIỆT NAM - cơ hội nghề nghiệp trong lĩnh vực gia công mạ kim loại và cơ khí chính xác.",
+    "Vị trí tuyển dụng đang mở tại HANIN TECHNOLOGY VIỆT NAM trong lĩnh vực gia công mạ kim loại và cơ khí chính xác.",
 };
 
 export default function TuyenDungPage() {

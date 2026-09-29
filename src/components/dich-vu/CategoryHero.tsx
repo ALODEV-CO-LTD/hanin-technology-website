@@ -15,8 +15,8 @@ export default function CategoryHero() {
             DỊCH VỤ GIA CÔNG MẠ &amp; XỬ LÝ BỀ MẶT CÔNG NGHIỆP
           </h1>
           <p className="text-body-lg text-slate-600 max-w-2xl leading-relaxed">
-            Chuyên sâu trong lĩnh vực gia công xi mạ kim loại, mạ điện phân tự động SCADA và xử lý bề mặt kỹ thuật
-            cao, đáp ứng các tiêu chuẩn dung sai khắt khe trong ngành ô tô, thiết bị điện và cơ khí chính xác.
+            Gia công xi mạ kim loại, mạ điện phân tự động SCADA và xử lý bề mặt kỹ thuật cao, đáp ứng dung sai khắt
+            khe của ngành ô tô, thiết bị điện và cơ khí chính xác.
           </p>
 
           <div className="grid grid-cols-3 gap-space-sm bg-slate-50 border border-slate-200 p-space-sm rounded">

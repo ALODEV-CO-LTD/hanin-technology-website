@@ -77,7 +77,7 @@ export default function LocationMap() {
             </div>
           </div>
 
-          {/* Static map visual (placeholder — chưa nối Google Maps API thật) */}
+          {/* Static map visual (placeholder, chưa nối Google Maps API thật) */}
           <div className="lg:col-span-7 rounded overflow-hidden shadow-sm relative min-h-[420px] bg-slate-200">
             <div
               className="w-full h-full min-h-[420px] bg-cover bg-center relative"

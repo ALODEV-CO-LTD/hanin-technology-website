@@ -71,8 +71,8 @@ export default function CompanyIntroduction() {
                 ngành công nghiệp chế tạo, phụ tùng cơ khí và linh kiện kỹ thuật cao.
               </p>
               <p>
-                [Thông tin giới thiệu chính thức về HANIN — Lịch sử hình thành, quy mô nhân sự và sứ mệnh cung ứng
-                giải pháp gia công bề mặt tiêu chuẩn cao cho doanh nghiệp trong và ngoài nước.]
+                [Thông tin giới thiệu chính thức về HANIN: lịch sử hình thành, quy mô nhân sự và định hướng gia công
+                bề mặt cho doanh nghiệp trong và ngoài nước.]
               </p>
             </div>
             {/* Metadata Technical Grid Box */}

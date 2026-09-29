@@ -17,8 +17,8 @@ export default function FinalCta() {
               BẠN CÓ DỰ ÁN CẦN GIA CÔNG MẠ?
             </h2>
             <p className="text-body-lg text-slate-600">
-              Gửi yêu cầu để HANIN có thể tiếp nhận và tư vấn giải pháp phù hợp
-              với các thông số kỹ thuật tối ưu.
+              Gửi yêu cầu, đội kỹ thuật HANIN sẽ liên hệ tư vấn theo thông số
+              cụ thể của bạn.
             </p>
             <div className="pt-space-xs flex flex-wrap items-center gap-space-md">
               <Link

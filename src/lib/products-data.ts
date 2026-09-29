@@ -158,7 +158,7 @@ export function getSpotlightProject(): Product {
 }
 
 /**
- * Nội dung chi tiết kỹ thuật đầy đủ — hiện tại chỉ có 1 bộ nội dung mẫu
+ * Nội dung chi tiết kỹ thuật đầy đủ: hiện tại chỉ có 1 bộ nội dung mẫu
  * (dựa theo file thiết kế chi tiết sản phẩm/dự án nguồn). Trang chi tiết
  * dùng chung bộ nội dung này cho mọi slug, chỉ thay các trường định danh
  * (tiêu đề, breadcrumb, badge) theo đúng sản phẩm tương ứng.

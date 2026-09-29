@@ -47,8 +47,8 @@ export default function ProcessFlow() {
           SƠ ĐỒ CHU TRÌNH GIA CÔNG XI MẠ CHÍNH XÁC
         </h2>
         <p className="text-body-md text-slate-600 max-w-3xl">
-          Mọi công đoạn được giám sát liên tục bằng cảm biến pH, nhiệt độ, dòng điện tích hợp IoT và ghi nhận nhật
-          ký sản xuất số hóa truy xuất nguồn gốc.
+          Mỗi công đoạn được giám sát bằng cảm biến pH, nhiệt độ, dòng điện tích hợp IoT và ghi nhận vào nhật ký
+          sản xuất số hóa để truy xuất nguồn gốc.
         </p>
       </div>
 

@@ -79,7 +79,7 @@ export default function RfqForm() {
     setStatus("submitting");
     console.log("RFQ form submit (demo):", { ...form, files: files.map((f) => f.name) });
 
-    // Demo only — chưa nối backend thật (Phase 1). Phần xử lý gửi email/CRM sẽ triển khai riêng.
+    // Demo only, chưa nối backend thật (Phase 1). Phần xử lý gửi email/CRM sẽ triển khai riêng.
     setTimeout(() => {
       setStatus("success");
     }, 900);
@@ -125,7 +125,7 @@ export default function RfqForm() {
                     progress_activity
                   </span>
                   <span className="text-body-md font-semibold">
-                    Đang gửi yêu cầu báo giá (demo — chưa nối backend thật)...
+                    Đang gửi yêu cầu báo giá (demo, chưa nối backend thật)...
                   </span>
                 </div>
               )}
@@ -137,7 +137,7 @@ export default function RfqForm() {
                     </span>
                     <div>
                       <p className="text-title-md font-bold text-emerald-950">
-                        ĐÃ GỬI YÊU CẦU (DEMO — CHƯA NỐI BACKEND THẬT)
+                        ĐÃ GỬI YÊU CẦU (DEMO, CHƯA NỐI BACKEND THẬT)
                       </p>
                       <p className="text-body-md text-emerald-800 mt-1">
                         Đây là bản mô phỏng giao diện thuộc Phase 1. Phần xử lý gửi email/CRM thật

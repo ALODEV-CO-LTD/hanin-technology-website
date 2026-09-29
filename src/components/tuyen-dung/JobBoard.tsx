@@ -70,8 +70,7 @@ export default function JobBoard() {
               VỊ TRÍ ĐANG TUYỂN DỤNG
             </h2>
             <p className="text-body-lg text-slate-600">
-              Khám phá các vị trí tuyển dụng phù hợp với chuyên môn của bạn tại văn phòng điều hành và nhà máy sản
-              xuất HANIN.
+              Vị trí tuyển dụng tại văn phòng điều hành và nhà máy sản xuất HANIN.
             </p>
           </div>
           <div className="flex items-center gap-2 px-space-md py-space-sm bg-white rounded shadow-sm text-slate-500 text-label-sm font-semibold tracking-wider uppercase self-start md:self-auto shrink-0">

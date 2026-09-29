@@ -12,8 +12,8 @@ export default function NewsIntro() {
               TIN TỨC &amp; <span className="text-steel-600">BẢN TIN</span> KỸ THUẬT
             </h1>
             <p className="text-body-lg text-slate-600 max-w-2xl mt-space-xs">
-              Cập nhật những hoạt động doanh nghiệp mới nhất, đột phá nghiên cứu công nghệ xử lý bề
-              mặt kim loại, quy chuẩn đo kiểm chất lượng và góc nhìn chuyên sâu từ nhà máy HANIN.
+              Cập nhật hoạt động doanh nghiệp, công nghệ xử lý bề mặt kim loại, quy chuẩn đo kiểm
+              chất lượng và tin kỹ thuật từ nhà máy HANIN.
             </p>
           </div>
           <div className="lg:col-span-4 flex flex-col sm:flex-row lg:flex-col gap-space-sm justify-end">

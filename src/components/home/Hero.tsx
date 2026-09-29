@@ -35,9 +35,8 @@ export default function Hero() {
           </div>
 
           <p className="text-body-lg text-slate-300 max-w-2xl leading-relaxed">
-            Cung cấp giải pháp gia công mạ và năng lực sản xuất phục vụ nhu cầu
-            công nghiệp, với định hướng chính xác, ổn định và kiểm soát chất
-            lượng.
+            Gia công mạ kim loại và sản xuất phụ trợ cho khách hàng công
+            nghiệp, kiểm soát dung sai theo tiêu chuẩn kỹ thuật.
           </p>
 
           <div className="flex flex-wrap items-center gap-space-md pt-space-sm">

@@ -5,18 +5,18 @@ import { useState } from "react";
 const TABS = [
   {
     id: "tab-factory",
-    label: "01 — NHÀ MÁY",
+    label: "01. NHÀ MÁY",
     sector: "PHÂN KHU: NHÀ_MÁY_01_A",
     tagline: "KHOANG XỬ LÝ KHÍ THẢI & BỂ DUNG DỊCH",
     order: "01 / TỔ HỢP NHÀ XƯỞNG CÔNG NGHIỆP",
-    title: "Hệ thống nhà xưởng hiện đại tối ưu hóa luồng vật liệu",
-    desc: "Mặt sàn phủ epoxy kháng hóa chất cao cấp, trần thông gió cưỡng bức hai cấp, kết hợp hệ thống thu hồi và trung hòa hơi axit tự động liên tục 24/7.",
+    title: "Nhà xưởng bố trí tối ưu luồng vật liệu",
+    desc: "Mặt sàn phủ epoxy kháng hóa chất, trần thông gió cưỡng bức hai cấp, hệ thống thu hồi và trung hòa hơi axit tự động 24/7.",
     image:
       "https://lh3.googleusercontent.com/aida-public/AB6AXuB8KJVXFxeFOjgqXWkBiF9FpvBa5qKIYmcY81aCaskvAP4hSt2ZAzELb8QZw0bgB-yM4zwk995zEP0O10jp5eBR9O9BQCXTmbuboBg4M9R2uef8_bWiWogphX6f8LTo52el2OlctLIvZriqnpDZaRDeFXPJqagO_IBs8ycl8QTHYgZinLz1RGFn2z-ICjotF9EmSHqaxYSCNWmJnEHrtFrXhWLfdYzj9JCX7fZpcuStogJf__GS-1mcHg",
   },
   {
     id: "tab-line",
-    label: "02 — DÂY CHUYỀN",
+    label: "02. DÂY CHUYỀN",
     sector: "PHÂN KHU: DÂY_CHUYỀN_02_B",
     tagline: "DÂY CHUYỀN MẠ TỰ ĐỘNG",
     order: "02 / DÂY CHUYỀN GIA CÔNG MẠ",
@@ -27,7 +27,7 @@ const TABS = [
   },
   {
     id: "tab-lab",
-    label: "03 — PHÒNG KIỂM NGHIỆM",
+    label: "03. PHÒNG KIỂM NGHIỆM",
     sector: "PHÂN KHU: PHÒNG_LAB_03_C",
     tagline: "PHÒNG PHÂN TÍCH & KIỂM TRA",
     order: "03 / KIỂM SOÁT CHẤT LƯỢNG",
@@ -38,7 +38,7 @@ const TABS = [
   },
   {
     id: "tab-equipment",
-    label: "04 — THIẾT BỊ",
+    label: "04. THIẾT BỊ",
     sector: "PHÂN KHU: THIẾT_BỊ_04_D",
     tagline: "THIẾT BỊ & PHỤ TRỢ CHUYÊN DỤNG",
     order: "04 / DANH MỤC THIẾT BỊ",
@@ -66,8 +66,8 @@ export default function FactoryShowcase() {
             </h2>
           </div>
           <p className="text-body-sm text-slate-600 max-w-md">
-            Hệ thống nhà xưởng hiện đại tối ưu hóa luồng vật liệu và kiểm soát
-            nghiêm ngặt các tiêu chuẩn môi trường sản xuất.
+            Bố trí nhà xưởng, dây chuyền và phòng kiểm nghiệm theo từng khu
+            vực vận hành riêng biệt.
           </p>
         </div>
 

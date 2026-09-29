@@ -26,8 +26,7 @@ export default function TestingAnalysis() {
           </span>
           <h2 className="text-headline-lg text-slate-900 uppercase tracking-tight">PHÂN TÍCH &amp; KIỂM NGHIỆM</h2>
           <p className="text-body-md text-slate-600 max-w-3xl mt-1">
-            Phòng phân tích hóa nghiệm và đo lường vi mô hiện đại, kiểm định chất lượng toàn diện trước khi xuất
-            kho theo quy chuẩn quốc tế.
+            Phòng phân tích hóa nghiệm và đo lường vi mô, kiểm định trước khi xuất kho theo quy chuẩn quốc tế.
           </p>
         </div>
 

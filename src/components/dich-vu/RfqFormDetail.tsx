@@ -16,8 +16,7 @@ export default function RfqFormDetail() {
               GỬI THÔNG SỐ &amp; YÊU CẦU MẠ NIKEN HÓA HỌC (ENP)
             </h2>
             <p className="text-body-md text-slate-600 mt-1">
-              Kỹ sư luyện kim của HANIN sẽ phản hồi báo giá chi tiết, phân tích công nghệ và kế hoạch thử nghiệm mạ
-              mẫu trong vòng 24 giờ làm việc.
+              Kỹ sư luyện kim HANIN phản hồi báo giá và kế hoạch mạ mẫu trong vòng 24 giờ làm việc.
             </p>
           </div>
           <div className="mt-space-sm md:mt-0 text-label-sm text-slate-500 bg-white border border-slate-200 px-3 py-2 rounded">
@@ -91,9 +90,9 @@ export default function RfqFormDetail() {
                 className="w-full h-10 px-3 bg-slate-50 border border-slate-200 text-slate-900 text-body-md rounded focus:outline-none focus:bg-white focus:border-steel-300 transition-colors"
                 defaultValue="HIGH_PHOS"
               >
-                <option value="HIGH_PHOS">High Phos (&gt;10% P) — Kháng ăn mòn cực đại</option>
-                <option value="MED_PHOS">Medium Phos (6-9% P) — Chống mài mòn cao</option>
-                <option value="LOW_PHOS">Low Phos (1-4% P) — Tăng độ cứng nguyên bản</option>
+                <option value="HIGH_PHOS">High Phos (&gt;10% P): kháng ăn mòn cao</option>
+                <option value="MED_PHOS">Medium Phos (6-9% P): chống mài mòn</option>
+                <option value="LOW_PHOS">Low Phos (1-4% P): tăng độ cứng nền</option>
                 <option value="CONSULT">Nhờ Kỹ Sư HANIN Tư Vấn Theo Ứng Dụng</option>
               </select>
             </div>

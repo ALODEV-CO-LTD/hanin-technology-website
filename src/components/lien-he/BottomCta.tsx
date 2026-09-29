@@ -10,8 +10,8 @@ export default function BottomCta() {
             SẴN SÀNG NÂNG TẦM CHẤT LƯỢNG BỀ MẶT CƠ KHÍ CỦA BẠN
           </h2>
           <p className="text-body-md text-slate-300 max-w-2xl">
-            Đội ngũ kỹ sư luyện kim và dây chuyền tự động hóa của HANIN TECHNOLOGY VIỆT NAM sẵn sàng
-            đáp ứng mọi yêu cầu khắt khe nhất từ đối tác toàn cầu.
+            Kỹ sư luyện kim và dây chuyền tự động hóa của HANIN TECHNOLOGY VIỆT NAM đáp ứng yêu cầu
+            kỹ thuật khắt khe từ đối tác toàn cầu.
           </p>
         </div>
         <div className="flex flex-wrap items-center gap-space-md shrink-0">

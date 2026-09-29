@@ -40,8 +40,7 @@ export default function QualityStandards() {
             <h2 className="text-headline-lg text-slate-900 uppercase tracking-tight">CHẤT LƯỢNG &amp; TIÊU CHUẨN</h2>
           </div>
           <p className="text-body-sm text-slate-600 max-w-md">
-            Hệ thống quản lý chất lượng và quy chuẩn kỹ thuật được áp dụng toàn diện trong từng công đoạn sản
-            xuất.
+            Hệ thống quản lý chất lượng và quy chuẩn kỹ thuật áp dụng trong từng công đoạn sản xuất.
           </p>
         </div>
 

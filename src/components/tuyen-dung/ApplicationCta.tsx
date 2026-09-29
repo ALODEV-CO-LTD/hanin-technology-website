@@ -16,9 +16,8 @@ export default function ApplicationCta() {
                 GIA NHẬP ĐỘI NGŨ HANIN
               </h2>
               <p className="text-body-lg text-slate-600 leading-relaxed max-w-xl">
-                Bạn đã sẵn sàng đồng hành cùng đội ngũ kỹ sư và chuyên gia công nghệ xử lý bề mặt hàng đầu? Gửi hồ
-                sơ ứng tuyển (CV) của bạn hoặc liên hệ trực tiếp với bộ phận Tuyển dụng để được tư vấn lộ trình
-                phù hợp.
+                Gửi hồ sơ ứng tuyển (CV) hoặc liên hệ trực tiếp bộ phận Tuyển dụng để được tư vấn vị trí phù hợp
+                với đội ngũ kỹ sư và chuyên gia xử lý bề mặt của HANIN.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-space-sm pt-1">
@@ -60,8 +59,7 @@ export default function ApplicationCta() {
                 NỘP HỒ SƠ ỨNG TUYỂN NHANH
               </span>
               <p className="text-body-md text-slate-600">
-                Chúng tôi luôn đón nhận hồ sơ của các ứng viên tài năng ngay cả khi vị trí của bạn chưa được liệt
-                kê chính thức.
+                HANIN tiếp nhận hồ sơ ứng viên kể cả khi vị trí bạn quan tâm chưa được đăng tuyển chính thức.
               </p>
               <div className="flex flex-col gap-space-sm pt-1">
                 <a

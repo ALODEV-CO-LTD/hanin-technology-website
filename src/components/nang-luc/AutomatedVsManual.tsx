@@ -10,8 +10,7 @@ export default function AutomatedVsManual() {
             DÂY CHUYỀN TỰ ĐỘNG VS DÂY CHUYỀN THỦ CÔNG
           </h2>
           <p className="text-body-md text-slate-600 mt-2">
-            Kết hợp hài hòa giữa công nghệ tự động hóa sản lượng lớn và tính linh hoạt thủ công của kỹ sư tay
-            nghề cao cho các chi tiết đặc thù.
+            Tự động hóa cho sản lượng lớn, kết hợp xử lý thủ công của kỹ sư tay nghề cao cho các chi tiết đặc thù.
           </p>
         </div>
 
@@ -34,9 +33,8 @@ export default function AutomatedVsManual() {
                 DÂY CHUYỀN TỰ ĐỘNG (AUTOMATED LINES)
               </h3>
               <p className="text-body-sm text-slate-600 leading-relaxed mb-space-md">
-                Dây chuyền được lập trình điều khiển tự động qua hệ thống PLC SCADA, kiểm soát chính xác từng
-                giây thời gian ngâm bể, mật độ dòng điện phân tích và tự động bổ sung ion hóa chất duy trì ổn
-                định dung dịch.
+                Điều khiển tự động qua PLC SCADA: kiểm soát thời gian ngâm bể, mật độ dòng điện phân và tự động
+                bổ sung ion hóa chất để giữ ổn định dung dịch.
               </p>
             </div>
             <div className="space-y-space-xs bg-slate-50 border border-slate-200 p-space-md rounded text-label-technical text-slate-700">
@@ -73,8 +71,8 @@ export default function AutomatedVsManual() {
                 DÂY CHUYỀN THỦ CÔNG &amp; BÁN TỰ ĐỘNG (MANUAL &amp; SPECIALIZED)
               </h3>
               <p className="text-body-sm text-slate-600 leading-relaxed mb-space-md">
-                Dành riêng cho các đơn hàng mẫu kỹ thuật R&amp;D, các chi tiết cơ khí kết cấu phức tạp đòi hỏi
-                gá đặt chuyên biệt theo bản vẽ hình học riêng biệt và linh hoạt căn chỉnh tham số mạ tức thời.
+                Dành cho đơn hàng mẫu R&amp;D và chi tiết cơ khí kết cấu phức tạp, cần gá đặt riêng theo bản vẽ
+                và điều chỉnh tham số mạ trực tiếp.
               </p>
             </div>
             <div className="space-y-space-xs bg-slate-50 border border-slate-200 p-space-md rounded text-label-technical text-slate-700">

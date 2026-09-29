@@ -10,7 +10,7 @@ import RfqFormCategory from "@/components/dich-vu/RfqFormCategory";
 export const metadata: Metadata = {
   title: "Dịch Vụ Gia Công Mạ & Xử Lý Bề Mặt | HANIN TECHNOLOGY VIỆT NAM",
   description:
-    "HANIN TECHNOLOGY VIỆT NAM cung cấp dịch vụ gia công mạ điện phân, mạ hóa học và xử lý bề mặt kim loại công nghiệp đạt chuẩn ô tô, hàng không: mạ Crom cứng, mạ Niken hóa học (ENP), mạ Kẽm-Niken, Anodizing nhôm.",
+    "Dịch vụ gia công mạ điện phân, mạ hóa học và xử lý bề mặt kim loại đạt chuẩn ô tô, hàng không: mạ Crom cứng, mạ Niken hóa học (ENP), mạ Kẽm-Niken, Anodizing nhôm.",
 };
 
 export default function DichVuGiaCongMaPage() {

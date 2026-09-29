@@ -38,8 +38,8 @@ export default function ManufacturingCapability() {
             NĂNG LỰC SẢN XUẤT
           </h2>
           <p className="text-body-md text-slate-600 leading-relaxed">
-            Từ dây chuyền sản xuất đến hệ thống kiểm soát chất lượng, năng lực
-            vận hành là nền tảng tạo nên sự ổn định trong từng sản phẩm.
+            Dây chuyền sản xuất, thiết bị bể mạ và hệ thống kiểm nghiệm vận
+            hành đồng bộ theo từng công đoạn.
           </p>
         </div>
 

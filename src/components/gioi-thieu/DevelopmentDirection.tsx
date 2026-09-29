@@ -3,21 +3,21 @@ const CORE_VALUES = [
     icon: "straighten",
     title: "CHÍNH XÁC",
     index: "/ 01",
-    desc: "[Thông tin] — Kiểm soát dung sai độ dày micron, tuân thủ chặt chẽ thông số kỹ thuật bản vẽ và tiêu chuẩn khắt khe.",
+    desc: "[Thông tin] Kiểm soát dung sai độ dày micron, tuân thủ thông số kỹ thuật bản vẽ.",
     note: "DUNG SAI: ĐỘ DÀY ĐẠT CẤP ĐỘ MICRON",
   },
   {
     icon: "cyclone",
     title: "ỔN ĐỊNH",
     index: "/ 02",
-    desc: "[Thông tin] — Đảm bảo đồng đều chất lượng trên từng lô hàng sản xuất hàng loạt, giảm thiểu tối đa tỷ lệ lỗi cơ tính.",
+    desc: "[Thông tin] Đảm bảo đồng đều chất lượng giữa các lô hàng sản xuất, giảm tỷ lệ lỗi cơ tính.",
     note: "ĐỘ ĐỒNG ĐỀU LÔ HÀNG: TIÊU CHUẨN 99.8%",
   },
   {
     icon: "handshake",
     title: "ĐỒNG HÀNH",
     index: "/ 03",
-    desc: "[Thông tin] — Phối hợp giải quyết bài toán kỹ thuật bề mặt cùng khách hàng công nghiệp, đồng hành cùng chuỗi cung ứng.",
+    desc: "[Thông tin] Phối hợp xử lý bài toán kỹ thuật bề mặt cùng khách hàng công nghiệp trong chuỗi cung ứng.",
     note: "HỢP TÁC: ĐỐI TÁC CHIẾN LƯỢC CHUỖI CUNG ỨNG",
   },
 ];
@@ -39,8 +39,8 @@ export default function DevelopmentDirection() {
           </div>
           <div className="lg:col-span-7 flex items-center">
             <p className="text-body-md md:text-body-lg text-slate-600 leading-relaxed">
-              [Thông tin chính thức về định hướng phát triển của HANIN — Tập trung nâng cao chất lượng lớp mạ, chuẩn
-              hóa quy trình kỹ thuật và tối ưu chi phí cho chuỗi cung ứng.]
+              [Thông tin chính thức về định hướng phát triển của HANIN: nâng cao chất lượng lớp mạ, chuẩn hóa quy
+              trình kỹ thuật và tối ưu chi phí cho chuỗi cung ứng.]
             </p>
           </div>
         </div>

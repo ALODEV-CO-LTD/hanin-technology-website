@@ -1,8 +1,8 @@
 const MACHINES = [
   {
     badge: "HỆ THỐNG CẤP NGUỒN",
-    title: "[MÁY / THIẾT BỊ 01 — BỂ MẠ & NGUỒN CHỈNH LƯU TỰ ĐỘNG RECTIFIER]",
-    desc: "Bộ nguồn xung cao tần đồng bộ hóa tự động, cấp dòng điện phân ổn định cao cho bể mạ diện tích lớn.",
+    title: "[MÁY / THIẾT BỊ 01: BỂ MẠ & NGUỒN CHỈNH LƯU TỰ ĐỘNG RECTIFIER]",
+    desc: "Bộ nguồn xung cao tần tự động, cấp dòng điện phân ổn định cho bể mạ diện tích lớn.",
     specs: (
       <>
         Dòng tải: <span className="text-slate-900 font-semibold">12,000A</span>
@@ -18,8 +18,8 @@ const MACHINES = [
   },
   {
     badge: "TIỀN XỬ LÝ BỀ MẶT",
-    title: "[MÁY / THIẾT BỊ 02 — BỂ RỬA & TẨY DẦU SIÊU ÂM ĐA TẦN SỐ]",
-    desc: "Hệ thống làm sạch bavia, dầu mỡ gia công bằng sóng siêu âm đa tần, bảo đảm bề mặt trơ lý hóa trước khi mạ.",
+    title: "[MÁY / THIẾT BỊ 02: BỂ RỬA & TẨY DẦU SIÊU ÂM ĐA TẦN SỐ]",
+    desc: "Làm sạch bavia, dầu mỡ gia công bằng sóng siêu âm đa tần, bề mặt trơ lý hóa trước khi mạ.",
     specs: (
       <>
         Tần số: <span className="text-slate-900 font-semibold">[28 - 40 kHz]</span>
@@ -35,8 +35,8 @@ const MACHINES = [
   },
   {
     badge: "LOGISTICS NỘI BỘ",
-    title: "[MÁY / THIẾT BỊ 03 — CẨU TRỤC VẬN CHUYỂN PHÔI TỰ ĐỘNG (HOIST SYSTEM)]",
-    desc: "Trục nâng hạ tự động dẫn hướng định vị laser, chuyển giao phôi chính xác theo chu trình ngâm nhúng cài đặt.",
+    title: "[MÁY / THIẾT BỊ 03: CẨU TRỤC VẬN CHUYỂN PHÔI TỰ ĐỘNG (HOIST SYSTEM)]",
+    desc: "Trục nâng hạ tự động dẫn hướng laser, chuyển giao phôi theo đúng chu trình ngâm nhúng cài đặt.",
     specs: (
       <>
         Tải trọng: <span className="text-slate-900 font-semibold">25 Tấn</span>
@@ -52,8 +52,8 @@ const MACHINES = [
   },
   {
     badge: "XỬ LÝ NHIỆT SAU MẠ",
-    title: "[MÁY / THIẾT BỊ 04 — LÒ KHỬ HYDRO SAU MẠ (DE-EMBRITTLEMENT OVEN)]",
-    desc: "Lò gia nhiệt tuần hoàn loại bỏ hiện tượng giòn hydro đối với thép cường độ cao và linh kiện chịu tải trọng động.",
+    title: "[MÁY / THIẾT BỊ 04: LÒ KHỬ HYDRO SAU MẠ (DE-EMBRITTLEMENT OVEN)]",
+    desc: "Lò gia nhiệt tuần hoàn khử giòn hydro cho thép cường độ cao và linh kiện chịu tải trọng động.",
     specs: (
       <>
         Nhiệt tối đa: <span className="text-slate-900 font-semibold">[300°C - 500°C]</span>
@@ -83,8 +83,7 @@ export default function EquipmentGrid() {
             </h2>
           </div>
           <p className="text-body-sm text-slate-600 max-w-md">
-            Trang thiết bị hiện đại phục vụ đầy đủ các khâu từ tiền xử lý, mạ chính đến hoàn thiện bề mặt đạt độ
-            ổn định cao.
+            Thiết bị phục vụ đầy đủ các khâu từ tiền xử lý, mạ chính đến hoàn thiện bề mặt.
           </p>
         </div>
 

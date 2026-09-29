@@ -2,17 +2,17 @@ const FEATURES = [
   {
     icon: "tune",
     title: "Tự động châm hóa chất bù (Auto Chemical Dosing):",
-    desc: "Hệ thống cảm biến quang kế đo đạc liên tục hàm lượng ion Niken tự do theo thời gian thực và kích hoạt bơm định lượng vi sai, bảo toàn tỷ lệ dung dịch ổn định trong dải ±0.2 g/L.",
+    desc: "Cảm biến quang kế đo liên tục hàm lượng ion Niken tự do và kích hoạt bơm định lượng vi sai, giữ tỷ lệ dung dịch ổn định trong dải ±0.2 g/L.",
   },
   {
     icon: "cyclone",
     title: "Cẩu trục giàn chuyển tải tự động hóa:",
-    desc: "Loại bỏ hoàn toàn sai số do thao tác thủ công; hệ thống rung và xoay giá mạ liên tục trong lòng bể xua tan túi khí hydro đọng trong lỗ ren sâu và hốc mù.",
+    desc: "Hệ thống rung và xoay giá mạ liên tục trong bể, loại bỏ sai số thao tác thủ công và xua tan túi khí hydro đọng trong lỗ ren sâu, hốc mù.",
   },
   {
     icon: "filter_alt",
     title: "Lọc tuần hoàn 10 turnovers/giờ:",
-    desc: "Dung dịch qua màng lọc polypropylene 1-micron liên tục giúp triệt tiêu mạt kim loại lơ lửng, loại bỏ hiện tượng mạ nổi hột sần sùi.",
+    desc: "Dung dịch qua màng lọc polypropylene 1-micron liên tục, triệt tiêu mạt kim loại lơ lửng và hiện tượng mạ nổi hột.",
   },
 ];
 
@@ -52,9 +52,8 @@ export default function DetailCapability() {
             CÔNG NGHỆ BỂ MẠ &amp; QUẢN TRỊ BẢN THANG NỒNG ĐỘ
           </h2>
           <p className="text-body-lg text-slate-600 mb-space-md">
-            HANIN đầu tư hệ thống bể mạ chất liệu nhựa chịu hóa chất Polypropylene gia cường tấm thép không gỉ
-            SUS304, gia nhiệt gián tiếp qua cụm trao đổi nhiệt Teflon và thạch anh tinh khiết nhằm ngăn chặn quá
-            trình tự phân hủy hóa chất.
+            Bể mạ Polypropylene chịu hóa chất, gia cường thép không gỉ SUS304, gia nhiệt gián tiếp qua cụm trao đổi
+            nhiệt Teflon và thạch anh để tránh tự phân hủy hóa chất.
           </p>
           <div className="space-y-space-sm text-body-md text-slate-600">
             {FEATURES.map((feature) => (

@@ -3,7 +3,7 @@ const PILLARS = [
     icon: "health_and_safety",
     tag: "PILLAR 01 // FACTORY 4.0",
     title: "Môi trường làm việc an toàn & hiện đại",
-    desc: "Hệ thống nhà xưởng đạt chuẩn ISO 9001 & ISO 14001, dây chuyền mạ tự động PLC khép kín, trang thiết bị bảo hộ lao động tiêu chuẩn cao, khu vực kiểm nghiệm sạch sẽ và văn phòng làm việc tiện nghi.",
+    desc: "Nhà xưởng đạt chuẩn ISO 9001 & ISO 14001, dây chuyền mạ tự động PLC khép kín, đầy đủ bảo hộ lao động và khu vực kiểm nghiệm riêng biệt.",
     metricLabel: "CHỈ TIẾU AN TOÀN",
     metricValue: "1.200+ NGÀY VÔ SỰ CỐ",
   },
@@ -11,7 +11,7 @@ const PILLARS = [
     icon: "trending_up",
     tag: "PILLAR 02 // GROWTH PATH",
     title: "Cơ hội phát triển & thăng tiến nghề nghiệp",
-    desc: "Lộ trình thăng tiến minh bạch cho cả khối Kỹ sư chuyên môn (Technical Specialist) và Cán bộ Quản lý (Management Track). Đánh giá hiệu suất định kỳ dựa trên đóng góp thực tế và sáng kiến cải tiến Kaizen.",
+    desc: "Lộ trình thăng tiến rõ ràng theo hướng Kỹ sư chuyên môn (Technical Specialist) hoặc Quản lý (Management Track). Đánh giá hiệu suất định kỳ dựa trên kết quả công việc và sáng kiến Kaizen.",
     metricLabel: "ĐÁNH GIÁ ĐỊNH KỲ",
     metricValue: "2 LẦN / NĂM",
   },
@@ -19,7 +19,7 @@ const PILLARS = [
     icon: "model_training",
     tag: "PILLAR 03 // TECH TRANSFER",
     title: "Đào tạo kỹ thuật & chuyển giao công nghệ",
-    desc: "Chương trình huấn luyện nội bộ bài bản từ chuyên gia luyện kim, tiếp cận công nghệ đo lường quang học huỳnh quang tia X (XRF), các khóa đào tạo Lean Six Sigma, Kaizen và quy trình tự động hóa SCADA tiên tiến.",
+    desc: "Đào tạo nội bộ từ chuyên gia luyện kim, thực hành đo lường huỳnh quang tia X (XRF), các khóa Lean Six Sigma, Kaizen và quy trình tự động hóa SCADA.",
     metricLabel: "GIỜ ĐÀO TẠO/KỸ SƯ",
     metricValue: "80 GIỜ / NĂM",
   },
@@ -27,7 +27,7 @@ const PILLARS = [
     icon: "card_giftcard",
     tag: "PILLAR 04 // TOTAL REWARDS",
     title: "Văn hóa doanh nghiệp & chế độ đãi ngộ",
-    desc: "Mức lương cạnh tranh theo năng lực, thưởng sản xuất và hiệu quả dự án, bảo hiểm sức khỏe toàn diện, xe đưa đón tuyến Hà Nội - Mê Linh, bữa ăn ca dinh dưỡng tại nhà máy và các hoạt động teambuilding thường niên.",
+    desc: "Lương theo năng lực, thưởng sản xuất và hiệu quả dự án, bảo hiểm sức khỏe, xe đưa đón tuyến Hà Nội - Mê Linh, bữa ăn ca tại nhà máy và hoạt động teambuilding thường niên.",
     metricLabel: "XE ĐƯA ĐÓN",
     metricValue: "TUYẾN NỘI THÀNH HÀ NỘI",
   },
@@ -46,8 +46,8 @@ export default function WhyHanin() {
             NỀN TẢNG PHÁT TRIỂN SỰ NGHIỆP TẠI HANIN
           </h2>
           <p className="text-body-lg text-slate-600">
-            Môi trường sản xuất công nghệ cao, tôn trọng kỷ luật kỹ thuật, an toàn lao động và tạo điều kiện tối
-            đa cho từng cá nhân bứt phá năng lực chuyên môn.
+            Môi trường sản xuất công nghệ cao, kỷ luật kỹ thuật và an toàn lao động, với lộ trình phát triển
+            chuyên môn rõ ràng cho từng vị trí.
           </p>
         </div>
 

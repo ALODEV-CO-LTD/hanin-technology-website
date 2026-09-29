@@ -37,9 +37,8 @@ export default function PageHero() {
               CƠ HỘI <span className="text-steel-600">NGHỀ NGHIỆP</span>
             </h1>
             <p className="text-body-lg text-slate-600 max-w-2xl leading-relaxed">
-              Gia nhập <strong className="text-slate-900 font-semibold">HANIN TECHNOLOGY VIỆT NAM</strong> — Nơi kỹ
-              thuật chính xác gặp gỡ tư duy sản xuất hiện đại. Cùng xây dựng chuỗi cung ứng cơ khí và giải pháp xử
-              lý bề mặt kim loại tiêu chuẩn quốc tế.
+              <strong className="text-slate-900 font-semibold">HANIN TECHNOLOGY VIỆT NAM</strong> tuyển kỹ sư và
+              nhân sự sản xuất cho dây chuyền gia công cơ khí và xử lý bề mặt kim loại theo tiêu chuẩn quốc tế.
             </p>
 
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-space-sm pt-space-sm">

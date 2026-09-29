@@ -40,7 +40,7 @@ export default function PlatingServices() {
               </span>
             </div>
             <h2 className="text-headline-lg text-slate-900 font-bold">
-              Giải pháp gia công mạ cho nhiều nhu cầu công nghiệp.
+              Dịch vụ gia công mạ theo nhu cầu công nghiệp.
             </h2>
           </div>
           <Link

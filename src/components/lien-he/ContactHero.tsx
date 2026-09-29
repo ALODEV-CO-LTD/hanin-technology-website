@@ -61,9 +61,8 @@ export default function ContactHero() {
                 KỸ THUẬT
               </h1>
               <p className="text-body-lg text-slate-600 leading-relaxed">
-                HANIN TECHNOLOGY VIỆT NAM sẵn sàng đồng hành, tư vấn giải pháp kỹ thuật xi mạ kim
-                loại, gia công cơ khí chính xác và phản hồi báo giá chuyên sâu cho đối tác B2B, nhà
-                thầu OEM/Tier-1 và khối doanh nghiệp chế tạo FDI toàn cầu.
+                HANIN TECHNOLOGY VIỆT NAM tư vấn giải pháp kỹ thuật xi mạ kim loại, gia công cơ khí
+                chính xác và báo giá cho đối tác B2B, nhà thầu OEM/Tier-1 và doanh nghiệp FDI.
               </p>
 
               {/* Engineering spec highlights */}

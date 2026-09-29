@@ -2,8 +2,8 @@ const LINES = [
   {
     tag: "01 // AUTOMATED BARREL LINE",
     badge: "SCADA CONTROL",
-    title: "[DÂY CHUYỀN 01 — DÂY CHUYỀN MẠ QUAY TỰ ĐỘNG PLC]",
-    desc: "Tối ưu hóa cho các linh kiện ốc vít, bu-lông, phụ tùng nhỏ với công suất lớn, độ bám dính cao và chiều dày lớp mạ phân bố đồng đều tuyệt đối trong từng mẻ quay khép kín.",
+    title: "[DÂY CHUYỀN 01: DÂY CHUYỀN MẠ QUAY TỰ ĐỘNG PLC]",
+    desc: "Dùng cho linh kiện ốc vít, bu-lông, phụ tùng nhỏ: công suất lớn, độ bám dính cao, chiều dày lớp mạ đồng đều trong từng mẻ quay khép kín.",
     specLabel1: "CÔNG SUẤT:",
     specValue1: "850 Tấn/tháng",
     specLabel2: "DUNG SAI:",
@@ -16,8 +16,8 @@ const LINES = [
   {
     tag: "02 // RACK PLATING LINE",
     badge: "HEAVY DUTY",
-    title: "[DÂY CHUYỀN 02 — DÂY CHUYỀN MẠ TREO TỰ ĐỘNG & BÁN TỰ ĐỘNG]",
-    desc: "Ứng dụng cho các chi tiết cơ khí chính xác, trục ty ben thủy lực, khuôn mẫu và bánh răng cỡ lớn. Hệ thống gá treo chuyên dụng bảo đảm không gây va đập, bảo toàn dung sai biên dạng hình học phức tạp.",
+    title: "[DÂY CHUYỀN 02: DÂY CHUYỀN MẠ TREO TỰ ĐỘNG & BÁN TỰ ĐỘNG]",
+    desc: "Dùng cho chi tiết cơ khí chính xác, trục ty ben thủy lực, khuôn mẫu và bánh răng cỡ lớn. Gá treo chuyên dụng, không va đập, giữ đúng dung sai biên dạng.",
     specLabel1: "CÔNG SUẤT:",
     specValue1: "120,000 Sản phẩm/tháng",
     specLabel2: "KÍCH THƯỚC BỂ:",
@@ -30,8 +30,8 @@ const LINES = [
   {
     tag: "03 // CHEMICAL ENP & ANODIZING LINE",
     badge: "MIL-SPEC COMPLIANT",
-    title: "[DÂY CHUYỀN 03 — DÂY CHUYỀN MẠ HÓA HỌC & XỬ LÝ NHÔM CHUYÊN SÂU]",
-    desc: "Chuyên xử lý mạ Niken hóa học không điện (Electroless Nickel Plating - ENP) và Anodizing nhôm chuẩn kỹ thuật cao, đáp ứng khả năng chống mài mòn, chống ăn mòn hóa chất và độ cứng bề mặt tối ưu.",
+    title: "[DÂY CHUYỀN 03: DÂY CHUYỀN MẠ HÓA HỌC & XỬ LÝ NHÔM CHUYÊN SÂU]",
+    desc: "Xử lý mạ Niken hóa học không điện (Electroless Nickel Plating - ENP) và Anodizing nhôm, cho khả năng chống mài mòn, chống ăn mòn hóa chất và độ cứng bề mặt cao.",
     specLabel1: "BỂ PHẢN ỨNG:",
     specValue1: "[Nhiệt độ ổn định ±1°C]",
     specLabel2: "ĐỘ DÀY:",
@@ -55,8 +55,7 @@ export default function ProductionLines() {
             DÂY CHUYỀN SẢN XUẤT
           </h2>
           <p className="text-body-md text-slate-600">
-            Hệ thống các dây chuyền gia công bề mặt được tối ưu hóa cho từng dòng sản phẩm cơ khí và linh kiện
-            điện tử.
+            Các dây chuyền gia công bề mặt được bố trí riêng cho từng dòng sản phẩm cơ khí và linh kiện điện tử.
           </p>
         </div>
 

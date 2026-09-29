@@ -12,8 +12,7 @@ export default function RfqFormCategory() {
             YÊU CẦU BÁO GIÁ DỊCH VỤ XI MẠ (RFQ SPECIFICATION)
           </h2>
           <p className="text-body-md text-slate-600 mt-2 max-w-xl mx-auto">
-            Gửi thông số kích thước, bản vẽ chi tiết và yêu cầu tiêu chuẩn kiểm thử. Đội ngũ kỹ sư luyện kim Hanin
-            sẽ phản hồi báo giá trong vòng 24 giờ.
+            Gửi thông số, bản vẽ và tiêu chuẩn kiểm thử. Kỹ sư luyện kim Hanin phản hồi báo giá trong 24 giờ.
           </p>
         </div>
 

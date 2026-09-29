@@ -39,14 +39,10 @@ export default function FactoryOverview() {
               <h3 className="text-headline-md text-slate-900 uppercase mb-space-md">
                 NHÀ MÁY HANIN TECHNOLOGY
               </h3>
-              <p className="text-body-md text-slate-600 leading-relaxed mb-space-md">
-                Không gian nhà xưởng được quy hoạch chuẩn hóa theo tiêu chuẩn công nghiệp hiện đại, tích hợp hệ
-                thống kiểm soát môi trường trung tâm, trạm xử lý nước thải đạt QCVN 40:2011/BTNMT và các module
-                mạ tự động khép kín.
-              </p>
-              <p className="text-body-sm text-slate-500 leading-relaxed mb-space-lg">
-                Cơ sở hạ tầng được thiết kế đáp ứng tiêu chuẩn nghiêm ngặt của các tập đoàn cơ khí chính xác, tự
-                động hóa và vi điện tử đến từ Nhật Bản, Hàn Quốc và EU.
+              <p className="text-body-md text-slate-600 leading-relaxed mb-space-lg">
+                Nhà xưởng quy hoạch theo tiêu chuẩn công nghiệp hiện đại, tích hợp hệ thống kiểm soát môi trường
+                trung tâm, trạm xử lý nước thải đạt QCVN 40:2011/BTNMT và các module mạ tự động khép kín, đáp
+                ứng yêu cầu của khách hàng cơ khí chính xác, tự động hóa và vi điện tử từ Nhật Bản, Hàn Quốc, EU.
               </p>
             </div>
             <div>

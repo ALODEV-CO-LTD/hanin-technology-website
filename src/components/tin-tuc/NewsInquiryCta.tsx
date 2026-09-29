@@ -17,9 +17,8 @@ export default function NewsInquiryCta() {
                 CẦN TRAO ĐỔI VỀ <span className="text-steel-600">SẢN PHẨM / DỰ ÁN?</span>
               </h2>
               <p className="text-body-lg text-slate-600 max-w-3xl">
-                Đội ngũ chuyên gia kỹ sư hóa học và gia công xử lý bề mặt kim loại của HANIN luôn sẵn
-                sàng giải đáp thắc mắc kỹ thuật, tối ưu hóa quy trình và tư vấn phương án xử lý bề
-                mặt tối ưu cho doanh nghiệp của bạn.
+                Kỹ sư hóa học và xử lý bề mặt kim loại của HANIN hỗ trợ giải đáp thắc mắc kỹ thuật,
+                tối ưu quy trình và tư vấn phương án mạ phù hợp cho dự án của bạn.
               </p>
               <div className="flex flex-wrap items-center gap-space-md pt-space-xs">
                 <div className="flex items-center gap-space-xs text-title-md text-slate-900">

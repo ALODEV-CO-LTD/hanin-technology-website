@@ -36,16 +36,16 @@ export default function DetailOverview() {
               <h3 className="text-title-md text-slate-900 uppercase font-bold">Bản Chất Cơ Chế Phản Ứng</h3>
             </div>
             <p className="text-body-md text-slate-600">
-              Khác hoàn toàn với mạ điện phân (Electroplating) chịu ảnh hưởng của hiệu ứng mật độ dòng điện gây dày
-              ở mép góc và mỏng ở rãnh sâu, mạ Niken hóa học ENP vận hành theo nguyên lý{" "}
+              Mạ điện phân bị chi phối bởi mật độ dòng điện nên dày ở mép góc, mỏng ở rãnh sâu. Mạ Niken hóa học ENP
+              thì vận hành theo nguyên lý{" "}
               <strong className="text-slate-900 font-semibold">lắng đọng tự xúc tác</strong>.
             </p>
             <div className="bg-white border border-slate-200 p-space-sm rounded text-label-sm text-slate-600 my-2">
               <code>[Ni²⁺ + 2e⁻ → Ni] // [H₂PO₂⁻ + H₂O → H₂PO₃⁻ + 2H⁺ + 2e⁻]</code>
             </div>
             <p className="text-body-md text-slate-600">
-              Màng phủ hợp kim Niken-Phosphor (Ni-P) sinh ra với mật độ nguyên tử đồng nhất trên mọi điểm tiếp xúc
-              dung dịch, tạo ra lớp che chắn vô định hình (Amorphous) chống ăn mòn cực đại.
+              Lớp Niken-Phosphor (Ni-P) hình thành đồng đều trên mọi điểm tiếp xúc dung dịch, tạo cấu trúc vô định
+              hình (Amorphous) chống ăn mòn.
             </p>
           </div>
 
@@ -58,8 +58,8 @@ export default function DetailOverview() {
               <h3 className="text-title-md text-slate-900 uppercase font-bold">Phạm Vi Ứng Dụng Chiến Lược</h3>
             </div>
             <p className="text-body-md text-slate-600">
-              Giải pháp then chốt cho các thiết bị công nghiệp nặng và cơ khí chính xác đòi hỏi khả năng làm việc
-              trong môi trường ma sát cao, ăn mòn hóa chất và nhiệt độ khắc nghiệt:
+              Dùng cho thiết bị công nghiệp nặng và cơ khí chính xác làm việc trong môi trường ma sát cao, ăn mòn
+              hóa chất và nhiệt độ khắc nghiệt:
             </p>
             <ul className="flex flex-col gap-1.5 text-body-md text-slate-600 mt-1">
               <li className="flex items-start gap-2">
@@ -92,8 +92,7 @@ export default function DetailOverview() {
               <h3 className="text-title-md text-slate-900 uppercase font-bold">Chủng Loại Kim Loại Nền</h3>
             </div>
             <p className="text-body-md text-slate-600">
-              Quy trình tiền xử lý hóa lý của HANIN cho phép mạ ENP ổn định trên hầu hết các dòng hợp kim kim loại
-              công nghiệp:
+              Quy trình tiền xử lý của HANIN cho phép mạ ENP ổn định trên các dòng hợp kim công nghiệp sau:
             </p>
             <div className="flex flex-wrap gap-1.5 mt-2">
               {SUBSTRATES.map((item) => (
