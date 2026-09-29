@@ -20,18 +20,9 @@ export default function Footer() {
       <div className="max-w-[1440px] mx-auto px-margin pt-space-xl pb-space-lg">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-gutter">
           <div className="lg:col-span-4 flex flex-col gap-space-md">
-            <div className="flex items-center gap-space-sm">
-              <div className="w-8 h-8 rounded bg-slate-900 border-2 border-orange-600 flex items-center justify-center text-headline-sm text-white font-bold">
-                H
-              </div>
-              <div className="flex flex-col">
-                <span className="text-headline-sm uppercase tracking-wider text-slate-900 font-bold leading-none">
-                  HANIN
-                </span>
-                <span className="text-label-technical tracking-[0.14em] text-orange-600 uppercase mt-0.5">
-                  GIA CÔNG XI MẠ &amp; CƠ KHÍ CHÍNH XÁC
-                </span>
-              </div>
+            <div className="flex items-center">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/hanin-logo.svg" alt="HANIN Plating" className="h-10 w-auto" />
             </div>
             <p className="text-body-sm text-slate-600 leading-relaxed max-w-sm">
               HANIN TECHNOLOGY VIỆT NAM — Nhà máy gia công xi mạ kỹ thuật cao,

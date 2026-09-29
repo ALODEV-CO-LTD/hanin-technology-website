@@ -20,18 +20,9 @@ export default function Header() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-xl border-b border-slate-200 shadow-sm">
       <div className="h-20 max-w-[1440px] mx-auto px-margin flex items-center justify-between gap-gutter">
         <div className="flex items-center gap-space-xl">
-          <a href="#" className="flex items-center gap-space-sm group">
-            <div className="w-9 h-9 rounded bg-slate-900 border-2 border-orange-600 flex items-center justify-center text-xl font-bold text-white shadow-sm">
-              H
-            </div>
-            <div className="flex flex-col">
-              <span className="text-headline-sm uppercase tracking-wider text-slate-900 font-bold leading-none">
-                HANIN
-              </span>
-              <span className="text-label-technical tracking-[0.14em] text-orange-600 uppercase leading-tight mt-0.5">
-                GIA CÔNG XI MẠ &amp; CƠ KHÍ CHÍNH XÁC
-              </span>
-            </div>
+          <a href="#" className="flex items-center group">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/hanin-logo.svg" alt="HANIN Plating" className="h-11 w-auto" />
           </a>
           <nav className="hidden xl:flex items-center gap-space-lg">
             {NAV_LINKS.map((link) => (
