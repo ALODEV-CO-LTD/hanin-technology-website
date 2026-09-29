@@ -62,10 +62,6 @@ export default function JobBoard() {
       <div className="max-w-[1280px] mx-auto px-margin flex flex-col gap-space-lg">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-space-md pb-space-sm">
           <div className="flex flex-col gap-2 max-w-2xl">
-            <div className="flex items-center gap-2 text-steel-600 text-label-technical uppercase tracking-widest">
-              <span className="material-symbols-outlined text-[16px]">work_outline</span>
-              <span>OPPORTUNITIES // VỊ TRÍ TUYỂN DỤNG</span>
-            </div>
             <h2 className="text-headline-xl-mobile md:text-headline-xl text-slate-900 tracking-tight uppercase font-bold">
               VỊ TRÍ ĐANG TUYỂN DỤNG
             </h2>
@@ -257,9 +253,6 @@ export default function JobBoard() {
           >
             <div className="flex items-start justify-between">
               <div className="flex flex-col gap-1">
-                <span className="text-label-sm text-steel-600 uppercase tracking-widest font-bold">
-                  HỒ SƠ ỨNG TUYỂN
-                </span>
                 <h3 className="text-title-md text-slate-900 uppercase font-semibold">{selectedJob.title}</h3>
                 <span className="text-body-sm text-slate-500">{selectedJob.department}</span>
               </div>

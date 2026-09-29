@@ -8,9 +8,6 @@ export default function RelatedServices() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-space-sm mb-space-lg">
           <div>
-            <span className="text-label-technical text-steel-600 uppercase tracking-widest block mb-1">
-              CAPABILITIES EXPANSION
-            </span>
             <h2 className="text-headline-lg text-slate-900 uppercase tracking-tight">
               DỊCH VỤ GIA CÔNG MẠ LIÊN QUAN
             </h2>

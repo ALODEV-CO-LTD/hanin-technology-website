@@ -3,10 +3,6 @@ export default function WorkEnvironment() {
     <section className="w-full py-space-xl bg-white">
       <div className="max-w-[1280px] mx-auto px-margin flex flex-col gap-space-xl">
         <div className="flex flex-col gap-2 max-w-3xl">
-          <div className="flex items-center gap-2 text-steel-600 text-label-technical uppercase tracking-widest">
-            <span className="material-symbols-outlined text-[16px]">domain</span>
-            <span>ON-SITE EXPERIENCE // MÔI TRƯỜNG LÀM VIỆC THỰC TẾ</span>
-          </div>
           <h2 className="text-headline-xl-mobile md:text-headline-xl text-slate-900 tracking-tight uppercase font-bold">
             HÌNH ẢNH MÔI TRƯỜNG LÀM VIỆC THỰC TẾ
           </h2>

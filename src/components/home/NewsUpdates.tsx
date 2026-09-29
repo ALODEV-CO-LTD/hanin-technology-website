@@ -30,12 +30,6 @@ export default function NewsUpdates() {
       <div className="max-w-[1280px] mx-auto px-margin flex flex-col gap-space-xl">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
           <div className="flex flex-col gap-2">
-            <div className="flex items-center gap-2">
-              <span className="w-2 h-2 rounded-full bg-steel-600" />
-              <span className="text-label-technical uppercase tracking-[0.2em] text-steel-600 font-bold">
-                TIN TỨC &amp; BẢN TIN KỸ THUẬT
-              </span>
-            </div>
             <h2 className="text-headline-xl text-slate-900 font-bold">Tin tức &amp; cập nhật</h2>
           </div>
           <Link

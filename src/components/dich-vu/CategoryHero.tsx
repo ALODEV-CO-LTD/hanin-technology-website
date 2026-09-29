@@ -3,14 +3,6 @@ export default function CategoryHero() {
     <section className="relative w-full bg-white border border-slate-200 rounded shadow-sm p-space-md lg:p-space-xl mb-space-xl overflow-hidden">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center">
         <div className="lg:col-span-7 flex flex-col gap-space-md">
-          <div className="flex flex-wrap items-center gap-space-xs">
-            <span className="bg-steel-100 text-steel-700 px-2.5 py-1 rounded text-label-sm font-bold tracking-wider uppercase">
-              INDUSTRIAL SURFACE TREATMENT
-            </span>
-            <span className="bg-slate-100 text-slate-600 px-2.5 py-1 rounded text-label-sm uppercase">
-              CÔNG NGHỆ CHUYỂN GIAO CHÂU ÂU &amp; NHẬT BẢN
-            </span>
-          </div>
           <h1 className="text-headline-xl-mobile md:text-headline-lg lg:text-display-hero text-slate-900 uppercase font-bold tracking-tight">
             DỊCH VỤ GIA CÔNG MẠ &amp; XỬ LÝ BỀ MẶT CÔNG NGHIỆP
           </h1>

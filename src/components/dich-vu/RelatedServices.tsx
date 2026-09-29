@@ -8,9 +8,6 @@ export default function RelatedServices({ currentSlug }: { currentSlug: string }
     <section className="w-full mb-space-lg">
       <div className="flex items-center justify-between pb-space-sm mb-space-md flex-wrap gap-space-sm">
         <div>
-          <span className="text-steel-600 text-label-sm uppercase tracking-wider font-semibold block mb-1">
-            HỆ SINH THÁI GIA CÔNG BỀ MẶT
-          </span>
           <h3 className="text-headline-sm text-slate-900 tracking-tight uppercase font-bold">
             CÁC DỊCH VỤ GIA CÔNG MẠ CHUYÊN NGÀNH BỔ TRỢ
           </h3>

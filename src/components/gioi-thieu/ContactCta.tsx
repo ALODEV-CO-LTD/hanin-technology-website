@@ -2,12 +2,6 @@ export default function ContactCta() {
   return (
     <section className="w-full bg-white py-space-xl border-t border-slate-200">
       <div className="max-w-[1280px] mx-auto px-margin text-center flex flex-col items-center">
-        <div className="inline-flex items-center gap-2 px-2.5 py-1 rounded bg-steel-50 border border-steel-200 mb-space-sm">
-          <span className="w-1.5 h-1.5 rounded-full bg-steel-600" />
-          <span className="text-[11px] text-steel-600 uppercase tracking-widest font-bold">
-            SẴN SÀNG HỢP TÁC &amp; ĐỒNG HÀNH
-          </span>
-        </div>
         <h2 className="text-headline-lg md:text-headline-xl text-slate-900 uppercase tracking-tight max-w-2xl mb-space-sm font-bold">
           BẠN MUỐN TÌM HIỂU THÊM VỀ HANIN?
         </h2>

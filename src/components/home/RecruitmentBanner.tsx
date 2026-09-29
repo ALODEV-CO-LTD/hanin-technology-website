@@ -7,12 +7,6 @@ export default function RecruitmentBanner() {
         <div className="p-space-lg md:p-space-xl rounded bg-gradient-to-r from-slate-100 via-steel-50/40 to-slate-100 border border-slate-200 flex flex-col md:flex-row items-center justify-between gap-space-lg shadow-sm relative overflow-hidden">
           <div className="absolute right-0 top-0 bottom-0 w-1/3 bg-[linear-gradient(to_right,transparent,rgba(43,90,122,0.06))] pointer-events-none" />
           <div className="flex flex-col gap-2 max-w-xl">
-            <div className="flex items-center gap-2">
-              <span className="w-2 h-2 rounded-full bg-steel-600" />
-              <span className="text-label-technical uppercase tracking-[0.2em] text-steel-600 font-bold">
-                GIA NHẬP ĐỘI NGŨ HANIN
-              </span>
-            </div>
             <h2 className="text-headline-lg text-slate-900 font-bold">
               Cùng xây dựng tương lai công nghiệp.
             </h2>

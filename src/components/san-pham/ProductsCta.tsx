@@ -2,9 +2,6 @@ export default function ProductsCta() {
   return (
     <section className="w-full bg-slate-100 border-y border-slate-200 py-space-xl my-space-lg">
       <div className="max-w-[1280px] mx-auto px-margin flex flex-col items-center text-center">
-        <span className="text-label-technical uppercase tracking-widest text-steel-600 font-bold mb-space-xs">
-          YÊU CẦU DỰ ÁN &amp; BÁO GIÁ KỸ THUẬT
-        </span>
         <h2 className="text-headline-xl-mobile lg:text-headline-xl uppercase text-slate-900 max-w-2xl font-bold">
           BẠN CÓ DỰ ÁN CẦN GIA CÔNG?
         </h2>

@@ -9,14 +9,6 @@ export default function ProductHero({ product }: { product: Product }) {
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
           <div className="lg:col-span-7 flex flex-col gap-5">
-            <div className="flex flex-wrap items-center gap-2">
-              <span className="px-2.5 py-1 bg-steel-50 border border-steel-200 text-steel-700 font-mono text-xs uppercase font-semibold">
-                PROJECT DOSSIER // {product.lot}
-              </span>
-              <span className="px-2.5 py-1 bg-slate-100 border border-slate-200 text-slate-600 font-mono text-xs uppercase">
-                DANH MỤC: {product.category.toUpperCase()}
-              </span>
-            </div>
             <h1 className="text-2xl md:text-3xl font-bold text-slate-900 uppercase tracking-tight leading-tight">
               {product.title}
             </h1>

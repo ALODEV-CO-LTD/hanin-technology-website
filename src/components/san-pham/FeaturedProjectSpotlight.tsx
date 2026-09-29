@@ -32,9 +32,6 @@ export default function FeaturedProjectSpotlight() {
           </div>
           <div className="lg:col-span-5 p-space-lg lg:p-space-xl flex flex-col gap-space-md">
             <div className="flex flex-col gap-space-xs">
-              <span className="text-label-technical text-steel-600 uppercase tracking-wider font-bold">
-                DỰ ÁN ĐIỂN HÌNH &amp; ĐIỂM SÁNG KỸ THUẬT
-              </span>
               <h2 className="text-headline-lg text-slate-900 uppercase leading-snug font-bold">
                 {project.title}
               </h2>

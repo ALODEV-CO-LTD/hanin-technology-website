@@ -41,12 +41,6 @@ export default function AboutHanin() {
           </div>
 
           <div className="lg:col-span-7 flex flex-col gap-space-md">
-            <div className="flex items-center gap-2">
-              <span className="w-6 h-[2px] bg-steel-600" />
-              <span className="text-label-technical uppercase tracking-[0.2em] text-steel-600 font-bold">
-                VỀ HANIN VIỆT NAM
-              </span>
-            </div>
             <h2 className="text-headline-xl text-slate-900 font-bold">
               Năng lực tạo nên sự khác biệt.
             </h2>

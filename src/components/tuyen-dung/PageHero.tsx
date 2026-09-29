@@ -29,10 +29,6 @@ export default function PageHero() {
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center pt-space-sm">
           <div className="lg:col-span-7 flex flex-col gap-space-md">
-            <div className="inline-flex items-center gap-2 text-steel-600 text-label-technical tracking-widest uppercase">
-              <span className="material-symbols-outlined text-[16px]">precision_manufacturing</span>
-              <span>CAREERS // HANIN TECHNOLOGY</span>
-            </div>
             <h1 className="text-display-hero-mobile md:text-display-hero text-slate-900 tracking-tight uppercase font-bold">
               CƠ HỘI <span className="text-steel-600">NGHỀ NGHIỆP</span>
             </h1>

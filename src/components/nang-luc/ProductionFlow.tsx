@@ -42,9 +42,6 @@ export default function ProductionFlow() {
     <section className="w-full py-space-xl bg-white border-t border-slate-200">
       <div className="max-w-[1280px] mx-auto px-margin w-full">
         <div className="max-w-2xl mb-space-xl">
-          <span className="text-label-technical text-steel-600 font-semibold tracking-widest uppercase block mb-1">
-            STANDARD WORKFLOW
-          </span>
           <h2 className="text-headline-lg text-slate-900 uppercase tracking-tight mb-space-xs">
             QUY TRÌNH SẢN XUẤT
           </h2>

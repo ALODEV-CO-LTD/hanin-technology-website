@@ -29,10 +29,6 @@ export default function DevelopmentDirection() {
         {/* Section Layout: Split Header */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-gutter mb-space-xl">
           <div className="lg:col-span-5">
-            <div className="flex items-center gap-space-xs text-label-technical tracking-widest text-steel-600 uppercase mb-space-xs font-bold">
-              <span className="w-2 h-0.5 bg-steel-600" />
-              TẦM NHÌN &amp; ĐỊNH HƯỚNG
-            </div>
             <h2 className="text-headline-lg md:text-headline-xl text-slate-900 uppercase tracking-tight font-bold">
               Định hướng phát triển
             </h2>

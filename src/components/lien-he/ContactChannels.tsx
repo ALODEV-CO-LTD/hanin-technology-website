@@ -4,9 +4,6 @@ export default function ContactChannels() {
       <div className="max-w-[1280px] mx-auto px-margin">
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-space-md mb-space-xl">
           <div>
-            <span className="text-label-technical uppercase tracking-widest text-steel-600 font-bold">
-              SECTION 01 // DIRECT CHANNELS
-            </span>
             <h2 className="text-headline-md font-bold text-slate-900 uppercase tracking-tight">
               HỆ THỐNG TRỤ SỞ &amp; ĐẦU MỐI KỸ THUẬT
             </h2>

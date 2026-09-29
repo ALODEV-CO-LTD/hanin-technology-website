@@ -5,9 +5,6 @@ export default function NangLucFinalCta() {
         <div className="bg-white border border-slate-200 rounded-lg p-space-xl md:p-12 relative overflow-hidden shadow-sm">
           <div className="absolute right-0 top-0 bottom-0 w-1/3 bg-gradient-to-l from-steel-50 to-transparent pointer-events-none" />
           <div className="max-w-2xl relative z-10">
-            <span className="text-label-technical text-steel-600 font-semibold tracking-widest uppercase block mb-space-xs">
-              START COLLABORATION
-            </span>
             <h2 className="text-headline-xl text-slate-900 uppercase tracking-tight mb-space-sm">
               BẠN ĐANG TÌM KIẾM ĐỐI TÁC GIA CÔNG MẠ?
             </h2>

@@ -8,10 +8,6 @@ export default function ApplicationCta() {
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center relative z-10">
             <div className="lg:col-span-7 flex flex-col gap-space-md">
-              <div className="inline-flex items-center gap-2 text-steel-600 text-label-technical uppercase tracking-widest font-semibold">
-                <span className="w-2 h-2 rounded-full bg-steel-600" />
-                <span>JOIN OUR TEAM // CƠ HỘI NGHỀ NGHIỆP</span>
-              </div>
               <h2 className="text-headline-xl-mobile md:text-headline-xl text-slate-900 tracking-tight uppercase font-bold">
                 GIA NHẬP ĐỘI NGŨ HANIN
               </h2>

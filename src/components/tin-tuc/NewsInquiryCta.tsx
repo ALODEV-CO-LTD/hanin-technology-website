@@ -9,10 +9,6 @@ export default function NewsInquiryCta() {
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center relative z-10">
             <div className="lg:col-span-8 flex flex-col gap-space-sm">
-              <div className="flex items-center gap-space-xs text-steel-600 text-label-technical uppercase font-semibold">
-                <span className="w-2 h-2 rounded-full bg-steel-600" />
-                KẾT NỐI VỚI CHUYÊN GIA KỸ THUẬT
-              </div>
               <h2 className="text-headline-xl text-slate-900 uppercase tracking-tight font-bold">
                 CẦN TRAO ĐỔI VỀ <span className="text-steel-600">SẢN PHẨM / DỰ ÁN?</span>
               </h2>

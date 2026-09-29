@@ -28,12 +28,6 @@ export default function ManufacturingCapability() {
     <section className="w-full py-space-xl bg-slate-50" id="nang-luc">
       <div className="max-w-[1280px] mx-auto px-margin flex flex-col gap-space-xl">
         <div className="flex flex-col gap-2 max-w-3xl">
-          <div className="flex items-center gap-2">
-            <span className="w-2 h-2 rounded-full bg-steel-600" />
-            <span className="text-label-technical uppercase tracking-[0.2em] text-steel-600 font-bold">
-              CƠ SỞ VẬT CHẤT &amp; VẬN HÀNH
-            </span>
-          </div>
           <h2 className="text-headline-xl text-slate-900 font-bold uppercase">
             NĂNG LỰC SẢN XUẤT
           </h2>

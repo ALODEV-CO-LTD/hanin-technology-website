@@ -58,9 +58,6 @@ export default function FactoryShowcase() {
       <div className="max-w-[1280px] mx-auto px-margin flex flex-col gap-space-lg">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
           <div className="flex flex-col gap-2">
-            <span className="text-label-technical uppercase tracking-[0.2em] text-steel-600 font-bold">
-              TỪ NHÀ XƯỞNG ĐẾN THÀNH PHẨM
-            </span>
             <h2 className="text-headline-xl text-slate-900 font-bold">
               Không gian vận hành & Thiết bị công nghệ
             </h2>

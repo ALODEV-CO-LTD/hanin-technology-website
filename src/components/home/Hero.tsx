@@ -15,16 +15,6 @@ export default function Hero() {
 
       <div className="relative z-10 max-w-[1280px] w-full mx-auto px-margin py-space-xl flex flex-col justify-between h-full">
         <div className="max-w-3xl flex flex-col gap-space-md pt-space-lg">
-          <div className="inline-flex items-center gap-2.5 px-3 py-1.5 rounded bg-white/10 backdrop-blur-md border border-white/15 shadow-sm w-fit">
-            <span className="w-2 h-2 rounded-full bg-steel-500 animate-pulse" />
-            <span className="text-label-technical tracking-[0.16em] uppercase text-steel-400 font-semibold">
-              HANIN TECHNOLOGY VIỆT NAM
-            </span>
-            <span className="text-[10px] text-slate-300 tracking-widest pl-2 border-l border-white/20">
-              TIÊU CHUẨN: B2B-IND-VN
-            </span>
-          </div>
-
           <div className="flex flex-col gap-2">
             <h1 className="text-display-hero-mobile xl:text-display-hero text-white uppercase tracking-tight font-bold">
               GIA CÔNG XI MẠ <span className="text-steel-500">CHÍNH XÁC</span>

@@ -15,11 +15,6 @@ export default function ProfileDownloadCta() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center relative z-10">
             {/* Left Content */}
             <div className="lg:col-span-7 flex flex-col gap-space-md">
-              <div className="inline-flex items-center gap-2 px-2 py-0.5 rounded bg-steel-50 border border-steel-200 w-max">
-                <span className="text-[10px] uppercase tracking-wider text-steel-600 font-bold">
-                  TÀI LIỆU CHÍNH THỨC // 2026
-                </span>
-              </div>
               <h2 className="text-headline-lg md:text-headline-xl text-slate-900 uppercase tracking-tight font-bold">
                 KHÁM PHÁ HỒ SƠ NĂNG LỰC HANIN
               </h2>

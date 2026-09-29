@@ -6,9 +6,6 @@ export default function ServiceCategories() {
     <section className="w-full mb-space-xl">
       <div className="flex items-center justify-between mb-space-md">
         <div>
-          <span className="text-label-sm text-steel-600 uppercase font-bold tracking-wider">
-            DANH MỤC DỊCH VỤ CHI TIẾT
-          </span>
           <h2 className="text-headline-sm md:text-headline-lg text-slate-900 uppercase font-bold">
             CÁC CÔNG NGHỆ XI MẠ CỐT LÕI
           </h2>

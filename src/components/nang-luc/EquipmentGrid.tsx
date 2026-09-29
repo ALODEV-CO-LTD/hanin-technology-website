@@ -75,9 +75,6 @@ export default function EquipmentGrid() {
       <div className="max-w-[1280px] mx-auto px-margin w-full">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-xl">
           <div>
-            <span className="text-label-technical text-steel-600 font-semibold tracking-widest uppercase block mb-1">
-              HARDWARE ASSETS
-            </span>
             <h2 className="text-headline-lg text-slate-900 uppercase tracking-tight">
               HỆ THỐNG MÁY MÓC &amp; THIẾT BỊ
             </h2>

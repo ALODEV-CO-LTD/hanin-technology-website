@@ -35,9 +35,6 @@ export default function DetailApplications() {
       <div className="bg-white border border-slate-200 p-space-lg rounded shadow-sm">
         <div className="flex flex-col md:flex-row md:items-end justify-between pb-space-md mb-space-md gap-space-sm">
           <div>
-            <span className="text-steel-600 text-label-sm uppercase tracking-wider font-semibold block mb-1">
-              ỨNG DỤNG THỰC TẾ THEO PHÂN KHÚC
-            </span>
             <h2 className="text-headline-md text-slate-900 tracking-tight uppercase font-bold">
               CÁC DÒNG SẢN PHẨM CƠ KHÍ GIA CÔNG MẠ ENP TẠI HANIN
             </h2>

@@ -5,9 +5,6 @@ export default function CompanyProfileCta() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
           {/* LEFT: Text & Button */}
           <div className="lg:col-span-7">
-            <span className="text-label-technical text-steel-400 font-semibold tracking-widest uppercase block mb-space-xs">
-              OFFICIAL DOCUMENTATION // 2026
-            </span>
             <h3 className="text-headline-lg text-white uppercase tracking-tight mb-space-md">
               TÌM HIỂU THÊM VỀ NĂNG LỰC HANIN
             </h3>

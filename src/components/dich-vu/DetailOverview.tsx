@@ -13,9 +13,6 @@ export default function DetailOverview() {
       <div className="bg-white border border-slate-200 p-space-lg rounded shadow-sm">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-space-sm pb-space-md mb-space-md bg-slate-50 border border-slate-200 p-space-md rounded">
           <div>
-            <span className="text-steel-600 text-label-sm uppercase tracking-wider font-semibold block mb-1">
-              CƠ CHẾ KỸ THUẬT NỀN TẢNG
-            </span>
             <h2 className="text-headline-md text-slate-900 tracking-tight uppercase font-bold">
               TỔNG QUAN NGUYÊN LÝ &amp; PHẠM VI ỨNG DỤNG
             </h2>

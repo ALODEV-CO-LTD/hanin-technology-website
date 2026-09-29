@@ -47,12 +47,6 @@ export default function ContactHero() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
             {/* Left hero content */}
             <div className="lg:col-span-7 flex flex-col gap-space-md">
-              <div className="inline-flex items-center gap-2">
-                <span className="px-2.5 py-1 bg-steel-50 text-steel-600 text-label-sm uppercase tracking-wider rounded font-semibold">
-                  CONTACT HANIN // KẾT NỐI KỸ THUẬT
-                </span>
-                <span className="text-slate-500 text-label-sm">REF: HN-VNM-QUANGMINH</span>
-              </div>
               <h1 className="text-headline-xl-mobile lg:text-display-hero font-bold tracking-tight text-slate-900 uppercase">
                 LIÊN HỆ &amp;{" "}
                 <span className="text-steel-600 underline decoration-steel-600/30 decoration-4 underline-offset-8">

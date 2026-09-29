@@ -12,9 +12,6 @@ export default function RelatedProjects({ currentSlug }: { currentSlug: string }
     <section className="w-full bg-slate-50 py-space-xl border-b border-slate-200">
       <div className="max-w-7xl mx-auto px-6">
         <div className="mb-space-lg">
-          <span className="text-label-technical text-steel-600 uppercase tracking-widest block mb-1">
-            PROVEN INDUSTRIAL ARCHIVE
-          </span>
           <h2 className="text-headline-lg text-slate-900 uppercase tracking-tight">
             DỰ ÁN &amp; SẢN PHẨM KHÁC
           </h2>

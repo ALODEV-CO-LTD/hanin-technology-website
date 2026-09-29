@@ -5,9 +5,6 @@ export default function RfqFormCategory() {
     <section className="w-full bg-white border border-slate-200 rounded p-space-md lg:p-space-xl shadow-sm mb-space-xl" id="rfq-form">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-space-lg">
-          <span className="text-label-sm text-steel-600 uppercase font-bold tracking-widest">
-            GATEWAY BÁO GIÁ KỸ THUẬT
-          </span>
           <h2 className="text-headline-sm md:text-headline-lg text-slate-900 uppercase font-bold">
             YÊU CẦU BÁO GIÁ DỊCH VỤ XI MẠ (RFQ SPECIFICATION)
           </h2>

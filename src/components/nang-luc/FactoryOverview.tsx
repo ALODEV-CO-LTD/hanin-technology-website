@@ -33,9 +33,6 @@ export default function FactoryOverview() {
           {/* RIGHT: Description & Metadata */}
           <div className="lg:col-span-5 flex flex-col justify-between bg-white border border-slate-200 p-space-xl rounded-lg shadow-sm">
             <div>
-              <span className="text-label-technical tracking-widest text-steel-600 uppercase block mb-space-xs font-semibold">
-                INFRASTRUCTURE &amp; SCALE
-              </span>
               <h3 className="text-headline-md text-slate-900 uppercase mb-space-md">
                 NHÀ MÁY HANIN TECHNOLOGY
               </h3>

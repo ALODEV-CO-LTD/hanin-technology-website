@@ -11,9 +11,6 @@ export default function ProductQuoteCta() {
             </svg>
           </div>
           <div className="relative z-10 max-w-[840px] flex flex-col gap-space-md">
-            <span className="text-label-technical text-steel-600 uppercase tracking-widest font-semibold">
-              TECHNICAL ESTIMATION &amp; CONSULTING DESK
-            </span>
             <h2 className="text-headline-xl-mobile lg:text-headline-xl text-slate-900 uppercase tracking-tight">
               CÓ YÊU CẦU GIA CÔNG TƯƠNG TỰ CHO DỰ ÁN CỦA BẠN?
             </h2>

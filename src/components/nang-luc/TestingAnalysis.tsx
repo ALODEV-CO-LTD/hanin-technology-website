@@ -21,9 +21,6 @@ export default function TestingAnalysis() {
     <section className="w-full py-space-xl bg-slate-50 border-t border-slate-200" id="kiem-nghiem">
       <div className="max-w-[1280px] mx-auto px-margin w-full">
         <div className="mb-space-xl">
-          <span className="text-label-technical text-steel-600 font-semibold tracking-widest uppercase block mb-1">
-            METROLOGY &amp; VALIDATION
-          </span>
           <h2 className="text-headline-lg text-slate-900 uppercase tracking-tight">PHÂN TÍCH &amp; KIỂM NGHIỆM</h2>
           <p className="text-body-md text-slate-600 max-w-3xl mt-1">
             Phòng phân tích hóa nghiệm và đo lường vi mô, kiểm định trước khi xuất kho theo quy chuẩn quốc tế.

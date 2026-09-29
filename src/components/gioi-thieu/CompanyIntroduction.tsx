@@ -57,10 +57,6 @@ export default function CompanyIntroduction() {
 
           {/* Right: Editorial & Mission */}
           <div className="lg:col-span-7 flex flex-col gap-space-md">
-            <div className="flex items-center gap-space-xs text-label-technical tracking-widest text-steel-600 uppercase font-bold">
-              <span className="w-2 h-0.5 bg-steel-600" />
-              HANIN TECHNOLOGY VIỆT NAM
-            </div>
             <h2 className="text-headline-lg md:text-headline-xl text-slate-900 uppercase tracking-tight font-bold">
               Đồng hành cùng nhu cầu gia công mạ công nghiệp
             </h2>

@@ -6,14 +6,6 @@ export default function DetailHero() {
         <div className="lg:col-span-7 flex flex-col justify-between bg-white border border-slate-200 p-space-lg rounded shadow-sm relative overflow-hidden">
           <div className="absolute top-0 left-0 w-1.5 h-full bg-steel-600" />
           <div className="flex flex-col gap-space-sm">
-            <div className="flex flex-wrap items-center gap-space-xs">
-              <span className="bg-steel-600 text-white text-label-sm px-2 py-0.5 rounded uppercase">
-                CHUYÊN ĐỀ DỊCH VỤ GIA CÔNG MẠ CHÍNH XÁC
-              </span>
-              <span className="bg-slate-100 text-slate-600 text-label-sm px-2 py-0.5 rounded">
-                MÃ DỊCH VỤ: HAN-SRV-ENP-03
-              </span>
-            </div>
             <h1 className="text-headline-lg text-slate-900 tracking-tight uppercase mt-space-xs font-bold">
               MẠ NIKEN HÓA HỌC KHÔNG DÙNG ĐIỆN
               <span className="block text-steel-600 text-headline-md mt-1 font-bold">

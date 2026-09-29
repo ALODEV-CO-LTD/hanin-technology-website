@@ -25,14 +25,6 @@ export default function IntroHero() {
           <span className="text-steel-600 font-bold">Giới thiệu</span>
         </nav>
 
-        {/* Eyebrow Badge */}
-        <div className="inline-flex items-center gap-2 px-2.5 py-1 rounded bg-white/90 border border-slate-200 shadow-sm backdrop-blur-md mb-space-sm">
-          <span className="w-1.5 h-1.5 rounded-full bg-steel-600 animate-pulse" />
-          <span className="text-[11px] uppercase tracking-widest text-steel-600 font-bold">
-            GIỚI THIỆU HANIN // HỒ SƠ 2026
-          </span>
-        </div>
-
         {/* Main Heading */}
         <h1 className="text-headline-xl-mobile md:text-display-hero text-slate-900 uppercase tracking-tight max-w-3xl mb-space-sm font-bold">
           GIỚI THIỆU HANIN

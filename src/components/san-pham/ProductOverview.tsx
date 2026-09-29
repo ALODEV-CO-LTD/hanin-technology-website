@@ -7,9 +7,6 @@ export default function ProductOverview() {
     <section className="w-full bg-white py-space-xl border-b border-slate-200">
       <div className="max-w-7xl mx-auto px-6">
         <div className="mb-space-lg">
-          <span className="text-label-technical text-steel-600 uppercase tracking-widest block mb-1">
-            METALLURGICAL RIGOR // SPECIFICATIONS
-          </span>
           <h2 className="text-headline-lg text-slate-900 uppercase tracking-tight">
             TỔNG QUAN DỰ ÁN &amp; NĂNG LỰC ĐÁP ỨNG
           </h2>

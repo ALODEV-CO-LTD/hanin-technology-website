@@ -27,9 +27,6 @@ export default function LocationMap() {
           {/* Map info & logistics instructions */}
           <div className="lg:col-span-5 flex flex-col justify-between bg-white border border-slate-200 p-space-xl rounded shadow-sm">
             <div>
-              <span className="text-label-technical uppercase tracking-widest text-steel-600 font-bold block mb-1">
-                VỊ TRÍ CHIẾN LƯỢC // LOGISTICS ROUTE
-              </span>
               <h2 className="text-headline-md font-bold text-slate-900 uppercase tracking-tight mb-space-md">
                 VỊ TRÍ NHÀ MÁY &amp; ĐƯỜNG ĐI XE TẢI CONTAINER
               </h2>

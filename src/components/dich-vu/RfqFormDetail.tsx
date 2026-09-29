@@ -8,10 +8,6 @@ export default function RfqFormDetail() {
 
         <div className="flex flex-col md:flex-row md:items-start justify-between pb-space-md mb-space-md bg-slate-50 border border-slate-200 p-space-md rounded">
           <div>
-            <div className="flex items-center gap-space-xs text-steel-600 text-label-sm uppercase font-semibold">
-              <span className="material-symbols-outlined text-[16px]">terminal</span>
-              CỔNG TIẾP NHẬN YÊU CẦU BÁO GIÁ KỸ THUẬT (RFQ)
-            </div>
             <h2 className="text-headline-md text-slate-900 tracking-tight uppercase mt-1 font-bold">
               GỬI THÔNG SỐ &amp; YÊU CẦU MẠ NIKEN HÓA HỌC (ENP)
             </h2>

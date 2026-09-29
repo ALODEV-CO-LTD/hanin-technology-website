@@ -48,9 +48,6 @@ export default function ProductionLines() {
     <section className="w-full py-space-xl bg-white border-t border-slate-200" id="day-chuyen">
       <div className="max-w-[1280px] mx-auto px-margin w-full">
         <div className="max-w-2xl mb-space-xl">
-          <div className="text-label-technical text-steel-600 font-semibold tracking-widest uppercase mb-1">
-            PRODUCTION INFRASTRUCTURE
-          </div>
           <h2 className="text-headline-lg text-slate-900 uppercase tracking-tight mb-space-xs">
             DÂY CHUYỀN SẢN XUẤT
           </h2>

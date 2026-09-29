@@ -5,10 +5,6 @@ export default function FactoryOverview() {
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-xl">
           <div>
-            <div className="flex items-center gap-space-xs text-label-technical tracking-widest text-steel-600 uppercase mb-space-xs font-bold">
-              <span className="w-2 h-0.5 bg-steel-600" />
-              CƠ SỞ HẠ TẦNG &amp; VẬN HÀNH
-            </div>
             <h2 className="text-headline-lg md:text-headline-xl text-slate-900 uppercase tracking-tight font-bold">
               HỆ THỐNG NHÀ MÁY
             </h2>

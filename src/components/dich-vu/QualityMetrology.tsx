@@ -49,9 +49,6 @@ export default function QualityMetrology() {
       <div className="bg-slate-50 border border-slate-200 rounded p-space-md lg:p-space-xl">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center">
           <div className="lg:col-span-5">
-            <span className="text-label-sm text-steel-600 uppercase font-bold tracking-wider">
-              HỆ THỐNG ĐO LƯỜNG VÀ KIỂM SOÁT
-            </span>
             <h2 className="text-headline-sm md:text-headline-lg text-slate-900 uppercase font-bold mb-space-sm">
               PHÒNG THÍ NGHIỆM ĐO ĐỘ BỀN &amp; QUANG PHỔ XRF
             </h2>

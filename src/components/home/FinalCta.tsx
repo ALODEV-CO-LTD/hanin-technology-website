@@ -7,12 +7,6 @@ export default function FinalCta() {
       <div className="relative z-10 max-w-[1280px] mx-auto px-margin flex flex-col gap-space-xl">
         <div className="p-space-lg md:p-space-xl rounded bg-white border border-slate-200 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-space-xl shadow-lg">
           <div className="flex flex-col gap-space-md max-w-2xl">
-            <div className="flex items-center gap-2">
-              <span className="w-2.5 h-2.5 rounded bg-steel-600" />
-              <span className="text-label-technical uppercase tracking-[0.2em] text-steel-600 font-bold">
-                TƯ VẤN KỸ THUẬT &amp; DỰ ÁN
-              </span>
-            </div>
             <h2 className="text-headline-xl md:text-display-hero text-slate-900 font-bold leading-tight uppercase">
               BẠN CÓ DỰ ÁN CẦN GIA CÔNG MẠ?
             </h2>

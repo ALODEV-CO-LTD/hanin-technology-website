@@ -55,9 +55,6 @@ export default function DetailProcess() {
       <div className="bg-white border border-slate-200 p-space-lg rounded shadow-sm">
         <div className="flex items-center justify-between pb-space-sm mb-space-lg flex-wrap gap-space-sm">
           <div>
-            <span className="text-steel-600 text-label-sm uppercase tracking-wider font-semibold block mb-1">
-              TIÊU CHUẨN KIỂM SOÁT QUY TRÌNH KỸ THUẬT
-            </span>
             <h2 className="text-headline-md text-slate-900 tracking-tight uppercase font-bold">
               CHU TRÌNH MẠ NIKEN HÓA HỌC 06 CẤP ĐỘ
             </h2>

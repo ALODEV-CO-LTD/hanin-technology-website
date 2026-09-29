@@ -40,9 +40,6 @@ export default function ProcessFlow() {
   return (
     <section className="w-full bg-white border border-slate-200 rounded p-space-md lg:p-space-xl mb-space-xl shadow-sm">
       <div className="flex flex-col mb-space-lg">
-        <span className="text-label-sm text-steel-600 uppercase font-bold tracking-wider">
-          QUY TRÌNH TIÊU CHUẨN ĐỒNG BỘ
-        </span>
         <h2 className="text-headline-sm md:text-headline-lg text-slate-900 uppercase font-bold">
           SƠ ĐỒ CHU TRÌNH GIA CÔNG XI MẠ CHÍNH XÁC
         </h2>

@@ -38,10 +38,6 @@ export default function WhyHanin() {
     <section className="w-full py-space-xl bg-white">
       <div className="max-w-[1280px] mx-auto px-margin">
         <div className="flex flex-col gap-2 max-w-3xl mb-space-xl">
-          <div className="flex items-center gap-2 text-steel-600 text-label-technical uppercase tracking-widest">
-            <span className="w-3 h-[2px] bg-steel-600" />
-            <span>CULTURE &amp; WORKPLACE // TẠI SAO CHỌN HANIN?</span>
-          </div>
           <h2 className="text-headline-xl-mobile md:text-headline-xl text-slate-900 tracking-tight uppercase font-bold">
             NỀN TẢNG PHÁT TRIỂN SỰ NGHIỆP TẠI HANIN
           </h2>

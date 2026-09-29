@@ -34,9 +34,6 @@ export default function CapabilityHero() {
         </div>
 
         <div className="max-w-3xl pt-4">
-          <div className="inline-block mb-3 text-xs tracking-[0.2em] text-steel-700 font-bold uppercase bg-steel-50 border border-steel-200 px-3 py-1 rounded">
-            MANUFACTURING CAPABILITY // INFRASTRUCTURE &amp; METROLOGY
-          </div>
           <h1 className="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight uppercase mb-4">
             NĂNG LỰC SẢN XUẤT
           </h1>

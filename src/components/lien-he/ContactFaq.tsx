@@ -38,9 +38,6 @@ export default function ContactFaq() {
     <section className="w-full bg-slate-50 py-space-xl">
       <div className="max-w-4xl mx-auto px-margin">
         <div className="text-center mb-space-xl">
-          <span className="text-label-technical uppercase tracking-widest text-steel-600 font-bold block mb-1">
-            SECTION 05 // FAQ
-          </span>
           <h2 className="text-headline-md font-bold text-slate-900 uppercase tracking-tight">
             CÂU HỎI THƯỜNG GẶP VỀ TIẾP NHẬN BÁO GIÁ
           </h2>

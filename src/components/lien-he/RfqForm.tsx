@@ -98,14 +98,6 @@ export default function RfqForm() {
           {/* Form header ribbon */}
           <div className="bg-slate-900 text-white px-space-xl py-space-lg flex flex-col md:flex-row md:items-center justify-between gap-space-md">
             <div>
-              <div className="flex items-center gap-2 mb-1">
-                <span className="px-2 py-0.5 bg-steel-600 text-white text-label-sm rounded font-semibold">
-                  FORM CHUYÊN DỤNG
-                </span>
-                <span className="text-slate-300 text-label-sm uppercase">
-                  PORTAL TIẾP NHẬN YÊU CẦU BÁO GIÁ KỸ THUẬT (RFQ)
-                </span>
-              </div>
               <h2 className="text-headline-md font-bold uppercase tracking-tight text-white">
                 GỬI YÊU CẦU BÁO GIÁ &amp; TÀI LIỆU KỸ THUẬT DỰ ÁN
               </h2>

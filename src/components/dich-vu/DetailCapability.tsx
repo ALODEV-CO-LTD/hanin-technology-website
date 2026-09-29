@@ -45,9 +45,6 @@ export default function DetailCapability() {
         </div>
 
         <div className="lg:col-span-6 flex flex-col justify-center bg-white border border-slate-200 p-space-lg rounded shadow-sm">
-          <span className="text-steel-600 text-label-sm uppercase tracking-wider font-semibold mb-1">
-            DÂY CHUYỀN TỰ ĐỘNG HÓA CAO CẤP
-          </span>
           <h2 className="text-headline-md text-slate-900 tracking-tight uppercase mb-space-sm font-bold">
             CÔNG NGHỆ BỂ MẠ &amp; QUẢN TRỊ BẢN THANG NỒNG ĐỘ
           </h2>

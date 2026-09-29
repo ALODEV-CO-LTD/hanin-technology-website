@@ -4,10 +4,6 @@ export default function NewsIntro() {
       <div className="max-w-[1280px] mx-auto px-margin py-space-xl">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-end">
           <div className="lg:col-span-8 flex flex-col gap-space-xs">
-            <div className="flex items-center gap-space-xs text-steel-600 text-label-technical tracking-widest uppercase font-bold">
-              <span className="w-2.5 h-0.5 bg-steel-600" />
-              NEWS &amp; UPDATES // HANIN TECHNOLOGY
-            </div>
             <h1 className="text-display-hero-mobile lg:text-display-hero text-slate-900 uppercase tracking-tight font-bold">
               TIN TỨC &amp; <span className="text-steel-600">BẢN TIN</span> KỸ THUẬT
             </h1>

@@ -43,10 +43,6 @@ export default function CoreStrengths() {
       <div className="max-w-[1280px] mx-auto px-margin">
         {/* Section Header */}
         <div className="flex flex-col mb-space-xl">
-          <div className="flex items-center gap-space-xs text-label-technical tracking-widest text-steel-600 uppercase mb-space-xs font-bold">
-            <span className="w-2 h-0.5 bg-steel-600" />
-            LỢI THẾ CÔNG NGHIỆP
-          </div>
           <h2 className="text-headline-lg md:text-headline-xl text-slate-900 uppercase tracking-tight font-bold">
             THẾ MẠNH CỦA HANIN
           </h2>

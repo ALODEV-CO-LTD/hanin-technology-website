@@ -42,9 +42,6 @@ export default function DetailQaTable() {
       <div className="bg-white border border-slate-200 p-space-lg rounded shadow-sm">
         <div className="flex flex-col md:flex-row md:items-end justify-between pb-space-sm mb-space-md gap-space-sm">
           <div>
-            <span className="text-steel-600 text-label-sm uppercase tracking-wider font-semibold block mb-1">
-              PHÒNG ĐO KIỂM &amp; THỬ NGHIỆM ĐỘC LẬP
-            </span>
             <h2 className="text-headline-md text-slate-900 tracking-tight uppercase font-bold">
               QUY TRÌNH KIỂM SOÁT CHẤT LƯỢNG TIÊU CHUẨN QUỐC TẾ
             </h2>

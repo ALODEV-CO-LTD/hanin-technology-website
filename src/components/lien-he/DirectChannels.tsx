@@ -42,9 +42,6 @@ export default function DirectChannels() {
     <section className="w-full bg-white py-space-xl">
       <div className="max-w-[1280px] mx-auto px-margin">
         <div className="text-center max-w-3xl mx-auto mb-space-xl">
-          <span className="text-label-technical uppercase tracking-widest text-steel-600 font-bold block mb-1">
-            SECTION 04 // REAL-TIME ESCALATION
-          </span>
           <h2 className="text-headline-md font-bold text-slate-900 uppercase tracking-tight">
             KÊNH KẾT NỐI TRỰC TIẾP NHANH CHÓNG
           </h2>

@@ -6,12 +6,6 @@ export default function ProductsProjects() {
       <div className="max-w-[1280px] mx-auto px-margin flex flex-col gap-space-xl">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
           <div className="flex flex-col gap-2">
-            <div className="flex items-center gap-2">
-              <span className="w-2 h-2 rounded-full bg-steel-600" />
-              <span className="text-label-technical uppercase tracking-[0.2em] text-steel-600 font-bold">
-                SẢN PHẨM &amp; DỰ ÁN
-              </span>
-            </div>
             <h2 className="text-headline-xl text-slate-900 font-bold">
               Sản phẩm và dự án tiêu biểu.
             </h2>

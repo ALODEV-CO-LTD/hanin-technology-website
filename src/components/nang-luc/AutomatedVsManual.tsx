@@ -3,9 +3,6 @@ export default function AutomatedVsManual() {
     <section className="w-full py-space-xl bg-slate-50 border-t border-slate-200">
       <div className="max-w-[1280px] mx-auto px-margin w-full">
         <div className="mb-space-xl text-center max-w-2xl mx-auto">
-          <span className="text-label-technical text-steel-600 font-semibold tracking-widest uppercase block mb-1">
-            OPERATIONAL METHODOLOGY
-          </span>
           <h2 className="text-headline-lg text-slate-900 uppercase tracking-tight">
             DÂY CHUYỀN TỰ ĐỘNG VS DÂY CHUYỀN THỦ CÔNG
           </h2>

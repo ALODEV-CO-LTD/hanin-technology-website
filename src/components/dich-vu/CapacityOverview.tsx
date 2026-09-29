@@ -37,9 +37,6 @@ export default function CapacityOverview() {
       <div className="bg-slate-50 border border-slate-200 rounded p-space-md lg:p-space-lg">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-space-sm mb-space-lg">
           <div>
-            <span className="text-label-sm text-steel-600 uppercase font-bold tracking-wider">
-              TỔNG QUAN NĂNG LỰC NHÀ MÁY
-            </span>
             <h2 className="text-headline-sm md:text-headline-lg text-slate-900 uppercase font-bold">
               HỆ THỐNG GIA CÔNG XI MẠ CHUYÊN BIỆT
             </h2>
