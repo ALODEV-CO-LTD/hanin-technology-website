@@ -47,7 +47,7 @@ export default function Header() {
           <Link href="/" className="flex items-center group" onClick={handleLogoClick}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/hanin-logo.svg"
+              src="/hanin-logo.png"
               alt="HANIN Plating"
               className={`h-11 w-auto transition-transform duration-200 ease-out group-hover:scale-105 group-active:scale-95 ${
                 logoPulsing ? "logo-click-pulse" : ""

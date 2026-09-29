@@ -25,7 +25,7 @@ export default function Footer() {
             <Link href="/" className="flex items-center w-fit group">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/hanin-logo.svg"
+                src="/hanin-logo.png"
                 alt="HANIN Plating"
                 className="h-10 w-auto transition-transform duration-200 ease-out group-hover:scale-105 group-active:scale-95"
               />
