@@ -27,9 +27,8 @@ export default function WorkEnvironment() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900/85 via-slate-900/30 to-transparent" />
               <div className="absolute bottom-space-lg left-space-lg right-space-lg flex flex-col gap-1 text-white">
-                <div className="inline-flex items-center gap-2 text-steel-300 text-label-sm uppercase tracking-widest font-bold">
-                  <span className="w-2 h-2 rounded-full bg-steel-400 animate-pulse" />
-                  <span>{t("mainBadge")}</span>
+                <div className="text-steel-300 text-label-sm uppercase tracking-widest font-bold">
+                  {t("mainBadge")}
                 </div>
                 <h3 className="text-headline-sm uppercase text-white font-semibold">
                   {t("mainTitle")}

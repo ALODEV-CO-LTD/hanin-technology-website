@@ -39,14 +39,10 @@ export default function FeaturedArticle() {
                 {article.standard}
               </span>
             </div>
-            <div className="absolute bottom-space-md left-space-md right-space-md flex items-center justify-between text-white text-label-sm">
+            <div className="absolute bottom-space-md left-space-md right-space-md flex items-center text-white text-label-sm">
               <span className="flex items-center gap-1.5">
                 <span className="material-symbols-outlined text-[16px]">location_on</span>
                 {article.location}
-              </span>
-              <span className="flex items-center gap-1.5">
-                <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-                {article.liveLabel}
               </span>
             </div>
           </div>

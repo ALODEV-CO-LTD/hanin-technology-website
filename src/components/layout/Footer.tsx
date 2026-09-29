@@ -112,10 +112,6 @@ export default function Footer() {
         </div>
 
         <div className="mt-space-xl pt-space-md border-t border-slate-200 flex flex-col md:flex-row items-center justify-between gap-space-sm text-label-technical text-slate-500">
-          <div className="flex items-center gap-2">
-            <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-            <span>{t("statusLine")}</span>
-          </div>
           <p>{t("copyright")}</p>
           <div className="flex items-center gap-space-md">
             <a href="#" className="hover:text-steel-600 transition-colors">

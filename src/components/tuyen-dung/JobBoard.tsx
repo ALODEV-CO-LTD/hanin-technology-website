@@ -69,21 +69,13 @@ export default function JobBoard() {
   return (
     <section className="w-full py-space-xl bg-slate-50 scroll-mt-20" id="open-positions">
       <div className="max-w-[1280px] mx-auto px-margin flex flex-col gap-space-lg">
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-space-md pb-space-sm">
-          <div className="flex flex-col gap-2 max-w-2xl">
-            <h2 className="text-headline-xl-mobile md:text-headline-xl text-slate-900 tracking-tight uppercase font-bold">
-              {tb("title")}
-            </h2>
-            <p className="text-body-lg text-slate-600">
-              {tb("description")}
-            </p>
-          </div>
-          <div className="flex items-center gap-2 px-space-md py-space-sm bg-white rounded shadow-sm text-slate-500 text-label-sm font-semibold tracking-wider uppercase self-start md:self-auto shrink-0">
-            <span className="w-2 h-2 rounded-full bg-emerald-500" />
-            <span>
-              {tb("boardStatus", { count: JOBS.length.toString().padStart(2, "0") })}
-            </span>
-          </div>
+        <div className="flex flex-col gap-2 max-w-2xl pb-space-sm">
+          <h2 className="text-headline-xl-mobile md:text-headline-xl text-slate-900 tracking-tight uppercase font-bold">
+            {tb("title")}
+          </h2>
+          <p className="text-body-lg text-slate-600">
+            {tb("description")}
+          </p>
         </div>
 
         {/* Filter toolbar */}

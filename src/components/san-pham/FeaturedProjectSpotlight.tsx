@@ -23,9 +23,6 @@ export default function FeaturedProjectSpotlight() {
               <div className="px-space-sm py-space-xs bg-white/90 border border-slate-200 backdrop-blur-md rounded text-label-technical text-sky-700 font-bold shadow-sm">
                 {project.imageBadge}
               </div>
-              <div className="px-space-sm py-space-xs bg-white/90 border border-slate-200 backdrop-blur-md rounded text-label-technical text-steel-600 flex items-center gap-1.5 font-bold shadow-sm">
-                <span className="w-1.5 h-1.5 rounded-full bg-steel-600 animate-ping" /> {tc("bathTemperature")}
-              </div>
             </div>
             <div className="absolute bottom-space-md left-space-md right-space-md bg-white/95 border border-slate-200 backdrop-blur-md p-space-sm rounded flex items-center justify-between text-slate-500 text-label-technical shadow-sm">
               <span className="font-semibold">{tc("automatedCycle")}</span>

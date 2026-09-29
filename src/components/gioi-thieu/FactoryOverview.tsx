@@ -30,10 +30,6 @@ export default function FactoryOverview() {
               }}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent" />
-            <div className="absolute top-4 left-4 inline-flex items-center gap-2 px-2.5 py-1 rounded bg-white/90 backdrop-blur-sm border border-slate-200 shadow-sm">
-              <span className="w-2 h-2 rounded-full bg-steel-600 animate-ping" />
-              <span className="text-[10px] text-steel-600 uppercase tracking-widest font-bold">{t("zone1Tag")}</span>
-            </div>
             <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between text-white">
               <div>
                 <p className="text-headline-sm font-semibold">{t("zone1Title")}</p>

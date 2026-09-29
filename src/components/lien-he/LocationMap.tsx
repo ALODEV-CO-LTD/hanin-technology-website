@@ -80,27 +80,7 @@ export default function LocationMap() {
               }}
               role="img"
               aria-label={t("satelliteImageAlt")}
-            >
-              <div className="absolute top-4 left-4 bg-slate-900/90 text-white p-space-md rounded backdrop-blur-md max-w-xs shadow-md">
-                <div className="flex items-center gap-2 text-steel-500 mb-1">
-                  <span className="w-2.5 h-2.5 rounded-full bg-steel-500 animate-pulse" />
-                  <span className="text-label-sm uppercase tracking-wider font-bold">
-                    {t("gateLabel")}
-                  </span>
-                </div>
-                <p className="text-title-md font-bold text-white">{t("plotLabel")}</p>
-                <p className="text-label-sm text-slate-300 mt-1">{t("securityNote")}</p>
-              </div>
-              <div className="absolute bottom-4 right-4 bg-white/95 p-space-sm rounded text-slate-900 shadow-sm text-label-sm flex items-center gap-3">
-                <span className="material-symbols-outlined text-steel-600 text-[20px]">
-                  explore
-                </span>
-                <div>
-                  <span className="block font-bold">{t("gridLabel")}</span>
-                  <span className="text-slate-500 text-[10px]">{t("elevationLabel")}</span>
-                </div>
-              </div>
-            </div>
+            />
           </div>
         </div>
       </div>

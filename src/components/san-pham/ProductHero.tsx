@@ -83,10 +83,7 @@ export default function ProductHero({ product }: { product: Product }) {
                 src={heroImage}
               />
               <div className="absolute top-3 left-3 right-3 flex items-center justify-between p-2 bg-white/90 backdrop-blur-md border border-slate-200 rounded text-slate-600 text-xs shadow-sm font-mono">
-                <div className="flex items-center gap-1.5">
-                  <span className="w-2 h-2 rounded-full bg-emerald-500 animate-ping" />
-                  <span className="text-slate-900 font-medium">{t("metrologyInspected")}</span>
-                </div>
+                <span className="text-slate-900 font-medium">{t("metrologyInspected")}</span>
                 <span className="text-steel-600 font-semibold">{t("toleranceValue")}</span>
               </div>
               <div className="absolute bottom-3 left-3 right-3 p-3 bg-white/95 backdrop-blur-md border border-slate-200 rounded flex items-center justify-between text-xs shadow-sm">
