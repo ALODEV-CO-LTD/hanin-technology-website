@@ -1,0 +1,124 @@
+{
+  "TinTuc": {
+    "FeaturedArticle": {
+      "heading": "TIÊU ĐIỂM KỸ THUẬT",
+      "badge": "FEATURED ARTICLE",
+      "readArticle": "ĐỌC BÀI VIẾT"
+    },
+    "NewsBreadcrumb": {
+      "home": "Trang chủ",
+      "news": "Tin tức",
+      "cmsPortal": "CMS PORTAL: INDUSTRY INSIGHTS // STATUS: UPDATED REGULARLY",
+      "realtimeSync": "REALTIME R&D SYNC"
+    },
+    "NewsFilterBar": {
+      "searchPlaceholder": "Tìm kiếm chuyên đề kỹ thuật...",
+      "showingCount": "Hiển thị 6 / 48 bài"
+    },
+    "NewsGrid": {
+      "readMore": "Đọc tiếp"
+    },
+    "NewsInquiryCta": {
+      "titlePrefix": "CẦN TRAO ĐỔI VỀ",
+      "titleHighlight": "SẢN PHẨM / DỰ ÁN?",
+      "description": "Kỹ sư hóa học và xử lý bề mặt kim loại của HANIN hỗ trợ giải đáp thắc mắc kỹ thuật, tối ưu quy trình và tư vấn phương án mạ phù hợp cho dự án của bạn.",
+      "hotlineLabel": "Hotline:",
+      "emailLabel": "Email:",
+      "ctaContact": "LIÊN HỆ HANIN",
+      "ctaQuote": "NHẬN BÁO GIÁ DỰ ÁN"
+    },
+    "NewsIntro": {
+      "titlePrefix": "TIN TỨC &",
+      "titleHighlight": "BẢN TIN",
+      "titleSuffix": "KỸ THUẬT",
+      "description": "Cập nhật hoạt động doanh nghiệp, công nghệ xử lý bề mặt kim loại, quy chuẩn đo kiểm chất lượng và tin kỹ thuật từ nhà máy HANIN.",
+      "archiveLabel": "Kho tư liệu",
+      "archiveValue": "68+ Bài viết",
+      "auditLabel": "Kiểm định chuyên sâu",
+      "auditValue": "5 Chuyên mục kỹ thuật"
+    },
+    "NewsPagination": {
+      "showingPrefix": "Hiển thị",
+      "pageInfo": "trang 1 trên 8",
+      "totalInfo": "(Tổng cộng 48 bài viết chuyên ngành)",
+      "prev": "Trước",
+      "next": "Sau"
+    },
+    "categories": {
+      "all": "Tất cả",
+      "congTy": "Công ty",
+      "congNghe": "Công nghệ",
+      "sanXuat": "Sản xuất",
+      "chatLuong": "Chất lượng",
+      "tuyenDung": "Tuyển dụng"
+    },
+    "featured": {
+      "tag": "TIÊU ĐIỂM // CÔNG NGHỆ MẠ",
+      "category": "CÔNG NGHỆ",
+      "date": "18 Tháng 4, 2026",
+      "readTime": "5 phút đọc",
+      "title": "Ứng Dụng Công Nghệ Mạ Niken Hóa Học (ENP) Trong Chế Tạo Linh Kiện Bánh Răng & Robot Công Nghiệp Tải Trọng Cao",
+      "excerpt": "Phân tích giải pháp kiểm soát độ dày màng mạ đồng nhất trong rãnh ren sâu với dung sai ngặt nghèo ±0.2 µm, tối ưu khả năng chống mài mòn và loại bỏ hiện tượng giòn hydro theo tiêu chuẩn ASTM B733.",
+      "metrics": {
+        "0": { "label": "Dung sai độ dày" },
+        "1": { "label": "Độ cứng Vickers" },
+        "2": { "label": "Thử nghiệm muối", "unit": "Giờ" }
+      },
+      "location": "Dây chuyền mạ tự động Line 4 // KCN Quang Minh",
+      "liveLabel": "Phòng R&D HANIN",
+      "author": "Ban Kỹ thuật R&D",
+      "authorRole": "Hanin Technology VN",
+      "imageAlt": "Dây chuyền mạ điện tự động hóa trong nhà máy hiện đại, bể hóa chất ánh xanh ngọc, cẩu trục robot nâng hạ chi tiết khung gầm ô tô (ảnh minh họa)"
+    },
+    "articles": {
+      "0": {
+        "categoryLabel": "CHẤT LƯỢNG",
+        "readTime": "4 phút đọc",
+        "title": "Quy Trình Đo Độ Dày Lớp Mạ Bằng Quang Phổ Huỳnh Quang Tia X (XRF) Đạt Tiêu Chuẩn ISO/IEC 17025",
+        "excerpt": "Kỹ thuật phân tích không phá hủy (NDT) hỗ trợ xác định chính xác độ dày và tỷ lệ phần trăm hợp kim niken-phốt pho trên phôi phức tạp với sai số dưới 0.05 µm.",
+        "author": "R&D QA Team",
+        "imageAlt": "Thước cặp điện tử đo bánh răng vi cơ khí có độ chính xác cao, chi tiết thép gia công đặt trên bàn kiểm định trong phòng thí nghiệm chất lượng (ảnh minh họa)"
+      },
+      "1": {
+        "categoryLabel": "SẢN XUẤT",
+        "readTime": "6 phút đọc",
+        "title": "Vận Hành Hệ Thống Bể Mạ Kẽm - Niken Tự Động Hóa PLC Giảm Thiểu 40% Thời Gian Chu Kỳ Tại KCN Quang Minh",
+        "excerpt": "Cải tiến đồng bộ dây chuyền xử lý bề mặt bằng cánh tay robot hành trình kép, tự động cân bằng nồng độ bể điện phân và kiểm soát dòng điện xung kỹ thuật số.",
+        "author": "Phòng Vận Hành",
+        "imageAlt": "Bể mạ kẽm-niken tự động hóa PLC tại dây chuyền sản xuất công nghiệp (ảnh minh họa)"
+      },
+      "2": {
+        "categoryLabel": "CÔNG TY",
+        "readTime": "3 phút đọc",
+        "title": "HANIN Đón Tiếp Phái Đoàn Doanh Nghiệp Chế Tạo B2B Nhật Bản & Hàn Quốc Thăm Quan Cơ Sở Sản Xuất",
+        "excerpt": "Đánh giá năng lực chuỗi cung ứng linh kiện ô tô và thiết bị bán dẫn, củng cố cam kết xuất khẩu các giải pháp mạ niken và xi mạ điện phân đạt chuẩn ASTM quốc tế.",
+        "author": "Ban Đối Ngoại",
+        "imageAlt": "Mặt tiền kính hiện đại của trụ sở Hanin Technology tại Việt Nam, khách tham quan doanh nghiệp B2B (ảnh minh họa)"
+      },
+      "3": {
+        "categoryLabel": "CÔNG NGHỆ",
+        "readTime": "7 phút đọc",
+        "title": "Xử Lý Bề Mặt Nhôm Bằng Công Nghệ Anodizing Cứng Type III Chuẩn Quân Sự Phục Vụ Thiết Bị Hàng Không",
+        "excerpt": "Kỹ thuật điện phân nhiệt độ âm tạo lớp oxide nhôm có độ cứng trên 65 HRC, khả năng cách điện cao và chống chịu môi trường sương muối biển khắc nghiệt.",
+        "author": "R&D Lab Tech",
+        "imageAlt": "Công nghệ anodizing cứng xử lý bề mặt nhôm cho linh kiện hàng không (ảnh minh họa)"
+      },
+      "4": {
+        "categoryLabel": "SẢN XUẤT",
+        "readTime": "5 phút đọc",
+        "title": "Giải Pháp Khử Hydro Sau Mạ (De-Embrittlement) Đảm Bảo Độ Bền Mỏi Cho Bu-lông Cường Độ Cao",
+        "excerpt": "Gia nhiệt cưỡng bức trong lò ủ kín kiểm soát nhiệt độ nghiêm ngặt ở 200°C ± 5°C liên tục 4-24 giờ nhằm ngăn ngừa triệt để sự gãy nứt giòn do hydro xâm nhập.",
+        "author": "Bộ Phận Xử Lý Nhiệt",
+        "imageAlt": "Kỹ thuật viên nữ mặc đồ bảo hộ kiểm tra chi tiết mạ điện phân treo trên bể hóa chất trong nhà máy (ảnh minh họa)"
+      },
+      "5": {
+        "categoryLabel": "TUYỂN DỤNG",
+        "readTime": "3 phút đọc",
+        "title": "Chương Trình Đào Tạo Kỹ Sư Công Nghệ Mạ & Luyện Kim Trẻ Khóa Q2/2026 Tại Nhà Máy HANIN",
+        "excerpt": "Cơ hội tiếp cận phòng thí nghiệm hiện đại, học hỏi từ chuyên gia hàng đầu về mạ điện phân chính xác cao và lộ trình phát triển kỹ sư phụ trách dây chuyền.",
+        "author": "Phòng Nhân Sự HR",
+        "imageAlt": "Chương trình đào tạo kỹ sư trẻ ngành công nghệ mạ và luyện kim tại nhà máy HANIN (ảnh minh họa)"
+      }
+    }
+  }
+}

@@ -1,0 +1,277 @@
+{
+  "SanPham": {
+    "CategoryHero": {
+      "imageAlt": "Chi tiết cơ khí được gia công mạ chính xác (ảnh minh họa)",
+      "breadcrumbHome": "Trang chủ",
+      "breadcrumbCurrent": "Sản phẩm & Dự án",
+      "breadcrumbTag": "DANH MỤC DỰ ÁN & CHI TIẾT GIA CÔNG // TIÊU CHUẨN: B2B_METALLIC",
+      "title": "Sản phẩm & Dự án",
+      "description": "Sản phẩm và dự án gia công mạ kim loại kỹ thuật cao thực hiện bởi HANIN: kiểm soát dung sai micron, độ đồng đều lớp phủ và độ bền môi trường khắt khe.",
+      "badgeActiveProjects": "DỰ ÁN ĐANG THỰC HIỆN: 150+ LÔ HÀNG",
+      "badgeQualityRate": "TỶ LỆ ĐẠT CHẤT LƯỢNG: 99.8%",
+      "badgeCompliance": "ĐẠT CHUẨN RoHS & REACH"
+    },
+    "FeaturedProjectSpotlight": {
+      "bathTemperature": "NHIỆT ĐỘ BỂ MẠ: 58.4°C",
+      "automatedCycle": "CHU TRÌNH TỰ ĐỘNG PLC: BĂNG TẢI TREO",
+      "monthlyOutput": "500.000 SẢN PHẨM / THÁNG",
+      "ctaViewDetail": "XEM CHI TIẾT DỰ ÁN NÀY →",
+      "ctaDownloadCaseStudy": "TẢI CASE STUDY (PDF) ↓"
+    },
+    "ProductBreadcrumbBar": {
+      "home": "TRANG CHỦ",
+      "productsAndProjects": "SẢN PHẨM & DỰ ÁN",
+      "lot": "LOT"
+    },
+    "ProductCatalog": {
+      "lotNumber": "LÔ SẢN XUẤT",
+      "ctaViewDetail": "XEM CHI TIẾT SẢN PHẨM →",
+      "viewDetailAriaLabel": "Xem chi tiết",
+      "searchPlaceholder": "Tìm kiếm sản phẩm / dự án...",
+      "showingResults": "ĐANG HIỂN THỊ",
+      "resultsUnit": "KẾT QUẢ",
+      "emptyState": "Không tìm thấy sản phẩm / dự án phù hợp với bộ lọc hiện tại."
+    },
+    "ProductGallery": {
+      "title": "HÌNH ẢNH CHI TIẾT & KIỂM ĐỊNH THỰC TẾ",
+      "description": "Bộ sưu tập hình ảnh phôi kim loại sau gia công mạ, mặt cắt hiển vi và kiểm tra đo lường chất lượng tại phòng Lab.",
+      "highQualityImages": "ẢNH CHẤT LƯỢNG CAO",
+      "zoomOptical": "ZOOM 40X OPTICAL",
+      "zoomInAriaLabel": "Phóng to ảnh",
+      "fullscreenAriaLabel": "Xem toàn màn hình",
+      "frame": "FRAME",
+      "resolution": "RES: 4K HIGH-DEF",
+      "date": "DATE: 2026-03-29",
+      "statusApproved": "STATUS: APPROVED QA"
+    },
+    "ProductHero": {
+      "ctaRequestQuote": "LIÊN HỆ BÁO GIÁ DỰ ÁN",
+      "ctaDownloadSpecSheet": "TẢI BẢN VẼ KỸ THUẬT / SPEC SHEET (PDF)",
+      "badgeIso": "ISO 9001:2015 CERTIFIED",
+      "badgeRohs": "ROHS & REACH COMPLIANT",
+      "badgeXrf": "XRF COATING ASSAY",
+      "metrologyInspected": "METROLOGY: 100% INSPECTED",
+      "toleranceValue": "TOLERANCE: ±0.1 µM",
+      "digitalCallout": "PANME DIGITAL CALLOUT: 12.74mm",
+      "robustPass": "ROBUST PASS",
+      "microHardnessLabel": "Độ cứng vi mô sau nhiệt luyện hydro:"
+    },
+    "ProductOverview": {
+      "title": "TỔNG QUAN DỰ ÁN & NĂNG LỰC ĐÁP ỨNG",
+      "specSheetTitle": "BẢNG THÔNG SỐ KỸ THUẬT (CMS SPEC SHEET)",
+      "specSheetRevision": "REV: 2.4",
+      "batchStatusLabel": "TRẠNG THÁI KIỂM ĐỊNH LÔ HÀNG:",
+      "batchStatusValue": "100% ĐẠT TIÊU CHUẨN"
+    },
+    "ProductProcessTimeline": {
+      "title": "QUY TRÌNH THỰC HIỆN DỰ ÁN",
+      "description": "Chuỗi công đoạn khép kín từ tiếp nhận hồ sơ bản vẽ kỹ thuật đến kiểm nghiệm xuất xưởng tại HANIN TECH."
+    },
+    "ProductQuoteCta": {
+      "title": "CÓ YÊU CẦU GIA CÔNG TƯƠNG TỰ CHO DỰ ÁN CỦA BẠN?",
+      "descriptionPrefix": "Gửi hồ sơ bản vẽ 2D/3D (PDF, CAD, STP) và tiêu chuẩn kỹ thuật bề mặt yêu cầu. Đội ngũ kỹ sư luyện kim HANIN sẽ tính toán diện tích phủ, tư vấn quy trình hóa lý tối ưu và gửi báo giá chi tiết trong vòng",
+      "descriptionHighlight": "04 giờ làm việc",
+      "ctaSendQuote": "GỬI YÊU CẦU BÁO GIÁ DỰ ÁN",
+      "ndaNote": "CAM KẾT BẢO MẬT BẢN VẼ (NDA)",
+      "responseTime": "PHẢN HỒI KỸ THUẬT: < 4 GIỜ",
+      "hotlineLabel": "Hotline Kỹ thuật:",
+      "emailLabel": "Email Tiếp nhận CAD:"
+    },
+    "ProductsCta": {
+      "title": "BẠN CÓ DỰ ÁN CẦN GIA CÔNG?",
+      "description": "Gửi bản vẽ 2D/3D hoặc trao đổi trực tiếp với đội ngũ kỹ sư giải pháp bề mặt của HANIN để nhận báo giá chi tiết và phương án tối ưu chi phí.",
+      "cta": "NHẬN BÁO GIÁ →",
+      "hotline": "HOTLINE KỸ THUẬT: (+84) 24 3818 6688",
+      "email": "EMAIL: sales@hanintech.vn",
+      "responseTime": "PHẢN HỒI KỸ THUẬT TRONG 04 GIỜ LÀM VIỆC"
+    },
+    "RelatedProjects": {
+      "title": "DỰ ÁN & SẢN PHẨM KHÁC",
+      "description": "Các sản phẩm cơ khí chính xác và hoàn thiện bề mặt tiêu biểu được hoàn thành tại nhà máy HANIN.",
+      "lot": "LOT",
+      "ctaViewDetail": "XEM CHI TIẾT DỰ ÁN"
+    },
+    "RelatedServices": {
+      "title": "DỊCH VỤ GIA CÔNG MẠ LIÊN QUAN",
+      "description": "Các giải pháp mạ kim loại có thể áp dụng hoặc kết hợp cho dòng linh kiện này.",
+      "ctaViewAll": "XEM TẤT CẢ DỊCH VỤ GIA CÔNG MẠ"
+    },
+    "SpecTrustNote": {
+      "title": "CAM KẾT KỸ THUẬT & DỮ LIỆU ĐO KIỂM TIÊU CHUẨN",
+      "description": "Tất cả sản phẩm và dự án tại HANIN được gia công theo bản vẽ kỹ thuật 2D/3D và tiêu chuẩn thử nghiệm nghiêm ngặt của từng đối tác OEM/Tier-1. Dữ liệu trên đây là khuôn mẫu thể hiện năng lực gia công thực tế trong buồng thử nghiệm đạt chuẩn ISO/IEC 17025."
+    },
+    "categoryTabs": {
+      "all": "Tất cả sản phẩm",
+      "coKhiChinhXac": "Chi tiết cơ khí chính xác",
+      "phuTungOToXeMay": "Linh kiện phụ tùng ô tô xe máy",
+      "dauCosseThietBiDien": "Đầu cosse thiết bị điện",
+      "anodizing": "Linh kiện xử lý Anodizing"
+    },
+    "products": {
+      "banhRang": {
+        "title": "Bánh Răng Trục Vít & Chi Tiết Cơ Khí Đo Micrometer",
+        "category": "Chi tiết cơ khí chính xác",
+        "description": "Gia công mạ Niken kỹ thuật cao kiểm soát dung sai độ dày ±0.2 µm, chống ma sát trượt và tăng độ cứng chịu tải trọng lớn cho cơ cấu truyền động vi mô.",
+        "imageAlt": "Bánh răng và chi tiết cơ khí được đo kiểm bằng panme (ảnh minh họa)",
+        "imageBadge": "DỰ ÁN 01 // CƠ KHÍ CHÍNH XÁC",
+        "chips": {
+          "coating": { "label": "LỚP MẠ HOÀN THIỆN" },
+          "thickness": { "label": "ĐỘ DÀY" },
+          "tolerance": { "label": "DUNG SAI" }
+        }
+      },
+      "pistonTruc": {
+        "title": "Trục Piston & Cụm Ty Ben Thủy Lực Ô Tô",
+        "category": "Linh kiện phụ tùng ô tô xe máy",
+        "description": "Lớp mạ Crom cứng bề mặt vi mô chống trầy xước và ăn mòn sương muối vượt 720h chuẩn ASTM B117 khắt khe cho môi trường chịu áp suất cao.",
+        "imageAlt": "Trục piston và ty ben thủy lực ô tô mạ crom cứng (ảnh minh họa)",
+        "imageBadge": "DỰ ÁN 02 // PHỤ TÙNG Ô TÔ & XE MÁY",
+        "chips": {
+          "hardChrome": { "label": "CROM CỨNG", "value": "THỬ NGHIỆM MUỐI: 720H" }
+        }
+      },
+      "busbar": {
+        "title": "Thanh Busbar Đồng Mạ Thiếc Dẫn Điện Cực Cốt",
+        "category": "Đầu cosse thiết bị điện",
+        "description": "Mạ thiếc bảo vệ thanh dẫn đồng công nghiệp trạm biến áp, ngăn oxy hóa và giữ điện trở tiếp xúc siêu thấp trong dải tải cao tần.",
+        "imageAlt": "Thanh busbar đồng mạ thiếc trong tủ điện cao thế (ảnh minh họa)",
+        "imageBadge": "DỰ ÁN 03 // ĐẦU COSSE & THIẾT BỊ ĐIỆN",
+        "chips": {
+          "tin": { "label": "MẠ THIẾC NGUYÊN CHẤT", "value": "ĐỘ TINH KHIẾT: 99.9%" }
+        }
+      },
+      "buLong": {
+        "title": "Bu-lông & Chốt Định Vị Khối Bể Hóa Chất",
+        "category": "Linh kiện xử lý Anodizing",
+        "description": "Mạ kẽm niken thụ động hóa 3 valence đáp ứng tiêu chuẩn kháng kiềm và acid nhẹ công nghiệp, bảo đảm bước ren không kẹt rỉ.",
+        "imageAlt": "Bu-lông và chốt định vị khối bể hóa chất mạ kẽm niken (ảnh minh họa)",
+        "imageBadge": "DỰ ÁN 04 // THỦY LỰC & KHỐI VAN",
+        "chips": {
+          "zincNickel": { "label": "LỚP MẠ: KẼM-NIKEN", "value": "TIÊU CHUẨN ISO 4042" }
+        }
+      },
+      "ongLot": {
+        "title": "Ống Lót & Trục Ren Cơ Khí Chịu Mài Mòn",
+        "category": "Chi tiết cơ khí chính xác",
+        "description": "Mạ kẽm đen kỹ thuật chống lóa và bảo vệ ren ống chính xác không gây nghẹt bavia trong quá trình lắp ráp robot tự động.",
+        "imageAlt": "Ống lót và trục ren cơ khí chịu mài mòn sau mạ kẽm đen (ảnh minh họa)",
+        "imageBadge": "DỰ ÁN 05 // CHI TIẾT CƠ KHÍ CHÍNH XÁC",
+        "chips": {
+          "blackZinc": { "label": "MẠ KẼM ĐEN", "value": "BƯỚC REN: M12-M48" }
+        }
+      },
+      "cumLinhKien": {
+        "title": "Dự Án Gia Công Cụm Linh Kiện Khung Vỏ & Bánh Răng Cho Tập Đoàn Chế Tạo Máy B2B",
+        "category": "Dự án điển hình",
+        "description": "Triển khai quy trình mạ điện phân tự động kết hợp thụ động hóa đa lớp cho hơn 500.000 chi tiết cơ khí mỗi tháng, đảm bảo 100% linh kiện đạt chứng chỉ kiểm tra huỳnh quang tia X (XRF) và thử nghiệm sương muối 500 giờ.",
+        "imageAlt": "Dây chuyền mạ điện phân tự động PLC tại nhà máy Bắc Ninh (ảnh minh họa)",
+        "imageBadge": "NHÀ MÁY: BẮC NINH // DÂY CHUYỀN 04",
+        "chips": {
+          "industry": { "label": "NGÀNH ỨNG DỤNG", "value": "Chế tạo cơ khí chính xác & Robot" },
+          "technology": { "label": "CÔNG NGHỆ GIA CÔNG", "value": "Mạ Niken & Mạ Kẽm đa sắc PLC" },
+          "detail": { "label": "SẢN PHẨM CHI TIẾT", "value": "Bánh răng, trục định vị, khớp then" },
+          "standard": { "label": "TIÊU CHUẨN CHẤT LƯỢNG", "value": "ISO 9001, RoHS, ASTM B117" }
+        }
+      }
+    },
+    "detail": {
+      "specEyebrow": "SPEC: ISO 9001 & ASTM B117 // MICRON-PRECISION",
+      "heroStats": {
+        "coatingThickness": { "label": "Độ dày lớp mạ", "note": "Tùy biến bản vẽ" },
+        "saltSpray": { "label": "Chống phun muối", "note": "Chuẩn ASTM B117" },
+        "tolerance": { "label": "Dung sai kiểm soát", "note": "Đo kiểm quang học" }
+      },
+      "heroDescription": "Gia công hoàn thiện lớp phủ bề mặt mạ Niken hóa học không điện (Electroless Nickel Plating - High Phosphorus) ứng dụng cho cụm bánh răng xoắn, trục vít và cơ cấu vi sai robot công nghiệp. Đáp ứng dung sai lắp ghép khắt khe đến micromet, phân bổ bề mặt phủ đồng nhất 100% trong toàn bộ chân răng và rãnh then hoa mà không làm biến dạng bước ren.",
+      "heroImageAlt": "Bánh răng thép chính xác được đo dung sai bằng thước panme kỹ thuật số trên bàn đá granite (ảnh minh họa)",
+      "gallery": {
+        "item1": {
+          "alt": "Cận cảnh bề mặt răng và ren sau mạ Niken hóa học (ảnh minh họa)",
+          "thumbLabel": "01 // Bề mặt răng & ren",
+          "caption": "Cận cảnh lớp mạ bánh răng & mặt ren siêu vi với độ đồng đều phân bố 100%"
+        },
+        "item2": {
+          "alt": "Kiểm tra dung sai bằng thước panme kỹ thuật số tại phòng đo lường QC (ảnh minh họa)",
+          "thumbLabel": "02 // Thước Panme Mitutoyo",
+          "caption": "Kiểm tra dung sai bằng thước panme kỹ thuật số Mitutoyo phòng đo lường QC"
+        },
+        "item3": {
+          "alt": "Gá jig titan trong dây chuyền mạ tự động PLC (ảnh minh họa)",
+          "thumbLabel": "03 // Gá Jig Dây Chuyền PLC",
+          "caption": "Chi tiết treo trên gá jig titan trong bể mạ tự động kiểm soát nồng độ hóa chất"
+        },
+        "item4": {
+          "alt": "Buồng thử nghiệm ăn mòn phun sương muối ASTM B117 (ảnh minh họa)",
+          "thumbLabel": "04 // Thử Nghiệm ASTM B117",
+          "caption": "Thử nghiệm ăn mòn buồng phun sương muối gia tốc ASTM B117 vượt mốc 720 giờ"
+        }
+      },
+      "overviewParagraphs": {
+        "p1": "Dự án đòi hỏi giải pháp mạ phủ chống mài mòn cho toàn bộ dòng bánh răng côn xoắn và trục then hoa bằng thép hợp kim SCM440 dùng cho hộp số giảm tốc tự động. Thách thức cốt lõi nằm ở kết cấu hình học phức tạp với các hốc rãnh ren trong sâu, nơi các công nghệ mạ điện phân thông thường dễ gây ra hiện tượng tích tụ điện tích ở đỉnh ren (edge buildup) và thiếu hụt độ dày ở đáy rãnh.",
+        "p2": "Kỹ sư luyện kim của HANIN TECHNOLOGY đã phát triển quy trình Mạ Niken Hóa Học Không Điện (ENP) với hàm lượng Photpho cao (10.5% – 12% P). Phản ứng khử xúc tác tự động cho phép lớp mạ phát triển hoàn toàn đồng trục với phôi ban đầu, đảm bảo sai số độ dày toàn diện không vượt quá ±0.5 µm trên toàn bộ biên dạng răng.",
+        "p3": "Sau công đoạn mạ, toàn bộ lô sản phẩm được đưa vào lò nung xử lý nhiệt khử Hydro ở nhiệt độ 400°C trong 1 giờ. Quá trình này biến tính pha kết tinh Ni3P phân tán, đẩy độ cứng tế vi của chi tiết từ 500 HV lên tới 920 HV, tương đương với crom cứng nhưng có hệ số ma sát trượt thấp hơn 30%."
+      },
+      "achievements": {
+        "item1": {
+          "title": "Phân bố bề mặt đồng nhất tuyệt đối",
+          "description": "Lớp mạ phân bổ hoàn hảo 100% trên toàn bộ góc cạnh, hốc ren mù và các hốc sâu phức tạp không cần điện cực phụ."
+        },
+        "item2": {
+          "title": "Tăng cứng vi mô 850 – 950 HV sau ủ nhiệt",
+          "description": "Khử giòn hydro triệt để, ngăn nứt gãy mỏi do ứng suất trong các cơ cấu truyền động tải nặng chu kỳ cao."
+        },
+        "item3": {
+          "title": "Kháng ăn mòn vượt ngưỡng 720 Giờ ASTM B117",
+          "description": "Cấu trúc vô định hình không có ranh giới hạt kim loại, ngăn chặn hoàn toàn sự xâm thực của hơi ẩm và dầu bôi trơn axit."
+        }
+      },
+      "specSheet": {
+        "product": { "label": "SẢN PHẨM", "value": "Bánh răng trục vít, trục then hoa, khớp nối chính xác" },
+        "application": { "label": "NGÀNH ỨNG DỤNG", "value": "Chế tạo robot, máy công cụ CNC, phụ tùng truyền động ô tô" },
+        "process": { "label": "QUY TRÌNH MẠ", "value": "Mạ Niken hóa học không điện (Electroless Nickel - ENP High Phos) + Xử lý nhiệt 400°C" },
+        "substrate": { "label": "VẬT LIỆU NỀN (SUBSTRATE)", "value": "Thép hợp kim SCM440, Thép carbon S45C, Đồng thau C3604" },
+        "requirement": { "label": "YÊU CẦU ĐẶC BIỆT", "value": "Dung sai ren < ±0.5 µm, không để lại ba-via, độ bóng quang học Ra 0.2" },
+        "standard": { "label": "TIÊU CHUẨN ĐO KIỂM", "value": "ISO 9001:2015, ASTM B733, AMS 2404, RoHS & REACH Compliant" },
+        "lab": { "label": "PHÒNG KIỂM NGHIỆM ĐO ĐẠC", "value": "Máy đo huỳnh quang tia X (XRF Fischer), Máy đo độ cứng Vickers Matsuzawa" }
+      },
+      "process": {
+        "step1": {
+          "title": "Tiếp nhận bản vẽ & tính toán kỹ thuật",
+          "description": "Rà soát file 2D/3D (STEP, DWG), tính diện tích bề mặt tiếp xúc dm², lập thông số dòng điện/hóa chất và thiết kế đồ gá chuyên dụng (Titanium Jig).",
+          "phase": "GIAI ĐOẠN: KỸ THUẬT R&D"
+        },
+        "step2": {
+          "title": "Tiền xử lý & tẩy dầu siêu âm",
+          "description": "Làm sạch bề mặt phôi qua hệ thống 4 bể hóa chất siêu âm đa tần số, tẩy gỉ vi mô, kích hoạt bề mặt kim loại nền và rửa nước DI khử ion hoàn toàn.",
+          "phase": "GIAI ĐOẠN: LÀM SẠCH BỀ MẶT"
+        },
+        "step3": {
+          "title": "Mạ điện phân / hóa học tự động",
+          "description": "Vận hành trong bể dung dịch nhiệt độ ổn định kiểm soát bằng PLC tự động, bổ sung ion kim loại liên tục và giám sát mật độ dòng theo thời gian thực.",
+          "phase": "GIAI ĐOẠN: GIA CÔNG PHỦ MẠ"
+        },
+        "step4": {
+          "title": "Đo kiểm XRF & cấp chứng nhận COA",
+          "description": "Đo độ dày lớp mạ bằng phổ tia X huỳnh quang XRF, test bám dính cắt ô (cross-hatch), cấp chứng thư xuất xưởng COA và đóng gói VCI hút chân không.",
+          "phase": "GIAI ĐOẠN: QC & BÀN GIAO"
+        }
+      },
+      "relatedServices": {
+        "item1": {
+          "title": "Dịch Vụ Mạ Kẽm & Niken Kỹ Thuật Cao",
+          "description": "Giải pháp mạ hợp kim Kẽm-Niken (Zn-Ni 12-15%) chuyên dùng cho phụ tùng gầm ô tô, bu-lông chống rỉ với khả năng chịu phun muối lên tới 1000h+.",
+          "cta": "TÌM HIỂU DỊCH VỤ MẠ KẼM"
+        },
+        "item2": {
+          "title": "Dịch Vụ Mạ Crom Cứng Chống Mài Mòn",
+          "description": "Gia tăng độ cứng trục cán, ty ben xi-lanh thủy lực lên tới 68 HRC (1000 HV), bề mặt bóng gương siêu chịu lực và chống trầy xước ăn mòn cực đoan.",
+          "cta": "TÌM HIỂU DỊCH VỤ MẠ CROM"
+        },
+        "item3": {
+          "title": "Dịch Vụ Anodizing Nhôm Kỹ Thuật Số",
+          "description": "Oxy hóa anod cứng chuẩn quân sự Type III (MIL-A-8625), cách điện bề mặt, kháng nhiệt tuyệt đối cho vỏ hợp kim nhôm thiết bị điện tử và hàng không.",
+          "cta": "TÌM HIỂU DỊCH VỤ ANODIZE"
+        }
+      }
+    }
+  }
+}

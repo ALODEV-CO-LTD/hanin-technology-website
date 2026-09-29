@@ -1,0 +1,245 @@
+{
+  "Home": {
+    "CompanySnapshot": {
+      "partners": {
+        "label1": "合作伙伴",
+        "label2": "客户"
+      },
+      "projects": {
+        "label1": "项目数",
+        "label2": "项目"
+      },
+      "lines": {
+        "label1": "产线数",
+        "label2": "设备"
+      },
+      "capacity": {
+        "label1": "吨/月",
+        "label2": "生产能力"
+      }
+    },
+    "Hero": {
+      "titlePrefix": "精密电镀加工",
+      "titleHighlight": "专业品质",
+      "subtitle": "面向现代工业的金属电镀加工解决方案。",
+      "description": "为工业客户提供金属电镀加工与配套生产服务,按技术标准严格控制公差。",
+      "ctaPrimary": "探索生产能力",
+      "ctaSecondary": "获取咨询报价 →",
+      "lineLabel": "生产线:",
+      "lineValue": "自动化 04 条",
+      "toleranceLabel": "公差:",
+      "toleranceValue": "±0.002 毫米",
+      "locationLabel": "厂址:",
+      "locationValue": "河内广明工业区",
+      "scrollCta": "向下滚动探索",
+      "imageAlt": "HANIN TECHNOLOGY 自动电镀生产线(示意图,将替换为实际照片)"
+    },
+    "AboutHanin": {
+      "highlights": {
+        "0": "高附着力,表面耐腐蚀",
+        "1": "以微米级精度检测镀层厚度",
+        "2": "工业规模批量加工",
+        "3": "达标的废水处理系统"
+      },
+      "imageAlt": "HANIN 工程师监督金属电镀工艺(示意图,将替换为实际照片)",
+      "badgeTag": "品保系统 // 04号电镀槽",
+      "badgeTitle": "闭环质量控制流程",
+      "badgeSubtitle": "工业表面处理标准",
+      "title": "造就差异化优势的核心能力。",
+      "paragraph1": "HANIN TECHNOLOGY VIỆT NAM 专注于金属电镀加工领域,凭借生产能力为工业客户提供服务。",
+      "paragraph2": "[企业官方信息将根据生产能力标准与运营规模同步更新]。",
+      "ctaLink": "了解更多关于 HANIN"
+    },
+    "PlatingServices": {
+      "title": "满足工业需求的电镀加工服务。",
+      "ctaAll": "查看全部服务",
+      "detailLabel": "技术详情",
+      "services": {
+        "0": {
+          "tag": "精密机械加工",
+          "title": "电镀服务 01",
+          "desc": "精密机械零件表面电镀加工,满足工业耐久性与耐腐蚀要求。"
+        },
+        "1": {
+          "tag": "导电与元器件",
+          "title": "电镀服务 02",
+          "desc": "保护性电镀方案,提升高技术零件的导电性与外观品质。"
+        },
+        "2": {
+          "tag": "微米级控制",
+          "title": "电镀服务 03",
+          "desc": "金属表面处理技术,可精确控制镀层厚度至微米级标准。"
+        },
+        "3": {
+          "tag": "大批量生产",
+          "title": "电镀服务 04",
+          "desc": "工业规模批量电镀加工,均匀度与稳定性俱佳。"
+        }
+      }
+    },
+    "ManufacturingCapability": {
+      "title": "生产能力",
+      "description": "生产线、电镀槽设备与检测系统按每道工序同步运行。",
+      "imageAlt": "HANIN 正在运行的自动电镀槽(示意图,将替换为实际照片)",
+      "statusLabel": "运行状态: 正常运行中",
+      "tempLabel": "槽液温度",
+      "voltageLabel": "有效电压",
+      "filterLabel": "循环过滤率",
+      "cta": "探索生产能力 →",
+      "specs": {
+        "0": {
+          "tag": "电镀生产线",
+          "title": "16条自动化及半自动化生产线",
+          "desc": "PLC 程序化行程控制,精确控制浸槽时间与电流强度。"
+        },
+        "1": {
+          "tag": "设备配置",
+          "title": "42台专用电镀槽及配套设备",
+          "desc": "循环过滤系统、自动热交换装置及工业真空干燥系统。"
+        },
+        "2": {
+          "tag": "品质管控",
+          "title": "09台检测及光谱分析设备",
+          "desc": "X射线荧光光谱仪(XRF)、ASTM B117 盐雾加速试验箱及附着力检测。"
+        },
+        "3": {
+          "tag": "生产能力",
+          "title": "每月850吨产品产能",
+          "desc": "可灵活调度生产流程,满足机械加工供应链的定期供货需求。"
+        }
+      }
+    },
+    "FactoryShowcase": {
+      "title": "运营空间与技术设备",
+      "description": "厂房、生产线与检测实验室按各自独立的运营区域进行布局。",
+      "tabs": {
+        "0": {
+          "label": "01. 厂房",
+          "sector": "分区: 厂房_01_A",
+          "tagline": "废气处理间与药液槽区",
+          "order": "01 / 工业厂房综合体",
+          "title": "物料流线优化布局的厂房",
+          "desc": "地面铺设耐化学环氧树脂涂层,双级强制通风顶棚,配备24小时自动酸雾回收与中和系统。"
+        },
+        "1": {
+          "label": "02. 生产线",
+          "sector": "分区: 生产线_02_B",
+          "tagline": "自动电镀生产线",
+          "order": "02 / 电镀加工生产线",
+          "title": "PLC精确控制的自动电镀生产线",
+          "desc": "程序化浸槽行程控制,按不同材质精确控制电流强度与处理时间。"
+        },
+        "2": {
+          "label": "03. 检测实验室",
+          "sector": "分区: 实验室_03_C",
+          "tagline": "分析检测实验室",
+          "order": "03 / 品质管控",
+          "title": "符合国际标准的检测实验室",
+          "desc": "X射线荧光光谱仪(XRF)、ASTM B117 盐雾试验箱及镀层附着力检测。"
+        },
+        "3": {
+          "label": "04. 设备",
+          "sector": "分区: 设备_04_D",
+          "tagline": "专用设备及配套设施",
+          "order": "04 / 设备清单",
+          "title": "专用配套设备系统",
+          "desc": "循环过滤系统、自动热交换装置及服务于整条生产线的工业真空干燥设备。"
+        }
+      }
+    },
+    "ProductsProjects": {
+      "title": "代表性产品与项目。",
+      "description": "了解 HANIN 完成的代表性加工产品与项目。",
+      "ctaAll": "查看全部项目",
+      "project1": {
+        "imageAlt": "电镀加工后的精密机械齿轮与轴类零件(示意图)",
+        "toleranceBadge": "公差: ±0.003毫米",
+        "categoryBadge": "精密机械加工",
+        "label": "代表项目 01",
+        "toleranceValue": "公差: ±0.003毫米",
+        "title": "精密机械传动件与齿轮",
+        "desc": "电镀保护表面,具备高耐磨性,保持齿形精度,在高摩擦环境下延长使用寿命周期。",
+        "cta": "镀层参数 →"
+      },
+      "project2": {
+        "label": "代表项目 02",
+        "category": "汽车 / 摩托车工业",
+        "title": "金属外壳部件及配套五金件",
+        "desc": "均匀镀层具备优异的盐雾耐腐蚀性,符合高标准外观检测要求,服务于摩托车、汽车 OEM 零部件制造商。",
+        "cta": "查看项目详情"
+      },
+      "project3": {
+        "label": "代表项目 03",
+        "category": "工业电子设备",
+        "title": "高技术金属五金件",
+        "desc": "对金属连接件、导电接触端子及电子支撑件进行表面处理,镀层厚度精确控制在5微米以下。",
+        "cta": "查看项目详情"
+      }
+    },
+    "QualityCertification": {
+      "title": "品质是整个生产流程的根基。",
+      "description": "从原材料验收、化学药液配制到出厂检验,均执行严格的品质管控。",
+      "ctaView": "查看认证",
+      "certs": {
+        "0": {
+          "label": "[ ISO ]",
+          "title": "生产质量管理标准",
+          "desc": "针对工业金属表面处理各工序制定标准化品质控制流程。",
+          "status": "已通过认证"
+        },
+        "1": {
+          "label": "[ ISO ]",
+          "title": "工业环境管理标准",
+          "desc": "符合废水排放、工业用水循环再利用及电镀化学品安全储存标准。",
+          "status": "环境评估达标"
+        },
+        "2": {
+          "label": "[ CERTIFICATION ]",
+          "title": "工艺与表面控制认证",
+          "desc": "按国际标准对镀层厚度、表面粗糙度及耐腐蚀性进行评估认证。",
+          "status": "实验室测试达标"
+        }
+      }
+    },
+    "NewsUpdates": {
+      "title": "新闻与动态",
+      "ctaAll": "查看全部",
+      "readMore": "阅读文章",
+      "articles": {
+        "0": {
+          "tag": "企业新闻",
+          "title": "技术能力发展方向与电镀加工体系扩展规划",
+          "excerpt": "致力于提升技术精度,严格遵守 B2B 合作伙伴的高标准规范……"
+        },
+        "1": {
+          "tag": "生产动态",
+          "title": "按工业标准优化镀层厚度控制流程",
+          "excerpt": "采用先进检测方法,确保每批产品的镀层均匀一致……"
+        },
+        "2": {
+          "tag": "项目更新",
+          "title": "全面推进面向供应链的零部件加工项目",
+          "excerpt": "满足机械配套加工产品的交期进度与技术要求……"
+        }
+      }
+    },
+    "RecruitmentBanner": {
+      "title": "共同构建工业未来。",
+      "description": "加入 HANIN 技术与运营团队。",
+      "positionsLabel": "招聘职位",
+      "cta": "查看招聘职位"
+    },
+    "FinalCta": {
+      "title": "您有需要电镀加工的项目吗?",
+      "description": "提交需求,HANIN 技术团队将根据您的具体参数进行联系与咨询。",
+      "cta": "提交报价申请",
+      "contactTitle": "直接联系方式",
+      "hotlineLabel": "支持热线",
+      "zaloLabel": "技术 ZALO",
+      "zaloCta": "与 HANIN 在线沟通",
+      "emailLabel": "报价邮箱",
+      "addressLabel": "厂址",
+      "addressValue": "Lô CN-08, KCN Quang Minh, Huyện Mê Linh, Hà Nội"
+    }
+  }
+}

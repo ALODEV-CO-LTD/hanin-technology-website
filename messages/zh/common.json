@@ -1,0 +1,55 @@
+{
+  "Nav": {
+    "trangChu": "首页",
+    "gioiThieu": "关于我们",
+    "dichVu": "电镀加工服务",
+    "sanPham": "产品与项目",
+    "nangLuc": "生产能力",
+    "tinTuc": "新闻资讯",
+    "tuyenDung": "招聘信息",
+    "lienHe": "联系我们",
+    "cta": "获取技术报价 →",
+    "menuOpen": "打开菜单"
+  },
+  "LanguageSwitcher": {
+    "label": "语言",
+    "vi": "Tiếng Việt",
+    "zh": "中文",
+    "ko": "한국어"
+  },
+  "Footer": {
+    "tagline": "精密电镀与机械加工",
+    "description": "HANIN TECHNOLOGY VIỆT NAM，专业电镀加工厂，按照日本及国际工业标准对金属表面进行精密处理。",
+    "companyHeading": "企业信息",
+    "companyLinks": {
+      "trangChu": "首页",
+      "gioiThieu": "关于我们",
+      "nangLuc": "生产能力",
+      "tinTuc": "新闻与活动",
+      "tuyenDung": "招聘机会"
+    },
+    "serviceHeading": "服务与产品",
+    "serviceLinks": {
+      "enp": "化学镀镍（无电镀镍）",
+      "hardChrome": "工业硬铬电镀",
+      "anodizing": "铝阳极氧化 / 硬质阳极氧化",
+      "zincNickel": "高耐蚀锌镍合金电镀",
+      "specSheet": "微米级公差参数表"
+    },
+    "contactHeading": "技术联系方式",
+    "addressLabel": "地址：",
+    "address": "越南河内市美灵县光明工业区CN-08地块",
+    "hotlineLabel": "热线：",
+    "hotline": "(+84) 24 3818 6868 / 0988 123 456",
+    "emailLabel": "邮箱：",
+    "email": "sales@hanintech.vn / engineering@hanintech.vn",
+    "hoursLabel": "工作时间：",
+    "hours": "周一至周六：08:00 - 17:30（24/7 值班）",
+    "zaloChat": "Zalo 技术咨询",
+    "googleMaps": "Google 地图导航",
+    "statusLine": "电镀产线与 CMM 检测系统：运行正常",
+    "copyright": "© 2026 HANIN TECHNOLOGY VIỆT NAM。保留所有权利。符合 ISO 9001:2015 标准。",
+    "privacyPolicy": "隐私政策",
+    "termsOfService": "服务条款"
+  }
+}

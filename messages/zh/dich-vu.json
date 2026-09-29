@@ -1,0 +1,452 @@
+{
+  "DichVu": {
+    "services": {
+      "tienXuLy": {
+        "title": "表面预处理",
+        "description": "多槽超声波脱脂、定量控制浓度的酸洗除锈，以及微观表面活化处理，最大化镀层的分子结合力。",
+        "applicationLabel": "典型应用：",
+        "applicationText": "热/冷冲压金属坯料，精密 CNC 车铣加工后的零件。",
+        "statLabel": "100% 无痕脱脂",
+        "imageAlt": "金属表面预处理与脱脂作业区（示意图）"
+      },
+      "hardChrome": {
+        "badge": "代表工艺：耐磨防护",
+        "title": "工业硬铬电镀",
+        "description": "形成 65-72 HRC 硬质镀层，摩擦系数极低，抗机械划伤，并在严苛工作温度下保持稳定。",
+        "applicationLabel": "典型应用：",
+        "applicationText": "液压缸活塞杆、工业轧钢辊轮、精密冲压模具。",
+        "statLabel": "硬度：65-72 HRC | 厚度可达 300µm",
+        "imageAlt": "经工业硬铬电镀处理的轴类及机械零件（示意图）"
+      },
+      "electrolessNickel": {
+        "title": "化学镀镍（无电镀镍）",
+        "description": "自催化化学还原反应，可在尖角、深螺纹及孔腔轮廓上实现 100% 均匀厚度，并具有优异的耐化学腐蚀性。",
+        "applicationLabel": "典型应用：",
+        "applicationText": "工业调压阀、航空航天零部件、半导体设备。",
+        "statLabel": "含磷量：中磷 (6-9%) 及高磷 (>10%)",
+        "imageAlt": "经化学镀镍（ENP）处理的阀门及机械零件（示意图）"
+      },
+      "kemNiken": {
+        "title": "锌及锌镍合金电镀",
+        "description": "Zn-Ni 牺牲阳极保护技术，耐盐雾可达 1,500 小时无红锈，并可承受汽车发动机舱的高温环境。",
+        "applicationLabel": "典型应用：",
+        "applicationText": "高强度螺栓螺母、汽摩底盘冲压件、刹车零部件。",
+        "statLabel": "耐盐雾：>1200 小时（ASTM B117）",
+        "imageAlt": "经锌镍合金电镀处理的螺栓及汽车底盘冲压件（示意图）"
+      },
+      "sonMaKetHop": {
+        "title": "喷涂与电镀复合产线",
+        "description": "集成工业烘干系统及锌/磷酸盐底层处理，增强静电喷涂膜层的附着力，耐受海洋环境侵蚀。",
+        "applicationLabel": "典型应用：",
+        "applicationText": "电子控制柜外壳、机械设备金属框架、通信设备。",
+        "statLabel": "附着力：0 级（ISO 2409）",
+        "imageAlt": "工程师检查喷涂与电镀复合产线（示意图）"
+      },
+      "xuLyNhom": {
+        "title": "铝件处理及其他金属电镀",
+        "description": "形成坚固耐用的人工氧化铝 Al₂O₃ 膜层，硬质阳极氧化处理，铜（Cu）、锡（Sn）电镀，以及三价铬钝化表面处理。",
+        "applicationLabel": "典型应用：",
+        "applicationText": "铝制散热器组件、光学零件、汇流排导电条。",
+        "statLabel": "绝缘性能：>1000V DC | 硬质膜层 50µm",
+        "imageAlt": "经阳极氧化及其他金属电镀处理的铝制零件（示意图）"
+      }
+    },
+    "ServiceCategories": {
+      "heading": "核心电镀技术",
+      "badge": "项符合汽车及航空标准的技术类别",
+      "codeLabel": "编号",
+      "detailLink": "查看详情"
+    },
+    "RelatedServices": {
+      "heading": "配套专业电镀加工服务",
+      "viewAll": "查看全部服务目录"
+    },
+    "CapacityOverview": {
+      "heading": "专业电镀加工系统",
+      "subtitle": "两座生产车间集成闭环循环废水处理系统，实时监控电镀槽浓度并进行光学分析。",
+      "scada": {
+        "title": "SCADA 自动化产线",
+        "desc": "通过同步 PLC 软件精确控制吊车行程、电流密度（A/dm²）及浸槽时间，消除人为操作误差。",
+        "statLeft": "产量：450 吨/月",
+        "statRight": "0% 气泡缺陷率"
+      },
+      "complex": {
+        "title": "复杂零件专用产线",
+        "desc": "为微精密机械零件、内螺纹中空件及需要遮蔽配合公差区域的表面定制专用工装夹具。",
+        "statLeft": "复杂度：深槽 <0.5mm",
+        "statRight": "专用悬挂夹具"
+      },
+      "wastewater": {
+        "title": "废水与环境处理",
+        "desc": "循环过滤及化学中和系统符合 QCVN 40:2011/BTNMT 标准，保障全球出口供应链的可持续性。",
+        "statLeft": "过滤能力：300 立方米/天",
+        "statRight": "QCVN A 级标准"
+      }
+    },
+    "CategoryHero": {
+      "title": "工业电镀加工与表面处理服务",
+      "subtitle": "金属电镀加工、SCADA 自动电镀及高技术表面处理，满足汽车、电气设备及精密机械行业的严苛公差要求。",
+      "thickness": {
+        "label": "厚度公差",
+        "note": "微观电流控制"
+      },
+      "saltSpray": {
+        "label": "盐雾测试",
+        "note": "ASTM B117 / ISO 9227"
+      },
+      "qms": {
+        "label": "质量管理体系",
+        "note": "ISO 9001:2015 认证"
+      },
+      "ctaPrimary": "申请技术报价（RFQ）",
+      "ctaSecondary": "查看产线生产能力",
+      "imageAlt": "使用荧光绿色化学溶液的自动电镀产线，吊车正吊运机械零件（示意图）",
+      "lineTag": "04 号自动化产线"
+    },
+    "DetailApplications": {
+      "heading": "HANIN ENP 电镀加工机械产品系列",
+      "subtitle": "符合汽车及船舶行业标准",
+      "oilGas": {
+        "tag": "石油天然气与液压行业",
+        "title": "高压阀体及阀球",
+        "desc": "高磷 ENP（>10.5% P）耐有机酸、H2S 气体及盐分侵蚀；高硬度可防止 5,000 PSI 压力下开合造成的表面划伤。",
+        "thickness": "镀层厚度：25-50 µm"
+      },
+      "mold": {
+        "tag": "精密模具与传动部件",
+        "title": "滚珠丝杠与塑料模具",
+        "desc": "均匀分布的镀层使塑料模具脱模顺畅，丝杠滚道镀后无需重新抛光，保持原有加工公差。",
+        "thickness": "镀层厚度：10-15 µm"
+      },
+      "electronics": {
+        "tag": "高频电子与通信设备",
+        "title": "散热盒与波导腔体",
+        "desc": "在 Al6061 铝合金基材上电镀防氧化层，保持导热性能及可焊性，适用于户外 5G 收发基站。",
+        "thickness": "镀层厚度：5-8 µm"
+      },
+      "automotive": {
+        "tag": "汽车工业（AUTOMOTIVE）",
+        "title": "刹车活塞与关节轴",
+        "desc": "符合 IATF 16949 标准，NSS 盐雾测试超过 1,000 小时无红锈。低滑动摩擦系数保持刹车组件在整个车辆寿命周期内稳定运行。",
+        "thickness": "镀层厚度：20-30 µm"
+      }
+    },
+    "DetailCapability": {
+      "imageAlt": "HANIN 工程师检查监控自动电镀产线 SCADA 控制屏幕（示意图）",
+      "lineCapacityLabel": "产线生产能力",
+      "lineCapacityValue": "120,000 件 / 月",
+      "tankSizeLabel": "最大槽体尺寸",
+      "heading": "电镀槽技术与浓度梯度管理",
+      "subtitle": "耐化学腐蚀的聚丙烯电镀槽，配备 SUS304 不锈钢加固，通过特氟龙及石英间接加热组件供热，避免化学品自分解。",
+      "dosing": {
+        "title": "自动化学补充加药（Auto Chemical Dosing）：",
+        "desc": "光度传感器持续检测游离镍离子含量并启动微量定量泵，将溶液比例稳定控制在 ±0.2 g/L 范围内。"
+      },
+      "crane": {
+        "title": "自动化吊运传输系统：",
+        "desc": "振动及旋转挂架系统在槽内持续运作，消除人工操作误差，并排除滞留在深螺纹孔、盲孔中的氢气气泡。"
+      },
+      "filtration": {
+        "title": "每小时 10 次循环过滤：",
+        "desc": "溶液持续通过 1 微米聚丙烯滤芯，消除悬浮金属屑及镀层麻点现象。"
+      }
+    },
+    "DetailGallery": {
+      "heading": "产线实景与加工完成件展示",
+      "subtitle": "HANIN 工厂 // 平川 CN-08 地块",
+      "line": {
+        "alt": "自动化循环槽镍电镀产线（示意图）",
+        "tag": "自动电镀槽",
+        "title": "化学镀循环槽产线",
+        "desc": "18 槽封闭式加工系统，集成局部有毒气体吸附（Scrubber）及自动温度控制。"
+      },
+      "surface": {
+        "alt": "镀镍后的精密齿轮及轴类零件（示意图）",
+        "tag": "加工完成件",
+        "title": "接触面与表面光洁度",
+        "desc": "Ni-P 镀层保持螺纹棱边锐利，不产生机械切边毛刺堆积。"
+      },
+      "prep": {
+        "alt": "电镀前机械坯料检验准备区（示意图）",
+        "tag": "预处理坯料准备",
+        "title": "坯料区与尺寸复核",
+        "desc": "使用玻璃珠对坯料进行清洁去毛刺，随后送入专用超声波脱脂槽组。"
+      }
+    },
+    "DetailHero": {
+      "title": "化学镀镍（无电镀镍）",
+      "titleEn": "（ELECTROLESS NICKEL PLATING, ENP）",
+      "subtitle": "Ni-P 自催化化学还原反应，可在所有复杂轮廓、内螺纹、盲孔及深腔——普通电镀无法触及的部位——形成均匀镀层。",
+      "phos": {
+        "label": "含磷量",
+        "note": "中磷 / 高磷"
+      },
+      "hardness": {
+        "label": "热处理后硬度",
+        "note": "400°C 烘烤 1 小时"
+      },
+      "saltSpray": {
+        "label": "耐盐雾",
+        "unit": "小时",
+        "note": "ASTM B117 中性盐雾"
+      },
+      "tolerance": {
+        "label": "厚度公差",
+        "note": "校准 XRF 检测"
+      },
+      "ctaPrimary": "申请技术报价（RFQ）",
+      "ctaSecondary": "下载规格表 PDF（AMS 2404）",
+      "verifyLabel": "100% 批次证书核验",
+      "imageAlt": "化学镀镍处理后的机械零件（示意图）",
+      "xrfLabel": "X 射线荧光光谱（XRF）：8.5 µm ± 0.4",
+      "roughnessLabel": "表面光洁度：Ra < 0.2 µm",
+      "coatingLabel": "镀层：高磷型（11.2% P）",
+      "imageCaption": "行星齿轮及分配阀经 ENP 电镀及氢脆消除烘烤处理后的实景。"
+    },
+    "DetailOverview": {
+      "heading": "原理概述与应用范围",
+      "complianceLabel": "符合 ROHS 与 REACH 标准（无铅、无镉）",
+      "col1": {
+        "title": "反应机理本质",
+        "p1": "电镀受电流密度支配，因此边角处较厚、深槽处较薄。而化学镀镍（ENP）则依据",
+        "p1Strong": "自催化沉积",
+        "p2": "原理运作。Ni-P 镍磷合金层在溶液接触的每一点均匀形成，构成非晶态（Amorphous）耐腐蚀结构。"
+      },
+      "col2": {
+        "title": "战略应用范围",
+        "intro": "适用于在高摩擦、化学腐蚀及严苛温度环境下运行的重型工业设备与精密机械：",
+        "item1Strong": "石油天然气与液化气：",
+        "item1": "高压球阀、耐 H2S/CO2 气体腐蚀管道。",
+        "item2Strong": "精密模具：",
+        "item2": "光学塑料注塑模具，不产生附着缺陷。",
+        "item3Strong": "半导体与真空设备：",
+        "item3": "降低材料放气（outgassing）现象。"
+      },
+      "col3": {
+        "title": "基材金属种类",
+        "intro": "HANIN 的预处理工艺可在以下工业合金材质上实现稳定的 ENP 电镀：",
+        "substrates": {
+          "alloySteel": "合金钢：SCM440、SKD11",
+          "carbonSteel": "碳钢：S45C、S50C、SS400",
+          "stainless": "奥氏体及马氏体不锈钢",
+          "aluminum": "铝合金：A6061、A7075（锌酸盐处理）",
+          "brass": "黄铜与紫铜",
+          "ductileIron": "球墨铸铁（Ductile Iron）"
+        }
+      }
+    },
+    "DetailProcess": {
+      "heading": "六级化学镀镍工艺流程",
+      "subtitle": "SCADA 自动化周期 // 每小时 10 次循环",
+      "stepLabel": "步骤",
+      "s1": {
+        "title": "超声波脱脂",
+        "desc": "40kHz 多频化学脱脂及超声波清洗，彻底去除 CNC 加工冷却油及微观氧化膜。",
+        "note": "100% 无断水痕检验。"
+      },
+      "s2": {
+        "title": "微观活化",
+        "desc": "使用缓蚀酸液进行轻度除锈及表面活化，露出金属原始晶体结构。",
+        "note": "时间：30-90 秒，视钢材牌号而定。"
+      },
+      "s3": {
+        "title": "ENP 反应电镀",
+        "desc": "浸入配备 1µm 循环过滤的电镀槽。通过光谱定量泵自动控制温度 88-90°C，pH 值 4.6-4.8。",
+        "note": "成膜速率：15-20 µm/小时。"
+      },
+      "s4": {
+        "title": "DI 纯水逆流清洗",
+        "desc": "三级串联溢流清洗槽系统，使用超纯水（去离子水 < 5 µS/cm），消除残留化学品。",
+        "note": "排放水电导率：< 15 µS/cm。"
+      },
+      "s5": {
+        "title": "镀后热处理",
+        "desc": "在电对流炉中进行热处理退火。消除氢脆现象（200°C x 4 小时）或进行 Ni₃P 结晶加热（400°C x 1 小时）以提高硬度。",
+        "note": "最高可硬化至 68 HRC。"
+      },
+      "s6": {
+        "title": "质量检验与 VCI 包装",
+        "desc": "按 AQL 0.4 批次随机进行 XRF 厚度检测。使用专用 VCI 防锈膜包装，适用于全球出口。",
+        "note": "随货附带 CoA（检测分析证书）。"
+      }
+    },
+    "DetailQaTable": {
+      "heading": "国际标准质量控制流程",
+      "subtitle": "100% 生产批次数据留存 5 年",
+      "colItem": "检验项目",
+      "colDevice": "专用检测设备",
+      "colStandard": "适用标准",
+      "colCriteria": "达标准则（Acceptance Criteria）",
+      "colFrequency": "检验频率",
+      "thickness": {
+        "item": "镀层厚度（Thickness）",
+        "device": "X 射线荧光测厚仪（Fischer XRF）",
+        "criteria": "与设计图纸偏差 ±1.0 µm 以内",
+        "frequency": "每批 5 件（AQL L-II）"
+      },
+      "microhardness": {
+        "item": "显微硬度（Microhardness）",
+        "device": "维氏显微硬度计（100gf 载荷）",
+        "criteria": "> 500 HV（原始）/ > 900 HV（烘烤后）",
+        "frequency": "每班次 1 个试片"
+      },
+      "saltSpray": {
+        "item": "耐盐雾腐蚀性能",
+        "device": "循环盐雾试验箱（NSS 5% NaCl）",
+        "criteria": "500-1,000 小时内无红锈",
+        "frequency": "每月定期抽样"
+      },
+      "adhesion": {
+        "item": "镀层附着力（Adhesion）",
+        "device": "180° 弯芯试验及热冲击淬火测试",
+        "criteria": "镀层不剥落，无微观分层",
+        "frequency": "100% 试片检测"
+      },
+      "porosity": {
+        "item": "微孔隙率（Porosity）",
+        "device": "费罗克西试验（Ferroxyl Test）",
+        "criteria": "不出现亚铁氰化物蓝斑",
+        "frequency": "每批试片检测"
+      }
+    },
+    "ProcessFlow": {
+      "heading": "精密电镀加工流程图",
+      "subtitle": "每道工序均通过集成 IoT 的 pH、温度、电流传感器监控，并记录至数字化生产日志以实现可追溯性。",
+      "s1": {
+        "title": "准备与预处理",
+        "desc": "机械清洁、多阶段超声波化学脱脂及定量酸洗除锈。",
+        "note": "表面张力检测"
+      },
+      "s2": {
+        "title": "电镀 / 化学镀",
+        "desc": "SCADA 自动整流供电，逐秒监控温度及反应时间。",
+        "note": "槽体公差：±0.5°C"
+      },
+      "s3": {
+        "title": "多级清洗与钝化",
+        "desc": "多级逆流去离子（DI）纯水清洗，Cr(III) 钝化处理防止变色。",
+        "note": "氢脆消除处理"
+      },
+      "s4": {
+        "title": "XRF 质量检验",
+        "desc": "使用 X 射线荧光进行无损厚度检测，附着力弯曲测试及盐雾喷雾测试。",
+        "note": "按批次出具 CoA 报告"
+      },
+      "s5": {
+        "title": "VCI 防锈包装",
+        "desc": "强制烘干，使用 VCI 气相防锈膜袋包装，适用于海运出口。",
+        "note": "符合欧盟/美国出口标准"
+      }
+    },
+    "QualityMetrology": {
+      "heading": "耐久性检测与 XRF 光谱实验室",
+      "subtitle": "每批成品均按国际标准核对，并颁发检测分析证书（Certificate of Analysis, CoA）。",
+      "tableTitle": "定额测试标准表",
+      "colMethod": "检测方法",
+      "colStandard": "适用标准",
+      "colCriteria": "达标指标",
+      "colFrequency": "检验频率",
+      "calibrationNote": "按 VILAS / ISO 17025 标准定期校准",
+      "warrantyLabel": "镀层质量保证",
+      "xrf": {
+        "title": "X 射线荧光光谱仪（XRF）",
+        "desc": "以纳米级分辨率无损检测多层镀层（Ni/Cr、Zn/Ni）的精确厚度。"
+      },
+      "saltSpray": {
+        "title": "盐雾试验箱（Salt Spray Chamber）",
+        "desc": "按 ASTM B117 及 ISO 9227 标准持续运行，评估在 5% NaCl 盐雾环境下的加速耐腐蚀性能。",
+        "method": "耐盐雾喷雾测试",
+        "criteria": "白锈 >240 小时、红锈 >1000 小时不出现",
+        "frequency": "每周定期"
+      },
+      "cmm": {
+        "title": "三坐标测量仪（CMM）及光学显微镜",
+        "desc": "进行金相切面分析，检测微观裂纹，测量维氏显微硬度及镀层附着力。"
+      },
+      "thickness": {
+        "method": "镀层厚度",
+        "criteria": "公差 ±0.1 µm",
+        "frequency": "每批次（100%）"
+      },
+      "adhesion": {
+        "method": "镀层附着力",
+        "criteria": "180° 弯曲不剥落",
+        "frequency": "按生产班次"
+      },
+      "dehydrogenation": {
+        "method": "除氢处理（烘烤）",
+        "criteria": "200°C ± 5°C，持续 4-24 小时",
+        "frequency": "100%（>1000 MPa 零件）"
+      }
+    },
+    "RfqFormCategory": {
+      "heading": "电镀服务报价申请（RFQ SPECIFICATION）",
+      "subtitle": "请提交技术参数、图纸及测试标准。HANIN 冶金工程师将在 24 小时内回复报价。",
+      "submitAlert": "您的 RFQ 报价申请已发送至 HANIN Technology 技术部！",
+      "companyLabel": "公司 / 企业名称 *",
+      "companyPlaceholder": "例：XX 精密机械有限公司...",
+      "contactLabel": "联系人及职位 *",
+      "contactPlaceholder": "姓名 - 物料工程师 / 采购部经理",
+      "phoneLabel": "技术联系电话 / Zalo *",
+      "emailLabel": "接收报价邮箱 *",
+      "platingTypeLabel": "所需电镀类型 *",
+      "platingTypeOptions": {
+        "default": "-- 请选择表面处理方案 --",
+        "hardChrome": "工业硬铬电镀（Hard Chrome）",
+        "enp": "化学镀镍（ENP）",
+        "zincNickel": "锌镍合金电镀（Zn-Ni Automotive）",
+        "anodizing": "铝阳极氧化技术处理",
+        "custom": "按图纸定制组合电镀方案"
+      },
+      "volumeLabel": "预计产量 / 交货批次 *",
+      "volumePlaceholder": "例：5,000 件 / 月 或 按试产订单",
+      "requirementsLabel": "详细技术要求（镀层厚度、盐雾测试时长、基材材质）",
+      "requirementsPlaceholder": "请填写所需标准，例如：S45C 钢基材，镀镍厚度 15-20µm，盐雾测试 >480 小时无红锈...",
+      "attachTitle": "附上技术图纸",
+      "attachDesc": "支持格式：PDF、STEP、DWG、IGES（最大 25MB）",
+      "chooseFile": "选择文件",
+      "ndaNote": "对客户提交的所有图纸资料承诺按 NDA 协议保密。",
+      "submitButton": "确认提交 RFQ 报价申请"
+    },
+    "RfqFormDetail": {
+      "heading": "提交化学镀镍（ENP）技术参数与需求",
+      "subtitle": "HANIN 冶金工程师将在 24 个工作小时内回复报价及打样计划。",
+      "hotlineLabel": "技术服务热线：",
+      "submitAlert": "您的 ENP 电镀技术报价申请已发送至 HANIN 工程部门。",
+      "companyLabel": "公司 / 客户名称",
+      "companyPlaceholder": "例：Samtech VN 机械制造集团",
+      "contactLabel": "负责工程师 / 联系人",
+      "contactPlaceholder": "例：阮文 A 工程师",
+      "emailLabel": "技术 / 报价邮箱",
+      "substrateLabel": "基材材质（Substrate）",
+      "substrateOptions": {
+        "carbonSteel": "碳钢（S45C、S50C、SS400）",
+        "alloySteel": "合金钢（SCM440、SKD11、SUJ2）",
+        "stainless": "不锈钢（SUS304、SUS316、SUS420）",
+        "aluminum": "铝合金（A6061-T6、A7075）",
+        "copper": "铜 / 黄铜合金",
+        "castIron": "铸铁 / FCD 球墨铸铁"
+      },
+      "phosLabel": "所需含磷等级",
+      "phosOptions": {
+        "high": "高磷（>10% P）：高耐腐蚀性",
+        "medium": "中磷（6-9% P）：耐磨性",
+        "low": "低磷（1-4% P）：提高基材硬度",
+        "consult": "由 HANIN 工程师根据应用场景提供建议"
+      },
+      "thicknessLabel": "镀层厚度（µm）",
+      "thicknessPlaceholder": "例：15 µm ± 1.5 µm",
+      "volumeLabel": "预计产量",
+      "volumePlaceholder": "例：2,500 件/月（或试产样品）",
+      "notesLabel": "技术备注（需遮蔽的螺纹位置、热处理要求、测试标准）",
+      "notesPlaceholder": "请注明遮蔽要求（封闭螺纹孔）、氢脆消除烘烤温度或 ASTM B117 盐雾检测证书要求...",
+      "attachTitle": "附上 2D / 3D 图纸",
+      "attachDesc": "支持 STEP、IGES、DWG、PDF（最大 50MB，NDA 保密）",
+      "chooseFile": "选择图纸文件...",
+      "ndaNote": "承诺按国际 NDA 协议对技术图纸数据保密。",
+      "submitButton": "提交 ENP 电镀服务报价申请（24 小时响应）"
+    },
+    "breadcrumbCategory": "工业电镀加工与表面处理服务",
+    "breadcrumbDetailFallback": "服务详情"
+  }
+}

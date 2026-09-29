@@ -1,0 +1,219 @@
+{
+  "LienHe": {
+    "BottomCta": {
+      "heading": "SẴN SÀNG NÂNG TẦM CHẤT LƯỢNG BỀ MẶT CƠ KHÍ CỦA BẠN",
+      "description": "Kỹ sư luyện kim và dây chuyền tự động hóa của HANIN TECHNOLOGY VIỆT NAM đáp ứng yêu cầu kỹ thuật khắt khe từ đối tác toàn cầu.",
+      "ctaPrimary": "GỬI BẢN VẼ NGAY"
+    },
+    "ContactChannels": {
+      "heading": "HỆ THỐNG TRỤ SỞ & ĐẦU MỐI KỸ THUẬT",
+      "subtitle": "Phục vụ khách hàng trong nước & chuỗi cung ứng xuất khẩu",
+      "card1": {
+        "badge": "TRỤ SỞ & NHÀ MÁY",
+        "title": "CÔNG TY TNHH HANIN TECHNOLOGY VIỆT NAM",
+        "address": "Lô CN-08, Khu Công Nghiệp Quang Minh, Huyện Mê Linh, TP. Hà Nội, Việt Nam",
+        "footerLabel": "QUY MÔ VẬN HÀNH",
+        "footerValue": "Tổ hợp mạ tự động PLC & Lab đo kiểm CMM ISO 17025"
+      },
+      "card2": {
+        "badge": "HOTLINE TIẾP NHẬN",
+        "title": "TƯ VẤN BÁO GIÁ & DUNG SAI",
+        "quoteLabel": "Hotline Phòng Báo Giá:",
+        "engineerLabel": "Kỹ sư Luyện kim (Direct CAD/Spec):",
+        "engineerHotlineSuffix": "24/7 Hotline",
+        "footerLabel": "Tư vấn trực tiếp: Zalo / WhatsApp"
+      },
+      "card3": {
+        "badge": "HỘP THƯ CHUYÊN BIỆT",
+        "title": "TIẾP NHẬN HỒ SƠ THẦU & RFQ",
+        "salesLabel": "Phòng Kinh Doanh & Đơn Hàng Mới:",
+        "engineeringLabel": "Phòng Kỹ Thuật, R&D & Thử Nghiệm:",
+        "footerText": "Cổng PGP Encryption sẵn sàng theo yêu cầu"
+      },
+      "card4": {
+        "badge": "CA VẬN HÀNH",
+        "title": "KHỐI VĂN PHÒNG & SẢN XUẤT",
+        "officeLabel": "Khối Kỹ Thuật & Văn Phòng:",
+        "officeValue": "Thứ 2 – Thứ 7: 08:00 – 17:30",
+        "workshopLabel": "Khối Xưởng Mạ & CNC Vận Hành:",
+        "workshopValue": "3 Ca liên tục (24/7) theo lệnh sản xuất",
+        "footerBadge": "Trực xử lý sự cố dây chuyền 24/7"
+      }
+    },
+    "ContactFaq": {
+      "heading": "CÂU HỎI THƯỜNG GẶP VỀ TIẾP NHẬN BÁO GIÁ",
+      "subtitle": "Giải đáp rõ ràng về quy trình thẩm định kỹ thuật, bảo mật bản vẽ và năng lực giao mẫu.",
+      "items": {
+        "0": {
+          "question": "1. Thời gian HANIN phản hồi báo giá kỹ thuật chi tiết là bao lâu?",
+          "answer": "Với bản vẽ 2D (PDF, DWG) hoặc 3D (STEP) đầy đủ thông số vật liệu nền và độ dày lớp mạ, HANIN phản hồi báo giá trong vòng 04 giờ làm việc. Đơn hàng tổ hợp cần xử lý nhiệt đặc biệt hoặc tiêu chuẩn ASTM khắt khe: tối đa 24 giờ."
+        },
+        "1": {
+          "question": "2. HANIN hỗ trợ những định dạng bản vẽ kỹ thuật nào khi tiếp nhận qua website?",
+          "answer": "HANIN nhận trực tiếp các tệp .STEP, .STP, .DWG, .DXF, .IGES, .X_T, .PDF và file nén .ZIP/.RAR tới 50MB, tương thích SolidWorks, Inventor, AutoCAD, Creo. Bản vẽ dung lượng lớn hơn, gửi link cloud đến email engineering@hanintech.vn."
+        },
+        "2": {
+          "question": "3. Chính sách bảo mật bản vẽ (NDA) của HANIN được thực hiện như thế nào?",
+          "answer": "HANIN ký thỏa thuận bảo mật (Non-Disclosure Agreement - NDA) trước hoặc ngay khi tiếp nhận dữ liệu. Bản vẽ, mô hình 3D và thông số kỹ thuật được lưu trên máy chủ nội bộ cô lập, chỉ kỹ sư phụ trách trực tiếp có quyền truy cập và không chia sẻ cho bên thứ ba."
+        },
+        "3": {
+          "question": "4. Số lượng đơn hàng tối thiểu (MOQ) cho các chi tiết xi mạ là bao nhiêu?",
+          "answer": "MOQ linh hoạt: HANIN nhận gia công từ 01 chi tiết mẫu thử R&D, lô thử nghiệm 500 - 1.000 chi tiết, đến hợp đồng cung ứng hàng loạt hàng trăm nghìn chi tiết mỗi tháng với bể mạ dung tích lớn."
+        },
+        "4": {
+          "question": "5. HANIN có hỗ trợ gia công mẫu thử nghiệm (Sampling) trước khi ký hợp đồng không?",
+          "answer": "Có. Với đơn hàng số lượng lớn hoặc linh kiện có yêu cầu kỹ thuật đặc thù, HANIN mạ mẫu thử (Sampling), đo độ dày lớp mạ bằng máy huỳnh quang tia X (XRF), kiểm tra độ bám dính và thử phun sương muối (Salt Spray Test theo ASTM B117), kèm biên bản kiểm định gửi quý khách phê duyệt trước khi sản xuất hàng loạt."
+        }
+      }
+    },
+    "ContactHero": {
+      "breadcrumbHome": "Trang chủ",
+      "breadcrumbCurrent": "Liên hệ & Báo giá kỹ thuật",
+      "slaStatus": "COMMUNICATION & B2B INQUIRY // SLA RESPONSE: TRONG VÒNG 04 GIỜ LÀM VIỆC",
+      "titlePrefix": "LIÊN HỆ &",
+      "titleHighlight": "YÊU CẦU BÁO GIÁ",
+      "titleSuffix": "KỸ THUẬT",
+      "description": "HANIN TECHNOLOGY VIỆT NAM tư vấn giải pháp kỹ thuật xi mạ kim loại, gia công cơ khí chính xác và báo giá cho đối tác B2B, nhà thầu OEM/Tier-1 và doanh nghiệp FDI.",
+      "specHighlights": {
+        "nda": {
+          "label": "BẢO MẬT NDA 100%",
+          "desc": "Cam kết bảo mật tuyệt đối bản vẽ & quyền sở hữu trí tuệ"
+        },
+        "cad": {
+          "label": "2D/3D CAD FILE",
+          "desc": "Hỗ trợ định dạng STEP, DWG, DXF, IGES, PDF dung lượng 50MB+"
+        },
+        "consulting": {
+          "label": "TƯ VẤN LUYỆN KIM",
+          "desc": "Kỹ sư vật liệu tư vấn trực tiếp chiều dày, ASTM & dung sai"
+        }
+      },
+      "imageAlt": "Toàn cảnh nhà máy HANIN TECHNOLOGY VIỆT NAM (ảnh minh họa, sẽ thay bằng ảnh thực tế do Bên A cung cấp)",
+      "overlayLabel": "TỔNG HÀNH DINH & NHÀ MÁY",
+      "overlayLocation": "KCN Quang Minh, Mê Linh, Hà Nội",
+      "overlayCoordinates": "Tọa độ: 21.2025° N, 105.7725° E"
+    },
+    "DirectChannels": {
+      "heading": "KÊNH KẾT NỐI TRỰC TIẾP NHANH CHÓNG",
+      "subtitle": "Dành cho các yêu cầu gia công khẩn cấp, đơn hàng xuất khẩu hoặc lịch kiểm tra thực địa dây chuyền mạ.",
+      "channels": {
+        "hotline": {
+          "label": "GỌI HOTLINE KHẨN CẤP",
+          "title": "(+84) 24 3818 6868",
+          "desc": "Kết nối trực tiếp chuyên viên kỹ thuật giải pháp trong vòng 30 giây.",
+          "cta": "Gọi ngay bây giờ"
+        },
+        "zalo": {
+          "label": "ZALO OFFICIAL B2B",
+          "title": "HANIN TECH OFFICIAL",
+          "desc": "Chat kỹ thuật 24/7, gửi nhanh ảnh mẫu thực tế và trao đổi bản vẽ sơ bộ.",
+          "cta": "Mở khung chat Zalo"
+        },
+        "email": {
+          "label": "EMAIL TẬP TIN DUNG LƯỢNG LỚN",
+          "title": "sales@hanintech.vn",
+          "desc": "Dành cho các gói thầu dự án lớn đính kèm link Drive, OneDrive hoặc WeTransfer.",
+          "cta": "Soạn thư gửi báo giá"
+        },
+        "audit": {
+          "label": "ĐĂNG KÝ AUDIT NHÀ MÁY",
+          "title": "FACTORY TOUR / AUDIT",
+          "desc": "Tiếp đón đoàn chuyên gia đánh giá năng lực nhà cung ứng chuẩn ISO 9001/14001.",
+          "cta": "Đặt lịch hẹn khảo sát"
+        }
+      }
+    },
+    "LocationMap": {
+      "heading": "VỊ TRÍ NHÀ MÁY & ĐƯỜNG ĐI XE TẢI CONTAINER",
+      "description": "Nhà máy Hanin Tech nằm tại vị trí trung tâm hành lang công nghiệp phía Bắc, thuận lợi kết nối hạ tầng giao thông logistics qua cao tốc Thăng Long - Nội Bài, đường Võ Văn Kiệt và đường Vành Đai 3 Hà Nội.",
+      "distances": {
+        "airport": {
+          "label": "Sân bay Quốc tế Nội Bài",
+          "value": "12 km (~15 phút)"
+        },
+        "seaport": {
+          "label": "Cảng Quốc tế Hải Phòng (Lạch Huyện)",
+          "value": "120 km (~1h45)"
+        },
+        "industrialParks": {
+          "label": "KCN Bắc Thăng Long / VSIP Bắc Ninh",
+          "value": "18 - 35 km"
+        }
+      },
+      "openMapsCta": "MỞ GOOGLE MAPS",
+      "downloadMapCta": "SƠ ĐỒ XE CONTAINER (PDF)",
+      "satelliteImageAlt": "Ảnh vệ tinh minh họa vị trí KCN Quang Minh, Mê Linh, Hà Nội (ảnh minh họa, sẽ thay bằng bản đồ Google Maps nhúng thật)",
+      "gateLabel": "HANIN FACILITY GATE 1",
+      "plotLabel": "Lô CN-08 KCN Quang Minh",
+      "securityNote": "Cổng kiểm soát an ninh container 40 feet tiếp nhận 24/7",
+      "gridLabel": "GRID: HN-QMINH-08",
+      "elevationLabel": "ELEV: +14.2m ASL"
+    },
+    "RfqForm": {
+      "heading": "GỬI YÊU CẦU BÁO GIÁ & TÀI LIỆU KỸ THUẬT DỰ ÁN",
+      "securityBadge": "Chuẩn bảo mật SSL 256-bit // NDA Protected",
+      "status": {
+        "submitting": "Đang gửi yêu cầu báo giá (demo, chưa nối backend thật)...",
+        "successTitle": "ĐÃ GỬI YÊU CẦU (DEMO, CHƯA NỐI BACKEND THẬT)",
+        "successDesc": "Đây là bản mô phỏng giao diện thuộc Phase 1. Phần xử lý gửi email/CRM thật sẽ được HANIN triển khai ở giai đoạn tiếp theo của hợp đồng.",
+        "successResetCta": "Tạo yêu cầu khác",
+        "errorMessage": "Vui lòng điền đầy đủ các trường bắt buộc (*) và xác nhận cam kết bảo mật NDA trước khi gửi.",
+        "errorRetryCta": "Thử lại"
+      },
+      "step1": {
+        "heading": "THÔNG TIN KHÁCH HÀNG & DOANH NGHIỆP LIÊN HỆ",
+        "fullNameLabel": "Họ và tên người liên hệ",
+        "fullNamePlaceholder": "Nguyễn Văn A",
+        "companyLabel": "Tên công ty / Doanh nghiệp",
+        "companyPlaceholder": "Công ty CP Cơ khí Chế tạo...",
+        "emailLabel": "Email công vụ / Nhận báo giá",
+        "emailPlaceholder": "name@company.com",
+        "phoneLabel": "Số điện thoại di động / Zalo",
+        "phonePlaceholder": "0912 345 678"
+      },
+      "step2": {
+        "heading": "THÔNG TIN KỸ THUẬT & CÔNG NGHỆ GIA CÔNG XI MẠ",
+        "projectNameLabel": "Tên sản phẩm / Dự án gia công",
+        "projectNamePlaceholder": "Ví dụ: Trục piston thủy lực, Busbar đồng, Vỏ khuôn nhôm",
+        "platingServiceLabel": "Dịch vụ xi mạ quan tâm",
+        "platingOptions": {
+          "niken": "Mạ Niken hóa học không điện (Electroless Nickel - ENP)",
+          "crom": "Mạ Crom cứng kỹ thuật (Hard Chrome Plating - 65-70 HRC)",
+          "kem": "Mạ Kẽm & Thụ động hóa Cr3+ (Zinc / Zinc-Nickel)",
+          "anodize": "Anodizing nhôm kỹ thuật / Hard Anodize Type III",
+          "bac": "Mạ Thiếc / Bạc dẫn điện cho thiết bị điện - Busbar",
+          "other": "Gia công tổ hợp Mạ & Tiện Phay CNC theo yêu cầu"
+        },
+        "volumeLabel": "Sản lượng dự kiến & Tiến độ giao hàng",
+        "volumeOptions": {
+          "sample": "Gia công mẫu thử R&D (1 - 50 chi tiết)",
+          "pilot": "Lô sản xuất thử nghiệm (500 - 2.000 chi tiết)",
+          "mass": "Sản xuất hàng loạt định kỳ (>10.000 pcs/tháng)",
+          "oem": "Hợp đồng đối tác chiến lược OEM / Dài hạn"
+        },
+        "descriptionLabel": "Mô tả chi tiết dung sai, chiều dày lớp mạ & tiêu chuẩn thử nghiệm",
+        "descriptionStandards": "Hỗ trợ tiêu chuẩn: ISO, ASTM, DIN, JIS",
+        "descriptionPlaceholder": "Ví dụ: Vật liệu nền Thép S45C; Lớp mạ Crom cứng dày 30-40 µm; Độ cứng yêu cầu ≥ 850 HV; Yêu cầu thử phun sương muối ASTM B117 đạt 96 giờ không rỉ sét; Địa điểm giao hàng: Bắc Ninh..."
+      },
+      "step3": {
+        "heading": "ĐÍNH KÈM BẢN VẼ KỸ THUẬT (2D / 3D CAD FILE)",
+        "dropzoneTitle": "KÉO THẢ TẬP TIN BẢN VẼ HOẶC BẤM ĐỂ CHỌN FILE",
+        "formatsPrefix": "Định dạng hỗ trợ:",
+        "formatsSuffix": "(Tối đa 50MB/file)",
+        "badgeVirusScan": "Auto Virus Scan",
+        "badgeEncryption": "Secure Server Encryption",
+        "badgeNda": "Bảo mật NDA tự động",
+        "filesSelected": "Đã chọn {count} tập tin:",
+        "noFileSelected": "Chưa có tập tin nào được chọn. Quý khách có thể gửi kèm bản vẽ trực tiếp qua email: sales@hanintech.vn",
+        "maxSize": "MAX: 50MB"
+      },
+      "step4": {
+        "ndaConsentPrefix": "Tôi đồng ý cho",
+        "ndaConsentMiddle": "xử lý thông tin kỹ thuật này để khảo sát tính khả thi và báo giá dự án. HANIN cam kết bảo vệ dữ liệu theo thỏa thuận bảo mật",
+        "ndaConsentSuffix": "nghiêm ngặt.",
+        "submitCta": "GỬI YÊU CẦU BÁO GIÁ KỸ THUẬT",
+        "submittingCta": "ĐANG GỬI..."
+      }
+    }
+  }
+}

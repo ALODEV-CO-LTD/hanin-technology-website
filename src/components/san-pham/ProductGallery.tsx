@@ -1,11 +1,13 @@
 "use client";
 
 import { useState } from "react";
-import { PRODUCT_DETAIL_CONTENT } from "@/lib/products-data";
-
-const { gallery } = PRODUCT_DETAIL_CONTENT;
+import { useTranslations } from "next-intl";
+import { getProductDetailContent } from "@/lib/products-data";
 
 export default function ProductGallery() {
+  const tp = useTranslations("SanPham");
+  const t = useTranslations("SanPham.ProductGallery");
+  const { gallery } = getProductDetailContent(tp);
   const [activeId, setActiveId] = useState(gallery[0].id);
   const active = gallery.find((item) => item.id === activeId) ?? gallery[0];
 
@@ -15,19 +17,16 @@ export default function ProductGallery() {
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-space-sm mb-space-lg">
           <div>
             <h2 className="text-headline-lg text-slate-900 uppercase tracking-tight">
-              HÌNH ẢNH CHI TIẾT &amp; KIỂM ĐỊNH THỰC TẾ
+              {t("title")}
             </h2>
-            <p className="text-body-md text-slate-600 mt-1">
-              Bộ sưu tập hình ảnh phôi kim loại sau gia công mạ, mặt cắt hiển vi và kiểm tra đo
-              lường chất lượng tại phòng Lab.
-            </p>
+            <p className="text-body-md text-slate-600 mt-1">{t("description")}</p>
           </div>
           <div className="flex items-center gap-space-xs text-label-technical text-slate-500 shrink-0">
             <span className="px-space-xs py-1 bg-white border border-slate-200 rounded text-slate-800 shadow-sm">
-              {gallery.length} ẢNH CHẤT LƯỢNG CAO
+              {gallery.length} {t("highQualityImages")}
             </span>
             <span className="px-space-xs py-1 bg-white border border-slate-200 rounded text-sky-700 shadow-sm font-semibold">
-              ZOOM 40X OPTICAL
+              {t("zoomOptical")}
             </span>
           </div>
         </div>
@@ -39,14 +38,14 @@ export default function ProductGallery() {
             <button
               type="button"
               className="w-9 h-9 bg-white/90 backdrop-blur-md border border-slate-200 rounded text-slate-700 hover:text-steel-600 hover:border-steel-500 transition-all flex items-center justify-center shadow-sm"
-              aria-label="Phóng to ảnh"
+              aria-label={t("zoomInAriaLabel")}
             >
               <span className="material-symbols-outlined text-[18px]">zoom_in</span>
             </button>
             <button
               type="button"
               className="w-9 h-9 bg-white/90 backdrop-blur-md border border-slate-200 rounded text-slate-700 hover:text-steel-600 hover:border-steel-500 transition-all flex items-center justify-center shadow-sm"
-              aria-label="Xem toàn màn hình"
+              aria-label={t("fullscreenAriaLabel")}
             >
               <span className="material-symbols-outlined text-[18px]">fullscreen</span>
             </button>
@@ -54,14 +53,14 @@ export default function ProductGallery() {
           <div className="absolute bottom-0 left-0 right-0 p-space-sm bg-gradient-to-t from-slate-950/80 via-slate-950/60 to-transparent flex flex-col md:flex-row md:items-center justify-between gap-space-xs text-label-sm text-slate-200">
             <div className="flex items-center gap-space-sm">
               <span className="px-2 py-0.5 bg-steel-600 text-white font-mono rounded">
-                FRAME #{String(active.id).padStart(2, "0")}
+                {t("frame")} #{String(active.id).padStart(2, "0")}
               </span>
               <span className="text-white text-title-md">{active.caption}</span>
             </div>
             <div className="flex items-center gap-space-md font-mono text-slate-300">
-              <span>RES: 4K HIGH-DEF</span>
-              <span>DATE: 2026-03-29</span>
-              <span className="text-emerald-400 font-semibold">STATUS: APPROVED QA</span>
+              <span>{t("resolution")}</span>
+              <span>{t("date")}</span>
+              <span className="text-emerald-400 font-semibold">{t("statusApproved")}</span>
             </div>
           </div>
         </div>

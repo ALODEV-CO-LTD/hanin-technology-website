@@ -1,10 +1,13 @@
 import Link from "next/link";
-import { PRODUCTS, type Product } from "@/lib/products-data";
+import { useTranslations } from "next-intl";
+import { getProducts, type Product } from "@/lib/products-data";
 
 export default function RelatedProjects({ currentSlug }: { currentSlug: string }) {
-  const related: Product[] = PRODUCTS.filter(
-    (product) => product.showInGrid && product.slug !== currentSlug,
-  ).slice(0, 3);
+  const tp = useTranslations("SanPham");
+  const t = useTranslations("SanPham.RelatedProjects");
+  const related: Product[] = getProducts(tp)
+    .filter((product) => product.showInGrid && product.slug !== currentSlug)
+    .slice(0, 3);
 
   if (related.length === 0) return null;
 
@@ -13,12 +16,9 @@ export default function RelatedProjects({ currentSlug }: { currentSlug: string }
       <div className="max-w-7xl mx-auto px-6">
         <div className="mb-space-lg">
           <h2 className="text-headline-lg text-slate-900 uppercase tracking-tight">
-            DỰ ÁN &amp; SẢN PHẨM KHÁC
+            {t("title")}
           </h2>
-          <p className="text-body-md text-slate-600 mt-1">
-            Các sản phẩm cơ khí chính xác và hoàn thiện bề mặt tiêu biểu được hoàn thành tại nhà
-            máy HANIN.
-          </p>
+          <p className="text-body-md text-slate-600 mt-1">{t("description")}</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-gutter">
           {related.map((project) => (
@@ -35,7 +35,7 @@ export default function RelatedProjects({ currentSlug }: { currentSlug: string }
                   src={project.image}
                 />
                 <span className="absolute top-2 left-2 px-space-xs py-0.5 bg-white/95 backdrop-blur font-mono text-label-sm text-steel-600 font-semibold rounded shadow-sm">
-                  LOT #{project.lot}
+                  {t("lot")} #{project.lot}
                 </span>
               </div>
               <div className="p-space-md flex flex-col gap-space-xs">
@@ -47,7 +47,7 @@ export default function RelatedProjects({ currentSlug }: { currentSlug: string }
                 </h3>
                 <p className="text-body-sm text-slate-600 line-clamp-2 mt-1">{project.description}</p>
                 <div className="flex items-center gap-space-xs pt-space-xs text-steel-600 text-label-sm font-semibold">
-                  <span>XEM CHI TIẾT DỰ ÁN</span>
+                  <span>{t("ctaViewDetail")}</span>
                   <span className="material-symbols-outlined text-[14px]">arrow_forward</span>
                 </div>
               </div>

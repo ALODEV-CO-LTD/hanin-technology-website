@@ -1,22 +1,21 @@
+import { useTranslations } from "next-intl";
+
 export default function CompanyProfileCta() {
+  const t = useTranslations("NangLuc.CompanyProfileCta");
+
   return (
     <section className="w-full py-space-xl bg-slate-900 text-white">
       <div className="max-w-[1280px] mx-auto px-margin w-full">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
           {/* LEFT: Text & Button */}
           <div className="lg:col-span-7">
-            <h3 className="text-headline-lg text-white uppercase tracking-tight mb-space-md">
-              TÌM HIỂU THÊM VỀ NĂNG LỰC HANIN
-            </h3>
-            <p className="text-body-lg text-slate-300 max-w-xl leading-relaxed mb-space-lg">
-              Xem Company Profile để tìm hiểu chi tiết hơn về mặt bằng nhà xưởng, thông số dây chuyền, danh mục
-              thiết bị kiểm nghiệm và năng lực đáp ứng của HANIN TECHNOLOGY.
-            </p>
+            <h3 className="text-headline-lg text-white uppercase tracking-tight mb-space-md">{t("title")}</h3>
+            <p className="text-body-lg text-slate-300 max-w-xl leading-relaxed mb-space-lg">{t("description")}</p>
             <a
               className="inline-flex items-center gap-2 px-space-xl py-space-md bg-steel-600 hover:bg-steel-700 text-white text-headline-sm font-semibold uppercase rounded transition-all active:scale-[0.99] shadow-lg"
               href="#"
             >
-              XEM COMPANY PROFILE (PDF) →
+              {t("ctaDownload")}
             </a>
           </div>
 

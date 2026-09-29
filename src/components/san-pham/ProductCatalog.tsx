@@ -2,11 +2,10 @@
 
 import { useMemo, useState } from "react";
 import Link from "next/link";
-import { CATEGORY_TABS, getGridProducts, type Product } from "@/lib/products-data";
+import { useTranslations } from "next-intl";
+import { getCategoryTabs, getGridProducts, getProducts, type Product } from "@/lib/products-data";
 
-const GRID_PRODUCTS = getGridProducts();
-
-function ProductCardFeatured({ product }: { product: Product }) {
+function ProductCardFeatured({ product, t }: { product: Product; t: ReturnType<typeof useTranslations<"SanPham.ProductCatalog">> }) {
   return (
     <div className="lg:col-span-8 flex flex-col md:flex-row bg-white border border-slate-200 rounded overflow-hidden shadow-sm hover:shadow-xl hover:border-steel-300 transition-all duration-300">
       <div className="md:w-1/2 relative min-h-[260px] md:min-h-full overflow-hidden bg-slate-100">
@@ -23,7 +22,7 @@ function ProductCardFeatured({ product }: { product: Product }) {
       <div className="md:w-1/2 p-space-lg flex flex-col justify-between bg-white">
         <div className="flex flex-col gap-space-sm">
           <span className="text-label-technical text-sky-700 uppercase tracking-wider font-semibold">
-            LÔ SẢN XUẤT #{product.lot}
+            {t("lotNumber")} #{product.lot}
           </span>
           <h3 className="text-headline-md text-slate-900 uppercase hover:text-steel-600 transition-colors font-bold">
             {product.title}
@@ -42,7 +41,7 @@ function ProductCardFeatured({ product }: { product: Product }) {
             href={`/san-pham-du-an/${product.slug}`}
             className="inline-flex items-center gap-space-xs text-label-technical uppercase tracking-wider text-steel-600 hover:translate-x-1 transition-transform font-bold"
           >
-            XEM CHI TIẾT SẢN PHẨM →
+            {t("ctaViewDetail")}
           </Link>
         </div>
       </div>
@@ -50,7 +49,7 @@ function ProductCardFeatured({ product }: { product: Product }) {
   );
 }
 
-function ProductCardStandard({ product }: { product: Product }) {
+function ProductCardStandard({ product, t }: { product: Product; t: ReturnType<typeof useTranslations<"SanPham.ProductCatalog">> }) {
   return (
     <div className="lg:col-span-4 flex flex-col bg-white border border-slate-200 rounded overflow-hidden shadow-sm hover:shadow-xl hover:border-steel-300 transition-all duration-300">
       <div className="relative h-56 overflow-hidden bg-slate-100">
@@ -79,7 +78,7 @@ function ProductCardStandard({ product }: { product: Product }) {
           <Link
             href={`/san-pham-du-an/${product.slug}`}
             className="w-8 h-8 rounded-full bg-slate-50 border border-slate-200 flex items-center justify-center text-steel-600 hover:bg-steel-600 hover:text-white transition-colors shrink-0"
-            aria-label={`Xem chi tiết ${product.title}`}
+            aria-label={`${t("viewDetailAriaLabel")} ${product.title}`}
           >
             →
           </Link>
@@ -90,6 +89,11 @@ function ProductCardStandard({ product }: { product: Product }) {
 }
 
 export default function ProductCatalog() {
+  const tp = useTranslations("SanPham");
+  const t = useTranslations("SanPham.ProductCatalog");
+  const CATEGORY_TABS = useMemo(() => getCategoryTabs(tp), [tp]);
+  const GRID_PRODUCTS = useMemo(() => getGridProducts(getProducts(tp)), [tp]);
+
   const [activeCategory, setActiveCategory] = useState<(typeof CATEGORY_TABS)[number]["value"]>("all");
   const [search, setSearch] = useState("");
 
@@ -104,7 +108,7 @@ export default function ProductCatalog() {
         product.category.toLowerCase().includes(query);
       return matchesCategory && matchesSearch;
     });
-  }, [activeCategory, search]);
+  }, [GRID_PRODUCTS, activeCategory, search]);
 
   const featured = filtered.find((product) => product.featured);
   const standard = filtered.filter((product) => !product.featured);
@@ -136,14 +140,14 @@ export default function ProductCatalog() {
               </span>
               <input
                 className="w-full sm:w-64 bg-slate-50 text-slate-900 placeholder:text-slate-400 border border-slate-200 text-body-sm pl-9 pr-space-sm py-space-xs rounded focus:outline-none focus:border-steel-600 focus:bg-white transition-all"
-                placeholder="Tìm kiếm sản phẩm / dự án..."
+                placeholder={t("searchPlaceholder")}
                 type="text"
                 value={search}
                 onChange={(event) => setSearch(event.target.value)}
               />
             </div>
             <div className="hidden sm:inline-flex items-center px-space-sm py-space-xs bg-slate-50 border border-slate-200 rounded text-label-technical text-slate-500 shrink-0 font-medium">
-              [ĐANG HIỂN THỊ {String(filtered.length).padStart(2, "0")} KẾT QUẢ]
+              [{t("showingResults")} {String(filtered.length).padStart(2, "0")} {t("resultsUnit")}]
             </div>
           </div>
         </div>
@@ -151,14 +155,12 @@ export default function ProductCatalog() {
 
       <section className="w-full max-w-[1280px] mx-auto px-margin py-space-xl">
         {filtered.length === 0 ? (
-          <p className="text-body-md text-slate-500 text-center py-space-xl">
-            Không tìm thấy sản phẩm / dự án phù hợp với bộ lọc hiện tại.
-          </p>
+          <p className="text-body-md text-slate-500 text-center py-space-xl">{t("emptyState")}</p>
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-gutter items-stretch">
-            {featured && <ProductCardFeatured product={featured} />}
+            {featured && <ProductCardFeatured product={featured} t={t} />}
             {standard.map((product) => (
-              <ProductCardStandard key={product.slug} product={product} />
+              <ProductCardStandard key={product.slug} product={product} t={t} />
             ))}
           </div>
         )}

@@ -1,0 +1,124 @@
+{
+  "TinTuc": {
+    "FeaturedArticle": {
+      "heading": "기술 포커스",
+      "badge": "FEATURED ARTICLE",
+      "readArticle": "기사 읽기"
+    },
+    "NewsBreadcrumb": {
+      "home": "홈",
+      "news": "뉴스",
+      "cmsPortal": "CMS 포털: 산업 인사이트 // 상태: 정기 업데이트",
+      "realtimeSync": "R&D 실시간 동기화"
+    },
+    "NewsFilterBar": {
+      "searchPlaceholder": "기술 주제 검색...",
+      "showingCount": "6 / 48건 표시 중"
+    },
+    "NewsGrid": {
+      "readMore": "더 읽기"
+    },
+    "NewsInquiryCta": {
+      "titlePrefix": "궁금하신",
+      "titleHighlight": "제품 / 프로젝트가 있으신가요?",
+      "description": "HANIN의 화학 및 금속 표면처리 엔지니어가 기술 문의 답변, 공정 최적화, 프로젝트에 적합한 도금 방안 상담을 지원합니다.",
+      "hotlineLabel": "핫라인:",
+      "emailLabel": "이메일:",
+      "ctaContact": "HANIN 문의하기",
+      "ctaQuote": "프로젝트 견적 받기"
+    },
+    "NewsIntro": {
+      "titlePrefix": "뉴스 &",
+      "titleHighlight": "기술 소식",
+      "titleSuffix": "안내",
+      "description": "HANIN 공장의 기업 활동, 금속 표면처리 기술, 품질 검사 규정 및 최신 기술 소식을 확인하세요.",
+      "archiveLabel": "자료 보관소",
+      "archiveValue": "68+ 게시물",
+      "auditLabel": "전문 기술 검증",
+      "auditValue": "5개 기술 전문 카테고리"
+    },
+    "NewsPagination": {
+      "showingPrefix": "표시 중:",
+      "pageInfo": "1 / 8 페이지",
+      "totalInfo": "(전문 기사 총 48건)",
+      "prev": "이전",
+      "next": "다음"
+    },
+    "categories": {
+      "all": "전체",
+      "congTy": "기업 소식",
+      "congNghe": "기술",
+      "sanXuat": "생산",
+      "chatLuong": "품질",
+      "tuyenDung": "채용"
+    },
+    "featured": {
+      "tag": "포커스 // 도금 기술",
+      "category": "기술",
+      "date": "2026년 4월 18일",
+      "readTime": "읽는 시간 5분",
+      "title": "고하중 산업용 기어 및 로봇 부품 제조를 위한 무전해 니켈 도금(ENP) 기술 적용",
+      "excerpt": "깊은 나사산 홈 내 균일한 도금막 두께를 ±0.2 µm의 엄격한 공차로 제어하는 솔루션을 분석하고, ASTM B733 기준에 따라 내마모성을 최적화하며 수소취성 현상을 제거합니다.",
+      "metrics": {
+        "0": { "label": "두께 공차" },
+        "1": { "label": "비커스 경도" },
+        "2": { "label": "염수 시험", "unit": "시간" }
+      },
+      "location": "4호 자동 도금 라인 // 꽝민 공단",
+      "liveLabel": "HANIN R&D 센터",
+      "author": "R&D 기술팀",
+      "authorRole": "Hanin Technology VN",
+      "imageAlt": "현대적인 공장 내 자동화 전기도금 라인, 옥색 화학 도금조, 로봇 크레인이 자동차 섀시 부품을 들어 올리는 모습(예시 이미지)"
+    },
+    "articles": {
+      "0": {
+        "categoryLabel": "품질",
+        "readTime": "읽는 시간 4분",
+        "title": "X선 형광분석(XRF)을 이용한 도금 두께 측정 공정, ISO/IEC 17025 기준 충족",
+        "excerpt": "비파괴검사(NDT) 기술로 복잡한 형상의 소재에서 니켈-인 합금 도금의 두께와 성분 비율을 0.05 µm 이하의 오차로 정밀하게 측정합니다.",
+        "author": "R&D 품질보증팀",
+        "imageAlt": "고정밀 전자 캘리퍼로 미세 기어를 측정하는 모습, 품질검사 실험실 작업대 위의 가공된 강철 부품(예시 이미지)"
+      },
+      "1": {
+        "categoryLabel": "생산",
+        "readTime": "읽는 시간 6분",
+        "title": "꽝민 공단 PLC 자동화 아연-니켈 도금조 시스템 운영으로 사이클 타임 40% 단축",
+        "excerpt": "이중 행정 로봇 암으로 표면처리 라인을 동기화 개선하고, 도금조 농도를 자동으로 균형 조정하며 디지털 펄스 전류를 제어합니다.",
+        "author": "생산운영팀",
+        "imageAlt": "산업용 생산 라인의 PLC 자동화 아연-니켈 도금조(예시 이미지)"
+      },
+      "2": {
+        "categoryLabel": "기업 소식",
+        "readTime": "읽는 시간 3분",
+        "title": "HANIN, 일본 및 한국 B2B 제조기업 대표단 생산시설 방문 환영",
+        "excerpt": "자동차 부품 및 반도체 장비 공급망 역량을 평가하고, 국제 ASTM 기준을 충족하는 니켈 도금 및 전기도금 솔루션 수출 약속을 강화합니다.",
+        "author": "대외협력팀",
+        "imageAlt": "베트남 HANIN Technology 본사의 현대적인 유리 외관, B2B 기업 방문객(예시 이미지)"
+      },
+      "3": {
+        "categoryLabel": "기술",
+        "readTime": "읽는 시간 7분",
+        "title": "항공 장비용 군사 규격 Type III 하드 아노다이징 기술로 알루미늄 표면처리",
+        "excerpt": "저온 전해 공정으로 경도 65 HRC 이상의 산화알루미늄층을 형성하여 높은 절연성과 혹독한 해양 염수 환경에 대한 내성을 확보합니다.",
+        "author": "R&D 연구소",
+        "imageAlt": "항공 부품용 알루미늄 표면처리를 위한 하드 아노다이징 기술(예시 이미지)"
+      },
+      "4": {
+        "categoryLabel": "생산",
+        "readTime": "읽는 시간 5분",
+        "title": "고강도 볼트의 피로강도를 보장하는 도금 후 수소제거(De-Embrittlement) 솔루션",
+        "excerpt": "밀폐된 어닐링로에서 200°C ± 5°C로 4~24시간 엄격하게 온도를 제어하며 강제 가열하여 수소 침투로 인한 취성 파괴를 완전히 방지합니다.",
+        "author": "열처리부",
+        "imageAlt": "보호장비를 착용한 여성 기술자가 공장 내 화학 도금조 위에 걸린 도금 부품을 검사하는 모습(예시 이미지)"
+      },
+      "5": {
+        "categoryLabel": "채용",
+        "readTime": "읽는 시간 3분",
+        "title": "HANIN 공장 2026년 2분기 도금 및 야금 기술 청년 엔지니어 양성 프로그램",
+        "excerpt": "최신 실험실 접근 기회와 고정밀 전기도금 분야 최고 전문가로부터의 학습, 라인 담당 엔지니어로 성장하는 경력 개발 경로를 제공합니다.",
+        "author": "인사팀",
+        "imageAlt": "HANIN 공장의 도금 및 야금 기술 청년 엔지니어 양성 프로그램(예시 이미지)"
+      }
+    }
+  }
+}

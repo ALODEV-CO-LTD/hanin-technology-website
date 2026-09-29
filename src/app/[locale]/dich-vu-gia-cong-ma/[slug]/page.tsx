@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
 import Breadcrumb from "@/components/dich-vu/Breadcrumb";
 import DetailHero from "@/components/dich-vu/DetailHero";
 import DetailOverview from "@/components/dich-vu/DetailOverview";
@@ -20,7 +21,8 @@ export async function generateMetadata({
   params: Promise<PageParams>;
 }): Promise<Metadata> {
   const { slug } = await params;
-  const service = getServiceBySlug(slug) ?? getServiceBySlug(DETAIL_TEMPLATE_SLUG);
+  const t = await getTranslations("DichVu");
+  const service = getServiceBySlug(t, slug) ?? getServiceBySlug(t, DETAIL_TEMPLATE_SLUG);
 
   return {
     title: `${service?.title ?? "Dịch Vụ Gia Công Mạ"} | HANIN TECHNOLOGY VIỆT NAM`,
@@ -36,17 +38,19 @@ export default async function DichVuChiTietPage({
   params: Promise<PageParams>;
 }) {
   const { slug } = await params;
+  const t = await getTranslations("DichVu");
+  const tNav = await getTranslations("Nav");
   // Hiện tại mới có 1 bộ nội dung chi tiết mẫu (Mạ Niken hóa học - ENP).
   // Mọi slug đều hiển thị nội dung này tạm thời cho tới khi có dữ liệu thật của từng dịch vụ.
-  const service = getServiceBySlug(slug) ?? getServiceBySlug(DETAIL_TEMPLATE_SLUG);
+  const service = getServiceBySlug(t, slug) ?? getServiceBySlug(t, DETAIL_TEMPLATE_SLUG);
 
   return (
     <div className="max-w-[1280px] mx-auto px-margin py-space-lg flex flex-col w-full">
       <Breadcrumb
         items={[
-          { label: "Trang Chủ", href: "/" },
-          { label: "Dịch Vụ Gia Công Mạ", href: "/dich-vu-gia-cong-ma" },
-          { label: service?.title.toUpperCase() ?? "CHI TIẾT DỊCH VỤ" },
+          { label: tNav("trangChu"), href: "/" },
+          { label: t("breadcrumbCategory"), href: "/dich-vu-gia-cong-ma" },
+          { label: service?.title.toUpperCase() ?? t("breadcrumbDetailFallback") },
         ]}
       />
       <DetailHero />

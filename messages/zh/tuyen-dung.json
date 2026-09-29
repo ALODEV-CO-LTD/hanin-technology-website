@@ -1,0 +1,217 @@
+{
+  "TuyenDung": {
+    "PageHero": {
+      "breadcrumbHome": "首页",
+      "breadcrumbCurrent": "招聘信息",
+      "statusBadge": "人才招聘专区 // 状态：正在招募中",
+      "titlePrefix": "职业",
+      "titleHighlight": "发展机会",
+      "companyName": "HANIN TECHNOLOGY VIỆT NAM",
+      "description": "面向国际标准的机械加工与金属表面处理产线，诚聘工程师及生产人员。",
+      "standardLabel": "作业标准",
+      "standardValue": "ISO 与 5S 改善",
+      "benefitsLabel": "薪酬福利",
+      "benefitsValue": "晋升路径清晰",
+      "developmentLabel": "职业发展",
+      "developmentValue": "一对一带教培训",
+      "factoryLabel": "生产基地",
+      "factoryValue": "广明工业区",
+      "imageAlt": "HANIN TECHNOLOGY 高科技自动化电镀车间（示意图，将替换为实际照片）",
+      "imageBadgeTag": "自动化生产线",
+      "imageBadgeTitle": "高精密电镀生产综合体",
+      "imageBadgeLab": "高科技实验室",
+      "floatingBadgeTitle": "100% 标准福利保障",
+      "floatingBadgeSubtitle": "24/7 保险 & 员工通勤班车"
+    },
+    "WhyHanin": {
+      "title": "在 HANIN 打造职业发展基石",
+      "description": "高科技生产环境，严格的技术与安全纪律，为每个岗位规划清晰的专业发展路径。",
+      "pillar1": {
+        "tag": "支柱 01 // 工业 4.0",
+        "title": "安全、现代化的工作环境",
+        "desc": "厂房符合 ISO 9001 与 ISO 14001 标准，封闭式 PLC 自动电镀产线，配备齐全劳保设施及独立检测区域。",
+        "metricLabel": "安全指标",
+        "metricValue": "连续 1200+ 天零事故"
+      },
+      "pillar2": {
+        "tag": "支柱 02 // 成长路径",
+        "title": "职业发展与晋升机会",
+        "desc": "明确的晋升通道，可选择技术专家路线或管理路线。依据工作绩效及改善提案定期进行绩效评估。",
+        "metricLabel": "定期绩效评估",
+        "metricValue": "每年 2 次"
+      },
+      "pillar3": {
+        "tag": "支柱 03 // 技术转移",
+        "title": "技术培训与技术转移",
+        "desc": "由资深冶金专家提供内部培训，涵盖 X 射线荧光光谱（XRF）检测实操、精益六西格玛、改善课程及 SCADA 自动化流程。",
+        "metricLabel": "人均年培训时数",
+        "metricValue": "每年 80 小时"
+      },
+      "pillar4": {
+        "tag": "支柱 04 // 全面薪酬",
+        "title": "企业文化与福利待遇",
+        "desc": "按能力计薪，享有生产及项目绩效奖金、健康保险、河内至美灵通勤班车、厂内工作餐及年度团建活动。",
+        "metricLabel": "通勤班车",
+        "metricValue": "河内市区路线"
+      }
+    },
+    "JobBoard": {
+      "title": "当前招聘职位",
+      "description": "HANIN 总部办公室及生产工厂招聘职位一览。",
+      "boardStatus": "在线职位管理系统 // 开放岗位 {count} 个",
+      "searchPlaceholder": "搜索职位名称、技术职称或关键词（例如：PLC、研发、品质、机械）……",
+      "departmentLabel": "部门",
+      "typeLabel": "工作形式",
+      "locationLabel": "工作地点",
+      "resultsLabel": "筛选结果：",
+      "resultsCount": "{count} 个可申请职位",
+      "resetFilters": "重置筛选条件",
+      "deadlineLabel": "截止日期：",
+      "applyNow": "立即申请",
+      "noResults": "未找到符合当前筛选条件的职位，请尝试其他关键词。",
+      "closeModal": "关闭",
+      "fullNameLabel": "姓名 *",
+      "fullNamePlaceholder": "例如：阮文安",
+      "phoneLabel": "联系电话 *",
+      "phonePlaceholder": "09xx xxx xxx",
+      "emailLabel": "邮箱 *",
+      "emailPlaceholder": "ten@email.com",
+      "experienceLabel": "工作年限",
+      "experienceOptions": {
+        "fresh": "应届毕业生 / 不足 1 年",
+        "one_two": "1 - 2 年工作经验",
+        "three_five": "3 - 5 年工作经验",
+        "above_five": "5 年以上工作经验"
+      },
+      "cvLabel": "上传简历（PDF、DOCX）*",
+      "cvDropText": "拖拽文件或点击选择简历",
+      "cvSizeNote": "文件大小不超过 15MB（.pdf、.doc、.docx）",
+      "messageLabel": "留言 / 自我介绍",
+      "messagePlaceholder": "简要说明您的技术专长或职业期望……",
+      "cancelButton": "取消",
+      "submitButton": "提交申请",
+      "submitSuccess": "✓ 您的求职申请已成功提交。HANIN 人力资源部将在 48 个工作小时内与您联系！"
+    },
+    "WorkEnvironment": {
+      "title": "真实工作环境实景展示",
+      "description": "HANIN TECHNOLOGY VIỆT NAM 工厂实景：自动化产线严格按照劳动纪律运行。",
+      "mainImageAlt": "HANIN 中央自动电镀产线操作与运行区域（示意图，将替换为实际照片）",
+      "mainBadge": "01 号生产车间",
+      "mainTitle": "中央自动电镀产线操作与运行区域",
+      "mainDesc": "封闭式镍镀 & 硬铬电镀产线，配备废气处理系统及 PLC 微控制器自动监控。",
+      "secondaryImageAlt": "达到高品质出口标准的电镀后机械零件成品（示意图，将替换为实际照片）",
+      "secondaryBadge": "计量与品质检验",
+      "secondaryTitle": "电镀后精密机械零件成品",
+      "secondaryDesc": "使用 XRF 光谱探头检测镀层厚度（微米级）",
+      "labTitle": "微观理化检测实验室",
+      "labDesc": "配备 NSS/AASS 加速耐腐蚀盐雾试验箱、镀层附着力测试仪及 Hull Cell 溶液分析设备。",
+      "labFooter": "100% 出厂批次均附有 CoC 及 RoHS 证书"
+    },
+    "ApplicationCta": {
+      "title": "加入 HANIN 团队",
+      "description": "投递您的简历（CV）或直接联系人力资源招聘部门，获取适合您的职位咨询，加入 HANIN 工程师与表面处理专家团队。",
+      "emailLabel": "简历接收邮箱",
+      "hotlineLabel": "招聘热线",
+      "quickApplyTitle": "快速投递简历",
+      "quickApplyDescription": "即使您感兴趣的职位尚未正式发布招聘信息，HANIN 依然接受候选人投递简历。",
+      "viewJobsCta": "查看招聘职位",
+      "sendCvCta": "直接发送简历（邮件）",
+      "securityNote": "候选人信息按照 ISO 27001 标准严格保密"
+    },
+    "jobs": {
+      "0": {
+        "title": "化学工程师 / 金属电镀技术工程师",
+        "departmentLabel": "技术与研发部",
+        "typeLabel": "全职",
+        "locationLabel": "河内广明工业区",
+        "salary": "薪资：1800 - 2500 万越盾",
+        "tags": {
+          "0": "工作经验：2 年以上",
+          "1": "PLC 自动电镀槽及 ENP 化学镀",
+          "2": "Hull Cell 溶液浓度分析"
+        },
+        "deadline": "2026年4月30日"
+      },
+      "1": {
+        "title": "品质管理组长（QA/QC Leader）",
+        "departmentLabel": "品质管理部（QA/QC）",
+        "typeLabel": "全职",
+        "locationLabel": "河内广明工业区",
+        "salary": "薪资：2000 - 3000 万越盾",
+        "tags": {
+          "0": "持有 ISO 9001 / IATF 16949 证书",
+          "1": "XRF 检测及盐雾试验（Salt Spray）",
+          "2": "工作经验：3-5 年"
+        },
+        "deadline": "2026年5月15日"
+      },
+      "2": {
+        "title": "自动电镀产线操作技术员",
+        "departmentLabel": "生产与运营部",
+        "typeLabel": "轮班制（三班倒）",
+        "locationLabel": "河内广明工业区",
+        "salary": "薪资：1000 - 1500 万越盾 + 班次津贴",
+        "tags": {
+          "0": "机械/电气专业中专或大专毕业",
+          "1": "SCADA 系统及自动吊运设备监控"
+        },
+        "deadline": "长期招募"
+      },
+      "3": {
+        "title": "机电维护及 PLC 系统工程师",
+        "departmentLabel": "机电维护部（Maintenance）",
+        "typeLabel": "全职",
+        "locationLabel": "河内广明工业区",
+        "salary": "薪资：1500 - 2200 万越盾",
+        "tags": {
+          "0": "西门子 S7-1200 / 三菱 PLC",
+          "1": "整流电源及循环过滤系统维护"
+        },
+        "deadline": "2026年4月25日"
+      },
+      "4": {
+        "title": "B2B 项目业务专员（机械加工及配套服务）",
+        "departmentLabel": "业务拓展部",
+        "typeLabel": "全职",
+        "locationLabel": "河内办公室及工厂",
+        "salary": "底薪 + 项目提成奖金",
+        "tags": {
+          "0": "英语或韩语/日语沟通能力",
+          "1": "拓展 FDI / OEM 客户网络"
+        },
+        "deadline": "2026年5月10日"
+      },
+      "5": {
+        "title": "机械 / 冶金技术实习生",
+        "departmentLabel": "技术与工艺部",
+        "typeLabel": "实习生（3 - 6 个月）",
+        "locationLabel": "河内广明工业区",
+        "salary": "实习补助 + 午餐及交通津贴",
+        "tags": {
+          "0": "由工厂总工程师一对一带教",
+          "1": "实习期满有机会转为正式员工"
+        },
+        "deadline": "常年招募"
+      }
+    },
+    "departmentOptions": {
+      "all": "全部部门",
+      "engineering": "技术与研发（R&D）",
+      "production": "生产与运营",
+      "qc": "品质管理（QC/QA）",
+      "maintenance": "机电维护",
+      "sales": "B2B 业务与项目拓展"
+    },
+    "typeOptions": {
+      "all": "全部工作形式",
+      "fulltime": "全职",
+      "shift": "轮班制（三班倒）",
+      "intern": "技术实习生"
+    },
+    "locationOptions": {
+      "all": "全部地点",
+      "factory": "河内广明工业区工厂",
+      "office": "河内办公室及工厂"
+    }
+  }
+}

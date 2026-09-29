@@ -1,22 +1,23 @@
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 import { getRelatedServices } from "@/lib/services-data";
 
 export default function RelatedServices({ currentSlug }: { currentSlug: string }) {
-  const related = getRelatedServices(currentSlug, 3);
+  const t = useTranslations("DichVu");
+  const tr = useTranslations("DichVu.RelatedServices");
+  const related = getRelatedServices(t, currentSlug, 3);
 
   return (
     <section className="w-full mb-space-lg">
       <div className="flex items-center justify-between pb-space-sm mb-space-md flex-wrap gap-space-sm">
         <div>
-          <h3 className="text-headline-sm text-slate-900 tracking-tight uppercase font-bold">
-            CÁC DỊCH VỤ GIA CÔNG MẠ CHUYÊN NGÀNH BỔ TRỢ
-          </h3>
+          <h3 className="text-headline-sm text-slate-900 tracking-tight uppercase font-bold">{tr("heading")}</h3>
         </div>
         <Link
           href="/dich-vu-gia-cong-ma"
           className="text-label-technical text-steel-600 uppercase font-semibold flex items-center gap-1 hover:underline"
         >
-          <span>XEM TOÀN BỘ DANH MỤC</span>
+          <span>{tr("viewAll")}</span>
           <span className="material-symbols-outlined text-[16px]">chevron_right</span>
         </Link>
       </div>

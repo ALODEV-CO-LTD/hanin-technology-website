@@ -1,0 +1,124 @@
+{
+  "TinTuc": {
+    "FeaturedArticle": {
+      "heading": "技术焦点",
+      "badge": "FEATURED ARTICLE",
+      "readArticle": "阅读全文"
+    },
+    "NewsBreadcrumb": {
+      "home": "首页",
+      "news": "新闻资讯",
+      "cmsPortal": "内容管理平台：行业洞察 // 状态：定期更新",
+      "realtimeSync": "R&D 实时同步"
+    },
+    "NewsFilterBar": {
+      "searchPlaceholder": "搜索技术专题...",
+      "showingCount": "显示 6 / 48 篇文章"
+    },
+    "NewsGrid": {
+      "readMore": "阅读更多"
+    },
+    "NewsInquiryCta": {
+      "titlePrefix": "有关于",
+      "titleHighlight": "产品 / 项目的问题？",
+      "description": "HANIN 的化学与金属表面处理工程师团队随时解答技术疑问、优化工艺流程，并为您的项目提供合适的电镀方案咨询。",
+      "hotlineLabel": "热线：",
+      "emailLabel": "邮箱：",
+      "ctaContact": "联系 HANIN",
+      "ctaQuote": "获取项目报价"
+    },
+    "NewsIntro": {
+      "titlePrefix": "新闻与",
+      "titleHighlight": "技术简报",
+      "titleSuffix": "资讯",
+      "description": "了解 HANIN 工厂的企业动态、金属表面处理技术、质量检测标准及最新技术资讯。",
+      "archiveLabel": "资料库",
+      "archiveValue": "68+ 篇文章",
+      "auditLabel": "专项技术审核",
+      "auditValue": "5 大技术专栏"
+    },
+    "NewsPagination": {
+      "showingPrefix": "当前显示",
+      "pageInfo": "第 1 / 8 页",
+      "totalInfo": "（共计 48 篇专业文章）",
+      "prev": "上一页",
+      "next": "下一页"
+    },
+    "categories": {
+      "all": "全部",
+      "congTy": "企业动态",
+      "congNghe": "技术",
+      "sanXuat": "生产",
+      "chatLuong": "质量",
+      "tuyenDung": "招聘"
+    },
+    "featured": {
+      "tag": "焦点 // 电镀技术",
+      "category": "技术",
+      "date": "2026年4月18日",
+      "readTime": "阅读时长 5 分钟",
+      "title": "化学镀镍（ENP）技术在高负载工业齿轮及机器人零部件制造中的应用",
+      "excerpt": "深入分析深螺纹槽内均匀镀层厚度控制方案，公差严格控制在 ±0.2 µm，依据 ASTM B733 标准优化耐磨性能并消除氢脆现象。",
+      "metrics": {
+        "0": { "label": "厚度公差" },
+        "1": { "label": "维氏硬度" },
+        "2": { "label": "盐雾试验", "unit": "小时" }
+      },
+      "location": "4号自动电镀生产线 // 广明工业区",
+      "liveLabel": "HANIN 研发中心",
+      "author": "研发技术部",
+      "authorRole": "Hanin Technology VN",
+      "imageAlt": "现代化工厂内的自动电镀生产线，翠绿色化学槽液，机械臂吊装汽车底盘零件（示意图）"
+    },
+    "articles": {
+      "0": {
+        "categoryLabel": "质量",
+        "readTime": "阅读时长 4 分钟",
+        "title": "采用 X 射线荧光光谱（XRF）技术的镀层厚度检测流程通过 ISO/IEC 17025 认证",
+        "excerpt": "无损检测（NDT）技术助力精准测定复杂工件表面镍磷合金镀层厚度及成分比例，误差低于 0.05 µm。",
+        "author": "研发质量部",
+        "imageAlt": "高精度电子卡尺测量精密齿轮，加工钢制零件置于质量检测实验室工作台上（示意图）"
+      },
+      "1": {
+        "categoryLabel": "生产",
+        "readTime": "阅读时长 6 分钟",
+        "title": "广明工业区 PLC 自动化锌镍合金电镀槽系统运行，生产周期缩短 40%",
+        "excerpt": "双行程机械臂同步升级表面处理生产线，自动平衡电镀槽浓度并实现数字化脉冲电流控制。",
+        "author": "生产运营部",
+        "imageAlt": "工业生产线上 PLC 自动化锌镍合金电镀槽（示意图）"
+      },
+      "2": {
+        "categoryLabel": "企业动态",
+        "readTime": "阅读时长 3 分钟",
+        "title": "HANIN 接待日韩 B2B 制造企业代表团参观生产基地",
+        "excerpt": "评估汽车零部件及半导体设备供应链能力，巩固符合国际 ASTM 标准的镀镍与电镀解决方案出口承诺。",
+        "author": "对外事务部",
+        "imageAlt": "HANIN Technology 越南总部现代化玻璃外观，B2B 企业代表团参观现场（示意图）"
+      },
+      "3": {
+        "categoryLabel": "技术",
+        "readTime": "阅读时长 7 分钟",
+        "title": "采用军规 III 型硬质阳极氧化技术处理航空设备铝制表面",
+        "excerpt": "低温电解工艺生成硬度超过 65 HRC 的氧化铝层，具备高绝缘性能，可耐受严苛海洋盐雾环境。",
+        "author": "研发实验室",
+        "imageAlt": "硬质阳极氧化技术处理航空零部件铝制表面（示意图）"
+      },
+      "4": {
+        "categoryLabel": "生产",
+        "readTime": "阅读时长 5 分钟",
+        "title": "镀后除氢（De-Embrittlement）解决方案保障高强度螺栓疲劳强度",
+        "excerpt": "在密闭退火炉内于 200°C ± 5°C 严格控温强制加热 4-24 小时，彻底防止氢渗透导致的脆性断裂。",
+        "author": "热处理部门",
+        "imageAlt": "女性技术人员身穿防护服检查悬挂于化学槽上方的电镀零件（示意图）"
+      },
+      "5": {
+        "categoryLabel": "招聘",
+        "readTime": "阅读时长 3 分钟",
+        "title": "HANIN 工厂 2026 年第二季度电镀与冶金技术青年工程师培训计划",
+        "excerpt": "深入接触现代化实验室，向高精密电镀领域顶尖专家学习，并规划产线负责工程师发展路径。",
+        "author": "人力资源部",
+        "imageAlt": "HANIN 工厂电镀与冶金技术青年工程师培训计划（示意图）"
+      }
+    }
+  }
+}

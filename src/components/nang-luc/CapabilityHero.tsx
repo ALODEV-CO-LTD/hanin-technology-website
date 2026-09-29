@@ -1,6 +1,9 @@
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 export default function CapabilityHero() {
+  const t = useTranslations("NangLuc.CapabilityHero");
+
   return (
     <section className="relative w-full overflow-hidden bg-slate-100 -mt-20 pt-28 pb-16 border-b border-slate-200">
       <div
@@ -17,10 +20,10 @@ export default function CapabilityHero() {
         <div className="flex flex-wrap items-center justify-between gap-3 pb-6">
           <div className="flex items-center gap-1.5 text-xs font-semibold text-slate-500 uppercase tracking-widest">
             <Link className="hover:text-steel-600 transition-colors" href="/">
-              Trang chủ
+              {t("breadcrumbHome")}
             </Link>
             <span className="text-slate-300">/</span>
-            <span className="text-steel-600 font-semibold">Năng lực sản xuất</span>
+            <span className="text-steel-600 font-semibold">{t("breadcrumbCurrent")}</span>
           </div>
           <div className="flex items-center gap-4">
             <span className="text-xs font-semibold text-slate-600 bg-white border border-slate-200 px-3 py-1 rounded shadow-sm">
@@ -35,12 +38,9 @@ export default function CapabilityHero() {
 
         <div className="max-w-3xl pt-4">
           <h1 className="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight uppercase mb-4">
-            NĂNG LỰC SẢN XUẤT
+            {t("title")}
           </h1>
-          <p className="text-base md:text-lg text-slate-600 max-w-2xl leading-relaxed">
-            Hệ sinh thái nhà xưởng chuẩn hóa, chuỗi dây chuyền mạ tự động điều khiển PLC SCADA và phòng thí nghiệm
-            kiểm định vi mô đạt chuẩn quốc tế của HANIN TECHNOLOGY.
-          </p>
+          <p className="text-base md:text-lg text-slate-600 max-w-2xl leading-relaxed">{t("description")}</p>
         </div>
 
         <div className="flex flex-wrap items-center gap-4 pt-8">
@@ -48,19 +48,19 @@ export default function CapabilityHero() {
             className="inline-flex items-center gap-2 px-6 py-3 bg-steel-600 hover:bg-steel-700 text-white text-xs font-bold uppercase tracking-wider rounded transition-all active:scale-[0.99] shadow-sm"
             href="#he-thong-nha-may"
           >
-            KHÁM PHÁ NHÀ MÁY →
+            {t("ctaExplore")}
           </a>
           <a
             className="inline-flex items-center gap-2 px-6 py-3 bg-white hover:bg-slate-50 text-slate-800 border border-slate-200 text-xs font-bold uppercase tracking-wider rounded transition-all shadow-sm"
             href="#day-chuyen"
           >
-            DÂY CHUYỀN SẢN XUẤT
+            {t("ctaLines")}
           </a>
           <a
             className="inline-flex items-center gap-2 px-6 py-3 bg-white hover:bg-slate-50 text-slate-800 border border-slate-200 text-xs font-bold uppercase tracking-wider rounded transition-all shadow-sm"
             href="#kiem-nghiem"
           >
-            PHÒNG ĐO KIỂM QA/QC
+            {t("ctaQa")}
           </a>
         </div>
       </div>

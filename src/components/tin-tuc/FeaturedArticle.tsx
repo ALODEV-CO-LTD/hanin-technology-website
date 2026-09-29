@@ -1,7 +1,10 @@
-import { FEATURED_ARTICLE } from "@/lib/news-data";
+import { useTranslations } from "next-intl";
+import { getFeaturedArticle } from "@/lib/news-data";
 
 export default function FeaturedArticle() {
-  const article = FEATURED_ARTICLE;
+  const t = useTranslations("TinTuc");
+  const tc = useTranslations("TinTuc.FeaturedArticle");
+  const article = getFeaturedArticle(t);
 
   return (
     <section className="w-full bg-slate-50 py-space-xl">
@@ -10,11 +13,11 @@ export default function FeaturedArticle() {
           <div className="flex items-center gap-space-xs">
             <span className="w-2 h-4 bg-steel-600 rounded-sm" />
             <span className="text-title-md uppercase tracking-wider text-slate-900 font-bold">
-              TIÊU ĐIỂM KỸ THUẬT
+              {tc("heading")}
             </span>
           </div>
           <span className="text-label-technical text-slate-500 uppercase tracking-wider">
-            FEATURED ARTICLE
+            {tc("badge")}
           </span>
         </div>
 
@@ -104,7 +107,7 @@ export default function FeaturedArticle() {
                 href="#"
                 className="inline-flex items-center gap-space-xs px-space-md py-space-sm bg-steel-600 text-white text-title-md rounded-lg shadow-sm hover:bg-steel-700 transition-all uppercase tracking-wider"
               >
-                <span>ĐỌC BÀI VIẾT</span>
+                <span>{tc("readArticle")}</span>
                 <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
               </a>
             </div>

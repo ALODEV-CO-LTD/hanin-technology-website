@@ -1,14 +1,17 @@
-import { PRODUCT_DETAIL_CONTENT } from "@/lib/products-data";
-
-const { overviewParagraphs, achievements, specSheet } = PRODUCT_DETAIL_CONTENT;
+import { useTranslations } from "next-intl";
+import { getProductDetailContent } from "@/lib/products-data";
 
 export default function ProductOverview() {
+  const tp = useTranslations("SanPham");
+  const t = useTranslations("SanPham.ProductOverview");
+  const { overviewParagraphs, achievements, specSheet } = getProductDetailContent(tp);
+
   return (
     <section className="w-full bg-white py-space-xl border-b border-slate-200">
       <div className="max-w-7xl mx-auto px-6">
         <div className="mb-space-lg">
           <h2 className="text-headline-lg text-slate-900 uppercase tracking-tight">
-            TỔNG QUAN DỰ ÁN &amp; NĂNG LỰC ĐÁP ỨNG
+            {t("title")}
           </h2>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
@@ -40,9 +43,9 @@ export default function ProductOverview() {
             <div className="p-space-sm bg-slate-50 border-b border-slate-200 flex items-center justify-between">
               <div className="flex items-center gap-space-xs text-label-technical uppercase tracking-wider text-slate-900">
                 <span className="material-symbols-outlined text-steel-600 text-[18px]">terminal</span>
-                <span>BẢNG THÔNG SỐ KỸ THUẬT (CMS SPEC SHEET)</span>
+                <span>{t("specSheetTitle")}</span>
               </div>
-              <span className="font-mono text-label-sm text-sky-700 font-semibold">REV: 2.4</span>
+              <span className="font-mono text-label-sm text-sky-700 font-semibold">{t("specSheetRevision")}</span>
             </div>
             <div className="divide-y divide-slate-100 text-label-technical">
               {specSheet.map((row) => (
@@ -63,9 +66,9 @@ export default function ProductOverview() {
               ))}
             </div>
             <div className="p-space-sm bg-slate-50 border-t border-slate-200 flex items-center justify-between text-label-sm">
-              <span className="text-slate-500">TRẠNG THÁI KIỂM ĐỊNH LÔ HÀNG:</span>
+              <span className="text-slate-500">{t("batchStatusLabel")}</span>
               <span className="px-2 py-0.5 bg-emerald-50 border border-emerald-300 text-emerald-700 font-mono font-semibold rounded">
-                100% ĐẠT TIÊU CHUẨN
+                {t("batchStatusValue")}
               </span>
             </div>
           </div>

@@ -1,22 +1,27 @@
 import Link from "next/link";
-import { PLATING_SERVICES } from "@/lib/services-data";
+import { useTranslations } from "next-intl";
+import { getServices } from "@/lib/services-data";
 
 export default function ServiceCategories() {
+  const t = useTranslations("DichVu");
+  const tc = useTranslations("DichVu.ServiceCategories");
+  const services = getServices(t);
+
   return (
     <section className="w-full mb-space-xl">
       <div className="flex items-center justify-between mb-space-md">
         <div>
           <h2 className="text-headline-sm md:text-headline-lg text-slate-900 uppercase font-bold">
-            CÁC CÔNG NGHỆ XI MẠ CỐT LÕI
+            {tc("heading")}
           </h2>
         </div>
         <span className="hidden md:inline-block text-label-sm text-slate-500 bg-slate-100 px-3 py-1.5 rounded">
-          {PLATING_SERVICES.length} NHÓM CÔNG NGHỆ ĐẠT CHUẨN Ô TÔ &amp; HÀNG KHÔNG
+          {services.length} {tc("badge")}
         </span>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
-        {PLATING_SERVICES.map((service) => (
+        {services.map((service) => (
           <div
             key={service.slug}
             className="bg-white border border-slate-200 rounded overflow-hidden shadow-sm flex flex-col group hover:-translate-y-1 hover:shadow-md transition-all"
@@ -29,7 +34,7 @@ export default function ServiceCategories() {
                 src={service.image}
               />
               <div className="absolute top-3 left-3 bg-slate-900/80 text-white px-2 py-0.5 rounded text-label-sm uppercase font-semibold">
-                {service.badge ?? `MÃ: ${service.code}`}
+                {service.badge ?? `${tc("codeLabel")}: ${service.code}`}
               </div>
             </div>
             <div className="p-space-md flex flex-col flex-1 justify-between gap-space-sm">
@@ -50,7 +55,7 @@ export default function ServiceCategories() {
                   href={`/dich-vu-gia-cong-ma/${service.slug}`}
                   className="text-steel-600 text-label-technical font-bold uppercase inline-flex items-center gap-1 hover:underline"
                 >
-                  Chi tiết <span className="material-symbols-outlined text-[14px]">arrow_forward</span>
+                  {tc("detailLink")} <span className="material-symbols-outlined text-[14px]">arrow_forward</span>
                 </Link>
               </div>
             </div>

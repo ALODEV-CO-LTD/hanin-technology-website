@@ -1,0 +1,167 @@
+{
+  "GioiThieu": {
+    "IntroHero": {
+      "imageAlt": "HANIN 工业工厂全景，包含现代化电镀车间区域（示意图，将由甲方提供实际图片替换）",
+      "breadcrumbHome": "首页",
+      "breadcrumbCurrent": "关于我们",
+      "title": "关于 HANIN",
+      "subtitle": "了解 HANIN TECHNOLOGY VIỆT NAM 的发展方向，以及服务工业客户的生产能力。"
+    },
+    "CompanyIntroduction": {
+      "imageAlt": "HANIN TECHNOLOGY VIỆT NAM 位于河内光明工业区的现代化厂区外观（示意图，将由甲方提供实际图片替换）",
+      "scaleBadge": "规模：工厂园区 // 光明工业区",
+      "coordBadge": "坐标 21.2031° N",
+      "areaBadge": "占地面积：12,000 平方米",
+      "heading": "携手满足工业电镀加工需求",
+      "paragraph1Strong": "HANIN TECHNOLOGY VIỆT NAM",
+      "paragraph1Rest": "是专注于金属电镀加工与精密机械表面处理领域的企业，服务于制造业、机械零部件及高技术组件等行业。",
+      "paragraph2": "[HANIN 官方企业介绍信息：发展历程、人员规模及面向国内外企业的表面加工发展方向。]",
+      "field": { "label": "经营领域", "value": "金属电镀加工", "note": "电镀与表面精饰处理" },
+      "target": { "label": "服务对象", "value": "工业客户", "note": "一级与二级 OEM/ODM 供应商" },
+      "location": { "label": "厂址", "value": "河内光明工业区", "note": "北部工业轴 660 号地块" }
+    },
+    "CompanyJourney": {
+      "heading": "发展历程",
+      "subtitle": "[HANIN 的历史信息及发展里程碑]",
+      "m1": {
+        "yearTag": "[创立年份]",
+        "phase": "第一阶段 // 奠定基础",
+        "title": "成立公司并建立技术规范",
+        "desc": "成立生产基地，建立金属电镀技术规范，并优化处理化学配方。"
+      },
+      "m2": {
+        "yearTag": "[发展年份]",
+        "phase": "第二阶段 // 扩建产线",
+        "title": "扩建自动化产线系统",
+        "desc": "扩建自动电镀生产线，并按照技术计量标准升级质量控制实验室。"
+      },
+      "m3": {
+        "yearTag": "[标准化年份]",
+        "phase": "第三阶段 // 国际标准化",
+        "title": "微米级检测认证与 B2B 接轨",
+        "desc": "达成微米级厚度检测标准，并与国际 B2B 客户的表面处理流程实现同步。"
+      },
+      "m4": {
+        "yearTag": "[现在与未来]",
+        "phase": "第四阶段 // 可持续生态体系",
+        "title": "值得信赖的电镀加工伙伴",
+        "desc": "扩大作为工业辅助生产链电镀加工伙伴的角色，致力于可持续标准与清洁技术。"
+      }
+    },
+    "ContactCta": {
+      "heading": "想进一步了解 HANIN？",
+      "subtitle": "联系 HANIN，探讨您的电镀加工需求及项目技术合作。",
+      "ctaPrimary": "联系 HANIN →",
+      "ctaSecondary": "获取报价"
+    },
+    "CoreStrengths": {
+      "heading": "HANIN 的核心优势",
+      "strengthLabel": "核心优势",
+      "production": {
+        "title": "生产能力",
+        "desc": "[生产能力信息：大规模电镀槽系统，能够以每日大批量组件持续满足工业订单需求。]",
+        "metricLabel": "指标：连续运行产能",
+        "metricValue": "供应稳定"
+      },
+      "technology": {
+        "title": "技术与设备",
+        "desc": "[技术信息：半自动及 PLC 全自动控制产线，按技术参数控制电流与电镀时间。]",
+        "metricLabel": "系统：PLC 自动化控制",
+        "metricValue": "电流整流精度 ±1%"
+      },
+      "quality": {
+        "title": "质量管控",
+        "desc": "[质量管控信息：使用 X 射线荧光测厚仪（XRF）进行微米级镀层厚度检测，并按 ASTM B117 标准进行盐雾测试。]",
+        "metricLabel": "精度：±0.1 µm XRF 检测仪",
+        "metricValue": "ASTM B117 盐雾测试"
+      },
+      "support": {
+        "title": "技术与支持",
+        "desc": "[技术支持信息：依据图纸提供电镀技术咨询，按各机械组件的技术要求优化工艺流程。]",
+        "metricLabel": "深度技术咨询",
+        "metricValue": "7×24 小时企业支持"
+      }
+    },
+    "DevelopmentDirection": {
+      "heading": "发展方向",
+      "subtitle": "[HANIN 发展方向的官方信息：提升镀层质量、规范技术流程并为供应链优化成本。]",
+      "precision": {
+        "title": "精准",
+        "desc": "[信息] 严控微米级厚度公差，严格遵循图纸技术参数。",
+        "note": "公差：厚度达到微米级"
+      },
+      "stability": {
+        "title": "稳定",
+        "desc": "[信息] 确保各生产批次质量均一，降低力学性能不良率。",
+        "note": "批次均一度：99.8% 标准"
+      },
+      "partnership": {
+        "title": "同行",
+        "desc": "[信息] 与供应链中的工业客户携手解决表面处理技术难题。",
+        "note": "合作：供应链战略合作伙伴"
+      }
+    },
+    "FactoryOverview": {
+      "heading": "工厂系统",
+      "subtitle": "探索 HANIN 的生产空间与运营系统。",
+      "mainImageAlt": "配备化学槽体与机械臂吊运系统的自动化工业电镀产线（示意图，将由甲方提供实际图片替换）",
+      "zone1Tag": "01 区：电镀生产线",
+      "zone1Title": "自动化工业电镀生产线",
+      "zone1Desc": "封闭式碱性、酸性电镀槽及表面钝化处理系统",
+      "zone2ImageAlt": "质量控制工程师在电镀槽旁操作 PLC 控制站（示意图，将由甲方提供实际图片替换）",
+      "zone2Tag": "02 区：实验室与质检部",
+      "zone2Title": "监控与协调控制室",
+      "zone3ImageAlt": "检验台上已完成电镀（锌、镍、铬）的机械零件特写（示意图，将由甲方提供实际图片替换）",
+      "zone3Tag": "03 区：夹具与检验",
+      "zone3Title": "量具检测与校验工作台",
+      "zone4ImageAlt": "自动化工业吊车沿悬挂式电镀生产线运输金属组件（示意图，将由甲方提供实际图片替换）",
+      "zone4Tag": "04 区：自动吊运系统",
+      "zone4Title": "自动化夹料吊运作业区",
+      "cta": "探索生产能力"
+    },
+    "ProfileDownloadCta": {
+      "heading": "探索 HANIN 企业能力手册",
+      "subtitle": "通过详细资料，深入了解 HANIN 的产品、工厂、设备、生产能力与质量管理体系。",
+      "cta": "下载企业能力手册（PDF）→",
+      "cardCompanyName": "HANIN VIỆT NAM",
+      "cardCatalogLabel": "企业目录",
+      "cardTitle": "HANIN 企业能力手册",
+      "cardVersion": "2026 版本 // 技术资料",
+      "cardTagline": "技术参数与代表性项目",
+      "cardFormat": "PDF 格式 • 14.8 MB",
+      "cardViewLabel": "查看文件"
+    },
+    "QualityStandardsPreview": {
+      "heading": "质量与标准",
+      "subtitle": "[HANIN 质量管理体系与认证的官方信息]",
+      "cta": "查看认证证书",
+      "iso9001": {
+        "tag": "[ ISO 认证 ]",
+        "title": "生产质量管理体系",
+        "desc": "ISO 9001:2015 标准：管控精密机械加工与电镀工艺流程。",
+        "standard": "标准：ISO 9001:2015",
+        "status": "已确认"
+      },
+      "iso14001": {
+        "tag": "[ ISO 认证 ]",
+        "title": "工业环境管理体系",
+        "desc": "ISO 14001:2015 标准：控制循环废水处理及工业化学废气排放。",
+        "standard": "标准：ISO 14001:2015",
+        "status": "已确认"
+      },
+      "rohs": {
+        "tag": "[ 国际标准 ]",
+        "title": "工艺与表面控制认证",
+        "desc": "[合规信息占位] 符合 RoHS 指令并通过 ASTM 盐雾测试。",
+        "standard": "标准：符合 RoHS 指令",
+        "status": "达标"
+      }
+    },
+    "CapabilitySnapshot": {
+      "equipment": { "label": "机械设备", "desc": "现代化设备", "note": "规范：已通过检定" },
+      "lines": { "label": "生产线", "desc": "运行中生产线", "note": "系统：自动旋转与悬挂式" },
+      "zones": { "label": "厂房分区", "desc": "生产作业区域", "note": "标准：封闭式洁净车间" },
+      "capacity": { "label": "月产能", "desc": "吨产品 / 月", "note": "产能：按重量计算" }
+    }
+  }
+}

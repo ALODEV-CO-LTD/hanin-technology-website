@@ -1,8 +1,11 @@
 import Link from "next/link";
-import { getSpotlightProject } from "@/lib/products-data";
+import { useTranslations } from "next-intl";
+import { getProducts, getSpotlightProject } from "@/lib/products-data";
 
 export default function FeaturedProjectSpotlight() {
-  const project = getSpotlightProject();
+  const t = useTranslations("SanPham");
+  const tc = useTranslations("SanPham.FeaturedProjectSpotlight");
+  const project = getSpotlightProject(getProducts(t));
 
   return (
     <section className="w-full bg-slate-100 border-y border-slate-200 py-space-xl overflow-hidden">
@@ -21,13 +24,12 @@ export default function FeaturedProjectSpotlight() {
                 {project.imageBadge}
               </div>
               <div className="px-space-sm py-space-xs bg-white/90 border border-slate-200 backdrop-blur-md rounded text-label-technical text-steel-600 flex items-center gap-1.5 font-bold shadow-sm">
-                <span className="w-1.5 h-1.5 rounded-full bg-steel-600 animate-ping" /> NHIỆT ĐỘ BỂ
-                MẠ: 58.4°C
+                <span className="w-1.5 h-1.5 rounded-full bg-steel-600 animate-ping" /> {tc("bathTemperature")}
               </div>
             </div>
             <div className="absolute bottom-space-md left-space-md right-space-md bg-white/95 border border-slate-200 backdrop-blur-md p-space-sm rounded flex items-center justify-between text-slate-500 text-label-technical shadow-sm">
-              <span className="font-semibold">CHU TRÌNH TỰ ĐỘNG PLC: BĂNG TẢI TREO</span>
-              <span className="text-slate-900 font-bold">500.000 SẢN PHẨM / THÁNG</span>
+              <span className="font-semibold">{tc("automatedCycle")}</span>
+              <span className="text-slate-900 font-bold">{tc("monthlyOutput")}</span>
             </div>
           </div>
           <div className="lg:col-span-5 p-space-lg lg:p-space-xl flex flex-col gap-space-md">
@@ -55,13 +57,13 @@ export default function FeaturedProjectSpotlight() {
                 href={`/san-pham-du-an/${project.slug}`}
                 className="inline-flex items-center justify-center px-space-md py-space-sm bg-steel-600 text-white text-label-technical uppercase tracking-wider rounded hover:bg-steel-700 active:scale-95 transition-all shadow-md font-bold"
               >
-                XEM CHI TIẾT DỰ ÁN NÀY →
+                {tc("ctaViewDetail")}
               </Link>
               <a
                 className="inline-flex items-center justify-center px-space-md py-space-sm bg-slate-50 hover:bg-slate-100 text-slate-800 border border-slate-200 text-label-technical uppercase tracking-wider rounded transition-colors font-bold"
                 href="#"
               >
-                TẢI CASE STUDY (PDF) ↓
+                {tc("ctaDownloadCaseStudy")}
               </a>
             </div>
           </div>

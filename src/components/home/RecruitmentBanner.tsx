@@ -1,6 +1,9 @@
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 export default function RecruitmentBanner() {
+  const t = useTranslations("Home.RecruitmentBanner");
+
   return (
     <section className="w-full py-space-lg bg-white border-y border-slate-200">
       <div className="max-w-[1280px] mx-auto px-margin">
@@ -8,24 +11,24 @@ export default function RecruitmentBanner() {
           <div className="absolute right-0 top-0 bottom-0 w-1/3 bg-[linear-gradient(to_right,transparent,rgba(43,90,122,0.06))] pointer-events-none" />
           <div className="flex flex-col gap-2 max-w-xl">
             <h2 className="text-headline-lg text-slate-900 font-bold">
-              Cùng xây dựng tương lai công nghiệp.
+              {t("title")}
             </h2>
             <p className="text-body-md text-slate-600">
-              Gia nhập đội ngũ kỹ thuật và vận hành tại HANIN.
+              {t("description")}
             </p>
           </div>
           <div className="flex flex-col sm:flex-row items-center gap-space-md shrink-0">
             <div className="flex flex-col items-center sm:items-end">
               <span className="text-headline-lg text-steel-600 font-bold">08</span>
               <span className="text-[11px] text-slate-500 uppercase font-semibold">
-                VỊ TRÍ ĐANG TUYỂN
+                {t("positionsLabel")}
               </span>
             </div>
             <Link
               href="/tuyen-dung"
               className="inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-steel-600 hover:bg-steel-700 text-white text-title-md uppercase tracking-wider rounded transition-all duration-150 shadow-md whitespace-nowrap"
             >
-              <span>XEM VỊ TRÍ TUYỂN DỤNG</span>
+              <span>{t("cta")}</span>
               <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
             </Link>
           </div>

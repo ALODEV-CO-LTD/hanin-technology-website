@@ -1,0 +1,55 @@
+{
+  "Nav": {
+    "trangChu": "홈",
+    "gioiThieu": "회사 소개",
+    "dichVu": "도금 가공 서비스",
+    "sanPham": "제품 및 프로젝트",
+    "nangLuc": "생산 능력",
+    "tinTuc": "뉴스",
+    "tuyenDung": "채용정보",
+    "lienHe": "문의하기",
+    "cta": "기술 견적 요청 →",
+    "menuOpen": "메뉴 열기"
+  },
+  "LanguageSwitcher": {
+    "label": "언어",
+    "vi": "Tiếng Việt",
+    "zh": "中文",
+    "ko": "한국어"
+  },
+  "Footer": {
+    "tagline": "정밀 도금 및 기계 가공",
+    "description": "HANIN TECHNOLOGY VIỆT NAM, 일본 및 국제 산업 표준에 따라 금속 표면을 정밀 처리하는 고급 도금 가공 공장입니다.",
+    "companyHeading": "기업 정보",
+    "companyLinks": {
+      "trangChu": "홈",
+      "gioiThieu": "회사 소개",
+      "nangLuc": "생산 능력",
+      "tinTuc": "뉴스 및 행사",
+      "tuyenDung": "채용 기회"
+    },
+    "serviceHeading": "서비스 및 제품",
+    "serviceLinks": {
+      "enp": "무전해 니켈 도금 (ENP)",
+      "hardChrome": "공업용 경질 크롬 도금",
+      "anodizing": "알루미늄 아노다이징 / 하드 아노다이징",
+      "zincNickel": "내식성 아연-니켈 합금 도금",
+      "specSheet": "마이크론 공차 규격표"
+    },
+    "contactHeading": "기술 문의처",
+    "addressLabel": "주소:",
+    "address": "베트남 하노이시 메린현 꽝민공단 CN-08",
+    "hotlineLabel": "핫라인:",
+    "hotline": "(+84) 24 3818 6868 / 0988 123 456",
+    "emailLabel": "이메일:",
+    "email": "sales@hanintech.vn / engineering@hanintech.vn",
+    "hoursLabel": "근무 시간:",
+    "hours": "월~토: 08:00 - 17:30 (24시간 당직)",
+    "zaloChat": "Zalo 기술 상담",
+    "googleMaps": "Google 지도 길찾기",
+    "statusLine": "도금 라인 및 CMM 측정 시스템: 정상 가동 중",
+    "copyright": "© 2026 HANIN TECHNOLOGY VIỆT NAM. All rights reserved. ISO 9001:2015 인증.",
+    "privacyPolicy": "개인정보 처리방침",
+    "termsOfService": "서비스 이용약관"
+  }
+}

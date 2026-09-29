@@ -1,30 +1,20 @@
+import { useTranslations } from "next-intl";
+
 const ITEMS = [
-  {
-    no: "01",
-    title: "THỬ NGHIỆM ĐỘ BỀN & ĂN MÒN (SALT SPRAY TEST)",
-    desc: "Buồng phun sương muối gia tốc ASTM B117, buồng thử nghiệm sốc nhiệt chu kỳ và thử nghiệm độ ẩm tuần hoàn đánh giá khả năng chống gỉ sét lên đến 1,000+ giờ đối với lớp mạ kẽm niken và crom.",
-  },
-  {
-    no: "02",
-    title: "ĐO ĐỘ DÀY BẰNG HUỲNH QUANG TIA X (X-RAY FLUORESCENCE)",
-    desc: "Thiết bị quang phổ XRF chuyên dụng đo chính xác độ dày lớp mạ đa lớp ở cấp độ micron không phá hủy mẫu, xác định chính xác tỷ lệ hàm lượng hợp kim trong lớp phủ bề mặt.",
-  },
-  {
-    no: "03",
-    title: "KIỂM SOÁT BỂ MẠ & NỒNG ĐỘ HÓA CHẤT",
-    desc: "Định kỳ phân tích hàm lượng nồng độ ion kim loại và chất phụ gia hàng ngày qua máy chuẩn độ điện thế tự động, máy đo quang phổ và hệ thống giám sát độ pH trực tuyến liên tục 24/7.",
-  },
-];
+  { key: "saltSpray", no: "01" },
+  { key: "xrf", no: "02" },
+  { key: "bathControl", no: "03" },
+] as const;
 
 export default function TestingAnalysis() {
+  const t = useTranslations("NangLuc.TestingAnalysis");
+
   return (
     <section className="w-full py-space-xl bg-slate-50 border-t border-slate-200" id="kiem-nghiem">
       <div className="max-w-[1280px] mx-auto px-margin w-full">
         <div className="mb-space-xl">
-          <h2 className="text-headline-lg text-slate-900 uppercase tracking-tight">PHÂN TÍCH &amp; KIỂM NGHIỆM</h2>
-          <p className="text-body-md text-slate-600 max-w-3xl mt-1">
-            Phòng phân tích hóa nghiệm và đo lường vi mô, kiểm định trước khi xuất kho theo quy chuẩn quốc tế.
-          </p>
+          <h2 className="text-headline-lg text-slate-900 uppercase tracking-tight">{t("sectionTitle")}</h2>
+          <p className="text-body-md text-slate-600 max-w-3xl mt-1">{t("sectionDescription")}</p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
@@ -32,7 +22,7 @@ export default function TestingAnalysis() {
           <div className="lg:col-span-6 relative rounded-lg overflow-hidden bg-slate-200 border border-slate-200 min-h-[380px] shadow-sm flex flex-col justify-end p-space-lg">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              alt="Ảnh cận cảnh chi tiết kim loại mạ điện hoàn thiện độ chính xác cao trên bàn kiểm tra công nghiệp (ảnh minh họa, sẽ thay bằng ảnh thực tế)"
+              alt={t("image.alt")}
               className="absolute inset-0 w-full h-full object-cover"
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuAC-ozXlS4iAi4T3wA_X-lfMFRZW6tBLRXa9hiO-_aiiAfyUkQ8VaPUa8EIi2vm-qZxixg0pq2T-tmuJ7mwR9Oi5C5cCOzm0cUAv_mj5VqOPDE2-FpS3whEh-TNU1x6XT7patK-2NZNtDRfCepVnV8NB_q7n1lh24xLceTFJ2xeUcVblzSkj0sC-xVpcv6ESoW197zbUsdcV2puaYUyDaS4LJTXmFeTs8dr52845R9MiW3QRPUFLO-ixg"
             />
@@ -48,16 +38,16 @@ export default function TestingAnalysis() {
           <div className="lg:col-span-6 flex flex-col gap-space-md">
             {ITEMS.map((item) => (
               <div
-                key={item.no}
+                key={item.key}
                 className="p-space-lg bg-white border border-slate-200 rounded-lg shadow-sm hover:border-steel-300 transition-colors"
               >
                 <div className="flex items-center gap-space-sm mb-space-xs">
                   <span className="w-7 h-7 rounded bg-steel-100 text-steel-600 flex items-center justify-center text-label-technical font-bold">
                     {item.no}
                   </span>
-                  <h3 className="text-headline-sm text-slate-900 uppercase">{item.title}</h3>
+                  <h3 className="text-headline-sm text-slate-900 uppercase">{t(`items.${item.key}.title`)}</h3>
                 </div>
-                <p className="text-body-sm text-slate-600 leading-relaxed pl-9">{item.desc}</p>
+                <p className="text-body-sm text-slate-600 leading-relaxed pl-9">{t(`items.${item.key}.desc`)}</p>
               </div>
             ))}
           </div>

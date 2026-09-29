@@ -1,10 +1,14 @@
+import { useTranslations } from "next-intl";
+
 export default function Hero() {
+  const t = useTranslations("Home.Hero");
+
   return (
     <section className="relative w-full min-h-[840px] xl:h-[880px] flex items-center overflow-hidden bg-slate-900">
       <div className="absolute inset-0 z-0">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          alt="Dây chuyền mạ tự động tại HANIN TECHNOLOGY (ảnh minh họa, sẽ thay bằng ảnh thực tế do Bên A cung cấp)"
+          alt={t("imageAlt")}
           className="w-full h-full object-cover object-center filter brightness-[0.55] contrast-[1.1]"
           src="https://lh3.googleusercontent.com/aida-public/AB6AXuAC-ozXlS4iAi4T3wA_X-lfMFRZW6tBLRXa9hiO-_aiiAfyUkQ8VaPUa8EIi2vm-qZxixg0pq2T-tmuJ7mwR9Oi5C5cCOzm0cUAv_mj5VqOPDE2-FpS3whEh-TNU1x6XT7patK-2NZNtDRfCepVnV8NB_q7n1lh24xLceTFJ2xeUcVblzSkj0sC-xVpcv6ESoW197zbUsdcV2puaYUyDaS4LJTXmFeTs8dr52845R9MiW3QRPUFLO-ixg"
         />
@@ -17,16 +21,15 @@ export default function Hero() {
         <div className="max-w-3xl flex flex-col gap-space-md pt-space-lg">
           <div className="flex flex-col gap-2">
             <h1 className="text-display-hero-mobile xl:text-display-hero text-white uppercase tracking-tight font-bold">
-              GIA CÔNG XI MẠ <span className="text-steel-500">CHÍNH XÁC</span>
+              {t("titlePrefix")} <span className="text-steel-500">{t("titleHighlight")}</span>
             </h1>
             <p className="text-headline-md text-slate-200 font-semibold tracking-tight">
-              Giải pháp gia công mạ kim loại cho công nghiệp hiện đại.
+              {t("subtitle")}
             </p>
           </div>
 
           <p className="text-body-lg text-slate-300 max-w-2xl leading-relaxed">
-            Gia công mạ kim loại và sản xuất phụ trợ cho khách hàng công
-            nghiệp, kiểm soát dung sai theo tiêu chuẩn kỹ thuật.
+            {t("description")}
           </p>
 
           <div className="flex flex-wrap items-center gap-space-md pt-space-sm">
@@ -34,14 +37,14 @@ export default function Hero() {
               href="#nang-luc"
               className="inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-steel-600 hover:bg-steel-700 text-white text-title-md uppercase tracking-wider rounded transition-all duration-150 shadow-lg shadow-steel-950/30"
             >
-              KHÁM PHÁ NĂNG LỰC
+              {t("ctaPrimary")}
               <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
             </a>
             <a
               href="#bao-gia"
               className="inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-white/10 hover:bg-white/20 text-white border border-white/20 text-title-md uppercase tracking-wider rounded backdrop-blur-sm transition-all duration-150 shadow-sm"
             >
-              YÊU CẦU TƯ VẤN →
+              {t("ctaSecondary")}
             </a>
           </div>
         </div>
@@ -49,23 +52,23 @@ export default function Hero() {
         <div className="pt-space-xl flex flex-col md:flex-row items-start md:items-end justify-between gap-space-md">
           <div className="flex items-center gap-space-lg text-label-technical text-slate-300">
             <div className="flex items-center gap-2">
-              <span className="text-steel-400">DÂY CHUYỀN:</span>
-              <span>TỰ ĐỘNG KHỨP 04</span>
+              <span className="text-steel-400">{t("lineLabel")}</span>
+              <span>{t("lineValue")}</span>
             </div>
             <div className="flex items-center gap-2">
-              <span className="text-steel-400">DUNG SAI:</span>
-              <span>±0.002 MM</span>
+              <span className="text-steel-400">{t("toleranceLabel")}</span>
+              <span>{t("toleranceValue")}</span>
             </div>
             <div className="hidden sm:flex items-center gap-2">
-              <span className="text-steel-400">ĐỊA ĐIỂM:</span>
-              <span>KCN QUANG MINH, HN</span>
+              <span className="text-steel-400">{t("locationLabel")}</span>
+              <span>{t("locationValue")}</span>
             </div>
           </div>
           <a
             href="#company-snapshot"
             className="inline-flex items-center gap-2 text-label-technical uppercase tracking-widest text-slate-300 hover:text-steel-400 transition-colors"
           >
-            <span>CUỘN XUỐNG KHÁM PHÁ</span>
+            <span>{t("scrollCta")}</span>
             <span className="material-symbols-outlined text-[16px] animate-bounce">
               arrow_downward
             </span>

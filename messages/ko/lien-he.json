@@ -1,0 +1,219 @@
+{
+  "LienHe": {
+    "BottomCta": {
+      "heading": "귀사의 기계 표면 품질을 한 단계 높일 준비가 되셨습니까",
+      "description": "HANIN TECHNOLOGY VIỆT NAM의 금속공학 엔지니어와 자동화 생산라인이 글로벌 파트너의 까다로운 기술 요구사항을 충족시켜 드립니다.",
+      "ctaPrimary": "지금 도면 보내기"
+    },
+    "ContactChannels": {
+      "heading": "본사 및 기술 문의 창구",
+      "subtitle": "국내 고객 및 수출 공급망을 위한 서비스",
+      "card1": {
+        "badge": "본사 & 공장",
+        "title": "HANIN TECHNOLOGY VIỆT NAM 유한회사",
+        "address": "베트남 하노이시 메린현 꽝민공단 CN-08 부지",
+        "footerLabel": "운영 규모",
+        "footerValue": "PLC 자동 도금 설비 및 ISO 17025 CMM 측정 연구실"
+      },
+      "card2": {
+        "badge": "접수 핫라인",
+        "title": "견적 및 공차 상담",
+        "quoteLabel": "견적 부서 핫라인:",
+        "engineerLabel": "금속공학 엔지니어 (CAD/사양 직접 상담):",
+        "engineerHotlineSuffix": "24시간 핫라인",
+        "footerLabel": "실시간 상담: Zalo / WhatsApp"
+      },
+      "card3": {
+        "badge": "전용 이메일",
+        "title": "입찰 서류 & RFQ 접수",
+        "salesLabel": "영업부 & 신규 주문:",
+        "engineeringLabel": "기술부, R&D & 테스트 부서:",
+        "footerText": "요청 시 PGP 암호화 채널 제공 가능"
+      },
+      "card4": {
+        "badge": "운영 교대",
+        "title": "사무 & 생산 부문",
+        "officeLabel": "기술 & 사무 부문:",
+        "officeValue": "월~토: 08:00 – 17:30",
+        "workshopLabel": "도금 공장 & CNC 운영 부문:",
+        "workshopValue": "생산 지시에 따라 3교대 연속(24시간) 운영",
+        "footerBadge": "생산라인 장애 24시간 대응"
+      }
+    },
+    "ContactFaq": {
+      "heading": "견적 접수 관련 자주 묻는 질문",
+      "subtitle": "기술 검토 절차, 도면 보안, 샘플 납품 역량에 대해 명확히 안내해 드립니다.",
+      "items": {
+        "0": {
+          "question": "1. HANIN의 상세 기술 견적 회신 소요 시간은 어느 정도입니까?",
+          "answer": "모재 및 도금 두께 등 필요한 정보가 모두 포함된 2D(PDF, DWG) 또는 3D(STEP) 도면을 보내주시면, HANIN은 영업일 기준 4시간 이내에 견적을 회신합니다. 특수 열처리나 까다로운 ASTM 규격이 필요한 복합 주문의 경우 최대 24시간이 소요됩니다."
+        },
+        "1": {
+          "question": "2. 웹사이트를 통해 접수 시 HANIN이 지원하는 기술 도면 형식은 무엇입니까?",
+          "answer": "HANIN은 .STEP, .STP, .DWG, .DXF, .IGES, .X_T, .PDF 파일 및 최대 50MB의 압축 파일(.ZIP/.RAR)을 직접 수신하며, SolidWorks, Inventor, AutoCAD, Creo와 호환됩니다. 용량이 더 큰 도면은 클라우드 링크를 engineering@hanintech.vn 으로 보내주시기 바랍니다."
+        },
+        "2": {
+          "question": "3. HANIN의 도면 보안(NDA) 정책은 어떻게 시행됩니까?",
+          "answer": "HANIN은 데이터를 접수하기 전이나 접수와 동시에 비밀유지계약(Non-Disclosure Agreement - NDA)을 체결합니다. 도면, 3D 모델 및 기술 사양은 격리된 사내 서버에 저장되며, 담당 엔지니어만 접근 권한을 가지고 제3자에게 공유되지 않습니다."
+        },
+        "3": {
+          "question": "4. 도금 부품의 최소 주문 수량(MOQ)은 얼마입니까?",
+          "answer": "MOQ는 유연하게 적용됩니다. HANIN은 R&D 샘플 1개부터 500~1,000개 단위의 시험 생산 로트, 그리고 대용량 도금조를 활용한 월 수십만 개 규모의 대량 공급 계약까지 모두 대응 가능합니다."
+        },
+        "4": {
+          "question": "5. 계약 체결 전 샘플링(Sampling) 가공을 지원합니까?",
+          "answer": "네, 지원합니다. 대량 주문이나 특수한 기술 요구사항이 있는 부품의 경우, HANIN은 샘플 도금(Sampling)을 진행하고 X선 형광 분석기(XRF)로 도금 두께를 측정하며, 접착력 테스트 및 염수 분무 테스트(Salt Spray Test, ASTM B117 기준)를 실시합니다. 대량 생산 전 승인을 위한 검사 성적서도 함께 제공해 드립니다."
+        }
+      }
+    },
+    "ContactHero": {
+      "breadcrumbHome": "홈",
+      "breadcrumbCurrent": "문의 & 기술 견적",
+      "slaStatus": "COMMUNICATION & B2B INQUIRY // SLA 응답 시간: 영업일 기준 4시간 이내",
+      "titlePrefix": "문의하기 &",
+      "titleHighlight": "기술 견적 요청",
+      "titleSuffix": "서비스",
+      "description": "HANIN TECHNOLOGY VIỆT NAM은 B2B 파트너, OEM/Tier-1 협력사 및 FDI 기업을 위해 금속 도금 기술 솔루션 상담, 정밀 기계 가공 및 견적 서비스를 제공합니다.",
+      "specHighlights": {
+        "nda": {
+          "label": "100% NDA 보안",
+          "desc": "도면 및 지식재산권에 대한 철저한 비밀유지를 약속드립니다"
+        },
+        "cad": {
+          "label": "2D/3D CAD 파일",
+          "desc": "STEP, DWG, DXF, IGES, PDF 형식 지원, 용량 50MB 이상 가능"
+        },
+        "consulting": {
+          "label": "금속공학 상담",
+          "desc": "재료 엔지니어가 두께, ASTM 규격 및 공차를 직접 상담해 드립니다"
+        }
+      },
+      "imageAlt": "HANIN TECHNOLOGY VIỆT NAM 공장 전경 (예시 이미지, 추후 실제 사진으로 교체 예정)",
+      "overlayLabel": "본사 & 공장",
+      "overlayLocation": "하노이 메린 꽝민공단",
+      "overlayCoordinates": "좌표: 21.2025° N, 105.7725° E"
+    },
+    "DirectChannels": {
+      "heading": "빠르고 직접적인 연결 채널",
+      "subtitle": "긴급 가공 요청, 수출 주문 또는 도금 생산라인 현장 방문 일정에 활용하실 수 있습니다.",
+      "channels": {
+        "hotline": {
+          "label": "긴급 핫라인 전화",
+          "title": "(+84) 24 3818 6868",
+          "desc": "30초 이내에 기술 솔루션 담당자와 직접 연결됩니다.",
+          "cta": "지금 바로 전화하기"
+        },
+        "zalo": {
+          "label": "Zalo B2B 공식 계정",
+          "title": "HANIN TECH OFFICIAL",
+          "desc": "24시간 기술 상담 채팅, 실물 샘플 사진을 빠르게 전송하고 초기 도면을 논의하세요.",
+          "cta": "Zalo 채팅창 열기"
+        },
+        "email": {
+          "label": "대용량 파일 이메일",
+          "title": "sales@hanintech.vn",
+          "desc": "Drive, OneDrive 또는 WeTransfer 링크가 첨부된 대형 프로젝트 입찰용입니다.",
+          "cta": "견적 요청 메일 작성"
+        },
+        "audit": {
+          "label": "공장 실사 신청",
+          "title": "공장 견학 / 실사",
+          "desc": "ISO 9001/14001 기준에 따라 공급업체 역량을 평가하는 전문가팀을 맞이합니다.",
+          "cta": "현장 방문 일정 예약"
+        }
+      }
+    },
+    "LocationMap": {
+      "heading": "공장 위치 & 컨테이너 화물차 이동 경로",
+      "description": "Hanin Tech 공장은 북부 산업 회랑의 중심부에 위치하여, 탕롱-노이바이 고속도로, 보반끼엣 도로 및 하노이 3순환도로를 통해 물류 교통 인프라와 편리하게 연결됩니다.",
+      "distances": {
+        "airport": {
+          "label": "노이바이 국제공항",
+          "value": "12km (약 15분)"
+        },
+        "seaport": {
+          "label": "하이퐁 국제항 (락후옌항)",
+          "value": "120km (약 1시간 45분)"
+        },
+        "industrialParks": {
+          "label": "박탕롱 / VSIP 박닌 공단",
+          "value": "18 - 35km"
+        }
+      },
+      "openMapsCta": "Google 지도 열기",
+      "downloadMapCta": "컨테이너 화물차 경로도 (PDF)",
+      "satelliteImageAlt": "하노이 메린 꽝민공단 위치를 보여주는 위성 이미지 (예시 이미지, 추후 실제 Google 지도 임베드로 교체 예정)",
+      "gateLabel": "HANIN 공장 1번 게이트",
+      "plotLabel": "꽝민공단 CN-08 부지",
+      "securityNote": "40피트 컨테이너 보안 게이트 24시간 접수",
+      "gridLabel": "GRID: HN-QMINH-08",
+      "elevationLabel": "해발고도: +14.2m ASL"
+    },
+    "RfqForm": {
+      "heading": "프로젝트 견적 요청 & 기술 자료 제출",
+      "securityBadge": "SSL 256비트 보안 표준 // NDA 보호",
+      "status": {
+        "submitting": "견적 요청을 전송하는 중입니다 (데모, 실제 백엔드 미연동)...",
+        "successTitle": "요청이 전송되었습니다 (데모, 실제 백엔드 미연동)",
+        "successDesc": "이는 1단계에 해당하는 인터페이스 시뮬레이션입니다. 실제 이메일/CRM 처리 기능은 계약의 다음 단계에서 HANIN이 구축할 예정입니다.",
+        "successResetCta": "새 요청 작성하기",
+        "errorMessage": "필수 항목(*)을 모두 입력하고 NDA 보안 서약에 동의한 후 전송해 주세요.",
+        "errorRetryCta": "다시 시도"
+      },
+      "step1": {
+        "heading": "고객 & 기업 연락처 정보",
+        "fullNameLabel": "담당자 성명",
+        "fullNamePlaceholder": "홍길동",
+        "companyLabel": "회사명 / 기업명",
+        "companyPlaceholder": "OO 기계 제작 주식회사...",
+        "emailLabel": "업무용 이메일 / 견적 수신 이메일",
+        "emailPlaceholder": "name@company.com",
+        "phoneLabel": "휴대전화 번호 / Zalo",
+        "phonePlaceholder": "0912 345 678"
+      },
+      "step2": {
+        "heading": "도금 가공 기술 & 공정 정보",
+        "projectNameLabel": "제품명 / 가공 프로젝트명",
+        "projectNamePlaceholder": "예: 유압 피스톤 샤프트, 구리 부스바, 알루미늄 금형 케이스",
+        "platingServiceLabel": "관심 있는 도금 서비스",
+        "platingOptions": {
+          "niken": "무전해 니켈 도금 (ENP)",
+          "crom": "공업용 경질 크롬 도금 (65-70 HRC)",
+          "kem": "아연 도금 & Cr3+ 패시베이션 (아연 / 아연-니켈)",
+          "anodize": "산업용 알루미늄 아노다이징 / III형 하드 아노다이징",
+          "bac": "전기 부품용 주석/은 전도성 도금 (부스바)",
+          "other": "요청에 따른 도금 & CNC 선삭/밀링 복합 가공"
+        },
+        "volumeLabel": "예상 생산량 & 납품 일정",
+        "volumeOptions": {
+          "sample": "R&D 샘플 가공 (1 - 50개)",
+          "pilot": "시험 생산 로트 (500 - 2,000개)",
+          "mass": "정기 대량 생산 (월 10,000개 이상)",
+          "oem": "OEM 전략적 파트너 계약 / 장기 협력"
+        },
+        "descriptionLabel": "공차, 도금 두께 & 테스트 규격 상세 설명",
+        "descriptionStandards": "지원 규격: ISO, ASTM, DIN, JIS",
+        "descriptionPlaceholder": "예: 모재 S45C 강재; 경질 크롬 도금 두께 30-40 µm; 요구 경도 ≥ 850 HV; 염수 분무 테스트(ASTM B117) 96시간 무부식 요구; 납품 장소: 박닌..."
+      },
+      "step3": {
+        "heading": "기술 도면 첨부 (2D / 3D CAD 파일)",
+        "dropzoneTitle": "도면 파일을 끌어다 놓거나 클릭하여 선택하세요",
+        "formatsPrefix": "지원 형식:",
+        "formatsSuffix": "(파일당 최대 50MB)",
+        "badgeVirusScan": "자동 바이러스 검사",
+        "badgeEncryption": "보안 서버 암호화",
+        "badgeNda": "자동 NDA 보안 적용",
+        "filesSelected": "{count}개 파일 선택됨:",
+        "noFileSelected": "선택된 파일이 없습니다. 도면을 이메일로 직접 보내실 수도 있습니다: sales@hanintech.vn",
+        "maxSize": "최대: 50MB"
+      },
+      "step4": {
+        "ndaConsentPrefix": "본인은",
+        "ndaConsentMiddle": "가 프로젝트의 타당성 검토 및 견적 산정을 위해 이 기술 정보를 처리하는 것에 동의합니다. HANIN은 엄격한 비밀유지계약",
+        "ndaConsentSuffix": "에 따라 데이터를 보호할 것을 약속드립니다.",
+        "submitCta": "기술 견적 요청 보내기",
+        "submittingCta": "전송 중..."
+      }
+    }
+  }
+}

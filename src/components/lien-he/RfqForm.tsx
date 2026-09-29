@@ -1,22 +1,10 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
+import { useTranslations } from "next-intl";
 
-const PLATING_OPTIONS = [
-  { value: "niken", label: "Mạ Niken hóa học không điện (Electroless Nickel - ENP)" },
-  { value: "crom", label: "Mạ Crom cứng kỹ thuật (Hard Chrome Plating - 65-70 HRC)" },
-  { value: "kem", label: "Mạ Kẽm & Thụ động hóa Cr3+ (Zinc / Zinc-Nickel)" },
-  { value: "anodize", label: "Anodizing nhôm kỹ thuật / Hard Anodize Type III" },
-  { value: "bac", label: "Mạ Thiếc / Bạc dẫn điện cho thiết bị điện - Busbar" },
-  { value: "other", label: "Gia công tổ hợp Mạ & Tiện Phay CNC theo yêu cầu" },
-];
-
-const VOLUME_OPTIONS = [
-  { value: "sample", label: "Gia công mẫu thử R&D (1 - 50 chi tiết)" },
-  { value: "pilot", label: "Lô sản xuất thử nghiệm (500 - 2.000 chi tiết)" },
-  { value: "mass", label: "Sản xuất hàng loạt định kỳ (>10.000 pcs/tháng)" },
-  { value: "oem", label: "Hợp đồng đối tác chiến lược OEM / Dài hạn" },
-];
+const PLATING_OPTION_VALUES = ["niken", "crom", "kem", "anodize", "bac", "other"] as const;
+const VOLUME_OPTION_VALUES = ["sample", "pilot", "mass", "oem"] as const;
 
 const inputClass =
   "w-full h-11 px-3.5 bg-slate-50 border border-slate-200 rounded text-slate-900 text-body-md focus:bg-white focus:outline-none focus:ring-2 focus:ring-steel-600 shadow-sm placeholder:text-slate-400";
@@ -41,13 +29,14 @@ const INITIAL_FORM: FormState = {
   email: "",
   phone: "",
   projectName: "",
-  platingService: PLATING_OPTIONS[0].value,
-  volume: VOLUME_OPTIONS[0].value,
+  platingService: PLATING_OPTION_VALUES[0],
+  volume: VOLUME_OPTION_VALUES[0],
   description: "",
   ndaAccepted: false,
 };
 
 export default function RfqForm() {
+  const t = useTranslations("LienHe.RfqForm");
   const [form, setForm] = useState<FormState>(INITIAL_FORM);
   const [files, setFiles] = useState<File[]>([]);
   const [status, setStatus] = useState<SubmitStatus>("idle");
@@ -99,12 +88,12 @@ export default function RfqForm() {
           <div className="bg-slate-900 text-white px-space-xl py-space-lg flex flex-col md:flex-row md:items-center justify-between gap-space-md">
             <div>
               <h2 className="text-headline-md font-bold uppercase tracking-tight text-white">
-                GỬI YÊU CẦU BÁO GIÁ &amp; TÀI LIỆU KỸ THUẬT DỰ ÁN
+                {t("heading")}
               </h2>
             </div>
             <div className="flex items-center gap-2 text-slate-300 text-label-sm bg-slate-800 px-3 py-1.5 rounded">
               <span className="material-symbols-outlined text-steel-500 text-[18px]">lock</span>
-              <span>Chuẩn bảo mật SSL 256-bit // NDA Protected</span>
+              <span>{t("securityBadge")}</span>
             </div>
           </div>
 
@@ -116,9 +105,7 @@ export default function RfqForm() {
                   <span className="material-symbols-outlined animate-spin text-[22px]">
                     progress_activity
                   </span>
-                  <span className="text-body-md font-semibold">
-                    Đang gửi yêu cầu báo giá (demo, chưa nối backend thật)...
-                  </span>
+                  <span className="text-body-md font-semibold">{t("status.submitting")}</span>
                 </div>
               )}
               {status === "success" && (
@@ -129,11 +116,10 @@ export default function RfqForm() {
                     </span>
                     <div>
                       <p className="text-title-md font-bold text-emerald-950">
-                        ĐÃ GỬI YÊU CẦU (DEMO, CHƯA NỐI BACKEND THẬT)
+                        {t("status.successTitle")}
                       </p>
                       <p className="text-body-md text-emerald-800 mt-1">
-                        Đây là bản mô phỏng giao diện thuộc Phase 1. Phần xử lý gửi email/CRM thật
-                        sẽ được HANIN triển khai ở giai đoạn tiếp theo của hợp đồng.
+                        {t("status.successDesc")}
                       </p>
                     </div>
                   </div>
@@ -142,7 +128,7 @@ export default function RfqForm() {
                     onClick={handleReset}
                     className="px-3 py-1.5 bg-emerald-600 hover:bg-emerald-700 text-white rounded text-label-sm font-semibold shrink-0"
                   >
-                    Tạo yêu cầu khác
+                    {t("status.successResetCta")}
                   </button>
                 </div>
               )}
@@ -150,17 +136,14 @@ export default function RfqForm() {
                 <div className="p-space-md bg-red-50 text-red-800 rounded border-l-4 border-red-600 flex items-center justify-between gap-3">
                   <div className="flex items-center gap-3">
                     <span className="material-symbols-outlined text-red-600 text-[24px]">error</span>
-                    <span className="text-body-md font-semibold">
-                      Vui lòng điền đầy đủ các trường bắt buộc (*) và xác nhận cam kết bảo mật NDA
-                      trước khi gửi.
-                    </span>
+                    <span className="text-body-md font-semibold">{t("status.errorMessage")}</span>
                   </div>
                   <button
                     type="button"
                     onClick={() => setStatus("idle")}
                     className="text-red-700 font-bold text-label-sm hover:underline shrink-0"
                   >
-                    Thử lại
+                    {t("status.errorRetryCta")}
                   </button>
                 </div>
               )}
@@ -176,18 +159,18 @@ export default function RfqForm() {
                   01
                 </span>
                 <span className="text-title-md font-bold text-slate-900 uppercase tracking-wider">
-                  THÔNG TIN KHÁCH HÀNG &amp; DOANH NGHIỆP LIÊN HỆ
+                  {t("step1.heading")}
                 </span>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
                 <div className="flex flex-col gap-1.5">
                   <label className="text-label-md text-slate-900 font-semibold" htmlFor="fullName">
-                    Họ và tên người liên hệ <span className="text-steel-600">*</span>
+                    {t("step1.fullNameLabel")} <span className="text-steel-600">*</span>
                   </label>
                   <input
                     id="fullName"
                     className={inputClass}
-                    placeholder="Nguyễn Văn A"
+                    placeholder={t("step1.fullNamePlaceholder")}
                     type="text"
                     required
                     value={form.fullName}
@@ -196,12 +179,12 @@ export default function RfqForm() {
                 </div>
                 <div className="flex flex-col gap-1.5">
                   <label className="text-label-md text-slate-900 font-semibold" htmlFor="company">
-                    Tên công ty / Doanh nghiệp <span className="text-steel-600">*</span>
+                    {t("step1.companyLabel")} <span className="text-steel-600">*</span>
                   </label>
                   <input
                     id="company"
                     className={inputClass}
-                    placeholder="Công ty CP Cơ khí Chế tạo..."
+                    placeholder={t("step1.companyPlaceholder")}
                     type="text"
                     required
                     value={form.company}
@@ -210,12 +193,12 @@ export default function RfqForm() {
                 </div>
                 <div className="flex flex-col gap-1.5">
                   <label className="text-label-md text-slate-900 font-semibold" htmlFor="email">
-                    Email công vụ / Nhận báo giá <span className="text-steel-600">*</span>
+                    {t("step1.emailLabel")} <span className="text-steel-600">*</span>
                   </label>
                   <input
                     id="email"
                     className={inputClass}
-                    placeholder="name@company.com"
+                    placeholder={t("step1.emailPlaceholder")}
                     type="email"
                     required
                     value={form.email}
@@ -224,12 +207,12 @@ export default function RfqForm() {
                 </div>
                 <div className="flex flex-col gap-1.5">
                   <label className="text-label-md text-slate-900 font-semibold" htmlFor="phone">
-                    Số điện thoại di động / Zalo <span className="text-steel-600">*</span>
+                    {t("step1.phoneLabel")} <span className="text-steel-600">*</span>
                   </label>
                   <input
                     id="phone"
                     className={inputClass}
-                    placeholder="0912 345 678"
+                    placeholder={t("step1.phonePlaceholder")}
                     type="tel"
                     required
                     value={form.phone}
@@ -246,18 +229,18 @@ export default function RfqForm() {
                   02
                 </span>
                 <span className="text-title-md font-bold text-slate-900 uppercase tracking-wider">
-                  THÔNG TIN KỸ THUẬT &amp; CÔNG NGHỆ GIA CÔNG XI MẠ
+                  {t("step2.heading")}
                 </span>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-gutter mb-space-lg">
                 <div className="flex flex-col gap-1.5">
                   <label className="text-label-md text-slate-900 font-semibold" htmlFor="projectName">
-                    Tên sản phẩm / Dự án gia công
+                    {t("step2.projectNameLabel")}
                   </label>
                   <input
                     id="projectName"
                     className={inputClass}
-                    placeholder="Ví dụ: Trục piston thủy lực, Busbar đồng, Vỏ khuôn nhôm"
+                    placeholder={t("step2.projectNamePlaceholder")}
                     type="text"
                     value={form.projectName}
                     onChange={(e) => updateField("projectName", e.target.value)}
@@ -265,7 +248,7 @@ export default function RfqForm() {
                 </div>
                 <div className="flex flex-col gap-1.5">
                   <label className="text-label-md text-slate-900 font-semibold" htmlFor="platingService">
-                    Dịch vụ xi mạ quan tâm <span className="text-steel-600">*</span>
+                    {t("step2.platingServiceLabel")} <span className="text-steel-600">*</span>
                   </label>
                   <select
                     id="platingService"
@@ -274,16 +257,16 @@ export default function RfqForm() {
                     value={form.platingService}
                     onChange={(e) => updateField("platingService", e.target.value)}
                   >
-                    {PLATING_OPTIONS.map((opt) => (
-                      <option key={opt.value} value={opt.value}>
-                        {opt.label}
+                    {PLATING_OPTION_VALUES.map((value) => (
+                      <option key={value} value={value}>
+                        {t(`step2.platingOptions.${value}`)}
                       </option>
                     ))}
                   </select>
                 </div>
                 <div className="flex flex-col gap-1.5">
                   <label className="text-label-md text-slate-900 font-semibold" htmlFor="volume">
-                    Sản lượng dự kiến &amp; Tiến độ giao hàng
+                    {t("step2.volumeLabel")}
                   </label>
                   <select
                     id="volume"
@@ -291,9 +274,9 @@ export default function RfqForm() {
                     value={form.volume}
                     onChange={(e) => updateField("volume", e.target.value)}
                   >
-                    {VOLUME_OPTIONS.map((opt) => (
-                      <option key={opt.value} value={opt.value}>
-                        {opt.label}
+                    {VOLUME_OPTION_VALUES.map((value) => (
+                      <option key={value} value={value}>
+                        {t(`step2.volumeOptions.${value}`)}
                       </option>
                     ))}
                   </select>
@@ -304,15 +287,15 @@ export default function RfqForm() {
                   className="text-label-md text-slate-900 font-semibold flex items-center justify-between"
                   htmlFor="description"
                 >
-                  <span>Mô tả chi tiết dung sai, chiều dày lớp mạ &amp; tiêu chuẩn thử nghiệm</span>
+                  <span>{t("step2.descriptionLabel")}</span>
                   <span className="text-label-sm text-slate-500 font-normal">
-                    Hỗ trợ tiêu chuẩn: ISO, ASTM, DIN, JIS
+                    {t("step2.descriptionStandards")}
                   </span>
                 </label>
                 <textarea
                   id="description"
                   className="w-full p-3.5 bg-slate-50 border border-slate-200 rounded text-slate-900 text-body-md focus:bg-white focus:outline-none focus:ring-2 focus:ring-steel-600 shadow-sm placeholder:text-slate-400"
-                  placeholder="Ví dụ: Vật liệu nền Thép S45C; Lớp mạ Crom cứng dày 30-40 µm; Độ cứng yêu cầu ≥ 850 HV; Yêu cầu thử phun sương muối ASTM B117 đạt 96 giờ không rỉ sét; Địa điểm giao hàng: Bắc Ninh..."
+                  placeholder={t("step2.descriptionPlaceholder")}
                   rows={4}
                   value={form.description}
                   onChange={(e) => updateField("description", e.target.value)}
@@ -327,7 +310,7 @@ export default function RfqForm() {
                   03
                 </span>
                 <span className="text-title-md font-bold text-slate-900 uppercase tracking-wider">
-                  ĐÍNH KÈM BẢN VẼ KỸ THUẬT (2D / 3D CAD FILE)
+                  {t("step3.heading")}
                 </span>
               </div>
               <div className="relative bg-slate-50 border border-slate-200 rounded p-space-xl text-center hover:bg-slate-100 transition-colors cursor-pointer group">
@@ -344,25 +327,25 @@ export default function RfqForm() {
                   </div>
                   <div>
                     <p className="text-title-md font-bold text-slate-900">
-                      KÉO THẢ TẬP TIN BẢN VẼ HOẶC BẤM ĐỂ CHỌN FILE
+                      {t("step3.dropzoneTitle")}
                     </p>
                     <p className="text-body-md text-slate-600 mt-1">
-                      Định dạng hỗ trợ:{" "}
+                      {t("step3.formatsPrefix")}{" "}
                       <strong className="text-slate-900">
                         .PDF, .STEP, .STP, .DWG, .DXF, .IGS, .ZIP, .RAR
                       </strong>{" "}
-                      (Tối đa 50MB/file)
+                      {t("step3.formatsSuffix")}
                     </p>
                   </div>
                   <div className="flex flex-wrap items-center justify-center gap-2 mt-1">
                     <span className="px-2 py-0.5 bg-white text-slate-500 rounded text-label-sm">
-                      Auto Virus Scan
+                      {t("step3.badgeVirusScan")}
                     </span>
                     <span className="px-2 py-0.5 bg-white text-slate-500 rounded text-label-sm">
-                      Secure Server Encryption
+                      {t("step3.badgeEncryption")}
                     </span>
                     <span className="px-2 py-0.5 bg-white text-slate-500 rounded text-label-sm">
-                      Bảo mật NDA tự động
+                      {t("step3.badgeNda")}
                     </span>
                   </div>
                 </div>
@@ -376,7 +359,7 @@ export default function RfqForm() {
                     {files.length > 0 ? (
                       <>
                         <span className="text-steel-600 font-semibold">
-                          Đã chọn {files.length} tập tin:
+                          {t("step3.filesSelected", { count: files.length })}
                         </span>{" "}
                         {files
                           .map((f) => f.name)
@@ -385,11 +368,11 @@ export default function RfqForm() {
                         {files.map((f) => f.name).join(", ").length > 60 ? "..." : ""}
                       </>
                     ) : (
-                      "Chưa có tập tin nào được chọn. Quý khách có thể gửi kèm bản vẽ trực tiếp qua email: sales@hanintech.vn"
+                      t("step3.noFileSelected")
                     )}
                   </span>
                 </div>
-                <span className="text-label-sm text-slate-500 shrink-0">MAX: 50MB</span>
+                <span className="text-label-sm text-slate-500 shrink-0">{t("step3.maxSize")}</span>
               </div>
             </div>
 
@@ -408,11 +391,11 @@ export default function RfqForm() {
                   className="text-body-md text-slate-600 cursor-pointer select-none"
                   htmlFor="nda-checkbox"
                 >
-                  Tôi đồng ý cho <strong className="text-slate-900">HANIN TECHNOLOGY VIỆT NAM</strong>{" "}
-                  xử lý thông tin kỹ thuật này để khảo sát tính khả thi và báo giá dự án. HANIN cam
-                  kết bảo vệ dữ liệu theo thỏa thuận bảo mật{" "}
-                  <strong className="text-slate-900">Non-Disclosure Agreement (NDA)</strong> nghiêm
-                  ngặt.
+                  {t("step4.ndaConsentPrefix")}{" "}
+                  <strong className="text-slate-900">HANIN TECHNOLOGY VIỆT NAM</strong>{" "}
+                  {t("step4.ndaConsentMiddle")}{" "}
+                  <strong className="text-slate-900">Non-Disclosure Agreement (NDA)</strong>{" "}
+                  {t("step4.ndaConsentSuffix")}
                 </label>
               </div>
               <button
@@ -422,7 +405,7 @@ export default function RfqForm() {
                 disabled={status === "submitting"}
               >
                 <span>
-                  {status === "submitting" ? "ĐANG GỬI..." : "GỬI YÊU CẦU BÁO GIÁ KỸ THUẬT"}
+                  {status === "submitting" ? t("step4.submittingCta") : t("step4.submitCta")}
                 </span>
                 <span className="material-symbols-outlined text-[20px]">arrow_forward</span>
               </button>

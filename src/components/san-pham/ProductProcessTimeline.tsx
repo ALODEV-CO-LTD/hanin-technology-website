@@ -1,19 +1,19 @@
-import { PRODUCT_DETAIL_CONTENT } from "@/lib/products-data";
-
-const { process } = PRODUCT_DETAIL_CONTENT;
+import { useTranslations } from "next-intl";
+import { getProductDetailContent } from "@/lib/products-data";
 
 export default function ProductProcessTimeline() {
+  const tp = useTranslations("SanPham");
+  const t = useTranslations("SanPham.ProductProcessTimeline");
+  const { process } = getProductDetailContent(tp);
+
   return (
     <section className="w-full bg-slate-50 py-space-xl border-b border-slate-200">
       <div className="max-w-7xl mx-auto px-6">
         <div className="mb-space-lg">
           <h2 className="text-headline-lg text-slate-900 uppercase tracking-tight">
-            QUY TRÌNH THỰC HIỆN DỰ ÁN
+            {t("title")}
           </h2>
-          <p className="text-body-md text-slate-600 mt-1">
-            Chuỗi công đoạn khép kín từ tiếp nhận hồ sơ bản vẽ kỹ thuật đến kiểm nghiệm xuất xưởng
-            tại HANIN TECH.
-          </p>
+          <p className="text-body-md text-slate-600 mt-1">{t("description")}</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter relative">
           {process.map((item, index) => (

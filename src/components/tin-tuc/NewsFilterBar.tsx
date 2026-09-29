@@ -1,10 +1,14 @@
 "use client";
 
 import { useState } from "react";
-import { NEWS_CATEGORIES, type NewsCategoryKey } from "@/lib/news-data";
+import { useTranslations } from "next-intl";
+import { getNewsCategories, type NewsCategoryKey } from "@/lib/news-data";
 
 export default function NewsFilterBar() {
+  const t = useTranslations("TinTuc");
+  const tc = useTranslations("TinTuc.NewsFilterBar");
   const [activeCategory, setActiveCategory] = useState<NewsCategoryKey>("all");
+  const NEWS_CATEGORIES = getNewsCategories(t);
 
   return (
     <section className="w-full bg-white sticky top-20 z-40 shadow-sm border-b border-slate-200">
@@ -50,12 +54,12 @@ export default function NewsFilterBar() {
               </span>
               <input
                 type="text"
-                placeholder="Tìm kiếm chuyên đề kỹ thuật..."
+                placeholder={tc("searchPlaceholder")}
                 className="w-full pl-9 pr-3 py-1.5 bg-slate-50 border border-slate-200 rounded-lg text-body-md text-slate-900 placeholder:text-slate-500 focus:outline-none focus:bg-white focus:border-steel-300"
               />
             </div>
             <span className="hidden xl:inline-block text-label-sm text-slate-500 whitespace-nowrap">
-              Hiển thị 6 / 48 bài
+              {tc("showingCount")}
             </span>
           </div>
         </div>

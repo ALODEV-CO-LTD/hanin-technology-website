@@ -1,24 +1,16 @@
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
-const SPEC_HIGHLIGHTS = [
-  {
-    icon: "verified_user",
-    label: "BẢO MẬT NDA 100%",
-    desc: "Cam kết bảo mật tuyệt đối bản vẽ & quyền sở hữu trí tuệ",
-  },
-  {
-    icon: "file_present",
-    label: "2D/3D CAD FILE",
-    desc: "Hỗ trợ định dạng STEP, DWG, DXF, IGES, PDF dung lượng 50MB+",
-  },
-  {
-    icon: "science",
-    label: "TƯ VẤN LUYỆN KIM",
-    desc: "Kỹ sư vật liệu tư vấn trực tiếp chiều dày, ASTM & dung sai",
-  },
-];
+const SPEC_HIGHLIGHT_KEYS = ["nda", "cad", "consulting"] as const;
+const SPEC_HIGHLIGHT_ICONS: Record<(typeof SPEC_HIGHLIGHT_KEYS)[number], string> = {
+  nda: "verified_user",
+  cad: "file_present",
+  consulting: "science",
+};
 
 export default function ContactHero() {
+  const t = useTranslations("LienHe.ContactHero");
+
   return (
     <>
       {/* Breadcrumb & SLA status strip */}
@@ -27,15 +19,15 @@ export default function ContactHero() {
           <div className="flex items-center gap-2 text-slate-600 text-body-sm">
             <Link href="/" className="hover:text-steel-600 transition-colors flex items-center gap-1">
               <span className="material-symbols-outlined text-[16px]">home</span>
-              <span>Trang chủ</span>
+              <span>{t("breadcrumbHome")}</span>
             </Link>
             <span className="material-symbols-outlined text-[14px] text-slate-300">chevron_right</span>
-            <span className="text-slate-900 font-semibold">Liên hệ &amp; Báo giá kỹ thuật</span>
+            <span className="text-slate-900 font-semibold">{t("breadcrumbCurrent")}</span>
           </div>
           <div className="inline-flex items-center gap-2 px-3 py-1 bg-white rounded shadow-sm">
             <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
             <span className="text-label-sm uppercase tracking-wider text-slate-600">
-              COMMUNICATION &amp; B2B INQUIRY // SLA RESPONSE: TRONG VÒNG 04 GIỜ LÀM VIỆC
+              {t("slaStatus")}
             </span>
           </div>
         </div>
@@ -48,31 +40,32 @@ export default function ContactHero() {
             {/* Left hero content */}
             <div className="lg:col-span-7 flex flex-col gap-space-md">
               <h1 className="text-headline-xl-mobile lg:text-display-hero font-bold tracking-tight text-slate-900 uppercase">
-                LIÊN HỆ &amp;{" "}
+                {t("titlePrefix")}{" "}
                 <span className="text-steel-600 underline decoration-steel-600/30 decoration-4 underline-offset-8">
-                  YÊU CẦU BÁO GIÁ
+                  {t("titleHighlight")}
                 </span>{" "}
-                KỸ THUẬT
+                {t("titleSuffix")}
               </h1>
-              <p className="text-body-lg text-slate-600 leading-relaxed">
-                HANIN TECHNOLOGY VIỆT NAM tư vấn giải pháp kỹ thuật xi mạ kim loại, gia công cơ khí
-                chính xác và báo giá cho đối tác B2B, nhà thầu OEM/Tier-1 và doanh nghiệp FDI.
-              </p>
+              <p className="text-body-lg text-slate-600 leading-relaxed">{t("description")}</p>
 
               {/* Engineering spec highlights */}
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-space-sm pt-space-xs">
-                {SPEC_HIGHLIGHTS.map((item) => (
+                {SPEC_HIGHLIGHT_KEYS.map((key) => (
                   <div
-                    key={item.label}
+                    key={key}
                     className="p-space-md bg-slate-50 border border-slate-200 rounded shadow-sm flex flex-col gap-1.5"
                   >
                     <div className="flex items-center gap-2 text-steel-600">
-                      <span className="material-symbols-outlined text-[20px]">{item.icon}</span>
+                      <span className="material-symbols-outlined text-[20px]">
+                        {SPEC_HIGHLIGHT_ICONS[key]}
+                      </span>
                       <span className="text-label-sm uppercase tracking-wider font-bold">
-                        {item.label}
+                        {t(`specHighlights.${key}.label`)}
                       </span>
                     </div>
-                    <span className="text-body-sm text-slate-600">{item.desc}</span>
+                    <span className="text-body-sm text-slate-600">
+                      {t(`specHighlights.${key}.desc`)}
+                    </span>
                   </div>
                 ))}
               </div>
@@ -83,7 +76,7 @@ export default function ContactHero() {
               <div className="relative bg-white border border-slate-200 rounded overflow-hidden shadow-md">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  alt="Toàn cảnh nhà máy HANIN TECHNOLOGY VIỆT NAM (ảnh minh họa, sẽ thay bằng ảnh thực tế do Bên A cung cấp)"
+                  alt={t("imageAlt")}
                   className="w-full h-80 lg:h-[420px] object-cover"
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMAHR12DSPrsWOQHWfdTlDaNpp1LwgPnGnq6D7BdQzZ6xmVyK6MjotF4vVi7AmWKi92WGLKtgCUn84s6Iz8U6HKcl2LaJFMIAUD15w17JHyk1lcgy3m8Ct2ZKPFvoGwcoftf8ZNRrli07g18kQAWUAMBu4F5GoAmoiQxJiuEiUVJQWmhdq2KIs2ju1_DUY8vIA8cBP_UnnSRlCyz26_u4obDo1zxnsNlp9WLKHvm8HWCWhIfbve8rbwg"
                 />
@@ -91,13 +84,13 @@ export default function ContactHero() {
                 <div className="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur-md p-space-md rounded shadow-sm flex items-center justify-between">
                   <div>
                     <span className="text-label-sm uppercase tracking-wider text-slate-500 block">
-                      TỔNG HÀNH DINH &amp; NHÀ MÁY
+                      {t("overlayLabel")}
                     </span>
                     <span className="text-title-md font-bold text-slate-900 block">
-                      KCN Quang Minh, Mê Linh, Hà Nội
+                      {t("overlayLocation")}
                     </span>
                     <span className="text-label-sm text-steel-600 font-semibold">
-                      Tọa độ: 21.2025° N, 105.7725° E
+                      {t("overlayCoordinates")}
                     </span>
                   </div>
                   <a

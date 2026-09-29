@@ -1,25 +1,27 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
-
-const NAV_LINKS = [
-  { label: "Trang Chủ", href: "/" },
-  { label: "Giới thiệu", href: "/gioi-thieu" },
-  { label: "Dịch vụ gia công mạ", href: "/dich-vu-gia-cong-ma" },
-  { label: "Sản phẩm & Dự án", href: "/san-pham-du-an" },
-  { label: "Năng lực sản xuất", href: "/nang-luc-san-xuat" },
-  { label: "Tin tức", href: "/tin-tuc" },
-  { label: "Tuyển dụng", href: "/tuyen-dung" },
-  { label: "Liên hệ", href: "/lien-he" },
-];
+import { useTranslations } from "next-intl";
+import { Link, usePathname } from "@/i18n/navigation";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 export default function Header() {
+  const t = useTranslations("Nav");
   const [mobileOpen, setMobileOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [logoPulsing, setLogoPulsing] = useState(false);
   const pathname = usePathname();
+
+  const NAV_LINKS = [
+    { label: t("trangChu"), href: "/" },
+    { label: t("gioiThieu"), href: "/gioi-thieu" },
+    { label: t("dichVu"), href: "/dich-vu-gia-cong-ma" },
+    { label: t("sanPham"), href: "/san-pham-du-an" },
+    { label: t("nangLuc"), href: "/nang-luc-san-xuat" },
+    { label: t("tinTuc"), href: "/tin-tuc" },
+    { label: t("tuyenDung"), href: "/tuyen-dung" },
+    { label: t("lienHe"), href: "/lien-he" },
+  ];
 
   const isActive = (href: string) =>
     href === "/" ? pathname === "/" : pathname.startsWith(href);
@@ -57,7 +59,7 @@ export default function Header() {
           <nav className="hidden xl:flex items-center gap-space-lg">
             {NAV_LINKS.map((link) => (
               <Link
-                key={link.label}
+                key={link.href}
                 href={link.href}
                 className={
                   isActive(link.href)
@@ -71,16 +73,19 @@ export default function Header() {
           </nav>
         </div>
 
-        <div className="flex items-center gap-space-md">
+        <div className="flex items-center gap-space-sm">
+          <div className="hidden sm:block">
+            <LanguageSwitcher />
+          </div>
           <Link
             href="/lien-he"
             className="hidden sm:inline-flex items-center justify-center px-5 py-2.5 bg-steel-600 hover:bg-steel-700 text-white rounded text-label-technical uppercase tracking-wider transition-all duration-200 hover:shadow-md hover:-translate-y-px active:scale-[0.97] shadow-sm font-semibold whitespace-nowrap"
           >
-            NHẬN BÁO GIÁ KỸ THUẬT →
+            {t("cta")}
           </Link>
           <button
             type="button"
-            aria-label="Mở menu"
+            aria-label={t("menuOpen")}
             aria-expanded={mobileOpen}
             onClick={() => setMobileOpen((open) => !open)}
             className="xl:hidden flex items-center justify-center w-9 h-9 rounded bg-slate-100 border border-slate-200 text-slate-600 transition-all duration-200 hover:bg-steel-50 hover:border-steel-200 hover:text-steel-600 active:scale-95"
@@ -98,12 +103,12 @@ export default function Header() {
 
       <nav
         className={`xl:hidden overflow-hidden border-t border-slate-200 bg-white/95 backdrop-blur-xl px-margin transition-[max-height,opacity] duration-300 ease-out ${
-          mobileOpen ? "max-h-[560px] opacity-100 py-space-md" : "max-h-0 opacity-0 py-0"
+          mobileOpen ? "max-h-[640px] opacity-100 py-space-md" : "max-h-0 opacity-0 py-0"
         } flex flex-col gap-space-sm`}
       >
         {NAV_LINKS.map((link, i) => (
           <Link
-            key={link.label}
+            key={link.href}
             href={link.href}
             onClick={() => setMobileOpen(false)}
             style={{ transitionDelay: mobileOpen ? `${i * 30}ms` : "0ms" }}
@@ -123,8 +128,9 @@ export default function Header() {
           onClick={() => setMobileOpen(false)}
           className="mt-space-sm inline-flex items-center justify-center px-space-md py-space-sm bg-steel-600 hover:bg-steel-700 text-white rounded text-label-technical uppercase tracking-wider font-semibold transition-colors duration-200 active:scale-95"
         >
-          NHẬN BÁO GIÁ KỸ THUẬT →
+          {t("cta")}
         </Link>
+        <LanguageSwitcher variant="mobile" />
       </nav>
     </header>
   );

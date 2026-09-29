@@ -1,25 +1,26 @@
-import { PRODUCT_DETAIL_CONTENT } from "@/lib/products-data";
-
-const { relatedServices } = PRODUCT_DETAIL_CONTENT;
+import { useTranslations } from "next-intl";
+import { getProductDetailContent } from "@/lib/products-data";
 
 export default function RelatedServices() {
+  const tp = useTranslations("SanPham");
+  const t = useTranslations("SanPham.RelatedServices");
+  const { relatedServices } = getProductDetailContent(tp);
+
   return (
     <section className="w-full bg-white py-space-xl border-b border-slate-200">
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-space-sm mb-space-lg">
           <div>
             <h2 className="text-headline-lg text-slate-900 uppercase tracking-tight">
-              DỊCH VỤ GIA CÔNG MẠ LIÊN QUAN
+              {t("title")}
             </h2>
-            <p className="text-body-md text-slate-600 mt-1">
-              Các giải pháp mạ kim loại có thể áp dụng hoặc kết hợp cho dòng linh kiện này.
-            </p>
+            <p className="text-body-md text-slate-600 mt-1">{t("description")}</p>
           </div>
           <a
             className="inline-flex items-center gap-space-xs text-label-technical text-steel-600 hover:text-steel-700 transition-colors shrink-0 uppercase tracking-wider font-semibold"
             href="#"
           >
-            <span>XEM TẤT CẢ DỊCH VỤ GIA CÔNG MẠ</span>
+            <span>{t("ctaViewAll")}</span>
             <span className="material-symbols-outlined text-[16px]">arrow_forward</span>
           </a>
         </div>

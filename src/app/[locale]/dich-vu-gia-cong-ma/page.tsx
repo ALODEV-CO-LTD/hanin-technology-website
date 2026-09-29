@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
 import Breadcrumb from "@/components/dich-vu/Breadcrumb";
 import CategoryHero from "@/components/dich-vu/CategoryHero";
 import CapacityOverview from "@/components/dich-vu/CapacityOverview";
@@ -14,13 +15,16 @@ export const metadata: Metadata = {
     "Dịch vụ gia công mạ điện phân, mạ hóa học và xử lý bề mặt kim loại đạt chuẩn ô tô, hàng không: mạ Crom cứng, mạ Niken hóa học (ENP), mạ Kẽm-Niken, Anodizing nhôm.",
 };
 
-export default function DichVuGiaCongMaPage() {
+export default async function DichVuGiaCongMaPage() {
+  const t = await getTranslations("DichVu");
+  const tNav = await getTranslations("Nav");
+
   return (
     <div className="max-w-[1280px] mx-auto px-margin py-space-lg flex flex-col w-full">
       <Breadcrumb
         items={[
-          { label: "Trang Chủ", href: "/" },
-          { label: "Dịch Vụ Gia Công Mạ & Xử Lý Bề Mặt" },
+          { label: tNav("trangChu"), href: "/" },
+          { label: t("breadcrumbCategory") },
         ]}
       />
       <CategoryHero />

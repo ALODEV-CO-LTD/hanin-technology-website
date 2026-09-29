@@ -1,0 +1,452 @@
+{
+  "DichVu": {
+    "services": {
+      "tienXuLy": {
+        "title": "표면 전처리",
+        "description": "다중 챔버 초음파 탈지, 농도 제어 정량 산세 및 미세 표면 활성화를 통해 도금층의 분자 결합력을 극대화합니다.",
+        "applicationLabel": "대표 적용 분야:",
+        "applicationText": "열간/냉간 단조 금속 소재, 정밀 CNC 밀링·선반 가공 후 부품.",
+        "statLabel": "100% 무흔적 탈지",
+        "imageAlt": "금속 표면 전처리 및 탈지 작업 구역 (예시 이미지)"
+      },
+      "hardChrome": {
+        "badge": "대표 공법: 내마모 보호",
+        "title": "공업용 경질 크롬 도금",
+        "description": "65-72 HRC의 경질 도금층을 형성하여 마찰계수가 매우 낮고, 기계적 스크래치에 강하며 가혹한 작업 온도에서도 안정적입니다.",
+        "applicationLabel": "대표 적용 분야:",
+        "applicationText": "유압 실린더 피스톤 로드, 산업용 압연 롤러, 정밀 프레스 금형.",
+        "statLabel": "경도: 65-72 HRC | 두께 최대 300µm",
+        "imageAlt": "공업용 경질 크롬 도금 처리된 축 및 기계 부품 (예시 이미지)"
+      },
+      "electrolessNickel": {
+        "title": "무전해 니켈 도금 (ENP)",
+        "description": "자기촉매 화학 환원 반응으로 날카로운 모서리, 깊은 나사산, 홀 형상에서도 100% 균일한 두께를 구현하며 뛰어난 내화학성을 제공합니다.",
+        "applicationLabel": "대표 적용 분야:",
+        "applicationText": "산업용 압력 조절 밸브, 항공우주 부품, 반도체 장비.",
+        "statLabel": "인 함량: 중인 (6-9%) & 고인 (>10%)",
+        "imageAlt": "무전해 니켈 도금(ENP) 처리된 밸브 및 기계 부품 (예시 이미지)"
+      },
+      "kemNiken": {
+        "title": "아연 & 아연-니켈 합금 도금",
+        "description": "Zn-Ni 희생 양극 보호 기술로 적녹 발생 전까지 최대 1,500시간의 내염수분무성을 제공하며, 자동차 엔진룸의 고온 환경에도 견딥니다.",
+        "applicationLabel": "대표 적용 분야:",
+        "applicationText": "고강도 볼트·너트, 자동차·오토바이 하부 프레스 부품, 브레이크 부품.",
+        "statLabel": "내염수성: >1200시간 (ASTM B117)",
+        "imageAlt": "아연-니켈 합금 도금 처리된 볼트 및 자동차 하부 프레스 부품 (예시 이미지)"
+      },
+      "sonMaKetHop": {
+        "title": "도장 & 도금 복합 라인",
+        "description": "산업용 건조 시스템과 아연/인산염 하지 처리를 통합하여 분체도장 막의 부착력을 강화하고 해양 환경 영향에 견딥니다.",
+        "applicationLabel": "대표 적용 분야:",
+        "applicationText": "전자 제어반 함체, 기계 장비 금속 프레임, 통신 장비.",
+        "statLabel": "부착력: 0등급 (ISO 2409)",
+        "imageAlt": "도장 및 도금 복합 라인을 점검하는 엔지니어 (예시 이미지)"
+      },
+      "xuLyNhom": {
+        "title": "알루미늄 처리 및 기타 금속 도금",
+        "description": "내구성 있는 인공 산화알루미늄(Al₂O₃) 피막 형성, 하드 아노다이징, 구리(Cu)·주석(Sn) 도금 및 3가 크롬 부동태 표면처리를 제공합니다.",
+        "applicationLabel": "대표 적용 분야:",
+        "applicationText": "알루미늄 방열판 부품, 광학 부품, 부스바 도체.",
+        "statLabel": "절연성: >1000V DC | 하드코트 50µm",
+        "imageAlt": "아노다이징 및 기타 금속 도금 처리된 알루미늄 부품 (예시 이미지)"
+      }
+    },
+    "ServiceCategories": {
+      "heading": "핵심 도금 기술",
+      "badge": "개 기술 그룹 — 자동차 & 항공 표준 충족",
+      "codeLabel": "코드",
+      "detailLink": "자세히 보기"
+    },
+    "RelatedServices": {
+      "heading": "관련 전문 도금 가공 서비스",
+      "viewAll": "전체 카테고리 보기"
+    },
+    "CapacityOverview": {
+      "heading": "전문 도금 가공 시스템",
+      "subtitle": "폐쇄형 순환 폐수 처리 시스템을 갖춘 2개 생산 공장에서 전자식 도금조 농도를 관리하고 광학 분석을 직접 수행합니다.",
+      "scada": {
+        "title": "SCADA 자동화 라인",
+        "desc": "크레인 이동, 전류 밀도(A/dm²), 침지 시간을 동기화된 PLC 소프트웨어로 정밀 제어하여 사람의 오차를 제거합니다.",
+        "statLeft": "생산량: 450톤/월",
+        "statRight": "기포 결함 0%"
+      },
+      "complex": {
+        "title": "복잡 형상 부품 전용 라인",
+        "desc": "미세 기계 부품, 내부 나사 중공 부품, 조립 공차 영역 마스킹이 필요한 표면을 위한 맞춤형 전용 지그.",
+        "statLeft": "복잡도: 깊이 <0.5mm 홈",
+        "statRight": "전용 행거 지그"
+      },
+      "wastewater": {
+        "title": "폐수 & 환경 처리",
+        "desc": "QCVN 40:2011/BTNMT 기준에 맞는 순환 여과 및 화학 중화 시스템으로 글로벌 수출 공급망의 지속가능성을 보장합니다.",
+        "statLeft": "여과 용량: 300 m³/일",
+        "statRight": "QCVN A등급"
+      }
+    },
+    "CategoryHero": {
+      "title": "산업용 도금 가공 & 표면처리 서비스",
+      "subtitle": "금속 도금 가공, SCADA 자동 전기도금 및 고정밀 표면처리로 자동차, 전기 장비, 정밀 기계 산업의 까다로운 공차 요구를 충족합니다.",
+      "thickness": {
+        "label": "두께 공차",
+        "note": "미세 전류 제어"
+      },
+      "saltSpray": {
+        "label": "염수분무 시험",
+        "note": "ASTM B117 / ISO 9227"
+      },
+      "qms": {
+        "label": "품질경영시스템",
+        "note": "ISO 9001:2015 인증"
+      },
+      "ctaPrimary": "기술 견적 요청 (RFQ)",
+      "ctaSecondary": "생산 라인 역량 보기",
+      "imageAlt": "형광 녹색 화학 용액을 사용하는 자동 전기도금 라인, 크레인이 기계 부품을 들어올리는 모습 (예시 이미지)",
+      "lineTag": "자동화 라인 #04"
+    },
+    "DetailApplications": {
+      "heading": "HANIN ENP 도금 가공 기계 제품군",
+      "subtitle": "자동차 및 해양 산업 표준 충족",
+      "oilGas": {
+        "tag": "석유가스 & 유압 산업",
+        "title": "고압 밸브 본체 & 볼",
+        "desc": "고인(High-Phos) ENP(>10.5% P)는 유기산, H2S 가스 및 염분에 강하며, 높은 경도로 5,000 PSI 압력에서 개폐 시 표면 스크래치를 방지합니다.",
+        "thickness": "도금 두께: 25-50 µm"
+      },
+      "mold": {
+        "tag": "정밀 금형 & 구동 부품",
+        "title": "볼스크류 축 & 플라스틱 금형",
+        "desc": "균일하게 분포된 도금층은 플라스틱 사출 금형의 원활한 이형을 돕고, 볼스크류 홈은 도금 후 재연마가 필요 없어 원래 가공 공차를 유지합니다.",
+        "thickness": "도금 두께: 10-15 µm"
+      },
+      "electronics": {
+        "tag": "고주파 전자 & 통신",
+        "title": "방열함 & 도파관 캐비티",
+        "desc": "Al6061 알루미늄 합금 기재에 내산화 도금을 적용하여 열전도성과 납땜성을 유지하며, 옥외 5G 송수신 기지국에 사용됩니다.",
+        "thickness": "도금 두께: 5-8 µm"
+      },
+      "automotive": {
+        "tag": "자동차 산업 (AUTOMOTIVE)",
+        "title": "브레이크 피스톤 & 조인트 축",
+        "desc": "IATF 16949 인증을 충족하며 NSS 염수분무 시험 1,000시간 이상 적녹 미발생. 낮은 슬라이딩 마찰계수로 차량 수명 동안 브레이크 조립체가 안정적으로 작동합니다.",
+        "thickness": "도금 두께: 20-30 µm"
+      }
+    },
+    "DetailCapability": {
+      "imageAlt": "HANIN 엔지니어가 자동 도금 라인의 SCADA 제어 화면을 점검하는 모습 (예시 이미지)",
+      "lineCapacityLabel": "라인 생산 역량",
+      "lineCapacityValue": "월 120,000개",
+      "tankSizeLabel": "최대 도금조 크기",
+      "heading": "도금조 기술 & 농도 구배 관리",
+      "subtitle": "SUS304 스테인리스로 보강된 내화학성 폴리프로필렌 도금조로, 테플론 및 석영 열교환기를 통한 간접 가열로 화학물질 자체 분해를 방지합니다.",
+      "dosing": {
+        "title": "자동 화학물질 보충 투입(Auto Chemical Dosing):",
+        "desc": "광도계 센서가 유리 니켈 이온 함량을 지속적으로 측정하여 미세 정량 펌프를 작동시키고, 용액 비율을 ±0.2 g/L 범위로 안정적으로 유지합니다."
+      },
+      "crane": {
+        "title": "자동화 이송 크레인 시스템:",
+        "desc": "도금조 내에서 지속적으로 진동 및 회전하는 행거 시스템으로 수작업 오차를 제거하고, 깊은 나사산 및 막힌 홀에 정체된 수소 기포를 제거합니다."
+      },
+      "filtration": {
+        "title": "시간당 10회 순환 여과:",
+        "desc": "용액이 1마이크론 폴리프로필렌 필터막을 지속적으로 통과하여 부유 금속 입자와 도금 돌기 현상을 제거합니다."
+      }
+    },
+    "DetailGallery": {
+      "heading": "생산 라인 및 가공 완료 부품 이미지",
+      "subtitle": "HANIN 공장 // 빈쑤옌 CN-08 로트",
+      "line": {
+        "alt": "순환조 방식의 자동화 니켈 도금 라인 (예시 이미지)",
+        "tag": "자동 도금조",
+        "title": "화학 도금 순환조 라인",
+        "desc": "국소 유해가스 흡입 스크러버 및 자동 온도 제어가 통합된 18개 밀폐형 가공조 시스템."
+      },
+      "surface": {
+        "alt": "니켈 도금 후 정밀 기어 및 축 부품 (예시 이미지)",
+        "tag": "가공 완료 부품",
+        "title": "접촉면 & 표면 매끄러움",
+        "desc": "Ni-P 코팅은 나사산 모서리의 예리함을 유지하며 기계 가공 절삭 모서리에 버가 쌓이지 않습니다."
+      },
+      "prep": {
+        "alt": "도금 전 기계 소재 검사 및 준비 구역 (예시 이미지)",
+        "tag": "전처리 소재 준비",
+        "title": "소재 구역 & 치수 재확인",
+        "desc": "유리 비드로 소재를 세척 및 버 제거한 후 전용 초음파 탈지조로 투입합니다."
+      }
+    },
+    "DetailHero": {
+      "title": "무전해 니켈 도금",
+      "titleEn": "(ELECTROLESS NICKEL PLATING, ENP)",
+      "subtitle": "Ni-P 자기촉매 화학 환원 반응은 일반 전기도금으로는 도달할 수 없는 복잡한 형상, 내부 나사산, 막힌 홀, 깊은 캐비티 등 모든 부위에 균일한 도금층을 형성합니다.",
+      "phos": {
+        "label": "인 함량",
+        "note": "중인 / 고인"
+      },
+      "hardness": {
+        "label": "열처리 후 경도",
+        "note": "400°C x 1시간 베이킹"
+      },
+      "saltSpray": {
+        "label": "내염수분무성",
+        "unit": "시간",
+        "note": "ASTM B117 중성 NSS"
+      },
+      "tolerance": {
+        "label": "두께 공차",
+        "note": "교정된 XRF 측정"
+      },
+      "ctaPrimary": "기술 견적 요청 (RFQ)",
+      "ctaSecondary": "스펙 시트 PDF 다운로드 (AMS 2404)",
+      "verifyLabel": "100% 배치 인증서 확인",
+      "imageAlt": "무전해 니켈 도금 처리 후 기계 부품 (예시 이미지)",
+      "xrfLabel": "X선 형광 분광 (XRF): 8.5 µm ± 0.4",
+      "roughnessLabel": "표면 광택도: Ra < 0.2 µm",
+      "coatingLabel": "코팅: 고인형 (11.2% P)",
+      "imageCaption": "ENP 도금 및 수소 응력 제거 건조 처리 후의 유성 기어 및 분배 밸브."
+    },
+    "DetailOverview": {
+      "heading": "원리 개요 & 적용 범위",
+      "complianceLabel": "ROHS & REACH 준수 (납·카드뮴 프리)",
+      "col1": {
+        "title": "반응 메커니즘의 본질",
+        "p1": "전기도금은 전류 밀도에 지배되어 모서리는 두껍고 깊은 홈은 얇아집니다. 반면 무전해 니켈 도금(ENP)은",
+        "p1Strong": "자기촉매 석출",
+        "p2": "Ni-P(니켈-인) 층이 용액과 접촉하는 모든 지점에서 균일하게 형성되어 비정질(Amorphous) 내식 구조를 만듭니다."
+      },
+      "col2": {
+        "title": "전략적 적용 범위",
+        "intro": "높은 마찰, 화학 부식 및 가혹한 온도 환경에서 작동하는 중공업 설비 및 정밀 기계에 사용됩니다:",
+        "item1Strong": "석유가스 & 액화가스:",
+        "item1": "고압 볼 밸브, H2S/CO2 가스 내식성 배관.",
+        "item2Strong": "정밀 금형:",
+        "item2": "부착 결함이 없는 광학 플라스틱 사출 금형.",
+        "item3Strong": "반도체 & 진공 장비:",
+        "item3": "재료 방출가스(outgassing) 감소."
+      },
+      "col3": {
+        "title": "기재 금속 종류",
+        "intro": "HANIN의 전처리 공정은 다음 산업용 합금군에서 안정적인 ENP 도금을 가능하게 합니다:",
+        "substrates": {
+          "alloySteel": "합금강: SCM440, SKD11",
+          "carbonSteel": "탄소강: S45C, S50C, SS400",
+          "stainless": "오스테나이트 & 마르텐사이트계 스테인리스",
+          "aluminum": "알루미늄 합금: A6061, A7075 (아연산염 처리)",
+          "brass": "황동(Brass) & 동",
+          "ductileIron": "구상흑연주철 (Ductile Iron)"
+        }
+      }
+    },
+    "DetailProcess": {
+      "heading": "6단계 무전해 니켈 도금 공정",
+      "subtitle": "SCADA 자동화 사이클 // 시간당 10회 순환",
+      "stepLabel": "단계",
+      "s1": {
+        "title": "초음파 탈지",
+        "desc": "40kHz 다중 주파수 화학 탈지 및 초음파 세척으로 CNC 가공 냉각유와 미세 산화막을 완전히 제거합니다.",
+        "note": "100% 워터 브레이크 프리(Water-Break Free) 검사."
+      },
+      "s2": {
+        "title": "미세 활성화",
+        "desc": "부식 억제 산 용액으로 경미한 녹 제거 및 표면 활성화를 수행하여 금속 원래의 결정 구조를 노출시킵니다.",
+        "note": "시간: 강종에 따라 30-90초."
+      },
+      "s3": {
+        "title": "ENP 반응 도금",
+        "desc": "1µm 순환 여과 도금조에 침지합니다. 분광 정량 펌프로 온도 88-90°C, pH 4.6-4.8을 자동 제어합니다.",
+        "note": "성막 속도: 15-20 µm/시간."
+      },
+      "s4": {
+        "title": "DI 워터 역류 세척",
+        "desc": "초순수(탈이온수 < 5 µS/cm)를 사용한 3단 연속 오버플로우 세척 시스템으로 잔류 화학물질을 제거합니다.",
+        "note": "배출수 전도도: < 15 µS/cm."
+      },
+      "s5": {
+        "title": "도금 후 열처리",
+        "desc": "전기 대류로에서 열처리 어닐링. 수소취성 제거(200°C x 4시간) 또는 Ni₃P 결정화 가열(400°C x 1시간)로 경도를 높입니다.",
+        "note": "최대 68 HRC까지 경화."
+      },
+      "s6": {
+        "title": "QA/QC & VCI 포장",
+        "desc": "AQL 0.4 배치 기준 무작위 XRF 두께 측정. 글로벌 수출용 전용 VCI 방청 필름으로 포장합니다.",
+        "note": "제품과 함께 CoA(분석 증명서) 발급."
+      }
+    },
+    "DetailQaTable": {
+      "heading": "국제 표준 품질관리 프로세스",
+      "subtitle": "100% 생산 배치 데이터 5년간 보관",
+      "colItem": "검사 항목",
+      "colDevice": "전용 측정 장비",
+      "colStandard": "적용 표준",
+      "colCriteria": "합격 기준 (Acceptance Criteria)",
+      "colFrequency": "검사 빈도",
+      "thickness": {
+        "item": "도금막 두께 (Thickness)",
+        "device": "X선 형광 분광 측정기 (Fischer XRF)",
+        "criteria": "설계 도면 대비 ±1.0 µm 이내",
+        "frequency": "배치당 5개 시료 (AQL L-II)"
+      },
+      "microhardness": {
+        "item": "미세경도 (Microhardness)",
+        "device": "비커스 미세경도계 (하중 100gf)",
+        "criteria": "> 500 HV (원시) / > 900 HV (베이킹 후)",
+        "frequency": "근무조당 시편 1개"
+      },
+      "saltSpray": {
+        "item": "염수분무 내식성",
+        "device": "순환 염수분무 시험기 NSS 5% NaCl",
+        "criteria": "500h-1,000h 내 적녹 미발생",
+        "frequency": "월별 정기 대표 시료"
+      },
+      "adhesion": {
+        "item": "도금 부착력 (Adhesion)",
+        "device": "180° 맨드릴 굽힘 시험 & 열충격 퀜치",
+        "criteria": "막 박리 없음, 미세 층 분리 없음",
+        "frequency": "시편 100% 검사"
+      },
+      "porosity": {
+        "item": "미세 기공률 (Porosity)",
+        "device": "페록실 시험 (Ferroxyl Test)",
+        "criteria": "Fe-페리시아나이드 청색 반점 미발생",
+        "frequency": "배치별 시편 검사"
+      }
+    },
+    "ProcessFlow": {
+      "heading": "정밀 도금 가공 공정 흐름도",
+      "subtitle": "각 공정은 IoT 통합 pH, 온도, 전류 센서로 모니터링되며 추적성을 위해 디지털 생산 일지에 기록됩니다.",
+      "s1": {
+        "title": "준비 & 전처리",
+        "desc": "기계적 세척, 다단계 초음파 화학 탈지 및 정량 산 녹 제거.",
+        "note": "표면 장력 검사"
+      },
+      "s2": {
+        "title": "전기도금 / 화학도금",
+        "desc": "SCADA 자동 정류 전원 공급, 초 단위로 온도 및 반응 시간을 모니터링.",
+        "note": "조 공차: ±0.5°C"
+      },
+      "s3": {
+        "title": "다단계 세척 & 부동태화",
+        "desc": "다단 역류 탈이온(DI)수 세척, 변색 방지를 위한 Cr(III) 부동태 처리.",
+        "note": "수소취성 제거"
+      },
+      "s4": {
+        "title": "XRF QA/QC 검사",
+        "desc": "X선 형광을 이용한 비파괴 두께 측정, 부착력 굽힘 시험 및 염수분무 시험.",
+        "note": "배치별 CoA 보고서"
+      },
+      "s5": {
+        "title": "VCI 보관 포장",
+        "desc": "강제 건조 후 해상 수출용 VCI 기화성 방청 필름 백으로 보관.",
+        "note": "EU/미국 수출 기준 충족"
+      }
+    },
+    "QualityMetrology": {
+      "heading": "내구성 측정 & XRF 분광 실험실",
+      "subtitle": "모든 완제품 배치는 국제 표준과 대조되며 분석 증명서(Certificate of Analysis, CoA)가 발급됩니다.",
+      "tableTitle": "정량 시험 표준표",
+      "colMethod": "시험 방법",
+      "colStandard": "적용 표준",
+      "colCriteria": "합격 지표",
+      "colFrequency": "검사 빈도",
+      "calibrationNote": "VILAS / ISO 17025 기준에 따라 정기 교정",
+      "warrantyLabel": "도금 품질 보증",
+      "xrf": {
+        "title": "X선 형광 분광기 (XRF)",
+        "desc": "나노미터 단위 해상도로 시료 손상 없이 다층 도금(Ni/Cr, Zn/Ni)의 두께를 정밀 측정합니다."
+      },
+      "saltSpray": {
+        "title": "염수분무 시험기 (Salt Spray Chamber)",
+        "desc": "ASTM B117 및 ISO 9227 기준에 따라 5% NaCl 염수 환경에서 가속 내식성을 지속적으로 평가합니다.",
+        "method": "내염수분무성",
+        "criteria": "백청 >240시간, 적청 >1000시간 미발생",
+        "frequency": "주간 정기"
+      },
+      "cmm": {
+        "title": "CMM 장비 & 광학 현미경",
+        "desc": "금속조직 단면 분석, 미세 균열 검사, 비커스 미세경도 및 도금 부착력을 측정합니다."
+      },
+      "thickness": {
+        "method": "도금 두께",
+        "criteria": "공차 ±0.1 µm",
+        "frequency": "배치별 (100%)"
+      },
+      "adhesion": {
+        "method": "도금 부착력",
+        "criteria": "180° 굽힘 시 박리 없음",
+        "frequency": "생산 근무조별"
+      },
+      "dehydrogenation": {
+        "method": "수소 제거 (베이킹)",
+        "criteria": "200°C ± 5°C, 4-24시간",
+        "frequency": "100% (>1000 MPa 부품)"
+      }
+    },
+    "RfqFormCategory": {
+      "heading": "도금 서비스 견적 요청 (RFQ SPECIFICATION)",
+      "subtitle": "사양, 도면 및 시험 표준을 보내주세요. HANIN 야금 엔지니어가 24시간 이내에 견적으로 회신드립니다.",
+      "submitAlert": "RFQ 요청이 Hanin Technology 기술팀에 전달되었습니다!",
+      "companyLabel": "회사명 / 업체명 *",
+      "companyPlaceholder": "예: OO 정밀기계 유한회사...",
+      "contactLabel": "담당자 & 직책 *",
+      "contactPlaceholder": "성명 - 자재 엔지니어 / 구매팀장",
+      "phoneLabel": "기술 연락처 / Zalo *",
+      "emailLabel": "견적 수신 이메일 *",
+      "platingTypeLabel": "요청 도금 종류 *",
+      "platingTypeOptions": {
+        "default": "-- 표면처리 솔루션 선택 --",
+        "hardChrome": "공업용 경질 크롬 도금 (Hard Chrome)",
+        "enp": "무전해 니켈 도금 (ENP)",
+        "zincNickel": "아연-니켈 합금 도금 (Zn-Ni Automotive)",
+        "anodizing": "알루미늄 아노다이징 기술 처리",
+        "custom": "도면 기반 맞춤형 복합 도금"
+      },
+      "volumeLabel": "예상 생산량 / 납품 회차 *",
+      "volumePlaceholder": "예: 5,000개 / 월 또는 시제품 주문 기준",
+      "requirementsLabel": "세부 기술 요구사항 (도금 두께, 염수분무 시간, 기재 재질)",
+      "requirementsPlaceholder": "원하는 기준을 입력하세요. 예: S45C 강 기재, 니켈 도금 두께 15-20µm, 염수분무 >480시간 적녹 없음...",
+      "attachTitle": "기술 도면 첨부",
+      "attachDesc": "지원 형식: PDF, STEP, DWG, IGES (최대 25MB)",
+      "chooseFile": "파일 선택",
+      "ndaNote": "고객이 제공하는 모든 도면 자료에 대해 NDA 협약에 따른 비밀 유지를 약속드립니다.",
+      "submitButton": "RFQ 견적 요청 제출 확인"
+    },
+    "RfqFormDetail": {
+      "heading": "무전해 니켈 도금(ENP) 사양 & 요구사항 제출",
+      "subtitle": "HANIN 야금 엔지니어가 24 근무시간 이내에 견적 및 샘플 도금 계획을 회신드립니다.",
+      "hotlineLabel": "기술 상담 핫라인:",
+      "submitAlert": "ENP 도금 기술 견적 요청이 HANIN 엔지니어 부서로 전송되었습니다.",
+      "companyLabel": "회사명 / 고객명",
+      "companyPlaceholder": "예: Samtech VN 기계 제조 그룹",
+      "contactLabel": "담당 엔지니어 / 연락처",
+      "contactPlaceholder": "예: 응우옌반A 엔지니어",
+      "emailLabel": "기술 / 견적 이메일",
+      "substrateLabel": "기재 재질 (Substrate)",
+      "substrateOptions": {
+        "carbonSteel": "탄소강 (S45C, S50C, SS400)",
+        "alloySteel": "합금강 (SCM440, SKD11, SUJ2)",
+        "stainless": "스테인리스강 (SUS304, SUS316, SUS420)",
+        "aluminum": "알루미늄 합금 (A6061-T6, A7075)",
+        "copper": "동 / 황동 합금",
+        "castIron": "주철 / FCD 구상흑연주철"
+      },
+      "phosLabel": "요청 인(Phosphorus) 등급",
+      "phosOptions": {
+        "high": "고인 (>10% P): 고내식성",
+        "medium": "중인 (6-9% P): 내마모성",
+        "low": "저인 (1-4% P): 기재 경도 향상",
+        "consult": "적용 사례에 따라 HANIN 엔지니어 상담"
+      },
+      "thicknessLabel": "도금 두께 (µm)",
+      "thicknessPlaceholder": "예: 15 µm ± 1.5 µm",
+      "volumeLabel": "예상 생산량",
+      "volumePlaceholder": "예: 2,500개/월 (또는 시제품)",
+      "notesLabel": "기술 비고 (마스킹이 필요한 나사산 위치, 열처리 요구사항, 시험 표준)",
+      "notesPlaceholder": "마스킹 요구사항(나사 구멍 밀폐), 수소취성 제거 베이킹 온도 또는 ASTM B117 염수 검사 증명서 요구사항 등을 명시하세요...",
+      "attachTitle": "2D / 3D 도면 첨부",
+      "attachDesc": "지원 형식: STEP, IGES, DWG, PDF (최대 50MB, NDA 보안)",
+      "chooseFile": "도면 파일 선택...",
+      "ndaNote": "국제 NDA 협약에 따라 기술 도면 데이터의 비밀을 보장합니다.",
+      "submitButton": "ENP 도금 서비스 견적 요청 제출 (24시간 응답)"
+    },
+    "breadcrumbCategory": "산업용 도금 가공 및 표면처리 서비스",
+    "breadcrumbDetailFallback": "서비스 상세"
+  }
+}

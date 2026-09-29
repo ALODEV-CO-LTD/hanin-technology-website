@@ -1,43 +1,46 @@
+import { useTranslations } from "next-intl";
+
 const STATS = [
   {
-    label: "MÁY & THIẾT BỊ",
+    key: "equipment",
     value: "42+",
-    desc: "Thiết bị mạ & phụ trợ (SPEC: HIGH-PRECISION CNC & TANKS)",
+    unit: "",
     accent: false,
   },
   {
-    label: "DÂY CHUYỀN HOẠT ĐỘNG",
+    key: "lines",
     value: "16",
-    desc: "Dây chuyền sản xuất tự động PLC & bán tự động chuyên sâu",
+    unit: "",
     accent: false,
   },
   {
-    label: "PHÂN KHU QUY HOẠCH",
+    key: "zones",
     value: "05",
-    desc: "Khu vực chuyên biệt (Plating, Chemical, Cleanroom, QA Lab)",
+    unit: "",
     accent: false,
   },
   {
-    label: "ĐỘ CHÍNH XÁC KỸ THUẬT",
+    key: "precision",
     value: "±0.2",
     unit: "µm",
-    desc: "Độ dày dung sai micron & sản lượng định mức đạt chuẩn ASTM",
     accent: true,
   },
-];
+] as const;
 
 export default function CapabilityOverviewStats() {
+  const t = useTranslations("NangLuc.CapabilityOverviewStats");
+
   return (
     <section className="w-full bg-white border-b border-slate-200 py-space-xl">
       <div className="max-w-[1280px] mx-auto px-margin w-full">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
           {STATS.map((stat) => (
             <div
-              key={stat.label}
+              key={stat.key}
               className="p-space-lg bg-slate-50 border border-slate-200/80 rounded-lg shadow-sm hover:border-steel-300 hover:bg-steel-50/20 transition-all"
             >
               <div className="text-label-technical text-steel-600 tracking-widest uppercase mb-1">
-                {stat.label}
+                {t(`items.${stat.key}.label`)}
               </div>
               <div
                 className={`text-headline-xl font-bold tracking-tight ${
@@ -47,7 +50,7 @@ export default function CapabilityOverviewStats() {
                 {stat.value}
                 {stat.unit && <span className="text-headline-md font-normal text-slate-500">{stat.unit}</span>}
               </div>
-              <div className="text-body-sm text-slate-500 mt-1">{stat.desc}</div>
+              <div className="text-body-sm text-slate-500 mt-1">{t(`items.${stat.key}.desc`)}</div>
             </div>
           ))}
         </div>

@@ -1,11 +1,12 @@
 "use client";
 
 import { useMemo, useState, type FormEvent } from "react";
+import { useTranslations } from "next-intl";
 import {
-  DEPARTMENT_OPTIONS,
-  JOBS,
-  LOCATION_OPTIONS,
-  TYPE_OPTIONS,
+  getDepartmentOptions,
+  getJobs,
+  getLocationOptions,
+  getTypeOptions,
   type JobDepartment,
   type JobLocation,
   type JobType,
@@ -14,12 +15,20 @@ import {
 type SelectedJob = { title: string; department: string } | null;
 
 export default function JobBoard() {
+  const t = useTranslations("TuyenDung");
+  const tb = useTranslations("TuyenDung.JobBoard");
+
   const [query, setQuery] = useState("");
   const [department, setDepartment] = useState<"all" | JobDepartment>("all");
   const [type, setType] = useState<"all" | JobType>("all");
   const [location, setLocation] = useState<"all" | JobLocation>("all");
   const [selectedJob, setSelectedJob] = useState<SelectedJob>(null);
   const [submitted, setSubmitted] = useState(false);
+
+  const JOBS = useMemo(() => getJobs(t), [t]);
+  const DEPARTMENT_OPTIONS = useMemo(() => getDepartmentOptions(t), [t]);
+  const TYPE_OPTIONS = useMemo(() => getTypeOptions(t), [t]);
+  const LOCATION_OPTIONS = useMemo(() => getLocationOptions(t), [t]);
 
   const filteredJobs = useMemo(() => {
     const q = query.trim().toLowerCase();
@@ -31,7 +40,7 @@ export default function JobBoard() {
       const matchesLoc = location === "all" || job.location === location;
       return matchesQuery && matchesDept && matchesType && matchesLoc;
     });
-  }, [query, department, type, location]);
+  }, [JOBS, query, department, type, location]);
 
   function resetFilters() {
     setQuery("");
@@ -63,15 +72,17 @@ export default function JobBoard() {
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-space-md pb-space-sm">
           <div className="flex flex-col gap-2 max-w-2xl">
             <h2 className="text-headline-xl-mobile md:text-headline-xl text-slate-900 tracking-tight uppercase font-bold">
-              VỊ TRÍ ĐANG TUYỂN DỤNG
+              {tb("title")}
             </h2>
             <p className="text-body-lg text-slate-600">
-              Vị trí tuyển dụng tại văn phòng điều hành và nhà máy sản xuất HANIN.
+              {tb("description")}
             </p>
           </div>
           <div className="flex items-center gap-2 px-space-md py-space-sm bg-white rounded shadow-sm text-slate-500 text-label-sm font-semibold tracking-wider uppercase self-start md:self-auto shrink-0">
             <span className="w-2 h-2 rounded-full bg-emerald-500" />
-            <span>CMS DYNAMIC JOB BOARD // {JOBS.length.toString().padStart(2, "0")} VỊ TRÍ ĐANG MỞ</span>
+            <span>
+              {tb("boardStatus", { count: JOBS.length.toString().padStart(2, "0") })}
+            </span>
           </div>
         </div>
 
@@ -83,7 +94,7 @@ export default function JobBoard() {
             </span>
             <input
               className="w-full pl-12 pr-space-md h-11 bg-slate-50 border border-slate-200 rounded text-slate-900 placeholder:text-slate-400 text-body-md focus:outline-none focus:ring-2 focus:ring-steel-600/40 transition-all"
-              placeholder="Tìm kiếm vị trí công việc, chức danh kỹ thuật, từ khóa (ví dụ: PLC, R&D, QA, Cơ khí)..."
+              placeholder={tb("searchPlaceholder")}
               type="text"
               value={query}
               onChange={(e) => setQuery(e.target.value)}
@@ -93,7 +104,7 @@ export default function JobBoard() {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-space-sm">
             <div className="flex flex-col gap-1">
               <label className="text-label-sm text-slate-500 uppercase tracking-wider font-semibold">
-                Phòng ban
+                {tb("departmentLabel")}
               </label>
               <div className="relative">
                 <select
@@ -115,7 +126,7 @@ export default function JobBoard() {
 
             <div className="flex flex-col gap-1">
               <label className="text-label-sm text-slate-500 uppercase tracking-wider font-semibold">
-                Hình thức làm việc
+                {tb("typeLabel")}
               </label>
               <div className="relative">
                 <select
@@ -137,7 +148,7 @@ export default function JobBoard() {
 
             <div className="flex flex-col gap-1">
               <label className="text-label-sm text-slate-500 uppercase tracking-wider font-semibold">
-                Địa điểm làm việc
+                {tb("locationLabel")}
               </label>
               <div className="relative">
                 <select
@@ -160,9 +171,9 @@ export default function JobBoard() {
 
           <div className="flex flex-wrap items-center justify-between gap-2 pt-1 text-slate-500 text-label-sm">
             <div className="flex items-center gap-2">
-              <span>Hiển thị kết quả:</span>
+              <span>{tb("resultsLabel")}</span>
               <span className="font-bold text-slate-900 px-2 py-0.5 rounded bg-slate-100">
-                {filteredJobs.length} vị trí khả dụng
+                {tb("resultsCount", { count: filteredJobs.length })}
               </span>
             </div>
             <button
@@ -170,7 +181,7 @@ export default function JobBoard() {
               onClick={resetFilters}
               className="hover:text-steel-600 transition-colors underline uppercase tracking-wider"
             >
-              Đặt lại bộ lọc
+              {tb("resetFilters")}
             </button>
           </div>
         </div>
@@ -219,14 +230,14 @@ export default function JobBoard() {
 
               <div className="flex flex-row lg:flex-col items-center lg:items-end justify-between lg:justify-center gap-space-sm shrink-0 pt-space-sm lg:pt-0">
                 <span className="text-label-sm text-slate-500">
-                  Hạn nộp: <strong className="text-slate-900 font-semibold">{job.deadline}</strong>
+                  {tb("deadlineLabel")} <strong className="text-slate-900 font-semibold">{job.deadline}</strong>
                 </span>
                 <button
                   type="button"
                   onClick={() => openApplyModal(job.title, job.departmentLabel)}
                   className="inline-flex items-center gap-2 px-space-md py-space-sm bg-steel-600 hover:bg-steel-700 text-white text-title-md rounded shadow-sm transition-colors uppercase tracking-wider"
                 >
-                  <span>ỨNG TUYỂN NGAY</span>
+                  <span>{tb("applyNow")}</span>
                   <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
                 </button>
               </div>
@@ -235,7 +246,7 @@ export default function JobBoard() {
 
           {filteredJobs.length === 0 && (
             <div className="p-space-xl rounded bg-white border border-slate-200 text-center text-slate-500 text-body-md">
-              Không tìm thấy vị trí phù hợp với bộ lọc hiện tại. Vui lòng thử từ khóa khác.
+              {tb("noResults")}
             </div>
           )}
         </div>
@@ -259,7 +270,7 @@ export default function JobBoard() {
               <button
                 type="button"
                 onClick={closeApplyModal}
-                aria-label="Đóng"
+                aria-label={tb("closeModal")}
                 className="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-slate-600 hover:text-steel-600 transition-colors"
               >
                 <span className="material-symbols-outlined text-[20px]">close</span>
@@ -269,10 +280,10 @@ export default function JobBoard() {
             {!submitted ? (
               <form className="flex flex-col gap-space-sm" onSubmit={handleApplySubmit}>
                 <div className="flex flex-col gap-1">
-                  <label className="text-label-sm text-slate-500 uppercase font-semibold">Họ và tên *</label>
+                  <label className="text-label-sm text-slate-500 uppercase font-semibold">{tb("fullNameLabel")}</label>
                   <input
                     className="h-10 px-space-sm rounded border border-slate-200 bg-slate-50 text-slate-900 text-body-md focus:outline-none focus:ring-2 focus:ring-steel-600/40"
-                    placeholder="Ví dụ: Nguyễn Văn An"
+                    placeholder={tb("fullNamePlaceholder")}
                     required
                     type="text"
                   />
@@ -280,20 +291,20 @@ export default function JobBoard() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
                   <div className="flex flex-col gap-1">
                     <label className="text-label-sm text-slate-500 uppercase font-semibold">
-                      Số điện thoại *
+                      {tb("phoneLabel")}
                     </label>
                     <input
                       className="h-10 px-space-sm rounded border border-slate-200 bg-slate-50 text-slate-900 text-body-md focus:outline-none focus:ring-2 focus:ring-steel-600/40"
-                      placeholder="09xx xxx xxx"
+                      placeholder={tb("phonePlaceholder")}
                       required
                       type="tel"
                     />
                   </div>
                   <div className="flex flex-col gap-1">
-                    <label className="text-label-sm text-slate-500 uppercase font-semibold">Email *</label>
+                    <label className="text-label-sm text-slate-500 uppercase font-semibold">{tb("emailLabel")}</label>
                     <input
                       className="h-10 px-space-sm rounded border border-slate-200 bg-slate-50 text-slate-900 text-body-md focus:outline-none focus:ring-2 focus:ring-steel-600/40"
-                      placeholder="ten@email.com"
+                      placeholder={tb("emailPlaceholder")}
                       required
                       type="email"
                     />
@@ -301,33 +312,33 @@ export default function JobBoard() {
                 </div>
                 <div className="flex flex-col gap-1">
                   <label className="text-label-sm text-slate-500 uppercase font-semibold">
-                    Số năm kinh nghiệm
+                    {tb("experienceLabel")}
                   </label>
                   <select className="h-10 px-space-sm rounded border border-slate-200 bg-slate-50 text-slate-900 text-body-md focus:outline-none focus:ring-2 focus:ring-steel-600/40">
-                    <option>Mới tốt nghiệp / Dưới 1 năm</option>
-                    <option>1 - 2 năm kinh nghiệm</option>
-                    <option>3 - 5 năm kinh nghiệm</option>
-                    <option>Trên 5 năm kinh nghiệm</option>
+                    <option>{tb("experienceOptions.fresh")}</option>
+                    <option>{tb("experienceOptions.one_two")}</option>
+                    <option>{tb("experienceOptions.three_five")}</option>
+                    <option>{tb("experienceOptions.above_five")}</option>
                   </select>
                 </div>
                 <div className="flex flex-col gap-1">
                   <label className="text-label-sm text-slate-500 uppercase font-semibold">
-                    Đính kèm CV (PDF, DOCX) *
+                    {tb("cvLabel")}
                   </label>
                   <label className="p-space-md rounded border border-dashed border-slate-300 bg-slate-50 flex flex-col items-center justify-center gap-1 cursor-pointer hover:bg-slate-100 transition-colors">
                     <span className="material-symbols-outlined text-steel-600 text-[28px]">upload_file</span>
-                    <span className="text-body-md text-slate-900">Kéo thả tệp hoặc bấm để chọn CV</span>
-                    <span className="text-label-sm text-slate-500">Tối đa 15MB (.pdf, .doc, .docx)</span>
+                    <span className="text-body-md text-slate-900">{tb("cvDropText")}</span>
+                    <span className="text-label-sm text-slate-500">{tb("cvSizeNote")}</span>
                     <input className="hidden" required type="file" />
                   </label>
                 </div>
                 <div className="flex flex-col gap-1">
                   <label className="text-label-sm text-slate-500 uppercase font-semibold">
-                    Lời nhắn / Giới thiệu bản thân
+                    {tb("messageLabel")}
                   </label>
                   <textarea
                     className="p-space-sm rounded border border-slate-200 bg-slate-50 text-slate-900 text-body-md focus:outline-none focus:ring-2 focus:ring-steel-600/40"
-                    placeholder="Tóm tắt ngắn gọn thế mạnh kỹ thuật hoặc mong muốn nghề nghiệp của bạn..."
+                    placeholder={tb("messagePlaceholder")}
                     rows={3}
                   />
                 </div>
@@ -337,20 +348,19 @@ export default function JobBoard() {
                     onClick={closeApplyModal}
                     className="px-space-md py-space-sm rounded bg-slate-100 text-slate-500 hover:text-slate-900 text-title-md uppercase transition-colors"
                   >
-                    Hủy bỏ
+                    {tb("cancelButton")}
                   </button>
                   <button
                     type="submit"
                     className="px-space-md py-space-sm rounded bg-steel-600 text-white hover:bg-steel-700 text-title-md uppercase tracking-wider transition-colors"
                   >
-                    Gửi đơn ứng tuyển
+                    {tb("submitButton")}
                   </button>
                 </div>
               </form>
             ) : (
               <div className="p-space-md rounded bg-steel-50 text-steel-700 text-body-md text-center">
-                ✓ Hồ sơ ứng tuyển đã được tiếp nhận thành công. Bộ phận Nhân sự HANIN sẽ liên hệ với bạn trong
-                vòng 48 giờ làm việc!
+                {tb("submitSuccess")}
               </div>
             )}
           </div>

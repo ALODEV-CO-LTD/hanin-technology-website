@@ -1,0 +1,260 @@
+{
+  "NangLuc": {
+    "AutomatedVsManual": {
+      "title": "자동화 라인 VS 수동 라인",
+      "description": "대량 생산을 위한 자동화와 특수 부품을 위한 숙련 엔지니어의 수동 처리를 결합했습니다.",
+      "automated": {
+        "imageAlt": "PLC SCADA 제어 화면과 로봇 크레인이 기계 부품을 화학 처리조로 이송하는 자동 도금 라인(예시 이미지, 실제 사진으로 교체 예정)",
+        "title": "자동화 라인(AUTOMATED LINES)",
+        "desc": "PLC SCADA를 통한 자동 제어: 침지 시간, 전류 밀도를 정밀 관리하고 화학 이온을 자동 보충하여 용액 안정성을 유지합니다.",
+        "feature1": "PLC 및 SCADA 동기화 자동 제어",
+        "feature2": "가공 배치마다 두께 100% 균일",
+        "feature3": "생산 주기 최적화 및 작업 오차 완전 제거"
+      },
+      "manual": {
+        "imageAlt": "보호 장비를 착용한 숙련 기술자가 화학 용액 침지 전 맞춤형 금속 부품 걸이대를 수동으로 점검하는 모습(예시 이미지, 실제 사진으로 교체 예정)",
+        "title": "수동 & 반자동 라인(MANUAL & SPECIALIZED)",
+        "desc": "R&D 샘플 주문 및 구조가 복잡한 기계 부품에 적합하며, 도면에 따라 별도 지그를 설치하고 도금 파라미터를 직접 조정합니다.",
+        "feature1": "까다로운 구조의 부품에 유연하게 대응",
+        "feature2": "R&D 시험 주문 및 소량 샘플을 효율적으로 처리",
+        "feature3": "숙련 엔지니어가 직접 처리 및 지그를 조정"
+      }
+    },
+    "CapabilityHero": {
+      "breadcrumbHome": "홈",
+      "breadcrumbCurrent": "생산 능력",
+      "title": "생산 능력",
+      "description": "HANIN TECHNOLOGY의 표준화된 공장 생태계, PLC SCADA로 제어되는 자동 도금 라인 체계, 국제 기준을 충족하는 미세 분석 실험실.",
+      "ctaExplore": "공장 살펴보기 →",
+      "ctaLines": "생산 라인",
+      "ctaQa": "QA/QC 검사실"
+    },
+    "CapabilityOverviewStats": {
+      "items": {
+        "equipment": {
+          "label": "설비 & 장비",
+          "desc": "도금 및 부대 설비(사양: 고정밀 CNC 및 도금조)"
+        },
+        "lines": {
+          "label": "가동 중인 생산라인",
+          "desc": "PLC 자동화 및 전문 반자동 생산라인"
+        },
+        "zones": {
+          "label": "계획된 구역",
+          "desc": "전용 구역(도금, 화학, 클린룸, QA 랩)"
+        },
+        "precision": {
+          "label": "기술 정밀도",
+          "desc": "마이크론 단위 공차와 ASTM 기준을 충족하는 생산량"
+        }
+      }
+    },
+    "CompanyProfileCta": {
+      "title": "HANIN 생산 역량 더 알아보기",
+      "description": "Company Profile을 통해 공장 배치, 생산 라인 사양, 검사 장비 목록 및 HANIN TECHNOLOGY의 대응 역량을 자세히 확인하세요.",
+      "ctaDownload": "Company Profile 보기(PDF) →"
+    },
+    "EquipmentGrid": {
+      "sectionTitle": "기계 & 설비 시스템",
+      "sectionDescription": "전처리부터 주 도금, 표면 마무리까지 전 공정을 지원하는 설비.",
+      "items": {
+        "rectifier": {
+          "badge": "전원 공급 시스템",
+          "title": "[설비 01: 도금조 및 자동 정류기 전원 시스템(RECTIFIER)]",
+          "desc": "대면적 도금조에 안정적인 전해 전류를 공급하는 자동 고주파 펄스 전원.",
+          "alt": "디지털 계기판과 회로 스위치가 있는 전해 도금조용 고출력 정류기 제어함(예시 이미지, 실제 사진으로 교체 예정)",
+          "specLoad": "부하 전류:",
+          "specStability": "안정도:",
+          "specControl": "제어 방식:"
+        },
+        "ultrasonic": {
+          "badge": "표면 전처리",
+          "title": "[설비 02: 다중 주파수 초음파 세척 & 탈지조]",
+          "desc": "다중 주파수 초음파로 버 및 가공유를 제거하여 도금 전 표면을 물리화학적으로 비활성화합니다.",
+          "alt": "현대적인 산업용 금속 표면처리 공장 내부 공간",
+          "specFrequency": "주파수:",
+          "specHeating": "가열 방식:",
+          "specHeatingValue": "자동",
+          "specVolume": "용량:"
+        },
+        "hoist": {
+          "badge": "사내 물류",
+          "title": "[설비 03: 자동 소재 이송 크레인 시스템(HOIST SYSTEM)]",
+          "desc": "레이저 유도 자동 승강축이 설정된 침지 주기에 따라 정확하게 소재를 이송합니다.",
+          "alt": "자동화된 화학 생산라인에서 중량 산업용 걸이대를 이송하는 자동 승강 크레인(예시 이미지, 실제 사진으로 교체 예정)",
+          "specLoad": "하중:",
+          "specLoadUnit": "톤",
+          "specSpeed": "속도:",
+          "specSpeedValue": "PLC 가변",
+          "specSensor": "센서:"
+        },
+        "deEmbrittlement": {
+          "badge": "도금 후 열처리",
+          "title": "[설비 04: 도금 후 수소취성 제거로(DE-EMBRITTLEMENT OVEN)]",
+          "desc": "고강도 강재 및 동적 하중 부품의 수소취성을 제거하는 순환 가열로입니다.",
+          "alt": "정밀 전기도금 마감 처리된 금속 부품 근접 사진",
+          "specMaxTemp": "최고 온도:",
+          "specSensor": "센서:",
+          "specStandard": "기준:"
+        }
+      }
+    },
+    "FactoryGallery": {
+      "sectionTitle": "실제 공장 공간 & 생산라인",
+      "sectionDescription": "HANIN 공장의 실제 이미지: 외관, 도금 라인, 설비 구역부터 운영 엔지니어 및 검사실까지.",
+      "mainImage": {
+        "alt": "발광하는 화학조, 로봇 크레인, 깨끗한 바닥을 갖춘 최신 산업용 자동 도금 통로(예시 이미지, 실제 사진으로 교체 예정)",
+        "badge": "AUTOMATED PLATING CORRIDOR // 중앙 운영 구역"
+      },
+      "items": {
+        "campus": {
+          "label": "CAMPUS 외관",
+          "alt": "꽝민 공단에 위치한 HANIN Technology Việt Nam의 현대적인 산업용 공장 캠퍼스 외관(예시 이미지, 실제 사진으로 교체 예정)"
+        },
+        "control": {
+          "label": "제어 & 운영",
+          "alt": "기술 엔지니어가 전자 제어반에서 산업용 금속 도금층의 전류 밀도와 침지 시간을 조정하는 모습(예시 이미지, 실제 사진으로 교체 예정)"
+        },
+        "finished": {
+          "label": "완제품",
+          "alt": "정밀 전기도금 마감 처리된 금속 부품 근접 사진"
+        },
+        "racks": {
+          "label": "RACKS 지그 시스템",
+          "alt": "현대적인 산업용 금속 표면처리 공장 내부 공간"
+        }
+      }
+    },
+    "FactoryOverview": {
+      "sectionTitle": "공장 시스템",
+      "image": {
+        "alt": "꽝민 공단에 위치한 HANIN Technology Việt Nam 공장 외관 건축물(예시 이미지, 실제 사진으로 교체 예정)"
+      },
+      "factoryTitle": "HANIN TECHNOLOGY 공장",
+      "factoryDescription": "현대적인 산업 표준에 따라 설계된 공장으로, 중앙 환경 관제 시스템, QCVN 40:2011/BTNMT 기준을 충족하는 폐수 처리장, 완전 밀폐형 자동 도금 모듈을 갖추어 일본, 한국, EU의 정밀기계·자동화·마이크로전자 고객의 요구를 충족합니다.",
+      "specs": {
+        "locationLabel": "위치(Location)",
+        "areaLabel": "생산 면적",
+        "capabilityLabel": "핵심 역량",
+        "capabilityValue": "고정밀 전기도금 및 화학도금 가공"
+      },
+      "ctaGallery": "공장 이미지 보기"
+    },
+    "NangLucFinalCta": {
+      "title": "도금 가공 파트너를 찾고 계신가요?",
+      "description": "생산 요구 사항, 기술 공차, 프로젝트 일정에 맞춘 대응 역량에 대해 HANIN 엔지니어팀과 직접 상담하세요.",
+      "ctaContact": "HANIN에 문의하기 →",
+      "ctaQuote": "프로젝트 견적 받기",
+      "hotlineLabel": "기술 지원 핫라인:",
+      "responseLabel": "기술 응답 시간:",
+      "responseValue": "24시간 이내"
+    },
+    "ProductionFlow": {
+      "sectionTitle": "생산 공정",
+      "sectionDescription": "원자재 입고부터 출하 검수까지 품질을 보장하는 6단계 폐쇄형 생산 공정입니다.",
+      "items": {
+        "receiving": {
+          "title": "01 // 요청 및 도면 접수",
+          "desc": "CAD 기술 도면을 평가하고, 도금 면적과 홈 구조의 복잡도를 정밀 산출하여 최적의 공정표를 수립합니다.",
+          "standard": "기준: DFM ASSESSMENT"
+        },
+        "surfacePrep": {
+          "title": "02 // 표면 전처리",
+          "desc": "화학 및 초음파 탈지 후 전용 산 처리조에서 녹 제거 및 표면 활성화를 진행하여 산화막을 완전히 제거합니다.",
+          "standard": "기준: SURFACE ETCHING"
+        },
+        "mainPlating": {
+          "title": "03 // 주 도금 가공",
+          "desc": "PLC 자동 설정 주기에 따라 전해 도금 또는 화학 도금을 진행하며 전류 밀도와 온도를 지속적으로 모니터링합니다.",
+          "standard": "기준: SCADA MONITORED"
+        },
+        "inspection": {
+          "title": "04 // 측정 및 검사",
+          "desc": "X선 형광분석기(XRF)로 도금 두께를 측정하고, ASTM D3359에 따라 밀착력을 검사하며 전 배치의 외관을 100% 검사합니다.",
+          "standard": "기준: XRF & ADHESION TEST"
+        },
+        "finishing": {
+          "title": "05 // 마감 및 수소 제거",
+          "desc": "보호 부동태화 처리, 열풍 순환 건조를 진행하고 하중 부품에 대해 ASTM F519 기준에 따라 수소취성 제거로에 투입합니다.",
+          "standard": "기준: ASTM F519 DE-EMBRITTLEMENT"
+        },
+        "packaging": {
+          "title": "06 // 포장 및 인도",
+          "desc": "VCI 수출 기준에 따른 방습 포장을 진행하고, 추적용 QR 라벨을 부착하며 품질 인증서(COA)와 함께 인도합니다.",
+          "standard": "기준: VCI ANTI-CORROSION PACKAGING"
+        }
+      }
+    },
+    "ProductionLines": {
+      "sectionTitle": "생산 라인",
+      "sectionDescription": "기계 및 전자 부품 제품군별로 전용 표면처리 생산 라인을 배치했습니다.",
+      "cta": "생산 라인 사양 보기 →",
+      "items": {
+        "barrel": {
+          "title": "[생산 라인 01: PLC 자동 배럴 도금 라인]",
+          "desc": "나사, 볼트 등 소형 부품에 적합: 대용량, 높은 밀착력, 밀폐형 배럴마다 균일한 도금 두께를 구현합니다.",
+          "alt": "전기도금 화학조에 침지된 회전 드럼과 정밀 제어 핸들을 갖춘 자동 배럴 도금 라인(예시 이미지, 실제 사진으로 교체 예정)",
+          "capacityLabel": "생산 능력:",
+          "capacityUnit": "톤/월",
+          "toleranceLabel": "공차:"
+        },
+        "rack": {
+          "title": "[생산 라인 02: 자동 & 반자동 랙 도금 라인]",
+          "desc": "정밀 기계 부품, 유압 실린더 로드, 금형 및 대형 기어에 적합합니다. 전용 걸이대로 충돌 없이 정확한 형상 공차를 유지합니다.",
+          "alt": "최신 금속 표면처리 공장에서 정밀 전자 제어반을 조작하는 클린 보호복 차림의 여성 QA 엔지니어(예시 이미지, 실제 사진으로 교체 예정)",
+          "capacityLabel": "생산 능력:",
+          "capacityUnit": "개/월",
+          "tankSizeLabel": "도금조 크기:"
+        },
+        "chemical": {
+          "title": "[생산 라인 03: 화학 도금 및 알루미늄 전문 처리 라인]",
+          "desc": "무전해 니켈 도금(Electroless Nickel Plating - ENP) 및 알루미늄 아노다이징 처리를 진행하여 우수한 내마모성, 내화학부식성 및 높은 표면 경도를 제공합니다.",
+          "alt": "현대적인 산업용 금속 표면처리 공장 내부 공간",
+          "reactorLabel": "반응조:",
+          "reactorValue": "온도 안정성 ±1°C",
+          "thicknessLabel": "두께:"
+        }
+      }
+    },
+    "QualityStandards": {
+      "sectionTitle": "품질 & 표준",
+      "sectionDescription": "각 생산 공정에 적용되는 품질 관리 시스템 및 기술 규격입니다.",
+      "ctaDetail": "인증 상세 보기 →",
+      "items": {
+        "iso9001": {
+          "tagLabel": "품질 인증",
+          "desc": "고정밀 기계 도금 가공 각 배치의 반복 안정성을 보장하는 생산 품질경영 시스템입니다."
+        },
+        "iso14001": {
+          "tagLabel": "환경 관리",
+          "desc": "베트남 환경보호 기준 준수를 보장하는 폐쇄형 산업 폐수 처리 및 환경경영 시스템입니다."
+        },
+        "astmRohs": {
+          "tagLabel": "수출 규격",
+          "desc": "유럽 유해물질제한지침 RoHS/REACH, ASTM B117, ASTM B633 표준 및 일본 공업 표준 JIS를 준수합니다."
+        }
+      }
+    },
+    "TestingAnalysis": {
+      "sectionTitle": "분석 & 검사",
+      "sectionDescription": "국제 규격에 따라 출고 전 검증을 수행하는 화학 분석 및 미세 측정 실험실입니다.",
+      "image": {
+        "alt": "산업용 검사대 위 정밀 전기도금 마감 처리된 금속 부품 근접 사진(예시 이미지, 실제 사진으로 교체 예정)"
+      },
+      "items": {
+        "saltSpray": {
+          "title": "내구성 & 부식 시험(SALT SPRAY TEST)",
+          "desc": "ASTM B117 염수분무 가속 시험기, 주기적 열충격 시험기 및 순환 습도 시험을 통해 아연니켈 및 크롬 도금층의 내식성을 1,000시간 이상 평가합니다."
+        },
+        "xrf": {
+          "title": "X선 형광 두께 측정(X-RAY FLUORESCENCE)",
+          "desc": "전용 XRF 분광 장비로 다층 도금의 마이크론 단위 두께를 비파괴 방식으로 정밀 측정하고, 표면 코팅 내 합금 함량 비율을 정확히 산출합니다."
+        },
+        "bathControl": {
+          "title": "도금조 & 화학 농도 관리",
+          "desc": "자동 전위차 적정기, 분광 측정기 및 온라인 pH 모니터링 시스템을 통해 금속 이온 및 첨가제 농도를 매일 정기적으로 분석하며 24시간 연속 감시합니다."
+        }
+      }
+    }
+  }
+}

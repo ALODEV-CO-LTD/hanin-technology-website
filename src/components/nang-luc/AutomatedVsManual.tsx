@@ -1,14 +1,14 @@
+import { useTranslations } from "next-intl";
+
 export default function AutomatedVsManual() {
+  const t = useTranslations("NangLuc.AutomatedVsManual");
+
   return (
     <section className="w-full py-space-xl bg-slate-50 border-t border-slate-200">
       <div className="max-w-[1280px] mx-auto px-margin w-full">
         <div className="mb-space-xl text-center max-w-2xl mx-auto">
-          <h2 className="text-headline-lg text-slate-900 uppercase tracking-tight">
-            DÂY CHUYỀN TỰ ĐỘNG VS DÂY CHUYỀN THỦ CÔNG
-          </h2>
-          <p className="text-body-md text-slate-600 mt-2">
-            Tự động hóa cho sản lượng lớn, kết hợp xử lý thủ công của kỹ sư tay nghề cao cho các chi tiết đặc thù.
-          </p>
+          <h2 className="text-headline-lg text-slate-900 uppercase tracking-tight">{t("title")}</h2>
+          <p className="text-body-md text-slate-600 mt-2">{t("description")}</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-gutter">
@@ -19,33 +19,28 @@ export default function AutomatedVsManual() {
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   className="w-full h-full object-cover"
-                  alt="Dây chuyền mạ tự động với màn hình điều khiển PLC SCADA và cẩu trục robot di chuyển chi tiết cơ khí vào bể xử lý hóa chất (ảnh minh họa, sẽ thay bằng ảnh thực tế)"
+                  alt={t("automated.imageAlt")}
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVT-9zhcvu2BzRYn6t-Ha5sPn3PYQhlp4Kp1gsR7rcI0QQZJ4BT7zXXiCl6oNStYgNE9VZcacy23mGZoyLIb5j6MrPBvgLvcU2PqW18U0VAJ9MVOnhnxD880RoaWYp1CKf61l4ho0f9GeQuTAeDjnHSf-GpovsTk-cIxB8gY4qNwL2_qFfP6M8aNPO1daRz4JpjvUgA2hbi-WYzB6t-WRHPEFGP5CmKlbQWSCLcJWkFJu_8_gutmHO9w"
                 />
                 <div className="absolute top-2 left-2 px-space-xs py-0.5 bg-white/90 backdrop-blur border border-slate-200 rounded text-label-technical text-steel-600 font-semibold shadow-sm">
                   SYSTEM: SCADA AUTOMATED
                 </div>
               </div>
-              <h3 className="text-headline-sm text-slate-900 uppercase mb-space-xs">
-                DÂY CHUYỀN TỰ ĐỘNG (AUTOMATED LINES)
-              </h3>
-              <p className="text-body-sm text-slate-600 leading-relaxed mb-space-md">
-                Điều khiển tự động qua PLC SCADA: kiểm soát thời gian ngâm bể, mật độ dòng điện phân và tự động
-                bổ sung ion hóa chất để giữ ổn định dung dịch.
-              </p>
+              <h3 className="text-headline-sm text-slate-900 uppercase mb-space-xs">{t("automated.title")}</h3>
+              <p className="text-body-sm text-slate-600 leading-relaxed mb-space-md">{t("automated.desc")}</p>
             </div>
             <div className="space-y-space-xs bg-slate-50 border border-slate-200 p-space-md rounded text-label-technical text-slate-700">
               <div className="flex items-center gap-2">
                 <span className="text-steel-600 material-symbols-outlined text-[16px]">check_circle</span>
-                <span>Kiểm soát tự động qua PLC &amp; SCADA đồng bộ</span>
+                <span>{t("automated.feature1")}</span>
               </div>
               <div className="flex items-center gap-2">
                 <span className="text-steel-600 material-symbols-outlined text-[16px]">check_circle</span>
-                <span>Đồng đều 100% độ dày trên từng mẻ gia công</span>
+                <span>{t("automated.feature2")}</span>
               </div>
               <div className="flex items-center gap-2">
                 <span className="text-steel-600 material-symbols-outlined text-[16px]">check_circle</span>
-                <span>Tối ưu chu kỳ sản xuất &amp; loại bỏ hoàn toàn sai số thao tác</span>
+                <span>{t("automated.feature3")}</span>
               </div>
             </div>
           </div>
@@ -57,33 +52,28 @@ export default function AutomatedVsManual() {
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   className="w-full h-full object-cover"
-                  alt="Kỹ thuật viên tay nghề cao trong trang phục bảo hộ kiểm tra thủ công các giá gá chi tiết kim loại tùy chỉnh trước khi nhúng hóa chất (ảnh minh họa, sẽ thay bằng ảnh thực tế)"
+                  alt={t("manual.imageAlt")}
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuC12paqn4gFgRmeNAjSxCJsd5QXtRNxE8kxDGBT9X_NW8-Xfl8CetECOLR4-LU2We8qKWs9pFxvTdHxzCf0RrKBmfCD7mCETHMtLdTPFMjRJxTgMgTpWHgKQKifVsFUPolYeyzOOZYb1IPguA9ya1drqRpy9GPlAI1T1Tw5dtOdVWMLxsu1wLlh6czPFovf6fMfyxqn2RLcGk3YVEPLOxGxj8q4P_feOaqcx_6TnEZDZr5rSmfEm9upuA"
                 />
                 <div className="absolute top-2 left-2 px-space-xs py-0.5 bg-white/90 backdrop-blur border border-slate-200 rounded text-label-technical text-slate-700 font-semibold shadow-sm">
                   SYSTEM: SPECIALIZED R&amp;D
                 </div>
               </div>
-              <h3 className="text-headline-sm text-slate-900 uppercase mb-space-xs">
-                DÂY CHUYỀN THỦ CÔNG &amp; BÁN TỰ ĐỘNG (MANUAL &amp; SPECIALIZED)
-              </h3>
-              <p className="text-body-sm text-slate-600 leading-relaxed mb-space-md">
-                Dành cho đơn hàng mẫu R&amp;D và chi tiết cơ khí kết cấu phức tạp, cần gá đặt riêng theo bản vẽ
-                và điều chỉnh tham số mạ trực tiếp.
-              </p>
+              <h3 className="text-headline-sm text-slate-900 uppercase mb-space-xs">{t("manual.title")}</h3>
+              <p className="text-body-sm text-slate-600 leading-relaxed mb-space-md">{t("manual.desc")}</p>
             </div>
             <div className="space-y-space-xs bg-slate-50 border border-slate-200 p-space-md rounded text-label-technical text-slate-700">
               <div className="flex items-center gap-2">
                 <span className="text-slate-500 material-symbols-outlined text-[16px]">tune</span>
-                <span>Linh hoạt thích ứng cho các chi tiết kết cấu khó</span>
+                <span>{t("manual.feature1")}</span>
               </div>
               <div className="flex items-center gap-2">
                 <span className="text-slate-500 material-symbols-outlined text-[16px]">science</span>
-                <span>Phục vụ hiệu quả các đơn hàng thử nghiệm R&amp;D &amp; mẫu nhỏ</span>
+                <span>{t("manual.feature2")}</span>
               </div>
               <div className="flex items-center gap-2">
                 <span className="text-slate-500 material-symbols-outlined text-[16px]">engineering</span>
-                <span>Kỹ sư tay nghề cao trực tiếp xử lý và hiệu chỉnh gá kẹp</span>
+                <span>{t("manual.feature3")}</span>
               </div>
             </div>
           </div>

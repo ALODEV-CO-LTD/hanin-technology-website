@@ -1,10 +1,14 @@
+import { useTranslations } from "next-intl";
+
 export default function NewsPagination() {
+  const t = useTranslations("TinTuc.NewsPagination");
+
   return (
     <section className="w-full bg-white py-space-lg">
       <div className="max-w-[1280px] mx-auto px-margin flex flex-col sm:flex-row items-center justify-between gap-space-md">
         <div className="text-label-md text-slate-500">
-          Hiển thị <span className="text-slate-900 font-bold">trang 1 trên 8</span> (Tổng cộng 48
-          bài viết chuyên ngành)
+          {t("showingPrefix")} <span className="text-slate-900 font-bold">{t("pageInfo")}</span>{" "}
+          {t("totalInfo")}
         </div>
         <nav aria-label="Pagination" className="flex items-center gap-1.5">
           <button
@@ -13,7 +17,7 @@ export default function NewsPagination() {
             className="px-space-sm py-1.5 rounded-lg bg-slate-100 text-slate-500 transition-colors text-title-md flex items-center gap-1 opacity-50 cursor-not-allowed"
           >
             <span className="material-symbols-outlined text-[16px]">chevron_left</span>
-            <span>Trước</span>
+            <span>{t("prev")}</span>
           </button>
           <button
             type="button"
@@ -44,7 +48,7 @@ export default function NewsPagination() {
             type="button"
             className="px-space-sm py-1.5 rounded-lg bg-slate-100 text-slate-900 hover:bg-slate-200 transition-colors text-title-md flex items-center gap-1"
           >
-            <span>Sau</span>
+            <span>{t("next")}</span>
             <span className="material-symbols-outlined text-[16px]">chevron_right</span>
           </button>
         </nav>

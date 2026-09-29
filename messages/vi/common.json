@@ -1,0 +1,55 @@
+{
+  "Nav": {
+    "trangChu": "Trang Chủ",
+    "gioiThieu": "Giới thiệu",
+    "dichVu": "Dịch vụ gia công mạ",
+    "sanPham": "Sản phẩm & Dự án",
+    "nangLuc": "Năng lực sản xuất",
+    "tinTuc": "Tin tức",
+    "tuyenDung": "Tuyển dụng",
+    "lienHe": "Liên hệ",
+    "cta": "NHẬN BÁO GIÁ KỸ THUẬT →",
+    "menuOpen": "Mở menu"
+  },
+  "LanguageSwitcher": {
+    "label": "Ngôn ngữ",
+    "vi": "Tiếng Việt",
+    "zh": "中文",
+    "ko": "한국어"
+  },
+  "Footer": {
+    "tagline": "GIA CÔNG XI MẠ & CƠ KHÍ CHÍNH XÁC",
+    "description": "HANIN TECHNOLOGY VIỆT NAM — Nhà máy gia công xi mạ kỹ thuật cao, xử lý bề mặt kim loại cơ khí chính xác theo tiêu chuẩn công nghiệp Nhật Bản và quốc tế.",
+    "companyHeading": "Doanh nghiệp",
+    "companyLinks": {
+      "trangChu": "Trang Chủ",
+      "gioiThieu": "Giới thiệu doanh nghiệp",
+      "nangLuc": "Năng lực sản xuất",
+      "tinTuc": "Tin tức & Sự kiện",
+      "tuyenDung": "Cơ hội tuyển dụng"
+    },
+    "serviceHeading": "Dịch vụ & Sản phẩm",
+    "serviceLinks": {
+      "enp": "Mạ Niken kỹ thuật (Electroless Nickel)",
+      "hardChrome": "Mạ Crom cứng công nghiệp (Hard Chrome)",
+      "anodizing": "Anodizing nhôm & Hard Anodize",
+      "zincNickel": "Mạ Kẽm - Niken chống ăn mòn cao",
+      "specSheet": "Bảng thông số tra cứu dung sai micron"
+    },
+    "contactHeading": "Liên hệ kỹ thuật",
+    "addressLabel": "Địa chỉ:",
+    "address": "Lô CN-08, Khu Công Nghiệp Quang Minh, Huyện Mê Linh, Hà Nội",
+    "hotlineLabel": "Hotline:",
+    "hotline": "(+84) 24 3818 6868 / 0988 123 456",
+    "emailLabel": "Email:",
+    "email": "sales@hanintech.vn / engineering@hanintech.vn",
+    "hoursLabel": "Giờ làm việc:",
+    "hours": "Thứ 2 - Thứ 7: 08:00 - 17:30 (Trực ca 24/7)",
+    "zaloChat": "Zalo Chat Kỹ Thuật",
+    "googleMaps": "Google Maps Chỉ Đường",
+    "statusLine": "Hệ thống dây chuyền mạ & đo lường CMM: SẴN SÀNG HOẠT ĐỘNG",
+    "copyright": "© 2026 HANIN TECHNOLOGY VIỆT NAM. Tất cả quyền được bảo lưu. Chuẩn ISO 9001:2015.",
+    "privacyPolicy": "Chính sách bảo mật",
+    "termsOfService": "Điều khoản dịch vụ"
+  }
+}

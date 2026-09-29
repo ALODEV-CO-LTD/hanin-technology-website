@@ -1,3 +1,5 @@
+import type { useTranslations } from "next-intl";
+
 export type JobDepartment = "engineering" | "production" | "qc" | "maintenance" | "sales";
 export type JobType = "fulltime" | "shift" | "intern";
 export type JobLocation = "factory" | "office";
@@ -17,131 +19,121 @@ export interface Job {
   badgeClassName: string;
 }
 
-export const JOBS: Job[] = [
-  {
-    id: "ky-su-hoa-hoc-cong-nghe-ma",
-    title: "Kỹ sư Hóa học / Công nghệ mạ kim loại",
-    departmentLabel: "Khối Kỹ thuật & R&D",
-    department: "engineering",
-    typeLabel: "Toàn thời gian",
-    type: "fulltime",
-    locationLabel: "KCN Quang Minh, Hà Nội",
-    location: "factory",
-    salary: "Lương: 18 - 25 Triệu",
-    tags: [
-      "Kinh nghiệm: 2+ năm",
-      "Bể mạ tự động PLC & Hóa học ENP",
-      "Phân tích nồng độ dung dịch Hull Cell",
-    ],
-    deadline: "30/04/2026",
-    badgeClassName: "bg-orange-100 text-orange-700",
-  },
-  {
-    id: "truong-nhom-qa-qc",
-    title: "Trưởng nhóm Quản lý chất lượng (QA/QC Leader)",
-    departmentLabel: "Quản lý chất lượng (QA/QC)",
-    department: "qc",
-    typeLabel: "Toàn thời gian",
-    type: "fulltime",
-    locationLabel: "KCN Quang Minh, Hà Nội",
-    location: "factory",
-    salary: "Lương: 20 - 30 Triệu",
-    tags: [
-      "Chứng chỉ ISO 9001 / IATF 16949",
-      "Đo kiểm XRF & Thử nghiệm Phun muối (Salt Spray)",
-      "Kinh nghiệm: 3-5 năm",
-    ],
-    deadline: "15/05/2026",
-    badgeClassName: "bg-slate-200 text-slate-700",
-  },
-  {
-    id: "ky-thuat-vien-van-hanh-day-chuyen",
-    title: "Kỹ thuật viên vận hành dây chuyền mạ tự động",
-    departmentLabel: "Khối Sản xuất & Vận hành",
-    department: "production",
-    typeLabel: "Theo ca sản xuất (Xoay ca)",
-    type: "shift",
-    locationLabel: "KCN Quang Minh, Hà Nội",
-    location: "factory",
-    salary: "Lương: 10 - 15 Triệu + Phụ cấp ca",
-    tags: [
-      "Tốt nghiệp Trung cấp/Cao đẳng Cơ khí/Điện",
-      "Giám sát hệ thống SCADA & cẩu chuyển tự động",
-    ],
-    deadline: "Tuyển liên tục",
-    badgeClassName: "bg-orange-100 text-orange-700",
-  },
-  {
-    id: "ky-su-bao-tri-co-dien-plc",
-    title: "Kỹ sư Bảo trì cơ điện & hệ thống PLC",
-    departmentLabel: "Bảo trì & Cơ điện (Maintenance)",
-    department: "maintenance",
-    typeLabel: "Toàn thời gian",
-    type: "fulltime",
-    locationLabel: "KCN Quang Minh, Hà Nội",
-    location: "factory",
-    salary: "Lương: 15 - 22 Triệu",
-    tags: [
-      "PLC Siemens S7-1200 / Mitsubishi",
-      "Bảo trì nguồn Rectifier & Hệ thống lọc tuần hoàn",
-    ],
-    deadline: "25/04/2026",
-    badgeClassName: "bg-slate-100 text-slate-600",
-  },
-  {
-    id: "chuyen-vien-kinh-doanh-b2b",
-    title: "Chuyên viên Kinh doanh dự án B2B (Cơ khí & gia công phụ trợ)",
-    departmentLabel: "Kinh doanh & Phát triển thị trường",
-    department: "sales",
-    typeLabel: "Toàn thời gian",
-    type: "fulltime",
-    locationLabel: "Văn phòng & Nhà máy Hà Nội",
-    location: "office",
-    salary: "Lương cứng + Thưởng hoa hồng dự án",
-    tags: [
-      "Tiếng Anh hoặc Tiếng Hàn/Nhật giao tiếp",
-      "Phát triển mạng lưới khách hàng FDI / OEM",
-    ],
-    deadline: "10/05/2026",
-    badgeClassName: "bg-orange-100 text-orange-700",
-  },
-  {
-    id: "thuc-tap-sinh-ky-thuat-co-khi-luyen-kim",
-    title: "Thực tập sinh Kỹ thuật Cơ khí / Luyện kim",
-    departmentLabel: "Khối Kỹ thuật & Công nghệ",
-    department: "engineering",
-    typeLabel: "Thực tập sinh (3 - 6 tháng)",
-    type: "intern",
-    locationLabel: "KCN Quang Minh, Hà Nội",
-    location: "factory",
-    salary: "Trợ cấp thực tập + Phụ cấp ăn trưa & đi lại",
-    tags: [
-      "Được đào tạo 1:1 cùng Kỹ sư trưởng nhà máy",
-      "Cơ hội tiếp nhận nhân viên chính thức sau kỳ",
-    ],
-    deadline: "Tuyển thường xuyên",
-    badgeClassName: "bg-slate-200 text-slate-700",
-  },
-];
+type TuyenDungT = ReturnType<typeof useTranslations<"TuyenDung">>;
 
-export const DEPARTMENT_OPTIONS: { value: "all" | JobDepartment; label: string }[] = [
-  { value: "all", label: "Tất cả phòng ban" },
-  { value: "engineering", label: "Kỹ thuật & Công nghệ (R&D)" },
-  { value: "production", label: "Sản xuất & Vận hành" },
-  { value: "qc", label: "Quản lý chất lượng (QC/QA)" },
-  { value: "maintenance", label: "Bảo trì & Cơ điện" },
-  { value: "sales", label: "Kinh doanh B2B & Dự án" },
-];
+export function getJobs(t: TuyenDungT): Job[] {
+  return [
+    {
+      id: "ky-su-hoa-hoc-cong-nghe-ma",
+      title: t("jobs.0.title"),
+      departmentLabel: t("jobs.0.departmentLabel"),
+      department: "engineering",
+      typeLabel: t("jobs.0.typeLabel"),
+      type: "fulltime",
+      locationLabel: t("jobs.0.locationLabel"),
+      location: "factory",
+      salary: t("jobs.0.salary"),
+      tags: [t("jobs.0.tags.0"), t("jobs.0.tags.1"), t("jobs.0.tags.2")],
+      deadline: t("jobs.0.deadline"),
+      badgeClassName: "bg-orange-100 text-orange-700",
+    },
+    {
+      id: "truong-nhom-qa-qc",
+      title: t("jobs.1.title"),
+      departmentLabel: t("jobs.1.departmentLabel"),
+      department: "qc",
+      typeLabel: t("jobs.1.typeLabel"),
+      type: "fulltime",
+      locationLabel: t("jobs.1.locationLabel"),
+      location: "factory",
+      salary: t("jobs.1.salary"),
+      tags: [t("jobs.1.tags.0"), t("jobs.1.tags.1"), t("jobs.1.tags.2")],
+      deadline: t("jobs.1.deadline"),
+      badgeClassName: "bg-slate-200 text-slate-700",
+    },
+    {
+      id: "ky-thuat-vien-van-hanh-day-chuyen",
+      title: t("jobs.2.title"),
+      departmentLabel: t("jobs.2.departmentLabel"),
+      department: "production",
+      typeLabel: t("jobs.2.typeLabel"),
+      type: "shift",
+      locationLabel: t("jobs.2.locationLabel"),
+      location: "factory",
+      salary: t("jobs.2.salary"),
+      tags: [t("jobs.2.tags.0"), t("jobs.2.tags.1")],
+      deadline: t("jobs.2.deadline"),
+      badgeClassName: "bg-orange-100 text-orange-700",
+    },
+    {
+      id: "ky-su-bao-tri-co-dien-plc",
+      title: t("jobs.3.title"),
+      departmentLabel: t("jobs.3.departmentLabel"),
+      department: "maintenance",
+      typeLabel: t("jobs.3.typeLabel"),
+      type: "fulltime",
+      locationLabel: t("jobs.3.locationLabel"),
+      location: "factory",
+      salary: t("jobs.3.salary"),
+      tags: [t("jobs.3.tags.0"), t("jobs.3.tags.1")],
+      deadline: t("jobs.3.deadline"),
+      badgeClassName: "bg-slate-100 text-slate-600",
+    },
+    {
+      id: "chuyen-vien-kinh-doanh-b2b",
+      title: t("jobs.4.title"),
+      departmentLabel: t("jobs.4.departmentLabel"),
+      department: "sales",
+      typeLabel: t("jobs.4.typeLabel"),
+      type: "fulltime",
+      locationLabel: t("jobs.4.locationLabel"),
+      location: "office",
+      salary: t("jobs.4.salary"),
+      tags: [t("jobs.4.tags.0"), t("jobs.4.tags.1")],
+      deadline: t("jobs.4.deadline"),
+      badgeClassName: "bg-orange-100 text-orange-700",
+    },
+    {
+      id: "thuc-tap-sinh-ky-thuat-co-khi-luyen-kim",
+      title: t("jobs.5.title"),
+      departmentLabel: t("jobs.5.departmentLabel"),
+      department: "engineering",
+      typeLabel: t("jobs.5.typeLabel"),
+      type: "intern",
+      locationLabel: t("jobs.5.locationLabel"),
+      location: "factory",
+      salary: t("jobs.5.salary"),
+      tags: [t("jobs.5.tags.0"), t("jobs.5.tags.1")],
+      deadline: t("jobs.5.deadline"),
+      badgeClassName: "bg-slate-200 text-slate-700",
+    },
+  ];
+}
 
-export const TYPE_OPTIONS: { value: "all" | JobType; label: string }[] = [
-  { value: "all", label: "Tất cả hình thức" },
-  { value: "fulltime", label: "Toàn thời gian (Full-time)" },
-  { value: "shift", label: "Theo ca sản xuất (Xoay ca)" },
-  { value: "intern", label: "Thực tập sinh kỹ thuật" },
-];
+export function getDepartmentOptions(t: TuyenDungT): { value: "all" | JobDepartment; label: string }[] {
+  return [
+    { value: "all", label: t("departmentOptions.all") },
+    { value: "engineering", label: t("departmentOptions.engineering") },
+    { value: "production", label: t("departmentOptions.production") },
+    { value: "qc", label: t("departmentOptions.qc") },
+    { value: "maintenance", label: t("departmentOptions.maintenance") },
+    { value: "sales", label: t("departmentOptions.sales") },
+  ];
+}
 
-export const LOCATION_OPTIONS: { value: "all" | JobLocation; label: string }[] = [
-  { value: "all", label: "Tất cả địa điểm" },
-  { value: "factory", label: "Nhà máy KCN Quang Minh, Hà Nội" },
-  { value: "office", label: "Văn phòng & Nhà máy Hà Nội" },
-];
+export function getTypeOptions(t: TuyenDungT): { value: "all" | JobType; label: string }[] {
+  return [
+    { value: "all", label: t("typeOptions.all") },
+    { value: "fulltime", label: t("typeOptions.fulltime") },
+    { value: "shift", label: t("typeOptions.shift") },
+    { value: "intern", label: t("typeOptions.intern") },
+  ];
+}
+
+export function getLocationOptions(t: TuyenDungT): { value: "all" | JobLocation; label: string }[] {
+  return [
+    { value: "all", label: t("locationOptions.all") },
+    { value: "factory", label: t("locationOptions.factory") },
+    { value: "office", label: t("locationOptions.office") },
+  ];
+}

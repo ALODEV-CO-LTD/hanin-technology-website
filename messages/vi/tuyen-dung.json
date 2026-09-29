@@ -1,0 +1,217 @@
+{
+  "TuyenDung": {
+    "PageHero": {
+      "breadcrumbHome": "Trang chủ",
+      "breadcrumbCurrent": "Tuyển dụng",
+      "statusBadge": "PORTAL: TALENT & CAREERS // STATUS: ACTIVE RECRUITMENT",
+      "titlePrefix": "CƠ HỘI",
+      "titleHighlight": "NGHỀ NGHIỆP",
+      "companyName": "HANIN TECHNOLOGY VIỆT NAM",
+      "description": "tuyển kỹ sư và nhân sự sản xuất cho dây chuyền gia công cơ khí và xử lý bề mặt kim loại theo tiêu chuẩn quốc tế.",
+      "standardLabel": "Tiêu chuẩn",
+      "standardValue": "ISO & 5S Kaizen",
+      "benefitsLabel": "Đãi ngộ",
+      "benefitsValue": "Lộ trình rõ ràng",
+      "developmentLabel": "Phát triển",
+      "developmentValue": "Đào tạo 1:1",
+      "factoryLabel": "Nhà máy",
+      "factoryValue": "KCN Quang Minh",
+      "imageAlt": "Phân xưởng xi mạ kỹ thuật cao tự động hoá tại HANIN Technology (ảnh minh họa, sẽ thay bằng ảnh thực tế)",
+      "imageBadgeTag": "DÂY CHUYỀN TỰ ĐỘNG",
+      "imageBadgeTitle": "Tổ hợp sản xuất & mạ kỹ thuật cao",
+      "imageBadgeLab": "HI-TECH LAB",
+      "floatingBadgeTitle": "100% Đãi ngộ chuẩn",
+      "floatingBadgeSubtitle": "Bảo hiểm 24/7 & Xe đưa đón"
+    },
+    "WhyHanin": {
+      "title": "NỀN TẢNG PHÁT TRIỂN SỰ NGHIỆP TẠI HANIN",
+      "description": "Môi trường sản xuất công nghệ cao, kỷ luật kỹ thuật và an toàn lao động, với lộ trình phát triển chuyên môn rõ ràng cho từng vị trí.",
+      "pillar1": {
+        "tag": "PILLAR 01 // FACTORY 4.0",
+        "title": "Môi trường làm việc an toàn & hiện đại",
+        "desc": "Nhà xưởng đạt chuẩn ISO 9001 & ISO 14001, dây chuyền mạ tự động PLC khép kín, đầy đủ bảo hộ lao động và khu vực kiểm nghiệm riêng biệt.",
+        "metricLabel": "CHỈ TIÊU AN TOÀN",
+        "metricValue": "1.200+ NGÀY VÔ SỰ CỐ"
+      },
+      "pillar2": {
+        "tag": "PILLAR 02 // GROWTH PATH",
+        "title": "Cơ hội phát triển & thăng tiến nghề nghiệp",
+        "desc": "Lộ trình thăng tiến rõ ràng theo hướng Kỹ sư chuyên môn (Technical Specialist) hoặc Quản lý (Management Track). Đánh giá hiệu suất định kỳ dựa trên kết quả công việc và sáng kiến Kaizen.",
+        "metricLabel": "ĐÁNH GIÁ ĐỊNH KỲ",
+        "metricValue": "2 LẦN / NĂM"
+      },
+      "pillar3": {
+        "tag": "PILLAR 03 // TECH TRANSFER",
+        "title": "Đào tạo kỹ thuật & chuyển giao công nghệ",
+        "desc": "Đào tạo nội bộ từ chuyên gia luyện kim, thực hành đo lường huỳnh quang tia X (XRF), các khóa Lean Six Sigma, Kaizen và quy trình tự động hóa SCADA.",
+        "metricLabel": "GIỜ ĐÀO TẠO/KỸ SƯ",
+        "metricValue": "80 GIỜ / NĂM"
+      },
+      "pillar4": {
+        "tag": "PILLAR 04 // TOTAL REWARDS",
+        "title": "Văn hóa doanh nghiệp & chế độ đãi ngộ",
+        "desc": "Lương theo năng lực, thưởng sản xuất và hiệu quả dự án, bảo hiểm sức khỏe, xe đưa đón tuyến Hà Nội - Mê Linh, bữa ăn ca tại nhà máy và hoạt động teambuilding thường niên.",
+        "metricLabel": "XE ĐƯA ĐÓN",
+        "metricValue": "TUYẾN NỘI THÀNH HÀ NỘI"
+      }
+    },
+    "JobBoard": {
+      "title": "VỊ TRÍ ĐANG TUYỂN DỤNG",
+      "description": "Vị trí tuyển dụng tại văn phòng điều hành và nhà máy sản xuất HANIN.",
+      "boardStatus": "CMS DYNAMIC JOB BOARD // {count} VỊ TRÍ ĐANG MỞ",
+      "searchPlaceholder": "Tìm kiếm vị trí công việc, chức danh kỹ thuật, từ khóa (ví dụ: PLC, R&D, QA, Cơ khí)...",
+      "departmentLabel": "Phòng ban",
+      "typeLabel": "Hình thức làm việc",
+      "locationLabel": "Địa điểm làm việc",
+      "resultsLabel": "Hiển thị kết quả:",
+      "resultsCount": "{count} vị trí khả dụng",
+      "resetFilters": "Đặt lại bộ lọc",
+      "deadlineLabel": "Hạn nộp:",
+      "applyNow": "ỨNG TUYỂN NGAY",
+      "noResults": "Không tìm thấy vị trí phù hợp với bộ lọc hiện tại. Vui lòng thử từ khóa khác.",
+      "closeModal": "Đóng",
+      "fullNameLabel": "Họ và tên *",
+      "fullNamePlaceholder": "Ví dụ: Nguyễn Văn An",
+      "phoneLabel": "Số điện thoại *",
+      "phonePlaceholder": "09xx xxx xxx",
+      "emailLabel": "Email *",
+      "emailPlaceholder": "ten@email.com",
+      "experienceLabel": "Số năm kinh nghiệm",
+      "experienceOptions": {
+        "fresh": "Mới tốt nghiệp / Dưới 1 năm",
+        "one_two": "1 - 2 năm kinh nghiệm",
+        "three_five": "3 - 5 năm kinh nghiệm",
+        "above_five": "Trên 5 năm kinh nghiệm"
+      },
+      "cvLabel": "Đính kèm CV (PDF, DOCX) *",
+      "cvDropText": "Kéo thả tệp hoặc bấm để chọn CV",
+      "cvSizeNote": "Tối đa 15MB (.pdf, .doc, .docx)",
+      "messageLabel": "Lời nhắn / Giới thiệu bản thân",
+      "messagePlaceholder": "Tóm tắt ngắn gọn thế mạnh kỹ thuật hoặc mong muốn nghề nghiệp của bạn...",
+      "cancelButton": "Hủy bỏ",
+      "submitButton": "Gửi đơn ứng tuyển",
+      "submitSuccess": "✓ Hồ sơ ứng tuyển đã được tiếp nhận thành công. Bộ phận Nhân sự HANIN sẽ liên hệ với bạn trong vòng 48 giờ làm việc!"
+    },
+    "WorkEnvironment": {
+      "title": "HÌNH ẢNH MÔI TRƯỜNG LÀM VIỆC THỰC TẾ",
+      "description": "Hình ảnh thực tế tại nhà máy HANIN TECHNOLOGY VIỆT NAM: dây chuyền tự động hóa vận hành theo kỷ luật lao động nghiêm ngặt.",
+      "mainImageAlt": "Khu vực điều hành & vận hành dây chuyền mạ tự động trung tâm tại HANIN Tech (ảnh minh họa, sẽ thay bằng ảnh thực tế)",
+      "mainBadge": "PRODUCTION FACILITY 01",
+      "mainTitle": "Khu vực điều hành & vận hành dây chuyền mạ tự động trung tâm",
+      "mainDesc": "Dây chuyền mạ Niken & Crom cứng khép kín với hệ thống xử lý khí thải và giám sát tự động bằng vi điều khiển PLC.",
+      "secondaryImageAlt": "Thành phẩm linh kiện cơ khí sau mạ đạt chuẩn xuất khẩu chất lượng cao (ảnh minh họa, sẽ thay bằng ảnh thực tế)",
+      "secondaryBadge": "METROLOGY & QC INSPECTION",
+      "secondaryTitle": "Thành phẩm linh kiện cơ khí chính xác sau mạ",
+      "secondaryDesc": "Kiểm tra độ dày lớp mạ micromet (µm) bằng đầu đo quang phổ XRF",
+      "labTitle": "Phòng kiểm nghiệm hóa lý vi mô",
+      "labDesc": "Trang bị đầy đủ buồng phun sương muối NSS/AASS gia tốc độ ăn mòn, máy đo độ bám dính lớp mạ và thiết bị phân tích dung dịch Hull Cell.",
+      "labFooter": "100% lô hàng xuất xưởng đều có chứng chỉ CoC & RoHS"
+    },
+    "ApplicationCta": {
+      "title": "GIA NHẬP ĐỘI NGŨ HANIN",
+      "description": "Gửi hồ sơ ứng tuyển (CV) hoặc liên hệ trực tiếp bộ phận Tuyển dụng để được tư vấn vị trí phù hợp với đội ngũ kỹ sư và chuyên gia xử lý bề mặt của HANIN.",
+      "emailLabel": "Email nhận hồ sơ",
+      "hotlineLabel": "Hotline Tuyển dụng",
+      "quickApplyTitle": "NỘP HỒ SƠ ỨNG TUYỂN NHANH",
+      "quickApplyDescription": "HANIN tiếp nhận hồ sơ ứng viên kể cả khi vị trí bạn quan tâm chưa được đăng tuyển chính thức.",
+      "viewJobsCta": "XEM VỊ TRÍ TUYỂN DỤNG",
+      "sendCvCta": "GỬI CV TRỰC TIẾP (EMAIL)",
+      "securityNote": "Bảo mật thông tin ứng viên theo quy chuẩn ISO 27001"
+    },
+    "jobs": {
+      "0": {
+        "title": "Kỹ sư Hóa học / Công nghệ mạ kim loại",
+        "departmentLabel": "Khối Kỹ thuật & R&D",
+        "typeLabel": "Toàn thời gian",
+        "locationLabel": "KCN Quang Minh, Hà Nội",
+        "salary": "Lương: 18 - 25 Triệu",
+        "tags": {
+          "0": "Kinh nghiệm: 2+ năm",
+          "1": "Bể mạ tự động PLC & Hóa học ENP",
+          "2": "Phân tích nồng độ dung dịch Hull Cell"
+        },
+        "deadline": "30/04/2026"
+      },
+      "1": {
+        "title": "Trưởng nhóm Quản lý chất lượng (QA/QC Leader)",
+        "departmentLabel": "Quản lý chất lượng (QA/QC)",
+        "typeLabel": "Toàn thời gian",
+        "locationLabel": "KCN Quang Minh, Hà Nội",
+        "salary": "Lương: 20 - 30 Triệu",
+        "tags": {
+          "0": "Chứng chỉ ISO 9001 / IATF 16949",
+          "1": "Đo kiểm XRF & Thử nghiệm Phun muối (Salt Spray)",
+          "2": "Kinh nghiệm: 3-5 năm"
+        },
+        "deadline": "15/05/2026"
+      },
+      "2": {
+        "title": "Kỹ thuật viên vận hành dây chuyền mạ tự động",
+        "departmentLabel": "Khối Sản xuất & Vận hành",
+        "typeLabel": "Theo ca sản xuất (Xoay ca)",
+        "locationLabel": "KCN Quang Minh, Hà Nội",
+        "salary": "Lương: 10 - 15 Triệu + Phụ cấp ca",
+        "tags": {
+          "0": "Tốt nghiệp Trung cấp/Cao đẳng Cơ khí/Điện",
+          "1": "Giám sát hệ thống SCADA & cẩu chuyển tự động"
+        },
+        "deadline": "Tuyển liên tục"
+      },
+      "3": {
+        "title": "Kỹ sư Bảo trì cơ điện & hệ thống PLC",
+        "departmentLabel": "Bảo trì & Cơ điện (Maintenance)",
+        "typeLabel": "Toàn thời gian",
+        "locationLabel": "KCN Quang Minh, Hà Nội",
+        "salary": "Lương: 15 - 22 Triệu",
+        "tags": {
+          "0": "PLC Siemens S7-1200 / Mitsubishi",
+          "1": "Bảo trì nguồn Rectifier & Hệ thống lọc tuần hoàn"
+        },
+        "deadline": "25/04/2026"
+      },
+      "4": {
+        "title": "Chuyên viên Kinh doanh dự án B2B (Cơ khí & gia công phụ trợ)",
+        "departmentLabel": "Kinh doanh & Phát triển thị trường",
+        "typeLabel": "Toàn thời gian",
+        "locationLabel": "Văn phòng & Nhà máy Hà Nội",
+        "salary": "Lương cứng + Thưởng hoa hồng dự án",
+        "tags": {
+          "0": "Tiếng Anh hoặc Tiếng Hàn/Nhật giao tiếp",
+          "1": "Phát triển mạng lưới khách hàng FDI / OEM"
+        },
+        "deadline": "10/05/2026"
+      },
+      "5": {
+        "title": "Thực tập sinh Kỹ thuật Cơ khí / Luyện kim",
+        "departmentLabel": "Khối Kỹ thuật & Công nghệ",
+        "typeLabel": "Thực tập sinh (3 - 6 tháng)",
+        "locationLabel": "KCN Quang Minh, Hà Nội",
+        "salary": "Trợ cấp thực tập + Phụ cấp ăn trưa & đi lại",
+        "tags": {
+          "0": "Được đào tạo 1:1 cùng Kỹ sư trưởng nhà máy",
+          "1": "Cơ hội tiếp nhận nhân viên chính thức sau kỳ"
+        },
+        "deadline": "Tuyển thường xuyên"
+      }
+    },
+    "departmentOptions": {
+      "all": "Tất cả phòng ban",
+      "engineering": "Kỹ thuật & Công nghệ (R&D)",
+      "production": "Sản xuất & Vận hành",
+      "qc": "Quản lý chất lượng (QC/QA)",
+      "maintenance": "Bảo trì & Cơ điện",
+      "sales": "Kinh doanh B2B & Dự án"
+    },
+    "typeOptions": {
+      "all": "Tất cả hình thức",
+      "fulltime": "Toàn thời gian (Full-time)",
+      "shift": "Theo ca sản xuất (Xoay ca)",
+      "intern": "Thực tập sinh kỹ thuật"
+    },
+    "locationOptions": {
+      "all": "Tất cả địa điểm",
+      "factory": "Nhà máy KCN Quang Minh, Hà Nội",
+      "office": "Văn phòng & Nhà máy Hà Nội"
+    }
+  }
+}

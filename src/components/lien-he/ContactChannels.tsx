@@ -1,16 +1,18 @@
+import { useTranslations } from "next-intl";
+
 export default function ContactChannels() {
+  const t = useTranslations("LienHe.ContactChannels");
+
   return (
     <section className="w-full bg-slate-50 py-space-xl">
       <div className="max-w-[1280px] mx-auto px-margin">
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-space-md mb-space-xl">
           <div>
             <h2 className="text-headline-md font-bold text-slate-900 uppercase tracking-tight">
-              HỆ THỐNG TRỤ SỞ &amp; ĐẦU MỐI KỸ THUẬT
+              {t("heading")}
             </h2>
           </div>
-          <span className="text-body-sm text-slate-500">
-            Phục vụ khách hàng trong nước &amp; chuỗi cung ứng xuất khẩu
-          </span>
+          <span className="text-body-sm text-slate-500">{t("subtitle")}</span>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
@@ -22,22 +24,20 @@ export default function ContactChannels() {
                 <span className="material-symbols-outlined text-[24px]">factory</span>
               </div>
               <span className="text-label-sm uppercase tracking-wider text-slate-500 font-semibold block mb-1">
-                TRỤ SỞ &amp; NHÀ MÁY
+                {t("card1.badge")}
               </span>
               <h3 className="text-title-md font-bold text-slate-900 mb-space-sm">
-                CÔNG TY TNHH HANIN TECHNOLOGY VIỆT NAM
+                {t("card1.title")}
               </h3>
               <p className="text-body-sm text-slate-600 leading-relaxed mb-space-md">
-                Lô CN-08, Khu Công Nghiệp Quang Minh, Huyện Mê Linh, TP. Hà Nội, Việt Nam
+                {t("card1.address")}
               </p>
             </div>
             <div className="pt-space-sm bg-slate-50 -mx-space-lg -mb-space-lg p-space-md">
               <span className="text-label-sm text-slate-500 block font-semibold">
-                QUY MÔ VẬN HÀNH
+                {t("card1.footerLabel")}
               </span>
-              <span className="text-body-sm text-slate-900">
-                Tổ hợp mạ tự động PLC &amp; Lab đo kiểm CMM ISO 17025
-              </span>
+              <span className="text-body-sm text-slate-900">{t("card1.footerValue")}</span>
             </div>
           </div>
 
@@ -49,14 +49,14 @@ export default function ContactChannels() {
                 <span className="material-symbols-outlined text-[24px]">support_agent</span>
               </div>
               <span className="text-label-sm uppercase tracking-wider text-slate-500 font-semibold block mb-1">
-                HOTLINE TIẾP NHẬN
+                {t("card2.badge")}
               </span>
               <h3 className="text-title-md font-bold text-slate-900 mb-space-sm">
-                TƯ VẤN BÁO GIÁ &amp; DUNG SAI
+                {t("card2.title")}
               </h3>
               <div className="flex flex-col gap-space-sm text-body-sm mb-space-md">
                 <div>
-                  <span className="text-label-sm text-slate-500 block">Hotline Phòng Báo Giá:</span>
+                  <span className="text-label-sm text-slate-500 block">{t("card2.quoteLabel")}</span>
                   <a
                     href="tel:02438186868"
                     className="font-bold text-steel-600 hover:underline text-title-md block"
@@ -66,16 +66,16 @@ export default function ContactChannels() {
                 </div>
                 <div>
                   <span className="text-label-sm text-slate-500 block">
-                    Kỹ sư Luyện kim (Direct CAD/Spec):
+                    {t("card2.engineerLabel")}
                   </span>
                   <span className="font-semibold text-slate-900 block">
-                    (+84) 988 123 456 (24/7 Hotline)
+                    (+84) 988 123 456 ({t("card2.engineerHotlineSuffix")})
                   </span>
                 </div>
               </div>
             </div>
             <div className="pt-space-sm bg-slate-50 -mx-space-lg -mb-space-lg p-space-md flex items-center justify-between">
-              <span className="text-label-sm text-slate-500">Tư vấn trực tiếp: Zalo / WhatsApp</span>
+              <span className="text-label-sm text-slate-500">{t("card2.footerLabel")}</span>
               <span className="inline-block w-2 h-2 rounded-full bg-emerald-500" />
             </div>
           </div>
@@ -88,16 +88,14 @@ export default function ContactChannels() {
                 <span className="material-symbols-outlined text-[24px]">mark_email_read</span>
               </div>
               <span className="text-label-sm uppercase tracking-wider text-slate-500 font-semibold block mb-1">
-                HỘP THƯ CHUYÊN BIỆT
+                {t("card3.badge")}
               </span>
               <h3 className="text-title-md font-bold text-slate-900 mb-space-sm">
-                TIẾP NHẬN HỒ SƠ THẦU &amp; RFQ
+                {t("card3.title")}
               </h3>
               <div className="flex flex-col gap-space-sm text-body-sm mb-space-md">
                 <div>
-                  <span className="text-label-sm text-slate-500 block">
-                    Phòng Kinh Doanh &amp; Đơn Hàng Mới:
-                  </span>
+                  <span className="text-label-sm text-slate-500 block">{t("card3.salesLabel")}</span>
                   <a
                     href="mailto:sales@hanintech.vn"
                     className="font-semibold text-steel-600 hover:underline block"
@@ -107,7 +105,7 @@ export default function ContactChannels() {
                 </div>
                 <div>
                   <span className="text-label-sm text-slate-500 block">
-                    Phòng Kỹ Thuật, R&amp;D &amp; Thử Nghiệm:
+                    {t("card3.engineeringLabel")}
                   </span>
                   <a
                     href="mailto:engineering@hanintech.vn"
@@ -119,9 +117,7 @@ export default function ContactChannels() {
               </div>
             </div>
             <div className="pt-space-sm bg-slate-50 -mx-space-lg -mb-space-lg p-space-md">
-              <span className="text-label-sm text-slate-500 block">
-                Cổng PGP Encryption sẵn sàng theo yêu cầu
-              </span>
+              <span className="text-label-sm text-slate-500 block">{t("card3.footerText")}</span>
             </div>
           </div>
 
@@ -133,33 +129,33 @@ export default function ContactChannels() {
                 <span className="material-symbols-outlined text-[24px]">schedule</span>
               </div>
               <span className="text-label-sm uppercase tracking-wider text-slate-500 font-semibold block mb-1">
-                CA VẬN HÀNH
+                {t("card4.badge")}
               </span>
               <h3 className="text-title-md font-bold text-slate-900 mb-space-sm">
-                KHỐI VĂN PHÒNG &amp; SẢN XUẤT
+                {t("card4.title")}
               </h3>
               <div className="flex flex-col gap-space-sm text-body-sm mb-space-md">
                 <div>
                   <span className="text-label-sm text-slate-500 block">
-                    Khối Kỹ Thuật &amp; Văn Phòng:
+                    {t("card4.officeLabel")}
                   </span>
                   <span className="text-slate-900 block font-medium">
-                    Thứ 2 – Thứ 7: 08:00 – 17:30
+                    {t("card4.officeValue")}
                   </span>
                 </div>
                 <div>
                   <span className="text-label-sm text-slate-500 block">
-                    Khối Xưởng Mạ &amp; CNC Vận Hành:
+                    {t("card4.workshopLabel")}
                   </span>
                   <span className="text-slate-900 block font-medium">
-                    3 Ca liên tục (24/7) theo lệnh sản xuất
+                    {t("card4.workshopValue")}
                   </span>
                 </div>
               </div>
             </div>
             <div className="pt-space-sm bg-slate-50 -mx-space-lg -mb-space-lg p-space-md">
               <span className="text-label-sm text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded inline-block font-semibold">
-                Trực xử lý sự cố dây chuyền 24/7
+                {t("card4.footerBadge")}
               </span>
             </div>
           </div>

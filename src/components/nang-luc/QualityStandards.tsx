@@ -1,50 +1,49 @@
+import { useTranslations } from "next-intl";
+
 const CARDS = [
   {
+    key: "iso9001",
     icon: "verified",
     iconAccent: true,
-    tagLabel: "CHỨNG NHẬN CHẤT LƯỢNG",
     tagAccent: true,
     title: "ISO 9001:2015",
-    desc: "Hệ thống quản lý chất lượng sản xuất, bảo đảm tính ổn định lặp lại của từng lô hàng gia công mạ cơ khí kỹ thuật cao.",
     footer: "AUDITED ANNUALLY // GLOBAL RECOGNITION",
   },
   {
+    key: "iso14001",
     icon: "eco",
     iconAccent: false,
-    tagLabel: "QUẢN LÝ MÔI TRƯỜNG",
     tagAccent: false,
     title: "ISO 14001:2015",
-    desc: "Hệ thống quản lý môi trường và xử lý nước thải công nghiệp khép kín, bảo đảm tuân thủ quy chuẩn bảo vệ môi trường Việt Nam.",
     footer: "CLOSED-LOOP EFFLUENT TREATMENT",
   },
   {
+    key: "astmRohs",
     icon: "rule",
     iconAccent: false,
-    tagLabel: "QUY CHUẨN XUẤT KHẨU",
     tagAccent: false,
     title: "[ASTM & RoHS/REACH]",
-    desc: "Tuân thủ chỉ thị hạn chế chất nguy hại RoHS/REACH châu Âu, các tiêu chuẩn ASTM B117, ASTM B633 và tiêu chuẩn công nghiệp Nhật Bản JIS.",
     footer: "ZERO HAZARDOUS SUBSTANCES",
   },
-];
+] as const;
 
 export default function QualityStandards() {
+  const t = useTranslations("NangLuc.QualityStandards");
+
   return (
     <section className="w-full py-space-xl bg-white border-t border-slate-200">
       <div className="max-w-[1280px] mx-auto px-margin w-full">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-xl">
           <div>
-            <h2 className="text-headline-lg text-slate-900 uppercase tracking-tight">CHẤT LƯỢNG &amp; TIÊU CHUẨN</h2>
+            <h2 className="text-headline-lg text-slate-900 uppercase tracking-tight">{t("sectionTitle")}</h2>
           </div>
-          <p className="text-body-sm text-slate-600 max-w-md">
-            Hệ thống quản lý chất lượng và quy chuẩn kỹ thuật áp dụng trong từng công đoạn sản xuất.
-          </p>
+          <p className="text-body-sm text-slate-600 max-w-md">{t("sectionDescription")}</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-gutter mb-space-lg">
           {CARDS.map((card) => (
             <div
-              key={card.title}
+              key={card.key}
               className="p-space-lg bg-slate-50 border border-slate-200 rounded-lg shadow-sm hover:border-steel-300 hover:shadow-md transition-all flex flex-col justify-between"
             >
               <div>
@@ -60,10 +59,10 @@ export default function QualityStandards() {
                     card.tagAccent ? "text-steel-600" : "text-slate-600"
                   }`}
                 >
-                  {card.tagLabel}
+                  {t(`items.${card.key}.tagLabel`)}
                 </div>
                 <h3 className="text-headline-sm text-slate-900 uppercase mb-space-xs">{card.title}</h3>
-                <p className="text-body-sm text-slate-600 leading-relaxed">{card.desc}</p>
+                <p className="text-body-sm text-slate-600 leading-relaxed">{t(`items.${card.key}.desc`)}</p>
               </div>
               <div className="mt-space-md pt-space-xs text-label-sm text-slate-500 uppercase border-t border-slate-200/60">
                 {card.footer}
@@ -77,7 +76,7 @@ export default function QualityStandards() {
             className="inline-flex items-center gap-1 text-label-technical text-steel-600 hover:text-slate-900 font-semibold uppercase tracking-wider transition-colors"
             href="#"
           >
-            XEM CHI TIẾT CHỨNG NHẬN →
+            {t("ctaDetail")}
           </a>
         </div>
       </div>

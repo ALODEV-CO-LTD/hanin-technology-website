@@ -1,28 +1,10 @@
-const MILESTONES = [
-  {
-    index: "01",
-    yearTag: "[NĂM KHỞI ĐẦU]",
-    phase: "GIAI ĐOẠN 01 // KHỞI ĐẦU NỀN TẢNG",
-    title: "Thành lập cơ sở & xây dựng quy chuẩn",
-    desc: "Thành lập cơ sở, xây dựng quy chuẩn mạ kim loại và tối ưu công thức hóa chất xử lý.",
-  },
-  {
-    index: "02",
-    yearTag: "[NĂM PHÁT TRIỂN]",
-    phase: "GIAI ĐOẠN 02 // MỞ RỘNG DÂY CHUYỀN",
-    title: "Mở rộng hệ thống dây chuyền tự động",
-    desc: "Mở rộng dây chuyền mạ tự động và nâng cấp phòng kiểm soát chất lượng theo chuẩn đo lường kỹ thuật.",
-  },
-  {
-    index: "03",
-    yearTag: "[NĂM CHUẨN HÓA]",
-    phase: "GIAI ĐOẠN 03 // CHUẨN HÓA QUỐC TẾ",
-    title: "Kiểm nghiệm Micron & Đồng bộ B2B",
-    desc: "Đạt chuẩn kiểm nghiệm độ dày micron và đồng bộ quy trình xử lý bề mặt cho khách hàng B2B quốc tế.",
-  },
-];
+import { useTranslations } from "next-intl";
 
 export default function CompanyJourney() {
+  const t = useTranslations("GioiThieu.CompanyJourney");
+
+  const MILESTONES = ["m1", "m2", "m3"] as const;
+
   return (
     <section className="w-full bg-[#f8fafc] py-space-xl border-y border-slate-200">
       <div className="max-w-[1280px] mx-auto px-margin">
@@ -30,12 +12,10 @@ export default function CompanyJourney() {
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-xl">
           <div>
             <h2 className="text-headline-lg md:text-headline-xl text-slate-900 uppercase tracking-tight font-bold">
-              HÀNH TRÌNH PHÁT TRIỂN
+              {t("heading")}
             </h2>
           </div>
-          <p className="text-body-sm text-slate-500 max-w-md">
-            [Thông tin lịch sử và các dấu mốc phát triển của HANIN]
-          </p>
+          <p className="text-body-sm text-slate-500 max-w-md">{t("subtitle")}</p>
         </div>
 
         {/* Engineering Timeline Layout */}
@@ -47,24 +27,24 @@ export default function CompanyJourney() {
 
           {/* 4 Milestone Cards */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
-            {MILESTONES.map((item) => (
+            {MILESTONES.map((key, i) => (
               <div
-                key={item.index}
+                key={key}
                 className="relative flex flex-col p-space-md rounded bg-white border border-slate-200 hover:border-steel-600/60 shadow-sm hover:shadow-md transition-all duration-300 group"
               >
                 <div className="flex items-center justify-between mb-space-sm">
                   <span className="w-8 h-8 rounded bg-slate-100 border border-slate-200 flex items-center justify-center text-label-technical text-steel-600 font-bold group-hover:bg-steel-600 group-hover:text-white transition-colors">
-                    {item.index}
+                    {`0${i + 1}`}
                   </span>
                   <span className="text-[11px] uppercase tracking-wider text-slate-600 px-2 py-0.5 bg-slate-100 rounded border border-slate-200">
-                    {item.yearTag}
+                    {t(`${key}.yearTag`)}
                   </span>
                 </div>
-                <div className="text-xs font-mono text-slate-400 mb-2">{item.phase}</div>
+                <div className="text-xs font-mono text-slate-400 mb-2">{t(`${key}.phase`)}</div>
                 <h3 className="text-title-md text-slate-900 font-semibold mb-2 group-hover:text-steel-600 transition-colors">
-                  {item.title}
+                  {t(`${key}.title`)}
                 </h3>
-                <p className="text-body-sm text-slate-600 leading-relaxed">{item.desc}</p>
+                <p className="text-body-sm text-slate-600 leading-relaxed">{t(`${key}.desc`)}</p>
               </div>
             ))}
 
@@ -75,19 +55,14 @@ export default function CompanyJourney() {
                   04
                 </span>
                 <span className="text-[11px] uppercase tracking-wider text-[#2F80C0] px-2 py-0.5 bg-[#E2EFF9] rounded border border-[#CFE1F3] font-semibold">
-                  [HIỆN TẠI &amp; TƯƠNG LAI]
+                  {t("m4.yearTag")}
                 </span>
               </div>
-              <div className="text-xs font-mono text-[#2F80C0] mb-2 font-semibold">
-                GIAI ĐOẠN 04 // HỆ SINH THÁI BỀN VỮNG
-              </div>
+              <div className="text-xs font-mono text-[#2F80C0] mb-2 font-semibold">{t("m4.phase")}</div>
               <h3 className="text-title-md text-[#0B1F3A] font-semibold mb-2 group-hover:text-[#2F80C0] transition-colors">
-                Đối tác gia công mạ tin cậy
+                {t("m4.title")}
               </h3>
-              <p className="text-body-sm text-slate-600 leading-relaxed">
-                Mở rộng vai trò đối tác gia công mạ cho chuỗi sản xuất công nghiệp phụ trợ, hướng tới quy chuẩn
-                bền vững và công nghệ sạch.
-              </p>
+              <p className="text-body-sm text-slate-600 leading-relaxed">{t("m4.desc")}</p>
             </div>
           </div>
         </div>
