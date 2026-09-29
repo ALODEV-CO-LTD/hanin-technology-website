@@ -29,7 +29,7 @@ export default function Hero() {
             <h1 className="text-display-hero-mobile xl:text-display-hero text-on-surface uppercase tracking-tight font-bold">
               PRECISION METAL <span className="text-primary">PLATING</span>
             </h1>
-            <p className="text-headline-md text-secondary-fixed font-semibold tracking-tight">
+            <p className="text-headline-md text-on-surface font-semibold tracking-tight">
               Giải pháp gia công mạ kim loại cho công nghiệp hiện đại.
             </p>
           </div>

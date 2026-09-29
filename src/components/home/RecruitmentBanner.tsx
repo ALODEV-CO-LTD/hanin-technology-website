@@ -21,7 +21,7 @@ export default function RecruitmentBanner() {
           </div>
           <div className="flex flex-col sm:flex-row items-center gap-space-md shrink-0">
             <div className="flex flex-col items-center sm:items-end">
-              <span className="text-headline-lg text-primary font-bold">XX</span>
+              <span className="text-headline-lg text-primary font-bold">08</span>
               <span className="text-[11px] text-secondary uppercase">VỊ TRÍ ĐANG TUYỂN</span>
             </div>
             <a

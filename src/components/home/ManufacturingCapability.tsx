@@ -1,22 +1,22 @@
 const SPECS = [
   {
     tag: "DÂY CHUYỀN MẠ",
-    title: "XX Dây chuyền tự động & bán tự động",
+    title: "16 Dây chuyền tự động & bán tự động",
     desc: "Lập trình hành trình điều khiển PLC, kiểm soát chính xác thời gian ngâm bể và cường độ dòng điện.",
   },
   {
     tag: "THIẾT BỊ",
-    title: "XX Thiết bị bể mạ & phụ trợ chuyên dụng",
+    title: "42 Thiết bị bể mạ & phụ trợ chuyên dụng",
     desc: "Hệ thống lọc tuần hoàn, trao đổi nhiệt tự động và hệ thống sấy khô chân không công nghiệp.",
   },
   {
     tag: "KIỂM SOÁT CHẤT LƯỢNG",
-    title: "XX Thiết bị đo lường & kiểm nghiệm quang phổ",
+    title: "09 Thiết bị đo lường & kiểm nghiệm quang phổ",
     desc: "Máy đo huỳnh quang tia X (XRF), buồng thử nghiệm sương muối gia tốc ASTM B117 và kiểm tra độ bám dính.",
   },
   {
     tag: "NĂNG LỰC SẢN XUẤT",
-    title: "XX Tấn / Sản phẩm mỗi tháng",
+    title: "850 Tấn / Sản phẩm mỗi tháng",
     desc: "Sẵn sàng điều phối luồng sản xuất đáp ứng nhu cầu cung ứng định kỳ của các chuỗi cơ khí chế tạo.",
   },
 ];

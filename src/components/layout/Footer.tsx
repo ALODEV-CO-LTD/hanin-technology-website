@@ -90,7 +90,7 @@ export default function Footer() {
                 <span className="text-on-surface font-semibold block mb-0.5">
                   Hotline:
                 </span>
-                XXX XXX XXXX
+                024 3512 6688
               </p>
               <p className="leading-tight">
                 <span className="text-on-surface font-semibold block mb-0.5">

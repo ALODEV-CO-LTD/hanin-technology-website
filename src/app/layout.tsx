@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { gilroy } from "@/fonts";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 
@@ -11,7 +12,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="vi" className="dark">
+    <html lang="vi" className={gilroy.variable}>
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />

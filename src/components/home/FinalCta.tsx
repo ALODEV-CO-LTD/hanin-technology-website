@@ -40,7 +40,7 @@ export default function FinalCta() {
               <span className="material-symbols-outlined text-primary text-[20px]">call</span>
               <div className="flex flex-col">
                 <span className="text-[10px] text-secondary">HOTLINE HỖ TRỢ</span>
-                <span className="text-title-md text-on-surface font-bold">XXX XXX XXXX</span>
+                <span className="text-title-md text-on-surface font-bold">024 3512 6688</span>
               </div>
             </div>
             <div className="flex items-center gap-3 py-1">

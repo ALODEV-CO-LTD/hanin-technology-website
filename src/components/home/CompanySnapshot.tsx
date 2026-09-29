@@ -1,8 +1,8 @@
 const STATS = [
-  { value: "XX+", label1: "ĐỐI TÁC", label2: "Khách hàng" },
-  { value: "XX+", label1: "HẠNG MỤC", label2: "Dự án" },
-  { value: "XX+", label1: "DÂY CHUYỀN", label2: "Thiết bị" },
-  { value: "XX+", label1: "TẤN/THÁNG", label2: "Năng lực sản xuất" },
+  { value: "150+", label1: "ĐỐI TÁC", label2: "Khách hàng" },
+  { value: "320+", label1: "HẠNG MỤC", label2: "Dự án" },
+  { value: "24+", label1: "DÂY CHUYỀN", label2: "Thiết bị" },
+  { value: "850+", label1: "TẤN/THÁNG", label2: "Năng lực sản xuất" },
 ];
 
 export default function CompanySnapshot() {
@@ -17,7 +17,7 @@ export default function CompanySnapshot() {
             >
               <div className="flex items-baseline gap-1">
                 <span className="text-headline-xl text-primary font-bold">{stat.value}</span>
-                <span className="text-xs text-secondary-fixed-dim uppercase">{stat.label1}</span>
+                <span className="text-xs text-secondary uppercase">{stat.label1}</span>
               </div>
               <span className="text-label-technical text-on-surface-variant uppercase tracking-wider">
                 {stat.label2}
