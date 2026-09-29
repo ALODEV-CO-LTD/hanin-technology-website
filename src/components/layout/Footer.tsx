@@ -22,7 +22,7 @@ export default function Footer() {
 
   return (
     <footer className="w-full bg-white border-t border-slate-200 mt-space-xl">
-      <div className="mx-auto px-margin pt-space-xl pb-space-lg">
+      <div className="max-w-[1800px] mx-auto px-margin pt-space-xl pb-space-lg">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-gutter">
           <div className="lg:col-span-4 flex flex-col gap-space-md">
             <Link href="/" className="flex items-center w-fit group">

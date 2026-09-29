@@ -23,7 +23,7 @@ export default function PageBreadcrumb({
                 {item.label}
               </a>
             ) : (
-              <span className={isLast ? "text-slate-700 font-semibold" : ""}>{item.label}</span>
+              <span className={isLast ? "text-slate-900 font-bold" : ""}>{item.label}</span>
             )}
             {!isLast && <span className="text-slate-300">/</span>}
           </span>
