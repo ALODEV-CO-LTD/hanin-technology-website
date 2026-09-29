@@ -24,21 +24,21 @@ const ARTICLES = [
 
 export default function NewsUpdates() {
   return (
-    <section className="w-full py-space-xl bg-surface-container-low">
+    <section className="w-full py-space-xl bg-slate-50">
       <div className="max-w-[1280px] mx-auto px-margin flex flex-col gap-space-xl">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
           <div className="flex flex-col gap-2">
             <div className="flex items-center gap-2">
-              <span className="w-2 h-2 rounded-full bg-primary" />
-              <span className="text-label-technical uppercase tracking-[0.2em] text-primary">
-                NEWS &amp; UPDATES
+              <span className="w-2 h-2 rounded-full bg-orange-600" />
+              <span className="text-label-technical uppercase tracking-[0.2em] text-orange-600 font-bold">
+                TIN TỨC &amp; BẢN TIN KỸ THUẬT
               </span>
             </div>
-            <h2 className="text-headline-xl text-on-surface font-bold">Tin tức &amp; cập nhật</h2>
+            <h2 className="text-headline-xl text-slate-900 font-bold">Tin tức &amp; cập nhật</h2>
           </div>
           <a
             href="#"
-            className="inline-flex items-center gap-2 text-label-technical uppercase tracking-wider text-secondary hover:text-primary transition-colors"
+            className="inline-flex items-center gap-2 text-label-technical uppercase tracking-wider text-slate-600 hover:text-orange-600 transition-colors font-semibold"
           >
             <span>XEM TẤT CẢ</span>
             <span className="material-symbols-outlined text-[16px]">arrow_forward</span>
@@ -49,23 +49,21 @@ export default function NewsUpdates() {
           {ARTICLES.map((article) => (
             <article
               key={article.title}
-              className="p-space-lg bg-surface-container rounded shadow-sm hover:shadow-xl transition-all duration-200 flex flex-col justify-between group"
+              className="p-space-lg bg-white border border-slate-200 rounded shadow-sm hover:shadow-xl hover:border-orange-300 transition-all duration-200 flex flex-col justify-between group"
             >
               <div className="flex flex-col gap-space-sm">
-                <div className="flex items-center justify-between text-secondary">
-                  <span className="text-[10px] px-2 py-0.5 rounded bg-surface-container-high text-primary uppercase">
+                <div className="flex items-center justify-between text-slate-500">
+                  <span className="text-[10px] px-2 py-0.5 rounded bg-orange-50 text-orange-700 uppercase font-semibold">
                     {article.tag}
                   </span>
                   <span className="text-xs font-mono">{article.year}</span>
                 </div>
-                <h3 className="text-title-md text-on-surface font-bold group-hover:text-primary transition-colors leading-snug">
+                <h3 className="text-title-md text-slate-900 font-bold group-hover:text-orange-600 transition-colors leading-snug">
                   {article.title}
                 </h3>
-                <p className="text-body-sm text-on-surface-variant leading-relaxed">
-                  {article.excerpt}
-                </p>
+                <p className="text-body-sm text-slate-600 leading-relaxed">{article.excerpt}</p>
               </div>
-              <div className="pt-space-md flex items-center gap-2 text-primary text-[11px] uppercase tracking-wider">
+              <div className="pt-space-md flex items-center gap-2 text-orange-600 text-[11px] uppercase tracking-wider font-semibold">
                 <span>ĐỌC BÀI VIẾT</span>
                 <span className="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">
                   east

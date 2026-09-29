@@ -23,54 +23,54 @@ const SPECS = [
 
 export default function ManufacturingCapability() {
   return (
-    <section className="w-full py-space-xl bg-surface-container-lowest" id="nang-luc">
+    <section className="w-full py-space-xl bg-slate-50" id="nang-luc">
       <div className="max-w-[1280px] mx-auto px-margin flex flex-col gap-space-xl">
         <div className="flex flex-col gap-2 max-w-3xl">
           <div className="flex items-center gap-2">
-            <span className="w-2 h-2 rounded-full bg-primary-container" />
-            <span className="text-label-technical uppercase tracking-[0.2em] text-primary">
-              OPERATIONAL INFRASTRUCTURE
+            <span className="w-2 h-2 rounded-full bg-orange-600" />
+            <span className="text-label-technical uppercase tracking-[0.2em] text-orange-600 font-bold">
+              CƠ SỞ VẬT CHẤT &amp; VẬN HÀNH
             </span>
           </div>
-          <h2 className="text-headline-xl text-on-surface font-bold uppercase">
+          <h2 className="text-headline-xl text-slate-900 font-bold uppercase">
             NĂNG LỰC SẢN XUẤT
           </h2>
-          <p className="text-body-md text-on-surface-variant leading-relaxed">
+          <p className="text-body-md text-slate-600 leading-relaxed">
             Từ dây chuyền sản xuất đến hệ thống kiểm soát chất lượng, năng lực
             vận hành là nền tảng tạo nên sự ổn định trong từng sản phẩm.
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
-          <div className="lg:col-span-6 relative rounded overflow-hidden shadow-2xl bg-surface-container-low">
+          <div className="lg:col-span-6 relative rounded overflow-hidden shadow-md border border-slate-200 bg-white">
             <div className="relative aspect-[16/10]">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 alt="Bể mạ tự động đang vận hành tại HANIN (ảnh minh họa, sẽ thay bằng ảnh thực tế)"
-                className="w-full h-full object-cover brightness-85"
+                className="w-full h-full object-cover"
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuAC-ozXlS4iAi4T3wA_X-lfMFRZW6tBLRXa9hiO-_aiiAfyUkQ8VaPUa8EIi2vm-qZxixg0pq2T-tmuJ7mwR9Oi5C5cCOzm0cUAv_mj5VqOPDE2-FpS3whEh-TNU1x6XT7patK-2NZNtDRfCepVnV8NB_q7n1lh24xLceTFJ2xeUcVblzSkj0sC-xVpcv6ESoW197zbUsdcV2puaYUyDaS4LJTXmFeTs8dr52845R9MiW3QRPUFLO-ixg"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent" />
-              <div className="absolute top-4 left-4 bg-surface-container-lowest/90 backdrop-blur-md px-3 py-1.5 rounded flex items-center gap-2">
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent" />
+              <div className="absolute top-4 left-4 bg-white/95 backdrop-blur-md border border-slate-200 px-3 py-1.5 rounded flex items-center gap-2 shadow-sm">
                 <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-ping" />
-                <span className="text-label-technical text-emerald-400 uppercase tracking-widest">
-                  OPERATIONAL STATUS: ACTIVE
+                <span className="text-label-technical text-emerald-700 uppercase tracking-widest font-bold">
+                  TRẠNG THÁI VẬN HÀNH: ĐANG HOẠT ĐỘNG
                 </span>
               </div>
-              <div className="absolute bottom-4 left-4 right-4 bg-surface-container-low/90 backdrop-blur-md p-space-md rounded flex items-center justify-around text-xs text-on-surface">
+              <div className="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur-md border border-slate-200 p-space-md rounded flex items-center justify-around text-xs text-slate-800 shadow-md">
                 <div className="flex flex-col items-center">
-                  <span className="text-secondary">TEMP_CONTROL</span>
-                  <span className="font-bold text-primary">58.4 °C</span>
+                  <span className="text-slate-500 font-semibold">NHIỆT ĐỘ BỂ</span>
+                  <span className="font-bold text-orange-600">58.4 °C</span>
                 </div>
-                <div className="w-px h-6 bg-surface-container-highest" />
+                <div className="w-px h-6 bg-slate-200" />
                 <div className="flex flex-col items-center">
-                  <span className="text-secondary">VOLTAGE_RMS</span>
-                  <span className="font-bold text-primary">12.8 V</span>
+                  <span className="text-slate-500 font-semibold">ĐIỆN ÁP HIỆU DỤNG</span>
+                  <span className="font-bold text-orange-600">12.8 V</span>
                 </div>
-                <div className="w-px h-6 bg-surface-container-highest" />
+                <div className="w-px h-6 bg-slate-200" />
                 <div className="flex flex-col items-center">
-                  <span className="text-secondary">CIRCULATION</span>
-                  <span className="font-bold text-tertiary">99.4 %</span>
+                  <span className="text-slate-500 font-semibold">TUẦN HOÀN LỌC</span>
+                  <span className="font-bold text-sky-700">99.4 %</span>
                 </div>
               </div>
             </div>
@@ -81,22 +81,20 @@ export default function ManufacturingCapability() {
               {SPECS.map((spec) => (
                 <div
                   key={spec.tag}
-                  className="p-space-md bg-surface-container rounded flex flex-col gap-1 transition-colors hover:bg-surface-container-high"
+                  className="p-space-md bg-white border border-slate-200 rounded flex flex-col gap-1 transition-colors hover:border-orange-300 hover:shadow-sm"
                 >
-                  <span className="text-label-technical uppercase tracking-wider text-primary">
+                  <span className="text-label-technical uppercase tracking-wider text-orange-600 font-bold">
                     {spec.tag}
                   </span>
-                  <span className="text-headline-sm text-on-surface font-semibold">
-                    {spec.title}
-                  </span>
-                  <span className="text-body-sm text-on-surface-variant">{spec.desc}</span>
+                  <span className="text-headline-sm text-slate-900 font-semibold">{spec.title}</span>
+                  <span className="text-body-sm text-slate-600">{spec.desc}</span>
                 </div>
               ))}
             </div>
             <div className="pt-space-xs">
               <a
                 href="#"
-                className="inline-flex items-center gap-2 px-6 py-3 bg-primary-container hover:bg-inverse-primary text-on-primary text-title-md uppercase tracking-wider rounded transition-all duration-150 shadow-md"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-orange-600 hover:bg-orange-700 text-white text-title-md uppercase tracking-wider rounded transition-all duration-150 shadow-sm"
               >
                 KHÁM PHÁ NĂNG LỰC →
               </a>

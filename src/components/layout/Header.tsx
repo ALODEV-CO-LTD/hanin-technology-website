@@ -3,12 +3,13 @@
 import { useState } from "react";
 
 const NAV_LINKS = [
-  { label: "Giới thiệu", href: "#" },
-  { label: "Dịch vụ gia công mạ", href: "#" },
-  { label: "Sản phẩm & Dự án", href: "#" },
+  { label: "Trang Chủ", href: "#", active: true },
+  { label: "Giới thiệu", href: "#gioi-thieu" },
+  { label: "Dịch vụ gia công mạ", href: "#dich-vu-gia-cong-ma" },
+  { label: "Sản phẩm & Dự án", href: "#san-pham-du-an" },
   { label: "Năng lực sản xuất", href: "#nang-luc" },
-  { label: "Tin tức", href: "#" },
-  { label: "Tuyển dụng", href: "#" },
+  { label: "Tin tức", href: "#tin-tuc" },
+  { label: "Tuyển dụng", href: "#tuyen-dung" },
   { label: "Liên hệ", href: "#bao-gia" },
 ];
 
@@ -16,19 +17,19 @@ export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-surface-dim/85 backdrop-blur-xl border-b border-surface-container-highest shadow-[0_4px_20px_rgba(0,0,0,0.4)]">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-xl border-b border-slate-200 shadow-sm">
       <div className="h-20 max-w-[1440px] mx-auto px-margin flex items-center justify-between gap-gutter">
         <div className="flex items-center gap-space-xl">
           <a href="#" className="flex items-center gap-space-sm group">
-            <div className="w-9 h-9 rounded bg-primary-container flex items-center justify-center font-bold text-xl tracking-tighter text-on-primary shadow-[0_0_0_1px_rgba(255,181,153,0.3)]">
-              <span className="text-2xl leading-none">H</span>
+            <div className="w-9 h-9 rounded bg-slate-900 border-2 border-orange-600 flex items-center justify-center text-xl font-bold text-white shadow-sm">
+              H
             </div>
             <div className="flex flex-col">
-              <span className="text-headline-sm uppercase tracking-wider text-on-surface font-bold leading-none">
+              <span className="text-headline-sm uppercase tracking-wider text-slate-900 font-bold leading-none">
                 HANIN
               </span>
-              <span className="text-label-technical tracking-[0.14em] text-primary uppercase leading-tight mt-0.5">
-                TECHNOLOGY VN
+              <span className="text-label-technical tracking-[0.14em] text-orange-600 uppercase leading-tight mt-0.5">
+                GIA CÔNG XI MẠ &amp; CƠ KHÍ CHÍNH XÁC
               </span>
             </div>
           </a>
@@ -37,7 +38,11 @@ export default function Header() {
               <a
                 key={link.label}
                 href={link.href}
-                className="py-1 text-body-sm text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap"
+                className={
+                  link.active
+                    ? "py-1 text-body-sm text-orange-600 font-semibold border-b-2 border-orange-600 whitespace-nowrap"
+                    : "py-1 text-body-sm text-slate-600 hover:text-orange-600 transition-colors whitespace-nowrap"
+                }
               >
                 {link.label}
               </a>
@@ -48,16 +53,16 @@ export default function Header() {
         <div className="flex items-center gap-space-md">
           <a
             href="#bao-gia"
-            className="hidden sm:inline-flex items-center justify-center px-space-md py-space-sm bg-primary-container hover:bg-inverse-primary text-on-primary rounded text-label-technical uppercase tracking-wider transition-all duration-150 active:scale-[0.99] shadow-[0_0_0_1px_rgba(246,96,24,0.4)] whitespace-nowrap"
+            className="hidden sm:inline-flex items-center justify-center px-5 py-2.5 bg-orange-600 hover:bg-orange-700 text-white rounded text-label-technical uppercase tracking-wider transition-all duration-150 active:scale-[0.99] shadow-sm font-semibold whitespace-nowrap"
           >
-            NHẬN BÁO GIÁ →
+            NHẬN BÁO GIÁ KỸ THUẬT →
           </a>
           <button
             type="button"
             aria-label="Mở menu"
             aria-expanded={mobileOpen}
             onClick={() => setMobileOpen((open) => !open)}
-            className="xl:hidden flex items-center justify-center w-9 h-9 rounded bg-surface-container-high text-on-surface"
+            className="xl:hidden flex items-center justify-center w-9 h-9 rounded bg-slate-100 border border-slate-200 text-slate-600"
           >
             <span className="material-symbols-outlined text-[22px]">
               {mobileOpen ? "close" : "menu"}
@@ -67,13 +72,17 @@ export default function Header() {
       </div>
 
       {mobileOpen && (
-        <nav className="xl:hidden border-t border-surface-container-highest bg-surface-dim/95 backdrop-blur-xl px-margin py-space-md flex flex-col gap-space-sm">
+        <nav className="xl:hidden border-t border-slate-200 bg-white/95 backdrop-blur-xl px-margin py-space-md flex flex-col gap-space-sm">
           {NAV_LINKS.map((link) => (
             <a
               key={link.label}
               href={link.href}
               onClick={() => setMobileOpen(false)}
-              className="py-space-xs text-body-md text-on-surface-variant hover:text-on-surface transition-colors"
+              className={
+                link.active
+                  ? "py-space-xs text-body-md text-orange-600 font-semibold"
+                  : "py-space-xs text-body-md text-slate-600 hover:text-orange-600 transition-colors"
+              }
             >
               {link.label}
             </a>
@@ -81,9 +90,9 @@ export default function Header() {
           <a
             href="#bao-gia"
             onClick={() => setMobileOpen(false)}
-            className="mt-space-sm inline-flex items-center justify-center px-space-md py-space-sm bg-primary-container text-on-primary rounded text-label-technical uppercase tracking-wider"
+            className="mt-space-sm inline-flex items-center justify-center px-space-md py-space-sm bg-orange-600 text-white rounded text-label-technical uppercase tracking-wider font-semibold"
           >
-            NHẬN BÁO GIÁ →
+            NHẬN BÁO GIÁ KỸ THUẬT →
           </a>
         </nav>
       )}

@@ -21,9 +21,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           rel="stylesheet"
         />
       </head>
-      <body className="bg-surface text-on-surface antialiased selection:bg-primary-container selection:text-on-primary">
+      <body className="bg-slate-50 text-slate-800 antialiased selection:bg-orange-600 selection:text-white">
         <Header />
-        <main className="w-full pt-20 bg-surface min-h-screen">{children}</main>
+        <main className="w-full pt-20 bg-slate-50 min-h-screen">{children}</main>
         <Footer />
       </body>
     </html>

@@ -13,7 +13,7 @@ const SERVICES = [
   },
   {
     index: "03",
-    tag: "MICRON CONTROL",
+    tag: "KIỂM SOÁT MICRON",
     title: "DỊCH VỤ MẠ 03",
     desc: "Công nghệ xử lý bề mặt kim loại với khả năng kiểm soát độ dày lớp mạ chuẩn micron.",
   },
@@ -27,23 +27,23 @@ const SERVICES = [
 
 export default function PlatingServices() {
   return (
-    <section className="w-full py-space-xl bg-surface-container-low">
+    <section className="w-full py-space-xl bg-white border-y border-slate-200">
       <div className="max-w-[1280px] mx-auto px-margin flex flex-col gap-space-xl">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
           <div className="flex flex-col gap-2 max-w-2xl">
             <div className="flex items-center gap-2">
-              <span className="w-2 h-2 rounded-full bg-primary" />
-              <span className="text-label-technical uppercase tracking-[0.2em] text-primary">
-                PLATING SERVICES
+              <span className="w-2 h-2 rounded-full bg-orange-600" />
+              <span className="text-label-technical uppercase tracking-[0.2em] text-orange-600 font-bold">
+                DỊCH VỤ XI MẠ
               </span>
             </div>
-            <h2 className="text-headline-lg text-on-surface font-bold">
+            <h2 className="text-headline-lg text-slate-900 font-bold">
               Giải pháp gia công mạ cho nhiều nhu cầu công nghiệp.
             </h2>
           </div>
           <a
             href="#"
-            className="inline-flex items-center gap-2 text-label-technical uppercase tracking-wider text-secondary hover:text-primary transition-colors whitespace-nowrap"
+            className="inline-flex items-center gap-2 text-label-technical uppercase tracking-wider text-slate-600 hover:text-orange-600 transition-colors whitespace-nowrap"
           >
             <span>XEM TẤT CẢ DỊCH VỤ</span>
             <span className="material-symbols-outlined text-[16px]">arrow_forward</span>
@@ -54,26 +54,26 @@ export default function PlatingServices() {
           {SERVICES.map((service) => (
             <div
               key={service.index}
-              className="flex flex-col justify-between p-space-lg bg-surface-container rounded hover:bg-surface-container-high transition-all duration-200 group shadow-sm hover:shadow-xl"
+              className="flex flex-col justify-between p-space-lg bg-slate-50 border border-slate-200 rounded hover:border-orange-300 hover:shadow-lg hover:bg-white transition-all duration-200 group"
             >
               <div className="flex flex-col gap-space-md">
                 <div className="flex items-center justify-between">
-                  <span className="text-headline-lg text-primary font-bold">{service.index}</span>
-                  <span className="text-[10px] px-2 py-0.5 rounded bg-surface-container-highest text-secondary uppercase">
+                  <span className="text-headline-lg text-orange-600 font-bold">{service.index}</span>
+                  <span className="text-[10px] px-2 py-0.5 rounded bg-slate-200/70 text-slate-700 uppercase font-semibold">
                     {service.tag}
                   </span>
                 </div>
                 <div className="flex flex-col gap-2">
-                  <h3 className="text-headline-sm text-on-surface font-semibold group-hover:text-primary transition-colors">
+                  <h3 className="text-headline-sm text-slate-900 font-semibold group-hover:text-orange-600 transition-colors">
                     {service.title}
                   </h3>
-                  <p className="text-body-sm text-on-surface-variant leading-relaxed">
-                    {service.desc}
-                  </p>
+                  <p className="text-body-sm text-slate-600 leading-relaxed">{service.desc}</p>
                 </div>
               </div>
-              <div className="pt-space-lg flex items-center justify-between text-secondary group-hover:text-primary transition-colors">
-                <span className="text-[11px] uppercase tracking-wider">CHI TIẾT KỸ THUẬT</span>
+              <div className="pt-space-lg flex items-center justify-between text-slate-500 group-hover:text-orange-600 transition-colors">
+                <span className="text-[11px] uppercase tracking-wider font-semibold">
+                  CHI TIẾT KỸ THUẬT
+                </span>
                 <span className="material-symbols-outlined text-[20px] group-hover:translate-x-1 transition-transform">
                   east
                 </span>

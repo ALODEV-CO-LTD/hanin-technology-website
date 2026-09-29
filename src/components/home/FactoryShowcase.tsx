@@ -6,7 +6,7 @@ const TABS = [
   {
     id: "tab-factory",
     label: "01 — NHÀ MÁY",
-    sector: "SECTOR_ID: PLANT_01_A",
+    sector: "PHÂN KHU: NHÀ_MÁY_01_A",
     tagline: "KHOANG XỬ LÝ KHÍ THẢI & BỂ DUNG DỊCH",
     order: "01 / TỔ HỢP NHÀ XƯỞNG CÔNG NGHIỆP",
     title: "Hệ thống nhà xưởng hiện đại tối ưu hóa luồng vật liệu",
@@ -17,7 +17,7 @@ const TABS = [
   {
     id: "tab-line",
     label: "02 — DÂY CHUYỀN",
-    sector: "SECTOR_ID: LINE_02_B",
+    sector: "PHÂN KHU: DÂY_CHUYỀN_02_B",
     tagline: "DÂY CHUYỀN MẠ TỰ ĐỘNG",
     order: "02 / DÂY CHUYỀN GIA CÔNG MẠ",
     title: "Dây chuyền mạ tự động kiểm soát PLC chính xác",
@@ -28,7 +28,7 @@ const TABS = [
   {
     id: "tab-lab",
     label: "03 — PHÒNG KIỂM NGHIỆM",
-    sector: "SECTOR_ID: LAB_03_C",
+    sector: "PHÂN KHU: PHÒNG_LAB_03_C",
     tagline: "PHÒNG PHÂN TÍCH & KIỂM TRA",
     order: "03 / KIỂM SOÁT CHẤT LƯỢNG",
     title: "Phòng kiểm nghiệm đạt chuẩn quốc tế",
@@ -39,7 +39,7 @@ const TABS = [
   {
     id: "tab-equipment",
     label: "04 — THIẾT BỊ",
-    sector: "SECTOR_ID: EQUIP_04_D",
+    sector: "PHÂN KHU: THIẾT_BỊ_04_D",
     tagline: "THIẾT BỊ & PHỤ TRỢ CHUYÊN DỤNG",
     order: "04 / DANH MỤC THIẾT BỊ",
     title: "Hệ thống thiết bị phụ trợ chuyên dụng",
@@ -54,18 +54,18 @@ export default function FactoryShowcase() {
   const active = TABS.find((tab) => tab.id === activeId) ?? TABS[0];
 
   return (
-    <section className="w-full py-space-xl bg-surface">
+    <section className="w-full py-space-xl bg-white border-y border-slate-200">
       <div className="max-w-[1280px] mx-auto px-margin flex flex-col gap-space-lg">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
           <div className="flex flex-col gap-2">
-            <span className="text-label-technical uppercase tracking-[0.2em] text-primary">
-              FROM FACTORY TO FINISH
+            <span className="text-label-technical uppercase tracking-[0.2em] text-orange-600 font-bold">
+              TỪ NHÀ XƯỞNG ĐẾN THÀNH PHẨM
             </span>
-            <h2 className="text-headline-xl text-on-surface font-bold">
+            <h2 className="text-headline-xl text-slate-900 font-bold">
               Không gian vận hành & Thiết bị công nghệ
             </h2>
           </div>
-          <p className="text-body-sm text-on-surface-variant max-w-md">
+          <p className="text-body-sm text-slate-600 max-w-md">
             Hệ thống nhà xưởng hiện đại tối ưu hóa luồng vật liệu và kiểm soát
             nghiêm ngặt các tiêu chuẩn môi trường sản xuất.
           </p>
@@ -80,8 +80,8 @@ export default function FactoryShowcase() {
                 onClick={() => setActiveId(tab.id)}
                 className={`px-5 py-2.5 rounded text-label-technical uppercase tracking-wider transition-colors whitespace-nowrap ${
                   tab.id === activeId
-                    ? "bg-surface-container-high text-primary shadow-sm"
-                    : "bg-surface-container text-on-surface-variant hover:text-on-surface"
+                    ? "bg-orange-600 text-white shadow-sm font-semibold"
+                    : "bg-slate-100 text-slate-700 hover:bg-slate-200"
                 }`}
               >
                 {tab.label}
@@ -89,26 +89,24 @@ export default function FactoryShowcase() {
             ))}
           </div>
 
-          <div className="relative w-full h-[460px] md:h-[540px] rounded overflow-hidden shadow-2xl bg-surface-container-lowest">
+          <div className="relative w-full h-[460px] md:h-[540px] rounded overflow-hidden shadow-lg border border-slate-200 bg-slate-900">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               alt={active.title}
-              className="w-full h-full object-cover object-center transition-all duration-300 filter brightness-90"
+              className="w-full h-full object-cover object-center transition-all duration-300 filter brightness-95"
               src={active.image}
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/30 to-transparent" />
-            <div className="absolute top-6 right-6 bg-surface-container-lowest/85 backdrop-blur-md px-3 py-2 rounded text-right">
-              <p className="text-[10px] text-primary uppercase font-mono">{active.sector}</p>
-              <p className="text-label-technical text-on-surface">{active.tagline}</p>
+            <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent" />
+            <div className="absolute top-6 right-6 bg-white/90 backdrop-blur-md border border-slate-200 px-3 py-2 rounded text-right shadow-md">
+              <p className="text-[10px] text-orange-600 uppercase font-mono font-bold">{active.sector}</p>
+              <p className="text-label-technical text-slate-800 font-semibold">{active.tagline}</p>
             </div>
-            <div className="absolute bottom-6 left-6 right-6 md:right-auto md:max-w-xl bg-surface-container-low/95 backdrop-blur-md p-space-lg rounded shadow-xl">
-              <span className="text-[11px] text-tertiary uppercase tracking-widest block mb-1">
+            <div className="absolute bottom-6 left-6 right-6 md:right-auto md:max-w-xl bg-white/95 backdrop-blur-md p-space-lg rounded shadow-xl border border-slate-200">
+              <span className="text-[11px] text-orange-600 uppercase tracking-widest block mb-1 font-bold">
                 {active.order}
               </span>
-              <h3 className="text-headline-sm text-on-surface font-semibold mb-2">
-                {active.title}
-              </h3>
-              <p className="text-body-sm text-on-surface-variant leading-relaxed">{active.desc}</p>
+              <h3 className="text-headline-sm text-slate-900 font-semibold mb-2">{active.title}</h3>
+              <p className="text-body-sm text-slate-600 leading-relaxed">{active.desc}</p>
             </div>
           </div>
         </div>
