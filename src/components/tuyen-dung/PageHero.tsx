@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import PageBreadcrumb from "@/components/layout/PageBreadcrumb";
 
 export default function PageHero() {
@@ -29,12 +30,27 @@ export default function PageHero() {
             ]}
           />
 
-          <h1 className="text-display-hero-mobile md:text-display-hero text-white tracking-tight uppercase mb-space-sm font-bold">
-            {t("titlePrefix")} <span className="text-steel-400">{t("titleHighlight")}</span>
+          <h1 className="text-display-hero-mobile md:text-display-hero text-orange-400 tracking-tight uppercase mb-space-sm font-bold">
+            {t("titlePrefix")} <span className="text-orange-500">{t("titleHighlight")}</span>
           </h1>
-          <p className="text-body-lg text-slate-200 max-w-2xl leading-relaxed">
-            <strong className="text-white font-semibold">{t("companyName")}</strong> {t("description")}
+          <p className="text-body-lg text-orange-200 max-w-2xl leading-relaxed">
+            <strong className="text-orange-300 font-semibold">{t("companyName")}</strong> {t("description")}
           </p>
+        </div>
+
+        <div className="flex flex-wrap items-center gap-space-md pt-space-md">
+          <a
+            href="#open-positions"
+            className="inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-steel-600 hover:bg-steel-700 text-white text-title-md uppercase tracking-wider rounded transition-all duration-150 shadow-lg shadow-steel-950/30"
+          >
+            {t("ctaPrimary")}
+          </a>
+          <Link
+            href="/lien-he"
+            className="inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-white/10 hover:bg-white/20 text-white border border-white/20 text-title-md uppercase tracking-wider rounded backdrop-blur-sm transition-all duration-150 shadow-sm"
+          >
+            {t("ctaSecondary")}
+          </Link>
         </div>
 
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-space-sm max-w-2xl pt-space-md">

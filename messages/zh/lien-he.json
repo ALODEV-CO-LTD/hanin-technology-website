@@ -74,6 +74,8 @@
       "titleHighlight": "获取技术报价",
       "titleSuffix": "服务",
       "description": "为 B2B 合作伙伴、OEM/Tier-1 承包商及 FDI 企业提供金属电镀技术方案咨询、精密机械加工及报价服务。",
+      "ctaPrimary": "提交报价请求 →",
+      "ctaSecondary": "查看工厂位置",
       "specHighlights": {
         "nda": {
           "label": "100% NDA 保密",

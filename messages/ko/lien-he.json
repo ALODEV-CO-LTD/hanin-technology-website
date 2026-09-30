@@ -74,6 +74,8 @@
       "titleHighlight": "기술 견적 요청",
       "titleSuffix": "서비스",
       "description": "B2B 파트너, OEM/Tier-1 협력사 및 FDI 기업을 위해 금속 도금 기술 솔루션 상담, 정밀 기계 가공 및 견적 서비스를 제공합니다.",
+      "ctaPrimary": "견적 요청 보내기 →",
+      "ctaSecondary": "공장 위치 보기",
       "specHighlights": {
         "nda": {
           "label": "100% NDA 보안",

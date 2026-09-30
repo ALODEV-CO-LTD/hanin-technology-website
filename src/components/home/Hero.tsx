@@ -17,15 +17,15 @@ export default function Hero() {
       <div className="relative z-10 w-full px-margin py-space-xl flex flex-col justify-center h-full">
         <div className="max-w-3xl flex flex-col gap-space-md">
           <div className="flex flex-col gap-2 [text-shadow:0_2px_6px_rgba(2,6,23,0.85),0_4px_20px_rgba(2,6,23,0.6)]">
-            <h1 className="text-display-hero-mobile xl:text-display-hero text-white uppercase tracking-tight font-bold">
-              {t("titlePrefix")} <span className="text-steel-400">{t("titleHighlight")}</span>
+            <h1 className="text-display-hero-mobile xl:text-display-hero text-orange-400 uppercase tracking-tight font-bold">
+              {t("titlePrefix")} <span className="text-orange-500">{t("titleHighlight")}</span>
             </h1>
-            <p className="text-headline-md text-slate-100 font-semibold tracking-tight">
+            <p className="text-headline-md text-orange-300 font-semibold tracking-tight">
               {t("subtitle")}
             </p>
           </div>
 
-          <p className="text-body-lg text-slate-200 max-w-2xl leading-relaxed [text-shadow:0_2px_6px_rgba(2,6,23,0.85),0_4px_20px_rgba(2,6,23,0.6)]">
+          <p className="text-body-lg text-orange-200 max-w-2xl leading-relaxed [text-shadow:0_2px_6px_rgba(2,6,23,0.85),0_4px_20px_rgba(2,6,23,0.6)]">
             {t("description")}
           </p>
 

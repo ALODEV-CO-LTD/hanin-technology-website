@@ -26,10 +26,10 @@ export default function CapabilityHero() {
           />
 
           <div className="max-w-3xl pt-4">
-            <h1 className="text-4xl md:text-5xl font-extrabold text-white tracking-tight uppercase mb-4">
+            <h1 className="text-4xl md:text-5xl font-extrabold text-orange-400 tracking-tight uppercase mb-4">
               {t("title")}
             </h1>
-            <p className="text-base md:text-lg text-slate-200 max-w-2xl leading-relaxed">{t("description")}</p>
+            <p className="text-base md:text-lg text-orange-200 max-w-2xl leading-relaxed">{t("description")}</p>
           </div>
         </div>
 

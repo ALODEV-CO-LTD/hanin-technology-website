@@ -22,10 +22,10 @@ export default function CategoryHero() {
             { label: t("breadcrumbCurrent") },
           ]}
         />
-        <h1 className="text-display-hero-mobile lg:text-display-hero uppercase tracking-tight text-white mt-space-xs font-bold">
+        <h1 className="text-display-hero-mobile lg:text-display-hero uppercase tracking-tight text-orange-400 mt-space-xs font-bold">
           {t("title")}
         </h1>
-        <p className="text-body-lg text-slate-200 max-w-3xl leading-relaxed mt-space-xs">
+        <p className="text-body-lg text-orange-200 max-w-3xl leading-relaxed mt-space-xs">
           {t("description")}
         </p>
       </div>
