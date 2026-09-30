@@ -30,11 +30,11 @@ export default function PageHero() {
             ]}
           />
 
-          <h1 className="text-display-hero-mobile md:text-display-hero text-orange-400 tracking-tight uppercase mb-space-sm font-bold">
-            {t("titlePrefix")} <span className="text-orange-500">{t("titleHighlight")}</span>
+          <h1 className="text-display-hero-mobile md:text-display-hero text-banner-orange tracking-tight uppercase mb-space-sm font-bold">
+            {t("titlePrefix")} <span className="text-banner-orange">{t("titleHighlight")}</span>
           </h1>
-          <p className="text-body-lg text-orange-200 max-w-2xl leading-relaxed">
-            <strong className="text-orange-300 font-semibold">{t("companyName")}</strong> {t("description")}
+          <p className="text-body-lg text-banner-orange max-w-2xl leading-relaxed">
+            <strong className="text-banner-orange font-semibold">{t("companyName")}</strong> {t("description")}
           </p>
         </div>
 

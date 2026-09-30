@@ -1,6 +1,9 @@
 @import "tailwindcss";
 
 @theme {
+  /* ---- Banner accent: cam duy nhất cho chữ section đầu mỗi trang (khác màu logo) ---- */
+  --color-banner-orange: #ffa500;
+
   /* ---- Steel blue accent (thay cho cam) — xanh thép + bạc + trắng ---- */
   --color-steel-50: #eef4f8;
   --color-steel-100: #dbe8f0;

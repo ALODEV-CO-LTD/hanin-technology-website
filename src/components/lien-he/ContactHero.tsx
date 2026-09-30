@@ -36,14 +36,14 @@ export default function ContactHero() {
             ]}
           />
 
-          <h1 className="text-headline-xl-mobile lg:text-display-hero font-bold tracking-tight text-orange-400 uppercase mb-space-sm max-w-3xl">
+          <h1 className="text-headline-xl-mobile lg:text-display-hero font-bold tracking-tight text-banner-orange uppercase mb-space-sm max-w-3xl">
             {t("titlePrefix")}{" "}
-            <span className="text-orange-500 underline decoration-orange-500/40 decoration-4 underline-offset-8">
+            <span className="text-banner-orange underline decoration-banner-orange/40 decoration-4 underline-offset-8">
               {t("titleHighlight")}
             </span>{" "}
             {t("titleSuffix")}
           </h1>
-          <p className="text-body-lg text-orange-200 leading-relaxed max-w-2xl">{t("description")}</p>
+          <p className="text-body-lg text-banner-orange leading-relaxed max-w-2xl">{t("description")}</p>
         </div>
 
         <div className="flex flex-wrap items-center gap-space-md pt-space-md">

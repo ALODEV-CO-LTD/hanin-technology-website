@@ -26,11 +26,11 @@ export default function NewsBanner() {
             { label: tb("news") },
           ]}
         />
-        <h1 className="text-display-hero-mobile lg:text-display-hero text-orange-400 uppercase tracking-tight font-bold max-w-3xl">
-          {t("titlePrefix")} <span className="text-orange-500">{t("titleHighlight")}</span>{" "}
+        <h1 className="text-display-hero-mobile lg:text-display-hero text-banner-orange uppercase tracking-tight font-bold max-w-3xl">
+          {t("titlePrefix")} <span className="text-banner-orange">{t("titleHighlight")}</span>{" "}
           {t("titleSuffix")}
         </h1>
-        <p className="text-body-lg text-orange-200 max-w-2xl mt-space-xs">{t("description")}</p>
+        <p className="text-body-lg text-banner-orange max-w-2xl mt-space-xs">{t("description")}</p>
       </div>
     </section>
   );

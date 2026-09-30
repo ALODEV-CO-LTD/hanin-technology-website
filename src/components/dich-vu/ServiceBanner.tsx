@@ -29,11 +29,11 @@ export default function ServiceBanner() {
           ]}
         />
 
-        <h1 className="text-headline-xl-mobile md:text-display-hero text-orange-400 uppercase tracking-tight max-w-3xl mb-space-sm font-bold">
+        <h1 className="text-headline-xl-mobile md:text-display-hero text-banner-orange uppercase tracking-tight max-w-3xl mb-space-sm font-bold">
           {t("title")}
         </h1>
 
-        <p className="text-body-md md:text-body-lg text-orange-200 max-w-2xl leading-relaxed">{t("subtitle")}</p>
+        <p className="text-body-md md:text-body-lg text-banner-orange max-w-2xl leading-relaxed">{t("subtitle")}</p>
       </div>
     </section>
   );
