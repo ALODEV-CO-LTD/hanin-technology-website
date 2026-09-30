@@ -20,7 +20,7 @@ export default function AutomatedVsManual() {
                 <img
                   className="w-full h-full object-cover"
                   alt={t("automated.imageAlt")}
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVT-9zhcvu2BzRYn6t-Ha5sPn3PYQhlp4Kp1gsR7rcI0QQZJ4BT7zXXiCl6oNStYgNE9VZcacy23mGZoyLIb5j6MrPBvgLvcU2PqW18U0VAJ9MVOnhnxD880RoaWYp1CKf61l4ho0f9GeQuTAeDjnHSf-GpovsTk-cIxB8gY4qNwL2_qFfP6M8aNPO1daRz4JpjvUgA2hbi-WYzB6t-WRHPEFGP5CmKlbQWSCLcJWkFJu_8_gutmHO9w"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6Rp9iUGeqni3A6u4Y3C-JoRdlsiZ3JPcevdQQ-JcImbiNSnXcvpd1_n9lbSPFdOtkXGmXJ8Yx311AAoAwa_C_Q1axzJc1TJSpiEZxnREJYdzd4qo0KJVN59JJcefB_TNtV2r_9v-9QQ7BzHkT0ZT6D4CUyOVaOPhuwRt7CgEeHBj7GH-QtFAgQ0kmBD1iFwD_6QkgwWS5IebEzVgCvo8z_6zf-OsY0N_7HWZ10e9pJsP0oIlTC1SNmg"
                 />
                 <div className="absolute top-2 left-2 px-space-xs py-0.5 bg-white/90 backdrop-blur border border-slate-200 rounded text-label-technical text-steel-600 font-semibold shadow-sm">
                   SYSTEM: SCADA AUTOMATED
@@ -53,7 +53,7 @@ export default function AutomatedVsManual() {
                 <img
                   className="w-full h-full object-cover"
                   alt={t("manual.imageAlt")}
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuC12paqn4gFgRmeNAjSxCJsd5QXtRNxE8kxDGBT9X_NW8-Xfl8CetECOLR4-LU2We8qKWs9pFxvTdHxzCf0RrKBmfCD7mCETHMtLdTPFMjRJxTgMgTpWHgKQKifVsFUPolYeyzOOZYb1IPguA9ya1drqRpy9GPlAI1T1Tw5dtOdVWMLxsu1wLlh6czPFovf6fMfyxqn2RLcGk3YVEPLOxGxj8q4P_feOaqcx_6TnEZDZr5rSmfEm9upuA"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9gDB_GDtgTuGWQ11eXyw3ln1I983UzyAD1puXLPdxQQrrMF4LTkJrj7Q2nJax-nYxbOuNg17ACAdUFpiZgLWUlmIwl8TZDBGcm8tHAXVuJeV8vLgEAFawY6al08_7_WX6mBbvn4eZudzKH11P-bOglwuQVEOzBlsrH1-t8iEV8hNQNTXSNhZpIQcjEZx0g-hFSoqnuMinXx6LiZk3U64BaRdq0uDdejVod0LFd8KtAiBNUYelDkaJUw"
                 />
                 <div className="absolute top-2 left-2 px-space-xs py-0.5 bg-white/90 backdrop-blur border border-slate-200 rounded text-label-technical text-slate-700 font-semibold shadow-sm">
                   SYSTEM: SPECIALIZED R&amp;D

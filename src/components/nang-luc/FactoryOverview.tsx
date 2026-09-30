@@ -18,7 +18,7 @@ export default function FactoryOverview() {
             <img
               className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               alt={t("image.alt")}
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCiKd9nHn87ASNGIqA831NxWUU39pCRYt0pxzlJrZml7wBsLd2VGK1aa9SgZMJaB03inN6wvjKiwb1pn9RvJ3tqY_QaSRlF_WJ3iYKdOx5XD5nyG56vwqoSGMri-a5DsrQQqzhCdvlowrTusxawO9GxiS66yQGanwMO0AZaHIDRrXrBl_HdF_mNShZt0NmBY74on6wZsVRvxjiR_7o9hJKGrwolx5ygDbc6yvbjN1QTKrK6JG7_SZbdaA"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVbGJwGBLCtR1FfUH6k02r2P-NiR8BAPFHnKHa0jtHPUl35bfil2EmH5HU_MuFoZ3ANHR2WUVUfFOyDEfy6xH2h8L_JXgXpud4nJiFxbIFhpWxMYp7ji-bzcQ73VEptZXwO2AGP8ot9l9tXlwQPWiGSKjxyVdf-Y5rIg1a0zRe2CQmQXe3CVHX22FXJIAwpE3XO8moxoHF9x6JPFGsgntioSxKEkNyDcZSpbFwu5Jbizom9bSXp7a-1w"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent" />
             <div className="relative z-10 flex flex-wrap gap-space-xs">

@@ -1,13 +1,14 @@
 import { useTranslations } from "next-intl";
+import CountUp from "@/components/ui/CountUp";
 
 export default function CapabilitySnapshot() {
   const t = useTranslations("GioiThieu.CapabilitySnapshot");
 
   const SNAPSHOT_STATS = [
-    { key: "equipment", value: "50", suffix: "+" },
-    { key: "lines", value: "06", suffix: "+" },
-    { key: "zones", value: "04", suffix: "" },
-    { key: "capacity", value: "1.200", suffix: "+" },
+    { key: "equipment", end: 50, suffix: "+", padStart: 0, thousandsSeparator: "" },
+    { key: "lines", end: 6, suffix: "+", padStart: 2, thousandsSeparator: "" },
+    { key: "zones", end: 4, suffix: "", padStart: 2, thousandsSeparator: "" },
+    { key: "capacity", end: 1200, suffix: "+", padStart: 0, thousandsSeparator: "." },
   ] as const;
 
   return (
@@ -20,7 +21,11 @@ export default function CapabilitySnapshot() {
                 {t(`${stat.key}.label`)}
               </span>
               <div className="text-headline-xl md:text-display-hero text-slate-900 font-bold tracking-tight font-mono">
-                {stat.value}
+                <CountUp
+                  end={stat.end}
+                  padStart={stat.padStart}
+                  thousandsSeparator={stat.thousandsSeparator}
+                />
                 <span className="text-steel-600">{stat.suffix}</span>
               </div>
               <span className="text-body-sm text-slate-600 mt-1">{t(`${stat.key}.desc`)}</span>

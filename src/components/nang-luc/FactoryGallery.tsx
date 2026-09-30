@@ -4,7 +4,7 @@ const THUMBS = [
   {
     key: "campus",
     image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuAgaOkZAc9wCfNzXPhqs5hFNbTEnM2xvvKsGwvUx7gtBUeFNEc8sQnMjPO80BonzgeDTpKJ5ubLrgnx6Pv-lqKTlCm8SQIwcyw1UihtqJKkMdnmGmESKkDwMO0kzC-4asIgzlqjSTSi4RF964X2caOxlURKhOgwvfYdw6ATaGqVbrWi-Lc9FKRZqKiBEfBZR_Y9OA0S3Ogk6U4HP-VypxdxIbo0bsyyylZYC_gTvS-kNsLFxJHxyPcrRQ",
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuDI3db8cTjyz3mUD84Oi_CzhLyNPdD69lVtZEfNnlMHVqeb9Izs9XZUyXNa8hlKluCP-w3yaQWlueMnFG2RVvyVYRq80nhdqEydf09UmgNu68-vesb3s4bXES-thslj4UBB4BvFNLJnM-U-DDKlBnl3ifhJDyiScgRjL-x5HPzHopORtpn3pXmKkRlvah8arFBTtQqEXh9Il89Jdm63oTw_ZsHpL299cfiZn03hp0DqpYndmN2g0GhvPg",
   },
   {
     key: "control",

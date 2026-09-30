@@ -1,27 +1,35 @@
 import { useTranslations } from "next-intl";
+import CountUp from "@/components/ui/CountUp";
 
 const STATS = [
   {
     key: "equipment",
-    value: "42+",
+    end: 42,
+    suffix: "+",
     unit: "",
     accent: false,
   },
   {
     key: "lines",
-    value: "16",
+    end: 16,
+    suffix: "",
     unit: "",
     accent: false,
   },
   {
     key: "zones",
-    value: "05",
+    end: 5,
+    suffix: "",
+    padStart: 2,
     unit: "",
     accent: false,
   },
   {
     key: "precision",
-    value: "±0.2",
+    end: 0.2,
+    prefix: "±",
+    decimals: 1,
+    suffix: "",
     unit: "µm",
     accent: true,
   },
@@ -47,7 +55,13 @@ export default function CapabilityOverviewStats() {
                   stat.accent ? "text-steel-600" : "text-slate-900"
                 }`}
               >
-                {stat.value}
+                <CountUp
+                  end={stat.end}
+                  prefix={"prefix" in stat ? stat.prefix : ""}
+                  suffix={stat.suffix}
+                  decimals={"decimals" in stat ? stat.decimals : 0}
+                  padStart={"padStart" in stat ? stat.padStart : 0}
+                />
                 {stat.unit && <span className="text-headline-md font-normal text-slate-500">{stat.unit}</span>}
               </div>
               <div className="text-body-sm text-slate-500 mt-1">{t(`items.${stat.key}.desc`)}</div>

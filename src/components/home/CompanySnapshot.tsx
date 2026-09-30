@@ -1,13 +1,14 @@
 import { useTranslations } from "next-intl";
+import CountUp from "@/components/ui/CountUp";
 
 export default function CompanySnapshot() {
   const t = useTranslations("Home.CompanySnapshot");
 
   const STATS = [
-    { key: "partners", value: "150+" },
-    { key: "projects", value: "320+" },
-    { key: "lines", value: "24+" },
-    { key: "capacity", value: "850+" },
+    { key: "partners", end: 150, suffix: "+" },
+    { key: "projects", end: 320, suffix: "+" },
+    { key: "lines", end: 24, suffix: "+" },
+    { key: "capacity", end: 850, suffix: "+" },
   ] as const;
 
   return (
@@ -20,7 +21,11 @@ export default function CompanySnapshot() {
               className="flex flex-col gap-1 p-space-md bg-slate-50 border border-slate-200/80 rounded transition-colors hover:border-steel-200 hover:bg-steel-50/30"
             >
               <div className="flex items-baseline gap-1">
-                <span className="text-headline-xl text-steel-600 font-bold">{stat.value}</span>
+                <CountUp
+                  end={stat.end}
+                  suffix={stat.suffix}
+                  className="text-headline-xl text-steel-600 font-bold"
+                />
                 <span className="text-xs text-slate-500 uppercase font-semibold">
                   {t(`${stat.key}.label1`)}
                 </span>

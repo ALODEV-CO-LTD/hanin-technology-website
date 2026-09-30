@@ -88,7 +88,7 @@ export default function FactoryOverview() {
                 aria-label={t("zone4ImageAlt")}
                 style={{
                   backgroundImage:
-                    "url('https://lh3.googleusercontent.com/aida-public/AB6AXuCUE4O8LcBYpiU1uZa0sBwu5mLoOtBA0TDJKhgnbjojWLkEG6Lmlo6bgFKOSpwbkdbXDWGNd8Jl7c_EBjtKDhFGkEOGrMpEIsfX2wZGsclEuI_b2ZgmHNSu2kpVP-ipvio0oVimINqIus9N1kL16-dG_NTD3BwThp5R1GCzbwkTlfd7bSzmvQXTN5Bd58IfBs3xgBphDNC7g4sTzicnkDimUSEtHALHc1D3T1VE2yH25TV4-ddiokPfEA')",
+                    "url('https://lh3.googleusercontent.com/aida-public/AB6AXuBMN0lym82cEAA9k9kEK85J37YJBabdX5LVykdHImAJrf6CHqddqInsnSorwbmqZLTQAqRIsizQmmahLAPP4kP--Zi_rvgLXB14CZxIER1vTsym4bh6b1rI8RH_x9HyH4YcURRVskMZtdr5b09X-hZx5pPqRRMkjyQX4kyg55rB450Ml7kTRsX42xU0XLaH1kjzmQYE5wU-i1I_UaxnfjxxejVysfKwY5jFgQimj8WXl4xHV8G24IqbtA')",
                 }}
               />
               <div className="absolute inset-0 bg-gradient-to-r from-slate-900/80 via-slate-900/30 to-transparent" />

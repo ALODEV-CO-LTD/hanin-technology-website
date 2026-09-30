@@ -4,7 +4,7 @@ const MACHINES = [
   {
     key: "rectifier",
     image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuDKGTdP7NCpJen2W2AWofNyibQ2wIMiSgAMPLTZ7v1k2-E5EtoeAH9vZtpvsEr4crGT4XSmIqRWNVogW99y-bgGoHB9e5vLSR1AvQyULKom4uVFuLouy_f5b5cb3_d3F3oAfwB9FuVXRr-F7scaCDinOmslbX3pMGCMHcxkdMSEj-WTZh7ntncyO8VUeEwAaqfaAQ9iaaBVqHWN0cxcf0-0xBm5cqCj2rF84_fazB80AOiXSd3vUXf5ng",
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuD-Xw9eOyudtTLmQvqdVGja2EonIBH4tKUbz072lUcI_mBD7CTRy3TrsMbeqYGNRWcHwS2mg0Pv-E0zxnTzTOKTvjx9shbTlEaqk0xrRdF4BipjR-HtJyqK8BqnbDoY9jivQzwGUtxtO7QsbdOhm3VTuoK-mDH_Kh4UO1qBz3HGm98Fpa7ICg57TAYbOlxe-ByVuYAd2s98yqBtwr4Gyt0e4dlX8ADUPGleTymrJTqGDbL3DvsixipDqw",
   },
   {
     key: "ultrasonic",

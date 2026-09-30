@@ -6,7 +6,7 @@ const LINES = [
     tag: "01 // AUTOMATED BARREL LINE",
     badge: "SCADA CONTROL",
     image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuCiLEyraQZoiFKXRZK-kKbEjCzHq20OLP8VYEAIGmTRKHWwWTKjkLdqlTN-QXvVgwq7VIbnl96w_lRVJ6oSILfvqe6hwSlFb6OWdVRHP4f_k9pZ_OKXbxSqQZ-PEKXOHjcsNdS-ctIM6zUgt3pnsD3jdPT_RKiid7QKZ5Wm-kggOX75yTDYPmDvKtM91ped3_l66t8Y0H0iSod3lxNq0bK_EiuFwl4q2ZMX-fMK_kfs1yvSbpT9HFGxJQ",
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuAgVrz_RyVKAbQ7apx81Lz8pWXfaHja0O5t5Qgvu-KURvxUyjxk0_9BkIVPKgggNW-uT198ZNx2MkQlJ4dZ2dKr9vJy1n2tB-7kdSPTiqKt0QVTGGJDX3L1vAS8MHSvulwgWXjwIIuK0U-TgdDTE9SFIxXk3bYEgRwSbHqPXzM3MAtDzOOXPkoLUoSTqGiac02De4AS7PmEdbXMkgbJSjvX_oEyHeppTmJPuHXad1UOQJeGo6V8B5ikMQ",
     imageOrder: "",
   },
   {
