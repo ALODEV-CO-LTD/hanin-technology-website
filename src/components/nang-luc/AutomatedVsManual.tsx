@@ -6,9 +6,9 @@ export default function AutomatedVsManual() {
   return (
     <section className="w-full py-space-xl bg-slate-50 border-t border-slate-200">
       <div className="mx-auto px-margin w-full">
-        <div className="mb-space-xl text-center max-w-2xl mx-auto">
+        <div className="mb-space-xl text-center">
           <h2 className="text-headline-lg text-slate-900 uppercase tracking-tight">{t("title")}</h2>
-          <p className="text-body-md text-slate-600 mt-2">{t("description")}</p>
+          <p className="text-body-md text-slate-600 mt-2 max-w-2xl mx-auto">{t("description")}</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-gutter">

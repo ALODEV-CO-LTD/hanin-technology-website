@@ -9,11 +9,11 @@ export default function FinalCta() {
       <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(15,23,42,0.03)_1px,transparent_1px),linear-gradient(to_bottom,rgba(15,23,42,0.03)_1px,transparent_1px)] bg-[size:32px_32px] pointer-events-none" />
       <div className="relative z-10 mx-auto px-margin flex flex-col gap-space-xl">
         <div className="p-space-lg md:p-space-xl rounded bg-white border border-slate-200 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-space-xl shadow-lg">
-          <div className="flex flex-col gap-space-md max-w-2xl">
+          <div className="flex flex-col gap-space-md">
             <h2 className="text-headline-xl md:text-display-hero text-slate-900 font-bold leading-tight uppercase">
               {t("title")}
             </h2>
-            <p className="text-body-lg text-slate-600">
+            <p className="text-body-lg text-slate-600 max-w-2xl">
               {t("description")}
             </p>
             <div className="pt-space-xs flex flex-wrap items-center gap-space-md">
