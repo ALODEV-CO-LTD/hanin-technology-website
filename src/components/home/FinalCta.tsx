@@ -7,7 +7,7 @@ export default function FinalCta() {
   const { zaloUrl } = getSettings();
 
   return (
-    <section className="w-full py-space-xl bg-slate-50 relative overflow-hidden scroll-mt-20" id="bao-gia">
+    <section className="w-full py-space-xl bg-white relative overflow-hidden scroll-mt-20" id="bao-gia">
       <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(15,23,42,0.03)_1px,transparent_1px),linear-gradient(to_bottom,rgba(15,23,42,0.03)_1px,transparent_1px)] bg-[size:32px_32px] pointer-events-none" />
       <div className="relative z-10 mx-auto px-margin flex flex-col gap-space-xl">
         <div className="p-space-lg md:p-space-xl rounded bg-white border border-slate-200 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-space-xl shadow-lg">

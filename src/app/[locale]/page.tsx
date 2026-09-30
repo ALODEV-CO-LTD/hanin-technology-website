@@ -7,7 +7,6 @@ import FactoryShowcase from "@/components/home/FactoryShowcase";
 import ProductsProjects from "@/components/home/ProductsProjects";
 import QualityCertification from "@/components/home/QualityCertification";
 import NewsUpdates from "@/components/home/NewsUpdates";
-import RecruitmentBanner from "@/components/home/RecruitmentBanner";
 import FinalCta from "@/components/home/FinalCta";
 import Reveal from "@/components/ui/Reveal";
 
@@ -23,7 +22,6 @@ export default function Home() {
       <Reveal><ProductsProjects /></Reveal>
       <Reveal><QualityCertification /></Reveal>
       <Reveal><NewsUpdates /></Reveal>
-      <Reveal direction="left"><RecruitmentBanner /></Reveal>
       <Reveal direction="left"><FinalCta /></Reveal>
     </div>
   );
