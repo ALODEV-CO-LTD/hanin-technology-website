@@ -6,7 +6,7 @@ export default function RfqFormDetail() {
   const t = useTranslations("DichVu.RfqFormDetail");
 
   return (
-    <section className="w-full mb-space-xl" id="rfq-form">
+    <section className="w-full mb-space-xl scroll-mt-20" id="rfq-form">
       <div className="bg-white border border-slate-200 p-space-lg rounded shadow-sm relative overflow-hidden">
         <div className="absolute top-0 right-0 w-32 h-32 bg-steel-100/60 rounded-full blur-2xl pointer-events-none" />
 

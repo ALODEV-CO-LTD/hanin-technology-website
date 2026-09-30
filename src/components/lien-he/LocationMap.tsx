@@ -14,7 +14,7 @@ export default function LocationMap() {
   const t = useTranslations("LienHe.LocationMap");
 
   return (
-    <section className="w-full bg-slate-50 py-space-xl" id="map-section">
+    <section className="w-full bg-slate-50 py-space-xl scroll-mt-20" id="map-section">
       <div className="mx-auto px-margin">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-stretch">
           {/* Map info & logistics instructions */}

@@ -10,7 +10,7 @@ export default function CapacityOverview() {
   ] as const;
 
   return (
-    <section className="w-full mb-space-xl" id="capacity-overview">
+    <section className="w-full mb-space-xl scroll-mt-20" id="capacity-overview">
       <div className="bg-slate-50 border border-slate-200 rounded p-space-md lg:p-space-lg">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-space-sm mb-space-lg">
           <div>

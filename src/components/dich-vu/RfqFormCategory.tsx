@@ -6,7 +6,7 @@ export default function RfqFormCategory() {
   const t = useTranslations("DichVu.RfqFormCategory");
 
   return (
-    <section className="w-full bg-white border border-slate-200 rounded p-space-md lg:p-space-xl shadow-sm mb-space-xl" id="rfq-form">
+    <section className="w-full bg-white border border-slate-200 rounded p-space-md lg:p-space-xl shadow-sm mb-space-xl scroll-mt-20" id="rfq-form">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-space-lg">
           <h2 className="text-headline-sm md:text-headline-lg text-slate-900 uppercase font-bold">{t("heading")}</h2>

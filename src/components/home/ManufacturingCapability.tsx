@@ -7,7 +7,7 @@ export default function ManufacturingCapability() {
   const t = useTranslations("Home.ManufacturingCapability");
 
   return (
-    <section className="w-full py-space-xl bg-slate-50" id="nang-luc">
+    <section className="w-full py-space-xl bg-slate-50 scroll-mt-20" id="nang-luc">
       <div className="mx-auto px-margin flex flex-col gap-space-xl">
         <div className="flex flex-col gap-2 max-w-3xl">
           <h2 className="text-headline-xl text-slate-900 font-bold uppercase">

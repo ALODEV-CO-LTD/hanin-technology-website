@@ -4,7 +4,7 @@ export default function FactoryOverview() {
   const t = useTranslations("NangLuc.FactoryOverview");
 
   return (
-    <section className="w-full py-space-xl bg-slate-50" id="he-thong-nha-may">
+    <section className="w-full py-space-xl bg-slate-50 scroll-mt-20" id="he-thong-nha-may">
       <div className="mx-auto px-margin w-full">
         <div className="flex items-center gap-space-sm mb-space-xl">
           <span className="w-2.5 h-2.5 bg-steel-600 rounded-sm" />

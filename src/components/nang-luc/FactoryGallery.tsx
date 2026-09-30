@@ -27,7 +27,7 @@ export default function FactoryGallery() {
   const t = useTranslations("NangLuc.FactoryGallery");
 
   return (
-    <section className="w-full py-space-xl bg-slate-50 border-t border-slate-200" id="factory-gallery">
+    <section className="w-full py-space-xl bg-slate-50 border-t border-slate-200 scroll-mt-20" id="factory-gallery">
       <div className="mx-auto px-margin w-full">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-xl">
           <div>

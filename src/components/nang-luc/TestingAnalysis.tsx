@@ -10,7 +10,7 @@ export default function TestingAnalysis() {
   const t = useTranslations("NangLuc.TestingAnalysis");
 
   return (
-    <section className="w-full py-space-xl bg-slate-50 border-t border-slate-200" id="kiem-nghiem">
+    <section className="w-full py-space-xl bg-slate-50 border-t border-slate-200 scroll-mt-20" id="kiem-nghiem">
       <div className="mx-auto px-margin w-full">
         <div className="mb-space-xl">
           <h2 className="text-headline-lg text-slate-900 uppercase tracking-tight">{t("sectionTitle")}</h2>

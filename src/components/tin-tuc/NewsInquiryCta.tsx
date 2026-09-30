@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 
 export default function NewsInquiryCta() {
   const t = useTranslations("TinTuc.NewsInquiryCta");
@@ -38,20 +39,20 @@ export default function NewsInquiryCta() {
               </div>
             </div>
             <div className="lg:col-span-4 flex flex-col gap-space-sm justify-center">
-              <a
-                href="#lien-he"
+              <Link
+                href="/lien-he"
                 className="inline-flex items-center justify-center gap-space-xs px-space-lg py-space-md bg-steel-600 text-white text-title-md rounded-lg shadow-sm hover:bg-steel-700 transition-all uppercase tracking-wider text-center"
               >
                 <span>{t("ctaContact")}</span>
                 <span className="material-symbols-outlined text-[20px]">arrow_forward</span>
-              </a>
-              <a
-                href="#bao-gia"
+              </Link>
+              <Link
+                href="/lien-he#rfq-form"
                 className="inline-flex items-center justify-center gap-space-xs px-space-lg py-space-md bg-slate-100 text-slate-900 hover:bg-slate-200 text-title-md rounded-lg transition-all uppercase tracking-wider text-center"
               >
                 <span className="material-symbols-outlined text-[20px]">request_quote</span>
                 <span>{t("ctaQuote")}</span>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
