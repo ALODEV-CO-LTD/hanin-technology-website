@@ -24,7 +24,7 @@ export default function PageHero() {
           ]}
         />
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
           <div className="lg:col-span-7 flex flex-col gap-space-md">
             <h1 className="text-display-hero-mobile md:text-display-hero text-slate-900 tracking-tight uppercase font-bold">
               {t("titlePrefix")} <span className="text-steel-600">{t("titleHighlight")}</span>
