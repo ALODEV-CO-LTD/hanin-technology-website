@@ -20,7 +20,7 @@ export default function FactoryOverview() {
         {/* Editorial Masonry Gallery Layout */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-gutter mb-space-lg">
           {/* Main Large Photo: Modern Electroplating Line */}
-          <div className="lg:col-span-8 relative aspect-[16/10] rounded-lg overflow-hidden bg-slate-100 border border-slate-200 shadow-sm group">
+          <div className="lg:col-span-8 relative aspect-[16/10] lg:aspect-auto lg:h-full min-h-[320px] rounded-lg overflow-hidden bg-slate-100 border border-slate-200 shadow-sm group">
             <div
               className="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
               role="img"
@@ -34,9 +34,9 @@ export default function FactoryOverview() {
           </div>
 
           {/* 3 Smaller Auxiliary Photos */}
-          <div className="lg:col-span-4 flex flex-col gap-gutter justify-between">
+          <div className="lg:col-span-4 grid grid-rows-3 gap-gutter">
             {/* Aux Photo 1: Operator Monitoring Line */}
-            <div className="relative h-[135px] rounded-lg overflow-hidden bg-slate-100 border border-slate-200 shadow-sm group">
+            <div className="relative h-full min-h-[180px] rounded-lg overflow-hidden bg-slate-100 border border-slate-200 shadow-sm group">
               <div
                 className="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
                 role="img"
@@ -50,7 +50,7 @@ export default function FactoryOverview() {
             </div>
 
             {/* Aux Photo 2: Precision Caliper Inspection */}
-            <div className="relative h-[135px] rounded-lg overflow-hidden bg-slate-100 border border-slate-200 shadow-sm group">
+            <div className="relative h-full min-h-[180px] rounded-lg overflow-hidden bg-slate-100 border border-slate-200 shadow-sm group">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 alt={t("zone3ImageAlt")}
@@ -61,7 +61,7 @@ export default function FactoryOverview() {
             </div>
 
             {/* Aux Photo 3: Heavy Automated Crane System */}
-            <div className="relative h-[135px] rounded-lg overflow-hidden bg-slate-100 border border-slate-200 shadow-sm group">
+            <div className="relative h-full min-h-[180px] rounded-lg overflow-hidden bg-slate-100 border border-slate-200 shadow-sm group">
               <div
                 className="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
                 role="img"
