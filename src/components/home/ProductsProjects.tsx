@@ -60,9 +60,6 @@ export default function ProductsProjects() {
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   src={project.image}
                 />
-                <span className="absolute top-4 left-4 px-2.5 py-1 rounded bg-slate-900/80 backdrop-blur-sm text-white text-label-sm font-bold">
-                  {t(`${project.key}.label`)}
-                </span>
               </div>
               <div className="p-space-lg flex flex-col gap-2">
                 <span className="text-label-technical text-steel-600 uppercase font-bold tracking-wider">
