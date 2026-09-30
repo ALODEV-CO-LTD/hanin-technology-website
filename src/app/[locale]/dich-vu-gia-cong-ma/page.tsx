@@ -18,7 +18,7 @@ export default function DichVuGiaCongMaPage() {
   return (
     <>
       <ServiceBanner />
-      <div className="max-w-[1800px] mx-auto px-margin py-space-lg flex flex-col w-full">
+      <div className="px-margin py-space-lg flex flex-col w-full">
         <CategoryHero />
         <Reveal><CapacityOverview /></Reveal>
         <Reveal><ServiceCategories /></Reveal>

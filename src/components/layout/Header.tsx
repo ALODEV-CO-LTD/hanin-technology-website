@@ -47,36 +47,35 @@ export default function Header() {
         scrolled ? "border-slate-200 shadow-md" : "border-slate-200/70 shadow-sm"
       }`}
     >
-      <div className="h-20 max-w-[1800px] mx-auto px-margin flex items-center justify-between gap-gutter">
-        <div className="flex items-center gap-space-xl">
-          <Link href="/" className="flex items-center group" onClick={handleLogoClick}>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/hanin-logo.png"
-              alt="HANIN Plating"
-              className={`h-14 w-auto transition-transform duration-200 ease-out group-hover:scale-105 group-active:scale-95 ${
-                logoPulsing ? "logo-click-pulse" : ""
-              }`}
-            />
-          </Link>
-          <nav className="hidden xl:flex items-center gap-space-lg">
-            {NAV_LINKS.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className={
-                  isActive(link.href)
-                    ? "relative py-1 text-body-sm text-steel-600 font-semibold whitespace-nowrap after:absolute after:left-0 after:-bottom-[1px] after:h-[2px] after:w-full after:bg-steel-600"
-                    : "relative py-1 text-body-sm text-slate-600 whitespace-nowrap transition-colors duration-200 hover:text-steel-600 after:absolute after:left-0 after:-bottom-[1px] after:h-[2px] after:w-0 after:bg-steel-600 after:transition-all after:duration-300 hover:after:w-full"
-                }
-              >
-                {link.label}
-              </Link>
-            ))}
-          </nav>
-        </div>
+      <div className="relative h-20 w-full px-margin flex items-center justify-between gap-gutter">
+        <Link href="/" className="flex items-center group shrink-0" onClick={handleLogoClick}>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/hanin-logo.png"
+            alt="HANIN Plating"
+            className={`h-14 w-auto transition-transform duration-200 ease-out group-hover:scale-105 group-active:scale-95 ${
+              logoPulsing ? "logo-click-pulse" : ""
+            }`}
+          />
+        </Link>
 
-        <div className="flex items-center gap-space-sm">
+        <nav className="hidden 2xl:flex items-center gap-space-lg absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+          {NAV_LINKS.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className={
+                isActive(link.href)
+                  ? "relative py-1 text-body-sm text-steel-600 font-semibold whitespace-nowrap after:absolute after:left-0 after:-bottom-[1px] after:h-[2px] after:w-full after:bg-steel-600"
+                  : "relative py-1 text-body-sm text-slate-600 whitespace-nowrap transition-colors duration-200 hover:text-steel-600 after:absolute after:left-0 after:-bottom-[1px] after:h-[2px] after:w-0 after:bg-steel-600 after:transition-all after:duration-300 hover:after:w-full"
+              }
+            >
+              {link.label}
+            </Link>
+          ))}
+        </nav>
+
+        <div className="flex items-center gap-space-sm shrink-0">
           <div className="hidden sm:block">
             <LanguageSwitcher />
           </div>
@@ -91,7 +90,7 @@ export default function Header() {
             aria-label={t("menuOpen")}
             aria-expanded={mobileOpen}
             onClick={() => setMobileOpen((open) => !open)}
-            className="xl:hidden flex items-center justify-center w-9 h-9 rounded bg-slate-100 border border-slate-200 text-slate-600 transition-all duration-200 hover:bg-steel-50 hover:border-steel-200 hover:text-steel-600 active:scale-95"
+            className="2xl:hidden flex items-center justify-center w-9 h-9 rounded bg-slate-100 border border-slate-200 text-slate-600 transition-all duration-200 hover:bg-steel-50 hover:border-steel-200 hover:text-steel-600 active:scale-95"
           >
             <span
               className={`material-symbols-outlined text-[22px] transition-transform duration-300 ${
@@ -105,7 +104,7 @@ export default function Header() {
       </div>
 
       <nav
-        className={`xl:hidden overflow-hidden border-t border-slate-200 bg-white/95 backdrop-blur-xl px-margin transition-[max-height,opacity] duration-300 ease-out ${
+        className={`2xl:hidden overflow-hidden border-t border-slate-200 bg-white/95 backdrop-blur-xl px-margin transition-[max-height,opacity] duration-300 ease-out ${
           mobileOpen ? "max-h-[640px] opacity-100 py-space-md" : "max-h-0 opacity-0 py-0"
         } flex flex-col gap-space-sm`}
       >

@@ -17,7 +17,7 @@ export default function Hero() {
         <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-[size:40px_40px] pointer-events-none" />
       </div>
 
-      <div className="relative z-10 w-full max-w-[1800px] mx-auto px-margin py-space-xl flex flex-col justify-center h-full">
+      <div className="relative z-10 w-full px-margin py-space-xl flex flex-col justify-center h-full">
         <div className="max-w-3xl flex flex-col gap-space-md">
           <div className="flex flex-col gap-2">
             <h1 className="text-display-hero-mobile xl:text-display-hero text-white uppercase tracking-tight font-bold">

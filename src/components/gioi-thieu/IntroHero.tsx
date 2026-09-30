@@ -20,7 +20,7 @@ export default function IntroHero() {
       <div className="absolute inset-0 bg-gradient-to-r from-slate-50 via-slate-50/60 to-transparent" />
 
       {/* Content Container */}
-      <div className="relative z-10 w-full max-w-[1800px] mx-auto px-margin">
+      <div className="relative z-10 w-full px-margin">
         <PageBreadcrumb
           className="mb-space-sm"
           items={[

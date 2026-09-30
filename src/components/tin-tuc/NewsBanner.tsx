@@ -19,7 +19,7 @@ export default function NewsBanner() {
       <div className="absolute inset-0 bg-gradient-to-b from-white/95 via-slate-50/90 to-slate-100" />
       <div className="absolute inset-0 bg-gradient-to-r from-white via-white/80 to-transparent" />
 
-      <div className="relative z-10 w-full max-w-[1800px] mx-auto px-margin">
+      <div className="relative z-10 w-full px-margin">
         <PageBreadcrumb
           className="mb-space-md"
           items={[

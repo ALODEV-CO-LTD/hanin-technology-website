@@ -15,7 +15,7 @@ export default function ContactHero() {
     <>
       {/* Page hero: technical contact & RFQ portal */}
       <section className="relative w-full min-h-screen bg-white flex items-center">
-        <div className="w-full max-w-[1800px] mx-auto px-margin">
+        <div className="w-full px-margin">
           <PageBreadcrumb
             className="mb-space-sm"
             items={[
