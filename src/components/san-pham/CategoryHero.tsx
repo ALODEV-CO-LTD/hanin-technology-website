@@ -15,7 +15,7 @@ export default function CategoryHero() {
         />
       </div>
       <div className="absolute inset-0 bg-gradient-to-r from-slate-100 via-slate-100/95 to-slate-100/80 z-0" />
-      <div className="relative z-10 mx-auto px-margin flex flex-col gap-space-sm min-h-[280px] justify-center">
+      <div className="relative z-10 max-w-[1800px] mx-auto px-margin flex flex-col gap-space-sm min-h-[280px] justify-center">
         <PageBreadcrumb
           items={[
             { label: t("breadcrumbHome"), href: "/" },

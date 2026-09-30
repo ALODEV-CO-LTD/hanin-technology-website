@@ -5,7 +5,7 @@ export default function NewsIntro() {
 
   return (
     <section className="w-full bg-white">
-      <div className="mx-auto px-margin py-space-xl">
+      <div className="max-w-[1800px] mx-auto px-margin py-space-xl">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-end">
           <div className="lg:col-span-8 flex flex-col gap-space-xs">
             <h1 className="text-display-hero-mobile lg:text-display-hero text-slate-900 uppercase tracking-tight font-bold">

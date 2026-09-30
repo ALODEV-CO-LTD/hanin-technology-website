@@ -45,7 +45,7 @@ export default async function DichVuChiTietPage({
   const service = getServiceBySlug(t, slug) ?? getServiceBySlug(t, DETAIL_TEMPLATE_SLUG);
 
   return (
-    <div className="mx-auto px-margin py-space-lg flex flex-col w-full">
+    <div className="max-w-[1800px] mx-auto px-margin py-space-lg flex flex-col w-full">
       <PageBreadcrumb
         className="mb-space-md"
         items={[
