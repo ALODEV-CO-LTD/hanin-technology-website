@@ -17,7 +17,7 @@ export default function PageHero() {
 
       <div className="w-full max-w-[1800px] mx-auto px-margin pt-space-xl pb-space-xl relative z-10">
         <PageBreadcrumb
-          className="pb-space-lg"
+          className="mb-space-sm"
           items={[
             { label: t("breadcrumbHome"), href: "/" },
             { label: t("breadcrumbCurrent") },
