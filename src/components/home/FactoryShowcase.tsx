@@ -61,12 +61,12 @@ export default function FactoryShowcase() {
               src={activeImage}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent" />
-            <div className="absolute bottom-6 left-6 right-6 md:right-auto md:max-w-xl bg-white/95 backdrop-blur-md p-space-lg rounded shadow-xl border border-slate-200">
-              <span className="text-[11px] text-steel-600 uppercase tracking-widest block mb-1 font-bold">
+            <div className="absolute bottom-6 left-6 right-6 md:right-auto md:max-w-xl [text-shadow:0_1px_3px_rgba(15,23,42,0.9),0_2px_12px_rgba(15,23,42,0.6)]">
+              <span className="text-[11px] text-steel-400 uppercase tracking-widest block mb-1 font-bold">
                 {activeOrder}
               </span>
-              <h3 className="text-headline-sm text-slate-900 font-semibold mb-2">{activeTitle}</h3>
-              <p className="text-body-sm text-slate-600 leading-relaxed">{activeDesc}</p>
+              <h3 className="text-headline-sm text-steel-100 font-semibold mb-2">{activeTitle}</h3>
+              <p className="text-body-sm text-steel-200 leading-relaxed">{activeDesc}</p>
             </div>
           </div>
         </div>
