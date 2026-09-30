@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
-import { getTranslations } from "next-intl/server";
-import PageBreadcrumb from "@/components/layout/PageBreadcrumb";
+import ServiceBanner from "@/components/dich-vu/ServiceBanner";
 import CategoryHero from "@/components/dich-vu/CategoryHero";
 import CapacityOverview from "@/components/dich-vu/CapacityOverview";
 import ServiceCategories from "@/components/dich-vu/ServiceCategories";
@@ -15,25 +14,18 @@ export const metadata: Metadata = {
     "Dịch vụ gia công mạ điện phân, mạ hóa học và xử lý bề mặt kim loại đạt chuẩn ô tô, hàng không: mạ Crom cứng, mạ Niken hóa học (ENP), mạ Kẽm-Niken, Anodizing nhôm.",
 };
 
-export default async function DichVuGiaCongMaPage() {
-  const t = await getTranslations("DichVu");
-  const tNav = await getTranslations("Nav");
-
+export default function DichVuGiaCongMaPage() {
   return (
-    <div className="max-w-[1800px] mx-auto px-margin py-space-lg flex flex-col w-full">
-      <PageBreadcrumb
-        className="mb-space-md"
-        items={[
-          { label: tNav("trangChu"), href: "/" },
-          { label: t("breadcrumbCategory") },
-        ]}
-      />
-      <CategoryHero />
-      <Reveal><CapacityOverview /></Reveal>
-      <Reveal><ServiceCategories /></Reveal>
-      <Reveal><ProcessFlow /></Reveal>
-      <Reveal><QualityMetrology /></Reveal>
-      <Reveal><RfqFormCategory /></Reveal>
-    </div>
+    <>
+      <ServiceBanner />
+      <div className="max-w-[1800px] mx-auto px-margin py-space-lg flex flex-col w-full">
+        <CategoryHero />
+        <Reveal><CapacityOverview /></Reveal>
+        <Reveal><ServiceCategories /></Reveal>
+        <Reveal><ProcessFlow /></Reveal>
+        <Reveal><QualityMetrology /></Reveal>
+        <Reveal><RfqFormCategory /></Reveal>
+      </div>
+    </>
   );
 }

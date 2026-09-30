@@ -5,7 +5,7 @@ export default function IntroHero() {
   const t = useTranslations("GioiThieu.IntroHero");
 
   return (
-    <section className="relative w-full min-h-screen bg-slate-100 overflow-hidden flex items-end border-b border-slate-200">
+    <section className="relative w-full min-h-screen bg-slate-100 overflow-hidden flex items-center border-b border-slate-200">
       {/* Hero Background Image & Tonal Scrim */}
       <div
         className="absolute inset-0 bg-cover bg-center opacity-25 mix-blend-multiply scale-105 transition-transform duration-1000 ease-out"
@@ -20,7 +20,7 @@ export default function IntroHero() {
       <div className="absolute inset-0 bg-gradient-to-r from-slate-50 via-slate-50/60 to-transparent" />
 
       {/* Content Container */}
-      <div className="relative z-10 w-full max-w-[1800px] mx-auto px-margin pb-space-xl">
+      <div className="relative z-10 w-full max-w-[1800px] mx-auto px-margin">
         <PageBreadcrumb
           className="mb-space-sm"
           items={[
