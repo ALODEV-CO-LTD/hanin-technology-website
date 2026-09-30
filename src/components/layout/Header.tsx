@@ -37,7 +37,7 @@ export default function Header() {
     setLogoPulsing(true);
     window.setTimeout(() => setLogoPulsing(false), 450);
     if (pathname === "/") {
-      window.location.reload();
+      window.scrollTo({ top: 0, behavior: "smooth" });
     }
   };
 
