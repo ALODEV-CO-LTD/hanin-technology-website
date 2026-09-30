@@ -23,7 +23,7 @@ export default function DichVuGiaCongMaPage() {
         <Reveal><CapacityOverview /></Reveal>
         <Reveal><ServiceCategories /></Reveal>
         <Reveal><ProcessFlow /></Reveal>
-        <Reveal><QualityMetrology /></Reveal>
+        <Reveal direction="left"><QualityMetrology /></Reveal>
         <Reveal><RfqFormCategory /></Reveal>
       </div>
     </>

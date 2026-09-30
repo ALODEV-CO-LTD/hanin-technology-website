@@ -45,11 +45,11 @@ export default async function ProductDetailPage({ params }: PageProps) {
       <ProductBreadcrumbBar product={product} />
       <ProductHero product={product} />
       <Reveal><ProductGallery /></Reveal>
-      <Reveal><ProductOverview /></Reveal>
+      <Reveal direction="left"><ProductOverview /></Reveal>
       <Reveal><ProductProcessTimeline /></Reveal>
       <Reveal><RelatedServices /></Reveal>
       <Reveal><RelatedProjects currentSlug={product.slug} /></Reveal>
-      <Reveal><ProductQuoteCta /></Reveal>
+      <Reveal direction="left"><ProductQuoteCta /></Reveal>
     </div>
   );
 }

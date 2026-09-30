@@ -17,7 +17,7 @@ export default function SanPhamDuAnPage() {
     <div className="flex flex-col w-full">
       <CategoryHero />
       <Reveal><ProductCatalog /></Reveal>
-      <Reveal><FeaturedProjectSpotlight /></Reveal>
+      <Reveal direction="right"><FeaturedProjectSpotlight /></Reveal>
       <Reveal><SpecTrustNote /></Reveal>
       <Reveal><ProductsCta /></Reveal>
     </div>

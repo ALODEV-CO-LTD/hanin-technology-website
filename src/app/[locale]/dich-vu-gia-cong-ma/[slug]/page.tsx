@@ -57,7 +57,7 @@ export default async function DichVuChiTietPage({
       <DetailHero />
       <Reveal><DetailOverview /></Reveal>
       <Reveal><DetailProcess /></Reveal>
-      <Reveal><DetailCapability /></Reveal>
+      <Reveal direction="right"><DetailCapability /></Reveal>
       <Reveal><DetailApplications /></Reveal>
       <Reveal><DetailQaTable /></Reveal>
       <Reveal><DetailGallery /></Reveal>

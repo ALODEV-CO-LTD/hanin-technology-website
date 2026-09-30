@@ -21,14 +21,14 @@ export default function GioiThieuPage() {
   return (
     <div className="flex flex-col w-full">
       <IntroHero />
-      <Reveal><CompanyIntroduction /></Reveal>
+      <Reveal direction="right"><CompanyIntroduction /></Reveal>
       <Reveal><CompanyJourney /></Reveal>
       <Reveal><CoreStrengths /></Reveal>
       <Reveal><FactoryOverview /></Reveal>
       <Reveal><CapabilitySnapshot /></Reveal>
       <Reveal><DevelopmentDirection /></Reveal>
       <Reveal><QualityStandardsPreview /></Reveal>
-      <Reveal><ProfileDownloadCta /></Reveal>
+      <Reveal direction="left"><ProfileDownloadCta /></Reveal>
       <Reveal><ContactCta /></Reveal>
     </div>
   );

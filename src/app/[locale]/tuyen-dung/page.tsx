@@ -18,8 +18,8 @@ export default function TuyenDungPage() {
       <PageHero />
       <Reveal><WhyHanin /></Reveal>
       <Reveal><JobBoard /></Reveal>
-      <Reveal><WorkEnvironment /></Reveal>
-      <Reveal><ApplicationCta /></Reveal>
+      <Reveal direction="right"><WorkEnvironment /></Reveal>
+      <Reveal direction="left"><ApplicationCta /></Reveal>
     </div>
   );
 }

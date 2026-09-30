@@ -24,15 +24,15 @@ export default function NangLucSanXuatPage() {
     <div className="flex flex-col w-full">
       <CapabilityHero />
       <Reveal><CapabilityOverviewStats /></Reveal>
-      <Reveal><FactoryOverview /></Reveal>
-      <Reveal><ProductionLines /></Reveal>
+      <Reveal direction="right"><FactoryOverview /></Reveal>
+      <Reveal direction="right"><ProductionLines /></Reveal>
       <Reveal><AutomatedVsManual /></Reveal>
       <Reveal><EquipmentGrid /></Reveal>
-      <Reveal><TestingAnalysis /></Reveal>
+      <Reveal direction="right"><TestingAnalysis /></Reveal>
       <Reveal><ProductionFlow /></Reveal>
       <Reveal><FactoryGallery /></Reveal>
       <Reveal><QualityStandards /></Reveal>
-      <Reveal><CompanyProfileCta /></Reveal>
+      <Reveal direction="left"><CompanyProfileCta /></Reveal>
       <Reveal><NangLucFinalCta /></Reveal>
     </div>
   );

@@ -20,7 +20,7 @@ export default function LienHePage() {
       <ContactHero />
       <Reveal><ContactChannels /></Reveal>
       <Reveal><RfqForm /></Reveal>
-      <Reveal><LocationMap /></Reveal>
+      <Reveal direction="left"><LocationMap /></Reveal>
       <Reveal><DirectChannels /></Reveal>
       <Reveal><ContactFaq /></Reveal>
       <Reveal><BottomCta /></Reveal>

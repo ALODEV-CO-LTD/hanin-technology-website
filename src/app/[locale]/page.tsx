@@ -16,15 +16,15 @@ export default function Home() {
     <div className="flex flex-col w-full text-on-surface">
       <Hero />
       <Reveal><CompanySnapshot /></Reveal>
-      <Reveal><AboutHanin /></Reveal>
+      <Reveal direction="right"><AboutHanin /></Reveal>
       <Reveal><PlatingServices /></Reveal>
-      <Reveal><ManufacturingCapability /></Reveal>
+      <Reveal direction="right"><ManufacturingCapability /></Reveal>
       <Reveal><FactoryShowcase /></Reveal>
       <Reveal><ProductsProjects /></Reveal>
       <Reveal><QualityCertification /></Reveal>
       <Reveal><NewsUpdates /></Reveal>
-      <Reveal><RecruitmentBanner /></Reveal>
-      <Reveal><FinalCta /></Reveal>
+      <Reveal direction="left"><RecruitmentBanner /></Reveal>
+      <Reveal direction="left"><FinalCta /></Reveal>
     </div>
   );
 }

@@ -19,11 +19,11 @@ export default function TinTucPage() {
     <div className="flex flex-col w-full text-slate-900">
       <NewsBanner />
       <NewsIntro />
-      <Reveal><FeaturedArticle /></Reveal>
+      <Reveal direction="right"><FeaturedArticle /></Reveal>
       <Reveal><NewsFilterBar /></Reveal>
       <Reveal><NewsGrid /></Reveal>
       <Reveal><NewsPagination /></Reveal>
-      <Reveal><NewsInquiryCta /></Reveal>
+      <Reveal direction="left"><NewsInquiryCta /></Reveal>
     </div>
   );
 }
