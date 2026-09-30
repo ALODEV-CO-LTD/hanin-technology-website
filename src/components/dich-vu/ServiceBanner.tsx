@@ -14,7 +14,7 @@ export default function ServiceBanner() {
         aria-label={t("imageAlt")}
         style={{
           backgroundImage:
-            "url('https://lh3.googleusercontent.com/aida-public/AB6AXuBNUWbtu-6mF-47Gk1oHXXyJOVwIjxt1jMnwPHiIsRKd5-Mx9Fkov5w63gs__fEcgwwzgV_Z-vKRbSS73Sz3WCrxS7MMkOc_RB6FPdCt5KgCyaidW2F52ulUmXdEeh_eNp7KwcY8uwyn0-vSmt1UP_859JtN6IOXI0GDsjdrq5wFODc1u1tv_i6RcJXzKItH1zLdI0T8JX0LVT3-sWkTJptYWKMbM9n17lteJGbAqsinL7sfHx1R7peqg')",
+            "url('https://lh3.googleusercontent.com/aida-public/AB6AXuBNUWbtu-6mF-47Gk1oHXXyJOVwIjxt1jMnwPHiIsRKd5-Mx9Fkov5w63gs__fEcgwwzgV_Z-vKRbSS73Sz3WCrxS7MMkOc_RB6FPdCt5KgCyaidW2F52ulUmXdEeh_eNp7KwcY8uwyn0-vSmt1UP_859JtN6IOXI0GDsjdrq5wFODc1u1tv_i6RcJXzKItH1zLdI0T8JX0LVT3-sWkTJptYWKMbM9n17lteJGbAqsinL7sfHx1R7peqg=w1920')",
         }}
       />
 
