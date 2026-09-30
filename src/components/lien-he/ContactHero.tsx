@@ -12,10 +12,10 @@ export default function ContactHero() {
   const t = useTranslations("LienHe.ContactHero");
 
   return (
-    <section className="relative w-full min-h-screen bg-slate-100 overflow-hidden flex items-center border-b border-slate-200">
-      {/* Banner Background Image & Tonal Scrim */}
+    <section className="relative w-full min-h-screen bg-slate-900 overflow-hidden flex items-center border-b border-slate-200">
+      {/* Banner Background Image */}
       <div
-        className="absolute inset-0 bg-cover bg-center opacity-25 mix-blend-multiply scale-105 transition-transform duration-1000 ease-out"
+        className="absolute inset-0 bg-cover bg-center"
         role="img"
         aria-label={t("imageAlt")}
         style={{
@@ -23,27 +23,26 @@ export default function ContactHero() {
             "url('https://lh3.googleusercontent.com/aida-public/AB6AXuAVbGJwGBLCtR1FfUH6k02r2P-NiR8BAPFHnKHa0jtHPUl35bfil2EmH5HU_MuFoZ3ANHR2WUVUfFOyDEfy6xH2h8L_JXgXpud4nJiFxbIFhpWxMYp7ji-bzcQ73VEptZXwO2AGP8ot9l9tXlwQPWiGSKjxyVdf-Y5rIg1a0zRe2CQmQXe3CVHX22FXJIAwpE3XO8moxoHF9x6JPFGsgntioSxKEkNyDcZSpbFwu5Jbizom9bSXp7a-1w')",
         }}
       />
-      <div className="absolute inset-0 bg-gradient-to-t from-slate-50 via-slate-50/80 to-transparent" />
-      <div className="absolute inset-0 bg-gradient-to-r from-slate-50 via-slate-50/60 to-transparent" />
 
       {/* Content Container */}
-      <div className="relative z-10 w-full px-margin">
+      <div className="relative z-10 w-full px-margin [text-shadow:0_2px_6px_rgba(2,6,23,0.85),0_4px_20px_rgba(2,6,23,0.6)]">
         <PageBreadcrumb
           className="mb-space-sm"
+          variant="dark"
           items={[
             { label: t("breadcrumbHome"), href: "/" },
             { label: t("breadcrumbCurrent") },
           ]}
         />
 
-        <h1 className="text-headline-xl-mobile lg:text-display-hero font-bold tracking-tight text-slate-900 uppercase mb-space-sm max-w-3xl">
+        <h1 className="text-headline-xl-mobile lg:text-display-hero font-bold tracking-tight text-white uppercase mb-space-sm max-w-3xl">
           {t("titlePrefix")}{" "}
-          <span className="text-steel-600 underline decoration-steel-600/30 decoration-4 underline-offset-8">
+          <span className="text-steel-400 underline decoration-steel-400/40 decoration-4 underline-offset-8">
             {t("titleHighlight")}
           </span>{" "}
           {t("titleSuffix")}
         </h1>
-        <p className="text-body-lg text-slate-600 leading-relaxed max-w-2xl">{t("description")}</p>
+        <p className="text-body-lg text-slate-200 leading-relaxed max-w-2xl">{t("description")}</p>
 
         {/* Engineering spec highlights */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-space-sm max-w-3xl pt-space-md">
