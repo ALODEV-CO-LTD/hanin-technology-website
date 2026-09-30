@@ -153,15 +153,14 @@
       "ctaAll": "XEM TẤT CẢ DỰ ÁN",
       "project1": {
         "imageAlt": "Chi tiết bánh răng và trục cơ khí chính xác sau gia công mạ (ảnh minh họa)",
-        "toleranceBadge": "DUNG SAI: ±0.003mm",
-        "categoryBadge": "Cơ khí chính xác",
         "label": "DỰ ÁN TIÊU BIỂU 01",
-        "toleranceValue": "DUNG SAI: ±0.003mm",
+        "category": "Cơ khí chính xác",
         "title": "Chi tiết truyền động & bánh răng cơ khí chính xác",
         "desc": "Gia công mạ bảo vệ bề mặt chống mài mòn cao, duy trì độ chính xác bước răng và tăng tuổi thọ chu kỳ làm việc trong môi trường ma sát cao.",
         "cta": "THÔNG SỐ LỚP MẠ →"
       },
       "project2": {
+        "imageAlt": "Trục piston và ty ben thủy lực ô tô mạ crom cứng (ảnh minh họa)",
         "label": "DỰ ÁN TIÊU BIỂU 02",
         "category": "Công nghiệp ô tô / Xe máy",
         "title": "Linh kiện vỏ bọc kim loại & phụ kiện phụ trợ",
@@ -169,6 +168,7 @@
         "cta": "XEM CHI TIẾT DỰ ÁN"
       },
       "project3": {
+        "imageAlt": "Thanh busbar đồng mạ thiếc trong tủ điện cao thế (ảnh minh họa)",
         "label": "DỰ ÁN TIÊU BIỂU 03",
         "category": "Thiết bị điện tử công nghiệp",
         "title": "Phần cứng kim khí kỹ thuật cao",
