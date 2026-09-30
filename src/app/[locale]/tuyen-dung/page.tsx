@@ -7,9 +7,9 @@ import ApplicationCta from "@/components/tuyen-dung/ApplicationCta";
 import Reveal from "@/components/ui/Reveal";
 
 export const metadata: Metadata = {
-  title: "Tuyển dụng | HANIN TECHNOLOGY VIỆT NAM",
+  title: "Tuyển dụng",
   description:
-    "Vị trí tuyển dụng đang mở tại HANIN TECHNOLOGY VIỆT NAM trong lĩnh vực gia công mạ kim loại và cơ khí chính xác.",
+    "Vị trí tuyển dụng đang mở trong lĩnh vực gia công mạ kim loại và cơ khí chính xác.",
 };
 
 export default function TuyenDungPage() {

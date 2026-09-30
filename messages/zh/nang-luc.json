@@ -24,7 +24,7 @@
       "breadcrumbHome": "首页",
       "breadcrumbCurrent": "生产能力",
       "title": "生产能力",
-      "description": "HANIN TECHNOLOGY 标准化厂房生态系统、PLC SCADA 控制的自动电镀生产线体系,以及达到国际标准的微观检测实验室。",
+      "description": "标准化厂房生态系统、PLC SCADA 控制的自动电镀生产线体系,以及达到国际标准的微观检测实验室。",
       "ctaExplore": "探索厂区 →",
       "ctaLines": "生产线",
       "ctaQa": "QA/QC 检测实验室"
@@ -51,7 +51,7 @@
     },
     "CompanyProfileCta": {
       "title": "深入了解 HANIN 生产能力",
-      "description": "查阅 Company Profile,详细了解厂房布局、生产线参数、检测设备清单及 HANIN TECHNOLOGY 的服务能力。",
+      "description": "查阅 Company Profile,详细了解厂房布局、生产线参数、检测设备清单及服务能力。",
       "ctaDownload": "查看 Company Profile(PDF) →"
     },
     "EquipmentGrid": {
@@ -130,7 +130,7 @@
       "image": {
         "alt": "HANIN Technology Việt Nam 位于广明工业区的厂房外观建筑(示意图,将替换为实际照片)"
       },
-      "factoryTitle": "HANIN TECHNOLOGY 厂房",
+      "factoryTitle": "厂房",
       "factoryDescription": "厂房按现代工业标准规划,集成中央环境控制系统、达到 QCVN 40:2011/BTNMT 标准的污水处理站及全封闭自动电镀模块,满足来自日本、韩国、欧盟的精密机械、自动化及微电子客户的需求。",
       "specs": {
         "locationLabel": "位置(Location)",

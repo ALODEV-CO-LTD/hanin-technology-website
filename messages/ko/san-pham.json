@@ -115,9 +115,15 @@
         "imageAlt": "마이크로미터로 측정 중인 기어 및 기계 부품 (예시 이미지)",
         "imageBadge": "프로젝트 01 // 정밀 기계",
         "chips": {
-          "coating": { "label": "완성 도금층" },
-          "thickness": { "label": "두께" },
-          "tolerance": { "label": "공차" }
+          "coating": {
+            "label": "완성 도금층"
+          },
+          "thickness": {
+            "label": "두께"
+          },
+          "tolerance": {
+            "label": "공차"
+          }
         }
       },
       "pistonTruc": {
@@ -127,7 +133,10 @@
         "imageAlt": "경질 크롬 도금된 자동차 피스톤 축 및 유압 램 (예시 이미지)",
         "imageBadge": "프로젝트 02 // 자동차 · 오토바이 부품",
         "chips": {
-          "hardChrome": { "label": "경질 크롬 도금", "value": "염수분무 시험: 720H" }
+          "hardChrome": {
+            "label": "경질 크롬 도금",
+            "value": "염수분무 시험: 720H"
+          }
         }
       },
       "busbar": {
@@ -137,7 +146,10 @@
         "imageAlt": "고압 배전반 내 주석 도금 구리 부스바 (예시 이미지)",
         "imageBadge": "프로젝트 03 // 전기 단자 및 전기 설비",
         "chips": {
-          "tin": { "label": "순수 주석 도금", "value": "순도: 99.9%" }
+          "tin": {
+            "label": "순수 주석 도금",
+            "value": "순도: 99.9%"
+          }
         }
       },
       "buLong": {
@@ -147,7 +159,10 @@
         "imageAlt": "아연-니켈 도금된 화학 약품조용 위치 고정 볼트 및 핀 (예시 이미지)",
         "imageBadge": "프로젝트 04 // 유압 및 밸브 블록",
         "chips": {
-          "zincNickel": { "label": "도금층: 아연-니켈", "value": "ISO 4042 기준" }
+          "zincNickel": {
+            "label": "도금층: 아연-니켈",
+            "value": "ISO 4042 기준"
+          }
         }
       },
       "ongLot": {
@@ -157,7 +172,10 @@
         "imageAlt": "흑아연 도금된 내마모성 부싱 및 나사 축 (예시 이미지)",
         "imageBadge": "프로젝트 05 // 정밀 기계 부품",
         "chips": {
-          "blackZinc": { "label": "흑아연 도금", "value": "나사 피치: M12-M48" }
+          "blackZinc": {
+            "label": "흑아연 도금",
+            "value": "나사 피치: M12-M48"
+          }
         }
       },
       "cumLinhKien": {
@@ -167,19 +185,40 @@
         "imageAlt": "박닌 공장의 PLC 자동 전해 도금 생산 라인 (예시 이미지)",
         "imageBadge": "공장: 박닌 // 4호 생산라인",
         "chips": {
-          "industry": { "label": "적용 산업", "value": "정밀 기계 제조 및 로봇 산업" },
-          "technology": { "label": "가공 기술", "value": "PLC 제어 니켈 도금 및 다색 아연 도금" },
-          "detail": { "label": "세부 제품", "value": "기어, 위치 결정 축, 스플라인 커플링" },
-          "standard": { "label": "품질 기준", "value": "ISO 9001, RoHS, ASTM B117" }
+          "industry": {
+            "label": "적용 산업",
+            "value": "정밀 기계 제조 및 로봇 산업"
+          },
+          "technology": {
+            "label": "가공 기술",
+            "value": "PLC 제어 니켈 도금 및 다색 아연 도금"
+          },
+          "detail": {
+            "label": "세부 제품",
+            "value": "기어, 위치 결정 축, 스플라인 커플링"
+          },
+          "standard": {
+            "label": "품질 기준",
+            "value": "ISO 9001, RoHS, ASTM B117"
+          }
         }
       }
     },
     "detail": {
       "specEyebrow": "규격: ISO 9001 및 ASTM B117 // 마이크론 정밀도",
       "heroStats": {
-        "coatingThickness": { "label": "도금층 두께", "note": "도면에 따라 맞춤 설정" },
-        "saltSpray": { "label": "내염수분무성", "note": "ASTM B117 기준" },
-        "tolerance": { "label": "공차 관리", "note": "광학 측정 검사" }
+        "coatingThickness": {
+          "label": "도금층 두께",
+          "note": "도면에 따라 맞춤 설정"
+        },
+        "saltSpray": {
+          "label": "내염수분무성",
+          "note": "ASTM B117 기준"
+        },
+        "tolerance": {
+          "label": "공차 관리",
+          "note": "광학 측정 검사"
+        }
       },
       "heroDescription": "무전해 니켈 도금(Electroless Nickel Plating - 고인 함량) 표면 마감 가공으로, 산업용 로봇의 헬리컬 기어 세트, 웜 축 및 차동 기구에 적용됩니다. 마이크론 단위의 엄격한 조립 공차를 충족하며, 기어 뿌리와 스플라인 홈 전체에 걸쳐 도금층이 100% 균일하게 분포되어 나사 피치의 변형이 발생하지 않습니다.",
       "heroImageAlt": "화강암 정반 위에서 디지털 마이크로미터로 공차를 측정하는 정밀 강철 기어 (예시 이미지)",
@@ -207,7 +246,7 @@
       },
       "overviewParagraphs": {
         "p1": "본 프로젝트는 자동 감속기용 SCM440 합금강 소재의 헬리컬 베벨 기어 및 스플라인 축 전 라인에 대한 내마모 도금 솔루션을 요구했습니다. 핵심 과제는 깊은 나사홈 구조를 가진 복잡한 형상으로, 일반적인 전해 도금 기술로는 나사산 정상부에 전하가 집중되는 현상(엣지 빌드업)과 홈 바닥부 두께 부족이 발생하기 쉬운 점이었습니다.",
-        "p2": "HANIN TECHNOLOGY의 금속공학 엔지니어 팀은 고인(高燐) 함량(10.5%–12% P)의 무전해 니켈 도금(ENP) 공정을 개발했습니다. 자동 촉매 환원 반응을 통해 도금층이 소재 원형과 완전히 동축으로 성장하며, 기어 전체 형상에서 두께 편차가 ±0.5 µm를 초과하지 않도록 보장합니다.",
+        "p2": "금속공학 엔지니어 팀은 고인(高燐) 함량(10.5%–12% P)의 무전해 니켈 도금(ENP) 공정을 개발했습니다. 자동 촉매 환원 반응을 통해 도금층이 소재 원형과 완전히 동축으로 성장하며, 기어 전체 형상에서 두께 편차가 ±0.5 µm를 초과하지 않도록 보장합니다.",
         "p3": "도금 공정 이후 전체 제품 로트는 400°C에서 1시간 동안 수소 취성 제거 열처리를 거칩니다. 이 공정은 분산된 Ni3P 결정상을 변화시켜 부품의 미세 경도를 500 HV에서 920 HV까지 향상시키며, 이는 경질 크롬과 동등한 수준이면서도 미끄럼 마찰 계수는 30% 더 낮습니다."
       },
       "achievements": {
@@ -225,13 +264,34 @@
         }
       },
       "specSheet": {
-        "product": { "label": "제품", "value": "웜 기어, 스플라인 축, 정밀 커플링" },
-        "application": { "label": "적용 산업", "value": "로봇 제조, CNC 공작기계, 자동차 동력 전달 부품" },
-        "process": { "label": "도금 공정", "value": "무전해 니켈 도금(Electroless Nickel - ENP 고인형) + 400°C 열처리" },
-        "substrate": { "label": "소재(SUBSTRATE)", "value": "SCM440 합금강, S45C 탄소강, C3604 황동" },
-        "requirement": { "label": "특별 요구사항", "value": "나사산 공차 < ±0.5 µm, 버(burr) 잔존 없음, 광학 표면 조도 Ra 0.2" },
-        "standard": { "label": "검사 기준", "value": "ISO 9001:2015, ASTM B733, AMS 2404, RoHS 및 REACH 기준 충족" },
-        "lab": { "label": "측정 검사실", "value": "X선 형광 측정기(XRF Fischer), Matsuzawa 비커스 경도계" }
+        "product": {
+          "label": "제품",
+          "value": "웜 기어, 스플라인 축, 정밀 커플링"
+        },
+        "application": {
+          "label": "적용 산업",
+          "value": "로봇 제조, CNC 공작기계, 자동차 동력 전달 부품"
+        },
+        "process": {
+          "label": "도금 공정",
+          "value": "무전해 니켈 도금(Electroless Nickel - ENP 고인형) + 400°C 열처리"
+        },
+        "substrate": {
+          "label": "소재(SUBSTRATE)",
+          "value": "SCM440 합금강, S45C 탄소강, C3604 황동"
+        },
+        "requirement": {
+          "label": "특별 요구사항",
+          "value": "나사산 공차 < ±0.5 µm, 버(burr) 잔존 없음, 광학 표면 조도 Ra 0.2"
+        },
+        "standard": {
+          "label": "검사 기준",
+          "value": "ISO 9001:2015, ASTM B733, AMS 2404, RoHS 및 REACH 기준 충족"
+        },
+        "lab": {
+          "label": "측정 검사실",
+          "value": "X선 형광 측정기(XRF Fischer), Matsuzawa 비커스 경도계"
+        }
       },
       "process": {
         "step1": {

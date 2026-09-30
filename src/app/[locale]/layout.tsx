@@ -9,9 +9,9 @@ import Footer from "@/components/layout/Footer";
 import PageFade from "@/components/ui/PageFade";
 
 export const metadata: Metadata = {
-  title: "HANIN TECHNOLOGY VIỆT NAM",
+  title: "",
   description:
-    "HANIN TECHNOLOGY VIỆT NAM - Giải pháp gia công mạ kim loại và bề mặt công nghiệp chuẩn xác cao.",
+    "Giải pháp gia công mạ kim loại và bề mặt công nghiệp chuẩn xác cao.",
 };
 
 export function generateStaticParams() {

@@ -6,7 +6,7 @@
       "statusBadge": "인재 채용 포털 // 상태: 채용 진행 중",
       "titlePrefix": "커리어",
       "titleHighlight": "기회",
-      "companyName": "HANIN TECHNOLOGY VIỆT NAM",
+      "companyName": "",
       "description": "국제 표준에 따른 기계 가공 및 금속 표면처리 생산라인을 위한 엔지니어와 생산 인력을 채용합니다.",
       "standardLabel": "작업 표준",
       "standardValue": "ISO & 5S 개선활동",
@@ -94,7 +94,7 @@
     },
     "WorkEnvironment": {
       "title": "실제 근무 환경 이미지",
-      "description": "HANIN TECHNOLOGY VIỆT NAM 공장 실사 이미지: 엄격한 노동 규율에 따라 운영되는 자동화 생산라인.",
+      "description": "공장 실사 이미지: 엄격한 노동 규율에 따라 운영되는 자동화 생산라인.",
       "mainImageAlt": "HANIN Tech의 중앙 자동 도금라인 운영 및 제어 구역(예시 이미지, 실제 사진으로 교체 예정)",
       "mainBadge": "01번 생산 시설",
       "mainTitle": "중앙 자동 도금라인 운영 및 제어 구역",

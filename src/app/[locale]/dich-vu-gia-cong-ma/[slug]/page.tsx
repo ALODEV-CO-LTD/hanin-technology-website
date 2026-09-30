@@ -25,10 +25,10 @@ export async function generateMetadata({
   const service = getServiceBySlug(t, slug) ?? getServiceBySlug(t, DETAIL_TEMPLATE_SLUG);
 
   return {
-    title: `${service?.title ?? "Dịch Vụ Gia Công Mạ"} | HANIN TECHNOLOGY VIỆT NAM`,
+    title: `${service?.title ?? "Dịch Vụ Gia Công Mạ"}`,
     description:
       service?.description ??
-      "Chi tiết dịch vụ gia công mạ và xử lý bề mặt kim loại công nghiệp tại HANIN TECHNOLOGY VIỆT NAM.",
+      "Chi tiết dịch vụ gia công mạ và xử lý bề mặt kim loại công nghiệp.",
   };
 }
 

@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const product = getProductBySlug(products, slug) ?? products[0];
 
   return {
-    title: `${product.title} | HANIN TECHNOLOGY VIỆT NAM`,
+    title: `${product.title}`,
     description: product.description,
   };
 }

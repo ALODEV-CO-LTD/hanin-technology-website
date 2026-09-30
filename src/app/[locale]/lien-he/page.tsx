@@ -9,9 +9,9 @@ import BottomCta from "@/components/lien-he/BottomCta";
 import Reveal from "@/components/ui/Reveal";
 
 export const metadata: Metadata = {
-  title: "Liên hệ & Yêu cầu báo giá | HANIN TECHNOLOGY VIỆT NAM",
+  title: "Liên hệ & Yêu cầu báo giá",
   description:
-    "Liên hệ HANIN TECHNOLOGY VIỆT NAM để được tư vấn giải pháp kỹ thuật xi mạ kim loại, gia công cơ khí chính xác và gửi yêu cầu báo giá (RFQ) kèm bản vẽ CAD.",
+    "Liên hệ để được tư vấn giải pháp kỹ thuật xi mạ kim loại, gia công cơ khí chính xác và gửi yêu cầu báo giá (RFQ) kèm bản vẽ CAD.",
 };
 
 export default function LienHePage() {

@@ -2,7 +2,7 @@
   "LienHe": {
     "BottomCta": {
       "heading": "귀사의 기계 표면 품질을 한 단계 높일 준비가 되셨습니까",
-      "description": "HANIN TECHNOLOGY VIỆT NAM의 금속공학 엔지니어와 자동화 생산라인이 글로벌 파트너의 까다로운 기술 요구사항을 충족시켜 드립니다.",
+      "description": "금속공학 엔지니어와 자동화 생산라인이 글로벌 파트너의 까다로운 기술 요구사항을 충족시켜 드립니다.",
       "ctaPrimary": "지금 도면 보내기"
     },
     "ContactChannels": {
@@ -10,7 +10,7 @@
       "subtitle": "국내 고객 및 수출 공급망을 위한 서비스",
       "card1": {
         "badge": "본사 & 공장",
-        "title": "HANIN TECHNOLOGY VIỆT NAM 유한회사",
+        "title": "",
         "address": "베트남 하노이시 메린현 꽝민공단 CN-08 부지",
         "footerLabel": "운영 규모",
         "footerValue": "PLC 자동 도금 설비 및 ISO 17025 CMM 측정 연구실"
@@ -73,7 +73,7 @@
       "titlePrefix": "문의하기 &",
       "titleHighlight": "기술 견적 요청",
       "titleSuffix": "서비스",
-      "description": "HANIN TECHNOLOGY VIỆT NAM은 B2B 파트너, OEM/Tier-1 협력사 및 FDI 기업을 위해 금속 도금 기술 솔루션 상담, 정밀 기계 가공 및 견적 서비스를 제공합니다.",
+      "description": "B2B 파트너, OEM/Tier-1 협력사 및 FDI 기업을 위해 금속 도금 기술 솔루션 상담, 정밀 기계 가공 및 견적 서비스를 제공합니다.",
       "specHighlights": {
         "nda": {
           "label": "100% NDA 보안",
@@ -88,7 +88,7 @@
           "desc": "재료 엔지니어가 두께, ASTM 규격 및 공차를 직접 상담해 드립니다"
         }
       },
-      "imageAlt": "HANIN TECHNOLOGY VIỆT NAM 공장 전경 (예시 이미지, 추후 실제 사진으로 교체 예정)",
+      "imageAlt": "공장 전경 (예시 이미지, 추후 실제 사진으로 교체 예정)",
       "overlayLabel": "본사 & 공장",
       "overlayLocation": "하노이 메린 꽝민공단",
       "overlayCoordinates": "좌표: 21.2025° N, 105.7725° E"

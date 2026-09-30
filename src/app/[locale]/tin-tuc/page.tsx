@@ -9,9 +9,9 @@ import NewsInquiryCta from "@/components/tin-tuc/NewsInquiryCta";
 import Reveal from "@/components/ui/Reveal";
 
 export const metadata: Metadata = {
-  title: "Tin tức & Bản tin kỹ thuật | HANIN TECHNOLOGY VIỆT NAM",
+  title: "Tin tức & Bản tin kỹ thuật",
   description:
-    "Cập nhật tin tức doanh nghiệp, công nghệ xử lý bề mặt kim loại, quy chuẩn đo kiểm chất lượng và hoạt động sản xuất mới nhất từ HANIN TECHNOLOGY VIỆT NAM.",
+    "Cập nhật tin tức doanh nghiệp, công nghệ xử lý bề mặt kim loại, quy chuẩn đo kiểm chất lượng và hoạt động sản xuất mới nhất.",
 };
 
 export default function TinTucPage() {

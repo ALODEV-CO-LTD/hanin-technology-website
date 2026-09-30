@@ -12,9 +12,9 @@ import ContactCta from "@/components/gioi-thieu/ContactCta";
 import Reveal from "@/components/ui/Reveal";
 
 export const metadata: Metadata = {
-  title: "Giới thiệu | HANIN TECHNOLOGY VIỆT NAM",
+  title: "Giới thiệu",
   description:
-    "Tìm hiểu về HANIN TECHNOLOGY VIỆT NAM: định hướng phát triển và năng lực gia công mạ kim loại phục vụ khách hàng công nghiệp.",
+    "Tìm hiểu định hướng phát triển và năng lực gia công mạ kim loại phục vụ khách hàng công nghiệp.",
 };
 
 export default function GioiThieuPage() {

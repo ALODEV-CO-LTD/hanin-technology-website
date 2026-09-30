@@ -2,7 +2,7 @@
   "LienHe": {
     "BottomCta": {
       "heading": "准备好全面提升您机械表面处理的品质了吗",
-      "description": "HANIN TECHNOLOGY VIỆT NAM 的冶金工程师团队与自动化产线，可满足全球合作伙伴严苛的技术要求。",
+      "description": "冶金工程师团队与自动化产线，可满足全球合作伙伴严苛的技术要求。",
       "ctaPrimary": "立即发送图纸"
     },
     "ContactChannels": {
@@ -10,7 +10,7 @@
       "subtitle": "服务国内客户及出口供应链",
       "card1": {
         "badge": "总部与工厂",
-        "title": "HANIN TECHNOLOGY VIỆT NAM 有限公司",
+        "title": "",
         "address": "越南河内市美灵县光明工业区 CN-08 地块",
         "footerLabel": "运营规模",
         "footerValue": "PLC 自动电镀产线体系与 ISO 17025 CMM 检测实验室"
@@ -73,7 +73,7 @@
       "titlePrefix": "联系我们 &",
       "titleHighlight": "获取技术报价",
       "titleSuffix": "服务",
-      "description": "HANIN TECHNOLOGY VIỆT NAM 为 B2B 合作伙伴、OEM/Tier-1 承包商及 FDI 企业提供金属电镀技术方案咨询、精密机械加工及报价服务。",
+      "description": "为 B2B 合作伙伴、OEM/Tier-1 承包商及 FDI 企业提供金属电镀技术方案咨询、精密机械加工及报价服务。",
       "specHighlights": {
         "nda": {
           "label": "100% NDA 保密",
@@ -88,7 +88,7 @@
           "desc": "材料工程师直接为您提供厚度、ASTM 标准及公差咨询"
         }
       },
-      "imageAlt": "HANIN TECHNOLOGY VIỆT NAM 工厂全景（示意图，后续将替换为甲方提供的实景照片）",
+      "imageAlt": "工厂全景（示意图，后续将替换为甲方提供的实景照片）",
       "overlayLabel": "总部与工厂",
       "overlayLocation": "河内美灵光明工业区",
       "overlayCoordinates": "坐标：21.2025° N, 105.7725° E"

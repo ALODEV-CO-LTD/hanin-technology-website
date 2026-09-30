@@ -5,20 +5,32 @@
       "breadcrumbHome": "홈",
       "breadcrumbCurrent": "회사 소개",
       "title": "HANIN 소개",
-      "subtitle": "HANIN TECHNOLOGY VIỆT NAM의 발전 방향과 산업 고객을 위한 생산 역량을 알아보세요."
+      "subtitle": "발전 방향과 산업 고객을 위한 생산 역량을 알아보세요."
     },
     "CompanyIntroduction": {
-      "imageAlt": "하노이 꽝민공단에 위치한 HANIN TECHNOLOGY VIỆT NAM 공장의 현대적인 외관 (예시 이미지, 추후 발주처 제공 실사 이미지로 교체 예정)",
+      "imageAlt": "하노이 꽝민공단에 위치한 공장의 현대적인 외관 (예시 이미지, 추후 발주처 제공 실사 이미지로 교체 예정)",
       "scaleBadge": "규모: 공장 부지 // 꽝민공단",
       "coordBadge": "좌표 21.2031° N",
       "areaBadge": "부지 면적: 12,000 m²",
       "heading": "산업용 도금 가공 수요와 함께합니다",
-      "paragraph1Strong": "HANIN TECHNOLOGY VIỆT NAM",
+      "paragraph1Strong": "",
       "paragraph1Rest": "은 금속 도금 가공 및 정밀 기계 표면처리 전문 기업으로, 제조업, 기계 부품 및 고정밀 기술 부품 산업에 서비스를 제공합니다.",
       "paragraph2": "[HANIN 공식 소개 정보: 설립 연혁, 인력 규모 및 국내외 기업 대상 표면처리 발전 방향.]",
-      "field": { "label": "사업 분야", "value": "금속 도금 가공", "note": "전기 도금 & 표면 정밀 마감" },
-      "target": { "label": "대상 고객", "value": "산업 고객", "note": "1차 & 2차 OEM/ODM 공급업체" },
-      "location": { "label": "위치", "value": "하노이 꽝민공단", "note": "북부 산업축 660 로트" }
+      "field": {
+        "label": "사업 분야",
+        "value": "금속 도금 가공",
+        "note": "전기 도금 & 표면 정밀 마감"
+      },
+      "target": {
+        "label": "대상 고객",
+        "value": "산업 고객",
+        "note": "1차 & 2차 OEM/ODM 공급업체"
+      },
+      "location": {
+        "label": "위치",
+        "value": "하노이 꽝민공단",
+        "note": "북부 산업축 660 로트"
+      }
     },
     "CompanyJourney": {
       "heading": "발전 여정",
@@ -158,10 +170,26 @@
       }
     },
     "CapabilitySnapshot": {
-      "equipment": { "label": "기계 설비", "desc": "최신 설비", "note": "규정: 검정 합격" },
-      "lines": { "label": "생산 라인", "desc": "가동 중인 라인", "note": "시스템: 자동 회전 & 행거식" },
-      "zones": { "label": "공장 구역", "desc": "생산 구역", "note": "표준: 밀폐형 클린룸" },
-      "capacity": { "label": "월간 생산능력", "desc": "제품 톤 / 월", "note": "생산능력: 중량 기준" }
+      "equipment": {
+        "label": "기계 설비",
+        "desc": "최신 설비",
+        "note": "규정: 검정 합격"
+      },
+      "lines": {
+        "label": "생산 라인",
+        "desc": "가동 중인 라인",
+        "note": "시스템: 자동 회전 & 행거식"
+      },
+      "zones": {
+        "label": "공장 구역",
+        "desc": "생산 구역",
+        "note": "표준: 밀폐형 클린룸"
+      },
+      "capacity": {
+        "label": "월간 생산능력",
+        "desc": "제품 톤 / 월",
+        "note": "생산능력: 중량 기준"
+      }
     }
   }
 }

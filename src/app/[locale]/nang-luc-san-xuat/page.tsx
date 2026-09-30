@@ -14,9 +14,9 @@ import NangLucFinalCta from "@/components/nang-luc/NangLucFinalCta";
 import Reveal from "@/components/ui/Reveal";
 
 export const metadata: Metadata = {
-  title: "Năng lực sản xuất | HANIN TECHNOLOGY VIỆT NAM",
+  title: "Năng lực sản xuất",
   description:
-    "Hệ sinh thái nhà xưởng chuẩn hóa, chuỗi dây chuyền mạ tự động điều khiển PLC SCADA và phòng thí nghiệm kiểm định vi mô đạt chuẩn quốc tế của HANIN TECHNOLOGY.",
+    "Hệ sinh thái nhà xưởng chuẩn hóa, chuỗi dây chuyền mạ tự động điều khiển PLC SCADA và phòng thí nghiệm kiểm định vi mô đạt chuẩn quốc tế.",
 };
 
 export default function NangLucSanXuatPage() {

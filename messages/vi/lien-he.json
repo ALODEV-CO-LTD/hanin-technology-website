@@ -2,7 +2,7 @@
   "LienHe": {
     "BottomCta": {
       "heading": "SẴN SÀNG NÂNG TẦM CHẤT LƯỢNG BỀ MẶT CƠ KHÍ CỦA BẠN",
-      "description": "Kỹ sư luyện kim và dây chuyền tự động hóa của HANIN TECHNOLOGY VIỆT NAM đáp ứng yêu cầu kỹ thuật khắt khe từ đối tác toàn cầu.",
+      "description": "Kỹ sư luyện kim và dây chuyền tự động hóa đáp ứng yêu cầu kỹ thuật khắt khe từ đối tác toàn cầu.",
       "ctaPrimary": "GỬI BẢN VẼ NGAY"
     },
     "ContactChannels": {
@@ -10,7 +10,7 @@
       "subtitle": "Phục vụ khách hàng trong nước & chuỗi cung ứng xuất khẩu",
       "card1": {
         "badge": "TRỤ SỞ & NHÀ MÁY",
-        "title": "CÔNG TY TNHH HANIN TECHNOLOGY VIỆT NAM",
+        "title": "",
         "address": "Lô CN-08, Khu Công Nghiệp Quang Minh, Huyện Mê Linh, TP. Hà Nội, Việt Nam",
         "footerLabel": "QUY MÔ VẬN HÀNH",
         "footerValue": "Tổ hợp mạ tự động PLC & Lab đo kiểm CMM ISO 17025"
@@ -73,7 +73,7 @@
       "titlePrefix": "LIÊN HỆ &",
       "titleHighlight": "YÊU CẦU BÁO GIÁ",
       "titleSuffix": "KỸ THUẬT",
-      "description": "HANIN TECHNOLOGY VIỆT NAM tư vấn giải pháp kỹ thuật xi mạ kim loại, gia công cơ khí chính xác và báo giá cho đối tác B2B, nhà thầu OEM/Tier-1 và doanh nghiệp FDI.",
+      "description": "Tư vấn giải pháp kỹ thuật xi mạ kim loại, gia công cơ khí chính xác và báo giá cho đối tác B2B, nhà thầu OEM/Tier-1 và doanh nghiệp FDI.",
       "specHighlights": {
         "nda": {
           "label": "BẢO MẬT NDA 100%",
@@ -88,7 +88,7 @@
           "desc": "Kỹ sư vật liệu tư vấn trực tiếp chiều dày, ASTM & dung sai"
         }
       },
-      "imageAlt": "Toàn cảnh nhà máy HANIN TECHNOLOGY VIỆT NAM (ảnh minh họa, sẽ thay bằng ảnh thực tế do Bên A cung cấp)",
+      "imageAlt": "Toàn cảnh nhà máy (ảnh minh họa, sẽ thay bằng ảnh thực tế do Bên A cung cấp)",
       "overlayLabel": "TỔNG HÀNH DINH & NHÀ MÁY",
       "overlayLocation": "KCN Quang Minh, Mê Linh, Hà Nội",
       "overlayCoordinates": "Tọa độ: 21.2025° N, 105.7725° E"

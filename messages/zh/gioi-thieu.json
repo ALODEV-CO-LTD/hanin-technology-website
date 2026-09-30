@@ -5,20 +5,32 @@
       "breadcrumbHome": "首页",
       "breadcrumbCurrent": "关于我们",
       "title": "关于 HANIN",
-      "subtitle": "了解 HANIN TECHNOLOGY VIỆT NAM 的发展方向，以及服务工业客户的生产能力。"
+      "subtitle": "了解 发展方向，以及服务工业客户的生产能力。"
     },
     "CompanyIntroduction": {
-      "imageAlt": "HANIN TECHNOLOGY VIỆT NAM 位于河内光明工业区的现代化厂区外观（示意图，将由甲方提供实际图片替换）",
+      "imageAlt": "位于河内光明工业区的现代化厂区外观（示意图，将由甲方提供实际图片替换）",
       "scaleBadge": "规模：工厂园区 // 光明工业区",
       "coordBadge": "坐标 21.2031° N",
       "areaBadge": "占地面积：12,000 平方米",
       "heading": "携手满足工业电镀加工需求",
-      "paragraph1Strong": "HANIN TECHNOLOGY VIỆT NAM",
+      "paragraph1Strong": "",
       "paragraph1Rest": "是专注于金属电镀加工与精密机械表面处理领域的企业，服务于制造业、机械零部件及高技术组件等行业。",
       "paragraph2": "[HANIN 官方企业介绍信息：发展历程、人员规模及面向国内外企业的表面加工发展方向。]",
-      "field": { "label": "经营领域", "value": "金属电镀加工", "note": "电镀与表面精饰处理" },
-      "target": { "label": "服务对象", "value": "工业客户", "note": "一级与二级 OEM/ODM 供应商" },
-      "location": { "label": "厂址", "value": "河内光明工业区", "note": "北部工业轴 660 号地块" }
+      "field": {
+        "label": "经营领域",
+        "value": "金属电镀加工",
+        "note": "电镀与表面精饰处理"
+      },
+      "target": {
+        "label": "服务对象",
+        "value": "工业客户",
+        "note": "一级与二级 OEM/ODM 供应商"
+      },
+      "location": {
+        "label": "厂址",
+        "value": "河内光明工业区",
+        "note": "北部工业轴 660 号地块"
+      }
     },
     "CompanyJourney": {
       "heading": "发展历程",
@@ -158,10 +170,26 @@
       }
     },
     "CapabilitySnapshot": {
-      "equipment": { "label": "机械设备", "desc": "现代化设备", "note": "规范：已通过检定" },
-      "lines": { "label": "生产线", "desc": "运行中生产线", "note": "系统：自动旋转与悬挂式" },
-      "zones": { "label": "厂房分区", "desc": "生产作业区域", "note": "标准：封闭式洁净车间" },
-      "capacity": { "label": "月产能", "desc": "吨产品 / 月", "note": "产能：按重量计算" }
+      "equipment": {
+        "label": "机械设备",
+        "desc": "现代化设备",
+        "note": "规范：已通过检定"
+      },
+      "lines": {
+        "label": "生产线",
+        "desc": "运行中生产线",
+        "note": "系统：自动旋转与悬挂式"
+      },
+      "zones": {
+        "label": "厂房分区",
+        "desc": "生产作业区域",
+        "note": "标准：封闭式洁净车间"
+      },
+      "capacity": {
+        "label": "月产能",
+        "desc": "吨产品 / 月",
+        "note": "产能：按重量计算"
+      }
     }
   }
 }

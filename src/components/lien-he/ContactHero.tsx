@@ -65,7 +65,7 @@ export default function ContactHero() {
                 <img
                   alt={t("imageAlt")}
                   className="w-full h-80 lg:h-[420px] object-cover"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMAHR12DSPrsWOQHWfdTlDaNpp1LwgPnGnq6D7BdQzZ6xmVyK6MjotF4vVi7AmWKi92WGLKtgCUn84s6Iz8U6HKcl2LaJFMIAUD15w17JHyk1lcgy3m8Ct2ZKPFvoGwcoftf8ZNRrli07g18kQAWUAMBu4F5GoAmoiQxJiuEiUVJQWmhdq2KIs2ju1_DUY8vIA8cBP_UnnSRlCyz26_u4obDo1zxnsNlp9WLKHvm8HWCWhIfbve8rbwg"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVbGJwGBLCtR1FfUH6k02r2P-NiR8BAPFHnKHa0jtHPUl35bfil2EmH5HU_MuFoZ3ANHR2WUVUfFOyDEfy6xH2h8L_JXgXpud4nJiFxbIFhpWxMYp7ji-bzcQ73VEptZXwO2AGP8ot9l9tXlwQPWiGSKjxyVdf-Y5rIg1a0zRe2CQmQXe3CVHX22FXJIAwpE3XO8moxoHF9x6JPFGsgntioSxKEkNyDcZSpbFwu5Jbizom9bSXp7a-1w"
                 />
                 {/* Technical overlay card */}
                 <div className="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur-md p-space-md rounded shadow-sm flex items-center justify-between">

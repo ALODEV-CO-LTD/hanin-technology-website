@@ -22,7 +22,7 @@ export default function CompanyIntroduction() {
                 aria-label={t("imageAlt")}
                 style={{
                   backgroundImage:
-                    "url('https://lh3.googleusercontent.com/aida-public/AB6AXuC8C7VCBewtp7GXze1TtY7WpLEh4_ehdPc3QbR21qSlw5IV6oMdeWeZcu4cNx182chFnDmesqAohMNsxLx-b0SAV6onD-jQuzg7mfbR6IeNY8XDm1qmfAhAkT0FbExMNLqKJX25gL-4T96nYiA5A23pY9ZZmNGvx0WiY8ugQDVa-lGCCuLbtKM5Wwl_mG8YcnXmJXlKu_Lt3djnIjmPJFTn8QavzWmF54kcjmccbqWDh1lg74uy1SFtbQ')",
+                    "url('https://lh3.googleusercontent.com/aida-public/AB6AXuAC-ozXlS4iAi4T3wA_X-lfMFRZW6tBLRXa9hiO-_aiiAfyUkQ8VaPUa8EIi2vm-qZxixg0pq2T-tmuJ7mwR9Oi5C5cCOzm0cUAv_mj5VqOPDE2-FpS3whEh-TNU1x6XT7patK-2NZNtDRfCepVnV8NB_q7n1lh24xLceTFJ2xeUcVblzSkj0sC-xVpcv6ESoW197zbUsdcV2puaYUyDaS4LJTXmFeTs8dr52845R9MiW3QRPUFLO-ixg')",
                 }}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900/40 via-transparent to-transparent" />

@@ -115,9 +115,15 @@
         "imageAlt": "Bánh răng và chi tiết cơ khí được đo kiểm bằng panme (ảnh minh họa)",
         "imageBadge": "DỰ ÁN 01 // CƠ KHÍ CHÍNH XÁC",
         "chips": {
-          "coating": { "label": "LỚP MẠ HOÀN THIỆN" },
-          "thickness": { "label": "ĐỘ DÀY" },
-          "tolerance": { "label": "DUNG SAI" }
+          "coating": {
+            "label": "LỚP MẠ HOÀN THIỆN"
+          },
+          "thickness": {
+            "label": "ĐỘ DÀY"
+          },
+          "tolerance": {
+            "label": "DUNG SAI"
+          }
         }
       },
       "pistonTruc": {
@@ -127,7 +133,10 @@
         "imageAlt": "Trục piston và ty ben thủy lực ô tô mạ crom cứng (ảnh minh họa)",
         "imageBadge": "DỰ ÁN 02 // PHỤ TÙNG Ô TÔ & XE MÁY",
         "chips": {
-          "hardChrome": { "label": "CROM CỨNG", "value": "THỬ NGHIỆM MUỐI: 720H" }
+          "hardChrome": {
+            "label": "CROM CỨNG",
+            "value": "THỬ NGHIỆM MUỐI: 720H"
+          }
         }
       },
       "busbar": {
@@ -137,7 +146,10 @@
         "imageAlt": "Thanh busbar đồng mạ thiếc trong tủ điện cao thế (ảnh minh họa)",
         "imageBadge": "DỰ ÁN 03 // ĐẦU COSSE & THIẾT BỊ ĐIỆN",
         "chips": {
-          "tin": { "label": "MẠ THIẾC NGUYÊN CHẤT", "value": "ĐỘ TINH KHIẾT: 99.9%" }
+          "tin": {
+            "label": "MẠ THIẾC NGUYÊN CHẤT",
+            "value": "ĐỘ TINH KHIẾT: 99.9%"
+          }
         }
       },
       "buLong": {
@@ -147,7 +159,10 @@
         "imageAlt": "Bu-lông và chốt định vị khối bể hóa chất mạ kẽm niken (ảnh minh họa)",
         "imageBadge": "DỰ ÁN 04 // THỦY LỰC & KHỐI VAN",
         "chips": {
-          "zincNickel": { "label": "LỚP MẠ: KẼM-NIKEN", "value": "TIÊU CHUẨN ISO 4042" }
+          "zincNickel": {
+            "label": "LỚP MẠ: KẼM-NIKEN",
+            "value": "TIÊU CHUẨN ISO 4042"
+          }
         }
       },
       "ongLot": {
@@ -157,7 +172,10 @@
         "imageAlt": "Ống lót và trục ren cơ khí chịu mài mòn sau mạ kẽm đen (ảnh minh họa)",
         "imageBadge": "DỰ ÁN 05 // CHI TIẾT CƠ KHÍ CHÍNH XÁC",
         "chips": {
-          "blackZinc": { "label": "MẠ KẼM ĐEN", "value": "BƯỚC REN: M12-M48" }
+          "blackZinc": {
+            "label": "MẠ KẼM ĐEN",
+            "value": "BƯỚC REN: M12-M48"
+          }
         }
       },
       "cumLinhKien": {
@@ -167,19 +185,40 @@
         "imageAlt": "Dây chuyền mạ điện phân tự động PLC tại nhà máy Bắc Ninh (ảnh minh họa)",
         "imageBadge": "NHÀ MÁY: BẮC NINH // DÂY CHUYỀN 04",
         "chips": {
-          "industry": { "label": "NGÀNH ỨNG DỤNG", "value": "Chế tạo cơ khí chính xác & Robot" },
-          "technology": { "label": "CÔNG NGHỆ GIA CÔNG", "value": "Mạ Niken & Mạ Kẽm đa sắc PLC" },
-          "detail": { "label": "SẢN PHẨM CHI TIẾT", "value": "Bánh răng, trục định vị, khớp then" },
-          "standard": { "label": "TIÊU CHUẨN CHẤT LƯỢNG", "value": "ISO 9001, RoHS, ASTM B117" }
+          "industry": {
+            "label": "NGÀNH ỨNG DỤNG",
+            "value": "Chế tạo cơ khí chính xác & Robot"
+          },
+          "technology": {
+            "label": "CÔNG NGHỆ GIA CÔNG",
+            "value": "Mạ Niken & Mạ Kẽm đa sắc PLC"
+          },
+          "detail": {
+            "label": "SẢN PHẨM CHI TIẾT",
+            "value": "Bánh răng, trục định vị, khớp then"
+          },
+          "standard": {
+            "label": "TIÊU CHUẨN CHẤT LƯỢNG",
+            "value": "ISO 9001, RoHS, ASTM B117"
+          }
         }
       }
     },
     "detail": {
       "specEyebrow": "SPEC: ISO 9001 & ASTM B117 // MICRON-PRECISION",
       "heroStats": {
-        "coatingThickness": { "label": "Độ dày lớp mạ", "note": "Tùy biến bản vẽ" },
-        "saltSpray": { "label": "Chống phun muối", "note": "Chuẩn ASTM B117" },
-        "tolerance": { "label": "Dung sai kiểm soát", "note": "Đo kiểm quang học" }
+        "coatingThickness": {
+          "label": "Độ dày lớp mạ",
+          "note": "Tùy biến bản vẽ"
+        },
+        "saltSpray": {
+          "label": "Chống phun muối",
+          "note": "Chuẩn ASTM B117"
+        },
+        "tolerance": {
+          "label": "Dung sai kiểm soát",
+          "note": "Đo kiểm quang học"
+        }
       },
       "heroDescription": "Gia công hoàn thiện lớp phủ bề mặt mạ Niken hóa học không điện (Electroless Nickel Plating - High Phosphorus) ứng dụng cho cụm bánh răng xoắn, trục vít và cơ cấu vi sai robot công nghiệp. Đáp ứng dung sai lắp ghép khắt khe đến micromet, phân bổ bề mặt phủ đồng nhất 100% trong toàn bộ chân răng và rãnh then hoa mà không làm biến dạng bước ren.",
       "heroImageAlt": "Bánh răng thép chính xác được đo dung sai bằng thước panme kỹ thuật số trên bàn đá granite (ảnh minh họa)",
@@ -207,7 +246,7 @@
       },
       "overviewParagraphs": {
         "p1": "Dự án đòi hỏi giải pháp mạ phủ chống mài mòn cho toàn bộ dòng bánh răng côn xoắn và trục then hoa bằng thép hợp kim SCM440 dùng cho hộp số giảm tốc tự động. Thách thức cốt lõi nằm ở kết cấu hình học phức tạp với các hốc rãnh ren trong sâu, nơi các công nghệ mạ điện phân thông thường dễ gây ra hiện tượng tích tụ điện tích ở đỉnh ren (edge buildup) và thiếu hụt độ dày ở đáy rãnh.",
-        "p2": "Kỹ sư luyện kim của HANIN TECHNOLOGY đã phát triển quy trình Mạ Niken Hóa Học Không Điện (ENP) với hàm lượng Photpho cao (10.5% – 12% P). Phản ứng khử xúc tác tự động cho phép lớp mạ phát triển hoàn toàn đồng trục với phôi ban đầu, đảm bảo sai số độ dày toàn diện không vượt quá ±0.5 µm trên toàn bộ biên dạng răng.",
+        "p2": "Kỹ sư luyện kim đã phát triển quy trình Mạ Niken Hóa Học Không Điện (ENP) với hàm lượng Photpho cao (10.5% – 12% P). Phản ứng khử xúc tác tự động cho phép lớp mạ phát triển hoàn toàn đồng trục với phôi ban đầu, đảm bảo sai số độ dày toàn diện không vượt quá ±0.5 µm trên toàn bộ biên dạng răng.",
         "p3": "Sau công đoạn mạ, toàn bộ lô sản phẩm được đưa vào lò nung xử lý nhiệt khử Hydro ở nhiệt độ 400°C trong 1 giờ. Quá trình này biến tính pha kết tinh Ni3P phân tán, đẩy độ cứng tế vi của chi tiết từ 500 HV lên tới 920 HV, tương đương với crom cứng nhưng có hệ số ma sát trượt thấp hơn 30%."
       },
       "achievements": {
@@ -225,13 +264,34 @@
         }
       },
       "specSheet": {
-        "product": { "label": "SẢN PHẨM", "value": "Bánh răng trục vít, trục then hoa, khớp nối chính xác" },
-        "application": { "label": "NGÀNH ỨNG DỤNG", "value": "Chế tạo robot, máy công cụ CNC, phụ tùng truyền động ô tô" },
-        "process": { "label": "QUY TRÌNH MẠ", "value": "Mạ Niken hóa học không điện (Electroless Nickel - ENP High Phos) + Xử lý nhiệt 400°C" },
-        "substrate": { "label": "VẬT LIỆU NỀN (SUBSTRATE)", "value": "Thép hợp kim SCM440, Thép carbon S45C, Đồng thau C3604" },
-        "requirement": { "label": "YÊU CẦU ĐẶC BIỆT", "value": "Dung sai ren < ±0.5 µm, không để lại ba-via, độ bóng quang học Ra 0.2" },
-        "standard": { "label": "TIÊU CHUẨN ĐO KIỂM", "value": "ISO 9001:2015, ASTM B733, AMS 2404, RoHS & REACH Compliant" },
-        "lab": { "label": "PHÒNG KIỂM NGHIỆM ĐO ĐẠC", "value": "Máy đo huỳnh quang tia X (XRF Fischer), Máy đo độ cứng Vickers Matsuzawa" }
+        "product": {
+          "label": "SẢN PHẨM",
+          "value": "Bánh răng trục vít, trục then hoa, khớp nối chính xác"
+        },
+        "application": {
+          "label": "NGÀNH ỨNG DỤNG",
+          "value": "Chế tạo robot, máy công cụ CNC, phụ tùng truyền động ô tô"
+        },
+        "process": {
+          "label": "QUY TRÌNH MẠ",
+          "value": "Mạ Niken hóa học không điện (Electroless Nickel - ENP High Phos) + Xử lý nhiệt 400°C"
+        },
+        "substrate": {
+          "label": "VẬT LIỆU NỀN (SUBSTRATE)",
+          "value": "Thép hợp kim SCM440, Thép carbon S45C, Đồng thau C3604"
+        },
+        "requirement": {
+          "label": "YÊU CẦU ĐẶC BIỆT",
+          "value": "Dung sai ren < ±0.5 µm, không để lại ba-via, độ bóng quang học Ra 0.2"
+        },
+        "standard": {
+          "label": "TIÊU CHUẨN ĐO KIỂM",
+          "value": "ISO 9001:2015, ASTM B733, AMS 2404, RoHS & REACH Compliant"
+        },
+        "lab": {
+          "label": "PHÒNG KIỂM NGHIỆM ĐO ĐẠC",
+          "value": "Máy đo huỳnh quang tia X (XRF Fischer), Máy đo độ cứng Vickers Matsuzawa"
+        }
       },
       "process": {
         "step1": {

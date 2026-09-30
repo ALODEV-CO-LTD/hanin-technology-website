@@ -24,7 +24,7 @@
       "breadcrumbHome": "홈",
       "breadcrumbCurrent": "생산 능력",
       "title": "생산 능력",
-      "description": "HANIN TECHNOLOGY의 표준화된 공장 생태계, PLC SCADA로 제어되는 자동 도금 라인 체계, 국제 기준을 충족하는 미세 분석 실험실.",
+      "description": "표준화된 공장 생태계, PLC SCADA로 제어되는 자동 도금 라인 체계, 국제 기준을 충족하는 미세 분석 실험실.",
       "ctaExplore": "공장 살펴보기 →",
       "ctaLines": "생산 라인",
       "ctaQa": "QA/QC 검사실"
@@ -51,7 +51,7 @@
     },
     "CompanyProfileCta": {
       "title": "HANIN 생산 역량 더 알아보기",
-      "description": "Company Profile을 통해 공장 배치, 생산 라인 사양, 검사 장비 목록 및 HANIN TECHNOLOGY의 대응 역량을 자세히 확인하세요.",
+      "description": "Company Profile을 통해 공장 배치, 생산 라인 사양, 검사 장비 목록 및 대응 역량을 자세히 확인하세요.",
       "ctaDownload": "Company Profile 보기(PDF) →"
     },
     "EquipmentGrid": {
@@ -130,7 +130,7 @@
       "image": {
         "alt": "꽝민 공단에 위치한 HANIN Technology Việt Nam 공장 외관 건축물(예시 이미지, 실제 사진으로 교체 예정)"
       },
-      "factoryTitle": "HANIN TECHNOLOGY 공장",
+      "factoryTitle": "공장",
       "factoryDescription": "현대적인 산업 표준에 따라 설계된 공장으로, 중앙 환경 관제 시스템, QCVN 40:2011/BTNMT 기준을 충족하는 폐수 처리장, 완전 밀폐형 자동 도금 모듈을 갖추어 일본, 한국, EU의 정밀기계·자동화·마이크로전자 고객의 요구를 충족합니다.",
       "specs": {
         "locationLabel": "위치(Location)",

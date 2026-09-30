@@ -5,20 +5,32 @@
       "breadcrumbHome": "Trang chủ",
       "breadcrumbCurrent": "Giới thiệu",
       "title": "GIỚI THIỆU HANIN",
-      "subtitle": "Tìm hiểu về HANIN TECHNOLOGY VIỆT NAM, định hướng phát triển và năng lực phục vụ khách hàng công nghiệp."
+      "subtitle": "Tìm hiểu định hướng phát triển và năng lực phục vụ khách hàng công nghiệp."
     },
     "CompanyIntroduction": {
-      "imageAlt": "Mặt tiền kiến trúc hiện đại của nhà máy HANIN TECHNOLOGY VIỆT NAM tại KCN Quang Minh, Hà Nội (ảnh minh họa, sẽ thay bằng ảnh thực tế do Bên A cung cấp)",
+      "imageAlt": "Mặt tiền kiến trúc hiện đại của nhà máy tại KCN Quang Minh, Hà Nội (ảnh minh họa, sẽ thay bằng ảnh thực tế do Bên A cung cấp)",
       "scaleBadge": "QUY MÔ: KHUÔN VIÊN NHÀ MÁY // KCN QUANG MINH",
       "coordBadge": "TỌA ĐỘ 21.2031° B",
       "areaBadge": "DIỆN TÍCH: 12.000 m²",
       "heading": "Đồng hành cùng nhu cầu gia công mạ công nghiệp",
-      "paragraph1Strong": "HANIN TECHNOLOGY VIỆT NAM",
+      "paragraph1Strong": "",
       "paragraph1Rest": "là đơn vị chuyên sâu trong lĩnh vực gia công mạ kim loại và xử lý hoàn thiện bề mặt cơ khí chính xác, phục vụ các ngành công nghiệp chế tạo, phụ tùng cơ khí và linh kiện kỹ thuật cao.",
       "paragraph2": "[Thông tin giới thiệu chính thức về HANIN: lịch sử hình thành, quy mô nhân sự và định hướng gia công bề mặt cho doanh nghiệp trong và ngoài nước.]",
-      "field": { "label": "LĨNH VỰC", "value": "Gia công mạ kim loại", "note": "Mạ điện & Hoàn thiện bề mặt" },
-      "target": { "label": "ĐỐI TƯỢNG", "value": "Khách hàng công nghiệp", "note": "Nhà cung ứng OEM/ODM Cấp 1 & Cấp 2" },
-      "location": { "label": "VỊ TRÍ", "value": "KCN Quang Minh, Hà Nội", "note": "Lô 660, Trục CN Phía Bắc" }
+      "field": {
+        "label": "LĨNH VỰC",
+        "value": "Gia công mạ kim loại",
+        "note": "Mạ điện & Hoàn thiện bề mặt"
+      },
+      "target": {
+        "label": "ĐỐI TƯỢNG",
+        "value": "Khách hàng công nghiệp",
+        "note": "Nhà cung ứng OEM/ODM Cấp 1 & Cấp 2"
+      },
+      "location": {
+        "label": "VỊ TRÍ",
+        "value": "KCN Quang Minh, Hà Nội",
+        "note": "Lô 660, Trục CN Phía Bắc"
+      }
     },
     "CompanyJourney": {
       "heading": "HÀNH TRÌNH PHÁT TRIỂN",
@@ -158,10 +170,26 @@
       }
     },
     "CapabilitySnapshot": {
-      "equipment": { "label": "THIẾT BỊ MÁY MÓC", "desc": "Thiết bị hiện đại", "note": "QUY CHUẨN: ĐẠT KIỂM ĐỊNH" },
-      "lines": { "label": "DÂY CHUYỀN SẢN XUẤT", "desc": "Dây chuyền vận hành", "note": "HỆ: QUAY & TREO TỰ ĐỘNG" },
-      "zones": { "label": "PHÂN KHU NHÀ XƯỞNG", "desc": "Khu vực sản xuất", "note": "TIÊU CHUẨN: PHÒNG SẠCH KHÉP KÍN" },
-      "capacity": { "label": "CÔNG SUẤT HÀNG THÁNG", "desc": "Tấn sản phẩm / tháng", "note": "CÔNG SUẤT: TRỌNG LƯỢNG MÃ HÓA" }
+      "equipment": {
+        "label": "THIẾT BỊ MÁY MÓC",
+        "desc": "Thiết bị hiện đại",
+        "note": "QUY CHUẨN: ĐẠT KIỂM ĐỊNH"
+      },
+      "lines": {
+        "label": "DÂY CHUYỀN SẢN XUẤT",
+        "desc": "Dây chuyền vận hành",
+        "note": "HỆ: QUAY & TREO TỰ ĐỘNG"
+      },
+      "zones": {
+        "label": "PHÂN KHU NHÀ XƯỞNG",
+        "desc": "Khu vực sản xuất",
+        "note": "TIÊU CHUẨN: PHÒNG SẠCH KHÉP KÍN"
+      },
+      "capacity": {
+        "label": "CÔNG SUẤT HÀNG THÁNG",
+        "desc": "Tấn sản phẩm / tháng",
+        "note": "CÔNG SUẤT: TRỌNG LƯỢNG MÃ HÓA"
+      }
     }
   }
 }

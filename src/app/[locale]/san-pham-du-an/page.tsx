@@ -7,9 +7,9 @@ import ProductsCta from "@/components/san-pham/ProductsCta";
 import Reveal from "@/components/ui/Reveal";
 
 export const metadata: Metadata = {
-  title: "Sản phẩm & Dự án | HANIN TECHNOLOGY VIỆT NAM",
+  title: "Sản phẩm & Dự án",
   description:
-    "Sản phẩm và dự án gia công mạ kim loại kỹ thuật cao của HANIN TECHNOLOGY VIỆT NAM: kiểm soát dung sai micron, độ đồng đều lớp phủ và độ bền môi trường khắt khe.",
+    "Sản phẩm và dự án gia công mạ kim loại kỹ thuật cao: kiểm soát dung sai micron, độ đồng đều lớp phủ và độ bền môi trường khắt khe.",
 };
 
 export default function SanPhamDuAnPage() {

@@ -392,7 +392,6 @@ export default function RfqForm() {
                   htmlFor="nda-checkbox"
                 >
                   {t("step4.ndaConsentPrefix")}{" "}
-                  <strong className="text-slate-900">HANIN TECHNOLOGY VIỆT NAM</strong>{" "}
                   {t("step4.ndaConsentMiddle")}{" "}
                   <strong className="text-slate-900">Non-Disclosure Agreement (NDA)</strong>{" "}
                   {t("step4.ndaConsentSuffix")}

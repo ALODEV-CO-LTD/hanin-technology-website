@@ -115,9 +115,15 @@
         "imageAlt": "使用千分尺检测的齿轮及机械零件（示意图）",
         "imageBadge": "项目 01 // 精密机械",
         "chips": {
-          "coating": { "label": "表面镀层" },
-          "thickness": { "label": "厚度" },
-          "tolerance": { "label": "公差" }
+          "coating": {
+            "label": "表面镀层"
+          },
+          "thickness": {
+            "label": "厚度"
+          },
+          "tolerance": {
+            "label": "公差"
+          }
         }
       },
       "pistonTruc": {
@@ -127,7 +133,10 @@
         "imageAlt": "经硬铬电镀的汽车活塞杆与液压顶杆（示意图）",
         "imageBadge": "项目 02 // 汽车摩托车配件",
         "chips": {
-          "hardChrome": { "label": "硬铬电镀", "value": "盐雾测试：720H" }
+          "hardChrome": {
+            "label": "硬铬电镀",
+            "value": "盐雾测试：720H"
+          }
         }
       },
       "busbar": {
@@ -137,7 +146,10 @@
         "imageAlt": "高压配电柜中的镀锡铜排（示意图）",
         "imageBadge": "项目 03 // 电气端子及设备",
         "chips": {
-          "tin": { "label": "纯锡电镀", "value": "纯度：99.9%" }
+          "tin": {
+            "label": "纯锡电镀",
+            "value": "纯度：99.9%"
+          }
         }
       },
       "buLong": {
@@ -147,7 +159,10 @@
         "imageAlt": "经锌镍电镀的化学药液槽定位螺栓与销钉（示意图）",
         "imageBadge": "项目 04 // 液压与阀体组件",
         "chips": {
-          "zincNickel": { "label": "镀层：锌镍合金", "value": "符合 ISO 4042 标准" }
+          "zincNickel": {
+            "label": "镀层：锌镍合金",
+            "value": "符合 ISO 4042 标准"
+          }
         }
       },
       "ongLot": {
@@ -157,7 +172,10 @@
         "imageAlt": "经黑锌电镀的耐磨机械衬套与螺纹轴（示意图）",
         "imageBadge": "项目 05 // 精密机械零件",
         "chips": {
-          "blackZinc": { "label": "黑锌电镀", "value": "螺距：M12-M48" }
+          "blackZinc": {
+            "label": "黑锌电镀",
+            "value": "螺距：M12-M48"
+          }
         }
       },
       "cumLinhKien": {
@@ -167,19 +185,40 @@
         "imageAlt": "北宁工厂的 PLC 自动电解电镀生产线（示意图）",
         "imageBadge": "工厂：北宁 // 04 号生产线",
         "chips": {
-          "industry": { "label": "应用行业", "value": "精密机械制造与机器人" },
-          "technology": { "label": "加工技术", "value": "PLC 多色镍电镀与锌电镀" },
-          "detail": { "label": "具体产品", "value": "齿轮、定位轴、键槽联轴器" },
-          "standard": { "label": "质量标准", "value": "ISO 9001、RoHS、ASTM B117" }
+          "industry": {
+            "label": "应用行业",
+            "value": "精密机械制造与机器人"
+          },
+          "technology": {
+            "label": "加工技术",
+            "value": "PLC 多色镍电镀与锌电镀"
+          },
+          "detail": {
+            "label": "具体产品",
+            "value": "齿轮、定位轴、键槽联轴器"
+          },
+          "standard": {
+            "label": "质量标准",
+            "value": "ISO 9001、RoHS、ASTM B117"
+          }
         }
       }
     },
     "detail": {
       "specEyebrow": "规格：ISO 9001 与 ASTM B117 // 微米级精度",
       "heroStats": {
-        "coatingThickness": { "label": "镀层厚度", "note": "按图纸定制" },
-        "saltSpray": { "label": "耐盐雾性能", "note": "符合 ASTM B117 标准" },
-        "tolerance": { "label": "公差控制", "note": "光学检测" }
+        "coatingThickness": {
+          "label": "镀层厚度",
+          "note": "按图纸定制"
+        },
+        "saltSpray": {
+          "label": "耐盐雾性能",
+          "note": "符合 ASTM B117 标准"
+        },
+        "tolerance": {
+          "label": "公差控制",
+          "note": "光学检测"
+        }
       },
       "heroDescription": "化学镀镍（无电镀镍 - 高磷型 Electroless Nickel Plating）表面镀层加工，应用于工业机器人的斜齿轮组、蜗杆及差速机构。满足严苛的微米级装配公差要求，齿根及花键槽内镀层分布 100% 均匀，且不使螺距发生变形。",
       "heroImageAlt": "在花岗岩平台上使用数显卡尺检测公差的精密钢制齿轮（示意图）",
@@ -207,7 +246,7 @@
       },
       "overviewParagraphs": {
         "p1": "该项目要求为用于自动减速箱的整套 SCM440 合金钢斜齿锥齿轮及花键轴提供耐磨镀层解决方案。核心难点在于复杂的几何结构存在深螺纹凹槽，常规电解电镀工艺容易在螺纹顶部产生电荷积聚（边缘堆积），并导致槽底厚度不足。",
-        "p2": "HANIN TECHNOLOGY 的冶金工程师团队开发了高磷含量（10.5%–12% P）化学镀镍（ENP）工艺。自催化还原反应使镀层与原始工件完全同轴生长，确保整个齿形轮廓的厚度偏差不超过 ±0.5 µm。",
+        "p2": "冶金工程师团队开发了高磷含量（10.5%–12% P）化学镀镍（ENP）工艺。自催化还原反应使镀层与原始工件完全同轴生长，确保整个齿形轮廓的厚度偏差不超过 ±0.5 µm。",
         "p3": "电镀完成后，整批产品在 400°C 烘箱中进行 1 小时氢脆处理。该工序使分散的 Ni3P 结晶相发生转变，将零件显微硬度从 500 HV 提升至 920 HV，相当于硬铬水平，但滑动摩擦系数低 30%。"
       },
       "achievements": {
@@ -225,13 +264,34 @@
         }
       },
       "specSheet": {
-        "product": { "label": "产品", "value": "蜗轮蜗杆、花键轴、精密联轴器" },
-        "application": { "label": "应用行业", "value": "机器人制造、CNC 机床、汽车传动配件" },
-        "process": { "label": "电镀工艺", "value": "化学镀镍（无电镀镍 - ENP 高磷型）+ 400°C 热处理" },
-        "substrate": { "label": "基材", "value": "SCM440 合金钢、S45C 碳钢、C3604 黄铜" },
-        "requirement": { "label": "特殊要求", "value": "螺纹公差 < ±0.5 µm，无毛刺残留，光学光洁度 Ra 0.2" },
-        "standard": { "label": "检测标准", "value": "ISO 9001:2015、ASTM B733、AMS 2404，符合 RoHS 与 REACH 标准" },
-        "lab": { "label": "检测实验室", "value": "X 射线荧光测厚仪（XRF Fischer）、Matsuzawa 维氏硬度计" }
+        "product": {
+          "label": "产品",
+          "value": "蜗轮蜗杆、花键轴、精密联轴器"
+        },
+        "application": {
+          "label": "应用行业",
+          "value": "机器人制造、CNC 机床、汽车传动配件"
+        },
+        "process": {
+          "label": "电镀工艺",
+          "value": "化学镀镍（无电镀镍 - ENP 高磷型）+ 400°C 热处理"
+        },
+        "substrate": {
+          "label": "基材",
+          "value": "SCM440 合金钢、S45C 碳钢、C3604 黄铜"
+        },
+        "requirement": {
+          "label": "特殊要求",
+          "value": "螺纹公差 < ±0.5 µm，无毛刺残留，光学光洁度 Ra 0.2"
+        },
+        "standard": {
+          "label": "检测标准",
+          "value": "ISO 9001:2015、ASTM B733、AMS 2404，符合 RoHS 与 REACH 标准"
+        },
+        "lab": {
+          "label": "检测实验室",
+          "value": "X 射线荧光测厚仪（XRF Fischer）、Matsuzawa 维氏硬度计"
+        }
       },
       "process": {
         "step1": {
