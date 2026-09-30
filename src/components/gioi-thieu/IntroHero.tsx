@@ -13,7 +13,7 @@ export default function IntroHero() {
         aria-label={t("imageAlt")}
         style={{
           backgroundImage:
-            "url('https://lh3.googleusercontent.com/aida-public/AB6AXuBSVe5tNOvFanXmtlIn8IzvtIG6FpVRCVGzVgu0CVOXwkksG4AVSfi9N6iITHXfJMBKhlQ945fTzGdHSeqL3sEfQwdcMpkXr5cNkEEtvqaQwQSLZ4l9OZwnKoesHYpzdQlYWZQwuMGqQVAyTyahd9OGcdWEcHyxteq4mZKNuZcTA4hyedHbaBE-DCUMdPGq6tMREgeSGUFqeb1b0G2YK_PpO3frdmdvCJc7NDBuA-qXs2-dKwwOnBEJ-g=w1920')",
+            "url('https://images.unsplash.com/photo-1720036236855-9a1a2e4d3f26?w=1920&q=80&fm=jpg&fit=crop')",
         }}
       />
 

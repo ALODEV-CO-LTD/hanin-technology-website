@@ -13,7 +13,7 @@ export default function NewsBanner() {
         aria-label={t("titlePrefix")}
         style={{
           backgroundImage:
-            "url('https://lh3.googleusercontent.com/aida-public/AB6AXuAVbGJwGBLCtR1FfUH6k02r2P-NiR8BAPFHnKHa0jtHPUl35bfil2EmH5HU_MuFoZ3ANHR2WUVUfFOyDEfy6xH2h8L_JXgXpud4nJiFxbIFhpWxMYp7ji-bzcQ73VEptZXwO2AGP8ot9l9tXlwQPWiGSKjxyVdf-Y5rIg1a0zRe2CQmQXe3CVHX22FXJIAwpE3XO8moxoHF9x6JPFGsgntioSxKEkNyDcZSpbFwu5Jbizom9bSXp7a-1w=w1920')",
+            "url('https://images.unsplash.com/photo-1654703680007-d5d9699cddfd?w=1920&q=80&fm=jpg&fit=crop')",
         }}
       />
 
