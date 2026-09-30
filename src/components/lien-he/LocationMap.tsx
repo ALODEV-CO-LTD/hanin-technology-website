@@ -1,3 +1,4 @@
+import { siteImg } from "@/server/site-images";
 import { useTranslations } from "next-intl";
 import { getSettings, isSafeMapEmbed } from "@/server/settings";
 
@@ -89,7 +90,7 @@ export default function LocationMap() {
               className="w-full h-full min-h-[420px] bg-cover bg-center relative"
               style={{
                 backgroundImage:
-                  "url('https://lh3.googleusercontent.com/aida-public/AB6AXuA85UYKWjtcuwrKepapp5MGDdkuAw_EkrbJcdYP0KEnhARjTxjDM6ysANOszfzGcmxjpiJvoxblg_GtRL2Y8qq3iM1754kBL6Xq_JW7mPT73PyXm5o9XleM1MYjMsmnLm-2tx8E8Ox6DbCkMhmmHJmz7Dv_jETW5jbr1bSSlnlsdXmR2vEqY2jq4fQmZ74s_TN3e4J_PUPdounLmttBxaKQrk7ngZiFBp1WnAjkOuzD1awXA3q2ZfyQfQ')",
+                  `url('${siteImg("lien-he/LocationMap#1", "https://lh3.googleusercontent.com/aida-public/AB6AXuA85UYKWjtcuwrKepapp5MGDdkuAw_EkrbJcdYP0KEnhARjTxjDM6ysANOszfzGcmxjpiJvoxblg_GtRL2Y8qq3iM1754kBL6Xq_JW7mPT73PyXm5o9XleM1MYjMsmnLm-2tx8E8Ox6DbCkMhmmHJmz7Dv_jETW5jbr1bSSlnlsdXmR2vEqY2jq4fQmZ74s_TN3e4J_PUPdounLmttBxaKQrk7ngZiFBp1WnAjkOuzD1awXA3q2ZfyQfQ")}')`,
               }}
               role="img"
               aria-label={t("satelliteImageAlt")}

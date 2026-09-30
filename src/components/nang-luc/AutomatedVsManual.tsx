@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import { siteImg } from "@/server/site-images";
 
 export default function AutomatedVsManual() {
   const t = useTranslations("NangLuc.AutomatedVsManual");
@@ -20,7 +21,7 @@ export default function AutomatedVsManual() {
                 <img
                   className="w-full h-full object-cover"
                   alt={t("automated.imageAlt")}
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6Rp9iUGeqni3A6u4Y3C-JoRdlsiZ3JPcevdQQ-JcImbiNSnXcvpd1_n9lbSPFdOtkXGmXJ8Yx311AAoAwa_C_Q1axzJc1TJSpiEZxnREJYdzd4qo0KJVN59JJcefB_TNtV2r_9v-9QQ7BzHkT0ZT6D4CUyOVaOPhuwRt7CgEeHBj7GH-QtFAgQ0kmBD1iFwD_6QkgwWS5IebEzVgCvo8z_6zf-OsY0N_7HWZ10e9pJsP0oIlTC1SNmg"
+                  src={siteImg("nang-luc/AutomatedVsManual#1", "https://lh3.googleusercontent.com/aida-public/AB6AXuA6Rp9iUGeqni3A6u4Y3C-JoRdlsiZ3JPcevdQQ-JcImbiNSnXcvpd1_n9lbSPFdOtkXGmXJ8Yx311AAoAwa_C_Q1axzJc1TJSpiEZxnREJYdzd4qo0KJVN59JJcefB_TNtV2r_9v-9QQ7BzHkT0ZT6D4CUyOVaOPhuwRt7CgEeHBj7GH-QtFAgQ0kmBD1iFwD_6QkgwWS5IebEzVgCvo8z_6zf-OsY0N_7HWZ10e9pJsP0oIlTC1SNmg")}
                 />
               </div>
               <h3 className="text-headline-sm text-slate-900 uppercase mb-space-xs">{t("automated.title")}</h3>
@@ -50,7 +51,7 @@ export default function AutomatedVsManual() {
                 <img
                   className="w-full h-full object-cover"
                   alt={t("manual.imageAlt")}
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9gDB_GDtgTuGWQ11eXyw3ln1I983UzyAD1puXLPdxQQrrMF4LTkJrj7Q2nJax-nYxbOuNg17ACAdUFpiZgLWUlmIwl8TZDBGcm8tHAXVuJeV8vLgEAFawY6al08_7_WX6mBbvn4eZudzKH11P-bOglwuQVEOzBlsrH1-t8iEV8hNQNTXSNhZpIQcjEZx0g-hFSoqnuMinXx6LiZk3U64BaRdq0uDdejVod0LFd8KtAiBNUYelDkaJUw"
+                  src={siteImg("nang-luc/AutomatedVsManual#2", "https://lh3.googleusercontent.com/aida-public/AB6AXuD9gDB_GDtgTuGWQ11eXyw3ln1I983UzyAD1puXLPdxQQrrMF4LTkJrj7Q2nJax-nYxbOuNg17ACAdUFpiZgLWUlmIwl8TZDBGcm8tHAXVuJeV8vLgEAFawY6al08_7_WX6mBbvn4eZudzKH11P-bOglwuQVEOzBlsrH1-t8iEV8hNQNTXSNhZpIQcjEZx0g-hFSoqnuMinXx6LiZk3U64BaRdq0uDdejVod0LFd8KtAiBNUYelDkaJUw")}
                 />
               </div>
               <h3 className="text-headline-sm text-slate-900 uppercase mb-space-xs">{t("manual.title")}</h3>

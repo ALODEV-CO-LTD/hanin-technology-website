@@ -1,89 +1,16 @@
-"use client";
-
-import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { getProductDetailContent } from "@/lib/products-data";
+import { siteImg } from "@/server/site-images";
+import ProductGalleryClient from "./ProductGalleryClient";
 
 export default function ProductGallery() {
   const tp = useTranslations("SanPham");
-  const t = useTranslations("SanPham.ProductGallery");
   const { gallery } = getProductDetailContent(tp);
-  const [activeId, setActiveId] = useState(gallery[0].id);
-  const active = gallery.find((item) => item.id === activeId) ?? gallery[0];
-
-  return (
-    <section className="w-full bg-white py-space-xl border-b border-slate-200">
-      <div className="mx-auto px-margin">
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-space-sm mb-space-lg">
-          <div>
-            <h2 className="text-headline-lg text-slate-900 uppercase tracking-tight">
-              {t("title")}
-            </h2>
-            <p className="text-body-md text-slate-600 mt-1">{t("description")}</p>
-          </div>
-          <div className="flex items-center gap-space-xs text-label-technical text-slate-500 shrink-0">
-            <span className="px-space-xs py-1 bg-white border border-slate-200 rounded text-slate-800 shadow-sm">
-              {gallery.length} {t("highQualityImages")}
-            </span>
-            <span className="px-space-xs py-1 bg-white border border-slate-200 rounded text-sky-700 shadow-sm font-semibold">
-              {t("zoomOptical")}
-            </span>
-          </div>
-        </div>
-
-        <div className="relative w-full aspect-[21/9] bg-slate-100 border border-slate-200 rounded overflow-hidden mb-space-md group shadow-sm">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img alt={active.alt} className="w-full h-full object-cover" src={active.image} />
-          <div className="absolute top-space-sm right-space-sm flex items-center gap-space-xs">
-            <button
-              type="button"
-              className="w-9 h-9 bg-white/90 backdrop-blur-md border border-slate-200 rounded text-slate-700 hover:text-steel-600 hover:border-steel-500 transition-all flex items-center justify-center shadow-sm"
-              aria-label={t("zoomInAriaLabel")}
-            >
-              <span className="material-symbols-outlined text-[18px]">zoom_in</span>
-            </button>
-            <button
-              type="button"
-              className="w-9 h-9 bg-white/90 backdrop-blur-md border border-slate-200 rounded text-slate-700 hover:text-steel-600 hover:border-steel-500 transition-all flex items-center justify-center shadow-sm"
-              aria-label={t("fullscreenAriaLabel")}
-            >
-              <span className="material-symbols-outlined text-[18px]">fullscreen</span>
-            </button>
-          </div>
-        </div>
-
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-space-sm">
-          {gallery.map((item) => {
-            const isActive = item.id === activeId;
-            return (
-              <button
-                type="button"
-                key={item.id}
-                onClick={() => setActiveId(item.id)}
-                className={
-                  isActive
-                    ? "text-left cursor-pointer p-1.5 bg-white rounded transition-all hover:shadow-md flex flex-col gap-1.5 shadow-sm border-steel-600 border-2"
-                    : "text-left cursor-pointer p-1.5 bg-white border border-slate-200 rounded transition-all hover:border-steel-500 hover:shadow-md flex flex-col gap-1.5 shadow-sm"
-                }
-              >
-                <div className="w-full aspect-[16/10] bg-slate-100 overflow-hidden rounded">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img alt={item.alt} className="w-full h-full object-cover" src={item.image} />
-                </div>
-                <span
-                  className={
-                    isActive
-                      ? "text-label-sm truncate text-steel-600 font-semibold"
-                      : "text-label-sm truncate text-slate-600"
-                  }
-                >
-                  {item.thumbLabel}
-                </span>
-              </button>
-            );
-          })}
-        </div>
-      </div>
-    </section>
-  );
+  const images = [
+    siteImg("san-pham/ProductDetail#2", "https://lh3.googleusercontent.com/aida-public/AB6AXuDQf1X78lIBHCSSK-QTIU-1rQfqODRdlc0CrQizfhoXmWAJXae06wqmjuyxlhMS4kAVsPfZvH0aI8iUcAd5mB-36FhKva4FwkKLU953EQQhX5RP8cZpV0Eoy_y_-rPc7U8WHUP96plDdRXYmOIBkEFSgMHM2uYCWNrFLVOynZ02dIw1hOa3hHb21KAsATPXaZAl_Mjwe7DrnQ-V4bYxABALU_CgrHWqzM-08zjzAAUORk69ofOWK82T9A"),
+    siteImg("san-pham/ProductDetail#3", "https://lh3.googleusercontent.com/aida-public/AB6AXuAgYMLFKLnFOAHBnQqBQvuiw6MjXcHNyYLgQ1LFWOLmfH0RMggYnvMbk_23VMB5GHxAs8nsqXbfBCnwoNBPxPME9_ure9QxHrUgkYHrE5p3MLIMiAKuh5vdNRhFhKfevNs5g6xfgAQ3uf_t9Eteimb2rM50vcE2aDIivFvuvK5is2nHv4mTVtfRTe2EDpZOfTACexNLlUNRyS2WsZL3llnZwq8BDq7HlY3woRcix3T9E6N5CHNVr4K_Og"),
+    siteImg("san-pham/ProductDetail#4", "https://lh3.googleusercontent.com/aida-public/AB6AXuAWkZDChzTqGFvmOkP3p-eeHYdymByt9FprAYAwO-3dglLaqfl6yGQmRmt4oqhgrSDX2GDhNKFCXDhRZP59U6t2NnfhzoKhoEQf-_QwAhze4zVwl-dkh1Ff6IU059pYuRRw7p2M8H-hRUh-s4Hdn8VIuY8p7Dmpg0z64xXPruZQOURdRitekeIhiir0RWjj6U9JgLllQ03NH3uKZyT9OEYMGI2V36Yla6ipxRNOQotl5Ch53SeljoafhQ"),
+    siteImg("san-pham/ProductDetail#5", "https://lh3.googleusercontent.com/aida-public/AB6AXuDVuy2C0hnhH3BKQmfxLoHMs5DDjb8OMIDyWxvZzDXeQ2RpxgHTW-Gwr-8tuvpFkqp-18dXdkha-exxhFIsYfjj0ov06G3nWt0RTRqR5L3p4udIo6FwdTOg49auJCu0QXuIoeko5vM052YuS78OuAB78O7dKJO0UqzbAXTPrmZZDjUZBwP2qmPm2NNsOqBidnCtyqAXFwsD2qqMY2RMXzRqfnjRK7RVf6zEgq9hokxFeBpMcHCFGL-0Gw"),
+  ];
+  return <ProductGalleryClient gallery={gallery.map((item, i) => ({ ...item, image: images[i] }))} />;
 }

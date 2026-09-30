@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
 import { Link, usePathname } from "@/i18n/navigation";
 import LanguageSwitcher from "./LanguageSwitcher";
+import { PAGE_FADE_REPLAY_EVENT } from "@/components/ui/PageFade";
 
 export default function Header() {
   const t = useTranslations("Nav");
@@ -38,6 +39,7 @@ export default function Header() {
     window.setTimeout(() => setLogoPulsing(false), 450);
     if (pathname === "/") {
       window.scrollTo({ top: 0, behavior: "smooth" });
+      window.dispatchEvent(new Event(PAGE_FADE_REPLAY_EVENT));
     }
   };
 

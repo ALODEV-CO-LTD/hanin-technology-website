@@ -101,7 +101,7 @@ export default function ContentEditor() {
   }
 
   return (
-    <div className="max-w-6xl">
+    <div>
       <h1 className="text-xl font-bold text-slate-900 mb-1">Nội dung trang</h1>
       <p className="text-sm text-slate-500 mb-4 max-w-3xl">
         Sửa các đoạn văn bản cố định của website (tiêu đề, mô tả, nút bấm, chân trang…). Mục được sửa sẽ có dấu chấm xanh; bấm “Khôi phục” để về nội dung gốc.

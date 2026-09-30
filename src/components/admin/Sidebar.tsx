@@ -21,6 +21,7 @@ export default function Sidebar({ user, newInquiries, resources }: Props) {
     ...resources.map((r) => ({ href: `/admin/${r.key}`, label: r.label, icon: r.icon })),
     { href: "/admin/inquiries", label: "Liên hệ & Ứng tuyển", icon: "inbox", badge: newInquiries },
     { href: "/admin/content", label: "Nội dung trang", icon: "edit_note" },
+    { href: "/admin/site-images", label: "Hình ảnh trang", icon: "image" },
     { href: "/admin/media", label: "Thư viện ảnh", icon: "photo_library" },
     { href: "/admin/settings", label: "Liên kết & mạng xã hội", icon: "share" },
     ...(user.role === "admin" ? [{ href: "/admin/users", label: "Tài khoản quản trị", icon: "group" }] : []),
@@ -43,7 +44,7 @@ export default function Sidebar({ user, newInquiries, resources }: Props) {
         </button>
       </div>
       <aside
-        className={`${open ? "block" : "hidden"} lg:block lg:sticky lg:top-0 lg:h-screen w-full lg:w-64 shrink-0 bg-steel-950 text-slate-200 flex flex-col overflow-y-auto`}
+        className={`${open ? "flex flex-col" : "hidden"} lg:flex lg:flex-col lg:fixed lg:left-0 lg:top-0 lg:h-screen w-full lg:w-64 shrink-0 z-20 bg-steel-950 text-slate-200 flex flex-col overflow-y-auto`}
       >
         <div className="hidden lg:block px-5 py-5 border-b border-white/10">
           <p className="text-white font-bold tracking-wide">HANIN CMS</p>

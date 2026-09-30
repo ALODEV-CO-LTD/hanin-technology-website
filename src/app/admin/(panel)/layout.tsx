@@ -12,13 +12,15 @@ export default async function PanelLayout({ children }: { children: React.ReactN
   const newInquiries = Number(get<{ n: number }>("SELECT COUNT(*) AS n FROM inquiries WHERE status = 'new'")?.n ?? 0);
 
   return (
-    <div className="min-h-screen lg:flex">
+    <div className="min-h-screen">
       <Sidebar
         user={user}
         newInquiries={newInquiries}
         resources={RESOURCES.map((r) => ({ key: r.key, label: r.label, icon: r.icon }))}
       />
-      <main className="flex-1 min-w-0 p-4 sm:p-8">{children}</main>
+      <main className="lg:pl-64 min-h-screen">
+        <div className="mx-auto w-full max-w-7xl p-4 sm:p-8">{children}</div>
+      </main>
     </div>
   );
 }

@@ -150,6 +150,12 @@ CREATE TABLE IF NOT EXISTS content_overrides (
   PRIMARY KEY (locale, key)
 );
 
+CREATE TABLE IF NOT EXISTS image_overrides (
+  key        TEXT PRIMARY KEY,
+  url        TEXT NOT NULL,
+  updated_at TEXT NOT NULL DEFAULT (datetime('now'))
+);
+
 CREATE TABLE IF NOT EXISTS media (
   id          INTEGER PRIMARY KEY AUTOINCREMENT,
   path        TEXT NOT NULL UNIQUE,

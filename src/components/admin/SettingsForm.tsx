@@ -35,7 +35,7 @@ export default function SettingsForm() {
 
   const groups = [...new Set(defs.map((d) => d.group))];
   return (
-    <form onSubmit={onSubmit} className="max-w-3xl flex flex-col gap-6">
+    <form onSubmit={onSubmit} className="flex flex-col gap-6">
       {groups.map((group) => (
         <fieldset key={group} className="bg-white border border-slate-200 rounded-lg p-5 flex flex-col gap-4">
           <legend className="px-2 font-bold text-slate-900">{group}</legend>

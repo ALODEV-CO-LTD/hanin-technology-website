@@ -56,7 +56,7 @@ export default async function ResourceListPage({
   const href = (p: number) => `/admin/${resource.key}?${new URLSearchParams({ ...(q ? { q } : {}), page: String(p) })}`;
 
   return (
-    <div className="max-w-6xl">
+    <div>
       <div className="flex flex-wrap items-start justify-between gap-3 mb-5">
         <div>
           <h1 className="text-xl font-bold text-slate-900">{resource.label}</h1>

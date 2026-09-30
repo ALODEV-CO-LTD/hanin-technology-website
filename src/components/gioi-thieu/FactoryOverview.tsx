@@ -1,3 +1,4 @@
+import { siteImg } from "@/server/site-images";
 import { useTranslations } from "next-intl";
 
 export default function FactoryOverview() {
@@ -26,7 +27,7 @@ export default function FactoryOverview() {
               aria-label={t("mainImageAlt")}
               style={{
                 backgroundImage:
-                  "url('https://lh3.googleusercontent.com/aida-public/AB6AXuC3iWq6Q8x7Z_ezljbRjJXG8PvcpqAOwpBGwmmu7J3EnPlwjt-ESDXQPZn-f3bGkrQo1j4Fktga1Nfs95Jy84yTg6hciMwQPhremUKIsgR3mimhB3o44tahvfbANNl2qbbXUJZ14ZiC5fCAh0Dy7JL9Hx_T_G2g-fk5Edk0e7SRVSfngXwCCp4lJDdWvYz-exCHChR-wHudNXNTbih0u5lwpmsbB1YgK4rArBQ8O3JSNqIBzt5ZNwkMLw')",
+                  `url('${siteImg("gioi-thieu/FactoryOverview#1", "https://lh3.googleusercontent.com/aida-public/AB6AXuC3iWq6Q8x7Z_ezljbRjJXG8PvcpqAOwpBGwmmu7J3EnPlwjt-ESDXQPZn-f3bGkrQo1j4Fktga1Nfs95Jy84yTg6hciMwQPhremUKIsgR3mimhB3o44tahvfbANNl2qbbXUJZ14ZiC5fCAh0Dy7JL9Hx_T_G2g-fk5Edk0e7SRVSfngXwCCp4lJDdWvYz-exCHChR-wHudNXNTbih0u5lwpmsbB1YgK4rArBQ8O3JSNqIBzt5ZNwkMLw")}')`,
               }}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent" />
@@ -42,7 +43,7 @@ export default function FactoryOverview() {
                 aria-label={t("zone2ImageAlt")}
                 style={{
                   backgroundImage:
-                    "url('https://lh3.googleusercontent.com/aida-public/AB6AXuAO2uvWt8xZ536YyQhEYJ4tMDQSA_F8RQdHhM9bM7ZB-wMZ20tNyoSahZ2yEsXh63o9vlm-FKJE3lFtgtpoKw0mrgndMjdkzbIofNBppqs9oSAbfUBmVB6loE0Bps6z_jDqRd4wcOCtaszi2w7u2wqKoQZe-Xy0KFBp8ZUm4Kw9ojunATcWfAcTAmSFzOn6akWctZ7olr4NkCdWDucif0g9unLB_iNU9XvCZIFsMM-octzeubPl5rQOhA')",
+                    `url('${siteImg("gioi-thieu/FactoryOverview#2", "https://lh3.googleusercontent.com/aida-public/AB6AXuAO2uvWt8xZ536YyQhEYJ4tMDQSA_F8RQdHhM9bM7ZB-wMZ20tNyoSahZ2yEsXh63o9vlm-FKJE3lFtgtpoKw0mrgndMjdkzbIofNBppqs9oSAbfUBmVB6loE0Bps6z_jDqRd4wcOCtaszi2w7u2wqKoQZe-Xy0KFBp8ZUm4Kw9ojunATcWfAcTAmSFzOn6akWctZ7olr4NkCdWDucif0g9unLB_iNU9XvCZIFsMM-octzeubPl5rQOhA")}')`,
                 }}
               />
               <div className="absolute inset-0 bg-gradient-to-r from-slate-900/80 via-slate-900/30 to-transparent" />
@@ -54,7 +55,7 @@ export default function FactoryOverview() {
               <img
                 alt={t("zone3ImageAlt")}
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAC-ozXlS4iAi4T3wA_X-lfMFRZW6tBLRXa9hiO-_aiiAfyUkQ8VaPUa8EIi2vm-qZxixg0pq2T-tmuJ7mwR9Oi5C5cCOzm0cUAv_mj5VqOPDE2-FpS3whEh-TNU1x6XT7patK-2NZNtDRfCepVnV8NB_q7n1lh24xLceTFJ2xeUcVblzSkj0sC-xVpcv6ESoW197zbUsdcV2puaYUyDaS4LJTXmFeTs8dr52845R9MiW3QRPUFLO-ixg"
+                src={siteImg("gioi-thieu/FactoryOverview#3", "https://lh3.googleusercontent.com/aida-public/AB6AXuAC-ozXlS4iAi4T3wA_X-lfMFRZW6tBLRXa9hiO-_aiiAfyUkQ8VaPUa8EIi2vm-qZxixg0pq2T-tmuJ7mwR9Oi5C5cCOzm0cUAv_mj5VqOPDE2-FpS3whEh-TNU1x6XT7patK-2NZNtDRfCepVnV8NB_q7n1lh24xLceTFJ2xeUcVblzSkj0sC-xVpcv6ESoW197zbUsdcV2puaYUyDaS4LJTXmFeTs8dr52845R9MiW3QRPUFLO-ixg")}
               />
               <div className="absolute inset-0 bg-gradient-to-r from-slate-900/80 via-slate-900/30 to-transparent" />
             </div>
@@ -67,7 +68,7 @@ export default function FactoryOverview() {
                 aria-label={t("zone4ImageAlt")}
                 style={{
                   backgroundImage:
-                    "url('https://lh3.googleusercontent.com/aida-public/AB6AXuBMN0lym82cEAA9k9kEK85J37YJBabdX5LVykdHImAJrf6CHqddqInsnSorwbmqZLTQAqRIsizQmmahLAPP4kP--Zi_rvgLXB14CZxIER1vTsym4bh6b1rI8RH_x9HyH4YcURRVskMZtdr5b09X-hZx5pPqRRMkjyQX4kyg55rB450Ml7kTRsX42xU0XLaH1kjzmQYE5wU-i1I_UaxnfjxxejVysfKwY5jFgQimj8WXl4xHV8G24IqbtA')",
+                    `url('${siteImg("gioi-thieu/FactoryOverview#4", "https://lh3.googleusercontent.com/aida-public/AB6AXuBMN0lym82cEAA9k9kEK85J37YJBabdX5LVykdHImAJrf6CHqddqInsnSorwbmqZLTQAqRIsizQmmahLAPP4kP--Zi_rvgLXB14CZxIER1vTsym4bh6b1rI8RH_x9HyH4YcURRVskMZtdr5b09X-hZx5pPqRRMkjyQX4kyg55rB450Ml7kTRsX42xU0XLaH1kjzmQYE5wU-i1I_UaxnfjxxejVysfKwY5jFgQimj8WXl4xHV8G24IqbtA")}')`,
                 }}
               />
               <div className="absolute inset-0 bg-gradient-to-r from-slate-900/80 via-slate-900/30 to-transparent" />

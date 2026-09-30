@@ -50,7 +50,7 @@ export default function UserManager() {
 
   const input = "h-10 px-3 border border-slate-300 rounded bg-white text-sm";
   return (
-    <div className="max-w-4xl">
+    <div>
       <h1 className="text-xl font-bold text-slate-900 mb-1">Tài khoản quản trị</h1>
       <p className="text-sm text-slate-500 mb-5">Quản trị viên được quản lý tài khoản; biên tập viên chỉ sửa nội dung.</p>
       {error && <p role="alert" className="mb-3 text-sm text-red-700 bg-red-50 border border-red-200 rounded px-3 py-2">{error}</p>}

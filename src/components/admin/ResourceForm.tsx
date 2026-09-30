@@ -280,7 +280,7 @@ export default function ResourceForm({ resource, initial, id }: Props) {
   }
 
   return (
-    <form onSubmit={onSubmit} className="max-w-4xl">
+    <form onSubmit={onSubmit}>
       <div className="sticky top-0 lg:top-0 z-20 -mx-4 sm:-mx-8 px-4 sm:px-8 py-3 bg-slate-50/95 backdrop-blur border-b border-slate-200 flex flex-wrap items-center gap-3 justify-between">
         <div>
           <Link href={`/admin/${resource.key}`} className="text-sm text-steel-600 hover:underline">← {resource.label}</Link>

@@ -1,11 +1,13 @@
 import { useTranslations } from "next-intl";
 import type { Product } from "@/lib/products-data";
 import { getProductDetailContent } from "@/lib/products-data";
+import { siteImg } from "@/server/site-images";
 
 export default function ProductHero({ product }: { product: Product }) {
   const tp = useTranslations("SanPham");
   const t = useTranslations("SanPham.ProductHero");
-  const { heroStats, heroDescription, heroImage, heroImageAlt } = getProductDetailContent(tp);
+  const { heroStats, heroDescription, heroImageAlt } = getProductDetailContent(tp);
+  const heroImage = siteImg("san-pham/ProductDetail#1", "https://lh3.googleusercontent.com/aida-public/AB6AXuDJeNDLUaBDEs48vil6OqvXjZ4KzCFrJ3fWyv2HG-s8rj9cRdF8tQlS1wNHMpNyyBXS5YYZSDS5U7Eeukr51Tqh8CUbTo2xMyOl_DXzAysjWQKW-6EUO-7RXxMz0OYdrp20tb5HolXN_KrVibRxUQeh4jc8vQVJaYZn5FWeNDvpU3CFiCxWGEWlERIK_D_KSf2THFY3rBd6M1c9Gi62iaMBzFkHmvlSN6XjhuVDEuSll3LRExy8ROphDQ");
 
   return (
     <section className="w-full bg-white py-space-xl border-b border-slate-200">

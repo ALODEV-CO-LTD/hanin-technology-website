@@ -82,7 +82,7 @@ export default function InquiryManager({ initialStatus = "" }: { initialStatus?:
 
   const select = "h-10 px-3 border border-slate-300 rounded bg-white text-sm";
   return (
-    <div className="max-w-6xl">
+    <div>
       <h1 className="text-xl font-bold text-slate-900 mb-4">Liên hệ & Ứng tuyển</h1>
       <div className="flex flex-wrap gap-2 mb-4">
         <select className={select} value={status} onChange={(e) => (setStatus(e.target.value), setPage(1))} aria-label="Lọc trạng thái">

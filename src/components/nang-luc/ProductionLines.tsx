@@ -1,34 +1,32 @@
 import { useTranslations } from "next-intl";
-
-const LINES = [
-  {
-    key: "barrel",
-    tag: "01 // AUTOMATED BARREL LINE",
-    badge: "SCADA CONTROL",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuAgVrz_RyVKAbQ7apx81Lz8pWXfaHja0O5t5Qgvu-KURvxUyjxk0_9BkIVPKgggNW-uT198ZNx2MkQlJ4dZ2dKr9vJy1n2tB-7kdSPTiqKt0QVTGGJDX3L1vAS8MHSvulwgWXjwIIuK0U-TgdDTE9SFIxXk3bYEgRwSbHqPXzM3MAtDzOOXPkoLUoSTqGiac02De4AS7PmEdbXMkgbJSjvX_oEyHeppTmJPuHXad1UOQJeGo6V8B5ikMQ",
-    imageOrder: "",
-  },
-  {
-    key: "rack",
-    tag: "02 // RACK PLATING LINE",
-    badge: "HEAVY DUTY",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuD9gDB_GDtgTuGWQ11eXyw3ln1I983UzyAD1puXLPdxQQrrMF4LTkJrj7Q2nJax-nYxbOuNg17ACAdUFpiZgLWUlmIwl8TZDBGcm8tHAXVuJeV8vLgEAFawY6al08_7_WX6mBbvn4eZudzKH11P-bOglwuQVEOzBlsrH1-t8iEV8hNQNTXSNhZpIQcjEZx0g-hFSoqnuMinXx6LiZk3U64BaRdq0uDdejVod0LFd8KtAiBNUYelDkaJUw",
-    imageOrder: "order-first lg:order-last",
-  },
-  {
-    key: "chemical",
-    tag: "03 // CHEMICAL ENP & ANODIZING LINE",
-    badge: "MIL-SPEC COMPLIANT",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuDbKebYq3Yi1iDsoAXFwRWjce47gn5bzIJ9YMFqnDewXSZC2spmLtGhMIXBObN3GY_ElvNmVQvCX8O2J_e37k-gBj1xBdZCrQje3O5cmm3P1OKwZc-w9SFwQOllK4swLW1CyjRCdttOIl5mbZEluWvsMuhJkbx4yp_Am3cXG9ryAIgDl46MVLOXno6b2rs0MCr-dUeNKQVkUDt_2GCvXY25vGm0Eh51Fu7In9aSZboWpiQQyGqQiW00rg",
-    imageOrder: "",
-  },
-] as const;
+import { siteImg } from "@/server/site-images";
 
 export default function ProductionLines() {
   const t = useTranslations("NangLuc.ProductionLines");
+
+  const LINES = [
+    {
+      key: "barrel",
+      tag: "01 // AUTOMATED BARREL LINE",
+      badge: "SCADA CONTROL",
+      image: siteImg("nang-luc/ProductionLines#1", "https://lh3.googleusercontent.com/aida-public/AB6AXuAgVrz_RyVKAbQ7apx81Lz8pWXfaHja0O5t5Qgvu-KURvxUyjxk0_9BkIVPKgggNW-uT198ZNx2MkQlJ4dZ2dKr9vJy1n2tB-7kdSPTiqKt0QVTGGJDX3L1vAS8MHSvulwgWXjwIIuK0U-TgdDTE9SFIxXk3bYEgRwSbHqPXzM3MAtDzOOXPkoLUoSTqGiac02De4AS7PmEdbXMkgbJSjvX_oEyHeppTmJPuHXad1UOQJeGo6V8B5ikMQ"),
+      imageOrder: "",
+    },
+    {
+      key: "rack",
+      tag: "02 // RACK PLATING LINE",
+      badge: "HEAVY DUTY",
+      image: siteImg("nang-luc/ProductionLines#2", "https://lh3.googleusercontent.com/aida-public/AB6AXuD9gDB_GDtgTuGWQ11eXyw3ln1I983UzyAD1puXLPdxQQrrMF4LTkJrj7Q2nJax-nYxbOuNg17ACAdUFpiZgLWUlmIwl8TZDBGcm8tHAXVuJeV8vLgEAFawY6al08_7_WX6mBbvn4eZudzKH11P-bOglwuQVEOzBlsrH1-t8iEV8hNQNTXSNhZpIQcjEZx0g-hFSoqnuMinXx6LiZk3U64BaRdq0uDdejVod0LFd8KtAiBNUYelDkaJUw"),
+      imageOrder: "order-first lg:order-last",
+    },
+    {
+      key: "chemical",
+      tag: "03 // CHEMICAL ENP & ANODIZING LINE",
+      badge: "MIL-SPEC COMPLIANT",
+      image: siteImg("nang-luc/ProductionLines#3", "https://lh3.googleusercontent.com/aida-public/AB6AXuDbKebYq3Yi1iDsoAXFwRWjce47gn5bzIJ9YMFqnDewXSZC2spmLtGhMIXBObN3GY_ElvNmVQvCX8O2J_e37k-gBj1xBdZCrQje3O5cmm3P1OKwZc-w9SFwQOllK4swLW1CyjRCdttOIl5mbZEluWvsMuhJkbx4yp_Am3cXG9ryAIgDl46MVLOXno6b2rs0MCr-dUeNKQVkUDt_2GCvXY25vGm0Eh51Fu7In9aSZboWpiQQyGqQiW00rg"),
+      imageOrder: "",
+    },
+  ] as const;
 
   return (
     <section className="w-full py-space-xl bg-white border-t border-slate-200 scroll-mt-20" id="day-chuyen">
