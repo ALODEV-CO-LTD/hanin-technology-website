@@ -45,14 +45,6 @@ export default function FactoryGallery() {
             src="https://lh3.googleusercontent.com/aida-public/AB6AXuDI3db8cTjyz3mUD84Oi_CzhLyNPdD69lVtZEfNnlMHVqeb9Izs9XZUyXNa8hlKluCP-w3yaQWlueMnFG2RVvyVYRq80nhdqEydf09UmgNu68-vesb3s4bXES-thslj4UBB4BvFNLJnM-U-DDKlBnl3ifhJDyiScgRjL-x5HPzHopORtpn3pXmKkRlvah8arFBTtQqEXh9Il89Jdm63oTw_ZsHpL299cfiZn03hp0DqpYndmN2g0GhvPg"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent" />
-          <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between">
-            <span className="px-space-sm py-1 bg-white/95 backdrop-blur rounded text-label-technical text-slate-900 font-semibold uppercase shadow-sm">
-              {t("mainImage.badge")}
-            </span>
-            <span className="hidden sm:inline-block text-label-technical text-steel-400 font-semibold">
-              HANIN TECH INDUSTRIAL CAMPUS
-            </span>
-          </div>
         </div>
 
         {/* Secondary Grid of 4 Images */}
@@ -69,9 +61,6 @@ export default function FactoryGallery() {
                 src={thumb.image}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent" />
-              <span className="absolute bottom-2 left-2 px-space-xs py-0.5 bg-white/90 backdrop-blur rounded text-label-sm text-slate-800 font-semibold uppercase shadow-sm">
-                {t(`items.${thumb.key}.label`)}
-              </span>
             </div>
           ))}
         </div>

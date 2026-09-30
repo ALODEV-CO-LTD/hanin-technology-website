@@ -33,9 +33,6 @@ export default function ServiceCategories() {
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 src={service.image}
               />
-              <div className="absolute top-3 left-3 bg-slate-900/80 text-white px-2 py-0.5 rounded text-label-sm uppercase font-semibold">
-                {service.badge ?? `${tc("codeLabel")}: ${service.code}`}
-              </div>
             </div>
             <div className="p-space-md flex flex-col flex-1 justify-between gap-space-sm">
               <div>

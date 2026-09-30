@@ -18,8 +18,6 @@ export default function FactoryShowcase() {
 
   const activeImage = IMAGES[activeKey];
   const activeTitle = t(`tabs.${activeKey}.title`);
-  const activeSector = t(`tabs.${activeKey}.sector`);
-  const activeTagline = t(`tabs.${activeKey}.tagline`);
   const activeOrder = t(`tabs.${activeKey}.order`);
   const activeDesc = t(`tabs.${activeKey}.desc`);
 
@@ -63,14 +61,6 @@ export default function FactoryShowcase() {
               src={activeImage}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent" />
-            <div className="absolute top-6 right-6 text-right">
-              <p className="text-[11px] text-steel-500 uppercase font-mono font-bold [text-shadow:0_1px_3px_rgba(15,23,42,0.85),0_2px_10px_rgba(15,23,42,0.55)]">
-                {activeSector}
-              </p>
-              <p className="text-label-technical text-white font-semibold [text-shadow:0_1px_3px_rgba(15,23,42,0.85),0_2px_10px_rgba(15,23,42,0.55)]">
-                {activeTagline}
-              </p>
-            </div>
             <div className="absolute bottom-6 left-6 right-6 md:right-auto md:max-w-xl bg-white/95 backdrop-blur-md p-space-lg rounded shadow-xl border border-slate-200">
               <span className="text-[11px] text-steel-600 uppercase tracking-widest block mb-1 font-bold">
                 {activeOrder}

@@ -34,9 +34,6 @@ export default function RelatedProjects({ currentSlug }: { currentSlug: string }
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   src={project.image}
                 />
-                <span className="absolute top-2 left-2 px-space-xs py-0.5 bg-white/95 backdrop-blur font-mono text-label-sm text-steel-600 font-semibold rounded shadow-sm">
-                  {t("lot")} #{project.lot}
-                </span>
               </div>
               <div className="p-space-md flex flex-col gap-space-xs">
                 <span className="text-label-sm text-slate-500 uppercase">

@@ -50,19 +50,6 @@ export default function ProductGallery() {
               <span className="material-symbols-outlined text-[18px]">fullscreen</span>
             </button>
           </div>
-          <div className="absolute bottom-0 left-0 right-0 p-space-sm bg-gradient-to-t from-slate-950/80 via-slate-950/60 to-transparent flex flex-col md:flex-row md:items-center justify-between gap-space-xs text-label-sm text-slate-200">
-            <div className="flex items-center gap-space-sm">
-              <span className="px-2 py-0.5 bg-steel-600 text-white font-mono rounded">
-                {t("frame")} #{String(active.id).padStart(2, "0")}
-              </span>
-              <span className="text-white text-title-md">{active.caption}</span>
-            </div>
-            <div className="flex items-center gap-space-md font-mono text-slate-300">
-              <span>{t("resolution")}</span>
-              <span>{t("date")}</span>
-              <span className="text-emerald-400 font-semibold">{t("statusApproved")}</span>
-            </div>
-          </div>
         </div>
 
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-space-sm">

@@ -26,17 +26,6 @@ export default function CompanyIntroduction() {
                 }}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900/40 via-transparent to-transparent" />
-              {/* Technical Overlay Captions */}
-              <div className="absolute top-4 left-4 inline-flex items-center gap-2 [text-shadow:0_1px_3px_rgba(15,23,42,0.85),0_2px_10px_rgba(15,23,42,0.55)]">
-                <span className="material-symbols-outlined text-steel-500 text-[14px]">factory</span>
-                <span className="text-[11px] text-steel-500 uppercase tracking-wider font-semibold">
-                  {t("scaleBadge")}
-                </span>
-              </div>
-              <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between text-steel-500 text-[11px] [text-shadow:0_1px_3px_rgba(15,23,42,0.85),0_2px_10px_rgba(15,23,42,0.55)]">
-                <span className="font-semibold">{t("coordBadge")}</span>
-                <span className="font-semibold">{t("areaBadge")}</span>
-              </div>
             </div>
           </div>
 

@@ -45,9 +45,6 @@ export default function EquipmentGrid() {
               <div className="relative h-44 bg-slate-200 overflow-hidden">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img className="w-full h-full object-cover" alt={t(`items.${m.key}.alt`)} src={m.image} />
-                <span className="absolute bottom-2 left-2 px-space-xs py-0.5 bg-white/90 border border-slate-200 text-steel-600 font-semibold rounded text-label-sm shadow-sm">
-                  {t(`items.${m.key}.badge`)}
-                </span>
               </div>
               <div className="p-space-md flex-1 flex flex-col justify-between">
                 <div>

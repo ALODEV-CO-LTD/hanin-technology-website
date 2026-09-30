@@ -28,22 +28,6 @@ export default function ManufacturingCapability() {
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuAC-ozXlS4iAi4T3wA_X-lfMFRZW6tBLRXa9hiO-_aiiAfyUkQ8VaPUa8EIi2vm-qZxixg0pq2T-tmuJ7mwR9Oi5C5cCOzm0cUAv_mj5VqOPDE2-FpS3whEh-TNU1x6XT7patK-2NZNtDRfCepVnV8NB_q7n1lh24xLceTFJ2xeUcVblzSkj0sC-xVpcv6ESoW197zbUsdcV2puaYUyDaS4LJTXmFeTs8dr52845R9MiW3QRPUFLO-ixg"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent" />
-              <div className="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur-md border border-slate-200 p-space-md rounded flex items-center justify-around text-xs text-slate-800 shadow-md">
-                <div className="flex flex-col items-center">
-                  <span className="text-slate-500 font-semibold">{t("tempLabel")}</span>
-                  <span className="font-bold text-steel-600">58.4 °C</span>
-                </div>
-                <div className="w-px h-6 bg-slate-200" />
-                <div className="flex flex-col items-center">
-                  <span className="text-slate-500 font-semibold">{t("voltageLabel")}</span>
-                  <span className="font-bold text-steel-600">12.8 V</span>
-                </div>
-                <div className="w-px h-6 bg-slate-200" />
-                <div className="flex flex-col items-center">
-                  <span className="text-slate-500 font-semibold">{t("filterLabel")}</span>
-                  <span className="font-bold text-sky-700">99.4 %</span>
-                </div>
-              </div>
             </div>
           </div>
 

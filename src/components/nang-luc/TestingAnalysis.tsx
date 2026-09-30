@@ -27,11 +27,6 @@ export default function TestingAnalysis() {
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuAC-ozXlS4iAi4T3wA_X-lfMFRZW6tBLRXa9hiO-_aiiAfyUkQ8VaPUa8EIi2vm-qZxixg0pq2T-tmuJ7mwR9Oi5C5cCOzm0cUAv_mj5VqOPDE2-FpS3whEh-TNU1x6XT7patK-2NZNtDRfCepVnV8NB_q7n1lh24xLceTFJ2xeUcVblzSkj0sC-xVpcv6ESoW197zbUsdcV2puaYUyDaS4LJTXmFeTs8dr52845R9MiW3QRPUFLO-ixg"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent" />
-            <div className="relative z-10 flex flex-wrap gap-space-xs">
-              <span className="bg-white/95 backdrop-blur-md px-space-sm py-1 rounded text-label-technical text-steel-600 uppercase font-semibold shadow-sm">
-                QA/QC LABORATORY // ISO/IEC 17025 STANDARD READY
-              </span>
-            </div>
           </div>
 
           {/* RIGHT: 3 Technical Information Blocks */}

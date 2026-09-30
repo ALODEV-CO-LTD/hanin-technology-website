@@ -72,17 +72,6 @@ export default function DetailHero() {
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuASiiY0YHzAz0bYUdU_Z4bb7bJnm79drmHEj7I2_1ct2zvRhd1mU74UjW1QFGMZjWHWiV7KugGxVGus2vvTdckjsTt7UL_mG7t8eQ9Y4G4oOMmVXQCEWd7y-CH1-seO4c2C6SNONUD0L5gVGyGK2QjDepE0xcrOqhwomjdfLURtHXf6pMpa7qvv6Gvv5DxZIPF-4r1XWe-G1060CMa343UUcUjJtH8saFMhhu9ndzATKpcrL6QAa0XJKQ"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-slate-900/85 via-transparent to-transparent" />
-            <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-md px-space-sm py-1 rounded text-slate-900 text-label-sm shadow-sm flex items-center gap-1">
-              <span className="material-symbols-outlined text-steel-600 text-[16px]">biotech</span>
-              <span>{t("xrfLabel")}</span>
-            </div>
-            <div className="absolute bottom-4 left-4 right-4 text-white">
-              <div className="flex items-center justify-between border-b border-white/20 pb-1 mb-1 text-label-sm text-slate-300">
-                <span>{t("roughnessLabel")}</span>
-                <span>{t("coatingLabel")}</span>
-              </div>
-              <p className="text-body-md text-slate-100 line-clamp-2">{t("imageCaption")}</p>
-            </div>
           </div>
         </div>
       </div>

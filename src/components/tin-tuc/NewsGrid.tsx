@@ -29,9 +29,6 @@ export default function NewsGrid() {
                       {article.categoryLabel}
                     </span>
                   </div>
-                  <div className="absolute bottom-space-xs right-space-sm px-space-xs py-0.5 rounded bg-slate-900/80 text-white text-label-sm">
-                    {article.techBadge}
-                  </div>
                 </div>
                 <div className="p-space-md flex flex-col gap-space-xs">
                   <div className="flex items-center gap-space-xs text-label-sm text-slate-500">

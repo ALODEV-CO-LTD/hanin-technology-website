@@ -33,9 +33,6 @@ export default function DetailGallery() {
             <div className="relative h-64 bg-slate-900">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img alt={t(`${item.key}.alt`)} className="w-full h-full object-cover" src={item.src} />
-              <div className="absolute top-2 left-2 bg-white/90 px-2 py-0.5 rounded text-label-sm text-slate-900">
-                {t(`${item.key}.tag`)}
-              </div>
             </div>
             <div className="p-space-sm flex flex-col flex-1 justify-between bg-white">
               <h4 className="text-title-md text-slate-900 uppercase mb-1 font-bold">{t(`${item.key}.title`)}</h4>

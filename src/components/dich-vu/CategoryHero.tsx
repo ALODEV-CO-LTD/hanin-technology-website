@@ -57,15 +57,6 @@ export default function CategoryHero() {
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNUWbtu-6mF-47Gk1oHXXyJOVwIjxt1jMnwPHiIsRKd5-Mx9Fkov5w63gs__fEcgwwzgV_Z-vKRbSS73Sz3WCrxS7MMkOc_RB6FPdCt5KgCyaidW2F52ulUmXdEeh_eNp7KwcY8uwyn0-vSmt1UP_859JtN6IOXI0GDsjdrq5wFODc1u1tv_i6RcJXzKItH1zLdI0T8JX0LVT3-sWkTJptYWKMbM9n17lteJGbAqsinL7sfHx1R7peqg"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-transparent to-transparent" />
-            <div className="absolute bottom-4 left-4 right-4 p-space-sm bg-white/90 backdrop-blur-md rounded flex items-center justify-between shadow-md">
-              <div>
-                <p className="text-label-sm text-slate-500 uppercase">{t("lineTag")}</p>
-                <p className="text-title-md text-slate-900 font-bold">SCADA Automated Rack Plating</p>
-              </div>
-              <span className="bg-steel-100 text-steel-700 text-label-sm px-2 py-1 rounded font-bold uppercase">
-                READY ACTIVE
-              </span>
-            </div>
           </div>
         </div>
       </div>

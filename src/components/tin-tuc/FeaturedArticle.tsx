@@ -35,15 +35,6 @@ export default function FeaturedArticle() {
               <span className="px-space-sm py-1 bg-steel-600 text-white text-label-sm uppercase font-bold tracking-wider rounded">
                 {article.tag}
               </span>
-              <span className="px-space-xs py-1 bg-slate-900/80 backdrop-blur-sm text-white text-label-sm rounded">
-                {article.standard}
-              </span>
-            </div>
-            <div className="absolute bottom-space-md left-space-md right-space-md flex items-center text-white text-label-sm">
-              <span className="flex items-center gap-1.5">
-                <span className="material-symbols-outlined text-[16px]">location_on</span>
-                {article.location}
-              </span>
             </div>
           </div>
 

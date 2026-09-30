@@ -21,17 +21,6 @@ export default function FactoryOverview() {
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVbGJwGBLCtR1FfUH6k02r2P-NiR8BAPFHnKHa0jtHPUl35bfil2EmH5HU_MuFoZ3ANHR2WUVUfFOyDEfy6xH2h8L_JXgXpud4nJiFxbIFhpWxMYp7ji-bzcQ73VEptZXwO2AGP8ot9l9tXlwQPWiGSKjxyVdf-Y5rIg1a0zRe2CQmQXe3CVHX22FXJIAwpE3XO8moxoHF9x6JPFGsgntioSxKEkNyDcZSpbFwu5Jbizom9bSXp7a-1w"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent" />
-            <div className="relative z-10 flex flex-wrap gap-space-xs">
-              <span className="bg-white/95 backdrop-blur-md px-space-sm py-1 rounded text-label-technical text-steel-600 uppercase font-semibold shadow-sm">
-                FACILITY: KCN QUANG MINH, HÀ NỘI
-              </span>
-              <span className="bg-slate-900/80 backdrop-blur-md px-space-sm py-1 rounded text-label-technical text-white uppercase">
-                SCALE: INDUSTRIAL CAMPUS
-              </span>
-              <span className="bg-slate-900/80 backdrop-blur-md px-space-sm py-1 rounded text-label-technical text-slate-200 uppercase">
-                STATUS: AUDITED &amp; APPROVED
-              </span>
-            </div>
           </div>
 
           {/* RIGHT: Description & Metadata */}

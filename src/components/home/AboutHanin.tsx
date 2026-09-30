@@ -18,22 +18,6 @@ export default function AboutHanin() {
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8KJVXFxeFOjgqXWkBiF9FpvBa5qKIYmcY81aCaskvAP4hSt2ZAzELb8QZw0bgB-yM4zwk995zEP0O10jp5eBR9O9BQCXTmbuboBg4M9R2uef8_bWiWogphX6f8LTo52el2OlctLIvZriqnpDZaRDeFXPJqagO_IBs8ycl8QTHYgZinLz1RGFn2z-ICjotF9EmSHqaxYSCNWmJnEHrtFrXhWLfdYzj9JCX7fZpcuStogJf__GS-1mcHg"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent" />
-              <div className="absolute top-4 left-4">
-                <span className="text-[11px] text-steel-500 uppercase tracking-widest font-mono font-bold [text-shadow:0_1px_3px_rgba(15,23,42,0.85),0_2px_10px_rgba(15,23,42,0.55)]">
-                  {t("badgeTag")}
-                </span>
-              </div>
-              <div className="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur-md p-space-sm rounded border border-slate-200/80 shadow-md flex items-center justify-between">
-                <div>
-                  <p className="text-title-md text-slate-900 font-semibold">
-                    {t("badgeTitle")}
-                  </p>
-                  <p className="text-[11px] text-slate-600">
-                    {t("badgeSubtitle")}
-                  </p>
-                </div>
-                <span className="material-symbols-outlined text-steel-600 text-[20px]">verified</span>
-              </div>
             </div>
           </div>
 

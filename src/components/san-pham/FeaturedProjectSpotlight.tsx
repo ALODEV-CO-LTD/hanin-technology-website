@@ -19,15 +19,6 @@ export default function FeaturedProjectSpotlight() {
               src={project.image}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-white/80 via-transparent to-white/30" />
-            <div className="absolute top-space-md left-space-md right-space-md flex items-center justify-between pointer-events-none">
-              <div className="px-space-sm py-space-xs bg-white/90 border border-slate-200 backdrop-blur-md rounded text-label-technical text-sky-700 font-bold shadow-sm">
-                {project.imageBadge}
-              </div>
-            </div>
-            <div className="absolute bottom-space-md left-space-md right-space-md bg-white/95 border border-slate-200 backdrop-blur-md p-space-sm rounded flex items-center justify-between text-slate-500 text-label-technical shadow-sm">
-              <span className="font-semibold">{tc("automatedCycle")}</span>
-              <span className="text-slate-900 font-bold">{tc("monthlyOutput")}</span>
-            </div>
           </div>
           <div className="lg:col-span-5 p-space-lg lg:p-space-xl flex flex-col gap-space-md">
             <div className="flex flex-col gap-space-xs">

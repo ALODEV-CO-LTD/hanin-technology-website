@@ -30,15 +30,6 @@ export default function FactoryOverview() {
               }}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent" />
-            <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between text-white">
-              <div>
-                <p className="text-headline-sm font-semibold">{t("zone1Title")}</p>
-                <p className="text-body-sm text-slate-200">{t("zone1Desc")}</p>
-              </div>
-              <span className="hidden sm:inline-block text-xs px-2 py-1 bg-white/20 backdrop-blur-sm rounded text-white border border-white/30">
-                PLANT_A1
-              </span>
-            </div>
           </div>
 
           {/* 3 Smaller Auxiliary Photos */}
@@ -55,12 +46,6 @@ export default function FactoryOverview() {
                 }}
               />
               <div className="absolute inset-0 bg-gradient-to-r from-slate-900/80 via-slate-900/30 to-transparent" />
-              <div className="absolute bottom-3 left-3">
-                <span className="text-[9px] uppercase tracking-wider text-steel-600 bg-white/95 px-1.5 py-0.5 rounded border border-slate-200 block w-max mb-1 font-bold">
-                  {t("zone2Tag")}
-                </span>
-                <p className="text-xs text-white font-semibold">{t("zone2Title")}</p>
-              </div>
             </div>
 
             {/* Aux Photo 2: Precision Caliper Inspection */}
@@ -72,12 +57,6 @@ export default function FactoryOverview() {
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuAC-ozXlS4iAi4T3wA_X-lfMFRZW6tBLRXa9hiO-_aiiAfyUkQ8VaPUa8EIi2vm-qZxixg0pq2T-tmuJ7mwR9Oi5C5cCOzm0cUAv_mj5VqOPDE2-FpS3whEh-TNU1x6XT7patK-2NZNtDRfCepVnV8NB_q7n1lh24xLceTFJ2xeUcVblzSkj0sC-xVpcv6ESoW197zbUsdcV2puaYUyDaS4LJTXmFeTs8dr52845R9MiW3QRPUFLO-ixg"
               />
               <div className="absolute inset-0 bg-gradient-to-r from-slate-900/80 via-slate-900/30 to-transparent" />
-              <div className="absolute bottom-3 left-3">
-                <span className="text-[9px] uppercase tracking-wider text-steel-600 bg-white/95 px-1.5 py-0.5 rounded border border-slate-200 block w-max mb-1 font-bold">
-                  {t("zone3Tag")}
-                </span>
-                <p className="text-xs text-white font-semibold">{t("zone3Title")}</p>
-              </div>
             </div>
 
             {/* Aux Photo 3: Heavy Automated Crane System */}
@@ -92,12 +71,6 @@ export default function FactoryOverview() {
                 }}
               />
               <div className="absolute inset-0 bg-gradient-to-r from-slate-900/80 via-slate-900/30 to-transparent" />
-              <div className="absolute bottom-3 left-3">
-                <span className="text-[9px] uppercase tracking-wider text-steel-600 bg-white/95 px-1.5 py-0.5 rounded border border-slate-200 block w-max mb-1 font-bold">
-                  {t("zone4Tag")}
-                </span>
-                <p className="text-xs text-white font-semibold">{t("zone4Title")}</p>
-              </div>
             </div>
           </div>
         </div>

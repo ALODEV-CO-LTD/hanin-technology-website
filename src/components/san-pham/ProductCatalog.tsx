@@ -15,9 +15,6 @@ function ProductCardFeatured({ product, t }: { product: Product; t: ReturnType<t
           className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
           src={product.image}
         />
-        <div className="absolute top-space-sm left-space-sm px-space-xs py-0.5 bg-white/90 border border-slate-200 backdrop-blur-sm rounded text-label-technical text-steel-600 font-bold">
-          {product.imageBadge}
-        </div>
       </div>
       <div className="md:w-1/2 p-space-lg flex flex-col justify-between bg-white">
         <div className="flex flex-col gap-space-sm">
@@ -59,9 +56,6 @@ function ProductCardStandard({ product, t }: { product: Product; t: ReturnType<t
           className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
           src={product.image}
         />
-        <div className="absolute top-space-sm left-space-sm px-space-xs py-0.5 bg-white/90 border border-slate-200 backdrop-blur-sm rounded text-label-technical text-steel-600 font-bold">
-          {product.imageBadge}
-        </div>
       </div>
       <div className="p-space-md flex flex-col flex-1 justify-between bg-white">
         <div className="flex flex-col gap-space-xs">

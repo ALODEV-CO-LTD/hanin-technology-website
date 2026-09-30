@@ -82,17 +82,6 @@ export default function ProductHero({ product }: { product: Product }) {
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 src={heroImage}
               />
-              <div className="absolute top-3 left-3 right-3 flex items-center justify-between p-2 bg-white/90 backdrop-blur-md border border-slate-200 rounded text-slate-600 text-xs shadow-sm font-mono">
-                <span className="text-slate-900 font-medium">{t("metrologyInspected")}</span>
-                <span className="text-steel-600 font-semibold">{t("toleranceValue")}</span>
-              </div>
-              <div className="absolute bottom-3 left-3 right-3 p-3 bg-white/95 backdrop-blur-md border border-slate-200 rounded flex items-center justify-between text-xs shadow-sm">
-                <div className="flex items-center gap-2 text-slate-600">
-                  <span className="material-symbols-outlined text-steel-600 text-[18px]">straighten</span>
-                  <span className="font-mono font-medium">{t("digitalCallout")}</span>
-                </div>
-                <span className="text-emerald-700 font-mono font-semibold">{t("robustPass")}</span>
-              </div>
             </div>
             <div className="p-3 bg-slate-50 border border-slate-200 flex items-center justify-between rounded">
               <div className="flex items-center gap-2">
