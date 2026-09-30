@@ -155,12 +155,13 @@
       "heading": "프로젝트 견적 요청 & 기술 자료 제출",
       "securityBadge": "SSL 256비트 보안 표준 // NDA 보호",
       "status": {
-        "submitting": "견적 요청을 전송하는 중입니다 (데모, 실제 백엔드 미연동)...",
-        "successTitle": "요청이 전송되었습니다 (데모, 실제 백엔드 미연동)",
-        "successDesc": "이는 1단계에 해당하는 인터페이스 시뮬레이션입니다. 실제 이메일/CRM 처리 기능은 계약의 다음 단계에서 HANIN이 구축할 예정입니다.",
+        "submitting": "견적 요청을 전송하는 중…",
+        "successTitle": "요청이 성공적으로 접수되었습니다",
+        "successDesc": "HANIN 기술 부서가 요청을 확인했으며 이메일 또는 전화로 최대한 빨리 회신드리겠습니다.",
         "successResetCta": "새 요청 작성하기",
         "errorMessage": "필수 항목(*)을 모두 입력하고 NDA 보안 서약에 동의한 후 전송해 주세요.",
-        "errorRetryCta": "다시 시도"
+        "errorRetryCta": "다시 시도",
+        "sendError": "요청을 전송하지 못했습니다. 입력 정보와 첨부 파일(파일당 최대 50MB)을 확인한 후 다시 시도해 주세요."
       },
       "step1": {
         "heading": "고객 & 기업 연락처 정보",

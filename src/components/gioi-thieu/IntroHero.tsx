@@ -1,8 +1,10 @@
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
+import { getBanner } from "@/server/public";
 import PageBreadcrumb from "@/components/layout/PageBreadcrumb";
 
 export default function IntroHero() {
   const t = useTranslations("GioiThieu.IntroHero");
+  const banner = getBanner("gioi-thieu", useLocale(), "https://images.unsplash.com/photo-1720036236855-9a1a2e4d3f26?w=1920&q=80&fm=jpg&fit=crop");
 
   return (
     <section className="relative w-full min-h-screen bg-slate-900 overflow-hidden flex items-center border-b border-slate-200">
@@ -10,10 +12,10 @@ export default function IntroHero() {
       <div
         className="absolute inset-0 bg-cover bg-center"
         role="img"
-        aria-label={t("imageAlt")}
+        aria-label={banner.alt || t("imageAlt")}
         style={{
           backgroundImage:
-            "url('https://images.unsplash.com/photo-1720036236855-9a1a2e4d3f26?w=1920&q=80&fm=jpg&fit=crop')",
+            `url('${banner.image}')`,
         }}
       />
 

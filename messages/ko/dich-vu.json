@@ -406,7 +406,8 @@
       "attachDesc": "지원 형식: PDF, STEP, DWG, IGES (최대 25MB)",
       "chooseFile": "파일 선택",
       "ndaNote": "고객이 제공하는 모든 도면 자료에 대해 NDA 협약에 따른 비밀 유지를 약속드립니다.",
-      "submitButton": "RFQ 견적 요청 제출 확인"
+      "submitButton": "RFQ 견적 요청 제출 확인",
+      "submitError": "요청을 전송하지 못했습니다. 입력 정보와 첨부 파일을 확인한 후 다시 시도해 주세요."
     },
     "RfqFormDetail": {
       "heading": "무전해 니켈 도금(ENP) 사양 & 요구사항 제출",
@@ -444,7 +445,8 @@
       "attachDesc": "지원 형식: STEP, IGES, DWG, PDF (최대 50MB, NDA 보안)",
       "chooseFile": "도면 파일 선택...",
       "ndaNote": "국제 NDA 협약에 따라 기술 도면 데이터의 비밀을 보장합니다.",
-      "submitButton": "ENP 도금 서비스 견적 요청 제출 (24시간 응답)"
+      "submitButton": "ENP 도금 서비스 견적 요청 제출 (24시간 응답)",
+      "submitError": "요청을 전송하지 못했습니다. 입력 정보와 첨부 파일을 확인한 후 다시 시도해 주세요."
     },
     "breadcrumbCategory": "산업용 도금 가공 및 표면처리 서비스",
     "breadcrumbDetailFallback": "서비스 상세"

@@ -13,10 +13,11 @@
     },
     "NewsFilterBar": {
       "searchPlaceholder": "Tìm kiếm chuyên đề kỹ thuật...",
-      "showingCount": "Hiển thị 6 / 48 bài"
+      "showingCount": "Hiển thị {shown} / {total} bài"
     },
     "NewsGrid": {
-      "readMore": "Đọc tiếp"
+      "readMore": "Đọc tiếp",
+      "empty": "Không tìm thấy bài viết phù hợp."
     },
     "NewsInquiryCta": {
       "titlePrefix": "CẦN TRAO ĐỔI VỀ",
@@ -33,14 +34,12 @@
       "titleSuffix": "KỸ THUẬT",
       "description": "Cập nhật hoạt động doanh nghiệp, công nghệ xử lý bề mặt kim loại, quy chuẩn đo kiểm chất lượng và tin kỹ thuật từ nhà máy HANIN.",
       "archiveLabel": "Kho tư liệu",
-      "archiveValue": "68+ Bài viết",
+      "archiveValue": "{count} bài viết",
       "auditLabel": "Kiểm định chuyên sâu",
-      "auditValue": "5 Chuyên mục kỹ thuật"
+      "auditValue": "{count} chuyên mục"
     },
     "NewsPagination": {
-      "showingPrefix": "Hiển thị",
-      "pageInfo": "trang 1 trên 8",
-      "totalInfo": "(Tổng cộng 48 bài viết chuyên ngành)",
+      "summary": "Trang {page} / {pages} (Tổng cộng {total} bài viết)",
       "prev": "Trước",
       "next": "Sau"
     },
@@ -60,9 +59,16 @@
       "title": "Ứng Dụng Công Nghệ Mạ Niken Hóa Học (ENP) Trong Chế Tạo Linh Kiện Bánh Răng & Robot Công Nghiệp Tải Trọng Cao",
       "excerpt": "Phân tích giải pháp kiểm soát độ dày màng mạ đồng nhất trong rãnh ren sâu với dung sai ngặt nghèo ±0.2 µm, tối ưu khả năng chống mài mòn và loại bỏ hiện tượng giòn hydro theo tiêu chuẩn ASTM B733.",
       "metrics": {
-        "0": { "label": "Dung sai độ dày" },
-        "1": { "label": "Độ cứng Vickers" },
-        "2": { "label": "Thử nghiệm muối", "unit": "Giờ" }
+        "0": {
+          "label": "Dung sai độ dày"
+        },
+        "1": {
+          "label": "Độ cứng Vickers"
+        },
+        "2": {
+          "label": "Thử nghiệm muối",
+          "unit": "Giờ"
+        }
       },
       "location": "Dây chuyền mạ tự động Line 4 // KCN Quang Minh",
       "liveLabel": "Phòng R&D HANIN",
@@ -119,6 +125,10 @@
         "author": "Phòng Nhân Sự HR",
         "imageAlt": "Chương trình đào tạo kỹ sư trẻ ngành công nghệ mạ và luyện kim tại nhà máy HANIN (ảnh minh họa)"
       }
+    },
+    "PostDetail": {
+      "backToNews": "Quay lại Tin tức",
+      "related": "Bài viết liên quan"
     }
   }
 }

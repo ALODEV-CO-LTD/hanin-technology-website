@@ -1,36 +1,97 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# HANIN website + CMS
 
-## Getting Started
+Website công ty (Next.js 16, đa ngôn ngữ vi/zh/ko) kèm **CMS quản trị nội dung** tại `/admin`.
+Back-end nằm ngay trong app Next (route handlers + SQLite), không cần dịch vụ/database ngoài.
 
-First, run the development server:
+## Chạy nhanh
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm ci
+npm run db:seed        # tạo data/hanin.db, nạp nội dung sẵn có + tài khoản quản trị đầu tiên
+npm run build && npm run start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- `db:seed` an toàn chạy lại: chỉ nạp vào bảng **đang trống**, không ghi đè nội dung đã sửa trong CMS.
+  `npm run db:seed -- --reset` xoá dịch vụ/sản phẩm/tin/tuyển dụng/banner rồi nạp lại nội dung gốc.
+- Tài khoản đầu tiên lấy từ `ADMIN_EMAIL` / `ADMIN_PASSWORD` (xem `.env.example`). Không đặt mật khẩu thì script tự sinh và ghi vào
+  `data/initial-admin.txt` — đăng nhập, đổi mật khẩu, rồi xoá file đó.
+- Yêu cầu Node ≥ 22.13 (dùng `node:sqlite` có sẵn, không cần build native).
+- Máy dev bị giới hạn sandbox cần `SWC_NATIVE_BINDING_CACHE=<thư mục tuyệt đối>` khi chạy `next build/dev`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## CMS quản trị (`/admin`)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Mục | Nội dung quản lý |
+|---|---|
+| Banner | Ảnh banner đầu trang của 8 trang (chọn ảnh từ thư viện / tải lên), bật-tắt, thứ tự |
+| Dịch vụ gia công mạ | Thẻ dịch vụ + phần đầu trang chi tiết (tên, mô tả, ảnh, mã, nhãn) |
+| Sản phẩm & Dự án | Sản phẩm/dự án, danh mục, thông số nổi bật, thẻ lớn, dự án tiêu biểu |
+| Tin tức | Bài viết (nháp/đã đăng), chuyên mục, ảnh, nội dung, bài tiêu điểm + chỉ số kỹ thuật |
+| Tuyển dụng | Vị trí tuyển dụng (bộ phận, hình thức, lương, hạn nộp, mô tả/yêu cầu/quyền lợi) |
+| Liên hệ & Ứng tuyển | Hộp thư: yêu cầu báo giá + hồ sơ ứng tuyển từ website, trạng thái, ghi chú, tải tệp đính kèm |
+| Nội dung trang | Sửa mọi văn bản cố định của website (tiêu đề, mô tả, nút, footer…) theo từng ngôn ngữ, có nút khôi phục bản gốc |
+| Thư viện ảnh | Tải/xoá ảnh, PDF |
+| Liên kết & mạng xã hội | Zalo, Facebook, YouTube, LinkedIn, Google Maps (link + bản đồ nhúng) |
+| Tài khoản quản trị | (chỉ admin) thêm/khoá/đổi vai trò/đặt lại mật khẩu; vai trò `admin` và `editor` |
 
-## Learn More
+Nội dung đa ngôn ngữ: mỗi trường chữ có 3 bản vi/zh/ko. Ô zh/ko để trống thì website tự dùng tiếng Việt.
+Sau mỗi lần lưu website cập nhật ngay (các trang đều render động, không cần build lại).
 
-To learn more about Next.js, take a look at the following resources:
+## Kiến trúc
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+src/server/            lớp back-end (chỉ chạy trên server)
+  db.ts, schema.ts     kết nối SQLite (WAL) + schema tạo tự động khi mở DB
+  auth.ts              scrypt + phiên đăng nhập (cookie httpOnly, băm token trong DB), chặn CSRF theo Origin
+  cms/resources.ts     ĐỊNH NGHĨA các loại nội dung (trường, nhãn, tuỳ chọn) — thêm trường tại đây
+  cms/crud.ts          CRUD + kiểm tra dữ liệu chung cho mọi loại nội dung
+  content.ts           ghi đè văn bản (bảng content_overrides) lên messages/*.json
+  public.ts            hàm đọc dữ liệu cho website công khai (trả về đúng kiểu cũ của src/lib/*-data.ts)
+  uploads.ts           lưu ảnh (công khai) và tệp khách gửi (riêng tư), kiểm tra chữ ký tệp
+src/app/api/admin/**   REST API cho CMS (yêu cầu đăng nhập)
+src/app/api/inquiries  API công khai nhận form báo giá / liên hệ / ứng tuyển
+src/app/uploads/**     phục vụ ảnh đã tải lên
+src/app/admin/**       giao diện CMS
+scripts/seed.ts        nạp dữ liệu ban đầu (nguồn: scripts/legacy-data/* + messages/*)
+scripts/backup.ts      sao lưu DB + tệp tải lên
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### API
 
-## Deploy on Vercel
+Tất cả `/api/admin/*` cần cookie đăng nhập; request đổi dữ liệu kiểm tra `Origin`. Lỗi trả JSON `{ error, errors? }`.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- `POST /api/admin/login|logout`, `GET /api/admin/me`, `PUT /api/admin/password`
+- `GET|POST /api/admin/{banners|services|products|posts|jobs}` — danh sách (`?q=&page=&pageSize=`) / tạo
+- `GET|PUT|DELETE /api/admin/{resource}/{id}` — PUT nhận cập nhật từng phần
+- `GET /api/admin/inquiries`, `PATCH|DELETE /api/admin/inquiries/{id}`, `GET /api/admin/inquiries/{id}/files/{n}`
+- `GET|PUT /api/admin/content` (`?namespace=`), `GET|PUT /api/admin/settings`
+- `GET|POST /api/admin/media`, `DELETE /api/admin/media/{id}`, `GET|POST /api/admin/users`, `PUT|DELETE /api/admin/users/{id}`
+- Công khai: `POST /api/inquiries` (multipart: `kind` rfq|contact|application, `fullName`, `email`, `phone?`, `company?`, `projectName?`,
+  `platingService?`, `volume?`, `message?`, `files[]`). Giới hạn 6 yêu cầu/10 phút/IP, ô ẩn `website` chống bot, tối đa 5 tệp × 50MB.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Bảo mật
+
+- Mật khẩu băm scrypt; đăng nhập giới hạn 10 lần/15 phút/IP; token phiên chỉ lưu dạng băm; phiên 7 ngày.
+- Tệp khách gửi (bản vẽ theo NDA) lưu ở `DATA_DIR/private`, **không** truy cập công khai — chỉ tải qua API admin.
+- Ảnh tải lên được kiểm tra chữ ký tệp, phục vụ với `nosniff` + CSP sandbox; không nhận SVG.
+- Nội dung bài viết render bằng bộ dựng an toàn (không HTML thô).
+
+## Sao lưu
+
+```bash
+npm run db:backup   # ghi vào $DATA_DIR/backups, giữ 14 bản gần nhất
+```
+
+Nên đặt cron hằng đêm trên server, ví dụ: `0 2 * * * cd /opt/hanin-website && DATA_DIR=/var/lib/hanin-website npm run db:backup`
+và copy `backups/` ra nơi khác.
+
+## Triển khai
+
+`bash deploy/deploy.sh` (xem đầu file): rsync code (bỏ qua `data/`, `.env*`), `npm ci`, `db:seed`, build, restart pm2, cấu hình nginx
+(`client_max_body_size` cho tệp đính kèm). Dữ liệu CMS nằm ở `/var/lib/hanin-website`, không bị ghi đè khi deploy.
+
+## Phạm vi & giới hạn hiện tại
+
+- Các mục kỹ thuật ở **trang chi tiết dịch vụ/sản phẩm** (quy trình, bảng QA, năng lực, thư viện ảnh mẫu…) đang là nội dung mẫu dùng chung
+  cho mọi mục; phần đầu trang (tên, mô tả, ảnh, mã) đã theo từng mục trong CMS. Sửa văn bản mẫu ở “Nội dung trang”.
+- Chưa gửi email thông báo khi có yêu cầu mới (cần SMTP/dịch vụ mail của Bên A); hiện xem trong CMS, có badge số yêu cầu mới.
+- Bài viết tin tức chưa có nội dung thân bài (nguồn gốc chỉ có tiêu đề + tóm tắt); nhập thân bài trong CMS khi Bên A cung cấp.

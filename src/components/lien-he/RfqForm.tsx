@@ -1,7 +1,9 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
+import { usePathname } from "@/i18n/navigation";
+import { submitInquiry } from "@/lib/submit-inquiry";
 
 const PLATING_OPTION_VALUES = ["niken", "crom", "kem", "anodize", "bac", "other"] as const;
 const VOLUME_OPTION_VALUES = ["sample", "pilot", "mass", "oem"] as const;
@@ -37,9 +39,12 @@ const INITIAL_FORM: FormState = {
 
 export default function RfqForm() {
   const t = useTranslations("LienHe.RfqForm");
+  const locale = useLocale();
+  const pathname = usePathname();
   const [form, setForm] = useState<FormState>(INITIAL_FORM);
   const [files, setFiles] = useState<File[]>([]);
   const [status, setStatus] = useState<SubmitStatus>("idle");
+  const [sendFailed, setSendFailed] = useState(false);
 
   function updateField<K extends keyof FormState>(key: K, value: FormState[K]) {
     setForm((prev) => ({ ...prev, [key]: value }));
@@ -50,7 +55,7 @@ export default function RfqForm() {
     setFiles(list ? Array.from(list) : []);
   }
 
-  function handleSubmit(event: FormEvent<HTMLFormElement>) {
+  async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
 
     if (
@@ -61,17 +66,32 @@ export default function RfqForm() {
       !form.platingService ||
       !form.ndaAccepted
     ) {
+      setSendFailed(false);
       setStatus("error");
       return;
     }
 
     setStatus("submitting");
-    console.log("RFQ form submit (demo):", { ...form, files: files.map((f) => f.name) });
+    const data = new FormData();
+    data.set("fullName", form.fullName);
+    data.set("company", form.company);
+    data.set("email", form.email);
+    data.set("phone", form.phone);
+    data.set("projectName", form.projectName);
+    data.set("platingService", form.platingService);
+    data.set("volume", form.volume);
+    data.set("message", form.description);
+    // Ô ẩn chống spam (bot điền vào thì server bỏ qua yêu cầu).
+    data.set("website", (event.currentTarget.elements.namedItem("website") as HTMLInputElement | null)?.value ?? "");
+    files.forEach((file) => data.append("files", file));
 
-    // Demo only, chưa nối backend thật (Phase 1). Phần xử lý gửi email/CRM sẽ triển khai riêng.
-    setTimeout(() => {
+    const result = await submitInquiry(data, { kind: "rfq", locale, source: pathname });
+    if (result.ok) {
       setStatus("success");
-    }, 900);
+    } else {
+      setSendFailed(true);
+      setStatus("error");
+    }
   }
 
   function handleReset() {
@@ -81,7 +101,7 @@ export default function RfqForm() {
   }
 
   return (
-    <section className="w-full bg-white py-space-xl scroll-mt-20" id="rfq-form">
+    <section className="w-full bg-slate-50 py-space-xl scroll-mt-20" id="rfq-form">
       <div className="mx-auto px-margin">
         <div className="bg-white border border-slate-200 rounded shadow-lg overflow-hidden">
           {/* Form header ribbon */}
@@ -136,7 +156,7 @@ export default function RfqForm() {
                 <div className="p-space-md bg-red-50 text-red-800 rounded border-l-4 border-red-600 flex items-center justify-between gap-3">
                   <div className="flex items-center gap-3">
                     <span className="material-symbols-outlined text-red-600 text-[24px]">error</span>
-                    <span className="text-body-md font-semibold">{t("status.errorMessage")}</span>
+                    <span className="text-body-md font-semibold">{sendFailed ? t("status.sendError") : t("status.errorMessage")}</span>
                   </div>
                   <button
                     type="button"
@@ -152,6 +172,7 @@ export default function RfqForm() {
 
           {/* Main form body */}
           <form className="p-space-xl flex flex-col gap-space-xl" onSubmit={handleSubmit}>
+            <input type="text" name="website" tabIndex={-1} autoComplete="off" aria-hidden="true" className="hidden" />
             {/* Step 1: Corporate & contact info */}
             <div>
               <div className="flex items-center gap-3 mb-space-lg bg-slate-50 px-space-md py-space-sm rounded">

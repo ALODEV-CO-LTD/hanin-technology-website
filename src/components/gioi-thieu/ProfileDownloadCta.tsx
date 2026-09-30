@@ -4,7 +4,7 @@ export default function ProfileDownloadCta() {
   const t = useTranslations("GioiThieu.ProfileDownloadCta");
 
   return (
-    <section className="w-full bg-[#f8fafc] py-space-xl border-t border-slate-200">
+    <section className="w-full bg-slate-50 py-space-xl border-t border-slate-200">
       <div className="mx-auto px-margin">
         {/* High Contrast Industrial Block */}
         <div className="p-space-lg md:p-space-xl rounded-lg bg-white border border-slate-200 shadow-xl relative overflow-hidden">

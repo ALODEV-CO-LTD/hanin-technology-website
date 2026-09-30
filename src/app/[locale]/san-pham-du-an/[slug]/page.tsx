@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
-import { getTranslations } from "next-intl/server";
-import { PRODUCT_SLUGS, getProducts, getProductBySlug } from "@/lib/products-data";
+import { notFound } from "next/navigation";
+import { getLocale, getTranslations } from "next-intl/server";
+import { getProductBySlug } from "@/server/public";
 import ProductBreadcrumbBar from "@/components/san-pham/ProductBreadcrumbBar";
 import ProductHero from "@/components/san-pham/ProductHero";
 import ProductGallery from "@/components/san-pham/ProductGallery";
@@ -15,15 +16,11 @@ type PageProps = {
   params: Promise<{ slug: string }>;
 };
 
-export async function generateStaticParams() {
-  return PRODUCT_SLUGS.map((slug) => ({ slug }));
-}
-
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;
   const t = await getTranslations("SanPham");
-  const products = getProducts(t);
-  const product = getProductBySlug(products, slug) ?? products[0];
+  const product = getProductBySlug(slug, await getLocale(), t);
+  if (!product) return {};
 
   return {
     title: `${product.title}`,
@@ -34,11 +31,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 export default async function ProductDetailPage({ params }: PageProps) {
   const { slug } = await params;
   const t = await getTranslations("SanPham");
-  const products = getProducts(t);
-  // Hiện chỉ có 1 bộ nội dung chi tiết kỹ thuật mẫu (PRODUCT_DETAIL_CONTENT),
-  // nên khi slug không khớp sản phẩm cụ thể nào trong danh mục, trang sẽ
-  // fallback về sản phẩm mẫu đầu tiên để vẫn hiển thị đầy đủ nội dung.
-  const product = getProductBySlug(products, slug) ?? products[0];
+  const product = getProductBySlug(slug, await getLocale(), t);
+  if (!product) notFound();
+  // Phần định danh (tiêu đề, breadcrumb) lấy từ CMS; các mục chi tiết kỹ thuật còn lại là
+  // nội dung mẫu dùng chung từ messages, chỉnh sửa qua màn hình "Nội dung trang" của CMS.
 
   return (
     <div className="flex flex-col w-full">

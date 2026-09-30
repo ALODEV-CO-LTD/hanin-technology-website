@@ -10,7 +10,7 @@ export default function DevelopmentDirection() {
   ] as const;
 
   return (
-    <section className="w-full bg-[#f8fafc] py-space-xl">
+    <section className="w-full bg-slate-50 py-space-xl">
       <div className="mx-auto px-margin">
         {/* Section Layout: Split Header */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-gutter mb-space-xl">

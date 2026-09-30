@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "db:seed": "node --disable-warning=ExperimentalWarning --import tsx scripts/seed.ts",
+    "db:backup": "node --disable-warning=ExperimentalWarning --import tsx scripts/backup.ts",
+    "db:create-admin": "node --disable-warning=ExperimentalWarning --import tsx scripts/create-admin.ts"
   },
   "dependencies": {
     "next": "16.3.7",
@@ -16,12 +19,13 @@
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
-    "@types/node": "^20",
+    "@types/node": "^22.20.4",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.3.7",
     "tailwindcss": "^4",
+    "tsx": "^4.23.15",
     "typescript": "^5"
   }
 }

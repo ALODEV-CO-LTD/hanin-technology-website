@@ -1,18 +1,20 @@
 import Link from "next/link";
-import { useTranslations } from "next-intl";
-import { getProducts, type Product } from "@/lib/products-data";
+import { useLocale, useTranslations } from "next-intl";
+import type { Product } from "@/lib/products-data";
+import { getProducts } from "@/server/public";
 
 export default function RelatedProjects({ currentSlug }: { currentSlug: string }) {
   const tp = useTranslations("SanPham");
+  const locale = useLocale();
   const t = useTranslations("SanPham.RelatedProjects");
-  const related: Product[] = getProducts(tp)
+  const related: Product[] = getProducts(locale, tp)
     .filter((product) => product.showInGrid && product.slug !== currentSlug)
     .slice(0, 3);
 
   if (related.length === 0) return null;
 
   return (
-    <section className="w-full bg-slate-50 py-space-xl border-b border-slate-200">
+    <section className="w-full bg-white py-space-xl border-b border-slate-200">
       <div className="mx-auto px-margin">
         <div className="mb-space-lg">
           <h2 className="text-headline-lg text-slate-900 uppercase tracking-tight">

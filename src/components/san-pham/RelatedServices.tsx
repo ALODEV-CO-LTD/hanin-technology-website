@@ -7,7 +7,7 @@ export default function RelatedServices() {
   const { relatedServices } = getProductDetailContent(tp);
 
   return (
-    <section className="w-full bg-white py-space-xl border-b border-slate-200">
+    <section className="w-full bg-slate-50 py-space-xl border-b border-slate-200">
       <div className="mx-auto px-margin">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-space-sm mb-space-lg">
           <div>

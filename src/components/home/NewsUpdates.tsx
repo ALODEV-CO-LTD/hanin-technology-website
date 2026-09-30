@@ -1,15 +1,13 @@
-import Link from "next/link";
-import { useTranslations } from "next-intl";
-
-const ARTICLE_KEYS = ["0", "1", "2"] as const;
-const YEARS: Record<(typeof ARTICLE_KEYS)[number], string> = {
-  "0": "2025",
-  "1": "2025",
-  "2": "2025",
-};
+import { useLocale, useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
+import { getPosts } from "@/server/public";
 
 export default function NewsUpdates() {
   const t = useTranslations("Home.NewsUpdates");
+  const tTinTuc = useTranslations("TinTuc");
+  const locale = useLocale();
+  const posts = getPosts(locale, tTinTuc, { limit: 3 });
+  if (posts.length === 0) return null;
 
   return (
     <section className="w-full py-space-xl bg-slate-50">
@@ -28,22 +26,23 @@ export default function NewsUpdates() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-gutter">
-          {ARTICLE_KEYS.map((key) => (
-            <article
-              key={key}
+          {posts.map((post) => (
+            <Link
+              key={post.id}
+              href={`/tin-tuc/${post.id}`}
               className="p-space-lg bg-white border border-slate-200 rounded shadow-sm hover:shadow-xl hover:border-steel-300 transition-all duration-200 flex flex-col justify-between group"
             >
               <div className="flex flex-col gap-space-sm">
                 <div className="flex items-center justify-between text-slate-500">
                   <span className="text-[10px] px-2 py-0.5 rounded bg-steel-50 text-steel-700 uppercase font-semibold">
-                    {t(`articles.${key}.tag`)}
+                    {post.categoryLabel}
                   </span>
-                  <span className="text-xs font-mono">{YEARS[key]}</span>
+                  <span className="text-xs font-mono">{post.isoDate.slice(0, 4)}</span>
                 </div>
                 <h3 className="text-title-md text-slate-900 font-bold group-hover:text-steel-600 transition-colors leading-snug">
-                  {t(`articles.${key}.title`)}
+                  {post.title}
                 </h3>
-                <p className="text-body-sm text-slate-600 leading-relaxed">{t(`articles.${key}.excerpt`)}</p>
+                <p className="text-body-sm text-slate-600 leading-relaxed">{post.excerpt}</p>
               </div>
               <div className="pt-space-md flex items-center gap-2 text-steel-600 text-[11px] uppercase tracking-wider font-semibold">
                 <span>{t("readMore")}</span>
@@ -51,7 +50,7 @@ export default function NewsUpdates() {
                   east
                 </span>
               </div>
-            </article>
+            </Link>
           ))}
         </div>
       </div>

@@ -1,8 +1,10 @@
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
+import { getBanner } from "@/server/public";
 import PageBreadcrumb from "@/components/layout/PageBreadcrumb";
 
 export default function CapabilityHero() {
   const t = useTranslations("NangLuc.CapabilityHero");
+  const banner = getBanner("nang-luc", useLocale(), "https://images.unsplash.com/photo-1652204775379-2b4ace437a2d?w=1920&q=80&fm=jpg&fit=crop");
 
   return (
     <section className="relative w-full min-h-screen overflow-hidden bg-slate-900 border-b border-slate-200 flex items-center">
@@ -10,7 +12,7 @@ export default function CapabilityHero() {
         className="absolute inset-0 bg-cover bg-center"
         style={{
           backgroundImage:
-            "url('https://images.unsplash.com/photo-1652204775379-2b4ace437a2d?w=1920&q=80&fm=jpg&fit=crop')",
+            `url('${banner.image}')`,
         }}
       />
 

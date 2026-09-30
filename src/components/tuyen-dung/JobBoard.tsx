@@ -1,22 +1,24 @@
 "use client";
 
 import { useMemo, useState, type FormEvent } from "react";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
+import { submitInquiry } from "@/lib/submit-inquiry";
 import {
   getDepartmentOptions,
-  getJobs,
   getLocationOptions,
   getTypeOptions,
+  type Job,
   type JobDepartment,
   type JobLocation,
   type JobType,
 } from "@/lib/jobs-data";
 
-type SelectedJob = { title: string; department: string } | null;
+type SelectedJob = { id: string; title: string; department: string } | null;
 
-export default function JobBoard() {
+export default function JobBoard({ jobs }: { jobs: Job[] }) {
   const t = useTranslations("TuyenDung");
   const tb = useTranslations("TuyenDung.JobBoard");
+  const locale = useLocale();
 
   const [query, setQuery] = useState("");
   const [department, setDepartment] = useState<"all" | JobDepartment>("all");
@@ -24,8 +26,10 @@ export default function JobBoard() {
   const [location, setLocation] = useState<"all" | JobLocation>("all");
   const [selectedJob, setSelectedJob] = useState<SelectedJob>(null);
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState("");
 
-  const JOBS = useMemo(() => getJobs(t), [t]);
+  const JOBS = jobs;
   const DEPARTMENT_OPTIONS = useMemo(() => getDepartmentOptions(t), [t]);
   const TYPE_OPTIONS = useMemo(() => getTypeOptions(t), [t]);
   const LOCATION_OPTIONS = useMemo(() => getLocationOptions(t), [t]);
@@ -49,17 +53,34 @@ export default function JobBoard() {
     setLocation("all");
   }
 
-  function openApplyModal(title: string, dept: string) {
+  function openApplyModal(job: Job) {
     setSubmitted(false);
-    setSelectedJob({ title, department: dept });
+    setSubmitError("");
+    setSelectedJob({ id: job.id, title: job.title, department: job.departmentLabel });
   }
 
   function closeApplyModal() {
     setSelectedJob(null);
   }
 
-  function handleApplySubmit(e: FormEvent<HTMLFormElement>) {
+  async function handleApplySubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
+    if (!selectedJob || submitting) return;
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+    formData.set("projectName", selectedJob.title);
+    setSubmitting(true);
+    setSubmitError("");
+    const result = await submitInquiry(formData, {
+      kind: "application",
+      locale,
+      source: `job:${selectedJob.id}`,
+    });
+    setSubmitting(false);
+    if (!result.ok) {
+      setSubmitError(tb("submitError"));
+      return;
+    }
     setSubmitted(true);
     setTimeout(() => {
       setSelectedJob(null);
@@ -226,7 +247,7 @@ export default function JobBoard() {
                 </span>
                 <button
                   type="button"
-                  onClick={() => openApplyModal(job.title, job.departmentLabel)}
+                  onClick={() => openApplyModal(job)}
                   className="inline-flex items-center gap-2 px-space-md py-space-sm bg-steel-600 hover:bg-steel-700 text-white text-title-md rounded shadow-sm transition-colors uppercase tracking-wider"
                 >
                   <span>{tb("applyNow")}</span>
@@ -276,6 +297,7 @@ export default function JobBoard() {
                   <input
                     className="h-10 px-space-sm rounded border border-slate-200 bg-slate-50 text-slate-900 text-body-md focus:outline-none focus:ring-2 focus:ring-steel-600/40"
                     placeholder={tb("fullNamePlaceholder")}
+                    name="fullName"
                     required
                     type="text"
                   />
@@ -288,6 +310,7 @@ export default function JobBoard() {
                     <input
                       className="h-10 px-space-sm rounded border border-slate-200 bg-slate-50 text-slate-900 text-body-md focus:outline-none focus:ring-2 focus:ring-steel-600/40"
                       placeholder={tb("phonePlaceholder")}
+                      name="phone"
                       required
                       type="tel"
                     />
@@ -297,6 +320,7 @@ export default function JobBoard() {
                     <input
                       className="h-10 px-space-sm rounded border border-slate-200 bg-slate-50 text-slate-900 text-body-md focus:outline-none focus:ring-2 focus:ring-steel-600/40"
                       placeholder={tb("emailPlaceholder")}
+                      name="email"
                       required
                       type="email"
                     />
@@ -306,11 +330,11 @@ export default function JobBoard() {
                   <label className="text-label-sm text-slate-500 uppercase font-semibold">
                     {tb("experienceLabel")}
                   </label>
-                  <select className="h-10 px-space-sm rounded border border-slate-200 bg-slate-50 text-slate-900 text-body-md focus:outline-none focus:ring-2 focus:ring-steel-600/40">
-                    <option>{tb("experienceOptions.fresh")}</option>
-                    <option>{tb("experienceOptions.one_two")}</option>
-                    <option>{tb("experienceOptions.three_five")}</option>
-                    <option>{tb("experienceOptions.above_five")}</option>
+                  <select name="experience" className="h-10 px-space-sm rounded border border-slate-200 bg-slate-50 text-slate-900 text-body-md focus:outline-none focus:ring-2 focus:ring-steel-600/40">
+                    <option value={tb("experienceOptions.fresh")}>{tb("experienceOptions.fresh")}</option>
+                    <option value={tb("experienceOptions.one_two")}>{tb("experienceOptions.one_two")}</option>
+                    <option value={tb("experienceOptions.three_five")}>{tb("experienceOptions.three_five")}</option>
+                    <option value={tb("experienceOptions.above_five")}>{tb("experienceOptions.above_five")}</option>
                   </select>
                 </div>
                 <div className="flex flex-col gap-1">
@@ -321,7 +345,7 @@ export default function JobBoard() {
                     <span className="material-symbols-outlined text-steel-600 text-[28px]">upload_file</span>
                     <span className="text-body-md text-slate-900">{tb("cvDropText")}</span>
                     <span className="text-label-sm text-slate-500">{tb("cvSizeNote")}</span>
-                    <input className="hidden" required type="file" />
+                    <input className="hidden" name="files" required type="file" accept=".pdf,.doc,.docx,.jpg,.jpeg,.png,.zip" />
                   </label>
                 </div>
                 <div className="flex flex-col gap-1">
@@ -330,10 +354,16 @@ export default function JobBoard() {
                   </label>
                   <textarea
                     className="p-space-sm rounded border border-slate-200 bg-slate-50 text-slate-900 text-body-md focus:outline-none focus:ring-2 focus:ring-steel-600/40"
+                    name="message"
                     placeholder={tb("messagePlaceholder")}
                     rows={3}
                   />
                 </div>
+                {submitError && (
+                  <div role="alert" className="p-space-sm rounded bg-red-50 text-red-700 text-body-sm">
+                    {submitError}
+                  </div>
+                )}
                 <div className="pt-1 flex items-center justify-end gap-space-sm">
                   <button
                     type="button"
@@ -344,9 +374,10 @@ export default function JobBoard() {
                   </button>
                   <button
                     type="submit"
-                    className="px-space-md py-space-sm rounded bg-steel-600 text-white hover:bg-steel-700 text-title-md uppercase tracking-wider transition-colors"
+                    disabled={submitting}
+                    className="px-space-md py-space-sm rounded bg-steel-600 text-white hover:bg-steel-700 text-title-md uppercase tracking-wider transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
                   >
-                    {tb("submitButton")}
+                    {submitting ? tb("submitting") : tb("submitButton")}
                   </button>
                 </div>
               </form>

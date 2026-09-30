@@ -1,4 +1,5 @@
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
+import { getBanner } from "@/server/public";
 import PageBreadcrumb from "@/components/layout/PageBreadcrumb";
 
 const SPEC_HIGHLIGHT_KEYS = ["nda", "cad", "consulting"] as const;
@@ -10,6 +11,7 @@ const SPEC_HIGHLIGHT_ICONS: Record<(typeof SPEC_HIGHLIGHT_KEYS)[number], string>
 
 export default function ContactHero() {
   const t = useTranslations("LienHe.ContactHero");
+  const banner = getBanner("lien-he", useLocale(), "https://images.unsplash.com/photo-1595798896730-9fdf2e709649?w=1920&q=80&fm=jpg&fit=crop");
 
   return (
     <section className="relative w-full min-h-screen bg-slate-900 overflow-hidden flex items-center border-b border-slate-200">
@@ -17,10 +19,10 @@ export default function ContactHero() {
       <div
         className="absolute inset-0 bg-cover bg-center"
         role="img"
-        aria-label={t("imageAlt")}
+        aria-label={banner.alt || t("imageAlt")}
         style={{
           backgroundImage:
-            "url('https://images.unsplash.com/photo-1595798896730-9fdf2e709649?w=1920&q=80&fm=jpg&fit=crop')",
+            `url('${banner.image}')`,
         }}
       />
 

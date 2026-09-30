@@ -406,7 +406,8 @@
       "attachDesc": "支持格式：PDF、STEP、DWG、IGES（最大 25MB）",
       "chooseFile": "选择文件",
       "ndaNote": "对客户提交的所有图纸资料承诺按 NDA 协议保密。",
-      "submitButton": "确认提交 RFQ 报价申请"
+      "submitButton": "确认提交 RFQ 报价申请",
+      "submitError": "请求发送失败，请检查填写信息或附件后重试。"
     },
     "RfqFormDetail": {
       "heading": "提交化学镀镍（ENP）技术参数与需求",
@@ -444,7 +445,8 @@
       "attachDesc": "支持 STEP、IGES、DWG、PDF（最大 50MB，NDA 保密）",
       "chooseFile": "选择图纸文件...",
       "ndaNote": "承诺按国际 NDA 协议对技术图纸数据保密。",
-      "submitButton": "提交 ENP 电镀服务报价申请（24 小时响应）"
+      "submitButton": "提交 ENP 电镀服务报价申请（24 小时响应）",
+      "submitError": "请求发送失败，请检查填写信息或附件后重试。"
     },
     "breadcrumbCategory": "工业电镀加工与表面处理服务",
     "breadcrumbDetailFallback": "服务详情"

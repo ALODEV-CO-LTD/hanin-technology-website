@@ -12,7 +12,7 @@ export default function DetailApplications() {
 
   return (
     <section className="w-full mb-space-xl">
-      <div className="bg-white border border-slate-200 p-space-lg rounded shadow-sm">
+      <div className="bg-slate-50 border border-slate-200 p-space-lg rounded shadow-sm">
         <div className="flex flex-col md:flex-row md:items-end justify-between pb-space-md mb-space-md gap-space-sm">
           <div>
             <h2 className="text-headline-md text-slate-900 tracking-tight uppercase font-bold">{t("heading")}</h2>

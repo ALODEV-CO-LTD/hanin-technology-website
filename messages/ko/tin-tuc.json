@@ -13,10 +13,11 @@
     },
     "NewsFilterBar": {
       "searchPlaceholder": "기술 주제 검색...",
-      "showingCount": "6 / 48건 표시 중"
+      "showingCount": "{shown} / {total}건 표시 중"
     },
     "NewsGrid": {
-      "readMore": "더 읽기"
+      "readMore": "더 읽기",
+      "empty": "일치하는 게시물이 없습니다."
     },
     "NewsInquiryCta": {
       "titlePrefix": "궁금하신",
@@ -33,14 +34,12 @@
       "titleSuffix": "안내",
       "description": "HANIN 공장의 기업 활동, 금속 표면처리 기술, 품질 검사 규정 및 최신 기술 소식을 확인하세요.",
       "archiveLabel": "자료 보관소",
-      "archiveValue": "68+ 게시물",
+      "archiveValue": "{count}개 게시물",
       "auditLabel": "전문 기술 검증",
-      "auditValue": "5개 기술 전문 카테고리"
+      "auditValue": "{count}개 카테고리"
     },
     "NewsPagination": {
-      "showingPrefix": "표시 중:",
-      "pageInfo": "1 / 8 페이지",
-      "totalInfo": "(전문 기사 총 48건)",
+      "summary": "{page} / {pages} 페이지 (총 {total}건)",
       "prev": "이전",
       "next": "다음"
     },
@@ -60,9 +59,16 @@
       "title": "고하중 산업용 기어 및 로봇 부품 제조를 위한 무전해 니켈 도금(ENP) 기술 적용",
       "excerpt": "깊은 나사산 홈 내 균일한 도금막 두께를 ±0.2 µm의 엄격한 공차로 제어하는 솔루션을 분석하고, ASTM B733 기준에 따라 내마모성을 최적화하며 수소취성 현상을 제거합니다.",
       "metrics": {
-        "0": { "label": "두께 공차" },
-        "1": { "label": "비커스 경도" },
-        "2": { "label": "염수 시험", "unit": "시간" }
+        "0": {
+          "label": "두께 공차"
+        },
+        "1": {
+          "label": "비커스 경도"
+        },
+        "2": {
+          "label": "염수 시험",
+          "unit": "시간"
+        }
       },
       "location": "4호 자동 도금 라인 // 꽝민 공단",
       "liveLabel": "HANIN R&D 센터",
@@ -119,6 +125,10 @@
         "author": "인사팀",
         "imageAlt": "HANIN 공장의 도금 및 야금 기술 청년 엔지니어 양성 프로그램(예시 이미지)"
       }
+    },
+    "PostDetail": {
+      "backToNews": "뉴스로 돌아가기",
+      "related": "관련 게시물"
     }
   }
 }

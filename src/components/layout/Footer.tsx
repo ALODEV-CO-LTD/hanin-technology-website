@@ -1,8 +1,16 @@
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
+import { getSettings } from "@/server/settings";
 
 export default function Footer() {
   const t = useTranslations("Footer");
+  const { zaloUrl, mapsUrl, facebookUrl, youtubeUrl, linkedinUrl } = getSettings();
+  const externalLinkClass = "text-label-technical text-sky-700 hover:underline";
+  const socialLinks = [
+    { label: "Facebook", href: facebookUrl },
+    { label: "YouTube", href: youtubeUrl },
+    { label: "LinkedIn", href: linkedinUrl },
+  ].filter((link) => link.href);
 
   const companyLinks = [
     { label: t("companyLinks.trangChu"), href: "/" },
@@ -99,14 +107,35 @@ export default function Footer() {
                 {t("hours")}
               </p>
               <div className="flex items-center gap-space-sm pt-space-xs">
-                <Link href="/lien-he" className="text-label-technical text-sky-700 hover:underline">
-                  {t("zaloChat")}
-                </Link>
+                {zaloUrl ? (
+                  <a href={zaloUrl} target="_blank" rel="noopener noreferrer" className={externalLinkClass}>
+                    {t("zaloChat")}
+                  </a>
+                ) : (
+                  <Link href="/lien-he" className={externalLinkClass}>
+                    {t("zaloChat")}
+                  </Link>
+                )}
                 <span className="text-slate-300">•</span>
-                <Link href="/lien-he" className="text-label-technical text-sky-700 hover:underline">
-                  {t("googleMaps")}
-                </Link>
+                {mapsUrl ? (
+                  <a href={mapsUrl} target="_blank" rel="noopener noreferrer" className={externalLinkClass}>
+                    {t("googleMaps")}
+                  </a>
+                ) : (
+                  <Link href="/lien-he" className={externalLinkClass}>
+                    {t("googleMaps")}
+                  </Link>
+                )}
               </div>
+              {socialLinks.length > 0 && (
+                <div className="flex flex-wrap items-center gap-space-sm">
+                  {socialLinks.map((link) => (
+                    <a key={link.label} href={link.href} target="_blank" rel="noopener noreferrer" className={externalLinkClass}>
+                      {link.label}
+                    </a>
+                  ))}
+                </div>
+              )}
             </div>
           </div>
         </div>

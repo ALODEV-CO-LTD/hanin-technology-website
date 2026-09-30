@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
+import { getLocale, getTranslations } from "next-intl/server";
 import NewsBanner from "@/components/tin-tuc/NewsBanner";
 import NewsIntro from "@/components/tin-tuc/NewsIntro";
 import FeaturedArticle from "@/components/tin-tuc/FeaturedArticle";
-import NewsFilterBar from "@/components/tin-tuc/NewsFilterBar";
-import NewsGrid from "@/components/tin-tuc/NewsGrid";
-import NewsPagination from "@/components/tin-tuc/NewsPagination";
+import NewsBrowser from "@/components/tin-tuc/NewsBrowser";
 import NewsInquiryCta from "@/components/tin-tuc/NewsInquiryCta";
 import Reveal from "@/components/ui/Reveal";
+import { getNewsCategories } from "@/lib/news-data";
+import { getPostCounts, getPosts } from "@/server/public";
 
 export const metadata: Metadata = {
   title: "Tin tức & Bản tin kỹ thuật",
@@ -14,15 +15,32 @@ export const metadata: Metadata = {
     "Cập nhật tin tức doanh nghiệp, công nghệ xử lý bề mặt kim loại, quy chuẩn đo kiểm chất lượng và hoạt động sản xuất mới nhất.",
 };
 
-export default function TinTucPage() {
+export default async function TinTucPage() {
+  const locale = await getLocale();
+  const t = await getTranslations("TinTuc");
+  const counts = getPostCounts();
+  const posts = getPosts(locale, t).map((p) => ({
+    id: p.id,
+    categoryKey: p.categoryKey,
+    categoryLabel: p.categoryLabel,
+    categoryColorClass: p.categoryColorClass,
+    techBadge: p.techBadge,
+    date: p.date,
+    readTime: p.readTime,
+    title: p.title,
+    excerpt: p.excerpt,
+    author: p.author,
+    image: p.image,
+    imageAlt: p.imageAlt,
+  }));
+  const categories = getNewsCategories(t).map((c) => ({ ...c, count: counts[c.key] ?? 0 }));
+
   return (
     <div className="flex flex-col w-full text-slate-900">
       <NewsBanner />
       <NewsIntro />
       <Reveal direction="right"><FeaturedArticle /></Reveal>
-      <Reveal><NewsFilterBar /></Reveal>
-      <Reveal><NewsGrid /></Reveal>
-      <Reveal><NewsPagination /></Reveal>
+      <Reveal><NewsBrowser posts={posts} categories={categories} /></Reveal>
       <Reveal direction="left"><NewsInquiryCta /></Reveal>
     </div>
   );

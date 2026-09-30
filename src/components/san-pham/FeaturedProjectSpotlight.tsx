@@ -1,14 +1,17 @@
 import Link from "next/link";
-import { useTranslations } from "next-intl";
-import { getProducts, getSpotlightProject } from "@/lib/products-data";
+import { useLocale, useTranslations } from "next-intl";
+import { getSpotlightProduct } from "@/server/public";
 
 export default function FeaturedProjectSpotlight() {
   const t = useTranslations("SanPham");
   const tc = useTranslations("SanPham.FeaturedProjectSpotlight");
-  const project = getSpotlightProject(getProducts(t));
+  const locale = useLocale();
+  const project = getSpotlightProduct(locale, t);
+
+  if (!project) return null;
 
   return (
-    <section className="w-full bg-slate-100 border-y border-slate-200 py-space-xl overflow-hidden">
+    <section className="w-full bg-white border-y border-slate-200 py-space-xl overflow-hidden">
       <div className="mx-auto px-margin">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center bg-white border border-slate-200 rounded overflow-hidden shadow-md">
           <div className="lg:col-span-7 relative min-h-[380px] lg:min-h-[520px] h-full overflow-hidden bg-slate-100">

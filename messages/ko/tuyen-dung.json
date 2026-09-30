@@ -87,12 +87,14 @@
       },
       "cvLabel": "이력서 첨부 (PDF, DOCX) *",
       "cvDropText": "파일을 끌어다 놓거나 클릭하여 이력서 선택",
-      "cvSizeNote": "최대 15MB (.pdf, .doc, .docx)",
+      "cvSizeNote": "파일당 최대 50MB (.pdf, .doc, .docx, .jpg, .png, .zip)",
       "messageLabel": "메시지 / 자기소개",
       "messagePlaceholder": "본인의 기술적 강점이나 커리어 목표를 간략히 작성해 주세요...",
       "cancelButton": "취소",
       "submitButton": "지원서 제출",
-      "submitSuccess": "✓ 지원서가 성공적으로 접수되었습니다. HANIN 인사팀이 48시간 이내에 연락드리겠습니다!"
+      "submitSuccess": "✓ 지원서가 성공적으로 접수되었습니다. HANIN 인사팀이 48시간 이내에 연락드리겠습니다!",
+      "submitError": "지원서 제출에 실패했습니다. 입력 정보와 첨부 파일을 확인한 후 다시 시도해 주세요.",
+      "submitting": "제출 중..."
     },
     "WorkEnvironment": {
       "title": "실제 근무 환경 이미지",

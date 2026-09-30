@@ -1,14 +1,14 @@
 import Link from "next/link";
-import { useTranslations } from "next-intl";
-import { getRelatedServices } from "@/lib/services-data";
+import { useLocale, useTranslations } from "next-intl";
+import { getRelatedServices } from "@/server/public";
 
 export default function RelatedServices({ currentSlug }: { currentSlug: string }) {
-  const t = useTranslations("DichVu");
+  const locale = useLocale();
   const tr = useTranslations("DichVu.RelatedServices");
-  const related = getRelatedServices(t, currentSlug, 3);
+  const related = getRelatedServices(currentSlug, locale, 3);
 
   return (
-    <section className="w-full mb-space-lg">
+    <section className="w-full bg-slate-50 mb-space-lg">
       <div className="flex items-center justify-between pb-space-sm mb-space-md flex-wrap gap-space-sm">
         <div>
           <h3 className="text-headline-sm text-slate-900 tracking-tight uppercase font-bold">{tr("heading")}</h3>

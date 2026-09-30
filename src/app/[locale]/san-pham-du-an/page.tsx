@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { getLocale, getTranslations } from "next-intl/server";
+import { getProducts } from "@/server/public";
 import CategoryHero from "@/components/san-pham/CategoryHero";
 import ProductCatalog from "@/components/san-pham/ProductCatalog";
 import FeaturedProjectSpotlight from "@/components/san-pham/FeaturedProjectSpotlight";
@@ -12,11 +14,13 @@ export const metadata: Metadata = {
     "Sản phẩm và dự án gia công mạ kim loại kỹ thuật cao: kiểm soát dung sai micron, độ đồng đều lớp phủ và độ bền môi trường khắt khe.",
 };
 
-export default function SanPhamDuAnPage() {
+export default async function SanPhamDuAnPage() {
+  const products = getProducts(await getLocale(), await getTranslations("SanPham"));
+
   return (
     <div className="flex flex-col w-full">
       <CategoryHero />
-      <Reveal><ProductCatalog /></Reveal>
+      <Reveal><ProductCatalog products={products} /></Reveal>
       <Reveal direction="right"><FeaturedProjectSpotlight /></Reveal>
       <Reveal><SpecTrustNote /></Reveal>
       <Reveal><ProductsCta /></Reveal>

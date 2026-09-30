@@ -1,7 +1,11 @@
 import { useTranslations } from "next-intl";
+import { getPostCounts } from "@/server/public";
 
 export default function NewsIntro() {
   const t = useTranslations("TinTuc.NewsIntro");
+  const counts = getPostCounts();
+  const total = counts.all ?? 0;
+  const categoryCount = Object.entries(counts).filter(([k, n]) => k !== "all" && n > 0).length;
 
   return (
     <section className="w-full bg-white">
@@ -19,7 +23,7 @@ export default function NewsIntro() {
               <div className="flex flex-col">
                 <span className="text-label-sm text-slate-500 uppercase">{t("archiveLabel")}</span>
                 <span className="text-headline-sm text-slate-900 font-bold">
-                  {t("archiveValue")}
+                  {t("archiveValue", { count: total })}
                 </span>
               </div>
               <div className="w-10 h-10 rounded-full bg-steel-100 flex items-center justify-center text-steel-600">
@@ -30,7 +34,7 @@ export default function NewsIntro() {
               <div className="flex flex-col">
                 <span className="text-label-sm text-slate-500 uppercase">{t("auditLabel")}</span>
                 <span className="text-headline-sm text-slate-900 font-bold">
-                  {t("auditValue")}
+                  {t("auditValue", { count: categoryCount })}
                 </span>
               </div>
               <div className="w-10 h-10 rounded-full bg-steel-100 flex items-center justify-center text-steel-600">

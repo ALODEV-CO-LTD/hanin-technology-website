@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { getTranslations } from "next-intl/server";
+import { notFound } from "next/navigation";
+import { getLocale, getTranslations } from "next-intl/server";
 import PageBreadcrumb from "@/components/layout/PageBreadcrumb";
 import DetailHero from "@/components/dich-vu/DetailHero";
 import DetailOverview from "@/components/dich-vu/DetailOverview";
@@ -10,7 +11,7 @@ import DetailQaTable from "@/components/dich-vu/DetailQaTable";
 import DetailGallery from "@/components/dich-vu/DetailGallery";
 import RfqFormDetail from "@/components/dich-vu/RfqFormDetail";
 import RelatedServices from "@/components/dich-vu/RelatedServices";
-import { DETAIL_TEMPLATE_SLUG, getServiceBySlug } from "@/lib/services-data";
+import { getServiceBySlug } from "@/server/public";
 import Reveal from "@/components/ui/Reveal";
 
 type PageParams = { slug: string };
@@ -21,15 +22,9 @@ export async function generateMetadata({
   params: Promise<PageParams>;
 }): Promise<Metadata> {
   const { slug } = await params;
-  const t = await getTranslations("DichVu");
-  const service = getServiceBySlug(t, slug) ?? getServiceBySlug(t, DETAIL_TEMPLATE_SLUG);
-
-  return {
-    title: `${service?.title ?? "Dịch Vụ Gia Công Mạ"}`,
-    description:
-      service?.description ??
-      "Chi tiết dịch vụ gia công mạ và xử lý bề mặt kim loại công nghiệp.",
-  };
+  const service = getServiceBySlug(slug, await getLocale());
+  if (!service) return {};
+  return { title: service.title, description: service.description };
 }
 
 export default async function DichVuChiTietPage({
@@ -40,9 +35,11 @@ export default async function DichVuChiTietPage({
   const { slug } = await params;
   const t = await getTranslations("DichVu");
   const tNav = await getTranslations("Nav");
-  // Hiện tại mới có 1 bộ nội dung chi tiết mẫu (Mạ Niken hóa học - ENP).
-  // Mọi slug đều hiển thị nội dung này tạm thời cho tới khi có dữ liệu thật của từng dịch vụ.
-  const service = getServiceBySlug(t, slug) ?? getServiceBySlug(t, DETAIL_TEMPLATE_SLUG);
+  const service = getServiceBySlug(slug, await getLocale());
+  if (!service) notFound();
+  // Phần đầu trang (tiêu đề, mã, badge, mô tả, ảnh) và breadcrumb lấy từ CMS.
+  // Các mục còn lại (tổng quan/quy trình/năng lực/ứng dụng/QA/thư viện ảnh) là nội dung mẫu dùng chung
+  // từ messages, chỉnh sửa qua màn hình "Nội dung trang" của CMS.
 
   return (
     <div className="px-margin py-space-lg flex flex-col w-full">
@@ -51,10 +48,10 @@ export default async function DichVuChiTietPage({
         items={[
           { label: tNav("trangChu"), href: "/" },
           { label: t("breadcrumbCategory"), href: "/dich-vu-gia-cong-ma" },
-          { label: service?.title.toUpperCase() ?? t("breadcrumbDetailFallback") },
+          { label: service.title.toUpperCase() },
         ]}
       />
-      <DetailHero />
+      <DetailHero service={service} />
       <Reveal><DetailOverview /></Reveal>
       <Reveal><DetailProcess /></Reveal>
       <Reveal direction="right"><DetailCapability /></Reveal>
@@ -62,7 +59,7 @@ export default async function DichVuChiTietPage({
       <Reveal><DetailQaTable /></Reveal>
       <Reveal><DetailGallery /></Reveal>
       <Reveal><RfqFormDetail /></Reveal>
-      <Reveal><RelatedServices currentSlug={service?.slug ?? DETAIL_TEMPLATE_SLUG} /></Reveal>
+      <Reveal><RelatedServices currentSlug={service.slug} /></Reveal>
     </div>
   );
 }

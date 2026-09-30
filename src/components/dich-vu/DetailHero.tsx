@@ -1,6 +1,8 @@
 import { useTranslations } from "next-intl";
+import type { PlatingService } from "@/lib/services-data";
 
-export default function DetailHero() {
+/** Tiêu đề, mã, badge, mô tả và ảnh lấy từ CMS (service); các chỉ số kỹ thuật bên dưới là nội dung mẫu dùng chung. */
+export default function DetailHero({ service }: { service: PlatingService }) {
   const t = useTranslations("DichVu.DetailHero");
 
   return (
@@ -10,11 +12,17 @@ export default function DetailHero() {
         <div className="lg:col-span-7 flex flex-col justify-between bg-white border border-slate-200 p-space-lg rounded shadow-sm relative overflow-hidden">
           <div className="absolute top-0 left-0 w-1.5 h-full bg-steel-600" />
           <div className="flex flex-col gap-space-sm">
+            <div className="flex flex-wrap items-center gap-2">
+              <span className="text-label-sm text-steel-600 uppercase font-semibold bg-slate-100 px-2 py-1 rounded">{service.code}</span>
+              {service.badge && (
+                <span className="text-label-sm text-slate-600 uppercase font-semibold border border-slate-200 px-2 py-1 rounded">{service.badge}</span>
+              )}
+            </div>
             <h1 className="text-headline-lg text-slate-900 tracking-tight uppercase mt-space-xs font-bold">
-              {t("title")}
-              <span className="block text-steel-600 text-headline-md mt-1 font-bold">{t("titleEn")}</span>
+              {service.title}
+              <span className="block text-steel-600 text-headline-md mt-1 font-bold">{service.titleEn}</span>
             </h1>
-            <p className="text-body-lg text-slate-600 mt-space-xs">{t("subtitle")}</p>
+            <p className="text-body-lg text-slate-600 mt-space-xs">{service.description}</p>
 
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-space-sm my-space-md pt-space-sm bg-slate-50 border border-slate-200 p-space-sm rounded">
               <div className="flex flex-col">
@@ -67,9 +75,9 @@ export default function DetailHero() {
           <div className="relative w-full h-80 sm:h-96 lg:h-full min-h-[340px] bg-slate-900">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              alt={t("imageAlt")}
+              alt={service.imageAlt}
               className="w-full h-full object-cover"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuASiiY0YHzAz0bYUdU_Z4bb7bJnm79drmHEj7I2_1ct2zvRhd1mU74UjW1QFGMZjWHWiV7KugGxVGus2vvTdckjsTt7UL_mG7t8eQ9Y4G4oOMmVXQCEWd7y-CH1-seO4c2C6SNONUD0L5gVGyGK2QjDepE0xcrOqhwomjdfLURtHXf6pMpa7qvv6Gvv5DxZIPF-4r1XWe-G1060CMa343UUcUjJtH8saFMhhu9ndzATKpcrL6QAa0XJKQ"
+              src={service.image}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-slate-900/85 via-transparent to-transparent" />
           </div>

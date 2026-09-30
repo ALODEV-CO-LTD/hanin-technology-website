@@ -1,17 +1,19 @@
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
+import { getBanner } from "@/server/public";
 import PageBreadcrumb from "@/components/layout/PageBreadcrumb";
 
 export default function CategoryHero() {
   const t = useTranslations("SanPham.CategoryHero");
+  const banner = getBanner("san-pham", useLocale(), "https://images.unsplash.com/photo-1740209475472-aa7d280f7452?w=1920&q=80&fm=jpg&fit=crop");
 
   return (
     <section className="relative w-full min-h-screen overflow-hidden bg-slate-900 border-b border-slate-200 flex items-center">
       <div className="absolute inset-0 z-0 pointer-events-none">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          alt={t("imageAlt")}
+          alt={banner.alt || t("imageAlt")}
           className="w-full h-full object-cover"
-          src="https://images.unsplash.com/photo-1740209475472-aa7d280f7452?w=1920&q=80&fm=jpg&fit=crop"
+          src={banner.image}
         />
       </div>
       <div className="relative z-10 w-full px-margin flex flex-col gap-space-sm [text-shadow:0_2px_6px_rgba(2,6,23,0.85),0_4px_20px_rgba(2,6,23,0.6)]">

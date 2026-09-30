@@ -406,7 +406,8 @@
       "attachDesc": "Hỗ trợ định dạng: PDF, STEP, DWG, IGES (Dung lượng tối đa 25MB)",
       "chooseFile": "CHỌN TẬP TIN",
       "ndaNote": "Cam kết bảo mật thỏa thuận NDA cho mọi tài liệu bản vẽ khách hàng.",
-      "submitButton": "XÁC NHẬN GỬI YÊU CẦU BÁO GIÁ RFQ"
+      "submitButton": "XÁC NHẬN GỬI YÊU CẦU BÁO GIÁ RFQ",
+      "submitError": "Không gửi được yêu cầu. Vui lòng kiểm tra thông tin/tệp đính kèm và thử lại."
     },
     "RfqFormDetail": {
       "heading": "GỬI THÔNG SỐ & YÊU CẦU MẠ NIKEN HÓA HỌC (ENP)",
@@ -444,7 +445,8 @@
       "attachDesc": "Hỗ trợ STEP, IGES, DWG, PDF (Tối đa 50MB, bảo mật NDA)",
       "chooseFile": "CHỌN FILE BẢN VẼ...",
       "ndaNote": "Cam kết bảo mật dữ liệu bản vẽ công nghệ theo thỏa thuận NDA quốc tế.",
-      "submitButton": "GỬI YÊU CẦU BÁO GIÁ DỊCH VỤ MẠ ENP (24H RESPONSE)"
+      "submitButton": "GỬI YÊU CẦU BÁO GIÁ DỊCH VỤ MẠ ENP (24H RESPONSE)",
+      "submitError": "Không gửi được yêu cầu. Vui lòng kiểm tra thông tin/tệp đính kèm và thử lại."
     },
     "breadcrumbCategory": "Dịch Vụ Gia Công Mạ & Xử Lý Bề Mặt",
     "breadcrumbDetailFallback": "CHI TIẾT DỊCH VỤ"

@@ -155,12 +155,13 @@
       "heading": "提交项目询价单与技术资料",
       "securityBadge": "SSL 256 位加密标准 // NDA 保护",
       "status": {
-        "submitting": "正在提交报价请求（演示版本，尚未接入真实后端）...",
-        "successTitle": "请求已提交（演示版本，尚未接入真实后端）",
-        "successDesc": "此为第一阶段的界面演示版本。真实的邮件/CRM 处理系统将由 HANIN 在合同后续阶段实施。",
+        "submitting": "正在发送报价请求…",
+        "successTitle": "请求已成功发送",
+        "successDesc": "HANIN 技术部门已收到您的请求，将尽快通过电子邮件或电话回复您。",
         "successResetCta": "创建新的询价单",
         "errorMessage": "请填写所有必填项（*）并确认 NDA 保密承诺后再提交。",
-        "errorRetryCta": "重试"
+        "errorRetryCta": "重试",
+        "sendError": "请求发送失败，请检查填写信息和附件（每个文件最大 50MB）后重试。"
       },
       "step1": {
         "heading": "客户与企业联系信息",

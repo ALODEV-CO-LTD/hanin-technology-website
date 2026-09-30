@@ -4,7 +4,7 @@ export default function ContactChannels() {
   const t = useTranslations("LienHe.ContactChannels");
 
   return (
-    <section className="w-full bg-slate-50 py-space-xl">
+    <section className="w-full bg-white py-space-xl">
       <div className="mx-auto px-margin">
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-space-md mb-space-xl">
           <div>

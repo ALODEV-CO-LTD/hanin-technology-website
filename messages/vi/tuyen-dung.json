@@ -87,12 +87,14 @@
       },
       "cvLabel": "Đính kèm CV (PDF, DOCX) *",
       "cvDropText": "Kéo thả tệp hoặc bấm để chọn CV",
-      "cvSizeNote": "Tối đa 15MB (.pdf, .doc, .docx)",
+      "cvSizeNote": "Tối đa 50MB mỗi tệp (.pdf, .doc, .docx, .jpg, .png, .zip)",
       "messageLabel": "Lời nhắn / Giới thiệu bản thân",
       "messagePlaceholder": "Tóm tắt ngắn gọn thế mạnh kỹ thuật hoặc mong muốn nghề nghiệp của bạn...",
       "cancelButton": "Hủy bỏ",
       "submitButton": "Gửi đơn ứng tuyển",
-      "submitSuccess": "✓ Hồ sơ ứng tuyển đã được tiếp nhận thành công. Bộ phận Nhân sự HANIN sẽ liên hệ với bạn trong vòng 48 giờ làm việc!"
+      "submitSuccess": "✓ Hồ sơ ứng tuyển đã được tiếp nhận thành công. Bộ phận Nhân sự HANIN sẽ liên hệ với bạn trong vòng 48 giờ làm việc!",
+      "submitError": "Gửi đơn ứng tuyển thất bại. Vui lòng kiểm tra lại thông tin và tệp đính kèm rồi thử lại.",
+      "submitting": "Đang gửi..."
     },
     "WorkEnvironment": {
       "title": "HÌNH ẢNH MÔI TRƯỜNG LÀM VIỆC THỰC TẾ",

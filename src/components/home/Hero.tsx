@@ -1,16 +1,18 @@
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
+import { getBanner } from "@/server/public";
 
 export default function Hero() {
   const t = useTranslations("Home.Hero");
+  const banner = getBanner("home-hero", useLocale(), "https://images.unsplash.com/photo-1716191299945-4c5b89703971?w=1920&q=80&fm=jpg&fit=crop");
 
   return (
     <section className="relative w-full min-h-screen flex items-center overflow-hidden bg-slate-900">
       <div className="absolute inset-0 z-0">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          alt={t("imageAlt")}
+          alt={banner.alt || t("imageAlt")}
           className="w-full h-full object-cover object-center"
-          src="https://images.unsplash.com/photo-1716191299945-4c5b89703971?w=1920&q=80&fm=jpg&fit=crop"
+          src={banner.image}
         />
       </div>
 

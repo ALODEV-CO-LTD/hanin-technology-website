@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import ServiceBanner from "@/components/dich-vu/ServiceBanner";
-import CategoryHero from "@/components/dich-vu/CategoryHero";
 import CapacityOverview from "@/components/dich-vu/CapacityOverview";
 import ServiceCategories from "@/components/dich-vu/ServiceCategories";
 import ProcessFlow from "@/components/dich-vu/ProcessFlow";
@@ -19,7 +18,6 @@ export default function DichVuGiaCongMaPage() {
     <>
       <ServiceBanner />
       <div className="px-margin py-space-lg flex flex-col w-full">
-        <CategoryHero />
         <Reveal><CapacityOverview /></Reveal>
         <Reveal><ServiceCategories /></Reveal>
         <Reveal><ProcessFlow /></Reveal>

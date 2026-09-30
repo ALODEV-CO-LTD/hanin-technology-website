@@ -19,7 +19,7 @@ export default function DetailGallery() {
   const t = useTranslations("DichVu.DetailGallery");
 
   return (
-    <section className="w-full mb-space-xl">
+    <section className="w-full bg-slate-50 mb-space-xl">
       <div className="flex items-center justify-between pb-space-sm mb-space-md flex-wrap gap-space-sm">
         <div>
           <h2 className="text-headline-md text-slate-900 tracking-tight uppercase font-bold">{t("heading")}</h2>

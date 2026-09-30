@@ -10,7 +10,7 @@ export default function ContactFaq() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <section className="w-full bg-slate-50 py-space-xl">
+    <section className="w-full bg-white py-space-xl">
       <div className="max-w-4xl mx-auto px-margin">
         <div className="text-center mb-space-xl">
           <h2 className="text-headline-md font-bold text-slate-900 uppercase tracking-tight">

@@ -5,7 +5,7 @@ export default function ProductsCta() {
   const t = useTranslations("SanPham.ProductsCta");
 
   return (
-    <section className="w-full bg-slate-100 border-y border-slate-200 py-space-xl my-space-lg">
+    <section className="w-full bg-white border-y border-slate-200 py-space-xl my-space-lg">
       <div className="mx-auto px-margin flex flex-col items-center text-center">
         <h2 className="text-headline-xl-mobile lg:text-headline-xl uppercase text-slate-900 font-bold">
           {t("title")}

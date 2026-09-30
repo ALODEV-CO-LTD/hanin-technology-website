@@ -4,7 +4,7 @@ export default function ApplicationCta() {
   const t = useTranslations("TuyenDung.ApplicationCta");
 
   return (
-    <section className="w-full py-space-xl bg-slate-100 relative">
+    <section className="w-full py-space-xl bg-slate-50 relative">
       <div className="mx-auto px-margin">
         <div className="relative p-space-xl md:p-12 rounded bg-white border border-slate-200 shadow-md overflow-hidden">
           <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-steel-600 via-steel-400 to-steel-600" />

@@ -4,7 +4,7 @@ export default function FactoryOverview() {
   const t = useTranslations("GioiThieu.FactoryOverview");
 
   return (
-    <section className="w-full bg-[#f8fafc] py-space-xl border-t border-slate-200">
+    <section className="w-full bg-slate-50 py-space-xl border-t border-slate-200">
       <div className="mx-auto px-margin">
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-xl">

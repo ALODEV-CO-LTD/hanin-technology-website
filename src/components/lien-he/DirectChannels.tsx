@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import { getSettings } from "@/server/settings";
 
 const CHANNEL_KEYS = ["hotline", "zalo", "email", "audit"] as const;
 const CHANNEL_META: Record<
@@ -13,9 +14,10 @@ const CHANNEL_META: Record<
 
 export default function DirectChannels() {
   const t = useTranslations("LienHe.DirectChannels");
+  const { zaloUrl } = getSettings();
 
   return (
-    <section className="w-full bg-white py-space-xl">
+    <section className="w-full bg-slate-50 py-space-xl">
       <div className="mx-auto px-margin">
         <div className="text-center max-w-3xl mx-auto mb-space-xl">
           <h2 className="text-headline-md font-bold text-slate-900 uppercase tracking-tight">
@@ -26,7 +28,7 @@ export default function DirectChannels() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
           {CHANNEL_KEYS.map((key) => {
-            const meta = CHANNEL_META[key];
+            const meta = key === "zalo" && zaloUrl ? { ...CHANNEL_META[key], href: zaloUrl } : CHANNEL_META[key];
             return (
               <a
                 key={key}

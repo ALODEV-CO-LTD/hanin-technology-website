@@ -4,7 +4,7 @@ export default function ProductQuoteCta() {
   const t = useTranslations("SanPham.ProductQuoteCta");
 
   return (
-    <section className="w-full bg-slate-100 py-space-xl scroll-mt-20" id="quote-form">
+    <section className="w-full bg-slate-50 py-space-xl scroll-mt-20" id="quote-form">
       <div className="mx-auto px-margin">
         <div className="p-space-xl bg-white border border-slate-200 rounded relative overflow-hidden shadow-sm">
           <div className="absolute right-0 top-0 bottom-0 w-1/3 opacity-5 pointer-events-none flex items-center justify-end pr-space-md">

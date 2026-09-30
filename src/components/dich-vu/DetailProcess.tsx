@@ -14,7 +14,7 @@ export default function DetailProcess() {
 
   return (
     <section className="w-full mb-space-xl">
-      <div className="bg-white border border-slate-200 p-space-lg rounded shadow-sm">
+      <div className="bg-slate-50 border border-slate-200 p-space-lg rounded shadow-sm">
         <div className="flex items-center justify-between pb-space-sm mb-space-lg flex-wrap gap-space-sm">
           <div>
             <h2 className="text-headline-md text-slate-900 tracking-tight uppercase font-bold">{t("heading")}</h2>

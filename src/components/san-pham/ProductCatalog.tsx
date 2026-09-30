@@ -3,7 +3,7 @@
 import { useMemo, useState } from "react";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
-import { getCategoryTabs, getGridProducts, getProducts, type Product } from "@/lib/products-data";
+import { getCategoryTabs, type Product } from "@/lib/products-data";
 
 function ProductCardFeatured({ product, t }: { product: Product; t: ReturnType<typeof useTranslations<"SanPham.ProductCatalog">> }) {
   return (
@@ -82,11 +82,11 @@ function ProductCardStandard({ product, t }: { product: Product; t: ReturnType<t
   );
 }
 
-export default function ProductCatalog() {
+export default function ProductCatalog({ products }: { products: Product[] }) {
   const tp = useTranslations("SanPham");
   const t = useTranslations("SanPham.ProductCatalog");
   const CATEGORY_TABS = useMemo(() => getCategoryTabs(tp), [tp]);
-  const GRID_PRODUCTS = useMemo(() => getGridProducts(getProducts(tp)), [tp]);
+  const GRID_PRODUCTS = useMemo(() => products.filter((product) => product.showInGrid), [products]);
 
   const [activeCategory, setActiveCategory] = useState<(typeof CATEGORY_TABS)[number]["value"]>("all");
   const [search, setSearch] = useState("");
@@ -147,7 +147,7 @@ export default function ProductCatalog() {
         </div>
       </section>
 
-      <section className="w-full mx-auto px-margin py-space-xl">
+      <section className="w-full mx-auto px-margin py-space-xl bg-slate-50">
         {filtered.length === 0 ? (
           <p className="text-body-md text-slate-500 text-center py-space-xl">{t("emptyState")}</p>
         ) : (

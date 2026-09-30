@@ -11,7 +11,7 @@ export default function CapacityOverview() {
 
   return (
     <section className="w-full mb-space-xl scroll-mt-20" id="capacity-overview">
-      <div className="bg-slate-50 border border-slate-200 rounded p-space-md lg:p-space-lg">
+      <div className="bg-white border border-slate-200 rounded p-space-md lg:p-space-lg">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-space-sm mb-space-lg">
           <div>
             <h2 className="text-headline-sm md:text-headline-lg text-slate-900 uppercase font-bold">

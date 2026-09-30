@@ -1,8 +1,10 @@
 import Link from "next/link";
 import { useTranslations } from "next-intl";
+import { getSettings } from "@/server/settings";
 
 export default function FinalCta() {
   const t = useTranslations("Home.FinalCta");
+  const { zaloUrl } = getSettings();
 
   return (
     <section className="w-full py-space-xl bg-slate-50 relative overflow-hidden scroll-mt-20" id="bao-gia">
@@ -42,9 +44,15 @@ export default function FinalCta() {
               <span className="material-symbols-outlined text-steel-600 text-[20px]">chat</span>
               <div className="flex flex-col">
                 <span className="text-[10px] text-slate-500 uppercase">{t("zaloLabel")}</span>
-                <Link href="/lien-he" className="text-title-md text-sky-700 hover:underline font-semibold">
-                  {t("zaloCta")}
-                </Link>
+                {zaloUrl ? (
+                  <a href={zaloUrl} target="_blank" rel="noopener noreferrer" className="text-title-md text-sky-700 hover:underline font-semibold">
+                    {t("zaloCta")}
+                  </a>
+                ) : (
+                  <Link href="/lien-he" className="text-title-md text-sky-700 hover:underline font-semibold">
+                    {t("zaloCta")}
+                  </Link>
+                )}
               </div>
             </div>
             <div className="flex items-center gap-3 py-1">

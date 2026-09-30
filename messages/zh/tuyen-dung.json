@@ -87,12 +87,14 @@
       },
       "cvLabel": "上传简历（PDF、DOCX）*",
       "cvDropText": "拖拽文件或点击选择简历",
-      "cvSizeNote": "文件大小不超过 15MB（.pdf、.doc、.docx）",
+      "cvSizeNote": "每个文件不超过 50MB（.pdf、.doc、.docx、.jpg、.png、.zip）",
       "messageLabel": "留言 / 自我介绍",
       "messagePlaceholder": "简要说明您的技术专长或职业期望……",
       "cancelButton": "取消",
       "submitButton": "提交申请",
-      "submitSuccess": "✓ 您的求职申请已成功提交。HANIN 人力资源部将在 48 个工作小时内与您联系！"
+      "submitSuccess": "✓ 您的求职申请已成功提交。HANIN 人力资源部将在 48 个工作小时内与您联系！",
+      "submitError": "提交申请失败。请检查填写的信息和附件后重试。",
+      "submitting": "提交中..."
     },
     "WorkEnvironment": {
       "title": "真实工作环境实景展示",

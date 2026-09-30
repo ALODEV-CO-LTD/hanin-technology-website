@@ -1,0 +1,173 @@
+import fs from "node:fs";
+import path from "node:path";
+import { all, get, run, transaction } from "./db";
+import { LOCALES, type Locale } from "./i18n";
+
+/** Các file dịch trong /messages/<locale>/<name>.json (gộp thành 1 object khi chạy). */
+export const NAMESPACE_FILES = [
+  "common",
+  "home",
+  "gioi-thieu",
+  "dich-vu",
+  "san-pham",
+  "nang-luc",
+  "tin-tuc",
+  "lien-he",
+  "tuyen-dung",
+];
+
+/**
+ * Các nhóm khoá đã được quản lý bằng module riêng (Dịch vụ, Sản phẩm, Tin tức, Tuyển dụng)
+ * nên ẩn khỏi trình sửa "Nội dung trang" để tránh sửa nhầm chỗ không còn được website dùng.
+ */
+export const HIDDEN_PREFIXES = [
+  "DichVu.services",
+  "SanPham.products",
+  "TinTuc.articles",
+  "TinTuc.featured",
+  "TuyenDung.jobs",
+];
+
+type Json = string | number | boolean | null | Json[] | { [key: string]: Json };
+type Tree = { [key: string]: Json };
+
+const MESSAGES_DIR = path.join(process.cwd(), "messages");
+
+export function loadBaseMessages(locale: Locale): Tree {
+  const merged: Tree = {};
+  for (const name of NAMESPACE_FILES) {
+    const file = path.join(MESSAGES_DIR, locale, `${name}.json`);
+    try {
+      Object.assign(merged, JSON.parse(fs.readFileSync(file, "utf8")));
+    } catch {
+      /* file thiếu thì bỏ qua */
+    }
+  }
+  return merged;
+}
+
+/** Duỗi cây JSON thành map "A.b.0.c" -> chuỗi (chỉ lấy lá kiểu string). */
+export function flatten(tree: Json, prefix = "", out: Record<string, string> = {}): Record<string, string> {
+  if (typeof tree === "string") {
+    out[prefix] = tree;
+  } else if (Array.isArray(tree)) {
+    tree.forEach((item, i) => flatten(item, prefix ? `${prefix}.${i}` : String(i), out));
+  } else if (tree && typeof tree === "object") {
+    for (const [k, v] of Object.entries(tree)) flatten(v as Json, prefix ? `${prefix}.${k}` : k, out);
+  }
+  return out;
+}
+
+export function isHiddenKey(key: string): boolean {
+  return HIDDEN_PREFIXES.some((p) => key === p || key.startsWith(`${p}.`));
+}
+
+function setByPath(tree: Tree, key: string, value: string) {
+  const parts = key.split(".");
+  let node: Json = tree;
+  for (let i = 0; i < parts.length - 1; i++) {
+    const next: Json | undefined = (node as Record<string, Json>)[parts[i]];
+    if (next === undefined || typeof next !== "object" || next === null) return; // đường dẫn không tồn tại: bỏ qua
+    node = next;
+  }
+  const last = parts[parts.length - 1];
+  if (typeof (node as Record<string, Json>)[last] === "string") (node as Record<string, Json>)[last] = value;
+}
+
+/* ---------- Cache theo phiên bản (đếm + updated_at lớn nhất) ---------- */
+
+let cacheVersion = "";
+let cacheData: Record<string, Record<string, string>> = {};
+
+function loadOverrides(): Record<string, Record<string, string>> {
+  const meta = get<{ n: number; m: string | null }>("SELECT COUNT(*) AS n, MAX(updated_at) AS m FROM content_overrides");
+  const version = `${meta?.n ?? 0}:${meta?.m ?? ""}`;
+  if (version === cacheVersion) return cacheData;
+  const rows = all<{ locale: string; key: string; value: string }>("SELECT locale, key, value FROM content_overrides");
+  const byLocale: Record<string, Record<string, string>> = {};
+  for (const r of rows) (byLocale[r.locale] ??= {})[r.key] = r.value;
+  cacheVersion = version;
+  cacheData = byLocale;
+  return byLocale;
+}
+
+/** Áp các chỉnh sửa từ CMS lên bản dịch gốc (dùng trong src/i18n/request.ts). */
+export function applyOverrides<T extends Tree>(messages: T, locale: string): T {
+  const overrides = loadOverrides()[locale];
+  if (!overrides) return messages;
+  const copy = structuredClone(messages) as Tree;
+  for (const [key, value] of Object.entries(overrides)) setByPath(copy, key, value);
+  return copy as T;
+}
+
+export interface ContentEntry {
+  key: string;
+  values: Record<Locale, string>;
+  overridden: Record<Locale, boolean>;
+}
+
+export function listNamespaces(): { name: string; count: number; overrides: number }[] {
+  const base = flatten(loadBaseMessages("vi"));
+  const overrides = loadOverrides();
+  const counts = new Map<string, { count: number; overrides: number }>();
+  for (const key of Object.keys(base)) {
+    if (isHiddenKey(key)) continue;
+    const ns = key.split(".")[0];
+    const entry = counts.get(ns) ?? { count: 0, overrides: 0 };
+    entry.count++;
+    counts.set(ns, entry);
+  }
+  for (const locale of LOCALES) {
+    for (const key of Object.keys(overrides[locale] ?? {})) {
+      const entry = counts.get(key.split(".")[0]);
+      if (entry) entry.overrides++;
+    }
+  }
+  return [...counts].map(([name, v]) => ({ name, ...v }));
+}
+
+export function listEntries(namespace: string): ContentEntry[] {
+  const bases = Object.fromEntries(LOCALES.map((l) => [l, flatten(loadBaseMessages(l))])) as Record<Locale, Record<string, string>>;
+  const overrides = loadOverrides();
+  return Object.keys(bases.vi)
+    .filter((key) => key.split(".")[0] === namespace && !isHiddenKey(key))
+    .map((key) => {
+      const values = {} as Record<Locale, string>;
+      const overridden = {} as Record<Locale, boolean>;
+      for (const l of LOCALES) {
+        const o = overrides[l]?.[key];
+        overridden[l] = o !== undefined;
+        values[l] = o ?? bases[l][key] ?? "";
+      }
+      return { key, values, overridden };
+    });
+}
+
+export function keyExists(key: string, locale: Locale): boolean {
+  return key in flatten(loadBaseMessages(locale));
+}
+
+export interface ContentChange {
+  locale: Locale;
+  key: string;
+  /** null = xoá chỉnh sửa, quay về bản gốc */
+  value: string | null;
+}
+
+export function saveChanges(changes: ContentChange[]) {
+  transaction(() => {
+    for (const c of changes) {
+      if (c.value === null) {
+        run("DELETE FROM content_overrides WHERE locale = ? AND key = ?", c.locale, c.key);
+      } else {
+        run(
+          `INSERT INTO content_overrides (locale, key, value) VALUES (?, ?, ?)
+           ON CONFLICT(locale, key) DO UPDATE SET value = excluded.value, updated_at = datetime('now')`,
+          c.locale,
+          c.key,
+          c.value,
+        );
+      }
+    }
+  });
+}

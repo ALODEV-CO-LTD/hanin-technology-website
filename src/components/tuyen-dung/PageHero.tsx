@@ -1,9 +1,11 @@
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
+import { getBanner } from "@/server/public";
 import { Link } from "@/i18n/navigation";
 import PageBreadcrumb from "@/components/layout/PageBreadcrumb";
 
 export default function PageHero() {
   const t = useTranslations("TuyenDung.PageHero");
+  const banner = getBanner("tuyen-dung", useLocale(), "https://images.unsplash.com/photo-1528953030358-b0c7de371f1f?w=1920&q=80&fm=jpg&fit=crop");
 
   return (
     <section className="relative w-full min-h-screen bg-slate-900 overflow-hidden flex items-center border-b border-slate-200">
@@ -11,10 +13,10 @@ export default function PageHero() {
       <div
         className="absolute inset-0 bg-cover bg-center"
         role="img"
-        aria-label={t("imageAlt")}
+        aria-label={banner.alt || t("imageAlt")}
         style={{
           backgroundImage:
-            "url('https://images.unsplash.com/photo-1528953030358-b0c7de371f1f?w=1920&q=80&fm=jpg&fit=crop')",
+            `url('${banner.image}')`,
         }}
       />
 

@@ -155,12 +155,13 @@
       "heading": "GỬI YÊU CẦU BÁO GIÁ & TÀI LIỆU KỸ THUẬT DỰ ÁN",
       "securityBadge": "Chuẩn bảo mật SSL 256-bit // NDA Protected",
       "status": {
-        "submitting": "Đang gửi yêu cầu báo giá (demo, chưa nối backend thật)...",
-        "successTitle": "ĐÃ GỬI YÊU CẦU (DEMO, CHƯA NỐI BACKEND THẬT)",
-        "successDesc": "Đây là bản mô phỏng giao diện thuộc Phase 1. Phần xử lý gửi email/CRM thật sẽ được HANIN triển khai ở giai đoạn tiếp theo của hợp đồng.",
+        "submitting": "Đang gửi yêu cầu báo giá...",
+        "successTitle": "ĐÃ GỬI YÊU CẦU THÀNH CÔNG",
+        "successDesc": "Bộ phận kỹ thuật HANIN đã nhận yêu cầu và sẽ phản hồi qua email hoặc điện thoại trong thời gian sớm nhất.",
         "successResetCta": "Tạo yêu cầu khác",
         "errorMessage": "Vui lòng điền đầy đủ các trường bắt buộc (*) và xác nhận cam kết bảo mật NDA trước khi gửi.",
-        "errorRetryCta": "Thử lại"
+        "errorRetryCta": "Thử lại",
+        "sendError": "Không gửi được yêu cầu. Vui lòng kiểm tra thông tin và tệp đính kèm (tối đa 50MB/tệp) rồi thử lại."
       },
       "step1": {
         "heading": "THÔNG TIN KHÁCH HÀNG & DOANH NGHIỆP LIÊN HỆ",

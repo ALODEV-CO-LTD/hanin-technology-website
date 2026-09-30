@@ -10,7 +10,7 @@ export default function DetailCapability() {
   ] as const;
 
   return (
-    <section className="w-full mb-space-xl">
+    <section className="w-full bg-white mb-space-xl">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center">
         <div className="lg:col-span-6 flex flex-col gap-space-sm">
           <div className="w-full h-80 rounded overflow-hidden shadow-sm relative bg-slate-900">

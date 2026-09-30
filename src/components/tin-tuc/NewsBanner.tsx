@@ -1,8 +1,10 @@
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
+import { getBanner } from "@/server/public";
 import PageBreadcrumb from "@/components/layout/PageBreadcrumb";
 
 export default function NewsBanner() {
   const tb = useTranslations("TinTuc.NewsBreadcrumb");
+  const banner = getBanner("tin-tuc", useLocale(), "https://images.unsplash.com/photo-1654703680007-d5d9699cddfd?w=1920&q=80&fm=jpg&fit=crop");
   const t = useTranslations("TinTuc.NewsIntro");
 
   return (
@@ -10,10 +12,10 @@ export default function NewsBanner() {
       <div
         className="absolute inset-0 bg-cover bg-center"
         role="img"
-        aria-label={t("titlePrefix")}
+        aria-label={banner.alt || t("titlePrefix")}
         style={{
           backgroundImage:
-            "url('https://images.unsplash.com/photo-1654703680007-d5d9699cddfd?w=1920&q=80&fm=jpg&fit=crop')",
+            `url('${banner.image}')`,
         }}
       />
 

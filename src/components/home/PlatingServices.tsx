@@ -1,11 +1,13 @@
 import Link from "next/link";
-import { useTranslations } from "next-intl";
-
-const SERVICE_KEYS = ["0", "1", "2", "3"] as const;
-const INDEXES = ["01", "02", "03", "04"] as const;
+import { useLocale, useTranslations } from "next-intl";
+import { getServices } from "@/server/public";
 
 export default function PlatingServices() {
   const t = useTranslations("Home.PlatingServices");
+  const locale = useLocale();
+  const services = getServices(locale, 4);
+
+  if (services.length === 0) return null;
 
   return (
     <section className="w-full py-space-xl bg-white border-y border-slate-200">
@@ -26,24 +28,24 @@ export default function PlatingServices() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
-          {SERVICE_KEYS.map((key, i) => (
+          {services.map((service, i) => (
             <Link
-              key={key}
-              href="/dich-vu-gia-cong-ma"
+              key={service.slug}
+              href={`/dich-vu-gia-cong-ma/${service.slug}`}
               className="flex flex-col justify-between p-space-lg bg-slate-50 border border-slate-200 rounded hover:border-steel-300 hover:shadow-lg hover:bg-white transition-all duration-200 group"
             >
               <div className="flex flex-col gap-space-md">
                 <div className="flex items-center justify-between">
-                  <span className="text-headline-lg text-steel-600 font-bold">{INDEXES[i]}</span>
+                  <span className="text-headline-lg text-steel-600 font-bold">{String(i + 1).padStart(2, "0")}</span>
                   <span className="text-[10px] px-2 py-0.5 rounded bg-slate-200/70 text-slate-700 uppercase font-semibold">
-                    {t(`services.${key}.tag`)}
+                    {service.code}
                   </span>
                 </div>
                 <div className="flex flex-col gap-2">
                   <h3 className="text-headline-sm text-slate-900 font-semibold group-hover:text-steel-600 transition-colors">
-                    {t(`services.${key}.title`)}
+                    {service.title}
                   </h3>
-                  <p className="text-body-sm text-slate-600 leading-relaxed">{t(`services.${key}.desc`)}</p>
+                  <p className="text-body-sm text-slate-600 leading-relaxed">{service.description}</p>
                 </div>
               </div>
               <div className="pt-space-lg flex items-center justify-between text-slate-500 group-hover:text-steel-600 transition-colors">

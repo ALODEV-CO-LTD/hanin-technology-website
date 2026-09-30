@@ -1,18 +1,7 @@
 import { getRequestConfig } from "next-intl/server";
 import { hasLocale } from "next-intl";
 import { routing } from "./routing";
-
-const NAMESPACE_FILES = [
-  "common",
-  "home",
-  "gioi-thieu",
-  "dich-vu",
-  "san-pham",
-  "nang-luc",
-  "tin-tuc",
-  "lien-he",
-  "tuyen-dung",
-];
+import { NAMESPACE_FILES, applyOverrides } from "@/server/content";
 
 export default getRequestConfig(async ({ requestLocale }) => {
   const requested = await requestLocale;
@@ -28,7 +17,8 @@ export default getRequestConfig(async ({ requestLocale }) => {
     )
   );
 
-  const messages = Object.assign({}, ...modules);
+  // Áp các chỉnh sửa nội dung từ CMS (bảng content_overrides) lên bản dịch gốc.
+  const messages = applyOverrides(Object.assign({}, ...modules), locale);
 
   return { locale, messages };
 });

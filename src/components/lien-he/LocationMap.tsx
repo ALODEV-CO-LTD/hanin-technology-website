@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import { getSettings, isSafeMapEmbed } from "@/server/settings";
 
 const DISTANCE_KEYS = ["airport", "seaport", "industrialParks"] as const;
 const DISTANCE_META: Record<
@@ -12,9 +13,11 @@ const DISTANCE_META: Record<
 
 export default function LocationMap() {
   const t = useTranslations("LienHe.LocationMap");
+  const { mapsUrl, mapEmbedUrl } = getSettings();
+  const embedUrl = mapEmbedUrl && isSafeMapEmbed(mapEmbedUrl) ? mapEmbedUrl : "";
 
   return (
-    <section className="w-full bg-slate-50 py-space-xl scroll-mt-20" id="map-section">
+    <section className="w-full bg-white py-space-xl scroll-mt-20" id="map-section">
       <div className="mx-auto px-margin">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-stretch">
           {/* Map info & logistics instructions */}
@@ -53,7 +56,7 @@ export default function LocationMap() {
             <div className="flex flex-col sm:flex-row gap-space-sm pt-space-md bg-slate-50 -mx-space-xl -mb-space-xl p-space-lg">
               <a
                 className="flex-1 py-space-sm px-space-md bg-steel-600 hover:bg-steel-700 text-white rounded text-label-md uppercase tracking-wider font-bold text-center transition-colors flex items-center justify-center gap-2"
-                href="https://maps.google.com"
+                href={mapsUrl || "https://maps.google.com"}
                 rel="noopener noreferrer"
                 target="_blank"
               >
@@ -70,8 +73,18 @@ export default function LocationMap() {
             </div>
           </div>
 
-          {/* Static map visual (placeholder, chưa nối Google Maps API thật) */}
+          {/* Bản đồ nhúng khi CMS có link nhúng; nếu chưa có thì dùng ảnh minh họa. */}
           <div className="lg:col-span-7 rounded overflow-hidden shadow-sm relative min-h-[420px] bg-slate-200">
+            {embedUrl ? (
+              <iframe
+                src={embedUrl}
+                title={t("heading")}
+                className="absolute inset-0 w-full h-full border-0"
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                allowFullScreen
+              />
+            ) : (
             <div
               className="w-full h-full min-h-[420px] bg-cover bg-center relative"
               style={{
@@ -81,6 +94,7 @@ export default function LocationMap() {
               role="img"
               aria-label={t("satelliteImageAlt")}
             />
+            )}
           </div>
         </div>
       </div>

@@ -1,8 +1,10 @@
 import Link from "next/link";
 import { useTranslations } from "next-intl";
+import { countActiveJobs } from "@/server/public";
 
 export default function RecruitmentBanner() {
   const t = useTranslations("Home.RecruitmentBanner");
+  const openPositions = String(countActiveJobs()).padStart(2, "0");
 
   return (
     <section className="w-full py-space-lg bg-white border-y border-slate-200">
@@ -19,7 +21,7 @@ export default function RecruitmentBanner() {
           </div>
           <div className="flex flex-col sm:flex-row items-center gap-space-md shrink-0">
             <div className="flex flex-col items-center sm:items-end">
-              <span className="text-headline-lg text-steel-600 font-bold">08</span>
+              <span className="text-headline-lg text-steel-600 font-bold">{openPositions}</span>
               <span className="text-[11px] text-slate-500 uppercase font-semibold">
                 {t("positionsLabel")}
               </span>

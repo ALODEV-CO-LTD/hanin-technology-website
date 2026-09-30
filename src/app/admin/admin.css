@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@theme {
+  --color-steel-50: #eef4f8;
+  --color-steel-100: #dbe8f0;
+  --color-steel-200: #b7d1e2;
+  --color-steel-300: #8bb3cd;
+  --color-steel-400: #5c8fb0;
+  --color-steel-500: #3d7194;
+  --color-steel-600: #2b5a7a;
+  --color-steel-700: #234862;
+  --color-steel-800: #1c3a4f;
+  --color-steel-900: #172f40;
+  --color-steel-950: #0d1e2b;
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", "Helvetica Neue", "Noto Sans", "PingFang SC", "Microsoft YaHei", "Malgun Gothic", sans-serif;
+}
+
+html { color-scheme: light; }
+body { background: #f8fafc; color: #0f172a; }

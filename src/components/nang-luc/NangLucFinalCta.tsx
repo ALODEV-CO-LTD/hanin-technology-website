@@ -4,7 +4,7 @@ export default function NangLucFinalCta() {
   const t = useTranslations("NangLuc.NangLucFinalCta");
 
   return (
-    <section className="w-full py-space-xl bg-slate-100 border-t border-slate-200">
+    <section className="w-full py-space-xl bg-white border-t border-slate-200">
       <div className="mx-auto px-margin w-full">
         <div className="bg-white border border-slate-200 rounded-lg p-space-xl md:p-12 relative overflow-hidden shadow-sm">
           <div className="absolute right-0 top-0 bottom-0 w-1/3 bg-gradient-to-l from-steel-50 to-transparent pointer-events-none" />

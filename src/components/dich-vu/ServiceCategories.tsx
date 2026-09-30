@@ -1,14 +1,14 @@
 import Link from "next/link";
-import { useTranslations } from "next-intl";
-import { getServices } from "@/lib/services-data";
+import { useLocale, useTranslations } from "next-intl";
+import { getServices } from "@/server/public";
 
 export default function ServiceCategories() {
-  const t = useTranslations("DichVu");
+  const locale = useLocale();
   const tc = useTranslations("DichVu.ServiceCategories");
-  const services = getServices(t);
+  const services = getServices(locale);
 
   return (
-    <section className="w-full mb-space-xl">
+    <section className="w-full bg-slate-50 mb-space-xl">
       <div className="flex items-center justify-between mb-space-md">
         <div>
           <h2 className="text-headline-sm md:text-headline-lg text-slate-900 uppercase font-bold">
