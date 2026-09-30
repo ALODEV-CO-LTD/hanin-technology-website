@@ -19,7 +19,7 @@ export default function QualityMetrology() {
   return (
     <section className="w-full mb-space-xl">
       <div className="bg-slate-50 border border-slate-200 rounded p-space-md lg:p-space-xl">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
           <div className="lg:col-span-5">
             <h2 className="text-headline-sm md:text-headline-lg text-slate-900 uppercase font-bold mb-space-sm">
               {t("heading")}
@@ -45,22 +45,22 @@ export default function QualityMetrology() {
                 <span className="bg-slate-100 text-slate-600 text-label-sm px-2 py-0.5 rounded">REV-2025.A</span>
               </div>
               <div className="overflow-x-auto">
-                <table className="w-full text-left text-body-md">
+                <table className="w-full min-w-[560px] text-left text-body-sm table-fixed">
                   <thead>
                     <tr className="bg-slate-50 text-slate-500 text-label-sm uppercase">
-                      <th className="py-2.5 px-3">{t("colMethod")}</th>
-                      <th className="py-2.5 px-3">{t("colStandard")}</th>
-                      <th className="py-2.5 px-3">{t("colCriteria")}</th>
-                      <th className="py-2.5 px-3">{t("colFrequency")}</th>
+                      <th className="py-space-sm px-3 w-[20%] align-bottom">{t("colMethod")}</th>
+                      <th className="py-space-sm px-3 w-[26%] align-bottom">{t("colStandard")}</th>
+                      <th className="py-space-sm px-3 w-[32%] align-bottom">{t("colCriteria")}</th>
+                      <th className="py-space-sm px-3 w-[22%] align-bottom">{t("colFrequency")}</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-200">
                     {TEST_TABLE.map((row) => (
                       <tr key={row.key} className="hover:bg-slate-50/50">
-                        <td className="py-2.5 px-3 font-medium text-slate-900">{t(`${row.key}.method`)}</td>
-                        <td className="py-2.5 px-3 text-slate-500">{row.standard}</td>
-                        <td className="py-2.5 px-3 text-steel-600 font-bold">{t(`${row.key}.criteria`)}</td>
-                        <td className="py-2.5 px-3 text-slate-500">{t(`${row.key}.frequency`)}</td>
+                        <td className="py-space-sm px-3 align-top font-medium text-slate-900">{t(`${row.key}.method`)}</td>
+                        <td className="py-space-sm px-3 align-top text-slate-500 leading-snug">{row.standard}</td>
+                        <td className="py-space-sm px-3 align-top text-steel-600 font-bold leading-snug">{t(`${row.key}.criteria`)}</td>
+                        <td className="py-space-sm px-3 align-top text-slate-500 leading-snug">{t(`${row.key}.frequency`)}</td>
                       </tr>
                     ))}
                   </tbody>
