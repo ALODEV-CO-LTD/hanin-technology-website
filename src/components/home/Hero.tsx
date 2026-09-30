@@ -4,7 +4,7 @@ export default function Hero() {
   const t = useTranslations("Home.Hero");
 
   return (
-    <section className="relative w-full min-h-[840px] xl:h-[880px] flex items-center overflow-hidden bg-slate-900">
+    <section className="relative w-full min-h-screen flex items-center overflow-hidden bg-slate-900">
       <div className="absolute inset-0 z-0">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
