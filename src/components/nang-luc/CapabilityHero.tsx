@@ -5,7 +5,7 @@ export default function CapabilityHero() {
   const t = useTranslations("NangLuc.CapabilityHero");
 
   return (
-    <section className="relative w-full overflow-hidden bg-slate-100 -mt-20 pt-28 pb-16 border-b border-slate-200">
+    <section className="relative w-full min-h-screen overflow-hidden bg-slate-100 border-b border-slate-200 flex items-center">
       <div
         className="absolute inset-0 bg-cover bg-center opacity-15"
         style={{

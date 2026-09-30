@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import NewsBreadcrumb from "@/components/tin-tuc/NewsBreadcrumb";
+import NewsBanner from "@/components/tin-tuc/NewsBanner";
 import NewsIntro from "@/components/tin-tuc/NewsIntro";
 import FeaturedArticle from "@/components/tin-tuc/FeaturedArticle";
 import NewsFilterBar from "@/components/tin-tuc/NewsFilterBar";
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 export default function TinTucPage() {
   return (
     <div className="flex flex-col w-full text-slate-900">
-      <NewsBreadcrumb />
+      <NewsBanner />
       <NewsIntro />
       <Reveal><FeaturedArticle /></Reveal>
       <Reveal><NewsFilterBar /></Reveal>

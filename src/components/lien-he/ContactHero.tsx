@@ -13,21 +13,16 @@ export default function ContactHero() {
 
   return (
     <>
-      {/* Breadcrumb */}
-      <section className="w-full bg-slate-100 border-b border-slate-200">
-        <div className="max-w-[1800px] mx-auto px-margin py-space-sm">
+      {/* Page hero: technical contact & RFQ portal */}
+      <section className="relative w-full min-h-screen bg-white flex items-center">
+        <div className="w-full max-w-[1800px] mx-auto px-margin">
           <PageBreadcrumb
+            className="mb-space-lg"
             items={[
               { label: t("breadcrumbHome"), href: "/" },
               { label: t("breadcrumbCurrent") },
             ]}
           />
-        </div>
-      </section>
-
-      {/* Page hero: technical contact & RFQ portal */}
-      <section className="w-full bg-white py-space-xl">
-        <div className="max-w-[1800px] mx-auto px-margin">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
             {/* Left hero content */}
             <div className="lg:col-span-7 flex flex-col gap-space-md">

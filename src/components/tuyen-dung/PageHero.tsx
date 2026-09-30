@@ -5,7 +5,7 @@ export default function PageHero() {
   const t = useTranslations("TuyenDung.PageHero");
 
   return (
-    <section className="relative w-full bg-slate-100 overflow-hidden">
+    <section className="relative w-full min-h-screen bg-slate-100 overflow-hidden flex items-center">
       <div
         className="absolute inset-0 opacity-[0.04] pointer-events-none"
         style={{
