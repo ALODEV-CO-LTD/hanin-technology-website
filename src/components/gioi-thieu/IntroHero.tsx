@@ -5,7 +5,7 @@ export default function IntroHero() {
   const t = useTranslations("GioiThieu.IntroHero");
 
   return (
-    <section className="relative w-full h-[460px] bg-slate-100 overflow-hidden flex items-end border-b border-slate-200">
+    <section className="relative w-full min-h-screen bg-slate-100 overflow-hidden flex items-end border-b border-slate-200">
       {/* Hero Background Image & Tonal Scrim */}
       <div
         className="absolute inset-0 bg-cover bg-center opacity-25 mix-blend-multiply scale-105 transition-transform duration-1000 ease-out"
