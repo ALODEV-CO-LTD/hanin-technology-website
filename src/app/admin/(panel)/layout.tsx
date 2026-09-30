@@ -18,8 +18,8 @@ export default async function PanelLayout({ children }: { children: React.ReactN
         newInquiries={newInquiries}
         resources={RESOURCES.map((r) => ({ key: r.key, label: r.label, icon: r.icon }))}
       />
-      <main className="lg:pl-64 min-h-screen">
-        <div className="mx-auto w-full max-w-7xl p-4 sm:p-8">{children}</div>
+      <main className="lg:pl-72 min-h-screen">
+        <div className="mx-auto w-full max-w-[1800px] p-4 sm:p-8 xl:px-12">{children}</div>
       </main>
     </div>
   );

@@ -16,7 +16,7 @@ export default function DashboardPage() {
     <div>
       <h1 className="text-xl font-bold text-slate-900 mb-5">Tổng quan</h1>
 
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 mb-8">
+      <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-4 mb-8">
         <Link href="/admin/inquiries?status=new" className="bg-white border border-slate-200 rounded-lg p-4 hover:border-steel-600">
           <p className="text-3xl font-bold text-steel-600">{count("inquiries", "status = 'new'")}</p>
           <p className="text-sm text-slate-600">Yêu cầu mới chưa xử lý</p>

@@ -137,7 +137,7 @@ select:focus-visible,
   }
 }
 .page-fade-in {
-  animation: page-fade-in 0.45s ease-out both;
+  animation: page-fade-in 1s ease-out both;
 }
 
 /* ---- Scroll reveal ---- */
