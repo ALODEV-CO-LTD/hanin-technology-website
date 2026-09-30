@@ -28,8 +28,6 @@ export default function CapabilitySnapshot() {
                 />
                 <span className="text-steel-600">{stat.suffix}</span>
               </div>
-              <span className="text-body-sm text-slate-600 mt-1">{t(`${stat.key}.desc`)}</span>
-              <span className="text-[10px] text-slate-400 mt-1 font-mono">{t(`${stat.key}.note`)}</span>
             </div>
           ))}
         </div>

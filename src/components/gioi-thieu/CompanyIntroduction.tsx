@@ -26,20 +26,16 @@ export default function CompanyIntroduction() {
                 }}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900/40 via-transparent to-transparent" />
-              {/* Technical Overlay Badges */}
-              <div className="absolute top-4 left-4 inline-flex items-center gap-2 px-2.5 py-1 rounded bg-white/95 backdrop-blur-md border border-slate-200 shadow-sm">
-                <span className="material-symbols-outlined text-steel-600 text-[14px]">factory</span>
-                <span className="text-[10px] text-slate-800 uppercase tracking-wider font-semibold">
+              {/* Technical Overlay Captions */}
+              <div className="absolute top-4 left-4 inline-flex items-center gap-2 [text-shadow:0_1px_3px_rgba(15,23,42,0.85),0_2px_10px_rgba(15,23,42,0.55)]">
+                <span className="material-symbols-outlined text-steel-500 text-[14px]">factory</span>
+                <span className="text-[11px] text-steel-500 uppercase tracking-wider font-semibold">
                   {t("scaleBadge")}
                 </span>
               </div>
-              <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between text-slate-700 text-[10px]">
-                <span className="bg-white/90 px-2 py-0.5 rounded shadow-sm border border-slate-200 font-medium">
-                  {t("coordBadge")}
-                </span>
-                <span className="bg-white/90 px-2 py-0.5 rounded shadow-sm border border-slate-200 font-medium">
-                  {t("areaBadge")}
-                </span>
+              <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between text-steel-500 text-[11px] [text-shadow:0_1px_3px_rgba(15,23,42,0.85),0_2px_10px_rgba(15,23,42,0.55)]">
+                <span className="font-semibold">{t("coordBadge")}</span>
+                <span className="font-semibold">{t("areaBadge")}</span>
               </div>
             </div>
           </div>

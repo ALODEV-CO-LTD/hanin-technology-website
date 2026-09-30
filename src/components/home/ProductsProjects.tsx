@@ -38,8 +38,8 @@ export default function ProductsProjects() {
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbKebYq3Yi1iDsoAXFwRWjce47gn5bzIJ9YMFqnDewXSZC2spmLtGhMIXBObN3GY_ElvNmVQvCX8O2J_e37k-gBj1xBdZCrQje3O5cmm3P1OKwZc-w9SFwQOllK4swLW1CyjRCdttOIl5mbZEluWvsMuhJkbx4yp_Am3cXG9ryAIgDl46MVLOXno6b2rs0MCr-dUeNKQVkUDt_2GCvXY25vGm0Eh51Fu7In9aSZboWpiQQyGqQiW00rg"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent" />
-              <div className="absolute top-4 left-4 bg-white/95 backdrop-blur-md px-3 py-1 rounded border border-slate-200 shadow-sm">
-                <span className="text-[10px] text-steel-600 uppercase font-mono tracking-wider font-bold">
+              <div className="absolute top-4 left-4">
+                <span className="text-[11px] text-steel-500 uppercase font-mono tracking-wider font-bold [text-shadow:0_1px_3px_rgba(15,23,42,0.85),0_2px_10px_rgba(15,23,42,0.55)]">
                   {t("project1.toleranceBadge")}
                 </span>
               </div>
