@@ -25,24 +25,26 @@ export default function ContactHero() {
       />
 
       {/* Content Container */}
-      <div className="relative z-10 w-full px-margin [text-shadow:0_2px_6px_rgba(2,6,23,0.85),0_4px_20px_rgba(2,6,23,0.6)]">
-        <PageBreadcrumb
-          className="mb-space-sm"
-          variant="dark"
-          items={[
-            { label: t("breadcrumbHome"), href: "/" },
-            { label: t("breadcrumbCurrent") },
-          ]}
-        />
+      <div className="relative z-10 w-full px-margin">
+        <div className="[text-shadow:0_2px_6px_rgba(2,6,23,0.85),0_4px_20px_rgba(2,6,23,0.6)]">
+          <PageBreadcrumb
+            className="mb-space-sm"
+            variant="dark"
+            items={[
+              { label: t("breadcrumbHome"), href: "/" },
+              { label: t("breadcrumbCurrent") },
+            ]}
+          />
 
-        <h1 className="text-headline-xl-mobile lg:text-display-hero font-bold tracking-tight text-white uppercase mb-space-sm max-w-3xl">
-          {t("titlePrefix")}{" "}
-          <span className="text-steel-400 underline decoration-steel-400/40 decoration-4 underline-offset-8">
-            {t("titleHighlight")}
-          </span>{" "}
-          {t("titleSuffix")}
-        </h1>
-        <p className="text-body-lg text-slate-200 leading-relaxed max-w-2xl">{t("description")}</p>
+          <h1 className="text-headline-xl-mobile lg:text-display-hero font-bold tracking-tight text-white uppercase mb-space-sm max-w-3xl">
+            {t("titlePrefix")}{" "}
+            <span className="text-steel-400 underline decoration-steel-400/40 decoration-4 underline-offset-8">
+              {t("titleHighlight")}
+            </span>{" "}
+            {t("titleSuffix")}
+          </h1>
+          <p className="text-body-lg text-slate-200 leading-relaxed max-w-2xl">{t("description")}</p>
+        </div>
 
         {/* Engineering spec highlights */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-space-sm max-w-3xl pt-space-md">

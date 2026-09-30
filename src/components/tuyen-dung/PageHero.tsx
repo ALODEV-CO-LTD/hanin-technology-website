@@ -18,22 +18,24 @@ export default function PageHero() {
       />
 
       {/* Content Container */}
-      <div className="relative z-10 w-full px-margin [text-shadow:0_2px_6px_rgba(2,6,23,0.85),0_4px_20px_rgba(2,6,23,0.6)]">
-        <PageBreadcrumb
-          className="mb-space-sm"
-          variant="dark"
-          items={[
-            { label: t("breadcrumbHome"), href: "/" },
-            { label: t("breadcrumbCurrent") },
-          ]}
-        />
+      <div className="relative z-10 w-full px-margin">
+        <div className="[text-shadow:0_2px_6px_rgba(2,6,23,0.85),0_4px_20px_rgba(2,6,23,0.6)]">
+          <PageBreadcrumb
+            className="mb-space-sm"
+            variant="dark"
+            items={[
+              { label: t("breadcrumbHome"), href: "/" },
+              { label: t("breadcrumbCurrent") },
+            ]}
+          />
 
-        <h1 className="text-display-hero-mobile md:text-display-hero text-white tracking-tight uppercase mb-space-sm font-bold">
-          {t("titlePrefix")} <span className="text-steel-400">{t("titleHighlight")}</span>
-        </h1>
-        <p className="text-body-lg text-slate-200 max-w-2xl leading-relaxed">
-          <strong className="text-white font-semibold">{t("companyName")}</strong> {t("description")}
-        </p>
+          <h1 className="text-display-hero-mobile md:text-display-hero text-white tracking-tight uppercase mb-space-sm font-bold">
+            {t("titlePrefix")} <span className="text-steel-400">{t("titleHighlight")}</span>
+          </h1>
+          <p className="text-body-lg text-slate-200 max-w-2xl leading-relaxed">
+            <strong className="text-white font-semibold">{t("companyName")}</strong> {t("description")}
+          </p>
+        </div>
 
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-space-sm max-w-2xl pt-space-md">
           <div className="p-space-sm rounded bg-white shadow-sm flex flex-col gap-1">
