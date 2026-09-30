@@ -1,7 +1,8 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
+import { useSearchParams } from "next/navigation";
 import { useTranslations } from "next-intl";
 import { getCategoryTabs, type Product } from "@/lib/products-data";
 
@@ -85,68 +86,29 @@ function ProductCardStandard({ product, t }: { product: Product; t: ReturnType<t
 export default function ProductCatalog({ products }: { products: Product[] }) {
   const tp = useTranslations("SanPham");
   const t = useTranslations("SanPham.ProductCatalog");
+  const searchParams = useSearchParams();
   const CATEGORY_TABS = useMemo(() => getCategoryTabs(tp), [tp]);
   const GRID_PRODUCTS = useMemo(() => products.filter((product) => product.showInGrid), [products]);
 
   const [activeCategory, setActiveCategory] = useState<(typeof CATEGORY_TABS)[number]["value"]>("all");
-  const [search, setSearch] = useState("");
+
+  useEffect(() => {
+    const raw = searchParams.get("category");
+    const match = CATEGORY_TABS.find((tab) => tab.value === raw);
+    setActiveCategory(match ? match.value : "all");
+  }, [searchParams, CATEGORY_TABS]);
 
   const filtered = useMemo(() => {
-    return GRID_PRODUCTS.filter((product) => {
-      const matchesCategory = activeCategory === "all" || product.categorySlug === activeCategory;
-      const query = search.trim().toLowerCase();
-      const matchesSearch =
-        query.length === 0 ||
-        product.title.toLowerCase().includes(query) ||
-        product.description.toLowerCase().includes(query) ||
-        product.category.toLowerCase().includes(query);
-      return matchesCategory && matchesSearch;
-    });
-  }, [GRID_PRODUCTS, activeCategory, search]);
+    return GRID_PRODUCTS.filter(
+      (product) => activeCategory === "all" || product.categorySlug === activeCategory
+    );
+  }, [GRID_PRODUCTS, activeCategory]);
 
   const featured = filtered.find((product) => product.featured);
   const standard = filtered.filter((product) => !product.featured);
 
   return (
     <>
-      <section className="sticky top-20 z-30 w-full bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm">
-        <div className="mx-auto px-margin py-space-sm flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-space-md">
-          <div className="flex items-center gap-space-xs overflow-x-auto no-scrollbar py-1">
-            {CATEGORY_TABS.map((tab) => (
-              <button
-                key={tab.value}
-                type="button"
-                onClick={() => setActiveCategory(tab.value)}
-                className={
-                  activeCategory === tab.value
-                    ? "px-space-md py-space-xs bg-steel-600 text-white text-label-technical uppercase tracking-wider rounded shrink-0 transition-all shadow-sm font-semibold"
-                    : "px-space-md py-space-xs bg-slate-50 hover:bg-slate-100 text-slate-600 hover:text-slate-900 border border-slate-200 text-label-technical uppercase tracking-wider rounded shrink-0 transition-colors font-semibold"
-                }
-              >
-                {tab.label}
-              </button>
-            ))}
-          </div>
-          <div className="flex items-center gap-space-sm shrink-0">
-            <div className="relative flex items-center">
-              <span className="material-symbols-outlined text-slate-400 text-[18px] absolute left-space-sm pointer-events-none">
-                search
-              </span>
-              <input
-                className="w-full sm:w-64 bg-slate-50 text-slate-900 placeholder:text-slate-400 border border-slate-200 text-body-sm pl-9 pr-space-sm py-space-xs rounded focus:outline-none focus:border-steel-600 focus:bg-white transition-all"
-                placeholder={t("searchPlaceholder")}
-                type="text"
-                value={search}
-                onChange={(event) => setSearch(event.target.value)}
-              />
-            </div>
-            <div className="hidden sm:inline-flex items-center px-space-sm py-space-xs bg-slate-50 border border-slate-200 rounded text-label-technical text-slate-500 shrink-0 font-medium">
-              [{t("showingResults")} {String(filtered.length).padStart(2, "0")} {t("resultsUnit")}]
-            </div>
-          </div>
-        </div>
-      </section>
-
       <section className="w-full mx-auto px-margin py-space-xl bg-slate-50">
         {filtered.length === 0 ? (
           <p className="text-body-md text-slate-500 text-center py-space-xl">{t("emptyState")}</p>

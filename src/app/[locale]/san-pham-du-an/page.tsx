@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import { getLocale, getTranslations } from "next-intl/server";
 import { getProducts } from "@/server/public";
 import CategoryHero from "@/components/san-pham/CategoryHero";
@@ -20,7 +21,11 @@ export default async function SanPhamDuAnPage() {
   return (
     <div className="flex flex-col w-full">
       <CategoryHero />
-      <Reveal><ProductCatalog products={products} /></Reveal>
+      <Reveal>
+        <Suspense fallback={null}>
+          <ProductCatalog products={products} />
+        </Suspense>
+      </Reveal>
       <Reveal direction="right"><FeaturedProjectSpotlight /></Reveal>
       <Reveal><SpecTrustNote /></Reveal>
       <Reveal><ProductsCta /></Reveal>
