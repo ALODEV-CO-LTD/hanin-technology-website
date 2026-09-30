@@ -77,7 +77,7 @@ export default function Header() {
                   className={
                     isActive(link.href)
                       ? "relative inline-flex items-center gap-1 text-body-sm text-steel-600 font-semibold whitespace-nowrap after:absolute after:left-0 after:-bottom-[1px] after:h-[2px] after:w-full after:bg-steel-600"
-                      : "relative inline-flex items-center gap-1 text-body-sm text-slate-600 whitespace-nowrap transition-colors duration-200 hover:text-steel-600 after:absolute after:left-0 after:-bottom-[1px] after:h-[2px] after:w-0 after:bg-steel-600 after:transition-all after:duration-300 hover:after:w-full"
+                      : "relative inline-flex items-center gap-1 text-body-sm text-slate-600 font-semibold whitespace-nowrap transition-colors duration-200 hover:text-steel-600 after:absolute after:left-0 after:-bottom-[1px] after:h-[2px] after:w-0 after:bg-steel-600 after:transition-all after:duration-300 hover:after:w-full"
                   }
                 >
                   {link.label}
@@ -92,7 +92,7 @@ export default function Header() {
                       <Link
                         key={child.href}
                         href={child.href}
-                        className="block px-space-md py-space-sm text-body-sm text-slate-600 hover:bg-steel-50 hover:text-steel-600 transition-colors"
+                        className="block px-space-md py-space-sm text-body-sm text-slate-600 font-semibold hover:bg-steel-50 hover:text-steel-600 transition-colors"
                       >
                         {child.label}
                       </Link>
@@ -107,7 +107,7 @@ export default function Header() {
                 className={
                   isActive(link.href)
                     ? "relative py-1 text-body-sm text-steel-600 font-semibold whitespace-nowrap after:absolute after:left-0 after:-bottom-[1px] after:h-[2px] after:w-full after:bg-steel-600"
-                    : "relative py-1 text-body-sm text-slate-600 whitespace-nowrap transition-colors duration-200 hover:text-steel-600 after:absolute after:left-0 after:-bottom-[1px] after:h-[2px] after:w-0 after:bg-steel-600 after:transition-all after:duration-300 hover:after:w-full"
+                    : "relative py-1 text-body-sm text-slate-600 font-semibold whitespace-nowrap transition-colors duration-200 hover:text-steel-600 after:absolute after:left-0 after:-bottom-[1px] after:h-[2px] after:w-0 after:bg-steel-600 after:transition-all after:duration-300 hover:after:w-full"
                 }
               >
                 {link.label}
@@ -165,7 +165,7 @@ export default function Header() {
                   className={
                     isActive(link.href)
                       ? "py-space-xs text-body-md text-steel-600 font-semibold"
-                      : "py-space-xs text-body-md text-slate-600 hover:text-steel-600 transition-colors"
+                      : "py-space-xs text-body-md text-slate-600 font-semibold hover:text-steel-600 transition-colors"
                   }
                 >
                   {link.label}
@@ -199,7 +199,7 @@ export default function Header() {
                       setMobileOpen(false);
                       setProductsMobileOpen(false);
                     }}
-                    className="py-space-xs text-body-sm text-slate-500 hover:text-steel-600 transition-colors"
+                    className="py-space-xs text-body-sm text-slate-500 font-semibold hover:text-steel-600 transition-colors"
                   >
                     {child.label}
                   </Link>
@@ -217,7 +217,7 @@ export default function Header() {
               } ${
                 isActive(link.href)
                   ? "py-space-xs text-body-md text-steel-600 font-semibold"
-                  : "py-space-xs text-body-md text-slate-600 hover:text-steel-600 transition-colors"
+                  : "py-space-xs text-body-md text-slate-600 font-semibold hover:text-steel-600 transition-colors"
               }`}
             >
               {link.label}
