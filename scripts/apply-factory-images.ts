@@ -3,6 +3,7 @@
  * của nhà máy trong public/images/factory/. Chạy trên máy dev và trên server sau khi deploy:
  *   npm run db:factory-images
  * Ảnh tải lên cũ (thư viện) được chuyển vào DATA_DIR/uploads-old/ để có thể khôi phục, không còn hiển thị trên website.
+ * Sau đó toàn bộ ảnh nhà máy được đăng ký vào Thư viện ảnh của CMS để chọn lại khi sửa banner/dịch vụ/sản phẩm/tin tức.
  */
 import fs from "node:fs";
 import path from "node:path";
@@ -36,7 +37,16 @@ const counts = transaction(() => {
     }
   }
   run("DELETE FROM media");
-  return { banners: banners.length, services, products, posts, media: media.length };
+
+  // Đăng ký ảnh nhà máy (phục vụ trực tiếp từ public/images/factory) vào Thư viện ảnh.
+  const factoryDir = path.join(process.cwd(), "public", "images", "factory");
+  const photos = fs.existsSync(factoryDir) ? fs.readdirSync(factoryDir).filter((f) => /\.(jpe?g|png|webp)$/i.test(f)).sort() : [];
+  for (const file of photos) {
+    const size = fs.statSync(path.join(factoryDir, file)).size;
+    const mime = /\.png$/i.test(file) ? "image/png" : /\.webp$/i.test(file) ? "image/webp" : "image/jpeg";
+    run("INSERT INTO media (path, original, mime, size) VALUES (?, ?, ?, ?)", `/images/factory/${file}`, file, mime, size);
+  }
+  return { banners: banners.length, services, products, posts, media: media.length, registered: photos.length };
 });
 
 console.log("Đã thay ảnh:", counts);
