@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
 import { getPostCounts } from "@/server/public";
+import Icon from "@/components/ui/Icon";
 
 export default function NewsIntro() {
   const t = useTranslations("TinTuc.NewsIntro");
@@ -27,7 +28,7 @@ export default function NewsIntro() {
                 </span>
               </div>
               <div className="w-10 h-10 rounded-full bg-steel-100 flex items-center justify-center text-steel-600">
-                <span className="material-symbols-outlined">library_books</span>
+                <Icon name="library_books" />
               </div>
             </div>
             <div className="bg-slate-50 border border-slate-200 p-space-md rounded-lg flex items-center justify-between">
@@ -38,7 +39,7 @@ export default function NewsIntro() {
                 </span>
               </div>
               <div className="w-10 h-10 rounded-full bg-steel-100 flex items-center justify-center text-steel-600">
-                <span className="material-symbols-outlined">verified</span>
+                <Icon name="verified" />
               </div>
             </div>
           </div>

@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { useTranslations } from "next-intl";
+import Icon from "@/components/ui/Icon";
 
 const FAQ_INDEXES = [0, 1, 2, 3, 4] as const;
 
@@ -34,13 +35,7 @@ export default function ContactFaq() {
                   aria-expanded={isOpen}
                 >
                   <span>{t(`items.${index}.question`)}</span>
-                  <span
-                    className={`material-symbols-outlined text-[20px] shrink-0 transition-transform duration-200 ${
-                      isOpen ? "rotate-180" : ""
-                    }`}
-                  >
-                    expand_more
-                  </span>
+                  <Icon name="expand_more" className={`text-[20px] shrink-0 transition-transform duration-200 ${isOpen ? "rotate-180" : "" }`} />
                 </button>
                 {isOpen && (
                   <div className="px-space-md pb-space-md pt-1 text-slate-600 text-body-md leading-relaxed">

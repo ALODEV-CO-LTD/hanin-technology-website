@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { useLocale, useTranslations } from "next-intl";
 import { getServices } from "@/server/public";
+import Icon from "@/components/ui/Icon";
 
 export default function ServiceCategories() {
   const locale = useLocale();
@@ -52,7 +53,7 @@ export default function ServiceCategories() {
                   href={`/dich-vu-gia-cong-ma/${service.slug}`}
                   className="text-steel-600 text-label-technical font-bold uppercase inline-flex items-center gap-1 hover:underline"
                 >
-                  {tc("detailLink")} <span className="material-symbols-outlined text-[14px]">arrow_forward</span>
+                  {tc("detailLink")} <Icon name="arrow_forward" className="text-[14px]" />
                 </Link>
               </div>
             </div>

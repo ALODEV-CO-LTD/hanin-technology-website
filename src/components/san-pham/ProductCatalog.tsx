@@ -1,9 +1,10 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef } from "react";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { useTranslations } from "next-intl";
+import { Link as IntlLink } from "@/i18n/navigation";
 import { getCategoryTabs, type Product } from "@/lib/products-data";
 
 function ProductCardFeatured({ product, t }: { product: Product; t: ReturnType<typeof useTranslations<"SanPham.ProductCatalog">> }) {
@@ -90,13 +91,9 @@ export default function ProductCatalog({ products }: { products: Product[] }) {
   const CATEGORY_TABS = useMemo(() => getCategoryTabs(tp), [tp]);
   const GRID_PRODUCTS = useMemo(() => products.filter((product) => product.showInGrid), [products]);
 
-  const [activeCategory, setActiveCategory] = useState<(typeof CATEGORY_TABS)[number]["value"]>("all");
-
-  useEffect(() => {
-    const raw = searchParams.get("category");
-    const match = CATEGORY_TABS.find((tab) => tab.value === raw);
-    setActiveCategory(match ? match.value : "all");
-  }, [searchParams, CATEGORY_TABS]);
+  // Danh mục lọc lấy từ ?category= trên URL (bộ lọc nằm ở dropdown trên Header).
+  const rawCategory = searchParams.get("category");
+  const activeCategory = CATEGORY_TABS.find((tab) => tab.value === rawCategory)?.value ?? "all";
 
   const filtered = useMemo(() => {
     return GRID_PRODUCTS.filter(
@@ -104,12 +101,44 @@ export default function ProductCatalog({ products }: { products: Product[] }) {
     );
   }, [GRID_PRODUCTS, activeCategory]);
 
+  const sectionRef = useRef<HTMLElement>(null);
+  const firstRender = useRef(true);
+  const activeLabel = CATEGORY_TABS.find((tab) => tab.value === activeCategory)?.label ?? "";
+
+  // Chọn danh mục (từ dropdown trên Header) thì cuộn mượt xuống danh sách sản phẩm.
+  useEffect(() => {
+    if (firstRender.current) {
+      firstRender.current = false;
+      if (activeCategory === "all") return;
+    }
+    const timer = window.setTimeout(() => {
+      sectionRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+    }, 80);
+    return () => window.clearTimeout(timer);
+  }, [activeCategory]);
+
   const featured = filtered.find((product) => product.featured);
   const standard = filtered.filter((product) => !product.featured);
 
   return (
     <>
-      <section className="w-full mx-auto px-margin py-space-xl bg-slate-50">
+      <section ref={sectionRef} className="w-full mx-auto px-margin py-space-xl bg-slate-50 scroll-mt-[86px]">
+        {activeCategory !== "all" && (
+          <div className="mb-space-lg flex flex-wrap items-center justify-between gap-space-sm rounded border border-steel-200 bg-white px-space-md py-space-sm">
+            <p className="text-body-md text-slate-700">
+              <span className="text-label-technical uppercase tracking-wider text-slate-500 mr-2">{t("filterViewing")}:</span>
+              <span className="font-bold text-steel-700">{activeLabel}</span>
+              <span className="ml-2 text-slate-500">({t("filterCount", { count: filtered.length })})</span>
+            </p>
+            <IntlLink
+              href="/san-pham-du-an"
+              scroll={false}
+              className="inline-flex min-h-11 items-center text-label-technical uppercase tracking-wider font-semibold text-steel-600 hover:underline"
+            >
+              {t("filterViewAll")}
+            </IntlLink>
+          </div>
+        )}
         {filtered.length === 0 ? (
           <p className="text-body-md text-slate-500 text-center py-space-xl">{t("emptyState")}</p>
         ) : (

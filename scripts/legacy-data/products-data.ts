@@ -62,7 +62,7 @@ export function getProducts(t: ProductsTranslator): Product[] {
       lot: "HN-PRD-882",
       description: t("products.banhRang.description"),
       image:
-        "https://lh3.googleusercontent.com/aida/AEtjO1V_tTw69cPLPuAIAklw62bUMsvgXOHLbVZUqyKCJdQn_gFGTqySCY3U3wnUcewgUsnu71oBcRfurU-p9d1aZg1Iz5LfLhHjHQLMTxR21uxzTofv3GPACm5PiDfyiCcmdors7PXFhyxKIo0DTYVyDsJucARefAbj47sUOowsSJbw5y3BF5XkoqhD6i82G8UOZb7-RmquUuqzpzx8eLMdX76f84CKrLZ4KIY1tELUBoroCSjAwSniyEr7qQL-",
+        "/images/factory/qc-7.jpg",
       imageAlt: t("products.banhRang.imageAlt"),
       imageBadge: t("products.banhRang.imageBadge"),
       specChips: [
@@ -81,7 +81,7 @@ export function getProducts(t: ProductsTranslator): Product[] {
       lot: "HN-PRD-741",
       description: t("products.pistonTruc.description"),
       image:
-        "https://lh3.googleusercontent.com/aida-public/AB6AXuB-L99Nt8jdj5_ENTBVcnfW_xELEOl54Te4hFTL3Hg6RGpY7gw48eslCBcc7f42S3SBdQwThs9AFZAsIwhkTFrtBiEMKq8_kAgWh-3WxLUZwWUvn9xmsAkjd_gpAGF20T-KAGL323XIqWikrSDizkWjE4KBjEMaM7OOJ46O-D4MeGUrxI29q4hfCHxvJYVWvyH26Gz3Epu32JxKkL-ZDMCkrI4eLJEPoihSYFrIL8Vom_LGoPbC8e_jng",
+        "/images/factory/qc-2.jpg",
       imageAlt: t("products.pistonTruc.imageAlt"),
       imageBadge: t("products.pistonTruc.imageBadge"),
       specChips: [
@@ -100,7 +100,7 @@ export function getProducts(t: ProductsTranslator): Product[] {
       lot: "HN-PRD-903",
       description: t("products.busbar.description"),
       image:
-        "https://lh3.googleusercontent.com/aida-public/AB6AXuDBm5dDTGIUSE8Igv663hzCgH3rH-kKI1euza2OEGnRSXOtzqW8FnTsFaxjSVP6_CwpXb3uJqVD8Fr6yOyRiOkl1gTQukK5EIxPU5O-BD1LXPyf_RkI38kVOjROWZRa9HeKrVrRrQPPiiFE4JNSWq3-wKdqlg84bADk-dINOWi7hLmkmw8947Cdh-ggqkheZDtMWQdzEor2Q9tuHEVbD3UdfvCbvD2htkJJO1IG8qr3Y-wMTWLy8h7F4Q",
+        "/images/factory/qc-3.jpg",
       imageAlt: t("products.busbar.imageAlt"),
       imageBadge: t("products.busbar.imageBadge"),
       specChips: [
@@ -119,7 +119,7 @@ export function getProducts(t: ProductsTranslator): Product[] {
       lot: "HN-PRD-655",
       description: t("products.buLong.description"),
       image:
-        "https://lh3.googleusercontent.com/aida/AEtjO1W3z8rS6tU8vW0xY2zApU1e4wY3g0o7P3zZcR9tQ8vW2mB6xY1uK9tF5rQ2xX8gV4w-zT1qA3sD6fG8hJ9kL0mN2pQ4rS6tU8vW0xY2",
+        "/images/factory/kho-2.jpg",
       imageAlt: t("products.buLong.imageAlt"),
       imageBadge: t("products.buLong.imageBadge"),
       specChips: [
@@ -138,7 +138,7 @@ export function getProducts(t: ProductsTranslator): Product[] {
       lot: "HN-PRD-812",
       description: t("products.ongLot.description"),
       image:
-        "https://lh3.googleusercontent.com/aida-public/AB6AXuCaWVqo-1eqEwLAWZ_EDs7np1tYr5MJm0hn8Yd9y4fQBodJSw8_5kxMIVFxMv-ct7rfv427BO2DA2tEkPoySHifyDiLCl50Sa4zcWiOeokB5cFb2klLOeGpHeIP_ghPVAm_J53wdQIeMnyfig2ld9dOTdhn31OIkpOILjptSUmpYVH4LotNx4bq7yr9UsxJKzWpQw1iYAV72KcouUur1rgswqoJ-cF0wlgEBhQT8K7d3_rKFUqkdkI25Q",
+        "/images/factory/qc-5.jpg",
       imageAlt: t("products.ongLot.imageAlt"),
       imageBadge: t("products.ongLot.imageBadge"),
       specChips: [
@@ -157,7 +157,7 @@ export function getProducts(t: ProductsTranslator): Product[] {
       lot: "HN-PLC-04",
       description: t("products.cumLinhKien.description"),
       image:
-        "https://lh3.googleusercontent.com/aida/AEtjO1W3z8rS6tU8vW0xY2zApU1e4wY3g0o7P3zZcR9tQ8vW2mB6xY1uK9tF5rQ2xX8gV4w-zT1qA3sD6fG8hJ9kL0mN2pQ4rS6tU8vW0xY2",
+        "/images/factory/kho-5.jpg",
       imageAlt: t("products.cumLinhKien.imageAlt"),
       imageBadge: t("products.cumLinhKien.imageBadge"),
       specChips: [
@@ -223,13 +223,13 @@ export function getProductDetailContent(t: ProductsTranslator) {
     ],
     heroDescription: t("detail.heroDescription"),
     heroImage:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuDJeNDLUaBDEs48vil6OqvXjZ4KzCFrJ3fWyv2HG-s8rj9cRdF8tQlS1wNHMpNyyBXS5YYZSDS5U7Eeukr51Tqh8CUbTo2xMyOl_DXzAysjWQKW-6EUO-7RXxMz0OYdrp20tb5HolXN_KrVibRxUQeh4jc8vQVJaYZn5FWeNDvpU3CFiCxWGEWlERIK_D_KSf2THFY3rBd6M1c9Gi62iaMBzFkHmvlSN6XjhuVDEuSll3LRExy8ROphDQ",
+      "/images/factory/qc-1.jpg",
     heroImageAlt: t("detail.heroImageAlt"),
     gallery: [
       {
         id: 1,
         image:
-          "https://lh3.googleusercontent.com/aida-public/AB6AXuDQf1X78lIBHCSSK-QTIU-1rQfqODRdlc0CrQizfhoXmWAJXae06wqmjuyxlhMS4kAVsPfZvH0aI8iUcAd5mB-36FhKva4FwkKLU953EQQhX5RP8cZpV0Eoy_y_-rPc7U8WHUP96plDdRXYmOIBkEFSgMHM2uYCWNrFLVOynZ02dIw1hOa3hHb21KAsATPXaZAl_Mjwe7DrnQ-V4bYxABALU_CgrHWqzM-08zjzAAUORk69ofOWK82T9A",
+          "/images/factory/qc-2.jpg",
         alt: t("detail.gallery.item1.alt"),
         thumbLabel: t("detail.gallery.item1.thumbLabel"),
         caption: t("detail.gallery.item1.caption"),
@@ -237,7 +237,7 @@ export function getProductDetailContent(t: ProductsTranslator) {
       {
         id: 2,
         image:
-          "https://lh3.googleusercontent.com/aida-public/AB6AXuAgYMLFKLnFOAHBnQqBQvuiw6MjXcHNyYLgQ1LFWOLmfH0RMggYnvMbk_23VMB5GHxAs8nsqXbfBCnwoNBPxPME9_ure9QxHrUgkYHrE5p3MLIMiAKuh5vdNRhFhKfevNs5g6xfgAQ3uf_t9Eteimb2rM50vcE2aDIivFvuvK5is2nHv4mTVtfRTe2EDpZOfTACexNLlUNRyS2WsZL3llnZwq8BDq7HlY3woRcix3T9E6N5CHNVr4K_Og",
+          "/images/factory/qc-3.jpg",
         alt: t("detail.gallery.item2.alt"),
         thumbLabel: t("detail.gallery.item2.thumbLabel"),
         caption: t("detail.gallery.item2.caption"),
@@ -245,7 +245,7 @@ export function getProductDetailContent(t: ProductsTranslator) {
       {
         id: 3,
         image:
-          "https://lh3.googleusercontent.com/aida-public/AB6AXuAWkZDChzTqGFvmOkP3p-eeHYdymByt9FprAYAwO-3dglLaqfl6yGQmRmt4oqhgrSDX2GDhNKFCXDhRZP59U6t2NnfhzoKhoEQf-_QwAhze4zVwl-dkh1Ff6IU059pYuRRw7p2M8H-hRUh-s4Hdn8VIuY8p7Dmpg0z64xXPruZQOURdRitekeIhiir0RWjj6U9JgLllQ03NH3uKZyT9OEYMGI2V36Yla6ipxRNOQotl5Ch53SeljoafhQ",
+          "/images/factory/qc-7.jpg",
         alt: t("detail.gallery.item3.alt"),
         thumbLabel: t("detail.gallery.item3.thumbLabel"),
         caption: t("detail.gallery.item3.caption"),
@@ -253,7 +253,7 @@ export function getProductDetailContent(t: ProductsTranslator) {
       {
         id: 4,
         image:
-          "https://lh3.googleusercontent.com/aida-public/AB6AXuDVuy2C0hnhH3BKQmfxLoHMs5DDjb8OMIDyWxvZzDXeQ2RpxgHTW-Gwr-8tuvpFkqp-18dXdkha-exxhFIsYfjj0ov06G3nWt0RTRqR5L3p4udIo6FwdTOg49auJCu0QXuIoeko5vM052YuS78OuAB78O7dKJO0UqzbAXTPrmZZDjUZBwP2qmPm2NNsOqBidnCtyqAXFwsD2qqMY2RMXzRqfnjRK7RVf6zEgq9hokxFeBpMcHCFGL-0Gw",
+          "/images/factory/kho-4.jpg",
         alt: t("detail.gallery.item4.alt"),
         thumbLabel: t("detail.gallery.item4.thumbLabel"),
         caption: t("detail.gallery.item4.caption"),

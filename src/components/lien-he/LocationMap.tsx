@@ -1,6 +1,7 @@
 import { siteImg } from "@/server/site-images";
 import { useTranslations } from "next-intl";
 import { getSettings, isSafeMapEmbed } from "@/server/settings";
+import Icon from "@/components/ui/Icon";
 
 const DISTANCE_KEYS = ["airport", "seaport", "industrialParks"] as const;
 const DISTANCE_META: Record<
@@ -18,7 +19,7 @@ export default function LocationMap() {
   const embedUrl = mapEmbedUrl && isSafeMapEmbed(mapEmbedUrl) ? mapEmbedUrl : "";
 
   return (
-    <section className="w-full bg-white py-space-xl scroll-mt-20" id="map-section">
+    <section className="w-full bg-white py-space-xl scroll-mt-[86px]" id="map-section">
       <div className="mx-auto px-margin">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-stretch">
           {/* Map info & logistics instructions */}
@@ -40,9 +41,7 @@ export default function LocationMap() {
                       className="flex items-center justify-between p-space-sm bg-slate-50 rounded"
                     >
                       <span className="text-slate-900 font-semibold flex items-center gap-2 text-body-sm">
-                        <span className={`material-symbols-outlined text-[20px] ${meta.color}`}>
-                          {meta.icon}
-                        </span>
+                        <Icon name={meta.icon} className={`text-[20px] ${meta.color}`} />
                         <span>{t(`distances.${key}.label`)}</span>
                       </span>
                       <span className="text-steel-600 font-bold text-body-sm">
@@ -62,13 +61,13 @@ export default function LocationMap() {
                 target="_blank"
               >
                 <span>{t("openMapsCta")}</span>
-                <span className="material-symbols-outlined text-[16px]">open_in_new</span>
+                <Icon name="open_in_new" className="text-[16px]" />
               </a>
               <a
                 className="py-space-sm px-space-md bg-white border border-slate-200 text-slate-900 hover:bg-slate-100 rounded text-label-md uppercase tracking-wider font-bold transition-colors flex items-center justify-center gap-2"
                 href="#rfq-form"
               >
-                <span className="material-symbols-outlined text-[18px]">download</span>
+                <Icon name="download" className="text-[18px]" />
                 <span>{t("downloadMapCta")}</span>
               </a>
             </div>
@@ -90,7 +89,7 @@ export default function LocationMap() {
               className="w-full h-full min-h-[420px] bg-cover bg-center relative"
               style={{
                 backgroundImage:
-                  `url('${siteImg("lien-he/LocationMap#1", "https://lh3.googleusercontent.com/aida-public/AB6AXuA85UYKWjtcuwrKepapp5MGDdkuAw_EkrbJcdYP0KEnhARjTxjDM6ysANOszfzGcmxjpiJvoxblg_GtRL2Y8qq3iM1754kBL6Xq_JW7mPT73PyXm5o9XleM1MYjMsmnLm-2tx8E8Ox6DbCkMhmmHJmz7Dv_jETW5jbr1bSSlnlsdXmR2vEqY2jq4fQmZ74s_TN3e4J_PUPdounLmttBxaKQrk7ngZiFBp1WnAjkOuzD1awXA3q2ZfyQfQ")}')`,
+                  `url('${siteImg("lien-he/LocationMap#1", "/images/factory/kho-6.jpg")}')`,
               }}
               role="img"
               aria-label={t("satelliteImageAlt")}

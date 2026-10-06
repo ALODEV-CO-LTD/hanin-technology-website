@@ -4,27 +4,46 @@ export interface SettingDef {
   key: string;
   label: string;
   help?: string;
-  group: "Mạng xã hội & liên kết" | "Bản đồ" | "Liên hệ";
+  group: "Thông tin liên hệ chung" | "Mạng xã hội & liên kết" | "Bản đồ" | "Liên hệ" | "Tải xuống";
+  /** Cách kiểm tra giá trị khi lưu (mặc định: link http/https/mailto). */
+  kind?: "email" | "phone";
+  /** Giá trị hiển thị khi CMS chưa lưu gì (= nội dung website hiện có). */
+  defaultValue?: string;
 }
 
 export const SETTING_DEFS: SettingDef[] = [
+  { key: "hotline", label: "Hotline chính", group: "Thông tin liên hệ chung", kind: "phone", defaultValue: "(+84) 24 3818 6868", help: "Hiển thị ở trang chủ, Liên hệ, Tin tức, Sản phẩm, Dịch vụ, chân trang; nút gọi tự dùng số này." },
+  { key: "engineerHotline", label: "Hotline kỹ sư", group: "Thông tin liên hệ chung", kind: "phone", defaultValue: "(+84) 988 123 456" },
+  { key: "hrHotline", label: "Điện thoại tuyển dụng", group: "Thông tin liên hệ chung", kind: "phone", defaultValue: "(+84) 24 3818 6868 (Ext: 108)" },
+  { key: "salesEmail", label: "Email kinh doanh / báo giá", group: "Thông tin liên hệ chung", kind: "email", defaultValue: "Haninplating@gmail.com" },
+  { key: "engineeringEmail", label: "Email kỹ thuật", group: "Thông tin liên hệ chung", kind: "email", defaultValue: "Haninplating@gmail.com" },
+  { key: "hrEmail", label: "Email tuyển dụng", group: "Thông tin liên hệ chung", kind: "email", defaultValue: "tuyendung@hanintech.vn" },
   { key: "zaloUrl", label: "Zalo (link chat)", group: "Mạng xã hội & liên kết", help: "Ví dụ https://zalo.me/0988123456" },
   { key: "facebookUrl", label: "Facebook", group: "Mạng xã hội & liên kết" },
   { key: "youtubeUrl", label: "YouTube", group: "Mạng xã hội & liên kết" },
   { key: "linkedinUrl", label: "LinkedIn", group: "Mạng xã hội & liên kết" },
-  { key: "mapsUrl", label: "Link Google Maps chỉ đường", group: "Bản đồ" },
+  { key: "instagramUrl", label: "Instagram", group: "Mạng xã hội & liên kết" },
+  { key: "mapsUrl", label: "Link Google Maps chỉ đường", group: "Bản đồ" , defaultValue: "https://www.google.com/maps?q=21.207361,105.754028" },
   { key: "mapEmbedUrl", label: "Link nhúng bản đồ (iframe src)", group: "Bản đồ", help: "Lấy từ Google Maps → Chia sẻ → Nhúng bản đồ." },
-  { key: "inquiryNotifyEmail", label: "Email nhận thông báo yêu cầu mới", group: "Liên hệ", help: "Lưu sẵn để dùng khi cấu hình SMTP; hiện yêu cầu mới xem trong CMS." },
+  { key: "profileUrl", label: "Link tải Hồ sơ năng lực (PDF)", group: "Tải xuống", help: "Tải PDF lên Thư viện ảnh rồi dán đường dẫn /uploads/... vào đây. Để trống thì nút tải sẽ dẫn tới form liên hệ." },
+  { key: "inquiryNotifyEmail", label: "Email nhận thông báo yêu cầu mới", group: "Liên hệ", defaultValue: "Haninplating@gmail.com", help: "Lưu sẵn để dùng khi cấu hình SMTP; hiện yêu cầu mới xem trong CMS." },
 ];
 
 const KEYS = new Set(SETTING_DEFS.map((d) => d.key));
 
 export function getSettings(): Record<string, string> {
-  const out: Record<string, string> = Object.fromEntries(SETTING_DEFS.map((d) => [d.key, ""]));
+  const out: Record<string, string> = Object.fromEntries(SETTING_DEFS.map((d) => [d.key, d.defaultValue ?? ""]));
   for (const row of all<{ key: string; value: string }>("SELECT key, value FROM settings")) {
     if (KEYS.has(row.key)) out[row.key] = row.value;
   }
   return out;
+}
+
+/** Số điện thoại → chuỗi dùng cho tel: (giữ dấu + đầu, bỏ ký tự khác và phần máy lẻ). */
+export function telHref(phone: string): string {
+  const main = phone.replace(/\(?\s*ext[^)]*\)?/i, "");
+  const digits = main.replace(/[^\d+]/g, "");
+  return `tel:${digits}`;
 }
 
 export function isSafeLink(value: string): boolean {

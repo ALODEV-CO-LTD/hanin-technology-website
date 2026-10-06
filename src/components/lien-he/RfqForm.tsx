@@ -1,9 +1,11 @@
 "use client";
 
+import Select from "@/components/ui/Select";
 import { useState, type FormEvent } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { usePathname } from "@/i18n/navigation";
 import { submitInquiry } from "@/lib/submit-inquiry";
+import Icon from "@/components/ui/Icon";
 
 const PLATING_OPTION_VALUES = ["niken", "crom", "kem", "anodize", "bac", "other"] as const;
 const VOLUME_OPTION_VALUES = ["sample", "pilot", "mass", "oem"] as const;
@@ -101,7 +103,7 @@ export default function RfqForm() {
   }
 
   return (
-    <section className="w-full bg-slate-50 py-space-xl scroll-mt-20" id="rfq-form">
+    <section className="w-full bg-slate-50 py-space-xl scroll-mt-[86px]" id="rfq-form">
       <div className="mx-auto px-margin">
         <div className="bg-white border border-slate-200 rounded shadow-lg overflow-hidden">
           {/* Form header ribbon */}
@@ -112,7 +114,7 @@ export default function RfqForm() {
               </h2>
             </div>
             <div className="flex items-center gap-2 text-slate-300 text-label-sm bg-slate-800 px-3 py-1.5 rounded">
-              <span className="material-symbols-outlined text-steel-500 text-[18px]">lock</span>
+              <Icon name="lock" className="text-steel-500 text-[18px]" />
               <span>{t("securityBadge")}</span>
             </div>
           </div>
@@ -122,18 +124,14 @@ export default function RfqForm() {
             <div className="px-space-xl pt-space-lg">
               {status === "submitting" && (
                 <div className="p-space-md bg-slate-100 text-slate-700 rounded flex items-center gap-3">
-                  <span className="material-symbols-outlined animate-spin text-[22px]">
-                    progress_activity
-                  </span>
+                  <Icon name="progress_activity" className="animate-spin text-[22px]" />
                   <span className="text-body-md font-semibold">{t("status.submitting")}</span>
                 </div>
               )}
               {status === "success" && (
                 <div className="p-space-md bg-emerald-50 text-emerald-900 rounded border-l-4 border-emerald-600 flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md">
                   <div className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-emerald-600 text-[28px] shrink-0 mt-0.5">
-                      check_circle
-                    </span>
+                    <Icon name="check_circle" className="text-emerald-600 text-[28px] shrink-0 mt-0.5" />
                     <div>
                       <p className="text-title-md font-bold text-emerald-950">
                         {t("status.successTitle")}
@@ -155,7 +153,7 @@ export default function RfqForm() {
               {status === "error" && (
                 <div className="p-space-md bg-red-50 text-red-800 rounded border-l-4 border-red-600 flex items-center justify-between gap-3">
                   <div className="flex items-center gap-3">
-                    <span className="material-symbols-outlined text-red-600 text-[24px]">error</span>
+                    <Icon name="error" className="text-red-600 text-[24px]" />
                     <span className="text-body-md font-semibold">{sendFailed ? t("status.sendError") : t("status.errorMessage")}</span>
                   </div>
                   <button
@@ -271,36 +269,26 @@ export default function RfqForm() {
                   <label className="text-label-md text-slate-900 font-semibold" htmlFor="platingService">
                     {t("step2.platingServiceLabel")} <span className="text-steel-600">*</span>
                   </label>
-                  <select
+                  <Select
                     id="platingService"
                     className={inputClass.replace("h-11 px-3.5", "h-11 px-3")}
                     required
                     value={form.platingService}
-                    onChange={(e) => updateField("platingService", e.target.value)}
-                  >
-                    {PLATING_OPTION_VALUES.map((value) => (
-                      <option key={value} value={value}>
-                        {t(`step2.platingOptions.${value}`)}
-                      </option>
-                    ))}
-                  </select>
+                    onChange={(v) => updateField("platingService", v)}
+                    options={PLATING_OPTION_VALUES.map((value) => ({ value, label: t(`step2.platingOptions.${value}`) }))}
+                  />
                 </div>
                 <div className="flex flex-col gap-1.5">
                   <label className="text-label-md text-slate-900 font-semibold" htmlFor="volume">
                     {t("step2.volumeLabel")}
                   </label>
-                  <select
+                  <Select
                     id="volume"
                     className={inputClass.replace("h-11 px-3.5", "h-11 px-3")}
                     value={form.volume}
-                    onChange={(e) => updateField("volume", e.target.value)}
-                  >
-                    {VOLUME_OPTION_VALUES.map((value) => (
-                      <option key={value} value={value}>
-                        {t(`step2.volumeOptions.${value}`)}
-                      </option>
-                    ))}
-                  </select>
+                    onChange={(v) => updateField("volume", v)}
+                    options={VOLUME_OPTION_VALUES.map((value) => ({ value, label: t(`step2.volumeOptions.${value}`) }))}
+                  />
                 </div>
               </div>
               <div className="flex flex-col gap-1.5">
@@ -344,7 +332,7 @@ export default function RfqForm() {
                 />
                 <div className="flex flex-col items-center justify-center gap-space-sm pointer-events-none">
                   <div className="w-14 h-14 rounded-full bg-white text-steel-600 flex items-center justify-center shadow-sm group-hover:scale-105 transition-transform">
-                    <span className="material-symbols-outlined text-[32px]">cloud_upload</span>
+                    <Icon name="cloud_upload" className="text-[32px]" />
                   </div>
                   <div>
                     <p className="text-title-md font-bold text-slate-900">
@@ -373,9 +361,7 @@ export default function RfqForm() {
               </div>
               <div className="mt-space-sm flex items-center justify-between p-space-sm bg-slate-50 rounded text-slate-500 text-label-md">
                 <div className="flex items-center gap-2">
-                  <span className="material-symbols-outlined text-steel-600 text-[18px]">
-                    attach_file
-                  </span>
+                  <Icon name="attach_file" className="text-steel-600 text-[18px]" />
                   <span>
                     {files.length > 0 ? (
                       <>
@@ -427,7 +413,7 @@ export default function RfqForm() {
                 <span>
                   {status === "submitting" ? t("step4.submittingCta") : t("step4.submitCta")}
                 </span>
-                <span className="material-symbols-outlined text-[20px]">arrow_forward</span>
+                <Icon name="arrow_forward" className="text-[20px]" />
               </button>
             </div>
           </form>

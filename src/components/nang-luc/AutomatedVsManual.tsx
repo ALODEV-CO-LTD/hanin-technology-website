@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
 import { siteImg } from "@/server/site-images";
+import Icon from "@/components/ui/Icon";
 
 export default function AutomatedVsManual() {
   const t = useTranslations("NangLuc.AutomatedVsManual");
@@ -21,7 +22,7 @@ export default function AutomatedVsManual() {
                 <img
                   className="w-full h-full object-cover"
                   alt={t("automated.imageAlt")}
-                  src={siteImg("nang-luc/AutomatedVsManual#1", "https://lh3.googleusercontent.com/aida-public/AB6AXuA6Rp9iUGeqni3A6u4Y3C-JoRdlsiZ3JPcevdQQ-JcImbiNSnXcvpd1_n9lbSPFdOtkXGmXJ8Yx311AAoAwa_C_Q1axzJc1TJSpiEZxnREJYdzd4qo0KJVN59JJcefB_TNtV2r_9v-9QQ7BzHkT0ZT6D4CUyOVaOPhuwRt7CgEeHBj7GH-QtFAgQ0kmBD1iFwD_6QkgwWS5IebEzVgCvo8z_6zf-OsY0N_7HWZ10e9pJsP0oIlTC1SNmg")}
+                  src={siteImg("nang-luc/AutomatedVsManual#1", "/images/factory/ma-treo-2.jpg")}
                 />
               </div>
               <h3 className="text-headline-sm text-slate-900 uppercase mb-space-xs">{t("automated.title")}</h3>
@@ -29,15 +30,15 @@ export default function AutomatedVsManual() {
             </div>
             <div className="space-y-space-xs bg-slate-50 border border-slate-200 p-space-md rounded text-label-technical text-slate-700">
               <div className="flex items-center gap-2">
-                <span className="text-steel-600 material-symbols-outlined text-[16px]">check_circle</span>
+                <Icon name="check_circle" className="text-steel-600 text-[16px]" />
                 <span>{t("automated.feature1")}</span>
               </div>
               <div className="flex items-center gap-2">
-                <span className="text-steel-600 material-symbols-outlined text-[16px]">check_circle</span>
+                <Icon name="check_circle" className="text-steel-600 text-[16px]" />
                 <span>{t("automated.feature2")}</span>
               </div>
               <div className="flex items-center gap-2">
-                <span className="text-steel-600 material-symbols-outlined text-[16px]">check_circle</span>
+                <Icon name="check_circle" className="text-steel-600 text-[16px]" />
                 <span>{t("automated.feature3")}</span>
               </div>
             </div>
@@ -51,7 +52,7 @@ export default function AutomatedVsManual() {
                 <img
                   className="w-full h-full object-cover"
                   alt={t("manual.imageAlt")}
-                  src={siteImg("nang-luc/AutomatedVsManual#2", "https://lh3.googleusercontent.com/aida-public/AB6AXuD9gDB_GDtgTuGWQ11eXyw3ln1I983UzyAD1puXLPdxQQrrMF4LTkJrj7Q2nJax-nYxbOuNg17ACAdUFpiZgLWUlmIwl8TZDBGcm8tHAXVuJeV8vLgEAFawY6al08_7_WX6mBbvn4eZudzKH11P-bOglwuQVEOzBlsrH1-t8iEV8hNQNTXSNhZpIQcjEZx0g-hFSoqnuMinXx6LiZk3U64BaRdq0uDdejVod0LFd8KtAiBNUYelDkaJUw")}
+                  src={siteImg("nang-luc/AutomatedVsManual#2", "/images/factory/ma-quay-5.jpg")}
                 />
               </div>
               <h3 className="text-headline-sm text-slate-900 uppercase mb-space-xs">{t("manual.title")}</h3>
@@ -59,15 +60,15 @@ export default function AutomatedVsManual() {
             </div>
             <div className="space-y-space-xs bg-slate-50 border border-slate-200 p-space-md rounded text-label-technical text-slate-700">
               <div className="flex items-center gap-2">
-                <span className="text-slate-500 material-symbols-outlined text-[16px]">tune</span>
+                <Icon name="tune" className="text-slate-500 text-[16px]" />
                 <span>{t("manual.feature1")}</span>
               </div>
               <div className="flex items-center gap-2">
-                <span className="text-slate-500 material-symbols-outlined text-[16px]">science</span>
+                <Icon name="science" className="text-slate-500 text-[16px]" />
                 <span>{t("manual.feature2")}</span>
               </div>
               <div className="flex items-center gap-2">
-                <span className="text-slate-500 material-symbols-outlined text-[16px]">engineering</span>
+                <Icon name="engineering" className="text-slate-500 text-[16px]" />
                 <span>{t("manual.feature3")}</span>
               </div>
             </div>

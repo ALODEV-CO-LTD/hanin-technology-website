@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import Icon from "@/components/ui/Icon";
 
 export default function DetailOverview() {
   const t = useTranslations("DichVu.DetailOverview");
@@ -13,7 +14,7 @@ export default function DetailOverview() {
             <h2 className="text-headline-md text-slate-900 tracking-tight uppercase font-bold">{t("heading")}</h2>
           </div>
           <div className="text-label-sm text-slate-500 flex items-center gap-2">
-            <span className="material-symbols-outlined text-steel-600 text-[18px]">verified_user</span>
+            <Icon name="verified_user" className="text-steel-600 text-[18px]" />
             <span>{t("complianceLabel")}</span>
           </div>
         </div>
@@ -31,7 +32,7 @@ export default function DetailOverview() {
               {t("col1.p1")} <strong className="text-slate-900 font-semibold">{t("col1.p1Strong")}</strong>.
             </p>
             <div className="bg-white border border-slate-200 p-space-sm rounded text-label-sm text-slate-600 my-2">
-              <code>[Ni²⁺ + 2e⁻ → Ni] // [H₂PO₂⁻ + H₂O → H₂PO₃⁻ + 2H⁺ + 2e⁻]</code>
+              <code>{t("col1.formula")}</code>
             </div>
             <p className="text-body-md text-slate-600">{t("col1.p2")}</p>
           </div>
@@ -47,19 +48,19 @@ export default function DetailOverview() {
             <p className="text-body-md text-slate-600">{t("col2.intro")}</p>
             <ul className="flex flex-col gap-1.5 text-body-md text-slate-600 mt-1">
               <li className="flex items-start gap-2">
-                <span className="material-symbols-outlined text-steel-600 text-[18px] mt-0.5">check_circle</span>
+                <Icon name="check_circle" className="text-steel-600 text-[18px] mt-0.5" />
                 <span>
                   <strong>{t("col2.item1Strong")}</strong> {t("col2.item1")}
                 </span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="material-symbols-outlined text-steel-600 text-[18px] mt-0.5">check_circle</span>
+                <Icon name="check_circle" className="text-steel-600 text-[18px] mt-0.5" />
                 <span>
                   <strong>{t("col2.item2Strong")}</strong> {t("col2.item2")}
                 </span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="material-symbols-outlined text-steel-600 text-[18px] mt-0.5">check_circle</span>
+                <Icon name="check_circle" className="text-steel-600 text-[18px] mt-0.5" />
                 <span>
                   <strong>{t("col2.item3Strong")}</strong> {t("col2.item3")}
                 </span>

@@ -8,7 +8,7 @@ export default function ManufacturingCapability() {
   const t = useTranslations("Home.ManufacturingCapability");
 
   return (
-    <section className="w-full py-space-xl bg-slate-50 scroll-mt-20" id="nang-luc">
+    <section className="w-full py-space-xl bg-slate-50 scroll-mt-[86px]" id="nang-luc">
       <div className="mx-auto px-margin flex flex-col gap-space-xl">
         <div className="flex flex-col gap-2 max-w-3xl">
           <h2 className="text-headline-xl text-slate-900 font-bold uppercase">
@@ -26,7 +26,7 @@ export default function ManufacturingCapability() {
               <img
                 alt={t("imageAlt")}
                 className="w-full h-full object-cover"
-                src={siteImg("home/ManufacturingCapability#1", "https://lh3.googleusercontent.com/aida-public/AB6AXuAC-ozXlS4iAi4T3wA_X-lfMFRZW6tBLRXa9hiO-_aiiAfyUkQ8VaPUa8EIi2vm-qZxixg0pq2T-tmuJ7mwR9Oi5C5cCOzm0cUAv_mj5VqOPDE2-FpS3whEh-TNU1x6XT7patK-2NZNtDRfCepVnV8NB_q7n1lh24xLceTFJ2xeUcVblzSkj0sC-xVpcv6ESoW197zbUsdcV2puaYUyDaS4LJTXmFeTs8dr52845R9MiW3QRPUFLO-ixg")}
+                src={siteImg("home/ManufacturingCapability#1", "/images/factory/ma-treo-3.jpg")}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent" />
             </div>

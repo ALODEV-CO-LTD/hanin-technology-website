@@ -38,18 +38,67 @@
     },
     "contactHeading": "기술 문의처",
     "addressLabel": "주소:",
-    "address": "베트남 하노이시 메린현 꽝민공단 CN-08",
+    "address": "본사: 베트남 하노이시 꽝민사 꽝민공단 660 로트. 공장: 베트남 하노이시 꽝민사 꽝민공단 49G 로트.",
     "hotlineLabel": "핫라인:",
     "hotline": "(+84) 24 3818 6868 / 0988 123 456",
     "emailLabel": "이메일:",
-    "email": "sales@hanintech.vn / engineering@hanintech.vn",
+    "email": "Haninplating@gmail.com",
     "hoursLabel": "근무 시간:",
     "hours": "월~토: 08:00 - 17:30 (24시간 당직)",
     "zaloChat": "Zalo 기술 상담",
     "googleMaps": "Google 지도 길찾기",
     "statusLine": "도금 라인 및 CMM 측정 시스템: 정상 가동 중",
-    "copyright": "© 2026. All rights reserved. ISO 9001:2015 인증.",
+    "copyright": "© 2026 HANIN Technology 베트남 도금산업 주식회사 · 사업자번호 0110300983. All rights reserved. ISO 9001:2015 인증.",
     "privacyPolicy": "개인정보 처리방침",
-    "termsOfService": "서비스 이용약관"
+    "termsOfService": "서비스 이용약관",
+    "certIso9001": "ISO 9001:2015",
+    "certIso14001": "ISO 14001",
+    "certRohs": "RoHS & REACH"
+  },
+  "Meta": {
+    "site": {
+      "title": "HANIN",
+      "description": "고정밀 금속 도금 및 산업용 표면처리 솔루션."
+    },
+    "home": {
+      "title": "HANIN",
+      "description": "고정밀 금속 도금 및 산업용 표면처리 솔루션."
+    },
+    "gioiThieu": {
+      "title": "회사 소개",
+      "description": "산업 고객을 위한 금속 도금 가공의 발전 방향과 역량을 소개합니다."
+    },
+    "dichVu": {
+      "title": "도금 가공 및 표면처리 서비스",
+      "description": "자동차·항공 기준을 충족하는 전해 도금, 무전해 도금 및 금속 표면처리 서비스: 경질 크롬 도금, 무전해 니켈 도금(ENP), 아연-니켈 도금, 알루미늄 아노다이징."
+    },
+    "sanPham": {
+      "title": "제품 및 프로젝트",
+      "description": "고기술 금속 도금 제품 및 프로젝트: 마이크론 단위 공차 관리, 균일한 도금층, 가혹한 환경에서의 내구성."
+    },
+    "nangLuc": {
+      "title": "생산 역량",
+      "description": "표준화된 공장 시스템, PLC SCADA 자동 제어 도금 라인, 국제 기준을 충족하는 미세 검사 시험실."
+    },
+    "tinTuc": {
+      "title": "뉴스 및 기술 소식",
+      "description": "기업 소식, 금속 표면처리 기술, 품질 측정 기준 및 최신 생산 활동을 전해 드립니다."
+    },
+    "tuyenDung": {
+      "title": "채용",
+      "description": "금속 도금 및 정밀 기계 분야의 현재 모집 중인 직무입니다."
+    },
+    "lienHe": {
+      "title": "문의 및 견적 요청",
+      "description": "금속 도금 기술 솔루션, 정밀 기계 가공 상담을 문의하시고 CAD 도면과 함께 견적(RFQ)을 요청하세요."
+    },
+    "chinhSachBaoMat": {
+      "title": "개인정보 처리방침",
+      "description": "HANIN이 웹사이트를 통해 받은 고객 정보를 수집, 이용 및 보호하는 방법."
+    },
+    "dieuKhoan": {
+      "title": "서비스 약관",
+      "description": "웹사이트 이용 약관 및 HANIN에 견적을 요청할 때의 일반 규정."
+    }
   }
 }

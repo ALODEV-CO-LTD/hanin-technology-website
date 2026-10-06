@@ -2,20 +2,16 @@
   "Home": {
     "CompanySnapshot": {
       "partners": {
-        "label1": "파트너",
-        "label2": "고객사"
+        "label1": "고객사"
       },
-      "projects": {
-        "label1": "프로젝트",
-        "label2": "진행 건수"
+      "staff": {
+        "label1": "임직원"
       },
-      "lines": {
-        "label1": "생산라인",
-        "label2": "설비"
+      "area": {
+        "label1": "공장 부지"
       },
-      "capacity": {
-        "label1": "톤/월",
-        "label2": "생산 능력"
+      "founded": {
+        "label1": "설립 연도"
       }
     },
     "Hero": {
@@ -47,7 +43,7 @@
       "badgeSubtitle": "산업용 표면처리 표준",
       "title": "차별화된 경쟁력을 만드는 역량.",
       "paragraph1": "금속 도금 가공 분야에 집중하며, 산업 고객을 위한 생산 역량을 보유하고 있습니다.",
-      "paragraph2": "[기업 공식 정보는 생산 역량 및 운영 규모 기준에 맞춰 순차적으로 업데이트될 예정입니다].",
+      "paragraph2": "HANIN은 2023년에 설립되어 하노이 꽝민공단에서 2,230 m² 규모의 공장을 운영하며, 58명의 인력으로 100곳 이상의 산업 고객을 지원합니다.",
       "ctaLink": "HANIN 더 알아보기"
     },
     "PlatingServices": {
@@ -239,7 +235,7 @@
       "zaloCta": "HANIN과 채팅하기",
       "emailLabel": "견적 문의 이메일",
       "addressLabel": "공장 주소",
-      "addressValue": "Lô CN-08, KCN Quang Minh, Huyện Mê Linh, Hà Nội"
+      "addressValue": "Lô 49G, KCN Quang Minh, xã Quang Minh, Hà Nội"
     }
   }
 }

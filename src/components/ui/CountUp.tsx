@@ -1,6 +1,14 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, useSyncExternalStore } from "react";
+
+const REDUCED_MOTION_QUERY = "(prefers-reduced-motion: reduce)";
+
+function subscribeReducedMotion(onChange: () => void) {
+  const mq = window.matchMedia(REDUCED_MOTION_QUERY);
+  mq.addEventListener("change", onChange);
+  return () => mq.removeEventListener("change", onChange);
+}
 
 function formatNumber(
   current: number,
@@ -39,20 +47,20 @@ export default function CountUp({
   className?: string;
 }) {
   const ref = useRef<HTMLSpanElement>(null);
-  const [display, setDisplay] = useState(() => formatNumber(0, decimals, padStart, thousandsSeparator));
+  const [animated, setAnimated] = useState(() => formatNumber(0, decimals, padStart, thousandsSeparator));
+  const reducedMotion = useSyncExternalStore(
+    subscribeReducedMotion,
+    () => window.matchMedia(REDUCED_MOTION_QUERY).matches,
+    () => false,
+  );
+  // Người dùng giảm chuyển động: hiện thẳng giá trị cuối, không chạy hiệu ứng.
+  const display = reducedMotion ? formatNumber(end, decimals, padStart, thousandsSeparator) : animated;
 
   useEffect(() => {
     const node = ref.current;
     if (!node) return;
 
-    const prefersReducedMotion =
-      typeof window !== "undefined" &&
-      window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-
-    if (prefersReducedMotion) {
-      setDisplay(formatNumber(end, decimals, padStart, thousandsSeparator));
-      return;
-    }
+    if (reducedMotion) return;
 
     let rafId = 0;
 
@@ -65,7 +73,7 @@ export default function CountUp({
         const progress = Math.min(elapsed / duration, 1);
         const eased = 1 - Math.pow(1 - progress, 3);
         const current = from + (end - from) * eased;
-        setDisplay(formatNumber(current, decimals, padStart, thousandsSeparator));
+        setAnimated(formatNumber(current, decimals, padStart, thousandsSeparator));
         if (progress < 1) {
           rafId = requestAnimationFrame(tick);
         }
@@ -92,8 +100,7 @@ export default function CountUp({
       observer.disconnect();
       cancelAnimationFrame(rafId);
     };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [end, decimals, padStart, thousandsSeparator, duration]);
+  }, [end, decimals, padStart, thousandsSeparator, duration, reducedMotion]);
 
   return (
     <span ref={ref} className={className}>

@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useMemo, useState, type FormEvent } from "react";
 import { api, ApiError } from "./api";
+import Dropdown from "./Dropdown";
 import { MediaPickerModal } from "./MediaPicker";
 
 type Locale = "vi" | "zh" | "ko";
@@ -23,6 +24,8 @@ export interface FieldDefLite {
   options?: { value: string; label: string }[];
   itemFields?: FieldDefLite[];
   maxItems?: number;
+  min?: number;
+  max?: number;
   defaultValue?: unknown;
 }
 
@@ -146,12 +149,13 @@ function Field({ field, value, onChange, locale, errors, path }: FieldProps) {
       break;
     case "select":
       control = (
-        <select id={id} className={inputClass} value={String(value ?? "")} onChange={(e) => onChange(e.target.value)}>
-          {!field.required && <option value="">—</option>}
-          {field.options?.map((o) => (
-            <option key={o.value} value={o.value}>{o.label}</option>
-          ))}
-        </select>
+        <Dropdown
+          id={id}
+          value={String(value ?? "")}
+          options={field.options ?? []}
+          allowEmpty={!field.required}
+          onChange={(v) => onChange(v)}
+        />
       );
       break;
     case "boolean":
@@ -163,7 +167,7 @@ function Field({ field, value, onChange, locale, errors, path }: FieldProps) {
       );
       break;
     case "number":
-      control = <input id={id} type="number" className={inputClass + " max-w-32"} value={Number(value ?? 0)} onChange={(e) => onChange(e.target.value === "" ? 0 : Number(e.target.value))} />;
+      control = <input id={id} type="number" inputMode="numeric" step={1} min={field.min ?? 0} max={field.max ?? 9999} className={inputClass + " max-w-32"} value={Number(value ?? 0)} onKeyDown={(e) => { if (e.key === "-" || e.key === "e" || e.key === "+") e.preventDefault(); }} onChange={(e) => onChange(e.target.value === "" ? 0 : Math.min(Math.max(Math.trunc(Number(e.target.value)) || 0, field.min ?? 0), field.max ?? 9999))} />;
       break;
     case "date":
       control = <input id={id} type="date" className={inputClass + " max-w-48"} value={String(value ?? "")} onChange={(e) => onChange(e.target.value)} />;
@@ -281,9 +285,9 @@ export default function ResourceForm({ resource, initial, id }: Props) {
 
   return (
     <form onSubmit={onSubmit}>
-      <div className="sticky top-0 lg:top-0 z-20 -mx-4 sm:-mx-8 px-4 sm:px-8 py-3 bg-slate-50/95 backdrop-blur border-b border-slate-200 flex flex-wrap items-center gap-3 justify-between">
+      <div className="sticky top-14 lg:top-0 z-20 -mx-4 sm:-mx-8 xl:-mx-10 px-4 sm:px-8 xl:px-10 py-3 bg-slate-50/95 backdrop-blur border-b border-slate-200 flex flex-wrap items-center gap-3 justify-between">
         <div>
-          <Link href={`/admin/${resource.key}`} className="text-sm text-steel-600 hover:underline">← {resource.label}</Link>
+          <Link href={`/admin/${resource.key}`} className="text-sm font-medium text-steel-600 hover:underline">←{resource.label}</Link>
           <h1 className="text-xl font-bold text-slate-900">{id ? `Sửa ${resource.singular}` : `Thêm ${resource.singular}`}</h1>
         </div>
         <button disabled={saving} className="h-10 px-6 rounded bg-steel-600 hover:bg-steel-700 text-white font-semibold text-sm disabled:opacity-60">

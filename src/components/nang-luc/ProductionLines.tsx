@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
 import { siteImg } from "@/server/site-images";
+import { Link } from "@/i18n/navigation";
 
 export default function ProductionLines() {
   const t = useTranslations("NangLuc.ProductionLines");
@@ -7,29 +8,23 @@ export default function ProductionLines() {
   const LINES = [
     {
       key: "barrel",
-      tag: "01 // AUTOMATED BARREL LINE",
-      badge: "SCADA CONTROL",
-      image: siteImg("nang-luc/ProductionLines#1", "https://lh3.googleusercontent.com/aida-public/AB6AXuAgVrz_RyVKAbQ7apx81Lz8pWXfaHja0O5t5Qgvu-KURvxUyjxk0_9BkIVPKgggNW-uT198ZNx2MkQlJ4dZ2dKr9vJy1n2tB-7kdSPTiqKt0QVTGGJDX3L1vAS8MHSvulwgWXjwIIuK0U-TgdDTE9SFIxXk3bYEgRwSbHqPXzM3MAtDzOOXPkoLUoSTqGiac02De4AS7PmEdbXMkgbJSjvX_oEyHeppTmJPuHXad1UOQJeGo6V8B5ikMQ"),
+      image: siteImg("nang-luc/ProductionLines#1", "/images/factory/ma-treo-2.jpg"),
       imageOrder: "",
     },
     {
       key: "rack",
-      tag: "02 // RACK PLATING LINE",
-      badge: "HEAVY DUTY",
-      image: siteImg("nang-luc/ProductionLines#2", "https://lh3.googleusercontent.com/aida-public/AB6AXuD9gDB_GDtgTuGWQ11eXyw3ln1I983UzyAD1puXLPdxQQrrMF4LTkJrj7Q2nJax-nYxbOuNg17ACAdUFpiZgLWUlmIwl8TZDBGcm8tHAXVuJeV8vLgEAFawY6al08_7_WX6mBbvn4eZudzKH11P-bOglwuQVEOzBlsrH1-t8iEV8hNQNTXSNhZpIQcjEZx0g-hFSoqnuMinXx6LiZk3U64BaRdq0uDdejVod0LFd8KtAiBNUYelDkaJUw"),
+      image: siteImg("nang-luc/ProductionLines#2", "/images/factory/ma-quay-6.jpg"),
       imageOrder: "order-first lg:order-last",
     },
     {
       key: "chemical",
-      tag: "03 // CHEMICAL ENP & ANODIZING LINE",
-      badge: "MIL-SPEC COMPLIANT",
-      image: siteImg("nang-luc/ProductionLines#3", "https://lh3.googleusercontent.com/aida-public/AB6AXuDbKebYq3Yi1iDsoAXFwRWjce47gn5bzIJ9YMFqnDewXSZC2spmLtGhMIXBObN3GY_ElvNmVQvCX8O2J_e37k-gBj1xBdZCrQje3O5cmm3P1OKwZc-w9SFwQOllK4swLW1CyjRCdttOIl5mbZEluWvsMuhJkbx4yp_Am3cXG9ryAIgDl46MVLOXno6b2rs0MCr-dUeNKQVkUDt_2GCvXY25vGm0Eh51Fu7In9aSZboWpiQQyGqQiW00rg"),
+      image: siteImg("nang-luc/ProductionLines#3", "/images/factory/ma-quay-7.jpg"),
       imageOrder: "",
     },
   ] as const;
 
   return (
-    <section className="w-full py-space-xl bg-white border-t border-slate-200 scroll-mt-20" id="day-chuyen">
+    <section className="w-full py-space-xl bg-white border-t border-slate-200 scroll-mt-[86px]" id="day-chuyen">
       <div className="mx-auto px-margin w-full">
         <div className="max-w-2xl mb-space-xl">
           <h2 className="text-headline-lg text-slate-900 uppercase tracking-tight mb-space-xs">
@@ -56,10 +51,10 @@ export default function ProductionLines() {
                 <div>
                   <div className="flex items-center justify-between gap-space-sm mb-space-xs">
                     <span className="text-label-technical text-steel-600 tracking-widest uppercase font-semibold">
-                      {line.tag}
+                      {t(`items.${line.key}.tag`)}
                     </span>
                     <span className="px-space-xs py-0.5 bg-slate-200/80 text-slate-700 rounded text-label-technical">
-                      {line.badge}
+                      {t(`items.${line.key}.badge`)}
                     </span>
                   </div>
                   <h3 className="text-headline-md text-slate-900 uppercase mb-space-sm">
@@ -75,22 +70,22 @@ export default function ProductionLines() {
                       <>
                         <span className="text-slate-500">{t("items.barrel.capacityLabel")}</span>{" "}
                         <span className="text-steel-600 font-bold">
-                          850 {t("items.barrel.capacityUnit")}
+                          {t("items.barrel.capacityValue")} {t("items.barrel.capacityUnit")}
                         </span>
                         {" // "}
                         <span className="text-slate-500">{t("items.barrel.toleranceLabel")}</span>{" "}
-                        <span className="text-slate-900 font-bold">[±0.2 µm]</span>
+                        <span className="text-slate-900 font-bold">{t("items.barrel.toleranceValue")}</span>
                       </>
                     )}
                     {line.key === "rack" && (
                       <>
                         <span className="text-slate-500">{t("items.rack.capacityLabel")}</span>{" "}
                         <span className="text-steel-600 font-bold">
-                          120,000 {t("items.rack.capacityUnit")}
+                          {t("items.rack.capacityValue")} {t("items.rack.capacityUnit")}
                         </span>
                         {" // "}
                         <span className="text-slate-500">{t("items.rack.tankSizeLabel")}</span>{" "}
-                        <span className="text-slate-900 font-bold">60 × 40 m</span>
+                        <span className="text-slate-900 font-bold">{t("items.rack.tankSizeValue")}</span>
                       </>
                     )}
                     {line.key === "chemical" && (
@@ -99,16 +94,16 @@ export default function ProductionLines() {
                         <span className="text-steel-600 font-bold">[{t("items.chemical.reactorValue")}]</span>
                         {" // "}
                         <span className="text-slate-500">{t("items.chemical.thicknessLabel")}</span>{" "}
-                        <span className="text-slate-900 font-bold">[5 - 50 µm]</span>
+                        <span className="text-slate-900 font-bold">{t("items.chemical.thicknessValue")}</span>
                       </>
                     )}
                   </div>
-                  <a
+                  <Link
                     className="inline-flex items-center gap-1 text-label-technical text-steel-600 hover:text-slate-900 font-semibold uppercase transition-colors"
-                    href="#"
+                    href="/dich-vu-gia-cong-ma"
                   >
                     {t("cta")}
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

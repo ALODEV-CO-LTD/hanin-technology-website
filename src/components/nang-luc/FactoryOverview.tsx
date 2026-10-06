@@ -1,11 +1,12 @@
 import { useTranslations } from "next-intl";
 import { siteImg } from "@/server/site-images";
+import Icon from "@/components/ui/Icon";
 
 export default function FactoryOverview() {
   const t = useTranslations("NangLuc.FactoryOverview");
 
   return (
-    <section className="w-full py-space-xl bg-slate-50 scroll-mt-20" id="he-thong-nha-may">
+    <section className="w-full py-space-xl bg-slate-50 scroll-mt-[86px]" id="he-thong-nha-may">
       <div className="mx-auto px-margin w-full">
         <div className="flex items-center gap-space-sm mb-space-xl">
           <span className="w-2.5 h-2.5 bg-steel-600 rounded-sm" />
@@ -19,7 +20,7 @@ export default function FactoryOverview() {
             <img
               className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               alt={t("image.alt")}
-              src={siteImg("nang-luc/FactoryOverview#1", "https://lh3.googleusercontent.com/aida-public/AB6AXuAVbGJwGBLCtR1FfUH6k02r2P-NiR8BAPFHnKHa0jtHPUl35bfil2EmH5HU_MuFoZ3ANHR2WUVUfFOyDEfy6xH2h8L_JXgXpud4nJiFxbIFhpWxMYp7ji-bzcQ73VEptZXwO2AGP8ot9l9tXlwQPWiGSKjxyVdf-Y5rIg1a0zRe2CQmQXe3CVHX22FXJIAwpE3XO8moxoHF9x6JPFGsgntioSxKEkNyDcZSpbFwu5Jbizom9bSXp7a-1w")}
+              src={siteImg("nang-luc/FactoryOverview#1", "/images/factory/kho-5.jpg")}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent" />
           </div>
@@ -36,12 +37,12 @@ export default function FactoryOverview() {
                 <div className="flex items-center justify-between p-space-sm bg-slate-50 border border-slate-200/80 rounded">
                   <span className="text-slate-500 text-label-technical uppercase">{t("specs.locationLabel")}</span>
                   <span className="text-slate-900 font-semibold text-right">
-                    Lô CN-08, KCN Quang Minh, Mê Linh, Hà Nội
+                    {t("specs.locationValue")}
                   </span>
                 </div>
                 <div className="flex items-center justify-between p-space-sm bg-slate-50 border border-slate-200/80 rounded">
                   <span className="text-slate-500 text-label-technical uppercase">{t("specs.areaLabel")}</span>
-                  <span className="text-steel-600 text-headline-sm font-bold">18,000 m²</span>
+                  <span className="text-steel-600 text-headline-sm font-bold">{t("specs.areaValue")}</span>
                 </div>
                 <div className="flex items-center justify-between p-space-sm bg-slate-50 border border-slate-200/80 rounded">
                   <span className="text-slate-500 text-label-technical uppercase">{t("specs.capabilityLabel")}</span>
@@ -52,7 +53,7 @@ export default function FactoryOverview() {
                 className="inline-flex items-center gap-2 text-label-technical text-steel-600 hover:text-slate-900 transition-colors uppercase tracking-wider font-semibold"
                 href="#factory-gallery"
               >
-                {t("ctaGallery")} <span className="material-symbols-outlined text-[16px]">arrow_downward</span>
+                {t("ctaGallery")} <Icon name="arrow_downward" className="text-[16px]" />
               </a>
             </div>
           </div>

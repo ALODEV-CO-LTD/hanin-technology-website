@@ -40,7 +40,7 @@ export default async function ProductDetailPage({ params }: PageProps) {
     <div className="flex flex-col w-full">
       <ProductBreadcrumbBar product={product} />
       <ProductHero product={product} />
-      <Reveal><ProductGallery /></Reveal>
+      <Reveal><ProductGallery product={product} /></Reveal>
       <Reveal direction="left"><ProductOverview /></Reveal>
       <Reveal><ProductProcessTimeline /></Reveal>
       <Reveal><RelatedServices /></Reveal>

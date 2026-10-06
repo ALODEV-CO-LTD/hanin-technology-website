@@ -1,0 +1,339 @@
+{
+  "QuyTrinh": {
+    "eyebrow": "QUY TRÌNH CÔNG ĐOẠN",
+    "title": "Sản phẩm của bạn đi qua những bước nào tại HANIN?",
+    "lead": "Một lớp mạ đẹp và bền không đến từ một bể mạ duy nhất. Sản phẩm phải đi qua hàng chục công đoạn nối tiếp: làm sạch, xử lý bề mặt, mạ, rồi kiểm tra. Dưới đây là quy trình thực tế mà xưởng HANIN đang vận hành, được giải thích từng bước bằng ngôn ngữ dễ hiểu để bạn nắm được hàng của mình được xử lý như thế nào.",
+    "howTo": {
+      "title": "Cách đọc quy trình",
+      "items": {
+        "one": {
+          "title": "Chọn nhóm mạ",
+          "desc": "Mạ quay phù hợp chi tiết nhỏ, số lượng lớn như ốc vít, bu-lông. Mạ treo phù hợp chi tiết cần bề mặt đẹp như hàng nhựa trang trí."
+        },
+        "two": {
+          "title": "Chọn loại quy trình",
+          "desc": "Mỗi quy trình ứng với một loại vật liệu nền và một lớp mạ khác nhau. Vật liệu nền khác nhau thì cách chuẩn bị bề mặt cũng khác."
+        },
+        "three": {
+          "title": "Đọc từng bước",
+          "desc": "Mỗi bước cho biết việc được làm là gì và vì sao cần làm. Các bước rửa nước được rút gọn thành một dòng để bạn dễ theo dõi."
+        }
+      }
+    },
+    "stages": {
+      "prep": "Chuẩn bị bề mặt",
+      "plate": "Mạ",
+      "finish": "Hoàn thiện",
+      "qc": "Kiểm tra & đóng gói"
+    },
+    "stageHint": "Giai đoạn",
+    "stepWord": "Bước",
+    "stepsCount": "{count} công đoạn",
+    "platingStepsCount": "{count} bước mạ",
+    "rinseNote": "Rửa sạch hoá chất giữa hai bể để không làm bẩn bể sau.",
+    "factsTitle": "Tóm tắt nhanh",
+    "factMaterial": "Vật liệu nền",
+    "factResult": "Lớp mạ",
+    "factUsage": "Thường dùng cho",
+    "stepsTitle": "Các công đoạn theo thứ tự",
+    "galleryTitle": "Hình ảnh thực tế tại xưởng",
+    "galleryAlt": "Bể xử lý và dây chuyền mạ tại xưởng HANIN",
+    "photoAlt": "Ảnh thực tế công đoạn",
+    "note": "Để bảo vệ bí quyết công nghệ, website chỉ trình bày trình tự và ý nghĩa của từng công đoạn. Thông số chi tiết (hoá chất, nồng độ, nhiệt độ, dòng điện) được kiểm soát nội bộ tại xưởng và cung cấp theo yêu cầu cho khách hàng trong khuôn khổ hợp đồng và thoả thuận bảo mật NDA.",
+    "ctaTitle": "Cần quy trình phù hợp cho sản phẩm của bạn?",
+    "ctaDesc": "Gửi bản vẽ hoặc mẫu, kỹ sư HANIN sẽ tư vấn loại mạ và quy trình phù hợp.",
+    "ctaButton": "Yêu cầu tư vấn",
+    "families": {
+      "quay": {
+        "name": "Mạ quay",
+        "short": "Chi tiết nhỏ, số lượng lớn",
+        "desc": "Sản phẩm nhỏ như ốc vít, bu-lông, đai ốc, chi tiết dập được cho vào thùng quay. Thùng vừa quay vừa nhúng trong dung dịch nên hàng nghìn chi tiết cùng được phủ lớp mạ đều trong một mẻ. Đây là cách mạ kinh tế và nhanh cho hàng loạt."
+      },
+      "treo": {
+        "name": "Mạ treo",
+        "short": "Chi tiết cần bề mặt đẹp",
+        "desc": "Từng sản phẩm được gắn lên một giá treo rồi nhúng lần lượt qua các bể. Cách này giữ cho bề mặt không bị va chạm, phù hợp các chi tiết nhựa trang trí cần độ bóng đẹp, đồng đều và có nhiều lớp mạ chồng lên nhau."
+      }
+    },
+    "processes": {
+      "nikenHoaNenSat": {
+        "name": "Mạ Niken hoá trên nền Sắt",
+        "tagline": "Lớp niken đều đến cả ren và lỗ sâu",
+        "intro": "Phủ niken bằng phản ứng hoá học (không dùng dòng điện) lên chi tiết sắt, thép. Vì không phụ thuộc dòng điện nên lớp mạ phủ rất đều, kể cả ở ren, lỗ và góc khuất. Phù hợp các chi tiết có hình dạng phức tạp như lò xo, ốc vít.",
+        "material": "Sắt, thép",
+        "result": "Niken hoá học, đều, cứng, chống ăn mòn",
+        "usage": "Lò xo, ốc vít, chi tiết cơ khí có ren hoặc lỗ sâu"
+      },
+      "nikenDienNenSat": {
+        "name": "Mạ Niken điện phân trên nền Sắt",
+        "tagline": "Lớp niken sáng, chống gỉ cho chi tiết sắt thép",
+        "intro": "Dùng dòng điện để kết tủa niken lên bề mặt sắt, thép. Cách này cho lớp mạ sáng đẹp, chống gỉ và có thể điều chỉnh độ dày theo thời gian mạ. Quy trình ngắn gọn, hiệu quả cho số lượng lớn.",
+        "material": "Sắt, thép",
+        "result": "Niken điện phân, sáng, chống gỉ",
+        "usage": "Ốc vít, bu-lông, chi tiết dập, phụ kiện cơ khí"
+      },
+      "nikenDienNenKem": {
+        "name": "Mạ Niken điện phân trên nền Kẽm",
+        "tagline": "Có lớp đồng lót để niken bám chắc trên kẽm đúc",
+        "intro": "Kẽm đúc rất nhạy với hoá chất mạnh và khó mạ niken trực tiếp. Vì vậy quy trình này làm sạch nhẹ nhàng hơn, phủ thêm một lớp đồng lót rồi mới mạ niken sáng. Nhờ lớp lót mà lớp mạ ngoài bám chắc và đẹp.",
+        "material": "Kẽm, hợp kim kẽm đúc",
+        "result": "Đồng lót + niken sáng",
+        "usage": "Lõi khoá, phụ kiện, chi tiết trang trí bằng kẽm đúc"
+      },
+      "nikenDienNenDong": {
+        "name": "Mạ Niken điện phân trên nền Đồng",
+        "tagline": "Niken bảo vệ và làm bền bề mặt đồng",
+        "intro": "Phủ niken lên chi tiết đồng, đồng thau để chống xỉn màu, chống mòn và tăng độ cứng bề mặt. Đồng dễ xỉn trong không khí nên lớp niken giúp sản phẩm giữ được vẻ ngoài lâu dài.",
+        "material": "Đồng, đồng thau",
+        "result": "Niken điện phân, sáng, bền",
+        "usage": "Đầu cosse, chi tiết tiếp điện, phụ kiện bằng đồng"
+      },
+      "nikenHoaNenInox": {
+        "name": "Mạ Niken hoá trên nền Inox",
+        "tagline": "Vượt qua lớp thụ động của inox để mạ bám chắc",
+        "intro": "Inox có lớp màng thụ động rất bền nên kim loại mạ khó bám vào. Quy trình này kích hoạt bề mặt inox bằng một lớp niken rất mỏng trước khi mạ niken hoá học, nhờ đó lớp mạ chính bám chắc và đều.",
+        "material": "Inox (thép không gỉ)",
+        "result": "Niken hoá học, đều, bám chắc",
+        "usage": "Chi tiết inox cần tăng độ cứng, chống mài mòn"
+      },
+      "nikenDenNenInox": {
+        "name": "Mạ Niken đen trên nền Inox",
+        "tagline": "Bề mặt đen sẫm, giảm chói sáng",
+        "intro": "Dùng chung trình tự chuẩn bị và kích hoạt bề mặt inox như mạ niken hoá, cho lớp mạ màu đen sẫm. Màu đen vừa trang trí vừa giảm phản quang, thích hợp chi tiết cần vẻ ngoài tối màu.",
+        "material": "Inox (thép không gỉ)",
+        "result": "Niken màu đen, bám chắc",
+        "usage": "Chi tiết inox cần bề mặt đen, không chói sáng"
+      },
+      "dongDo": {
+        "name": "Mạ Đồng đỏ",
+        "tagline": "Lớp đồng dẫn điện tốt, màu đỏ đặc trưng",
+        "intro": "Phủ một lớp đồng đỏ lên sản phẩm kim loại. Đồng dẫn điện và dẫn nhiệt rất tốt nên lớp mạ này được dùng cho chi tiết cần tiếp điện, hoặc làm lớp nền cho các lớp mạ khác. Có bể bảo vệ để chống oxy hoá ngay sau khi mạ.",
+        "material": "Sắt, thép và các kim loại thông dụng",
+        "result": "Đồng đỏ, dẫn điện tốt",
+        "usage": "Chi tiết tiếp điện, trang trí, lớp nền cho mạ tiếp"
+      },
+      "photPhatDen": {
+        "name": "Phốt phát hoá đen",
+        "tagline": "Bề mặt đen mờ, giữ dầu chống gỉ",
+        "intro": "Đây không phải lớp kim loại phủ lên mà là lớp màng hoá học hình thành ngay trên bề mặt thép, có màu đen sẫm. Màng phốt phát xốp nên giữ dầu rất tốt, giúp chống gỉ, giảm chói sáng và giảm mài mòn khi lắp ráp. Giá thành thấp, phù hợp số lượng lớn.",
+        "material": "Thép",
+        "result": "Màng phốt phát đen + dầu chống gỉ",
+        "usage": "Ốc vít, chi tiết cơ khí, linh kiện lắp ráp"
+      },
+      "treoNikenCrom": {
+        "name": "Mạ nhựa Niken – Crôm",
+        "tagline": "Bề mặt bóng gương như kim loại trên nền nhựa ABS",
+        "intro": "Biến chi tiết nhựa ABS thành chi tiết có bề mặt kim loại sáng bóng. Quy trình gồm nhiều lớp chồng lên nhau: xúc tác để nhựa dẫn điện, các lớp đồng và niken làm nền, và lớp crôm bóng ngoài cùng. Lớp niken vi xốp ở giữa giúp tăng khả năng chống ăn mòn.",
+        "material": "Nhựa ABS",
+        "result": "Đồng, niken nhiều lớp, crôm bóng gương",
+        "usage": "Chi tiết nhựa trang trí, phụ kiện nội ngoại thất"
+      },
+      "treoSatin": {
+        "name": "Mạ nhựa Satin Cr6+",
+        "tagline": "Bề mặt kim loại mờ mịn, sang trọng",
+        "intro": "Giống mạ niken – crôm về nền và các lớp mạ đồng, niken, nhưng có thêm lớp niken satin tạo bề mặt mờ mịn thay cho độ bóng gương. Sau cùng vẫn được phủ crôm để bảo vệ và giữ vẻ ngoài lâu bền.",
+        "material": "Nhựa ABS",
+        "result": "Niken satin mờ + crôm bảo vệ",
+        "usage": "Chi tiết nhựa trang trí cần vẻ ngoài mờ, sang trọng"
+      },
+      "treoCr3Den": {
+        "name": "Mạ nhựa Crôm 3 đen",
+        "tagline": "Lớp đen sẫm, thân thiện hơn với môi trường",
+        "intro": "Dùng crôm hoá trị 3 cho lớp ngoài cùng màu đen sẫm. So với crôm hoá trị 6 truyền thống, crôm hoá trị 3 ít độc hại hơn cho người lao động và môi trường. Các lớp đồng, niken phía dưới giữ vai trò nền và chống ăn mòn.",
+        "material": "Nhựa ABS",
+        "result": "Crôm 3 đen trên nền niken nhiều lớp",
+        "usage": "Chi tiết nhựa trang trí màu đen, yêu cầu thân thiện môi trường"
+      }
+    },
+    "steps": {
+      "receive": {
+        "name": "Nhập hàng và lưu kho",
+        "desc": "Hàng của khách được kiểm tra bên ngoài, đếm số lượng và đối chiếu với mẫu OK/NG đã thống nhất trước khi nhận vào xưởng. Bước này giúp phát hiện sớm hàng bị gỉ, trầy xước hoặc lẫn tạp chất để không ảnh hưởng đến chất lượng lớp mạ."
+      },
+      "vibroDegrease": {
+        "name": "Tẩy dầu rung",
+        "desc": "Sản phẩm được cho vào máy rung cùng dung dịch tẩy dầu ấm. Chuyển động rung giúp dung dịch len vào ren, lỗ và góc khuất để bóc sạch dầu cắt gọt, mỡ bảo quản. Dầu mỡ còn sót lại là nguyên nhân hàng đầu khiến lớp mạ bị bong tróc."
+      },
+      "ultrasonicDegrease": {
+        "name": "Tẩy dầu siêu âm",
+        "desc": "Sóng siêu âm tạo ra vô số bọt khí cực nhỏ nổ ngay trên bề mặt sản phẩm, đánh bật dầu mỡ và bụi bẩn mà cách tẩy thông thường khó làm sạch, nhất là ở chi tiết nhỏ, ren sâu và lỗ kín."
+      },
+      "degrease": {
+        "name": "Tẩy dầu",
+        "desc": "Làm sạch dầu mỡ bám trên bề mặt bằng dung dịch tẩy dầu ở nhiệt độ vừa phải. Với chi tiết kẽm đúc hoặc nhựa, dung dịch được chọn dịu hơn để không làm hỏng vật liệu nền. Bề mặt sạch dầu là điều kiện đầu tiên để lớp mạ bám chắc."
+      },
+      "rinse": {
+        "name": "Rửa nước",
+        "desc": "Rửa bằng nước sạch chảy tràn để cuốn đi hoá chất của bể trước, tránh mang sang làm bẩn bể sau. Giữa hai bể hoá chất luôn có bước rửa, vì thế quy trình có nhiều lần rửa nước. Đây là việc nhỏ nhưng quyết định độ sạch và độ ổn định của cả dây chuyền."
+      },
+      "recovery": {
+        "name": "Bể thu hồi",
+        "desc": "Bể nước tĩnh (không chảy tràn) đặt ngay sau bể hoá chất để giữ lại phần hoá chất bám trên sản phẩm, sau đó đưa trở lại bể chính. Cách này vừa tiết kiệm hoá chất đắt tiền, vừa giảm lượng hoá chất đi vào nước thải."
+      },
+      "hotRinse": {
+        "name": "Rửa nước nóng",
+        "desc": "Rửa lần cuối bằng nước nóng để sản phẩm nhanh khô và hạn chế vết ố do nước đọng."
+      },
+      "hcl": {
+        "name": "Bể axit clohiđric (tẩy gỉ)",
+        "desc": "Ngâm ngắn trong axit clohiđric pha loãng để tẩy lớp gỉ và oxit trên bề mặt kim loại. Bề mặt kim loại trần, sạch oxit là điều kiện để lớp mạ bám thật chắc."
+      },
+      "acid": {
+        "name": "Bể axit sunfuric loãng",
+        "desc": "Ngâm trong axit sunfuric loãng để tẩy nốt lớp oxit mỏng còn sót, đồng thời trung hoà chất kiềm dư từ bước tẩy dầu. Bề mặt nhờ vậy được đồng đều trước khi vào bể mạ."
+      },
+      "activate": {
+        "name": "Hoạt hoá bề mặt",
+        "desc": "Xử lý ngắn trong dung dịch hoạt hoá để loại lớp oxit cực mỏng hình thành trong lúc rửa nước, đưa bề mặt về trạng thái sẵn sàng nhận lớp mạ. Làm tốt bước này thì độ bám dính của lớp mạ tăng rõ rệt."
+      },
+      "nickelStrike": {
+        "name": "Niken kích hoạt",
+        "desc": "Mạ một lớp niken rất mỏng nhằm phá lớp màng thụ động trên inox hoặc tạo nền ban đầu cho các lớp sau. Lớp này tuy mỏng nhưng giống như \"lớp keo\" giúp lớp niken chính bám chắc."
+      },
+      "whitening": {
+        "name": "Bể làm trắng",
+        "desc": "Làm sạch lớp xỉn màu và oxit trên bề mặt kẽm đúc, cho bề mặt sáng đều trước khi mạ lót. Kẽm là kim loại dễ bị ăn mòn nên bước này được thực hiện nhẹ nhàng, có kiểm soát."
+      },
+      "copperStrike": {
+        "name": "Mạ đồng lót",
+        "desc": "Kẽm đúc thường không mạ niken trực tiếp tốt, nên phải phủ một lớp đồng lót trước. Lớp đồng vừa bám chắc trên kẽm, vừa tạo nền phẳng cho lớp niken bên ngoài bám chắc và đẹp."
+      },
+      "nickelBright": {
+        "name": "Mạ niken sáng",
+        "desc": "Phủ lớp niken bóng sáng bằng dòng điện. Lớp mạ này tạo vẻ ngoài sáng đẹp, đồng thời là lớp bảo vệ chính chống ăn mòn và trầy xước."
+      },
+      "nickelElectro": {
+        "name": "Mạ niken điện phân",
+        "desc": "Sản phẩm được mạ trong thùng quay, dòng điện làm niken kết tủa lên bề mặt. Độ dày lớp mạ phụ thuộc thời gian mạ và dòng điện nên kiểm soát được theo yêu cầu của từng sản phẩm. Cho bề mặt sáng, chống gỉ và tăng độ bền."
+      },
+      "nickelChem": {
+        "name": "Mạ niken hoá học",
+        "desc": "Lớp niken hình thành nhờ phản ứng hoá học trong dung dịch, không cần dòng điện. Vì thế niken phủ đều ngay cả trong ren, lỗ sâu và góc khuất mà mạ điện khó tới. Lớp mạ cứng, chống mài mòn và chống ăn mòn tốt. Với hàng nhựa, đây là lớp kim loại đầu tiên giúp nhựa dẫn điện để mạ tiếp."
+      },
+      "copperRed": {
+        "name": "Mạ đồng đỏ",
+        "desc": "Phủ một lớp đồng đỏ lên sản phẩm. Đồng dẫn điện, dẫn nhiệt tốt và có màu đỏ đặc trưng, dùng cho chi tiết cần tiếp điện, trang trí hoặc làm lớp nền cho lớp mạ khác."
+      },
+      "phosphate": {
+        "name": "Phốt phát hoá",
+        "desc": "Ngâm sản phẩm thép trong dung dịch phốt phát để tạo màng tinh thể màu đen sẫm ngay trên bề mặt. Đây là lớp chuyển hoá chứ không phải lớp kim loại phủ lên, có độ xốp vi mô nên giữ dầu chống gỉ rất tốt."
+      },
+      "rustOil": {
+        "name": "Nhúng dầu chống gỉ",
+        "desc": "Sau phốt phát, sản phẩm được nhúng dầu chống gỉ. Dầu thấm vào màng phốt phát xốp, tạo lớp bảo vệ chống gỉ và làm màu đen sâu, đồng đều hơn."
+      },
+      "oilSpin": {
+        "name": "Vắt dầu",
+        "desc": "Vắt bỏ lượng dầu thừa để sản phẩm khô ráo, không dính tay và không bám bẩn khi đóng gói."
+      },
+      "protect": {
+        "name": "Bể bảo vệ",
+        "desc": "Ngâm trong dung dịch bảo vệ để tạo một màng cực mỏng chống xỉn màu và oxy hoá. Nhờ đó sản phẩm giữ được độ sáng đẹp lâu hơn trong thời gian lưu kho và vận chuyển."
+      },
+      "spinDry": {
+        "name": "Máy vắt (ly tâm)",
+        "desc": "Quay ly tâm để vắt nước ra khỏi sản phẩm, tránh đọng nước trong ren và lỗ. Bước này giúp sấy nhanh hơn và hạn chế vết ố nước."
+      },
+      "dry": {
+        "name": "Sấy khô",
+        "desc": "Sản phẩm được sấy trong tủ sấy có kiểm soát nhiệt độ và thời gian cho khô hoàn toàn. Sấy đúng cách ngăn gỉ, ố và vết nước, đồng thời giúp lớp mạ ổn định trước khi kiểm tra."
+      },
+      "thickness": {
+        "name": "Đo độ dày lớp mạ",
+        "desc": "Dùng máy đo chuyên dụng (đo không phá hủy sản phẩm) để đo độ dày lớp mạ theo từng lô, đối chiếu với tiêu chuẩn của từng sản phẩm. Độ dày quyết định khả năng chống ăn mòn và ảnh hưởng đến dung sai khi lắp ghép."
+      },
+      "saltSpray": {
+        "name": "Thử phun sương muối",
+        "desc": "Mẫu được đưa vào buồng phun sương muối để thử khả năng chống ăn mòn: lớp mạ phải chịu được số giờ quy định trước khi xuất hiện gỉ. Đây là cách kiểm chứng độ bền của lớp mạ trong thời gian ngắn, thực hiện theo lô."
+      },
+      "inspect": {
+        "name": "Kiểm tra thành phẩm",
+        "desc": "Kiểm tra bằng mắt theo mẫu OK/NG đã thống nhất: bề mặt, màu sắc đều, không bong tróc, rỗ hay đốm. Lô không đạt được tách riêng để xử lý lại, không đi tiếp sang bước đóng gói."
+      },
+      "pack": {
+        "name": "Đóng gói",
+        "desc": "Đóng gói đúng quy cách, dán tem nhãn đầy đủ (mã hàng, số lô, số lượng) để dễ truy xuất khi cần, sau đó nhập kho hoặc giao cho khách."
+      },
+      "rackLoad": {
+        "name": "Lên móc treo",
+        "desc": "Từng sản phẩm được gắn lên giá treo bằng thép không gỉ, đảm bảo tiếp xúc điện tốt và có khoảng cách hợp lý. Nhờ vậy dung dịch và dòng điện phủ đều mọi mặt, không có điểm nào bị che khuất."
+      },
+      "swell": {
+        "name": "Bể ngâm",
+        "desc": "Ngâm xử lý bề mặt nhựa để chuẩn bị cho bước xâm thực, giúp bước sau tác động đồng đều trên toàn bộ chi tiết."
+      },
+      "etch": {
+        "name": "Xâm thực bề mặt",
+        "desc": "Ngâm trong dung dịch axit mạnh để ăn mòn có kiểm soát lớp bề mặt nhựa ABS, tạo ra hàng triệu lỗ siêu nhỏ. Đây là bước then chốt của mạ nhựa: lớp kim loại sẽ \"neo\" vào các lỗ này nên bám chắc, không bong khi sử dụng."
+      },
+      "ultrasonicTank": {
+        "name": "Bể sóng rung",
+        "desc": "Rửa bằng rung hoặc sóng để đẩy sạch dung dịch còn kẹt trong các khe, hốc của chi tiết, nơi nước rửa thông thường khó tới."
+      },
+      "neutralize": {
+        "name": "Bể trung hoà",
+        "desc": "Trung hoà và khử sạch hoá chất còn dư trên bề mặt sau bước xâm thực. Việc này tránh nhiễm bẩn sang các bể sau và bảo vệ chất lượng lớp mạ."
+      },
+      "hclActivate": {
+        "name": "Hoạt hoá axit",
+        "desc": "Ngâm rất ngắn trong axit loãng để chuẩn bị bề mặt cho bước phủ chất xúc tác."
+      },
+      "catalyst": {
+        "name": "Hoạt hoá xúc tác (Paladi)",
+        "desc": "Phủ lên bề mặt nhựa những hạt xúc tác cực nhỏ. Nhựa vốn không dẫn điện, nên cần lớp xúc tác này thì mới có thể mạ niken hoá học lên trên, mở đầu cho các lớp mạ điện phía sau."
+      },
+      "colorCompare": {
+        "name": "So màu dung dịch",
+        "desc": "Kiểm tra màu của dung dịch xúc tác so với mẫu chuẩn để biết dung dịch còn đủ hoạt tính. Đây là cách kiểm soát đơn giản mà hiệu quả để tránh lỗi không mạ được ở những vùng nhất định."
+      },
+      "accelerate": {
+        "name": "Bể tẩy nhựa (tăng tốc)",
+        "desc": "Loại bỏ phần dư bao quanh các hạt xúc tác để chúng lộ ra và hoạt động tốt. Nhờ đó lớp niken hoá học hình thành đều, không sót vùng nào chưa được mạ."
+      },
+      "copperMatte": {
+        "name": "Mạ đồng mờ",
+        "desc": "Lớp đồng đầu tiên mạ bằng dòng điện nhẹ trên nền đã dẫn điện. Lớp này tạo nền chắc để lớp đồng dày phía sau bám tốt, tránh cháy hoặc bong ở các cạnh sắc."
+      },
+      "copperAcid": {
+        "name": "Mạ đồng axit",
+        "desc": "Lớp đồng dày làm phẳng và che các khuyết tật nhỏ của nền nhựa. Đồng còn mềm dẻo nên giảm ứng suất giữa nhựa và các lớp kim loại cứng phía ngoài, góp phần quyết định độ bền và độ bóng của cả hệ mạ."
+      },
+      "activateTank": {
+        "name": "Bể hoạt hoá",
+        "desc": "Ngâm ngắn trong dung dịch hoạt hoá để làm sạch lớp oxit mỏng, chuẩn bị bề mặt cho lớp mạ kế tiếp bám chắc."
+      },
+      "regulator": {
+        "name": "Bể điều tiết",
+        "desc": "Điều chỉnh trạng thái bề mặt và dung dịch trước các bước xử lý tiếp theo, giúp quy trình ổn định và lặp lại tốt giữa các lô."
+      },
+      "nickelSemi": {
+        "name": "Mạ niken bán bóng",
+        "desc": "Lớp niken nền hơi mờ, dẻo và dày, đóng vai trò chính trong việc chống ăn mòn của hệ mạ trang trí. Lớp này khác với lớp niken bóng phía trên về cấu trúc, tạo ra hiệu ứng bảo vệ kép."
+      },
+      "nickelSeal": {
+        "name": "Bể bịt lỗ niken (niken vi xốp)",
+        "desc": "Phủ một lớp niken rất mỏng có chứa các hạt siêu nhỏ, tạo ra vô số lỗ li ti trên bề mặt. Các lỗ này phân tán dòng ăn mòn nên tăng đáng kể khả năng chống gỉ của lớp crôm phía trên."
+      },
+      "preChrome": {
+        "name": "Hoạt hoá trước crôm",
+        "desc": "Làm sạch và hoạt hoá bề mặt niken ngay trước khi vào bể crôm, vì lớp niken rất dễ bị thụ động nếu để ngoài không khí. Bước này giúp crôm bám chắc và sáng đều."
+      },
+      "chrome": {
+        "name": "Mạ crôm",
+        "desc": "Lớp crôm mỏng ngoài cùng cho độ sáng bóng như gương, độ cứng cao, chống trầy xước và chống ố. Đây là lớp mà khách hàng nhìn thấy và chạm vào."
+      },
+      "satinNickel": {
+        "name": "Mạ niken Satin",
+        "desc": "Lớp niken tạo bề mặt mờ mịn (satin) thay cho độ bóng gương. Bề mặt này ít lộ vân tay, vết xước nhỏ và mang lại vẻ ngoài sang trọng, hiện đại."
+      },
+      "chrome3": {
+        "name": "Mạ crôm 3 (màu đen)",
+        "desc": "Dùng crôm hoá trị 3 để tạo lớp ngoài cùng màu đen sẫm. Crôm hoá trị 3 ít độc hại hơn crôm hoá trị 6 truyền thống, thân thiện hơn với người lao động và môi trường mà vẫn cho bề mặt đẹp, bền."
+      },
+      "unrack": {
+        "name": "Tháo sản phẩm khỏi giá",
+        "desc": "Sản phẩm được tháo khỏi giá treo một cách cẩn thận, tránh va chạm làm xước lớp mạ mới. Các điểm tiếp xúc với giá được kiểm tra để đảm bảo không có khuyết tật."
+      }
+    }
+  }
+}

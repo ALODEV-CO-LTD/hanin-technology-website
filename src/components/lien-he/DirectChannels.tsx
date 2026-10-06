@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
-import { getSettings } from "@/server/settings";
+import { getSettings, telHref } from "@/server/settings";
+import Icon from "@/components/ui/Icon";
 
 const CHANNEL_KEYS = ["hotline", "zalo", "email", "audit"] as const;
 const CHANNEL_META: Record<
@@ -8,13 +9,13 @@ const CHANNEL_META: Record<
 > = {
   hotline: { icon: "call", href: "tel:02438186868", external: false },
   zalo: { icon: "chat", href: "https://zalo.me", external: true },
-  email: { icon: "forward_to_inbox", href: "mailto:sales@hanintech.vn", external: false },
+  email: { icon: "forward_to_inbox", href: "mailto:Haninplating@gmail.com", external: false },
   audit: { icon: "domain_verification", href: "#rfq-form", external: false },
 };
 
 export default function DirectChannels() {
   const t = useTranslations("LienHe.DirectChannels");
-  const { zaloUrl } = getSettings();
+  const { zaloUrl, hotline, salesEmail } = getSettings();
 
   return (
     <section className="w-full bg-slate-50 py-space-xl">
@@ -28,7 +29,15 @@ export default function DirectChannels() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
           {CHANNEL_KEYS.map((key) => {
-            const meta = key === "zalo" && zaloUrl ? { ...CHANNEL_META[key], href: zaloUrl } : CHANNEL_META[key];
+            const base = CHANNEL_META[key];
+            const meta =
+              key === "zalo" && zaloUrl
+                ? { ...base, href: zaloUrl }
+                : key === "hotline"
+                  ? { ...base, href: telHref(hotline) }
+                  : key === "email"
+                    ? { ...base, href: `mailto:${salesEmail}` }
+                    : base;
             return (
               <a
                 key={key}
@@ -39,7 +48,7 @@ export default function DirectChannels() {
               >
                 <div>
                   <div className="w-12 h-12 rounded bg-steel-50 text-steel-600 flex items-center justify-center mb-space-md group-hover:bg-steel-600 group-hover:text-white transition-colors">
-                    <span className="material-symbols-outlined text-[26px]">{meta.icon}</span>
+                    <Icon name={meta.icon} className="text-[26px]" />
                   </div>
                   <span className="text-label-sm uppercase tracking-wider text-slate-500 font-bold block mb-1">
                     {t(`channels.${key}.label`)}
@@ -53,7 +62,7 @@ export default function DirectChannels() {
                 </div>
                 <span className="mt-space-md text-steel-600 text-label-md font-bold inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">
                   <span>{t(`channels.${key}.cta`)}</span>
-                  <span className="material-symbols-outlined text-[16px]">chevron_right</span>
+                  <Icon name="chevron_right" className="text-[16px]" />
                 </span>
               </a>
             );

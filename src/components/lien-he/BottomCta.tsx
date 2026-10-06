@@ -1,7 +1,10 @@
 import { useTranslations } from "next-intl";
+import { getSettings, telHref } from "@/server/settings";
+import Icon from "@/components/ui/Icon";
 
 export default function BottomCta() {
   const t = useTranslations("LienHe.BottomCta");
+  const { hotline } = getSettings();
 
   return (
     <section className="w-full bg-slate-900 text-white py-space-xl">
@@ -20,11 +23,11 @@ export default function BottomCta() {
             {t("ctaPrimary")}
           </a>
           <a
-            href="tel:02438186868"
+            href={telHref(hotline)}
             className="px-space-lg py-3.5 bg-slate-800 hover:bg-slate-700 text-white text-label-md uppercase tracking-wider font-bold rounded transition-all flex items-center gap-2"
           >
-            <span className="material-symbols-outlined text-[18px]">call</span>
-            <span>(+84) 24 3818 6868</span>
+            <Icon name="call" className="text-[18px]" />
+            <span>{hotline}</span>
           </a>
         </div>
       </div>

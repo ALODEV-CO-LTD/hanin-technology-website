@@ -1,5 +1,7 @@
 import { useTranslations } from "next-intl";
 import { getProductDetailContent } from "@/lib/products-data";
+import Icon from "@/components/ui/Icon";
+import { Link } from "@/i18n/navigation";
 
 export default function RelatedServices() {
   const tp = useTranslations("SanPham");
@@ -16,13 +18,13 @@ export default function RelatedServices() {
             </h2>
             <p className="text-body-md text-slate-600 mt-1">{t("description")}</p>
           </div>
-          <a
+          <Link
             className="inline-flex items-center gap-space-xs text-label-technical text-steel-600 hover:text-steel-700 transition-colors shrink-0 uppercase tracking-wider font-semibold"
-            href="#"
+            href="/dich-vu-gia-cong-ma"
           >
             <span>{t("ctaViewAll")}</span>
-            <span className="material-symbols-outlined text-[16px]">arrow_forward</span>
-          </a>
+            <Icon name="arrow_forward" className="text-[16px]" />
+          </Link>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-gutter">
           {relatedServices.map((service) => (
@@ -32,9 +34,7 @@ export default function RelatedServices() {
             >
               <div className="flex flex-col gap-space-sm">
                 <div className="flex items-center justify-between">
-                  <span className="material-symbols-outlined text-steel-600 text-[28px]">
-                    {service.icon}
-                  </span>
+                  <Icon name={service.icon} className="text-steel-600 text-[28px]" />
                   <span className="font-mono text-label-sm text-slate-500 font-medium">
                     {service.code}
                   </span>
@@ -44,13 +44,13 @@ export default function RelatedServices() {
                 </h3>
                 <p className="text-body-sm text-slate-600 leading-relaxed">{service.description}</p>
               </div>
-              <a
+              <Link
                 className="inline-flex items-center gap-1 text-label-sm text-steel-600 hover:text-steel-700 font-semibold transition-colors"
-                href="#"
+                href={service.href}
               >
                 <span>{service.cta}</span>
-                <span className="material-symbols-outlined text-[14px]">arrow_forward</span>
-              </a>
+                <Icon name="arrow_forward" className="text-[14px]" />
+              </Link>
             </div>
           ))}
         </div>

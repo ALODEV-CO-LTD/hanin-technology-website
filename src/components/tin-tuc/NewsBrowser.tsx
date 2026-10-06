@@ -4,6 +4,7 @@ import { useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import type { NewsArticle, NewsCategoryKey } from "@/lib/news-data";
+import Icon from "@/components/ui/Icon";
 
 const PAGE_SIZE = 9;
 
@@ -40,7 +41,7 @@ export default function NewsBrowser({ posts, categories }: Props) {
 
   return (
     <>
-      <section className="w-full bg-white sticky top-20 z-40 shadow-sm border-b border-slate-200">
+      <section className="w-full bg-white sticky top-[86px] z-40 shadow-sm border-b border-slate-200">
         <div className="mx-auto px-margin py-space-md">
           <div className="flex flex-col md:flex-row items-center justify-between gap-space-md">
             <div className="flex flex-wrap items-center gap-space-xs w-full md:w-auto">
@@ -64,8 +65,8 @@ export default function NewsBrowser({ posts, categories }: Props) {
                     <span
                       className={
                         isActive
-                          ? "px-1.5 py-0.5 rounded-full bg-white/20 text-white text-[10px] font-bold"
-                          : "px-1.5 py-0.5 rounded-full bg-slate-200 text-slate-500 text-[10px] font-bold"
+                          ? "px-1.5 py-0.5 rounded-full bg-white/20 text-white text-xs font-bold"
+                          : "px-1.5 py-0.5 rounded-full bg-slate-200 text-slate-500 text-xs font-bold"
                       }
                     >
                       {category.count}
@@ -77,9 +78,7 @@ export default function NewsBrowser({ posts, categories }: Props) {
 
             <div className="flex items-center gap-space-sm w-full md:w-auto justify-end">
               <div className="relative w-full md:w-64">
-                <span className="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-500 text-[18px]">
-                  search
-                </span>
+                <Icon name="search" className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-500 text-[18px]" />
                 <input
                   type="text"
                   value={query}
@@ -124,7 +123,7 @@ export default function NewsBrowser({ posts, categories }: Props) {
                         )}
                         <div className="absolute top-space-sm left-space-sm">
                           <span
-                            className={`px-space-xs py-0.5 rounded bg-white/90 backdrop-blur-sm text-label-sm font-bold uppercase tracking-wider ${article.categoryColorClass}`}
+                            className={`px-space-xs py-0.5 rounded bg-white text-label-sm font-bold uppercase tracking-wider ${article.categoryColorClass}`}
                           >
                             {article.categoryLabel}
                           </span>
@@ -133,14 +132,14 @@ export default function NewsBrowser({ posts, categories }: Props) {
                       <div className="p-space-md flex flex-col gap-space-xs">
                         <div className="flex items-center gap-space-xs text-label-sm text-slate-500">
                           <span className="flex items-center gap-1">
-                            <span className="material-symbols-outlined text-[14px]">calendar_month</span>
+                            <Icon name="calendar_month" className="text-[14px]" />
                             {article.date}
                           </span>
                           {article.readTime && (
                             <>
                               <span>•</span>
                               <span className="flex items-center gap-1">
-                                <span className="material-symbols-outlined text-[14px]">schedule</span>
+                                <Icon name="schedule" className="text-[14px]" />
                                 {article.readTime}
                               </span>
                             </>
@@ -156,7 +155,7 @@ export default function NewsBrowser({ posts, categories }: Props) {
                       <span className="text-label-sm text-slate-500">{article.author}</span>
                       <span className="inline-flex items-center gap-1 text-title-md text-steel-600 group-hover:translate-x-1 transition-all">
                         <span>{tg("readMore")}</span>
-                        <span className="material-symbols-outlined text-[16px]">arrow_forward</span>
+                        <Icon name="arrow_forward" className="text-[16px]" />
                       </span>
                     </div>
                   </article>
@@ -182,7 +181,7 @@ export default function NewsBrowser({ posts, categories }: Props) {
                   current === 1 ? "text-slate-500 opacity-50 cursor-not-allowed" : "text-slate-900 hover:bg-slate-200"
                 }`}
               >
-                <span className="material-symbols-outlined text-[16px]">chevron_left</span>
+                <Icon name="chevron_left" className="text-[16px]" />
                 <span>{tp("prev")}</span>
               </button>
               {Array.from({ length: totalPages }, (_, i) => i + 1).map((n) => (
@@ -209,7 +208,7 @@ export default function NewsBrowser({ posts, categories }: Props) {
                 }`}
               >
                 <span>{tp("next")}</span>
-                <span className="material-symbols-outlined text-[16px]">chevron_right</span>
+                <Icon name="chevron_right" className="text-[16px]" />
               </button>
             </nav>
           </div>

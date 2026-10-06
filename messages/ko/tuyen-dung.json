@@ -52,7 +52,7 @@
       "pillar4": {
         "tag": "PILLAR 04 // TOTAL REWARDS",
         "title": "기업 문화 및 복리후생 제도",
-        "desc": "역량에 따른 급여, 생산 및 프로젝트 성과 보너스, 건강보험, 하노이-메린 통근 셔틀버스, 공장 내 근무 식사 및 연례 팀빌딩 활동을 제공합니다.",
+        "desc": "역량에 따른 급여, 생산 및 프로젝트 성과 보너스, 건강보험, 하노이-꽝민공단 통근 셔틀버스, 공장 내 근무 식사 및 연례 팀빌딩 활동을 제공합니다.",
         "metricLabel": "통근 셔틀버스",
         "metricValue": "하노이 시내 노선"
       }
@@ -69,6 +69,8 @@
       "resultsCount": "지원 가능 직무 {count}건",
       "resetFilters": "필터 초기화",
       "deadlineLabel": "마감일:",
+      "salaryLabel": "급여",
+      "requirementsLabel": "주요 요건",
       "applyNow": "지금 지원하기",
       "noResults": "현재 필터 조건에 맞는 직무가 없습니다. 다른 키워드로 검색해 주세요.",
       "closeModal": "닫기",
@@ -109,7 +111,8 @@
       "secondaryDesc": "XRF 분광 측정기를 이용한 마이크론(µm) 단위 도금 두께 검사",
       "labTitle": "미세 이화학 검사 실험실",
       "labDesc": "부식 가속 시험용 NSS/AASS 염수분무 챔버, 도금 밀착력 측정기, Hull Cell 용액 분석 장비를 완비하고 있습니다.",
-      "labFooter": "출하 로트 100%에 CoC 및 RoHS 인증서 발급"
+      "labFooter": "출하 로트 100%에 CoC 및 RoHS 인증서 발급",
+      "labBadge": "ISO/IEC 17025"
     },
     "ApplicationCta": {
       "title": "HANIN 팀에 합류하세요",

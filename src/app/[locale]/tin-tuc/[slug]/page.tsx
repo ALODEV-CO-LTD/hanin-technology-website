@@ -5,6 +5,7 @@ import PageBreadcrumb from "@/components/layout/PageBreadcrumb";
 import PostBody from "@/components/tin-tuc/PostBody";
 import { Link } from "@/i18n/navigation";
 import { getPostBySlug, getPosts } from "@/server/public";
+import Icon from "@/components/ui/Icon";
 
 type PageParams = { slug: string };
 
@@ -58,14 +59,14 @@ export default async function TinTucChiTietPage({ params }: { params: Promise<Pa
           </span>
           <span className="text-slate-500">•</span>
           <span className="text-slate-500 flex items-center gap-1">
-            <span className="material-symbols-outlined text-[14px]">calendar_today</span>
+            <Icon name="calendar_today" className="text-[14px]" />
             <time dateTime={post.isoDate}>{post.date}</time>
           </span>
           {post.readTime && (
             <>
               <span className="text-slate-500">•</span>
               <span className="text-slate-500 flex items-center gap-1">
-                <span className="material-symbols-outlined text-[14px]">schedule</span>
+                <Icon name="schedule" className="text-[14px]" />
                 {post.readTime}
               </span>
             </>
@@ -74,7 +75,7 @@ export default async function TinTucChiTietPage({ params }: { params: Promise<Pa
             <>
               <span className="text-slate-500">•</span>
               <span className="text-slate-500 flex items-center gap-1">
-                <span className="material-symbols-outlined text-[14px]">person</span>
+                <Icon name="person" className="text-[14px]" />
                 {post.author}
               </span>
             </>
@@ -105,7 +106,7 @@ export default async function TinTucChiTietPage({ params }: { params: Promise<Pa
                     )}
                     <div className="absolute top-space-sm left-space-sm">
                       <span
-                        className={`px-space-xs py-0.5 rounded bg-white/90 backdrop-blur-sm text-label-sm font-bold uppercase tracking-wider ${r.categoryColorClass}`}
+                        className={`px-space-xs py-0.5 rounded bg-white text-label-sm font-bold uppercase tracking-wider ${r.categoryColorClass}`}
                       >
                         {r.categoryLabel}
                       </span>
@@ -130,7 +131,7 @@ export default async function TinTucChiTietPage({ params }: { params: Promise<Pa
           href="/tin-tuc"
           className="inline-flex items-center gap-space-xs text-title-md text-steel-600 hover:text-steel-700 transition-colors"
         >
-          <span className="material-symbols-outlined text-[18px]">arrow_back</span>
+          <Icon name="arrow_back" className="text-[18px]" />
           <span>{t("PostDetail.backToNews")}</span>
         </Link>
       </div>

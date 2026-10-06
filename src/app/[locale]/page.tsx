@@ -1,3 +1,5 @@
+import type { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
 import Hero from "@/components/home/Hero";
 import CompanySnapshot from "@/components/home/CompanySnapshot";
 import AboutHanin from "@/components/home/AboutHanin";
@@ -9,6 +11,11 @@ import QualityCertification from "@/components/home/QualityCertification";
 import NewsUpdates from "@/components/home/NewsUpdates";
 import FinalCta from "@/components/home/FinalCta";
 import Reveal from "@/components/ui/Reveal";
+
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations("Meta");
+  return { title: t("home.title"), description: t("home.description") };
+}
 
 export default function Home() {
   return (

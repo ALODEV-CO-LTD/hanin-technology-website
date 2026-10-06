@@ -52,7 +52,7 @@
       "pillar4": {
         "tag": "PILLAR 04 // TOTAL REWARDS",
         "title": "Văn hóa doanh nghiệp & chế độ đãi ngộ",
-        "desc": "Lương theo năng lực, thưởng sản xuất và hiệu quả dự án, bảo hiểm sức khỏe, xe đưa đón tuyến Hà Nội - Mê Linh, bữa ăn ca tại nhà máy và hoạt động teambuilding thường niên.",
+        "desc": "Lương theo năng lực, thưởng sản xuất và hiệu quả dự án, bảo hiểm sức khỏe, xe đưa đón tuyến Hà Nội - KCN Quang Minh, bữa ăn ca tại nhà máy và hoạt động teambuilding thường niên.",
         "metricLabel": "XE ĐƯA ĐÓN",
         "metricValue": "TUYẾN NỘI THÀNH HÀ NỘI"
       }
@@ -69,6 +69,8 @@
       "resultsCount": "{count} vị trí khả dụng",
       "resetFilters": "Đặt lại bộ lọc",
       "deadlineLabel": "Hạn nộp:",
+      "salaryLabel": "Mức lương",
+      "requirementsLabel": "Yêu cầu chính",
       "applyNow": "ỨNG TUYỂN NGAY",
       "noResults": "Không tìm thấy vị trí phù hợp với bộ lọc hiện tại. Vui lòng thử từ khóa khác.",
       "closeModal": "Đóng",
@@ -109,7 +111,8 @@
       "secondaryDesc": "Kiểm tra độ dày lớp mạ micromet (µm) bằng đầu đo quang phổ XRF",
       "labTitle": "Phòng kiểm nghiệm hóa lý vi mô",
       "labDesc": "Trang bị đầy đủ buồng phun sương muối NSS/AASS gia tốc độ ăn mòn, máy đo độ bám dính lớp mạ và thiết bị phân tích dung dịch Hull Cell.",
-      "labFooter": "100% lô hàng xuất xưởng đều có chứng chỉ CoC & RoHS"
+      "labFooter": "100% lô hàng xuất xưởng đều có chứng chỉ CoC & RoHS",
+      "labBadge": "ISO/IEC 17025"
     },
     "ApplicationCta": {
       "title": "GIA NHẬP ĐỘI NGŨ HANIN",

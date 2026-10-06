@@ -23,7 +23,7 @@ export default function CompanyIntroduction() {
                 aria-label={t("imageAlt")}
                 style={{
                   backgroundImage:
-                    `url('${siteImg("gioi-thieu/CompanyIntroduction#1", "https://lh3.googleusercontent.com/aida-public/AB6AXuAC-ozXlS4iAi4T3wA_X-lfMFRZW6tBLRXa9hiO-_aiiAfyUkQ8VaPUa8EIi2vm-qZxixg0pq2T-tmuJ7mwR9Oi5C5cCOzm0cUAv_mj5VqOPDE2-FpS3whEh-TNU1x6XT7patK-2NZNtDRfCepVnV8NB_q7n1lh24xLceTFJ2xeUcVblzSkj0sC-xVpcv6ESoW197zbUsdcV2puaYUyDaS4LJTXmFeTs8dr52845R9MiW3QRPUFLO-ixg")}')`,
+                    `url('${siteImg("gioi-thieu/CompanyIntroduction#1", "/images/factory/kho-6.jpg")}')`,
                 }}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900/40 via-transparent to-transparent" />
@@ -48,11 +48,11 @@ export default function CompanyIntroduction() {
                   key={item.key}
                   className="p-space-sm bg-white rounded border border-slate-200 flex flex-col shadow-sm"
                 >
-                  <span className="text-[11px] text-slate-500 uppercase tracking-wider mb-1 font-semibold">
+                  <span className="text-xs text-slate-500 uppercase tracking-wider mb-1 font-semibold">
                     {t(`${item.key}.label`)}
                   </span>
                   <span className="text-title-md text-slate-900 font-semibold">{t(`${item.key}.value`)}</span>
-                  <span className={`text-[10px] mt-1 font-semibold ${item.noteClass}`}>
+                  <span className={`text-xs mt-1 font-semibold ${item.noteClass}`}>
                     {t(`${item.key}.note`)}
                   </span>
                 </div>

@@ -4,7 +4,7 @@ import PageBreadcrumb from "@/components/layout/PageBreadcrumb";
 
 export default function CategoryHero() {
   const t = useTranslations("SanPham.CategoryHero");
-  const banner = getBanner("san-pham", useLocale(), "https://images.unsplash.com/photo-1740209475472-aa7d280f7452?w=1920&q=80&fm=jpg&fit=crop");
+  const banner = getBanner("san-pham", useLocale(), "/images/factory/qc-1.jpg");
 
   return (
     <section className="relative w-full min-h-screen overflow-hidden bg-slate-900 border-b border-slate-200 flex items-center">
@@ -16,7 +16,8 @@ export default function CategoryHero() {
           src={banner.image}
         />
       </div>
-      <div className="relative z-10 w-full px-margin flex flex-col gap-space-sm [text-shadow:0_2px_6px_rgba(2,6,23,0.85),0_4px_20px_rgba(2,6,23,0.6)]">
+      <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-r from-slate-950/85 via-slate-950/65 to-slate-950/35" />
+      <div className="relative z-10 w-full px-margin flex flex-col gap-space-sm banner-text">
         <PageBreadcrumb
           variant="dark"
           items={[
@@ -24,10 +25,10 @@ export default function CategoryHero() {
             { label: t("breadcrumbCurrent") },
           ]}
         />
-        <h1 className="text-display-hero-mobile lg:text-display-hero uppercase tracking-tight text-banner-orange mt-space-xs font-bold">
+        <h1 className="text-display-hero-mobile lg:text-display-hero uppercase tracking-tight text-white mt-space-xs font-bold">
           {t("title")}
         </h1>
-        <p className="text-body-lg text-banner-orange max-w-3xl leading-relaxed mt-space-xs">
+        <p className="text-body-lg text-white max-w-3xl leading-relaxed mt-space-xs">
           {t("description")}
         </p>
       </div>

@@ -1,11 +1,13 @@
 "use client";
 
+import Select from "@/components/ui/Select";
 import { useState, type FormEvent } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { usePathname } from "@/i18n/navigation";
 import { submitInquiry } from "@/lib/submit-inquiry";
+import Icon from "@/components/ui/Icon";
 
-export default function RfqFormDetail() {
+export default function RfqFormDetail({ hotline }: { hotline: string }) {
   const t = useTranslations("DichVu.RfqFormDetail");
   const locale = useLocale();
   const pathname = usePathname();
@@ -34,9 +36,8 @@ export default function RfqFormDetail() {
   }
 
   return (
-    <section className="w-full mb-space-xl scroll-mt-20" id="rfq-form">
+    <section className="w-full mb-space-xl scroll-mt-[86px]" id="rfq-form">
       <div className="bg-white border border-slate-200 p-space-lg rounded shadow-sm relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-32 h-32 bg-steel-100/60 rounded-full blur-2xl pointer-events-none" />
 
         <div className="flex flex-col md:flex-row md:items-start justify-between pb-space-md mb-space-md bg-slate-50 border border-slate-200 p-space-md rounded">
           <div>
@@ -46,7 +47,7 @@ export default function RfqFormDetail() {
             <p className="text-body-md text-slate-600 mt-1">{t("subtitle")}</p>
           </div>
           <div className="mt-space-sm md:mt-0 text-label-sm text-slate-500 bg-white border border-slate-200 px-3 py-2 rounded">
-            {t("hotlineLabel")} <strong className="text-steel-600 font-bold">+84 (0) 211 388 9021</strong>
+            {t("hotlineLabel")} <strong className="text-steel-600 font-bold">{hotline}</strong>
           </div>
         </div>
 
@@ -99,31 +100,33 @@ export default function RfqFormDetail() {
               <label className="text-label-sm text-slate-900 font-semibold uppercase">
                 {t("substrateLabel")} <span className="text-steel-600">*</span>
               </label>
-              <select
-                className="w-full h-10 px-3 bg-slate-50 border border-slate-200 text-slate-900 text-body-md rounded focus:outline-none focus:bg-white focus:border-steel-300 transition-colors"
+              <Select
+                className="h-10 px-3 bg-slate-50 border border-slate-200 text-slate-900 text-body-md rounded focus:outline-none focus:bg-white focus:border-steel-300 transition-colors"
                 name="substrate"
                 defaultValue="S45C"
-              >
-                <option value="S45C">{t("substrateOptions.carbonSteel")}</option>
-                <option value="SCM440">{t("substrateOptions.alloySteel")}</option>
-                <option value="SUS">{t("substrateOptions.stainless")}</option>
-                <option value="ALUMINUM">{t("substrateOptions.aluminum")}</option>
-                <option value="COPPER">{t("substrateOptions.copper")}</option>
-                <option value="CAST_IRON">{t("substrateOptions.castIron")}</option>
-              </select>
+                options={[
+                  { value: "S45C", label: t("substrateOptions.carbonSteel") },
+                  { value: "SCM440", label: t("substrateOptions.alloySteel") },
+                  { value: "SUS", label: t("substrateOptions.stainless") },
+                  { value: "ALUMINUM", label: t("substrateOptions.aluminum") },
+                  { value: "COPPER", label: t("substrateOptions.copper") },
+                  { value: "CAST_IRON", label: t("substrateOptions.castIron") },
+                ]}
+              />
             </div>
             <div className="flex flex-col gap-1">
               <label className="text-label-sm text-slate-900 font-semibold uppercase">{t("phosLabel")}</label>
-              <select
-                className="w-full h-10 px-3 bg-slate-50 border border-slate-200 text-slate-900 text-body-md rounded focus:outline-none focus:bg-white focus:border-steel-300 transition-colors"
+              <Select
+                className="h-10 px-3 bg-slate-50 border border-slate-200 text-slate-900 text-body-md rounded focus:outline-none focus:bg-white focus:border-steel-300 transition-colors"
                 name="phosphorus"
                 defaultValue="HIGH_PHOS"
-              >
-                <option value="HIGH_PHOS">{t("phosOptions.high")}</option>
-                <option value="MED_PHOS">{t("phosOptions.medium")}</option>
-                <option value="LOW_PHOS">{t("phosOptions.low")}</option>
-                <option value="CONSULT">{t("phosOptions.consult")}</option>
-              </select>
+                options={[
+                  { value: "HIGH_PHOS", label: t("phosOptions.high") },
+                  { value: "MED_PHOS", label: t("phosOptions.medium") },
+                  { value: "LOW_PHOS", label: t("phosOptions.low") },
+                  { value: "CONSULT", label: t("phosOptions.consult") },
+                ]}
+              />
             </div>
             <div className="flex flex-col gap-1">
               <label className="text-label-sm text-slate-900 font-semibold uppercase">{t("thicknessLabel")}</label>
@@ -161,7 +164,7 @@ export default function RfqFormDetail() {
                 <p className="text-label-sm text-slate-500">{t("attachDesc")}</p>
               </div>
               <label className="cursor-pointer mt-2 w-full py-2.5 px-3 bg-white hover:bg-slate-100 border border-slate-200 text-slate-800 text-center text-label-technical uppercase rounded transition-colors flex items-center justify-center gap-1.5 shadow-sm">
-                <span className="material-symbols-outlined text-steel-600 text-[18px]">cloud_upload</span>
+                <Icon name="cloud_upload" className="text-steel-600 text-[18px]" />
                 <span>{t("chooseFile")}</span>
                 <input className="hidden" type="file" name="files" multiple />
               </label>
@@ -170,7 +173,7 @@ export default function RfqFormDetail() {
 
           <div className="flex flex-wrap items-center justify-between gap-space-sm pt-space-xs">
             <div className="flex items-center gap-2 text-slate-500 text-label-sm">
-              <span className="material-symbols-outlined text-steel-600 text-[16px]">lock</span>
+              <Icon name="lock" className="text-steel-600 text-[16px]" />
               <span>{t("ndaNote")}</span>
             </div>
             <button
@@ -179,7 +182,7 @@ export default function RfqFormDetail() {
               disabled={busy}
             >
               <span>{t("submitButton")}</span>
-              <span className="material-symbols-outlined text-[18px]">send</span>
+              <Icon name="send" className="text-[18px]" />
             </button>
           </div>
         </form>

@@ -9,11 +9,10 @@ import SpecTrustNote from "@/components/san-pham/SpecTrustNote";
 import ProductsCta from "@/components/san-pham/ProductsCta";
 import Reveal from "@/components/ui/Reveal";
 
-export const metadata: Metadata = {
-  title: "Sản phẩm & Dự án",
-  description:
-    "Sản phẩm và dự án gia công mạ kim loại kỹ thuật cao: kiểm soát dung sai micron, độ đồng đều lớp phủ và độ bền môi trường khắt khe.",
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations("Meta");
+  return { title: t("sanPham.title"), description: t("sanPham.description") };
+}
 
 export default async function SanPhamDuAnPage() {
   const products = getProducts(await getLocale(), await getTranslations("SanPham"));

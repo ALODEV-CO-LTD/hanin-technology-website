@@ -28,9 +28,9 @@ npm run build && npm run start
 | Tin tức | Bài viết (nháp/đã đăng), chuyên mục, ảnh, nội dung, bài tiêu điểm + chỉ số kỹ thuật |
 | Tuyển dụng | Vị trí tuyển dụng (bộ phận, hình thức, lương, hạn nộp, mô tả/yêu cầu/quyền lợi) |
 | Liên hệ & Ứng tuyển | Hộp thư: yêu cầu báo giá + hồ sơ ứng tuyển từ website, trạng thái, ghi chú, tải tệp đính kèm |
-| Nội dung trang | Sửa mọi văn bản cố định của website (tiêu đề, mô tả, nút, footer…) theo từng ngôn ngữ, có nút khôi phục bản gốc |
+| Nội dung trang | Sửa mọi văn bản cố định của website (tiêu đề, mô tả, nút, footer, tiêu đề/mô tả SEO, chính sách & điều khoản…) theo từng ngôn ngữ, có nút khôi phục bản gốc. Ô "Phạm vi" cho sửa riêng nội dung chi tiết của từng dịch vụ / sản phẩm |
 | Thư viện ảnh | Tải/xoá ảnh, PDF |
-| Liên kết & mạng xã hội | Zalo, Facebook, YouTube, LinkedIn, Google Maps (link + bản đồ nhúng) |
+| Liên kết & mạng xã hội | Hotline/email dùng chung toàn site, Zalo, Facebook, YouTube, LinkedIn, Google Maps (link + bản đồ nhúng) |
 | Tài khoản quản trị | (chỉ admin) thêm/khoá/đổi vai trò/đặt lại mật khẩu; vai trò `admin` và `editor` |
 
 Nội dung đa ngôn ngữ: mỗi trường chữ có 3 bản vi/zh/ko. Ô zh/ko để trống thì website tự dùng tiếng Việt.
@@ -91,7 +91,8 @@ và copy `backups/` ra nơi khác.
 
 ## Phạm vi & giới hạn hiện tại
 
-- Các mục kỹ thuật ở **trang chi tiết dịch vụ/sản phẩm** (quy trình, bảng QA, năng lực, thư viện ảnh mẫu…) đang là nội dung mẫu dùng chung
-  cho mọi mục; phần đầu trang (tên, mô tả, ảnh, mã) đã theo từng mục trong CMS. Sửa văn bản mẫu ở “Nội dung trang”.
+- Trang chi tiết dịch vụ/sản phẩm: phần đầu (tên, mô tả, ảnh, mã) theo từng mục trong CMS; các mục kỹ thuật bên dưới (quy trình, bảng QA,
+  năng lực…) mặc định là nội dung mẫu dùng chung và có thể ghi đè riêng cho từng mục ở “Nội dung trang” → ô “Phạm vi”.
+- Chỉ sửa được nội dung có sẵn; **chưa thêm/xoá được các khối lặp** (câu hỏi thường gặp, mốc thời gian, thẻ thế mạnh…) vì số lượng khối cố định trong code.
 - Chưa gửi email thông báo khi có yêu cầu mới (cần SMTP/dịch vụ mail của Bên A); hiện xem trong CMS, có badge số yêu cầu mới.
 - Bài viết tin tức chưa có nội dung thân bài (nguồn gốc chỉ có tiêu đề + tóm tắt); nhập thân bài trong CMS khi Bên A cung cấp.

@@ -2,6 +2,7 @@
 
 import { useEffect, useState, type FormEvent } from "react";
 import { api, ApiError } from "./api";
+import Dropdown from "./Dropdown";
 
 interface User {
   id: number;
@@ -17,6 +18,7 @@ export default function UserManager() {
   const [error, setError] = useState("");
 
   const [version, setVersion] = useState(0);
+  const [newRole, setNewRole] = useState("editor");
 
   useEffect(() => {
     let cancelled = false;
@@ -43,7 +45,7 @@ export default function UserManager() {
     const form = event.currentTarget;
     const data = new FormData(form);
     await guard(async () => {
-      await api("users", { body: Object.fromEntries(data) });
+      await api("users", { body: { ...Object.fromEntries(data), role: newRole } });
       form.reset();
     });
   }
@@ -62,12 +64,18 @@ export default function UserManager() {
               <p className="font-semibold text-slate-900 truncate">{u.name || u.email}</p>
               <p className="text-xs text-slate-500">{u.email} · {u.lastLoginAt ? `đăng nhập ${u.lastLoginAt.slice(0, 16)}` : "chưa đăng nhập"}</p>
             </div>
-            <div className="flex items-center gap-2">
-              <select value={u.role} onChange={(e) => guard(() => api(`users/${u.id}`, { method: "PUT", body: { role: e.target.value } }))} className={input} aria-label="Vai trò">
-                <option value="admin">Quản trị viên</option>
-                <option value="editor">Biên tập viên</option>
-              </select>
-              <button onClick={() => guard(() => api(`users/${u.id}`, { method: "PUT", body: { active: !u.active } }))} className="px-3 h-10 rounded border border-slate-300 bg-white text-xs">
+            <div className="flex flex-wrap items-center gap-2">
+              <Dropdown
+                className="w-40"
+                ariaLabel="Vai trò"
+                value={u.role}
+                onChange={(v) => guard(() => api(`users/${u.id}`, { method: "PUT", body: { role: v } }))}
+                options={[
+                  { value: "admin", label: "Quản trị viên" },
+                  { value: "editor", label: "Biên tập viên" },
+                ]}
+              />
+              <button onClick={() => guard(() => api(`users/${u.id}`, { method: "PUT", body: { active: !u.active } }))} className="px-3 h-10 rounded border border-slate-300 bg-white text-xs whitespace-nowrap">
                 {u.active ? "Khoá" : "Mở khoá"}
               </button>
               <button
@@ -75,11 +83,11 @@ export default function UserManager() {
                   const password = prompt("Mật khẩu mới (tối thiểu 10 ký tự):");
                   if (password) void guard(() => api(`users/${u.id}`, { method: "PUT", body: { password } }));
                 }}
-                className="px-3 h-10 rounded border border-slate-300 bg-white text-xs"
+                className="px-3 h-10 rounded border border-slate-300 bg-white text-xs whitespace-nowrap"
               >
                 Đặt lại MK
               </button>
-              <button onClick={() => confirm(`Xoá tài khoản ${u.email}?`) && guard(() => api(`users/${u.id}`, { method: "DELETE" }))} className="px-3 h-10 rounded border border-red-200 text-red-700 bg-white text-xs">Xoá</button>
+              <button onClick={() => confirm(`Xoá tài khoản ${u.email}?`) && guard(() => api(`users/${u.id}`, { method: "DELETE" }))} className="px-3 h-10 rounded border border-red-200 text-red-700 bg-white text-xs whitespace-nowrap">Xoá</button>
             </div>
           </div>
         ))}
@@ -90,10 +98,15 @@ export default function UserManager() {
         <input name="email" type="email" required placeholder="Email" className={input} autoComplete="off" />
         <input name="name" placeholder="Họ tên" className={input} />
         <input name="password" type="password" required minLength={10} placeholder="Mật khẩu (≥ 10 ký tự)" className={input} autoComplete="new-password" />
-        <select name="role" className={input} defaultValue="editor">
-          <option value="editor">Biên tập viên</option>
-          <option value="admin">Quản trị viên</option>
-        </select>
+        <Dropdown
+          ariaLabel="Vai trò tài khoản mới"
+          value={newRole}
+          onChange={setNewRole}
+          options={[
+            { value: "editor", label: "Biên tập viên" },
+            { value: "admin", label: "Quản trị viên" },
+          ]}
+        />
         <button className="h-10 px-5 rounded bg-steel-600 text-white font-semibold text-sm sm:col-span-2 sm:justify-self-start">Thêm</button>
       </form>
     </div>

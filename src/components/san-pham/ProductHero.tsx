@@ -1,13 +1,13 @@
 import { useTranslations } from "next-intl";
 import type { Product } from "@/lib/products-data";
 import { getProductDetailContent } from "@/lib/products-data";
-import { siteImg } from "@/server/site-images";
+import Icon from "@/components/ui/Icon";
 
 export default function ProductHero({ product }: { product: Product }) {
   const tp = useTranslations("SanPham");
   const t = useTranslations("SanPham.ProductHero");
   const { heroStats, heroDescription, heroImageAlt } = getProductDetailContent(tp);
-  const heroImage = siteImg("san-pham/ProductDetail#1", "https://lh3.googleusercontent.com/aida-public/AB6AXuDJeNDLUaBDEs48vil6OqvXjZ4KzCFrJ3fWyv2HG-s8rj9cRdF8tQlS1wNHMpNyyBXS5YYZSDS5U7Eeukr51Tqh8CUbTo2xMyOl_DXzAysjWQKW-6EUO-7RXxMz0OYdrp20tb5HolXN_KrVibRxUQeh4jc8vQVJaYZn5FWeNDvpU3CFiCxWGEWlERIK_D_KSf2THFY3rBd6M1c9Gi62iaMBzFkHmvlSN6XjhuVDEuSll3LRExy8ROphDQ");
+  const heroImage = product.image;
 
   return (
     <section className="w-full bg-white py-space-xl border-b border-slate-200">
@@ -51,27 +51,27 @@ export default function ProductHero({ product }: { product: Product }) {
                 href="#quote-form"
               >
                 <span>{t("ctaRequestQuote")}</span>
-                <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
+                <Icon name="arrow_forward" className="text-[18px]" />
               </a>
               <a
                 className="inline-flex items-center justify-center gap-2 px-5 py-3 bg-slate-50 border border-slate-200 text-slate-800 font-semibold text-sm uppercase tracking-wider rounded hover:bg-slate-100 hover:border-slate-300 transition-all"
-                href="#"
+                href="#quote-form"
               >
-                <span className="material-symbols-outlined text-steel-600 text-[18px]">download</span>
+                <Icon name="download" className="text-steel-600 text-[18px]" />
                 <span>{t("ctaDownloadSpecSheet")}</span>
               </a>
             </div>
             <div className="flex items-center gap-5 pt-2 border-t border-slate-200 text-xs text-slate-500 font-mono flex-wrap">
               <div className="flex items-center gap-1.5">
-                <span className="material-symbols-outlined text-emerald-600 text-[16px]">verified</span>
+                <Icon name="verified" className="text-emerald-600 text-[16px]" />
                 <span className="text-slate-700 font-medium font-sans">{t("badgeIso")}</span>
               </div>
               <div className="flex items-center gap-1.5">
-                <span className="material-symbols-outlined text-sky-700 text-[16px]">shield</span>
+                <Icon name="shield" className="text-sky-700 text-[16px]" />
                 <span className="text-slate-700 font-medium font-sans">{t("badgeRohs")}</span>
               </div>
               <div className="flex items-center gap-1.5">
-                <span className="material-symbols-outlined text-steel-600 text-[16px]">biotech</span>
+                <Icon name="biotech" className="text-steel-600 text-[16px]" />
                 <span className="text-slate-700 font-medium font-sans">{t("badgeXrf")}</span>
               </div>
             </div>
@@ -80,19 +80,19 @@ export default function ProductHero({ product }: { product: Product }) {
             <div className="relative w-full aspect-[4/3] bg-slate-100 border border-slate-200 rounded overflow-hidden group shadow-sm">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                alt={heroImageAlt}
+                alt={product.imageAlt || heroImageAlt}
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 src={heroImage}
               />
             </div>
             <div className="p-3 bg-slate-50 border border-slate-200 flex items-center justify-between rounded">
               <div className="flex items-center gap-2">
-                <span className="material-symbols-outlined text-steel-600 text-[20px]">science</span>
+                <Icon name="science" className="text-steel-600 text-[20px]" />
                 <span className="text-sm text-slate-700 font-medium">
                   {t("microHardnessLabel")}
                 </span>
               </div>
-              <span className="text-base font-bold text-steel-600 font-mono">850 - 920 HV</span>
+              <span className="text-base font-bold text-steel-600 font-mono">{t("microHardnessValue")}</span>
             </div>
           </div>
         </div>

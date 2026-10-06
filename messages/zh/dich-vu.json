@@ -149,11 +149,12 @@
       "filtration": {
         "title": "每小时 10 次循环过滤：",
         "desc": "溶液持续通过 1 微米聚丙烯滤芯，消除悬浮金属屑及镀层麻点现象。"
-      }
+      },
+      "tankSizeValue": "1800 x 900 x 1200 mm"
     },
     "DetailGallery": {
       "heading": "产线实景与加工完成件展示",
-      "subtitle": "HANIN 工厂 // 平川 CN-08 地块",
+      "subtitle": "HANIN 工厂 // 光明工业区 49G 地块",
       "line": {
         "alt": "自动化循环槽镍电镀产线（示意图）",
         "tag": "自动电镀槽",
@@ -179,20 +180,24 @@
       "subtitle": "Ni-P 自催化化学还原反应，可在所有复杂轮廓、内螺纹、盲孔及深腔——普通电镀无法触及的部位——形成均匀镀层。",
       "phos": {
         "label": "含磷量",
-        "note": "中磷 / 高磷"
+        "note": "中磷 / 高磷",
+        "value": "6-9% // >10.5%"
       },
       "hardness": {
         "label": "热处理后硬度",
-        "note": "400°C 烘烤 1 小时"
+        "note": "400°C 烘烤 1 小时",
+        "value": "65-68 HRC"
       },
       "saltSpray": {
         "label": "耐盐雾",
         "unit": "小时",
-        "note": "ASTM B117 中性盐雾"
+        "note": "ASTM B117 中性盐雾",
+        "value": "> 1,000"
       },
       "tolerance": {
         "label": "厚度公差",
-        "note": "校准 XRF 检测"
+        "note": "校准 XRF 检测",
+        "value": "±1.0 µm"
       },
       "ctaPrimary": "申请技术报价（RFQ）",
       "ctaSecondary": "下载规格表 PDF（AMS 2404）",
@@ -210,7 +215,8 @@
         "title": "反应机理本质",
         "p1": "电镀受电流密度支配，因此边角处较厚、深槽处较薄。而化学镀镍（ENP）则依据",
         "p1Strong": "自催化沉积",
-        "p2": "原理运作。Ni-P 镍磷合金层在溶液接触的每一点均匀形成，构成非晶态（Amorphous）耐腐蚀结构。"
+        "p2": "原理运作。Ni-P 镍磷合金层在溶液接触的每一点均匀形成，构成非晶态（Amorphous）耐腐蚀结构。",
+        "formula": "[Ni²⁺ + 2e⁻ → Ni] // [H₂PO₂⁻ + H₂O → H₂PO₃⁻ + 2H⁺ + 2e⁻]"
       },
       "col2": {
         "title": "战略应用范围",
@@ -357,7 +363,8 @@
         "desc": "按 ASTM B117 及 ISO 9227 标准持续运行，评估在 5% NaCl 盐雾环境下的加速耐腐蚀性能。",
         "method": "耐盐雾喷雾测试",
         "criteria": "白锈 >240 小时、红锈 >1000 小时不出现",
-        "frequency": "每周定期"
+        "frequency": "每周定期",
+        "standard": "ASTM B117 / ISO 9227"
       },
       "cmm": {
         "title": "三坐标测量仪（CMM）及光学显微镜",
@@ -366,18 +373,22 @@
       "thickness": {
         "method": "镀层厚度",
         "criteria": "公差 ±0.1 µm",
-        "frequency": "每批次（100%）"
+        "frequency": "每批次（100%）",
+        "standard": "ASTM B568 / ISO 3497"
       },
       "adhesion": {
         "method": "镀层附着力",
         "criteria": "180° 弯曲不剥落",
-        "frequency": "按生产班次"
+        "frequency": "按生产班次",
+        "standard": "ASTM B571 / ISO 2819"
       },
       "dehydrogenation": {
         "method": "除氢处理（烘烤）",
         "criteria": "200°C ± 5°C，持续 4-24 小时",
-        "frequency": "100%（>1000 MPa 零件）"
-      }
+        "frequency": "100%（>1000 MPa 零件）",
+        "standard": "ASTM B850 / ISO 9588"
+      },
+      "revision": "REV-2025.A"
     },
     "RfqFormCategory": {
       "heading": "电镀服务报价申请（RFQ SPECIFICATION）",

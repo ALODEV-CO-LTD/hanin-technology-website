@@ -52,7 +52,7 @@
       "pillar4": {
         "tag": "支柱 04 // 全面薪酬",
         "title": "企业文化与福利待遇",
-        "desc": "按能力计薪，享有生产及项目绩效奖金、健康保险、河内至美灵通勤班车、厂内工作餐及年度团建活动。",
+        "desc": "按能力计薪，享有生产及项目绩效奖金、健康保险、河内至光明工业区通勤班车、厂内工作餐及年度团建活动。",
         "metricLabel": "通勤班车",
         "metricValue": "河内市区路线"
       }
@@ -69,6 +69,8 @@
       "resultsCount": "{count} 个可申请职位",
       "resetFilters": "重置筛选条件",
       "deadlineLabel": "截止日期：",
+      "salaryLabel": "薪资待遇",
+      "requirementsLabel": "主要要求",
       "applyNow": "立即申请",
       "noResults": "未找到符合当前筛选条件的职位，请尝试其他关键词。",
       "closeModal": "关闭",
@@ -109,7 +111,8 @@
       "secondaryDesc": "使用 XRF 光谱探头检测镀层厚度（微米级）",
       "labTitle": "微观理化检测实验室",
       "labDesc": "配备 NSS/AASS 加速耐腐蚀盐雾试验箱、镀层附着力测试仪及 Hull Cell 溶液分析设备。",
-      "labFooter": "100% 出厂批次均附有 CoC 及 RoHS 证书"
+      "labFooter": "100% 出厂批次均附有 CoC 及 RoHS 证书",
+      "labBadge": "ISO/IEC 17025"
     },
     "ApplicationCta": {
       "title": "加入 HANIN 团队",

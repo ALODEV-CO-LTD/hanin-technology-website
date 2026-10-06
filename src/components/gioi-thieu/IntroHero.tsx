@@ -4,7 +4,7 @@ import PageBreadcrumb from "@/components/layout/PageBreadcrumb";
 
 export default function IntroHero() {
   const t = useTranslations("GioiThieu.IntroHero");
-  const banner = getBanner("gioi-thieu", useLocale(), "https://images.unsplash.com/photo-1720036236855-9a1a2e4d3f26?w=1920&q=80&fm=jpg&fit=crop");
+  const banner = getBanner("gioi-thieu", useLocale(), "/images/factory/kho-6.jpg");
 
   return (
     <section className="relative w-full min-h-screen bg-slate-900 overflow-hidden flex items-center border-b border-slate-200">
@@ -20,7 +20,8 @@ export default function IntroHero() {
       />
 
       {/* Content Container */}
-      <div className="relative z-10 w-full px-margin [text-shadow:0_2px_6px_rgba(2,6,23,0.85),0_4px_20px_rgba(2,6,23,0.6)]">
+      <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-r from-slate-950/85 via-slate-950/65 to-slate-950/35" />
+      <div className="relative z-10 w-full px-margin banner-text">
         <PageBreadcrumb
           className="mb-space-sm"
           variant="dark"
@@ -31,12 +32,12 @@ export default function IntroHero() {
         />
 
         {/* Main Heading */}
-        <h1 className="text-headline-xl-mobile md:text-display-hero text-banner-orange uppercase tracking-tight max-w-3xl mb-space-sm font-bold">
+        <h1 className="text-headline-xl-mobile md:text-display-hero text-white uppercase tracking-tight max-w-3xl mb-space-sm font-bold">
           {t("title")}
         </h1>
 
         {/* Supporting Deck */}
-        <p className="text-body-md md:text-body-lg text-banner-orange max-w-2xl leading-relaxed">{t("subtitle")}</p>
+        <p className="text-body-md md:text-body-lg text-white max-w-2xl leading-relaxed">{t("subtitle")}</p>
       </div>
     </section>
   );

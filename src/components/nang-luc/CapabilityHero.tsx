@@ -4,7 +4,7 @@ import PageBreadcrumb from "@/components/layout/PageBreadcrumb";
 
 export default function CapabilityHero() {
   const t = useTranslations("NangLuc.CapabilityHero");
-  const banner = getBanner("nang-luc", useLocale(), "https://images.unsplash.com/photo-1652204775379-2b4ace437a2d?w=1920&q=80&fm=jpg&fit=crop");
+  const banner = getBanner("nang-luc", useLocale(), "/images/factory/ma-quay-5.jpg");
 
   return (
     <section className="relative w-full min-h-screen overflow-hidden bg-slate-900 border-b border-slate-200 flex items-center">
@@ -16,8 +16,9 @@ export default function CapabilityHero() {
         }}
       />
 
+      <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-r from-slate-950/85 via-slate-950/65 to-slate-950/35" />
       <div className="relative px-margin w-full">
-        <div className="[text-shadow:0_2px_6px_rgba(2,6,23,0.85),0_4px_20px_rgba(2,6,23,0.6)]">
+        <div className="banner-text">
           <PageBreadcrumb
             className="pb-6"
             variant="dark"
@@ -28,10 +29,10 @@ export default function CapabilityHero() {
           />
 
           <div className="max-w-3xl pt-4">
-            <h1 className="text-4xl md:text-5xl font-extrabold text-banner-orange tracking-tight uppercase mb-4">
+            <h1 className="text-4xl md:text-5xl font-extrabold text-white tracking-tight uppercase mb-4">
               {t("title")}
             </h1>
-            <p className="text-base md:text-lg text-banner-orange max-w-2xl leading-relaxed">{t("description")}</p>
+            <p className="text-base md:text-lg text-white max-w-2xl leading-relaxed">{t("description")}</p>
           </div>
         </div>
 
@@ -43,13 +44,13 @@ export default function CapabilityHero() {
             {t("ctaExplore")}
           </a>
           <a
-            className="inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-white/10 hover:bg-white/20 text-white border border-white/20 text-title-md uppercase tracking-wider rounded backdrop-blur-sm transition-all duration-150 shadow-sm"
+            className="inline-flex items-center justify-center gap-2 py-3.5 text-white hover:text-white text-title-md uppercase tracking-wider underline-offset-8 decoration-2 hover:underline transition-colors duration-150 banner-text"
             href="#day-chuyen"
           >
             {t("ctaLines")}
           </a>
           <a
-            className="inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-white/10 hover:bg-white/20 text-white border border-white/20 text-title-md uppercase tracking-wider rounded backdrop-blur-sm transition-all duration-150 shadow-sm"
+            className="inline-flex items-center justify-center gap-2 py-3.5 text-white hover:text-white text-title-md uppercase tracking-wider underline-offset-8 decoration-2 hover:underline transition-colors duration-150 banner-text"
             href="#kiem-nghiem"
           >
             {t("ctaQa")}

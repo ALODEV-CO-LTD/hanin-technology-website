@@ -7,7 +7,7 @@ import { SCHEMA_SQL } from "./schema";
  * Kết nối SQLite dùng chung (node:sqlite có sẵn trong Node >= 22.13, không cần build native).
  * File DB nằm ngoài thư mục code (mặc định ./data) để deploy rsync không ghi đè dữ liệu.
  */
-export const DATA_DIR = path.resolve(process.env.DATA_DIR ?? path.join(process.cwd(), "data"));
+export const DATA_DIR = path.resolve(/*turbopackIgnore: true*/ process.env.DATA_DIR ?? path.join(process.cwd(), "data"));
 export const DB_PATH = process.env.DATABASE_PATH ?? path.join(DATA_DIR, "hanin.db");
 
 const globalForDb = globalThis as unknown as { __haninDb?: DatabaseSync };

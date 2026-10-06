@@ -1,10 +1,14 @@
 import { useTranslations } from "next-intl";
+import { getSettings } from "@/server/settings";
+import Icon from "@/components/ui/Icon";
+import { Link } from "@/i18n/navigation";
 
 export default function ProductQuoteCta() {
   const t = useTranslations("SanPham.ProductQuoteCta");
+  const { hotline, salesEmail } = getSettings();
 
   return (
-    <section className="w-full bg-slate-50 py-space-xl scroll-mt-20" id="quote-form">
+    <section className="w-full bg-slate-50 py-space-xl scroll-mt-[86px]" id="quote-form">
       <div className="mx-auto px-margin">
         <div className="p-space-xl bg-white border border-slate-200 rounded relative overflow-hidden shadow-sm">
           <div className="absolute right-0 top-0 bottom-0 w-1/3 opacity-5 pointer-events-none flex items-center justify-end pr-space-md">
@@ -23,13 +27,13 @@ export default function ProductQuoteCta() {
               <span className="text-steel-600 font-semibold">{t("descriptionHighlight")}</span>.
             </p>
             <div className="flex flex-wrap items-center gap-space-md pt-space-xs">
-              <a
+              <Link
                 className="inline-flex items-center justify-center gap-space-xs px-space-xl py-space-md bg-steel-600 text-white text-label-technical uppercase tracking-wider rounded hover:bg-steel-700 active:scale-95 transition-all shadow-md"
-                href="#"
+                href="/lien-he#rfq-form"
               >
                 <span>{t("ctaSendQuote")}</span>
-                <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
-              </a>
+                <Icon name="arrow_forward" className="text-[18px]" />
+              </Link>
               <div className="flex flex-col text-label-sm text-slate-500">
                 <span>{t("ndaNote")}</span>
                 <span className="text-slate-800 font-medium">{t("responseTime")}</span>
@@ -37,22 +41,20 @@ export default function ProductQuoteCta() {
             </div>
             <div className="pt-space-md border-t border-slate-200 flex flex-wrap items-center gap-space-lg text-label-technical text-slate-500">
               <div className="flex items-center gap-space-xs">
-                <span className="material-symbols-outlined text-steel-600 text-[20px]">call</span>
+                <Icon name="call" className="text-steel-600 text-[20px]" />
                 <span>
                   {t("hotlineLabel")}{" "}
                   <strong className="text-slate-900 tracking-wider font-mono">
-                    (+84) 24 3818 6688
+                    {hotline}
                   </strong>
                 </span>
               </div>
               <div className="flex items-center gap-space-xs">
-                <span className="material-symbols-outlined text-steel-600 text-[20px]">
-                  mark_email_unread
-                </span>
+                <Icon name="mark_email_unread" className="text-steel-600 text-[20px]" />
                 <span>
                   {t("emailLabel")}{" "}
                   <strong className="text-slate-900 tracking-wider font-mono">
-                    sales@hanintech.vn
+                    {salesEmail}
                   </strong>
                 </span>
               </div>

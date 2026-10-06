@@ -4,6 +4,7 @@ import { useState, useRef, useEffect } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { usePathname, useRouter } from "@/i18n/navigation";
 import { routing } from "@/i18n/routing";
+import Icon from "@/components/ui/Icon";
 
 const LOCALE_LABELS: Record<string, string> = {
   vi: "VI",
@@ -36,14 +37,14 @@ export default function LanguageSwitcher({ variant = "desktop" }: { variant?: "d
 
   if (variant === "mobile") {
     return (
-      <div className="flex items-center gap-space-xs pt-space-sm border-t border-slate-200 mt-space-sm">
+      <div className="flex flex-wrap items-center gap-space-xs pt-space-sm border-t border-slate-200 mt-space-sm">
         <span className="text-label-technical text-slate-400 uppercase pr-space-xs">{t("label")}:</span>
         {routing.locales.map((loc) => (
           <button
             key={loc}
             type="button"
             onClick={() => switchTo(loc)}
-            className={`px-2.5 py-1 rounded text-label-technical uppercase transition-colors ${
+            className={`min-h-11 min-w-11 px-3 rounded text-label-technical uppercase transition-colors ${
               loc === locale
                 ? "bg-steel-600 text-white font-semibold"
                 : "bg-slate-100 text-slate-600 hover:bg-slate-200"
@@ -65,15 +66,9 @@ export default function LanguageSwitcher({ variant = "desktop" }: { variant?: "d
         aria-expanded={open}
         className="flex items-center gap-1 px-2.5 py-1.5 rounded border border-slate-200 text-slate-600 text-label-technical uppercase transition-colors duration-200 hover:border-steel-300 hover:text-steel-600"
       >
-        <span className="material-symbols-outlined text-[16px]">language</span>
+        <Icon name="language" className="text-[16px]" />
         {LOCALE_LABELS[locale]}
-        <span
-          className={`material-symbols-outlined text-[16px] transition-transform duration-200 ${
-            open ? "rotate-180" : ""
-          }`}
-        >
-          expand_more
-        </span>
+        <Icon name="expand_more" className={`text-[16px] transition-transform duration-200 ${open ? "rotate-180" : "" }`} />
       </button>
 
       {open && (
@@ -95,7 +90,7 @@ export default function LanguageSwitcher({ variant = "desktop" }: { variant?: "d
               }`}
             >
               {LOCALE_LABELS[loc]}
-              <span className="block text-[10px] text-slate-400">{t(loc)}</span>
+              <span className="block text-xs text-slate-400">{t(loc)}</span>
             </button>
           ))}
         </div>

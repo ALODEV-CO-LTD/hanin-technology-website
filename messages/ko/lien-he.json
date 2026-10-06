@@ -11,7 +11,7 @@
       "card1": {
         "badge": "본사 & 공장",
         "title": "",
-        "address": "베트남 하노이시 메린현 꽝민공단 CN-08 부지",
+        "address": "본사: 베트남 하노이시 꽝민사 꽝민공단 660 로트. 공장: 베트남 하노이시 꽝민사 꽝민공단 49G 로트.",
         "footerLabel": "운영 규모",
         "footerValue": "PLC 자동 도금 설비 및 ISO 17025 CMM 측정 연구실"
       },
@@ -50,7 +50,7 @@
         },
         "1": {
           "question": "2. 웹사이트를 통해 접수 시 HANIN이 지원하는 기술 도면 형식은 무엇입니까?",
-          "answer": "HANIN은 .STEP, .STP, .DWG, .DXF, .IGES, .X_T, .PDF 파일 및 최대 50MB의 압축 파일(.ZIP/.RAR)을 직접 수신하며, SolidWorks, Inventor, AutoCAD, Creo와 호환됩니다. 용량이 더 큰 도면은 클라우드 링크를 engineering@hanintech.vn 으로 보내주시기 바랍니다."
+          "answer": "HANIN은 .STEP, .STP, .DWG, .DXF, .IGES, .X_T, .PDF 파일 및 최대 50MB의 압축 파일(.ZIP/.RAR)을 직접 수신하며, SolidWorks, Inventor, AutoCAD, Creo와 호환됩니다. 용량이 더 큰 도면은 클라우드 링크를 Haninplating@gmail.com 으로 보내주시기 바랍니다."
         },
         "2": {
           "question": "3. HANIN의 도면 보안(NDA) 정책은 어떻게 시행됩니까?",
@@ -92,8 +92,8 @@
       },
       "imageAlt": "공장 전경 (예시 이미지, 추후 실제 사진으로 교체 예정)",
       "overlayLabel": "본사 & 공장",
-      "overlayLocation": "하노이 메린 꽝민공단",
-      "overlayCoordinates": "좌표: 21.2025° N, 105.7725° E"
+      "overlayLocation": "하노이 꽝민공단",
+      "overlayCoordinates": "좌표: 21.2074° N, 105.7540° E"
     },
     "DirectChannels": {
       "heading": "빠르고 직접적인 연결 채널",
@@ -113,7 +113,7 @@
         },
         "email": {
           "label": "대용량 파일 이메일",
-          "title": "sales@hanintech.vn",
+          "title": "Haninplating@gmail.com",
           "desc": "Drive, OneDrive 또는 WeTransfer 링크가 첨부된 대형 프로젝트 입찰용입니다.",
           "cta": "견적 요청 메일 작성"
         },
@@ -144,9 +144,9 @@
       },
       "openMapsCta": "Google 지도 열기",
       "downloadMapCta": "컨테이너 화물차 경로도 (PDF)",
-      "satelliteImageAlt": "하노이 메린 꽝민공단 위치를 보여주는 위성 이미지 (예시 이미지, 추후 실제 Google 지도 임베드로 교체 예정)",
+      "satelliteImageAlt": "하노이 꽝민 꽝민공단 위치를 보여주는 위성 이미지 (예시 이미지, 추후 실제 Google 지도 임베드로 교체 예정)",
       "gateLabel": "HANIN 공장 1번 게이트",
-      "plotLabel": "꽝민공단 CN-08 부지",
+      "plotLabel": "꽝민공단 49G 로트",
       "securityNote": "40피트 컨테이너 보안 게이트 24시간 접수",
       "gridLabel": "GRID: HN-QMINH-08",
       "elevationLabel": "해발고도: +14.2m ASL"
@@ -207,7 +207,7 @@
         "badgeEncryption": "보안 서버 암호화",
         "badgeNda": "자동 NDA 보안 적용",
         "filesSelected": "{count}개 파일 선택됨:",
-        "noFileSelected": "선택된 파일이 없습니다. 도면을 이메일로 직접 보내실 수도 있습니다: sales@hanintech.vn",
+        "noFileSelected": "선택된 파일이 없습니다. 도면을 이메일로 직접 보내실 수도 있습니다: Haninplating@gmail.com",
         "maxSize": "최대: 50MB"
       },
       "step4": {

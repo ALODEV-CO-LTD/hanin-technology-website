@@ -52,7 +52,12 @@
     "CompanyProfileCta": {
       "title": "深入了解 HANIN 生产能力",
       "description": "查阅 Company Profile,详细了解厂房布局、生产线参数、检测设备清单及服务能力。",
-      "ctaDownload": "查看 Company Profile(PDF) →"
+      "ctaDownload": "查看 Company Profile(PDF) →",
+      "fileBadge": "PDF 14.5 MB",
+      "cardTitle": "HANIN 企业能力简介 2026",
+      "cardSubtitle": "B2B 工业产品目录",
+      "cardEdition": "版本:2026.01",
+      "cardReady": "可供下载"
     },
     "EquipmentGrid": {
       "sectionTitle": "机械设备系统",
@@ -65,7 +70,10 @@
           "alt": "带数字仪表和电路开关的大功率整流电源控制柜,用于电解电镀槽(示意图,将替换为实际照片)",
           "specLoad": "负载电流:",
           "specStability": "稳定度:",
-          "specControl": "控制方式:"
+          "specControl": "控制方式:",
+          "specLoadValue": "12,000A",
+          "specStabilityValue": "[±1%]",
+          "specControlValue": "[PLC]"
         },
         "ultrasonic": {
           "badge": "表面前处理",
@@ -75,7 +83,9 @@
           "specFrequency": "频率:",
           "specHeating": "加热方式:",
           "specHeatingValue": "自动",
-          "specVolume": "容积:"
+          "specVolume": "容积:",
+          "specFrequencyValue": "[28 - 40 kHz]",
+          "specVolumeValue": "850 m³"
         },
         "hoist": {
           "badge": "内部物流",
@@ -86,7 +96,9 @@
           "specLoadUnit": "吨",
           "specSpeed": "速度:",
           "specSpeedValue": "PLC 可调",
-          "specSensor": "传感器:"
+          "specSensor": "传感器:",
+          "specLoadValue": "25",
+          "specSensorValue": "[Laser]"
         },
         "deEmbrittlement": {
           "badge": "镀后热处理",
@@ -95,7 +107,10 @@
           "alt": "电镀加工后精密金属零件近景",
           "specMaxTemp": "最高温度:",
           "specSensor": "传感器:",
-          "specStandard": "标准:"
+          "specStandard": "标准:",
+          "specMaxTempValue": "[300°C - 500°C]",
+          "specSensorValue": "[PID Digital]",
+          "specStandardValue": "[ASTM F519]"
         }
       }
     },
@@ -136,7 +151,9 @@
         "locationLabel": "位置(Location)",
         "areaLabel": "生产面积",
         "capabilityLabel": "核心能力",
-        "capabilityValue": "高技术电镀及化学镀加工"
+        "capabilityValue": "高技术电镀及化学镀加工",
+        "locationValue": "河内市光明乡光明工业区 49G 号地块",
+        "areaValue": "18,000 m²"
       },
       "ctaGallery": "查看厂房实景图"
     },
@@ -183,7 +200,8 @@
           "desc": "按 VCI 出口标准进行防潮包装,粘贴可追溯 QR 码标签,并附完整品质合格证 COA 交付。",
           "standard": "标准: VCI ANTI-CORROSION PACKAGING"
         }
-      }
+      },
+      "viewDetail": "查看各镀种的详细工序流程"
     },
     "ProductionLines": {
       "sectionTitle": "生产线",
@@ -196,7 +214,11 @@
           "alt": "自动滚镀生产线,滚筒浸没于电镀化学槽中,配备精密控制手柄(示意图,将替换为实际照片)",
           "capacityLabel": "产能:",
           "capacityUnit": "吨/月",
-          "toleranceLabel": "公差:"
+          "toleranceLabel": "公差:",
+          "tag": "01 // 自动滚镀线",
+          "badge": "SCADA 控制",
+          "capacityValue": "850",
+          "toleranceValue": "[±0.2 µm]"
         },
         "rack": {
           "title": "[生产线 02: 自动及半自动挂镀生产线]",
@@ -204,7 +226,11 @@
           "alt": "身着洁净防护服的女性 QA 工程师在先进金属表面处理厂内操作精密电子控制面板(示意图,将替换为实际照片)",
           "capacityLabel": "产能:",
           "capacityUnit": "件/月",
-          "tankSizeLabel": "槽体尺寸:"
+          "tankSizeLabel": "槽体尺寸:",
+          "tag": "02 // 挂镀线",
+          "badge": "重型",
+          "capacityValue": "120,000",
+          "tankSizeValue": "60 × 40 m"
         },
         "chemical": {
           "title": "[生产线 03: 化学镀及铝材深度处理生产线]",
@@ -212,7 +238,10 @@
           "alt": "现代化工业金属表面处理厂房内部空间",
           "reactorLabel": "反应槽:",
           "reactorValue": "温度稳定 ±1°C",
-          "thicknessLabel": "厚度:"
+          "thicknessLabel": "厚度:",
+          "tag": "03 // 化学镀镍与阳极氧化线",
+          "badge": "符合军标规范",
+          "thicknessValue": "[5 - 50 µm]"
         }
       }
     },
@@ -223,15 +252,21 @@
       "items": {
         "iso9001": {
           "tagLabel": "品质认证",
-          "desc": "生产质量管理体系,确保每批高技术机械电镀加工产品的稳定一致性。"
+          "desc": "生产质量管理体系,确保每批高技术机械电镀加工产品的稳定一致性。",
+          "title": "ISO 9001:2015",
+          "footer": "每年审核 // 全球认可"
         },
         "iso14001": {
           "tagLabel": "环境管理",
-          "desc": "闭环工业废水处理及环境管理体系,确保符合越南环境保护标准。"
+          "desc": "闭环工业废水处理及环境管理体系,确保符合越南环境保护标准。",
+          "title": "ISO 14001:2015",
+          "footer": "闭环废水处理"
         },
         "astmRohs": {
           "tagLabel": "出口规范",
-          "desc": "符合欧盟有害物质限用指令 RoHS/REACH、ASTM B117、ASTM B633 标准及日本工业标准 JIS。"
+          "desc": "符合欧盟有害物质限用指令 RoHS/REACH、ASTM B117、ASTM B633 标准及日本工业标准 JIS。",
+          "title": "[ASTM & RoHS/REACH]",
+          "footer": "零有害物质"
         }
       }
     },

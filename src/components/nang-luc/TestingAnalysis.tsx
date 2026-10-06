@@ -11,7 +11,7 @@ export default function TestingAnalysis() {
   const t = useTranslations("NangLuc.TestingAnalysis");
 
   return (
-    <section className="w-full py-space-xl bg-slate-50 border-t border-slate-200 scroll-mt-20" id="kiem-nghiem">
+    <section className="w-full py-space-xl bg-slate-50 border-t border-slate-200 scroll-mt-[86px]" id="kiem-nghiem">
       <div className="mx-auto px-margin w-full">
         <div className="mb-space-xl">
           <h2 className="text-headline-lg text-slate-900 uppercase tracking-tight">{t("sectionTitle")}</h2>
@@ -25,7 +25,7 @@ export default function TestingAnalysis() {
             <img
               alt={t("image.alt")}
               className="absolute inset-0 w-full h-full object-cover"
-              src={siteImg("nang-luc/TestingAnalysis#1", "https://lh3.googleusercontent.com/aida-public/AB6AXuAC-ozXlS4iAi4T3wA_X-lfMFRZW6tBLRXa9hiO-_aiiAfyUkQ8VaPUa8EIi2vm-qZxixg0pq2T-tmuJ7mwR9Oi5C5cCOzm0cUAv_mj5VqOPDE2-FpS3whEh-TNU1x6XT7patK-2NZNtDRfCepVnV8NB_q7n1lh24xLceTFJ2xeUcVblzSkj0sC-xVpcv6ESoW197zbUsdcV2puaYUyDaS4LJTXmFeTs8dr52845R9MiW3QRPUFLO-ixg")}
+              src={siteImg("nang-luc/TestingAnalysis#1", "/images/factory/phan-tich-1.jpg")}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent" />
           </div>

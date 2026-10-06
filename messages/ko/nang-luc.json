@@ -52,7 +52,12 @@
     "CompanyProfileCta": {
       "title": "HANIN 생산 역량 더 알아보기",
       "description": "Company Profile을 통해 공장 배치, 생산 라인 사양, 검사 장비 목록 및 대응 역량을 자세히 확인하세요.",
-      "ctaDownload": "Company Profile 보기(PDF) →"
+      "ctaDownload": "Company Profile 보기(PDF) →",
+      "fileBadge": "PDF 14.5 MB",
+      "cardTitle": "HANIN 역량 소개서 2026",
+      "cardSubtitle": "B2B 산업용 카탈로그",
+      "cardEdition": "에디션: 2026.01",
+      "cardReady": "다운로드 가능"
     },
     "EquipmentGrid": {
       "sectionTitle": "기계 & 설비 시스템",
@@ -65,7 +70,10 @@
           "alt": "디지털 계기판과 회로 스위치가 있는 전해 도금조용 고출력 정류기 제어함(예시 이미지, 실제 사진으로 교체 예정)",
           "specLoad": "부하 전류:",
           "specStability": "안정도:",
-          "specControl": "제어 방식:"
+          "specControl": "제어 방식:",
+          "specLoadValue": "12,000A",
+          "specStabilityValue": "[±1%]",
+          "specControlValue": "[PLC]"
         },
         "ultrasonic": {
           "badge": "표면 전처리",
@@ -75,7 +83,9 @@
           "specFrequency": "주파수:",
           "specHeating": "가열 방식:",
           "specHeatingValue": "자동",
-          "specVolume": "용량:"
+          "specVolume": "용량:",
+          "specFrequencyValue": "[28 - 40 kHz]",
+          "specVolumeValue": "850 m³"
         },
         "hoist": {
           "badge": "사내 물류",
@@ -86,7 +96,9 @@
           "specLoadUnit": "톤",
           "specSpeed": "속도:",
           "specSpeedValue": "PLC 가변",
-          "specSensor": "센서:"
+          "specSensor": "센서:",
+          "specLoadValue": "25",
+          "specSensorValue": "[Laser]"
         },
         "deEmbrittlement": {
           "badge": "도금 후 열처리",
@@ -95,7 +107,10 @@
           "alt": "정밀 전기도금 마감 처리된 금속 부품 근접 사진",
           "specMaxTemp": "최고 온도:",
           "specSensor": "센서:",
-          "specStandard": "기준:"
+          "specStandard": "기준:",
+          "specMaxTempValue": "[300°C - 500°C]",
+          "specSensorValue": "[PID Digital]",
+          "specStandardValue": "[ASTM F519]"
         }
       }
     },
@@ -136,7 +151,9 @@
         "locationLabel": "위치(Location)",
         "areaLabel": "생산 면적",
         "capabilityLabel": "핵심 역량",
-        "capabilityValue": "고정밀 전기도금 및 화학도금 가공"
+        "capabilityValue": "고정밀 전기도금 및 화학도금 가공",
+        "locationValue": "하노이시 꽝민사 꽝민공단 49G 로트",
+        "areaValue": "18,000 m²"
       },
       "ctaGallery": "공장 이미지 보기"
     },
@@ -183,7 +200,8 @@
           "desc": "VCI 수출 기준에 따른 방습 포장을 진행하고, 추적용 QR 라벨을 부착하며 품질 인증서(COA)와 함께 인도합니다.",
           "standard": "기준: VCI ANTI-CORROSION PACKAGING"
         }
-      }
+      },
+      "viewDetail": "도금 종류별 상세 공정 보기"
     },
     "ProductionLines": {
       "sectionTitle": "생산 라인",
@@ -196,7 +214,11 @@
           "alt": "전기도금 화학조에 침지된 회전 드럼과 정밀 제어 핸들을 갖춘 자동 배럴 도금 라인(예시 이미지, 실제 사진으로 교체 예정)",
           "capacityLabel": "생산 능력:",
           "capacityUnit": "톤/월",
-          "toleranceLabel": "공차:"
+          "toleranceLabel": "공차:",
+          "tag": "01 // 자동 배럴 라인",
+          "badge": "SCADA 제어",
+          "capacityValue": "850",
+          "toleranceValue": "[±0.2 µm]"
         },
         "rack": {
           "title": "[생산 라인 02: 자동 & 반자동 랙 도금 라인]",
@@ -204,7 +226,11 @@
           "alt": "최신 금속 표면처리 공장에서 정밀 전자 제어반을 조작하는 클린 보호복 차림의 여성 QA 엔지니어(예시 이미지, 실제 사진으로 교체 예정)",
           "capacityLabel": "생산 능력:",
           "capacityUnit": "개/월",
-          "tankSizeLabel": "도금조 크기:"
+          "tankSizeLabel": "도금조 크기:",
+          "tag": "02 // 랙 도금 라인",
+          "badge": "고하중",
+          "capacityValue": "120,000",
+          "tankSizeValue": "60 × 40 m"
         },
         "chemical": {
           "title": "[생산 라인 03: 화학 도금 및 알루미늄 전문 처리 라인]",
@@ -212,7 +238,10 @@
           "alt": "현대적인 산업용 금속 표면처리 공장 내부 공간",
           "reactorLabel": "반응조:",
           "reactorValue": "온도 안정성 ±1°C",
-          "thicknessLabel": "두께:"
+          "thicknessLabel": "두께:",
+          "tag": "03 // 화학 ENP 및 아노다이징 라인",
+          "badge": "군사 규격 준수",
+          "thicknessValue": "[5 - 50 µm]"
         }
       }
     },
@@ -223,15 +252,21 @@
       "items": {
         "iso9001": {
           "tagLabel": "품질 인증",
-          "desc": "고정밀 기계 도금 가공 각 배치의 반복 안정성을 보장하는 생산 품질경영 시스템입니다."
+          "desc": "고정밀 기계 도금 가공 각 배치의 반복 안정성을 보장하는 생산 품질경영 시스템입니다.",
+          "title": "ISO 9001:2015",
+          "footer": "매년 심사 // 글로벌 인정"
         },
         "iso14001": {
           "tagLabel": "환경 관리",
-          "desc": "베트남 환경보호 기준 준수를 보장하는 폐쇄형 산업 폐수 처리 및 환경경영 시스템입니다."
+          "desc": "베트남 환경보호 기준 준수를 보장하는 폐쇄형 산업 폐수 처리 및 환경경영 시스템입니다.",
+          "title": "ISO 14001:2015",
+          "footer": "폐쇄형 폐수 처리"
         },
         "astmRohs": {
           "tagLabel": "수출 규격",
-          "desc": "유럽 유해물질제한지침 RoHS/REACH, ASTM B117, ASTM B633 표준 및 일본 공업 표준 JIS를 준수합니다."
+          "desc": "유럽 유해물질제한지침 RoHS/REACH, ASTM B117, ASTM B633 표준 및 일본 공업 표준 JIS를 준수합니다.",
+          "title": "[ASTM & RoHS/REACH]",
+          "footer": "유해물질 제로"
         }
       }
     },

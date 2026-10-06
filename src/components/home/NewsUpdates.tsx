@@ -1,6 +1,7 @@
 import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { getPosts } from "@/server/public";
+import Icon from "@/components/ui/Icon";
 
 export default function NewsUpdates() {
   const t = useTranslations("Home.NewsUpdates");
@@ -21,7 +22,7 @@ export default function NewsUpdates() {
             className="inline-flex items-center gap-2 text-label-technical uppercase tracking-wider text-slate-600 hover:text-steel-600 transition-colors font-semibold"
           >
             <span>{t("ctaAll")}</span>
-            <span className="material-symbols-outlined text-[16px]">arrow_forward</span>
+            <Icon name="arrow_forward" className="text-[16px]" />
           </Link>
         </div>
 
@@ -34,7 +35,7 @@ export default function NewsUpdates() {
             >
               <div className="flex flex-col gap-space-sm">
                 <div className="flex items-center justify-between text-slate-500">
-                  <span className="text-[10px] px-2 py-0.5 rounded bg-steel-50 text-steel-700 uppercase font-semibold">
+                  <span className="text-xs px-2 py-0.5 rounded bg-steel-50 text-steel-700 uppercase font-semibold">
                     {post.categoryLabel}
                   </span>
                   <span className="text-xs font-mono">{post.isoDate.slice(0, 4)}</span>
@@ -44,11 +45,9 @@ export default function NewsUpdates() {
                 </h3>
                 <p className="text-body-sm text-slate-600 leading-relaxed">{post.excerpt}</p>
               </div>
-              <div className="pt-space-md flex items-center gap-2 text-steel-600 text-[11px] uppercase tracking-wider font-semibold">
+              <div className="pt-space-md flex items-center gap-2 text-steel-600 text-xs uppercase tracking-wider font-semibold">
                 <span>{t("readMore")}</span>
-                <span className="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">
-                  east
-                </span>
+                <Icon name="east" className="text-[16px] group-hover:translate-x-1 transition-transform" />
               </div>
             </Link>
           ))}

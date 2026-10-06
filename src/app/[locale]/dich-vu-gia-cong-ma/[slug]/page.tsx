@@ -9,6 +9,7 @@ import DetailCapability from "@/components/dich-vu/DetailCapability";
 import DetailApplications from "@/components/dich-vu/DetailApplications";
 import DetailQaTable from "@/components/dich-vu/DetailQaTable";
 import DetailGallery from "@/components/dich-vu/DetailGallery";
+import { getSettings } from "@/server/settings";
 import RfqFormDetail from "@/components/dich-vu/RfqFormDetail";
 import RelatedServices from "@/components/dich-vu/RelatedServices";
 import { getServiceBySlug } from "@/server/public";
@@ -54,11 +55,11 @@ export default async function DichVuChiTietPage({
       <DetailHero service={service} />
       <Reveal><DetailOverview /></Reveal>
       <Reveal><DetailProcess /></Reveal>
-      <Reveal direction="right"><DetailCapability /></Reveal>
+      <Reveal direction="right"><DetailCapability service={service} /></Reveal>
       <Reveal><DetailApplications /></Reveal>
       <Reveal><DetailQaTable /></Reveal>
-      <Reveal><DetailGallery /></Reveal>
-      <Reveal><RfqFormDetail /></Reveal>
+      <Reveal><DetailGallery service={service} /></Reveal>
+      <Reveal><RfqFormDetail hotline={getSettings().hotline} /></Reveal>
       <Reveal><RelatedServices currentSlug={service.slug} /></Reveal>
     </div>
   );

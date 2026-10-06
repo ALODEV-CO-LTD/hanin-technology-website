@@ -1,4 +1,6 @@
 import { useTranslations } from "next-intl";
+import Icon from "@/components/ui/Icon";
+import ProfileLink from "@/components/ui/ProfileLink";
 
 export default function ProfileDownloadCta() {
   const t = useTranslations("GioiThieu.ProfileDownloadCta");
@@ -24,13 +26,13 @@ export default function ProfileDownloadCta() {
               </h2>
               <p className="text-body-md text-slate-600 max-w-xl leading-relaxed">{t("subtitle")}</p>
               <div className="pt-space-xs">
-                <a
+                <ProfileLink
                   className="inline-flex items-center gap-space-sm px-space-lg py-space-sm rounded bg-steel-600 hover:bg-steel-700 text-white text-label-technical uppercase tracking-wider transition-all duration-150 active:scale-[0.99] shadow-md shadow-steel-500/20"
-                  href="#"
+                  
                 >
-                  <span className="material-symbols-outlined text-[18px]">download</span>
+                  <Icon name="download" className="text-[18px]" />
                   {t("cta")}
-                </a>
+                </ProfileLink>
               </div>
             </div>
 
@@ -46,18 +48,16 @@ export default function ProfileDownloadCta() {
                       {t("cardCompanyName")}
                     </span>
                   </div>
-                  <span className="text-[9px] text-steel-600 font-bold font-mono">{t("cardCatalogLabel")}</span>
+                  <span className="text-xs text-steel-600 font-bold font-mono">{t("cardCatalogLabel")}</span>
                 </div>
                 <div className="my-space-md p-space-sm bg-white rounded border border-slate-200 flex flex-col items-center justify-center text-center shadow-sm">
-                  <span className="material-symbols-outlined text-steel-600 text-[36px] mb-2 opacity-90">
-                    menu_book
-                  </span>
+                  <Icon name="menu_book" className="text-steel-600 text-[36px] mb-2 opacity-90" />
                   <span className="text-xs font-bold text-slate-900 uppercase">{t("cardTitle")}</span>
-                  <span className="text-[10px] text-slate-500 font-mono mt-1">{t("cardVersion")}</span>
+                  <span className="text-xs text-slate-500 font-mono mt-1">{t("cardVersion")}</span>
                   <div className="w-16 h-0.5 bg-steel-600 my-2" />
-                  <span className="text-[9px] text-slate-400 font-mono">{t("cardTagline")}</span>
+                  <span className="text-xs text-slate-400 font-mono">{t("cardTagline")}</span>
                 </div>
-                <div className="flex items-center justify-between pt-space-xs border-t border-slate-200 text-[10px] text-slate-500">
+                <div className="flex items-center justify-between pt-space-xs border-t border-slate-200 text-xs text-slate-500">
                   <span>{t("cardFormat")}</span>
                   <span className="text-sky-700 font-semibold group-hover:underline">{t("cardViewLabel")}</span>
                 </div>

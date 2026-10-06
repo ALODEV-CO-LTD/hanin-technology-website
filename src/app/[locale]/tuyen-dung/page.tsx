@@ -8,11 +8,10 @@ import ApplicationCta from "@/components/tuyen-dung/ApplicationCta";
 import Reveal from "@/components/ui/Reveal";
 import { getJobs } from "@/server/public";
 
-export const metadata: Metadata = {
-  title: "Tuyển dụng",
-  description:
-    "Vị trí tuyển dụng đang mở trong lĩnh vực gia công mạ kim loại và cơ khí chính xác.",
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations("Meta");
+  return { title: t("tuyenDung.title"), description: t("tuyenDung.description") };
+}
 
 export default async function TuyenDungPage() {
   const locale = await getLocale();

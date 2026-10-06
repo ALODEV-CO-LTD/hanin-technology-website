@@ -1,5 +1,7 @@
 import { useTranslations } from "next-intl";
 import type { PlatingService } from "@/lib/services-data";
+import { Link } from "@/i18n/navigation";
+import Icon from "@/components/ui/Icon";
 
 /** Tiêu đề, mã, badge, mô tả và ảnh lấy từ CMS (service); các chỉ số kỹ thuật bên dưới là nội dung mẫu dùng chung. */
 export default function DetailHero({ service }: { service: PlatingService }) {
@@ -27,22 +29,22 @@ export default function DetailHero({ service }: { service: PlatingService }) {
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-space-sm my-space-md pt-space-sm bg-slate-50 border border-slate-200 p-space-sm rounded">
               <div className="flex flex-col">
                 <span className="text-label-sm text-slate-500 uppercase">{t("phos.label")}</span>
-                <span className="text-title-md text-slate-900 font-bold">6-9% // &gt;10.5%</span>
+                <span className="text-title-md text-slate-900 font-bold">{t("phos.value")}</span>
                 <span className="text-label-sm text-steel-600">{t("phos.note")}</span>
               </div>
               <div className="flex flex-col">
                 <span className="text-label-sm text-slate-500 uppercase">{t("hardness.label")}</span>
-                <span className="text-title-md text-slate-900 font-bold">65-68 HRC</span>
+                <span className="text-title-md text-slate-900 font-bold">{t("hardness.value")}</span>
                 <span className="text-label-sm text-slate-500">{t("hardness.note")}</span>
               </div>
               <div className="flex flex-col">
                 <span className="text-label-sm text-slate-500 uppercase">{t("saltSpray.label")}</span>
-                <span className="text-title-md text-slate-900 font-bold">&gt; 1,000 {t("saltSpray.unit")}</span>
+                <span className="text-title-md text-slate-900 font-bold">{t("saltSpray.value")} {t("saltSpray.unit")}</span>
                 <span className="text-label-sm text-slate-500">{t("saltSpray.note")}</span>
               </div>
               <div className="flex flex-col">
                 <span className="text-label-sm text-slate-500 uppercase">{t("tolerance.label")}</span>
-                <span className="text-title-md text-steel-600 font-bold">±1.0 µm</span>
+                <span className="text-title-md text-steel-600 font-bold">{t("tolerance.value")}</span>
                 <span className="text-label-sm text-slate-500">{t("tolerance.note")}</span>
               </div>
             </div>
@@ -54,17 +56,17 @@ export default function DetailHero({ service }: { service: PlatingService }) {
               className="inline-flex items-center gap-space-xs bg-steel-600 hover:bg-steel-700 text-white px-space-md py-3 rounded text-label-technical uppercase tracking-wider shadow-sm transition-all"
             >
               <span>{t("ctaPrimary")}</span>
-              <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
+              <Icon name="arrow_forward" className="text-[18px]" />
             </a>
-            <button
-              type="button"
+            <Link
+              href="/lien-he#rfq-form"
               className="inline-flex items-center gap-space-xs bg-slate-100 hover:bg-slate-200 text-slate-800 px-space-md py-3 rounded text-label-technical uppercase tracking-wider transition-all"
             >
-              <span className="material-symbols-outlined text-[18px]">download</span>
+              <Icon name="download" className="text-[18px]" />
               <span>{t("ctaSecondary")}</span>
-            </button>
+            </Link>
             <div className="flex items-center gap-1.5 ml-auto text-slate-500 text-label-sm">
-              <span className="material-symbols-outlined text-steel-600 text-[18px]">verified</span>
+              <Icon name="verified" className="text-steel-600 text-[18px]" />
               <span>{t("verifyLabel")}</span>
             </div>
           </div>

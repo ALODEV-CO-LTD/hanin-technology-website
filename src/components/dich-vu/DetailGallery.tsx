@@ -1,12 +1,15 @@
 import { useTranslations } from "next-intl";
-import { siteImg } from "@/server/site-images";
+import type { PlatingService } from "@/lib/services-data";
+import { SERVICE_GALLERY_POOL, pickImages } from "@/lib/factory-pool";
 
-export default function DetailGallery() {
+export default function DetailGallery({ service }: { service: PlatingService }) {
   const t = useTranslations("DichVu.DetailGallery");
+  // Ảnh #1 của bộ chọn dành cho khối "Năng lực" (DetailCapability), nên ở đây lấy 3 ảnh tiếp theo.
+  const [, ...picked] = pickImages(service.slug, SERVICE_GALLERY_POOL, 4, [service.image]);
   const GALLERY = [
-    { key: "line", src: siteImg("dich-vu/DetailGallery#1", "https://lh3.googleusercontent.com/aida-public/AB6AXuBMN0lym82cEAA9k9kEK85J37YJBabdX5LVykdHImAJrf6CHqddqInsnSorwbmqZLTQAqRIsizQmmahLAPP4kP--Zi_rvgLXB14CZxIER1vTsym4bh6b1rI8RH_x9HyH4YcURRVskMZtdr5b09X-hZx5pPqRRMkjyQX4kyg55rB450Ml7kTRsX42xU0XLaH1kjzmQYE5wU-i1I_UaxnfjxxejVysfKwY5jFgQimj8WXl4xHV8G24IqbtA") },
-    { key: "surface", src: siteImg("dich-vu/DetailGallery#2", "https://lh3.googleusercontent.com/aida-public/AB6AXuD-Xw9eOyudtTLmQvqdVGja2EonIBH4tKUbz072lUcI_mBD7CTRy3TrsMbeqYGNRWcHwS2mg0Pv-E0zxnTzTOKTvjx9shbTlEaqk0xrRdF4BipjR-HtJyqK8BqnbDoY9jivQzwGUtxtO7QsbdOhm3VTuoK-mDH_Kh4UO1qBz3HGm98Fpa7ICg57TAYbOlxe-ByVuYAd2s98yqBtwr4Gyt0e4dlX8ADUPGleTymrJTqGDbL3DvsixipDqw") },
-    { key: "prep", src: siteImg("dich-vu/DetailGallery#3", "https://lh3.googleusercontent.com/aida-public/AB6AXuAgVrz_RyVKAbQ7apx81Lz8pWXfaHja0O5t5Qgvu-KURvxUyjxk0_9BkIVPKgggNW-uT198ZNx2MkQlJ4dZ2dKr9vJy1n2tB-7kdSPTiqKt0QVTGGJDX3L1vAS8MHSvulwgWXjwIIuK0U-TgdDTE9SFIxXk3bYEgRwSbHqPXzM3MAtDzOOXPkoLUoSTqGiac02De4AS7PmEdbXMkgbJSjvX_oEyHeppTmJPuHXad1UOQJeGo6V8B5ikMQ") },
+    { key: "line", src: picked[0] },
+    { key: "surface", src: picked[1] },
+    { key: "prep", src: picked[2] },
   ] as const;
 
   return (

@@ -121,6 +121,12 @@ function cleanValue(
         errors[path] = `${field.label} phải là số`;
         return 0;
       }
+      const min = field.min ?? 0;
+      const max = field.max ?? 9999;
+      if (n < min || n > max) {
+        errors[path] = `${field.label} phải từ ${min} đến ${max}`;
+        return Math.min(Math.max(Math.trunc(n), min), max);
+      }
       return Math.trunc(n);
     }
     case "date": {

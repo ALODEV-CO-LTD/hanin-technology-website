@@ -2,6 +2,7 @@ import Link from "next/link";
 import { useLocale, useTranslations } from "next-intl";
 import type { Product } from "@/lib/products-data";
 import { getProducts } from "@/server/public";
+import Icon from "@/components/ui/Icon";
 
 export default function RelatedProjects({ currentSlug }: { currentSlug: string }) {
   const tp = useTranslations("SanPham");
@@ -47,7 +48,7 @@ export default function RelatedProjects({ currentSlug }: { currentSlug: string }
                 <p className="text-body-sm text-slate-600 line-clamp-2 mt-1">{project.description}</p>
                 <div className="flex items-center gap-space-xs pt-space-xs text-steel-600 text-label-sm font-semibold">
                   <span>{t("ctaViewDetail")}</span>
-                  <span className="material-symbols-outlined text-[14px]">arrow_forward</span>
+                  <Icon name="arrow_forward" className="text-[14px]" />
                 </div>
               </div>
             </Link>

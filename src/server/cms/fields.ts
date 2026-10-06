@@ -29,6 +29,9 @@ export interface FieldDef {
   itemFields?: FieldDef[];
   /** Với type "list": giới hạn số phần tử (mặc định 30). */
   maxItems?: number;
+  /** Với type "number": giá trị nhỏ nhất (mặc định 0, không cho số âm) và lớn nhất. */
+  min?: number;
+  max?: number;
   /** Giá trị mặc định khi tạo mới. */
   defaultValue?: unknown;
   /** true: nhập tự sinh slug từ tiêu đề nếu để trống. */

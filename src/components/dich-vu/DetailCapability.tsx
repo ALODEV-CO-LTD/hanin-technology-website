@@ -1,8 +1,12 @@
 import { useTranslations } from "next-intl";
-import { siteImg } from "@/server/site-images";
+import type { PlatingService } from "@/lib/services-data";
+import { SERVICE_GALLERY_POOL, pickImages } from "@/lib/factory-pool";
+import Icon from "@/components/ui/Icon";
 
-export default function DetailCapability() {
+export default function DetailCapability({ service }: { service: PlatingService }) {
   const t = useTranslations("DichVu.DetailCapability");
+
+  const [capabilityImage] = pickImages(service.slug, SERVICE_GALLERY_POOL, 4, [service.image]);
 
   const FEATURES = [
     { key: "dosing", icon: "tune" },
@@ -19,7 +23,7 @@ export default function DetailCapability() {
             <img
               alt={t("imageAlt")}
               className="w-full h-full object-cover"
-              src={siteImg("dich-vu/DetailCapability#1", "https://lh3.googleusercontent.com/aida-public/AB6AXuAC-ozXlS4iAi4T3wA_X-lfMFRZW6tBLRXa9hiO-_aiiAfyUkQ8VaPUa8EIi2vm-qZxixg0pq2T-tmuJ7mwR9Oi5C5cCOzm0cUAv_mj5VqOPDE2-FpS3whEh-TNU1x6XT7patK-2NZNtDRfCepVnV8NB_q7n1lh24xLceTFJ2xeUcVblzSkj0sC-xVpcv6ESoW197zbUsdcV2puaYUyDaS4LJTXmFeTs8dr52845R9MiW3QRPUFLO-ixg")}
+              src={capabilityImage}
             />
           </div>
           <div className="p-space-md bg-white border border-slate-200 rounded shadow-sm flex items-center justify-between gap-space-sm">
@@ -29,7 +33,7 @@ export default function DetailCapability() {
             </div>
             <div className="flex flex-col text-right">
               <span className="text-label-sm text-slate-500 uppercase">{t("tankSizeLabel")}</span>
-              <span className="text-title-md text-steel-600 font-bold">1800 x 900 x 1200 mm</span>
+              <span className="text-title-md text-steel-600 font-bold">{t("tankSizeValue")}</span>
             </div>
           </div>
         </div>
@@ -42,7 +46,7 @@ export default function DetailCapability() {
           <div className="space-y-space-sm text-body-md text-slate-600">
             {FEATURES.map((feature) => (
               <div key={feature.key} className="flex items-start gap-space-xs">
-                <span className="material-symbols-outlined text-steel-600 text-[20px] mt-0.5">{feature.icon}</span>
+                <Icon name={feature.icon} className="text-steel-600 text-[20px] mt-0.5" />
                 <div>
                   <strong className="text-slate-900 font-semibold">{t(`${feature.key}.title`)}</strong>{" "}
                   {t(`${feature.key}.desc`)}

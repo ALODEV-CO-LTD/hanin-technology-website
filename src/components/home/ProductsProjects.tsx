@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { useLocale, useTranslations } from "next-intl";
 import { getProducts } from "@/server/public";
+import Icon from "@/components/ui/Icon";
 
 
 export default function ProductsProjects() {
@@ -30,7 +31,7 @@ export default function ProductsProjects() {
             className="inline-flex items-center gap-2 text-label-technical uppercase tracking-wider text-slate-600 hover:text-steel-600 transition-colors whitespace-nowrap font-semibold"
           >
             <span>{t("ctaAll")}</span>
-            <span className="material-symbols-outlined text-[16px]">arrow_forward</span>
+            <Icon name="arrow_forward" className="text-[16px]" />
           </Link>
         </div>
 
@@ -60,9 +61,7 @@ export default function ProductsProjects() {
                   <span className="text-label-technical uppercase tracking-wider font-semibold">
                     {t("project1.cta")}
                   </span>
-                  <span className="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">
-                    arrow_forward
-                  </span>
+                  <Icon name="arrow_forward" className="text-[18px] group-hover:translate-x-1 transition-transform" />
                 </div>
               </div>
             </Link>

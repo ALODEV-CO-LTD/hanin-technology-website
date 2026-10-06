@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { useLocale, useTranslations } from "next-intl";
 import { getRelatedServices } from "@/server/public";
+import Icon from "@/components/ui/Icon";
 
 export default function RelatedServices({ currentSlug }: { currentSlug: string }) {
   const locale = useLocale();
@@ -18,7 +19,7 @@ export default function RelatedServices({ currentSlug }: { currentSlug: string }
           className="text-label-technical text-steel-600 uppercase font-semibold flex items-center gap-1 hover:underline"
         >
           <span>{tr("viewAll")}</span>
-          <span className="material-symbols-outlined text-[16px]">chevron_right</span>
+          <Icon name="chevron_right" className="text-[16px]" />
         </Link>
       </div>
 
@@ -32,9 +33,7 @@ export default function RelatedServices({ currentSlug }: { currentSlug: string }
             <div>
               <div className="flex items-center justify-between text-slate-500 mb-2">
                 <span className="text-label-sm text-steel-600 uppercase font-semibold">{service.code}</span>
-                <span className="material-symbols-outlined group-hover:translate-x-1 transition-transform text-[20px]">
-                  arrow_forward
-                </span>
+                <Icon name="arrow_forward" className="group-hover:translate-x-1 transition-transform text-[20px]" />
               </div>
               <h4 className="text-title-md text-slate-900 uppercase group-hover:text-steel-600 transition-colors font-bold">
                 {service.title}

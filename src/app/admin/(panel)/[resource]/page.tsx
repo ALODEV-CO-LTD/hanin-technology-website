@@ -74,7 +74,45 @@ export default async function ResourceListPage({
         </form>
       )}
 
-      <div className="bg-white border border-slate-200 rounded-lg overflow-x-auto">
+      {/* Điện thoại: danh sách dạng thẻ, luôn thấy đủ nút Sửa/Ẩn/Xoá */}
+      <div className="md:hidden flex flex-col gap-3">
+        {items.map((record) => {
+          const imageCol = columns.find((c) => c.type === "image");
+          const titleCol = columns.find((c) => c.name === resource.titleField) ?? columns.find((c) => c.type !== "image") ?? columns[0];
+          const others = columns.filter((c) => c !== imageCol && c !== titleCol);
+          return (
+            <article key={record.id} className="bg-white border border-slate-200 rounded-lg p-3 flex flex-col gap-3">
+              <div className="flex gap-3 items-start">
+                {imageCol && (
+                  // eslint-disable-next-line @next/next/no-img-element
+                  <img src={String(record[imageCol.name] ?? "")} alt="" className={`w-20 h-14 rounded border border-slate-200 shrink-0 ${resource.key === "clients" ? "object-contain p-1 bg-white" : "object-cover bg-slate-100"}`} />
+                )}
+                <div className="min-w-0 flex-1">
+                  <Link href={`/admin/${resource.key}/${record.id}`} className="font-semibold text-slate-900 leading-snug block">
+                    <Cell field={titleCol} value={record[titleCol.name]} />
+                  </Link>
+                  <div className="mt-1.5 flex flex-wrap gap-x-3 gap-y-1 text-xs text-slate-500 items-center">
+                    {others.map((c) => (
+                      <span key={c.name} className="inline-flex items-center gap-1">
+                        <Cell field={c} value={record[c.name]} />
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+              <RowActions
+                resource={resource.key}
+                id={record.id}
+                publishField={resource.publishField}
+                published={isPublished(resource, record)}
+              />
+            </article>
+          );
+        })}
+        {items.length === 0 && <p className="px-4 py-10 text-center text-slate-500 bg-white border border-slate-200 rounded-lg">Chưa có mục nào.</p>}
+      </div>
+
+      <div className="hidden md:block bg-white border border-slate-200 rounded-lg overflow-x-auto">
         <table className="w-full text-sm">
           <thead className="bg-slate-100 text-left text-xs uppercase tracking-wide text-slate-500">
             <tr>

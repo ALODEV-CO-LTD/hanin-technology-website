@@ -2,20 +2,16 @@
   "Home": {
     "CompanySnapshot": {
       "partners": {
-        "label1": "合作伙伴",
-        "label2": "客户"
+        "label1": "客户"
       },
-      "projects": {
-        "label1": "项目数",
-        "label2": "项目"
+      "staff": {
+        "label1": "员工"
       },
-      "lines": {
-        "label1": "产线数",
-        "label2": "设备"
+      "area": {
+        "label1": "厂区面积"
       },
-      "capacity": {
-        "label1": "吨/月",
-        "label2": "生产能力"
+      "founded": {
+        "label1": "成立年份"
       }
     },
     "Hero": {
@@ -47,7 +43,7 @@
       "badgeSubtitle": "工业表面处理标准",
       "title": "造就差异化优势的核心能力。",
       "paragraph1": "专注于金属电镀加工领域,凭借生产能力为工业客户提供服务。",
-      "paragraph2": "[企业官方信息将根据生产能力标准与运营规模同步更新]。",
+      "paragraph2": "HANIN 成立于 2023 年，在河内光明工业区运营占地 2,230 平方米的工厂，拥有 58 名员工，服务超过 100 家工业客户。",
       "ctaLink": "了解更多关于 HANIN"
     },
     "PlatingServices": {
@@ -239,7 +235,7 @@
       "zaloCta": "与 HANIN 在线沟通",
       "emailLabel": "报价邮箱",
       "addressLabel": "厂址",
-      "addressValue": "Lô CN-08, KCN Quang Minh, Huyện Mê Linh, Hà Nội"
+      "addressValue": "Lô 49G, KCN Quang Minh, xã Quang Minh, Hà Nội"
     }
   }
 }

@@ -2,6 +2,7 @@ import { HttpError } from "@/server/auth";
 import { readJson, route } from "@/server/api";
 import { getSettings, isSafeLink, isSafeMapEmbed, saveSettings, SETTING_DEFS } from "@/server/settings";
 import { revalidateSite } from "@/server/revalidate";
+import { SOCIAL_CHANNELS, normalizeSocialUrl } from "@/lib/social";
 
 export const GET = route(async () => ({ defs: SETTING_DEFS, values: getSettings() }));
 
@@ -10,14 +11,21 @@ export const PUT = route(async (request) => {
   const values: Record<string, string> = {};
   for (const def of SETTING_DEFS) {
     if (!(def.key in body)) continue;
-    const value = String(body[def.key] ?? "").trim();
-    const isEmail = def.key === "inquiryNotifyEmail";
-    const valid = isEmail
+    let value = String(body[def.key] ?? "").trim();
+    const social = SOCIAL_CHANNELS.find((c) => c.settingKey === def.key);
+    if (social) value = normalizeSocialUrl(social.key, value);
+    const isEmail = def.key === "inquiryNotifyEmail" || def.kind === "email";
+    const valid = def.kind === "phone"
+      ? value.length > 0 && value.length <= 60 && /^[\d\s()+.\-/A-Za-z:]+$/.test(value)
+      : isEmail
       ? value === "" || /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)
       : def.key === "mapEmbedUrl"
         ? isSafeMapEmbed(value)
-        : isSafeLink(value);
+        : def.key === "profileUrl"
+          ? isSafeLink(value) || /^\/uploads\/[\w./-]+$/.test(value)
+          : isSafeLink(value);
     if (!valid) throw new HttpError(422, `${def.label}: giá trị không hợp lệ`);
+    if (def.defaultValue && !value) continue;
     values[def.key] = value;
   }
   saveSettings(values);

@@ -1,4 +1,6 @@
 import { useTranslations } from "next-intl";
+import Icon from "@/components/ui/Icon";
+import ProfileLink from "@/components/ui/ProfileLink";
 
 export default function CompanyProfileCta() {
   const t = useTranslations("NangLuc.CompanyProfileCta");
@@ -11,12 +13,12 @@ export default function CompanyProfileCta() {
           <div className="lg:col-span-7">
             <h3 className="text-headline-lg text-white uppercase tracking-tight mb-space-md">{t("title")}</h3>
             <p className="text-body-lg text-slate-300 max-w-xl leading-relaxed mb-space-lg">{t("description")}</p>
-            <a
+            <ProfileLink
               className="inline-flex items-center gap-2 px-space-xl py-space-md bg-steel-600 hover:bg-steel-700 text-white text-headline-sm font-semibold uppercase rounded transition-all active:scale-[0.99] shadow-lg"
-              href="#"
+              
             >
               {t("ctaDownload")}
-            </a>
+            </ProfileLink>
           </div>
 
           {/* RIGHT: Realistic PDF booklet card mockup */}
@@ -25,21 +27,19 @@ export default function CompanyProfileCta() {
               <div className="flex items-center justify-between pb-space-sm mb-space-md border-b border-slate-700">
                 <span className="text-label-technical text-steel-400 font-semibold uppercase">HANIN VIETNAM</span>
                 <span className="px-space-xs py-0.5 bg-slate-700 text-slate-300 rounded text-label-sm">
-                  PDF 14.5 MB
+                  {t("fileBadge")}
                 </span>
               </div>
               <div className="py-space-xl text-center">
-                <span className="material-symbols-outlined text-[48px] text-steel-500 mb-space-xs">
-                  menu_book
-                </span>
+                <Icon name="menu_book" className="text-[48px] text-steel-500 mb-space-xs" />
                 <div className="text-headline-sm uppercase text-white font-bold tracking-tight">
-                  HANIN CAPABILITY PROFILE 2026
+                  {t("cardTitle")}
                 </div>
-                <p className="text-label-technical text-slate-400 uppercase mt-1">B2B INDUSTRIAL CATALOGUE</p>
+                <p className="text-label-technical text-slate-400 uppercase mt-1">{t("cardSubtitle")}</p>
               </div>
               <div className="pt-space-sm border-t border-slate-700 text-label-sm text-slate-400 flex items-center justify-between">
-                <span>EDITION: 2026.01</span>
-                <span className="text-steel-400 font-bold">READY TO DOWNLOAD</span>
+                <span>{t("cardEdition")}</span>
+                <span className="text-steel-400 font-bold">{t("cardReady")}</span>
               </div>
             </div>
           </div>

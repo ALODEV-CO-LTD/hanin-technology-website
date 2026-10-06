@@ -10,7 +10,7 @@ export const dynamic = "force-dynamic";
 const CSS = `
 .lg{min-height:100vh;display:grid;grid-template-columns:1fr;font-family:var(--font-gilroy),ui-sans-serif,system-ui,sans-serif;color:#0f172a;background:#f8fafc}
 .lg *{box-sizing:border-box}
-.lg-hero{display:none;position:relative;background:#0d1e2b url('https://images.unsplash.com/photo-1716191299945-4c5b89703971?w=1600&q=80&fm=jpg&fit=crop') center/cover;color:#fff}
+.lg-hero{display:none;position:relative;background:#0d1e2b url('/images/factory/ma-treo-2.jpg') center/cover;color:#fff}
 .lg-hero::before{content:"";position:absolute;inset:0;background:linear-gradient(160deg,rgba(13,30,43,.88),rgba(35,72,98,.72))}
 .lg-hero-in{position:relative;height:100%;display:flex;flex-direction:column;justify-content:flex-end;padding:56px}
 .lg-hero h2{margin:0 0 12px;font-size:40px;line-height:1.1;font-weight:800;letter-spacing:-.01em;text-transform:uppercase}

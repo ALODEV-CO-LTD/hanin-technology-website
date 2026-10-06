@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { api, ApiError } from "./api";
+import Dropdown from "./Dropdown";
 import { formatSize } from "./MediaPicker";
 
 interface Inquiry {
@@ -85,15 +86,27 @@ export default function InquiryManager({ initialStatus = "" }: { initialStatus?:
     <div>
       <h1 className="text-xl font-bold text-slate-900 mb-4">Liên hệ & Ứng tuyển</h1>
       <div className="flex flex-wrap gap-2 mb-4">
-        <select className={select} value={status} onChange={(e) => (setStatus(e.target.value), setPage(1))} aria-label="Lọc trạng thái">
-          <option value="">Mọi trạng thái</option>
-          {STATUSES.map((s) => <option key={s.value} value={s.value}>{s.label}</option>)}
-        </select>
-        <select className={select} value={kind} onChange={(e) => (setKind(e.target.value), setPage(1))} aria-label="Lọc loại">
-          <option value="">Mọi loại</option>
-          {Object.entries(KINDS).map(([k, l]) => <option key={k} value={k}>{l}</option>)}
-        </select>
-        <input className={select + " w-64"} placeholder="Tìm tên, công ty, email…" value={q} onChange={(e) => (setQ(e.target.value), setPage(1))} />
+        <Dropdown
+          className="w-full sm:w-52"
+          ariaLabel="Lọc trạng thái"
+          value={status}
+          onChange={(v) => {
+            setStatus(v);
+            setPage(1);
+          }}
+          options={[{ value: "", label: "Mọi trạng thái" }, ...STATUSES.map((s) => ({ value: s.value, label: s.label }))]}
+        />
+        <Dropdown
+          className="w-full sm:w-44"
+          ariaLabel="Lọc loại"
+          value={kind}
+          onChange={(v) => {
+            setKind(v);
+            setPage(1);
+          }}
+          options={[{ value: "", label: "Mọi loại" }, ...Object.entries(KINDS).map(([k, l]) => ({ value: k, label: l }))]}
+        />
+        <input className={select + " w-full sm:w-64"} placeholder="Tìm tên, công ty, email…" value={q} onChange={(e) => (setQ(e.target.value), setPage(1))} />
       </div>
       {error && <p role="alert" className="mb-3 text-sm text-red-700 bg-red-50 border border-red-200 rounded px-3 py-2">{error}</p>}
 

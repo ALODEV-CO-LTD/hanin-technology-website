@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
 import ContactHero from "@/components/lien-he/ContactHero";
 import ContactChannels from "@/components/lien-he/ContactChannels";
 import RfqForm from "@/components/lien-he/RfqForm";
@@ -8,11 +9,10 @@ import ContactFaq from "@/components/lien-he/ContactFaq";
 import BottomCta from "@/components/lien-he/BottomCta";
 import Reveal from "@/components/ui/Reveal";
 
-export const metadata: Metadata = {
-  title: "Liên hệ & Yêu cầu báo giá",
-  description:
-    "Liên hệ để được tư vấn giải pháp kỹ thuật xi mạ kim loại, gia công cơ khí chính xác và gửi yêu cầu báo giá (RFQ) kèm bản vẽ CAD.",
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations("Meta");
+  return { title: t("lienHe.title"), description: t("lienHe.description") };
+}
 
 export default function LienHePage() {
   return (

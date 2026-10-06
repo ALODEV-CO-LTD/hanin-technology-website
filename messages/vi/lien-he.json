@@ -11,7 +11,7 @@
       "card1": {
         "badge": "TRỤ SỞ & NHÀ MÁY",
         "title": "",
-        "address": "Lô CN-08, Khu Công Nghiệp Quang Minh, Huyện Mê Linh, TP. Hà Nội, Việt Nam",
+        "address": "Trụ sở: Lô 660, Khu Công Nghiệp Quang Minh, xã Quang Minh, TP. Hà Nội, Việt Nam. Nhà máy: Lô 49G, Khu Công Nghiệp Quang Minh, xã Quang Minh, TP. Hà Nội, Việt Nam.",
         "footerLabel": "QUY MÔ VẬN HÀNH",
         "footerValue": "Tổ hợp mạ tự động PLC & Lab đo kiểm CMM ISO 17025"
       },
@@ -50,7 +50,7 @@
         },
         "1": {
           "question": "2. HANIN hỗ trợ những định dạng bản vẽ kỹ thuật nào khi tiếp nhận qua website?",
-          "answer": "HANIN nhận trực tiếp các tệp .STEP, .STP, .DWG, .DXF, .IGES, .X_T, .PDF và file nén .ZIP/.RAR tới 50MB, tương thích SolidWorks, Inventor, AutoCAD, Creo. Bản vẽ dung lượng lớn hơn, gửi link cloud đến email engineering@hanintech.vn."
+          "answer": "HANIN nhận trực tiếp các tệp .STEP, .STP, .DWG, .DXF, .IGES, .X_T, .PDF và file nén .ZIP/.RAR tới 50MB, tương thích SolidWorks, Inventor, AutoCAD, Creo. Bản vẽ dung lượng lớn hơn, gửi link cloud đến email Haninplating@gmail.com."
         },
         "2": {
           "question": "3. Chính sách bảo mật bản vẽ (NDA) của HANIN được thực hiện như thế nào?",
@@ -92,8 +92,8 @@
       },
       "imageAlt": "Toàn cảnh nhà máy (ảnh minh họa, sẽ thay bằng ảnh thực tế do Bên A cung cấp)",
       "overlayLabel": "TỔNG HÀNH DINH & NHÀ MÁY",
-      "overlayLocation": "KCN Quang Minh, Mê Linh, Hà Nội",
-      "overlayCoordinates": "Tọa độ: 21.2025° N, 105.7725° E"
+      "overlayLocation": "KCN Quang Minh, xã Quang Minh, Hà Nội",
+      "overlayCoordinates": "Tọa độ: 21.2074° N, 105.7540° E"
     },
     "DirectChannels": {
       "heading": "KÊNH KẾT NỐI TRỰC TIẾP NHANH CHÓNG",
@@ -113,7 +113,7 @@
         },
         "email": {
           "label": "EMAIL TẬP TIN DUNG LƯỢNG LỚN",
-          "title": "sales@hanintech.vn",
+          "title": "Haninplating@gmail.com",
           "desc": "Dành cho các gói thầu dự án lớn đính kèm link Drive, OneDrive hoặc WeTransfer.",
           "cta": "Soạn thư gửi báo giá"
         },
@@ -144,9 +144,9 @@
       },
       "openMapsCta": "MỞ GOOGLE MAPS",
       "downloadMapCta": "SƠ ĐỒ XE CONTAINER (PDF)",
-      "satelliteImageAlt": "Ảnh vệ tinh minh họa vị trí KCN Quang Minh, Mê Linh, Hà Nội (ảnh minh họa, sẽ thay bằng bản đồ Google Maps nhúng thật)",
+      "satelliteImageAlt": "Ảnh vệ tinh minh họa vị trí KCN Quang Minh, xã Quang Minh, Hà Nội (ảnh minh họa, sẽ thay bằng bản đồ Google Maps nhúng thật)",
       "gateLabel": "HANIN FACILITY GATE 1",
-      "plotLabel": "Lô CN-08 KCN Quang Minh",
+      "plotLabel": "Lô 49G KCN Quang Minh",
       "securityNote": "Cổng kiểm soát an ninh container 40 feet tiếp nhận 24/7",
       "gridLabel": "GRID: HN-QMINH-08",
       "elevationLabel": "ELEV: +14.2m ASL"
@@ -207,7 +207,7 @@
         "badgeEncryption": "Secure Server Encryption",
         "badgeNda": "Bảo mật NDA tự động",
         "filesSelected": "Đã chọn {count} tập tin:",
-        "noFileSelected": "Chưa có tập tin nào được chọn. Quý khách có thể gửi kèm bản vẽ trực tiếp qua email: sales@hanintech.vn",
+        "noFileSelected": "Chưa có tập tin nào được chọn. Quý khách có thể gửi kèm bản vẽ trực tiếp qua email: Haninplating@gmail.com",
         "maxSize": "MAX: 50MB"
       },
       "step4": {

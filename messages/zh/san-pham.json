@@ -30,7 +30,10 @@
       "searchPlaceholder": "搜索产品 / 项目...",
       "showingResults": "当前显示",
       "resultsUnit": "项结果",
-      "emptyState": "未找到符合当前筛选条件的产品 / 项目。"
+      "emptyState": "未找到符合当前筛选条件的产品 / 项目。",
+      "filterViewing": "当前筛选",
+      "filterViewAll": "查看全部产品",
+      "filterCount": "{count} 项结果"
     },
     "ProductGallery": {
       "title": "实拍图像与检测记录",
@@ -54,7 +57,8 @@
       "toleranceValue": "公差：±0.1 µM",
       "digitalCallout": "数显卡尺读数：12.74mm",
       "robustPass": "稳定通过",
-      "microHardnessLabel": "氢脆处理后的显微硬度："
+      "microHardnessLabel": "氢脆处理后的显微硬度：",
+      "microHardnessValue": "850 - 920 HV"
     },
     "ProductOverview": {
       "title": "项目概况与加工能力",
@@ -82,7 +86,7 @@
       "description": "发送 2D/3D 图纸，或直接与 HANIN 表面处理解决方案工程师团队沟通，获取详细报价及成本优化方案。",
       "cta": "获取报价 →",
       "hotline": "技术热线：(+84) 24 3818 6688",
-      "email": "邮箱：sales@hanintech.vn",
+      "email": "邮箱：Haninplating@gmail.com",
       "responseTime": "04 个工作小时内技术响应"
     },
     "RelatedProjects": {

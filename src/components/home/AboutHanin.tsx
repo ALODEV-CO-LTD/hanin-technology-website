@@ -1,6 +1,7 @@
 import { siteImg } from "@/server/site-images";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
+import Icon from "@/components/ui/Icon";
 
 export default function AboutHanin() {
   const t = useTranslations("Home.AboutHanin");
@@ -16,7 +17,7 @@ export default function AboutHanin() {
               <img
                 alt={t("imageAlt")}
                 className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
-                src={siteImg("home/AboutHanin#1", "https://lh3.googleusercontent.com/aida-public/AB6AXuB8KJVXFxeFOjgqXWkBiF9FpvBa5qKIYmcY81aCaskvAP4hSt2ZAzELb8QZw0bgB-yM4zwk995zEP0O10jp5eBR9O9BQCXTmbuboBg4M9R2uef8_bWiWogphX6f8LTo52el2OlctLIvZriqnpDZaRDeFXPJqagO_IBs8ycl8QTHYgZinLz1RGFn2z-ICjotF9EmSHqaxYSCNWmJnEHrtFrXhWLfdYzj9JCX7fZpcuStogJf__GS-1mcHg")}
+                src={siteImg("home/AboutHanin#1", "/images/factory/ma-quay-6.jpg")}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent" />
             </div>
@@ -37,9 +38,7 @@ export default function AboutHanin() {
             <div className="grid grid-cols-2 gap-space-md pt-space-xs text-body-sm text-slate-700">
               {HIGHLIGHTS.map((key) => (
                 <div key={key} className="flex items-start gap-2">
-                  <span className="material-symbols-outlined text-steel-600 text-[18px]">
-                    check_circle
-                  </span>
+                  <Icon name="check_circle" className="text-steel-600 text-[18px]" />
                   <span>{t(`highlights.${key}`)}</span>
                 </div>
               ))}
@@ -50,9 +49,7 @@ export default function AboutHanin() {
                 className="inline-flex items-center gap-2 text-title-md uppercase tracking-wider text-steel-600 hover:text-steel-700 transition-colors group"
               >
                 <span>{t("ctaLink")}</span>
-                <span className="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">
-                  arrow_forward
-                </span>
+                <Icon name="arrow_forward" className="text-[18px] group-hover:translate-x-1 transition-transform" />
               </Link>
             </div>
           </div>

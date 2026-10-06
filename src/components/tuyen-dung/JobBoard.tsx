@@ -1,5 +1,6 @@
 "use client";
 
+import Select from "@/components/ui/Select";
 import { useMemo, useState, type FormEvent } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { submitInquiry } from "@/lib/submit-inquiry";
@@ -12,6 +13,7 @@ import {
   type JobLocation,
   type JobType,
 } from "@/lib/jobs-data";
+import Icon from "@/components/ui/Icon";
 
 type SelectedJob = { id: string; title: string; department: string } | null;
 
@@ -88,7 +90,7 @@ export default function JobBoard({ jobs }: { jobs: Job[] }) {
   }
 
   return (
-    <section className="w-full py-space-xl bg-slate-50 scroll-mt-20" id="open-positions">
+    <section className="w-full py-space-xl bg-slate-50 scroll-mt-[86px]" id="open-positions">
       <div className="mx-auto px-margin flex flex-col gap-space-lg">
         <div className="flex flex-col gap-2 max-w-2xl pb-space-sm">
           <h2 className="text-headline-xl-mobile md:text-headline-xl text-slate-900 tracking-tight uppercase font-bold">
@@ -102,9 +104,7 @@ export default function JobBoard({ jobs }: { jobs: Job[] }) {
         {/* Filter toolbar */}
         <div className="p-space-md bg-white rounded border border-slate-200 shadow-sm flex flex-col gap-space-md">
           <div className="relative w-full">
-            <span className="material-symbols-outlined absolute left-space-md top-1/2 -translate-y-1/2 text-slate-400 text-[20px]">
-              search
-            </span>
+            <Icon name="search" className="absolute left-space-md top-1/2 -translate-y-1/2 text-slate-400 text-[20px]" />
             <input
               className="w-full pl-12 pr-space-md h-11 bg-slate-50 border border-slate-200 rounded text-slate-900 placeholder:text-slate-400 text-body-md focus:outline-none focus:ring-2 focus:ring-steel-600/40 transition-all"
               placeholder={tb("searchPlaceholder")}
@@ -119,66 +119,36 @@ export default function JobBoard({ jobs }: { jobs: Job[] }) {
               <label className="text-label-sm text-slate-500 uppercase tracking-wider font-semibold">
                 {tb("departmentLabel")}
               </label>
-              <div className="relative">
-                <select
-                  className="w-full appearance-none h-10 px-space-sm bg-slate-50 border border-slate-200 rounded text-slate-900 text-body-md focus:outline-none focus:ring-2 focus:ring-steel-600/40 cursor-pointer"
-                  value={department}
-                  onChange={(e) => setDepartment(e.target.value as "all" | JobDepartment)}
-                >
-                  {DEPARTMENT_OPTIONS.map((opt) => (
-                    <option key={opt.value} value={opt.value}>
-                      {opt.label}
-                    </option>
-                  ))}
-                </select>
-                <span className="material-symbols-outlined absolute right-space-sm top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none text-[18px]">
-                  expand_more
-                </span>
-              </div>
+              <Select
+                className="h-10 px-space-sm bg-slate-50 border border-slate-200 rounded text-slate-900 text-body-md"
+                value={department}
+                onChange={(v) => setDepartment(v as "all" | JobDepartment)}
+                options={DEPARTMENT_OPTIONS}
+              />
             </div>
 
             <div className="flex flex-col gap-1">
               <label className="text-label-sm text-slate-500 uppercase tracking-wider font-semibold">
                 {tb("typeLabel")}
               </label>
-              <div className="relative">
-                <select
-                  className="w-full appearance-none h-10 px-space-sm bg-slate-50 border border-slate-200 rounded text-slate-900 text-body-md focus:outline-none focus:ring-2 focus:ring-steel-600/40 cursor-pointer"
-                  value={type}
-                  onChange={(e) => setType(e.target.value as "all" | JobType)}
-                >
-                  {TYPE_OPTIONS.map((opt) => (
-                    <option key={opt.value} value={opt.value}>
-                      {opt.label}
-                    </option>
-                  ))}
-                </select>
-                <span className="material-symbols-outlined absolute right-space-sm top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none text-[18px]">
-                  expand_more
-                </span>
-              </div>
+              <Select
+                className="h-10 px-space-sm bg-slate-50 border border-slate-200 rounded text-slate-900 text-body-md"
+                value={type}
+                onChange={(v) => setType(v as "all" | JobType)}
+                options={TYPE_OPTIONS}
+              />
             </div>
 
             <div className="flex flex-col gap-1">
               <label className="text-label-sm text-slate-500 uppercase tracking-wider font-semibold">
                 {tb("locationLabel")}
               </label>
-              <div className="relative">
-                <select
-                  className="w-full appearance-none h-10 px-space-sm bg-slate-50 border border-slate-200 rounded text-slate-900 text-body-md focus:outline-none focus:ring-2 focus:ring-steel-600/40 cursor-pointer"
-                  value={location}
-                  onChange={(e) => setLocation(e.target.value as "all" | JobLocation)}
-                >
-                  {LOCATION_OPTIONS.map((opt) => (
-                    <option key={opt.value} value={opt.value}>
-                      {opt.label}
-                    </option>
-                  ))}
-                </select>
-                <span className="material-symbols-outlined absolute right-space-sm top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none text-[18px]">
-                  expand_more
-                </span>
-              </div>
+              <Select
+                className="h-10 px-space-sm bg-slate-50 border border-slate-200 rounded text-slate-900 text-body-md"
+                value={location}
+                onChange={(v) => setLocation(v as "all" | JobLocation)}
+                options={LOCATION_OPTIONS}
+              />
             </div>
           </div>
 
@@ -204,56 +174,72 @@ export default function JobBoard({ jobs }: { jobs: Job[] }) {
           {filteredJobs.map((job) => (
             <article
               key={job.id}
-              className="group p-space-lg rounded bg-white border border-slate-200 shadow-sm hover:shadow-md hover:border-steel-300 transition-all duration-300 flex flex-col lg:flex-row lg:items-center justify-between gap-space-md"
+              className="group rounded bg-white border border-slate-200 shadow-sm hover:shadow-md hover:border-steel-300 transition-all duration-300 overflow-hidden"
             >
-              <div className="flex flex-col gap-space-sm max-w-3xl">
-                <div className="flex flex-wrap items-center gap-2">
+              <div className="p-space-lg grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_220px_auto] gap-space-md lg:gap-space-lg lg:items-center">
+                {/* Vị trí */}
+                <div className="flex flex-col gap-space-sm min-w-0">
                   <span
-                    className={`px-2 py-0.5 rounded text-label-sm font-bold uppercase tracking-wider ${job.badgeClassName}`}
+                    className={`self-start px-2 py-0.5 rounded text-label-sm font-bold uppercase tracking-wider ${job.badgeClassName}`}
                   >
                     {job.departmentLabel}
                   </span>
-                  <span className="px-2 py-0.5 rounded bg-slate-100 text-slate-600 text-label-sm font-semibold">
-                    {job.typeLabel}
-                  </span>
-                  <span className="flex items-center gap-1 text-label-sm text-slate-500">
-                    <span className="material-symbols-outlined text-[14px]">location_on</span>
-                    {job.locationLabel}
-                  </span>
+                  <h3 className="text-headline-sm text-slate-900 uppercase font-bold leading-snug group-hover:text-steel-600 transition-colors">
+                    {job.title}
+                  </h3>
+                  <ul className="flex flex-wrap items-center gap-x-space-lg gap-y-1 text-body-sm text-slate-600">
+                    <li className="flex items-center gap-1.5">
+                      <Icon name="schedule" className="text-[16px] text-slate-400" />
+                      {job.typeLabel}
+                    </li>
+                    <li className="flex items-center gap-1.5">
+                      <Icon name="location_on" className="text-[16px] text-slate-400" />
+                      {job.locationLabel}
+                    </li>
+                    <li className="flex items-center gap-1.5">
+                      <Icon name="calendar_month" className="text-[16px] text-slate-400" />
+                      <span>
+                        {tb("deadlineLabel")} <strong className="text-slate-900 font-semibold">{job.deadline}</strong>
+                      </span>
+                    </li>
+                  </ul>
                 </div>
 
-                <h3 className="text-headline-sm text-slate-900 uppercase font-semibold group-hover:text-steel-600 transition-colors">
-                  {job.title}
-                </h3>
-
-                <div className="flex flex-wrap items-center gap-2 pt-1">
-                  <span className="px-2 py-1 rounded bg-steel-50 text-steel-700 text-label-technical font-bold">
-                    {job.salary}
+                {/* Mức lương */}
+                <div className="flex flex-col gap-1 lg:border-l lg:border-slate-200 lg:pl-space-lg">
+                  <span className="text-label-sm text-slate-500 uppercase tracking-wider font-semibold">
+                    {tb("salaryLabel")}
                   </span>
-                  {job.tags.map((tag) => (
-                    <span
-                      key={tag}
-                      className="px-2 py-1 rounded bg-slate-100 text-slate-600 text-label-sm font-medium"
-                    >
-                      {tag}
-                    </span>
-                  ))}
+                  <span className="text-title-md text-steel-700 font-bold leading-snug">{job.salary.replace(/^(Lương|薪资|薪資|급여)\s*[:：]\s*/, "")}</span>
                 </div>
-              </div>
 
-              <div className="flex flex-row lg:flex-col items-center lg:items-end justify-between lg:justify-center gap-space-sm shrink-0 pt-space-sm lg:pt-0">
-                <span className="text-label-sm text-slate-500">
-                  {tb("deadlineLabel")} <strong className="text-slate-900 font-semibold">{job.deadline}</strong>
-                </span>
+                {/* Ứng tuyển */}
                 <button
                   type="button"
                   onClick={() => openApplyModal(job)}
-                  className="inline-flex items-center gap-2 px-space-md py-space-sm bg-steel-600 hover:bg-steel-700 text-white text-title-md rounded shadow-sm transition-colors uppercase tracking-wider"
+                  className="inline-flex items-center justify-center gap-2 px-space-md py-space-sm bg-steel-600 hover:bg-steel-700 text-white text-title-md rounded shadow-sm transition-colors uppercase tracking-wider whitespace-nowrap"
                 >
                   <span>{tb("applyNow")}</span>
-                  <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
+                  <Icon name="arrow_forward" className="text-[18px]" />
                 </button>
               </div>
+
+              {/* Yêu cầu chính */}
+              {job.tags.length > 0 && (
+                <div className="px-space-lg py-space-md bg-slate-50 border-t border-slate-200 flex flex-col sm:flex-row sm:items-start gap-space-xs sm:gap-space-md">
+                  <span className="shrink-0 sm:w-28 pt-0.5 text-label-sm text-slate-500 uppercase tracking-wider font-semibold">
+                    {tb("requirementsLabel")}
+                  </span>
+                  <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-space-lg gap-y-1.5 text-body-sm text-slate-700">
+                    {job.tags.map((tag) => (
+                      <li key={tag} className="flex items-start gap-1.5">
+                        <Icon name="check_circle" className="text-[16px] text-steel-600 mt-0.5 shrink-0" />
+                        <span>{tag}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
             </article>
           ))}
 
@@ -268,7 +254,7 @@ export default function JobBoard({ jobs }: { jobs: Job[] }) {
       {/* Apply modal */}
       {selectedJob && (
         <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-slate-900/40 backdrop-blur-sm p-4"
+          className="fixed inset-0 z-50 flex items-center justify-center bg-slate-900/40 p-4"
           onClick={closeApplyModal}
         >
           <div
@@ -286,7 +272,7 @@ export default function JobBoard({ jobs }: { jobs: Job[] }) {
                 aria-label={tb("closeModal")}
                 className="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-slate-600 hover:text-steel-600 transition-colors"
               >
-                <span className="material-symbols-outlined text-[20px]">close</span>
+                <Icon name="close" className="text-[20px]" />
               </button>
             </div>
 
@@ -330,19 +316,18 @@ export default function JobBoard({ jobs }: { jobs: Job[] }) {
                   <label className="text-label-sm text-slate-500 uppercase font-semibold">
                     {tb("experienceLabel")}
                   </label>
-                  <select name="experience" className="h-10 px-space-sm rounded border border-slate-200 bg-slate-50 text-slate-900 text-body-md focus:outline-none focus:ring-2 focus:ring-steel-600/40">
-                    <option value={tb("experienceOptions.fresh")}>{tb("experienceOptions.fresh")}</option>
-                    <option value={tb("experienceOptions.one_two")}>{tb("experienceOptions.one_two")}</option>
-                    <option value={tb("experienceOptions.three_five")}>{tb("experienceOptions.three_five")}</option>
-                    <option value={tb("experienceOptions.above_five")}>{tb("experienceOptions.above_five")}</option>
-                  </select>
+                  <Select
+                    name="experience"
+                    className="h-10 px-space-sm rounded border border-slate-200 bg-slate-50 text-slate-900 text-body-md"
+                    options={["fresh", "one_two", "three_five", "above_five"].map((k) => ({ value: tb(`experienceOptions.${k}`), label: tb(`experienceOptions.${k}`) }))}
+                  />
                 </div>
                 <div className="flex flex-col gap-1">
                   <label className="text-label-sm text-slate-500 uppercase font-semibold">
                     {tb("cvLabel")}
                   </label>
                   <label className="p-space-md rounded border border-dashed border-slate-300 bg-slate-50 flex flex-col items-center justify-center gap-1 cursor-pointer hover:bg-slate-100 transition-colors">
-                    <span className="material-symbols-outlined text-steel-600 text-[28px]">upload_file</span>
+                    <Icon name="upload_file" className="text-steel-600 text-[28px]" />
                     <span className="text-body-md text-slate-900">{tb("cvDropText")}</span>
                     <span className="text-label-sm text-slate-500">{tb("cvSizeNote")}</span>
                     <input className="hidden" name="files" required type="file" accept=".pdf,.doc,.docx,.jpg,.jpeg,.png,.zip" />

@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
+import Icon from "@/components/ui/Icon";
 
 export default function ProductsCta() {
   const t = useTranslations("SanPham.ProductsCta");
@@ -21,15 +22,15 @@ export default function ProductsCta() {
         </Link>
         <div className="flex flex-wrap items-center justify-center gap-space-sm mt-space-xl text-label-technical text-slate-500">
           <div className="px-space-md py-space-xs bg-white border border-slate-200 rounded flex items-center gap-1.5 shadow-sm">
-            <span className="material-symbols-outlined text-steel-600 text-[16px]">call</span>
+            <Icon name="call" className="text-steel-600 text-[16px]" />
             <span>{t("hotline")}</span>
           </div>
           <div className="px-space-md py-space-xs bg-white border border-slate-200 rounded flex items-center gap-1.5 shadow-sm">
-            <span className="material-symbols-outlined text-steel-600 text-[16px]">mail</span>
+            <Icon name="mail" className="text-steel-600 text-[16px]" />
             <span>{t("email")}</span>
           </div>
           <div className="px-space-md py-space-xs bg-white border border-slate-200 rounded flex items-center gap-1.5 shadow-sm">
-            <span className="material-symbols-outlined text-emerald-600 text-[16px]">schedule</span>
+            <Icon name="schedule" className="text-emerald-600 text-[16px]" />
             <span>{t("responseTime")}</span>
           </div>
         </div>

@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import Icon from "@/components/ui/Icon";
 
 export default function CapacityOverview() {
   const t = useTranslations("DichVu.CapacityOverview");
@@ -10,7 +11,7 @@ export default function CapacityOverview() {
   ] as const;
 
   return (
-    <section className="w-full mb-space-xl scroll-mt-20" id="capacity-overview">
+    <section className="w-full mb-space-xl scroll-mt-[86px]" id="capacity-overview">
       <div className="bg-white border border-slate-200 rounded p-space-md lg:p-space-lg">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-space-sm mb-space-lg">
           <div>
@@ -25,7 +26,7 @@ export default function CapacityOverview() {
           {CAPABILITIES.map((item) => (
             <div key={item.key} className="bg-white border border-slate-200 p-space-md rounded shadow-sm">
               <div className={`w-10 h-10 rounded ${item.iconBg} flex items-center justify-center ${item.iconColor} mb-space-sm`}>
-                <span className="material-symbols-outlined text-[24px]">{item.icon}</span>
+                <Icon name={item.icon} className="text-[24px]" />
               </div>
               <h3 className="text-title-md text-slate-900 font-bold mb-1">{t(`${item.key}.title`)}</h3>
               <p className="text-body-md text-slate-600">{t(`${item.key}.desc`)}</p>

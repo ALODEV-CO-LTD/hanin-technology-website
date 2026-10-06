@@ -1,6 +1,6 @@
-import Link from "next/link";
 import { useLocale, useTranslations } from "next-intl";
 import { getSpotlightProduct } from "@/server/public";
+import { Link } from "@/i18n/navigation";
 
 export default function FeaturedProjectSpotlight() {
   const t = useTranslations("SanPham");
@@ -50,12 +50,12 @@ export default function FeaturedProjectSpotlight() {
               >
                 {tc("ctaViewDetail")}
               </Link>
-              <a
+              <Link
                 className="inline-flex items-center justify-center px-space-md py-space-sm bg-slate-50 hover:bg-slate-100 text-slate-800 border border-slate-200 text-label-technical uppercase tracking-wider rounded transition-colors font-bold"
-                href="#"
+                href="/lien-he#rfq-form"
               >
                 {tc("ctaDownloadCaseStudy")}
-              </a>
+              </Link>
             </div>
           </div>
         </div>

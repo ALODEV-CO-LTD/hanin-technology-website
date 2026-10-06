@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 
 export default function ContactCta() {
   const t = useTranslations("GioiThieu.ContactCta");
@@ -14,19 +15,19 @@ export default function ContactCta() {
         </p>
         <div className="flex flex-wrap items-center justify-center gap-space-md">
           {/* Primary Action */}
-          <a
+          <Link
             className="inline-flex items-center justify-center px-space-lg py-space-sm bg-steel-600 hover:bg-steel-700 text-white rounded text-label-technical uppercase tracking-wider transition-all duration-150 active:scale-[0.99] shadow-md shadow-steel-500/20"
-            href="#"
+            href="/lien-he"
           >
             {t("ctaPrimary")}
-          </a>
+          </Link>
           {/* Secondary Action */}
-          <a
+          <Link
             className="inline-flex items-center justify-center px-space-lg py-space-sm bg-slate-50 hover:bg-slate-100 text-slate-800 rounded text-label-technical uppercase tracking-wider transition-all duration-150 border border-slate-300 hover:border-slate-400 shadow-sm"
-            href="#"
+            href="/lien-he#rfq-form"
           >
             {t("ctaSecondary")}
-          </a>
+          </Link>
         </div>
       </div>
     </section>

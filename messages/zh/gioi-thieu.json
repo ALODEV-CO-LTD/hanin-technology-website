@@ -10,12 +10,12 @@
     "CompanyIntroduction": {
       "imageAlt": "位于河内光明工业区的现代化厂区外观（示意图，将由甲方提供实际图片替换）",
       "scaleBadge": "规模：工厂园区 // 光明工业区",
-      "coordBadge": "坐标 21.2031° N",
-      "areaBadge": "占地面积：12,000 平方米",
+      "coordBadge": "坐标 21.2074° N",
+      "areaBadge": "厂区面积：2,230 平方米",
       "heading": "携手满足工业电镀加工需求",
-      "paragraph1Strong": "",
+      "paragraph1Strong": "HANIN Technology 越南镀业工业股份公司",
       "paragraph1Rest": "是专注于金属电镀加工与精密机械表面处理领域的企业，服务于制造业、机械零部件及高技术组件等行业。",
-      "paragraph2": "[HANIN 官方企业介绍信息：发展历程、人员规模及面向国内外企业的表面加工发展方向。]",
+      "paragraph2": "HANIN 成立于 2023 年 3 月 28 日，工厂位于河内光明工业区，厂区面积 2,230 平方米，拥有 58 名员工，设有挂镀、滚镀、分析、质量控制（QC）和仓库等部门。公司目前服务超过 100 家工业客户。",
       "field": {
         "label": "经营领域",
         "value": "金属电镀加工",
@@ -29,14 +29,14 @@
       "location": {
         "label": "厂址",
         "value": "河内光明工业区",
-        "note": "北部工业轴 660 号地块"
+        "note": "总部 660 号地块 · 工厂 49G 号地块"
       }
     },
     "CompanyJourney": {
       "heading": "发展历程",
-      "subtitle": "[HANIN 的历史信息及发展里程碑]",
+      "subtitle": "HANIN 形成与发展过程中的主要里程碑。",
       "m1": {
-        "yearTag": "[创立年份]",
+        "yearTag": "2023",
         "phase": "第一阶段 // 奠定基础",
         "title": "成立公司并建立技术规范",
         "desc": "成立生产基地，建立金属电镀技术规范，并优化处理化学配方。"
@@ -68,7 +68,6 @@
     },
     "CoreStrengths": {
       "heading": "HANIN 的核心优势",
-      "strengthLabel": "核心优势",
       "production": {
         "title": "生产能力",
         "desc": "[生产能力信息：大规模电镀槽系统，能够以每日大批量组件持续满足工业订单需求。]",
@@ -147,6 +146,11 @@
       "heading": "质量与标准",
       "subtitle": "[HANIN 质量管理体系与认证的官方信息]",
       "cta": "查看认证证书",
+      "certificateImageAlt": "DQS GmbH 颁发的 HANIN Technology Việt Nam ISO 9001:2015 认证证书",
+      "certificateTag": "[ 认证证书 ]",
+      "certificateTitle": "ISO 9001:2015 — 质量管理体系",
+      "certificateIssuer": "认证机构：DQS GmbH（德国）",
+      "certificateScope": "范围：塑料产品的生产、加工、注塑、印刷、喷漆及表面处理。",
       "iso9001": {
         "tag": "[ ISO 认证 ]",
         "title": "生产质量管理体系",
@@ -190,6 +194,11 @@
         "desc": "吨产品 / 月",
         "note": "产能：按重量计算"
       }
+    },
+    "FeaturedClients": {
+      "eyebrow": "代表性客户",
+      "title": "深受众多制造企业信赖",
+      "description": "已有 100 多家大小客户选择 HANIN 进行电镀加工。以下是五金、卫浴设备和工业制造领域的部分代表性客户。"
     }
   }
 }

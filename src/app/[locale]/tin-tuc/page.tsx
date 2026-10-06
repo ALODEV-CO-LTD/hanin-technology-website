@@ -9,11 +9,10 @@ import Reveal from "@/components/ui/Reveal";
 import { getNewsCategories } from "@/lib/news-data";
 import { getPostCounts, getPosts } from "@/server/public";
 
-export const metadata: Metadata = {
-  title: "Tin tức & Bản tin kỹ thuật",
-  description:
-    "Cập nhật tin tức doanh nghiệp, công nghệ xử lý bề mặt kim loại, quy chuẩn đo kiểm chất lượng và hoạt động sản xuất mới nhất.",
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations("Meta");
+  return { title: t("tinTuc.title"), description: t("tinTuc.description") };
+}
 
 export default async function TinTucPage() {
   const locale = await getLocale();

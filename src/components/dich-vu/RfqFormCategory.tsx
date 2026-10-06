@@ -1,9 +1,11 @@
 "use client";
 
+import Select from "@/components/ui/Select";
 import { useState, type FormEvent } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { usePathname } from "@/i18n/navigation";
 import { submitInquiry } from "@/lib/submit-inquiry";
+import Icon from "@/components/ui/Icon";
 
 export default function RfqFormCategory() {
   const t = useTranslations("DichVu.RfqFormCategory");
@@ -26,7 +28,7 @@ export default function RfqFormCategory() {
   }
 
   return (
-    <section className="w-full bg-white border border-slate-200 rounded p-space-md lg:p-space-xl shadow-sm mb-space-xl scroll-mt-20" id="rfq-form">
+    <section className="w-full bg-white border border-slate-200 rounded p-space-md lg:p-space-xl shadow-sm mb-space-xl scroll-mt-[86px]" id="rfq-form">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-space-lg">
           <h2 className="text-headline-sm md:text-headline-lg text-slate-900 uppercase font-bold">{t("heading")}</h2>
@@ -80,19 +82,20 @@ export default function RfqFormCategory() {
           </div>
           <div className="flex flex-col gap-1">
             <label className="text-label-sm text-slate-900 uppercase font-bold">{t("platingTypeLabel")}</label>
-            <select
+            <Select
               className="h-10 px-3 bg-slate-50 border border-slate-200 rounded text-slate-900 text-body-md outline-none focus:bg-white focus:border-steel-300 transition-all"
               name="platingService"
               required
               defaultValue=""
-            >
-              <option value="">{t("platingTypeOptions.default")}</option>
-              <option value="hard-chrome">{t("platingTypeOptions.hardChrome")}</option>
-              <option value="electroless-nickel">{t("platingTypeOptions.enp")}</option>
-              <option value="zinc-nickel">{t("platingTypeOptions.zincNickel")}</option>
-              <option value="anodizing">{t("platingTypeOptions.anodizing")}</option>
-              <option value="custom">{t("platingTypeOptions.custom")}</option>
-            </select>
+              options={[
+                { value: "", label: t("platingTypeOptions.default") },
+                { value: "hard-chrome", label: t("platingTypeOptions.hardChrome") },
+                { value: "electroless-nickel", label: t("platingTypeOptions.enp") },
+                { value: "zinc-nickel", label: t("platingTypeOptions.zincNickel") },
+                { value: "anodizing", label: t("platingTypeOptions.anodizing") },
+                { value: "custom", label: t("platingTypeOptions.custom") },
+              ]}
+            />
           </div>
           <div className="flex flex-col gap-1">
             <label className="text-label-sm text-slate-900 uppercase font-bold">{t("volumeLabel")}</label>
@@ -114,7 +117,7 @@ export default function RfqFormCategory() {
           </div>
           <div className="md:col-span-2 bg-slate-50 border border-slate-200 p-space-md rounded flex flex-col sm:flex-row items-center justify-between gap-space-sm">
             <div className="flex items-center gap-space-sm">
-              <span className="material-symbols-outlined text-steel-600 text-[32px]">attach_file</span>
+              <Icon name="attach_file" className="text-steel-600 text-[32px]" />
               <div>
                 <p className="text-title-md text-slate-900 font-bold">{t("attachTitle")}</p>
                 <p className="text-label-sm text-slate-500">{t("attachDesc")}</p>
@@ -127,7 +130,7 @@ export default function RfqFormCategory() {
           </div>
           <div className="md:col-span-2 flex items-center justify-between pt-space-sm flex-wrap gap-space-sm">
             <div className="flex items-center gap-2 text-slate-500 text-label-sm">
-              <span className="material-symbols-outlined text-[16px] text-steel-600">security</span>
+              <Icon name="security" className="text-[16px] text-steel-600" />
               <span>{t("ndaNote")}</span>
             </div>
             <button
@@ -136,7 +139,7 @@ export default function RfqFormCategory() {
               disabled={busy}
             >
               <span>{t("submitButton")}</span>
-              <span className="material-symbols-outlined text-[18px]">send</span>
+              <Icon name="send" className="text-[18px]" />
             </button>
           </div>
         </form>

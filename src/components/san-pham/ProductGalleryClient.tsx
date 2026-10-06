@@ -1,7 +1,8 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
+import Icon from "@/components/ui/Icon";
 
 export interface GalleryItem {
   id: number;
@@ -14,7 +15,23 @@ export interface GalleryItem {
 export default function ProductGalleryClient({ gallery }: { gallery: GalleryItem[] }) {
   const t = useTranslations("SanPham.ProductGallery");
   const [activeId, setActiveId] = useState(gallery[0].id);
+  const [zoomed, setZoomed] = useState(false);
+  const frameRef = useRef<HTMLDivElement>(null);
   const active = gallery.find((item) => item.id === activeId) ?? gallery[0];
+
+  useEffect(() => {
+    if (!zoomed) return;
+    const onKey = (e: KeyboardEvent) => e.key === "Escape" && setZoomed(false);
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [zoomed]);
+
+  const toggleFullscreen = () => {
+    const el = frameRef.current;
+    if (!el) return;
+    if (document.fullscreenElement) void document.exitFullscreen();
+    else void el.requestFullscreen?.();
+  };
 
   return (
     <section className="w-full bg-white py-space-xl border-b border-slate-200">
@@ -36,23 +53,25 @@ export default function ProductGalleryClient({ gallery }: { gallery: GalleryItem
           </div>
         </div>
 
-        <div className="relative w-full aspect-[21/9] bg-slate-100 border border-slate-200 rounded overflow-hidden mb-space-md group shadow-sm">
+        <div className="relative w-full aspect-[21/9] bg-slate-100 border border-slate-200 rounded overflow-hidden mb-space-md group shadow-sm" ref={frameRef}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img alt={active.alt} className="w-full h-full object-cover" src={active.image} />
           <div className="absolute top-space-sm right-space-sm flex items-center gap-space-xs">
             <button
               type="button"
-              className="w-9 h-9 bg-white/90 backdrop-blur-md border border-slate-200 rounded text-slate-700 hover:text-steel-600 hover:border-steel-500 transition-all flex items-center justify-center shadow-sm"
+              onClick={() => setZoomed(true)}
+              className="w-9 h-9 bg-white border border-slate-200 rounded text-slate-700 hover:text-steel-600 hover:border-steel-500 transition-all flex items-center justify-center shadow-sm"
               aria-label={t("zoomInAriaLabel")}
             >
-              <span className="material-symbols-outlined text-[18px]">zoom_in</span>
+              <Icon name="zoom_in" className="text-[18px]" />
             </button>
             <button
               type="button"
-              className="w-9 h-9 bg-white/90 backdrop-blur-md border border-slate-200 rounded text-slate-700 hover:text-steel-600 hover:border-steel-500 transition-all flex items-center justify-center shadow-sm"
+              onClick={toggleFullscreen}
+              className="w-9 h-9 bg-white border border-slate-200 rounded text-slate-700 hover:text-steel-600 hover:border-steel-500 transition-all flex items-center justify-center shadow-sm"
               aria-label={t("fullscreenAriaLabel")}
             >
-              <span className="material-symbols-outlined text-[18px]">fullscreen</span>
+              <Icon name="fullscreen" className="text-[18px]" />
             </button>
           </div>
         </div>
@@ -89,6 +108,25 @@ export default function ProductGalleryClient({ gallery }: { gallery: GalleryItem
           })}
         </div>
       </div>
+      {zoomed && (
+        <div
+          className="fixed inset-0 z-[60] flex items-center justify-center bg-slate-900/80 p-4"
+          role="dialog"
+          aria-modal="true"
+          onClick={() => setZoomed(false)}
+        >
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img alt={active.alt} src={active.image} className="max-h-full max-w-full object-contain rounded" />
+          <button
+            type="button"
+            aria-label="Close"
+            className="absolute top-4 right-4 w-10 h-10 rounded bg-white/90 text-slate-800 flex items-center justify-center"
+            onClick={() => setZoomed(false)}
+          >
+            <Icon name="close" className="text-[20px]" />
+          </button>
+        </div>
+      )}
     </section>
   );
 }

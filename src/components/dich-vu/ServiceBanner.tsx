@@ -4,7 +4,7 @@ import PageBreadcrumb from "@/components/layout/PageBreadcrumb";
 
 export default function ServiceBanner() {
   const t = useTranslations("DichVu.CategoryHero");
-  const banner = getBanner("dich-vu", useLocale(), "https://images.unsplash.com/photo-1720036236694-d0a231c52563?w=1920&q=80&fm=jpg&fit=crop");
+  const banner = getBanner("dich-vu", useLocale(), "/images/factory/ma-quay-6.jpg");
   const tNav = useTranslations("Nav");
 
   return (
@@ -21,7 +21,8 @@ export default function ServiceBanner() {
       />
 
       {/* Content Container */}
-      <div className="relative z-10 w-full px-margin [text-shadow:0_2px_6px_rgba(2,6,23,0.85),0_4px_20px_rgba(2,6,23,0.6)]">
+      <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-r from-slate-950/85 via-slate-950/65 to-slate-950/35" />
+      <div className="relative z-10 w-full px-margin banner-text">
         <PageBreadcrumb
           className="mb-space-sm"
           variant="dark"
@@ -31,11 +32,11 @@ export default function ServiceBanner() {
           ]}
         />
 
-        <h1 className="text-headline-xl-mobile md:text-display-hero text-banner-orange uppercase tracking-tight max-w-3xl mb-space-sm font-bold">
+        <h1 className="text-headline-xl-mobile md:text-display-hero text-white uppercase tracking-tight max-w-3xl mb-space-sm font-bold">
           {t("title")}
         </h1>
 
-        <p className="text-body-md md:text-body-lg text-banner-orange max-w-2xl leading-relaxed">{t("subtitle")}</p>
+        <p className="text-body-md md:text-body-lg text-white max-w-2xl leading-relaxed">{t("subtitle")}</p>
 
         <div className="flex flex-wrap items-center gap-space-md pt-space-md">
           <a
@@ -46,7 +47,7 @@ export default function ServiceBanner() {
           </a>
           <a
             href="#capacity-overview"
-            className="inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-white/10 hover:bg-white/20 text-white border border-white/20 text-title-md uppercase tracking-wider rounded backdrop-blur-sm transition-all duration-150 shadow-sm"
+            className="inline-flex items-center justify-center gap-2 py-3.5 text-white hover:text-white text-title-md uppercase tracking-wider underline-offset-8 decoration-2 hover:underline transition-colors duration-150 banner-text"
           >
             {t("ctaSecondary")}
           </a>

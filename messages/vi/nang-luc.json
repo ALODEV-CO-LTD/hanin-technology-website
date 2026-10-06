@@ -52,7 +52,12 @@
     "CompanyProfileCta": {
       "title": "TÌM HIỂU THÊM VỀ NĂNG LỰC HANIN",
       "description": "Xem Company Profile để tìm hiểu chi tiết hơn về mặt bằng nhà xưởng, thông số dây chuyền, danh mục thiết bị kiểm nghiệm và năng lực đáp ứng.",
-      "ctaDownload": "XEM COMPANY PROFILE (PDF) →"
+      "ctaDownload": "XEM COMPANY PROFILE (PDF) →",
+      "fileBadge": "PDF 14.5 MB",
+      "cardTitle": "HANIN CAPABILITY PROFILE 2026",
+      "cardSubtitle": "B2B INDUSTRIAL CATALOGUE",
+      "cardEdition": "EDITION: 2026.01",
+      "cardReady": "READY TO DOWNLOAD"
     },
     "EquipmentGrid": {
       "sectionTitle": "HỆ THỐNG MÁY MÓC & THIẾT BỊ",
@@ -65,7 +70,10 @@
           "alt": "Tủ điều khiển nguồn chỉnh lưu công suất cao cho bể mạ điện phân với đồng hồ số và công tắc mạch (ảnh minh họa, sẽ thay bằng ảnh thực tế)",
           "specLoad": "Dòng tải:",
           "specStability": "Ổn định:",
-          "specControl": "Điều khiển:"
+          "specControl": "Điều khiển:",
+          "specLoadValue": "12,000A",
+          "specStabilityValue": "[±1%]",
+          "specControlValue": "[PLC]"
         },
         "ultrasonic": {
           "badge": "TIỀN XỬ LÝ BỀ MẶT",
@@ -75,7 +83,9 @@
           "specFrequency": "Tần số:",
           "specHeating": "Gia nhiệt:",
           "specHeatingValue": "Tự động",
-          "specVolume": "Thể tích:"
+          "specVolume": "Thể tích:",
+          "specFrequencyValue": "[28 - 40 kHz]",
+          "specVolumeValue": "850 m³"
         },
         "hoist": {
           "badge": "LOGISTICS NỘI BỘ",
@@ -86,7 +96,9 @@
           "specLoadUnit": "Tấn",
           "specSpeed": "Tốc độ:",
           "specSpeedValue": "Tùy biến",
-          "specSensor": "Cảm biến:"
+          "specSensor": "Cảm biến:",
+          "specLoadValue": "25",
+          "specSensorValue": "[Laser]"
         },
         "deEmbrittlement": {
           "badge": "XỬ LÝ NHIỆT SAU MẠ",
@@ -95,7 +107,10 @@
           "alt": "Ảnh cận cảnh chi tiết kim loại mạ điện hoàn thiện độ chính xác cao",
           "specMaxTemp": "Nhiệt tối đa:",
           "specSensor": "Cảm biến:",
-          "specStandard": "Chuẩn:"
+          "specStandard": "Chuẩn:",
+          "specMaxTempValue": "[300°C - 500°C]",
+          "specSensorValue": "[PID Digital]",
+          "specStandardValue": "[ASTM F519]"
         }
       }
     },
@@ -136,7 +151,9 @@
         "locationLabel": "Vị trí (Location)",
         "areaLabel": "Diện tích sản xuất",
         "capabilityLabel": "Năng lực cốt lõi",
-        "capabilityValue": "Gia công mạ điện & mạ hóa học kỹ thuật cao"
+        "capabilityValue": "Gia công mạ điện & mạ hóa học kỹ thuật cao",
+        "locationValue": "Lô 49G, KCN Quang Minh, xã Quang Minh, Hà Nội",
+        "areaValue": "18,000 m²"
       },
       "ctaGallery": "XEM HÌNH ẢNH NHÀ MÁY"
     },
@@ -183,7 +200,8 @@
           "desc": "Đóng gói chống ẩm theo tiêu chuẩn xuất khẩu VCI, dán nhãn QR truy xuất nguồn gốc và bàn giao kèm đầy đủ chứng chỉ chất lượng COA.",
           "standard": "TIÊU CHUẨN: VCI ANTI-CORROSION PACKAGING"
         }
-      }
+      },
+      "viewDetail": "Xem quy trình công đoạn chi tiết từng loại mạ"
     },
     "ProductionLines": {
       "sectionTitle": "DÂY CHUYỀN SẢN XUẤT",
@@ -196,7 +214,11 @@
           "alt": "Dây chuyền mạ quay thùng tự động với trục quay ngâm chìm trong bể hóa chất mạ điện và tay điều khiển chính xác (ảnh minh họa, sẽ thay bằng ảnh thực tế)",
           "capacityLabel": "CÔNG SUẤT:",
           "capacityUnit": "Tấn/tháng",
-          "toleranceLabel": "DUNG SAI:"
+          "toleranceLabel": "DUNG SAI:",
+          "tag": "01 // AUTOMATED BARREL LINE",
+          "badge": "SCADA CONTROL",
+          "capacityValue": "850",
+          "toleranceValue": "[±0.2 µm]"
         },
         "rack": {
           "title": "[DÂY CHUYỀN 02: DÂY CHUYỀN MẠ TREO TỰ ĐỘNG & BÁN TỰ ĐỘNG]",
@@ -204,7 +226,11 @@
           "alt": "Kỹ sư QA nữ trong đồng phục bảo hộ sạch vận hành bảng điều khiển điện tử chính xác tại nhà máy hoàn thiện bề mặt kim loại tiên tiến (ảnh minh họa, sẽ thay bằng ảnh thực tế)",
           "capacityLabel": "CÔNG SUẤT:",
           "capacityUnit": "Sản phẩm/tháng",
-          "tankSizeLabel": "KÍCH THƯỚC BỂ:"
+          "tankSizeLabel": "KÍCH THƯỚC BỂ:",
+          "tag": "02 // RACK PLATING LINE",
+          "badge": "HEAVY DUTY",
+          "capacityValue": "120,000",
+          "tankSizeValue": "60 × 40 m"
         },
         "chemical": {
           "title": "[DÂY CHUYỀN 03: DÂY CHUYỀN MẠ HÓA HỌC & XỬ LÝ NHÔM CHUYÊN SÂU]",
@@ -212,7 +238,10 @@
           "alt": "Không gian nội thất nhà máy hoàn thiện bề mặt kim loại công nghiệp hiện đại",
           "reactorLabel": "BỂ PHẢN ỨNG:",
           "reactorValue": "Nhiệt độ ổn định ±1°C",
-          "thicknessLabel": "ĐỘ DÀY:"
+          "thicknessLabel": "ĐỘ DÀY:",
+          "tag": "03 // CHEMICAL ENP & ANODIZING LINE",
+          "badge": "MIL-SPEC COMPLIANT",
+          "thicknessValue": "[5 - 50 µm]"
         }
       }
     },
@@ -223,15 +252,21 @@
       "items": {
         "iso9001": {
           "tagLabel": "CHỨNG NHẬN CHẤT LƯỢNG",
-          "desc": "Hệ thống quản lý chất lượng sản xuất, bảo đảm tính ổn định lặp lại của từng lô hàng gia công mạ cơ khí kỹ thuật cao."
+          "desc": "Hệ thống quản lý chất lượng sản xuất, bảo đảm tính ổn định lặp lại của từng lô hàng gia công mạ cơ khí kỹ thuật cao.",
+          "title": "ISO 9001:2015",
+          "footer": "AUDITED ANNUALLY // GLOBAL RECOGNITION"
         },
         "iso14001": {
           "tagLabel": "QUẢN LÝ MÔI TRƯỜNG",
-          "desc": "Hệ thống quản lý môi trường và xử lý nước thải công nghiệp khép kín, bảo đảm tuân thủ quy chuẩn bảo vệ môi trường Việt Nam."
+          "desc": "Hệ thống quản lý môi trường và xử lý nước thải công nghiệp khép kín, bảo đảm tuân thủ quy chuẩn bảo vệ môi trường Việt Nam.",
+          "title": "ISO 14001:2015",
+          "footer": "CLOSED-LOOP EFFLUENT TREATMENT"
         },
         "astmRohs": {
           "tagLabel": "QUY CHUẨN XUẤT KHẨU",
-          "desc": "Tuân thủ chỉ thị hạn chế chất nguy hại RoHS/REACH châu Âu, các tiêu chuẩn ASTM B117, ASTM B633 và tiêu chuẩn công nghiệp Nhật Bản JIS."
+          "desc": "Tuân thủ chỉ thị hạn chế chất nguy hại RoHS/REACH châu Âu, các tiêu chuẩn ASTM B117, ASTM B633 và tiêu chuẩn công nghiệp Nhật Bản JIS.",
+          "title": "[ASTM & RoHS/REACH]",
+          "footer": "ZERO HAZARDOUS SUBSTANCES"
         }
       }
     },

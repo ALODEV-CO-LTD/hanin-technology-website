@@ -11,7 +11,7 @@
       "card1": {
         "badge": "总部与工厂",
         "title": "",
-        "address": "越南河内市美灵县光明工业区 CN-08 地块",
+        "address": "总部：越南河内市光明乡光明工业区 660 号地块。工厂：越南河内市光明乡光明工业区 49G 号地块。",
         "footerLabel": "运营规模",
         "footerValue": "PLC 自动电镀产线体系与 ISO 17025 CMM 检测实验室"
       },
@@ -50,7 +50,7 @@
         },
         "1": {
           "question": "2. 通过网站提交时，HANIN 支持哪些技术图纸格式？",
-          "answer": "HANIN 可直接接收 .STEP、.STP、.DWG、.DXF、.IGES、.X_T、.PDF 及压缩文件 .ZIP/.RAR（最大 50MB），兼容 SolidWorks、Inventor、AutoCAD、Creo。文件较大时，请将云端链接发送至邮箱 engineering@hanintech.vn。"
+          "answer": "HANIN 可直接接收 .STEP、.STP、.DWG、.DXF、.IGES、.X_T、.PDF 及压缩文件 .ZIP/.RAR（最大 50MB），兼容 SolidWorks、Inventor、AutoCAD、Creo。文件较大时，请将云端链接发送至邮箱 Haninplating@gmail.com。"
         },
         "2": {
           "question": "3. HANIN 如何执行图纸保密（NDA）政策？",
@@ -92,8 +92,8 @@
       },
       "imageAlt": "工厂全景（示意图，后续将替换为甲方提供的实景照片）",
       "overlayLabel": "总部与工厂",
-      "overlayLocation": "河内美灵光明工业区",
-      "overlayCoordinates": "坐标：21.2025° N, 105.7725° E"
+      "overlayLocation": "河内市光明乡光明工业区",
+      "overlayCoordinates": "坐标：21.2074° N, 105.7540° E"
     },
     "DirectChannels": {
       "heading": "快速直接联系渠道",
@@ -113,7 +113,7 @@
         },
         "email": {
           "label": "大文件邮箱通道",
-          "title": "sales@hanintech.vn",
+          "title": "Haninplating@gmail.com",
           "desc": "适用于附带 Drive、OneDrive 或 WeTransfer 链接的大型项目标书。",
           "cta": "撰写报价邮件"
         },
@@ -144,9 +144,9 @@
       },
       "openMapsCta": "打开 Google 地图",
       "downloadMapCta": "集装箱货车路线图（PDF）",
-      "satelliteImageAlt": "河内美灵光明工业区位置卫星示意图（示意图，后续将替换为真实嵌入式 Google 地图）",
+      "satelliteImageAlt": "河内光明乡光明工业区位置卫星示意图（示意图，后续将替换为真实嵌入式 Google 地图）",
       "gateLabel": "HANIN 厂区 1 号大门",
-      "plotLabel": "光明工业区 CN-08 地块",
+      "plotLabel": "光明工业区 49G 地块",
       "securityNote": "40 英尺集装箱安检大门 24/7 接收",
       "gridLabel": "GRID: HN-QMINH-08",
       "elevationLabel": "海拔: +14.2m ASL"
@@ -207,7 +207,7 @@
         "badgeEncryption": "安全服务器加密",
         "badgeNda": "自动 NDA 保密",
         "filesSelected": "已选择 {count} 个文件：",
-        "noFileSelected": "尚未选择任何文件。您也可以直接通过邮箱发送图纸：sales@hanintech.vn",
+        "noFileSelected": "尚未选择任何文件。您也可以直接通过邮箱发送图纸：Haninplating@gmail.com",
         "maxSize": "最大：50MB"
       },
       "step4": {

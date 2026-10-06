@@ -160,6 +160,7 @@ export function getProductDetailContent(t: ProductsTranslator) {
       {
         icon: "shield_with_heart",
         code: "SRV-01",
+        href: "/dich-vu-gia-cong-ma/ma-kem-hop-kim-kem-niken",
         title: t("detail.relatedServices.item1.title"),
         description: t("detail.relatedServices.item1.description"),
         cta: t("detail.relatedServices.item1.cta"),
@@ -167,6 +168,7 @@ export function getProductDetailContent(t: ProductsTranslator) {
       {
         icon: "construction",
         code: "SRV-02",
+        href: "/dich-vu-gia-cong-ma/ma-crom-cung-cong-nghiep",
         title: t("detail.relatedServices.item2.title"),
         description: t("detail.relatedServices.item2.description"),
         cta: t("detail.relatedServices.item2.cta"),
@@ -174,6 +176,7 @@ export function getProductDetailContent(t: ProductsTranslator) {
       {
         icon: "layers",
         code: "SRV-03",
+        href: "/dich-vu-gia-cong-ma/xu-ly-nhom-ma-kim-loai-khac",
         title: t("detail.relatedServices.item3.title"),
         description: t("detail.relatedServices.item3.description"),
         cta: t("detail.relatedServices.item3.cta"),

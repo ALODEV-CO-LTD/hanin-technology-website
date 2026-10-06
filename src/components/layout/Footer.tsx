@@ -1,16 +1,14 @@
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
+import { Clock, Mail, MapPin, Phone } from "lucide-react";
 import { Link } from "@/i18n/navigation";
-import { getSettings } from "@/server/settings";
+import { getSettings, telHref } from "@/server/settings";
+import { getServices } from "@/server/public";
 
 export default function Footer() {
   const t = useTranslations("Footer");
-  const { zaloUrl, mapsUrl, facebookUrl, youtubeUrl, linkedinUrl } = getSettings();
-  const externalLinkClass = "text-label-technical text-sky-700 hover:underline";
-  const socialLinks = [
-    { label: "Facebook", href: facebookUrl },
-    { label: "YouTube", href: youtubeUrl },
-    { label: "LinkedIn", href: linkedinUrl },
-  ].filter((link) => link.href);
+  const locale = useLocale();
+  const { zaloUrl, mapsUrl, hotline, engineerHotline, salesEmail, engineeringEmail } = getSettings();
+  const externalLinkClass = "text-label-technical text-sky-700 font-bold hover:underline";
 
   const companyLinks = [
     { label: t("companyLinks.trangChu"), href: "/" },
@@ -20,11 +18,9 @@ export default function Footer() {
     { label: t("companyLinks.tuyenDung"), href: "/tuyen-dung" },
   ];
 
+  // Liên kết dịch vụ lấy từ CMS (4 dịch vụ đầu), luôn khớp danh sách dịch vụ đang hiển thị.
   const serviceLinks = [
-    { label: t("serviceLinks.enp"), href: "/dich-vu-gia-cong-ma/ma-niken-hoa-hoc-enp" },
-    { label: t("serviceLinks.hardChrome"), href: "/dich-vu-gia-cong-ma/ma-crom-cung-cong-nghiep" },
-    { label: t("serviceLinks.anodizing"), href: "/dich-vu-gia-cong-ma/xu-ly-nhom-ma-kim-loai-khac" },
-    { label: t("serviceLinks.zincNickel"), href: "/dich-vu-gia-cong-ma/ma-kem-hop-kim-kem-niken" },
+    ...getServices(locale, 4).map((service) => ({ label: service.title, href: `/dich-vu-gia-cong-ma/${service.slug}` })),
     { label: t("serviceLinks.specSheet"), href: "/nang-luc-san-xuat" },
   ];
 
@@ -41,25 +37,25 @@ export default function Footer() {
                 className="h-12 w-auto transition-transform duration-200 ease-out group-hover:scale-105 group-active:scale-95"
               />
             </Link>
-            <p className="text-body-sm text-slate-600 leading-relaxed max-w-sm">{t("description")}</p>
+            <p className="text-body-sm font-medium text-slate-600 leading-relaxed max-w-sm">{t("description")}</p>
             <div className="flex flex-wrap items-center gap-space-xs pt-space-xs">
-              <span className="text-label-technical text-slate-700 uppercase px-2.5 py-0.5 bg-slate-100 rounded border border-slate-200 font-semibold">
-                ISO 9001:2015
+              <span className="text-label-technical text-slate-700 uppercase px-2.5 py-0.5 bg-slate-100 rounded border border-slate-200 font-bold">
+                {t("certIso9001")}
               </span>
-              <span className="text-label-technical text-slate-700 uppercase px-2.5 py-0.5 bg-slate-100 rounded border border-slate-200 font-semibold">
-                ISO 14001
+              <span className="text-label-technical text-slate-700 uppercase px-2.5 py-0.5 bg-slate-100 rounded border border-slate-200 font-bold">
+                {t("certIso14001")}
               </span>
-              <span className="text-label-technical text-slate-700 uppercase px-2.5 py-0.5 bg-slate-100 rounded border border-slate-200 font-semibold">
-                RoHS &amp; REACH
+              <span className="text-label-technical text-slate-700 uppercase px-2.5 py-0.5 bg-slate-100 rounded border border-slate-200 font-bold">
+                {t("certRohs")}
               </span>
             </div>
           </div>
 
           <div className="lg:col-span-2 flex flex-col gap-space-sm">
-            <h3 className="text-label-technical uppercase tracking-widest text-steel-600 font-bold pb-space-xs border-b border-slate-200">
+            <h3 className="text-label-technical uppercase tracking-widest text-steel-600 font-extrabold pb-space-xs border-b border-slate-200">
               {t("companyHeading")}
             </h3>
-            <ul className="flex flex-col gap-space-xs text-body-sm">
+            <ul className="flex flex-col gap-space-xs text-body-sm font-medium">
               {companyLinks.map((link) => (
                 <li key={link.href} className="py-0.5">
                   <Link href={link.href} className="text-slate-600 hover:text-steel-600 transition-colors">
@@ -71,10 +67,10 @@ export default function Footer() {
           </div>
 
           <div className="lg:col-span-3 flex flex-col gap-space-sm">
-            <h3 className="text-label-technical uppercase tracking-widest text-steel-600 font-bold pb-space-xs border-b border-slate-200">
+            <h3 className="text-label-technical uppercase tracking-widest text-steel-600 font-extrabold pb-space-xs border-b border-slate-200">
               {t("serviceHeading")}
             </h3>
-            <ul className="flex flex-col gap-space-xs text-body-sm">
+            <ul className="flex flex-col gap-space-xs text-body-sm font-medium">
               {serviceLinks.map((link) => (
                 <li key={link.href} className="py-0.5">
                   <Link href={link.href} className="text-slate-600 hover:text-steel-600 transition-colors">
@@ -86,26 +82,53 @@ export default function Footer() {
           </div>
 
           <div className="lg:col-span-3 flex flex-col gap-space-sm">
-            <h3 className="text-label-technical uppercase tracking-widest text-steel-600 font-bold pb-space-xs border-b border-slate-200">
+            <h3 className="text-label-technical uppercase tracking-widest text-steel-600 font-extrabold pb-space-xs border-b border-slate-200">
               {t("contactHeading")}
             </h3>
-            <div className="flex flex-col gap-space-xs text-body-sm text-slate-600">
-              <p className="leading-tight">
-                <span className="text-slate-900 font-semibold block mb-0.5">{t("addressLabel")}</span>
-                {t("address")}
-              </p>
-              <p className="leading-tight">
-                <span className="text-slate-900 font-semibold block mb-0.5">{t("hotlineLabel")}</span>
-                {t("hotline")}
-              </p>
-              <p className="leading-tight">
-                <span className="text-slate-900 font-semibold block mb-0.5">{t("emailLabel")}</span>
-                {t("email")}
-              </p>
-              <p className="leading-tight">
-                <span className="text-slate-900 font-semibold block mb-0.5">{t("hoursLabel")}</span>
-                {t("hours")}
-              </p>
+            <div className="flex flex-col gap-space-sm text-body-sm font-medium text-slate-600">
+              <div className="flex items-start gap-space-sm">
+                <span className="flex h-[1lh] shrink-0 items-center text-body-sm leading-tight">
+                  <MapPin aria-hidden="true" className="h-5 w-5 text-steel-600" strokeWidth={2} />
+                </span>
+                <p className="leading-tight">
+                  <span className="text-slate-900 font-bold mr-1">{t("addressLabel")}</span>
+                  {t("address")}
+                </p>
+              </div>
+              <div className="flex items-start gap-space-sm">
+                <span className="flex h-[1lh] shrink-0 items-center text-body-sm leading-tight">
+                  <Phone aria-hidden="true" className="h-5 w-5 text-steel-600" strokeWidth={2} />
+                </span>
+                <p className="leading-tight">
+                  <span className="text-slate-900 font-bold mr-1">{t("hotlineLabel")}</span>
+                  <a href={telHref(hotline)} className="hover:text-steel-600">{hotline}</a>
+                  {" / "}
+                  <a href={telHref(engineerHotline)} className="hover:text-steel-600">{engineerHotline}</a>
+                </p>
+              </div>
+              <div className="flex items-start gap-space-sm">
+                <span className="flex h-[1lh] shrink-0 items-center text-body-sm leading-tight">
+                  <Mail aria-hidden="true" className="h-5 w-5 text-steel-600" strokeWidth={2} />
+                </span>
+                <p className="leading-tight break-all">
+                  <span className="text-slate-900 font-bold mr-1">{t("emailLabel")}</span>
+                  {[...new Set([salesEmail, engineeringEmail])].map((email, i) => (
+                    <span key={email}>
+                      {i > 0 && " / "}
+                      <a href={`mailto:${email}`} className="hover:text-steel-600">{email}</a>
+                    </span>
+                  ))}
+                </p>
+              </div>
+              <div className="flex items-start gap-space-sm">
+                <span className="flex h-[1lh] shrink-0 items-center text-body-sm leading-tight">
+                  <Clock aria-hidden="true" className="h-5 w-5 text-steel-600" strokeWidth={2} />
+                </span>
+                <p className="leading-tight">
+                  <span className="text-slate-900 font-bold mr-1">{t("hoursLabel")}</span>
+                  {t("hours")}
+                </p>
+              </div>
               <div className="flex items-center gap-space-sm pt-space-xs">
                 {zaloUrl ? (
                   <a href={zaloUrl} target="_blank" rel="noopener noreferrer" className={externalLinkClass}>
@@ -127,29 +150,20 @@ export default function Footer() {
                   </Link>
                 )}
               </div>
-              {socialLinks.length > 0 && (
-                <div className="flex flex-wrap items-center gap-space-sm">
-                  {socialLinks.map((link) => (
-                    <a key={link.label} href={link.href} target="_blank" rel="noopener noreferrer" className={externalLinkClass}>
-                      {link.label}
-                    </a>
-                  ))}
-                </div>
-              )}
             </div>
           </div>
         </div>
 
-        <div className="mt-space-xl pt-space-md border-t border-slate-200 flex flex-col md:flex-row items-center justify-between gap-space-sm text-label-technical text-slate-500">
+        <div className="mt-space-xl pt-space-md border-t border-slate-200 flex flex-col md:flex-row items-center justify-between gap-space-sm text-label-technical font-bold text-slate-500">
           <p>{t("copyright")}</p>
           <div className="flex items-center gap-space-md">
-            <a href="#" className="hover:text-steel-600 transition-colors">
+            <Link href="/chinh-sach-bao-mat" className="hover:text-steel-600 transition-colors">
               {t("privacyPolicy")}
-            </a>
+            </Link>
             <span className="text-slate-300">|</span>
-            <a href="#" className="hover:text-steel-600 transition-colors">
+            <Link href="/dieu-khoan-dich-vu" className="hover:text-steel-600 transition-colors">
               {t("termsOfService")}
-            </a>
+            </Link>
           </div>
         </div>
       </div>

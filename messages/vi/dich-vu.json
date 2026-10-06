@@ -149,11 +149,12 @@
       "filtration": {
         "title": "Lọc tuần hoàn 10 turnovers/giờ:",
         "desc": "Dung dịch qua màng lọc polypropylene 1-micron liên tục, triệt tiêu mạt kim loại lơ lửng và hiện tượng mạ nổi hột."
-      }
+      },
+      "tankSizeValue": "1800 x 900 x 1200 mm"
     },
     "DetailGallery": {
       "heading": "HÌNH ẢNH DÂY CHUYỀN & CHI TIẾT SAU GIA CÔNG",
-      "subtitle": "NHÀ MÁY HANIN // LOT CN-08 BÌNH XUYÊN",
+      "subtitle": "NHÀ MÁY HANIN // LÔ 49G KCN QUANG MINH",
       "line": {
         "alt": "Dây chuyền mạ niken tự động hóa bể tuần hoàn (ảnh minh họa)",
         "tag": "BỂ MẠ TỰ ĐỘNG",
@@ -179,20 +180,24 @@
       "subtitle": "Phản ứng khử hóa học tự xúc tác Ni-P tạo lớp phủ đồng đều trên mọi biên dạng phức tạp, ren trong, lỗ mù và hốc sâu, những vị trí mà mạ điện phân thông thường không tiếp cận được.",
       "phos": {
         "label": "HÀM LƯỢNG PHOS",
-        "note": "Medium / High Phos"
+        "note": "Medium / High Phos",
+        "value": "6-9% // >10.5%"
       },
       "hardness": {
         "label": "ĐỘ CỨNG SAU NHIỆT",
-        "note": "Baking 400°C x 1h"
+        "note": "Baking 400°C x 1h",
+        "value": "65-68 HRC"
       },
       "saltSpray": {
         "label": "CHỊU PHUN MUỐI",
         "unit": "GIỜ",
-        "note": "ASTM B117 Neutral NSS"
+        "note": "ASTM B117 Neutral NSS",
+        "value": "> 1,000"
       },
       "tolerance": {
         "label": "DUNG SAI CHIỀU DÀY",
-        "note": "Calibrated XRF"
+        "note": "Calibrated XRF",
+        "value": "±1.0 µm"
       },
       "ctaPrimary": "YÊU CẦU BÁO GIÁ KỸ THUẬT (RFQ)",
       "ctaSecondary": "TẢI SPEC SHEET PDF (AMS 2404)",
@@ -210,7 +215,8 @@
         "title": "Bản Chất Cơ Chế Phản Ứng",
         "p1": "Mạ điện phân bị chi phối bởi mật độ dòng điện nên dày ở mép góc, mỏng ở rãnh sâu. Mạ Niken hóa học ENP thì vận hành theo nguyên lý",
         "p1Strong": "lắng đọng tự xúc tác",
-        "p2": "Lớp Niken-Phosphor (Ni-P) hình thành đồng đều trên mọi điểm tiếp xúc dung dịch, tạo cấu trúc vô định hình (Amorphous) chống ăn mòn."
+        "p2": "Lớp Niken-Phosphor (Ni-P) hình thành đồng đều trên mọi điểm tiếp xúc dung dịch, tạo cấu trúc vô định hình (Amorphous) chống ăn mòn.",
+        "formula": "[Ni²⁺ + 2e⁻ → Ni] // [H₂PO₂⁻ + H₂O → H₂PO₃⁻ + 2H⁺ + 2e⁻]"
       },
       "col2": {
         "title": "Phạm Vi Ứng Dụng Chiến Lược",
@@ -357,7 +363,8 @@
         "desc": "Vận hành liên tục theo ASTM B117 và ISO 9227 để đánh giá khả năng chống ăn mòn gia tốc trong môi trường muối 5% NaCl.",
         "method": "Kháng phun sương muối",
         "criteria": "Không gỉ trắng >240h, đỏ >1000h",
-        "frequency": "Định kỳ tuần"
+        "frequency": "Định kỳ tuần",
+        "standard": "ASTM B117 / ISO 9227"
       },
       "cmm": {
         "title": "Thiết Bị CMM & Kính Hiển Vi Quang Học",
@@ -366,18 +373,22 @@
       "thickness": {
         "method": "Độ dày lớp mạ",
         "criteria": "Dung sai ±0.1 µm",
-        "frequency": "Từng lô (100%)"
+        "frequency": "Từng lô (100%)",
+        "standard": "ASTM B568 / ISO 3497"
       },
       "adhesion": {
         "method": "Độ bám dính mạ",
         "criteria": "Không bong tróc khi uốn 180°",
-        "frequency": "Theo ca sản xuất"
+        "frequency": "Theo ca sản xuất",
+        "standard": "ASTM B571 / ISO 2819"
       },
       "dehydrogenation": {
         "method": "Khử Hydro (Baking)",
         "criteria": "200°C ± 5°C trong 4h - 24h",
-        "frequency": "100% Chi tiết >1000 MPa"
-      }
+        "frequency": "100% Chi tiết >1000 MPa",
+        "standard": "ASTM B850 / ISO 9588"
+      },
+      "revision": "REV-2025.A"
     },
     "RfqFormCategory": {
       "heading": "YÊU CẦU BÁO GIÁ DỊCH VỤ XI MẠ (RFQ SPECIFICATION)",

@@ -2,20 +2,16 @@
   "Home": {
     "CompanySnapshot": {
       "partners": {
-        "label1": "ĐỐI TÁC",
-        "label2": "Khách hàng"
+        "label1": "KHÁCH HÀNG"
       },
-      "projects": {
-        "label1": "HẠNG MỤC",
-        "label2": "Dự án"
+      "staff": {
+        "label1": "NHÂN SỰ"
       },
-      "lines": {
-        "label1": "DÂY CHUYỀN",
-        "label2": "Thiết bị"
+      "area": {
+        "label1": "MẶT BẰNG XƯỞNG"
       },
-      "capacity": {
-        "label1": "TẤN/THÁNG",
-        "label2": "Năng lực sản xuất"
+      "founded": {
+        "label1": "NĂM THÀNH LẬP"
       }
     },
     "Hero": {
@@ -47,7 +43,7 @@
       "badgeSubtitle": "TIÊU CHUẨN XỬ LÝ BỀ MẶT CÔNG NGHIỆP",
       "title": "Năng lực tạo nên sự khác biệt.",
       "paragraph1": "Tập trung vào lĩnh vực gia công mạ kim loại và năng lực sản xuất phục vụ khách hàng công nghiệp.",
-      "paragraph2": "[Thông tin chính thức của doanh nghiệp sẽ được cập nhật đồng bộ theo tiêu chuẩn năng lực sản xuất và quy mô vận hành].",
+      "paragraph2": "Thành lập năm 2023, HANIN vận hành nhà máy rộng 2.230 m² tại KCN Quang Minh, Hà Nội, với 58 nhân sự và hơn 100 khách hàng công nghiệp.",
       "ctaLink": "XEM THÊM VỀ HANIN"
     },
     "PlatingServices": {
@@ -239,7 +235,7 @@
       "zaloCta": "CHAT VỚI HANIN",
       "emailLabel": "HỘP THƯ BÁO GIÁ",
       "addressLabel": "ĐỊA CHỈ NHÀ XƯỞNG",
-      "addressValue": "Lô CN-08, KCN Quang Minh, Huyện Mê Linh, Hà Nội"
+      "addressValue": "Lô 49G, KCN Quang Minh, xã Quang Minh, Hà Nội"
     }
   }
 }

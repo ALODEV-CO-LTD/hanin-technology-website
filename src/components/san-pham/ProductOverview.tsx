@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
 import { getProductDetailContent } from "@/lib/products-data";
+import Icon from "@/components/ui/Icon";
 
 export default function ProductOverview() {
   const tp = useTranslations("SanPham");
@@ -27,9 +28,7 @@ export default function ProductOverview() {
                   key={item.title}
                   className="flex items-start gap-space-sm p-space-sm bg-slate-50 border border-slate-200 rounded"
                 >
-                  <span className="material-symbols-outlined text-steel-600 text-[20px] shrink-0 mt-0.5">
-                    check_circle
-                  </span>
+                  <Icon name="check_circle" className="text-steel-600 text-[20px] shrink-0 mt-0.5" />
                   <div className="flex flex-col">
                     <span className="text-title-md text-slate-900 font-semibold">{item.title}</span>
                     <span className="text-body-sm text-slate-600">{item.description}</span>
@@ -42,7 +41,7 @@ export default function ProductOverview() {
           <div className="lg:col-span-5 flex flex-col bg-white border border-slate-200 rounded overflow-hidden shadow-sm">
             <div className="p-space-sm bg-slate-50 border-b border-slate-200 flex items-center justify-between">
               <div className="flex items-center gap-space-xs text-label-technical uppercase tracking-wider text-slate-900">
-                <span className="material-symbols-outlined text-steel-600 text-[18px]">terminal</span>
+                <Icon name="terminal" className="text-steel-600 text-[18px]" />
                 <span>{t("specSheetTitle")}</span>
               </div>
               <span className="font-mono text-label-sm text-sky-700 font-semibold">{t("specSheetRevision")}</span>

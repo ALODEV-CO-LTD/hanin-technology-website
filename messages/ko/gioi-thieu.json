@@ -10,12 +10,12 @@
     "CompanyIntroduction": {
       "imageAlt": "하노이 꽝민공단에 위치한 공장의 현대적인 외관 (예시 이미지, 추후 발주처 제공 실사 이미지로 교체 예정)",
       "scaleBadge": "규모: 공장 부지 // 꽝민공단",
-      "coordBadge": "좌표 21.2031° N",
-      "areaBadge": "부지 면적: 12,000 m²",
+      "coordBadge": "좌표 21.2074° N",
+      "areaBadge": "공장 부지 면적: 2,230 m²",
       "heading": "산업용 도금 가공 수요와 함께합니다",
-      "paragraph1Strong": "",
+      "paragraph1Strong": "HANIN Technology 베트남 도금산업 주식회사",
       "paragraph1Rest": "은 금속 도금 가공 및 정밀 기계 표면처리 전문 기업으로, 제조업, 기계 부품 및 고정밀 기술 부품 산업에 서비스를 제공합니다.",
-      "paragraph2": "[HANIN 공식 소개 정보: 설립 연혁, 인력 규모 및 국내외 기업 대상 표면처리 발전 방향.]",
+      "paragraph2": "HANIN은 2023년 3월 28일에 설립되어 하노이 꽝민공단에서 공장 부지 2,230 m² 규모로 운영하며, 랙 도금, 배럴 도금, 분석, 품질관리(QC), 창고 부서를 포함해 58명의 인력을 갖추고 있습니다. 현재 100곳 이상의 산업 고객을 지원하고 있습니다.",
       "field": {
         "label": "사업 분야",
         "value": "금속 도금 가공",
@@ -29,14 +29,14 @@
       "location": {
         "label": "위치",
         "value": "하노이 꽝민공단",
-        "note": "북부 산업축 660 로트"
+        "note": "본사 660 로트 · 공장 49G 로트"
       }
     },
     "CompanyJourney": {
       "heading": "발전 여정",
-      "subtitle": "[HANIN의 연혁 및 발전 이정표 정보]",
+      "subtitle": "HANIN의 설립과 성장 과정의 주요 이정표입니다.",
       "m1": {
-        "yearTag": "[설립 연도]",
+        "yearTag": "2023",
         "phase": "1단계 // 기반 구축",
         "title": "사업장 설립 및 표준 구축",
         "desc": "사업장을 설립하고 금속 도금 표준을 구축하며 처리 화학 배합을 최적화했습니다."
@@ -68,7 +68,6 @@
     },
     "CoreStrengths": {
       "heading": "HANIN의 핵심 역량",
-      "strengthLabel": "핵심 역량",
       "production": {
         "title": "생산 역량",
         "desc": "[생산 역량 정보: 대규모 도금조 시스템으로 매일 대량의 부품을 지속적인 산업 주문에 맞춰 공급합니다.]",
@@ -147,6 +146,11 @@
       "heading": "품질 & 표준",
       "subtitle": "[HANIN의 품질경영시스템 및 인증에 대한 공식 정보]",
       "cta": "인증서 보기",
+      "certificateImageAlt": "DQS GmbH가 발급한 HANIN Technology Việt Nam의 ISO 9001:2015 인증서",
+      "certificateTag": "[ 인증서 ]",
+      "certificateTitle": "ISO 9001:2015 — 품질경영시스템",
+      "certificateIssuer": "인증기관: DQS GmbH (독일)",
+      "certificateScope": "범위: 플라스틱 제품의 생산, 가공, 사출, 인쇄, 도장 및 표면 처리.",
       "iso9001": {
         "tag": "[ ISO 인증 ]",
         "title": "생산 품질경영시스템",
@@ -190,6 +194,11 @@
         "desc": "제품 톤 / 월",
         "note": "생산능력: 중량 기준"
       }
+    },
+    "FeaturedClients": {
+      "eyebrow": "주요 고객사",
+      "title": "많은 제조 기업이 신뢰하는 파트너",
+      "description": "100곳 이상의 크고 작은 고객사가 도금 가공을 위해 HANIN을 선택했습니다. 아래는 금속 하드웨어, 위생 설비, 산업 제조 분야의 주요 고객사입니다."
     }
   }
 }

@@ -30,7 +30,10 @@
       "searchPlaceholder": "Tìm kiếm sản phẩm / dự án...",
       "showingResults": "ĐANG HIỂN THỊ",
       "resultsUnit": "KẾT QUẢ",
-      "emptyState": "Không tìm thấy sản phẩm / dự án phù hợp với bộ lọc hiện tại."
+      "emptyState": "Không tìm thấy sản phẩm / dự án phù hợp với bộ lọc hiện tại.",
+      "filterViewing": "Đang xem",
+      "filterViewAll": "Xem tất cả sản phẩm",
+      "filterCount": "{count} kết quả"
     },
     "ProductGallery": {
       "title": "HÌNH ẢNH CHI TIẾT & KIỂM ĐỊNH THỰC TẾ",
@@ -54,7 +57,8 @@
       "toleranceValue": "TOLERANCE: ±0.1 µM",
       "digitalCallout": "PANME DIGITAL CALLOUT: 12.74mm",
       "robustPass": "ROBUST PASS",
-      "microHardnessLabel": "Độ cứng vi mô sau nhiệt luyện hydro:"
+      "microHardnessLabel": "Độ cứng vi mô sau nhiệt luyện hydro:",
+      "microHardnessValue": "850 - 920 HV"
     },
     "ProductOverview": {
       "title": "TỔNG QUAN DỰ ÁN & NĂNG LỰC ĐÁP ỨNG",
@@ -82,7 +86,7 @@
       "description": "Gửi bản vẽ 2D/3D hoặc trao đổi trực tiếp với đội ngũ kỹ sư giải pháp bề mặt của HANIN để nhận báo giá chi tiết và phương án tối ưu chi phí.",
       "cta": "NHẬN BÁO GIÁ →",
       "hotline": "HOTLINE KỸ THUẬT: (+84) 24 3818 6688",
-      "email": "EMAIL: sales@hanintech.vn",
+      "email": "EMAIL: Haninplating@gmail.com",
       "responseTime": "PHẢN HỒI KỸ THUẬT TRONG 04 GIỜ LÀM VIỆC"
     },
     "RelatedProjects": {

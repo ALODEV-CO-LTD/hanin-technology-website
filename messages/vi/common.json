@@ -38,18 +38,67 @@
     },
     "contactHeading": "Liên hệ kỹ thuật",
     "addressLabel": "Địa chỉ:",
-    "address": "Lô CN-08, Khu Công Nghiệp Quang Minh, Huyện Mê Linh, Hà Nội",
+    "address": "Trụ sở: Lô 660, KCN Quang Minh, xã Quang Minh, TP. Hà Nội. Nhà máy: Lô 49G, KCN Quang Minh, xã Quang Minh, TP. Hà Nội.",
     "hotlineLabel": "Hotline:",
     "hotline": "(+84) 24 3818 6868 / 0988 123 456",
     "emailLabel": "Email:",
-    "email": "sales@hanintech.vn / engineering@hanintech.vn",
+    "email": "Haninplating@gmail.com",
     "hoursLabel": "Giờ làm việc:",
     "hours": "Thứ 2 - Thứ 7: 08:00 - 17:30 (Trực ca 24/7)",
     "zaloChat": "Zalo Chat Kỹ Thuật",
     "googleMaps": "Google Maps Chỉ Đường",
     "statusLine": "Hệ thống dây chuyền mạ & đo lường CMM: SẴN SÀNG HOẠT ĐỘNG",
-    "copyright": "© 2026. Tất cả quyền được bảo lưu. Chuẩn ISO 9001:2015.",
+    "copyright": "© 2026 Công ty Cổ phần Công nghiệp Mạ HANIN Technology Việt Nam · MST 0110300983. Tất cả quyền được bảo lưu. Chuẩn ISO 9001:2015.",
     "privacyPolicy": "Chính sách bảo mật",
-    "termsOfService": "Điều khoản dịch vụ"
+    "termsOfService": "Điều khoản dịch vụ",
+    "certIso9001": "ISO 9001:2015",
+    "certIso14001": "ISO 14001",
+    "certRohs": "RoHS & REACH"
+  },
+  "Meta": {
+    "site": {
+      "title": "HANIN",
+      "description": "Giải pháp gia công mạ kim loại và bề mặt công nghiệp chuẩn xác cao."
+    },
+    "home": {
+      "title": "HANIN",
+      "description": "Giải pháp gia công mạ kim loại và bề mặt công nghiệp chuẩn xác cao."
+    },
+    "gioiThieu": {
+      "title": "Giới thiệu",
+      "description": "Tìm hiểu định hướng phát triển và năng lực gia công mạ kim loại phục vụ khách hàng công nghiệp."
+    },
+    "dichVu": {
+      "title": "Dịch Vụ Gia Công Mạ & Xử Lý Bề Mặt",
+      "description": "Dịch vụ gia công mạ điện phân, mạ hóa học và xử lý bề mặt kim loại đạt chuẩn ô tô, hàng không: mạ Crom cứng, mạ Niken hóa học (ENP), mạ Kẽm-Niken, Anodizing nhôm."
+    },
+    "sanPham": {
+      "title": "Sản phẩm & Dự án",
+      "description": "Sản phẩm và dự án gia công mạ kim loại kỹ thuật cao: kiểm soát dung sai micron, độ đồng đều lớp phủ và độ bền môi trường khắt khe."
+    },
+    "nangLuc": {
+      "title": "Năng lực sản xuất",
+      "description": "Hệ sinh thái nhà xưởng chuẩn hóa, chuỗi dây chuyền mạ tự động điều khiển PLC SCADA và phòng thí nghiệm kiểm định vi mô đạt chuẩn quốc tế."
+    },
+    "tinTuc": {
+      "title": "Tin tức & Bản tin kỹ thuật",
+      "description": "Cập nhật tin tức doanh nghiệp, công nghệ xử lý bề mặt kim loại, quy chuẩn đo kiểm chất lượng và hoạt động sản xuất mới nhất."
+    },
+    "tuyenDung": {
+      "title": "Tuyển dụng",
+      "description": "Vị trí tuyển dụng đang mở trong lĩnh vực gia công mạ kim loại và cơ khí chính xác."
+    },
+    "lienHe": {
+      "title": "Liên hệ & Yêu cầu báo giá",
+      "description": "Liên hệ để được tư vấn giải pháp kỹ thuật xi mạ kim loại, gia công cơ khí chính xác và gửi yêu cầu báo giá (RFQ) kèm bản vẽ CAD."
+    },
+    "chinhSachBaoMat": {
+      "title": "Chính sách bảo mật",
+      "description": "Cách HANIN thu thập, sử dụng và bảo vệ thông tin khách hàng gửi qua website."
+    },
+    "dieuKhoan": {
+      "title": "Điều khoản dịch vụ",
+      "description": "Điều khoản sử dụng website và quy định chung khi gửi yêu cầu báo giá tới HANIN."
+    }
   }
 }

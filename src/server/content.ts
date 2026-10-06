@@ -14,6 +14,8 @@ export const NAMESPACE_FILES = [
   "tin-tuc",
   "lien-he",
   "tuyen-dung",
+  "phap-ly",
+  "quy-trinh",
 ];
 
 /**
@@ -91,12 +93,60 @@ function loadOverrides(): Record<string, Record<string, string>> {
   return byLocale;
 }
 
+/* ---------- Phạm vi riêng cho từng dịch vụ / sản phẩm ---------- */
+
+/**
+ * Trang chi tiết dịch vụ/sản phẩm dùng chung một bộ nội dung mẫu. Mỗi mục có thể ghi đè riêng
+ * một số khoá: lưu trong content_overrides với khoá "<scope>::<khoá>" (scope = "svc:<slug>" | "prd:<slug>").
+ */
+export const SCOPE_PREFIXES: Record<"svc" | "prd", string[]> = {
+  svc: [
+    "DichVu.DetailHero",
+    "DichVu.DetailOverview",
+    "DichVu.DetailProcess",
+    "DichVu.DetailCapability",
+    "DichVu.DetailApplications",
+    "DichVu.DetailQaTable",
+    "DichVu.DetailGallery",
+    "DichVu.RfqFormDetail",
+  ],
+  prd: [
+    "SanPham.detail",
+    "SanPham.ProductHero",
+    "SanPham.ProductOverview",
+    "SanPham.ProductProcessTimeline",
+    "SanPham.ProductGallery",
+    "SanPham.RelatedServices",
+  ],
+};
+
+export const SCOPE_SEP = "::";
+
+export function scopeFromPath(pathname: string): string {
+  const path = pathname.replace(/^\/(vi|zh|ko)(?=\/|$)/, "");
+  const svc = path.match(/^\/dich-vu-gia-cong-ma\/([^/]+)\/?$/);
+  if (svc) return `svc:${decodeURIComponent(svc[1])}`;
+  const prd = path.match(/^\/san-pham-du-an\/([^/]+)\/?$/);
+  if (prd) return `prd:${decodeURIComponent(prd[1])}`;
+  return "";
+}
+
+export function isInScope(scope: string, key: string): boolean {
+  const kind = scope.split(":")[0] as "svc" | "prd";
+  return (SCOPE_PREFIXES[kind] ?? []).some((p) => key === p || key.startsWith(`${p}.`));
+}
+
 /** Áp các chỉnh sửa từ CMS lên bản dịch gốc (dùng trong src/i18n/request.ts). */
-export function applyOverrides<T extends Tree>(messages: T, locale: string): T {
+export function applyOverrides<T extends Tree>(messages: T, locale: string, scope = ""): T {
   const overrides = loadOverrides()[locale];
   if (!overrides) return messages;
   const copy = structuredClone(messages) as Tree;
-  for (const [key, value] of Object.entries(overrides)) setByPath(copy, key, value);
+  const scoped: [string, string][] = [];
+  for (const [key, value] of Object.entries(overrides)) {
+    if (!key.includes(SCOPE_SEP)) setByPath(copy, key, value);
+    else if (scope && key.startsWith(scope + SCOPE_SEP)) scoped.push([key.slice(scope.length + SCOPE_SEP.length), value]);
+  }
+  for (const [key, value] of scoped) setByPath(copy, key, value); // nội dung riêng của mục thắng nội dung chung
   return copy as T;
 }
 
@@ -118,7 +168,7 @@ export function listNamespaces(): { name: string; count: number; overrides: numb
     counts.set(ns, entry);
   }
   for (const locale of LOCALES) {
-    for (const key of Object.keys(overrides[locale] ?? {})) {
+    for (const key of Object.keys(overrides[locale] ?? {}).filter((k) => !k.includes(SCOPE_SEP))) {
       const entry = counts.get(key.split(".")[0]);
       if (entry) entry.overrides++;
     }
@@ -126,17 +176,18 @@ export function listNamespaces(): { name: string; count: number; overrides: numb
   return [...counts].map(([name, v]) => ({ name, ...v }));
 }
 
-export function listEntries(namespace: string): ContentEntry[] {
+export function listEntries(namespace: string, scope = ""): ContentEntry[] {
   const bases = Object.fromEntries(LOCALES.map((l) => [l, flatten(loadBaseMessages(l))])) as Record<Locale, Record<string, string>>;
   const overrides = loadOverrides();
   return Object.keys(bases.vi)
-    .filter((key) => key.split(".")[0] === namespace && !isHiddenKey(key))
+    .filter((key) => key.split(".")[0] === namespace && !isHiddenKey(key) && (!scope || isInScope(scope, key)))
     .map((key) => {
       const values = {} as Record<Locale, string>;
       const overridden = {} as Record<Locale, boolean>;
       for (const l of LOCALES) {
-        const o = overrides[l]?.[key];
-        overridden[l] = o !== undefined;
+        const own = scope ? overrides[l]?.[scope + SCOPE_SEP + key] : undefined;
+        const o = own ?? overrides[l]?.[key];
+        overridden[l] = scope ? own !== undefined : overrides[l]?.[key] !== undefined;
         values[l] = o ?? bases[l][key] ?? "";
       }
       return { key, values, overridden };

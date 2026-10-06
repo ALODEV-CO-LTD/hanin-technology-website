@@ -2,7 +2,22 @@
 
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import {
+  Briefcase,
+  FlaskConical,
+  FolderOpen,
+  GalleryHorizontal,
+  Images,
+  Inbox,
+  LayoutDashboard,
+  Link2,
+  Newspaper,
+  Package,
+  PenLine,
+  Users,
+  type LucideIcon,
+} from "lucide-react";
 import { api } from "./api";
 
 interface Props {
@@ -11,20 +26,20 @@ interface Props {
   resources: { key: string; label: string; icon: string }[];
 }
 
-/** Đường nét icon 24x24 (stroke). */
-const ICONS: Record<string, string> = {
-  dashboard: "M4 4h7v7H4zM13 4h7v7h-7zM4 13h7v7H4zM13 13h7v7h-7z",
-  banners: "M3 5h18v14H3zM3 16l5-5 4 4 3-3 6 6M15.5 9.5h.01",
-  services: "M9 3h6M10 3v6l-5 9a2 2 0 0 0 1.8 3h10.4A2 2 0 0 0 19 18l-5-9V3",
-  products: "M12 3l8 4v10l-8 4-8-4V7zM4 7l8 4 8-4M12 11v10",
-  posts: "M5 4h11v16H5zM16 8h3v10a2 2 0 0 1-2 2M8 8h5M8 12h5M8 16h5",
-  jobs: "M3 8h18v12H3zM9 8V5h6v3M3 13h18",
-  inquiries: "M3 13l2.5-8h13L21 13v6H3zM3 13h5l1 2.5h6l1-2.5h5",
-  content: "M4 20l1-4L16 5l3 3L8 19zM14 7l3 3",
-  "site-images": "M4 5h16v14H4zM4 15l4-4 3 3 4-4 5 5M9 9h.01",
-  media: "M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z",
-  settings: "M10 13a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 11a4 4 0 0 0-5.7 0l-3 3A4 4 0 0 0 11 19.7l1-1",
-  users: "M9 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM3 20c0-3.3 2.7-5 6-5s6 1.7 6 5M17 8.5a2.5 2.5 0 1 1 0 5M18 15.2c1.9.5 3 2 3 4.8",
+/** Icon Lucide cho từng mục (cùng bộ với website). */
+const ICONS: Record<string, LucideIcon> = {
+  dashboard: LayoutDashboard,
+  banners: GalleryHorizontal,
+  services: FlaskConical,
+  products: Package,
+  posts: Newspaper,
+  jobs: Briefcase,
+  inquiries: Inbox,
+  content: PenLine,
+  "site-images": Images,
+  media: FolderOpen,
+  settings: Link2,
+  users: Users,
 };
 
 const DESCRIPTIONS: Record<string, string> = {
@@ -83,21 +98,64 @@ export default function Sidebar({ user, newInquiries, resources }: Props) {
 
   const isActive = (href: string) => (href === "/admin" ? pathname === "/admin" : pathname.startsWith(href));
 
+  // Điện thoại: menu là ngăn kéo phủ lên từ trái; khoá cuộn trang nền và đóng bằng Esc / bấm nền mờ.
+  useEffect(() => {
+    if (!open) return;
+    const onKey = (e: KeyboardEvent) => e.key === "Escape" && setOpen(false);
+    document.addEventListener("keydown", onKey);
+    const prev = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.removeEventListener("keydown", onKey);
+      document.body.style.overflow = prev;
+    };
+  }, [open]);
+
   return (
     <>
-      <div className="lg:hidden flex items-center justify-between bg-steel-950 text-white px-4 h-14 sticky top-0 z-30">
-        <span className="font-bold tracking-wide">HANIN CMS</span>
-        <button onClick={() => setOpen(!open)} className="px-3 py-1.5 rounded bg-white/10 text-sm" aria-expanded={open}>
+      <div className="lg:hidden flex items-center justify-between gap-3 bg-steel-950 text-white px-4 h-14 sticky top-0 z-30">
+        <Link href="/admin" className="flex items-center gap-2 min-w-0">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/hanin-logo.png" alt="HANIN" className="h-7 w-auto bg-white rounded-sm px-1.5 py-0.5" />
+          <span className="font-bold tracking-wide truncate">CMS</span>
+        </Link>
+        <button
+          onClick={() => setOpen(true)}
+          className="inline-flex items-center gap-2 h-9 px-3 rounded bg-white/10 text-sm"
+          aria-expanded={open}
+          aria-controls="admin-drawer"
+        >
+          <svg viewBox="0 0 24 24" className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" aria-hidden="true">
+            <path d="M4 7h16M4 12h16M4 17h16" />
+          </svg>
           Menu
         </button>
       </div>
+
+      {open && <div className="lg:hidden fixed inset-0 z-40 bg-black/50" onClick={() => setOpen(false)} aria-hidden="true" />}
+
       <aside
-        className={`${open ? "flex" : "hidden"} lg:flex flex-col lg:fixed lg:left-0 lg:top-0 lg:h-screen w-full lg:w-72 z-20 bg-steel-950 text-slate-200 overflow-y-auto`}
+        id="admin-drawer"
+        className={`fixed inset-y-0 left-0 z-50 flex flex-col w-[85%] max-w-72 lg:w-72 bg-steel-950 text-slate-200 overflow-y-auto transition-transform duration-200 ease-out ${
+          open ? "translate-x-0" : "-translate-x-full"
+        } lg:translate-x-0`}
+        aria-label="Menu quản trị"
       >
-        <div className="hidden lg:block px-6 py-6 border-b border-white/10">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/hanin-logo.png" alt="HANIN" className="h-9 w-auto bg-white rounded-sm px-2 py-1 mb-3" />
-          <p className="text-xs uppercase tracking-[0.14em] text-slate-400">Quản trị website</p>
+        <div className="px-6 py-5 lg:py-6 border-b border-white/10 flex items-start justify-between gap-3">
+          <div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/hanin-logo.png" alt="HANIN" className="h-9 w-auto bg-white rounded-sm px-2 py-1 mb-3" />
+            <p className="text-xs uppercase tracking-[0.14em] text-slate-400">Quản trị website</p>
+          </div>
+          <button
+            onClick={() => setOpen(false)}
+            className="lg:hidden h-9 w-9 shrink-0 inline-flex items-center justify-center rounded bg-white/10"
+            aria-label="Đóng menu"
+          >
+            <svg viewBox="0 0 24 24" className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" aria-hidden="true">
+              <path d="M6 6l12 12M18 6L6 18" />
+            </svg>
+          </button>
         </div>
 
         <nav className="flex-1 px-3 py-4 flex flex-col gap-5">
@@ -108,6 +166,7 @@ export default function Sidebar({ user, newInquiries, resources }: Props) {
               )}
               {group.items.map((item) => {
                 const active = isActive(item.href);
+                const NavIcon = ICONS[item.id] ?? ICONS.content;
                 return (
                   <Link
                     key={item.id}
@@ -118,9 +177,7 @@ export default function Sidebar({ user, newInquiries, resources }: Props) {
                       active ? "bg-steel-600 text-white" : "text-slate-300 hover:bg-white/10 hover:text-white"
                     }`}
                   >
-                    <svg viewBox="0 0 24 24" className={`w-5 h-5 shrink-0 ${active ? "text-white" : "text-steel-300"}`} fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                      <path d={ICONS[item.id] ?? ICONS.content} />
-                    </svg>
+                    <NavIcon className={`shrink-0 ${active ? "text-white" : "text-steel-300"}`} strokeWidth={1.75} width={20} height={20} aria-hidden="true" />
                     <span className="min-w-0 flex-1">
                       <span className="block text-[15px] font-semibold leading-tight">{item.label}</span>
                       <span className={`block text-xs leading-snug mt-0.5 truncate ${active ? "text-steel-100" : "text-slate-500 group-hover:text-slate-400"}`}>

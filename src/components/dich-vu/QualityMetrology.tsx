@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import Icon from "@/components/ui/Icon";
 
 export default function QualityMetrology() {
   const t = useTranslations("DichVu.QualityMetrology");
@@ -10,10 +11,10 @@ export default function QualityMetrology() {
   ] as const;
 
   const TEST_TABLE = [
-    { key: "thickness", standard: "ASTM B568 / ISO 3497" },
-    { key: "saltSpray", standard: "ASTM B117 / ISO 9227" },
-    { key: "adhesion", standard: "ASTM B571 / ISO 2819" },
-    { key: "dehydrogenation", standard: "ASTM B850 / ISO 9588" },
+    { key: "thickness" },
+    { key: "saltSpray" },
+    { key: "adhesion" },
+    { key: "dehydrogenation" },
   ] as const;
 
   return (
@@ -28,7 +29,7 @@ export default function QualityMetrology() {
             <div className="flex flex-col gap-space-sm">
               {LAB_ITEMS.map((item) => (
                 <div key={item.key} className="flex items-start gap-space-sm bg-white border border-slate-200 p-space-sm rounded shadow-sm">
-                  <span className="material-symbols-outlined text-steel-600 text-[24px]">{item.icon}</span>
+                  <Icon name={item.icon} className="text-steel-600 text-[24px]" />
                   <div>
                     <span className="text-title-md text-slate-900 font-bold block">{t(`${item.key}.title`)}</span>
                     <p className="text-body-md text-slate-600">{t(`${item.key}.desc`)}</p>
@@ -42,7 +43,7 @@ export default function QualityMetrology() {
             <div className="bg-white border border-slate-200 p-space-md rounded shadow-sm">
               <div className="flex items-center justify-between pb-space-sm">
                 <span className="text-title-md text-slate-900 font-bold uppercase">{t("tableTitle")}</span>
-                <span className="bg-slate-100 text-slate-600 text-label-sm px-2 py-0.5 rounded">REV-2025.A</span>
+                <span className="bg-slate-100 text-slate-600 text-label-sm px-2 py-0.5 rounded">{t("revision")}</span>
               </div>
               <div className="overflow-x-auto">
                 <table className="w-full min-w-[560px] text-left text-body-sm table-fixed">
@@ -58,7 +59,7 @@ export default function QualityMetrology() {
                     {TEST_TABLE.map((row) => (
                       <tr key={row.key} className="hover:bg-slate-50/50">
                         <td className="py-space-sm px-3 align-top font-medium text-slate-900">{t(`${row.key}.method`)}</td>
-                        <td className="py-space-sm px-3 align-top text-slate-500 leading-snug">{row.standard}</td>
+                        <td className="py-space-sm px-3 align-top text-slate-500 leading-snug">{t(`${row.key}.standard`)}</td>
                         <td className="py-space-sm px-3 align-top text-steel-600 font-bold leading-snug">{t(`${row.key}.criteria`)}</td>
                         <td className="py-space-sm px-3 align-top text-slate-500 leading-snug">{t(`${row.key}.frequency`)}</td>
                       </tr>

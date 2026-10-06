@@ -36,7 +36,7 @@ export default function CompanyJourney() {
                   <span className="w-8 h-8 rounded bg-slate-100 border border-slate-200 flex items-center justify-center text-label-technical text-steel-600 font-bold group-hover:bg-steel-600 group-hover:text-white transition-colors">
                     {`0${i + 1}`}
                   </span>
-                  <span className="text-[11px] uppercase tracking-wider text-slate-600 px-2 py-0.5 bg-slate-100 rounded border border-slate-200">
+                  <span className="text-xs uppercase tracking-wider text-slate-600 px-2 py-0.5 bg-slate-100 rounded border border-slate-200">
                     {t(`${key}.yearTag`)}
                   </span>
                 </div>
@@ -54,7 +54,7 @@ export default function CompanyJourney() {
                 <span className="w-8 h-8 rounded bg-[#2F80C0] flex items-center justify-center text-label-technical text-white font-bold">
                   04
                 </span>
-                <span className="text-[11px] uppercase tracking-wider text-[#2F80C0] px-2 py-0.5 bg-[#E2EFF9] rounded border border-[#CFE1F3] font-semibold">
+                <span className="text-xs uppercase tracking-wider text-[#2F80C0] px-2 py-0.5 bg-[#E2EFF9] rounded border border-[#CFE1F3] font-semibold">
                   {t("m4.yearTag")}
                 </span>
               </div>

@@ -44,6 +44,13 @@ export default function ProductionFlow() {
             </div>
           ))}
         </div>
+
+        <a
+          href="#quy-trinh-cong-doan"
+          className="mt-space-lg inline-flex min-h-11 items-center gap-2 text-label-technical font-semibold uppercase tracking-wider text-steel-600 hover:underline"
+        >
+          {t("viewDetail")} →
+        </a>
       </div>
     </section>
   );

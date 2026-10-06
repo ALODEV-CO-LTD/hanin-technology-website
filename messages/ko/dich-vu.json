@@ -149,11 +149,12 @@
       "filtration": {
         "title": "시간당 10회 순환 여과:",
         "desc": "용액이 1마이크론 폴리프로필렌 필터막을 지속적으로 통과하여 부유 금속 입자와 도금 돌기 현상을 제거합니다."
-      }
+      },
+      "tankSizeValue": "1800 x 900 x 1200 mm"
     },
     "DetailGallery": {
       "heading": "생산 라인 및 가공 완료 부품 이미지",
-      "subtitle": "HANIN 공장 // 빈쑤옌 CN-08 로트",
+      "subtitle": "HANIN 공장 // 꽝민공단 49G 로트",
       "line": {
         "alt": "순환조 방식의 자동화 니켈 도금 라인 (예시 이미지)",
         "tag": "자동 도금조",
@@ -179,20 +180,24 @@
       "subtitle": "Ni-P 자기촉매 화학 환원 반응은 일반 전기도금으로는 도달할 수 없는 복잡한 형상, 내부 나사산, 막힌 홀, 깊은 캐비티 등 모든 부위에 균일한 도금층을 형성합니다.",
       "phos": {
         "label": "인 함량",
-        "note": "중인 / 고인"
+        "note": "중인 / 고인",
+        "value": "6-9% // >10.5%"
       },
       "hardness": {
         "label": "열처리 후 경도",
-        "note": "400°C x 1시간 베이킹"
+        "note": "400°C x 1시간 베이킹",
+        "value": "65-68 HRC"
       },
       "saltSpray": {
         "label": "내염수분무성",
         "unit": "시간",
-        "note": "ASTM B117 중성 NSS"
+        "note": "ASTM B117 중성 NSS",
+        "value": "> 1,000"
       },
       "tolerance": {
         "label": "두께 공차",
-        "note": "교정된 XRF 측정"
+        "note": "교정된 XRF 측정",
+        "value": "±1.0 µm"
       },
       "ctaPrimary": "기술 견적 요청 (RFQ)",
       "ctaSecondary": "스펙 시트 PDF 다운로드 (AMS 2404)",
@@ -210,7 +215,8 @@
         "title": "반응 메커니즘의 본질",
         "p1": "전기도금은 전류 밀도에 지배되어 모서리는 두껍고 깊은 홈은 얇아집니다. 반면 무전해 니켈 도금(ENP)은",
         "p1Strong": "자기촉매 석출",
-        "p2": "Ni-P(니켈-인) 층이 용액과 접촉하는 모든 지점에서 균일하게 형성되어 비정질(Amorphous) 내식 구조를 만듭니다."
+        "p2": "Ni-P(니켈-인) 층이 용액과 접촉하는 모든 지점에서 균일하게 형성되어 비정질(Amorphous) 내식 구조를 만듭니다.",
+        "formula": "[Ni²⁺ + 2e⁻ → Ni] // [H₂PO₂⁻ + H₂O → H₂PO₃⁻ + 2H⁺ + 2e⁻]"
       },
       "col2": {
         "title": "전략적 적용 범위",
@@ -357,7 +363,8 @@
         "desc": "ASTM B117 및 ISO 9227 기준에 따라 5% NaCl 염수 환경에서 가속 내식성을 지속적으로 평가합니다.",
         "method": "내염수분무성",
         "criteria": "백청 >240시간, 적청 >1000시간 미발생",
-        "frequency": "주간 정기"
+        "frequency": "주간 정기",
+        "standard": "ASTM B117 / ISO 9227"
       },
       "cmm": {
         "title": "CMM 장비 & 광학 현미경",
@@ -366,18 +373,22 @@
       "thickness": {
         "method": "도금 두께",
         "criteria": "공차 ±0.1 µm",
-        "frequency": "배치별 (100%)"
+        "frequency": "배치별 (100%)",
+        "standard": "ASTM B568 / ISO 3497"
       },
       "adhesion": {
         "method": "도금 부착력",
         "criteria": "180° 굽힘 시 박리 없음",
-        "frequency": "생산 근무조별"
+        "frequency": "생산 근무조별",
+        "standard": "ASTM B571 / ISO 2819"
       },
       "dehydrogenation": {
         "method": "수소 제거 (베이킹)",
         "criteria": "200°C ± 5°C, 4-24시간",
-        "frequency": "100% (>1000 MPa 부품)"
-      }
+        "frequency": "100% (>1000 MPa 부품)",
+        "standard": "ASTM B850 / ISO 9588"
+      },
+      "revision": "REV-2025.A"
     },
     "RfqFormCategory": {
       "heading": "도금 서비스 견적 요청 (RFQ SPECIFICATION)",

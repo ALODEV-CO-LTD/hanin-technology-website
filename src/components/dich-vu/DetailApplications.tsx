@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import Icon from "@/components/ui/Icon";
 
 export default function DetailApplications() {
   const t = useTranslations("DichVu.DetailApplications");
@@ -25,7 +26,7 @@ export default function DetailApplications() {
             <div key={item.key} className="bg-slate-50 border border-slate-200 p-space-md rounded flex flex-col justify-between">
               <div>
                 <div className="w-10 h-10 rounded bg-slate-200 flex items-center justify-center text-steel-600 mb-space-sm">
-                  <span className="material-symbols-outlined text-[24px]">{item.icon}</span>
+                  <Icon name={item.icon} className="text-[24px]" />
                 </div>
                 <span className="text-label-sm text-steel-600 uppercase font-semibold">{t(`${item.key}.tag`)}</span>
                 <h4 className="text-title-md text-slate-900 uppercase mt-1 mb-2 font-bold">{t(`${item.key}.title`)}</h4>

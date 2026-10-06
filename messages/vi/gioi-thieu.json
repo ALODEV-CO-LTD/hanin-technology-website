@@ -10,12 +10,12 @@
     "CompanyIntroduction": {
       "imageAlt": "Mặt tiền kiến trúc hiện đại của nhà máy tại KCN Quang Minh, Hà Nội (ảnh minh họa, sẽ thay bằng ảnh thực tế do Bên A cung cấp)",
       "scaleBadge": "QUY MÔ: KHUÔN VIÊN NHÀ MÁY // KCN QUANG MINH",
-      "coordBadge": "TỌA ĐỘ 21.2031° B",
-      "areaBadge": "DIỆN TÍCH: 12.000 m²",
+      "coordBadge": "TỌA ĐỘ 21.2074° B",
+      "areaBadge": "DIỆN TÍCH MẶT BẰNG: 2.230 m²",
       "heading": "Đồng hành cùng nhu cầu gia công mạ công nghiệp",
-      "paragraph1Strong": "",
+      "paragraph1Strong": "Công ty Cổ phần Công nghiệp Mạ HANIN Technology Việt Nam",
       "paragraph1Rest": "là đơn vị chuyên sâu trong lĩnh vực gia công mạ kim loại và xử lý hoàn thiện bề mặt cơ khí chính xác, phục vụ các ngành công nghiệp chế tạo, phụ tùng cơ khí và linh kiện kỹ thuật cao.",
-      "paragraph2": "[Thông tin giới thiệu chính thức về HANIN: lịch sử hình thành, quy mô nhân sự và định hướng gia công bề mặt cho doanh nghiệp trong và ngoài nước.]",
+      "paragraph2": "Thành lập ngày 28/03/2023, HANIN vận hành nhà máy tại Khu Công Nghiệp Quang Minh (Hà Nội) với diện tích mặt bằng xưởng 2.230 m² và đội ngũ 58 nhân sự, gồm các bộ phận mạ treo, mạ quay, phân tích, kiểm soát chất lượng (QC) và kho. Công ty hiện phục vụ hơn 100 khách hàng công nghiệp.",
       "field": {
         "label": "LĨNH VỰC",
         "value": "Gia công mạ kim loại",
@@ -29,14 +29,14 @@
       "location": {
         "label": "VỊ TRÍ",
         "value": "KCN Quang Minh, Hà Nội",
-        "note": "Lô 660, Trục CN Phía Bắc"
+        "note": "Trụ sở Lô 660 · Nhà máy Lô 49G"
       }
     },
     "CompanyJourney": {
       "heading": "HÀNH TRÌNH PHÁT TRIỂN",
-      "subtitle": "[Thông tin lịch sử và các dấu mốc phát triển của HANIN]",
+      "subtitle": "Những dấu mốc chính trong quá trình hình thành và phát triển của HANIN.",
       "m1": {
-        "yearTag": "[NĂM KHỞI ĐẦU]",
+        "yearTag": "2023",
         "phase": "GIAI ĐOẠN 01 // KHỞI ĐẦU NỀN TẢNG",
         "title": "Thành lập cơ sở & xây dựng quy chuẩn",
         "desc": "Thành lập cơ sở, xây dựng quy chuẩn mạ kim loại và tối ưu công thức hóa chất xử lý."
@@ -68,7 +68,6 @@
     },
     "CoreStrengths": {
       "heading": "THẾ MẠNH CỦA HANIN",
-      "strengthLabel": "THẾ MẠNH",
       "production": {
         "title": "NĂNG LỰC SẢN XUẤT",
         "desc": "[Thông tin năng lực sản xuất: hệ thống bể mạ quy mô lớn, đáp ứng đơn hàng công nghiệp liên tục với khối lượng linh kiện lớn mỗi ngày.]",
@@ -147,6 +146,11 @@
       "heading": "CHẤT LƯỢNG & TIÊU CHUẨN",
       "subtitle": "[Thông tin chính thức về hệ thống quản lý chất lượng và chứng nhận của HANIN]",
       "cta": "XEM CHỨNG NHẬN",
+      "certificateImageAlt": "Giấy chứng nhận ISO 9001:2015 của HANIN Technology Việt Nam do DQS GmbH cấp",
+      "certificateTag": "[ GIẤY CHỨNG NHẬN ]",
+      "certificateTitle": "ISO 9001:2015 — Hệ thống quản lý chất lượng",
+      "certificateIssuer": "Tổ chức chứng nhận: DQS GmbH (Đức)",
+      "certificateScope": "Phạm vi: sản xuất, gia công, ép phun, in, sơn và xử lý bề mặt sản phẩm nhựa.",
       "iso9001": {
         "tag": "[ CHỨNG NHẬN ISO ]",
         "title": "Hệ thống Quản lý Chất lượng Sản xuất",
@@ -190,6 +194,11 @@
         "desc": "Tấn sản phẩm / tháng",
         "note": "CÔNG SUẤT: TRỌNG LƯỢNG MÃ HÓA"
       }
+    },
+    "FeaturedClients": {
+      "eyebrow": "KHÁCH HÀNG TIÊU BIỂU",
+      "title": "Được nhiều doanh nghiệp sản xuất tin tưởng",
+      "description": "Hơn 100 khách hàng lớn nhỏ đã lựa chọn HANIN cho nhu cầu gia công mạ. Dưới đây là một số khách hàng tiêu biểu trong ngành ngũ kim, thiết bị vệ sinh và sản xuất công nghiệp."
     }
   }
 }

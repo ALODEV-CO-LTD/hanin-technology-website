@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import { api, ApiError } from "./api";
+import Dropdown from "./Dropdown";
 
 type Locale = "vi" | "zh" | "ko";
 const LOCALES: { key: Locale; label: string }[] = [
@@ -14,6 +15,11 @@ interface Entry {
   key: string;
   values: Record<Locale, string>;
   overridden: Record<Locale, boolean>;
+}
+interface Scope {
+  id: string;
+  label: string;
+  namespace: string;
 }
 interface Namespace {
   name: string;
@@ -33,11 +39,15 @@ const NAMESPACE_LABELS: Record<string, string> = {
   TinTuc: "Tin tức (phần văn bản chung)",
   LienHe: "Liên hệ",
   TuyenDung: "Tuyển dụng (phần văn bản chung)",
+  Legal: "Chính sách & Điều khoản",
+  Meta: "Tiêu đề & mô tả SEO các trang",
 };
 
 export default function ContentEditor() {
   const [namespaces, setNamespaces] = useState<Namespace[]>([]);
   const [active, setActive] = useState("");
+  const [scopes, setScopes] = useState<Scope[]>([]);
+  const [scope, setScope] = useState(""); // "" = nội dung chung; "svc:<slug>" | "prd:<slug>" = nội dung riêng của 1 mục
   const [locale, setLocale] = useState<Locale>("vi");
   const [entries, setEntries] = useState<Entry[]>([]);
   const [draft, setDraft] = useState<Record<string, string>>({}); // key -> giá trị đang sửa (theo locale hiện tại)
@@ -50,9 +60,10 @@ export default function ContentEditor() {
 
   useEffect(() => {
     let cancelled = false;
-    api<{ namespaces: Namespace[] }>("content").then((data) => {
+    api<{ namespaces: Namespace[]; scopes: Scope[] }>("content").then((data) => {
       if (cancelled) return;
       setNamespaces(data.namespaces);
+      setScopes(data.scopes);
       setActive((cur) => cur || data.namespaces[0]?.name || "");
     });
     return () => {
@@ -60,10 +71,13 @@ export default function ContentEditor() {
     };
   }, [version]);
 
+  const scopeInfo = scopes.find((sc) => sc.id === scope);
+  const currentNs = scopeInfo ? scopeInfo.namespace : active;
+
   useEffect(() => {
-    if (!active) return;
+    if (!currentNs) return;
     let cancelled = false;
-    api<{ entries: Entry[] }>(`content?namespace=${encodeURIComponent(active)}`).then((data) => {
+    api<{ entries: Entry[] }>(`content?namespace=${encodeURIComponent(currentNs)}${scope ? `&scope=${encodeURIComponent(scope)}` : ""}`).then((data) => {
       if (cancelled) return;
       setEntries(data.entries);
       setDraft({});
@@ -71,7 +85,7 @@ export default function ContentEditor() {
     return () => {
       cancelled = true;
     };
-  }, [active, version]);
+  }, [currentNs, scope, version]);
 
   const visible = useMemo(() => {
     const f = filter.trim().toLowerCase();
@@ -84,7 +98,7 @@ export default function ContentEditor() {
     setSaving(true);
     setMessage(null);
     try {
-      await api("content", { method: "PUT", body: { changes: dirty.map((key) => ({ locale, key, value: draft[key] })) } });
+      await api("content", { method: "PUT", body: { changes: dirty.map((key) => ({ locale, key, scope, value: draft[key] })) } });
       setMessage({ ok: true, text: `Đã lưu ${dirty.length} nội dung. Website cập nhật ngay.` });
       reload();
     } catch (err) {
@@ -96,7 +110,7 @@ export default function ContentEditor() {
 
   async function reset(key: string) {
     if (!confirm("Khôi phục nội dung gốc cho mục này?")) return;
-    await api("content", { method: "PUT", body: { changes: [{ locale, key, value: null }] } });
+    await api("content", { method: "PUT", body: { changes: [{ locale, key, scope, value: null }] } });
     reload();
   }
 
@@ -106,16 +120,32 @@ export default function ContentEditor() {
       <p className="text-sm text-slate-500 mb-4 max-w-3xl">
         Sửa các đoạn văn bản cố định của website (tiêu đề, mô tả, nút bấm, chân trang…). Mục được sửa sẽ có dấu chấm xanh; bấm “Khôi phục” để về nội dung gốc.
         Dịch vụ, sản phẩm, tin tức, tuyển dụng được quản lý ở các mục riêng.
+        Muốn sửa nội dung chi tiết <strong>riêng cho một dịch vụ hoặc sản phẩm</strong> (quy trình, thông số, ứng dụng…) hãy chọn mục đó ở ô “Phạm vi”; còn lại là nội dung chung của toàn website.
       </p>
 
       <div className="flex flex-wrap gap-3 mb-4">
-        <select value={active} onChange={(e) => setActive(e.target.value)} className="h-10 px-3 border border-slate-300 rounded bg-white text-sm" aria-label="Chọn trang">
-          {namespaces.map((n) => (
-            <option key={n.name} value={n.name}>
-              {NAMESPACE_LABELS[n.name] ?? n.name} ({n.count}{n.overrides ? `, đã sửa ${n.overrides}` : ""})
-            </option>
-          ))}
-        </select>
+        <Dropdown
+          className="w-full sm:w-72"
+          ariaLabel="Phạm vi"
+          value={scope}
+          onChange={(v) => {
+            setScope(v);
+            setDraft({});
+          }}
+          options={[{ value: "", label: "Phạm vi: nội dung chung toàn website" }, ...scopes.map((sc) => ({ value: sc.id, label: sc.label }))]}
+        />
+        {!scope && (
+          <Dropdown
+            className="w-full sm:w-80"
+            ariaLabel="Chọn trang"
+            value={active}
+            onChange={setActive}
+            options={namespaces.map((n) => ({
+              value: n.name,
+              label: `${NAMESPACE_LABELS[n.name] ?? n.name} (${n.count}${n.overrides ? `, đã sửa ${n.overrides}` : ""})`,
+            }))}
+          />
+        )}
         <div className="flex gap-1" role="tablist" aria-label="Ngôn ngữ">
           {LOCALES.map((l) => (
             <button key={l.key} role="tab" aria-selected={locale === l.key} onClick={() => {
@@ -130,7 +160,7 @@ export default function ContentEditor() {
         <input value={filter} onChange={(e) => setFilter(e.target.value)} placeholder="Lọc theo từ khoá…" className="h-10 px-3 border border-slate-300 rounded bg-white text-sm w-64" />
       </div>
 
-      <div className="sticky top-0 z-20 -mx-4 sm:-mx-8 px-4 sm:px-8 py-2.5 mb-3 bg-slate-50/95 backdrop-blur border-b border-slate-200 flex items-center gap-3">
+      <div className="sticky top-14 lg:top-0 z-20 -mx-4 sm:-mx-8 xl:-mx-10 px-4 sm:px-8 xl:px-10 py-2.5 mb-3 bg-slate-50/95 backdrop-blur border-b border-slate-200 flex items-center gap-3">
         <button onClick={save} disabled={!dirty.length || saving} className="h-10 px-6 rounded bg-steel-600 hover:bg-steel-700 text-white font-semibold text-sm disabled:opacity-50">
           {saving ? "Đang lưu…" : `Lưu thay đổi${dirty.length ? ` (${dirty.length})` : ""}`}
         </button>

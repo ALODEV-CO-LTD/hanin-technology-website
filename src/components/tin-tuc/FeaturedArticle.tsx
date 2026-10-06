@@ -1,6 +1,7 @@
 import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { getFeaturedPost } from "@/server/public";
+import Icon from "@/components/ui/Icon";
 
 export default function FeaturedArticle() {
   const t = useTranslations("TinTuc");
@@ -52,12 +53,12 @@ export default function FeaturedArticle() {
                 </span>
                 <span className="text-slate-500">•</span>
                 <span className="text-slate-500 flex items-center gap-1">
-                  <span className="material-symbols-outlined text-[14px]">calendar_today</span>
+                  <Icon name="calendar_today" className="text-[14px]" />
                   {article.date}
                 </span>
                 <span className="text-slate-500">•</span>
                 <span className="text-slate-500 flex items-center gap-1">
-                  <span className="material-symbols-outlined text-[14px]">schedule</span>
+                  <Icon name="schedule" className="text-[14px]" />
                   {article.readTime}
                 </span>
               </div>
@@ -102,7 +103,7 @@ export default function FeaturedArticle() {
                 className="inline-flex items-center gap-space-xs px-space-md py-space-sm bg-steel-600 text-white text-title-md rounded-lg shadow-sm hover:bg-steel-700 transition-all uppercase tracking-wider"
               >
                 <span>{tc("readArticle")}</span>
-                <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
+                <Icon name="arrow_forward" className="text-[18px]" />
               </Link>
             </div>
           </div>

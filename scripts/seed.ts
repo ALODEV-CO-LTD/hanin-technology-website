@@ -16,6 +16,9 @@ import { getServices } from "./legacy-data/services-data";
 import { getProducts } from "./legacy-data/products-data";
 import { getFeaturedArticle, getNewsArticles } from "./legacy-data/news-data";
 import { getJobs } from "./legacy-data/jobs-data";
+import { FEATURED_CLIENTS } from "./legacy-data/clients-data";
+import fs from "node:fs";
+import path from "node:path";
 
 type Tree = Record<string, unknown>;
 
@@ -183,6 +186,22 @@ if (count("jobs") === 0) {
     });
   });
   console.log(`Tuyển dụng: ${data.vi.length}`);
+}
+
+/* ---------- Khách hàng tiêu biểu ---------- */
+if (count("clients") === 0) {
+  const logoFor = (slug: string) => {
+    for (const ext of ["svg", "png", "webp", "jpg", "jpeg"]) {
+      if (fs.existsSync(path.join(process.cwd(), "public", "images", "clients", `${slug}.${ext}`))) return `/images/clients/${slug}.${ext}`;
+    }
+    return "";
+  };
+  transaction(() => {
+    FEATURED_CLIENTS.forEach((c, index) => {
+      run("INSERT INTO clients (name, legal_name, logo, sort) VALUES (?,?,?,?)", c.brand, c.legalName, logoFor(c.slug), index);
+    });
+  });
+  console.log(`Khách hàng tiêu biểu: ${FEATURED_CLIENTS.length}`);
 }
 
 /* ---------- Tài khoản quản trị đầu tiên ---------- */

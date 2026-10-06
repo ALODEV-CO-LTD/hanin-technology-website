@@ -1,9 +1,6 @@
 @import "tailwindcss";
 
 @theme {
-  /* ---- Banner accent: cam duy nhất cho chữ section đầu mỗi trang (khác màu logo) ---- */
-  --color-banner-orange: #ffa500;
-
   /* ---- Steel blue accent (thay cho cam) — xanh thép + bạc + trắng ---- */
   --color-steel-50: #eef4f8;
   --color-steel-100: #dbe8f0;
@@ -28,14 +25,23 @@
   --spacing-gutter-sm: 1rem;
   --spacing-gutter: 1.5rem;
 
+  /* ---- Neumorphism: một nền duy nhất, khối nổi/lõm bằng cặp bóng sáng–tối ---- */
+  --color-slate-50: #e9edf3;
+  --shadow-xs: 2px 2px 5px var(--neu-dark), -2px -2px 5px var(--neu-light);
+  --shadow-sm: 5px 5px 12px var(--neu-dark), -5px -5px 12px var(--neu-light);
+  --shadow-md: 8px 8px 18px var(--neu-dark), -8px -8px 18px var(--neu-light);
+  --shadow-lg: 12px 12px 26px var(--neu-dark), -12px -12px 26px var(--neu-light);
+  --shadow-xl: 16px 16px 34px var(--neu-dark), -16px -16px 34px var(--neu-light);
+  --shadow-2xl: 22px 22px 46px var(--neu-dark), -22px -22px 46px var(--neu-light);
+
   /* ---- Sharp industrial radius ---- */
   --radius: 0.125rem;
 
   /* ---- Type scale (font-family thống nhất SVN Gilroy, nạp qua next/font/local) ---- */
   --font-sans: var(--font-gilroy), "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
 
-  --text-label-sm: 11px;
-  --text-label-sm--line-height: 14px;
+  --text-label-sm: 12px;
+  --text-label-sm--line-height: 16px;
   --text-label-sm--letter-spacing: 0.04em;
   --text-label-sm--font-weight: 500;
 
@@ -106,8 +112,81 @@ html {
   scroll-behavior: smooth;
 }
 
+/* ---- Neumorphism: token + quy tắc dùng chung (không cần sửa từng component) ---- */
+:root {
+  --neu-bg: #e9edf3;
+  --neu-dark: #c3ccd9;
+  --neu-light: #ffffff;
+  --neu-inset: inset 3px 3px 7px var(--neu-dark), inset -3px -3px 7px var(--neu-light);
+}
+
+/* Mọi khối nền trắng/xám nhạt về cùng một mặt phẳng nền. */
+section.bg-white,
+section.bg-slate-50,
+div.bg-white:has(> section),
+main {
+  background-color: var(--neu-bg);
+}
+
+/* Thẻ nổi: phần tử có bóng nhưng không phải nút/khối màu đậm. */
+:is([class~="shadow-xs"], [class~="shadow-sm"], [class~="shadow-md"], [class~="shadow-lg"], [class~="shadow-xl"], [class~="shadow-2xl"]):not(
+    [class*="bg-steel-"],
+    [class*="bg-sky-"],
+    [class*="bg-slate-9"],
+    [class*="bg-slate-8"],
+    [class*="bg-emerald-"],
+    [class*="bg-red-"],
+    [class*="bg-black"],
+    [class*="bg-orange-"],
+    [class*="bg-banner"],
+    [class*="backdrop-blur"]
+  ) {
+  background-color: var(--neu-bg);
+  border-color: transparent;
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+/* Nút màu: nổi nhẹ, ấn xuống thành lõm. */
+button[class*="bg-steel-"],
+a[class*="bg-steel-6"],
+a[class*="bg-steel-7"] {
+  box-shadow: 4px 4px 10px var(--neu-dark), -4px -4px 10px var(--neu-light);
+}
+button[class*="bg-steel-"]:active,
+a[class*="bg-steel-6"]:active,
+a[class*="bg-steel-7"]:active {
+  box-shadow: inset 3px 3px 7px rgb(0 0 0 / 0.28), inset -2px -2px 5px rgb(255 255 255 / 0.12);
+}
+
+/* Khối tối / banner ảnh: không dùng bóng sáng neumorphism (gây nhoè sáng quanh nút). */
+section[class*="bg-slate-9"] :is(a, button, div, span)[class*="shadow"],
+section[class*="bg-slate-9"] :is(a, button)[class*="bg-steel-"] {
+  box-shadow: 0 4px 12px rgb(0 0 0 / 0.25);
+}
+section[class*="bg-slate-9"] :is(a, button)[class*="backdrop-blur"] {
+  box-shadow: none;
+}
+section[class*="bg-slate-9"] :is(input, select, textarea) {
+  box-shadow: none;
+}
+
+/* Ô nhập liệu: lõm xuống. */
+input:not([type="checkbox"]):not([type="radio"]):not([type="file"]):not([type="hidden"]),
+select,
+textarea {
+  background-color: var(--neu-bg);
+  border-color: transparent;
+  box-shadow: var(--neu-inset);
+}
+
+/* Ô icon/huy hiệu trong thẻ: lõm. */
+[class~="rounded"][class*="bg-slate-100"]:not(button):not(a) {
+  background-color: var(--neu-bg);
+  box-shadow: var(--neu-inset);
+}
+
 body {
-  background: #f8fafc;
+  background: var(--neu-bg);
   color: #1e293b;
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
@@ -217,17 +296,37 @@ select:focus-visible,
   }
 }
 
-.material-symbols-outlined {
-  font-family: "Material Symbols Outlined";
-  font-weight: normal;
-  font-style: normal;
-  font-size: 24px;
-  line-height: 1;
-  letter-spacing: normal;
-  text-transform: none;
-  display: inline-block;
-  white-space: nowrap;
-  word-wrap: normal;
-  direction: ltr;
-  -webkit-font-smoothing: antialiased;
+
+/* Chữ trên banner ảnh: bóng đậm để nổi bật. Tên class cố ý KHÔNG chứa "shadow"
+   để không dính các luật box-shadow dành cho khối tối ở trên. */
+.banner-text {
+  text-shadow: 0 1px 2px rgba(2, 6, 23, 0.9), 0 2px 8px rgba(2, 6, 23, 0.85), 0 6px 28px rgba(2, 6, 23, 0.7);
+}
+
+/* ---- Dải khách hàng chạy vô hạn (trang Giới thiệu) ---- */
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee-scroll 135s linear infinite;
+}
+.marquee-reverse {
+  animation-direction: reverse;
+  animation-duration: 156s;
+}
+.marquee-mask:hover .marquee-track,
+.marquee-mask:focus-within .marquee-track {
+  animation-play-state: paused;
+}
+.marquee-mask {
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+  mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+}
+@keyframes marquee-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track { animation: none; width: auto; flex-wrap: wrap; justify-content: center; row-gap: 1rem; }
+  .marquee-track > ul:nth-child(n + 2) { display: none; }
+  .marquee-mask { -webkit-mask-image: none; mask-image: none; }
 }

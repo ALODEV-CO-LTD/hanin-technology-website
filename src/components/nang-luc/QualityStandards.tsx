@@ -1,4 +1,6 @@
 import { useTranslations } from "next-intl";
+import Icon from "@/components/ui/Icon";
+import { Link } from "@/i18n/navigation";
 
 const CARDS = [
   {
@@ -6,24 +8,18 @@ const CARDS = [
     icon: "verified",
     iconAccent: true,
     tagAccent: true,
-    title: "ISO 9001:2015",
-    footer: "AUDITED ANNUALLY // GLOBAL RECOGNITION",
   },
   {
     key: "iso14001",
     icon: "eco",
     iconAccent: false,
     tagAccent: false,
-    title: "ISO 14001:2015",
-    footer: "CLOSED-LOOP EFFLUENT TREATMENT",
   },
   {
     key: "astmRohs",
     icon: "rule",
     iconAccent: false,
     tagAccent: false,
-    title: "[ASTM & RoHS/REACH]",
-    footer: "ZERO HAZARDOUS SUBSTANCES",
   },
 ] as const;
 
@@ -31,7 +27,7 @@ export default function QualityStandards() {
   const t = useTranslations("NangLuc.QualityStandards");
 
   return (
-    <section className="w-full py-space-xl bg-white border-t border-slate-200">
+    <section className="w-full py-space-xl bg-white border-t border-slate-200 scroll-mt-[86px]" id="quality-standards">
       <div className="mx-auto px-margin w-full">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-xl">
           <div>
@@ -52,7 +48,7 @@ export default function QualityStandards() {
                     card.iconAccent ? "bg-steel-100 text-steel-600" : "bg-slate-200/80 text-slate-700"
                   }`}
                 >
-                  <span className="material-symbols-outlined">{card.icon}</span>
+                  <Icon name={card.icon} />
                 </div>
                 <div
                   className={`text-label-technical tracking-widest uppercase mb-1 font-semibold ${
@@ -61,23 +57,23 @@ export default function QualityStandards() {
                 >
                   {t(`items.${card.key}.tagLabel`)}
                 </div>
-                <h3 className="text-headline-sm text-slate-900 uppercase mb-space-xs">{card.title}</h3>
+                <h3 className="text-headline-sm text-slate-900 uppercase mb-space-xs">{t(`items.${card.key}.title`)}</h3>
                 <p className="text-body-sm text-slate-600 leading-relaxed">{t(`items.${card.key}.desc`)}</p>
               </div>
               <div className="mt-space-md pt-space-xs text-label-sm text-slate-500 uppercase border-t border-slate-200/60">
-                {card.footer}
+                {t(`items.${card.key}.footer`)}
               </div>
             </div>
           ))}
         </div>
 
         <div className="flex justify-end">
-          <a
+          <Link
             className="inline-flex items-center gap-1 text-label-technical text-steel-600 hover:text-slate-900 font-semibold uppercase tracking-wider transition-colors"
-            href="#"
+            href="/gioi-thieu#chung-nhan"
           >
             {t("ctaDetail")}
-          </a>
+          </Link>
         </div>
       </div>
     </section>

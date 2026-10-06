@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import Icon from "@/components/ui/Icon";
 
 export default function DetailProcess() {
   const t = useTranslations("DichVu.DetailProcess");
@@ -36,7 +37,7 @@ export default function DetailProcess() {
                 <span className="font-bold">
                   {t("stepLabel")} 0{i + 1}
                 </span>
-                <span className="material-symbols-outlined text-[20px]">{step.icon}</span>
+                <Icon name={step.icon} className="text-[20px]" />
               </div>
               <h4 className="text-title-md text-slate-900 uppercase mb-1 font-bold">{t(`${step.key}.title`)}</h4>
               <p className="text-body-md text-slate-600">{t(`${step.key}.desc`)}</p>

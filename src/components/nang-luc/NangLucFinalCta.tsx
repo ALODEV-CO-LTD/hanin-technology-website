@@ -1,4 +1,6 @@
 import { useTranslations } from "next-intl";
+import Icon from "@/components/ui/Icon";
+import { Link } from "@/i18n/navigation";
 
 export default function NangLucFinalCta() {
   const t = useTranslations("NangLuc.NangLucFinalCta");
@@ -12,28 +14,28 @@ export default function NangLucFinalCta() {
             <h2 className="text-headline-xl text-slate-900 uppercase tracking-tight mb-space-sm">{t("title")}</h2>
             <p className="text-body-lg text-slate-600 leading-relaxed mb-space-xl">{t("description")}</p>
             <div className="flex flex-wrap items-center gap-space-md mb-space-lg">
-              <a
+              <Link
                 className="inline-flex items-center justify-center px-space-xl py-space-md bg-steel-600 hover:bg-steel-700 text-white text-headline-sm font-semibold uppercase rounded transition-all active:scale-[0.99] shadow-sm"
-                href="#"
+                href="/lien-he"
               >
                 {t("ctaContact")}
-              </a>
-              <a
+              </Link>
+              <Link
                 className="inline-flex items-center justify-center px-space-xl py-space-md bg-slate-100 hover:bg-slate-200 text-slate-800 border border-slate-200 text-headline-sm font-semibold uppercase rounded transition-all shadow-sm"
-                href="#"
+                href="/lien-he#rfq-form"
               >
                 {t("ctaQuote")}
-              </a>
+              </Link>
             </div>
             <div className="flex flex-wrap items-center gap-space-lg pt-space-md text-label-technical text-slate-600 border-t border-slate-100">
               <div className="flex items-center gap-2">
-                <span className="material-symbols-outlined text-[18px] text-steel-600">phone_in_talk</span>
+                <Icon name="phone_in_talk" className="text-[18px] text-steel-600" />
                 <span>
                   {t("hotlineLabel")} <strong className="text-slate-900">024 3818 6868</strong>
                 </span>
               </div>
               <div className="flex items-center gap-2">
-                <span className="material-symbols-outlined text-[18px] text-steel-600">schedule</span>
+                <Icon name="schedule" className="text-[18px] text-steel-600" />
                 <span>
                   {t("responseLabel")} <strong className="text-slate-900">{t("responseValue")}</strong>
                 </span>

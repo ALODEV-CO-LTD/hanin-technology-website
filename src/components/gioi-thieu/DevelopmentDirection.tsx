@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import Icon from "@/components/ui/Icon";
 
 export default function DevelopmentDirection() {
   const t = useTranslations("GioiThieu.DevelopmentDirection");
@@ -32,14 +33,14 @@ export default function DevelopmentDirection() {
               className="p-space-lg rounded bg-white border border-slate-200 hover:border-steel-600/60 shadow-sm hover:shadow-md transition-all duration-300"
             >
               <div className="w-10 h-10 rounded bg-steel-50 border border-steel-100 flex items-center justify-center mb-space-md text-steel-600">
-                <span className="material-symbols-outlined">{value.icon}</span>
+                <Icon name={value.icon} />
               </div>
               <h3 className="text-headline-sm text-slate-900 uppercase mb-space-xs font-bold flex items-center gap-2">
                 {t(`${value.key}.title`)}
                 <span className="font-mono text-xs text-steel-600 font-normal">{value.index}</span>
               </h3>
               <p className="text-body-md text-slate-600 leading-relaxed">{t(`${value.key}.desc`)}</p>
-              <div className="mt-space-md pt-space-sm border-t border-slate-100 text-[10px] text-slate-400 font-mono">
+              <div className="mt-space-md pt-space-sm border-t border-slate-100 text-xs text-slate-400 font-mono">
                 {t(`${value.key}.note`)}
               </div>
             </div>

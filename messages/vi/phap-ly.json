@@ -1,0 +1,64 @@
+{
+  "Legal": {
+    "privacy": {
+      "title": "Chính sách bảo mật",
+      "updated": "Cập nhật: 10/2026",
+      "intro": "HANIN cam kết bảo vệ thông tin cá nhân và tài liệu kỹ thuật mà quý khách cung cấp qua website.",
+      "collect": {
+        "title": "Thông tin chúng tôi thu thập",
+        "p1": "Họ tên, email, số điện thoại, tên công ty và nội dung yêu cầu khi quý khách gửi form báo giá, liên hệ hoặc ứng tuyển.",
+        "p2": "Tệp đính kèm (bản vẽ CAD, hồ sơ ứng tuyển) do quý khách tự tải lên."
+      },
+      "purpose": {
+        "title": "Mục đích sử dụng",
+        "p1": "Phản hồi yêu cầu báo giá, tư vấn kỹ thuật, xử lý hồ sơ ứng tuyển và cải thiện chất lượng dịch vụ. HANIN không bán hoặc chia sẻ thông tin cho bên thứ ba vì mục đích thương mại."
+      },
+      "security": {
+        "title": "Bảo mật tài liệu kỹ thuật",
+        "p1": "Bản vẽ và tệp đính kèm được lưu ở khu vực riêng, không truy cập công khai và chỉ nhân sự được phân quyền mới xem được. Quý khách có thể yêu cầu ký thỏa thuận bảo mật (NDA) trước khi gửi bản vẽ."
+      },
+      "retention": {
+        "title": "Thời gian lưu trữ và quyền của quý khách",
+        "p1": "Thông tin được lưu trong thời gian cần thiết để xử lý yêu cầu. Quý khách có quyền yêu cầu xem, chỉnh sửa hoặc xóa thông tin của mình bằng cách liên hệ với chúng tôi."
+      },
+      "contact": {
+        "title": "Liên hệ",
+        "p1": "Mọi câu hỏi về chính sách này, vui lòng gửi tới Haninplating@gmail.com hoặc gọi (+84) 24 3818 6868."
+      }
+    },
+    "terms": {
+      "title": "Điều khoản dịch vụ",
+      "updated": "Cập nhật: 10/2026",
+      "intro": "Khi truy cập và sử dụng website này, quý khách đồng ý với các điều khoản dưới đây.",
+      "scope": {
+        "title": "Phạm vi website",
+        "p1": "Website giới thiệu năng lực, dịch vụ gia công mạ và tiếp nhận yêu cầu báo giá. Thông tin trên website mang tính tham khảo và có thể thay đổi mà không cần báo trước."
+      },
+      "quote": {
+        "title": "Yêu cầu báo giá",
+        "p1": "Báo giá chỉ có hiệu lực khi được HANIN xác nhận bằng văn bản. Thông số kỹ thuật, tiến độ và giá cuối cùng phụ thuộc vào bản vẽ, vật liệu và khối lượng thực tế."
+      },
+      "ip": {
+        "title": "Sở hữu trí tuệ",
+        "p1": "Nội dung, hình ảnh và nhãn hiệu trên website thuộc HANIN. Bản vẽ và tài liệu quý khách gửi vẫn thuộc quyền sở hữu của quý khách và chỉ được dùng để thực hiện yêu cầu."
+      },
+      "liability": {
+        "title": "Giới hạn trách nhiệm",
+        "p1": "HANIN nỗ lực đảm bảo thông tin chính xác nhưng không chịu trách nhiệm cho thiệt hại phát sinh từ việc sử dụng thông tin trên website mà không có xác nhận chính thức."
+      },
+      "contact": {
+        "title": "Liên hệ",
+        "p1": "Câu hỏi về điều khoản này, vui lòng liên hệ Haninplating@gmail.com."
+      }
+    },
+    "operator": {
+      "title": "Đơn vị vận hành website",
+      "name": "Tên công ty: Công ty Cổ phần Công nghiệp Mạ HANIN Technology Việt Nam.",
+      "tax": "Mã số thuế: 0110300983.",
+      "hq": "Trụ sở: Lô 660, Khu Công Nghiệp Quang Minh, xã Quang Minh, TP. Hà Nội, Việt Nam.",
+      "fac": "Nhà máy: Lô 49G, Khu Công Nghiệp Quang Minh, xã Quang Minh, TP. Hà Nội, Việt Nam.",
+      "rep": "Người đại diện: Ông Nguyễn Huy Vinh, Giám đốc.",
+      "mail": "Email: Haninplating@gmail.com."
+    }
+  }
+}

@@ -28,7 +28,7 @@ const SERVICE_KEYS = [
     code: "S-PRE-01",
     titleEn: "Surface Pre-treatment & Cleaning",
     image:
-      "https://lh3.googleusercontent.com/aida/AEtjO1WKDFGcG2EWy9oucbbPPg_ySP47FYSOc8k6inVvqZPsX1eyU8O5ApfBP3u6ESPzXXRPuK58GB6ci5upiD5JgOf8lf99NtCGdfYZuXhDu0R-Gwr0N4YYpK7bnl0cRtu-0L1y9B0neQ4hZvFbxtPdNm_FcMfUg7g7SYtcspSDp2vcIstjcVQMMjfxUxgAaqAsnD2b6sAMZh8NEErO7nARmMYhOqvEj3P9xqnqLhYB-3roUR4t2c8J2sFAd9i1",
+      "/images/factory/ma-quay-1.jpg",
     key: "tienXuLy",
   },
   {
@@ -37,7 +37,7 @@ const SERVICE_KEYS = [
     hasBadge: true,
     titleEn: "Hard Chrome Plating (Cr)",
     image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuC9YoBOnNH567ugkYUP0EQpSl7ZfxacfOzaSiNWdNOF7fOkfvX9SOFkRYC-iO77ufA_8B0h-ktxxvY9wlAlqFMf03ZlVwmkDt_LfRVhHbzLkxATKbs3_XIxiGL8vp86LKNaZcqlgKEnFRZH5D5YpmsAnsbps8byjmSoqEg_nieo_8BIVAqb5osDw4kWp3e_WydNkGE0Mba2_IY_T6xjTRNMZxavAGRcHk-vVOJKRA3zvBY2K8akOSdVzQ",
+      "/images/factory/ma-treo-2.jpg",
     key: "hardChrome",
   },
   {
@@ -45,7 +45,7 @@ const SERVICE_KEYS = [
     code: "HAN-SRV-ENP-03",
     titleEn: "Electroless Nickel Plating (ENP)",
     image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuDFY0mKUKsKfpmZPu5TKoISAEl-wGQkZrKpt6keqQ2e7l8J2LPj1_zxcM1T6nt-G7p6gjrNtu5-KleM4T-QA3pmY8fFS-TSjk1RyqmNAvSMQKEKVG6c3cwnd_II7BSWfsWW_fyFn455SB3pf_rsJfA02oXEz_ePtDTYqgtdP8cKM5y_Eiknx_7XX9iZDkEnCnc7tqb0Rqn5h-TAqlag-dghtTttZZWhHXmb4Hlhso_ivQIIuPiEkqkBpw",
+      "/images/factory/ma-quay-3.jpg",
     key: "electrolessNickel",
   },
   {
@@ -53,7 +53,7 @@ const SERVICE_KEYS = [
     code: "HAN-SRV-ZN-02",
     titleEn: "Zinc & Zinc-Nickel Plating (Zn-Ni)",
     image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuDz0p28RpX7niHdL3iFglKerNmrMDeb6y4rIYdrEr8KNQyoCwnd4_fwxn0CMpVhRLVD7IfC9AvKplH9EyadBngMZsbqjZXwYtc7j5HlfBWxFggI8YTCj4PSL49K-HcHV2xWjRxwf7FnSz3GqiFANj_P9oWkJbjrjTcwWerWgzGARjAoRN6tnX7XMJSwrmK0PEFfI19EsYmblBnuejdSf7YOOSY7FRibAqg81rKO0dm_O2eyHcXhgNy9-Q",
+      "/images/factory/ma-quay-7.jpg",
     key: "kemNiken",
   },
   {
@@ -61,7 +61,7 @@ const SERVICE_KEYS = [
     code: "HAN-SRV-DPX-05",
     titleEn: "Painting & Plating Duplex Line",
     image:
-      "https://lh3.googleusercontent.com/aida/AEtjO1XLIHqAlTlSCmdea9Z1Kkz1OGAOTOHIKSGsE8yuRihPuGUoaQfAr47I6SSvJVbzDR1bhBdGtL5NV3N_uc4ahFN-GqGiy3ghF7s0MAerjxNLdDjOY-punqbiXiL8Zp-S7eD2iUNXsfXKY8KzG8sUF02vweDsoQvnMUMzojFp9dE-3D6ddIRYCz3KoPKJm9rtqKNaIrqkrNA3cyC6fbfgNYfgv4r_5wy7rrruIE9zP22Kaw2bAIel3AbhLExM",
+      "/images/factory/ma-treo-3.jpg",
     key: "sonMaKetHop",
   },
   {
@@ -69,7 +69,7 @@ const SERVICE_KEYS = [
     code: "HAN-SRV-ANO-04",
     titleEn: "Anodizing & Specialized Finishing",
     image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuDrrgWIK97bbnXtebCIiyEg3as4T0FFVp0YlBrwPVZwMQJLUK_927paUrGz8p9TziSUIQArQmzzRUr8S1khEtl-jF7CaDvtj090OdTTx1TFOWXj4tpMMso3OcNU9RAYq6EhYy3BH4aVF6cA8fvxRCa1FQJt2_wpoQt6_zeni_9O_16eshWM7a4HBICv3rDazGvqiyer3cJ1N4LcQP8j5nFVzM65q81flNOHF78Uv-UHRZIJZYjou6dn2g",
+      "/images/factory/ma-treo-4.jpg",
     key: "xuLyNhom",
   },
 ] as const;

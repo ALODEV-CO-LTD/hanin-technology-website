@@ -38,18 +38,67 @@
     },
     "contactHeading": "技术联系方式",
     "addressLabel": "地址：",
-    "address": "越南河内市美灵县光明工业区CN-08地块",
+    "address": "总部：越南河内市光明乡光明工业区 660 号地块。工厂：越南河内市光明乡光明工业区 49G 号地块。",
     "hotlineLabel": "热线：",
     "hotline": "(+84) 24 3818 6868 / 0988 123 456",
     "emailLabel": "邮箱：",
-    "email": "sales@hanintech.vn / engineering@hanintech.vn",
+    "email": "Haninplating@gmail.com",
     "hoursLabel": "工作时间：",
     "hours": "周一至周六：08:00 - 17:30（24/7 值班）",
     "zaloChat": "Zalo 技术咨询",
     "googleMaps": "Google 地图导航",
     "statusLine": "电镀产线与 CMM 检测系统：运行正常",
-    "copyright": "© 2026。保留所有权利。符合 ISO 9001:2015 标准。",
+    "copyright": "© 2026 HANIN Technology 越南镀业工业股份公司 · 税号 0110300983。保留所有权利。符合 ISO 9001:2015 标准。",
     "privacyPolicy": "隐私政策",
-    "termsOfService": "服务条款"
+    "termsOfService": "服务条款",
+    "certIso9001": "ISO 9001:2015",
+    "certIso14001": "ISO 14001",
+    "certRohs": "RoHS & REACH"
+  },
+  "Meta": {
+    "site": {
+      "title": "HANIN",
+      "description": "高精度金属电镀与工业表面处理解决方案。"
+    },
+    "home": {
+      "title": "HANIN",
+      "description": "高精度金属电镀与工业表面处理解决方案。"
+    },
+    "gioiThieu": {
+      "title": "关于我们",
+      "description": "了解 HANIN 的发展方向，以及为工业客户提供金属电镀加工服务的能力。"
+    },
+    "dichVu": {
+      "title": "电镀加工与表面处理服务",
+      "description": "提供符合汽车、航空标准的电解电镀、化学镀及金属表面处理服务：硬铬电镀、化学镀镍（ENP）、锌镍合金电镀、铝阳极氧化。"
+    },
+    "sanPham": {
+      "title": "产品与项目",
+      "description": "高技术含量的金属电镀产品与项目：微米级公差控制、镀层均匀性及严苛环境下的耐久性。"
+    },
+    "nangLuc": {
+      "title": "生产能力",
+      "description": "标准化厂房体系、PLC SCADA 自动控制电镀生产线，以及达到国际标准的微观检测实验室。"
+    },
+    "tinTuc": {
+      "title": "新闻与技术简报",
+      "description": "最新企业动态、金属表面处理技术、质量检测标准及生产活动资讯。"
+    },
+    "tuyenDung": {
+      "title": "招聘",
+      "description": "金属电镀与精密机械领域当前开放的招聘职位。"
+    },
+    "lienHe": {
+      "title": "联系我们与报价需求",
+      "description": "联系我们获取金属电镀技术方案、精密机械加工咨询，并附 CAD 图纸提交报价需求（RFQ）。"
+    },
+    "chinhSachBaoMat": {
+      "title": "隐私政策",
+      "description": "HANIN 如何收集、使用和保护客户通过网站提交的信息。"
+    },
+    "dieuKhoan": {
+      "title": "服务条款",
+      "description": "网站使用条款，以及向 HANIN 提交报价需求时的一般规定。"
+    }
   }
 }

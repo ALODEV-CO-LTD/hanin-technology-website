@@ -266,3 +266,21 @@ export function getJobs(locale: string, tTuyenDung: Translate): Job[] {
 export function countActiveJobs(): number {
   return Number(get<{ n: number }>("SELECT COUNT(*) AS n FROM jobs WHERE active = 1")?.n ?? 0);
 }
+
+/* ---------- Khách hàng tiêu biểu ---------- */
+
+export interface ClientData {
+  id: number;
+  name: string;
+  legalName: string;
+  logo: string;
+}
+
+export function getClients(): ClientData[] {
+  return all("SELECT * FROM clients WHERE active = 1 ORDER BY sort ASC, id ASC").map((row) => ({
+    id: Number(row.id),
+    name: str(row.name),
+    legalName: str(row.legal_name),
+    logo: str(row.logo),
+  }));
+}

@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import Icon from "@/components/ui/Icon";
 
 export default function WhyHanin() {
   const t = useTranslations("TuyenDung.WhyHanin");
@@ -42,7 +43,7 @@ export default function WhyHanin() {
             >
               <div className="flex flex-col gap-space-md">
                 <div className="w-12 h-12 rounded bg-white flex items-center justify-center text-steel-600 group-hover:bg-steel-600 group-hover:text-white transition-colors">
-                  <span className="material-symbols-outlined text-[26px]">{pillar.icon}</span>
+                  <Icon name={pillar.icon} className="text-[26px]" />
                 </div>
                 <div className="flex flex-col gap-1">
                   <span className="text-label-sm font-semibold text-steel-600 uppercase tracking-widest">
