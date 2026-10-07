@@ -33,7 +33,6 @@ export default function QualityStandards() {
           <div>
             <h2 className="text-headline-lg text-slate-900 uppercase tracking-tight">{t("sectionTitle")}</h2>
           </div>
-          <p className="text-body-sm text-slate-600 max-w-md">{t("sectionDescription")}</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-gutter mb-space-lg">

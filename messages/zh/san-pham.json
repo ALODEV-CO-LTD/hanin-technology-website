@@ -85,9 +85,9 @@
       "title": "您有需要加工的项目吗？",
       "description": "发送 2D/3D 图纸，或直接与 HANIN 表面处理解决方案工程师团队沟通，获取详细报价及成本优化方案。",
       "cta": "获取报价 →",
-      "hotline": "技术热线：(+84) 24 3818 6688",
       "email": "邮箱：Haninplating@gmail.com",
-      "responseTime": "04 个工作小时内技术响应"
+      "responseTime": "04 个工作小时内技术响应",
+      "hotlineLabel": "技术热线："
     },
     "RelatedProjects": {
       "title": "其他项目与产品",

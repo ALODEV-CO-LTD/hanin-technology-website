@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
+import { getPhones } from "@/server/settings";
 import LegalPage from "@/components/legal/LegalPage";
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -18,7 +19,7 @@ export default async function PrivacyPage() {
     { title: t("privacy.purpose.title"), body: [t("privacy.purpose.p1")] },
     { title: t("privacy.security.title"), body: [t("privacy.security.p1")] },
     { title: t("privacy.retention.title"), body: [t("privacy.retention.p1")] },
-    { title: t("privacy.contact.title"), body: [t("privacy.contact.p1")] },
+    { title: t("privacy.contact.title"), body: [t("privacy.contact.p1", { phones: getPhones().general.map((p) => p.number).join(" / ") })] },
     operator,
   ];
   return (

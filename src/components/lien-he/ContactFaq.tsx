@@ -17,7 +17,6 @@ export default function ContactFaq() {
           <h2 className="text-headline-md font-bold text-slate-900 uppercase tracking-tight">
             {t("heading")}
           </h2>
-          <p className="text-body-md text-slate-500 mt-2">{t("subtitle")}</p>
         </div>
 
         <div className="flex flex-col gap-space-sm">

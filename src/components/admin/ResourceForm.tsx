@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import { useMemo, useState, type FormEvent } from "react";
 import { api, ApiError } from "./api";
 import Dropdown from "./Dropdown";
+import HistoryPanel from "./HistoryPanel";
 import { MediaPickerModal } from "./MediaPicker";
 
 type Locale = "vi" | "zh" | "ko";
@@ -333,6 +334,7 @@ export default function ResourceForm({ resource, initial, id }: Props) {
           />
         ))}
       </div>
+      {id && <HistoryPanel resource={resource.key} id={id} />}
     </form>
   );
 }

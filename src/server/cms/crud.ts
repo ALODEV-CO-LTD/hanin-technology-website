@@ -269,8 +269,122 @@ export function createRecord(resource: ResourceDef, input: Record<string, unknow
   }
 }
 
-export function updateRecord(resource: ResourceDef, id: number, input: Record<string, unknown>): CmsRecord | null {
-  if (!getRecord(resource, id)) return null;
+/* ---------- Lịch sử phiên bản (để khôi phục) ---------- */
+
+const MAX_REVISIONS_PER_RECORD = 30;
+
+function snapshotOf(resource: ResourceDef, record: CmsRecord): Record<string, unknown> {
+  return Object.fromEntries(resource.fields.map((f) => [f.name, record[f.name]]));
+}
+
+function changedFieldLabels(resource: ResourceDef, snapshot: Record<string, unknown>, current: CmsRecord | null): string[] {
+  if (!current) return [];
+  return resource.fields
+    .filter((f) => JSON.stringify(snapshot[f.name] ?? null) !== JSON.stringify(current[f.name] ?? null))
+    .map((f) => f.label);
+}
+
+function saveRevision(resource: ResourceDef, record: CmsRecord, action: "update" | "delete", userEmail: string) {
+  run(
+    "INSERT INTO revisions (resource, record_id, action, snapshot, user_email) VALUES (?, ?, ?, ?, ?)",
+    resource.key,
+    record.id,
+    action,
+    JSON.stringify(snapshotOf(resource, record)),
+    userEmail,
+  );
+  run(
+    `DELETE FROM revisions WHERE resource = ? AND record_id = ? AND id NOT IN
+       (SELECT id FROM revisions WHERE resource = ? AND record_id = ? ORDER BY id DESC LIMIT ?)`,
+    resource.key,
+    record.id,
+    resource.key,
+    record.id,
+    MAX_REVISIONS_PER_RECORD,
+  );
+}
+
+export interface RevisionInfo {
+  id: number;
+  createdAt: string;
+  userEmail: string;
+  /** Tên các trường sẽ thay đổi nếu khôi phục phiên bản này. */
+  changed: string[];
+}
+
+/** Các phiên bản cũ của một bản ghi (mới nhất trước). */
+export function listRevisions(resource: ResourceDef, recordId: number): RevisionInfo[] {
+  const current = getRecord(resource, recordId);
+  return all<{ id: number; snapshot: string; user_email: string; created_at: string }>(
+    "SELECT id, snapshot, user_email, created_at FROM revisions WHERE resource = ? AND record_id = ? AND action = 'update' ORDER BY id DESC",
+    resource.key,
+    recordId,
+  ).map((r) => ({
+    id: Number(r.id),
+    createdAt: r.created_at,
+    userEmail: r.user_email,
+    changed: changedFieldLabels(resource, JSON.parse(r.snapshot), current),
+  }));
+}
+
+/** Khôi phục bản ghi về một phiên bản cũ (phiên bản hiện tại được lưu lại, nên có thể hoàn tác tiếp). */
+export function restoreRevision(resource: ResourceDef, recordId: number, revisionId: number, userEmail: string): CmsRecord | null {
+  const row = get<{ snapshot: string }>(
+    "SELECT snapshot FROM revisions WHERE id = ? AND resource = ? AND record_id = ? AND action = 'update'",
+    revisionId,
+    resource.key,
+    recordId,
+  );
+  if (!row) return null;
+  return updateRecord(resource, recordId, JSON.parse(row.snapshot), userEmail);
+}
+
+export interface DeletedInfo {
+  id: number;
+  title: string;
+  deletedAt: string;
+  userEmail: string;
+}
+
+/** Các bản ghi đã xoá gần đây và chưa được khôi phục. */
+export function listDeleted(resource: ResourceDef): DeletedInfo[] {
+  return all<{ id: number; snapshot: string; user_email: string; created_at: string; record_id: number }>(
+    `SELECT id, record_id, snapshot, user_email, created_at FROM revisions
+      WHERE resource = ? AND action = 'delete' AND restored = 0 ORDER BY id DESC LIMIT 30`,
+    resource.key,
+  ).map((r) => {
+    const snap = JSON.parse(r.snapshot) as Record<string, unknown>;
+    const t = snap[resource.titleField];
+    const title = typeof t === "object" && t ? String((t as { vi?: string }).vi ?? "") : String(t ?? "");
+    return { id: Number(r.id), title: title || `#${r.record_id}`, deletedAt: r.created_at, userEmail: r.user_email };
+  });
+}
+
+export function restoreDeleted(resource: ResourceDef, revisionId: number): CmsRecord | null {
+  const row = get<{ snapshot: string; record_id: number }>(
+    "SELECT snapshot, record_id FROM revisions WHERE id = ? AND resource = ? AND action = 'delete' AND restored = 0",
+    revisionId,
+    resource.key,
+  );
+  if (!row) return null;
+  const columns = validateInput(resource, JSON.parse(row.snapshot), "create");
+  if (!get(`SELECT 1 FROM ${resource.table} WHERE id = ?`, row.record_id)) columns.id = row.record_id;
+  const names = Object.keys(columns);
+  try {
+    const result = run(
+      `INSERT INTO ${resource.table} (${names.join(", ")}) VALUES (${names.map(() => "?").join(", ")})`,
+      ...Object.values(columns),
+    );
+    run("UPDATE revisions SET restored = 1 WHERE id = ?", revisionId);
+    return getRecord(resource, Number(columns.id ?? result.lastInsertRowid));
+  } catch (err) {
+    assertUnique(err);
+  }
+}
+
+export function updateRecord(resource: ResourceDef, id: number, input: Record<string, unknown>, userEmail = ""): CmsRecord | null {
+  const before = getRecord(resource, id);
+  if (!before) return null;
   const columns = validateInput(resource, input, "update");
   const names = Object.keys(columns);
   if (names.length) {
@@ -284,9 +398,18 @@ export function updateRecord(resource: ResourceDef, id: number, input: Record<st
       assertUnique(err);
     }
   }
-  return getRecord(resource, id);
+  const after = getRecord(resource, id);
+  if (after && changedFieldLabels(resource, snapshotOf(resource, before), after).length > 0) {
+    saveRevision(resource, before, "update", userEmail);
+  }
+  return after;
 }
 
-export function deleteRecord(resource: ResourceDef, id: number): boolean {
-  return transaction(() => run(`DELETE FROM ${resource.table} WHERE id = ?`, id).changes > 0);
+export function deleteRecord(resource: ResourceDef, id: number, userEmail = ""): boolean {
+  return transaction(() => {
+    const before = getRecord(resource, id);
+    if (!before) return false;
+    saveRevision(resource, before, "delete", userEmail);
+    return run(`DELETE FROM ${resource.table} WHERE id = ?`, id).changes > 0;
+  });
 }

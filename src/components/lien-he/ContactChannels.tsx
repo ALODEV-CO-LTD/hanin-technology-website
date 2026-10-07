@@ -1,17 +1,17 @@
 import { useTranslations } from "next-intl";
-import { getSettings, telHref } from "@/server/settings";
+import { getPhones, getSettings, telHref } from "@/server/settings";
 import InfoCard, { InfoField } from "@/components/ui/InfoCard";
 
 export default function ContactChannels() {
   const t = useTranslations("LienHe.ContactChannels");
-  const { hotline, engineerHotline, salesEmail, engineeringEmail } = getSettings();
+  const { salesEmail, engineeringEmail } = getSettings();
+  const { general } = getPhones();
 
   return (
     <section className="w-full bg-white py-space-xl">
       <div className="mx-auto px-margin">
         <div className="mb-space-lg flex flex-col justify-between gap-space-sm sm:flex-row sm:items-end">
           <h2 className="text-headline-md font-bold uppercase tracking-tight text-slate-900">{t("heading")}</h2>
-          <span className="text-body-sm text-slate-500">{t("subtitle")}</span>
         </div>
 
         <div className="grid grid-cols-1 gap-gutter md:grid-cols-2 lg:grid-cols-4">
@@ -31,8 +31,15 @@ export default function ContactChannels() {
               </span>
             }
           >
-            <InfoField strong label={t("card2.quoteLabel")} value={hotline} href={telHref(hotline)} />
-            <InfoField label={t("card2.engineerLabel")} value={`${engineerHotline} (${t("card2.engineerHotlineSuffix")})`} href={telHref(engineerHotline)} />
+            {general.map((phone, i) => (
+              <InfoField
+                key={phone.number}
+                strong={i === 0}
+                label={phone.role === "engineer" ? t("card2.engineerLabel") : t("card2.quoteLabel")}
+                value={phone.number}
+                href={telHref(phone.number)}
+              />
+            ))}
           </InfoCard>
 
           <InfoCard icon="mark_email_read" badge={t("card3.badge")} title={t("card3.title")} footer={t("card3.footerText")}>

@@ -96,9 +96,6 @@ export default function JobBoard({ jobs }: { jobs: Job[] }) {
           <h2 className="text-headline-xl-mobile md:text-headline-xl text-slate-900 tracking-tight uppercase font-bold">
             {tb("title")}
           </h2>
-          <p className="text-body-lg text-slate-600">
-            {tb("description")}
-          </p>
         </div>
 
         {/* Filter toolbar */}

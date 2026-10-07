@@ -4,39 +4,31 @@ import CountUp from "@/components/ui/CountUp";
 const STATS = [
   {
     key: "equipment",
-    end: 42,
-    suffix: "+",
-    unit: "",
     accent: false,
   },
   {
     key: "lines",
-    end: 16,
-    suffix: "",
-    unit: "",
     accent: false,
   },
   {
     key: "zones",
-    end: 5,
-    suffix: "",
     padStart: 2,
-    unit: "",
     accent: false,
   },
   {
     key: "precision",
-    end: 0.2,
-    prefix: "±",
     decimals: 1,
-    suffix: "",
-    unit: "µm",
     accent: true,
   },
 ] as const;
 
 export default function CapabilityOverviewStats() {
   const t = useTranslations("NangLuc.CapabilityOverviewStats");
+  // Giá trị số, tiền tố, hậu tố, đơn vị lấy từ messages để chủ site sửa được trong CMS.
+  const num = (key: string) => {
+    const n = Number(t(key));
+    return Number.isFinite(n) ? n : 0;
+  };
 
   return (
     <section className="w-full bg-white border-b border-slate-200 py-space-xl">
@@ -53,13 +45,15 @@ export default function CapabilityOverviewStats() {
                 }`}
               >
                 <CountUp
-                  end={stat.end}
-                  prefix={"prefix" in stat ? stat.prefix : ""}
-                  suffix={stat.suffix}
+                  end={num(`items.${stat.key}.end`)}
+                  prefix={t(`items.${stat.key}.prefix`)}
+                  suffix={t(`items.${stat.key}.suffix`)}
                   decimals={"decimals" in stat ? stat.decimals : 0}
                   padStart={"padStart" in stat ? stat.padStart : 0}
                 />
-                {stat.unit && <span className="text-headline-md font-normal text-slate-500">{stat.unit}</span>}
+                {t(`items.${stat.key}.unit`) && (
+                  <span className="text-headline-md font-normal text-slate-500">{t(`items.${stat.key}.unit`)}</span>
+                )}
               </div>
             </div>
           ))}

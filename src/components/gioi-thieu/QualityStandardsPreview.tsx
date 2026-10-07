@@ -22,7 +22,6 @@ export default function QualityStandardsPreview() {
               {t("heading")}
             </h2>
           </div>
-          <p className="text-body-sm text-slate-500 max-w-md">{t("subtitle")}</p>
         </div>
 
         {/* 3 Certificate Cards */}

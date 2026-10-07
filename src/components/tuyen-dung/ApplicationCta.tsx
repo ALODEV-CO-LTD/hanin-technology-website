@@ -1,10 +1,13 @@
 import { useTranslations } from "next-intl";
-import { getSettings, telHref } from "@/server/settings";
+import { getPhones, getSettings } from "@/server/settings";
+import PhoneLinks from "@/components/ui/PhoneLinks";
 import Icon from "@/components/ui/Icon";
 
 export default function ApplicationCta() {
   const t = useTranslations("TuyenDung.ApplicationCta");
-  const { hrEmail, hrHotline } = getSettings();
+  const { hrEmail } = getSettings();
+  const { hr, general } = getPhones();
+  const hrPhones = hr.length ? hr : general;
 
   return (
     <section className="w-full py-space-xl bg-slate-50 relative">
@@ -40,12 +43,9 @@ export default function ApplicationCta() {
                     <span className="text-label-sm text-slate-500 uppercase font-semibold">
                       {t("hotlineLabel")}
                     </span>
-                    <a
-                      className="text-title-md text-slate-900 hover:text-steel-600 transition-colors font-bold"
-                      href={telHref(hrHotline)}
-                    >
-                      {hrHotline}
-                    </a>
+                    <span className="text-title-md text-slate-900 font-bold flex flex-col">
+                      <PhoneLinks phones={hrPhones} separator="" className="hover:text-steel-600 transition-colors" />
+                    </span>
                   </div>
                 </div>
               </div>

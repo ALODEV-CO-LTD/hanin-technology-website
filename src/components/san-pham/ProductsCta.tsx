@@ -1,9 +1,12 @@
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
+import { getPhones } from "@/server/settings";
+import PhoneLinks from "@/components/ui/PhoneLinks";
 import Icon from "@/components/ui/Icon";
 
 export default function ProductsCta() {
   const t = useTranslations("SanPham.ProductsCta");
+  const { general } = getPhones();
 
   return (
     <section className="w-full bg-white border-y border-slate-200 py-space-xl my-space-lg">
@@ -23,7 +26,9 @@ export default function ProductsCta() {
         <div className="flex flex-wrap items-center justify-center gap-space-sm mt-space-xl text-label-technical text-slate-500">
           <div className="px-space-md py-space-xs bg-white border border-slate-200 rounded flex items-center gap-1.5 shadow-sm">
             <Icon name="call" className="text-steel-600 text-[16px]" />
-            <span>{t("hotline")}</span>
+            <span>
+              {t("hotlineLabel")} <PhoneLinks phones={general} className="hover:text-steel-600" />
+            </span>
           </div>
           <div className="px-space-md py-space-xs bg-white border border-slate-200 rounded flex items-center gap-1.5 shadow-sm">
             <Icon name="mail" className="text-steel-600 text-[16px]" />

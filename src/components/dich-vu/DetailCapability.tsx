@@ -42,7 +42,6 @@ export default function DetailCapability({ service }: { service: PlatingService 
           <h2 className="text-headline-md text-slate-900 tracking-tight uppercase mb-space-sm font-bold">
             {t("heading")}
           </h2>
-          <p className="text-body-lg text-slate-600 mb-space-md">{t("subtitle")}</p>
           <div className="space-y-space-sm text-body-md text-slate-600">
             {FEATURES.map((feature) => (
               <div key={feature.key} className="flex items-start gap-space-xs">

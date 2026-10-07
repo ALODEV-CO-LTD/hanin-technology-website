@@ -177,22 +177,30 @@
       "equipment": {
         "label": "机械设备",
         "desc": "现代化设备",
-        "note": "规范：已通过检定"
+        "note": "规范：已通过检定",
+        "end": "50",
+        "suffix": "+"
       },
       "lines": {
         "label": "生产线",
         "desc": "运行中生产线",
-        "note": "系统：自动旋转与悬挂式"
+        "note": "系统：自动旋转与悬挂式",
+        "end": "6",
+        "suffix": "+"
       },
       "zones": {
         "label": "厂房分区",
         "desc": "生产作业区域",
-        "note": "标准：封闭式洁净车间"
+        "note": "标准：封闭式洁净车间",
+        "end": "4",
+        "suffix": ""
       },
       "capacity": {
         "label": "月产能",
         "desc": "吨产品 / 月",
-        "note": "产能：按重量计算"
+        "note": "产能：按重量计算",
+        "end": "1200",
+        "suffix": "+"
       }
     },
     "FeaturedClients": {

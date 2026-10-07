@@ -1,11 +1,13 @@
 import { useTranslations } from "next-intl";
-import { getSettings } from "@/server/settings";
+import { getPhones, getSettings } from "@/server/settings";
+import PhoneLinks from "@/components/ui/PhoneLinks";
 import Icon from "@/components/ui/Icon";
 import { Link } from "@/i18n/navigation";
 
 export default function ProductQuoteCta() {
   const t = useTranslations("SanPham.ProductQuoteCta");
-  const { hotline, salesEmail } = getSettings();
+  const { salesEmail } = getSettings();
+  const { general } = getPhones();
 
   return (
     <section className="w-full bg-slate-50 py-space-xl scroll-mt-[86px]" id="quote-form">
@@ -45,7 +47,7 @@ export default function ProductQuoteCta() {
                 <span>
                   {t("hotlineLabel")}{" "}
                   <strong className="text-slate-900 tracking-wider font-mono">
-                    {hotline}
+                    <PhoneLinks phones={general} className="" />
                   </strong>
                 </span>
               </div>

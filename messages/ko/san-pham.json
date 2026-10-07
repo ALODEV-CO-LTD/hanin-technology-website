@@ -85,9 +85,9 @@
       "title": "가공이 필요한 프로젝트가 있으신가요?",
       "description": "2D/3D 도면을 보내주시거나 HANIN 표면처리 솔루션 엔지니어 팀과 직접 상담하시면 상세 견적 및 비용 최적화 방안을 받으실 수 있습니다.",
       "cta": "견적 받기 →",
-      "hotline": "기술 핫라인: (+84) 24 3818 6688",
       "email": "이메일: Haninplating@gmail.com",
-      "responseTime": "근무일 기준 4시간 이내 기술 응답"
+      "responseTime": "근무일 기준 4시간 이내 기술 응답",
+      "hotlineLabel": "기술 핫라인:"
     },
     "RelatedProjects": {
       "title": "다른 프로젝트 및 제품",

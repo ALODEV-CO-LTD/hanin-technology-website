@@ -22,9 +22,6 @@ export default function ProductsProjects() {
             <h2 className="text-headline-xl text-slate-900 font-bold">
               {t("title")}
             </h2>
-            <p className="text-body-md text-slate-600">
-              {t("description")}
-            </p>
           </div>
           <Link
             href="/san-pham-du-an"

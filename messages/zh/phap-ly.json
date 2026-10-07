@@ -23,7 +23,7 @@
       },
       "contact": {
         "title": "联系方式",
-        "p1": "如对本政策有任何疑问，请发送邮件至 Haninplating@gmail.com 或致电 (+84) 24 3818 6868。"
+        "p1": "如对本政策有任何疑问，请发送邮件至 Haninplating@gmail.com 或致电 {phones}。"
       }
     },
     "terms": {

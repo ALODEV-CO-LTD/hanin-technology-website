@@ -28,9 +28,6 @@ export default function LocationMap() {
               <h2 className="text-headline-md font-bold text-slate-900 uppercase tracking-tight mb-space-md">
                 {t("heading")}
               </h2>
-              <p className="text-body-md text-slate-600 leading-relaxed mb-space-lg">
-                {t("description")}
-              </p>
 
               <div className="flex flex-col gap-space-sm mb-space-xl">
                 {DISTANCE_KEYS.map((key) => {

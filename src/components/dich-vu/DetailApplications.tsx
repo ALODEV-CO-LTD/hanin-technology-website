@@ -18,7 +18,6 @@ export default function DetailApplications() {
           <div>
             <h2 className="text-headline-md text-slate-900 tracking-tight uppercase font-bold">{t("heading")}</h2>
           </div>
-          <span className="text-label-sm text-slate-500">{t("subtitle")}</span>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">

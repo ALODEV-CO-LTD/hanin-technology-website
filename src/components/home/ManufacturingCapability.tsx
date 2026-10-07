@@ -14,14 +14,11 @@ export default function ManufacturingCapability() {
           <h2 className="text-headline-xl text-slate-900 font-bold uppercase">
             {t("title")}
           </h2>
-          <p className="text-body-md text-slate-600 leading-relaxed">
-            {t("description")}
-          </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
-          <div className="lg:col-span-6 relative rounded overflow-hidden shadow-md border border-slate-200 bg-white">
-            <div className="relative aspect-[16/10]">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-stretch">
+          <div className="lg:col-span-6 relative rounded overflow-hidden shadow-md border border-slate-200 bg-white lg:min-h-[480px]">
+            <div className="relative aspect-[16/10] lg:absolute lg:inset-0 lg:aspect-auto">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 alt={t("imageAlt")}

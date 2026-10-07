@@ -7,7 +7,10 @@ import {
   isInScope,
   keyExists,
   listEntries,
+  listChanged,
   listNamespaces,
+  resetOverrides,
+  searchEntries,
   saveChanges,
   type ContentChange,
 } from "@/server/content";
@@ -39,6 +42,9 @@ export const GET = route(async (request) => {
   const url = new URL(request.url);
   const namespace = url.searchParams.get("namespace");
   const scope = url.searchParams.get("scope") ?? "";
+  const search = url.searchParams.get("search");
+  if (url.searchParams.get("changed")) return { entries: listChanged() };
+  if (search !== null) return { entries: searchEntries(search) };
   if (scope) assertScope(scope);
   if (!namespace) return { namespaces: listNamespaces(), scopes: listScopes() };
   return { entries: listEntries(namespace, scope) };
@@ -46,6 +52,13 @@ export const GET = route(async (request) => {
 
 export const PUT = route(async (request) => {
   const body = await readJson(request);
+  if (body.resetAll) {
+    const scope = String(body.scope ?? "");
+    if (scope) assertScope(scope);
+    const count = resetOverrides({ namespace: body.namespace ? String(body.namespace) : undefined, scope: scope || undefined, all: body.all === true });
+    revalidateSite();
+    return { ok: true, reset: count };
+  }
   const raw = Array.isArray(body.changes) ? body.changes : [];
   if (raw.length === 0 || raw.length > 500) throw new HttpError(400, "Danh sách thay đổi không hợp lệ");
 

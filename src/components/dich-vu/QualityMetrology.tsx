@@ -20,58 +20,52 @@ export default function QualityMetrology() {
   return (
     <section className="w-full mb-space-xl">
       <div className="bg-slate-50 border border-slate-200 rounded p-space-md lg:p-space-xl">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
-          <div className="lg:col-span-5">
-            <h2 className="text-headline-sm md:text-headline-lg text-slate-900 uppercase font-bold mb-space-sm">
-              {t("heading")}
-            </h2>
-            <p className="text-body-lg text-slate-600 mb-space-md">{t("subtitle")}</p>
-            <div className="flex flex-col gap-space-sm">
-              {LAB_ITEMS.map((item) => (
-                <div key={item.key} className="flex items-start gap-space-sm bg-white border border-slate-200 p-space-sm rounded shadow-sm">
-                  <Icon name={item.icon} className="text-steel-600 text-[24px]" />
-                  <div>
-                    <span className="text-title-md text-slate-900 font-bold block">{t(`${item.key}.title`)}</span>
-                    <p className="text-body-md text-slate-600">{t(`${item.key}.desc`)}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
+        <h2 className="text-headline-sm md:text-headline-lg text-slate-900 uppercase font-bold mb-space-lg">
+          {t("heading")}
+        </h2>
 
-          <div className="lg:col-span-7">
-            <div className="bg-white border border-slate-200 p-space-md rounded shadow-sm">
-              <div className="flex items-center justify-between pb-space-sm">
-                <span className="text-title-md text-slate-900 font-bold uppercase">{t("tableTitle")}</span>
-                <span className="bg-slate-100 text-slate-600 text-label-sm px-2 py-0.5 rounded">{t("revision")}</span>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-space-md mb-space-lg">
+          {LAB_ITEMS.map((item) => (
+            <div key={item.key} className="flex flex-col gap-space-sm bg-white border border-slate-200 p-space-md rounded shadow-sm">
+              <div className="flex h-11 w-11 items-center justify-center rounded bg-steel-50 border border-steel-200 text-steel-600">
+                <Icon name={item.icon} className="text-[24px]" />
               </div>
-              <div className="overflow-x-auto">
-                <table className="w-full min-w-[560px] text-left text-body-sm table-fixed">
-                  <thead>
-                    <tr className="bg-slate-50 text-slate-500 text-label-sm uppercase">
-                      <th className="py-space-sm px-3 w-[20%] align-bottom">{t("colMethod")}</th>
-                      <th className="py-space-sm px-3 w-[26%] align-bottom">{t("colStandard")}</th>
-                      <th className="py-space-sm px-3 w-[32%] align-bottom">{t("colCriteria")}</th>
-                      <th className="py-space-sm px-3 w-[22%] align-bottom">{t("colFrequency")}</th>
-                    </tr>
-                  </thead>
-                  <tbody className="divide-y divide-slate-200">
-                    {TEST_TABLE.map((row) => (
-                      <tr key={row.key} className="hover:bg-slate-50/50">
-                        <td className="py-space-sm px-3 align-top font-medium text-slate-900">{t(`${row.key}.method`)}</td>
-                        <td className="py-space-sm px-3 align-top text-slate-500 leading-snug">{t(`${row.key}.standard`)}</td>
-                        <td className="py-space-sm px-3 align-top text-steel-600 font-bold leading-snug">{t(`${row.key}.criteria`)}</td>
-                        <td className="py-space-sm px-3 align-top text-slate-500 leading-snug">{t(`${row.key}.frequency`)}</td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-              <div className="mt-space-md p-space-sm bg-slate-50 rounded flex items-center justify-between text-slate-500 text-label-sm">
-                <span>{t("calibrationNote")}</span>
-                <span className="text-slate-900 font-semibold">{t("warrantyLabel")}</span>
-              </div>
+              <h3 className="text-title-md text-slate-900 font-bold">{t(`${item.key}.title`)}</h3>
+              <p className="text-body-md text-slate-600 leading-relaxed">{t(`${item.key}.desc`)}</p>
             </div>
+          ))}
+        </div>
+
+        <div className="bg-white border border-slate-200 rounded shadow-sm overflow-hidden">
+          <div className="flex flex-wrap items-center justify-between gap-space-sm px-space-md py-space-sm border-b border-slate-200">
+            <h3 className="text-title-md text-slate-900 font-bold uppercase">{t("tableTitle")}</h3>
+            <span className="rounded border border-slate-200 px-2 py-0.5 text-label-sm font-semibold text-slate-600">{t("revision")}</span>
+          </div>
+          <div className="overflow-x-auto">
+            <table className="w-full min-w-[640px] table-fixed text-left text-body-md">
+              <thead>
+                <tr className="border-b border-slate-200 text-label-sm uppercase tracking-wider text-slate-500">
+                  <th className="w-[22%] px-space-md py-3 font-semibold">{t("colMethod")}</th>
+                  <th className="w-[26%] px-space-md py-3 font-semibold">{t("colStandard")}</th>
+                  <th className="w-[32%] px-space-md py-3 font-semibold">{t("colCriteria")}</th>
+                  <th className="w-[20%] px-space-md py-3 font-semibold">{t("colFrequency")}</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-slate-200">
+                {TEST_TABLE.map((row) => (
+                  <tr key={row.key}>
+                    <td className="px-space-md py-3.5 align-top font-semibold text-slate-900">{t(`${row.key}.method`)}</td>
+                    <td className="px-space-md py-3.5 align-top text-slate-600 leading-snug">{t(`${row.key}.standard`)}</td>
+                    <td className="px-space-md py-3.5 align-top font-bold text-steel-700 leading-snug">{t(`${row.key}.criteria`)}</td>
+                    <td className="px-space-md py-3.5 align-top text-slate-600 leading-snug">{t(`${row.key}.frequency`)}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <div className="flex flex-wrap items-center justify-between gap-space-sm px-space-md py-space-sm border-t border-slate-200 text-label-sm text-slate-500">
+            <span>{t("calibrationNote")}</span>
+            <span className="font-bold text-slate-900 uppercase">{t("warrantyLabel")}</span>
           </div>
         </div>
       </div>

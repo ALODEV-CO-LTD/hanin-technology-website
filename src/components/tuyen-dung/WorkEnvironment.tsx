@@ -12,9 +12,6 @@ export default function WorkEnvironment() {
           <h2 className="text-headline-xl-mobile md:text-headline-xl text-slate-900 tracking-tight uppercase font-bold">
             {t("title")}
           </h2>
-          <p className="text-body-lg text-slate-600">
-            {t("description")}
-          </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-gutter">

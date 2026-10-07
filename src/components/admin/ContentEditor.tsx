@@ -43,6 +43,23 @@ const NAMESPACE_LABELS: Record<string, string> = {
   Meta: "Tiêu đề & mô tả SEO các trang",
 };
 
+/** Trang công khai tương ứng với từng nhóm văn bản (để mở xem nhanh). */
+const NAMESPACE_PATHS: Record<string, string> = {
+  Nav: "/",
+  LanguageSwitcher: "/",
+  Footer: "/",
+  Home: "/",
+  Meta: "/",
+  GioiThieu: "/gioi-thieu",
+  DichVu: "/dich-vu-gia-cong-ma",
+  SanPham: "/san-pham-du-an",
+  NangLuc: "/nang-luc-san-xuat",
+  TinTuc: "/tin-tuc",
+  LienHe: "/lien-he",
+  TuyenDung: "/tuyen-dung",
+  Legal: "/chinh-sach-bao-mat",
+};
+
 export default function ContentEditor() {
   const [namespaces, setNamespaces] = useState<Namespace[]>([]);
   const [active, setActive] = useState("");
@@ -52,6 +69,10 @@ export default function ContentEditor() {
   const [entries, setEntries] = useState<Entry[]>([]);
   const [draft, setDraft] = useState<Record<string, string>>({}); // key -> giá trị đang sửa (theo locale hiện tại)
   const [filter, setFilter] = useState("");
+  const [search, setSearch] = useState(""); // tìm trong toàn bộ website
+  const searching = !scope && search.trim().length >= 2;
+  const [changedView, setChangedView] = useState(false); // xem mọi mục đã sửa trên toàn website
+  const [onlyChanged, setOnlyChanged] = useState(false);
   const [message, setMessage] = useState<{ ok: boolean; text: string } | null>(null);
   const [saving, setSaving] = useState(false);
 
@@ -75,7 +96,7 @@ export default function ContentEditor() {
   const currentNs = scopeInfo ? scopeInfo.namespace : active;
 
   useEffect(() => {
-    if (!currentNs) return;
+    if (!currentNs || searching || changedView) return;
     let cancelled = false;
     api<{ entries: Entry[] }>(`content?namespace=${encodeURIComponent(currentNs)}${scope ? `&scope=${encodeURIComponent(scope)}` : ""}`).then((data) => {
       if (cancelled) return;
@@ -85,12 +106,47 @@ export default function ContentEditor() {
     return () => {
       cancelled = true;
     };
-  }, [currentNs, scope, version]);
+  }, [currentNs, scope, version, searching, changedView]);
+
+  useEffect(() => {
+    if (!changedView) return;
+    let cancelled = false;
+    api<{ entries: Entry[] }>("content?changed=1").then((data) => {
+      if (cancelled) return;
+      setEntries(data.entries);
+      setDraft({});
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, [changedView, version]);
+
+  useEffect(() => {
+    if (!searching || changedView) return;
+    let cancelled = false;
+    const timer = setTimeout(() => {
+      api<{ entries: Entry[] }>(`content?search=${encodeURIComponent(search.trim())}`).then((data) => {
+        if (cancelled) return;
+        setEntries(data.entries);
+        setDraft({});
+      });
+    }, 250);
+    return () => {
+      cancelled = true;
+      clearTimeout(timer);
+    };
+  }, [searching, search, version, changedView]);
 
   const visible = useMemo(() => {
     const f = filter.trim().toLowerCase();
-    return entries.filter((e) => !f || e.key.toLowerCase().includes(f) || e.values[locale].toLowerCase().includes(f) || e.values.vi.toLowerCase().includes(f));
-  }, [entries, filter, locale]);
+    return entries.filter(
+      (e) =>
+        (!onlyChanged || LOCALES.some((l) => e.overridden[l.key])) &&
+        (!f || e.key.toLowerCase().includes(f) || e.values[locale].toLowerCase().includes(f) || e.values.vi.toLowerCase().includes(f)),
+    );
+  }, [entries, filter, locale, onlyChanged]);
+  const changedHere = entries.filter((e) => LOCALES.some((l) => e.overridden[l.key])).length;
+  const changedSite = namespaces.reduce((sum, n) => sum + n.overrides, 0);
 
   const dirty = Object.keys(draft).filter((k) => draft[k] !== entries.find((e) => e.key === k)?.values[locale]);
 
@@ -108,10 +164,22 @@ export default function ContentEditor() {
     }
   }
 
-  async function reset(key: string) {
-    if (!confirm("Khôi phục nội dung gốc cho mục này?")) return;
-    await api("content", { method: "PUT", body: { changes: [{ locale, key, scope, value: null }] } });
+  async function reset(key: string, loc: Locale = locale) {
+    if (!confirm(`Khôi phục nội dung gốc (${loc.toUpperCase()}) cho mục này?`)) return;
+    await api("content", { method: "PUT", body: { changes: [{ locale: loc, key, scope, value: null }] } });
     reload();
+  }
+
+  async function resetMany(body: Record<string, unknown>, label: string) {
+    if (!confirm(`${label}\n\nTất cả chỉnh sửa trong phạm vi này (mọi ngôn ngữ) sẽ quay về nội dung gốc. Không thể hoàn tác.`)) return;
+    setMessage(null);
+    try {
+      const r = await api<{ reset: number }>("content", { method: "PUT", body: { resetAll: true, ...body } });
+      setMessage({ ok: true, text: `Đã khôi phục ${r.reset} mục về nội dung gốc.` });
+      reload();
+    } catch (err) {
+      setMessage({ ok: false, text: err instanceof ApiError ? err.message : "Không khôi phục được" });
+    }
   }
 
   return (
@@ -123,6 +191,18 @@ export default function ContentEditor() {
         Muốn sửa nội dung chi tiết <strong>riêng cho một dịch vụ hoặc sản phẩm</strong> (quy trình, thông số, ứng dụng…) hãy chọn mục đó ở ô “Phạm vi”; còn lại là nội dung chung của toàn website.
       </p>
 
+      {!scope && (
+        <div className="mb-3">
+          <input
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+            placeholder="🔍 Tìm trong TOÀN BỘ nội dung website (ví dụ: hotline, địa chỉ, ISO, bảo mật…)"
+            aria-label="Tìm trong toàn bộ nội dung website"
+            className="h-11 w-full px-4 border border-slate-300 rounded bg-white text-sm"
+          />
+          {searching && <p className="mt-1 text-xs text-slate-500">Kết quả tìm kiếm ({entries.length}{entries.length >= 80 ? "+" : ""}) — xoá ô tìm kiếm để quay lại danh sách theo trang.</p>}
+        </div>
+      )}
       <div className="flex flex-wrap gap-3 mb-4">
         <Dropdown
           className="w-full sm:w-72"
@@ -146,6 +226,11 @@ export default function ContentEditor() {
             }))}
           />
         )}
+        {!scope && NAMESPACE_PATHS[active] && !searching && (
+          <a href={NAMESPACE_PATHS[active]} target="_blank" rel="noreferrer" className="h-10 px-3 inline-flex items-center rounded border border-slate-300 bg-white text-sm text-steel-700 hover:bg-slate-50">
+            Xem trang ↗
+          </a>
+        )}
         <div className="flex gap-1" role="tablist" aria-label="Ngôn ngữ">
           {LOCALES.map((l) => (
             <button key={l.key} role="tab" aria-selected={locale === l.key} onClick={() => {
@@ -167,6 +252,41 @@ export default function ContentEditor() {
         {message && <span role="status" className={`text-sm ${message.ok ? "text-emerald-700" : "text-red-700"}`}>{message.text}</span>}
       </div>
 
+      {/* Công cụ khôi phục */}
+      <div className="flex flex-wrap items-center gap-2 mb-4 text-sm">
+        {changedView ? (
+          <>
+            <span className="font-semibold text-slate-800">Mọi mục đã sửa trên website ({entries.length})</span>
+            <button onClick={() => setChangedView(false)} className="h-9 px-3 rounded border border-slate-300 bg-white">← Quay lại danh sách theo trang</button>
+            {entries.length > 0 && (
+              <button onClick={() => resetMany({ all: true }, `Khôi phục TẤT CẢ ${entries.length} mục đã sửa trên toàn website?`)} className="h-9 px-3 rounded border border-red-300 text-red-700 bg-white font-semibold">
+                ↺ Khôi phục tất cả về gốc
+              </button>
+            )}
+          </>
+        ) : (
+          <>
+            <label className="inline-flex items-center gap-2 h-9 px-3 rounded border border-slate-300 bg-white cursor-pointer">
+              <input type="checkbox" checked={onlyChanged} onChange={(e) => setOnlyChanged(e.target.checked)} className="accent-steel-600" />
+              Chỉ hiện mục đã sửa ({changedHere})
+            </label>
+            {changedHere > 0 && !searching && (
+              <button
+                onClick={() => resetMany(scope ? { scope } : { namespace: currentNs }, `Khôi phục tất cả ${changedHere} mục đã sửa trong “${scope ? scopeInfo?.label : NAMESPACE_LABELS[currentNs] ?? currentNs}”?`)}
+                className="h-9 px-3 rounded border border-red-300 text-red-700 bg-white font-semibold"
+              >
+                ↺ Khôi phục tất cả trong nhóm này
+              </button>
+            )}
+            {!scope && (
+              <button onClick={() => setChangedView(true)} className="h-9 px-3 rounded border border-steel-600 text-steel-700 bg-white font-semibold">
+                Xem mọi mục đã sửa trên website{changedSite ? ` (${changedSite})` : ""}
+              </button>
+            )}
+          </>
+        )}
+      </div>
+
       <div className="flex flex-col gap-3">
         {visible.map((entry) => {
           const value = draft[entry.key] ?? entry.values[locale];
@@ -178,9 +298,18 @@ export default function ContentEditor() {
                   {entry.overridden[locale] && <span title="Đã chỉnh sửa" className="inline-block w-2 h-2 rounded-full bg-steel-600 mr-1.5 align-middle" />}
                   {entry.key}
                 </code>
-                {entry.overridden[locale] && (
-                  <button onClick={() => reset(entry.key)} className="text-xs text-steel-600 hover:underline shrink-0">Khôi phục gốc</button>
-                )}
+                <span className="flex flex-wrap items-center justify-end gap-1.5 shrink-0">
+                  {LOCALES.filter((l) => entry.overridden[l.key]).map((l) => (
+                    <button
+                      key={l.key}
+                      onClick={() => reset(entry.key, l.key)}
+                      title={`Khôi phục nội dung gốc (${l.label})`}
+                      className={`h-7 px-2 rounded border text-xs font-semibold ${l.key === locale ? "border-steel-600 text-steel-700 bg-steel-50" : "border-slate-300 text-slate-600 bg-white"}`}
+                    >
+                      ↺ Khôi phục {l.key.toUpperCase()}
+                    </button>
+                  ))}
+                </span>
               </div>
               {locale !== "vi" && <p className="text-xs text-slate-400 mb-1">VI: {entry.values.vi}</p>}
               {long ? (

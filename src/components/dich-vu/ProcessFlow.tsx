@@ -16,7 +16,6 @@ export default function ProcessFlow() {
     <section className="w-full bg-white border border-slate-200 rounded p-space-md lg:p-space-xl mb-space-xl shadow-sm">
       <div className="flex flex-col mb-space-lg">
         <h2 className="text-headline-sm md:text-headline-lg text-slate-900 uppercase font-bold">{t("heading")}</h2>
-        <p className="text-body-md text-slate-600 max-w-3xl">{t("subtitle")}</p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-5 gap-space-sm">

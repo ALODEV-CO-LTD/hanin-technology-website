@@ -20,9 +20,6 @@ export default function DetailProcess() {
           <div>
             <h2 className="text-headline-md text-slate-900 tracking-tight uppercase font-bold">{t("heading")}</h2>
           </div>
-          <span className="hidden md:inline bg-slate-100 px-3 py-1 rounded text-label-sm text-slate-500">
-            {t("subtitle")}
-          </span>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-space-sm">

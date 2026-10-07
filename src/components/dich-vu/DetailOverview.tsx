@@ -13,10 +13,6 @@ export default function DetailOverview() {
           <div>
             <h2 className="text-headline-md text-slate-900 tracking-tight uppercase font-bold">{t("heading")}</h2>
           </div>
-          <div className="text-label-sm text-slate-500 flex items-center gap-2">
-            <Icon name="verified_user" className="text-steel-600 text-[18px]" />
-            <span>{t("complianceLabel")}</span>
-          </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-space-lg">

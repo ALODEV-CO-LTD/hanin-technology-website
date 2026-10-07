@@ -2,16 +2,24 @@
   "Home": {
     "CompanySnapshot": {
       "partners": {
-        "label1": "客户"
+        "label1": "客户",
+        "end": "100",
+        "suffix": "+"
       },
       "staff": {
-        "label1": "员工"
+        "label1": "员工",
+        "end": "58",
+        "suffix": ""
       },
       "area": {
-        "label1": "厂区面积"
+        "label1": "厂区面积",
+        "end": "2230",
+        "suffix": " m²"
       },
       "founded": {
-        "label1": "成立年份"
+        "label1": "成立年份",
+        "end": "2023",
+        "suffix": ""
       }
     },
     "Hero": {

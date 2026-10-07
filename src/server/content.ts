@@ -222,3 +222,62 @@ export function saveChanges(changes: ContentChange[]) {
     }
   });
 }
+
+/** Tìm trong TOÀN BỘ văn bản website (khoá hoặc nội dung ở bất kỳ ngôn ngữ nào). */
+export function searchEntries(query: string, limit = 80): ContentEntry[] {
+  const q = query.trim().toLowerCase();
+  if (q.length < 2) return [];
+  const bases = Object.fromEntries(LOCALES.map((l) => [l, flatten(loadBaseMessages(l))])) as Record<Locale, Record<string, string>>;
+  const overrides = loadOverrides();
+  const results: ContentEntry[] = [];
+  for (const key of Object.keys(bases.vi)) {
+    if (isHiddenKey(key)) continue;
+    const values = {} as Record<Locale, string>;
+    const overridden = {} as Record<Locale, boolean>;
+    for (const l of LOCALES) {
+      const o = overrides[l]?.[key];
+      overridden[l] = o !== undefined;
+      values[l] = o ?? bases[l][key] ?? "";
+    }
+    if (key.toLowerCase().includes(q) || LOCALES.some((l) => values[l].toLowerCase().includes(q))) {
+      results.push({ key, values, overridden });
+      if (results.length >= limit) break;
+    }
+  }
+  return results;
+}
+
+/** Mọi mục văn bản đã được chỉnh sửa (nội dung chung), mới nhất trước. */
+export function listChanged(limit = 300): ContentEntry[] {
+  const overrides = loadOverrides();
+  const keys = new Set<string>();
+  for (const l of LOCALES) for (const k of Object.keys(overrides[l] ?? {})) if (!k.includes(SCOPE_SEP) && !isHiddenKey(k)) keys.add(k);
+  const bases = Object.fromEntries(LOCALES.map((l) => [l, flatten(loadBaseMessages(l))])) as Record<Locale, Record<string, string>>;
+  return [...keys].slice(0, limit).map((key) => {
+    const values = {} as Record<Locale, string>;
+    const overridden = {} as Record<Locale, boolean>;
+    for (const l of LOCALES) {
+      const o = overrides[l]?.[key];
+      overridden[l] = o !== undefined;
+      values[l] = o ?? bases[l][key] ?? "";
+    }
+    return { key, values, overridden };
+  });
+}
+
+/** Khôi phục hàng loạt về nội dung gốc. Trả về số mục đã khôi phục. */
+export function resetOverrides(opts: { namespace?: string; scope?: string; all?: boolean }): number {
+  let result: { changes: number | bigint };
+  if (opts.scope) {
+    const prefix = `${opts.scope}${SCOPE_SEP}`;
+    result = run("DELETE FROM content_overrides WHERE substr(key, 1, ?) = ?", prefix.length, prefix);
+  } else if (opts.namespace) {
+    const prefix = `${opts.namespace}.`;
+    result = run("DELETE FROM content_overrides WHERE instr(key, ?) = 0 AND substr(key, 1, ?) = ?", SCOPE_SEP, prefix.length, prefix);
+  } else if (opts.all) {
+    result = run("DELETE FROM content_overrides WHERE instr(key, ?) = 0", SCOPE_SEP);
+  } else {
+    return 0;
+  }
+  return Number(result.changes);
+}

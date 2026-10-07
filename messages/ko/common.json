@@ -9,7 +9,8 @@
     "tuyenDung": "채용정보",
     "lienHe": "문의하기",
     "cta": "기술 견적 요청 →",
-    "menuOpen": "메뉴 열기"
+    "menuOpen": "메뉴 열기",
+    "logoAlt": "HANIN Plating"
   },
   "LanguageSwitcher": {
     "label": "언어",
@@ -38,11 +39,9 @@
     },
     "contactHeading": "기술 문의처",
     "addressLabel": "주소:",
-    "address": "본사: 베트남 하노이시 꽝민사 꽝민공단 660 로트. 공장: 베트남 하노이시 꽝민사 꽝민공단 49G 로트.",
+    "address": "본사: 베트남 하노이시 꽝민사 꽝민공단 660 로트.",
     "hotlineLabel": "핫라인:",
-    "hotline": "(+84) 24 3818 6868 / 0988 123 456",
     "emailLabel": "이메일:",
-    "email": "Haninplating@gmail.com",
     "hoursLabel": "근무 시간:",
     "hours": "월~토: 08:00 - 17:30 (24시간 당직)",
     "zaloChat": "Zalo 기술 상담",
@@ -53,7 +52,8 @@
     "termsOfService": "서비스 이용약관",
     "certIso9001": "ISO 9001:2015",
     "certIso14001": "ISO 14001",
-    "certRohs": "RoHS & REACH"
+    "certRohs": "RoHS & REACH",
+    "logoAlt": "HANIN Plating"
   },
   "Meta": {
     "site": {

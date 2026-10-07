@@ -1,5 +1,5 @@
 import { useTranslations } from "next-intl";
-import { getSettings, telHref } from "@/server/settings";
+import { getPhones, getSettings, telHref } from "@/server/settings";
 import Icon from "@/components/ui/Icon";
 
 const CHANNEL_KEYS = ["hotline", "zalo", "email", "audit"] as const;
@@ -15,7 +15,8 @@ const CHANNEL_META: Record<
 
 export default function DirectChannels() {
   const t = useTranslations("LienHe.DirectChannels");
-  const { zaloUrl, hotline, salesEmail } = getSettings();
+  const { zaloUrl, salesEmail } = getSettings();
+  const { main: hotline } = getPhones();
 
   return (
     <section className="w-full bg-slate-50 py-space-xl">
@@ -24,7 +25,6 @@ export default function DirectChannels() {
           <h2 className="text-headline-md font-bold text-slate-900 uppercase tracking-tight">
             {t("heading")}
           </h2>
-          <p className="text-body-md text-slate-500 mt-2">{t("subtitle")}</p>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
@@ -54,7 +54,7 @@ export default function DirectChannels() {
                     {t(`channels.${key}.label`)}
                   </span>
                   <h3 className="text-title-md font-bold text-slate-900 mb-space-sm">
-                    {t(`channels.${key}.title`)}
+                    {key === "hotline" ? hotline : t(`channels.${key}.title`)}
                   </h3>
                   <p className="text-body-sm text-slate-600 leading-normal">
                     {t(`channels.${key}.desc`)}

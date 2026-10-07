@@ -16,9 +16,6 @@ export default function ServiceCategories() {
             {tc("heading")}
           </h2>
         </div>
-        <span className="hidden md:inline-block text-label-sm text-slate-500 bg-slate-100 px-3 py-1.5 rounded">
-          {services.length} {tc("badge")}
-        </span>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">

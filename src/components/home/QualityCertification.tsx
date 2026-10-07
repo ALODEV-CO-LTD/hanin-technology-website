@@ -19,9 +19,6 @@ export default function QualityCertification() {
           <h2 className="text-headline-xl text-slate-900 font-bold">
             {t("title")}
           </h2>
-          <p className="text-body-md text-slate-600 max-w-2xl mx-auto">
-            {t("description")}
-          </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-gutter">

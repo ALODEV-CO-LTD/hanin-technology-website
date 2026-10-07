@@ -18,7 +18,6 @@ export default function DetailQaTable() {
           <div>
             <h2 className="text-headline-md text-slate-900 tracking-tight uppercase font-bold">{t("heading")}</h2>
           </div>
-          <div className="text-label-sm text-slate-500">{t("subtitle")}</div>
         </div>
 
         <div className="w-full overflow-x-auto">

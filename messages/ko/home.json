@@ -2,16 +2,24 @@
   "Home": {
     "CompanySnapshot": {
       "partners": {
-        "label1": "고객사"
+        "label1": "고객사",
+        "end": "100",
+        "suffix": "+"
       },
       "staff": {
-        "label1": "임직원"
+        "label1": "임직원",
+        "end": "58",
+        "suffix": ""
       },
       "area": {
-        "label1": "공장 부지"
+        "label1": "공장 부지",
+        "end": "2230",
+        "suffix": " m²"
       },
       "founded": {
-        "label1": "설립 연도"
+        "label1": "설립 연도",
+        "end": "2023",
+        "suffix": ""
       }
     },
     "Hero": {

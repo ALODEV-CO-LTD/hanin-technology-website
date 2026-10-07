@@ -33,19 +33,35 @@
       "items": {
         "equipment": {
           "label": "设备总数",
-          "desc": "电镀及配套设备(规格: 高精度 CNC 及电镀槽)"
+          "desc": "电镀及配套设备(规格: 高精度 CNC 及电镀槽)",
+          "end": "42",
+          "prefix": "",
+          "suffix": "+",
+          "unit": ""
         },
         "lines": {
           "label": "在产生产线",
-          "desc": "PLC 自动化及半自动专业生产线"
+          "desc": "PLC 自动化及半自动专业生产线",
+          "end": "16",
+          "prefix": "",
+          "suffix": "",
+          "unit": ""
         },
         "zones": {
           "label": "规划分区",
-          "desc": "专属功能区(电镀区、化学区、洁净室、QA 实验室)"
+          "desc": "专属功能区(电镀区、化学区、洁净室、QA 实验室)",
+          "end": "5",
+          "prefix": "",
+          "suffix": "",
+          "unit": ""
         },
         "precision": {
           "label": "工艺精度",
-          "desc": "符合 ASTM 标准的微米级镀层公差与定额产能"
+          "desc": "符合 ASTM 标准的微米级镀层公差与定额产能",
+          "end": "0.2",
+          "prefix": "±",
+          "suffix": "",
+          "unit": "µm"
         }
       }
     },

@@ -51,7 +51,6 @@ export default function FeaturedClients() {
           <h2 id="featured-clients-title" className="mt-space-xs text-headline-lg text-slate-900 uppercase tracking-tight">
             {t("title")}
           </h2>
-          <p className="mt-space-sm text-body-md text-slate-600 leading-relaxed">{t("description")}</p>
         </div>
       </div>
       <div className="flex flex-col gap-space-md">

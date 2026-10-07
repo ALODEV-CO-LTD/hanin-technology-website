@@ -13,7 +13,6 @@ export default function ProductProcessTimeline() {
           <h2 className="text-headline-lg text-slate-900 uppercase tracking-tight">
             {t("title")}
           </h2>
-          <p className="text-body-md text-slate-600 mt-1">{t("description")}</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter relative">
           {process.map((item, index) => (

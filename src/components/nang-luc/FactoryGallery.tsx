@@ -30,7 +30,6 @@ export default function FactoryGallery() {
           <div>
             <h2 className="text-headline-lg text-slate-900 uppercase tracking-tight">{t("sectionTitle")}</h2>
           </div>
-          <p className="text-body-sm text-slate-600 max-w-md">{t("sectionDescription")}</p>
         </div>
 
         {/* Main Featured Image */}
@@ -45,7 +44,7 @@ export default function FactoryGallery() {
         </div>
 
         {/* Secondary Grid of 4 Images */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-space-sm sm:gap-gutter">
           {THUMBS.map((thumb) => (
             <div
               key={thumb.key}

@@ -7,6 +7,7 @@ import { routing } from "@/i18n/routing";
 import "./globals.css";
 import { gilroy } from "@/fonts";
 import Header from "@/components/layout/Header";
+import { siteImg } from "@/server/site-images";
 import Footer from "@/components/layout/Footer";
 import PageFade from "@/components/ui/PageFade";
 
@@ -35,7 +36,7 @@ export default async function RootLayout({
     <html lang={locale} className={gilroy.variable}>
       <body className="bg-slate-50 text-slate-800 antialiased selection:bg-steel-600 selection:text-white">
         <NextIntlClientProvider>
-          <Header />
+          <Header logoSrc={siteImg("layout/Logo#1", "/hanin-logo.png")} />
           <main className="w-full pt-[86px] bg-slate-50 min-h-screen">
             <PageFade>{children}</PageFade>
           </main>

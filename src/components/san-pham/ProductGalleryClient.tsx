@@ -41,7 +41,6 @@ export default function ProductGalleryClient({ gallery }: { gallery: GalleryItem
             <h2 className="text-headline-lg text-slate-900 uppercase tracking-tight">
               {t("title")}
             </h2>
-            <p className="text-body-md text-slate-600 mt-1">{t("description")}</p>
           </div>
           <div className="flex items-center gap-space-xs text-label-technical text-slate-500 shrink-0">
             <span className="px-space-xs py-1 bg-white border border-slate-200 rounded text-slate-800 shadow-sm">

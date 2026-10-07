@@ -110,6 +110,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: clip;
 }
 
 /* ---- Neumorphism: token + quy tắc dùng chung (không cần sửa từng component) ---- */
@@ -158,15 +159,15 @@ a[class*="bg-steel-7"]:active {
   box-shadow: inset 3px 3px 7px rgb(0 0 0 / 0.28), inset -2px -2px 5px rgb(255 255 255 / 0.12);
 }
 
-/* Khối tối / banner ảnh: không dùng bóng sáng neumorphism (gây nhoè sáng quanh nút). */
-section[class*="bg-slate-9"] :is(a, button, div, span)[class*="shadow"],
-section[class*="bg-slate-9"] :is(a, button)[class*="bg-steel-"] {
+/* Khối tối / banner ảnh (section hoặc div nền tối): không dùng bóng sáng neumorphism (gây quầng sáng quanh nút). */
+:is(section, div):is([class~="bg-slate-900"], [class~="bg-slate-950"], [class~="bg-slate-800"]) :is(a, button, div, span)[class*="shadow"],
+:is(section, div):is([class~="bg-slate-900"], [class~="bg-slate-950"], [class~="bg-slate-800"]) :is(a, button)[class*="bg-steel-"] {
   box-shadow: 0 4px 12px rgb(0 0 0 / 0.25);
 }
-section[class*="bg-slate-9"] :is(a, button)[class*="backdrop-blur"] {
+:is(section, div):is([class~="bg-slate-900"], [class~="bg-slate-950"], [class~="bg-slate-800"]) :is(a, button)[class*="backdrop-blur"] {
   box-shadow: none;
 }
-section[class*="bg-slate-9"] :is(input, select, textarea) {
+:is(section, div):is([class~="bg-slate-900"], [class~="bg-slate-950"], [class~="bg-slate-800"]) :is(input, select, textarea) {
   box-shadow: none;
 }
 
@@ -186,6 +187,7 @@ textarea {
 }
 
 body {
+  overflow-x: clip;
   background: var(--neu-bg);
   color: #1e293b;
   font-family: var(--font-sans);
@@ -280,6 +282,93 @@ select:focus-visible,
 }
 .logo-click-pulse {
   animation: logo-click-pulse 0.45s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* ---- Tablet & mobile: vùng chạm tối thiểu 44px (desktop giữ nguyên) ---- */
+@media (max-width: 1023px) {
+  /* Nút và link dạng CTA (chữ in hoa) */
+  main :is(a, button)[class*="uppercase"],
+  main button:not([class*="w-7"]):not([class*="w-8"]):not([class*="w-9"]):not([class*="w-10"]):not([class*="w-11"]) {
+    min-height: 44px;
+  }
+  /* Link trong danh sách chân trang */
+  footer li > a {
+    display: inline-block;
+    padding-block: 0.75rem;
+    margin-block: -0.5rem;
+  }
+  /* Breadcrumb ở banner: mở rộng vùng chạm mà không đổi chiều cao bố cục */
+  nav[class*="uppercase"] a[href] {
+    display: inline-block;
+    padding-block: 0.875rem;
+    margin-block: -0.875rem;
+  }
+  /* Số điện thoại và email */
+  a[href^="tel:"],
+  a[href^="mailto:"],
+  footer p > a {
+    display: inline-block;
+    padding-block: 0.875rem;
+    margin-block: -0.875rem;
+  }
+  input[type="checkbox"],
+  input[type="radio"] {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+}
+
+/* ---- Chuỗi công đoạn: lưới hộp nhỏ, mũi tên giữa các hộp, ẩn mũi tên ở cuối mỗi hàng ---- */
+.flow-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.flow-grid > li:nth-child(2n) .flow-arrow {
+  display: none;
+}
+@media (min-width: 640px) {
+  .flow-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .flow-grid > li:nth-child(2n) .flow-arrow {
+    display: flex;
+  }
+  .flow-grid > li:nth-child(4n) .flow-arrow {
+    display: none;
+  }
+}
+@media (min-width: 1024px) {
+  .flow-grid {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+  .flow-grid > li:nth-child(4n) .flow-arrow {
+    display: flex;
+  }
+  .flow-grid > li:nth-child(5n) .flow-arrow {
+    display: none;
+  }
+}
+@media (min-width: 1280px) {
+  .flow-grid {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+  .flow-grid > li:nth-child(5n) .flow-arrow {
+    display: flex;
+  }
+  .flow-grid > li:nth-child(6n) .flow-arrow {
+    display: none;
+  }
+}
+@media (min-width: 1536px) {
+  .flow-grid {
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+  }
+  .flow-grid > li:nth-child(6n) .flow-arrow {
+    display: flex;
+  }
+  .flow-grid > li:nth-child(8n) .flow-arrow {
+    display: none;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {

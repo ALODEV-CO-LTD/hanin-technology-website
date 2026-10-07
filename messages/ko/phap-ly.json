@@ -23,7 +23,7 @@
       },
       "contact": {
         "title": "문의",
-        "p1": "본 방침에 관한 문의는 Haninplating@gmail.com 으로 보내 주시거나 (+84) 24 3818 6868 로 전화해 주십시오."
+        "p1": "본 방침에 관한 문의는 Haninplating@gmail.com 으로 보내 주시거나 {phones} 로 전화해 주십시오."
       }
     },
     "terms": {

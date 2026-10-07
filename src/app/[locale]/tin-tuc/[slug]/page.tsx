@@ -129,7 +129,7 @@ export default async function TinTucChiTietPage({ params }: { params: Promise<Pa
       <div className="mt-space-xl mx-auto w-full max-w-3xl">
         <Link
           href="/tin-tuc"
-          className="inline-flex items-center gap-space-xs text-title-md text-steel-600 hover:text-steel-700 transition-colors"
+          className="inline-flex min-h-11 items-center gap-space-xs text-title-md text-steel-600 hover:text-steel-700 transition-colors"
         >
           <Icon name="arrow_back" className="text-[18px]" />
           <span>{t("PostDetail.backToNews")}</span>

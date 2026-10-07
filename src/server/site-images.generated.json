@@ -20,6 +20,10 @@
     "url": "/images/factory/kho-5.jpg"
   },
   {
+    "key": "gioi-thieu/QualityStandardsPreview#1",
+    "url": "/images/certificates/iso-9001-2015.jpg"
+  },
+  {
     "key": "home/AboutHanin#1",
     "url": "/images/factory/ma-quay-6.jpg"
   },
@@ -42,6 +46,10 @@
   {
     "key": "home/ManufacturingCapability#1",
     "url": "/images/factory/ma-treo-3.jpg"
+  },
+  {
+    "key": "layout/Logo#1",
+    "url": "/hanin-logo.png"
   },
   {
     "key": "lien-he/LocationMap#1",

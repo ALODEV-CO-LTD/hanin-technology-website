@@ -20,17 +20,17 @@ export const GET = route<Params>(async (_request, { params }) => {
   return record;
 });
 
-export const PUT = route<Params>(async (request, { params }) => {
+export const PUT = route<Params>(async (request, { params, user }) => {
   const { resource, id } = resolve(params);
-  const record = updateRecord(resource, id, await readJson(request));
+  const record = updateRecord(resource, id, await readJson(request), user?.email ?? "");
   if (!record) throw new HttpError(404, "Không tìm thấy");
   revalidateSite();
   return record;
 });
 
-export const DELETE = route<Params>(async (_request, { params }) => {
+export const DELETE = route<Params>(async (_request, { params, user }) => {
   const { resource, id } = resolve(params);
-  if (!deleteRecord(resource, id)) throw new HttpError(404, "Không tìm thấy");
+  if (!deleteRecord(resource, id, user?.email ?? "")) throw new HttpError(404, "Không tìm thấy");
   revalidateSite();
   return { ok: true };
 });

@@ -19,14 +19,13 @@ export default function ProductionFlow() {
           <h2 className="text-headline-lg text-slate-900 uppercase tracking-tight mb-space-xs">
             {t("sectionTitle")}
           </h2>
-          <p className="text-body-md text-slate-600">{t("sectionDescription")}</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
           {STEPS.map((s) => (
             <div
               key={s.key}
-              className="p-space-lg bg-slate-50 border border-slate-200 rounded-lg shadow-sm hover:border-steel-300 hover:shadow-md transition-all flex flex-col justify-between"
+              className="p-space-md sm:p-space-lg bg-slate-50 border border-slate-200 rounded-lg shadow-sm hover:border-steel-300 hover:shadow-md transition-all flex flex-col justify-between"
             >
               <div>
                 <div className="flex items-center justify-between gap-space-sm mb-space-sm">

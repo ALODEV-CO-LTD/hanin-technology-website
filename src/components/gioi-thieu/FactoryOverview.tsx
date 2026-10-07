@@ -16,7 +16,6 @@ export default function FactoryOverview() {
               {t("heading")}
             </h2>
           </div>
-          <p className="text-body-sm text-slate-500 max-w-md">{t("subtitle")}</p>
         </div>
 
         {/* Editorial Masonry Gallery Layout */}

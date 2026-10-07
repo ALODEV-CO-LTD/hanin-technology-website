@@ -15,7 +15,6 @@ export default function CompanyJourney() {
               {t("heading")}
             </h2>
           </div>
-          <p className="text-body-sm text-slate-500 max-w-md">{t("subtitle")}</p>
         </div>
 
         {/* Engineering Timeline Layout */}
@@ -30,10 +29,10 @@ export default function CompanyJourney() {
             {MILESTONES.map((key, i) => (
               <div
                 key={key}
-                className="relative flex flex-col p-space-md rounded bg-white border border-slate-200 hover:border-steel-600/60 shadow-sm hover:shadow-md transition-all duration-300 group"
+                className="relative flex flex-col p-space-md rounded bg-white border border-slate-200 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group"
               >
                 <div className="flex items-center justify-between mb-space-sm">
-                  <span className="w-8 h-8 rounded bg-slate-100 border border-slate-200 flex items-center justify-center text-label-technical text-steel-600 font-bold group-hover:bg-steel-600 group-hover:text-white transition-colors">
+                  <span className="w-8 h-8 rounded bg-steel-50 border border-steel-200 flex items-center justify-center text-label-technical text-steel-600 font-bold group-hover:bg-steel-600 group-hover:border-steel-600 group-hover:text-white transition-colors">
                     {`0${i + 1}`}
                   </span>
                   <span className="text-xs uppercase tracking-wider text-slate-600 px-2 py-0.5 bg-slate-100 rounded border border-slate-200">
@@ -49,7 +48,7 @@ export default function CompanyJourney() {
             ))}
 
             {/* Card 04 - Current & Future */}
-            <div className="relative flex flex-col p-space-md rounded bg-[#F0F6FB] border border-[#CFE1F3] hover:border-[#2F80C0] shadow-sm hover:shadow-md transition-all duration-300 group">
+            <div className="relative flex flex-col p-space-md rounded bg-steel-50 border border-steel-200 hover:border-steel-600 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group">
               <div className="flex items-center justify-between mb-space-sm">
                 <span className="w-8 h-8 rounded bg-[#2F80C0] flex items-center justify-center text-label-technical text-white font-bold">
                   04

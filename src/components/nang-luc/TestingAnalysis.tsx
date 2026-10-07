@@ -15,12 +15,11 @@ export default function TestingAnalysis() {
       <div className="mx-auto px-margin w-full">
         <div className="mb-space-xl">
           <h2 className="text-headline-lg text-slate-900 uppercase tracking-tight">{t("sectionTitle")}</h2>
-          <p className="text-body-md text-slate-600 max-w-3xl mt-1">{t("sectionDescription")}</p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
           {/* LEFT: Metrology Photo */}
-          <div className="lg:col-span-6 relative rounded-lg overflow-hidden bg-slate-200 border border-slate-200 min-h-[380px] shadow-sm flex flex-col justify-end p-space-lg">
+          <div className="lg:col-span-6 relative rounded-lg overflow-hidden bg-slate-200 border border-slate-200 aspect-[16/10] lg:aspect-auto min-h-0 lg:min-h-[380px] shadow-sm flex flex-col justify-end p-space-lg">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               alt={t("image.alt")}
@@ -35,7 +34,7 @@ export default function TestingAnalysis() {
             {ITEMS.map((item) => (
               <div
                 key={item.key}
-                className="p-space-lg bg-white border border-slate-200 rounded-lg shadow-sm hover:border-steel-300 transition-colors"
+                className="p-space-md sm:p-space-lg bg-white border border-slate-200 rounded-lg shadow-sm hover:border-steel-300 transition-colors"
               >
                 <div className="flex items-center gap-space-sm mb-space-xs">
                   <span className="w-7 h-7 rounded bg-steel-100 text-steel-600 flex items-center justify-center text-label-technical font-bold">
@@ -43,7 +42,7 @@ export default function TestingAnalysis() {
                   </span>
                   <h3 className="text-headline-sm text-slate-900 uppercase">{t(`items.${item.key}.title`)}</h3>
                 </div>
-                <p className="text-body-sm text-slate-600 leading-relaxed pl-9">{t(`items.${item.key}.desc`)}</p>
+                <p className="text-body-sm text-slate-600 leading-relaxed sm:pl-9">{t(`items.${item.key}.desc`)}</p>
               </div>
             ))}
           </div>

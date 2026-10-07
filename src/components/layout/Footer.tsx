@@ -1,15 +1,17 @@
 import { useLocale, useTranslations } from "next-intl";
 import { Clock, Mail, MapPin, Phone } from "lucide-react";
 import { Link } from "@/i18n/navigation";
-import { getSettings, telHref } from "@/server/settings";
+import { getPhones, getSettings } from "@/server/settings";
+import { siteImg } from "@/server/site-images";
+import PhoneLinks from "@/components/ui/PhoneLinks";
 import { getServices } from "@/server/public";
 
 export default function Footer() {
   const t = useTranslations("Footer");
   const locale = useLocale();
-  const { zaloUrl, mapsUrl, hotline, engineerHotline, salesEmail, engineeringEmail } = getSettings();
-  const externalLinkClass = "text-label-technical text-sky-700 font-bold hover:underline";
-
+  const { mapsUrl, salesEmail, engineeringEmail } = getSettings();
+  const { general } = getPhones();
+  
   const companyLinks = [
     { label: t("companyLinks.trangChu"), href: "/" },
     { label: t("companyLinks.gioiThieu"), href: "/gioi-thieu" },
@@ -32,8 +34,8 @@ export default function Footer() {
             <Link href="/" className="flex items-center w-fit group">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/hanin-logo.png"
-                alt="HANIN Plating"
+                src={siteImg("layout/Logo#1", "/hanin-logo.png")}
+                alt={t("logoAlt")}
                 className="h-12 w-auto transition-transform duration-200 ease-out group-hover:scale-105 group-active:scale-95"
               />
             </Link>
@@ -101,9 +103,7 @@ export default function Footer() {
                 </span>
                 <p className="leading-tight">
                   <span className="text-slate-900 font-bold mr-1">{t("hotlineLabel")}</span>
-                  <a href={telHref(hotline)} className="hover:text-steel-600">{hotline}</a>
-                  {" / "}
-                  <a href={telHref(engineerHotline)} className="hover:text-steel-600">{engineerHotline}</a>
+                  <PhoneLinks phones={general} />
                 </p>
               </div>
               <div className="flex items-start gap-space-sm">
@@ -129,41 +129,24 @@ export default function Footer() {
                   {t("hours")}
                 </p>
               </div>
-              <div className="flex items-center gap-space-sm pt-space-xs">
-                {zaloUrl ? (
-                  <a href={zaloUrl} target="_blank" rel="noopener noreferrer" className={externalLinkClass}>
-                    {t("zaloChat")}
-                  </a>
-                ) : (
-                  <Link href="/lien-he" className={externalLinkClass}>
-                    {t("zaloChat")}
-                  </Link>
-                )}
-                <span className="text-slate-300">•</span>
-                {mapsUrl ? (
-                  <a href={mapsUrl} target="_blank" rel="noopener noreferrer" className={externalLinkClass}>
-                    {t("googleMaps")}
-                  </a>
-                ) : (
-                  <Link href="/lien-he" className={externalLinkClass}>
-                    {t("googleMaps")}
-                  </Link>
-                )}
+              <div className="flex items-start gap-space-sm">
+                <span className="flex h-[1lh] shrink-0 items-center text-body-sm leading-tight">
+                  <MapPin aria-hidden="true" className="h-5 w-5 text-steel-600" strokeWidth={2} />
+                </span>
+                <p className="leading-tight">
+                  <span className="text-slate-900 font-bold mr-1">Google Maps:</span>
+                  {mapsUrl ? (
+                    <a href={mapsUrl} target="_blank" rel="noopener noreferrer" className="text-sky-700 hover:underline">
+                      {t("googleMaps")}
+                    </a>
+                  ) : (
+                    <Link href="/lien-he" className="text-sky-700 hover:underline">
+                      {t("googleMaps")}
+                    </Link>
+                  )}
+                </p>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div className="mt-space-xl pt-space-md border-t border-slate-200 flex flex-col md:flex-row items-center justify-between gap-space-sm text-label-technical font-bold text-slate-500">
-          <p>{t("copyright")}</p>
-          <div className="flex items-center gap-space-md">
-            <Link href="/chinh-sach-bao-mat" className="hover:text-steel-600 transition-colors">
-              {t("privacyPolicy")}
-            </Link>
-            <span className="text-slate-300">|</span>
-            <Link href="/dieu-khoan-dich-vu" className="hover:text-steel-600 transition-colors">
-              {t("termsOfService")}
-            </Link>
           </div>
         </div>
       </div>

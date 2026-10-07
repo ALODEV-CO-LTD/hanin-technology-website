@@ -1,11 +1,13 @@
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
-import { getSettings } from "@/server/settings";
+import { getPhones, getSettings } from "@/server/settings";
+import PhoneLinks from "@/components/ui/PhoneLinks";
 import Icon from "@/components/ui/Icon";
 
 export default function NewsInquiryCta() {
   const t = useTranslations("TinTuc.NewsInquiryCta");
-  const { hotline, engineeringEmail } = getSettings();
+  const { engineeringEmail } = getSettings();
+  const { general } = getPhones();
 
   return (
     <section className="w-full bg-slate-50 py-space-xl">
@@ -25,7 +27,7 @@ export default function NewsInquiryCta() {
                 <div className="flex items-center gap-space-xs text-title-md text-slate-900">
                   <Icon name="call" className="text-steel-600 text-[20px]" />
                   <span>
-                    {t("hotlineLabel")} <strong className="text-slate-900">{hotline}</strong>
+                    {t("hotlineLabel")} <strong className="text-slate-900"><PhoneLinks phones={general} /></strong>
                   </span>
                 </div>
                 <span className="text-slate-300 hidden sm:inline">|</span>

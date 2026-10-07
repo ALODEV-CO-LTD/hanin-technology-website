@@ -6,11 +6,16 @@ export default function CompanySnapshot() {
 
   // Số liệu chính thức do Bên A cung cấp (khách hàng: "hơn 100"; nhân sự 58; mặt bằng xưởng 2.230 m²; thành lập 28/03/2023).
   const STATS = [
-    { key: "partners", end: 100, suffix: "+", separator: "" },
-    { key: "staff", end: 58, suffix: "", separator: "" },
-    { key: "area", end: 2230, suffix: " m²", separator: "." },
-    { key: "founded", end: 2023, suffix: "", separator: "" },
+    { key: "partners", separator: "" },
+    { key: "staff", separator: "" },
+    { key: "area", separator: "." },
+    { key: "founded", separator: "" },
   ] as const;
+  // Giá trị số và hậu tố lấy từ messages để chủ site sửa được trong CMS.
+  const num = (key: string) => {
+    const n = Number(t(key));
+    return Number.isFinite(n) ? n : 0;
+  };
 
   return (
     <section className="w-full bg-white py-space-lg border-y border-slate-200 scroll-mt-[86px]" id="company-snapshot">
@@ -19,8 +24,8 @@ export default function CompanySnapshot() {
           {STATS.map((stat) => (
             <div key={stat.key} className="flex flex-col items-center justify-center gap-space-xs px-space-md py-space-lg text-center">
               <CountUp
-                end={stat.end}
-                suffix={stat.suffix}
+                end={num(`${stat.key}.end`)}
+                suffix={t(`${stat.key}.suffix`)}
                 thousandsSeparator={stat.separator}
                 className="text-display-hero-mobile lg:text-display-hero text-steel-600 font-bold tabular-nums"
               />

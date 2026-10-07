@@ -16,7 +16,6 @@ export default function RelatedServices() {
             <h2 className="text-headline-lg text-slate-900 uppercase tracking-tight">
               {t("title")}
             </h2>
-            <p className="text-body-md text-slate-600 mt-1">{t("description")}</p>
           </div>
           <Link
             className="inline-flex items-center gap-space-xs text-label-technical text-steel-600 hover:text-steel-700 transition-colors shrink-0 uppercase tracking-wider font-semibold"
@@ -45,7 +44,7 @@ export default function RelatedServices() {
                 <p className="text-body-sm text-slate-600 leading-relaxed">{service.description}</p>
               </div>
               <Link
-                className="inline-flex items-center gap-1 text-label-sm text-steel-600 hover:text-steel-700 font-semibold transition-colors"
+                className="inline-flex min-h-11 items-center gap-1 text-label-sm text-steel-600 hover:text-steel-700 font-semibold transition-colors"
                 href={service.href}
               >
                 <span>{service.cta}</span>

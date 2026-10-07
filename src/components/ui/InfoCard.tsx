@@ -33,7 +33,7 @@ export default function InfoCard({ icon, tone = "steel", badge, title, children,
           </span>
           <span className="text-label-sm font-semibold uppercase tracking-wider text-slate-500">{badge}</span>
         </div>
-        <h3 className="text-title-md font-bold text-slate-900">{title}</h3>
+        {title ? <h3 className="text-title-md font-bold text-slate-900">{title}</h3> : null}
         {children ? <div className="flex flex-col gap-space-sm text-body-sm text-slate-600">{children}</div> : null}
       </div>
       {footer ? (

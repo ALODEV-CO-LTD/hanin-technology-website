@@ -33,19 +33,35 @@
       "items": {
         "equipment": {
           "label": "설비 & 장비",
-          "desc": "도금 및 부대 설비(사양: 고정밀 CNC 및 도금조)"
+          "desc": "도금 및 부대 설비(사양: 고정밀 CNC 및 도금조)",
+          "end": "42",
+          "prefix": "",
+          "suffix": "+",
+          "unit": ""
         },
         "lines": {
           "label": "가동 중인 생산라인",
-          "desc": "PLC 자동화 및 전문 반자동 생산라인"
+          "desc": "PLC 자동화 및 전문 반자동 생산라인",
+          "end": "16",
+          "prefix": "",
+          "suffix": "",
+          "unit": ""
         },
         "zones": {
           "label": "계획된 구역",
-          "desc": "전용 구역(도금, 화학, 클린룸, QA 랩)"
+          "desc": "전용 구역(도금, 화학, 클린룸, QA 랩)",
+          "end": "5",
+          "prefix": "",
+          "suffix": "",
+          "unit": ""
         },
         "precision": {
           "label": "기술 정밀도",
-          "desc": "마이크론 단위 공차와 ASTM 기준을 충족하는 생산량"
+          "desc": "마이크론 단위 공차와 ASTM 기준을 충족하는 생산량",
+          "end": "0.2",
+          "prefix": "±",
+          "suffix": "",
+          "unit": "µm"
         }
       }
     },

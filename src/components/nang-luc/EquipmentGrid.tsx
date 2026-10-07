@@ -30,7 +30,6 @@ export default function EquipmentGrid() {
           <div>
             <h2 className="text-headline-lg text-slate-900 uppercase tracking-tight">{t("sectionTitle")}</h2>
           </div>
-          <p className="text-body-sm text-slate-600 max-w-md">{t("sectionDescription")}</p>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
@@ -57,7 +56,7 @@ export default function EquipmentGrid() {
                       <br />
                       {t("items.rectifier.specStability")}{" "}
                       <span className="text-slate-900 font-semibold">{t("items.rectifier.specStabilityValue")}</span>
-                      {" // "}
+                      <><span className="hidden sm:inline">{" // "}</span><br className="sm:hidden" /></>
                       {t("items.rectifier.specControl")}{" "}
                       <span className="text-steel-600 font-semibold">{t("items.rectifier.specControlValue")}</span>
                     </>
@@ -69,7 +68,7 @@ export default function EquipmentGrid() {
                       <br />
                       {t("items.ultrasonic.specHeating")}{" "}
                       <span className="text-slate-900 font-semibold">[{t("items.ultrasonic.specHeatingValue")}]</span>
-                      {" // "}
+                      <><span className="hidden sm:inline">{" // "}</span><br className="sm:hidden" /></>
                       {t("items.ultrasonic.specVolume")}{" "}
                       <span className="text-steel-600 font-semibold">{t("items.ultrasonic.specVolumeValue")}</span>
                     </>
@@ -81,7 +80,7 @@ export default function EquipmentGrid() {
                       <br />
                       {t("items.hoist.specSpeed")}{" "}
                       <span className="text-slate-900 font-semibold">[{t("items.hoist.specSpeedValue")} PLC]</span>
-                      {" // "}
+                      <><span className="hidden sm:inline">{" // "}</span><br className="sm:hidden" /></>
                       {t("items.hoist.specSensor")}{" "}
                       <span className="text-steel-600 font-semibold">{t("items.hoist.specSensorValue")}</span>
                     </>
@@ -93,7 +92,7 @@ export default function EquipmentGrid() {
                       <br />
                       {t("items.deEmbrittlement.specSensor")}{" "}
                       <span className="text-slate-900 font-semibold">{t("items.deEmbrittlement.specSensorValue")}</span>
-                      {" // "}
+                      <><span className="hidden sm:inline">{" // "}</span><br className="sm:hidden" /></>
                       {t("items.deEmbrittlement.specStandard")}{" "}
                       <span className="text-steel-600 font-semibold">{t("items.deEmbrittlement.specStandardValue")}</span>
                     </>

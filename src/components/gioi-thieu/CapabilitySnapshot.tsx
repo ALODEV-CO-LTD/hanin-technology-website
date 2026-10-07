@@ -5,11 +5,16 @@ export default function CapabilitySnapshot() {
   const t = useTranslations("GioiThieu.CapabilitySnapshot");
 
   const SNAPSHOT_STATS = [
-    { key: "equipment", end: 50, suffix: "+", padStart: 0, thousandsSeparator: "" },
-    { key: "lines", end: 6, suffix: "+", padStart: 2, thousandsSeparator: "" },
-    { key: "zones", end: 4, suffix: "", padStart: 2, thousandsSeparator: "" },
-    { key: "capacity", end: 1200, suffix: "+", padStart: 0, thousandsSeparator: "." },
+    { key: "equipment", padStart: 0, thousandsSeparator: "" },
+    { key: "lines", padStart: 2, thousandsSeparator: "" },
+    { key: "zones", padStart: 2, thousandsSeparator: "" },
+    { key: "capacity", padStart: 0, thousandsSeparator: "." },
   ] as const;
+  // Giá trị số và hậu tố lấy từ messages để chủ site sửa được trong CMS.
+  const num = (key: string) => {
+    const n = Number(t(key));
+    return Number.isFinite(n) ? n : 0;
+  };
 
   return (
     <section className="w-full bg-white py-space-lg border-b border-slate-200">
@@ -22,11 +27,11 @@ export default function CapabilitySnapshot() {
               </span>
               <div className="text-headline-xl md:text-display-hero text-slate-900 font-bold tracking-tight font-mono">
                 <CountUp
-                  end={stat.end}
+                  end={num(`${stat.key}.end`)}
                   padStart={stat.padStart}
                   thousandsSeparator={stat.thousandsSeparator}
                 />
-                <span className="text-steel-600">{stat.suffix}</span>
+                <span className="text-steel-600">{t(`${stat.key}.suffix`)}</span>
               </div>
             </div>
           ))}

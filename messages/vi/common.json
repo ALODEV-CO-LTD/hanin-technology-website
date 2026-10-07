@@ -9,7 +9,8 @@
     "tuyenDung": "Tuyển dụng",
     "lienHe": "Liên hệ",
     "cta": "NHẬN BÁO GIÁ KỸ THUẬT →",
-    "menuOpen": "Mở menu"
+    "menuOpen": "Mở menu",
+    "logoAlt": "HANIN Plating"
   },
   "LanguageSwitcher": {
     "label": "Ngôn ngữ",
@@ -38,11 +39,9 @@
     },
     "contactHeading": "Liên hệ kỹ thuật",
     "addressLabel": "Địa chỉ:",
-    "address": "Trụ sở: Lô 660, KCN Quang Minh, xã Quang Minh, TP. Hà Nội. Nhà máy: Lô 49G, KCN Quang Minh, xã Quang Minh, TP. Hà Nội.",
+    "address": "Trụ sở: Lô 660, KCN Quang Minh, xã Quang Minh, TP. Hà Nội.",
     "hotlineLabel": "Hotline:",
-    "hotline": "(+84) 24 3818 6868 / 0988 123 456",
     "emailLabel": "Email:",
-    "email": "Haninplating@gmail.com",
     "hoursLabel": "Giờ làm việc:",
     "hours": "Thứ 2 - Thứ 7: 08:00 - 17:30 (Trực ca 24/7)",
     "zaloChat": "Zalo Chat Kỹ Thuật",
@@ -53,7 +52,8 @@
     "termsOfService": "Điều khoản dịch vụ",
     "certIso9001": "ISO 9001:2015",
     "certIso14001": "ISO 14001",
-    "certRohs": "RoHS & REACH"
+    "certRohs": "RoHS & REACH",
+    "logoAlt": "HANIN Plating"
   },
   "Meta": {
     "site": {

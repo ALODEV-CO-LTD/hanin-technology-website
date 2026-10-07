@@ -33,19 +33,35 @@
       "items": {
         "equipment": {
           "label": "MÁY & THIẾT BỊ",
-          "desc": "Thiết bị mạ & phụ trợ (SPEC: HIGH-PRECISION CNC & TANKS)"
+          "desc": "Thiết bị mạ & phụ trợ (SPEC: HIGH-PRECISION CNC & TANKS)",
+          "end": "42",
+          "prefix": "",
+          "suffix": "+",
+          "unit": ""
         },
         "lines": {
           "label": "DÂY CHUYỀN HOẠT ĐỘNG",
-          "desc": "Dây chuyền sản xuất tự động PLC & bán tự động chuyên sâu"
+          "desc": "Dây chuyền sản xuất tự động PLC & bán tự động chuyên sâu",
+          "end": "16",
+          "prefix": "",
+          "suffix": "",
+          "unit": ""
         },
         "zones": {
           "label": "PHÂN KHU QUY HOẠCH",
-          "desc": "Khu vực chuyên biệt (Plating, Chemical, Cleanroom, QA Lab)"
+          "desc": "Khu vực chuyên biệt (Plating, Chemical, Cleanroom, QA Lab)",
+          "end": "5",
+          "prefix": "",
+          "suffix": "",
+          "unit": ""
         },
         "precision": {
           "label": "ĐỘ CHÍNH XÁC KỸ THUẬT",
-          "desc": "Độ dày dung sai micron & sản lượng định mức đạt chuẩn ASTM"
+          "desc": "Độ dày dung sai micron & sản lượng định mức đạt chuẩn ASTM",
+          "end": "0.2",
+          "prefix": "±",
+          "suffix": "",
+          "unit": "µm"
         }
       }
     },

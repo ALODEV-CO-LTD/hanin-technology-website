@@ -26,20 +26,21 @@ export default function CoreStrengths() {
           {STRENGTHS.map((item) => (
             <div
               key={item.key}
-              className="p-space-lg rounded bg-slate-50 border border-slate-200 hover:border-steel-600/60 shadow-sm hover:shadow-md transition-all duration-300 group flex flex-col justify-between"
+              className="p-space-md sm:p-space-lg rounded bg-slate-50 border border-slate-200 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group flex flex-col justify-between"
             >
               <div>
-                <div className="flex items-start justify-between gap-space-sm mb-space-xs">
-                  <h3 className="text-headline-sm text-slate-900 uppercase font-bold">
-                    {item.index} {t(`${item.key}.title`)}
-                  </h3>
+                <div className="flex items-center justify-between gap-space-sm mb-space-sm">
+                  <span className="flex h-9 w-9 items-center justify-center rounded bg-steel-50 border border-steel-200 text-label-technical font-bold text-steel-600 group-hover:bg-steel-600 group-hover:border-steel-600 group-hover:text-white transition-colors">
+                    {item.index}
+                  </span>
                   <Icon name={item.icon} className="shrink-0 text-slate-400 group-hover:text-steel-600 transition-colors" />
                 </div>
+                <h3 className="text-headline-sm text-slate-900 uppercase font-bold mb-space-xs">{t(`${item.key}.title`)}</h3>
                 <p className="text-body-md text-slate-600 leading-relaxed">{t(`${item.key}.desc`)}</p>
               </div>
-              <div className="pt-space-md mt-space-md border-t border-slate-200 flex items-center justify-between text-xs text-slate-500">
-                <span>{t(`${item.key}.metricLabel`)}</span>
-                <span className={item.metricClass}>{t(`${item.key}.metricValue`)}</span>
+              <div className="pt-space-sm mt-space-md border-t border-slate-200 flex flex-col gap-1 sm:flex-row sm:items-center sm:justify-between sm:gap-space-sm">
+                <span className="text-label-sm uppercase tracking-wider text-slate-500">{t(`${item.key}.metricLabel`)}</span>
+                <span className={`text-body-sm font-bold ${item.metricClass}`}>{t(`${item.key}.metricValue`)}</span>
               </div>
             </div>
           ))}

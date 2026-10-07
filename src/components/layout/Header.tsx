@@ -15,7 +15,7 @@ const NAV_PILL =
 const NAV_PILL_ACTIVE = `${NAV_PILL} text-steel-600 after:scale-x-0`;
 const NAV_PILL_IDLE = `${NAV_PILL} text-slate-800 after:scale-x-0`;
 
-export default function Header() {
+export default function Header({ logoSrc }: { logoSrc: string }) {
   const t = useTranslations("Nav");
   const [mobileOpen, setMobileOpen] = useState(false);
   const [logoPulsing, setLogoPulsing] = useState(false);
@@ -52,8 +52,8 @@ export default function Header() {
         <Link href="/" className="flex items-center group shrink-0" onClick={handleLogoClick}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/hanin-logo.png"
-            alt="HANIN Plating"
+            src={logoSrc}
+            alt={t("logoAlt")}
             className={`h-14 w-auto transition-transform duration-200 ease-out group-hover:scale-105 group-active:scale-95 ${
               logoPulsing ? "logo-click-pulse" : ""
             }`}

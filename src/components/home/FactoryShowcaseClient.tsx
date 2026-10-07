@@ -27,9 +27,6 @@ export default function FactoryShowcaseClient({
               {t("title")}
             </h2>
           </div>
-          <p className="text-body-sm text-slate-600 max-w-md">
-            {t("description")}
-          </p>
         </div>
 
         <div className="w-full flex flex-col gap-space-md">

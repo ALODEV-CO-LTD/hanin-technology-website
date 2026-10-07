@@ -20,9 +20,6 @@ export default function DevelopmentDirection() {
               {t("heading")}
             </h2>
           </div>
-          <div className="lg:col-span-7 flex items-center">
-            <p className="text-body-md md:text-body-lg text-slate-600 leading-relaxed">{t("subtitle")}</p>
-          </div>
         </div>
 
         {/* 3 Core Value Cards */}

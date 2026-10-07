@@ -161,6 +161,18 @@ CREATE TABLE IF NOT EXISTS content_overrides (
   PRIMARY KEY (locale, key)
 );
 
+CREATE TABLE IF NOT EXISTS revisions (
+  id          INTEGER PRIMARY KEY AUTOINCREMENT,
+  resource    TEXT NOT NULL,
+  record_id   INTEGER NOT NULL,
+  action      TEXT NOT NULL CHECK (action IN ('update','delete')),
+  snapshot    TEXT NOT NULL,
+  user_email  TEXT NOT NULL DEFAULT '',
+  restored    INTEGER NOT NULL DEFAULT 0,
+  created_at  TEXT NOT NULL DEFAULT (datetime('now'))
+);
+CREATE INDEX IF NOT EXISTS idx_revisions_record ON revisions(resource, record_id, id);
+
 CREATE TABLE IF NOT EXISTS image_overrides (
   key        TEXT PRIMARY KEY,
   url        TEXT NOT NULL,

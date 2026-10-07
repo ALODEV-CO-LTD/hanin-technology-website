@@ -2,16 +2,24 @@
   "Home": {
     "CompanySnapshot": {
       "partners": {
-        "label1": "KHÁCH HÀNG"
+        "label1": "KHÁCH HÀNG",
+        "end": "100",
+        "suffix": "+"
       },
       "staff": {
-        "label1": "NHÂN SỰ"
+        "label1": "NHÂN SỰ",
+        "end": "58",
+        "suffix": ""
       },
       "area": {
-        "label1": "MẶT BẰNG XƯỞNG"
+        "label1": "MẶT BẰNG XƯỞNG",
+        "end": "2230",
+        "suffix": " m²"
       },
       "founded": {
-        "label1": "NĂM THÀNH LẬP"
+        "label1": "NĂM THÀNH LẬP",
+        "end": "2023",
+        "suffix": ""
       }
     },
     "Hero": {

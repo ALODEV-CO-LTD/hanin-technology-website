@@ -10,6 +10,11 @@ export const GET = route(async () => ({ slots, overrides: getImageOverrides() })
 /** Body {key, url}: đặt ảnh thay thế; url rỗng/null = khôi phục ảnh gốc. */
 export const PUT = route(async (request) => {
   const body = await readJson(request);
+  if (body.resetAll) {
+    const result = run("DELETE FROM image_overrides");
+    revalidateSite();
+    return { ok: true, reset: Number(result.changes) };
+  }
   const key = String(body.key ?? "");
   const url = typeof body.url === "string" ? body.url.trim() : "";
   if (!slots.some((s) => s.key === key)) throw new HttpError(404, "Không có vị trí ảnh này");

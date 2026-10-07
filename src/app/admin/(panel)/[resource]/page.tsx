@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import RowActions from "@/components/admin/RowActions";
+import TrashPanel from "@/components/admin/TrashPanel";
 import { listRecords } from "@/server/cms/crud";
 import type { FieldDef, RecordValue, ResourceDef } from "@/server/cms/fields";
 import { getResource } from "@/server/cms/resources";
@@ -162,6 +163,7 @@ export default async function ResourceListPage({
           {pageNumber < pages && <Link href={href(pageNumber + 1)} className="px-3 py-1.5 border rounded bg-white">Sau</Link>}
         </div>
       )}
+      <TrashPanel resource={resource.key} />
     </div>
   );
 }

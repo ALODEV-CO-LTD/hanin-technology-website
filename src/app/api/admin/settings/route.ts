@@ -1,6 +1,6 @@
 import { HttpError } from "@/server/auth";
 import { readJson, route } from "@/server/api";
-import { getSettings, isSafeLink, isSafeMapEmbed, saveSettings, SETTING_DEFS } from "@/server/settings";
+import { getSettings, isSafeLink, isSafeMapEmbed, normalizePhones, saveSettings, SETTING_DEFS } from "@/server/settings";
 import { revalidateSite } from "@/server/revalidate";
 import { SOCIAL_CHANNELS, normalizeSocialUrl } from "@/lib/social";
 
@@ -14,10 +14,17 @@ export const PUT = route(async (request) => {
     let value = String(body[def.key] ?? "").trim();
     const social = SOCIAL_CHANNELS.find((c) => c.settingKey === def.key);
     if (social) value = normalizeSocialUrl(social.key, value);
+    if (def.kind === "phone") {
+      const phones = normalizePhones(value);
+      if (phones === null) {
+        throw new HttpError(422, `${def.label}: mỗi số phải đúng 10 chữ số, bắt đầu bằng 0 (ví dụ 0975080648), không trùng nhau, tối đa 20 số`);
+      }
+      if (phones === "" && def.defaultValue) continue; // hotline chính không được để trống: giữ giá trị cũ
+      values[def.key] = phones;
+      continue;
+    }
     const isEmail = def.key === "inquiryNotifyEmail" || def.kind === "email";
-    const valid = def.kind === "phone"
-      ? value.length > 0 && value.length <= 60 && /^[\d\s()+.\-/A-Za-z:]+$/.test(value)
-      : isEmail
+    const valid = isEmail
       ? value === "" || /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)
       : def.key === "mapEmbedUrl"
         ? isSafeMapEmbed(value)

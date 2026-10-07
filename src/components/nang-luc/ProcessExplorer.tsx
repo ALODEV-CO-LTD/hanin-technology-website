@@ -3,6 +3,7 @@
 import { useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
+import Icon from "@/components/ui/Icon";
 import {
   COMPACT_STEPS,
   PROCESSES,
@@ -13,16 +14,17 @@ import {
 
 const FAMILIES: ProcessFamily[] = ["quay", "treo"];
 
-const STAGE_STYLE: Record<StepStage, { chip: string; dot: string }> = {
-  prep: { chip: "bg-sky-50 text-sky-700 border-sky-200", dot: "bg-sky-500" },
-  plate: { chip: "bg-steel-50 text-steel-700 border-steel-200", dot: "bg-steel-600" },
-  finish: { chip: "bg-amber-50 text-amber-700 border-amber-200", dot: "bg-amber-500" },
-  qc: { chip: "bg-emerald-50 text-emerald-700 border-emerald-200", dot: "bg-emerald-500" },
+const STAGE_STYLE: Record<StepStage, { chip: string; dot: string; bar: string; top: string }> = {
+  prep: { chip: "bg-sky-50 text-sky-700 border-sky-200", dot: "bg-sky-500", bar: "border-slate-200 border-l-sky-500", top: "border-slate-200 border-t-sky-500" },
+  plate: { chip: "bg-steel-50 text-steel-700 border-steel-200", dot: "bg-steel-600", bar: "border-slate-200 border-l-steel-600", top: "border-slate-200 border-t-steel-600" },
+  finish: { chip: "bg-amber-50 text-amber-700 border-amber-200", dot: "bg-amber-500", bar: "border-slate-200 border-l-amber-500", top: "border-slate-200 border-t-amber-500" },
+  qc: { chip: "bg-emerald-50 text-emerald-700 border-emerald-200", dot: "bg-emerald-500", bar: "border-slate-200 border-l-emerald-500", top: "border-slate-200 border-t-emerald-500" },
 };
 
 export default function ProcessExplorer() {
   const t = useTranslations("QuyTrinh");
   const [family, setFamily] = useState<ProcessFamily>("quay");
+  const [openStages, setOpenStages] = useState<StepStage[]>(["prep"]);
   const [selected, setSelected] = useState<Record<ProcessFamily, string>>({
     quay: PROCESSES.find((p) => p.family === "quay")!.id,
     treo: PROCESSES.find((p) => p.family === "treo")!.id,
@@ -33,13 +35,15 @@ export default function ProcessExplorer() {
 
   // Công đoạn "rửa" lấy nhóm của công đoạn chính đứng trước nó để không chia nhỏ các giai đoạn.
   const steps = useMemo(() => {
+    const result: { key: string; no: number; compact: boolean; stage: StepStage }[] = [];
     let lastStage: StepStage = "prep";
-    return process.steps.map((key, i) => {
+    for (const [i, key] of process.steps.entries()) {
       const compact = COMPACT_STEPS.has(key);
-      const stage = compact ? lastStage : STEP_STAGE[key];
+      const stage: StepStage = compact ? lastStage : STEP_STAGE[key];
       if (!compact) lastStage = stage;
-      return { key, no: i + 1, compact, stage };
-    });
+      result.push({ key, no: i + 1, compact, stage });
+    }
+    return result;
   }, [process]);
 
   const platingCount = steps.filter((s) => !s.compact && STEP_STAGE[s.key] === "plate").length;
@@ -50,7 +54,6 @@ export default function ProcessExplorer() {
         <div className="max-w-3xl mb-space-lg">
           <span className="text-label-technical text-steel-600 font-bold uppercase tracking-widest">{t("eyebrow")}</span>
           <h2 className="mt-space-xs text-headline-lg text-slate-900 uppercase tracking-tight">{t("title")}</h2>
-          <p className="mt-space-sm text-body-md text-slate-600 leading-relaxed">{t("lead")}</p>
         </div>
 
         {/* Cách đọc */}
@@ -140,50 +143,68 @@ export default function ProcessExplorer() {
           </dl>
         </div>
 
-        {/* Các công đoạn */}
+        {/* Các công đoạn: 4 danh mục lớn, bấm để xem các công đoạn bên trong */}
         <h3 className="text-label-technical uppercase tracking-widest text-slate-500 font-bold mb-space-sm">{t("stepsTitle")}</h3>
-        <ol className="relative">
-          {steps.map((s, i) => {
-            const prev = steps[i - 1];
-            const showStage = !prev || prev.stage !== s.stage;
-            const style = STAGE_STYLE[s.stage];
+        <div className="flex flex-col gap-space-sm">
+          {(Object.keys(STAGE_STYLE) as StepStage[]).map((stage) => {
+            const group = steps.filter((s) => s.stage === stage);
+            if (group.length === 0) return null;
+            const style = STAGE_STYLE[stage];
+            const isOpen = openStages.includes(stage);
+            const panelId = `${process.id}-${stage}`;
             return (
-              <li key={`${process.id}-${s.no}`}>
-                {showStage && (
-                  <div className="flex items-center gap-2 pt-space-md pb-space-sm">
-                    <span className={`inline-flex items-center gap-2 rounded-full border px-3 py-1 text-label-technical uppercase font-bold tracking-wider ${style.chip}`}>
-                      <span className={`h-2 w-2 rounded-full ${style.dot}`} />
-                      {t(`stages.${s.stage}`)}
+              <div key={stage} className={`rounded-lg border border-l-4 bg-white ${style.bar}`}>
+                <button
+                  type="button"
+                  aria-expanded={isOpen}
+                  aria-controls={panelId}
+                  onClick={() =>
+                    setOpenStages((cur) => (cur.includes(stage) ? cur.filter((x) => x !== stage) : [...cur, stage]))
+                  }
+                  className="flex w-full items-center justify-between gap-space-sm px-space-md py-space-sm text-left"
+                >
+                  <span className="flex min-w-0 items-center gap-space-sm">
+                    <span className={`h-3 w-3 shrink-0 rounded-full ${style.dot}`} />
+                    <span className="flex min-w-0 flex-col sm:flex-row sm:items-baseline sm:gap-space-sm">
+                      <span className="text-title-md font-bold text-slate-900">{t(`stages.${stage}`)}</span>
+                      <span className="text-label-sm text-slate-500">{t("categoryCount", { count: group.length })}</span>
                     </span>
-                    <span className="h-px flex-1 bg-slate-200" />
-                  </div>
-                )}
+                  </span>
+                  <span className="flex shrink-0 items-center gap-1.5 text-label-technical font-semibold uppercase tracking-wider text-steel-600">
+                    <span className="hidden sm:inline">{isOpen ? t("hideDetail") : t("showDetail")}</span>
+                    <span className={`flex transition-transform duration-200 ${isOpen ? "rotate-180" : ""}`}>
+                      <Icon name="expand_more" className="text-[22px]" />
+                    </span>
+                  </span>
+                </button>
 
-                {s.compact ? (
-                  <div className="ml-4 flex items-start gap-space-sm border-l-2 border-slate-200 pl-space-md py-1.5">
-                    <span className="w-7 shrink-0 text-label-technical text-slate-400 font-bold">{s.no}</span>
-                    <p className="text-body-sm text-slate-600">
-                      <span className="font-semibold text-slate-800">{t(`steps.${s.key}.name`)}</span>
-                      <span className="text-slate-500"> — {s.key === "rinse" ? t("rinseNote") : t(`steps.${s.key}.desc`)}</span>
-                    </p>
+                {isOpen && (
+                  <div id={panelId} className="border-t border-slate-200 px-space-sm py-space-md sm:px-space-md">
+                    <ol className="flow-grid gap-x-5 gap-y-3 sm:gap-x-6">
+                      {group.map((s, i) => (
+                        <li key={`${process.id}-${s.no}`} className="relative flex">
+                          <div className="flex min-h-12 w-full items-center gap-2 rounded-lg border border-slate-200 bg-white px-2.5 py-2">
+                            <span className={`flex h-6 min-w-6 shrink-0 items-center justify-center rounded-full px-1 text-[11px] font-bold leading-none text-white ${style.dot}`}>
+                              {s.no}
+                            </span>
+                            <span className="text-[12px] font-semibold leading-tight break-words text-slate-800">
+                              {t(`steps.${s.key}.name`)}
+                            </span>
+                          </div>
+                          {i < group.length - 1 && (
+                            <span aria-hidden="true" className="flow-arrow absolute right-0 top-1/2 flex -translate-y-1/2 translate-x-[calc(50%+0.625rem)] sm:translate-x-[calc(50%+0.75rem)] text-slate-300">
+                              <Icon name="arrow_forward" className="text-[14px]" />
+                            </span>
+                          )}
+                        </li>
+                      ))}
+                    </ol>
                   </div>
-                ) : (
-                  <article className="ml-4 border-l-2 border-steel-200 pl-space-md py-space-xs">
-                    <div className="rounded-lg border border-slate-200 bg-white p-space-md">
-                      <div>
-                        <div className="flex items-center gap-space-sm">
-                          <span className="flex h-9 min-w-9 items-center justify-center rounded-full bg-steel-600 px-2 text-label-technical font-bold text-white">{s.no}</span>
-                          <h4 className="text-title-md text-slate-900 font-bold">{t(`steps.${s.key}.name`)}</h4>
-                        </div>
-                        <p className="mt-space-xs text-body-md text-slate-600 leading-relaxed">{t(`steps.${s.key}.desc`)}</p>
-                      </div>
-                    </div>
-                  </article>
                 )}
-              </li>
+              </div>
             );
           })}
-        </ol>
+        </div>
 
         <p className="mt-space-lg rounded-lg border border-slate-200 bg-white p-space-md text-body-sm text-slate-600 leading-relaxed">{t("note")}</p>
 

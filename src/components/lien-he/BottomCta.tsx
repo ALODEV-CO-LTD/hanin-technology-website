@@ -1,10 +1,10 @@
 import { useTranslations } from "next-intl";
-import { getSettings, telHref } from "@/server/settings";
+import { getPhones, telHref } from "@/server/settings";
 import Icon from "@/components/ui/Icon";
 
 export default function BottomCta() {
   const t = useTranslations("LienHe.BottomCta");
-  const { hotline } = getSettings();
+  const { main: hotline } = getPhones();
 
   return (
     <section className="w-full bg-slate-900 text-white py-space-xl">

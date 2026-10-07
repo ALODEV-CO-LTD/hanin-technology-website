@@ -15,7 +15,7 @@ export default function FactoryOverview() {
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-stretch">
           {/* LEFT: Photo & Badges */}
-          <div className="lg:col-span-7 relative rounded-lg overflow-hidden bg-slate-200 border border-slate-200 min-h-[420px] shadow-sm flex flex-col justify-end p-space-lg group">
+          <div className="lg:col-span-7 relative rounded-lg overflow-hidden bg-slate-200 border border-slate-200 aspect-[4/3] lg:aspect-auto min-h-[220px] lg:min-h-[420px] shadow-sm flex flex-col justify-end p-space-lg group">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
@@ -26,7 +26,7 @@ export default function FactoryOverview() {
           </div>
 
           {/* RIGHT: Description & Metadata */}
-          <div className="lg:col-span-5 flex flex-col justify-between bg-white border border-slate-200 p-space-xl rounded-lg shadow-sm">
+          <div className="lg:col-span-5 flex flex-col justify-between bg-white border border-slate-200 p-space-md sm:p-space-xl rounded-lg shadow-sm">
             <div>
               <h3 className="text-headline-md text-slate-900 uppercase mb-space-md">{t("factoryTitle")}</h3>
               <p className="text-body-md text-slate-600 leading-relaxed mb-space-lg">{t("factoryDescription")}</p>
@@ -34,19 +34,19 @@ export default function FactoryOverview() {
             <div>
               {/* Technical specs table */}
               <div className="grid grid-cols-1 gap-space-xs mb-space-lg text-body-sm">
-                <div className="flex items-center justify-between p-space-sm bg-slate-50 border border-slate-200/80 rounded">
+                <div className="flex flex-col items-start gap-1 sm:flex-row sm:items-center sm:justify-between p-space-sm bg-slate-50 border border-slate-200/80 rounded">
                   <span className="text-slate-500 text-label-technical uppercase">{t("specs.locationLabel")}</span>
-                  <span className="text-slate-900 font-semibold text-right">
+                  <span className="text-slate-900 font-semibold sm:text-right">
                     {t("specs.locationValue")}
                   </span>
                 </div>
-                <div className="flex items-center justify-between p-space-sm bg-slate-50 border border-slate-200/80 rounded">
+                <div className="flex flex-col items-start gap-1 sm:flex-row sm:items-center sm:justify-between p-space-sm bg-slate-50 border border-slate-200/80 rounded">
                   <span className="text-slate-500 text-label-technical uppercase">{t("specs.areaLabel")}</span>
                   <span className="text-steel-600 text-headline-sm font-bold">{t("specs.areaValue")}</span>
                 </div>
-                <div className="flex items-center justify-between p-space-sm bg-slate-50 border border-slate-200/80 rounded">
+                <div className="flex flex-col items-start gap-1 sm:flex-row sm:items-center sm:justify-between p-space-sm bg-slate-50 border border-slate-200/80 rounded">
                   <span className="text-slate-500 text-label-technical uppercase">{t("specs.capabilityLabel")}</span>
-                  <span className="text-slate-900 font-semibold text-right">[{t("specs.capabilityValue")}]</span>
+                  <span className="text-slate-900 font-semibold sm:text-right">[{t("specs.capabilityValue")}]</span>
                 </div>
               </div>
               <a

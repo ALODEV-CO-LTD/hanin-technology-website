@@ -1,11 +1,13 @@
 import Link from "next/link";
 import { useTranslations } from "next-intl";
-import { getSettings } from "@/server/settings";
+import { getPhones, getSettings } from "@/server/settings";
+import PhoneLinks from "@/components/ui/PhoneLinks";
 import Icon from "@/components/ui/Icon";
 
 export default function FinalCta() {
   const t = useTranslations("Home.FinalCta");
-  const { zaloUrl, hotline, salesEmail } = getSettings();
+  const { zaloUrl, salesEmail } = getSettings();
+  const { general } = getPhones();
 
   return (
     <section className="w-full py-space-xl bg-white relative overflow-hidden scroll-mt-[86px]" id="bao-gia">
@@ -38,7 +40,9 @@ export default function FinalCta() {
               <Icon name="call" className="text-steel-600 text-[20px]" />
               <div className="flex flex-col">
                 <span className="text-xs text-slate-500 uppercase">{t("hotlineLabel")}</span>
-                <span className="text-title-md text-slate-900 font-bold">{hotline}</span>
+                <span className="text-title-md text-slate-900 font-bold flex flex-col">
+                  <PhoneLinks phones={general} separator="" className="hover:text-steel-600" />
+                </span>
               </div>
             </div>
             <div className="flex items-center gap-3 py-1">
@@ -46,11 +50,11 @@ export default function FinalCta() {
               <div className="flex flex-col">
                 <span className="text-xs text-slate-500 uppercase">{t("zaloLabel")}</span>
                 {zaloUrl ? (
-                  <a href={zaloUrl} target="_blank" rel="noopener noreferrer" className="text-title-md text-sky-700 hover:underline font-semibold">
+                  <a href={zaloUrl} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-11 items-center text-title-md text-sky-700 hover:underline font-semibold">
                     {t("zaloCta")}
                   </a>
                 ) : (
-                  <Link href="/lien-he" className="text-title-md text-sky-700 hover:underline font-semibold">
+                  <Link href="/lien-he" className="inline-flex min-h-11 items-center text-title-md text-sky-700 hover:underline font-semibold">
                     {t("zaloCta")}
                   </Link>
                 )}

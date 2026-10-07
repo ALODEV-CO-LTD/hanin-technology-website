@@ -30,9 +30,6 @@ export default function WhyHanin() {
           <h2 className="text-headline-xl-mobile md:text-headline-xl text-slate-900 tracking-tight uppercase font-bold">
             {t("title")}
           </h2>
-          <p className="text-body-lg text-slate-600">
-            {t("description")}
-          </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">

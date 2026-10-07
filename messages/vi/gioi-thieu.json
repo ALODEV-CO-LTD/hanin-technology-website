@@ -177,22 +177,30 @@
       "equipment": {
         "label": "THIẾT BỊ MÁY MÓC",
         "desc": "Thiết bị hiện đại",
-        "note": "QUY CHUẨN: ĐẠT KIỂM ĐỊNH"
+        "note": "QUY CHUẨN: ĐẠT KIỂM ĐỊNH",
+        "end": "50",
+        "suffix": "+"
       },
       "lines": {
         "label": "DÂY CHUYỀN SẢN XUẤT",
         "desc": "Dây chuyền vận hành",
-        "note": "HỆ: QUAY & TREO TỰ ĐỘNG"
+        "note": "HỆ: QUAY & TREO TỰ ĐỘNG",
+        "end": "6",
+        "suffix": "+"
       },
       "zones": {
         "label": "PHÂN KHU NHÀ XƯỞNG",
         "desc": "Khu vực sản xuất",
-        "note": "TIÊU CHUẨN: PHÒNG SẠCH KHÉP KÍN"
+        "note": "TIÊU CHUẨN: PHÒNG SẠCH KHÉP KÍN",
+        "end": "4",
+        "suffix": ""
       },
       "capacity": {
         "label": "CÔNG SUẤT HÀNG THÁNG",
         "desc": "Tấn sản phẩm / tháng",
-        "note": "CÔNG SUẤT: TRỌNG LƯỢNG MÃ HÓA"
+        "note": "CÔNG SUẤT: TRỌNG LƯỢNG MÃ HÓA",
+        "end": "1200",
+        "suffix": "+"
       }
     },
     "FeaturedClients": {

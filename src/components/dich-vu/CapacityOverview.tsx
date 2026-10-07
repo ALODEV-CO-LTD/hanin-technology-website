@@ -19,7 +19,6 @@ export default function CapacityOverview() {
               {t("heading")}
             </h2>
           </div>
-          <p className="text-body-md text-slate-600 max-w-lg">{t("subtitle")}</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-space-md">

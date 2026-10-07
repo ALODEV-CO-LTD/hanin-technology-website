@@ -177,22 +177,30 @@
       "equipment": {
         "label": "기계 설비",
         "desc": "최신 설비",
-        "note": "규정: 검정 합격"
+        "note": "규정: 검정 합격",
+        "end": "50",
+        "suffix": "+"
       },
       "lines": {
         "label": "생산 라인",
         "desc": "가동 중인 라인",
-        "note": "시스템: 자동 회전 & 행거식"
+        "note": "시스템: 자동 회전 & 행거식",
+        "end": "6",
+        "suffix": "+"
       },
       "zones": {
         "label": "공장 구역",
         "desc": "생산 구역",
-        "note": "표준: 밀폐형 클린룸"
+        "note": "표준: 밀폐형 클린룸",
+        "end": "4",
+        "suffix": ""
       },
       "capacity": {
         "label": "월간 생산능력",
         "desc": "제품 톤 / 월",
-        "note": "생산능력: 중량 기준"
+        "note": "생산능력: 중량 기준",
+        "end": "1200",
+        "suffix": "+"
       }
     },
     "FeaturedClients": {
