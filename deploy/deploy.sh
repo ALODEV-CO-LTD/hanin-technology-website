@@ -24,6 +24,14 @@ ADMIN_PASSWORD="${ADMIN_PASSWORD:-}"
 echo "==> [1/6] Kiem tra ket noi toi container..."
 ssh "$TARGET_HOST" "echo OK - da ket noi toi \$(hostname)"
 
+# Neu da bat tu dong cap nhat (deploy/setup-auto-deploy.sh) thi /opt/hanin-website la lien ket toi ban release:
+# rsync --delete vao do se ghi de ban dang chay, nen dung o day. Chi can git push.
+if ssh "$TARGET_HOST" "[ -L $REMOTE_DIR ]"; then
+  echo "Server da bat tu dong cap nhat tu git: KHONG chay deploy.sh nua. Chi can: git push (doi 1-3 phut)."
+  echo "Neu van muon deploy thu cong, chay tren server: FORCE=1 /usr/local/bin/hanin-autodeploy"
+  exit 1
+fi
+
 echo "==> [2/6] Cai dat curl, Node.js 22, nginx, certbot tren container (neu chua co)..."
 ssh "$TARGET_HOST" bash <<'REMOTE_SETUP'
 set -e
