@@ -37,13 +37,13 @@ export default function FactoryOverview() {
               </div>
 
               <dl className="divide-y divide-slate-200 border-y border-slate-200 text-body-sm">
-                <div className="flex flex-col gap-1 py-space-sm sm:flex-row sm:items-baseline sm:justify-between sm:gap-space-md">
-                  <dt className="text-label-technical uppercase tracking-wider text-slate-600 font-semibold shrink-0">{t("specs.locationLabel")}</dt>
-                  <dd className="text-slate-900 font-semibold sm:text-right">{t("specs.locationValue")}</dd>
+                <div className="grid grid-cols-1 gap-1 py-space-sm sm:grid-cols-[10rem_1fr] sm:items-baseline sm:gap-space-md">
+                  <dt className="text-label-technical uppercase tracking-wider text-slate-600 font-semibold">{t("specs.locationLabel")}</dt>
+                  <dd className="text-slate-900 font-semibold">{t("specs.locationValue")}</dd>
                 </div>
-                <div className="flex flex-col gap-1 py-space-sm sm:flex-row sm:items-baseline sm:justify-between sm:gap-space-md">
+                <div className="grid grid-cols-1 gap-1 py-space-sm sm:grid-cols-[10rem_1fr] sm:items-baseline sm:gap-space-md">
                   <dt className="text-label-technical uppercase tracking-wider text-slate-600 font-semibold shrink-0">{t("specs.capabilityLabel")}</dt>
-                  <dd className="text-slate-900 font-semibold sm:text-right">{t("specs.capabilityValue")}</dd>
+                  <dd className="text-slate-900 font-semibold">{t("specs.capabilityValue")}</dd>
                 </div>
               </dl>
 
