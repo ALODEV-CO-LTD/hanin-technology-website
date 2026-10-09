@@ -6,7 +6,6 @@ import CompanyJourney from "@/components/gioi-thieu/CompanyJourney";
 import CoreStrengths from "@/components/gioi-thieu/CoreStrengths";
 import FactoryOverview from "@/components/gioi-thieu/FactoryOverview";
 import FeaturedClients from "@/components/gioi-thieu/FeaturedClients";
-import CapabilitySnapshot from "@/components/gioi-thieu/CapabilitySnapshot";
 import DevelopmentDirection from "@/components/gioi-thieu/DevelopmentDirection";
 import QualityStandardsPreview from "@/components/gioi-thieu/QualityStandardsPreview";
 import ProfileDownloadCta from "@/components/gioi-thieu/ProfileDownloadCta";
@@ -26,7 +25,6 @@ export default function GioiThieuPage() {
       <Reveal><CompanyJourney /></Reveal>
       <Reveal><CoreStrengths /></Reveal>
       <Reveal><FactoryOverview /></Reveal>
-      <Reveal><CapabilitySnapshot /></Reveal>
       <Reveal><FeaturedClients /></Reveal>
       <Reveal><DevelopmentDirection /></Reveal>
       <Reveal><QualityStandardsPreview /></Reveal>

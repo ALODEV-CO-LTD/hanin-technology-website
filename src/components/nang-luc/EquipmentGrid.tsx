@@ -8,19 +8,19 @@ export default function EquipmentGrid() {
   const MACHINES = [
     {
       key: "rectifier",
-      image: siteImg("nang-luc/EquipmentGrid#1", "/images/factory/phan-tich-3.jpg"),
+      image: siteImg("nang-luc/EquipmentGrid#1", "/images/factory/phan-tich-2.jpg"),
     },
     {
       key: "ultrasonic",
-      image: siteImg("nang-luc/EquipmentGrid#2", "/images/factory/phan-tich-2.jpg"),
+      image: siteImg("nang-luc/EquipmentGrid#2", "/images/factory/ma-quay-7.jpg"),
     },
     {
       key: "hoist",
-      image: siteImg("nang-luc/EquipmentGrid#3", "/images/factory/ma-treo-4.jpg"),
+      image: siteImg("nang-luc/EquipmentGrid#3", "/images/factory/ma-treo-3.jpg"),
     },
     {
       key: "deEmbrittlement",
-      image: siteImg("nang-luc/EquipmentGrid#4", "/images/factory/ma-quay-4.jpg"),
+      image: siteImg("nang-luc/EquipmentGrid#4", "/images/factory/ma-treo-4.jpg"),
     },
   ] as const;
 
