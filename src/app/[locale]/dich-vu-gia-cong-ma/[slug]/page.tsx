@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getLocale, getMessages, getTranslations } from "next-intl/server";
 import { serviceNs } from "@/lib/service-ns";
-import PageBreadcrumb from "@/components/layout/PageBreadcrumb";
 import DetailHero from "@/components/dich-vu/DetailHero";
 import DetailOverview from "@/components/dich-vu/DetailOverview";
 import DetailProcess from "@/components/dich-vu/DetailProcess";
@@ -45,16 +44,16 @@ export default async function DichVuChiTietPage({
   // từ messages, chỉnh sửa qua màn hình "Nội dung trang" của CMS.
 
   return (
-    <div className="px-margin py-space-lg flex flex-col w-full">
-      <PageBreadcrumb
-        className="mb-space-md"
-        items={[
+    <div className="flex flex-col w-full">
+      <DetailHero
+        service={service}
+        breadcrumb={[
           { label: tNav("trangChu"), href: "/" },
           { label: t("breadcrumbCategory"), href: "/dich-vu-gia-cong-ma" },
           { label: service.title.toUpperCase() },
         ]}
       />
-      <DetailHero service={service} />
+      <div className="px-margin py-space-lg flex flex-col w-full">
       <Reveal><DetailOverview slug={service.slug} /></Reveal>
       <Reveal><DetailProcess slug={service.slug} /></Reveal>
       <Reveal direction="right"><DetailCapability service={service} /></Reveal>
@@ -63,6 +62,7 @@ export default async function DichVuChiTietPage({
       <Reveal><DetailGallery service={service} /></Reveal>
       <Reveal><RfqFormDetail ns={serviceNs(messages, service.slug, "RfqFormDetail")} hotline={getPhones().general.map((p) => p.number).join(" / ")} /></Reveal>
       <Reveal><RelatedServices currentSlug={service.slug} /></Reveal>
+      </div>
     </div>
   );
 }

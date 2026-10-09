@@ -22,7 +22,7 @@ export default function CapabilityHero() {
   const banner = getBanner("nang-luc", useLocale(), "/images/factory/ma-quay-5.jpg");
 
   return (
-    <section className="relative w-full min-h-[calc(100svh-var(--header-h))] overflow-hidden bg-slate-900 border-b border-slate-200 flex flex-col">
+    <section className="relative w-full min-h-[calc(100svh-var(--header-h))] overflow-hidden bg-slate-900 flex flex-col">
       <HeroImage src={banner.image} alt={banner.alt} />
 
       <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-r from-slate-950/85 via-slate-950/65 to-slate-950/35" />

@@ -9,7 +9,7 @@ export default function NewsBanner() {
   const t = useTranslations("TinTuc.NewsIntro");
 
   return (
-    <section className="relative w-full min-h-[calc(100svh-var(--header-h))] overflow-hidden bg-slate-900 border-b border-slate-200 flex items-center">
+    <section className="relative w-full min-h-[calc(100svh-var(--header-h))] overflow-hidden bg-slate-900 flex items-center">
       <HeroImage src={banner.image} alt={banner.alt || t("titlePrefix")} />
 
       <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-r from-slate-950/85 via-slate-950/65 to-slate-950/35" />

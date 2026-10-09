@@ -16,7 +16,7 @@ export default function ContactHero() {
   const banner = getBanner("lien-he", useLocale(), "/images/factory/qc-6.jpg");
 
   return (
-    <section className="relative w-full min-h-[calc(100svh-var(--header-h))] bg-slate-900 overflow-hidden flex items-center border-b border-slate-200">
+    <section className="relative w-full min-h-[calc(100svh-var(--header-h))] bg-slate-900 overflow-hidden flex items-center">
       {/* Banner Background Image */}
       <HeroImage src={banner.image} alt={banner.alt || t("imageAlt")} />
 

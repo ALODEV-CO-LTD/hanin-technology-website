@@ -8,7 +8,7 @@ export default function IntroHero() {
   const banner = getBanner("gioi-thieu", useLocale(), "/images/factory/kho-6.jpg");
 
   return (
-    <section className="relative w-full min-h-[calc(100svh-var(--header-h))] bg-slate-900 overflow-hidden flex items-center border-b border-slate-200">
+    <section className="relative w-full min-h-[calc(100svh-var(--header-h))] bg-slate-900 overflow-hidden flex items-center">
       {/* Hero Background Image */}
       <HeroImage src={banner.image} alt={banner.alt || t("imageAlt")} />
 
