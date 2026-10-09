@@ -18,7 +18,7 @@ export default function CompanyIntroduction() {
           {/* Left: Precision Factory Campus Visual */}
           <div className="lg:col-span-5 relative group">
             <div className="relative w-full aspect-[4/3] rounded-lg overflow-hidden bg-slate-100 border border-slate-200 shadow-lg">
-              <Photo src={siteImg("gioi-thieu/CompanyIntroduction#1", "/images/factory/kho-6.jpg")} alt={t("imageAlt")} className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105" />
+              <Photo src={siteImg("gioi-thieu/CompanyIntroduction#1", "/images/factory/ma-quay-5.jpg")} alt={t("imageAlt")} className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105" />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900/40 via-transparent to-transparent" />
             </div>
           </div>

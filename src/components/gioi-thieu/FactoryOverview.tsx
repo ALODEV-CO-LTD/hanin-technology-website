@@ -22,7 +22,7 @@ export default function FactoryOverview() {
         {/* Editorial Masonry Gallery Layout */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-gutter mb-space-lg">
           {/* Main Large Photo: Modern Electroplating Line */}
-          <div className="lg:col-span-8 w-full min-w-0 relative aspect-[16/10] lg:aspect-auto lg:h-full min-h-[320px] rounded-lg overflow-hidden bg-slate-100 border border-slate-200 shadow-sm group">
+          <div className="lg:col-span-8 w-full min-w-0 relative aspect-[16/10] lg:aspect-auto lg:h-full min-h-[220px] lg:min-h-[320px] rounded-lg overflow-hidden bg-slate-100 border border-slate-200 shadow-sm group">
             <Photo src={siteImg("gioi-thieu/FactoryOverview#1", "/images/factory/ma-quay-1.jpg")} alt={t("mainImageAlt")} className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105" />
             <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent" />
           </div>
@@ -30,13 +30,13 @@ export default function FactoryOverview() {
           {/* 3 Smaller Auxiliary Photos */}
           <div className="lg:col-span-4 grid grid-rows-3 gap-gutter">
             {/* Aux Photo 1: Operator Monitoring Line */}
-            <div className="relative h-full min-h-[180px] rounded-lg overflow-hidden bg-slate-100 border border-slate-200 shadow-sm group">
+            <div className="relative h-full min-h-[150px] sm:min-h-[180px] rounded-lg overflow-hidden bg-slate-100 border border-slate-200 shadow-sm group">
               <Photo src={siteImg("gioi-thieu/FactoryOverview#2", "/images/factory/ma-treo-2.jpg")} alt={t("zone2ImageAlt")} className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105" />
               <div className="absolute inset-0 bg-gradient-to-r from-slate-900/80 via-slate-900/30 to-transparent" />
             </div>
 
             {/* Aux Photo 2: Precision Caliper Inspection */}
-            <div className="relative h-full min-h-[180px] rounded-lg overflow-hidden bg-slate-100 border border-slate-200 shadow-sm group">
+            <div className="relative h-full min-h-[150px] sm:min-h-[180px] rounded-lg overflow-hidden bg-slate-100 border border-slate-200 shadow-sm group">
               <Photo
                 alt={t("zone3ImageAlt")}
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
@@ -46,7 +46,7 @@ export default function FactoryOverview() {
             </div>
 
             {/* Aux Photo 3: Heavy Automated Crane System */}
-            <div className="relative h-full min-h-[180px] rounded-lg overflow-hidden bg-slate-100 border border-slate-200 shadow-sm group">
+            <div className="relative h-full min-h-[150px] sm:min-h-[180px] rounded-lg overflow-hidden bg-slate-100 border border-slate-200 shadow-sm group">
               <Photo src={siteImg("gioi-thieu/FactoryOverview#4", "/images/factory/kho-5.jpg")} alt={t("zone4ImageAlt")} className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105" />
               <div className="absolute inset-0 bg-gradient-to-r from-slate-900/80 via-slate-900/30 to-transparent" />
             </div>

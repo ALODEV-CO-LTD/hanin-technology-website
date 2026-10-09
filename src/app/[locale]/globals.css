@@ -433,6 +433,12 @@ select:focus-visible,
     --spacing-space-xl: 2rem;
     --spacing-margin: 1.25rem;
     --spacing-gutter: 1rem;
+    --text-headline-xl: 30px;
+    --text-headline-xl--line-height: 38px;
+    --text-headline-lg: 26px;
+    --text-headline-lg--line-height: 33px;
+    --text-display-hero: 34px;
+    --text-display-hero--line-height: 42px;
   }
   /* Ô nhập: 16px để iPhone không tự phóng to khi chạm, cao 44px dễ bấm. */
   input:not([type="checkbox"]):not([type="radio"]):not([type="file"]):not([type="hidden"]),
@@ -466,3 +472,6 @@ a, button, [role="button"], [role="tab"], [role="combobox"] { touch-action: mani
   line-height: 1.55;
   max-width: 46rem;
 }
+
+/* Tiêu đề cân dòng: tránh để một từ lẻ ở dòng cuối ("... thiết / bị"). */
+main :is(h1, h2, h3) { text-wrap: balance; }

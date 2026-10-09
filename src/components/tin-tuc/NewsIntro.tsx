@@ -12,13 +12,13 @@ export default function NewsIntro() {
     <section className="w-full bg-white">
       <div className="px-margin py-space-xl">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-end">
-          <div className="lg:col-span-8 flex flex-col gap-space-xs">
-            <h2 className="text-display-hero-mobile lg:text-display-hero text-slate-900 uppercase tracking-tight font-bold">
+          <div className="lg:col-span-12 flex flex-col gap-space-xs">
+            <h2 className="sr-only">
               {t("titlePrefix")} <span className="text-steel-600">{t("titleHighlight")}</span>{" "}
               {t("titleSuffix")}
             </h2>
           </div>
-          <div className="lg:col-span-4 flex flex-col sm:flex-row lg:flex-col gap-space-sm justify-end">
+          <div className="lg:col-span-12 grid grid-cols-1 sm:grid-cols-2 gap-space-sm lg:max-w-3xl">
             <div className="bg-slate-50 border border-slate-200 p-space-md rounded-lg flex items-center justify-between">
               <div className="flex flex-col">
                 <span className="text-label-sm text-slate-600 uppercase">{t("archiveLabel")}</span>

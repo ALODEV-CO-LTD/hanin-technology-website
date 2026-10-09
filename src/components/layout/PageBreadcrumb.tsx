@@ -26,7 +26,7 @@ export default function PageBreadcrumb({
       {items.map((item, index) => {
         const isLast = index === items.length - 1;
         return (
-          <span key={item.label} className="flex items-center gap-2">
+          <span key={item.label} className={`items-center gap-2 ${index > 0 && !isLast ? "hidden sm:flex" : "flex"}`}>
             {item.href && !isLast ? (
               <Link
                 href={item.href}

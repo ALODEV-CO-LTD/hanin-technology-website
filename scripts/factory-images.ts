@@ -6,7 +6,7 @@ const f = (name: string) => `/images/factory/${name}.jpg`;
 
 /** Vị trí ảnh nằm trong các khối của website (khoá giống siteImg). */
 export const SITE_IMAGE_MAP: Record<string, string> = {
-  "gioi-thieu/CompanyIntroduction#1": f("kho-6"),
+  "gioi-thieu/CompanyIntroduction#1": f("ma-quay-5"),
   "gioi-thieu/FactoryOverview#1": f("ma-quay-1"),
   "gioi-thieu/FactoryOverview#2": f("ma-treo-2"),
   "gioi-thieu/FactoryOverview#3": f("phan-tich-1"),
