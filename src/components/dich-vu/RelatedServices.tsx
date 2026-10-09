@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 import { useLocale, useTranslations } from "next-intl";
 import { getRelatedServices } from "@/server/public";
 import Icon from "@/components/ui/Icon";
@@ -12,11 +12,11 @@ export default function RelatedServices({ currentSlug }: { currentSlug: string }
     <section className="w-full bg-slate-50 mb-space-lg">
       <div className="flex items-center justify-between pb-space-sm mb-space-md flex-wrap gap-space-sm">
         <div>
-          <h3 className="text-headline-sm text-slate-900 tracking-tight uppercase font-bold">{tr("heading")}</h3>
+          <h2 className="text-headline-sm text-slate-900 tracking-tight uppercase font-bold">{tr("heading")}</h2>
         </div>
         <Link
           href="/dich-vu-gia-cong-ma"
-          className="text-label-technical text-steel-600 uppercase font-semibold flex items-center gap-1 hover:underline"
+          className="text-label-technical text-steel-600 uppercase font-semibold inline-flex min-h-11 items-center gap-1 hover:underline"
         >
           <span>{tr("viewAll")}</span>
           <Icon name="chevron_right" className="text-[16px]" />
@@ -28,19 +28,18 @@ export default function RelatedServices({ currentSlug }: { currentSlug: string }
           <Link
             key={service.slug}
             href={`/dich-vu-gia-cong-ma/${service.slug}`}
-            className="group bg-white border border-slate-200 p-space-md rounded shadow-sm hover:shadow-md transition-all flex flex-col justify-between"
+            className="group bg-white border border-slate-200 p-space-md rounded shadow-sm hover:shadow-md focus-visible:border-steel-600 transition-all flex flex-col justify-between"
           >
             <div>
               <div className="flex items-center justify-between text-slate-500 mb-2">
                 <span className="text-label-sm text-steel-600 uppercase font-semibold">{service.code}</span>
                 <Icon name="arrow_forward" className="group-hover:translate-x-1 transition-transform text-[20px]" />
               </div>
-              <h4 className="text-title-md text-slate-900 uppercase group-hover:text-steel-600 transition-colors font-bold">
+              <h3 className="text-title-md text-slate-900 uppercase group-hover:text-steel-600 transition-colors font-bold">
                 {service.title}
-              </h4>
-              <p className="text-body-md text-slate-600 mt-2">{service.description}</p>
+              </h3>
             </div>
-            <div className="mt-space-md pt-space-xs text-label-sm text-slate-500">{service.statLabel}</div>
+            <div className="mt-space-md pt-space-xs text-label-sm text-slate-600">{service.statLabel}</div>
           </Link>
         ))}
       </div>

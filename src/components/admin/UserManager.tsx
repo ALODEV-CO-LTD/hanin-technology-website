@@ -2,6 +2,7 @@
 
 import { useEffect, useState, type FormEvent } from "react";
 import { api, ApiError } from "./api";
+import { useToast } from "./Toast";
 import Dropdown from "./Dropdown";
 
 interface User {
@@ -16,6 +17,7 @@ interface User {
 export default function UserManager() {
   const [users, setUsers] = useState<User[]>([]);
   const [error, setError] = useState("");
+  const toast = useToast();
 
   const [version, setVersion] = useState(0);
   const [newRole, setNewRole] = useState("editor");
@@ -30,13 +32,15 @@ export default function UserManager() {
     };
   }, [version]);
 
-  const guard = async (fn: () => Promise<unknown>) => {
+  const guard = async (fn: () => Promise<unknown>, okText = "Đã cập nhật tài khoản.") => {
     setError("");
     try {
       await fn();
+      toast.success(okText);
       setVersion((v) => v + 1);
     } catch (err) {
       setError(err instanceof ApiError ? err.message : "Thao tác thất bại");
+      toast.error(err instanceof ApiError ? err.message : "Thao tác thất bại");
     }
   };
 
@@ -47,7 +51,7 @@ export default function UserManager() {
     await guard(async () => {
       await api("users", { body: { ...Object.fromEntries(data), role: newRole } });
       form.reset();
-    });
+    }, "Đã tạo tài khoản mới.");
   }
 
   const input = "h-10 px-3 border border-slate-300 rounded bg-white text-sm";
@@ -81,13 +85,13 @@ export default function UserManager() {
               <button
                 onClick={() => {
                   const password = prompt("Mật khẩu mới (tối thiểu 10 ký tự):");
-                  if (password) void guard(() => api(`users/${u.id}`, { method: "PUT", body: { password } }));
+                  if (password) void guard(() => api(`users/${u.id}`, { method: "PUT", body: { password } }), "Đã đặt lại mật khẩu.");
                 }}
                 className="px-3 h-10 rounded border border-slate-300 bg-white text-xs whitespace-nowrap"
               >
                 Đặt lại MK
               </button>
-              <button onClick={() => confirm(`Xoá tài khoản ${u.email}?`) && guard(() => api(`users/${u.id}`, { method: "DELETE" }))} className="px-3 h-10 rounded border border-red-200 text-red-700 bg-white text-xs whitespace-nowrap">Xoá</button>
+              <button onClick={() => confirm(`Xoá tài khoản ${u.email}?`) && guard(() => api(`users/${u.id}`, { method: "DELETE" }), "Đã xoá tài khoản.")} className="px-3 h-10 rounded border border-red-200 text-red-700 bg-white text-xs whitespace-nowrap">Xoá</button>
             </div>
           </div>
         ))}

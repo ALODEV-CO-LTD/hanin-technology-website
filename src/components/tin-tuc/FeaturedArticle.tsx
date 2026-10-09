@@ -2,6 +2,7 @@ import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { getFeaturedPost } from "@/server/public";
 import Icon from "@/components/ui/Icon";
+import Photo from "@/components/ui/Photo";
 
 export default function FeaturedArticle() {
   const t = useTranslations("TinTuc");
@@ -20,16 +21,12 @@ export default function FeaturedArticle() {
               {tc("heading")}
             </span>
           </div>
-          <span className="text-label-technical text-slate-500 uppercase tracking-wider">
-            {tc("badge")}
-          </span>
         </div>
 
         <article className="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm grid grid-cols-1 lg:grid-cols-12 group transition-all duration-300 hover:shadow-md">
           {/* Visual Column */}
           <div className="lg:col-span-7 relative min-h-[380px] lg:min-h-[460px] overflow-hidden bg-slate-200">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
+            <Photo
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               alt={article.imageAlt}
               src={article.image}
@@ -51,13 +48,13 @@ export default function FeaturedArticle() {
                 <span className="px-space-xs py-0.5 rounded bg-steel-100 text-steel-700 font-bold uppercase">
                   {article.category}
                 </span>
-                <span className="text-slate-500">•</span>
-                <span className="text-slate-500 flex items-center gap-1">
+                <span aria-hidden="true" className="text-slate-600">•</span>
+                <span className="text-slate-600 flex items-center gap-1">
                   <Icon name="calendar_today" className="text-[14px]" />
                   {article.date}
                 </span>
-                <span className="text-slate-500">•</span>
-                <span className="text-slate-500 flex items-center gap-1">
+                <span aria-hidden="true" className="text-slate-600">•</span>
+                <span className="text-slate-600 flex items-center gap-1">
                   <Icon name="schedule" className="text-[14px]" />
                   {article.readTime}
                 </span>
@@ -67,25 +64,6 @@ export default function FeaturedArticle() {
               </h2>
               <p className="text-body-md text-slate-600 leading-relaxed">{article.excerpt}</p>
 
-              {/* Technical Metadata Metric Inset */}
-              {article.metrics.length > 0 && (
-              <div className="bg-slate-50 border border-slate-200 p-space-sm rounded-lg grid grid-cols-3 gap-space-xs text-center text-label-sm">
-                {article.metrics.map((metric) => (
-                  <div key={metric.label} className="flex flex-col">
-                    <span className="text-slate-500">{metric.label}</span>
-                    <span
-                      className={
-                        metric.highlight
-                          ? "text-title-md text-steel-600 font-bold"
-                          : "text-title-md text-slate-900 font-bold"
-                      }
-                    >
-                      {metric.value}
-                    </span>
-                  </div>
-                ))}
-              </div>
-              )}
             </div>
 
             <div className="pt-space-md flex items-center justify-between">
@@ -95,12 +73,12 @@ export default function FeaturedArticle() {
                 </div>
                 <div className="flex flex-col">
                   <span className="font-semibold text-slate-900">{article.author}</span>
-                  <span className="text-slate-500 text-label-sm">{article.authorRole}</span>
+                  <span className="text-slate-600 text-label-sm">{article.authorRole}</span>
                 </div>
               </div>
               <Link
                 href={`/tin-tuc/${article.slug}`}
-                className="inline-flex items-center gap-space-xs px-space-md py-space-sm bg-steel-600 text-white text-title-md rounded-lg shadow-sm hover:bg-steel-700 transition-all uppercase tracking-wider"
+                className="inline-flex min-h-11 items-center gap-space-xs px-space-md py-space-sm bg-steel-600 text-white text-title-md rounded-lg shadow-sm hover:bg-steel-700 transition-all uppercase tracking-wider"
               >
                 <span>{tc("readArticle")}</span>
                 <Icon name="arrow_forward" className="text-[18px]" />

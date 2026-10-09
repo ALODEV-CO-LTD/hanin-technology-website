@@ -3,6 +3,8 @@
 import { useEffect, useState, type FormEvent } from "react";
 import { api, ApiError } from "./api";
 import PhoneListInput from "./PhoneListInput";
+import SaveButton, { useSavedFlash } from "./SaveButton";
+import { useToast } from "./Toast";
 
 interface Def {
   key: string;
@@ -16,7 +18,9 @@ interface Def {
 export default function SettingsForm() {
   const [defs, setDefs] = useState<Def[]>([]);
   const [values, setValues] = useState<Record<string, string>>({});
-  const [message, setMessage] = useState<{ ok: boolean; text: string } | null>(null);
+  const [saving, setSaving] = useState(false);
+  const toast = useToast();
+  const { saved, flash } = useSavedFlash();
 
   useEffect(() => {
     void api<{ defs: Def[]; values: Record<string, string> }>("settings").then((d) => {
@@ -27,14 +31,17 @@ export default function SettingsForm() {
 
   async function onSubmit(event: FormEvent) {
     event.preventDefault();
-    setMessage(null);
+    setSaving(true);
     try {
       await api("settings", { method: "PUT", body: values });
-      setMessage({ ok: true, text: "Đã lưu. Website cập nhật ngay." });
+      toast.success("Đã lưu cài đặt. Website cập nhật ngay.");
+      flash();
       // Lấy lại giá trị đã chuẩn hoá từ server.
       void api<{ values: Record<string, string> }>("settings").then((d) => setValues(d.values));
     } catch (err) {
-      setMessage({ ok: false, text: err instanceof ApiError ? err.message : "Không lưu được" });
+      toast.error(err instanceof ApiError ? err.message : "Không lưu được");
+    } finally {
+      setSaving(false);
     }
   }
 
@@ -69,8 +76,7 @@ export default function SettingsForm() {
         </fieldset>
       ))}
       <div className="flex items-center gap-3">
-        <button className="h-10 px-6 rounded bg-steel-600 hover:bg-steel-700 text-white font-semibold text-sm">Lưu</button>
-        {message && <span role="status" className={`text-sm ${message.ok ? "text-emerald-700" : "text-red-700"}`}>{message.text}</span>}
+        <SaveButton saving={saving} saved={saved} />
       </div>
     </form>
   );

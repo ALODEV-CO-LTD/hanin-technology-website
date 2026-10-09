@@ -42,3 +42,7 @@ next-env.d.ts
 
 # CMS data (SQLite, uploads, tài khoản tạm) và biến môi trường
 /data/
+
+# build tạm khi hoán đổi (scripts/safe-build.sh)
+/.next-new/
+/.next-old/

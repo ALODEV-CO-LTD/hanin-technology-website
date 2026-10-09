@@ -6,6 +6,7 @@ import PostBody from "@/components/tin-tuc/PostBody";
 import { Link } from "@/i18n/navigation";
 import { getPostBySlug, getPosts } from "@/server/public";
 import Icon from "@/components/ui/Icon";
+import Photo from "@/components/ui/Photo";
 
 type PageParams = { slug: string };
 
@@ -48,8 +49,7 @@ export default async function TinTucChiTietPage({ params }: { params: Promise<Pa
       <article className="mx-auto w-full max-w-3xl flex flex-col gap-space-md">
         {post.image && (
           <div className="rounded-xl overflow-hidden bg-slate-200 border border-slate-200">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img className="w-full h-auto max-h-[480px] object-cover" alt={post.imageAlt} src={post.image} />
+            <Photo className="w-full h-auto max-h-[480px] object-cover" alt={post.imageAlt} src={post.image} />
           </div>
         )}
 
@@ -57,15 +57,15 @@ export default async function TinTucChiTietPage({ params }: { params: Promise<Pa
           <span className="px-space-xs py-0.5 rounded bg-steel-100 text-steel-700 font-bold uppercase">
             {post.categoryLabel}
           </span>
-          <span className="text-slate-500">•</span>
-          <span className="text-slate-500 flex items-center gap-1">
+          <span aria-hidden="true" className="text-slate-600">•</span>
+          <span className="text-slate-600 flex items-center gap-1">
             <Icon name="calendar_today" className="text-[14px]" />
             <time dateTime={post.isoDate}>{post.date}</time>
           </span>
           {post.readTime && (
             <>
-              <span className="text-slate-500">•</span>
-              <span className="text-slate-500 flex items-center gap-1">
+              <span aria-hidden="true" className="text-slate-600">•</span>
+              <span className="text-slate-600 flex items-center gap-1">
                 <Icon name="schedule" className="text-[14px]" />
                 {post.readTime}
               </span>
@@ -73,8 +73,8 @@ export default async function TinTucChiTietPage({ params }: { params: Promise<Pa
           )}
           {post.author && (
             <>
-              <span className="text-slate-500">•</span>
-              <span className="text-slate-500 flex items-center gap-1">
+              <span aria-hidden="true" className="text-slate-600">•</span>
+              <span className="text-slate-600 flex items-center gap-1">
                 <Icon name="person" className="text-[14px]" />
                 {post.author}
               </span>
@@ -97,8 +97,7 @@ export default async function TinTucChiTietPage({ params }: { params: Promise<Pa
                 <article className="h-full bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm flex flex-col group transition-all duration-300 hover:shadow-md">
                   <div className="relative h-48 overflow-hidden bg-slate-200">
                     {r.image && (
-                      // eslint-disable-next-line @next/next/no-img-element
-                      <img
+                      <Photo
                         className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                         alt={r.imageAlt}
                         src={r.image}
@@ -106,14 +105,14 @@ export default async function TinTucChiTietPage({ params }: { params: Promise<Pa
                     )}
                     <div className="absolute top-space-sm left-space-sm">
                       <span
-                        className={`px-space-xs py-0.5 rounded bg-white text-label-sm font-bold uppercase tracking-wider ${r.categoryColorClass}`}
+                        className={`px-space-xs py-0.5 rounded bg-white text-label-sm font-bold uppercase tracking-wider text-steel-700`}
                       >
                         {r.categoryLabel}
                       </span>
                     </div>
                   </div>
                   <div className="p-space-md flex flex-col gap-space-xs">
-                    <span className="text-label-sm text-slate-500">{r.date}</span>
+                    <span className="text-label-sm text-slate-600">{r.date}</span>
                     <h3 className="text-headline-sm text-slate-900 group-hover:text-steel-600 transition-colors leading-snug line-clamp-2 font-bold">
                       {r.title}
                     </h3>

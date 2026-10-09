@@ -23,226 +23,226 @@
       }
     },
     "Hero": {
-      "titlePrefix": "GIA CÔNG XI MẠ",
-      "titleHighlight": "CHÍNH XÁC",
-      "subtitle": "Giải pháp gia công mạ kim loại cho công nghiệp hiện đại.",
-      "description": "Gia công mạ kim loại và sản xuất phụ trợ cho khách hàng công nghiệp, kiểm soát dung sai theo tiêu chuẩn kỹ thuật.",
-      "ctaPrimary": "KHÁM PHÁ NĂNG LỰC",
-      "ctaSecondary": "YÊU CẦU TƯ VẤN →",
-      "lineLabel": "DÂY CHUYỀN:",
-      "lineValue": "TỰ ĐỘNG KHỨP 04",
+      "titlePrefix": "GIA CÔNG MẠ",
+      "titleHighlight": "KIM LOẠI",
+      "subtitle": "Nhà máy gia công mạ kim loại tại KCN Quang Minh, Hà Nội.",
+      "description": "Gia công mạ cho khách hàng công nghiệp, kiểm soát độ dày lớp mạ và dung sai theo bản vẽ.",
+      "ctaPrimary": "XEM NĂNG LỰC SẢN XUẤT",
+      "ctaSecondary": "YÊU CẦU TƯ VẤN",
+      "lineLabel": "CÔNG NGHỆ:",
+      "lineValue": "MẠ TREO · MẠ QUAY",
       "toleranceLabel": "DUNG SAI:",
       "toleranceValue": "±0.002 MM",
       "locationLabel": "ĐỊA ĐIỂM:",
-      "locationValue": "KCN QUANG MINH, HN",
-      "scrollCta": "CUỘN XUỐNG KHÁM PHÁ",
-      "imageAlt": "Dây chuyền mạ tự động (ảnh minh họa, sẽ thay bằng ảnh thực tế do Bên A cung cấp)"
+      "locationValue": "KCN QUANG MINH, HÀ NỘI",
+      "scrollCta": "CUỘN XUỐNG",
+      "imageAlt": "Dây chuyền mạ tại nhà máy HANIN"
     },
     "AboutHanin": {
       "highlights": {
-        "0": "Độ bám dính cao, chống ăn mòn bề mặt",
-        "1": "Kiểm định độ dày lớp mạ theo micron",
-        "2": "Gia công quy mô công nghiệp hàng loạt",
-        "3": "Hệ thống xử lý nước thải đạt chuẩn"
+        "0": "Lớp mạ bám dính tốt, chống ăn mòn",
+        "1": "Đo độ dày lớp mạ theo micron",
+        "2": "Gia công hàng loạt",
+        "3": "Có hệ thống xử lý nước thải"
       },
-      "imageAlt": "Kỹ sư giám sát quy trình mạ kim loại tại HANIN (ảnh minh họa, sẽ thay bằng ảnh thực tế)",
-      "badgeTag": "HỆ THỐNG KCS // BỂ MẠ SỐ 04",
-      "badgeTitle": "Quy Trình Kiểm Soát Khép Kín",
-      "badgeSubtitle": "TIÊU CHUẨN XỬ LÝ BỀ MẶT CÔNG NGHIỆP",
-      "title": "Năng lực tạo nên sự khác biệt.",
-      "paragraph1": "Tập trung vào lĩnh vực gia công mạ kim loại và năng lực sản xuất phục vụ khách hàng công nghiệp.",
-      "paragraph2": "Thành lập năm 2023, HANIN vận hành nhà máy rộng 2.230 m² tại KCN Quang Minh, Hà Nội, với 58 nhân sự và hơn 100 khách hàng công nghiệp.",
+      "imageAlt": "Kỹ sư giám sát quy trình mạ kim loại tại HANIN",
+      "badgeTag": "Kiểm soát chất lượng",
+      "badgeTitle": "Kiểm tra theo từng công đoạn",
+      "badgeSubtitle": "XỬ LÝ BỀ MẶT KIM LOẠI CÔNG NGHIỆP",
+      "title": "Về HANIN",
+      "paragraph1": "HANIN chuyên gia công mạ kim loại cho khách hàng công nghiệp.",
+      "paragraph2": "HANIN chuyên gia công mạ kim loại cho khách hàng công nghiệp. Thành lập năm 2023, nhà máy rộng 2.230 m² tại KCN Quang Minh, Hà Nội, 58 nhân sự, hơn 100 khách hàng.",
       "ctaLink": "XEM THÊM VỀ HANIN"
     },
     "PlatingServices": {
-      "title": "Dịch vụ gia công mạ theo nhu cầu công nghiệp.",
+      "title": "Dịch vụ gia công mạ",
       "ctaAll": "XEM TẤT CẢ DỊCH VỤ",
       "detailLabel": "CHI TIẾT KỸ THUẬT",
       "services": {
         "0": {
           "tag": "CƠ KHÍ CHÍNH XÁC",
-          "title": "DỊCH VỤ MẠ 01",
-          "desc": "Gia công mạ bề mặt cơ khí chính xác đáp ứng độ bền và khả năng chống ăn mòn công nghiệp."
+          "title": "Mạ chi tiết cơ khí",
+          "desc": "Mạ bề mặt chi tiết cơ khí chính xác để tăng độ bền và khả năng chống ăn mòn."
         },
         "1": {
           "tag": "DẪN ĐIỆN & LINH KIỆN",
-          "title": "DỊCH VỤ MẠ 02",
-          "desc": "Giải pháp mạ bảo vệ và tăng cường tính dẫn điện, thẩm mỹ cho chi tiết kỹ thuật cao."
+          "title": "Mạ chi tiết điện, điện tử",
+          "desc": "Mạ bảo vệ bề mặt, tăng khả năng dẫn điện và cải thiện ngoại quan cho linh kiện kỹ thuật."
         },
         "2": {
           "tag": "KIỂM SOÁT MICRON",
-          "title": "DỊCH VỤ MẠ 03",
-          "desc": "Công nghệ xử lý bề mặt kim loại với khả năng kiểm soát độ dày lớp mạ chuẩn micron."
+          "title": "Mạ theo độ dày yêu cầu",
+          "desc": "Kiểm soát độ dày lớp mạ theo micron, đo kiểm bằng thiết bị chuyên dụng."
         },
         "3": {
-          "tag": "HÀNG LOẠT LỚN",
-          "title": "DỊCH VỤ MẠ 04",
-          "desc": "Gia công mạ quy mô công nghiệp hàng loạt với độ đồng đều và ổn định cao."
+          "tag": "HÀNG LOẠT",
+          "title": "Mạ số lượng lớn",
+          "desc": "Gia công mạ hàng loạt, giữ độ đồng đều lớp mạ giữa các mẻ."
         }
       }
     },
     "ManufacturingCapability": {
       "title": "NĂNG LỰC SẢN XUẤT",
-      "description": "Dây chuyền sản xuất, thiết bị bể mạ và hệ thống kiểm nghiệm vận hành đồng bộ theo từng công đoạn.",
-      "imageAlt": "Bể mạ tự động đang vận hành tại HANIN (ảnh minh họa, sẽ thay bằng ảnh thực tế)",
-      "statusLabel": "TRẠNG THÁI VẬN HÀNH: ĐANG HOẠT ĐỘNG",
-      "tempLabel": "NHIỆT ĐỘ BỂ",
-      "voltageLabel": "ĐIỆN ÁP HIỆU DỤNG",
-      "filterLabel": "TUẦN HOÀN LỌC",
-      "cta": "KHÁM PHÁ NĂNG LỰC →",
+      "description": "Dây chuyền mạ, bể mạ và thiết bị kiểm nghiệm được bố trí theo thứ tự các công đoạn.",
+      "imageAlt": "Bể mạ tự động tại nhà máy HANIN",
+      "statusLabel": "Bể mạ đang vận hành",
+      "tempLabel": "Nhiệt độ bể",
+      "voltageLabel": "Điện áp",
+      "filterLabel": "Lọc tuần hoàn",
+      "cta": "XEM NĂNG LỰC SẢN XUẤT",
       "specs": {
         "0": {
           "tag": "DÂY CHUYỀN MẠ",
-          "title": "16 Dây chuyền tự động & bán tự động",
-          "desc": "Lập trình hành trình điều khiển PLC, kiểm soát chính xác thời gian ngâm bể và cường độ dòng điện."
+          "title": "Dây chuyền mạ treo và mạ quay",
+          "desc": "PLC lập trình hành trình bể và thời gian ngâm; dòng điện chỉnh theo từng mã hàng."
         },
         "1": {
           "tag": "THIẾT BỊ",
-          "title": "42 Thiết bị bể mạ & phụ trợ chuyên dụng",
-          "desc": "Hệ thống lọc tuần hoàn, trao đổi nhiệt tự động và hệ thống sấy khô chân không công nghiệp."
+          "title": "Bể mạ và thiết bị phụ trợ",
+          "desc": "Bể mạ có lọc tuần hoàn, gia nhiệt tự động và công đoạn sấy khô."
         },
         "2": {
           "tag": "KIỂM SOÁT CHẤT LƯỢNG",
-          "title": "09 Thiết bị đo lường & kiểm nghiệm quang phổ",
-          "desc": "Máy đo huỳnh quang tia X (XRF), buồng thử nghiệm sương muối gia tốc ASTM B117 và kiểm tra độ bám dính."
+          "title": "Thiết bị kiểm tra lớp mạ",
+          "desc": "Máy đo XRF, buồng thử phun sương muối ASTM B117, kiểm tra độ bám dính."
         },
         "3": {
-          "tag": "NĂNG LỰC SẢN XUẤT",
-          "title": "850 Tấn / Sản phẩm mỗi tháng",
-          "desc": "Sẵn sàng điều phối luồng sản xuất đáp ứng nhu cầu cung ứng định kỳ của các chuỗi cơ khí chế tạo."
+          "tag": "ĐIỀU PHỐI SẢN XUẤT",
+          "title": "Sản xuất theo đơn hàng",
+          "desc": "Kế hoạch sản xuất sắp theo số lượng và tiến độ giao hàng."
         }
       }
     },
     "FactoryShowcase": {
-      "title": "Không gian vận hành & Thiết bị công nghệ",
-      "description": "Bố trí nhà xưởng, dây chuyền và phòng kiểm nghiệm theo từng khu vực vận hành riêng biệt.",
+      "title": "Nhà xưởng và thiết bị",
+      "description": "Nhà xưởng, dây chuyền và phòng kiểm nghiệm được bố trí thành các khu vực riêng.",
       "tabs": {
         "0": {
-          "label": "01. NHÀ MÁY",
-          "sector": "PHÂN KHU: NHÀ_MÁY_01_A",
-          "tagline": "KHOANG XỬ LÝ KHÍ THẢI & BỂ DUNG DỊCH",
-          "order": "01 / TỔ HỢP NHÀ XƯỞNG CÔNG NGHIỆP",
-          "title": "Nhà xưởng bố trí tối ưu luồng vật liệu",
-          "desc": "Mặt sàn phủ epoxy kháng hóa chất, trần thông gió cưỡng bức hai cấp, hệ thống thu hồi và trung hòa hơi axit tự động 24/7."
+          "label": "NHÀ MÁY",
+          "sector": "Nhà máy",
+          "tagline": "Khu xử lý khí thải và bể dung dịch",
+          "order": "Nhà xưởng",
+          "title": "Nhà xưởng bố trí theo luồng vật liệu",
+          "desc": "Sàn epoxy chịu hóa chất, thông gió cưỡng bức và thu hồi hơi axit."
         },
         "1": {
-          "label": "02. DÂY CHUYỀN",
-          "sector": "PHÂN KHU: DÂY_CHUYỀN_02_B",
-          "tagline": "DÂY CHUYỀN MẠ TỰ ĐỘNG",
-          "order": "02 / DÂY CHUYỀN GIA CÔNG MẠ",
-          "title": "Dây chuyền mạ tự động kiểm soát PLC chính xác",
-          "desc": "Lập trình hành trình bể ngâm, kiểm soát cường độ dòng điện và thời gian xử lý theo từng loại vật liệu."
+          "label": "DÂY CHUYỀN",
+          "sector": "Dây chuyền",
+          "tagline": "Dây chuyền mạ",
+          "order": "Gia công mạ",
+          "title": "Dây chuyền mạ điều khiển bằng PLC",
+          "desc": "Hành trình bể, dòng điện và thời gian xử lý thiết lập theo từng vật liệu."
         },
         "2": {
-          "label": "03. PHÒNG KIỂM NGHIỆM",
-          "sector": "PHÂN KHU: PHÒNG_LAB_03_C",
-          "tagline": "PHÒNG PHÂN TÍCH & KIỂM TRA",
-          "order": "03 / KIỂM SOÁT CHẤT LƯỢNG",
-          "title": "Phòng kiểm nghiệm đạt chuẩn quốc tế",
-          "desc": "Máy đo huỳnh quang tia X (XRF), buồng thử nghiệm sương muối ASTM B117 và kiểm tra độ bám dính lớp mạ."
+          "label": "PHÒNG KIỂM NGHIỆM",
+          "sector": "Phòng kiểm nghiệm",
+          "tagline": "Phòng phân tích và kiểm tra",
+          "order": "Kiểm soát chất lượng",
+          "title": "Phòng kiểm nghiệm lớp mạ",
+          "desc": "Máy đo XRF, buồng thử phun sương muối ASTM B117, kiểm tra độ bám dính."
         },
         "3": {
-          "label": "04. THIẾT BỊ",
-          "sector": "PHÂN KHU: THIẾT_BỊ_04_D",
-          "tagline": "THIẾT BỊ & PHỤ TRỢ CHUYÊN DỤNG",
-          "order": "04 / DANH MỤC THIẾT BỊ",
-          "title": "Hệ thống thiết bị phụ trợ chuyên dụng",
-          "desc": "Hệ thống lọc tuần hoàn, trao đổi nhiệt tự động và sấy khô chân không công nghiệp phục vụ toàn bộ dây chuyền."
+          "label": "THIẾT BỊ",
+          "sector": "Thiết bị",
+          "tagline": "Thiết bị phụ trợ",
+          "order": "Thiết bị",
+          "title": "Thiết bị phụ trợ",
+          "desc": "Lọc tuần hoàn, gia nhiệt tự động và sấy khô sản phẩm."
         }
       }
     },
     "ProductsProjects": {
-      "title": "Sản phẩm và dự án tiêu biểu.",
-      "description": "Khám phá các sản phẩm và dự án gia công được thực hiện bởi HANIN.",
+      "title": "Sản phẩm và dự án",
+      "description": "Một số sản phẩm và dự án gia công mạ do HANIN thực hiện.",
       "ctaAll": "XEM TẤT CẢ DỰ ÁN",
       "project1": {
-        "imageAlt": "Chi tiết bánh răng và trục cơ khí chính xác sau gia công mạ (ảnh minh họa)",
-        "label": "DỰ ÁN TIÊU BIỂU 01",
+        "imageAlt": "Chi tiết bánh răng và trục cơ khí chính xác sau gia công mạ",
+        "label": "DỰ ÁN 01",
         "category": "Cơ khí chính xác",
-        "title": "Chi tiết truyền động & bánh răng cơ khí chính xác",
-        "desc": "Gia công mạ bảo vệ bề mặt chống mài mòn cao, duy trì độ chính xác bước răng và tăng tuổi thọ chu kỳ làm việc trong môi trường ma sát cao.",
-        "cta": "THÔNG SỐ LỚP MẠ →"
+        "title": "Chi tiết truyền động và bánh răng",
+        "desc": "Mạ bảo vệ bề mặt để chống mài mòn, giữ độ chính xác bước răng và kéo dài tuổi thọ chi tiết làm việc trong môi trường ma sát cao.",
+        "cta": "THÔNG SỐ LỚP MẠ"
       },
       "project2": {
-        "imageAlt": "Trục piston và ty ben thủy lực ô tô mạ crom cứng (ảnh minh họa)",
-        "label": "DỰ ÁN TIÊU BIỂU 02",
-        "category": "Công nghiệp ô tô / Xe máy",
-        "title": "Linh kiện vỏ bọc kim loại & phụ kiện phụ trợ",
-        "desc": "Lớp mạ đồng nhất kháng ăn mòn muối phun đạt tiêu chuẩn thử nghiệm ngoại quan cao, phục vụ cho các nhà sản xuất OEM phụ tùng xe máy, ô tô.",
+        "imageAlt": "Trục piston và ty ben thủy lực ô tô mạ crom cứng",
+        "label": "DỰ ÁN 02",
+        "category": "Ô tô, xe máy",
+        "title": "Linh kiện vỏ kim loại và phụ kiện",
+        "desc": "Lớp mạ đồng đều, kiểm tra khả năng chống ăn mòn bằng thử nghiệm phun sương muối, dùng cho phụ tùng xe máy và ô tô.",
         "cta": "XEM CHI TIẾT DỰ ÁN"
       },
       "project3": {
-        "imageAlt": "Thanh busbar đồng mạ thiếc trong tủ điện cao thế (ảnh minh họa)",
-        "label": "DỰ ÁN TIÊU BIỂU 03",
-        "category": "Thiết bị điện tử công nghiệp",
-        "title": "Phần cứng kim khí kỹ thuật cao",
-        "desc": "Xử lý bề mặt các khối đấu nối kim loại, chân cắm tiếp xúc dẫn điện và thanh giằng điện tử với độ dày lớp mạ kiểm soát dưới 5 micron.",
+        "imageAlt": "Thanh busbar đồng mạ thiếc trong tủ điện cao thế",
+        "label": "DỰ ÁN 03",
+        "category": "Thiết bị điện, điện tử",
+        "title": "Phụ kiện kim loại kỹ thuật",
+        "desc": "Mạ khối đấu nối, chân cắm tiếp xúc và thanh dẫn điện, độ dày lớp mạ kiểm soát dưới 5 micron.",
         "cta": "XEM CHI TIẾT DỰ ÁN"
       }
     },
     "QualityCertification": {
-      "title": "Chất lượng là nền tảng trong toàn bộ quy trình sản xuất.",
-      "description": "Kiểm chuẩn nghiêm ngặt từ tiếp nhận nguyên liệu thô, pha chế dung dịch hóa chất đến thẩm định xuất xưởng.",
+      "title": "Kiểm soát chất lượng ở mọi công đoạn.",
+      "description": "Sản phẩm được kiểm tra từ khâu tiếp nhận nguyên liệu, pha chế dung dịch đến kiểm tra trước khi xuất xưởng.",
       "ctaView": "XEM CHỨNG NHẬN",
       "certs": {
         "0": {
-          "label": "[ ISO ]",
-          "title": "Tiêu chuẩn Quản lý Chất lượng Sản xuất",
-          "desc": "Quy trình kiểm soát chất lượng chuẩn hóa cho từng công đoạn xử lý bề mặt kim loại công nghiệp.",
-          "status": "ĐÃ KIỂM ĐỊNH ĐẠT CHUẨN"
+          "label": "ISO 9001",
+          "title": "Quản lý chất lượng sản xuất",
+          "desc": "Quy trình kiểm soát chất lượng chuẩn hóa cho từng công đoạn.",
+          "status": "Quản lý chất lượng"
         },
         "1": {
-          "label": "[ ISO ]",
-          "title": "Tiêu chuẩn Quản lý Môi trường Công nghiệp",
-          "desc": "Tuân thủ các tiêu chuẩn xả thải, tái tuần hoàn nước công nghiệp và an toàn lưu trữ hóa chất mạ.",
-          "status": "ĐẠT CHUẨN ĐÁNH GIÁ MÔI TRƯỜNG"
+          "label": "ISO 14001",
+          "title": "Quản lý môi trường",
+          "desc": "Kiểm soát xả thải, tuần hoàn nước, lưu trữ hóa chất an toàn.",
+          "status": "Quản lý môi trường"
         },
         "2": {
-          "label": "[ CERTIFICATION ]",
-          "title": "Chứng nhận Quy trình & Kiểm soát Bề mặt",
-          "desc": "Chứng nhận đánh giá độ dày lớp mạ, độ nhám bề mặt và kháng ăn mòn theo tiêu chuẩn quốc tế.",
-          "status": "THỬ NGHIỆM PHÒNG LAB ĐẠT CHUẨN"
+          "label": "Kiểm định",
+          "title": "Kiểm tra lớp mạ",
+          "desc": "Đánh giá độ dày, độ nhám bề mặt và khả năng chống ăn mòn.",
+          "status": "Thử nghiệm tại phòng kiểm nghiệm"
         }
       }
     },
     "NewsUpdates": {
-      "title": "Tin tức & cập nhật",
+      "title": "Tin tức và cập nhật",
       "ctaAll": "XEM TẤT CẢ",
       "readMore": "ĐỌC BÀI VIẾT",
       "articles": {
         "0": {
-          "tag": "Tin tức doanh nghiệp",
-          "title": "Định hướng phát triển năng lực công nghệ và mở rộng hệ thống gia công mạ",
-          "excerpt": "Tập trung nâng cao độ chính xác kỹ thuật và tuân thủ các quy chuẩn khắt khe từ đối tác B2B..."
+          "tag": "Tin doanh nghiệp",
+          "title": "Định hướng nâng cao năng lực công nghệ và mở rộng gia công mạ",
+          "excerpt": "Nâng cao độ chính xác kỹ thuật và đáp ứng yêu cầu kỹ thuật của khách hàng doanh nghiệp..."
         },
         "1": {
           "tag": "Hoạt động sản xuất",
-          "title": "Tối ưu hóa quy trình kiểm soát độ dày lớp mạ theo chuẩn công nghiệp",
-          "excerpt": "Ứng dụng các phương pháp đo lường hiện đại nhằm đảm bảo độ đồng đều trên từng lô sản phẩm..."
+          "title": "Kiểm soát độ dày lớp mạ theo tiêu chuẩn công nghiệp",
+          "excerpt": "Đo độ dày lớp mạ bằng thiết bị chuyên dụng để kiểm tra độ đồng đều giữa các lô hàng..."
         },
         "2": {
           "tag": "Cập nhật dự án",
-          "title": "Triển khai hoàn thiện các gói gia công linh kiện phục vụ chuỗi cung ứng",
-          "excerpt": "Đáp ứng tiến độ và các yêu cầu kỹ thuật đối với nhóm sản phẩm gia công cơ khí phụ trợ..."
+          "title": "Hoàn thành các đơn gia công linh kiện cho chuỗi cung ứng",
+          "excerpt": "Giao hàng đúng tiến độ và đáp ứng yêu cầu kỹ thuật của nhóm chi tiết cơ khí phụ trợ..."
         }
       }
     },
     "RecruitmentBanner": {
-      "title": "Cùng xây dựng tương lai công nghiệp.",
-      "description": "Gia nhập đội ngũ kỹ thuật và vận hành tại HANIN.",
+      "title": "Tuyển dụng tại HANIN",
+      "description": "HANIN tuyển nhân sự kỹ thuật và vận hành cho nhà máy tại KCN Quang Minh.",
       "positionsLabel": "VỊ TRÍ ĐANG TUYỂN",
       "cta": "XEM VỊ TRÍ TUYỂN DỤNG"
     },
     "FinalCta": {
-      "title": "BẠN CÓ DỰ ÁN CẦN GIA CÔNG MẠ?",
-      "description": "Gửi yêu cầu, đội kỹ thuật HANIN sẽ liên hệ tư vấn theo thông số cụ thể của bạn.",
+      "title": "BẠN CẦN GIA CÔNG MẠ?",
+      "description": "Gửi yêu cầu kèm bản vẽ hoặc thông số kỹ thuật, bộ phận kỹ thuật sẽ liên hệ lại.",
       "cta": "GỬI YÊU CẦU BÁO GIÁ",
       "contactTitle": "LIÊN HỆ TRỰC TIẾP",
-      "hotlineLabel": "HOTLINE HỖ TRỢ",
+      "hotlineLabel": "HOTLINE",
       "zaloLabel": "ZALO KỸ THUẬT",
-      "zaloCta": "CHAT VỚI HANIN",
-      "emailLabel": "HỘP THƯ BÁO GIÁ",
-      "addressLabel": "ĐỊA CHỈ NHÀ XƯỞNG",
+      "zaloCta": "NHẮN TIN QUA ZALO",
+      "emailLabel": "EMAIL BÁO GIÁ",
+      "addressLabel": "ĐỊA CHỈ NHÀ MÁY",
       "addressValue": "Lô 49G, KCN Quang Minh, xã Quang Minh, Hà Nội"
     }
   }

@@ -1,9 +1,11 @@
 import type { ReactNode } from "react";
-import { Link } from "@/i18n/navigation";
+import { useTranslations } from "next-intl";
 import { getSettings } from "@/server/settings";
+import ProfileUnavailable from "@/components/ui/ProfileUnavailable";
 
-/** Nút tải hồ sơ năng lực: dùng link PDF cấu hình trong CMS, chưa có thì chuyển tới form liên hệ. */
+/** Nút tải hồ sơ năng lực: dùng link PDF cấu hình trong CMS; chưa có file thì chỉ hiện thông báo, không chuyển trang. */
 export default function ProfileLink({ className, children }: { className?: string; children: ReactNode }) {
+  const t = useTranslations("Common");
   const { profileUrl } = getSettings();
   if (profileUrl) {
     return (
@@ -13,8 +15,8 @@ export default function ProfileLink({ className, children }: { className?: strin
     );
   }
   return (
-    <Link href="/lien-he#rfq-form" className={className}>
+    <ProfileUnavailable className={className} message={t("profileUnavailable")}>
       {children}
-    </Link>
+    </ProfileUnavailable>
   );
 }

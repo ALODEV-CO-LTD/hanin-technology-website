@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { api, ApiError } from "./api";
+import { useToast } from "./Toast";
 
 interface Props {
   resource: string;
@@ -15,6 +16,7 @@ interface Props {
 export default function RowActions({ resource, id, publishField, published }: Props) {
   const router = useRouter();
   const [busy, setBusy] = useState(false);
+  const toast = useToast();
 
   async function toggle() {
     if (!publishField) return;
@@ -22,9 +24,10 @@ export default function RowActions({ resource, id, publishField, published }: Pr
     try {
       const next = publishField === "status" ? (published ? "draft" : "published") : !published;
       await api(`${resource}/${id}`, { method: "PUT", body: { [publishField]: next } });
+      toast.success(next === "published" || next === true ? "Đã hiển thị trên website." : "Đã ẩn khỏi website.");
       router.refresh();
     } catch (err) {
-      alert(err instanceof ApiError ? err.message : "Không cập nhật được");
+      toast.error(err instanceof ApiError ? err.message : "Không cập nhật được");
     } finally {
       setBusy(false);
     }
@@ -35,9 +38,10 @@ export default function RowActions({ resource, id, publishField, published }: Pr
     setBusy(true);
     try {
       await api(`${resource}/${id}`, { method: "DELETE" });
+      toast.success("Đã xoá. Có thể khôi phục trong mục \"Đã xoá\" bên dưới danh sách.");
       router.refresh();
     } catch (err) {
-      alert(err instanceof ApiError ? err.message : "Không xoá được");
+      toast.error(err instanceof ApiError ? err.message : "Không xoá được");
       setBusy(false);
     }
   }

@@ -25,7 +25,7 @@ export default async function LegalPage({
         <PageBreadcrumb items={[{ label: tNav("trangChu"), href: "/" }, { label: title }]} />
         <header className="flex flex-col gap-space-sm">
           <h1 className="text-headline-lg uppercase tracking-tight text-slate-900">{title}</h1>
-          <p className="text-label-technical text-slate-500">{updated}</p>
+          <p className="text-label-technical text-slate-600">{updated}</p>
           <p className="text-body-md text-slate-600 leading-relaxed">{intro}</p>
         </header>
         {sections.map((s, i) => (

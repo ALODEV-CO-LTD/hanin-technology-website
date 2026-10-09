@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import CapabilityHero from "@/components/nang-luc/CapabilityHero";
-import CapabilityOverviewStats from "@/components/nang-luc/CapabilityOverviewStats";
 import FactoryOverview from "@/components/nang-luc/FactoryOverview";
 import ProductionLines from "@/components/nang-luc/ProductionLines";
 import AutomatedVsManual from "@/components/nang-luc/AutomatedVsManual";
@@ -24,7 +23,6 @@ export default function NangLucSanXuatPage() {
   return (
     <div className="flex flex-col w-full">
       <CapabilityHero />
-      <Reveal><CapabilityOverviewStats /></Reveal>
       <Reveal direction="right"><FactoryOverview /></Reveal>
       <Reveal direction="right"><ProductionLines /></Reveal>
       <Reveal><AutomatedVsManual /></Reveal>

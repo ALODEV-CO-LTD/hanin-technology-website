@@ -19,7 +19,7 @@ export default function NewsUpdates() {
           </div>
           <Link
             href="/tin-tuc"
-            className="inline-flex items-center gap-2 text-label-technical uppercase tracking-wider text-slate-600 hover:text-steel-600 transition-colors font-semibold"
+            className="inline-flex items-center gap-2 py-3 -my-3 text-label-technical uppercase tracking-wider text-slate-600 hover:text-steel-600 transition-colors font-semibold"
           >
             <span>{t("ctaAll")}</span>
             <Icon name="arrow_forward" className="text-[16px]" />
@@ -34,16 +34,15 @@ export default function NewsUpdates() {
               className="p-space-lg bg-white border border-slate-200 rounded shadow-sm hover:shadow-xl hover:border-steel-300 transition-all duration-200 flex flex-col justify-between group"
             >
               <div className="flex flex-col gap-space-sm">
-                <div className="flex items-center justify-between text-slate-500">
+                <div className="flex items-center justify-between text-slate-600">
                   <span className="text-xs px-2 py-0.5 rounded bg-steel-50 text-steel-700 uppercase font-semibold">
                     {post.categoryLabel}
                   </span>
-                  <span className="text-xs font-mono">{post.isoDate.slice(0, 4)}</span>
+                  <span className="text-xs">{post.isoDate.slice(0, 4)}</span>
                 </div>
                 <h3 className="text-title-md text-slate-900 font-bold group-hover:text-steel-600 transition-colors leading-snug">
                   {post.title}
                 </h3>
-                <p className="text-body-sm text-slate-600 leading-relaxed">{post.excerpt}</p>
               </div>
               <div className="pt-space-md flex items-center gap-2 text-steel-600 text-xs uppercase tracking-wider font-semibold">
                 <span>{t("readMore")}</span>

@@ -31,7 +31,7 @@ export default function ProductOverview() {
                   <Icon name="check_circle" className="text-steel-600 text-[20px] shrink-0 mt-0.5" />
                   <div className="flex flex-col">
                     <span className="text-title-md text-slate-900 font-semibold">{item.title}</span>
-                    <span className="text-body-sm text-slate-600">{item.description}</span>
+                    <span className="text-body-md text-slate-600">{item.description}</span>
                   </div>
                 </div>
               ))}
@@ -41,35 +41,28 @@ export default function ProductOverview() {
           <div className="lg:col-span-5 flex flex-col bg-white border border-slate-200 rounded overflow-hidden shadow-sm">
             <div className="p-space-sm bg-slate-50 border-b border-slate-200 flex items-center justify-between">
               <div className="flex items-center gap-space-xs text-label-technical uppercase tracking-wider text-slate-900">
-                <Icon name="terminal" className="text-steel-600 text-[18px]" />
+                <Icon name="fact_check" className="text-steel-600 text-[18px]" />
                 <span>{t("specSheetTitle")}</span>
               </div>
-              <span className="font-mono text-label-sm text-sky-700 font-semibold">{t("specSheetRevision")}</span>
             </div>
-            <div className="divide-y divide-slate-100 text-label-technical">
-              {specSheet.map((row) => (
+            <dl className="divide-y divide-slate-100">
+              {specSheet.slice(0, 6).map((row) => (
                 <div key={row.label} className="p-space-sm flex flex-col gap-1">
-                  <span className="text-slate-400 text-label-sm uppercase">{row.label}:</span>
-                  <span
+                  <dt className="text-steel-600 text-label-sm uppercase font-semibold">{row.label}</dt>
+                  <dd
                     className={
                       row.accent
-                        ? "text-steel-600 font-semibold"
+                        ? "text-body-md text-steel-600 font-semibold"
                         : row.technical
-                        ? "text-sky-700 font-semibold"
-                        : "text-slate-900 font-semibold"
+                        ? "text-body-md text-steel-700 font-semibold"
+                        : "text-body-md text-slate-900 font-semibold"
                     }
                   >
                     {row.value}
-                  </span>
+                  </dd>
                 </div>
               ))}
-            </div>
-            <div className="p-space-sm bg-slate-50 border-t border-slate-200 flex items-center justify-between text-label-sm">
-              <span className="text-slate-500">{t("batchStatusLabel")}</span>
-              <span className="px-2 py-0.5 bg-emerald-50 border border-emerald-300 text-emerald-700 font-mono font-semibold rounded">
-                {t("batchStatusValue")}
-              </span>
-            </div>
+            </dl>
           </div>
         </div>
       </div>

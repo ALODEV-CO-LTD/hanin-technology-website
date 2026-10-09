@@ -38,7 +38,7 @@ export default function LanguageSwitcher({ variant = "desktop" }: { variant?: "d
   if (variant === "mobile") {
     return (
       <div className="flex flex-wrap items-center gap-space-xs pt-space-sm border-t border-slate-200 mt-space-sm">
-        <span className="text-label-technical text-slate-400 uppercase pr-space-xs">{t("label")}:</span>
+        <span className="text-label-technical text-slate-600 uppercase pr-space-xs">{t("label")}:</span>
         {routing.locales.map((loc) => (
           <button
             key={loc}
@@ -49,6 +49,8 @@ export default function LanguageSwitcher({ variant = "desktop" }: { variant?: "d
                 ? "bg-steel-600 text-white font-semibold"
                 : "bg-slate-100 text-slate-600 hover:bg-slate-200"
             }`}
+            aria-pressed={loc === locale}
+            lang={loc}
           >
             {LOCALE_LABELS[loc]}
           </button>
@@ -64,7 +66,8 @@ export default function LanguageSwitcher({ variant = "desktop" }: { variant?: "d
         onClick={() => setOpen((o) => !o)}
         aria-haspopup="listbox"
         aria-expanded={open}
-        className="flex items-center gap-1 px-2.5 py-1.5 rounded border border-slate-200 text-slate-600 text-label-technical uppercase transition-colors duration-200 hover:border-steel-300 hover:text-steel-600"
+        aria-label={`${t("label")}: ${t(locale)}`}
+        className="flex min-h-11 items-center gap-1 px-3 py-1.5 rounded border border-slate-200 text-slate-600 text-label-technical uppercase transition-colors duration-200 hover:border-steel-300 hover:text-steel-600"
       >
         <Icon name="language" className="text-[16px]" />
         {LOCALE_LABELS[locale]}
@@ -74,7 +77,7 @@ export default function LanguageSwitcher({ variant = "desktop" }: { variant?: "d
       {open && (
         <div
           role="listbox"
-          className="absolute right-0 top-full mt-2 w-36 rounded border border-slate-200 bg-white shadow-lg overflow-hidden z-50 reveal reveal-in"
+          className="absolute right-0 top-full mt-2 w-36 rounded border border-slate-200 bg-white shadow-[0_10px_28px_-8px_rgba(15,23,42,0.22)] overflow-hidden z-50 reveal reveal-in"
         >
           {routing.locales.map((loc) => (
             <button
@@ -82,15 +85,16 @@ export default function LanguageSwitcher({ variant = "desktop" }: { variant?: "d
               type="button"
               role="option"
               aria-selected={loc === locale}
+              lang={loc}
               onClick={() => switchTo(loc)}
-              className={`w-full text-left px-space-md py-space-sm text-body-sm transition-colors ${
+              className={`w-full min-h-11 text-left px-space-md py-space-sm text-body-sm transition-colors ${
                 loc === locale
                   ? "bg-steel-50 text-steel-700 font-semibold"
                   : "text-slate-600 hover:bg-slate-50"
               }`}
             >
               {LOCALE_LABELS[loc]}
-              <span className="block text-xs text-slate-400">{t(loc)}</span>
+              <span className="block text-xs text-slate-600">{t(loc)}</span>
             </button>
           ))}
         </div>

@@ -8,8 +8,9 @@
     "tinTuc": "뉴스",
     "tuyenDung": "채용정보",
     "lienHe": "문의하기",
-    "cta": "기술 견적 요청 →",
+    "cta": "견적 요청",
     "menuOpen": "메뉴 열기",
+    "menuClose": "메뉴 닫기",
     "logoAlt": "HANIN Plating"
   },
   "LanguageSwitcher": {
@@ -19,23 +20,23 @@
     "ko": "한국어"
   },
   "Footer": {
-    "tagline": "정밀 도금 및 기계 가공",
-    "description": "일본 및 국제 산업 표준에 따라 금속 표면을 정밀 처리하는 고급 도금 가공 공장입니다.",
+    "tagline": "금속 도금 가공",
+    "description": "하노이 꽝민공단의 금속 도금 가공 공장입니다.",
     "companyHeading": "기업 정보",
     "companyLinks": {
       "trangChu": "홈",
       "gioiThieu": "회사 소개",
       "nangLuc": "생산 능력",
       "tinTuc": "뉴스 및 행사",
-      "tuyenDung": "채용 기회"
+      "tuyenDung": "채용"
     },
     "serviceHeading": "서비스 및 제품",
     "serviceLinks": {
-      "enp": "무전해 니켈 도금 (ENP)",
+      "enp": "무전해 니켈 도금(ENP)",
       "hardChrome": "공업용 경질 크롬 도금",
-      "anodizing": "알루미늄 아노다이징 / 하드 아노다이징",
+      "anodizing": "알루미늄 아노다이징 및 하드 아노다이징",
       "zincNickel": "내식성 아연-니켈 합금 도금",
-      "specSheet": "마이크론 공차 규격표"
+      "specSheet": "도금 두께 공차표"
     },
     "contactHeading": "기술 문의처",
     "addressLabel": "주소:",
@@ -43,11 +44,11 @@
     "hotlineLabel": "핫라인:",
     "emailLabel": "이메일:",
     "hoursLabel": "근무 시간:",
-    "hours": "월~토: 08:00 - 17:30 (24시간 당직)",
+    "hours": "월~토: 08:00 - 17:30",
     "zaloChat": "Zalo 기술 상담",
     "googleMaps": "Google 지도 길찾기",
-    "statusLine": "도금 라인 및 CMM 측정 시스템: 정상 가동 중",
-    "copyright": "© 2026 HANIN Technology 베트남 도금산업 주식회사 · 사업자번호 0110300983. All rights reserved. ISO 9001:2015 인증.",
+    "statusLine": "금속 도금 가공 공장 · 하노이 꽝민공단",
+    "copyright": "© 2026 HANIN Technology 베트남 도금산업 주식회사 · 사업자번호 0110300983. All rights reserved.",
     "privacyPolicy": "개인정보 처리방침",
     "termsOfService": "서비스 이용약관",
     "certIso9001": "ISO 9001:2015",
@@ -58,31 +59,31 @@
   "Meta": {
     "site": {
       "title": "HANIN",
-      "description": "고정밀 금속 도금 및 산업용 표면처리 솔루션."
+      "description": "산업 고객을 위한 금속 도금 가공 및 표면처리."
     },
     "home": {
       "title": "HANIN",
-      "description": "고정밀 금속 도금 및 산업용 표면처리 솔루션."
+      "description": "산업 고객을 위한 금속 도금 가공 및 표면처리."
     },
     "gioiThieu": {
       "title": "회사 소개",
-      "description": "산업 고객을 위한 금속 도금 가공의 발전 방향과 역량을 소개합니다."
+      "description": "HANIN과 산업 고객을 위한 금속 도금 가공 역량을 소개합니다."
     },
     "dichVu": {
       "title": "도금 가공 및 표면처리 서비스",
-      "description": "자동차·항공 기준을 충족하는 전해 도금, 무전해 도금 및 금속 표면처리 서비스: 경질 크롬 도금, 무전해 니켈 도금(ENP), 아연-니켈 도금, 알루미늄 아노다이징."
+      "description": "전해 도금, 무전해 도금 및 금속 표면처리: 경질 크롬 도금, 무전해 니켈 도금(ENP), 아연-니켈 도금, 알루미늄 아노다이징."
     },
     "sanPham": {
       "title": "제품 및 프로젝트",
-      "description": "고기술 금속 도금 제품 및 프로젝트: 마이크론 단위 공차 관리, 균일한 도금층, 가혹한 환경에서의 내구성."
+      "description": "금속 도금 가공 제품 및 프로젝트: 마이크론 단위 공차 관리, 도금층 균일성, 가혹한 환경에서의 내구성."
     },
     "nangLuc": {
       "title": "생산 역량",
-      "description": "표준화된 공장 시스템, PLC SCADA 자동 제어 도금 라인, 국제 기준을 충족하는 미세 검사 시험실."
+      "description": "공장, PLC로 제어하는 도금 라인, 도금층 시험실."
     },
     "tinTuc": {
       "title": "뉴스 및 기술 소식",
-      "description": "기업 소식, 금속 표면처리 기술, 품질 측정 기준 및 최신 생산 활동을 전해 드립니다."
+      "description": "기업 소식, 금속 표면처리 기술, 품질 검사 기준, 생산 활동."
     },
     "tuyenDung": {
       "title": "채용",
@@ -90,7 +91,7 @@
     },
     "lienHe": {
       "title": "문의 및 견적 요청",
-      "description": "금속 도금 기술 솔루션, 정밀 기계 가공 상담을 문의하시고 CAD 도면과 함께 견적(RFQ)을 요청하세요."
+      "description": "금속 도금 가공 문의 및 CAD 도면을 첨부한 견적(RFQ) 요청."
     },
     "chinhSachBaoMat": {
       "title": "개인정보 처리방침",
@@ -100,5 +101,8 @@
       "title": "서비스 약관",
       "description": "웹사이트 이용 약관 및 HANIN에 견적을 요청할 때의 일반 규정."
     }
+  },
+  "Common": {
+    "profileUnavailable": "회사소개서를 아직 다운로드할 수 없습니다. HANIN에 문의해 주세요."
   }
 }

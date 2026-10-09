@@ -2,6 +2,7 @@
 
 import Select from "@/components/ui/Select";
 import { useMemo, useState, type FormEvent } from "react";
+import { createPortal } from "react-dom";
 import { useLocale, useTranslations } from "next-intl";
 import { submitInquiry } from "@/lib/submit-inquiry";
 import {
@@ -30,6 +31,7 @@ export default function JobBoard({ jobs }: { jobs: Job[] }) {
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const [submitError, setSubmitError] = useState("");
+  const [cvName, setCvName] = useState("");
 
   const JOBS = jobs;
   const DEPARTMENT_OPTIONS = useMemo(() => getDepartmentOptions(t), [t]);
@@ -58,6 +60,7 @@ export default function JobBoard({ jobs }: { jobs: Job[] }) {
   function openApplyModal(job: Job) {
     setSubmitted(false);
     setSubmitError("");
+    setCvName("");
     setSelectedJob({ id: job.id, title: job.title, department: job.departmentLabel });
   }
 
@@ -90,7 +93,7 @@ export default function JobBoard({ jobs }: { jobs: Job[] }) {
   }
 
   return (
-    <section className="w-full py-space-xl bg-slate-50 scroll-mt-[86px]" id="open-positions">
+    <section className="w-full py-space-xl bg-slate-50 scroll-mt-[var(--header-h)]" id="open-positions">
       <div className="mx-auto px-margin flex flex-col gap-space-lg">
         <div className="flex flex-col gap-2 max-w-2xl pb-space-sm">
           <h2 className="text-headline-xl-mobile md:text-headline-xl text-slate-900 tracking-tight uppercase font-bold">
@@ -103,6 +106,7 @@ export default function JobBoard({ jobs }: { jobs: Job[] }) {
           <div className="relative w-full">
             <Icon name="search" className="absolute left-space-md top-1/2 -translate-y-1/2 text-slate-400 text-[20px]" />
             <input
+              aria-label={tb("searchPlaceholder")}
               className="w-full pl-12 pr-space-md h-11 bg-slate-50 border border-slate-200 rounded text-slate-900 placeholder:text-slate-400 text-body-md focus:outline-none focus:ring-2 focus:ring-steel-600/40 transition-all"
               placeholder={tb("searchPlaceholder")}
               type="text"
@@ -113,11 +117,12 @@ export default function JobBoard({ jobs }: { jobs: Job[] }) {
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-space-sm">
             <div className="flex flex-col gap-1">
-              <label className="text-label-sm text-slate-500 uppercase tracking-wider font-semibold">
+              <label htmlFor="jobs-department" className="text-label-sm text-slate-600 uppercase tracking-wider font-semibold">
                 {tb("departmentLabel")}
               </label>
               <Select
-                className="h-10 px-space-sm bg-slate-50 border border-slate-200 rounded text-slate-900 text-body-md"
+                id="jobs-department"
+                className="h-11 px-space-sm bg-slate-50 border border-slate-200 rounded text-slate-900 text-body-md"
                 value={department}
                 onChange={(v) => setDepartment(v as "all" | JobDepartment)}
                 options={DEPARTMENT_OPTIONS}
@@ -125,11 +130,12 @@ export default function JobBoard({ jobs }: { jobs: Job[] }) {
             </div>
 
             <div className="flex flex-col gap-1">
-              <label className="text-label-sm text-slate-500 uppercase tracking-wider font-semibold">
+              <label htmlFor="jobs-type" className="text-label-sm text-slate-600 uppercase tracking-wider font-semibold">
                 {tb("typeLabel")}
               </label>
               <Select
-                className="h-10 px-space-sm bg-slate-50 border border-slate-200 rounded text-slate-900 text-body-md"
+                id="jobs-type"
+                className="h-11 px-space-sm bg-slate-50 border border-slate-200 rounded text-slate-900 text-body-md"
                 value={type}
                 onChange={(v) => setType(v as "all" | JobType)}
                 options={TYPE_OPTIONS}
@@ -137,11 +143,12 @@ export default function JobBoard({ jobs }: { jobs: Job[] }) {
             </div>
 
             <div className="flex flex-col gap-1">
-              <label className="text-label-sm text-slate-500 uppercase tracking-wider font-semibold">
+              <label htmlFor="jobs-location" className="text-label-sm text-slate-600 uppercase tracking-wider font-semibold">
                 {tb("locationLabel")}
               </label>
               <Select
-                className="h-10 px-space-sm bg-slate-50 border border-slate-200 rounded text-slate-900 text-body-md"
+                id="jobs-location"
+                className="h-11 px-space-sm bg-slate-50 border border-slate-200 rounded text-slate-900 text-body-md"
                 value={location}
                 onChange={(v) => setLocation(v as "all" | JobLocation)}
                 options={LOCATION_OPTIONS}
@@ -159,7 +166,7 @@ export default function JobBoard({ jobs }: { jobs: Job[] }) {
             <button
               type="button"
               onClick={resetFilters}
-              className="hover:text-steel-600 transition-colors underline uppercase tracking-wider"
+              className="relative text-slate-600 hover:text-steel-600 focus-visible:outline-2 focus-visible:outline-steel-600 before:absolute before:-inset-x-2 before:-inset-y-3 transition-colors underline uppercase tracking-wider"
             >
               {tb("resetFilters")}
             </button>
@@ -214,7 +221,7 @@ export default function JobBoard({ jobs }: { jobs: Job[] }) {
                 <button
                   type="button"
                   onClick={() => openApplyModal(job)}
-                  className="inline-flex items-center justify-center gap-2 px-space-md py-space-sm bg-steel-600 hover:bg-steel-700 text-white text-title-md rounded shadow-sm transition-colors uppercase tracking-wider whitespace-nowrap"
+                  className="inline-flex min-h-11 items-center justify-center gap-2 px-space-md py-space-sm bg-steel-600 hover:bg-steel-700 text-white text-title-md rounded shadow-sm transition-colors uppercase tracking-wider whitespace-nowrap"
                 >
                   <span>{tb("applyNow")}</span>
                   <Icon name="arrow_forward" className="text-[18px]" />
@@ -228,7 +235,7 @@ export default function JobBoard({ jobs }: { jobs: Job[] }) {
                     {tb("requirementsLabel")}
                   </span>
                   <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-space-lg gap-y-1.5 text-body-sm text-slate-700">
-                    {job.tags.map((tag) => (
+                    {job.tags.slice(0, 2).map((tag) => (
                       <li key={tag} className="flex items-start gap-1.5">
                         <Icon name="check_circle" className="text-[16px] text-steel-600 mt-0.5 shrink-0" />
                         <span>{tag}</span>
@@ -249,13 +256,20 @@ export default function JobBoard({ jobs }: { jobs: Job[] }) {
       </div>
 
       {/* Apply modal */}
-      {selectedJob && (
+      {selectedJob && createPortal(
         <div
           className="fixed inset-0 z-50 flex items-center justify-center bg-slate-900/40 p-4"
           onClick={closeApplyModal}
+          onKeyDown={(e) => {
+            if (e.key === "Escape") closeApplyModal();
+          }}
         >
           <div
-            className="relative w-full max-w-lg rounded bg-white shadow-2xl p-space-lg flex flex-col gap-space-md max-h-[90vh] overflow-y-auto"
+            role="dialog"
+            aria-modal="true"
+            aria-label={selectedJob.title}
+            className="relative w-full max-w-lg rounded bg-white border border-slate-200 p-space-lg flex flex-col gap-space-md max-h-[90vh] overflow-y-auto"
+            style={{ boxShadow: "0 24px 60px -16px rgba(15,23,42,0.5)" }}
             onClick={(e) => e.stopPropagation()}
           >
             <div className="flex items-start justify-between">
@@ -267,7 +281,7 @@ export default function JobBoard({ jobs }: { jobs: Job[] }) {
                 type="button"
                 onClick={closeApplyModal}
                 aria-label={tb("closeModal")}
-                className="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-slate-600 hover:text-steel-600 transition-colors"
+                className="relative w-8 h-8 shrink-0 rounded-full bg-slate-100 flex items-center justify-center text-slate-600 hover:text-steel-600 focus-visible:outline-2 focus-visible:outline-steel-600 before:absolute before:-inset-1.5 transition-colors"
               >
                 <Icon name="close" className="text-[20px]" />
               </button>
@@ -276,10 +290,11 @@ export default function JobBoard({ jobs }: { jobs: Job[] }) {
             {!submitted ? (
               <form className="flex flex-col gap-space-sm" onSubmit={handleApplySubmit}>
                 <div className="flex flex-col gap-1">
-                  <label className="text-label-sm text-slate-500 uppercase font-semibold">{tb("fullNameLabel")}</label>
+                  <label htmlFor="apply-fullName" className="text-label-sm text-slate-600 uppercase font-semibold">{tb("fullNameLabel")}</label>
                   <input
-                    className="h-10 px-space-sm rounded border border-slate-200 bg-slate-50 text-slate-900 text-body-md focus:outline-none focus:ring-2 focus:ring-steel-600/40"
+                    className="h-11 px-space-sm rounded border border-slate-200 bg-slate-50 text-slate-900 text-body-md focus:outline-none focus:ring-2 focus:ring-steel-600/40"
                     placeholder={tb("fullNamePlaceholder")}
+                    id="apply-fullName"
                     name="fullName"
                     required
                     type="text"
@@ -287,22 +302,24 @@ export default function JobBoard({ jobs }: { jobs: Job[] }) {
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
                   <div className="flex flex-col gap-1">
-                    <label className="text-label-sm text-slate-500 uppercase font-semibold">
+                    <label htmlFor="apply-phone" className="text-label-sm text-slate-600 uppercase font-semibold">
                       {tb("phoneLabel")}
                     </label>
                     <input
-                      className="h-10 px-space-sm rounded border border-slate-200 bg-slate-50 text-slate-900 text-body-md focus:outline-none focus:ring-2 focus:ring-steel-600/40"
+                      className="h-11 px-space-sm rounded border border-slate-200 bg-slate-50 text-slate-900 text-body-md focus:outline-none focus:ring-2 focus:ring-steel-600/40"
                       placeholder={tb("phonePlaceholder")}
+                      id="apply-phone"
                       name="phone"
                       required
                       type="tel"
                     />
                   </div>
                   <div className="flex flex-col gap-1">
-                    <label className="text-label-sm text-slate-500 uppercase font-semibold">{tb("emailLabel")}</label>
+                    <label htmlFor="apply-email" className="text-label-sm text-slate-600 uppercase font-semibold">{tb("emailLabel")}</label>
                     <input
-                      className="h-10 px-space-sm rounded border border-slate-200 bg-slate-50 text-slate-900 text-body-md focus:outline-none focus:ring-2 focus:ring-steel-600/40"
+                      className="h-11 px-space-sm rounded border border-slate-200 bg-slate-50 text-slate-900 text-body-md focus:outline-none focus:ring-2 focus:ring-steel-600/40"
                       placeholder={tb("emailPlaceholder")}
+                      id="apply-email"
                       name="email"
                       required
                       type="email"
@@ -310,31 +327,33 @@ export default function JobBoard({ jobs }: { jobs: Job[] }) {
                   </div>
                 </div>
                 <div className="flex flex-col gap-1">
-                  <label className="text-label-sm text-slate-500 uppercase font-semibold">
+                  <label htmlFor="apply-experience" className="text-label-sm text-slate-600 uppercase font-semibold">
                     {tb("experienceLabel")}
                   </label>
                   <Select
+                    id="apply-experience"
                     name="experience"
-                    className="h-10 px-space-sm rounded border border-slate-200 bg-slate-50 text-slate-900 text-body-md"
+                    className="h-11 px-space-sm rounded border border-slate-200 bg-slate-50 text-slate-900 text-body-md"
                     options={["fresh", "one_two", "three_five", "above_five"].map((k) => ({ value: tb(`experienceOptions.${k}`), label: tb(`experienceOptions.${k}`) }))}
                   />
                 </div>
                 <div className="flex flex-col gap-1">
-                  <label className="text-label-sm text-slate-500 uppercase font-semibold">
+                  <span className="text-label-sm text-slate-600 uppercase font-semibold">
                     {tb("cvLabel")}
-                  </label>
-                  <label className="p-space-md rounded border border-dashed border-slate-300 bg-slate-50 flex flex-col items-center justify-center gap-1 cursor-pointer hover:bg-slate-100 transition-colors">
+                  </span>
+                  <label className="p-space-md rounded border border-dashed focus-within:ring-2 focus-within:ring-steel-600/40 border-slate-300 bg-slate-50 flex flex-col items-center justify-center gap-1 cursor-pointer hover:bg-slate-100 transition-colors">
                     <Icon name="upload_file" className="text-steel-600 text-[28px]" />
-                    <span className="text-body-md text-slate-900">{tb("cvDropText")}</span>
+                    <span className="text-body-md text-slate-900 break-all text-center">{cvName || tb("cvDropText")}</span>
                     <span className="text-label-sm text-slate-500">{tb("cvSizeNote")}</span>
-                    <input className="hidden" name="files" required type="file" accept=".pdf,.doc,.docx,.jpg,.jpeg,.png,.zip" />
+                    <input className="sr-only" name="files" required type="file" accept=".pdf,.doc,.docx,.jpg,.jpeg,.png,.zip" onChange={(e) => setCvName(e.target.files?.[0]?.name ?? "")} />
                   </label>
                 </div>
                 <div className="flex flex-col gap-1">
-                  <label className="text-label-sm text-slate-500 uppercase font-semibold">
+                  <label htmlFor="apply-message" className="text-label-sm text-slate-600 uppercase font-semibold">
                     {tb("messageLabel")}
                   </label>
                   <textarea
+                    id="apply-message"
                     className="p-space-sm rounded border border-slate-200 bg-slate-50 text-slate-900 text-body-md focus:outline-none focus:ring-2 focus:ring-steel-600/40"
                     name="message"
                     placeholder={tb("messagePlaceholder")}
@@ -350,26 +369,27 @@ export default function JobBoard({ jobs }: { jobs: Job[] }) {
                   <button
                     type="button"
                     onClick={closeApplyModal}
-                    className="px-space-md py-space-sm rounded bg-slate-100 text-slate-500 hover:text-slate-900 text-title-md uppercase transition-colors"
+                    className="min-h-11 px-space-md py-space-sm rounded bg-slate-100 text-slate-600 hover:text-slate-900 text-title-md uppercase transition-colors"
                   >
                     {tb("cancelButton")}
                   </button>
                   <button
                     type="submit"
                     disabled={submitting}
-                    className="px-space-md py-space-sm rounded bg-steel-600 text-white hover:bg-steel-700 text-title-md uppercase tracking-wider transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
+                    className="min-h-11 px-space-md py-space-sm rounded bg-steel-600 text-white hover:bg-steel-700 text-title-md uppercase tracking-wider transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
                   >
                     {submitting ? tb("submitting") : tb("submitButton")}
                   </button>
                 </div>
               </form>
             ) : (
-              <div className="p-space-md rounded bg-steel-50 text-steel-700 text-body-md text-center">
+              <div role="status" className="p-space-md rounded bg-steel-50 text-steel-700 text-body-md text-center">
                 {tb("submitSuccess")}
               </div>
             )}
           </div>
-        </div>
+        </div>,
+        document.body,
       )}
     </section>
   );

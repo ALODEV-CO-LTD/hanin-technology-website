@@ -3,7 +3,7 @@ import { useTranslations } from "next-intl";
 export default function CompanyJourney() {
   const t = useTranslations("GioiThieu.CompanyJourney");
 
-  const MILESTONES = ["m1", "m2", "m3"] as const;
+  const MILESTONES = ["m1", "m2", "m3", "m4"] as const;
 
   return (
     <section className="w-full bg-slate-50 py-space-xl border-y border-slate-200">
@@ -39,7 +39,6 @@ export default function CompanyJourney() {
                     {t(`${key}.yearTag`)}
                   </span>
                 </div>
-                <div className="text-xs font-mono text-slate-400 mb-2">{t(`${key}.phase`)}</div>
                 <h3 className="text-title-md text-slate-900 font-semibold mb-2 group-hover:text-steel-600 transition-colors">
                   {t(`${key}.title`)}
                 </h3>
@@ -47,22 +46,6 @@ export default function CompanyJourney() {
               </div>
             ))}
 
-            {/* Card 04 - Current & Future */}
-            <div className="relative flex flex-col p-space-md rounded bg-steel-50 border border-steel-200 hover:border-steel-600 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group">
-              <div className="flex items-center justify-between mb-space-sm">
-                <span className="w-8 h-8 rounded bg-[#2F80C0] flex items-center justify-center text-label-technical text-white font-bold">
-                  04
-                </span>
-                <span className="text-xs uppercase tracking-wider text-[#2F80C0] px-2 py-0.5 bg-[#E2EFF9] rounded border border-[#CFE1F3] font-semibold">
-                  {t("m4.yearTag")}
-                </span>
-              </div>
-              <div className="text-xs font-mono text-[#2F80C0] mb-2 font-semibold">{t("m4.phase")}</div>
-              <h3 className="text-title-md text-[#0B1F3A] font-semibold mb-2 group-hover:text-[#2F80C0] transition-colors">
-                {t("m4.title")}
-              </h3>
-              <p className="text-body-sm text-slate-600 leading-relaxed">{t("m4.desc")}</p>
-            </div>
           </div>
         </div>
       </div>

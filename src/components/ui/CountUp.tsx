@@ -82,6 +82,13 @@ export default function CountUp({
       rafId = requestAnimationFrame(tick);
     };
 
+    // Đang nằm trong màn hình ngay khi tải (ví dụ dải số liệu ở đáy banner): chạy luôn.
+    const rect = node.getBoundingClientRect();
+    if (rect.top < window.innerHeight && rect.bottom > 0) {
+      animate();
+      return () => cancelAnimationFrame(rafId);
+    }
+
     const observer = new IntersectionObserver(
       (entries) => {
         for (const entry of entries) {
@@ -92,7 +99,7 @@ export default function CountUp({
           }
         }
       },
-      { threshold: 0.3, rootMargin: "0px 0px -8% 0px" }
+      { threshold: 0.1 }
     );
 
     observer.observe(node);

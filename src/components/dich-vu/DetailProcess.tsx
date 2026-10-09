@@ -1,8 +1,9 @@
+import { useServiceNs } from "@/lib/service-ns";
 import { useTranslations } from "next-intl";
 import Icon from "@/components/ui/Icon";
 
-export default function DetailProcess() {
-  const t = useTranslations("DichVu.DetailProcess");
+export default function DetailProcess({ slug }: { slug: string }) {
+  const t = useTranslations(useServiceNs(slug, "DetailProcess"));
 
   const STEPS = [
     { key: "s1", icon: "cleaning_services", highlight: false },
@@ -15,19 +16,19 @@ export default function DetailProcess() {
 
   return (
     <section className="w-full mb-space-xl">
-      <div className="bg-slate-50 border border-slate-200 p-space-lg rounded shadow-sm">
+      <div className="bg-slate-50 border border-slate-200 p-space-md sm:p-space-lg rounded shadow-sm">
         <div className="flex items-center justify-between pb-space-sm mb-space-lg flex-wrap gap-space-sm">
           <div>
             <h2 className="text-headline-md text-slate-900 tracking-tight uppercase font-bold">{t("heading")}</h2>
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-space-sm">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-space-sm">
           {STEPS.map((step, i) => (
             <div
               key={step.key}
               className={`flex flex-col p-space-sm rounded ${
-                step.highlight ? "bg-steel-50 border border-steel-100" : "bg-slate-50 border border-slate-200"
+                step.highlight ? "bg-steel-50 border border-steel-200" : "bg-white border border-slate-200"
               }`}
             >
               <div className="flex items-center justify-between text-steel-600 text-title-md mb-2">
@@ -36,15 +37,8 @@ export default function DetailProcess() {
                 </span>
                 <Icon name={step.icon} className="text-[20px]" />
               </div>
-              <h4 className="text-title-md text-slate-900 uppercase mb-1 font-bold">{t(`${step.key}.title`)}</h4>
+              <h3 className="text-title-md text-slate-900 uppercase mb-1 font-bold">{t(`${step.key}.title`)}</h3>
               <p className="text-body-md text-slate-600">{t(`${step.key}.desc`)}</p>
-              <div
-                className={`mt-auto pt-space-xs text-label-sm ${
-                  step.highlight ? "text-steel-600 font-semibold" : "text-slate-500"
-                }`}
-              >
-                {t(`${step.key}.note`)}
-              </div>
             </div>
           ))}
         </div>

@@ -6,12 +6,12 @@ export default function CapacityOverview() {
 
   const CAPABILITIES = [
     { key: "scada", icon: "precision_manufacturing", iconBg: "bg-steel-100", iconColor: "text-steel-600", statRightColor: "text-steel-600" },
-    { key: "complex", icon: "science", iconBg: "bg-sky-100", iconColor: "text-sky-700", statRightColor: "text-sky-700" },
+    { key: "complex", icon: "science", iconBg: "bg-steel-100", iconColor: "text-steel-700", statRightColor: "text-steel-700" },
     { key: "wastewater", icon: "water_ec", iconBg: "bg-slate-200", iconColor: "text-slate-700", statRightColor: "text-slate-900" },
   ] as const;
 
   return (
-    <section className="w-full mb-space-xl scroll-mt-[86px]" id="capacity-overview">
+    <section className="w-full mb-space-xl scroll-mt-[var(--header-h)]" id="capacity-overview">
       <div className="bg-white border border-slate-200 rounded p-space-md lg:p-space-lg">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-space-sm mb-space-lg">
           <div>
@@ -29,10 +29,6 @@ export default function CapacityOverview() {
               </div>
               <h3 className="text-title-md text-slate-900 font-bold mb-1">{t(`${item.key}.title`)}</h3>
               <p className="text-body-md text-slate-600">{t(`${item.key}.desc`)}</p>
-              <div className="mt-space-sm pt-space-xs text-label-sm text-slate-500 uppercase flex items-center justify-between">
-                <span>{t(`${item.key}.statLeft`)}</span>
-                <span className={`font-bold ${item.statRightColor}`}>{t(`${item.key}.statRight`)}</span>
-              </div>
             </div>
           ))}
         </div>

@@ -27,7 +27,7 @@ export default function QualityStandards() {
   const t = useTranslations("NangLuc.QualityStandards");
 
   return (
-    <section className="w-full py-space-xl bg-white border-t border-slate-200 scroll-mt-[86px]" id="quality-standards">
+    <section className="w-full py-space-xl bg-white border-t border-slate-200 scroll-mt-[var(--header-h)]" id="quality-standards">
       <div className="mx-auto px-margin w-full">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-xl">
           <div>
@@ -50,7 +50,7 @@ export default function QualityStandards() {
                   <Icon name={card.icon} />
                 </div>
                 <div
-                  className={`text-label-technical tracking-widest uppercase mb-1 font-semibold ${
+                  className={`text-label-technical tracking-wider uppercase mb-1 font-semibold ${
                     card.tagAccent ? "text-steel-600" : "text-slate-600"
                   }`}
                 >
@@ -58,9 +58,6 @@ export default function QualityStandards() {
                 </div>
                 <h3 className="text-headline-sm text-slate-900 uppercase mb-space-xs">{t(`items.${card.key}.title`)}</h3>
                 <p className="text-body-sm text-slate-600 leading-relaxed">{t(`items.${card.key}.desc`)}</p>
-              </div>
-              <div className="mt-space-md pt-space-xs text-label-sm text-slate-500 uppercase border-t border-slate-200/60">
-                {t(`items.${card.key}.footer`)}
               </div>
             </div>
           ))}
@@ -71,7 +68,8 @@ export default function QualityStandards() {
             className="inline-flex items-center gap-1 text-label-technical text-steel-600 hover:text-slate-900 font-semibold uppercase tracking-wider transition-colors"
             href="/gioi-thieu#chung-nhan"
           >
-            {t("ctaDetail")}
+            <span>{t("ctaDetail")}</span>
+            <Icon name="arrow_forward" className="text-[16px]" />
           </Link>
         </div>
       </div>

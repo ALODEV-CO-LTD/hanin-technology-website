@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 import { useLocale, useTranslations } from "next-intl";
 import { getServices } from "@/server/public";
 import Icon from "@/components/ui/Icon";
@@ -21,7 +21,7 @@ export default function PlatingServices() {
           </div>
           <Link
             href="/dich-vu-gia-cong-ma"
-            className="inline-flex items-center gap-2 text-label-technical uppercase tracking-wider text-slate-600 hover:text-steel-600 transition-colors whitespace-nowrap"
+            className="inline-flex items-center gap-2 py-3 -my-3 text-label-technical uppercase tracking-wider text-slate-600 hover:text-steel-600 font-semibold transition-colors whitespace-nowrap"
           >
             <span>{t("ctaAll")}</span>
             <Icon name="arrow_forward" className="text-[16px]" />
@@ -33,23 +33,22 @@ export default function PlatingServices() {
             <Link
               key={service.slug}
               href={`/dich-vu-gia-cong-ma/${service.slug}`}
-              className="flex flex-col justify-between p-space-lg bg-slate-50 border border-slate-200 rounded hover:border-steel-300 hover:shadow-lg hover:bg-white transition-all duration-200 group"
+              className="relative overflow-hidden flex flex-col justify-between p-space-lg pt-[calc(var(--spacing-space-lg)+4px)] bg-white border border-slate-200 rounded shadow-md hover:shadow-xl hover:-translate-y-1 focus-visible:ring-2 focus-visible:ring-steel-600 transition-all duration-200 group before:absolute before:inset-x-0 before:top-0 before:h-1 before:[background:var(--color-steel-600)] before:content-['']"
             >
               <div className="flex flex-col gap-space-md">
                 <div className="flex items-center justify-between">
                   <span className="text-headline-lg text-steel-600 font-bold">{String(i + 1).padStart(2, "0")}</span>
-                  <span className="text-xs px-2 py-0.5 rounded bg-slate-200/70 text-slate-700 uppercase font-semibold">
+                  <span className="text-xs px-2 py-1 rounded bg-steel-100 text-steel-700 uppercase font-semibold">
                     {service.code}
                   </span>
                 </div>
                 <div className="flex flex-col gap-2">
-                  <h3 className="text-headline-sm text-slate-900 font-semibold group-hover:text-steel-600 transition-colors">
+                  <h3 className="text-headline-sm text-slate-900 font-bold group-hover:text-steel-600 transition-colors">
                     {service.title}
                   </h3>
-                  <p className="text-body-sm text-slate-600 leading-relaxed">{service.description}</p>
                 </div>
               </div>
-              <div className="pt-space-lg flex items-center justify-between text-slate-500 group-hover:text-steel-600 transition-colors">
+              <div className="pt-space-lg mt-space-md border-t border-slate-200 flex items-center justify-between text-steel-600 transition-colors">
                 <span className="text-xs uppercase tracking-wider font-semibold">
                   {t("detailLabel")}
                 </span>

@@ -5,10 +5,12 @@ import { getPhones, getSettings } from "@/server/settings";
 import { siteImg } from "@/server/site-images";
 import PhoneLinks from "@/components/ui/PhoneLinks";
 import { getServices } from "@/server/public";
+import { logoSrcSet, photoUrl } from "@/lib/photo";
 
 export default function Footer() {
   const t = useTranslations("Footer");
   const locale = useLocale();
+  const logo = siteImg("layout/Logo#1", "/hanin-logo.png");
   const { mapsUrl, salesEmail, engineeringEmail } = getSettings();
   const { general } = getPhones();
   
@@ -28,19 +30,22 @@ export default function Footer() {
 
   return (
     <footer className="w-full bg-white border-t border-slate-200 mt-space-xl">
-      <div className="px-margin pt-space-xl pb-space-lg">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-gutter">
-          <div className="lg:col-span-4 flex flex-col gap-space-md">
+      <div className="px-margin pt-space-lg pb-space-md sm:pt-space-xl sm:pb-space-lg">
+        <div className="grid grid-cols-2 lg:grid-cols-12 gap-x-space-md gap-y-space-lg lg:gap-gutter">
+          <div className="col-span-2 lg:col-span-4 flex flex-col gap-space-sm sm:gap-space-md">
             <Link href="/" className="flex items-center w-fit group">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src={siteImg("layout/Logo#1", "/hanin-logo.png")}
+                src={photoUrl(logo, 384)}
+                srcSet={logoSrcSet(logo)}
+                sizes="160px"
+                loading="lazy"
                 alt={t("logoAlt")}
                 className="h-12 w-auto transition-transform duration-200 ease-out group-hover:scale-105 group-active:scale-95"
               />
             </Link>
             <p className="text-body-sm font-medium text-slate-600 leading-relaxed max-w-sm">{t("description")}</p>
-            <div className="flex flex-wrap items-center gap-space-xs pt-space-xs">
+            <div className="hidden sm:flex flex-wrap items-center gap-space-xs pt-space-xs">
               <span className="text-label-technical text-slate-700 uppercase px-2.5 py-0.5 bg-slate-100 rounded border border-slate-200 font-bold">
                 {t("certIso9001")}
               </span>
@@ -53,14 +58,14 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="lg:col-span-2 flex flex-col gap-space-sm">
-            <h3 className="text-label-technical uppercase tracking-widest text-steel-600 font-extrabold pb-space-xs border-b border-slate-200">
+          <div className="col-span-1 lg:col-span-2 flex flex-col gap-space-sm">
+            <h3 className="text-label-technical uppercase tracking-wider text-steel-600 font-extrabold pb-space-xs border-b border-slate-200">
               {t("companyHeading")}
             </h3>
             <ul className="flex flex-col gap-space-xs text-body-sm font-medium">
               {companyLinks.map((link) => (
                 <li key={link.href} className="py-0.5">
-                  <Link href={link.href} className="text-slate-600 hover:text-steel-600 transition-colors">
+                  <Link href={link.href} className="relative text-slate-600 hover:text-steel-600 transition-colors before:absolute before:-inset-y-2 before:inset-x-0 before:content-['']">
                     {link.label}
                   </Link>
                 </li>
@@ -68,14 +73,14 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div className="lg:col-span-3 flex flex-col gap-space-sm">
-            <h3 className="text-label-technical uppercase tracking-widest text-steel-600 font-extrabold pb-space-xs border-b border-slate-200">
+          <div className="col-span-1 lg:col-span-3 flex flex-col gap-space-sm">
+            <h3 className="text-label-technical uppercase tracking-wider text-steel-600 font-extrabold pb-space-xs border-b border-slate-200">
               {t("serviceHeading")}
             </h3>
             <ul className="flex flex-col gap-space-xs text-body-sm font-medium">
-              {serviceLinks.map((link) => (
-                <li key={link.href} className="py-0.5">
-                  <Link href={link.href} className="text-slate-600 hover:text-steel-600 transition-colors">
+              {serviceLinks.map((link, i) => (
+                <li key={link.href} className={`py-0.5 ${i >= 4 ? "hidden sm:list-item" : ""}`}>
+                  <Link href={link.href} className="relative text-slate-600 hover:text-steel-600 transition-colors before:absolute before:-inset-y-2 before:inset-x-0 before:content-['']">
                     {link.label}
                   </Link>
                 </li>
@@ -83,8 +88,8 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div className="lg:col-span-3 flex flex-col gap-space-sm">
-            <h3 className="text-label-technical uppercase tracking-widest text-steel-600 font-extrabold pb-space-xs border-b border-slate-200">
+          <div className="col-span-2 lg:col-span-3 flex flex-col gap-space-sm">
+            <h3 className="text-label-technical uppercase tracking-wider text-steel-600 font-extrabold pb-space-xs border-b border-slate-200">
               {t("contactHeading")}
             </h3>
             <div className="flex flex-col gap-space-sm text-body-sm font-medium text-slate-600">
@@ -115,7 +120,7 @@ export default function Footer() {
                   {[...new Set([salesEmail, engineeringEmail])].map((email, i) => (
                     <span key={email}>
                       {i > 0 && " / "}
-                      <a href={`mailto:${email}`} className="hover:text-steel-600">{email}</a>
+                      <a href={`mailto:${email}`} className="hover:text-steel-600 hover:underline underline-offset-2">{email}</a>
                     </span>
                   ))}
                 </p>
@@ -129,18 +134,18 @@ export default function Footer() {
                   {t("hours")}
                 </p>
               </div>
-              <div className="flex items-start gap-space-sm">
+              <div className="hidden sm:flex items-start gap-space-sm">
                 <span className="flex h-[1lh] shrink-0 items-center text-body-sm leading-tight">
                   <MapPin aria-hidden="true" className="h-5 w-5 text-steel-600" strokeWidth={2} />
                 </span>
                 <p className="leading-tight">
                   <span className="text-slate-900 font-bold mr-1">Google Maps:</span>
                   {mapsUrl ? (
-                    <a href={mapsUrl} target="_blank" rel="noopener noreferrer" className="text-sky-700 hover:underline">
+                    <a href={mapsUrl} target="_blank" rel="noopener noreferrer" className="text-steel-600 underline-offset-2 hover:underline font-semibold">
                       {t("googleMaps")}
                     </a>
                   ) : (
-                    <Link href="/lien-he" className="text-sky-700 hover:underline">
+                    <Link href="/lien-he" className="text-steel-600 underline-offset-2 hover:underline font-semibold">
                       {t("googleMaps")}
                     </Link>
                   )}

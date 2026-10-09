@@ -1,31 +1,31 @@
 {
   "NangLuc": {
     "AutomatedVsManual": {
-      "title": "自动化产线 VS 手工产线",
-      "description": "大批量生产采用自动化作业,特殊结构零件则由高技能工程师进行手工处理。",
+      "title": "自动线与手工线",
+      "description": "大批量订单在自动线上生产,结构特殊的零件由技术人员手工处理。",
       "automated": {
-        "imageAlt": "配备 PLC SCADA 控制屏与机械臂吊具的自动电镀生产线,将机械零件送入化学处理槽(示意图,将替换为实际照片)",
-        "title": "自动化产线(AUTOMATED LINES)",
-        "desc": "通过 PLC SCADA 实现自动化控制:精确控制浸槽时间、电流密度,并自动补充化学离子以维持溶液稳定。",
-        "feature1": "PLC 与 SCADA 同步自动控制",
-        "feature2": "每批加工镀层厚度 100% 均匀一致",
-        "feature3": "优化生产周期,完全消除人为操作误差"
+        "imageAlt": "配有 PLC SCADA 控制屏的自动电镀线,行车将零件送入处理槽",
+        "title": "自动生产线",
+        "desc": "PLC SCADA 控制浸槽时间、电流密度并自动补加药剂,保持槽液稳定。",
+        "feature1": "PLC 与 SCADA 联动控制",
+        "feature2": "按批次监控镀层厚度",
+        "feature3": "生产周期稳定,减少人工操作误差"
       },
       "manual": {
-        "imageAlt": "身着防护服的资深技术人员在浸入化学药液前手工检查定制金属零件挂具(示意图,将替换为实际照片)",
-        "title": "手工及半自动产线(MANUAL & SPECIALIZED)",
-        "desc": "适用于研发打样订单及结构复杂的机械零件,需依图纸单独装挂并直接调整电镀参数。",
-        "feature1": "灵活适应结构复杂的加工零件",
-        "feature2": "高效服务研发试制订单及小批量样品",
-        "feature3": "资深工程师直接处理并校准装挂治具"
+        "imageAlt": "身穿防护服的技术人员在入槽前检查金属零件挂具",
+        "title": "手工及半自动生产线",
+        "desc": "用于样品、试制件和复杂零件,按图纸单独制作挂具。",
+        "feature1": "可处理结构复杂的零件",
+        "feature2": "承接样品、试制和小批量订单",
+        "feature3": "由技术人员直接调整装挂治具"
       }
     },
     "CapabilityHero": {
       "breadcrumbHome": "首页",
       "breadcrumbCurrent": "生产能力",
       "title": "生产能力",
-      "description": "标准化厂房生态系统、PLC SCADA 控制的自动电镀生产线体系,以及达到国际标准的微观检测实验室。",
-      "ctaExplore": "探索厂区 →",
+      "description": "HANIN 的厂房、PLC SCADA 控制的电镀生产线和检测实验室。",
+      "ctaExplore": "查看厂区",
       "ctaLines": "生产线",
       "ctaQa": "QA/QC 检测实验室"
     },
@@ -33,31 +33,31 @@
       "items": {
         "equipment": {
           "label": "设备总数",
-          "desc": "电镀及配套设备(规格: 高精度 CNC 及电镀槽)",
+          "desc": "电镀与辅助设备",
           "end": "42",
           "prefix": "",
           "suffix": "+",
           "unit": ""
         },
         "lines": {
-          "label": "在产生产线",
-          "desc": "PLC 自动化及半自动专业生产线",
+          "label": "生产线",
+          "desc": "PLC 自动线与半自动线",
           "end": "16",
           "prefix": "",
           "suffix": "",
           "unit": ""
         },
         "zones": {
-          "label": "规划分区",
-          "desc": "专属功能区(电镀区、化学区、洁净室、QA 实验室)",
+          "label": "功能分区",
+          "desc": "电镀区、药剂区、检测实验室",
           "end": "5",
           "prefix": "",
           "suffix": "",
           "unit": ""
         },
         "precision": {
-          "label": "工艺精度",
-          "desc": "符合 ASTM 标准的微米级镀层公差与定额产能",
+          "label": "厚度公差",
+          "desc": "自动线上的镀层厚度公差",
           "end": "0.2",
           "prefix": "±",
           "suffix": "",
@@ -66,244 +66,244 @@
       }
     },
     "CompanyProfileCta": {
-      "title": "深入了解 HANIN 生产能力",
-      "description": "查阅 Company Profile,详细了解厂房布局、生产线参数、检测设备清单及服务能力。",
-      "ctaDownload": "查看 Company Profile(PDF) →",
+      "title": "HANIN 能力资料",
+      "description": "厂房布局、生产线参数、检测设备清单和生产能力。",
+      "ctaDownload": "查看 Company Profile(PDF)",
       "fileBadge": "PDF 14.5 MB",
-      "cardTitle": "HANIN 企业能力简介 2026",
-      "cardSubtitle": "B2B 工业产品目录",
-      "cardEdition": "版本:2026.01",
-      "cardReady": "可供下载"
+      "cardTitle": "HANIN 能力资料 2026",
+      "cardSubtitle": "能力介绍资料",
+      "cardEdition": "2026年1月版",
+      "cardReady": "可下载"
     },
     "EquipmentGrid": {
-      "sectionTitle": "机械设备系统",
-      "sectionDescription": "覆盖前处理、主电镀到表面精加工全流程的完整设备配置。",
+      "sectionTitle": "机械设备",
+      "sectionDescription": "涵盖前处理、主镀和表面后处理各工序的设备。",
       "items": {
         "rectifier": {
           "badge": "供电系统",
-          "title": "[设备 01: 电镀槽及自动整流电源系统 RECTIFIER]",
-          "desc": "自动高频脉冲电源,为大面积电镀槽提供稳定的电解电流。",
-          "alt": "带数字仪表和电路开关的大功率整流电源控制柜,用于电解电镀槽(示意图,将替换为实际照片)",
+          "title": "电镀槽与整流电源",
+          "desc": "PLC 控制的高频整流电源,为大型电镀槽提供稳定电流。",
+          "alt": "电镀槽整流电源控制柜,带数显表和开关",
           "specLoad": "负载电流:",
           "specStability": "稳定度:",
           "specControl": "控制方式:",
           "specLoadValue": "12,000A",
-          "specStabilityValue": "[±1%]",
-          "specControlValue": "[PLC]"
+          "specStabilityValue": "±1%",
+          "specControlValue": "PLC"
         },
         "ultrasonic": {
           "badge": "表面前处理",
-          "title": "[设备 02: 多频超声波清洗除油槽]",
-          "desc": "以多频超声波清除加工毛边及油污,电镀前实现表面物理化学惰性化。",
-          "alt": "现代化工业金属表面处理厂房内部空间",
+          "title": "多频超声波清洗除油槽",
+          "desc": "多频超声波清除毛刺和加工油污,电镀前保持表面洁净。",
+          "alt": "工厂内的金属表面处理区域",
           "specFrequency": "频率:",
           "specHeating": "加热方式:",
           "specHeatingValue": "自动",
           "specVolume": "容积:",
-          "specFrequencyValue": "[28 - 40 kHz]",
+          "specFrequencyValue": "28 - 40 kHz",
           "specVolumeValue": "850 m³"
         },
         "hoist": {
-          "badge": "内部物流",
-          "title": "[设备 03: 自动料件搬运吊车系统(HOIST SYSTEM)]",
-          "desc": "激光导引自动升降吊运轴,按设定浸镀周期精确输送料件。",
-          "alt": "自动升降吊车在自动化化学生产线中搬运重型工业挂架(示意图,将替换为实际照片)",
+          "badge": "厂内转运",
+          "title": "自动行车(hoist)",
+          "desc": "自动行车激光定位,按设定工序将挂具送入各槽。",
+          "alt": "自动线上升降挂具的自动行车",
           "specLoad": "载重:",
           "specLoadUnit": "吨",
           "specSpeed": "速度:",
-          "specSpeedValue": "PLC 可调",
+          "specSpeedValue": "可调",
           "specSensor": "传感器:",
           "specLoadValue": "25",
-          "specSensorValue": "[Laser]"
+          "specSensorValue": "Laser"
         },
         "deEmbrittlement": {
           "badge": "镀后热处理",
-          "title": "[设备 04: 镀后除氢脆化炉(DE-EMBRITTLEMENT OVEN)]",
-          "desc": "循环加热炉,为高强度钢材及动态承载零件进行氢脆消除处理。",
-          "alt": "电镀加工后精密金属零件近景",
+          "title": "镀后除氢炉(de-embrittlement)",
+          "desc": "带热风循环的加热炉,为高强度钢除氢。",
+          "alt": "电镀后的金属零件特写",
           "specMaxTemp": "最高温度:",
           "specSensor": "传感器:",
           "specStandard": "标准:",
-          "specMaxTempValue": "[300°C - 500°C]",
-          "specSensorValue": "[PID Digital]",
-          "specStandardValue": "[ASTM F519]"
+          "specMaxTempValue": "300°C - 500°C",
+          "specSensorValue": "PID Digital",
+          "specStandardValue": "ASTM F519"
         }
       }
     },
     "FactoryGallery": {
-      "sectionTitle": "实景厂房与生产线",
-      "sectionDescription": "HANIN 工厂实景影像:从厂房外观、电镀生产线、设备区到工程师操作现场与检测实验室。",
+      "sectionTitle": "厂区与生产线实景",
+      "sectionDescription": "HANIN 工厂实拍:厂区外观、电镀线、设备区、操作人员和检测室。",
       "mainImage": {
-        "alt": "配备发光化学槽、机械臂吊车及光洁地面的高科技自动电镀生产走廊(示意图,将替换为实际照片)",
-        "badge": "AUTOMATED PLATING CORRIDOR // 中央运营区域"
+        "alt": "车间内的自动电镀线,可见药液槽和行车",
+        "badge": "主生产区"
       },
       "items": {
         "campus": {
-          "label": "CAMPUS 厂区外观",
-          "alt": "HANIN Technology Việt Nam 位于广明工业区的现代化工业厂区外观建筑(示意图,将替换为实际照片)"
+          "label": "厂区外观",
+          "alt": "HANIN Technology Việt Nam 位于光明工业区的厂房外观"
         },
         "control": {
-          "label": "操作与控制",
-          "alt": "技术工程师在电子控制台前调整工业金属镀层的电流密度与浸镀时间(示意图,将替换为实际照片)"
+          "label": "控制与操作",
+          "alt": "工程师在控制面板前调整电流密度和浸槽时间"
         },
         "finished": {
-          "label": "成品展示",
-          "alt": "电镀加工后精密金属零件近景"
+          "label": "成品",
+          "alt": "电镀后的金属零件特写"
         },
         "racks": {
-          "label": "RACKS 挂具系统",
-          "alt": "现代化工业金属表面处理厂房内部空间"
+          "label": "挂具(rack)",
+          "alt": "放置挂具的金属表面处理区域"
         }
       }
     },
     "FactoryOverview": {
-      "sectionTitle": "厂房系统",
+      "sectionTitle": "工厂概况",
       "image": {
-        "alt": "HANIN Technology Việt Nam 位于广明工业区的厂房外观建筑(示意图,将替换为实际照片)"
+        "alt": "HANIN 工厂光明工业区电镀车间全景"
       },
       "factoryTitle": "厂房",
-      "factoryDescription": "厂房按现代工业标准规划,集成中央环境控制系统、达到 QCVN 40:2011/BTNMT 标准的污水处理站及全封闭自动电镀模块,满足来自日本、韩国、欧盟的精密机械、自动化及微电子客户的需求。",
+      "factoryDescription": "厂房设有电镀区、药剂区和检测实验室,废水在自建处理站按 QCVN 40:2011/BTNMT 处理。",
       "specs": {
-        "locationLabel": "位置(Location)",
-        "areaLabel": "生产面积",
-        "capabilityLabel": "核心能力",
-        "capabilityValue": "高技术电镀及化学镀加工",
+        "locationLabel": "地点",
+        "areaLabel": "厂房占地面积",
+        "capabilityLabel": "加工项目",
+        "capabilityValue": "工业电镀与化学镀",
         "locationValue": "河内市光明乡光明工业区 49G 号地块",
-        "areaValue": "18,000 m²"
+        "areaValue": "2,230 m²"
       },
-      "ctaGallery": "查看厂房实景图"
+      "ctaGallery": "查看工厂图片"
     },
     "NangLucFinalCta": {
-      "title": "正在寻找电镀加工合作伙伴?",
-      "description": "直接与 HANIN 工程团队沟通您的生产需求、技术公差及项目进度所需的服务能力。",
-      "ctaContact": "联系 HANIN →",
-      "ctaQuote": "获取项目报价",
-      "hotlineLabel": "技术支持热线:",
-      "responseLabel": "技术响应时间:",
+      "title": "需要电镀加工?",
+      "description": "请提供图纸和技术要求,HANIN 工程师将与您沟通公差和交期。",
+      "ctaContact": "联系 HANIN",
+      "ctaQuote": "申请报价",
+      "hotlineLabel": "技术热线:",
+      "responseLabel": "技术答复:",
       "responseValue": "24 小时内"
     },
     "ProductionFlow": {
       "sectionTitle": "生产流程",
-      "sectionDescription": "6 个步骤的闭环生产流程,从原材料投入到出厂验收全程保障品质。",
+      "sectionDescription": "共六步,从接收图纸到检验交付。",
       "items": {
         "receiving": {
-          "title": "01 // 接收需求与图纸",
-          "desc": "评估 CAD 技术图纸,精确计算电镀面积与沟槽复杂度,制定最优工艺流程表。",
-          "standard": "标准: DFM ASSESSMENT"
+          "title": "接收需求与图纸",
+          "desc": "审阅 CAD 图纸,计算电镀面积,制定工艺流程。",
+          "standard": "可加工性评估(DFM)"
         },
         "surfacePrep": {
-          "title": "02 // 表面预处理",
-          "desc": "化学及超声波除油,在专用酸槽中进行除锈活化处理,彻底去除氧化膜。",
-          "standard": "标准: SURFACE ETCHING"
+          "title": "表面前处理",
+          "desc": "除油、除锈并活化,去除氧化膜。",
+          "standard": "除油、除锈、表面活化"
         },
         "mainPlating": {
-          "title": "03 // 主电镀加工",
-          "desc": "按 PLC 自动设定周期进行电解电镀或化学镀加工,持续监控电流密度与温度。",
-          "standard": "标准: SCADA MONITORED"
+          "title": "主电镀加工",
+          "desc": "按 PLC 设定的工序电镀或化学镀,持续监控。",
+          "standard": "由自动控制系统监控"
         },
         "inspection": {
-          "title": "04 // 检测与测量",
-          "desc": "使用 X 射线荧光光谱仪(XRF)测量镀层厚度,按 ASTM D3359 检测附着力,并对 100% 批次进行外观检验。",
-          "standard": "标准: XRF & ADHESION TEST"
+          "title": "检测与测量",
+          "desc": "XRF 测厚,按 ASTM D3359 测附着力,逐批检查外观。",
+          "standard": "XRF 测厚、附着力测试"
         },
         "finishing": {
-          "title": "05 // 精加工与除氢",
-          "desc": "进行钝化保护处理、热风循环干燥,并对承载零件按 ASTM F519 标准送入除氢脆化炉。",
-          "standard": "标准: ASTM F519 DE-EMBRITTLEMENT"
+          "title": "后处理与除氢",
+          "desc": "钝化并烘干,承载零件按 ASTM F519 除氢。",
+          "standard": "按 ASTM F519 除氢"
         },
         "packaging": {
-          "title": "06 // 包装与交付",
-          "desc": "按 VCI 出口标准进行防潮包装,粘贴可追溯 QR 码标签,并附完整品质合格证 COA 交付。",
-          "standard": "标准: VCI ANTI-CORROSION PACKAGING"
+          "title": "包装与交付",
+          "desc": "VCI 防潮包装,二维码标签可追溯,随货附 COA。",
+          "standard": "VCI 防潮包装"
         }
       },
-      "viewDetail": "查看各镀种的详细工序流程"
+      "viewDetail": "查看各镀种的详细工序"
     },
     "ProductionLines": {
       "sectionTitle": "生产线",
-      "sectionDescription": "针对不同机械与电子零部件产品线分别配置专属表面处理生产线。",
-      "cta": "查看生产线参数 →",
+      "sectionDescription": "机械件和电子元件各有对应的表面处理生产线。",
+      "cta": "查看生产线参数",
       "items": {
         "barrel": {
-          "title": "[生产线 01: PLC 自动滚镀生产线]",
-          "desc": "适用于螺丝、螺栓等小型零件:产能大、附着力高,每批封闭式滚镀镀层厚度均匀一致。",
-          "alt": "自动滚镀生产线,滚筒浸没于电镀化学槽中,配备精密控制手柄(示意图,将替换为实际照片)",
+          "title": "PLC 自动滚镀线",
+          "desc": "滚筒成批电镀螺钉、螺栓和小配件,各批次镀层一致。",
+          "alt": "自动滚镀线,滚筒浸入电镀槽",
           "capacityLabel": "产能:",
           "capacityUnit": "吨/月",
           "toleranceLabel": "公差:",
-          "tag": "01 // 自动滚镀线",
-          "badge": "SCADA 控制",
+          "tag": "滚镀",
+          "badge": "自动控制",
           "capacityValue": "850",
-          "toleranceValue": "[±0.2 µm]"
+          "toleranceValue": "±0.2 µm"
         },
         "rack": {
-          "title": "[生产线 02: 自动及半自动挂镀生产线]",
-          "desc": "适用于精密机械零件、液压油缸活塞杆、模具及大型齿轮。专用挂具装载,无碰撞,精确保持轮廓公差。",
-          "alt": "身着洁净防护服的女性 QA 工程师在先进金属表面处理厂内操作精密电子控制面板(示意图,将替换为实际照片)",
+          "title": "自动及半自动挂镀线",
+          "desc": "精密机械件、油缸活塞杆、模具和大型齿轮,装专用挂具电镀。",
+          "alt": "身穿防护服的 QA 工程师在工厂操作控制面板",
           "capacityLabel": "产能:",
           "capacityUnit": "件/月",
           "tankSizeLabel": "槽体尺寸:",
-          "tag": "02 // 挂镀线",
-          "badge": "重型",
+          "tag": "挂镀",
+          "badge": "大型零件",
           "capacityValue": "120,000",
           "tankSizeValue": "60 × 40 m"
         },
         "chemical": {
-          "title": "[生产线 03: 化学镀及铝材深度处理生产线]",
-          "desc": "进行化学镀镍(Electroless Nickel Plating - ENP)及铝阳极氧化处理,具备优异的耐磨性、耐化学腐蚀性及高表面硬度。",
-          "alt": "现代化工业金属表面处理厂房内部空间",
+          "title": "化学镀及铝材处理线",
+          "desc": "化学镀镍(ENP)和铝阳极氧化,镀层硬度高,耐磨耐蚀。",
+          "alt": "工厂内的金属表面处理区域",
           "reactorLabel": "反应槽:",
-          "reactorValue": "温度稳定 ±1°C",
+          "reactorValue": "温度稳定在 ±1°C",
           "thicknessLabel": "厚度:",
-          "tag": "03 // 化学镀镍与阳极氧化线",
-          "badge": "符合军标规范",
-          "thicknessValue": "[5 - 50 µm]"
+          "tag": "化学镀与阳极氧化",
+          "badge": "按客户技术要求",
+          "thicknessValue": "5 - 50 µm"
         }
       }
     },
     "QualityStandards": {
-      "sectionTitle": "品质与标准",
-      "sectionDescription": "各生产环节所适用的品质管理体系与技术规范。",
-      "ctaDetail": "查看认证详情 →",
+      "sectionTitle": "质量与标准",
+      "sectionDescription": "各生产工序适用的质量管理体系和技术标准。",
+      "ctaDetail": "查看认证详情",
       "items": {
         "iso9001": {
-          "tagLabel": "品质认证",
-          "desc": "生产质量管理体系,确保每批高技术机械电镀加工产品的稳定一致性。",
+          "tagLabel": "质量管理",
+          "desc": "质量管理体系,保持各加工批次质量稳定。",
           "title": "ISO 9001:2015",
-          "footer": "每年审核 // 全球认可"
+          "footer": "每年定期复审"
         },
         "iso14001": {
           "tagLabel": "环境管理",
-          "desc": "闭环工业废水处理及环境管理体系,确保符合越南环境保护标准。",
+          "desc": "按越南环保法规管理环境并处理工业废水。",
           "title": "ISO 14001:2015",
-          "footer": "闭环废水处理"
+          "footer": "自建站处理废水"
         },
         "astmRohs": {
-          "tagLabel": "出口规范",
-          "desc": "符合欧盟有害物质限用指令 RoHS/REACH、ASTM B117、ASTM B633 标准及日本工业标准 JIS。",
-          "title": "[ASTM & RoHS/REACH]",
-          "footer": "零有害物质"
+          "tagLabel": "出口要求",
+          "desc": "按 RoHS/REACH 加工;客户要求时按 ASTM B117、ASTM B633 及 JIS 测试。",
+          "title": "ASTM 与 RoHS/REACH",
+          "footer": "按 RoHS/REACH 限制有害物质"
         }
       }
     },
     "TestingAnalysis": {
       "sectionTitle": "分析与检测",
-      "sectionDescription": "化学分析实验室及微观测量部门,按国际规范在出库前进行检验。",
+      "sectionDescription": "实验室分析槽液成分、测量镀层,并在出库前检验每批货物。",
       "image": {
-        "alt": "工业检测台上电镀加工后精密金属零件近景(示意图,将替换为实际照片)"
+        "alt": "放在检验台上的电镀后金属零件"
       },
       "items": {
         "saltSpray": {
-          "title": "耐久性与耐腐蚀性测试(盐雾测试)",
-          "desc": "ASTM B117 盐雾加速试验箱、周期性冷热冲击试验箱及循环湿度测试,对锌镍合金及铬镀层进行长达 1,000 小时以上的耐锈蚀评估。"
+          "title": "盐雾试验(salt spray)",
+          "desc": "符合 ASTM B117 的盐雾箱,锌、镍、铬镀层试验可超过 1,000 小时。"
         },
         "xrf": {
-          "title": "X 射线荧光测厚(X-RAY FLUORESCENCE)",
-          "desc": "专用 XRF 光谱设备以无损方式精确测量多层镀层的微米级厚度,并准确测定表面镀层中的合金含量比例。"
+          "title": "X 射线荧光(XRF)测厚",
+          "desc": "无损测量多层镀层的微米级厚度。"
         },
         "bathControl": {
-          "title": "电镀槽液与化学浓度管控",
-          "desc": "通过自动电位滴定仪、光谱分析仪及在线 pH 监测系统,每日定期分析金属离子及添加剂浓度含量,实现 24/7 连续监控。"
+          "title": "槽液与药剂浓度控制",
+          "desc": "每天分析金属离子和添加剂浓度,在线监测槽液 pH 值。"
         }
       }
     }

@@ -47,7 +47,7 @@
 
   --text-label-technical: 12px;
   --text-label-technical--line-height: 16px;
-  --text-label-technical--letter-spacing: 0.08em;
+  --text-label-technical--letter-spacing: 0.05em;
   --text-label-technical--font-weight: 600;
 
   --text-body-sm: 13px;
@@ -209,16 +209,15 @@ select:focus-visible,
 /* ---- Page load / route fade ---- */
 @keyframes page-fade-in {
   from {
-    opacity: 0;
-    transform: translateY(6px);
+    transform: translateY(-24px);
   }
   to {
-    opacity: 1;
-    transform: translateY(0);
+    transform: none;
   }
 }
+/* Trang mới trượt vào từ trên xuống, không đổi độ trong suốt (không nhấp nháy). Giá trị cuối là none để không tạo khung chứa cho phần tử fixed. */
 .page-fade-in {
-  animation: page-fade-in 1s ease-out both;
+  animation: page-fade-in 0.38s cubic-bezier(0.22, 0.8, 0.3, 1) backwards;
 }
 
 /* ---- Scroll reveal ---- */
@@ -304,8 +303,8 @@ select:focus-visible,
     margin-block: -0.875rem;
   }
   /* Số điện thoại và email */
-  a[href^="tel:"],
-  a[href^="mailto:"],
+  a[href^="tel:"]:not([data-card]),
+  a[href^="mailto:"]:not([data-card]),
   footer p > a {
     display: inline-block;
     padding-block: 0.875rem;
@@ -418,4 +417,45 @@ select:focus-visible,
   .marquee-track { animation: none; width: auto; flex-wrap: wrap; justify-content: center; row-gap: 1rem; }
   .marquee-track > ul:nth-child(n + 2) { display: none; }
   .marquee-mask { -webkit-mask-image: none; mask-image: none; }
+}
+
+/* ---- Tối ưu cho điện thoại ---- */
+:root { --header-h: 64px; }
+@media (min-width: 1280px) { :root { --header-h: 86px; } }
+
+/* Cỡ chữ và khoảng cách: chữ đọc được trên màn nhỏ (≥14px cho nội dung, 16px đoạn chính), lề hẹp hơn để rộng chỗ cho nội dung. */
+@media (max-width: 767px) {
+  :root {
+    --text-body-sm: 14px;
+    --text-body-sm--line-height: 21px;
+    --text-body-md: 16px;
+    --text-body-md--line-height: 25px;
+    --spacing-space-xl: 2rem;
+    --spacing-margin: 1.25rem;
+    --spacing-gutter: 1rem;
+  }
+  /* Ô nhập: 16px để iPhone không tự phóng to khi chạm, cao 44px dễ bấm. */
+  input:not([type="checkbox"]):not([type="radio"]):not([type="file"]):not([type="hidden"]),
+  select,
+  [role="combobox"] {
+    font-size: 16px;
+    min-height: 44px;
+  }
+  textarea { font-size: 16px; min-height: 96px; }
+}
+
+/* Thiết bị cảm ứng: bỏ độ trễ chạm đúp và vệt sáng khi chạm. */
+a, button, [role="button"], [role="tab"], [role="combobox"] { touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
+
+
+/* Chữ trên banner đầu trang: tiêu đề và đoạn dẫn co giãn theo chiều rộng màn hình. */
+.banner-title {
+  font-size: clamp(2.25rem, 0.8rem + 4.2vw, 4.5rem);
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+}
+.banner-lead {
+  font-size: clamp(1.0625rem, 0.9rem + 0.55vw, 1.5rem);
+  line-height: 1.55;
+  max-width: 46rem;
 }

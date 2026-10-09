@@ -5,9 +5,9 @@ export default function CoreStrengths() {
   const t = useTranslations("GioiThieu.CoreStrengths");
 
   const STRENGTHS = [
-    { key: "production", index: "01", icon: "precision_manufacturing", metricClass: "text-sky-700" },
-    { key: "technology", index: "02", icon: "memory", metricClass: "text-sky-700" },
-    { key: "quality", index: "03", icon: "verified", metricClass: "text-sky-700" },
+    { key: "production", index: "01", icon: "precision_manufacturing", metricClass: "text-steel-700" },
+    { key: "technology", index: "02", icon: "memory", metricClass: "text-steel-700" },
+    { key: "quality", index: "03", icon: "verified", metricClass: "text-steel-700" },
     { key: "support", index: "04", icon: "support_agent", metricClass: "text-steel-600 font-bold" },
   ] as const;
 
@@ -37,10 +37,6 @@ export default function CoreStrengths() {
                 </div>
                 <h3 className="text-headline-sm text-slate-900 uppercase font-bold mb-space-xs">{t(`${item.key}.title`)}</h3>
                 <p className="text-body-md text-slate-600 leading-relaxed">{t(`${item.key}.desc`)}</p>
-              </div>
-              <div className="pt-space-sm mt-space-md border-t border-slate-200 flex flex-col gap-1 sm:flex-row sm:items-center sm:justify-between sm:gap-space-sm">
-                <span className="text-label-sm uppercase tracking-wider text-slate-500">{t(`${item.key}.metricLabel`)}</span>
-                <span className={`text-body-sm font-bold ${item.metricClass}`}>{t(`${item.key}.metricValue`)}</span>
               </div>
             </div>
           ))}

@@ -2,223 +2,224 @@
   "TuyenDung": {
     "PageHero": {
       "breadcrumbHome": "홈",
-      "breadcrumbCurrent": "채용정보",
-      "statusBadge": "인재 채용 포털 // 상태: 채용 진행 중",
-      "titlePrefix": "커리어",
-      "titleHighlight": "기회",
+      "breadcrumbCurrent": "채용 정보",
+      "statusBadge": "채용 중",
+      "titlePrefix": "HANIN",
+      "titleHighlight": "채용 안내",
       "companyName": "",
-      "description": "국제 표준에 따른 기계 가공 및 금속 표면처리 생산라인을 위한 엔지니어와 생산 인력을 채용합니다.",
-      "ctaPrimary": "채용 공고 보기 →",
+      "description": "HANIN은 하노이 꽝민 산업단지에서 기계 가공 및 금속 표면처리 분야의 엔지니어와 생산 인력을 채용합니다.",
+      "ctaPrimary": "채용 직무 보기",
       "ctaSecondary": "인사팀 문의",
-      "standardLabel": "작업 표준",
-      "standardValue": "ISO & 5S 개선활동",
-      "benefitsLabel": "복리후생",
-      "benefitsValue": "명확한 승진 경로",
-      "developmentLabel": "역량 개발",
-      "developmentValue": "1:1 맞춤 교육",
-      "factoryLabel": "생산 공장",
-      "factoryValue": "꽝민 공단",
-      "imageAlt": "HANIN Technology의 첨단 자동화 도금 작업장(예시 이미지, 실제 사진으로 교체 예정)",
-      "imageBadgeTag": "자동화 생산라인",
-      "imageBadgeTitle": "정밀 도금 생산 콤플렉스",
-      "imageBadgeLab": "HI-TECH LAB",
-      "floatingBadgeTitle": "100% 표준 복리후생",
-      "floatingBadgeSubtitle": "24/7 보험 & 통근 셔틀버스"
+      "standardLabel": "작업 방식",
+      "standardValue": "5S 기준 작업",
+      "benefitsLabel": "급여",
+      "benefitsValue": "역량에 따라 책정",
+      "developmentLabel": "교육",
+      "developmentValue": "현장 지도",
+      "factoryLabel": "근무지",
+      "factoryValue": "꽝민 산업단지",
+      "imageAlt": "HANIN 공장 도금 작업장",
+      "imageBadgeTag": "도금 라인",
+      "imageBadgeTitle": "생산 및 도금 구역",
+      "imageBadgeLab": "QC 부서",
+      "floatingBadgeTitle": "복리후생은 규정에 따름",
+      "floatingBadgeSubtitle": "보험 및 수당은 회사 규정 적용"
     },
     "WhyHanin": {
-      "title": "HANIN에서 커리어를 성장시키는 기반",
-      "description": "첨단 생산 환경과 엄격한 기술·안전 규율 속에서, 각 직무별로 명확한 전문성 발전 경로를 제공합니다.",
+      "title": "HANIN에서 일하기",
+      "description": "생산 공정과 산업안전 규정이 명확하며, 직무마다 구체적인 업무 요건과 지도 담당자가 있습니다.",
       "pillar1": {
-        "tag": "PILLAR 01 // FACTORY 4.0",
-        "title": "안전하고 현대적인 근무 환경",
-        "desc": "ISO 9001 및 ISO 14001 기준을 충족하는 공장, 폐쇄형 PLC 자동 도금 생산라인, 완비된 안전 보호장비와 독립된 검사 구역을 갖추고 있습니다.",
-        "metricLabel": "안전 지표",
-        "metricValue": "무사고 1,200일 이상"
+        "tag": "근무 환경",
+        "title": "안전한 근무 환경",
+        "desc": "자동 도금 라인, 충분한 보호구, 별도의 검사 구역을 갖추고 있습니다.",
+        "metricLabel": "산업안전",
+        "metricValue": "관련 규정 준수"
       },
       "pillar2": {
-        "tag": "PILLAR 02 // GROWTH PATH",
-        "title": "성장 및 커리어 승진 기회",
-        "desc": "기술 전문가(Technical Specialist) 또는 관리자(Management Track) 트랙 중 선택 가능한 명확한 승진 경로. 업무 성과와 카이젠 개선 제안을 기반으로 정기 성과 평가를 실시합니다.",
-        "metricLabel": "정기 성과 평가",
-        "metricValue": "연 2회"
+        "tag": "성장 경로",
+        "title": "경력 개발",
+        "desc": "전문 기술 또는 관리직으로 성장할 수 있으며, 업무 성과와 개선(Kaizen) 제안을 정기적으로 평가합니다.",
+        "metricLabel": "업무 평가",
+        "metricValue": "정기 실시"
       },
       "pillar3": {
-        "tag": "PILLAR 03 // TECH TRANSFER",
-        "title": "기술 교육 및 기술 이전",
-        "desc": "금속공학 전문가로부터의 사내 교육, X선 형광분석(XRF) 실습, 린 식스시그마·카이젠 과정, SCADA 자동화 공정 교육을 제공합니다.",
-        "metricLabel": "엔지니어 1인당 교육시간",
-        "metricValue": "연 80시간"
+        "tag": "기술 교육",
+        "title": "기술 교육",
+        "desc": "신입 직원은 도금 공정, XRF 도금 두께 측정, 자동 설비 운전을 사내에서 교육받습니다.",
+        "metricLabel": "교육",
+        "metricValue": "직무별 진행"
       },
       "pillar4": {
-        "tag": "PILLAR 04 // TOTAL REWARDS",
-        "title": "기업 문화 및 복리후생 제도",
-        "desc": "역량에 따른 급여, 생산 및 프로젝트 성과 보너스, 건강보험, 하노이-꽝민공단 통근 셔틀버스, 공장 내 근무 식사 및 연례 팀빌딩 활동을 제공합니다.",
-        "metricLabel": "통근 셔틀버스",
+        "tag": "복리후생",
+        "title": "복리후생",
+        "desc": "능력에 따른 급여, 생산 성과급, 법정 보험, 근무식, 하노이-꽝민 산업단지 통근버스를 제공합니다.",
+        "metricLabel": "통근 버스",
         "metricValue": "하노이 시내 노선"
       }
     },
     "JobBoard": {
-      "title": "현재 채용 중인 직무",
-      "description": "HANIN 본사 사무실 및 생산 공장의 채용 직무입니다.",
-      "boardStatus": "실시간 채용 게시판 // 채용 중 {count}개 직무",
-      "searchPlaceholder": "직무명, 기술 직책, 키워드로 검색하세요 (예: PLC, R&D, QA, 기계)...",
+      "title": "채용 중인 직무",
+      "description": "HANIN 사무실과 공장의 채용 직무입니다.",
+      "boardStatus": "채용 직무 {count}건",
+      "searchPlaceholder": "직무 또는 키워드로 검색 (PLC, QA, 기계)",
       "departmentLabel": "부서",
       "typeLabel": "근무 형태",
       "locationLabel": "근무지",
       "resultsLabel": "검색 결과:",
-      "resultsCount": "지원 가능 직무 {count}건",
+      "resultsCount": "{count}건",
       "resetFilters": "필터 초기화",
-      "deadlineLabel": "마감일:",
+      "deadlineLabel": "접수 마감:",
       "salaryLabel": "급여",
-      "requirementsLabel": "주요 요건",
-      "applyNow": "지금 지원하기",
-      "noResults": "현재 필터 조건에 맞는 직무가 없습니다. 다른 키워드로 검색해 주세요.",
+      "requirementsLabel": "주요 자격 요건",
+      "applyNow": "지원하기",
+      "noResults": "현재 조건에 맞는 채용 공고가 없습니다.",
       "closeModal": "닫기",
       "fullNameLabel": "성명 *",
-      "fullNamePlaceholder": "예: 응우옌 반 안",
-      "phoneLabel": "연락처 *",
+      "fullNamePlaceholder": "예: 홍길동",
+      "phoneLabel": "휴대전화 *",
       "phonePlaceholder": "09xx xxx xxx",
       "emailLabel": "이메일 *",
       "emailPlaceholder": "ten@email.com",
-      "experienceLabel": "경력 연차",
+      "experienceLabel": "경력",
       "experienceOptions": {
-        "fresh": "신입 / 1년 미만",
-        "one_two": "1 - 2년 경력",
-        "three_five": "3 - 5년 경력",
-        "above_five": "5년 이상 경력"
+        "fresh": "신입 또는 1년 미만",
+        "one_two": "1 - 2년",
+        "three_five": "3 - 5년",
+        "above_five": "5년 이상"
       },
       "cvLabel": "이력서 첨부 (PDF, DOCX) *",
-      "cvDropText": "파일을 끌어다 놓거나 클릭하여 이력서 선택",
-      "cvSizeNote": "파일당 최대 50MB (.pdf, .doc, .docx, .jpg, .png, .zip)",
-      "messageLabel": "메시지 / 자기소개",
-      "messagePlaceholder": "본인의 기술적 강점이나 커리어 목표를 간략히 작성해 주세요...",
+      "cvDropText": "파일을 여기에 끌어다 놓거나 클릭하여 이력서를 선택하십시오",
+      "cvSizeNote": "파일당 최대 50MB",
+      "messageLabel": "전달 사항 또는 자기소개",
+      "messagePlaceholder": "경력 또는 관심 있는 직무를 간단히 적어 주십시오.",
       "cancelButton": "취소",
       "submitButton": "지원서 제출",
-      "submitSuccess": "✓ 지원서가 성공적으로 접수되었습니다. HANIN 인사팀이 48시간 이내에 연락드리겠습니다!",
-      "submitError": "지원서 제출에 실패했습니다. 입력 정보와 첨부 파일을 확인한 후 다시 시도해 주세요.",
-      "submitting": "제출 중..."
+      "submitSuccess": "지원서가 접수되었습니다. HANIN 인사팀이 이메일 또는 전화로 연락드리겠습니다.",
+      "submitError": "전송하지 못했습니다. 입력 내용과 첨부 파일을 확인한 후 다시 시도해 주십시오.",
+      "submitting": "전송 중..."
     },
     "WorkEnvironment": {
-      "title": "실제 근무 환경 이미지",
-      "description": "공장 실사 이미지: 엄격한 노동 규율에 따라 운영되는 자동화 생산라인.",
-      "mainImageAlt": "HANIN Tech의 중앙 자동 도금라인 운영 및 제어 구역(예시 이미지, 실제 사진으로 교체 예정)",
-      "mainBadge": "01번 생산 시설",
-      "mainTitle": "중앙 자동 도금라인 운영 및 제어 구역",
-      "mainDesc": "배기가스 처리 시스템과 PLC 마이크로컨트롤러 기반 자동 모니터링을 갖춘 폐쇄형 니켈 & 경질크롬 도금라인.",
-      "secondaryImageAlt": "고품질 수출 기준을 충족하는 도금 후 기계 부품 완제품(예시 이미지, 실제 사진으로 교체 예정)",
-      "secondaryBadge": "계측 및 품질 검사",
-      "secondaryTitle": "도금 후 정밀 기계부품 완제품",
-      "secondaryDesc": "XRF 분광 측정기를 이용한 마이크론(µm) 단위 도금 두께 검사",
-      "labTitle": "미세 이화학 검사 실험실",
-      "labDesc": "부식 가속 시험용 NSS/AASS 염수분무 챔버, 도금 밀착력 측정기, Hull Cell 용액 분석 장비를 완비하고 있습니다.",
-      "labFooter": "출하 로트 100%에 CoC 및 RoHS 인증서 발급",
-      "labBadge": "ISO/IEC 17025"
+      "title": "근무 환경",
+      "description": "공장 현장 사진입니다.",
+      "mainImageAlt": "HANIN 공장 자동 도금 라인 운영 구역",
+      "mainBadge": "생산 구역",
+      "mainTitle": "자동 도금 라인 운영 구역",
+      "mainDesc": "니켈 및 경질 크롬 도금 라인, 배기 처리 및 PLC 감시 설비 포함.",
+      "secondaryImageAlt": "HANIN 공장에서 도금을 마친 기계 부품",
+      "secondaryBadge": "품질 검사",
+      "secondaryTitle": "도금을 마친 기계 부품",
+      "secondaryDesc": "XRF로 도금 두께(µm) 측정",
+      "labTitle": "시험실",
+      "labDesc": "염수분무 시험기, 도금 밀착력 측정기, 도금액 분석용 Hull Cell을 갖추고 있습니다.",
+      "labImageAlt": "도금액 분석 실험실과 시험 장비",
+      "labFooter": "출하 로트는 고객 요청에 따라 검사 기록을 첨부합니다",
+      "labBadge": "QC 부서"
     },
     "ApplicationCta": {
-      "title": "HANIN 팀에 합류하세요",
-      "description": "이력서(CV)를 제출하시거나 채용 담당 부서에 직접 문의하시면, HANIN의 엔지니어 및 표면처리 전문가 팀에 적합한 직무를 안내해 드립니다.",
+      "title": "지원서 제출",
+      "description": "이메일로 CV를 보내거나 채용 담당 부서에 문의하여 적합한 직무를 안내받으십시오.",
       "emailLabel": "이력서 접수 이메일",
-      "hotlineLabel": "채용 핫라인",
-      "quickApplyTitle": "빠른 이력서 지원",
-      "quickApplyDescription": "관심 있는 직무가 아직 정식으로 공고되지 않았더라도 HANIN은 지원서를 접수합니다.",
+      "hotlineLabel": "채용 문의 전화",
+      "quickApplyTitle": "간편 지원",
+      "quickApplyDescription": "관심 직무가 공고되지 않았어도 지원서를 접수합니다.",
       "viewJobsCta": "채용 직무 보기",
-      "sendCvCta": "이메일로 이력서 바로 보내기",
-      "securityNote": "지원자 정보는 ISO 27001 기준에 따라 안전하게 보호됩니다"
+      "sendCvCta": "이메일로 이력서 보내기",
+      "securityNote": "지원자 정보는 채용 목적으로만 사용합니다"
     },
     "jobs": {
       "0": {
-        "title": "화학 엔지니어 / 금속 도금 기술 엔지니어",
-        "departmentLabel": "기술 & R&D 본부",
+        "title": "화학 엔지니어 / 금속 도금 공정 엔지니어",
+        "departmentLabel": "기술 및 R&D",
         "typeLabel": "정규직",
-        "locationLabel": "하노이 꽝민 공단",
-        "salary": "급여: 1,800 - 2,500만 동",
+        "locationLabel": "하노이 꽝민 산업단지",
+        "salary": "급여: 1,800만 - 2,500만 동",
         "tags": {
-          "0": "경력: 2년 이상",
-          "1": "PLC 자동 도금조 & ENP 무전해 도금 화학",
-          "2": "Hull Cell 용액 농도 분석"
+          "0": "경력 2년 이상",
+          "1": "자동 도금조(PLC), 무전해 니켈(ENP) 이해, Hull Cell 도금액 분석",
+          "2": "헐셀을 이용한 도금액 농도 분석"
         },
-        "deadline": "2026년 4월 30일"
+        "deadline": "30/04/2026"
       },
       "1": {
-        "title": "품질관리 팀장 (QA/QC Leader)",
-        "departmentLabel": "품질관리부 (QA/QC)",
+        "title": "품질관리(QA/QC) 팀장",
+        "departmentLabel": "품질관리(QA/QC)",
         "typeLabel": "정규직",
-        "locationLabel": "하노이 꽝민 공단",
-        "salary": "급여: 2,000 - 3,000만 동",
+        "locationLabel": "하노이 꽝민 산업단지",
+        "salary": "급여: 2,000만 - 3,000만 동",
         "tags": {
-          "0": "ISO 9001 / IATF 16949 인증",
-          "1": "XRF 측정 및 염수분무 시험 (Salt Spray)",
-          "2": "경력: 3-5년"
+          "0": "경력 3 - 5년, ISO 9001 또는 IATF 16949 자격 보유",
+          "1": "XRF 측정 및 염수분무 시험",
+          "2": "경력: 3 - 5년"
         },
-        "deadline": "2026년 5월 15일"
+        "deadline": "15/05/2026"
       },
       "2": {
-        "title": "자동 도금라인 운영 기술자",
-        "departmentLabel": "생산 & 운영 본부",
-        "typeLabel": "교대 근무 (3교대)",
-        "locationLabel": "하노이 꽝민 공단",
-        "salary": "급여: 1,000 - 1,500만 동 + 교대 수당",
+        "title": "자동 도금 라인 운영 기술자",
+        "departmentLabel": "생산 및 운영",
+        "typeLabel": "교대 근무",
+        "locationLabel": "하노이 꽝민 산업단지",
+        "salary": "급여: 1,000만 - 1,500만 동, 교대 수당 별도",
         "tags": {
-          "0": "기계/전기 전문학사 이상 졸업",
-          "1": "SCADA 시스템 및 자동 크레인 모니터링"
+          "0": "기계·전기 전공 중급 또는 전문대 졸업",
+          "1": "SCADA 시스템 및 자동 이송 크레인 감시"
         },
         "deadline": "상시 채용"
       },
       "3": {
-        "title": "기전 유지보수 & PLC 시스템 엔지니어",
-        "departmentLabel": "유지보수 & 기전부 (Maintenance)",
+        "title": "전기·기계 설비보전 및 PLC 시스템 엔지니어",
+        "departmentLabel": "설비보전 및 전기·기계",
         "typeLabel": "정규직",
-        "locationLabel": "하노이 꽝민 공단",
-        "salary": "급여: 1,500 - 2,200만 동",
+        "locationLabel": "하노이 꽝민 산업단지",
+        "salary": "급여: 1,500만 - 2,200만 동",
         "tags": {
-          "0": "지멘스 S7-1200 / 미쓰비시 PLC",
-          "1": "정류기 전원 및 순환 여과 시스템 유지보수"
+          "0": "PLC 지멘스 S7-1200 또는 미쓰비시",
+          "1": "정류기 및 순환 여과 시스템 유지보수"
         },
-        "deadline": "2026년 4월 25일"
+        "deadline": "25/04/2026"
       },
       "4": {
-        "title": "B2B 프로젝트 영업 전문가 (기계가공 & 부자재)",
-        "departmentLabel": "영업 & 시장개발부",
+        "title": "프로젝트 영업 담당 (기계 및 부대 가공)",
+        "departmentLabel": "영업 및 시장 개발",
         "typeLabel": "정규직",
-        "locationLabel": "하노이 사무실 & 공장",
-        "salary": "기본급 + 프로젝트 성과 커미션",
+        "locationLabel": "하노이 사무실 및 공장",
+        "salary": "고정급 및 프로젝트별 성과급",
         "tags": {
-          "0": "영어 또는 한국어/일본어 회화 가능",
-          "1": "FDI / OEM 고객 네트워크 개발"
+          "0": "영어, 한국어 또는 일본어 의사소통 가능",
+          "1": "FDI 및 OEM 고객 개발"
         },
-        "deadline": "2026년 5월 10일"
+        "deadline": "10/05/2026"
       },
       "5": {
         "title": "기계 / 금속공학 기술 인턴",
-        "departmentLabel": "기술 & 공정 본부",
+        "departmentLabel": "기술 및 공정",
         "typeLabel": "인턴 (3 - 6개월)",
-        "locationLabel": "하노이 꽝민 공단",
-        "salary": "인턴 수당 + 중식 및 교통비 지원",
+        "locationLabel": "하노이 꽝민 산업단지",
+        "salary": "인턴 수당, 점심 및 교통비 지급",
         "tags": {
-          "0": "공장 수석 엔지니어의 1:1 교육 제공",
-          "1": "인턴십 종료 후 정규직 전환 기회"
+          "0": "공장 엔지니어의 현장 지도",
+          "1": "인턴 종료 후 정규직 전환 기회"
         },
-        "deadline": "상시 채용"
+        "deadline": "수시 채용"
       }
     },
     "departmentOptions": {
       "all": "전체 부서",
-      "engineering": "기술 & 연구개발 (R&D)",
-      "production": "생산 & 운영",
-      "qc": "품질관리 (QC/QA)",
-      "maintenance": "유지보수 & 기전",
-      "sales": "B2B 영업 & 프로젝트"
+      "engineering": "기술 및 R&D",
+      "production": "생산 및 운영",
+      "qc": "품질관리(QC/QA)",
+      "maintenance": "설비보전 및 전기·기계",
+      "sales": "영업 및 프로젝트"
     },
     "typeOptions": {
       "all": "전체 근무 형태",
-      "fulltime": "정규직 (Full-time)",
-      "shift": "교대 근무 (3교대)",
+      "fulltime": "정규직",
+      "shift": "교대 근무",
       "intern": "기술 인턴"
     },
     "locationOptions": {
-      "all": "전체 지역",
-      "factory": "하노이 꽝민 공단 공장",
-      "office": "하노이 사무실 & 공장"
+      "all": "전체 근무지",
+      "factory": "하노이 꽝민 산업단지 공장",
+      "office": "하노이 사무실 및 공장"
     }
   }
 }

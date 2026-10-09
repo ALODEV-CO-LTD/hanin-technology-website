@@ -1,5 +1,6 @@
 import { useLocale, useTranslations } from "next-intl";
 import { getBanner } from "@/server/public";
+import HeroImage from "@/components/ui/HeroImage";
 import PageBreadcrumb from "@/components/layout/PageBreadcrumb";
 
 export default function IntroHero() {
@@ -7,17 +8,9 @@ export default function IntroHero() {
   const banner = getBanner("gioi-thieu", useLocale(), "/images/factory/kho-6.jpg");
 
   return (
-    <section className="relative w-full min-h-screen bg-slate-900 overflow-hidden flex items-center border-b border-slate-200">
+    <section className="relative w-full min-h-[calc(100svh-var(--header-h))] bg-slate-900 overflow-hidden flex items-center border-b border-slate-200">
       {/* Hero Background Image */}
-      <div
-        className="absolute inset-0 bg-cover bg-center"
-        role="img"
-        aria-label={banner.alt || t("imageAlt")}
-        style={{
-          backgroundImage:
-            `url('${banner.image}')`,
-        }}
-      />
+      <HeroImage src={banner.image} alt={banner.alt || t("imageAlt")} />
 
       {/* Content Container */}
       <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-r from-slate-950/85 via-slate-950/65 to-slate-950/35" />
@@ -32,12 +25,12 @@ export default function IntroHero() {
         />
 
         {/* Main Heading */}
-        <h1 className="text-headline-xl-mobile md:text-display-hero text-white uppercase tracking-tight max-w-3xl mb-space-sm font-bold">
+        <h1 className="banner-title text-white uppercase tracking-tight max-w-5xl mb-space-sm font-bold">
           {t("title")}
         </h1>
 
         {/* Supporting Deck */}
-        <p className="text-body-md md:text-body-lg text-white max-w-2xl leading-relaxed">{t("subtitle")}</p>
+        <p className="banner-lead text-white leading-relaxed">{t("subtitle")}</p>
       </div>
     </section>
   );

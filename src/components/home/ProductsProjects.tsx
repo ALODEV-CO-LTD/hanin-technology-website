@@ -1,7 +1,8 @@
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 import { useLocale, useTranslations } from "next-intl";
 import { getProducts } from "@/server/public";
 import Icon from "@/components/ui/Icon";
+import Photo from "@/components/ui/Photo";
 
 
 export default function ProductsProjects() {
@@ -25,7 +26,7 @@ export default function ProductsProjects() {
           </div>
           <Link
             href="/san-pham-du-an"
-            className="inline-flex items-center gap-2 text-label-technical uppercase tracking-wider text-slate-600 hover:text-steel-600 transition-colors whitespace-nowrap font-semibold"
+            className="inline-flex items-center gap-2 py-3 -my-3 text-label-technical uppercase tracking-wider text-slate-600 hover:text-steel-600 transition-colors whitespace-nowrap font-semibold"
           >
             <span>{t("ctaAll")}</span>
             <Icon name="arrow_forward" className="text-[16px]" />
@@ -40,8 +41,7 @@ export default function ProductsProjects() {
               className="group flex flex-col bg-white border border-slate-200 rounded overflow-hidden shadow-sm hover:shadow-xl hover:border-steel-300 transition-all duration-300"
             >
               <div className="relative h-64 overflow-hidden bg-slate-100">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+                <Photo
                   alt={project.imageAlt}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   src={project.image}
@@ -54,7 +54,7 @@ export default function ProductsProjects() {
                 <h3 className="text-headline-sm text-slate-900 font-bold group-hover:text-steel-600 transition-colors">
                   {project.title}
                 </h3>
-                <div className="flex items-center gap-2 pt-space-xs text-slate-500 group-hover:text-steel-600 transition-colors">
+                <div className="flex items-center gap-2 pt-space-xs text-slate-600 group-hover:text-steel-600 transition-colors">
                   <span className="text-label-technical uppercase tracking-wider font-semibold">
                     {t("project1.cta")}
                   </span>

@@ -2,11 +2,13 @@
 
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { useMemo, useState, type FormEvent } from "react";
+import { startTransition, useMemo, useState, type FormEvent } from "react";
 import { api, ApiError } from "./api";
 import Dropdown from "./Dropdown";
 import HistoryPanel from "./HistoryPanel";
 import { MediaPickerModal } from "./MediaPicker";
+import SaveButton, { useSavedFlash } from "./SaveButton";
+import { useToast } from "./Toast";
 
 type Locale = "vi" | "zh" | "ko";
 const LOCALES: { key: Locale; label: string }[] = [
@@ -250,6 +252,8 @@ export default function ResourceForm({ resource, initial, id }: Props) {
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [message, setMessage] = useState<{ type: "ok" | "error"; text: string } | null>(null);
   const [saving, setSaving] = useState(false);
+  const toast = useToast();
+  const { saved, flash } = useSavedFlash();
 
   const hasI18n = useMemo(() => resource.fields.some((f) => f.type.startsWith("i18n") || f.type === "list"), [resource.fields]);
   const missing = useMemo(
@@ -265,19 +269,24 @@ export default function ResourceForm({ resource, initial, id }: Props) {
     try {
       if (id) {
         await api(`${resource.key}/${id}`, { method: "PUT", body: values });
-        setMessage({ type: "ok", text: "Đã lưu thay đổi." });
-        router.refresh();
+        toast.success(`Đã lưu ${resource.singular}.`);
+        flash();
+        startTransition(() => router.refresh());
       } else {
         await api(resource.key, { body: values });
+        toast.success(`Đã thêm ${resource.singular} mới.`);
         router.push(`/admin/${resource.key}`);
-        router.refresh();
+        startTransition(() => router.refresh());
       }
     } catch (err) {
       if (err instanceof ApiError) {
         setErrors(err.errors ?? {});
-        setMessage({ type: "error", text: err.errors ? "Vui lòng kiểm tra các trường được đánh dấu." : err.message });
+        const text = err.errors ? "Vui lòng kiểm tra các trường được đánh dấu." : err.message;
+        setMessage({ type: "error", text });
+        toast.error(text);
       } else {
         setMessage({ type: "error", text: "Không lưu được, vui lòng thử lại." });
+        toast.error("Không lưu được, vui lòng thử lại.");
       }
     } finally {
       setSaving(false);
@@ -291,13 +300,11 @@ export default function ResourceForm({ resource, initial, id }: Props) {
           <Link href={`/admin/${resource.key}`} className="text-sm font-medium text-steel-600 hover:underline">←{resource.label}</Link>
           <h1 className="text-xl font-bold text-slate-900">{id ? `Sửa ${resource.singular}` : `Thêm ${resource.singular}`}</h1>
         </div>
-        <button disabled={saving} className="h-10 px-6 rounded bg-steel-600 hover:bg-steel-700 text-white font-semibold text-sm disabled:opacity-60">
-          {saving ? "Đang lưu…" : "Lưu"}
-        </button>
+        <SaveButton saving={saving} saved={saved} />
       </div>
 
-      {message && (
-        <p role={message.type === "error" ? "alert" : "status"} className={`mt-4 text-sm rounded px-3 py-2 border ${message.type === "ok" ? "bg-emerald-50 border-emerald-200 text-emerald-800" : "bg-red-50 border-red-200 text-red-800"}`}>
+      {message?.type === "error" && (
+        <p role="alert" className="mt-4 text-sm rounded px-3 py-2 border bg-red-50 border-red-200 text-red-800">
           {message.text}
         </p>
       )}

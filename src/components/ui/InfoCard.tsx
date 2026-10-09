@@ -5,7 +5,7 @@ type Tone = "steel" | "sky" | "slate";
 
 const TONES: Record<Tone, { bar: string; icon: string }> = {
   steel: { bar: "bg-steel-600", icon: "text-steel-600" },
-  sky: { bar: "bg-sky-700", icon: "text-sky-700" },
+  sky: { bar: "bg-steel-700", icon: "text-steel-700" },
   slate: { bar: "bg-slate-500", icon: "text-slate-600" },
 };
 
@@ -31,13 +31,13 @@ export default function InfoCard({ icon, tone = "steel", badge, title, children,
           <span className={`flex h-10 w-10 shrink-0 items-center justify-center rounded bg-slate-100 ${c.icon}`}>
             <Icon name={icon} className="text-[22px]" />
           </span>
-          <span className="text-label-sm font-semibold uppercase tracking-wider text-slate-500">{badge}</span>
+          <span className="text-label-sm font-semibold uppercase tracking-wider text-slate-600">{badge}</span>
         </div>
         {title ? <h3 className="text-title-md font-bold text-slate-900">{title}</h3> : null}
         {children ? <div className="flex flex-col gap-space-sm text-body-sm text-slate-600">{children}</div> : null}
       </div>
       {footer ? (
-        <div className="flex min-h-[52px] items-center border-t border-slate-100 bg-slate-50 px-space-lg py-space-sm text-label-sm text-slate-500">
+        <div className="flex min-h-[52px] items-center border-t border-slate-100 bg-slate-50 px-space-lg py-space-sm text-label-sm text-slate-600">
           {footer}
         </div>
       ) : null}
@@ -50,7 +50,7 @@ export function InfoField({ label, value, href, strong }: { label: string; value
   const cls = `block ${strong ? "text-title-md font-bold text-steel-600" : "font-semibold text-slate-900"}`;
   return (
     <div>
-      <span className="block text-label-sm text-slate-500">{label}</span>
+      <span className="block text-label-sm text-slate-600">{label}</span>
       {href ? (
         <a href={href} className={`${cls} hover:underline`}>
           {value}

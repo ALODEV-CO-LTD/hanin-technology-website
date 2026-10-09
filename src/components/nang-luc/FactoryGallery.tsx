@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
 import { siteImg } from "@/server/site-images";
+import Photo from "@/components/ui/Photo";
 
 export default function FactoryGallery() {
   const t = useTranslations("NangLuc.FactoryGallery");
@@ -24,7 +25,7 @@ export default function FactoryGallery() {
   ] as const;
 
   return (
-    <section className="w-full py-space-xl bg-slate-50 border-t border-slate-200 scroll-mt-[86px]" id="factory-gallery">
+    <section className="w-full py-space-xl bg-slate-50 border-t border-slate-200 scroll-mt-[var(--header-h)]" id="factory-gallery">
       <div className="mx-auto px-margin w-full">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-xl">
           <div>
@@ -34,13 +35,12 @@ export default function FactoryGallery() {
 
         {/* Main Featured Image */}
         <div className="relative w-full aspect-[16/9] max-h-[520px] rounded-lg overflow-hidden bg-slate-200 mb-gutter group shadow-md border border-slate-200">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
+          <Photo
             className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-700"
             alt={t("mainImage.alt")}
             src={siteImg("nang-luc/FactoryGallery#5", "/images/factory/ma-quay-7.jpg")}
+            sizes="100vw"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent" />
         </div>
 
         {/* Secondary Grid of 4 Images */}
@@ -50,13 +50,11 @@ export default function FactoryGallery() {
               key={thumb.key}
               className="relative aspect-video rounded-lg overflow-hidden bg-slate-200 border border-slate-200 group shadow-sm"
             >
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+              <Photo
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 alt={t(`items.${thumb.key}.alt`)}
                 src={thumb.image}
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent" />
             </div>
           ))}
         </div>

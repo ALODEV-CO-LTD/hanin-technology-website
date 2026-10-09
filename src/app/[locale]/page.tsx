@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import Hero from "@/components/home/Hero";
-import CompanySnapshot from "@/components/home/CompanySnapshot";
 import AboutHanin from "@/components/home/AboutHanin";
 import PlatingServices from "@/components/home/PlatingServices";
 import ManufacturingCapability from "@/components/home/ManufacturingCapability";
@@ -21,7 +20,6 @@ export default function Home() {
   return (
     <div className="flex flex-col w-full text-on-surface">
       <Hero />
-      <Reveal><CompanySnapshot /></Reveal>
       <Reveal direction="right"><AboutHanin /></Reveal>
       <Reveal><PlatingServices /></Reveal>
       <Reveal direction="right"><ManufacturingCapability /></Reveal>

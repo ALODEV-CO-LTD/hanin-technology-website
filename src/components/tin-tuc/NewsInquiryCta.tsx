@@ -19,7 +19,7 @@ export default function NewsInquiryCta() {
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center relative z-10">
             <div className="lg:col-span-8 flex flex-col gap-space-sm">
-              <h2 className="text-headline-xl text-slate-900 uppercase tracking-tight font-bold">
+              <h2 className="text-headline-xl-mobile md:text-headline-xl text-slate-900 uppercase tracking-tight font-bold">
                 {t("titlePrefix")} <span className="text-steel-600">{t("titleHighlight")}</span>
               </h2>
               <p className="text-body-lg text-slate-600 max-w-3xl">{t("description")}</p>
@@ -30,7 +30,7 @@ export default function NewsInquiryCta() {
                     {t("hotlineLabel")} <strong className="text-slate-900"><PhoneLinks phones={general} /></strong>
                   </span>
                 </div>
-                <span className="text-slate-300 hidden sm:inline">|</span>
+                <span aria-hidden="true" className="text-slate-400 hidden sm:inline">|</span>
                 <div className="flex items-center gap-space-xs text-title-md text-slate-900">
                   <Icon name="mail" className="text-steel-600 text-[20px]" />
                   <span>

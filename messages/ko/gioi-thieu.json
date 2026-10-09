@@ -1,30 +1,30 @@
 {
   "GioiThieu": {
     "IntroHero": {
-      "imageAlt": "현대적인 도금 작업장을 포함한 HANIN 공업 단지 전경 (예시 이미지, 추후 발주처 제공 실사 이미지로 교체 예정)",
+      "imageAlt": "현대적인 도금 작업장을 포함한 HANIN 공업 단지 전경",
       "breadcrumbHome": "홈",
       "breadcrumbCurrent": "회사 소개",
       "title": "HANIN 소개",
-      "subtitle": "발전 방향과 산업 고객을 위한 생산 역량을 알아보세요."
+      "subtitle": "HANIN의 발전 방향과 산업 고객 대응 역량을 소개합니다."
     },
     "CompanyIntroduction": {
-      "imageAlt": "하노이 꽝민공단에 위치한 공장의 현대적인 외관 (예시 이미지, 추후 발주처 제공 실사 이미지로 교체 예정)",
-      "scaleBadge": "규모: 공장 부지 // 꽝민공단",
-      "coordBadge": "좌표 21.2074° N",
-      "areaBadge": "공장 부지 면적: 2,230 m²",
-      "heading": "산업용 도금 가공 수요와 함께합니다",
+      "imageAlt": "하노이 꽝민공단에 위치한 공장의 현대적인 외관",
+      "scaleBadge": "꽝민공단 공장",
+      "coordBadge": "좌표 북위 21.2074°",
+      "areaBadge": "부지 면적: 2,230 m²",
+      "heading": "산업 고객을 위한 도금 가공",
       "paragraph1Strong": "HANIN Technology 베트남 도금산업 주식회사",
-      "paragraph1Rest": "은 금속 도금 가공 및 정밀 기계 표면처리 전문 기업으로, 제조업, 기계 부품 및 고정밀 기술 부품 산업에 서비스를 제공합니다.",
-      "paragraph2": "HANIN은 2023년 3월 28일에 설립되어 하노이 꽝민공단에서 공장 부지 2,230 m² 규모로 운영하며, 랙 도금, 배럴 도금, 분석, 품질관리(QC), 창고 부서를 포함해 58명의 인력을 갖추고 있습니다. 현재 100곳 이상의 산업 고객을 지원하고 있습니다.",
+      "paragraph1Rest": "은 금속 도금 가공과 정밀 기계 부품 표면처리를 전문으로 하며, 제조업과 기계 부품 분야 고객을 대상으로 합니다.",
+      "paragraph2": "2023년 3월 28일 설립되었으며, 공장은 하노이 꽝민공단의 2,230 m² 부지에 있습니다. 직원 58명이 랙 도금, 배럴 도금, QC, 사무 부서에서 근무하고 있으며, 100개 이상의 고객사에 서비스를 제공합니다.",
       "field": {
         "label": "사업 분야",
         "value": "금속 도금 가공",
-        "note": "전기 도금 & 표면 정밀 마감"
+        "note": "전기도금 및 표면처리"
       },
       "target": {
-        "label": "대상 고객",
+        "label": "고객",
         "value": "산업 고객",
-        "note": "1차 & 2차 OEM/ODM 공급업체"
+        "note": "1차·2차 OEM/ODM 협력업체"
       },
       "location": {
         "label": "위치",
@@ -33,180 +33,184 @@
       }
     },
     "CompanyJourney": {
-      "heading": "발전 여정",
-      "subtitle": "HANIN의 설립과 성장 과정의 주요 이정표입니다.",
+      "heading": "발전 과정",
+      "subtitle": "HANIN의 설립과 성장 단계를 소개합니다.",
       "m1": {
         "yearTag": "2023",
-        "phase": "1단계 // 기반 구축",
-        "title": "사업장 설립 및 표준 구축",
-        "desc": "사업장을 설립하고 금속 도금 표준을 구축하며 처리 화학 배합을 최적화했습니다."
+        "phase": "1단계 · 출범",
+        "title": "설립 및 공정 수립",
+        "desc": "2023년 3월 28일 설립, 도금 공정과 처리 약품 배합을 수립했습니다."
       },
       "m2": {
-        "yearTag": "[성장 연도]",
-        "phase": "2단계 // 자동화 라인 확장",
-        "title": "자동화 생산 라인 시스템 확장",
-        "desc": "자동 도금 라인을 확장하고 기술 계측 기준에 따라 품질관리실을 업그레이드했습니다."
+        "yearTag": "성장 단계",
+        "phase": "2단계 · 확장",
+        "title": "생산 라인 확장",
+        "desc": "도금 라인을 확장하고 품질관리 구역을 개선했습니다."
       },
       "m3": {
-        "yearTag": "[표준화 연도]",
-        "phase": "3단계 // 국제 표준화",
-        "title": "마이크론 검사 인증 및 B2B 동기화",
-        "desc": "마이크론 단위 두께 검사 표준을 달성하고 국제 B2B 고객을 위한 표면처리 공정을 동기화했습니다."
+        "yearTag": "표준화 단계",
+        "phase": "3단계 · 표준화",
+        "title": "검사 및 공정 표준화",
+        "desc": "고객 요구에 맞추어 도금 두께 측정과 표면처리 공정을 표준화했습니다."
       },
       "m4": {
-        "yearTag": "[현재 & 미래]",
-        "phase": "4단계 // 지속가능한 생태계",
-        "title": "신뢰할 수 있는 도금 가공 파트너",
-        "desc": "산업 보조 생산망의 도금 가공 파트너 역할을 확대하며, 지속가능한 표준과 친환경 기술을 지향합니다."
+        "yearTag": "현재",
+        "phase": "4단계 · 현재",
+        "title": "도금 가공 협력사",
+        "desc": "지원 산업 공급망에 도금 가공을 제공하며 공정을 지속적으로 보완하고 있습니다."
       }
     },
     "ContactCta": {
-      "heading": "HANIN에 대해 더 알고 싶으신가요?",
-      "subtitle": "HANIN에 연락하여 도금 가공 수요 및 프로젝트별 기술 협력에 대해 상담하세요.",
-      "ctaPrimary": "HANIN 문의하기 →",
+      "heading": "도금 가공 관련 상담이 필요하십니까?",
+      "subtitle": "요청 사항이나 도면을 보내 주시면 HANIN이 상담과 견적을 안내합니다.",
+      "ctaPrimary": "HANIN 문의하기",
       "ctaSecondary": "견적 받기"
     },
     "CoreStrengths": {
-      "heading": "HANIN의 핵심 역량",
+      "heading": "HANIN의 역량",
       "production": {
-        "title": "생산 역량",
-        "desc": "[생산 역량 정보: 대규모 도금조 시스템으로 매일 대량의 부품을 지속적인 산업 주문에 맞춰 공급합니다.]",
-        "metricLabel": "지표: 연속 가동 생산능력",
-        "metricValue": "안정적인 공급"
+        "title": "생산 능력",
+        "desc": "랙 도금과 배럴 도금 라인에서 대량 주문을 처리합니다.",
+        "metricLabel": "공급",
+        "metricValue": "주문 계획에 따름"
       },
       "technology": {
-        "title": "기술 & 설비",
-        "desc": "[기술 정보: 반자동 및 PLC 자동 제어 생산 라인으로, 기술 파라미터에 따라 전류와 도금 시간을 제어합니다.]",
-        "metricLabel": "시스템: PLC 자동 제어",
-        "metricValue": "전류 정류 정밀도 ±1%"
+        "title": "기술 및 설비",
+        "desc": "반자동 및 PLC 제어 자동 라인, 전류 정류 ±1%.",
+        "metricLabel": "제어",
+        "metricValue": "PLC, 전류 정류 ±1%"
       },
       "quality": {
         "title": "품질 관리",
-        "desc": "[품질 관리 정보: X선 형광 측정기(XRF)를 이용한 마이크론 단위 도금 두께 측정, ASTM B117 기준 염수 분무 시험.]",
-        "metricLabel": "정밀도: ±0.1 µm XRF 측정기",
-        "metricValue": "ASTM B117 염수 분무 시험"
+        "desc": "XRF 장비로 도금 두께를 측정하고 ASTM B117 염수 분무 시험을 실시합니다.",
+        "metricLabel": "검사",
+        "metricValue": "XRF, ASTM B117"
       },
       "support": {
-        "title": "기술 & 지원",
-        "desc": "[기술 지원 정보: 도면 기반 도금 기술 상담, 각 기계 부품의 기술 요구사항에 따른 공정 최적화.]",
-        "metricLabel": "심층 기술 상담",
-        "metricValue": "24/7 기업 지원"
+        "title": "기술 및 지원",
+        "desc": "도면과 부품별 기술 요구에 맞추어 도금 공정을 상담합니다.",
+        "metricLabel": "기술 상담",
+        "metricValue": "도면 기준"
       }
     },
     "DevelopmentDirection": {
       "heading": "발전 방향",
-      "subtitle": "[HANIN의 발전 방향에 대한 공식 정보: 도금층 품질 향상, 기술 공정 표준화 및 공급망 비용 최적화.]",
+      "subtitle": "도금 품질을 높이고 공정을 표준화하며 고객의 비용 관리를 지원합니다.",
       "precision": {
-        "title": "정밀성",
-        "desc": "[정보] 마이크론 단위 두께 공차를 관리하며 도면 기술 사양을 준수합니다.",
-        "note": "공차: 마이크론 단위 두께 달성"
+        "title": "정밀도",
+        "desc": "도면 기준에 따라 도금 두께 공차를 관리합니다.",
+        "note": "공차는 µm 단위"
       },
       "stability": {
         "title": "안정성",
-        "desc": "[정보] 생산 로트 간 품질 균일성을 보장하고 기계적 불량률을 낮춥니다.",
-        "note": "로트 균일도: 99.8% 기준"
+        "desc": "로트 간 품질을 균일하게 유지합니다.",
+        "note": "로트 간 균일한 품질"
       },
       "partnership": {
-        "title": "동반 성장",
-        "desc": "[정보] 공급망 내 산업 고객과 함께 표면처리 기술 과제를 해결합니다.",
-        "note": "협력: 공급망 전략적 파트너"
+        "title": "협업",
+        "desc": "고객과 함께 표면처리 관련 기술 과제를 해결합니다.",
+        "note": "고객 기술 부서와 직접 협의"
       }
     },
     "FactoryOverview": {
-      "heading": "공장 시스템",
-      "subtitle": "HANIN의 생산 공간과 운영 시스템을 살펴보세요.",
-      "mainImageAlt": "화학 도금조와 로봇 크레인을 갖춘 현대적인 자동 전기도금 라인 (예시 이미지, 추후 발주처 제공 실사 이미지로 교체 예정)",
-      "zone1Tag": "1구역: 도금 라인",
-      "zone1Title": "자동화 산업용 도금 라인",
-      "zone1Desc": "알칼리, 산성 도금조 및 밀폐형 표면 부동태화 시스템",
-      "zone2ImageAlt": "도금조 옆에서 PLC 제어반을 운영하는 품질관리 엔지니어 (예시 이미지, 추후 발주처 제공 실사 이미지로 교체 예정)",
-      "zone2Tag": "2구역: 실험실 & 품질관리부",
-      "zone2Title": "모니터링 및 관제실",
-      "zone3ImageAlt": "검사대 위에 놓인 완성된 도금(아연, 니켈, 크롬) 기계 부품 클로즈업 (예시 이미지, 추후 발주처 제공 실사 이미지로 교체 예정)",
-      "zone3Tag": "3구역: 지그 & 검사",
-      "zone3Title": "측정 게이지 검사 테스트대",
-      "zone4ImageAlt": "행거식 도금 라인을 따라 금속 부품을 이송하는 자동화 산업용 크레인 (예시 이미지, 추후 발주처 제공 실사 이미지로 교체 예정)",
-      "zone4Tag": "4구역: 자동 크레인",
-      "zone4Title": "자동 소재 이송 크레인 구역",
-      "cta": "생산 역량 살펴보기"
+      "heading": "공장",
+      "subtitle": "HANIN의 생산 및 검사 구역입니다.",
+      "mainImageAlt": "약품조와 크레인이 설치된 전기도금 라인",
+      "zone1Tag": "1구역 · 도금 라인",
+      "zone1Title": "산업용 도금 라인",
+      "zone1Desc": "알칼리·산성 도금조 및 부동태 처리조",
+      "zone2ImageAlt": "도금조 옆 PLC 제어 스테이션에서 작업하는 품질관리 담당자",
+      "zone2Tag": "2구역 · 분석 및 품질관리",
+      "zone2Title": "분석 및 관제실",
+      "zone3ImageAlt": "검사대 위의 도금된 기계 부품(아연, 니켈, 크롬)",
+      "zone3Tag": "3구역 · 지그 및 검사",
+      "zone3Title": "치수 검사대",
+      "zone4ImageAlt": "랙 도금 라인을 따라 부품을 이송하는 크레인",
+      "zone4Tag": "4구역 · 크레인",
+      "zone4Title": "크레인 작업 구역",
+      "cta": "생산 능력 보기"
     },
     "ProfileDownloadCta": {
-      "heading": "HANIN 회사소개서 살펴보기",
-      "subtitle": "상세 자료를 통해 HANIN의 제품, 공장, 설비, 생산 역량 및 품질 시스템을 더 깊이 알아보세요.",
-      "cta": "회사소개서 다운로드 (PDF) →",
+      "heading": "HANIN 회사 소개서",
+      "subtitle": "HANIN의 공장, 설비, 생산 능력 및 품질 체계를 소개하는 자료입니다.",
+      "cta": "회사소개서 다운로드 (PDF)",
       "cardCompanyName": "HANIN VIỆT NAM",
-      "cardCatalogLabel": "기업 카탈로그",
-      "cardTitle": "HANIN 회사소개서",
-      "cardVersion": "2026년 버전 // 기술 자료",
+      "cardCatalogLabel": "기업 자료",
+      "cardTitle": "HANIN 회사 소개서",
+      "cardVersion": "2026년판",
       "cardTagline": "기술 사양 및 대표 프로젝트",
-      "cardFormat": "PDF 형식 • 14.8 MB",
+      "cardFormat": "PDF",
       "cardViewLabel": "자료 보기"
     },
     "QualityStandardsPreview": {
-      "heading": "품질 & 표준",
-      "subtitle": "[HANIN의 품질경영시스템 및 인증에 대한 공식 정보]",
+      "heading": "품질 및 표준",
+      "subtitle": "HANIN의 품질 관리 체계와 인증입니다.",
       "cta": "인증서 보기",
       "certificateImageAlt": "DQS GmbH가 발급한 HANIN Technology Việt Nam의 ISO 9001:2015 인증서",
-      "certificateTag": "[ 인증서 ]",
+      "certificateTag": "인증서",
       "certificateTitle": "ISO 9001:2015 — 품질경영시스템",
       "certificateIssuer": "인증기관: DQS GmbH (독일)",
+      "certificateHolderLabel": "인증 취득 기관",
+      "certificateHolderValue": "HANIN Technology Viet Nam Joint-Stock Company",
+      "certificateAccreditationLabel": "인정 마크",
+      "certificateAccreditationValue": "IAF · DAkkS · IQNet",
       "certificateScope": "범위: 플라스틱 제품의 생산, 가공, 사출, 인쇄, 도장 및 표면 처리.",
       "iso9001": {
-        "tag": "[ ISO 인증 ]",
-        "title": "생산 품질경영시스템",
-        "desc": "ISO 9001:2015 표준: 정밀 기계가공 및 도금 공정을 관리·통제합니다.",
+        "tag": "ISO 인증",
+        "title": "품질경영시스템",
+        "desc": "ISO 9001:2015: 기계 가공 및 도금 공정을 관리합니다.",
         "standard": "표준: ISO 9001:2015",
-        "status": "인증 완료"
+        "status": "확인됨"
       },
       "iso14001": {
-        "tag": "[ ISO 인증 ]",
-        "title": "산업 환경경영시스템",
-        "desc": "ISO 14001:2015 표준: 순환 폐수 처리 및 산업 화학 배출가스를 관리합니다.",
+        "tag": "ISO 인증",
+        "title": "환경경영시스템",
+        "desc": "ISO 14001:2015: 생산 과정의 폐수와 배기가스를 관리합니다.",
         "standard": "표준: ISO 14001:2015",
-        "status": "인증 완료"
+        "status": "확인됨"
       },
       "rohs": {
-        "tag": "[ 국제 표준 ]",
-        "title": "공정 & 표면 관리 인증",
-        "desc": "[규정 준수 예시] RoHS 지침을 준수하며 ASTM 염수 시험을 통과합니다.",
-        "standard": "표준: RoHS 준수",
-        "status": "기준 충족"
+        "tag": "표준",
+        "title": "공정 및 표면 관리",
+        "desc": "RoHS 지침을 충족하며 ASTM에 따라 염수 분무 시험을 실시합니다.",
+        "standard": "표준: RoHS",
+        "status": "적합"
       }
     },
     "CapabilitySnapshot": {
       "equipment": {
-        "label": "기계 설비",
-        "desc": "최신 설비",
-        "note": "규정: 검정 합격",
+        "label": "설비",
+        "desc": "설비",
+        "note": "생산 및 검사용",
         "end": "50",
         "suffix": "+"
       },
       "lines": {
         "label": "생산 라인",
-        "desc": "가동 중인 라인",
-        "note": "시스템: 자동 회전 & 행거식",
+        "desc": "라인",
+        "note": "배럴 도금 및 랙 도금",
         "end": "6",
         "suffix": "+"
       },
       "zones": {
         "label": "공장 구역",
         "desc": "생산 구역",
-        "note": "표준: 밀폐형 클린룸",
+        "note": "공정별 구분",
         "end": "4",
         "suffix": ""
       },
       "capacity": {
-        "label": "월간 생산능력",
+        "label": "월 생산량",
         "desc": "제품 톤 / 월",
-        "note": "생산능력: 중량 기준",
+        "note": "주문 계획 기준",
         "end": "1200",
         "suffix": "+"
       }
     },
     "FeaturedClients": {
-      "eyebrow": "주요 고객사",
-      "title": "많은 제조 기업이 신뢰하는 파트너",
-      "description": "100곳 이상의 크고 작은 고객사가 도금 가공을 위해 HANIN을 선택했습니다. 아래는 금속 하드웨어, 위생 설비, 산업 제조 분야의 주요 고객사입니다."
+      "eyebrow": "대표 고객사",
+      "title": "제조업 고객사",
+      "description": "100개 이상의 고객사가 HANIN에 도금 가공을 의뢰하고 있습니다. 아래는 금속 가공, 위생 설비, 산업 제조 분야의 대표 고객사입니다."
     }
   }
 }

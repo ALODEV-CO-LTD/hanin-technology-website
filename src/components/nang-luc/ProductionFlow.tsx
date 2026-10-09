@@ -1,12 +1,12 @@
 import { useTranslations } from "next-intl";
 
 const STEPS = [
-  { key: "receiving", step: "STEP // 01" },
-  { key: "surfacePrep", step: "STEP // 02" },
-  { key: "mainPlating", step: "STEP // 03" },
-  { key: "inspection", step: "STEP // 04" },
-  { key: "finishing", step: "STEP // 05" },
-  { key: "packaging", step: "STEP // 06" },
+  { key: "receiving", step: "01" },
+  { key: "surfacePrep", step: "02" },
+  { key: "mainPlating", step: "03" },
+  { key: "inspection", step: "04" },
+  { key: "finishing", step: "05" },
+  { key: "packaging", step: "06" },
 ] as const;
 
 export default function ProductionFlow() {
@@ -36,9 +36,6 @@ export default function ProductionFlow() {
                   {t(`items.${s.key}.title`)}
                 </h3>
                 <p className="text-body-sm text-slate-600 leading-relaxed">{t(`items.${s.key}.desc`)}</p>
-              </div>
-              <div className="mt-space-md pt-space-xs text-slate-500 text-label-sm border-t border-slate-200/60">
-                {t(`items.${s.key}.standard`)}
               </div>
             </div>
           ))}

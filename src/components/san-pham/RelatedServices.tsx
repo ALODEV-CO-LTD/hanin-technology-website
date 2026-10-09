@@ -18,7 +18,7 @@ export default function RelatedServices() {
             </h2>
           </div>
           <Link
-            className="inline-flex items-center gap-space-xs text-label-technical text-steel-600 hover:text-steel-700 transition-colors shrink-0 uppercase tracking-wider font-semibold"
+            className="inline-flex min-h-11 items-center gap-space-xs text-label-technical text-steel-600 hover:text-steel-700 transition-colors shrink-0 uppercase tracking-wider font-semibold"
             href="/dich-vu-gia-cong-ma"
           >
             <span>{t("ctaViewAll")}</span>
@@ -29,19 +29,16 @@ export default function RelatedServices() {
           {relatedServices.map((service) => (
             <div
               key={service.code}
-              className="p-space-md bg-slate-50 border border-slate-200 rounded flex flex-col justify-between gap-space-md hover:border-steel-500 hover:shadow-md transition-all group"
+              className="p-space-md bg-white border border-slate-200 rounded flex flex-col justify-between gap-space-md hover:border-steel-500 hover:shadow-md transition-all group"
             >
               <div className="flex flex-col gap-space-sm">
                 <div className="flex items-center justify-between">
                   <Icon name={service.icon} className="text-steel-600 text-[28px]" />
-                  <span className="font-mono text-label-sm text-slate-500 font-medium">
-                    {service.code}
-                  </span>
                 </div>
                 <h3 className="text-headline-sm text-slate-900 group-hover:text-steel-600 transition-colors uppercase">
                   {service.title}
                 </h3>
-                <p className="text-body-sm text-slate-600 leading-relaxed">{service.description}</p>
+                <p className="text-body-md text-slate-600 leading-relaxed">{service.description}</p>
               </div>
               <Link
                 className="inline-flex min-h-11 items-center gap-1 text-label-sm text-steel-600 hover:text-steel-700 font-semibold transition-colors"

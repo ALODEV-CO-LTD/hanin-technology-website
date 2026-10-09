@@ -3,6 +3,7 @@ import { getCurrentUser } from "@/server/auth";
 import { get } from "@/server/db";
 import { RESOURCES } from "@/server/cms/resources";
 import Sidebar from "@/components/admin/Sidebar";
+import { ToastProvider } from "@/components/admin/Toast";
 
 export const dynamic = "force-dynamic";
 
@@ -12,6 +13,7 @@ export default async function PanelLayout({ children }: { children: React.ReactN
   const newInquiries = Number(get<{ n: number }>("SELECT COUNT(*) AS n FROM inquiries WHERE status = 'new'")?.n ?? 0);
 
   return (
+    <ToastProvider>
     <div className="min-h-screen">
       <Sidebar
         user={user}
@@ -22,5 +24,6 @@ export default async function PanelLayout({ children }: { children: React.ReactN
         <div className="w-full p-4 sm:p-8 xl:px-10">{children}</div>
       </main>
     </div>
+    </ToastProvider>
   );
 }

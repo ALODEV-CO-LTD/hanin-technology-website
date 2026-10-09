@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { api, ApiError } from "./api";
 import { MediaPickerModal } from "./MediaPicker";
+import { useToast } from "./Toast";
 
 interface Slot {
   key: string;
@@ -26,6 +27,7 @@ export default function SiteImages() {
   const [overrides, setOverrides] = useState<Record<string, string>>({});
   const [picking, setPicking] = useState<string | null>(null);
   const [error, setError] = useState("");
+  const toast = useToast();
   const [version, setVersion] = useState(0);
   const [onlyChanged, setOnlyChanged] = useState(false);
 
@@ -57,9 +59,11 @@ export default function SiteImages() {
     setError("");
     try {
       await api("site-images", { method: "PUT", body: { key, url } });
+      toast.success(url ? "Đã lưu ảnh. Website cập nhật ngay." : "Đã khôi phục ảnh gốc.");
       setVersion((v) => v + 1);
     } catch (err) {
       setError(err instanceof ApiError ? err.message : "Không lưu được");
+      toast.error(err instanceof ApiError ? err.message : "Không lưu được");
     }
   }
 
@@ -67,9 +71,11 @@ export default function SiteImages() {
     if (!confirm(`Khôi phục TẤT CẢ ${changedCount} ảnh đã đổi về ảnh gốc?\nKhông thể hoàn tác.`)) return;
     try {
       await api("site-images", { method: "PUT", body: { resetAll: true } });
+      toast.success("Đã khôi phục tất cả ảnh về ảnh gốc.");
       setVersion((v) => v + 1);
     } catch (err) {
       setError(err instanceof ApiError ? err.message : "Không khôi phục được");
+      toast.error(err instanceof ApiError ? err.message : "Không khôi phục được");
     }
   }
 

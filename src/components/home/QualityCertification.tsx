@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
 import Icon from "@/components/ui/Icon";
 
@@ -34,10 +34,6 @@ export default function QualityCertification() {
                 <span className="text-headline-md text-steel-600 font-bold">{t(`certs.${key}.label`)}</span>
                 <h3 className="text-title-md text-slate-900 font-semibold">{t(`certs.${key}.title`)}</h3>
                 <p className="text-body-sm text-slate-600 leading-relaxed">{t(`certs.${key}.desc`)}</p>
-              </div>
-              <div className="pt-space-xs text-xs text-slate-500 flex items-center gap-1.5">
-                <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
-                <span>{t(`certs.${key}.status`)}</span>
               </div>
             </div>
           ))}

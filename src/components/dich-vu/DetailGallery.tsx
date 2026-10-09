@@ -1,9 +1,11 @@
+import { useServiceNs } from "@/lib/service-ns";
 import { useTranslations } from "next-intl";
 import type { PlatingService } from "@/lib/services-data";
 import { SERVICE_GALLERY_POOL, pickImages } from "@/lib/factory-pool";
+import Photo from "@/components/ui/Photo";
 
 export default function DetailGallery({ service }: { service: PlatingService }) {
-  const t = useTranslations("DichVu.DetailGallery");
+  const t = useTranslations(useServiceNs(service.slug, "DetailGallery"));
   // Ảnh #1 của bộ chọn dành cho khối "Năng lực" (DetailCapability), nên ở đây lấy 3 ảnh tiếp theo.
   const [, ...picked] = pickImages(service.slug, SERVICE_GALLERY_POOL, 4, [service.image]);
   const GALLERY = [
@@ -24,11 +26,10 @@ export default function DetailGallery({ service }: { service: PlatingService }) 
         {GALLERY.map((item) => (
           <div key={item.key} className="bg-white border border-slate-200 rounded shadow-sm overflow-hidden flex flex-col">
             <div className="relative h-64 bg-slate-900">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img alt={t(`${item.key}.alt`)} className="w-full h-full object-cover" src={item.src} />
+              <Photo alt={t(`${item.key}.alt`)} className="w-full h-full object-cover" src={item.src} />
             </div>
             <div className="p-space-sm flex flex-col flex-1 justify-between bg-white">
-              <h4 className="text-title-md text-slate-900 uppercase mb-1 font-bold">{t(`${item.key}.title`)}</h4>
+              <h3 className="text-title-md text-slate-900 uppercase mb-1 font-bold">{t(`${item.key}.title`)}</h3>
               <p className="text-body-md text-slate-600">{t(`${item.key}.desc`)}</p>
             </div>
           </div>

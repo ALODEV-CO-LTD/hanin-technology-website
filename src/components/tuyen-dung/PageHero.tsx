@@ -1,5 +1,6 @@
 import { useLocale, useTranslations } from "next-intl";
 import { getBanner } from "@/server/public";
+import HeroImage from "@/components/ui/HeroImage";
 import { Link } from "@/i18n/navigation";
 import PageBreadcrumb from "@/components/layout/PageBreadcrumb";
 
@@ -8,17 +9,9 @@ export default function PageHero() {
   const banner = getBanner("tuyen-dung", useLocale(), "/images/factory/qc-5.jpg");
 
   return (
-    <section className="relative w-full min-h-screen bg-slate-900 overflow-hidden flex items-center border-b border-slate-200">
+    <section className="relative w-full min-h-[calc(100svh-var(--header-h))] bg-slate-900 overflow-hidden flex items-center border-b border-slate-200">
       {/* Banner Background Image */}
-      <div
-        className="absolute inset-0 bg-cover bg-center"
-        role="img"
-        aria-label={banner.alt || t("imageAlt")}
-        style={{
-          backgroundImage:
-            `url('${banner.image}')`,
-        }}
-      />
+      <HeroImage src={banner.image} alt={banner.alt || t("imageAlt")} />
 
       {/* Content Container */}
       <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-r from-slate-950/85 via-slate-950/65 to-slate-950/35" />
@@ -33,10 +26,10 @@ export default function PageHero() {
             ]}
           />
 
-          <h1 className="text-display-hero-mobile md:text-display-hero text-white tracking-tight uppercase mb-space-sm font-bold">
+          <h1 className="banner-title text-white tracking-tight uppercase mb-space-sm font-bold max-w-5xl">
             {t("titlePrefix")} <span>{t("titleHighlight")}</span>
           </h1>
-          <p className="text-body-lg text-white max-w-2xl leading-relaxed">
+          <p className="banner-lead text-white leading-relaxed">
             <strong className="text-white font-semibold">{t("companyName")}</strong> {t("description")}
           </p>
         </div>
@@ -54,25 +47,6 @@ export default function PageHero() {
           >
             {t("ctaSecondary")}
           </Link>
-        </div>
-
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-space-sm max-w-2xl pt-space-md banner-text">
-          <div className="pl-space-sm border-l-2 border-white/50 flex flex-col gap-1">
-            <span className="text-label-sm text-white uppercase tracking-wider">{t("standardLabel")}</span>
-            <span className="text-title-md text-white">{t("standardValue")}</span>
-          </div>
-          <div className="pl-space-sm border-l-2 border-white/50 flex flex-col gap-1">
-            <span className="text-label-sm text-white uppercase tracking-wider">{t("benefitsLabel")}</span>
-            <span className="text-title-md text-white">{t("benefitsValue")}</span>
-          </div>
-          <div className="pl-space-sm border-l-2 border-white/50 flex flex-col gap-1">
-            <span className="text-label-sm text-white uppercase tracking-wider">{t("developmentLabel")}</span>
-            <span className="text-title-md text-white">{t("developmentValue")}</span>
-          </div>
-          <div className="pl-space-sm border-l-2 border-white/50 flex flex-col gap-1">
-            <span className="text-label-sm text-white uppercase tracking-wider">{t("factoryLabel")}</span>
-            <span className="text-title-md text-white">{t("factoryValue")}</span>
-          </div>
         </div>
       </div>
     </section>

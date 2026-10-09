@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { useTranslations } from "next-intl";
+import Photo from "@/components/ui/Photo";
 
 const TAB_KEYS = ["0", "1", "2", "3"] as const;
 
@@ -15,7 +16,6 @@ export default function FactoryShowcaseClient({
 
   const activeImage = images[activeKey];
   const activeTitle = t(`tabs.${activeKey}.title`);
-  const activeOrder = t(`tabs.${activeKey}.order`);
   const activeDesc = t(`tabs.${activeKey}.desc`);
 
   return (
@@ -30,11 +30,12 @@ export default function FactoryShowcaseClient({
         </div>
 
         <div className="w-full flex flex-col gap-space-md">
-          <div className="flex items-center gap-space-xs overflow-x-auto pb-2">
+          <div role="group" aria-label={t("title")} className="flex items-center gap-space-xs overflow-x-auto pb-2">
             {TAB_KEYS.map((key) => (
               <button
                 key={key}
                 type="button"
+                aria-pressed={key === activeKey}
                 onClick={() => setActiveKey(key)}
                 className={`px-5 py-2.5 rounded text-label-technical uppercase tracking-wider transition-colors whitespace-nowrap ${
                   key === activeKey
@@ -48,17 +49,16 @@ export default function FactoryShowcaseClient({
           </div>
 
           <div className="relative w-full h-[460px] md:h-[540px] rounded overflow-hidden shadow-lg border border-slate-200 bg-slate-900">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
+            <Photo
               alt={activeTitle}
-              className="w-full h-full object-cover object-center transition-all duration-300 filter brightness-95"
+              className="w-full h-full object-cover transition-all duration-300 filter brightness-95"
+              // Khung chiếm toàn chiều ngang: phải khai báo 100vw để trình duyệt tải bản ảnh lớn (nét),
+              // nếu không sẽ chọn bản nhỏ rồi kéo giãn.
+              sizes="100vw"
               src={activeImage}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent" />
             <div className="absolute bottom-6 left-6 right-6 md:right-auto md:max-w-xl banner-text">
-              <span className="text-xs text-white uppercase tracking-widest block mb-1 font-bold">
-                {activeOrder}
-              </span>
               <h3 className="text-headline-sm text-white font-semibold mb-2">{activeTitle}</h3>
               <p className="text-body-sm text-white leading-relaxed">{activeDesc}</p>
             </div>

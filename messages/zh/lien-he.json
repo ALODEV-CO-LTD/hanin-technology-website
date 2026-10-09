@@ -1,220 +1,220 @@
 {
   "LienHe": {
     "BottomCta": {
-      "heading": "准备好全面提升您机械表面处理的品质了吗",
-      "description": "冶金工程师团队与自动化产线，可满足全球合作伙伴严苛的技术要求。",
-      "ctaPrimary": "立即发送图纸"
+      "heading": "提交图纸，获取表面处理报价",
+      "description": "HANIN 工程师先审阅图纸，并就基材、镀层厚度和测试标准与您沟通后再报价。",
+      "ctaPrimary": "提交图纸"
     },
     "ContactChannels": {
-      "heading": "总部与技术联系窗口",
-      "subtitle": "服务国内客户及出口供应链",
+      "heading": "联系方式",
+      "subtitle": "面向国内客户及出口订单",
       "card1": {
         "badge": "总部与工厂",
         "title": "",
         "address": "总部：越南河内市光明乡光明工业区 660 号地块。工厂：越南河内市光明乡光明工业区 49G 号地块。",
-        "footerLabel": "运营规模",
-        "footerValue": "PLC 自动电镀产线体系与 ISO 17025 CMM 检测实验室"
+        "footerLabel": "生产设施",
+        "footerValue": "挂镀线、滚镀线及质量检验（QC）部门"
       },
       "card2": {
-        "badge": "咨询热线",
-        "title": "报价与公差技术咨询",
-        "quoteLabel": "报价部门热线：",
-        "engineerLabel": "冶金工程师（图纸/规格直接对接）：",
-        "engineerHotlineSuffix": "24/7 热线",
-        "footerLabel": "在线咨询：Zalo / WhatsApp"
+        "badge": "电话",
+        "title": "报价与公差咨询",
+        "quoteLabel": "报价部门：",
+        "engineerLabel": "技术工程师（图纸、技术参数）：",
+        "engineerHotlineSuffix": "技术热线",
+        "footerLabel": "可通过 Zalo 或 WhatsApp 沟通"
       },
       "card3": {
-        "badge": "专属邮箱",
-        "title": "标书文件与 RFQ 询价接收",
-        "salesLabel": "业务部与新订单：",
-        "engineeringLabel": "技术、研发与测试部门：",
-        "footerText": "如有需要，可提供 PGP 加密通道"
+        "badge": "电子邮箱",
+        "title": "招标文件与询价接收",
+        "salesLabel": "销售与新订单：",
+        "engineeringLabel": "技术、研发与测试：",
+        "footerText": "可按需使用 PGP 加密方式传输文件"
       },
       "card4": {
-        "badge": "运营班次",
-        "title": "办公与生产部门",
-        "officeLabel": "技术与办公部门：",
+        "badge": "工作时间",
+        "title": "办公室与生产",
+        "officeLabel": "办公室与技术部：",
         "officeValue": "周一至周六：08:00 – 17:30",
-        "workshopLabel": "电镀车间与 CNC 生产部门：",
-        "workshopValue": "三班连续（24/7）按生产指令排班",
-        "footerBadge": "产线故障 24/7 值班处理"
+        "workshopLabel": "电镀与加工车间：",
+        "workshopValue": "按生产指令分班作业",
+        "footerBadge": "非办公时间设有产线故障值班人员"
       }
     },
     "ContactFaq": {
-      "heading": "报价接洽常见问题解答",
-      "subtitle": "清晰解答技术评估流程、图纸保密及打样交付能力等问题。",
+      "heading": "询价常见问题",
+      "subtitle": "报价时间、图纸格式、资料保密及样品加工。",
       "items": {
         "0": {
-          "question": "1. HANIN 回复详细技术报价需要多长时间？",
-          "answer": "若提供包含基材及镀层厚度等完整参数的 2D（PDF、DWG）或 3D（STEP）图纸，HANIN 将在 4 个工作小时内回复报价。需特殊热处理或严格 ASTM 标准的复合订单，最长不超过 24 小时。"
+          "question": "1. HANIN 多久能提供报价？",
+          "answer": "在收到完整的 2D 图纸（PDF、DWG）或 3D 模型（STEP）、基材及镀层厚度要求后报价。需热处理或按特定 ASTM 标准加工的订单需更多评估时间，工程师会告知具体时间。"
         },
         "1": {
-          "question": "2. 通过网站提交时，HANIN 支持哪些技术图纸格式？",
-          "answer": "HANIN 可直接接收 .STEP、.STP、.DWG、.DXF、.IGES、.X_T、.PDF 及压缩文件 .ZIP/.RAR（最大 50MB），兼容 SolidWorks、Inventor、AutoCAD、Creo。文件较大时，请将云端链接发送至邮箱 Haninplating@gmail.com。"
+          "question": "2. 可以提交哪些格式的图纸？",
+          "answer": "HANIN 接收 .STEP、.STP、.DWG、.DXF、.IGES、.X_T、.PDF 以及 .ZIP/.RAR 压缩包，单个文件最大 50MB。文件较大时，请将下载链接发送至邮箱 Haninplating@gmail.com。"
         },
         "2": {
-          "question": "3. HANIN 如何执行图纸保密（NDA）政策？",
-          "answer": "HANIN 会在接收数据前或接收数据的同时签署保密协议（Non-Disclosure Agreement - NDA）。图纸、3D 模型及技术参数存储于隔离的内部服务器，仅由直接负责的工程师访问，绝不对外分享给第三方。"
+          "question": "3. 图纸会保密吗？",
+          "answer": "HANIN 会在接收资料之前或同时签署保密协议（NDA）。图纸、3D 模型和技术参数仅提供给负责的工程师，不会向第三方披露。"
         },
         "3": {
-          "question": "4. 电镀零件的最小起订量（MOQ）是多少？",
-          "answer": "MOQ 十分灵活：从 1 件研发试样、500 – 1,000 件试产批次，到每月数十万件的批量供应合同，HANIN 凭借大容量电镀槽均可承接。"
+          "question": "4. 最小起订量是多少？",
+          "answer": "HANIN 可接单的范围从 1 件样品、约 500 - 1,000 件的试产批次，到按月计划的批量生产订单。具体最小起订量取决于零件类型和电镀工序。"
         },
         "4": {
-          "question": "5. 签约前 HANIN 是否支持打样（Sampling）加工？",
-          "answer": "支持。对于大批量订单或具有特殊技术要求的零件，HANIN 会先行打样（Sampling），使用 X 射线荧光测厚仪（XRF）测量镀层厚度，进行附着力检测及盐雾测试（Salt Spray Test，依据 ASTM B117），并附检测报告供贵司在批量生产前审核确认。"
+          "question": "5. 签订合同前可以先做样品吗？",
+          "answer": "可以。HANIN 先试镀样品，用 XRF 测量镀层厚度，检测附着力，并按 ASTM B117 做盐雾试验。检测报告提交您确认后，再进行批量生产。"
         }
       }
     },
     "ContactHero": {
       "breadcrumbHome": "首页",
-      "breadcrumbCurrent": "联系我们与技术报价",
-      "slaStatus": "COMMUNICATION & B2B INQUIRY // SLA 响应时间：4 个工作小时内",
-      "titlePrefix": "联系我们 &",
-      "titleHighlight": "获取技术报价",
-      "titleSuffix": "服务",
-      "description": "为 B2B 合作伙伴、OEM/Tier-1 承包商及 FDI 企业提供金属电镀技术方案咨询、精密机械加工及报价服务。",
-      "ctaPrimary": "提交报价请求 →",
+      "breadcrumbCurrent": "联系与报价",
+      "slaStatus": "我们将尽快回复报价申请",
+      "titlePrefix": "联系我们与",
+      "titleHighlight": "技术报价",
+      "titleSuffix": "申请",
+      "description": "HANIN 受理企业、OEM/Tier-1 及外资企业的金属电镀与机械加工需求。请提交图纸和技术参数获取报价。",
+      "ctaPrimary": "提交报价申请",
       "ctaSecondary": "查看工厂位置",
       "specHighlights": {
         "nda": {
-          "label": "100% NDA 保密",
-          "desc": "承诺严格保密图纸及知识产权"
+          "label": "按 NDA 保密",
+          "desc": "图纸及技术资料依协议保密"
         },
         "cad": {
-          "label": "2D/3D CAD 文件",
-          "desc": "支持 STEP、DWG、DXF、IGES、PDF 格式，容量可达 50MB 以上"
+          "label": "2D 与 3D 图纸",
+          "desc": "接收 STEP、DWG、DXF、IGES、PDF，单个文件最大 50MB"
         },
         "consulting": {
-          "label": "冶金技术咨询",
-          "desc": "材料工程师直接为您提供厚度、ASTM 标准及公差咨询"
+          "label": "技术咨询",
+          "desc": "工程师就镀层厚度、ASTM 标准及公差提供沟通"
         }
       },
-      "imageAlt": "工厂全景（示意图，后续将替换为甲方提供的实景照片）",
+      "imageAlt": "工厂全景",
       "overlayLabel": "总部与工厂",
-      "overlayLocation": "河内市光明乡光明工业区",
+      "overlayLocation": "光明工业区，光明乡，河内",
       "overlayCoordinates": "坐标：21.2074° N, 105.7540° E"
     },
     "DirectChannels": {
-      "heading": "快速直接联系渠道",
-      "subtitle": "适用于紧急加工需求、出口订单或电镀产线实地考察预约。",
+      "heading": "直接联系",
+      "subtitle": "适用于加急订单、出口订单或预约参观工厂。",
       "channels": {
         "hotline": {
-          "label": "拨打紧急热线",
-          "desc": "30 秒内直接连接技术方案专员。",
-          "cta": "立即致电"
+          "label": "电话咨询",
+          "desc": "直接与技术专员沟通。",
+          "cta": "立即拨打"
         },
         "zalo": {
-          "label": "ZALO B2B 官方账号",
-          "title": "HANIN TECH OFFICIAL",
-          "desc": "24/7 技术在线沟通，快速发送实物样品图片并交流初步图纸。",
-          "cta": "打开 Zalo 聊天窗口"
+          "label": "Zalo",
+          "title": "HANIN Technology",
+          "desc": "通过 Zalo 发送样品照片和初步图纸。",
+          "cta": "打开 Zalo"
         },
         "email": {
-          "label": "大文件邮箱通道",
+          "label": "大文件邮件",
           "title": "Haninplating@gmail.com",
-          "desc": "适用于附带 Drive、OneDrive 或 WeTransfer 链接的大型项目标书。",
-          "cta": "撰写报价邮件"
+          "desc": "适用于大型资料，可附 Drive 或 WeTransfer 链接。",
+          "cta": "撰写邮件"
         },
         "audit": {
-          "label": "预约工厂审核",
-          "title": "工厂参观 / 审核",
-          "desc": "接待专家团队按 ISO 9001/14001 标准评估供应商能力。",
-          "cta": "预约实地考察"
+          "label": "预约工厂考察",
+          "title": "参观与供应商审核",
+          "desc": "接待供应商考察审核，需提前预约。",
+          "cta": "预约时间"
         }
       }
     },
     "LocationMap": {
       "heading": "工厂位置与集装箱货车路线",
-      "description": "Hanin Tech 工厂位于北部工业走廊中心地带，通过升龙 - 内排高速公路、武文杰路及河内三环路，可便捷连接物流交通基础设施。",
+      "description": "工厂位于河内市光明乡光明工业区。货车和集装箱车可经升龙 - 内排高速公路及三环路进入。",
       "distances": {
         "airport": {
           "label": "内排国际机场",
           "value": "12 公里（约 15 分钟）"
         },
         "seaport": {
-          "label": "海防国际港（拉庄港）",
+          "label": "海防国际港（莲花港）",
           "value": "120 公里（约 1 小时 45 分钟）"
         },
         "industrialParks": {
-          "label": "北昇龙工业区 / VSIP 北宁",
+          "label": "北升龙工业区 / 北宁 VSIP",
           "value": "18 - 35 公里"
         }
       },
       "openMapsCta": "打开 Google 地图",
-      "downloadMapCta": "集装箱货车路线图（PDF）",
-      "satelliteImageAlt": "河内光明乡光明工业区位置卫星示意图（示意图，后续将替换为真实嵌入式 Google 地图）",
-      "gateLabel": "HANIN 厂区 1 号大门",
-      "plotLabel": "光明工业区 49G 地块",
-      "securityNote": "40 英尺集装箱安检大门 24/7 接收",
-      "gridLabel": "GRID: HN-QMINH-08",
-      "elevationLabel": "海拔: +14.2m ASL"
+      "downloadMapCta": "集装箱车路线图 (PDF)",
+      "satelliteImageAlt": "河内光明乡光明工业区卫星图",
+      "gateLabel": "HANIN 工厂大门",
+      "plotLabel": "光明工业区 49G 号地块",
+      "securityNote": "40 英尺集装箱车经门卫入厂，请提前告知",
+      "gridLabel": "越南河内",
+      "elevationLabel": "21.2074° N, 105.7540° E"
     },
     "RfqForm": {
-      "heading": "提交项目询价单与技术资料",
-      "securityBadge": "SSL 256 位加密标准 // NDA 保护",
+      "heading": "提交报价申请及技术资料",
+      "securityBadge": "信息按 NDA 保密",
       "status": {
-        "submitting": "正在发送报价请求…",
-        "successTitle": "请求已成功发送",
-        "successDesc": "HANIN 技术部门已收到您的请求，将尽快通过电子邮件或电话回复您。",
-        "successResetCta": "创建新的询价单",
-        "errorMessage": "请填写所有必填项（*）并确认 NDA 保密承诺后再提交。",
+        "submitting": "正在提交报价申请...",
+        "successTitle": "报价申请已提交",
+        "successDesc": "HANIN 技术部门已收到您的申请，将通过邮件或电话回复。",
+        "successResetCta": "新建申请",
+        "errorMessage": "请填写必填项（*）并同意保密协议后再提交。",
         "errorRetryCta": "重试",
-        "sendError": "请求发送失败，请检查填写信息和附件（每个文件最大 50MB）后重试。"
+        "sendError": "提交失败。请检查信息和附件（单个文件最大 50MB）后重试。"
       },
       "step1": {
-        "heading": "客户与企业联系信息",
+        "heading": "联系信息",
         "fullNameLabel": "联系人姓名",
-        "fullNamePlaceholder": "阮文安（示例）",
-        "companyLabel": "公司/企业名称",
-        "companyPlaceholder": "XX 机械制造股份公司...",
-        "emailLabel": "公务邮箱 / 报价接收邮箱",
+        "fullNamePlaceholder": "阮文A",
+        "companyLabel": "公司名称",
+        "companyPlaceholder": "机械制造股份公司...",
+        "emailLabel": "接收报价的邮箱",
         "emailPlaceholder": "name@company.com",
-        "phoneLabel": "手机号码 / Zalo",
+        "phoneLabel": "电话 / Zalo",
         "phonePlaceholder": "0912 345 678"
       },
       "step2": {
-        "heading": "电镀加工技术与工艺信息",
-        "projectNameLabel": "产品名称 / 加工项目",
-        "projectNamePlaceholder": "例如：液压活塞轴、铜排、铝制模壳",
-        "platingServiceLabel": "所需电镀服务",
+        "heading": "技术信息",
+        "projectNameLabel": "产品或项目名称",
+        "projectNamePlaceholder": "例如：液压活塞杆、铜母线排、铝模壳",
+        "platingServiceLabel": "需要报价的电镀服务",
         "platingOptions": {
-          "niken": "化学镀镍（无电镀镍 - ENP）",
-          "crom": "工业硬铬电镀（65-70 HRC）",
-          "kem": "锌镀层与 Cr3+ 钝化（锌 / 锌镍合金）",
-          "anodize": "工业铝阳极氧化 / III 型硬质阳极氧化",
-          "bac": "电气设备用导电锡镀 / 银镀（母排）",
-          "other": "按需求组合电镀与车铣 CNC 加工"
+          "niken": "化学镀镍 (Electroless Nickel - ENP)",
+          "crom": "工业硬铬电镀 (Hard Chrome)",
+          "kem": "镀锌及三价铬钝化 (镀锌、锌镍合金)",
+          "anodize": "铝阳极氧化 / 硬质阳极氧化 Type III",
+          "bac": "电气设备及铜排镀锡、镀银",
+          "other": "电镀结合 CNC 加工（车、铣）"
         },
-        "volumeLabel": "预计产量与交货周期",
+        "volumeLabel": "预计数量与交货进度",
         "volumeOptions": {
-          "sample": "研发试样加工（1 - 50 件）",
-          "pilot": "试产批次（500 - 2,000 件）",
-          "mass": "定期批量生产（每月 > 10,000 件）",
-          "oem": "OEM 战略合作伙伴合同 / 长期合作"
+          "sample": "研发样品 (1 - 50 件)",
+          "pilot": "试生产批次 (500 - 2,000 件)",
+          "mass": "定期批量生产（每月 10,000 件以上）",
+          "oem": "OEM 长期合同"
         },
-        "descriptionLabel": "公差、镀层厚度及测试标准详细说明",
-        "descriptionStandards": "支持标准：ISO、ASTM、DIN、JIS",
-        "descriptionPlaceholder": "例如：基材 S45C 钢；硬铬镀层厚度 30-40 µm；要求硬度 ≥ 850 HV；要求 96 小时盐雾测试（ASTM B117）无锈蚀；交货地点：北宁..."
+        "descriptionLabel": "公差、镀层厚度及测试标准",
+        "descriptionStandards": "适用标准：ISO、ASTM、DIN、JIS",
+        "descriptionPlaceholder": "例如：基材 S45C 钢；硬铬镀层厚度 30-40 µm；硬度 ≥ 850 HV；盐雾试验 ASTM B117 达 96 小时"
       },
       "step3": {
-        "heading": "上传技术图纸（2D / 3D CAD 文件）",
-        "dropzoneTitle": "拖放图纸文件或点击选择文件",
+        "heading": "上传图纸（2D 或 3D）",
+        "dropzoneTitle": "将图纸拖放到此处，或点击选择文件",
         "formatsPrefix": "支持格式：",
         "formatsSuffix": "（每个文件最大 50MB）",
         "badgeVirusScan": "自动病毒扫描",
-        "badgeEncryption": "安全服务器加密",
-        "badgeNda": "自动 NDA 保密",
+        "badgeEncryption": "传输加密",
+        "badgeNda": "按 NDA 保密",
         "filesSelected": "已选择 {count} 个文件：",
-        "noFileSelected": "尚未选择任何文件。您也可以直接通过邮箱发送图纸：Haninplating@gmail.com",
-        "maxSize": "最大：50MB"
+        "noFileSelected": "尚未选择文件。也可将图纸发送至 Haninplating@gmail.com",
+        "maxSize": "最大 50MB"
       },
       "step4": {
-        "ndaConsentPrefix": "本人同意",
-        "ndaConsentMiddle": "处理此项技术信息，用于评估项目可行性及报价。HANIN 承诺依据严格的保密协议",
-        "ndaConsentSuffix": "保护相关数据。",
-        "submitCta": "提交技术报价请求",
-        "submittingCta": "正在提交..."
+        "ndaConsentPrefix": "本人同意 HANIN",
+        "ndaConsentMiddle": "处理上述技术信息，用于评估加工可行性并报价，并依据保密协议",
+        "ndaConsentSuffix": "保护数据。",
+        "submitCta": "提交报价申请",
+        "submittingCta": "提交中..."
       }
     }
   }

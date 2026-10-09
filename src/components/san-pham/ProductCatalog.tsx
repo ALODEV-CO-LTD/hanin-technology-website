@@ -1,79 +1,37 @@
 "use client";
 
 import { useEffect, useMemo, useRef } from "react";
-import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { useTranslations } from "next-intl";
-import { Link as IntlLink } from "@/i18n/navigation";
+import { Link, Link as IntlLink } from "@/i18n/navigation";
 import { getCategoryTabs, type Product } from "@/lib/products-data";
-
-function ProductCardFeatured({ product, t }: { product: Product; t: ReturnType<typeof useTranslations<"SanPham.ProductCatalog">> }) {
-  return (
-    <div className="lg:col-span-8 flex flex-col md:flex-row bg-white border border-slate-200 rounded overflow-hidden shadow-sm hover:shadow-xl hover:border-steel-300 transition-all duration-300">
-      <div className="md:w-1/2 relative min-h-[260px] md:min-h-full overflow-hidden bg-slate-100">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          alt={product.imageAlt}
-          className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-          src={product.image}
-        />
-      </div>
-      <div className="md:w-1/2 p-space-lg flex flex-col justify-between bg-white">
-        <div className="flex flex-col gap-space-sm">
-          <span className="text-label-technical text-sky-700 uppercase tracking-wider font-semibold">
-            {t("lotNumber")} #{product.lot}
-          </span>
-          <h3 className="text-headline-md text-slate-900 uppercase hover:text-steel-600 transition-colors font-bold">
-            {product.title}
-          </h3>
-          <p className="text-body-md text-slate-600 leading-relaxed">{product.description}</p>
-        </div>
-        <div className="pt-space-md flex flex-col gap-space-sm">
-          <div className="p-space-xs px-space-sm bg-slate-50 border border-slate-200 rounded text-label-technical text-slate-500 flex flex-wrap items-center gap-x-space-sm gap-y-1">
-            {product.specChips.map((chip) => (
-              <span key={chip.label}>
-                {chip.label}: <strong className="text-slate-900">{chip.value}</strong>
-              </span>
-            ))}
-          </div>
-          <Link
-            href={`/san-pham-du-an/${product.slug}`}
-            className="inline-flex items-center gap-space-xs text-label-technical uppercase tracking-wider text-steel-600 hover:translate-x-1 transition-transform font-bold"
-          >
-            {t("ctaViewDetail")}
-          </Link>
-        </div>
-      </div>
-    </div>
-  );
-}
+import Photo from "@/components/ui/Photo";
 
 function ProductCardStandard({ product, t }: { product: Product; t: ReturnType<typeof useTranslations<"SanPham.ProductCatalog">> }) {
   return (
-    <div className="lg:col-span-4 flex flex-col bg-white border border-slate-200 rounded overflow-hidden shadow-sm hover:shadow-xl hover:border-steel-300 transition-all duration-300">
+    <div className="group relative lg:col-span-4 flex flex-col bg-white border border-slate-200 rounded overflow-hidden shadow-sm hover:shadow-xl hover:border-steel-300 focus-within:border-steel-600 transition-all duration-300">
       <div className="relative h-56 overflow-hidden bg-slate-100">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
+        <Photo
           alt={product.imageAlt}
-          className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
           src={product.image}
         />
       </div>
       <div className="p-space-md flex flex-col flex-1 justify-between bg-white">
         <div className="flex flex-col gap-space-xs">
-          <h3 className="text-headline-sm text-slate-900 uppercase hover:text-steel-600 transition-colors font-bold">
+          <h3 className="text-headline-sm text-slate-900 uppercase group-hover:text-steel-600 transition-colors font-bold">
             {product.title}
           </h3>
-          <p className="text-body-sm text-slate-600 leading-relaxed">{product.description}</p>
+          <p className="text-body-md text-slate-600 leading-relaxed">{product.description}</p>
         </div>
         <div className="pt-space-md flex items-center justify-between">
           <span className="text-label-technical text-slate-500 bg-slate-50 border border-slate-200 px-space-sm py-1 rounded font-medium">
             {product.specChips[0]?.label}
-            {product.specChips[0] ? ` // ${product.specChips[0].value}` : ""}
+            {product.specChips[0] ? ` · ${product.specChips[0].value}` : ""}
           </span>
           <Link
             href={`/san-pham-du-an/${product.slug}`}
-            className="w-8 h-8 rounded-full bg-slate-50 border border-slate-200 flex items-center justify-center text-steel-600 hover:bg-steel-600 hover:text-white transition-colors shrink-0"
+            className="w-8 h-8 rounded-full after:absolute after:inset-0 after:content-[''] bg-slate-50 border border-slate-200 flex items-center justify-center text-steel-600 group-hover:bg-steel-600 group-hover:text-white transition-colors shrink-0"
             aria-label={`${t("viewDetailAriaLabel")} ${product.title}`}
           >
             →
@@ -117,12 +75,16 @@ export default function ProductCatalog({ products }: { products: Product[] }) {
     return () => window.clearTimeout(timer);
   }, [activeCategory]);
 
-  const featured = filtered.find((product) => product.featured);
-  const standard = filtered.filter((product) => !product.featured);
+  // Mọi sản phẩm hiển thị cùng một kiểu thẻ (ảnh trên, nội dung dưới) để lưới đồng đều.
+  const standard = filtered;
 
   return (
     <>
-      <section ref={sectionRef} className="w-full mx-auto px-margin py-space-xl bg-slate-50 scroll-mt-[86px]">
+      <section ref={sectionRef} className="w-full mx-auto px-margin py-space-xl bg-slate-50 scroll-mt-[var(--header-h)]">
+        <div className="mb-space-md">
+          <h2 className="text-headline-lg text-slate-900 font-bold">{t("heading")}</h2>
+          <p className="mt-1 text-body-md text-slate-600">{t("subheading")}</p>
+        </div>
         {activeCategory !== "all" && (
           <div className="mb-space-lg flex flex-wrap items-center justify-between gap-space-sm rounded border border-steel-200 bg-white px-space-md py-space-sm">
             <p className="text-body-md text-slate-700">
@@ -143,7 +105,6 @@ export default function ProductCatalog({ products }: { products: Product[] }) {
           <p className="text-body-md text-slate-500 text-center py-space-xl">{t("emptyState")}</p>
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-gutter items-stretch">
-            {featured && <ProductCardFeatured product={featured} t={t} />}
             {standard.map((product) => (
               <ProductCardStandard key={product.slug} product={product} t={t} />
             ))}

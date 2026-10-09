@@ -1,5 +1,6 @@
 import { useLocale, useTranslations } from "next-intl";
 import { getBanner } from "@/server/public";
+import HeroImage from "@/components/ui/HeroImage";
 import PageBreadcrumb from "@/components/layout/PageBreadcrumb";
 import Icon from "@/components/ui/Icon";
 
@@ -15,17 +16,9 @@ export default function ContactHero() {
   const banner = getBanner("lien-he", useLocale(), "/images/factory/qc-6.jpg");
 
   return (
-    <section className="relative w-full min-h-screen bg-slate-900 overflow-hidden flex items-center border-b border-slate-200">
+    <section className="relative w-full min-h-[calc(100svh-var(--header-h))] bg-slate-900 overflow-hidden flex items-center border-b border-slate-200">
       {/* Banner Background Image */}
-      <div
-        className="absolute inset-0 bg-cover bg-center"
-        role="img"
-        aria-label={banner.alt || t("imageAlt")}
-        style={{
-          backgroundImage:
-            `url('${banner.image}')`,
-        }}
-      />
+      <HeroImage src={banner.image} alt={banner.alt || t("imageAlt")} />
 
       {/* Content Container */}
       <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-r from-slate-950/85 via-slate-950/65 to-slate-950/35" />
@@ -40,14 +33,14 @@ export default function ContactHero() {
             ]}
           />
 
-          <h1 className="text-headline-xl-mobile lg:text-display-hero font-bold tracking-tight text-white uppercase mb-space-sm max-w-3xl">
+          <h1 className="banner-title font-bold tracking-tight text-white uppercase mb-space-sm max-w-5xl">
             {t("titlePrefix")}{" "}
-            <span className="underline decoration-white/50 decoration-4 underline-offset-8">
+            <span>
               {t("titleHighlight")}
             </span>{" "}
             {t("titleSuffix")}
           </h1>
-          <p className="text-body-lg text-white leading-relaxed max-w-2xl">{t("description")}</p>
+          <p className="banner-lead text-white leading-relaxed">{t("description")}</p>
         </div>
 
         <div className="flex flex-wrap items-center gap-space-md pt-space-md">
@@ -78,9 +71,6 @@ export default function ContactHero() {
                   {t(`specHighlights.${key}.label`)}
                 </span>
               </div>
-              <span className="text-body-sm text-white">
-                {t(`specHighlights.${key}.desc`)}
-              </span>
             </div>
           ))}
         </div>

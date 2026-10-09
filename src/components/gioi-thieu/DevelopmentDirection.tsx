@@ -34,12 +34,9 @@ export default function DevelopmentDirection() {
               </div>
               <h3 className="text-headline-sm text-slate-900 uppercase mb-space-xs font-bold flex items-center gap-2">
                 {t(`${value.key}.title`)}
-                <span className="font-mono text-xs text-steel-600 font-normal">{value.index}</span>
+                <span className="text-xs text-steel-600 font-normal">{value.index}</span>
               </h3>
               <p className="text-body-md text-slate-600 leading-relaxed">{t(`${value.key}.desc`)}</p>
-              <div className="mt-space-md pt-space-sm border-t border-slate-100 text-xs text-slate-400 font-mono">
-                {t(`${value.key}.note`)}
-              </div>
             </div>
           ))}
         </div>

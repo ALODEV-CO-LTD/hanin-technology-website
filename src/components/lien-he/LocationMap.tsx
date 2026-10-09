@@ -2,15 +2,14 @@ import { siteImg } from "@/server/site-images";
 import { useTranslations } from "next-intl";
 import { getSettings, isSafeMapEmbed } from "@/server/settings";
 import Icon from "@/components/ui/Icon";
+import Photo from "@/components/ui/Photo";
+import { IndustrialParkIcon, PortIcon } from "@/components/ui/CustomIcons";
 
 const DISTANCE_KEYS = ["airport", "seaport", "industrialParks"] as const;
-const DISTANCE_META: Record<
-  (typeof DISTANCE_KEYS)[number],
-  { icon: string; color: string }
-> = {
-  airport: { icon: "flight_takeoff", color: "text-steel-600" },
-  seaport: { icon: "directions_boat", color: "text-sky-700" },
-  industrialParks: { icon: "precision_manufacturing", color: "text-slate-600" },
+const DISTANCE_META: Record<(typeof DISTANCE_KEYS)[number], { icon: string }> = {
+  airport: { icon: "flight_takeoff" },
+  seaport: { icon: "directions_boat" },
+  industrialParks: { icon: "factory" },
 };
 
 export default function LocationMap() {
@@ -19,38 +18,41 @@ export default function LocationMap() {
   const embedUrl = mapEmbedUrl && isSafeMapEmbed(mapEmbedUrl) ? mapEmbedUrl : "";
 
   return (
-    <section className="w-full bg-white py-space-xl scroll-mt-[86px]" id="map-section">
+    <section className="w-full bg-white py-space-xl scroll-mt-[var(--header-h)]" id="map-section">
       <div className="mx-auto px-margin">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-stretch">
           {/* Map info & logistics instructions */}
-          <div className="lg:col-span-5 flex flex-col justify-between bg-white border border-slate-200 p-space-xl rounded shadow-sm">
+          <div className="lg:col-span-5 flex flex-col justify-between bg-white border border-slate-200 p-space-lg rounded shadow-sm">
             <div>
               <h2 className="text-headline-md font-bold text-slate-900 uppercase tracking-tight mb-space-md">
                 {t("heading")}
               </h2>
 
-              <div className="flex flex-col gap-space-sm mb-space-xl">
+              <div className="flex flex-col gap-space-sm mb-space-lg">
                 {DISTANCE_KEYS.map((key) => {
                   const meta = DISTANCE_META[key];
                   return (
-                    <div
-                      key={key}
-                      className="flex items-center justify-between p-space-sm bg-slate-50 rounded"
-                    >
-                      <span className="text-slate-900 font-semibold flex items-center gap-2 text-body-sm">
-                        <Icon name={meta.icon} className={`text-[20px] ${meta.color}`} />
-                        <span>{t(`distances.${key}.label`)}</span>
+                    <div key={key} className="flex items-center gap-3 p-space-sm bg-slate-50 rounded">
+                      <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded bg-steel-50 text-steel-600">
+                        {key === "seaport" ? (
+                          <PortIcon className="h-6 w-6" />
+                        ) : key === "industrialParks" ? (
+                          <IndustrialParkIcon className="h-6 w-6" />
+                        ) : (
+                          <Icon name={meta.icon} className="text-[22px]" />
+                        )}
                       </span>
-                      <span className="text-steel-600 font-bold text-body-sm">
-                        {t(`distances.${key}.value`)}
-                      </span>
+                      <div className="flex flex-col min-w-0">
+                        <span className="text-slate-900 font-semibold text-body-sm leading-snug">{t(`distances.${key}.label`)}</span>
+                        <span className="text-steel-600 font-bold text-body-sm">{t(`distances.${key}.value`)}</span>
+                      </div>
                     </div>
                   );
                 })}
               </div>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-space-sm pt-space-md bg-slate-50 -mx-space-xl -mb-space-xl p-space-lg">
+            <div className="flex flex-col sm:flex-row gap-space-sm pt-space-md bg-slate-50 -mx-space-lg -mb-space-lg p-space-md">
               <a
                 className="flex-1 py-space-sm px-space-md bg-steel-600 hover:bg-steel-700 text-white rounded text-label-md uppercase tracking-wider font-bold text-center transition-colors flex items-center justify-center gap-2"
                 href={mapsUrl || "https://maps.google.com"}
@@ -82,15 +84,7 @@ export default function LocationMap() {
                 allowFullScreen
               />
             ) : (
-            <div
-              className="w-full h-full min-h-[420px] bg-cover bg-center relative"
-              style={{
-                backgroundImage:
-                  `url('${siteImg("lien-he/LocationMap#1", "/images/factory/kho-6.jpg")}')`,
-              }}
-              role="img"
-              aria-label={t("satelliteImageAlt")}
-            />
+            <Photo src={siteImg("lien-he/LocationMap#1", "/images/factory/kho-6.jpg")} alt={t("satelliteImageAlt")} className="w-full h-full min-h-[420px] object-cover object-center relative" />
             )}
           </div>
         </div>

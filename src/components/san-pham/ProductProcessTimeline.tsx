@@ -22,24 +22,22 @@ export default function ProductProcessTimeline() {
             >
               <div className="flex flex-col gap-space-sm">
                 <div className="flex items-center justify-between">
-                  <span className="text-headline-lg text-steel-600 font-mono font-bold leading-none">
+                  <span className="text-headline-lg text-steel-600 font-bold leading-none">
                     {item.step}
                   </span>
                   <span
                     className={
                       index === process.length - 1
-                        ? "w-3 h-3 rounded-full bg-emerald-500"
+                        ? "w-3 h-3 rounded-full bg-steel-600"
                         : "w-3 h-3 rounded-full bg-steel-600"
                     }
+                    aria-hidden="true"
                   />
                 </div>
                 <h3 className="text-headline-sm text-slate-900 uppercase tracking-tight">
                   {item.title}
                 </h3>
-                <p className="text-body-sm text-slate-600 leading-relaxed">{item.description}</p>
-              </div>
-              <div className="pt-space-xs border-t border-slate-100 text-label-sm text-slate-400 uppercase">
-                {item.phase}
+                <p className="text-body-md text-slate-600 leading-relaxed">{item.description}</p>
               </div>
             </div>
           ))}

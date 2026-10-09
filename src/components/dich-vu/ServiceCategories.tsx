@@ -1,7 +1,8 @@
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 import { useLocale, useTranslations } from "next-intl";
 import { getServices } from "@/server/public";
 import Icon from "@/components/ui/Icon";
+import Photo from "@/components/ui/Photo";
 
 export default function ServiceCategories() {
   const locale = useLocale();
@@ -22,11 +23,10 @@ export default function ServiceCategories() {
         {services.map((service) => (
           <div
             key={service.slug}
-            className="bg-white border border-slate-200 rounded overflow-hidden shadow-sm flex flex-col group hover:-translate-y-1 hover:shadow-md transition-all"
+            className="relative bg-white border border-slate-200 rounded overflow-hidden shadow-sm flex flex-col group hover:-translate-y-1 hover:shadow-md focus-within:border-steel-600 transition-all"
           >
             <div className="relative h-48 w-full overflow-hidden bg-slate-900">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+              <Photo
                 alt={service.imageAlt}
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 src={service.image}
@@ -35,20 +35,14 @@ export default function ServiceCategories() {
             <div className="p-space-md flex flex-col flex-1 justify-between gap-space-sm">
               <div>
                 <h3 className="text-title-md text-slate-900 font-bold">{service.title}</h3>
-                <p className="text-label-sm text-slate-500 font-medium uppercase mb-2">{service.titleEn}</p>
+                <p className="text-label-sm text-slate-600 font-medium uppercase mb-2">{service.titleEn}</p>
                 <p className="text-body-md text-slate-600">{service.description}</p>
               </div>
-              <div className="bg-slate-50 border border-slate-200 p-space-sm rounded">
-                <span className="text-label-sm text-slate-500 uppercase font-bold block mb-1">
-                  {service.applicationLabel}
-                </span>
-                <p className="text-body-md text-slate-800 font-medium">{service.applicationText}</p>
-              </div>
-              <div className="flex items-center justify-between pt-2">
+              <div className="flex items-center justify-between">
                 <span className="text-label-sm text-steel-600 font-bold">{service.statLabel}</span>
                 <Link
                   href={`/dich-vu-gia-cong-ma/${service.slug}`}
-                  className="text-steel-600 text-label-technical font-bold uppercase inline-flex items-center gap-1 hover:underline"
+                  className="text-steel-600 text-label-technical font-bold uppercase inline-flex min-h-11 items-center gap-1 hover:underline after:absolute after:inset-0 after:content-['']"
                 >
                   {tc("detailLink")} <Icon name="arrow_forward" className="text-[14px]" />
                 </Link>

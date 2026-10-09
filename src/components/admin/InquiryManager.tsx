@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { api, ApiError } from "./api";
 import Dropdown from "./Dropdown";
 import { formatSize } from "./MediaPicker";
+import { useToast } from "./Toast";
 
 interface Inquiry {
   id: number;
@@ -41,6 +42,7 @@ export default function InquiryManager({ initialStatus = "" }: { initialStatus?:
   const [q, setQ] = useState("");
   const [open, setOpen] = useState<number | null>(null);
   const [error, setError] = useState("");
+  const toast = useToast();
 
   const [version, setVersion] = useState(0);
   const reload = () => setVersion((v) => v + 1);
@@ -68,15 +70,18 @@ export default function InquiryManager({ initialStatus = "" }: { initialStatus?:
   async function patch(id: number, body: Record<string, unknown>) {
     try {
       await api(`inquiries/${id}`, { method: "PATCH", body });
+      toast.success("Đã cập nhật yêu cầu.");
       reload();
     } catch (err) {
       setError(err instanceof ApiError ? err.message : "Không cập nhật được");
+      toast.error(err instanceof ApiError ? err.message : "Không cập nhật được");
     }
   }
 
   async function remove(id: number) {
     if (!confirm("Xoá yêu cầu này và toàn bộ tệp đính kèm? Không thể hoàn tác.")) return;
     await api(`inquiries/${id}`, { method: "DELETE" });
+    toast.success("Đã xoá yêu cầu.");
     setOpen(null);
     reload();
   }

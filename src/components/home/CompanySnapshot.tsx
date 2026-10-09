@@ -18,18 +18,18 @@ export default function CompanySnapshot() {
   };
 
   return (
-    <section className="w-full bg-white py-space-lg border-y border-slate-200 scroll-mt-[86px]" id="company-snapshot">
+    <section className="w-full bg-white py-space-lg border-y border-slate-200 scroll-mt-[var(--header-h)]" id="company-snapshot">
       <div className="mx-auto px-margin">
-        <div className="grid grid-cols-2 lg:grid-cols-4 divide-y lg:divide-y-0 lg:divide-x divide-slate-200">
+        <div className="grid grid-cols-2 lg:grid-cols-4">
           {STATS.map((stat) => (
-            <div key={stat.key} className="flex flex-col items-center justify-center gap-space-xs px-space-md py-space-lg text-center">
+            <div key={stat.key} className="flex flex-col items-center justify-center gap-space-xs px-space-md py-space-lg text-center border-slate-200 max-lg:odd:border-r max-lg:nth-[-n+2]:border-b lg:border-r lg:last:border-r-0">
               <CountUp
                 end={num(`${stat.key}.end`)}
                 suffix={t(`${stat.key}.suffix`)}
                 thousandsSeparator={stat.separator}
                 className="text-display-hero-mobile lg:text-display-hero text-steel-600 font-bold tabular-nums"
               />
-              <span className="text-label-technical text-slate-500 uppercase tracking-wider font-semibold">
+              <span className="text-label-technical text-slate-600 uppercase tracking-wider font-semibold">
                 {t(`${stat.key}.label1`)}
               </span>
             </div>

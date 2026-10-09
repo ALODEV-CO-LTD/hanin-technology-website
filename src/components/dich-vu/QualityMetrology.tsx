@@ -39,16 +39,15 @@ export default function QualityMetrology() {
         <div className="bg-white border border-slate-200 rounded shadow-sm overflow-hidden">
           <div className="flex flex-wrap items-center justify-between gap-space-sm px-space-md py-space-sm border-b border-slate-200">
             <h3 className="text-title-md text-slate-900 font-bold uppercase">{t("tableTitle")}</h3>
-            <span className="rounded border border-slate-200 px-2 py-0.5 text-label-sm font-semibold text-slate-600">{t("revision")}</span>
           </div>
           <div className="overflow-x-auto">
             <table className="w-full min-w-[640px] table-fixed text-left text-body-md">
               <thead>
-                <tr className="border-b border-slate-200 text-label-sm uppercase tracking-wider text-slate-500">
-                  <th className="w-[22%] px-space-md py-3 font-semibold">{t("colMethod")}</th>
-                  <th className="w-[26%] px-space-md py-3 font-semibold">{t("colStandard")}</th>
-                  <th className="w-[32%] px-space-md py-3 font-semibold">{t("colCriteria")}</th>
-                  <th className="w-[20%] px-space-md py-3 font-semibold">{t("colFrequency")}</th>
+                <tr className="border-b border-slate-200 text-label-sm uppercase tracking-wider text-slate-600">
+                  <th scope="col" className="w-[22%] px-space-md py-3 font-semibold">{t("colMethod")}</th>
+                  <th scope="col" className="w-[26%] px-space-md py-3 font-semibold">{t("colStandard")}</th>
+                  <th scope="col" className="w-[32%] px-space-md py-3 font-semibold">{t("colCriteria")}</th>
+                  <th scope="col" className="w-[20%] px-space-md py-3 font-semibold">{t("colFrequency")}</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-slate-200">
@@ -62,10 +61,6 @@ export default function QualityMetrology() {
                 ))}
               </tbody>
             </table>
-          </div>
-          <div className="flex flex-wrap items-center justify-between gap-space-sm px-space-md py-space-sm border-t border-slate-200 text-label-sm text-slate-500">
-            <span>{t("calibrationNote")}</span>
-            <span className="font-bold text-slate-900 uppercase">{t("warrantyLabel")}</span>
           </div>
         </div>
       </div>

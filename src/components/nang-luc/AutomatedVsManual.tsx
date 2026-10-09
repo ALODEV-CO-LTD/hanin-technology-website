@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl";
 import { siteImg } from "@/server/site-images";
-import Icon from "@/components/ui/Icon";
+import Photo from "@/components/ui/Photo";
 
 export default function AutomatedVsManual() {
   const t = useTranslations("NangLuc.AutomatedVsManual");
@@ -17,29 +17,14 @@ export default function AutomatedVsManual() {
           <div className="bg-white border border-slate-200 rounded-lg p-space-md sm:p-space-lg flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow">
             <div>
               <div className="relative h-56 rounded overflow-hidden mb-space-md bg-slate-100">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+                <Photo
                   className="w-full h-full object-cover"
                   alt={t("automated.imageAlt")}
                   src={siteImg("nang-luc/AutomatedVsManual#1", "/images/factory/ma-treo-2.jpg")}
                 />
               </div>
               <h3 className="text-headline-sm text-slate-900 uppercase mb-space-xs">{t("automated.title")}</h3>
-              <p className="text-body-sm text-slate-600 leading-relaxed mb-space-md">{t("automated.desc")}</p>
-            </div>
-            <div className="space-y-space-xs bg-slate-50 border border-slate-200 p-space-md rounded text-label-technical text-slate-700">
-              <div className="flex items-start gap-2">
-                <Icon name="check_circle" className="mt-0.5 shrink-0 text-steel-600 text-[16px]" />
-                <span>{t("automated.feature1")}</span>
-              </div>
-              <div className="flex items-start gap-2">
-                <Icon name="check_circle" className="mt-0.5 shrink-0 text-steel-600 text-[16px]" />
-                <span>{t("automated.feature2")}</span>
-              </div>
-              <div className="flex items-start gap-2">
-                <Icon name="check_circle" className="mt-0.5 shrink-0 text-steel-600 text-[16px]" />
-                <span>{t("automated.feature3")}</span>
-              </div>
+              <p className="text-body-sm text-slate-600 leading-relaxed">{t("automated.desc")}</p>
             </div>
           </div>
 
@@ -47,29 +32,14 @@ export default function AutomatedVsManual() {
           <div className="bg-white border border-slate-200 rounded-lg p-space-md sm:p-space-lg flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow">
             <div>
               <div className="relative h-56 rounded overflow-hidden mb-space-md bg-slate-100">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+                <Photo
                   className="w-full h-full object-cover"
                   alt={t("manual.imageAlt")}
                   src={siteImg("nang-luc/AutomatedVsManual#2", "/images/factory/ma-quay-5.jpg")}
                 />
               </div>
               <h3 className="text-headline-sm text-slate-900 uppercase mb-space-xs">{t("manual.title")}</h3>
-              <p className="text-body-sm text-slate-600 leading-relaxed mb-space-md">{t("manual.desc")}</p>
-            </div>
-            <div className="space-y-space-xs bg-slate-50 border border-slate-200 p-space-md rounded text-label-technical text-slate-700">
-              <div className="flex items-start gap-2">
-                <Icon name="tune" className="mt-0.5 shrink-0 text-slate-500 text-[16px]" />
-                <span>{t("manual.feature1")}</span>
-              </div>
-              <div className="flex items-start gap-2">
-                <Icon name="science" className="mt-0.5 shrink-0 text-slate-500 text-[16px]" />
-                <span>{t("manual.feature2")}</span>
-              </div>
-              <div className="flex items-start gap-2">
-                <Icon name="engineering" className="mt-0.5 shrink-0 text-slate-500 text-[16px]" />
-                <span>{t("manual.feature3")}</span>
-              </div>
+              <p className="text-body-sm text-slate-600 leading-relaxed">{t("manual.desc")}</p>
             </div>
           </div>
         </div>

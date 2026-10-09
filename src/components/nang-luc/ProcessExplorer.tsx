@@ -14,12 +14,7 @@ import {
 
 const FAMILIES: ProcessFamily[] = ["quay", "treo"];
 
-const STAGE_STYLE: Record<StepStage, { chip: string; dot: string; bar: string; top: string }> = {
-  prep: { chip: "bg-sky-50 text-sky-700 border-sky-200", dot: "bg-sky-500", bar: "border-slate-200 border-l-sky-500", top: "border-slate-200 border-t-sky-500" },
-  plate: { chip: "bg-steel-50 text-steel-700 border-steel-200", dot: "bg-steel-600", bar: "border-slate-200 border-l-steel-600", top: "border-slate-200 border-t-steel-600" },
-  finish: { chip: "bg-amber-50 text-amber-700 border-amber-200", dot: "bg-amber-500", bar: "border-slate-200 border-l-amber-500", top: "border-slate-200 border-t-amber-500" },
-  qc: { chip: "bg-emerald-50 text-emerald-700 border-emerald-200", dot: "bg-emerald-500", bar: "border-slate-200 border-l-emerald-500", top: "border-slate-200 border-t-emerald-500" },
-};
+const STAGES: StepStage[] = ["prep", "plate", "finish", "qc"];
 
 export default function ProcessExplorer() {
   const t = useTranslations("QuyTrinh");
@@ -49,27 +44,11 @@ export default function ProcessExplorer() {
   const platingCount = steps.filter((s) => !s.compact && STEP_STAGE[s.key] === "plate").length;
 
   return (
-    <section id="quy-trinh-cong-doan" className="w-full py-space-xl bg-slate-50 border-t border-slate-200 scroll-mt-[86px]">
+    <section id="quy-trinh-cong-doan" className="w-full py-space-xl bg-slate-50 border-t border-slate-200 scroll-mt-[var(--header-h)]">
       <div className="mx-auto px-margin w-full">
         <div className="max-w-3xl mb-space-lg">
-          <span className="text-label-technical text-steel-600 font-bold uppercase tracking-widest">{t("eyebrow")}</span>
+          <span className="text-label-technical text-steel-600 font-bold uppercase tracking-wider">{t("eyebrow")}</span>
           <h2 className="mt-space-xs text-headline-lg text-slate-900 uppercase tracking-tight">{t("title")}</h2>
-        </div>
-
-        {/* Cách đọc */}
-        <div className="mb-space-xl rounded-lg border border-slate-200 bg-white p-space-md">
-          <h3 className="text-label-technical uppercase tracking-widest text-slate-500 font-bold mb-space-sm">{t("howTo.title")}</h3>
-          <ol className="grid grid-cols-1 md:grid-cols-3 gap-space-md">
-            {(["one", "two", "three"] as const).map((k, i) => (
-              <li key={k} className="flex gap-space-sm">
-                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-steel-600 text-white text-label-technical font-bold">{i + 1}</span>
-                <div>
-                  <p className="text-title-md text-slate-900 font-bold">{t(`howTo.items.${k}.title`)}</p>
-                  <p className="text-body-sm text-slate-600 leading-relaxed">{t(`howTo.items.${k}.desc`)}</p>
-                </div>
-              </li>
-            ))}
-          </ol>
         </div>
 
         {/* Chọn nhóm mạ */}
@@ -84,12 +63,12 @@ export default function ProcessExplorer() {
                 aria-selected={active}
                 onClick={() => setFamily(f)}
                 className={`text-left rounded-lg border p-space-md transition-colors min-h-11 ${
-                  active ? "border-steel-600 bg-white ring-2 ring-steel-600/20" : "border-slate-200 bg-white hover:border-steel-300"
+                  active ? "border-steel-600 bg-white" : "border-slate-200 bg-white hover:border-steel-300"
                 }`}
               >
                 <span className="flex items-center justify-between gap-2">
                   <span className={`text-headline-sm uppercase font-bold ${active ? "text-steel-700" : "text-slate-800"}`}>{t(`families.${f}.name`)}</span>
-                  <span className="text-label-sm text-slate-500">{t(`families.${f}.short`)}</span>
+                  <span className="text-label-sm text-slate-600">{t(`families.${f}.short`)}</span>
                 </span>
                 <span className="mt-1 block text-body-sm text-slate-600 leading-relaxed">{t(`families.${f}.desc`)}</span>
               </button>
@@ -98,7 +77,7 @@ export default function ProcessExplorer() {
         </div>
 
         {/* Chọn loại quy trình */}
-        <div className="mb-space-md flex flex-wrap gap-2" role="tablist">
+        <div className="mb-space-md flex flex-wrap gap-2" role="tablist" aria-label={t(`families.${family}.name`)}>
           {list.map((p) => {
             const active = p.id === process.id;
             return (
@@ -108,7 +87,7 @@ export default function ProcessExplorer() {
                 role="tab"
                 aria-selected={active}
                 onClick={() => setSelected((s) => ({ ...s, [family]: p.id }))}
-                className={`min-h-11 rounded-full border px-4 text-body-sm font-semibold transition-colors ${
+                className={`min-h-11 rounded border px-4 text-body-sm font-semibold transition-colors ${
                   active ? "border-steel-600 bg-steel-600 text-white" : "border-slate-300 bg-white text-slate-700 hover:border-steel-400 hover:text-steel-700"
                 }`}
               >
@@ -134,7 +113,7 @@ export default function ProcessExplorer() {
           <dl className="mt-space-md grid grid-cols-1 md:grid-cols-3 gap-space-sm">
             {(["material", "result", "usage"] as const).map((k) => (
               <div key={k} className="rounded border border-slate-200 bg-slate-50 p-space-sm">
-                <dt className="text-label-sm uppercase tracking-wider text-slate-500 font-semibold">
+                <dt className="text-label-sm uppercase tracking-wider text-slate-600 font-semibold">
                   {t(k === "material" ? "factMaterial" : k === "result" ? "factResult" : "factUsage")}
                 </dt>
                 <dd className="mt-0.5 text-body-sm text-slate-900 font-semibold">{t(`processes.${process.id}.${k}`)}</dd>
@@ -144,16 +123,15 @@ export default function ProcessExplorer() {
         </div>
 
         {/* Các công đoạn: 4 danh mục lớn, bấm để xem các công đoạn bên trong */}
-        <h3 className="text-label-technical uppercase tracking-widest text-slate-500 font-bold mb-space-sm">{t("stepsTitle")}</h3>
-        <div className="flex flex-col gap-space-sm">
-          {(Object.keys(STAGE_STYLE) as StepStage[]).map((stage) => {
+        <h3 className="text-label-technical uppercase tracking-wider text-slate-600 font-bold mb-space-sm">{t("stepsTitle")}</h3>
+        <div className="flex flex-col divide-y divide-slate-200 rounded-lg border border-slate-200 bg-white">
+          {STAGES.map((stage) => {
             const group = steps.filter((s) => s.stage === stage);
             if (group.length === 0) return null;
-            const style = STAGE_STYLE[stage];
             const isOpen = openStages.includes(stage);
             const panelId = `${process.id}-${stage}`;
             return (
-              <div key={stage} className={`rounded-lg border border-l-4 bg-white ${style.bar}`}>
+              <div key={stage}>
                 <button
                   type="button"
                   aria-expanded={isOpen}
@@ -161,45 +139,26 @@ export default function ProcessExplorer() {
                   onClick={() =>
                     setOpenStages((cur) => (cur.includes(stage) ? cur.filter((x) => x !== stage) : [...cur, stage]))
                   }
-                  className="flex w-full items-center justify-between gap-space-sm px-space-md py-space-sm text-left"
+                  className="flex min-h-12 w-full items-center justify-between gap-space-sm px-space-md py-space-sm text-left hover:bg-slate-50 transition-colors"
                 >
-                  <span className="flex min-w-0 items-center gap-space-sm">
-                    <span className={`h-3 w-3 shrink-0 rounded-full ${style.dot}`} />
-                    <span className="flex min-w-0 flex-col sm:flex-row sm:items-baseline sm:gap-space-sm">
-                      <span className="text-title-md font-bold text-slate-900">{t(`stages.${stage}`)}</span>
-                      <span className="text-label-sm text-slate-500">{t("categoryCount", { count: group.length })}</span>
-                    </span>
+                  <span className="flex min-w-0 flex-col sm:flex-row sm:items-baseline sm:gap-space-sm">
+                    <span className="text-title-md font-bold text-slate-900">{t(`stages.${stage}`)}</span>
+                    <span className="text-label-sm text-slate-600">{t("categoryCount", { count: group.length })}</span>
                   </span>
-                  <span className="flex shrink-0 items-center gap-1.5 text-label-technical font-semibold uppercase tracking-wider text-steel-600">
-                    <span className="hidden sm:inline">{isOpen ? t("hideDetail") : t("showDetail")}</span>
-                    <span className={`flex transition-transform duration-200 ${isOpen ? "rotate-180" : ""}`}>
-                      <Icon name="expand_more" className="text-[22px]" />
-                    </span>
+                  <span className={`flex shrink-0 text-slate-500 transition-transform duration-200 ${isOpen ? "rotate-180" : ""}`}>
+                    <Icon name="expand_more" className="text-[22px]" />
                   </span>
                 </button>
 
                 {isOpen && (
-                  <div id={panelId} className="border-t border-slate-200 px-space-sm py-space-md sm:px-space-md">
-                    <ol className="flow-grid gap-x-5 gap-y-3 sm:gap-x-6">
-                      {group.map((s, i) => (
-                        <li key={`${process.id}-${s.no}`} className="relative flex">
-                          <div className="flex min-h-12 w-full items-center gap-2 rounded-lg border border-slate-200 bg-white px-2.5 py-2">
-                            <span className={`flex h-6 min-w-6 shrink-0 items-center justify-center rounded-full px-1 text-[11px] font-bold leading-none text-white ${style.dot}`}>
-                              {s.no}
-                            </span>
-                            <span className="text-[12px] font-semibold leading-tight break-words text-slate-800">
-                              {t(`steps.${s.key}.name`)}
-                            </span>
-                          </div>
-                          {i < group.length - 1 && (
-                            <span aria-hidden="true" className="flow-arrow absolute right-0 top-1/2 flex -translate-y-1/2 translate-x-[calc(50%+0.625rem)] sm:translate-x-[calc(50%+0.75rem)] text-slate-300">
-                              <Icon name="arrow_forward" className="text-[14px]" />
-                            </span>
-                          )}
-                        </li>
-                      ))}
-                    </ol>
-                  </div>
+                  <ol id={panelId} className="grid grid-cols-1 border-t border-slate-200 bg-slate-50 px-space-md py-space-xs sm:grid-cols-2 sm:gap-x-space-lg lg:grid-cols-3">
+                    {group.map((s) => (
+                      <li key={`${process.id}-${s.no}`} className="flex items-baseline gap-3 border-b border-slate-200 py-2.5 last:border-b-0">
+                        <span className="w-6 shrink-0 text-body-sm font-bold tabular-nums text-steel-600">{String(s.no).padStart(2, "0")}</span>
+                        <span className="text-body-sm font-medium leading-snug text-slate-900">{t(`steps.${s.key}.name`)}</span>
+                      </li>
+                    ))}
+                  </ol>
                 )}
               </div>
             );

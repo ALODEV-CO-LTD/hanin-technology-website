@@ -1,3 +1,5 @@
+import { Link } from "@/i18n/navigation";
+
 interface BreadcrumbItem {
   label: string;
   href?: string;
@@ -16,8 +18,9 @@ export default function PageBreadcrumb({
 
   return (
     <nav
+      aria-label="Breadcrumb"
       className={`flex flex-wrap items-center gap-2 text-label-sm uppercase tracking-wider ${
-        isDark ? "text-white banner-text" : "text-slate-500"
+        isDark ? "text-white banner-text" : "text-slate-600"
       } ${className}`}
     >
       {items.map((item, index) => {
@@ -25,15 +28,19 @@ export default function PageBreadcrumb({
         return (
           <span key={item.label} className="flex items-center gap-2">
             {item.href && !isLast ? (
-              <a href={item.href} className={isDark ? "hover:text-white transition-colors" : "hover:text-steel-600 transition-colors"}>
+              <Link
+                href={item.href}
+                // py-3/-my-3: vùng bấm cao ~44px trên điện thoại mà không đổi bố cục
+                className={`py-3 -my-3 ${isDark ? "hover:text-white" : "hover:text-steel-600"} transition-colors`}
+              >
                 {item.label}
-              </a>
+              </Link>
             ) : (
-              <span className={isLast ? (isDark ? "text-white font-bold" : "text-slate-900 font-bold") : ""}>
+              <span aria-current={isLast ? "page" : undefined} className={isLast ? (isDark ? "text-white font-bold" : "text-slate-900 font-bold") : ""}>
                 {item.label}
               </span>
             )}
-            {!isLast && <span className={isDark ? "text-white" : "text-slate-300"}>/</span>}
+            {!isLast && <span aria-hidden="true" className={isDark ? "text-white" : "text-slate-400"}>/</span>}
           </span>
         );
       })}

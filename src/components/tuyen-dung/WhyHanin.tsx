@@ -43,16 +43,9 @@ export default function WhyHanin() {
                   <Icon name={pillar.icon} className="text-[26px]" />
                 </div>
                 <div className="flex flex-col gap-1">
-                  <span className="text-label-sm font-semibold text-steel-600 uppercase tracking-widest">
-                    {t(`${pillar.key}.tag`)}
-                  </span>
                   <h3 className="text-title-md text-slate-900 uppercase font-semibold">{t(`${pillar.key}.title`)}</h3>
                 </div>
                 <p className="text-body-sm text-slate-600 leading-relaxed">{t(`${pillar.key}.desc`)}</p>
-              </div>
-              <div className="pt-space-md mt-space-md border-t border-slate-200 flex items-center justify-between text-label-sm text-slate-500">
-                <span>{t(`${pillar.key}.metricLabel`)}</span>
-                <span className="text-slate-900 font-semibold">{t(`${pillar.key}.metricValue`)}</span>
               </div>
             </div>
           ))}

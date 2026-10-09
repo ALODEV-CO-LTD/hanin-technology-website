@@ -5,7 +5,7 @@
       "updated": "Cập nhật: 10/2026",
       "intro": "HANIN cam kết bảo vệ thông tin cá nhân và tài liệu kỹ thuật mà quý khách cung cấp qua website.",
       "collect": {
-        "title": "Thông tin chúng tôi thu thập",
+        "title": "Thông tin thu thập",
         "p1": "Họ tên, email, số điện thoại, tên công ty và nội dung yêu cầu khi quý khách gửi form báo giá, liên hệ hoặc ứng tuyển.",
         "p2": "Tệp đính kèm (bản vẽ CAD, hồ sơ ứng tuyển) do quý khách tự tải lên."
       },
@@ -19,7 +19,7 @@
       },
       "retention": {
         "title": "Thời gian lưu trữ và quyền của quý khách",
-        "p1": "Thông tin được lưu trong thời gian cần thiết để xử lý yêu cầu. Quý khách có quyền yêu cầu xem, chỉnh sửa hoặc xóa thông tin của mình bằng cách liên hệ với chúng tôi."
+        "p1": "Thông tin được lưu trong thời gian cần thiết để xử lý yêu cầu. Quý khách có quyền yêu cầu xem, chỉnh sửa hoặc xóa thông tin của mình bằng cách liên hệ với HANIN."
       },
       "contact": {
         "title": "Liên hệ",
@@ -44,7 +44,7 @@
       },
       "liability": {
         "title": "Giới hạn trách nhiệm",
-        "p1": "HANIN nỗ lực đảm bảo thông tin chính xác nhưng không chịu trách nhiệm cho thiệt hại phát sinh từ việc sử dụng thông tin trên website mà không có xác nhận chính thức."
+        "p1": "HANIN cập nhật thông tin để bảo đảm chính xác, nhưng không chịu trách nhiệm về thiệt hại phát sinh khi sử dụng thông tin trên website mà chưa có xác nhận chính thức."
       },
       "contact": {
         "title": "Liên hệ",

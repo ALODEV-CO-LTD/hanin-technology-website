@@ -2,6 +2,8 @@
 
 import { useEffect, useMemo, useState } from "react";
 import { api, ApiError } from "./api";
+import SaveButton, { useSavedFlash } from "./SaveButton";
+import { useToast } from "./Toast";
 import Dropdown from "./Dropdown";
 
 type Locale = "vi" | "zh" | "ko";
@@ -73,7 +75,8 @@ export default function ContentEditor() {
   const searching = !scope && search.trim().length >= 2;
   const [changedView, setChangedView] = useState(false); // xem mọi mục đã sửa trên toàn website
   const [onlyChanged, setOnlyChanged] = useState(false);
-  const [message, setMessage] = useState<{ ok: boolean; text: string } | null>(null);
+  const toast = useToast();
+  const { saved, flash } = useSavedFlash();
   const [saving, setSaving] = useState(false);
 
   const [version, setVersion] = useState(0);
@@ -152,13 +155,13 @@ export default function ContentEditor() {
 
   async function save() {
     setSaving(true);
-    setMessage(null);
     try {
       await api("content", { method: "PUT", body: { changes: dirty.map((key) => ({ locale, key, scope, value: draft[key] })) } });
-      setMessage({ ok: true, text: `Đã lưu ${dirty.length} nội dung. Website cập nhật ngay.` });
+      toast.success(`Đã lưu ${dirty.length} nội dung. Website cập nhật ngay.`);
+      flash();
       reload();
     } catch (err) {
-      setMessage({ ok: false, text: err instanceof ApiError ? err.message : "Không lưu được" });
+      toast.error(err instanceof ApiError ? err.message : "Không lưu được");
     } finally {
       setSaving(false);
     }
@@ -167,18 +170,18 @@ export default function ContentEditor() {
   async function reset(key: string, loc: Locale = locale) {
     if (!confirm(`Khôi phục nội dung gốc (${loc.toUpperCase()}) cho mục này?`)) return;
     await api("content", { method: "PUT", body: { changes: [{ locale: loc, key, scope, value: null }] } });
+    toast.success("Đã khôi phục nội dung gốc.");
     reload();
   }
 
   async function resetMany(body: Record<string, unknown>, label: string) {
     if (!confirm(`${label}\n\nTất cả chỉnh sửa trong phạm vi này (mọi ngôn ngữ) sẽ quay về nội dung gốc. Không thể hoàn tác.`)) return;
-    setMessage(null);
     try {
       const r = await api<{ reset: number }>("content", { method: "PUT", body: { resetAll: true, ...body } });
-      setMessage({ ok: true, text: `Đã khôi phục ${r.reset} mục về nội dung gốc.` });
+      toast.success(`Đã khôi phục ${r.reset} mục về nội dung gốc.`);
       reload();
     } catch (err) {
-      setMessage({ ok: false, text: err instanceof ApiError ? err.message : "Không khôi phục được" });
+      toast.error(err instanceof ApiError ? err.message : "Không khôi phục được");
     }
   }
 
@@ -246,10 +249,9 @@ export default function ContentEditor() {
       </div>
 
       <div className="sticky top-14 lg:top-0 z-20 -mx-4 sm:-mx-8 xl:-mx-10 px-4 sm:px-8 xl:px-10 py-2.5 mb-3 bg-slate-50/95 backdrop-blur border-b border-slate-200 flex items-center gap-3">
-        <button onClick={save} disabled={!dirty.length || saving} className="h-10 px-6 rounded bg-steel-600 hover:bg-steel-700 text-white font-semibold text-sm disabled:opacity-50">
-          {saving ? "Đang lưu…" : `Lưu thay đổi${dirty.length ? ` (${dirty.length})` : ""}`}
-        </button>
-        {message && <span role="status" className={`text-sm ${message.ok ? "text-emerald-700" : "text-red-700"}`}>{message.text}</span>}
+        <SaveButton type="button" onClick={save} saving={saving} saved={saved} disabled={!dirty.length} className="min-w-[11rem]">
+          {`Lưu thay đổi${dirty.length ? ` (${dirty.length})` : ""}`}
+        </SaveButton>
       </div>
 
       {/* Công cụ khôi phục */}

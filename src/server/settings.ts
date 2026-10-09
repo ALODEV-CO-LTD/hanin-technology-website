@@ -87,7 +87,7 @@ export function isSafeLink(value: string): boolean {
 
 /** Chỉ cho nhúng bản đồ từ Google Maps (dùng làm iframe src). */
 export function isSafeMapEmbed(value: string): boolean {
-  return value === "" || /^https:\/\/(www\.google\.com|maps\.google\.com)\/maps\//.test(value);
+  return value === "" || /^https:\/\/(www\.google\.com|maps\.google\.com)\/maps[\/?]/.test(value);
 }
 
 export function saveSettings(values: Record<string, string>) {

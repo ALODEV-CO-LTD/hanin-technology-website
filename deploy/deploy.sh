@@ -64,6 +64,8 @@ cd $REMOTE_DIR
 npm ci
 # Seed idempotent: chi nap vao bang dang trong, khong ghi de noi dung da sua trong CMS.
 DATA_DIR=$DATA_DIR_REMOTE ADMIN_EMAIL='$ADMIN_EMAIL' ADMIN_PASSWORD='$ADMIN_PASSWORD' npm run db:seed
+# Gan logo khach hang co san trong public/images/clients (khong ghi de logo tai len qua CMS).
+DATA_DIR=$DATA_DIR_REMOTE npm run db:client-logos
 DATA_DIR=$DATA_DIR_REMOTE SWC_NATIVE_BINDING_CACHE=/tmp/swc-cache npm run build
 REMOTE_BUILD
 
@@ -113,7 +115,6 @@ echo ""
 echo "Da deploy xong. App dang chay noi bo tren container o cong $APP_PORT (qua pm2)."
 echo "Nginx dang reverse-proxy $DOMAIN -> 127.0.0.1:$APP_PORT."
 echo ""
-echo "BUOC CON THIEU (ban tu lam):"
-echo "  1. Tro DNS: A record '$DOMAIN' -> IP PUBLIC cua container/server nay (tren Cloudflare dashboard hoac API, dung token MOI ban da tao lai)."
-echo "  2. Sau khi DNS tro dung va da propagate, chay xin SSL:"
-echo "     ssh $TARGET_HOST 'certbot --nginx -d $DOMAIN'"
+echo "Kiem tra: mo https://$DOMAIN va tai lai cung (Cmd+Shift+R)."
+echo "Ten mien chay qua Cloudflare Tunnel (cloudflared tren container) nen KHONG can tro DNS A record hay chay certbot."
+echo "Neu site khong len: ssh $TARGET_HOST 'systemctl status cloudflared --no-pager; pm2 logs hanin-website --lines 40 --nostream'"

@@ -22,10 +22,10 @@ export default function CapabilitySnapshot() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-gutter divide-y md:divide-y-0 md:divide-x divide-slate-200">
           {SNAPSHOT_STATS.map((stat) => (
             <div key={stat.key} className="flex flex-col p-space-sm md:p-space-md">
-              <span className="text-xs text-steel-600 uppercase tracking-widest mb-1 font-bold">
+              <span className="text-xs text-steel-600 uppercase tracking-wider mb-1 font-bold">
                 {t(`${stat.key}.label`)}
               </span>
-              <div className="text-headline-xl md:text-display-hero text-slate-900 font-bold tracking-tight font-mono">
+              <div className="text-headline-xl md:text-display-hero text-slate-900 font-bold tracking-tight">
                 <CountUp
                   end={num(`${stat.key}.end`)}
                   padStart={stat.padStart}

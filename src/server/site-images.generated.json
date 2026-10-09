@@ -5,7 +5,7 @@
   },
   {
     "key": "gioi-thieu/FactoryOverview#1",
-    "url": "/images/factory/ma-quay-5.jpg"
+    "url": "/images/factory/ma-quay-1.jpg"
   },
   {
     "key": "gioi-thieu/FactoryOverview#2",
@@ -25,23 +25,23 @@
   },
   {
     "key": "home/AboutHanin#1",
-    "url": "/images/factory/ma-quay-6.jpg"
+    "url": "/images/factory/ma-quay-2.jpg"
   },
   {
     "key": "home/FactoryShowcase#1",
-    "url": "/images/factory/kho-6.jpg"
+    "url": "/images/factory/hd/showcase-kho.jpg"
   },
   {
     "key": "home/FactoryShowcase#2",
-    "url": "/images/factory/ma-treo-2.jpg"
+    "url": "/images/factory/hd/showcase-treo.jpg"
   },
   {
     "key": "home/FactoryShowcase#3",
-    "url": "/images/factory/phan-tich-1.jpg"
+    "url": "/images/factory/hd/showcase-lab.jpg"
   },
   {
     "key": "home/FactoryShowcase#4",
-    "url": "/images/factory/phan-tich-3.jpg"
+    "url": "/images/factory/hd/showcase-may.jpg"
   },
   {
     "key": "home/ManufacturingCapability#1",
@@ -54,6 +54,10 @@
   {
     "key": "lien-he/LocationMap#1",
     "url": "/images/factory/kho-6.jpg"
+  },
+  {
+    "key": "lien-he/RfqForm#1",
+    "url": "/images/factory/ma-quay-6.jpg"
   },
   {
     "key": "nang-luc/AutomatedVsManual#1",
@@ -101,11 +105,11 @@
   },
   {
     "key": "nang-luc/FactoryOverview#1",
-    "url": "/images/factory/kho-5.jpg"
+    "url": "/images/factory/ma-quay-7.jpg"
   },
   {
     "key": "nang-luc/ProductionLines#1",
-    "url": "/images/factory/ma-treo-2.jpg"
+    "url": "/images/factory/ma-quay-6.jpg"
   },
   {
     "key": "nang-luc/ProductionLines#2",
@@ -113,7 +117,7 @@
   },
   {
     "key": "nang-luc/ProductionLines#3",
-    "url": "/images/factory/ma-quay-7.jpg"
+    "url": "/images/factory/ma-treo-3.jpg"
   },
   {
     "key": "nang-luc/TestingAnalysis#1",
@@ -121,10 +125,14 @@
   },
   {
     "key": "tuyen-dung/WorkEnvironment#1",
-    "url": "/images/factory/qc-5.jpg"
+    "url": "/images/factory/ma-treo-2.jpg"
   },
   {
     "key": "tuyen-dung/WorkEnvironment#2",
-    "url": "/images/factory/qc-6.jpg"
+    "url": "/images/factory/qc-7.jpg"
+  },
+  {
+    "key": "tuyen-dung/WorkEnvironment#3",
+    "url": "/images/factory/phan-tich-1.jpg"
   }
 ]

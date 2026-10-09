@@ -1,12 +1,13 @@
 import { siteImg } from "@/server/site-images";
 import { useTranslations } from "next-intl";
+import Photo from "@/components/ui/Photo";
 
 export default function CompanyIntroduction() {
   const t = useTranslations("GioiThieu.CompanyIntroduction");
 
   const METADATA_GRID = [
     { key: "field", noteClass: "text-steel-600" },
-    { key: "target", noteClass: "text-sky-700" },
+    { key: "target", noteClass: "text-steel-700" },
     { key: "location", noteClass: "text-slate-600" },
   ] as const;
 
@@ -17,15 +18,7 @@ export default function CompanyIntroduction() {
           {/* Left: Precision Factory Campus Visual */}
           <div className="lg:col-span-5 relative group">
             <div className="relative w-full aspect-[4/3] rounded-lg overflow-hidden bg-slate-100 border border-slate-200 shadow-lg">
-              <div
-                className="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
-                role="img"
-                aria-label={t("imageAlt")}
-                style={{
-                  backgroundImage:
-                    `url('${siteImg("gioi-thieu/CompanyIntroduction#1", "/images/factory/kho-6.jpg")}')`,
-                }}
-              />
+              <Photo src={siteImg("gioi-thieu/CompanyIntroduction#1", "/images/factory/kho-6.jpg")} alt={t("imageAlt")} className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105" />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900/40 via-transparent to-transparent" />
             </div>
           </div>
@@ -42,19 +35,21 @@ export default function CompanyIntroduction() {
               <p>{t("paragraph2")}</p>
             </div>
             {/* Metadata Technical Grid Box */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-space-xs p-space-sm bg-slate-50 rounded border border-slate-200 mt-space-xs">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-space-sm mt-space-xs">
               {METADATA_GRID.map((item) => (
                 <div
                   key={item.key}
-                  className="p-space-sm bg-white rounded border border-slate-200 flex flex-col shadow-sm"
+                  className="p-space-sm bg-white rounded flex flex-col shadow-sm"
                 >
-                  <span className="text-xs text-slate-500 uppercase tracking-wider mb-1 font-semibold">
+                  <span className="text-xs text-steel-600 uppercase tracking-wider mb-1 font-semibold">
                     {t(`${item.key}.label`)}
                   </span>
                   <span className="text-title-md text-slate-900 font-semibold">{t(`${item.key}.value`)}</span>
-                  <span className={`text-xs mt-1 font-semibold ${item.noteClass}`}>
-                    {t(`${item.key}.note`)}
-                  </span>
+                  {item.key === "location" && (
+                    <span className={`text-xs mt-1 font-semibold ${item.noteClass}`}>
+                      {t(`${item.key}.note`)}
+                    </span>
+                  )}
                 </div>
               ))}
             </div>

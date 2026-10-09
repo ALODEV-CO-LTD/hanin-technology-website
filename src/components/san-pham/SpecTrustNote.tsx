@@ -8,13 +8,13 @@ export default function SpecTrustNote() {
     <section className="w-full bg-slate-50 mx-auto px-margin py-space-md">
       <div className="p-space-md bg-white border border-slate-200 rounded shadow-sm flex items-start gap-space-md">
         <div className="w-10 h-10 rounded bg-slate-50 border border-slate-200 flex items-center justify-center text-steel-600 shrink-0">
-          <Icon name="terminal" className="text-[24px]" />
+          <Icon name="fact_check" className="text-[24px]" />
         </div>
         <div className="flex flex-col gap-1">
           <span className="text-label-technical uppercase tracking-wider text-steel-600 font-bold">
             {t("title")}
           </span>
-          <p className="text-body-sm text-slate-600 leading-relaxed">{t("description")}</p>
+          <p className="text-body-md text-slate-600 leading-relaxed">{t("description")}</p>
         </div>
       </div>
     </section>

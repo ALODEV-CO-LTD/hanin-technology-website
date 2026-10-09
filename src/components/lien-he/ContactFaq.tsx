@@ -28,7 +28,9 @@ export default function ContactFaq() {
                 className="bg-white border border-slate-200 rounded shadow-sm overflow-hidden"
               >
                 <button
-                  className="w-full p-space-md text-left flex items-center justify-between gap-space-md text-title-md font-bold text-slate-900 hover:text-steel-600 transition-colors"
+                  id={`faq-btn-${index}`}
+                  aria-controls={`faq-panel-${index}`}
+                  className="w-full min-h-11 p-space-md text-left flex items-center justify-between gap-space-md text-title-md font-bold text-slate-900 hover:text-steel-600 focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-steel-600 transition-colors"
                   onClick={() => setOpenIndex(isOpen ? null : index)}
                   type="button"
                   aria-expanded={isOpen}
@@ -37,7 +39,7 @@ export default function ContactFaq() {
                   <Icon name="expand_more" className={`text-[20px] shrink-0 transition-transform duration-200 ${isOpen ? "rotate-180" : "" }`} />
                 </button>
                 {isOpen && (
-                  <div className="px-space-md pb-space-md pt-1 text-slate-600 text-body-md leading-relaxed">
+                  <div id={`faq-panel-${index}`} role="region" aria-labelledby={`faq-btn-${index}`} className="px-space-md pb-space-md pt-1 text-slate-600 text-body-md leading-relaxed">
                     {t(`items.${index}.answer`)}
                   </div>
                 )}

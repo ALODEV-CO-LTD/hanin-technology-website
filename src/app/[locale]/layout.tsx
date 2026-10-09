@@ -33,11 +33,11 @@ export default async function RootLayout({
   }
 
   return (
-    <html lang={locale} className={gilroy.variable}>
+    <html lang={locale} data-scroll-behavior="smooth" className={gilroy.variable}>
       <body className="bg-slate-50 text-slate-800 antialiased selection:bg-steel-600 selection:text-white">
         <NextIntlClientProvider>
           <Header logoSrc={siteImg("layout/Logo#1", "/hanin-logo.png")} />
-          <main className="w-full pt-[86px] bg-slate-50 min-h-screen">
+          <main className="w-full pt-[var(--header-h)] bg-slate-50 min-h-screen">
             <PageFade>{children}</PageFade>
           </main>
           <Footer />

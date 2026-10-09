@@ -106,7 +106,7 @@ function toProduct(row: Row, locale: string, tSanPham: Translate): Product {
     description: pick(parseI18n(row.description), locale),
     image: str(row.image),
     imageAlt: pick(parseI18n(row.image_alt), locale),
-    imageBadge: pick(parseI18n(row.image_badge), locale),
+    imageBadge: pick(parseI18n(row.image_badge), locale).replace(/\s*\/\/\s*/g, " · "),
     specChips: list(row.spec_chips).map((c) => ({
       label: pick(parseI18n(c.label), locale),
       value: pick(parseI18n(c.value), locale),

@@ -17,3 +17,13 @@
 
 html { color-scheme: light; }
 body { background: #f8fafc; color: #0f172a; }
+
+/* Thông báo nổi trong admin: trượt vào nhẹ nhàng, không làm xô lệch nội dung. */
+@keyframes admin-toast-in {
+  from { opacity: 0; transform: translateY(-8px) scale(0.98); }
+  to { opacity: 1; transform: none; }
+}
+.admin-toast { animation: admin-toast-in 0.22s ease-out; }
+@media (prefers-reduced-motion: reduce) {
+  .admin-toast { animation: none; }
+}

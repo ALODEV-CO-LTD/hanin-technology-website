@@ -1,5 +1,5 @@
 import crypto from "node:crypto";
-import { cookies } from "next/headers";
+import { cookies, headers } from "next/headers";
 import { get, run } from "./db";
 
 export const SESSION_COOKIE = "hanin_session";
@@ -35,6 +35,19 @@ function sha256(value: string) {
   return crypto.createHash("sha256").update(value).digest("hex");
 }
 
+/** Host là địa chỉ mạng nội bộ (localhost, IP LAN) — truy cập qua HTTP thường, trình duyệt sẽ bỏ cookie Secure. */
+function isPrivateHost(host: string): boolean {
+  const name = host.replace(/:\d+$/, "").toLowerCase();
+  return (
+    name === "localhost" ||
+    /^127\./.test(name) ||
+    /^10\./.test(name) ||
+    /^192\.168\./.test(name) ||
+    /^172\.(1[6-9]|2\d|3[01])\./.test(name) ||
+    name.endsWith(".local")
+  );
+}
+
 export async function createSession(userId: number): Promise<void> {
   const token = crypto.randomBytes(32).toString("base64url");
   const expiresAt = Math.floor(Date.now() / 1000) + SESSION_TTL_SECONDS;
@@ -43,10 +56,12 @@ export async function createSession(userId: number): Promise<void> {
   run("UPDATE users SET last_login_at = datetime('now') WHERE id = ?", userId);
 
   const jar = await cookies();
+  const host = (await headers()).get("x-forwarded-host") ?? (await headers()).get("host") ?? "";
   jar.set(SESSION_COOKIE, token, {
     httpOnly: true,
     sameSite: "lax",
-    secure: process.env.NODE_ENV === "production" && process.env.COOKIE_SECURE !== "false",
+    // Tên miền thật luôn Secure; chỉ nới khi test qua mạng nội bộ (HTTP).
+    secure: process.env.NODE_ENV === "production" && process.env.COOKIE_SECURE !== "false" && !isPrivateHost(host),
     path: "/",
     maxAge: SESSION_TTL_SECONDS,
   });

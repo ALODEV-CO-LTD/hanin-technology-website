@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
 import { siteImg } from "@/server/site-images";
+import Photo from "@/components/ui/Photo";
 
 const ITEMS = [
   { key: "saltSpray", no: "01" },
@@ -11,7 +12,7 @@ export default function TestingAnalysis() {
   const t = useTranslations("NangLuc.TestingAnalysis");
 
   return (
-    <section className="w-full py-space-xl bg-slate-50 border-t border-slate-200 scroll-mt-[86px]" id="kiem-nghiem">
+    <section className="w-full py-space-xl bg-slate-50 border-t border-slate-200 scroll-mt-[var(--header-h)]" id="kiem-nghiem">
       <div className="mx-auto px-margin w-full">
         <div className="mb-space-xl">
           <h2 className="text-headline-lg text-slate-900 uppercase tracking-tight">{t("sectionTitle")}</h2>
@@ -20,13 +21,11 @@ export default function TestingAnalysis() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
           {/* LEFT: Metrology Photo */}
           <div className="lg:col-span-6 relative rounded-lg overflow-hidden bg-slate-200 border border-slate-200 aspect-[16/10] lg:aspect-auto min-h-0 lg:min-h-[380px] shadow-sm flex flex-col justify-end p-space-lg">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
+            <Photo
               alt={t("image.alt")}
               className="absolute inset-0 w-full h-full object-cover"
               src={siteImg("nang-luc/TestingAnalysis#1", "/images/factory/phan-tich-1.jpg")}
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent" />
           </div>
 
           {/* RIGHT: 3 Technical Information Blocks */}

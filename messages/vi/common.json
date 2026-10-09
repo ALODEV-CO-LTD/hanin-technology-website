@@ -1,6 +1,6 @@
 {
   "Nav": {
-    "trangChu": "Trang Chủ",
+    "trangChu": "Trang chủ",
     "gioiThieu": "Giới thiệu",
     "dichVu": "Dịch vụ gia công mạ",
     "sanPham": "Sản phẩm & Dự án",
@@ -8,8 +8,9 @@
     "tinTuc": "Tin tức",
     "tuyenDung": "Tuyển dụng",
     "lienHe": "Liên hệ",
-    "cta": "NHẬN BÁO GIÁ KỸ THUẬT →",
+    "cta": "YÊU CẦU BÁO GIÁ",
     "menuOpen": "Mở menu",
+    "menuClose": "Đóng menu",
     "logoAlt": "HANIN Plating"
   },
   "LanguageSwitcher": {
@@ -19,23 +20,23 @@
     "ko": "한국어"
   },
   "Footer": {
-    "tagline": "GIA CÔNG XI MẠ & CƠ KHÍ CHÍNH XÁC",
-    "description": "Nhà máy gia công xi mạ kỹ thuật cao, xử lý bề mặt kim loại cơ khí chính xác theo tiêu chuẩn công nghiệp Nhật Bản và quốc tế.",
+    "tagline": "GIA CÔNG MẠ KIM LOẠI",
+    "description": "Nhà máy gia công mạ kim loại tại KCN Quang Minh, Hà Nội.",
     "companyHeading": "Doanh nghiệp",
     "companyLinks": {
-      "trangChu": "Trang Chủ",
+      "trangChu": "Trang chủ",
       "gioiThieu": "Giới thiệu doanh nghiệp",
       "nangLuc": "Năng lực sản xuất",
-      "tinTuc": "Tin tức & Sự kiện",
-      "tuyenDung": "Cơ hội tuyển dụng"
+      "tinTuc": "Tin tức và sự kiện",
+      "tuyenDung": "Tuyển dụng"
     },
-    "serviceHeading": "Dịch vụ & Sản phẩm",
+    "serviceHeading": "Dịch vụ và sản phẩm",
     "serviceLinks": {
-      "enp": "Mạ Niken kỹ thuật (Electroless Nickel)",
-      "hardChrome": "Mạ Crom cứng công nghiệp (Hard Chrome)",
-      "anodizing": "Anodizing nhôm & Hard Anodize",
-      "zincNickel": "Mạ Kẽm - Niken chống ăn mòn cao",
-      "specSheet": "Bảng thông số tra cứu dung sai micron"
+      "enp": "Mạ niken hóa học (ENP)",
+      "hardChrome": "Mạ crom cứng công nghiệp",
+      "anodizing": "Anod hóa nhôm và anod hóa cứng",
+      "zincNickel": "Mạ kẽm-niken chống ăn mòn",
+      "specSheet": "Bảng dung sai độ dày lớp mạ"
     },
     "contactHeading": "Liên hệ kỹ thuật",
     "addressLabel": "Địa chỉ:",
@@ -43,11 +44,11 @@
     "hotlineLabel": "Hotline:",
     "emailLabel": "Email:",
     "hoursLabel": "Giờ làm việc:",
-    "hours": "Thứ 2 - Thứ 7: 08:00 - 17:30 (Trực ca 24/7)",
-    "zaloChat": "Zalo Chat Kỹ Thuật",
-    "googleMaps": "Google Maps Chỉ Đường",
-    "statusLine": "Hệ thống dây chuyền mạ & đo lường CMM: SẴN SÀNG HOẠT ĐỘNG",
-    "copyright": "© 2026 Công ty Cổ phần Công nghiệp Mạ HANIN Technology Việt Nam · MST 0110300983. Tất cả quyền được bảo lưu. Chuẩn ISO 9001:2015.",
+    "hours": "Thứ Hai - Thứ Bảy: 08:00 - 17:30",
+    "zaloChat": "Zalo kỹ thuật",
+    "googleMaps": "Chỉ đường trên Google Maps",
+    "statusLine": "Nhà máy gia công mạ kim loại · KCN Quang Minh, Hà Nội",
+    "copyright": "© 2026 Công ty Cổ phần Công nghiệp Mạ HANIN Technology Việt Nam · MST 0110300983. Bảo lưu mọi quyền.",
     "privacyPolicy": "Chính sách bảo mật",
     "termsOfService": "Điều khoản dịch vụ",
     "certIso9001": "ISO 9001:2015",
@@ -58,39 +59,39 @@
   "Meta": {
     "site": {
       "title": "HANIN",
-      "description": "Giải pháp gia công mạ kim loại và bề mặt công nghiệp chuẩn xác cao."
+      "description": "Gia công mạ kim loại và xử lý bề mặt cho khách hàng công nghiệp."
     },
     "home": {
       "title": "HANIN",
-      "description": "Giải pháp gia công mạ kim loại và bề mặt công nghiệp chuẩn xác cao."
+      "description": "Gia công mạ kim loại và xử lý bề mặt cho khách hàng công nghiệp."
     },
     "gioiThieu": {
       "title": "Giới thiệu",
-      "description": "Tìm hiểu định hướng phát triển và năng lực gia công mạ kim loại phục vụ khách hàng công nghiệp."
+      "description": "Thông tin về HANIN và năng lực gia công mạ kim loại cho khách hàng công nghiệp."
     },
     "dichVu": {
-      "title": "Dịch Vụ Gia Công Mạ & Xử Lý Bề Mặt",
-      "description": "Dịch vụ gia công mạ điện phân, mạ hóa học và xử lý bề mặt kim loại đạt chuẩn ô tô, hàng không: mạ Crom cứng, mạ Niken hóa học (ENP), mạ Kẽm-Niken, Anodizing nhôm."
+      "title": "Dịch vụ gia công mạ và xử lý bề mặt",
+      "description": "Gia công mạ điện phân, mạ hóa học và xử lý bề mặt kim loại: mạ crom cứng, mạ niken hóa học (ENP), mạ kẽm-niken, anod hóa nhôm."
     },
     "sanPham": {
       "title": "Sản phẩm & Dự án",
-      "description": "Sản phẩm và dự án gia công mạ kim loại kỹ thuật cao: kiểm soát dung sai micron, độ đồng đều lớp phủ và độ bền môi trường khắt khe."
+      "description": "Sản phẩm và dự án gia công mạ kim loại: kiểm soát dung sai micron, độ đồng đều lớp mạ và độ bền trong môi trường khắc nghiệt."
     },
     "nangLuc": {
       "title": "Năng lực sản xuất",
-      "description": "Hệ sinh thái nhà xưởng chuẩn hóa, chuỗi dây chuyền mạ tự động điều khiển PLC SCADA và phòng thí nghiệm kiểm định vi mô đạt chuẩn quốc tế."
+      "description": "Nhà xưởng, dây chuyền mạ điều khiển bằng PLC và phòng kiểm nghiệm lớp mạ."
     },
     "tinTuc": {
-      "title": "Tin tức & Bản tin kỹ thuật",
-      "description": "Cập nhật tin tức doanh nghiệp, công nghệ xử lý bề mặt kim loại, quy chuẩn đo kiểm chất lượng và hoạt động sản xuất mới nhất."
+      "title": "Tin tức và bản tin kỹ thuật",
+      "description": "Tin doanh nghiệp, công nghệ xử lý bề mặt kim loại, tiêu chuẩn kiểm tra chất lượng và hoạt động sản xuất."
     },
     "tuyenDung": {
       "title": "Tuyển dụng",
       "description": "Vị trí tuyển dụng đang mở trong lĩnh vực gia công mạ kim loại và cơ khí chính xác."
     },
     "lienHe": {
-      "title": "Liên hệ & Yêu cầu báo giá",
-      "description": "Liên hệ để được tư vấn giải pháp kỹ thuật xi mạ kim loại, gia công cơ khí chính xác và gửi yêu cầu báo giá (RFQ) kèm bản vẽ CAD."
+      "title": "Liên hệ và yêu cầu báo giá",
+      "description": "Liên hệ về gia công mạ kim loại và gửi yêu cầu báo giá (RFQ) kèm bản vẽ CAD."
     },
     "chinhSachBaoMat": {
       "title": "Chính sách bảo mật",
@@ -100,5 +101,8 @@
       "title": "Điều khoản dịch vụ",
       "description": "Điều khoản sử dụng website và quy định chung khi gửi yêu cầu báo giá tới HANIN."
     }
+  },
+  "Common": {
+    "profileUnavailable": "Hồ sơ năng lực chưa có sẵn để tải. Vui lòng liên hệ HANIN để nhận hồ sơ."
   }
 }

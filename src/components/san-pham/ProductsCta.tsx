@@ -18,25 +18,21 @@ export default function ProductsCta() {
           {t("description")}
         </p>
         <Link
-          className="inline-flex items-center justify-center px-space-xl py-space-sm bg-steel-600 text-white font-bold text-title-md uppercase tracking-wider rounded hover:bg-steel-700 active:scale-95 transition-all shadow-xl"
+          className="inline-flex min-h-11 items-center justify-center px-space-xl py-space-sm bg-steel-600 text-white font-bold text-title-md uppercase tracking-wider rounded hover:bg-steel-700 active:scale-95 transition-all shadow-xl"
           href="/lien-he#rfq-form"
         >
           {t("cta")}
         </Link>
-        <div className="flex flex-wrap items-center justify-center gap-space-sm mt-space-xl text-label-technical text-slate-500">
-          <div className="px-space-md py-space-xs bg-white border border-slate-200 rounded flex items-center gap-1.5 shadow-sm">
+        <div className="flex flex-wrap items-center justify-center gap-space-sm mt-space-xl text-body-sm text-slate-600">
+          <div className="px-space-md py-2 min-h-11 bg-white border border-slate-200 rounded flex items-center gap-1.5 shadow-sm">
             <Icon name="call" className="text-steel-600 text-[16px]" />
             <span>
               {t("hotlineLabel")} <PhoneLinks phones={general} className="hover:text-steel-600" />
             </span>
           </div>
-          <div className="px-space-md py-space-xs bg-white border border-slate-200 rounded flex items-center gap-1.5 shadow-sm">
+          <div className="px-space-md py-2 min-h-11 bg-white border border-slate-200 rounded flex items-center gap-1.5 shadow-sm">
             <Icon name="mail" className="text-steel-600 text-[16px]" />
             <span>{t("email")}</span>
-          </div>
-          <div className="px-space-md py-space-xs bg-white border border-slate-200 rounded flex items-center gap-1.5 shadow-sm">
-            <Icon name="schedule" className="text-emerald-600 text-[16px]" />
-            <span>{t("responseTime")}</span>
           </div>
         </div>
       </div>

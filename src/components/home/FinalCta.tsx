@@ -1,82 +1,25 @@
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
-import { getPhones, getSettings } from "@/server/settings";
-import PhoneLinks from "@/components/ui/PhoneLinks";
 import Icon from "@/components/ui/Icon";
 
 export default function FinalCta() {
   const t = useTranslations("Home.FinalCta");
-  const { zaloUrl, salesEmail } = getSettings();
-  const { general } = getPhones();
 
   return (
-    <section className="w-full py-space-xl bg-white relative overflow-hidden scroll-mt-[86px]" id="bao-gia">
-      <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(15,23,42,0.03)_1px,transparent_1px),linear-gradient(to_bottom,rgba(15,23,42,0.03)_1px,transparent_1px)] bg-[size:32px_32px] pointer-events-none" />
-      <div className="relative z-10 mx-auto px-margin flex flex-col gap-space-xl">
-        <div className="p-space-lg md:p-space-xl rounded bg-white border border-slate-200 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-space-xl shadow-lg">
-          <div className="flex flex-col gap-space-md">
-            <h2 className="text-headline-xl md:text-display-hero text-slate-900 font-bold leading-tight uppercase">
-              {t("title")}
-            </h2>
-            <p className="text-body-lg text-slate-600 max-w-2xl">
-              {t("description")}
-            </p>
-            <div className="pt-space-xs flex flex-wrap items-center gap-space-md">
-              <Link
-                href="/lien-he"
-                className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-steel-600 hover:bg-steel-700 text-white text-title-md uppercase tracking-wider rounded transition-all duration-150 shadow-md"
-              >
-                <span>{t("cta")}</span>
-                <Icon name="send" className="text-[20px]" />
-              </Link>
-            </div>
-          </div>
-
-          <div className="w-full lg:w-auto flex flex-col gap-space-sm p-space-md bg-slate-50 border border-slate-200 rounded lg:min-w-[320px]">
-            <span className="text-label-technical uppercase tracking-widest text-steel-600 font-bold pb-1">
-              {t("contactTitle")}
-            </span>
-            <div className="flex items-center gap-3 py-1">
-              <Icon name="call" className="text-steel-600 text-[20px]" />
-              <div className="flex flex-col">
-                <span className="text-xs text-slate-500 uppercase">{t("hotlineLabel")}</span>
-                <span className="text-title-md text-slate-900 font-bold flex flex-col">
-                  <PhoneLinks phones={general} separator="" className="hover:text-steel-600" />
-                </span>
-              </div>
-            </div>
-            <div className="flex items-center gap-3 py-1">
-              <Icon name="chat" className="text-steel-600 text-[20px]" />
-              <div className="flex flex-col">
-                <span className="text-xs text-slate-500 uppercase">{t("zaloLabel")}</span>
-                {zaloUrl ? (
-                  <a href={zaloUrl} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-11 items-center text-title-md text-sky-700 hover:underline font-semibold">
-                    {t("zaloCta")}
-                  </a>
-                ) : (
-                  <Link href="/lien-he" className="inline-flex min-h-11 items-center text-title-md text-sky-700 hover:underline font-semibold">
-                    {t("zaloCta")}
-                  </Link>
-                )}
-              </div>
-            </div>
-            <div className="flex items-center gap-3 py-1">
-              <Icon name="mail" className="text-steel-600 text-[20px]" />
-              <div className="flex flex-col">
-                <span className="text-xs text-slate-500 uppercase">{t("emailLabel")}</span>
-                <span className="text-body-md text-slate-800 font-mono">{salesEmail}</span>
-              </div>
-            </div>
-            <div className="flex items-start gap-3 pt-2 text-slate-600 border-t border-slate-200">
-              <Icon name="location_on" className="text-slate-400 text-[20px] shrink-0" />
-              <div className="flex flex-col">
-                <span className="text-xs text-slate-500 uppercase">{t("addressLabel")}</span>
-                <span className="text-body-sm text-slate-800 leading-tight">
-                  {t("addressValue")}
-                </span>
-              </div>
-            </div>
-          </div>
+    <section className="w-full py-space-xl bg-white scroll-mt-[var(--header-h)]" id="bao-gia">
+      <div className="mx-auto px-margin">
+        <div className="relative overflow-hidden rounded border border-slate-200 bg-white shadow-md px-space-md py-space-xl sm:px-space-xl text-center flex flex-col items-center gap-space-md before:absolute before:inset-x-0 before:top-0 before:h-1 before:[background:var(--color-steel-600)] before:content-['']">
+          <h2 className="text-headline-xl md:text-display-hero text-slate-900 font-bold leading-tight uppercase">
+            {t("title")}
+          </h2>
+          <p className="text-body-lg text-slate-600 max-w-2xl">{t("description")}</p>
+          <Link
+            href="/lien-he#rfq-form"
+            className="mt-space-xs inline-flex min-h-12 items-center justify-center gap-3 px-8 py-3.5 bg-steel-600 hover:bg-steel-700 text-white text-title-md uppercase tracking-wider rounded transition-all duration-150 shadow-md"
+          >
+            <span>{t("cta")}</span>
+            <Icon name="send" className="text-[20px]" />
+          </Link>
         </div>
       </div>
     </section>

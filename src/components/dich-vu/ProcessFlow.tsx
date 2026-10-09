@@ -18,7 +18,7 @@ export default function ProcessFlow() {
         <h2 className="text-headline-sm md:text-headline-lg text-slate-900 uppercase font-bold">{t("heading")}</h2>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-5 gap-space-sm">
+      <div className="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-5 gap-space-sm">
         {STEPS.map((step) => (
           <div
             key={step.key}
@@ -29,11 +29,8 @@ export default function ProcessFlow() {
               <Icon name={step.icon} className="text-slate-500 text-[24px]" />
             </div>
             <div>
-              <h4 className="text-title-md text-slate-900 font-bold uppercase mb-1">{t(`${step.key}.title`)}</h4>
+              <h3 className="text-title-md text-slate-900 font-bold uppercase mb-1">{t(`${step.key}.title`)}</h3>
               <p className="text-body-md text-slate-600">{t(`${step.key}.desc`)}</p>
-            </div>
-            <div className="mt-space-sm pt-space-xs text-label-sm text-slate-500">
-              <span>{t(`${step.key}.note`)}</span>
             </div>
           </div>
         ))}

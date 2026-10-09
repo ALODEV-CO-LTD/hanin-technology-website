@@ -1,212 +1,216 @@
 {
   "GioiThieu": {
     "IntroHero": {
-      "imageAlt": "Toàn cảnh nhà máy công nghiệp HANIN với khu vực xưởng mạ hiện đại (ảnh minh họa, sẽ thay bằng ảnh thực tế do Bên A cung cấp)",
+      "imageAlt": "Toàn cảnh nhà máy công nghiệp HANIN với khu vực xưởng mạ hiện đại",
       "breadcrumbHome": "Trang chủ",
       "breadcrumbCurrent": "Giới thiệu",
-      "title": "GIỚI THIỆU HANIN",
-      "subtitle": "Tìm hiểu định hướng phát triển và năng lực phục vụ khách hàng công nghiệp."
+      "title": "Giới thiệu HANIN",
+      "subtitle": "Định hướng phát triển và năng lực phục vụ khách hàng công nghiệp của HANIN."
     },
     "CompanyIntroduction": {
-      "imageAlt": "Mặt tiền kiến trúc hiện đại của nhà máy tại KCN Quang Minh, Hà Nội (ảnh minh họa, sẽ thay bằng ảnh thực tế do Bên A cung cấp)",
-      "scaleBadge": "QUY MÔ: KHUÔN VIÊN NHÀ MÁY // KCN QUANG MINH",
-      "coordBadge": "TỌA ĐỘ 21.2074° B",
-      "areaBadge": "DIỆN TÍCH MẶT BẰNG: 2.230 m²",
-      "heading": "Đồng hành cùng nhu cầu gia công mạ công nghiệp",
+      "imageAlt": "Mặt tiền kiến trúc hiện đại của nhà máy tại KCN Quang Minh, Hà Nội",
+      "scaleBadge": "Nhà máy tại KCN Quang Minh",
+      "coordBadge": "Tọa độ 21.2074° B",
+      "areaBadge": "Diện tích mặt bằng: 2.230 m²",
+      "heading": "Gia công mạ cho khách hàng công nghiệp",
       "paragraph1Strong": "Công ty Cổ phần Công nghiệp Mạ HANIN Technology Việt Nam",
-      "paragraph1Rest": "là đơn vị chuyên sâu trong lĩnh vực gia công mạ kim loại và xử lý hoàn thiện bề mặt cơ khí chính xác, phục vụ các ngành công nghiệp chế tạo, phụ tùng cơ khí và linh kiện kỹ thuật cao.",
-      "paragraph2": "Thành lập ngày 28/03/2023, HANIN vận hành nhà máy tại Khu Công Nghiệp Quang Minh (Hà Nội) với diện tích mặt bằng xưởng 2.230 m² và đội ngũ 58 nhân sự, gồm các bộ phận mạ treo, mạ quay, phân tích, kiểm soát chất lượng (QC) và kho. Công ty hiện phục vụ hơn 100 khách hàng công nghiệp.",
+      "paragraph1Rest": "là đơn vị gia công mạ kim loại và xử lý bề mặt chi tiết cơ khí chính xác cho các ngành chế tạo và phụ tùng cơ khí.",
+      "paragraph2": "Thành lập ngày 28/03/2023, nhà máy đặt tại KCN Quang Minh, Hà Nội, trên mặt bằng 2.230 m². 58 nhân sự làm việc tại các bộ phận mạ treo, mạ quay, QC và văn phòng; hơn 100 khách hàng đang sử dụng dịch vụ.",
       "field": {
-        "label": "LĨNH VỰC",
+        "label": "Lĩnh vực",
         "value": "Gia công mạ kim loại",
-        "note": "Mạ điện & Hoàn thiện bề mặt"
+        "note": "Mạ điện và hoàn thiện bề mặt"
       },
       "target": {
-        "label": "ĐỐI TƯỢNG",
+        "label": "Đối tượng",
         "value": "Khách hàng công nghiệp",
-        "note": "Nhà cung ứng OEM/ODM Cấp 1 & Cấp 2"
+        "note": "Nhà cung ứng OEM/ODM cấp 1 và cấp 2"
       },
       "location": {
-        "label": "VỊ TRÍ",
+        "label": "Vị trí",
         "value": "KCN Quang Minh, Hà Nội",
         "note": "Trụ sở Lô 660 · Nhà máy Lô 49G"
       }
     },
     "CompanyJourney": {
-      "heading": "HÀNH TRÌNH PHÁT TRIỂN",
-      "subtitle": "Những dấu mốc chính trong quá trình hình thành và phát triển của HANIN.",
+      "heading": "Hành trình phát triển",
+      "subtitle": "Các giai đoạn hình thành và phát triển của HANIN.",
       "m1": {
         "yearTag": "2023",
-        "phase": "GIAI ĐOẠN 01 // KHỞI ĐẦU NỀN TẢNG",
-        "title": "Thành lập cơ sở & xây dựng quy chuẩn",
-        "desc": "Thành lập cơ sở, xây dựng quy chuẩn mạ kim loại và tối ưu công thức hóa chất xử lý."
+        "phase": "Giai đoạn 1 · Khởi đầu",
+        "title": "Thành lập và xây dựng quy trình",
+        "desc": "Thành lập ngày 28/03/2023, xây dựng quy trình mạ và công thức hóa chất xử lý."
       },
       "m2": {
-        "yearTag": "[NĂM PHÁT TRIỂN]",
-        "phase": "GIAI ĐOẠN 02 // MỞ RỘNG DÂY CHUYỀN",
-        "title": "Mở rộng hệ thống dây chuyền tự động",
-        "desc": "Mở rộng dây chuyền mạ tự động và nâng cấp phòng kiểm soát chất lượng theo chuẩn đo lường kỹ thuật."
+        "yearTag": "Giai đoạn phát triển",
+        "phase": "Giai đoạn 2 · Mở rộng",
+        "title": "Mở rộng dây chuyền",
+        "desc": "Mở rộng dây chuyền mạ, nâng cấp khu vực kiểm soát chất lượng."
       },
       "m3": {
-        "yearTag": "[NĂM CHUẨN HÓA]",
-        "phase": "GIAI ĐOẠN 03 // CHUẨN HÓA QUỐC TẾ",
-        "title": "Kiểm nghiệm Micron & Đồng bộ B2B",
-        "desc": "Đạt chuẩn kiểm nghiệm độ dày micron và đồng bộ quy trình xử lý bề mặt cho khách hàng B2B quốc tế."
+        "yearTag": "Giai đoạn chuẩn hóa",
+        "phase": "Giai đoạn 3 · Chuẩn hóa",
+        "title": "Chuẩn hóa kiểm tra và quy trình",
+        "desc": "Chuẩn hóa đo độ dày lớp mạ và quy trình xử lý bề mặt theo yêu cầu khách hàng."
       },
       "m4": {
-        "yearTag": "[HIỆN TẠI & TƯƠNG LAI]",
-        "phase": "GIAI ĐOẠN 04 // HỆ SINH THÁI BỀN VỮNG",
-        "title": "Đối tác gia công mạ tin cậy",
-        "desc": "Mở rộng vai trò đối tác gia công mạ cho chuỗi sản xuất công nghiệp phụ trợ, hướng tới quy chuẩn bền vững và công nghệ sạch."
+        "yearTag": "Hiện tại",
+        "phase": "Giai đoạn 4 · Hiện tại",
+        "title": "Đối tác gia công mạ",
+        "desc": "Gia công mạ cho chuỗi công nghiệp phụ trợ, tiếp tục hoàn thiện quy trình."
       }
     },
     "ContactCta": {
-      "heading": "BẠN MUỐN TÌM HIỂU THÊM VỀ HANIN?",
-      "subtitle": "Liên hệ với HANIN để trao đổi về nhu cầu gia công mạ và hợp tác kỹ thuật theo dự án.",
-      "ctaPrimary": "LIÊN HỆ HANIN →",
+      "heading": "Cần trao đổi về nhu cầu gia công mạ?",
+      "subtitle": "Gửi yêu cầu hoặc bản vẽ để HANIN tư vấn và báo giá.",
+      "ctaPrimary": "LIÊN HỆ HANIN",
       "ctaSecondary": "NHẬN BÁO GIÁ"
     },
     "CoreStrengths": {
-      "heading": "THẾ MẠNH CỦA HANIN",
+      "heading": "Năng lực của HANIN",
       "production": {
-        "title": "NĂNG LỰC SẢN XUẤT",
-        "desc": "[Thông tin năng lực sản xuất: hệ thống bể mạ quy mô lớn, đáp ứng đơn hàng công nghiệp liên tục với khối lượng linh kiện lớn mỗi ngày.]",
-        "metricLabel": "CHỈ SỐ: CÔNG SUẤT VẬN HÀNH LIÊN TỤC",
-        "metricValue": "CUNG ỨNG ỔN ĐỊNH"
+        "title": "Năng lực sản xuất",
+        "desc": "Dây chuyền mạ treo và mạ quay xử lý đơn hàng số lượng lớn.",
+        "metricLabel": "Cung ứng",
+        "metricValue": "Theo kế hoạch đơn hàng"
       },
       "technology": {
-        "title": "CÔNG NGHỆ & THIẾT BỊ",
-        "desc": "[Thông tin công nghệ: dây chuyền bán tự động và tự động điều khiển PLC, kiểm soát dòng điện và thời gian mạ theo tham số kỹ thuật.]",
-        "metricLabel": "HỆ THỐNG: ĐIỀU KHIỂN TỰ ĐỘNG PLC",
-        "metricValue": "CHỈNH LƯU DÒNG ±1%"
+        "title": "Công nghệ và thiết bị",
+        "desc": "Dây chuyền bán tự động và tự động điều khiển bằng PLC, chỉnh lưu dòng ±1%.",
+        "metricLabel": "Điều khiển",
+        "metricValue": "PLC, chỉnh lưu dòng ±1%"
       },
       "quality": {
-        "title": "KIỂM SOÁT CHẤT LƯỢNG",
-        "desc": "[Thông tin kiểm soát chất lượng: đo độ dày lớp mạ chuẩn micron bằng máy huỳnh quang tia X (XRF), thử nghiệm phun sương muối theo ASTM B117.]",
-        "metricLabel": "ĐỘ CHÍNH XÁC: ±0.1 µm MÁY XRF",
-        "metricValue": "PHUN MUỐI ASTM B117"
+        "title": "Kiểm soát chất lượng",
+        "desc": "Đo độ dày lớp mạ bằng máy XRF, thử phun sương muối theo ASTM B117.",
+        "metricLabel": "Kiểm tra",
+        "metricValue": "XRF, ASTM B117"
       },
       "support": {
-        "title": "KỸ THUẬT & HỖ TRỢ",
-        "desc": "[Thông tin hỗ trợ kỹ thuật: tư vấn xi mạ theo bản vẽ, tối ưu quy trình theo yêu cầu kỹ thuật của từng cấu kiện cơ khí.]",
-        "metricLabel": "TƯ VẤN KỸ THUẬT CHUYÊN SÂU",
-        "metricValue": "HỖ TRỢ DOANH NGHIỆP 24/7"
+        "title": "Kỹ thuật và hỗ trợ",
+        "desc": "Tư vấn quy trình mạ theo bản vẽ và yêu cầu kỹ thuật từng chi tiết.",
+        "metricLabel": "Tư vấn kỹ thuật",
+        "metricValue": "Theo bản vẽ"
       }
     },
     "DevelopmentDirection": {
       "heading": "Định hướng phát triển",
-      "subtitle": "[Thông tin chính thức về định hướng phát triển của HANIN: nâng cao chất lượng lớp mạ, chuẩn hóa quy trình kỹ thuật và tối ưu chi phí cho chuỗi cung ứng.]",
+      "subtitle": "Nâng cao chất lượng lớp mạ, chuẩn hóa quy trình và kiểm soát chi phí cho khách hàng.",
       "precision": {
-        "title": "CHÍNH XÁC",
-        "desc": "[Thông tin] Kiểm soát dung sai độ dày micron, tuân thủ thông số kỹ thuật bản vẽ.",
-        "note": "DUNG SAI: ĐỘ DÀY ĐẠT CẤP ĐỘ MICRON"
+        "title": "Chính xác",
+        "desc": "Kiểm soát dung sai độ dày lớp mạ theo bản vẽ.",
+        "note": "Dung sai tính theo micron"
       },
       "stability": {
-        "title": "ỔN ĐỊNH",
-        "desc": "[Thông tin] Đảm bảo đồng đều chất lượng giữa các lô hàng sản xuất, giảm tỷ lệ lỗi cơ tính.",
-        "note": "ĐỘ ĐỒNG ĐỀU LÔ HÀNG: TIÊU CHUẨN 99.8%"
+        "title": "Ổn định",
+        "desc": "Giữ chất lượng đồng đều giữa các lô.",
+        "note": "Chất lượng đồng đều giữa các lô"
       },
       "partnership": {
-        "title": "ĐỒNG HÀNH",
-        "desc": "[Thông tin] Phối hợp xử lý bài toán kỹ thuật bề mặt cùng khách hàng công nghiệp trong chuỗi cung ứng.",
-        "note": "HỢP TÁC: ĐỐI TÁC CHIẾN LƯỢC CHUỖI CUNG ỨNG"
+        "title": "Phối hợp",
+        "desc": "Cùng khách hàng xử lý các yêu cầu kỹ thuật về bề mặt.",
+        "note": "Làm việc với bộ phận kỹ thuật của khách hàng"
       }
     },
     "FactoryOverview": {
-      "heading": "HỆ THỐNG NHÀ MÁY",
-      "subtitle": "Khám phá không gian sản xuất và hệ thống vận hành của HANIN.",
-      "mainImageAlt": "Dây chuyền mạ điện tự động công nghiệp với các bể hóa chất và cầu trục robot (ảnh minh họa, sẽ thay bằng ảnh thực tế do Bên A cung cấp)",
-      "zone1Tag": "PHÂN KHU 01: DÂY CHUYỀN MẠ",
-      "zone1Title": "Dây chuyền mạ tự động công nghiệp",
-      "zone1Desc": "Hệ thống bể mạ kiềm, axit và thụ động hóa bề mặt khép kín",
-      "zone2ImageAlt": "Kỹ sư kiểm soát chất lượng vận hành trạm điều khiển PLC cạnh bể mạ (ảnh minh họa, sẽ thay bằng ảnh thực tế do Bên A cung cấp)",
-      "zone2Tag": "PHÂN KHU 02: PHÒNG LAB & KCS",
-      "zone2Title": "Phòng giám sát & Điều phối",
-      "zone3ImageAlt": "Cận cảnh các chi tiết cơ khí đã mạ hoàn thiện (kẽm, niken, crôm) trên bàn kiểm tra kỹ thuật (ảnh minh họa, sẽ thay bằng ảnh thực tế do Bên A cung cấp)",
-      "zone3Tag": "PHÂN KHU 03: ĐỒ GÁ & KIỂM ĐỊNH",
-      "zone3Title": "Bàn kiểm nghiệm đo lường dưỡng đo",
-      "zone4ImageAlt": "Cẩu trục công nghiệp tự động di chuyển linh kiện kim loại dọc theo dây chuyền mạ treo (ảnh minh họa, sẽ thay bằng ảnh thực tế do Bên A cung cấp)",
-      "zone4Tag": "PHÂN KHU 04: CẨU TRỤC TỰ ĐỘNG",
-      "zone4Title": "Khu vực cẩu trục gắp phôi tự động",
-      "cta": "KHÁM PHÁ NĂNG LỰC SẢN XUẤT"
+      "heading": "Nhà máy",
+      "subtitle": "Khu vực sản xuất và kiểm tra của HANIN.",
+      "mainImageAlt": "Dây chuyền mạ điện với các bể hóa chất và cầu trục",
+      "zone1Tag": "Khu 1 · Dây chuyền mạ",
+      "zone1Title": "Dây chuyền mạ công nghiệp",
+      "zone1Desc": "Các bể mạ kiềm, axit và thụ động hóa bề mặt",
+      "zone2ImageAlt": "Nhân viên kiểm soát chất lượng thao tác tại trạm điều khiển PLC cạnh bể mạ",
+      "zone2Tag": "Khu 2 · Phân tích và kiểm soát chất lượng",
+      "zone2Title": "Phòng phân tích và điều phối",
+      "zone3ImageAlt": "Chi tiết cơ khí đã mạ (kẽm, niken, crôm) trên bàn kiểm tra",
+      "zone3Tag": "Khu 3 · Đồ gá và kiểm tra",
+      "zone3Title": "Bàn kiểm tra kích thước",
+      "zone4ImageAlt": "Cầu trục di chuyển chi tiết dọc dây chuyền mạ treo",
+      "zone4Tag": "Khu 4 · Cầu trục",
+      "zone4Title": "Khu vực cầu trục",
+      "cta": "XEM NĂNG LỰC SẢN XUẤT"
     },
     "ProfileDownloadCta": {
-      "heading": "KHÁM PHÁ HỒ SƠ NĂNG LỰC HANIN",
-      "subtitle": "Tìm hiểu sâu hơn về sản phẩm, nhà máy, thiết bị, năng lực sản xuất và hệ thống chất lượng của HANIN qua bộ tài liệu chi tiết.",
-      "cta": "TẢI HỒ SƠ NĂNG LỰC (PDF) →",
+      "heading": "Hồ sơ năng lực HANIN",
+      "subtitle": "Giới thiệu nhà máy, thiết bị, năng lực sản xuất và hệ thống chất lượng của HANIN.",
+      "cta": "TẢI HỒ SƠ NĂNG LỰC (PDF)",
       "cardCompanyName": "HANIN VIỆT NAM",
-      "cardCatalogLabel": "CATALOG DOANH NGHIỆP",
-      "cardTitle": "HỒ SƠ NĂNG LỰC HANIN",
-      "cardVersion": "PHIÊN BẢN 2026 // TÀI LIỆU KỸ THUẬT",
-      "cardTagline": "THÔNG SỐ KỸ THUẬT & CÁC DỰ ÁN TIÊU BIỂU",
-      "cardFormat": "ĐỊNH DẠNG PDF • 14.8 MB",
-      "cardViewLabel": "XEM TÀI LIỆU"
+      "cardCatalogLabel": "Hồ sơ doanh nghiệp",
+      "cardTitle": "Hồ sơ năng lực HANIN",
+      "cardVersion": "Phiên bản 2026",
+      "cardTagline": "Thông số kỹ thuật và dự án tiêu biểu",
+      "cardFormat": "PDF",
+      "cardViewLabel": "Xem tài liệu"
     },
     "QualityStandardsPreview": {
-      "heading": "CHẤT LƯỢNG & TIÊU CHUẨN",
-      "subtitle": "[Thông tin chính thức về hệ thống quản lý chất lượng và chứng nhận của HANIN]",
+      "heading": "Chất lượng và tiêu chuẩn",
+      "subtitle": "Hệ thống quản lý chất lượng và chứng nhận của HANIN.",
       "cta": "XEM CHỨNG NHẬN",
       "certificateImageAlt": "Giấy chứng nhận ISO 9001:2015 của HANIN Technology Việt Nam do DQS GmbH cấp",
-      "certificateTag": "[ GIẤY CHỨNG NHẬN ]",
+      "certificateTag": "Giấy chứng nhận",
       "certificateTitle": "ISO 9001:2015 — Hệ thống quản lý chất lượng",
       "certificateIssuer": "Tổ chức chứng nhận: DQS GmbH (Đức)",
+      "certificateHolderLabel": "Đơn vị được chứng nhận",
+      "certificateHolderValue": "HANIN Technology Viet Nam Joint-Stock Company",
+      "certificateAccreditationLabel": "Công nhận",
+      "certificateAccreditationValue": "IAF · DAkkS · IQNet",
       "certificateScope": "Phạm vi: sản xuất, gia công, ép phun, in, sơn và xử lý bề mặt sản phẩm nhựa.",
       "iso9001": {
-        "tag": "[ CHỨNG NHẬN ISO ]",
-        "title": "Hệ thống Quản lý Chất lượng Sản xuất",
-        "desc": "Tiêu chuẩn ISO 9001:2015: quản lý kiểm soát quy trình gia công cơ khí và xi mạ chính xác.",
-        "standard": "TIÊU CHUẨN: ISO 9001:2015",
-        "status": "ĐÃ XÁC NHẬN"
+        "tag": "Chứng nhận ISO",
+        "title": "Hệ thống quản lý chất lượng",
+        "desc": "ISO 9001:2015: kiểm soát quy trình gia công cơ khí và mạ.",
+        "standard": "Tiêu chuẩn: ISO 9001:2015",
+        "status": "Đã xác nhận"
       },
       "iso14001": {
-        "tag": "[ CHỨNG NHẬN ISO ]",
-        "title": "Hệ thống Quản lý Môi trường Công nghiệp",
-        "desc": "Tiêu chuẩn ISO 14001:2015: kiểm soát nước thải tuần hoàn và khí thải hóa chất công nghiệp.",
-        "standard": "TIÊU CHUẨN: ISO 14001:2015",
-        "status": "ĐÃ XÁC NHẬN"
+        "tag": "Chứng nhận ISO",
+        "title": "Hệ thống quản lý môi trường",
+        "desc": "ISO 14001:2015: kiểm soát nước thải và khí thải trong sản xuất.",
+        "standard": "Tiêu chuẩn: ISO 14001:2015",
+        "status": "Đã xác nhận"
       },
       "rohs": {
-        "tag": "[ TIÊU CHUẨN QUỐC TẾ ]",
-        "title": "Chứng nhận Quy trình & Kiểm soát Bề mặt",
-        "desc": "[Compliance Placeholder] Đáp ứng chỉ thị RoHS và thử nghiệm muối ASTM.",
-        "standard": "TIÊU CHUẨN: TUÂN THỦ RoHS",
-        "status": "ĐẠT CHUẨN"
+        "tag": "Tiêu chuẩn",
+        "title": "Quy trình và kiểm soát bề mặt",
+        "desc": "Đáp ứng chỉ thị RoHS; thử nghiệm phun muối theo ASTM.",
+        "standard": "Tiêu chuẩn: RoHS",
+        "status": "Đạt"
       }
     },
     "CapabilitySnapshot": {
       "equipment": {
-        "label": "THIẾT BỊ MÁY MÓC",
-        "desc": "Thiết bị hiện đại",
-        "note": "QUY CHUẨN: ĐẠT KIỂM ĐỊNH",
+        "label": "Thiết bị máy móc",
+        "desc": "Thiết bị",
+        "note": "Sản xuất và kiểm tra",
         "end": "50",
         "suffix": "+"
       },
       "lines": {
-        "label": "DÂY CHUYỀN SẢN XUẤT",
-        "desc": "Dây chuyền vận hành",
-        "note": "HỆ: QUAY & TREO TỰ ĐỘNG",
+        "label": "Dây chuyền sản xuất",
+        "desc": "Dây chuyền",
+        "note": "Mạ quay và mạ treo",
         "end": "6",
         "suffix": "+"
       },
       "zones": {
-        "label": "PHÂN KHU NHÀ XƯỞNG",
-        "desc": "Khu vực sản xuất",
-        "note": "TIÊU CHUẨN: PHÒNG SẠCH KHÉP KÍN",
+        "label": "Khu vực nhà xưởng",
+        "desc": "Khu sản xuất",
+        "note": "Phân theo công đoạn",
         "end": "4",
         "suffix": ""
       },
       "capacity": {
-        "label": "CÔNG SUẤT HÀNG THÁNG",
+        "label": "Sản lượng hàng tháng",
         "desc": "Tấn sản phẩm / tháng",
-        "note": "CÔNG SUẤT: TRỌNG LƯỢNG MÃ HÓA",
+        "note": "Theo kế hoạch đơn hàng",
         "end": "1200",
         "suffix": "+"
       }
     },
     "FeaturedClients": {
       "eyebrow": "KHÁCH HÀNG TIÊU BIỂU",
-      "title": "Được nhiều doanh nghiệp sản xuất tin tưởng",
-      "description": "Hơn 100 khách hàng lớn nhỏ đã lựa chọn HANIN cho nhu cầu gia công mạ. Dưới đây là một số khách hàng tiêu biểu trong ngành ngũ kim, thiết bị vệ sinh và sản xuất công nghiệp."
+      "title": "Khách hàng trong ngành sản xuất",
+      "description": "Hơn 100 khách hàng lớn nhỏ gửi gia công mạ tại HANIN. Một số khách hàng tiêu biểu thuộc ngành ngũ kim, thiết bị vệ sinh và sản xuất công nghiệp."
     }
   }
 }

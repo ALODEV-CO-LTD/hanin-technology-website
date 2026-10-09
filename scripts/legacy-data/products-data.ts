@@ -26,7 +26,7 @@ export interface Product {
   /** Ảnh đại diện (giữ nguyên link nguồn) */
   image: string;
   imageAlt: string;
-  /** Nhãn góc trên ảnh, ví dụ "DỰ ÁN 01 // CƠ KHÍ CHÍNH XÁC" */
+  /** Nhãn góc trên ảnh, ví dụ "DỰ ÁN 01 · CƠ KHÍ CHÍNH XÁC" */
   imageBadge: string;
   /** Các chip thông số kỹ thuật hiển thị trên card */
   specChips: ProductSpecChip[];

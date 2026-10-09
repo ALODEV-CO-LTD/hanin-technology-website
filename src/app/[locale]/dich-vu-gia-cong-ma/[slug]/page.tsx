@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { getLocale, getTranslations } from "next-intl/server";
+import { getLocale, getMessages, getTranslations } from "next-intl/server";
+import { serviceNs } from "@/lib/service-ns";
 import PageBreadcrumb from "@/components/layout/PageBreadcrumb";
 import DetailHero from "@/components/dich-vu/DetailHero";
 import DetailOverview from "@/components/dich-vu/DetailOverview";
@@ -38,6 +39,7 @@ export default async function DichVuChiTietPage({
   const tNav = await getTranslations("Nav");
   const service = getServiceBySlug(slug, await getLocale());
   if (!service) notFound();
+  const messages = await getMessages();
   // Phần đầu trang (tiêu đề, mã, badge, mô tả, ảnh) và breadcrumb lấy từ CMS.
   // Các mục còn lại (tổng quan/quy trình/năng lực/ứng dụng/QA/thư viện ảnh) là nội dung mẫu dùng chung
   // từ messages, chỉnh sửa qua màn hình "Nội dung trang" của CMS.
@@ -53,13 +55,13 @@ export default async function DichVuChiTietPage({
         ]}
       />
       <DetailHero service={service} />
-      <Reveal><DetailOverview /></Reveal>
-      <Reveal><DetailProcess /></Reveal>
+      <Reveal><DetailOverview slug={service.slug} /></Reveal>
+      <Reveal><DetailProcess slug={service.slug} /></Reveal>
       <Reveal direction="right"><DetailCapability service={service} /></Reveal>
-      <Reveal><DetailApplications /></Reveal>
-      <Reveal><DetailQaTable /></Reveal>
+      <Reveal><DetailApplications slug={service.slug} /></Reveal>
+      <Reveal><DetailQaTable slug={service.slug} /></Reveal>
       <Reveal><DetailGallery service={service} /></Reveal>
-      <Reveal><RfqFormDetail hotline={getPhones().general.map((p) => p.number).join(" / ")} /></Reveal>
+      <Reveal><RfqFormDetail ns={serviceNs(messages, service.slug, "RfqFormDetail")} hotline={getPhones().general.map((p) => p.number).join(" / ")} /></Reveal>
       <Reveal><RelatedServices currentSlug={service.slug} /></Reveal>
     </div>
   );

@@ -9,10 +9,12 @@
     "lint": "eslint",
     "db:seed": "node --disable-warning=ExperimentalWarning --import tsx scripts/seed.ts",
     "db:factory-images": "node --disable-warning=ExperimentalWarning --import tsx scripts/apply-factory-images.ts",
+    "db:sync-media": "node --disable-warning=ExperimentalWarning --import tsx scripts/sync-media-library.ts",
     "db:backup": "node --disable-warning=ExperimentalWarning --import tsx scripts/backup.ts",
     "db:create-admin": "node --disable-warning=ExperimentalWarning --import tsx scripts/create-admin.ts",
     "images:scan": "node --import tsx scripts/scan-images.ts",
-    "prebuild": "npm run images:scan"
+    "prebuild": "npm run images:scan",
+    "db:client-logos": "node --disable-warning=ExperimentalWarning --import tsx scripts/apply-client-logos.ts"
   },
   "dependencies": {
     "lucide-react": "^1.51.0",
@@ -28,6 +30,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.3.7",
+    "subset-font": "^2.9.0",
     "tailwindcss": "^4",
     "tsx": "^4.23.15",
     "typescript": "^5"

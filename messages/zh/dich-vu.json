@@ -2,464 +2,1736 @@
   "DichVu": {
     "services": {
       "tienXuLy": {
-        "title": "表面预处理",
-        "description": "多槽超声波脱脂、定量控制浓度的酸洗除锈，以及微观表面活化处理，最大化镀层的分子结合力。",
+        "title": "表面前处理",
+        "description": "多槽超声波除油、浓度受控的酸洗除锈以及表面活化，使镀层在基材上结合牢固。",
         "applicationLabel": "典型应用：",
-        "applicationText": "热/冷冲压金属坯料，精密 CNC 车铣加工后的零件。",
-        "statLabel": "100% 无痕脱脂",
-        "imageAlt": "金属表面预处理与脱脂作业区（示意图）"
+        "applicationText": "热锻、冷冲压坯件，以及经 CNC 铣削、车削加工后的零件。",
+        "statLabel": "以水膜连续性试验检验",
+        "imageAlt": "金属表面前处理与除油区域"
       },
       "hardChrome": {
-        "badge": "代表工艺：耐磨防护",
+        "badge": "耐磨",
         "title": "工业硬铬电镀",
-        "description": "形成 65-72 HRC 硬质镀层，摩擦系数极低，抗机械划伤，并在严苛工作温度下保持稳定。",
+        "description": "镀层硬度 65-72 HRC，摩擦系数低，耐机械磨损，在较高工作温度下性能稳定。",
         "applicationLabel": "典型应用：",
-        "applicationText": "液压缸活塞杆、工业轧钢辊轮、精密冲压模具。",
-        "statLabel": "硬度：65-72 HRC | 厚度可达 300µm",
-        "imageAlt": "经工业硬铬电镀处理的轴类及机械零件（示意图）"
+        "applicationText": "液压缸活塞杆、轧辊、精密冲压模具。",
+        "statLabel": "硬度：65 - 72 HRC | 厚度最高 300µm",
+        "imageAlt": "工业硬铬电镀的轴类及机械零件"
       },
       "electrolessNickel": {
-        "title": "化学镀镍（无电镀镍）",
-        "description": "自催化化学还原反应，可在尖角、深螺纹及孔腔轮廓上实现 100% 均匀厚度，并具有优异的耐化学腐蚀性。",
+        "title": "化学镀镍",
+        "description": "利用自催化化学还原反应，在尖角、深螺纹和孔内获得厚度均匀的镀层，耐化学腐蚀性良好。",
         "applicationLabel": "典型应用：",
-        "applicationText": "工业调压阀、航空航天零部件、半导体设备。",
-        "statLabel": "含磷量：中磷 (6-9%) 及高磷 (>10%)",
-        "imageAlt": "经化学镀镍（ENP）处理的阀门及机械零件（示意图）"
+        "applicationText": "工业阀门、机械零件、半导体设备。",
+        "statLabel": "磷含量：中磷（6-9%）与高磷（>10%）",
+        "imageAlt": "化学镀镍（ENP）的阀门及机械零件"
       },
       "kemNiken": {
-        "title": "锌及锌镍合金电镀",
-        "description": "Zn-Ni 牺牲阳极保护技术，耐盐雾可达 1,500 小时无红锈，并可承受汽车发动机舱的高温环境。",
+        "title": "镀锌及锌镍合金",
+        "description": "Zn-Ni 镀层以牺牲阳极方式保护钢基材，中性盐雾试验超过 1,200 小时才出现红锈，可耐发动机舱温度。",
         "applicationLabel": "典型应用：",
-        "applicationText": "高强度螺栓螺母、汽摩底盘冲压件、刹车零部件。",
+        "applicationText": "高强度螺栓、螺母，汽车及摩托车底盘冲压件，制动系统零件。",
         "statLabel": "耐盐雾：>1200 小时（ASTM B117）",
-        "imageAlt": "经锌镍合金电镀处理的螺栓及汽车底盘冲压件（示意图）"
+        "imageAlt": "镀锌镍合金的螺栓及汽车底盘冲压件"
       },
       "sonMaKetHop": {
-        "title": "喷涂与电镀复合产线",
-        "description": "集成工业烘干系统及锌/磷酸盐底层处理，增强静电喷涂膜层的附着力，耐受海洋环境侵蚀。",
+        "title": "涂装与电镀组合",
+        "description": "先镀锌或磷化作底层，再烘干并进行静电喷涂，提高涂膜附着力，适用于潮湿及近海环境。",
         "applicationLabel": "典型应用：",
-        "applicationText": "电子控制柜外壳、机械设备金属框架、通信设备。",
+        "applicationText": "电控柜外壳、机械设备框架、通信设备。",
         "statLabel": "附着力：0 级（ISO 2409）",
-        "imageAlt": "工程师检查喷涂与电镀复合产线（示意图）"
+        "imageAlt": "工程师检查涂装与电镀生产线"
       },
       "xuLyNhom": {
-        "title": "铝件处理及其他金属电镀",
-        "description": "形成坚固耐用的人工氧化铝 Al₂O₃ 膜层，硬质阳极氧化处理，铜（Cu）、锡（Sn）电镀，以及三价铬钝化表面处理。",
+        "title": "铝材处理及其他金属电镀",
+        "description": "阳极氧化生成 Al₂O₃ 氧化膜，另有硬质阳极氧化、镀铜（Cu）、镀锡（Sn）以及三价铬钝化。",
         "applicationLabel": "典型应用：",
-        "applicationText": "铝制散热器组件、光学零件、汇流排导电条。",
-        "statLabel": "绝缘性能：>1000V DC | 硬质膜层 50µm",
-        "imageAlt": "经阳极氧化及其他金属电镀处理的铝制零件（示意图）"
+        "applicationText": "铝散热件、光学零件、导电汇流排（busbar）。",
+        "statLabel": "绝缘：>1000V DC | 硬质膜 50µm",
+        "imageAlt": "阳极氧化的铝件及其他金属镀层零件"
       }
     },
     "ServiceCategories": {
-      "heading": "核心电镀技术",
-      "badge": "项符合汽车及航空标准的技术类别",
+      "heading": "主要电镀工艺",
+      "badge": "电镀与表面处理服务类别",
       "codeLabel": "编号",
-      "detailLink": "查看详情"
+      "detailLink": "详情"
     },
     "RelatedServices": {
-      "heading": "配套专业电镀加工服务",
-      "viewAll": "查看全部服务目录"
+      "heading": "其他电镀与表面处理服务",
+      "viewAll": "查看全部服务"
     },
     "CapacityOverview": {
-      "heading": "专业电镀加工系统",
-      "subtitle": "两座生产车间集成闭环循环废水处理系统，实时监控电镀槽浓度并进行光学分析。",
+      "heading": "电镀设备与系统",
+      "subtitle": "广明工业区工厂配有与电镀线配套的废水处理系统，生产全过程对镀槽浓度和温度进行监控。",
       "scada": {
-        "title": "SCADA 自动化产线",
-        "desc": "通过同步 PLC 软件精确控制吊车行程、电流密度（A/dm²）及浸槽时间，消除人为操作误差。",
-        "statLeft": "产量：450 吨/月",
-        "statRight": "0% 气泡缺陷率"
+        "title": "自动电镀线",
+        "desc": "行车行程、电流密度和浸槽时间由 PLC 控制，减少人工操作偏差。",
+        "statLeft": "按批次运行",
+        "statRight": "按批次追溯"
       },
       "complex": {
-        "title": "复杂零件专用产线",
-        "desc": "为微精密机械零件、内螺纹中空件及需要遮蔽配合公差区域的表面定制专用工装夹具。",
-        "statLeft": "复杂度：深槽 <0.5mm",
-        "statRight": "专用悬挂夹具"
+        "title": "复杂零件挂具",
+        "desc": "针对小型零件、内螺纹、深腔或需遮蔽配合部位的零件，单独制作挂具。",
+        "statLeft": "深槽小于 0.5 mm",
+        "statRight": "按零件定制挂具"
       },
       "wastewater": {
-        "title": "废水与环境处理",
-        "desc": "循环过滤及化学中和系统符合 QCVN 40:2011/BTNMT 标准，保障全球出口供应链的可持续性。",
-        "statLeft": "过滤能力：300 立方米/天",
-        "statRight": "QCVN A 级标准"
+        "title": "废水处理",
+        "desc": "废水经过滤、循环和中和，排放前达到 QCVN 40:2011/BTNMT 要求。",
+        "statLeft": "符合 QCVN 40:2011/BTNMT",
+        "statRight": "清洗水循环使用"
       }
     },
     "CategoryHero": {
       "title": "工业电镀加工与表面处理服务",
-      "subtitle": "金属电镀加工、SCADA 自动电镀及高技术表面处理，满足汽车、电气设备及精密机械行业的严苛公差要求。",
+      "subtitle": "为汽车、电气设备和精密机械零件提供电镀、化学镀及表面处理。镀层厚度和检测标准按客户图纸执行。",
       "thickness": {
         "label": "厚度公差",
-        "note": "微观电流控制"
+        "note": "按图纸要求"
       },
       "saltSpray": {
-        "label": "盐雾测试",
+        "label": "盐雾试验",
         "note": "ASTM B117 / ISO 9227"
       },
       "qms": {
-        "label": "质量管理体系",
-        "note": "ISO 9001:2015 认证"
+        "label": "质量控制",
+        "note": "按批次执行"
       },
-      "ctaPrimary": "申请技术报价（RFQ）",
-      "ctaSecondary": "查看产线生产能力",
-      "imageAlt": "使用荧光绿色化学溶液的自动电镀产线，吊车正吊运机械零件（示意图）",
-      "lineTag": "04 号自动化产线"
+      "ctaPrimary": "索取报价",
+      "ctaSecondary": "查看生产能力",
+      "imageAlt": "自动电镀线，行车正在吊运机械零件",
+      "lineTag": "自动电镀线"
     },
     "DetailApplications": {
-      "heading": "HANIN ENP 电镀加工机械产品系列",
-      "subtitle": "符合汽车及船舶行业标准",
+      "heading": "HANIN 化学镀镍（ENP）机械零件",
+      "subtitle": "应用行业",
       "oilGas": {
-        "tag": "石油天然气与液压行业",
-        "title": "高压阀体及阀球",
-        "desc": "高磷 ENP（>10.5% P）耐有机酸、H2S 气体及盐分侵蚀；高硬度可防止 5,000 PSI 压力下开合造成的表面划伤。",
+        "tag": "石油天然气与液压",
+        "title": "高压阀体与球阀",
+        "desc": "高磷 ENP（>10.5% P）耐有机酸、H2S 和盐水，适用于 5,000 PSI 压力。",
         "thickness": "镀层厚度：25-50 µm"
       },
       "mold": {
-        "tag": "精密模具与传动部件",
+        "tag": "模具与精密传动",
         "title": "滚珠丝杠与塑料模具",
-        "desc": "均匀分布的镀层使塑料模具脱模顺畅，丝杠滚道镀后无需重新抛光，保持原有加工公差。",
+        "desc": "镀层均匀，注塑模易脱模；丝杠滚道镀后通常无需重新研磨。",
         "thickness": "镀层厚度：10-15 µm"
       },
       "electronics": {
-        "tag": "高频电子与通信设备",
-        "title": "散热盒与波导腔体",
-        "desc": "在 Al6061 铝合金基材上电镀防氧化层，保持导热性能及可焊性，适用于户外 5G 收发基站。",
+        "tag": "电子与通信",
+        "title": "散热壳体与波导腔",
+        "desc": "在 Al6061 铝合金上施镀，防氧化，保持导热性和可焊性。",
         "thickness": "镀层厚度：5-8 µm"
       },
       "automotive": {
-        "tag": "汽车工业（AUTOMOTIVE）",
-        "title": "刹车活塞与关节轴",
-        "desc": "符合 IATF 16949 标准，NSS 盐雾测试超过 1,000 小时无红锈。低滑动摩擦系数保持刹车组件在整个车辆寿命周期内稳定运行。",
+        "tag": "汽车",
+        "title": "制动活塞与连接轴",
+        "desc": "滑动摩擦系数低，用于制动总成零件。盐雾试验按客户要求进行。",
         "thickness": "镀层厚度：20-30 µm"
       }
     },
     "DetailCapability": {
-      "imageAlt": "HANIN 工程师检查监控自动电镀产线 SCADA 控制屏幕（示意图）",
-      "lineCapacityLabel": "产线生产能力",
-      "lineCapacityValue": "120,000 件 / 月",
-      "tankSizeLabel": "最大槽体尺寸",
-      "heading": "电镀槽技术与浓度梯度管理",
-      "subtitle": "耐化学腐蚀的聚丙烯电镀槽，配备 SUS304 不锈钢加固，通过特氟龙及石英间接加热组件供热，避免化学品自分解。",
+      "imageAlt": "HANIN 工程师监控自动电镀线的 SCADA 控制屏幕",
+      "lineCapacityLabel": "生产线类型",
+      "lineCapacityValue": "挂镀与滚镀",
+      "tankSizeLabel": "最大镀槽尺寸",
+      "heading": "镀槽与溶液浓度控制",
+      "subtitle": "镀槽采用耐化学腐蚀的聚丙烯材质，外加 SUS304 不锈钢框架加强。溶液通过特氟龙和石英换热器间接加热，避免局部分解。",
       "dosing": {
-        "title": "自动化学补充加药（Auto Chemical Dosing）：",
-        "desc": "光度传感器持续检测游离镍离子含量并启动微量定量泵，将溶液比例稳定控制在 ±0.2 g/L 范围内。"
+        "title": "自动补加药液：",
+        "desc": "光学传感器检测游离镍离子，计量泵补加，浓度保持在 ±0.2 g/L。"
       },
       "crane": {
-        "title": "自动化吊运传输系统：",
-        "desc": "振动及旋转挂架系统在槽内持续运作，消除人工操作误差，并排除滞留在深螺纹孔、盲孔中的氢气气泡。"
+        "title": "自动行车传送：",
+        "desc": "挂具在槽内振动并旋转，使氢气泡从深螺纹孔和盲孔排出。"
       },
       "filtration": {
-        "title": "每小时 10 次循环过滤：",
-        "desc": "溶液持续通过 1 微米聚丙烯滤芯，消除悬浮金属屑及镀层麻点现象。"
+        "title": "每小时循环过滤 10 倍槽液体积：",
+        "desc": "溶液持续通过 1 微米聚丙烯滤芯，滤除悬浮杂质，减少镀层毛刺。"
       },
       "tankSizeValue": "1800 x 900 x 1200 mm"
     },
     "DetailGallery": {
-      "heading": "产线实景与加工完成件展示",
-      "subtitle": "HANIN 工厂 // 光明工业区 49G 地块",
+      "heading": "生产线与镀后零件",
+      "subtitle": "HANIN 工厂，广明工业区 49G 地块",
       "line": {
-        "alt": "自动化循环槽镍电镀产线（示意图）",
-        "tag": "自动电镀槽",
-        "title": "化学镀循环槽产线",
-        "desc": "18 槽封闭式加工系统，集成局部有毒气体吸附（Scrubber）及自动温度控制。"
+        "alt": "带循环槽的自动化镍镀线",
+        "tag": "自动镀槽",
+        "title": "循环式化学镀槽生产线",
+        "desc": "槽内气体经抽风送至洗涤塔处理，槽温自动控制。"
       },
       "surface": {
-        "alt": "镀镍后的精密齿轮及轴类零件（示意图）",
-        "tag": "加工完成件",
+        "alt": "镀镍后的精密齿轮与机械轴",
+        "tag": "镀后零件",
         "title": "接触面与表面光洁度",
-        "desc": "Ni-P 镀层保持螺纹棱边锐利，不产生机械切边毛刺堆积。"
+        "desc": "Ni-P 镀层保持螺纹牙尖锐度，切削边缘无毛边堆积。"
       },
       "prep": {
-        "alt": "电镀前机械坯料检验准备区（示意图）",
-        "tag": "预处理坯料准备",
-        "title": "坯料区与尺寸复核",
-        "desc": "使用玻璃珠对坯料进行清洁去毛刺，随后送入专用超声波脱脂槽组。"
+        "alt": "电镀前机械坯件的检查与准备区域",
+        "tag": "坯件准备",
+        "title": "坯件区与尺寸检查",
+        "desc": "坯件清洁、玻璃珠去毛刺后转入超声波除油槽。"
       }
     },
     "DetailHero": {
-      "title": "化学镀镍（无电镀镍）",
-      "titleEn": "（ELECTROLESS NICKEL PLATING, ENP）",
-      "subtitle": "Ni-P 自催化化学还原反应，可在所有复杂轮廓、内螺纹、盲孔及深腔——普通电镀无法触及的部位——形成均匀镀层。",
+      "title": "化学镀镍",
+      "titleEn": "（Electroless Nickel Plating，ENP）",
+      "subtitle": "Ni-P 自催化化学还原反应可在复杂外形、内螺纹、盲孔和深腔零件上形成均匀镀层，这些部位用普通电镀较难覆盖。",
       "phos": {
-        "label": "含磷量",
+        "label": "磷含量",
         "note": "中磷 / 高磷",
-        "value": "6-9% // >10.5%"
+        "value": "6–9% / 10.5% 以上"
       },
       "hardness": {
         "label": "热处理后硬度",
-        "note": "400°C 烘烤 1 小时",
+        "note": "400°C 保温 1 小时",
         "value": "65-68 HRC"
       },
       "saltSpray": {
         "label": "耐盐雾",
         "unit": "小时",
-        "note": "ASTM B117 中性盐雾",
+        "note": "ASTM B117，NSS",
         "value": "> 1,000"
       },
       "tolerance": {
         "label": "厚度公差",
-        "note": "校准 XRF 检测",
+        "note": "XRF 测量",
         "value": "±1.0 µm"
       },
-      "ctaPrimary": "申请技术报价（RFQ）",
-      "ctaSecondary": "下载规格表 PDF（AMS 2404）",
-      "verifyLabel": "100% 批次证书核验",
-      "imageAlt": "化学镀镍处理后的机械零件（示意图）",
-      "xrfLabel": "X 射线荧光光谱（XRF）：8.5 µm ± 0.4",
-      "roughnessLabel": "表面光洁度：Ra < 0.2 µm",
-      "coatingLabel": "镀层：高磷型（11.2% P）",
-      "imageCaption": "行星齿轮及分配阀经 ENP 电镀及氢脆消除烘烤处理后的实景。"
+      "ctaPrimary": "索取报价",
+      "ctaSecondary": "下载技术规格书（AMS 2404）",
+      "verifyLabel": "每批附检验证书",
+      "imageAlt": "化学镀镍后的机械零件",
+      "xrfLabel": "XRF 测量：8.5 µm ± 0.4",
+      "roughnessLabel": "表面粗糙度：Ra < 0.2 µm",
+      "coatingLabel": "镀层：高磷（11.2% P）",
+      "imageCaption": "行星齿轮与分配阀，已完成 ENP 镀层及除氢烘烤。"
     },
     "DetailOverview": {
-      "heading": "原理概述与应用范围",
-      "complianceLabel": "符合 ROHS 与 REACH 标准（无铅、无镉）",
+      "heading": "原理与应用范围",
+      "complianceLabel": "符合 RoHS 和 REACH（不含铅、镉）",
       "col1": {
-        "title": "反应机理本质",
-        "p1": "电镀受电流密度支配，因此边角处较厚、深槽处较薄。而化学镀镍（ENP）则依据",
+        "title": "反应机理",
+        "p1": "电镀受电流密度影响，边角镀层厚、深槽镀层薄。化学镀镍（ENP）则依靠",
         "p1Strong": "自催化沉积",
-        "p2": "原理运作。Ni-P 镍磷合金层在溶液接触的每一点均匀形成，构成非晶态（Amorphous）耐腐蚀结构。",
-        "formula": "[Ni²⁺ + 2e⁻ → Ni] // [H₂PO₂⁻ + H₂O → H₂PO₃⁻ + 2H⁺ + 2e⁻]"
+        "p2": "镍磷（Ni-P）镀层在所有接触溶液的表面均匀生成，呈非晶态，具有防腐蚀作用。",
+        "formula": "Ni²⁺ + 2e⁻ → Ni · H₂PO₂⁻ + H₂O → H₂PO₃⁻ + 2H⁺ + 2e⁻"
       },
       "col2": {
-        "title": "战略应用范围",
-        "intro": "适用于在高摩擦、化学腐蚀及严苛温度环境下运行的重型工业设备与精密机械：",
+        "title": "应用范围",
+        "intro": "适用于高摩擦、化学腐蚀或高温条件下的设备：",
         "item1Strong": "石油天然气与液化气：",
-        "item1": "高压球阀、耐 H2S/CO2 气体腐蚀管道。",
+        "item1": "高压球阀、H2S/CO2 气体管道。",
         "item2Strong": "精密模具：",
-        "item2": "光学塑料注塑模具，不产生附着缺陷。",
+        "item2": "光学塑料模具，减少粘模。",
         "item3Strong": "半导体与真空设备：",
-        "item3": "降低材料放气（outgassing）现象。"
+        "item3": "降低放气（outgassing）。"
       },
       "col3": {
-        "title": "基材金属种类",
-        "intro": "HANIN 的预处理工艺可在以下工业合金材质上实现稳定的 ENP 电镀：",
+        "title": "基材种类",
+        "intro": "前处理后，ENP 可在以下材料上施镀：",
         "substrates": {
           "alloySteel": "合金钢：SCM440、SKD11",
-          "carbonSteel": "碳钢：S45C、S50C、SS400",
-          "stainless": "奥氏体及马氏体不锈钢",
+          "carbonSteel": "碳素钢：S45C、S50C、SS400",
+          "stainless": "奥氏体与马氏体不锈钢",
           "aluminum": "铝合金：A6061、A7075（锌酸盐处理）",
           "brass": "黄铜与紫铜",
-          "ductileIron": "球墨铸铁（Ductile Iron）"
+          "ductileIron": "球墨铸铁"
         }
       }
     },
     "DetailProcess": {
-      "heading": "六级化学镀镍工艺流程",
-      "subtitle": "SCADA 自动化周期 // 每小时 10 次循环",
+      "heading": "化学镀镍六步工艺",
+      "subtitle": "每批次按各步骤参数监控",
       "stepLabel": "步骤",
       "s1": {
-        "title": "超声波脱脂",
-        "desc": "40kHz 多频化学脱脂及超声波清洗，彻底去除 CNC 加工冷却油及微观氧化膜。",
-        "note": "100% 无断水痕检验。"
+        "title": "超声波除油",
+        "desc": "化学除油配合 40 kHz 超声波，去除 CNC 冷却油和薄氧化膜。",
+        "note": "以水膜连续性试验（water-break free）检验。"
       },
       "s2": {
-        "title": "微观活化",
-        "desc": "使用缓蚀酸液进行轻度除锈及表面活化，露出金属原始晶体结构。",
-        "note": "时间：30-90 秒，视钢材牌号而定。"
+        "title": "表面活化",
+        "desc": "用含缓蚀剂的酸液轻度除锈并活化，露出金属晶体结构。",
+        "note": "时间：30 - 90 秒，视钢种而定。"
       },
       "s3": {
-        "title": "ENP 反应电镀",
-        "desc": "浸入配备 1µm 循环过滤的电镀槽。通过光谱定量泵自动控制温度 88-90°C，pH 值 4.6-4.8。",
-        "note": "成膜速率：15-20 µm/小时。"
+        "title": "化学镀镍",
+        "desc": "浸入 1 µm 循环过滤的镀槽，温度 88–90°C、pH 4.6–4.8 自动控制。",
+        "note": "沉积速率：15–20 µm/小时。"
       },
       "s4": {
-        "title": "DI 纯水逆流清洗",
-        "desc": "三级串联溢流清洗槽系统，使用超纯水（去离子水 < 5 µS/cm），消除残留化学品。",
+        "title": "去离子水清洗",
+        "desc": "三级溢流漂洗，使用去离子水（< 5 µS/cm）去除残留化学品。",
         "note": "排放水电导率：< 15 µS/cm。"
       },
       "s5": {
         "title": "镀后热处理",
-        "desc": "在电对流炉中进行热处理退火。消除氢脆现象（200°C x 4 小时）或进行 Ni₃P 结晶加热（400°C x 1 小时）以提高硬度。",
-        "note": "最高可硬化至 68 HRC。"
+        "desc": "对流电炉烘烤：除氢（200°C x 4h）或 Ni₃P 析出（400°C x 1h）以提高硬度。",
+        "note": "热处理后硬度约可达 68 HRC。"
       },
       "s6": {
-        "title": "质量检验与 VCI 包装",
-        "desc": "按 AQL 0.4 批次随机进行 XRF 厚度检测。使用专用 VCI 防锈膜包装，适用于全球出口。",
-        "note": "随货附带 CoA（检测分析证书）。"
+        "title": "检验与 VCI 包装",
+        "desc": "按批次 AQL 0.4 抽样，XRF 测厚。出口货物用 VCI 防锈膜包装。",
+        "note": "随货附分析证书（CoA）。"
       }
     },
     "DetailQaTable": {
-      "heading": "国际标准质量控制流程",
-      "subtitle": "100% 生产批次数据留存 5 年",
+      "heading": "ENP 镀层质量控制",
+      "subtitle": "每批次的检验数据均有记录保存",
       "colItem": "检验项目",
-      "colDevice": "专用检测设备",
+      "colDevice": "检测设备",
       "colStandard": "适用标准",
-      "colCriteria": "达标准则（Acceptance Criteria）",
-      "colFrequency": "检验频率",
+      "colCriteria": "合格标准",
+      "colFrequency": "检验频次",
       "thickness": {
-        "item": "镀层厚度（Thickness）",
-        "device": "X 射线荧光测厚仪（Fischer XRF）",
-        "criteria": "与设计图纸偏差 ±1.0 µm 以内",
+        "item": "镀层厚度",
+        "device": "X 射线荧光测厚仪（XRF）",
+        "criteria": "与图纸相比在 ±1.0 µm 以内",
         "frequency": "每批 5 件（AQL L-II）"
       },
       "microhardness": {
-        "item": "显微硬度（Microhardness）",
-        "device": "维氏显微硬度计（100gf 载荷）",
-        "criteria": "> 500 HV（原始）/ > 900 HV（烘烤后）",
-        "frequency": "每班次 1 个试片"
+        "item": "显微硬度",
+        "device": "维氏硬度计（载荷 100gf）",
+        "criteria": "> 500 HV（镀态）/ > 900 HV（热处理后）",
+        "frequency": "每班 1 个试样"
       },
       "saltSpray": {
-        "item": "耐盐雾腐蚀性能",
-        "device": "循环盐雾试验箱（NSS 5% NaCl）",
-        "criteria": "500-1,000 小时内无红锈",
-        "frequency": "每月定期抽样"
+        "item": "耐盐雾性能",
+        "device": "NSS 盐雾箱，5% NaCl 溶液",
+        "criteria": "500h - 1,000h 内无红锈",
+        "frequency": "每月抽取代表性试样"
       },
       "adhesion": {
-        "item": "镀层附着力（Adhesion）",
-        "device": "180° 弯芯试验及热冲击淬火测试",
-        "criteria": "镀层不剥落，无微观分层",
-        "frequency": "100% 试片检测"
+        "item": "镀层结合力",
+        "device": "180° 弯曲试验及热震试验",
+        "criteria": "镀层不脱落、不分层",
+        "frequency": "随批试样全部检验"
       },
       "porosity": {
-        "item": "微孔隙率（Porosity）",
-        "device": "费罗克西试验（Ferroxyl Test）",
-        "criteria": "不出现亚铁氰化物蓝斑",
-        "frequency": "每批试片检测"
+        "item": "孔隙率",
+        "device": "亚铁氰化钾（Ferroxyl）试验",
+        "criteria": "不出现蓝色斑点",
+        "frequency": "每批取试样检验"
       }
     },
     "ProcessFlow": {
-      "heading": "精密电镀加工流程图",
-      "subtitle": "每道工序均通过集成 IoT 的 pH、温度、电流传感器监控，并记录至数字化生产日志以实现可追溯性。",
+      "heading": "电镀加工工序",
+      "subtitle": "每道工序监控 pH、温度和电流，并记入生产记录，便于按批次追溯。",
       "s1": {
-        "title": "准备与预处理",
-        "desc": "机械清洁、多阶段超声波化学脱脂及定量酸洗除锈。",
-        "note": "表面张力检测"
+        "title": "准备与前处理",
+        "desc": "机械清理、多段超声波除油、酸洗除锈。",
+        "note": "检测表面张力"
       },
       "s2": {
-        "title": "电镀 / 化学镀",
-        "desc": "SCADA 自动整流供电，逐秒监控温度及反应时间。",
-        "note": "槽体公差：±0.5°C"
+        "title": "电镀或化学镀",
+        "desc": "整流电源、温度和反应时间持续监测。",
+        "note": "槽温公差：±0.5°C"
       },
       "s3": {
         "title": "多级清洗与钝化",
-        "desc": "多级逆流去离子（DI）纯水清洗，Cr(III) 钝化处理防止变色。",
-        "note": "氢脆消除处理"
+        "desc": "去离子水逆流漂洗，三价铬钝化防变色。",
+        "note": "除氢"
       },
       "s4": {
-        "title": "XRF 质量检验",
-        "desc": "使用 X 射线荧光进行无损厚度检测，附着力弯曲测试及盐雾喷雾测试。",
+        "title": "QA/QC 检验",
+        "desc": "XRF 测厚，弯曲试验检查结合力，盐雾试验。",
         "note": "按批次出具 CoA 报告"
       },
       "s5": {
         "title": "VCI 防锈包装",
-        "desc": "强制烘干，使用 VCI 气相防锈膜袋包装，适用于海运出口。",
-        "note": "符合欧盟/美国出口标准"
+        "desc": "烘干后用 VCI 防锈膜袋包装，适合海运。",
+        "note": "按出口包装要求"
       }
     },
     "QualityMetrology": {
-      "heading": "耐久性检测与 XRF 光谱实验室",
-      "subtitle": "每批成品均按国际标准核对，并颁发检测分析证书（Certificate of Analysis, CoA）。",
-      "tableTitle": "定额测试标准表",
-      "colMethod": "检测方法",
+      "heading": "质量检测设备",
+      "subtitle": "每批成品均对照适用标准检验，分析证书（CoA）按客户要求出具。",
+      "tableTitle": "检测标准表",
+      "colMethod": "方法",
       "colStandard": "适用标准",
-      "colCriteria": "达标指标",
-      "colFrequency": "检验频率",
-      "calibrationNote": "按 VILAS / ISO 17025 标准定期校准",
-      "warrantyLabel": "镀层质量保证",
+      "colCriteria": "合格指标",
+      "colFrequency": "检验频次",
+      "calibrationNote": "检测设备定期校准",
+      "warrantyLabel": "镀层质保按合同约定",
       "xrf": {
         "title": "X 射线荧光光谱仪（XRF）",
-        "desc": "以纳米级分辨率无损检测多层镀层（Ni/Cr、Zn/Ni）的精确厚度。"
+        "desc": "无损测量多层镀层（Ni/Cr、Zn/Ni）厚度。"
       },
       "saltSpray": {
-        "title": "盐雾试验箱（Salt Spray Chamber）",
-        "desc": "按 ASTM B117 及 ISO 9227 标准持续运行，评估在 5% NaCl 盐雾环境下的加速耐腐蚀性能。",
-        "method": "耐盐雾喷雾测试",
-        "criteria": "白锈 >240 小时、红锈 >1000 小时不出现",
-        "frequency": "每周定期",
+        "title": "盐雾试验箱",
+        "desc": "按 ASTM B117 和 ISO 9227 运行，5% NaCl 盐雾。",
+        "method": "耐盐雾",
+        "criteria": "240h 前无白锈，1000h 前无红锈",
+        "frequency": "每周",
         "standard": "ASTM B117 / ISO 9227"
       },
       "cmm": {
-        "title": "三坐标测量仪（CMM）及光学显微镜",
-        "desc": "进行金相切面分析，检测微观裂纹，测量维氏显微硬度及镀层附着力。"
+        "title": "三坐标测量机（CMM）与光学显微镜",
+        "desc": "金相截面分析、微裂纹检查、显微维氏硬度测量。"
       },
       "thickness": {
         "method": "镀层厚度",
-        "criteria": "公差 ±0.1 µm",
-        "frequency": "每批次（100%）",
+        "criteria": "符合图纸公差",
+        "frequency": "每批",
         "standard": "ASTM B568 / ISO 3497"
       },
       "adhesion": {
-        "method": "镀层附着力",
-        "criteria": "180° 弯曲不剥落",
-        "frequency": "按生产班次",
+        "method": "镀层结合力",
+        "criteria": "180° 弯曲后不脱落",
+        "frequency": "每班生产",
         "standard": "ASTM B571 / ISO 2819"
       },
       "dehydrogenation": {
-        "method": "除氢处理（烘烤）",
-        "criteria": "200°C ± 5°C，持续 4-24 小时",
-        "frequency": "100%（>1000 MPa 零件）",
+        "method": "除氢（烘烤）",
+        "criteria": "200°C ± 5°C，4h - 24h",
+        "frequency": "强度超过 1000 MPa 的全部零件",
         "standard": "ASTM B850 / ISO 9588"
       },
-      "revision": "REV-2025.A"
+      "revision": "2025 年更新"
     },
     "RfqFormCategory": {
-      "heading": "电镀服务报价申请（RFQ SPECIFICATION）",
-      "subtitle": "请提交技术参数、图纸及测试标准。HANIN 冶金工程师将在 24 小时内回复报价。",
-      "submitAlert": "您的 RFQ 报价申请已发送至 HANIN Technology 技术部！",
-      "companyLabel": "公司 / 企业名称 *",
-      "companyPlaceholder": "例：XX 精密机械有限公司...",
-      "contactLabel": "联系人及职位 *",
-      "contactPlaceholder": "姓名 - 物料工程师 / 采购部经理",
-      "phoneLabel": "技术联系电话 / Zalo *",
-      "emailLabel": "接收报价邮箱 *",
+      "heading": "电镀服务询价",
+      "subtitle": "请提交参数、图纸和检测标准，HANIN 将回复报价。",
+      "submitAlert": "报价申请已转交 HANIN 技术部门。",
+      "companyLabel": "企业名称 *",
+      "companyPlaceholder": "例：某精密机械有限公司...",
+      "contactLabel": "联系人及职务 *",
+      "contactPlaceholder": "姓名、职务（物料工程师、采购经理等）",
+      "phoneLabel": "电话 / Zalo *",
+      "emailLabel": "接收报价的邮箱 *",
+      "projectLabel": "产品或项目名称",
+      "projectPlaceholder": "例如：液压活塞杆、铜排",
       "platingTypeLabel": "所需电镀类型 *",
       "platingTypeOptions": {
-        "default": "-- 请选择表面处理方案 --",
-        "hardChrome": "工业硬铬电镀（Hard Chrome）",
+        "default": "-- 请选择电镀类型 --",
+        "hardChrome": "工业硬铬电镀",
         "enp": "化学镀镍（ENP）",
-        "zincNickel": "锌镍合金电镀（Zn-Ni Automotive）",
-        "anodizing": "铝阳极氧化技术处理",
-        "custom": "按图纸定制组合电镀方案"
+        "zincNickel": "锌镍合金电镀（Zn-Ni）",
+        "anodizing": "铝材阳极氧化",
+        "custom": "按图纸组合多层镀层"
       },
-      "volumeLabel": "预计产量 / 交货批次 *",
-      "volumePlaceholder": "例：5,000 件 / 月 或 按试产订单",
-      "requirementsLabel": "详细技术要求（镀层厚度、盐雾测试时长、基材材质）",
-      "requirementsPlaceholder": "请填写所需标准，例如：S45C 钢基材，镀镍厚度 15-20µm，盐雾测试 >480 小时无红锈...",
-      "attachTitle": "附上技术图纸",
-      "attachDesc": "支持格式：PDF、STEP、DWG、IGES（最大 25MB）",
+      "volumeLabel": "预计每批交货数量 *",
+      "volumePlaceholder": "例：5,000 件/月，或试样订单",
+      "requirementsLabel": "技术要求（镀层厚度、盐雾时间、基材）",
+      "requirementsPlaceholder": "填写期望的标准，例如：基材 S45C 钢，镍层厚度 15-20µm，盐雾 >480h 无红锈...",
+      "attachTitle": "上传技术图纸",
+      "attachDesc": "格式：PDF、STEP、DWG、IGES（最大 25MB）",
       "chooseFile": "选择文件",
-      "ndaNote": "对客户提交的所有图纸资料承诺按 NDA 协议保密。",
-      "submitButton": "确认提交 RFQ 报价申请",
-      "submitError": "请求发送失败，请检查填写信息或附件后重试。"
+      "ndaNote": "客户图纸按保密协议（NDA）保密。",
+      "submitButton": "提交报价申请",
+      "submitError": "提交失败。请检查填写的信息和附件后重试。"
     },
     "RfqFormDetail": {
-      "heading": "提交化学镀镍（ENP）技术参数与需求",
-      "subtitle": "HANIN 冶金工程师将在 24 个工作小时内回复报价及打样计划。",
-      "hotlineLabel": "技术服务热线：",
-      "submitAlert": "您的 ENP 电镀技术报价申请已发送至 HANIN 工程部门。",
-      "companyLabel": "公司 / 客户名称",
-      "companyPlaceholder": "例：Samtech VN 机械制造集团",
-      "contactLabel": "负责工程师 / 联系人",
-      "contactPlaceholder": "例：阮文 A 工程师",
-      "emailLabel": "技术 / 报价邮箱",
-      "substrateLabel": "基材材质（Substrate）",
+      "heading": "提交化学镀镍（ENP）参数及需求",
+      "subtitle": "HANIN 技术部门将回复报价及试镀安排。",
+      "hotlineLabel": "技术热线：",
+      "submitAlert": "ENP 镀镍报价申请已发送至 HANIN 技术部门。",
+      "companyLabel": "企业名称",
+      "companyPlaceholder": "例：某机械制造有限公司",
+      "contactLabel": "联系人",
+      "contactPlaceholder": "例：阮文 A，负责工程师",
+      "emailLabel": "接收报价的邮箱",
+      "substrateLabel": "基材",
       "substrateOptions": {
-        "carbonSteel": "碳钢（S45C、S50C、SS400）",
+        "carbonSteel": "碳素钢（S45C、S50C、SS400）",
         "alloySteel": "合金钢（SCM440、SKD11、SUJ2）",
         "stainless": "不锈钢（SUS304、SUS316、SUS420）",
         "aluminum": "铝合金（A6061-T6、A7075）",
-        "copper": "铜 / 黄铜合金",
-        "castIron": "铸铁 / FCD 球墨铸铁"
+        "copper": "铜 / 黄铜",
+        "castIron": "铸铁 / 球墨铸铁 FCD"
       },
-      "phosLabel": "所需含磷等级",
+      "phosLabel": "所需磷含量",
       "phosOptions": {
-        "high": "高磷（>10% P）：高耐腐蚀性",
-        "medium": "中磷（6-9% P）：耐磨性",
-        "low": "低磷（1-4% P）：提高基材硬度",
-        "consult": "由 HANIN 工程师根据应用场景提供建议"
+        "high": "高磷（>10% P）：耐腐蚀",
+        "medium": "中磷（6-9% P）：耐磨",
+        "low": "低磷（1-4% P）：提高基体硬度",
+        "consult": "请 HANIN 工程师根据用途推荐"
       },
       "thicknessLabel": "镀层厚度（µm）",
       "thicknessPlaceholder": "例：15 µm ± 1.5 µm",
-      "volumeLabel": "预计产量",
-      "volumePlaceholder": "例：2,500 件/月（或试产样品）",
-      "notesLabel": "技术备注（需遮蔽的螺纹位置、热处理要求、测试标准）",
-      "notesPlaceholder": "请注明遮蔽要求（封闭螺纹孔）、氢脆消除烘烤温度或 ASTM B117 盐雾检测证书要求...",
-      "attachTitle": "附上 2D / 3D 图纸",
-      "attachDesc": "支持 STEP、IGES、DWG、PDF（最大 50MB，NDA 保密）",
-      "chooseFile": "选择图纸文件...",
-      "ndaNote": "承诺按国际 NDA 协议对技术图纸数据保密。",
-      "submitButton": "提交 ENP 电镀服务报价申请（24 小时响应）",
-      "submitError": "请求发送失败，请检查填写信息或附件后重试。"
+      "volumeLabel": "预计数量",
+      "volumePlaceholder": "例：2,500 件/月（或试样）",
+      "notesLabel": "技术备注（需遮蔽的螺纹位置、热处理要求、检测标准）",
+      "notesPlaceholder": "请注明需遮蔽的位置（螺纹孔封堵）、除氢烘烤温度，或 ASTM B117 盐雾试验报告要求...",
+      "attachTitle": "上传 2D / 3D 图纸",
+      "attachDesc": "格式：STEP、IGES、DWG、PDF（最大 50MB）",
+      "chooseFile": "选择图纸文件",
+      "ndaNote": "图纸按保密协议（NDA）保密。",
+      "submitButton": "提交 ENP 报价申请",
+      "submitError": "提交失败。请检查填写的信息和附件后重试。"
     },
-    "breadcrumbCategory": "工业电镀加工与表面处理服务",
-    "breadcrumbDetailFallback": "服务详情"
+    "breadcrumbCategory": "电镀加工与表面处理服务",
+    "breadcrumbDetailFallback": "服务详情",
+    "ServiceDetail": {
+      "tien-xu-ly-be-mat": {
+        "DetailHero": {
+          "title": "表面预处理",
+          "titleEn": "（Surface Pre-treatment & Cleaning）",
+          "subtitle": "超声波脱脂、酸洗除锈和表面活化，使镀层牢固附着在金属基材上。",
+          "phos": {
+            "label": "表面洁净度",
+            "note": "水膜试验",
+            "value": "水膜不破"
+          },
+          "hardness": {
+            "label": "表面粗糙度",
+            "note": "粗糙度仪测量 Ra",
+            "value": "按图纸要求"
+          },
+          "saltSpray": {
+            "label": "主要工序",
+            "unit": "道工序",
+            "note": "脱脂、除锈、活化",
+            "value": "3"
+          },
+          "tolerance": {
+            "label": "镀后结合力",
+            "note": "随批试样检测",
+            "value": "满足要求"
+          },
+          "ctaPrimary": "索取报价",
+          "ctaSecondary": "下载技术规格书",
+          "verifyLabel": "每批检验结果均有记录",
+          "imageAlt": "表面预处理后的金属零件",
+          "xrfLabel": "水膜试验：水膜不破",
+          "roughnessLabel": "表面粗糙度：按图纸要求",
+          "coatingLabel": "后续工序：按要求电镀",
+          "imageCaption": "经脱脂、除锈和活化后，准备进入镀槽的金属零件。"
+        },
+        "DetailOverview": {
+          "heading": "原理与适用范围",
+          "complianceLabel": "所用化学品受控管理，废水按规定处理",
+          "col1": {
+            "title": "清洁机理",
+            "p1": "基材无油、无氧化物和锈蚀，镀层才能牢固附着。预处理通过三种作用清洁基材：",
+            "p1Strong": "乳化油污、溶解氧化物、活化表面",
+            "p2": "超声波空化气泡可剥离窄缝和螺纹孔内的油污；酸液溶解锈蚀和氧化膜。",
+            "formula": "Fe₂O₃ + 6HCl → 2FeCl₃ + 3H₂O · FeO + 2HCl → FeCl₂ + H₂O"
+          },
+          "col2": {
+            "title": "适用范围",
+            "intro": "适用于各类待镀零件，按来料表面状况选择工艺：",
+            "item1Strong": "机加工零件：",
+            "item1": "带切削油、冷却液和防锈油。",
+            "item2Strong": "带锈或氧化皮零件：",
+            "item2": "轻锈，以及热处理或焊接后的氧化膜。",
+            "item3Strong": "复杂形状零件：",
+            "item3": "螺纹、盲孔和窄缝需要彻底清洁。"
+          },
+          "col3": {
+            "title": "基材",
+            "intro": "按基材选择处理工艺：",
+            "substrates": {
+              "alloySteel": "合金钢：加缓蚀剂酸洗，控制氢脆风险",
+              "carbonSteel": "碳钢：脱脂、酸洗除锈、活化",
+              "stainless": "不锈钢：镀前单独活化",
+              "aluminum": "铝合金：弱碱脱脂，浸锌处理",
+              "brass": "黄铜和铜：脱脂，稀酸活化",
+              "ductileIron": "铸铁：需单独处理以去除表面石墨"
+            }
+          }
+        },
+        "DetailProcess": {
+          "heading": "表面预处理六步工艺",
+          "subtitle": "各工序条件按材料和零件状况确定",
+          "stepLabel": "步骤",
+          "s1": {
+            "title": "初步脱脂",
+            "desc": "浸入脱脂液，去除大部分切削油和防锈油。",
+            "note": "脱脂液按油污类型选择。"
+          },
+          "s2": {
+            "title": "超声波脱脂",
+            "desc": "超声波剥离螺纹、盲孔和窄缝中普通浸泡难以清除的残油。",
+            "note": "用于复杂形状零件。"
+          },
+          "s3": {
+            "title": "溢流水洗",
+            "desc": "多级清水清洗，冲走残留脱脂液。",
+            "note": "避免化学品带入下一槽。"
+          },
+          "s4": {
+            "title": "酸洗除锈",
+            "desc": "含缓蚀剂的酸液溶解锈蚀和氧化膜，减少对基材的腐蚀。",
+            "note": "控制浓度与处理时间。"
+          },
+          "s5": {
+            "title": "表面活化",
+            "desc": "入镀槽前浸稀酸，去除新生成的薄氧化膜。",
+            "note": "转入镀槽前不得干燥。"
+          },
+          "s6": {
+            "title": "水洗与检验",
+            "desc": "最后水洗，做水膜试验并目检外观，合格后进入电镀。",
+            "note": "不合格则从脱脂重做。"
+          }
+        },
+        "DetailCapability": {
+          "imageAlt": "HANIN 工厂电镀线上的表面处理槽",
+          "lineCapacityLabel": "生产线类型",
+          "lineCapacityValue": "挂镀和滚镀",
+          "tankSizeLabel": "最大槽体尺寸",
+          "heading": "处理槽与溶液控制",
+          "subtitle": "脱脂、酸洗和活化槽与镀槽位于同一生产线，零件转槽迅速，减少再次氧化。",
+          "dosing": {
+            "title": "溶液浓度控制：",
+            "desc": "定期滴定脱脂液和酸液浓度，浓度下降时及时补加。"
+          },
+          "crane": {
+            "title": "挂具与滚筒处理：",
+            "desc": "大件挂具处理，小件在滚筒内处理，使溶液充分接触。"
+          },
+          "filtration": {
+            "title": "过滤与换液：",
+            "desc": "溶液过滤除渣，失效后更换，避免油污和溶解金属带入后续工序。"
+          },
+          "tankSizeValue": "按图纸"
+        },
+        "DetailApplications": {
+          "heading": "HANIN 预处理的典型零件",
+          "subtitle": "应用行业",
+          "oilGas": {
+            "tag": "精密机械",
+            "title": "镀前车削、铣削零件",
+            "desc": "去除切削油和防锈油，使后续镀层附着均匀。",
+            "thickness": "后续镀层：锌、镍、铬"
+          },
+          "mold": {
+            "tag": "模具",
+            "title": "模具与工具钢零件",
+            "desc": "去除热加工后的锈蚀和氧化皮，保证表面洁净满足镀层要求。",
+            "thickness": "后续镀层：镍、硬铬"
+          },
+          "electronics": {
+            "tag": "电子电气",
+            "title": "外壳、支架和连接件",
+            "desc": "电镀前清除铜、黄铜、铝件上的冲压油和氧化膜。",
+            "thickness": "后续镀层：镍、锡、锌"
+          },
+          "automotive": {
+            "tag": "汽车摩托车",
+            "title": "螺栓、支架和冲压件",
+            "desc": "对滚筒处理的小件批量去除冲压油和轻锈。",
+            "thickness": "后续镀层：锌、锌镍"
+          }
+        },
+        "DetailQaTable": {
+          "heading": "预处理质量控制",
+          "subtitle": "每批检验结果均有记录",
+          "colItem": "检验项目",
+          "colDevice": "方法与设备",
+          "colStandard": "适用标准",
+          "colCriteria": "合格标准",
+          "colFrequency": "检验频次",
+          "thickness": {
+            "item": "表面外观",
+            "device": "灯光下目视检查",
+            "criteria": "无油、无锈、无残渣",
+            "frequency": "每批"
+          },
+          "microhardness": {
+            "item": "水膜试验",
+            "device": "浸水或淋水，观察水膜（参考 ASTM F22）",
+            "criteria": "水膜连续，不破裂",
+            "frequency": "每批抽样"
+          },
+          "saltSpray": {
+            "item": "表面粗糙度",
+            "device": "接触式粗糙度仪，参数 Ra（ISO 4287）",
+            "criteria": "按图纸要求",
+            "frequency": "客户要求时"
+          },
+          "adhesion": {
+            "item": "镀后结合力",
+            "device": "随批试样弯曲或热震试验（ASTM B571）",
+            "criteria": "镀层不起皮、不分层",
+            "frequency": "随批试样"
+          },
+          "porosity": {
+            "item": "清洗水质量",
+            "device": "电导率仪和 pH 计",
+            "criteria": "按工艺要求",
+            "frequency": "按控制计划"
+          }
+        },
+        "DetailGallery": {
+          "heading": "生产线与零件准备区",
+          "subtitle": "HANIN 工厂，Quang Minh 工业区 49G 地块",
+          "line": {
+            "alt": "HANIN 工厂电镀生产线槽体",
+            "tag": "电镀线",
+            "title": "处理槽与镀槽生产线",
+            "desc": "表面处理槽与镀槽布置在同一生产线上。"
+          },
+          "surface": {
+            "alt": "表面处理后的金属零件",
+            "tag": "处理后零件",
+            "title": "清洁后的表面",
+            "desc": "镀前表面应洁净、颜色均匀、无油迹。"
+          },
+          "prep": {
+            "alt": "镀前零件准备区",
+            "tag": "零件准备",
+            "title": "来料与准备区",
+            "desc": "零件入槽前先检查、分类并上挂具。"
+          }
+        },
+        "RfqFormDetail": {
+          "heading": "提交表面预处理需求",
+          "subtitle": "HANIN 技术部门将回复处理工艺和报价。",
+          "hotlineLabel": "技术热线：",
+          "submitAlert": "表面预处理报价请求已发送至 HANIN 技术部门。",
+          "companyLabel": "企业名称",
+          "companyPlaceholder": "例：ABC 机械有限公司",
+          "contactLabel": "联系人",
+          "contactPlaceholder": "例：阮文 A，负责工程师",
+          "emailLabel": "接收报价的邮箱",
+          "substrateLabel": "基材",
+          "substrateOptions": {
+            "carbonSteel": "碳钢（S45C、S50C、SS400）",
+            "alloySteel": "合金钢（SCM440、SKD11、SUJ2）",
+            "stainless": "不锈钢（SUS304、SUS316、SUS420）",
+            "aluminum": "铝合金（A6061-T6、A7075）",
+            "copper": "铜 / 黄铜",
+            "castIron": "铸铁 / 球墨铸铁 FCD"
+          },
+          "phosLabel": "来料表面状况",
+          "phosOptions": {
+            "high": "带切削油或防锈油",
+            "medium": "有锈蚀或氧化膜",
+            "low": "油污与锈蚀并存",
+            "consult": "需 HANIN 工程师按应用提供建议"
+          },
+          "thicknessLabel": "后续镀层",
+          "thicknessPlaceholder": "例：镀锌 8 µm，或镀镍",
+          "volumeLabel": "预计产量",
+          "volumePlaceholder": "例：2,500 件/月（或试样）",
+          "notesLabel": "技术备注（油污类型、需遮蔽位置、氢脆要求、检测标准）",
+          "notesPlaceholder": "请注明零件上的油污或锈蚀类型、需遮蔽位置、高强度钢的除氢要求等...",
+          "attachTitle": "上传 2D / 3D 图纸",
+          "attachDesc": "格式：STEP、IGES、DWG、PDF（最大 50MB）",
+          "chooseFile": "选择图纸文件",
+          "ndaNote": "图纸按 NDA 协议保密。",
+          "submitButton": "提交表面预处理需求",
+          "submitError": "请求发送失败。请检查信息或附件后重试。"
+        }
+      },
+      "ma-crom-cung-cong-nghiep": {
+        "DetailHero": {
+          "title": "工业硬铬电镀",
+          "titleEn": "（Hard Chrome Plating）",
+          "subtitle": "耐磨、低摩擦的硬铬镀层，用于活塞杆、液压缸杆及滑动零件。",
+          "phos": {
+            "label": "镀层厚度",
+            "note": "按耐磨要求或修复需要",
+            "value": "最高 300 µm"
+          },
+          "hardness": {
+            "label": "镀层硬度",
+            "note": "硬铬镀层",
+            "value": "65-72 HRC"
+          },
+          "saltSpray": {
+            "label": "镀后精加工",
+            "unit": "",
+            "note": "按图纸粗糙度要求",
+            "value": "磨削、抛光"
+          },
+          "tolerance": {
+            "label": "厚度公差",
+            "note": "按批次检测",
+            "value": "按图纸"
+          },
+          "ctaPrimary": "申请报价",
+          "ctaSecondary": "下载技术参数",
+          "verifyLabel": "每批附厚度检测记录",
+          "imageAlt": "硬铬电镀后的钢轴",
+          "xrfLabel": "按批次测量厚度",
+          "roughnessLabel": "粗糙度按图纸",
+          "coatingLabel": "镀层：硬铬",
+          "imageCaption": "硬铬电镀并磨削精加工后的钢轴。"
+        },
+        "DetailOverview": {
+          "heading": "原理与应用范围",
+          "complianceLabel": "废水、废气按环保规定处理",
+          "col1": {
+            "title": "反应机理",
+            "p1": "硬铬电镀是在铬酸与硫酸盐催化剂溶液中进行的电解沉积。工件作阴极，六价铬离子被还原为",
+            "p1Strong": "金属铬",
+            "p2": "镀层硬度高、结合牢固、耐磨且摩擦系数低。厚度取决于电流密度和电镀时间。",
+            "formula": "CrO₃ + H₂SO₄（催化剂）· Cr⁶⁺ + 6e⁻ → Cr"
+          },
+          "col2": {
+            "title": "应用范围",
+            "intro": "适用于滑动、耐磨或需要恢复尺寸的零件：",
+            "item1Strong": "液压与气动：",
+            "item1": "油缸活塞杆、活塞轴、缸筒。",
+            "item2Strong": "模具：",
+            "item2": "模芯、冲头、辊轴。",
+            "item3Strong": "零件修复：",
+            "item3": "磨损轴类加厚镀铬后磨削至尺寸。"
+          },
+          "col3": {
+            "title": "基材",
+            "intro": "硬铬最常用于钢基材：",
+            "substrates": {
+              "alloySteel": "合金钢：SCM440、SUJ2",
+              "carbonSteel": "碳钢：S45C、S50C",
+              "stainless": "不锈钢：需单独活化处理",
+              "aluminum": "铝合金：需底镀层，按图纸评估",
+              "brass": "黄铜：需镍底镀层",
+              "ductileIron": "铸铁：需单独表面处理"
+            }
+          }
+        },
+        "DetailProcess": {
+          "heading": "硬铬电镀六步工艺",
+          "subtitle": "每批次按各步骤参数监控",
+          "stepLabel": "步骤",
+          "s1": {
+            "title": "脱脂",
+            "desc": "镀前去除工件表面的油脂和机加工油。",
+            "note": "水膜连续性检验"
+          },
+          "s2": {
+            "title": "装挂与遮蔽",
+            "desc": "将工件装挂到挂具，用耐酸材料遮蔽螺纹、键槽等不镀区域。",
+            "note": "按图纸镀覆区域"
+          },
+          "s3": {
+            "title": "阳极活化",
+            "desc": "工件在铬酸溶液中作阳极，清除氧化膜并形成良好的结合表面。",
+            "note": "入镀前反向电流"
+          },
+          "s4": {
+            "title": "硬铬电镀",
+            "desc": "在铬酸与硫酸盐催化剂槽中电镀，控制温度与电流密度。",
+            "note": "时间按厚度要求"
+          },
+          "s5": {
+            "title": "清洗与除氢",
+            "desc": "清洗并拆除遮蔽；高强度钢零件按要求烘烤除氢。",
+            "note": "按钢种和图纸"
+          },
+          "s6": {
+            "title": "磨削与检验",
+            "desc": "磨削、抛光至要求尺寸和粗糙度，测厚后防锈包装。",
+            "note": "可附检验记录"
+          }
+        },
+        "DetailCapability": {
+          "imageAlt": "HANIN 工厂电镀槽生产线",
+          "lineCapacityLabel": "产线类型",
+          "lineCapacityValue": "挂镀",
+          "tankSizeLabel": "最大槽体尺寸",
+          "heading": "镀槽与溶液控制",
+          "subtitle": "硬铬镀槽采用耐铬酸材料，槽口设抽风并接入废气处理系统。电镀过程中槽液温度保持稳定。",
+          "dosing": {
+            "title": "溶液控制：",
+            "desc": "定期分析铬酸浓度和硫酸盐催化剂比例，偏离工作范围时及时补加。"
+          },
+          "crane": {
+            "title": "挂具与阳极：",
+            "desc": "按零件形状布置挂具和阳极，使轴类零件镀层分布均匀。"
+          },
+          "filtration": {
+            "title": "电源与槽温：",
+            "desc": "调节直流电流并稳定槽液温度，这两项参数决定镀层硬度和厚度。"
+          },
+          "tankSizeValue": "按图纸"
+        },
+        "DetailApplications": {
+          "heading": "HANIN 硬铬电镀零件",
+          "subtitle": "应用行业",
+          "oilGas": {
+            "tag": "液压与气动",
+            "title": "油缸杆与活塞杆",
+            "desc": "硬而光滑的表面减少密封件磨损，耐反复滑动。",
+            "thickness": "常用厚度：20-50 µm"
+          },
+          "mold": {
+            "tag": "模具与塑料加工",
+            "title": "模芯、螺杆与辊轴",
+            "desc": "减少塑料及加工物料造成的磨损，便于脱模。",
+            "thickness": "常用厚度：10-30 µm"
+          },
+          "electronics": {
+            "tag": "印刷与纺织",
+            "title": "压辊、印刷辊",
+            "desc": "耐磨表面，适用于与纸张、薄膜、纱线持续接触的辊轴。",
+            "thickness": "常用厚度：20-60 µm"
+          },
+          "automotive": {
+            "tag": "汽车与工程机械",
+            "title": "轴类、减震杆与修复件",
+            "desc": "磨损轴加厚镀铬，再磨削至尺寸。",
+            "thickness": "常用厚度：25-150 µm"
+          }
+        },
+        "DetailQaTable": {
+          "heading": "硬铬镀层质量控制",
+          "subtitle": "每批次检测数据均有记录",
+          "colItem": "检测项目",
+          "colDevice": "检测设备",
+          "colStandard": "适用标准",
+          "colCriteria": "合格标准",
+          "colFrequency": "检测频率",
+          "thickness": {
+            "item": "镀层厚度",
+            "device": "磁性测厚仪或 XRF",
+            "criteria": "按图纸",
+            "frequency": "每批次抽样"
+          },
+          "microhardness": {
+            "item": "硬度",
+            "device": "维氏显微硬度计",
+            "criteria": "按图纸",
+            "frequency": "按客户要求"
+          },
+          "saltSpray": {
+            "item": "耐盐雾性能",
+            "device": "中性盐雾试验箱（NSS）",
+            "criteria": "达到规定试验时长",
+            "frequency": "按客户要求"
+          },
+          "adhesion": {
+            "item": "镀层结合力",
+            "device": "弯曲试验或双方约定的结合力试验",
+            "criteria": "镀层无剥落、无分层",
+            "frequency": "每批次试样"
+          },
+          "porosity": {
+            "item": "磨削后表面粗糙度",
+            "device": "便携式粗糙度仪",
+            "criteria": "按图纸",
+            "frequency": "每批次抽样"
+          }
+        },
+        "DetailGallery": {
+          "heading": "产线与镀后零件",
+          "subtitle": "HANIN 工厂，光明工业区 49G 地块",
+          "line": {
+            "alt": "工厂电镀槽生产线",
+            "tag": "镀槽",
+            "title": "电镀槽生产线",
+            "desc": "各处理槽按工序顺序排列，槽口设抽风。"
+          },
+          "surface": {
+            "alt": "镀后金属零件",
+            "tag": "镀后零件",
+            "title": "镀后表面",
+            "desc": "零件表面先目视检查，再进行尺寸检验。"
+          },
+          "prep": {
+            "alt": "镀前零件准备区域",
+            "tag": "零件准备",
+            "title": "准备区域",
+            "desc": "零件入槽前经检查、装挂和遮蔽。"
+          }
+        },
+        "RfqFormDetail": {
+          "heading": "提交参数与硬铬电镀需求",
+          "subtitle": "HANIN 技术部门将回复报价及试镀计划。",
+          "hotlineLabel": "技术热线：",
+          "submitAlert": "硬铬电镀报价申请已提交至 HANIN 技术部门。",
+          "companyLabel": "企业名称",
+          "companyPlaceholder": "例：ABC 机械有限公司",
+          "contactLabel": "联系人",
+          "contactPlaceholder": "例：阮文A，负责工程师",
+          "emailLabel": "接收报价的邮箱",
+          "substrateLabel": "基材",
+          "substrateOptions": {
+            "carbonSteel": "碳钢（S45C、S50C、SS400）",
+            "alloySteel": "合金钢（SCM440、SKD11、SUJ2）",
+            "stainless": "不锈钢（SUS304、SUS316、SUS420）",
+            "aluminum": "铝合金（A6061-T6、A7075）",
+            "copper": "铜 / 黄铜",
+            "castIron": "铸铁 / 球墨铸铁 FCD"
+          },
+          "phosLabel": "镀层用途",
+          "phosOptions": {
+            "high": "耐磨",
+            "medium": "防腐蚀",
+            "low": "恢复尺寸",
+            "consult": "需 HANIN 工程师按应用提供建议"
+          },
+          "thicknessLabel": "镀层厚度（µm）",
+          "thicknessPlaceholder": "例：30 µm，磨削至 Ø50 h7",
+          "volumeLabel": "预计数量",
+          "volumePlaceholder": "例：每月 200 根轴（或试样）",
+          "notesLabel": "技术备注（遮蔽区域、磨后粗糙度、除氢要求）",
+          "notesPlaceholder": "请注明不镀区域、磨后 Ra 粗糙度、除氢要求或 ASTM B117 盐雾试验要求...",
+          "attachTitle": "附 2D / 3D 图纸",
+          "attachDesc": "格式：STEP、IGES、DWG、PDF（最大 50MB）",
+          "chooseFile": "选择图纸文件",
+          "ndaNote": "图纸按保密协议（NDA）保密。",
+          "submitButton": "提交硬铬电镀报价申请",
+          "submitError": "提交失败，请检查信息或附件后重试。"
+        }
+      },
+      "ma-kem-hop-kim-kem-niken": {
+        "DetailHero": {
+          "title": "锌及锌镍合金电镀",
+          "titleEn": "(Zinc and Zinc-Nickel Plating, Zn-Ni)",
+          "subtitle": "锌及锌镍镀层为钢制零件提供牺牲阳极保护，配合三价铬钝化，为汽车和工业零部件提供耐盐雾腐蚀性能。",
+          "phos": {
+            "label": "锌镍合金中镍含量",
+            "note": "典型锌镍体系",
+            "value": "12–15%"
+          },
+          "hardness": {
+            "label": "常用镀层厚度",
+            "note": "按图纸要求",
+            "value": "5–25 µm"
+          },
+          "saltSpray": {
+            "label": "耐盐雾",
+            "unit": "小时",
+            "note": "ASTM B117，视钝化体系而定",
+            "value": "最高 1,500"
+          },
+          "tolerance": {
+            "label": "钝化层",
+            "note": "不含六价铬",
+            "value": "Cr(III)"
+          },
+          "ctaPrimary": "申请报价",
+          "ctaSecondary": "下载技术参数",
+          "verifyLabel": "每批次附检验记录",
+          "imageAlt": "锌镍电镀并钝化后的钢制零件",
+          "xrfLabel": "XRF 测厚",
+          "roughnessLabel": "钝化层外观",
+          "coatingLabel": "镀层：锌镍合金",
+          "imageCaption": "锌镍电镀并经三价铬钝化后的钢制零件。"
+        },
+        "DetailOverview": {
+          "heading": "原理与应用范围",
+          "complianceLabel": "三价铬钝化，不使用六价铬",
+          "col1": {
+            "title": "防护机理",
+            "p1": "锌的电位比钢更负，优先被腐蚀，从而保护钢基体不生锈。锌镍合金镀层形成",
+            "p1Strong": "牺牲阳极",
+            "p2": "保护。镍使镀层比纯锌腐蚀更慢，延长防护时间。表面的钝化膜进一步提高耐盐雾能力。",
+            "formula": "Zn²⁺ + 2e⁻ → Zn · Ni²⁺ + 2e⁻ → Ni（共沉积）"
+          },
+          "col2": {
+            "title": "应用范围",
+            "intro": "适用于需要耐大气、盐雾或高温腐蚀的钢制零件：",
+            "item1Strong": "汽车：",
+            "item1": "发动机舱零件、制动部件、管夹。",
+            "item2Strong": "螺栓与紧固件：",
+            "item2": "需要长期防红锈的连接件。",
+            "item3Strong": "机械与工业：",
+            "item3": "支架、框架及户外使用的冲压件。"
+          },
+          "col3": {
+            "title": "基材",
+            "intro": "经前处理后，锌及锌镍镀层适用于：",
+            "substrates": {
+              "alloySteel": "合金钢、高强度钢（需除氢脱脆）",
+              "carbonSteel": "碳钢：S45C、S50C、SS400",
+              "stainless": "不锈钢：需单独活化，请提前告知",
+              "aluminum": "铝件：需单独处理，请与 HANIN 工程师沟通",
+              "brass": "黄铜与紫铜：经前处理后可镀",
+              "ductileIron": "铸铁、球墨铸铁：需单独活化"
+            }
+          }
+        },
+        "DetailProcess": {
+          "heading": "锌镍电镀六步工艺",
+          "subtitle": "每批次按各工序参数进行监控",
+          "stepLabel": "步骤",
+          "s1": {
+            "title": "脱脂",
+            "desc": "化学及电解脱脂，去除表面加工油污和杂质。",
+            "note": "水膜试验检查"
+          },
+          "s2": {
+            "title": "酸洗与活化",
+            "desc": "酸洗除锈后进行表面活化，使镀层在钢基体上均匀结合。",
+            "note": "各工序间充分水洗"
+          },
+          "s3": {
+            "title": "锌镍电镀",
+            "desc": "在锌镍镀槽中电镀，控制电流密度及镀层镍含量。",
+            "note": "厚度按图纸要求"
+          },
+          "s4": {
+            "title": "除氢脱脆",
+            "desc": "高强度钢件镀后烘烤，使电镀过程中吸入的氢逸出。",
+            "note": "温度与时间按图纸"
+          },
+          "s5": {
+            "title": "三价铬钝化",
+            "desc": "浸入三价铬钝化液形成钝化膜，可加封闭剂进一步提高耐盐雾性能。",
+            "note": "颜色按客户要求"
+          },
+          "s6": {
+            "title": "检验与包装",
+            "desc": "XRF 测厚，按批次检查外观，采用防碰撞防潮包装。",
+            "note": "附批次检验记录"
+          }
+        },
+        "DetailCapability": {
+          "imageAlt": "HANIN 工厂的镀槽与产线区域",
+          "lineCapacityLabel": "产线类型",
+          "lineCapacityValue": "挂镀和滚镀",
+          "tankSizeLabel": "最大槽体尺寸",
+          "heading": "镀槽与溶液控制",
+          "subtitle": "耐化学腐蚀镀槽，配循环过滤。控制溶液成分、温度和电流密度，使镀层镍含量保持稳定。",
+          "dosing": {
+            "title": "按分析结果补加药剂：",
+            "desc": "定期分析锌、镍及添加剂浓度并补加，保持镀层成分稳定。"
+          },
+          "crane": {
+            "title": "挂镀与滚镀：",
+            "desc": "大件挂镀于挂具，螺栓等小件在滚桶内滚镀。"
+          },
+          "filtration": {
+            "title": "溶液循环过滤：",
+            "desc": "连续过滤，避免杂质留在槽内，减少毛刺颗粒和粗糙表面。"
+          },
+          "tankSizeValue": "按图纸"
+        },
+        "DetailApplications": {
+          "heading": "HANIN 锌镍电镀零件",
+          "subtitle": "应用行业",
+          "oilGas": {
+            "tag": "汽车",
+            "title": "发动机舱零件与制动部件",
+            "desc": "锌镍耐热性优于纯锌，适用于靠近发动机和制动系统的零件。",
+            "thickness": "常用厚度：8–15 µm"
+          },
+          "mold": {
+            "tag": "螺栓与紧固件",
+            "title": "螺栓、螺母、管夹",
+            "desc": "长期防红锈；高强度钢件镀后需除氢脱脆。",
+            "thickness": "常用厚度：5–12 µm"
+          },
+          "electronics": {
+            "tag": "电气与通信",
+            "title": "机柜外壳、支架、接线件",
+            "desc": "在钢板及冲压件上镀锌并钝化，用于室内外防锈。",
+            "thickness": "常用厚度：5–12 µm"
+          },
+          "automotive": {
+            "tag": "机械与建筑",
+            "title": "支架、框架及冲压件",
+            "desc": "为户外使用的零件提供耐大气腐蚀，也可作为涂装前底层。",
+            "thickness": "常用厚度：8–25 µm"
+          }
+        },
+        "DetailQaTable": {
+          "heading": "锌镍镀层质量控制",
+          "subtitle": "每批次的检验数据均予以保存",
+          "colItem": "检验项目",
+          "colDevice": "设备与标准",
+          "colStandard": "适用标准",
+          "colCriteria": "合格标准",
+          "colFrequency": "检验频次",
+          "thickness": {
+            "item": "镀层厚度",
+            "device": "X 射线荧光测厚仪（XRF），ISO 3497",
+            "criteria": "按图纸",
+            "frequency": "按批次抽样"
+          },
+          "microhardness": {
+            "item": "镀层镍含量",
+            "device": "XRF 合金成分分析",
+            "criteria": "按图纸要求",
+            "frequency": "按批次抽样"
+          },
+          "saltSpray": {
+            "item": "耐盐雾性能",
+            "device": "中性盐雾试验箱，ASTM B117 / ISO 9227",
+            "criteria": "达到规定试验小时数",
+            "frequency": "按客户要求"
+          },
+          "adhesion": {
+            "item": "镀层结合力",
+            "device": "弯曲及附着力试验，ASTM B571",
+            "criteria": "镀层不起皮、不脱落",
+            "frequency": "随批次试片"
+          },
+          "porosity": {
+            "item": "外观与钝化层",
+            "device": "标准光源下目视检查",
+            "criteria": "符合客户标准样",
+            "frequency": "每批次检查"
+          }
+        },
+        "DetailGallery": {
+          "heading": "产线与镀后零件",
+          "subtitle": "HANIN 工厂，光明工业区 49G 地块",
+          "line": {
+            "alt": "HANIN 工厂镀槽区域",
+            "tag": "镀槽",
+            "title": "镀槽区域",
+            "desc": "镀槽与水洗槽按工序顺序排列。"
+          },
+          "surface": {
+            "alt": "镀后的金属零件",
+            "tag": "镀后零件",
+            "title": "镀后表面",
+            "desc": "包装前检查零件外观和镀层厚度。"
+          },
+          "prep": {
+            "alt": "镀前零件准备区域",
+            "tag": "零件准备",
+            "title": "准备区域",
+            "desc": "零件经检查后上挂具或装入滚桶，再进入产线。"
+          }
+        },
+        "RfqFormDetail": {
+          "heading": "提交参数与锌、锌镍电镀需求",
+          "subtitle": "HANIN 技术部门将回复报价及试镀计划。",
+          "hotlineLabel": "技术热线：",
+          "submitAlert": "锌镍电镀报价申请已发送至 HANIN 技术部门。",
+          "companyLabel": "企业名称",
+          "companyPlaceholder": "例：ABC 机械有限公司",
+          "contactLabel": "联系人",
+          "contactPlaceholder": "例：阮文A，负责工程师",
+          "emailLabel": "接收报价的邮箱",
+          "substrateLabel": "基材",
+          "substrateOptions": {
+            "carbonSteel": "碳钢（S45C、S50C、SS400）",
+            "alloySteel": "合金钢（SCM440、SKD11、SUJ2）",
+            "stainless": "不锈钢（SUS304、SUS316、SUS420）",
+            "aluminum": "铝合金（A6061-T6、A7075）",
+            "copper": "铜 / 黄铜",
+            "castIron": "铸铁 / 球墨铸铁 FCD"
+          },
+          "phosLabel": "镀层用途",
+          "phosOptions": {
+            "high": "耐盐雾腐蚀（锌镍）",
+            "medium": "常规防锈（镀锌）",
+            "low": "涂装或涂层前底层",
+            "consult": "需 HANIN 工程师根据应用提供建议"
+          },
+          "thicknessLabel": "镀层厚度（µm）",
+          "thicknessPlaceholder": "例：8–12 µm",
+          "volumeLabel": "预计产量",
+          "volumePlaceholder": "例：2,500 件/月（或试样）",
+          "notesLabel": "技术备注（钝化颜色、除氢脱脆、盐雾试验）",
+          "notesPlaceholder": "请注明钝化层颜色、除氢脱脆要求或 ASTM B117 盐雾试验小时数……",
+          "attachTitle": "附上 2D / 3D 图纸",
+          "attachDesc": "格式：STEP、IGES、DWG、PDF（最大 50MB）",
+          "chooseFile": "选择图纸文件",
+          "ndaNote": "图纸按保密协议（NDA）保密。",
+          "submitButton": "提交锌镍电镀报价申请",
+          "submitError": "提交失败，请检查信息和附件后重试。"
+        }
+      },
+      "day-chuyen-son-ma-ket-hop": {
+        "DetailHero": {
+          "title": "喷涂与电镀复合产线",
+          "titleEn": "(Painting & Plating Duplex Line)",
+          "subtitle": "先镀锌或磷化作底层，再进行静电粉末喷涂并烘烤固化，使涂层附着牢固，提高户外和沿海环境下的耐腐蚀能力。",
+          "phos": {
+            "label": "底层",
+            "note": "镀锌或磷化处理",
+            "value": "Zn / 磷化"
+          },
+          "hardness": {
+            "label": "外层涂装",
+            "note": "静电喷涂，烘烤固化",
+            "value": "粉末涂料"
+          },
+          "saltSpray": {
+            "label": "盐雾试验",
+            "note": "ASTM B117 或 ISO 9227",
+            "value": "按要求",
+            "unit": ""
+          },
+          "tolerance": {
+            "label": "附着力",
+            "note": "划格试验（ISO 2409）",
+            "value": "按图纸"
+          },
+          "ctaPrimary": "索取报价",
+          "ctaSecondary": "下载技术规格书",
+          "verifyLabel": "每批检验数据均有记录",
+          "imageAlt": "镀底层并喷涂后的金属零件",
+          "xrfLabel": "底层与涂层厚度测量",
+          "roughnessLabel": "喷涂后外观检查",
+          "coatingLabel": "涂装：底层电镀加静电喷涂",
+          "imageCaption": "钢制零件完成底层电镀和喷涂。"
+        },
+        "DetailOverview": {
+          "heading": "原理与应用范围",
+          "complianceLabel": "底层体系不含铅和镉，符合 RoHS 与 REACH 要求",
+          "col1": {
+            "title": "双重防护机理",
+            "p1": "镀锌或磷化底层保护钢材，并形成微观粗糙表面。带电粉末吸附在接地零件上，经烘烤后",
+            "p1Strong": "熔融并固化",
+            "p2": "若涂层被划伤，下方锌层仍可抑制锈蚀沿涂层底部蔓延。",
+            "formula": "Zn²⁺ + 2e⁻ → Zn（底层）· 粉末熔融、固化成连续涂膜"
+          },
+          "col2": {
+            "title": "应用范围",
+            "intro": "适用于既要耐腐蚀又要外观色彩的钢制零件：",
+            "item1Strong": "户外与沿海：",
+            "item1": "支架、框架、户外安装配件。",
+            "item2Strong": "结构件与设备：",
+            "item2": "机柜外壳、设备框架、钢制加工件。",
+            "item3Strong": "汽车与摩托车：",
+            "item3": "支架、底盘零件、车身配件。"
+          },
+          "col3": {
+            "title": "基材",
+            "intro": "锌底层加喷涂体系最适合钢材：",
+            "substrates": {
+              "alloySteel": "合金钢：高强度件需除氢",
+              "carbonSteel": "碳钢：最常用基材",
+              "stainless": "不锈钢：按图纸单独评估",
+              "aluminum": "铝合金：喷涂前单独做基材处理",
+              "brass": "黄铜：按图纸单独评估",
+              "ductileIron": "球墨铸铁：按图纸单独做基材处理"
+            }
+          }
+        },
+        "DetailProcess": {
+          "heading": "喷涂与电镀复合 6 步工艺",
+          "subtitle": "每批按各步骤进行跟踪",
+          "stepLabel": "步骤",
+          "s1": {
+            "title": "除油清洗",
+            "desc": "用除油药剂和水洗去除表面油脂和加工残留。",
+            "note": "以水膜试验检查"
+          },
+          "s2": {
+            "title": "除锈与活化",
+            "desc": "酸洗去除锈层和氧化物，再活化使镀层均匀附着。",
+            "note": "时间视表面状况而定"
+          },
+          "s3": {
+            "title": "底层电镀",
+            "desc": "在零件上镀锌，提供防腐并作为涂层基础。",
+            "note": "高强度件：除氢处理"
+          },
+          "s4": {
+            "title": "磷化与烘干",
+            "desc": "形成转化膜以提高附着力，水洗后彻底烘干。",
+            "note": "孔腔内不得残留积水"
+          },
+          "s5": {
+            "title": "静电粉末喷涂",
+            "desc": "将带电粉末喷到接地零件上，使表面厚度均匀。",
+            "note": "必要时遮蔽螺纹和接地位置"
+          },
+          "s6": {
+            "title": "烘烤固化与检验",
+            "desc": "入炉烘烤使涂层固化，随后检查外观和附着力。",
+            "note": "温度和时间按粉末要求"
+          }
+        },
+        "DetailCapability": {
+          "imageAlt": "HANIN 工厂的电镀槽线与表面处理区域",
+          "lineCapacityLabel": "产线类型",
+          "lineCapacityValue": "挂镀与滚镀",
+          "tankSizeLabel": "最大零件尺寸",
+          "tankSizeValue": "按图纸",
+          "heading": "底层控制与烘烤固化",
+          "subtitle": "零件依次经过电镀槽、磷化槽和各级水洗槽，烘干后再喷涂，并进入烘炉固化。",
+          "dosing": {
+            "title": "槽液控制：",
+            "desc": "定期分析各槽浓度和 pH 值并补加药剂，保持底层稳定。"
+          },
+          "crane": {
+            "title": "挂具与滚镀：",
+            "desc": "零件挂装或装入滚筒，合理排布使槽液能接触所有需覆盖的表面。"
+          },
+          "filtration": {
+            "title": "喷涂前水洗与烘干：",
+            "desc": "多级水洗后烘干，避免残留水分和药剂造成涂层起泡。"
+          }
+        },
+        "DetailApplications": {
+          "heading": "HANIN 喷涂与电镀复合零件",
+          "subtitle": "应用行业",
+          "oilGas": {
+            "tag": "户外与沿海",
+            "title": "支架与安装配件",
+            "desc": "锌底层加静电喷涂，用于承受雨水、潮湿和盐雾的零件。",
+            "thickness": "常用厚度：锌层 8-15 µm，涂层 80-120 µm"
+          },
+          "mold": {
+            "tag": "钢结构与设备",
+            "title": "设备框架与钢制零件",
+            "desc": "涂层颜色一致，边角和难涂覆的凹处有底层保护。",
+            "thickness": "常用厚度：锌层 5-12 µm，涂层 60-100 µm"
+          },
+          "electronics": {
+            "tag": "电力与通信",
+            "title": "机柜外壳与设备支架",
+            "desc": "户外机柜防腐，涂层颜色按客户 RAL 色号。",
+            "thickness": "常用厚度：锌层 5-8 µm，涂层 60-80 µm"
+          },
+          "automotive": {
+            "tag": "汽车与摩托车",
+            "title": "支架与底盘零件",
+            "desc": "车底钢制零件需耐泥水和道路盐分，盐雾试验按客户要求。",
+            "thickness": "常用厚度：锌层 5-12 µm，涂层 60-100 µm"
+          }
+        },
+        "DetailQaTable": {
+          "heading": "底层与涂层质量控制",
+          "subtitle": "每批检验数据均有记录",
+          "colItem": "检验项目",
+          "colDevice": "测量设备",
+          "colStandard": "适用标准",
+          "colCriteria": "合格标准",
+          "colFrequency": "检验频次",
+          "thickness": {
+            "item": "锌层与涂层厚度",
+            "device": "锌层用 XRF（ASTM B568）；涂层用磁性测厚仪",
+            "criteria": "按图纸",
+            "frequency": "按批抽样"
+          },
+          "microhardness": {
+            "item": "涂层外观",
+            "device": "目视检查，对照已确认的色板",
+            "criteria": "无流挂、缩孔或脱落；颜色符合确认样板",
+            "frequency": "逐批"
+          },
+          "saltSpray": {
+            "item": "耐盐雾性能",
+            "device": "NSS 盐雾箱，5% NaCl 溶液（ASTM B117、ISO 9227）",
+            "criteria": "达到规定试验时数",
+            "frequency": "按客户要求"
+          },
+          "adhesion": {
+            "item": "涂层附着力",
+            "device": "划格试验（ISO 2409）或拉开法试验",
+            "criteria": "按图纸或客户要求",
+            "frequency": "随批试样"
+          },
+          "porosity": {
+            "item": "涂层固化程度",
+            "device": "溶剂擦拭试验",
+            "criteria": "按客户要求",
+            "frequency": "按批试样"
+          }
+        },
+        "DetailGallery": {
+          "heading": "产线与处理后的零件",
+          "subtitle": "HANIN 工厂，光明工业区 49G 地块",
+          "line": {
+            "alt": "HANIN 工厂的电镀槽线",
+            "tag": "电镀槽",
+            "title": "电镀与水洗槽线",
+            "desc": "零件依次通过各电镀槽和水洗槽，再进入喷涂工序。"
+          },
+          "surface": {
+            "alt": "表面处理后的金属零件",
+            "tag": "处理后零件",
+            "title": "处理后表面",
+            "desc": "交付或进入下一工序前，先检查表面外观。"
+          },
+          "prep": {
+            "alt": "电镀前的零件准备区域",
+            "tag": "零件准备",
+            "title": "准备区域",
+            "desc": "零件经检查后挂装或装入滚筒，再进入产线。"
+          }
+        },
+        "RfqFormDetail": {
+          "heading": "提交喷涂与电镀复合工艺的参数和需求",
+          "subtitle": "HANIN 技术部门将回复报价和试样安排。",
+          "hotlineLabel": "技术热线：",
+          "submitAlert": "喷涂与电镀复合工艺的报价请求已发送至 HANIN 技术部门。",
+          "companyLabel": "企业名称",
+          "companyPlaceholder": "例：ABC 机械有限公司",
+          "contactLabel": "联系人",
+          "contactPlaceholder": "例：阮文A，负责工程师",
+          "emailLabel": "接收报价的邮箱",
+          "substrateLabel": "基材",
+          "substrateOptions": {
+            "carbonSteel": "碳钢（S45C、S50C、SS400）",
+            "alloySteel": "合金钢（SCM440、SKD11、SUJ2）",
+            "stainless": "不锈钢（SUS304、SUS316、SUS420）",
+            "aluminum": "铝合金（A6061-T6、A7075）",
+            "copper": "铜 / 黄铜",
+            "castIron": "铸铁 / 球墨铸铁 FCD"
+          },
+          "phosLabel": "使用目的",
+          "phosOptions": {
+            "high": "户外、沿海防腐",
+            "medium": "提高涂层附着力",
+            "low": "装饰、颜色区分",
+            "consult": "需 HANIN 工程师按应用提供建议"
+          },
+          "thicknessLabel": "底层与涂层厚度（µm）",
+          "thicknessPlaceholder": "例：锌层 8 µm，涂层 80 µm",
+          "volumeLabel": "预计产量",
+          "volumePlaceholder": "例：2,500 件/月（或试样）",
+          "notesLabel": "技术备注（遮蔽位置、色号、试验标准）",
+          "notesPlaceholder": "请注明需遮蔽的位置（螺纹、接地面）、RAL 色号、涂层表面（亮光、哑光、砂纹）或 ASTM B117 盐雾试验要求……",
+          "attachTitle": "附上 2D / 3D 图纸",
+          "attachDesc": "格式：STEP、IGES、DWG、PDF（最大 50MB）",
+          "chooseFile": "选择图纸文件",
+          "ndaNote": "图纸按 NDA 协议保密。",
+          "submitButton": "提交喷涂与电镀报价请求",
+          "submitError": "请求发送失败。请检查信息和附件后重试。"
+        }
+      },
+      "xu-ly-nhom-ma-kim-loai-khac": {
+        "DetailHero": {
+          "title": "铝件处理及其他金属电镀",
+          "titleEn": "（Anodizing & Specialized Finishing）",
+          "subtitle": "铝阳极氧化、硬质阳极氧化、镀铜、镀锡及三价铬钝化，按客户图纸加工。",
+          "phos": {
+            "label": "硬质阳极氧化膜厚",
+            "note": "硬质阳极氧化，按图纸",
+            "value": "25–75 µm"
+          },
+          "hardness": {
+            "label": "硬质阳极氧化膜硬度",
+            "note": "视铝合金牌号而定",
+            "value": "400–600 HV"
+          },
+          "saltSpray": {
+            "label": "钝化处理",
+            "unit": "",
+            "note": "三价铬体系",
+            "value": "Cr(III)"
+          },
+          "tolerance": {
+            "label": "其他电镀金属",
+            "note": "镀铜、镀锡",
+            "value": "Cu · Sn"
+          },
+          "ctaPrimary": "索取报价",
+          "ctaSecondary": "下载技术规格书",
+          "verifyLabel": "每批附检验单",
+          "imageAlt": "阳极氧化后的铝件",
+          "xrfLabel": "镀层厚度测量",
+          "roughnessLabel": "表面检查",
+          "coatingLabel": "镀层：阳极氧化或电镀",
+          "imageCaption": "表面处理后的铝件和铜件。"
+        },
+        "DetailOverview": {
+          "heading": "原理与应用范围",
+          "complianceLabel": "符合 RoHS 和 REACH（不含铅、镉）",
+          "col1": {
+            "title": "反应机理",
+            "p1": "阳极氧化不是在铝件上增加金属层，而是",
+            "p1Strong": "使铝表面自身氧化",
+            "p2": "工件在酸槽中作阳极，Al₂O₃ 膜从基体生长，结合牢固，随后进行封孔。",
+            "formula": "2Al + 3H₂O → Al₂O₃ + 6H⁺ + 6e⁻（阳极）"
+          },
+          "col2": {
+            "title": "应用范围",
+            "intro": "适用于需要耐磨、防腐的铝件，以及需要电镀的导电零件：",
+            "item1Strong": "机械与液压：",
+            "item1": "需硬质阳极氧化的活塞、缸体、铝制治具。",
+            "item2Strong": "电气与电子：",
+            "item2": "镀铜或镀锡的汇流排、接线端子、触点。",
+            "item3Strong": "表面装饰：",
+            "item3": "着色阳极氧化和三价铬钝化。"
+          },
+          "col3": {
+            "title": "基材",
+            "intro": "视工艺而定，可处理以下材料：",
+            "substrates": {
+              "carbonSteel": "压铸铝：膜层均匀性较差，需先沟通",
+              "alloySteel": "7075、2024 铝：可阳极氧化，需调整工艺",
+              "stainless": "钢件：按图纸镀铜作底层",
+              "aluminum": "6061、6063、5052 铝：阳极氧化",
+              "brass": "铜和黄铜：镀锡、镀铜",
+              "ductileIron": "其他金属：请与 HANIN 工程师沟通"
+            }
+          }
+        },
+        "DetailProcess": {
+          "heading": "铝件处理及电镀六步工艺",
+          "subtitle": "每批次按各工序参数监控",
+          "stepLabel": "步骤",
+          "s1": {
+            "title": "除油",
+            "desc": "用适合铝或铜基材的除油液去除切削油和污物。",
+            "note": "以水膜试验检查。"
+          },
+          "s2": {
+            "title": "微蚀与出光",
+            "desc": "微蚀使表面均匀，再用酸去除表面黑膜后入槽。",
+            "note": "时间视铝材牌号而定。"
+          },
+          "s3": {
+            "title": "阳极氧化或电镀",
+            "desc": "在硫酸槽中阳极氧化，或按图纸在专用槽中镀铜、镀锡。",
+            "note": "电压、温度按工艺卡。"
+          },
+          "s4": {
+            "title": "多级水洗",
+            "desc": "各工序之间充分清洗残液，避免化学品带入下一槽。",
+            "note": "多级逆流水洗。"
+          },
+          "s5": {
+            "title": "表面后处理",
+            "desc": "按客户要求进行着色、阳极膜封孔或三价铬钝化。",
+            "note": "按使用要求选择。"
+          },
+          "s6": {
+            "title": "检验与包装",
+            "desc": "测量厚度、检查外观，并做防碰撞包装以免划伤膜层。",
+            "note": "每批附检验单。"
+          }
+        },
+        "DetailCapability": {
+          "imageAlt": "HANIN 工厂的铝件表面处理线",
+          "lineCapacityLabel": "产线类型",
+          "lineCapacityValue": "挂镀和滚镀",
+          "tankSizeLabel": "最大工件尺寸",
+          "tankSizeValue": "按图纸",
+          "heading": "处理槽与溶液控制",
+          "subtitle": "各工序溶液的浓度、温度和时间，按工件工艺卡进行控制。",
+          "dosing": {
+            "title": "温度与浓度控制：",
+            "desc": "阳极氧化槽保持温度稳定，因为温度影响膜层硬度；酸浓度定期分析。"
+          },
+          "crane": {
+            "title": "挂具与导电触点：",
+            "desc": "工件牢固装挂，触点良好，使电流分布均匀，避免膜层烧焦。"
+          },
+          "filtration": {
+            "title": "工序间多级水洗：",
+            "desc": "减少溶液带入下一槽，尤其在封孔和钝化之前。"
+          }
+        },
+        "DetailApplications": {
+          "heading": "HANIN 加工的铝件及电镀金属件",
+          "subtitle": "应用行业",
+          "oilGas": {
+            "tag": "机械与液压",
+            "title": "铝制活塞、缸体和阀体",
+            "desc": "硬质阳极氧化提高铝件滑动或接触表面的耐磨和抗划伤能力。",
+            "thickness": "常用厚度：25-75 µm"
+          },
+          "mold": {
+            "tag": "自动化与治具",
+            "title": "铝制治具、底板和机械零件",
+            "desc": "阳极氧化膜硬、表面稳定，多次装拆时磨损较小。",
+            "thickness": "常用厚度：10-50 µm"
+          },
+          "electronics": {
+            "tag": "电气与电子",
+            "title": "汇流排、接线端子和触点",
+            "desc": "镀锡或镀铜，导电良好，保持可焊性，减少接点氧化。",
+            "thickness": "常用厚度：3-10 µm（锡）"
+          },
+          "automotive": {
+            "tag": "汽车与摩托车",
+            "title": "铝件及电镀零部件",
+            "desc": "阳极氧化或三价铬钝化以防腐蚀。盐雾试验按客户要求进行。",
+            "thickness": "常用厚度：钝化膜小于 1 µm"
+          }
+        },
+        "DetailQaTable": {
+          "heading": "镀层与膜层质量控制",
+          "subtitle": "每批检验数据均有记录",
+          "colItem": "检验项目",
+          "colDevice": "检测设备",
+          "colStandard": "适用标准",
+          "colCriteria": "合格标准",
+          "colFrequency": "检验频次",
+          "thickness": {
+            "item": "膜层/镀层厚度",
+            "device": "涡流测厚仪（ISO 2360）、XRF（ISO 3497）",
+            "criteria": "按图纸",
+            "frequency": "每批抽样"
+          },
+          "microhardness": {
+            "item": "硬质阳极氧化膜硬度",
+            "device": "维氏显微硬度计",
+            "criteria": "按图纸",
+            "frequency": "按要求制样"
+          },
+          "saltSpray": {
+            "item": "耐盐雾性能",
+            "device": "NSS 盐雾箱，5% NaCl（ASTM B117、ISO 9227）",
+            "criteria": "达到规定试验时长",
+            "frequency": "按客户要求"
+          },
+          "adhesion": {
+            "item": "镀层结合力",
+            "device": "弯曲、胶带或热冲击试验（ISO 2819）",
+            "criteria": "镀层不脱落、不分层",
+            "frequency": "每批随附试样"
+          },
+          "porosity": {
+            "item": "阳极膜封孔质量",
+            "device": "染料吸附试验（ISO 2143）",
+            "criteria": "按图纸",
+            "frequency": "每批抽样"
+          }
+        },
+        "DetailGallery": {
+          "heading": "产线与处理后的零件",
+          "subtitle": "HANIN 工厂，光明工业区 49G 地块",
+          "line": {
+            "alt": "HANIN 工厂的表面处理槽线",
+            "tag": "槽线",
+            "title": "表面处理槽区",
+            "desc": "各槽按工序顺序布置，槽间设有水洗。"
+          },
+          "surface": {
+            "alt": "表面处理后的金属零件",
+            "tag": "处理后零件",
+            "title": "处理后的表面",
+            "desc": "交货前检查外观和厚度。"
+          },
+          "prep": {
+            "alt": "处理前的零件准备区",
+            "tag": "零件准备",
+            "title": "准备与检查区",
+            "desc": "零件经检查、装挂后进入除油槽。"
+          }
+        },
+        "RfqFormDetail": {
+          "heading": "提交铝件处理及其他金属电镀的参数与需求",
+          "subtitle": "HANIN 技术部门将回复报价及试样计划。",
+          "hotlineLabel": "技术热线：",
+          "submitAlert": "铝件处理及其他金属电镀的报价请求已发送至 HANIN 技术部门。",
+          "companyLabel": "企业名称",
+          "companyPlaceholder": "例：ABC 机械有限公司",
+          "contactLabel": "联系人",
+          "contactPlaceholder": "例：阮文A，负责工程师",
+          "emailLabel": "接收报价的邮箱",
+          "substrateLabel": "基材",
+          "substrateOptions": {
+            "carbonSteel": "压铸铝（ADC12、A356 等）",
+            "alloySteel": "7075 / 2024 铝",
+            "stainless": "钢件（镀铜作底层）",
+            "aluminum": "铝合金（A6061、A6063、A5052）",
+            "copper": "铜 / 黄铜",
+            "castIron": "其他金属（请在备注中说明）"
+          },
+          "phosLabel": "表面处理目的",
+          "phosOptions": {
+            "high": "耐磨：硬质阳极氧化",
+            "medium": "防腐、装饰：阳极氧化、三价铬钝化",
+            "low": "导电、焊接：镀铜、镀锡",
+            "consult": "需 HANIN 工程师根据应用提供建议"
+          },
+          "thicknessLabel": "膜层/镀层厚度 (µm)",
+          "thicknessPlaceholder": "例：硬质阳极氧化 50 µm ± 5 µm",
+          "volumeLabel": "预计产量",
+          "volumePlaceholder": "例：2,500 件/月（或样品）",
+          "notesLabel": "技术备注（遮蔽位置、颜色、检测标准）",
+          "notesPlaceholder": "请注明需遮蔽或保留导电触点的位置、着色颜色、封孔要求或 ASTM B117 盐雾试验要求……",
+          "attachTitle": "附上 2D / 3D 图纸",
+          "attachDesc": "格式：STEP、IGES、DWG、PDF（最大 50MB）",
+          "chooseFile": "选择图纸文件",
+          "ndaNote": "图纸按 NDA 协议保密。",
+          "submitButton": "提交报价请求",
+          "submitError": "无法发送请求。请检查信息或附件后重试。"
+        }
+      }
+    },
+    "HeroSummary": {
+      "process": "工艺流程"
+    }
   }
 }

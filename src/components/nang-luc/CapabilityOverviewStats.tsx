@@ -33,14 +33,17 @@ export default function CapabilityOverviewStats() {
   return (
     <section className="w-full bg-white border-b border-slate-200 py-space-xl">
       <div className="mx-auto px-margin w-full">
-        <div className="grid grid-cols-2 lg:grid-cols-4 divide-y lg:divide-y-0 lg:divide-x divide-slate-200">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-gutter">
           {STATS.map((stat) => (
-            <div key={stat.key} className="p-space-md lg:p-space-lg">
-              <div className="text-label-technical text-steel-600 tracking-widest uppercase mb-1">
+            <div
+              key={stat.key}
+              className="relative overflow-hidden p-space-md lg:p-space-lg bg-white border border-slate-200 rounded shadow-md before:absolute before:inset-x-0 before:top-0 before:h-1 before:[background:var(--color-steel-600)] before:content-['']"
+            >
+              <div className="text-label-technical text-steel-700 font-semibold tracking-wider uppercase mb-2">
                 {t(`items.${stat.key}.label`)}
               </div>
               <div
-                className={`text-headline-xl font-bold tracking-tight ${
+                className={`text-headline-xl lg:text-display-hero font-bold tracking-tight ${
                   stat.accent ? "text-steel-600" : "text-slate-900"
                 }`}
               >
@@ -52,7 +55,7 @@ export default function CapabilityOverviewStats() {
                   padStart={"padStart" in stat ? stat.padStart : 0}
                 />
                 {t(`items.${stat.key}.unit`) && (
-                  <span className="text-headline-md font-normal text-slate-500">{t(`items.${stat.key}.unit`)}</span>
+                  <span className="text-headline-md font-normal text-slate-600">{t(`items.${stat.key}.unit`)}</span>
                 )}
               </div>
             </div>
