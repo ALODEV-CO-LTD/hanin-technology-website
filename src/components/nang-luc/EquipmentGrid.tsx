@@ -24,6 +24,36 @@ export default function EquipmentGrid() {
     },
   ] as const;
 
+  const specs = (key: (typeof MACHINES)[number]["key"]): { label: string; value: string }[] => {
+    const v = (k: string) => t(`items.${key}.${k}`);
+    switch (key) {
+      case "rectifier":
+        return [
+          { label: v("specLoad"), value: v("specLoadValue") },
+          { label: v("specStability"), value: v("specStabilityValue") },
+          { label: v("specControl"), value: v("specControlValue") },
+        ];
+      case "ultrasonic":
+        return [
+          { label: v("specFrequency"), value: v("specFrequencyValue") },
+          { label: v("specHeating"), value: v("specHeatingValue") },
+          { label: v("specVolume"), value: v("specVolumeValue") },
+        ];
+      case "hoist":
+        return [
+          { label: v("specLoad"), value: `${v("specLoadValue")} ${v("specLoadUnit")}` },
+          { label: v("specSpeed"), value: `${v("specSpeedValue")} PLC` },
+          { label: v("specSensor"), value: v("specSensorValue") },
+        ];
+      default:
+        return [
+          { label: v("specMaxTemp"), value: v("specMaxTempValue") },
+          { label: v("specSensor"), value: v("specSensorValue") },
+          { label: v("specStandard"), value: v("specStandardValue") },
+        ];
+    }
+  };
+
   return (
     <section className="w-full py-space-xl bg-white border-t border-slate-200">
       <div className="mx-auto px-margin w-full">
@@ -49,55 +79,14 @@ export default function EquipmentGrid() {
                   </h3>
                   <p className="text-body-sm text-slate-600 mb-space-md">{t(`items.${m.key}.desc`)}</p>
                 </div>
-                <div className="bg-white border border-slate-200 p-space-sm rounded text-label-sm leading-5 text-slate-600">
-                  {m.key === "rectifier" && (
-                    <>
-                      {t("items.rectifier.specLoad")} <span className="text-slate-900 font-semibold">{t("items.rectifier.specLoadValue")}</span>
-                      <br />
-                      {t("items.rectifier.specStability")}{" "}
-                      <span className="text-slate-900 font-semibold">{t("items.rectifier.specStabilityValue")}</span>
-                      <><span className="hidden sm:inline">{" · "}</span><br className="sm:hidden" /></>
-                      {t("items.rectifier.specControl")}{" "}
-                      <span className="text-steel-600 font-semibold">{t("items.rectifier.specControlValue")}</span>
-                    </>
-                  )}
-                  {m.key === "ultrasonic" && (
-                    <>
-                      {t("items.ultrasonic.specFrequency")}{" "}
-                      <span className="text-slate-900 font-semibold">{t("items.ultrasonic.specFrequencyValue")}</span>
-                      <br />
-                      {t("items.ultrasonic.specHeating")}{" "}
-                      <span className="text-slate-900 font-semibold">{t("items.ultrasonic.specHeatingValue")}</span>
-                      <><span className="hidden sm:inline">{" · "}</span><br className="sm:hidden" /></>
-                      {t("items.ultrasonic.specVolume")}{" "}
-                      <span className="text-steel-600 font-semibold">{t("items.ultrasonic.specVolumeValue")}</span>
-                    </>
-                  )}
-                  {m.key === "hoist" && (
-                    <>
-                      {t("items.hoist.specLoad")}{" "}
-                      <span className="text-slate-900 font-semibold">{t("items.hoist.specLoadValue")} {t("items.hoist.specLoadUnit")}</span>
-                      <br />
-                      {t("items.hoist.specSpeed")}{" "}
-                      <span className="text-slate-900 font-semibold">{t("items.hoist.specSpeedValue")} PLC</span>
-                      <><span className="hidden sm:inline">{" · "}</span><br className="sm:hidden" /></>
-                      {t("items.hoist.specSensor")}{" "}
-                      <span className="text-steel-600 font-semibold">{t("items.hoist.specSensorValue")}</span>
-                    </>
-                  )}
-                  {m.key === "deEmbrittlement" && (
-                    <>
-                      {t("items.deEmbrittlement.specMaxTemp")}{" "}
-                      <span className="text-slate-900 font-semibold">{t("items.deEmbrittlement.specMaxTempValue")}</span>
-                      <br />
-                      {t("items.deEmbrittlement.specSensor")}{" "}
-                      <span className="text-slate-900 font-semibold">{t("items.deEmbrittlement.specSensorValue")}</span>
-                      <><span className="hidden sm:inline">{" · "}</span><br className="sm:hidden" /></>
-                      {t("items.deEmbrittlement.specStandard")}{" "}
-                      <span className="text-steel-600 font-semibold">{t("items.deEmbrittlement.specStandardValue")}</span>
-                    </>
-                  )}
-                </div>
+                <dl className="divide-y divide-slate-200 rounded border border-slate-200 bg-white px-space-sm text-label-sm">
+                  {specs(m.key).map((row) => (
+                    <div key={row.label} className="flex items-baseline justify-between gap-space-sm py-1.5">
+                      <dt className="text-slate-600">{row.label.replace(/:\s*$/, "")}</dt>
+                      <dd className="text-right font-semibold text-slate-900">{row.value}</dd>
+                    </div>
+                  ))}
+                </dl>
               </div>
             </div>
           ))}
