@@ -1,4 +1,5 @@
 import { useLocale, useTranslations } from "next-intl";
+import BannerH1 from "@/components/ui/BannerH1";
 import { getBanner } from "@/server/public";
 import HeroImage from "@/components/ui/HeroImage";
 import PageBreadcrumb from "@/components/layout/PageBreadcrumb";
@@ -33,13 +34,13 @@ export default function ContactHero() {
             ]}
           />
 
-          <h1 className="banner-title font-bold tracking-tight text-white uppercase mb-space-sm max-w-5xl">
+          <BannerH1 className="font-bold tracking-tight text-white uppercase mb-space-sm">
             {t("titlePrefix")}{" "}
             <span>
               {t("titleHighlight")}
             </span>{" "}
             {t("titleSuffix")}
-          </h1>
+          </BannerH1>
           <p className="banner-lead text-white leading-relaxed">{t("description")}</p>
         </div>
 

@@ -1,4 +1,5 @@
 import { useLocale, useTranslations } from "next-intl";
+import BannerH1 from "@/components/ui/BannerH1";
 import { getBanner } from "@/server/public";
 import HeroImage from "@/components/ui/HeroImage";
 import { Link } from "@/i18n/navigation";
@@ -26,9 +27,9 @@ export default function PageHero() {
             ]}
           />
 
-          <h1 className="banner-title text-white tracking-tight uppercase mb-space-sm font-bold max-w-5xl">
+          <BannerH1 className="text-white tracking-tight uppercase mb-space-sm font-bold">
             {t("titlePrefix")} <span>{t("titleHighlight")}</span>
-          </h1>
+          </BannerH1>
           <p className="banner-lead text-white leading-relaxed">
             <strong className="text-white font-semibold">{t("companyName")}</strong> {t("description")}
           </p>

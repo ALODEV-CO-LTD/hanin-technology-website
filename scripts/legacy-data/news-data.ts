@@ -65,7 +65,7 @@ export function getFeaturedArticle(t: TinTucTranslator): FeaturedArticle {
     author: t("featured.author"),
     authorRole: t("featured.authorRole"),
     image:
-      "/images/factory/ma-treo-3.jpg",
+      "/images/factory/qc-7.jpg",
     imageAlt: t("featured.imageAlt"),
   };
 }
@@ -114,7 +114,7 @@ export function getNewsArticles(t: TinTucTranslator): NewsArticle[] {
       excerpt: t("articles.1.excerpt"),
       author: t("articles.1.author"),
       image:
-        "/images/factory/ma-treo-2.jpg",
+        "/images/factory/ma-quay-6.jpg",
       imageAlt: t("articles.1.imageAlt"),
     },
     {

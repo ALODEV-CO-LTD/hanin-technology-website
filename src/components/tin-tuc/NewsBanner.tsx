@@ -1,4 +1,5 @@
 import { useLocale, useTranslations } from "next-intl";
+import BannerH1 from "@/components/ui/BannerH1";
 import { getBanner } from "@/server/public";
 import HeroImage from "@/components/ui/HeroImage";
 import PageBreadcrumb from "@/components/layout/PageBreadcrumb";
@@ -22,10 +23,10 @@ export default function NewsBanner() {
             { label: tb("news") },
           ]}
         />
-        <h1 className="banner-title text-white uppercase tracking-tight font-bold max-w-5xl">
+        <BannerH1 className="text-white uppercase tracking-tight font-bold">
           {t("titlePrefix")} <span>{t("titleHighlight")}</span>{" "}
           {t("titleSuffix")}
-        </h1>
+        </BannerH1>
         <p className="banner-lead text-white mt-space-xs">{t("description")}</p>
       </div>
     </section>

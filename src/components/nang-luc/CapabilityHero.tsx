@@ -1,4 +1,5 @@
 import { useLocale, useTranslations } from "next-intl";
+import BannerH1 from "@/components/ui/BannerH1";
 import { getBanner } from "@/server/public";
 import PageBreadcrumb from "@/components/layout/PageBreadcrumb";
 import HeroImage from "@/components/ui/HeroImage";
@@ -38,9 +39,9 @@ export default function CapabilityHero() {
           />
 
           <div className="max-w-3xl pt-4">
-            <h1 className="banner-title font-bold text-white tracking-tight uppercase mb-space-sm">
+            <BannerH1 className="font-bold text-white tracking-tight uppercase mb-space-sm">
               {t("title")}
-            </h1>
+            </BannerH1>
             <p className="banner-lead text-white leading-relaxed">{t("description")}</p>
           </div>
         </div>

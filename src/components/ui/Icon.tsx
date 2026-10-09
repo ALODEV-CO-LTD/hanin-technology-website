@@ -208,11 +208,11 @@ export default function Icon({ name, className = "" }: { name: string; className
   return (
     <Cmp
       aria-hidden="true"
-      width="1em"
-      height="1em"
+      width="1.3em"
+      height="1.3em"
       strokeWidth={1.75}
       // Giữ nét 1.75px cố định theo mọi kích thước (thay cho absoluteStrokeWidth của lucide,
-      // vốn tính ra NaN khi width="1em").
+      // vốn tính ra NaN khi width="1.3em").
       className={`inline-block shrink-0 align-middle [&_*]:[vector-effect:non-scaling-stroke] ${className}`.trim()}
       style={HAS_SIZE.test(className) ? undefined : { fontSize: 24 }}
     />

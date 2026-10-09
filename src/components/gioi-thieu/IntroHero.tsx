@@ -1,4 +1,5 @@
 import { useLocale, useTranslations } from "next-intl";
+import BannerH1 from "@/components/ui/BannerH1";
 import { getBanner } from "@/server/public";
 import HeroImage from "@/components/ui/HeroImage";
 import PageBreadcrumb from "@/components/layout/PageBreadcrumb";
@@ -25,9 +26,9 @@ export default function IntroHero() {
         />
 
         {/* Main Heading */}
-        <h1 className="banner-title text-white uppercase tracking-tight max-w-5xl mb-space-sm font-bold">
+        <BannerH1 className="text-white uppercase tracking-tight mb-space-sm font-bold">
           {t("title")}
-        </h1>
+        </BannerH1>
 
         {/* Supporting Deck */}
         <p className="banner-lead text-white leading-relaxed">{t("subtitle")}</p>

@@ -450,9 +450,16 @@ a, button, [role="button"], [role="tab"], [role="combobox"] { touch-action: mani
 
 /* Chữ trên banner đầu trang: tiêu đề và đoạn dẫn co giãn theo chiều rộng màn hình. */
 .banner-title {
-  font-size: clamp(2.25rem, 0.8rem + 4.2vw, 4.5rem);
-  line-height: 1.08;
+  /* Điện thoại hẹp: cho xuống dòng; từ 640px: một dòng, cỡ chữ vừa chiều rộng (ước lượng 0,7em mỗi ký tự in hoa). */
+  font-size: clamp(1.75rem, 0.8rem + 4.2vw, 2.5rem);
+  line-height: 1.12;
   letter-spacing: -0.02em;
+}
+@media (min-width: 640px) {
+  .banner-title {
+    white-space: nowrap;
+    font-size: clamp(1.5rem, calc((100vw - 5rem) / (var(--chars, 24) * 0.7)), 4.5rem);
+  }
 }
 .banner-lead {
   font-size: clamp(1.0625rem, 0.9rem + 0.55vw, 1.5rem);

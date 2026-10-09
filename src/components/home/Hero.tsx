@@ -1,4 +1,5 @@
 import { useLocale, useTranslations } from "next-intl";
+import BannerH1 from "@/components/ui/BannerH1";
 import { getBanner } from "@/server/public";
 import Icon from "@/components/ui/Icon";
 import HeroImage from "@/components/ui/HeroImage";
@@ -32,9 +33,9 @@ export default function Hero() {
       <div className="relative z-10 w-full flex-1 px-margin py-space-xl flex flex-col justify-center">
         <div className="max-w-3xl flex flex-col gap-space-md">
           <div className="flex flex-col gap-2 banner-text">
-            <h1 className="banner-title text-white uppercase tracking-tight font-bold">
+            <BannerH1 className="text-white uppercase tracking-tight font-bold">
               {t("titlePrefix")} <span>{t("titleHighlight")}</span>
-            </h1>
+            </BannerH1>
             <p className="text-headline-md text-white font-semibold tracking-tight">
               {t("subtitle")}
             </p>

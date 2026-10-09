@@ -1,4 +1,5 @@
 import { useLocale, useTranslations } from "next-intl";
+import BannerH1 from "@/components/ui/BannerH1";
 import { getBanner } from "@/server/public";
 import PageBreadcrumb from "@/components/layout/PageBreadcrumb";
 import HeroImage from "@/components/ui/HeroImage";
@@ -21,9 +22,9 @@ export default function CategoryHero() {
             { label: t("breadcrumbCurrent") },
           ]}
         />
-        <h1 className="banner-title uppercase tracking-tight text-white mt-space-xs font-bold max-w-5xl">
+        <BannerH1 className="uppercase tracking-tight text-white mt-space-xs font-bold">
           {t("title")}
-        </h1>
+        </BannerH1>
         <p className="banner-lead text-white leading-relaxed mt-space-xs">
           {t("description")}
         </p>

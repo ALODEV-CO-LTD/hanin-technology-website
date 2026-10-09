@@ -35,9 +35,9 @@ export default function LocationMap() {
                     <div key={key} className="flex items-center gap-3 p-space-sm bg-slate-50 rounded">
                       <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded bg-steel-50 text-steel-600">
                         {key === "seaport" ? (
-                          <PortIcon className="h-6 w-6" />
+                          <PortIcon className="h-7 w-7" />
                         ) : key === "industrialParks" ? (
-                          <IndustrialParkIcon className="h-6 w-6" />
+                          <IndustrialParkIcon className="h-7 w-7" />
                         ) : (
                           <Icon name={meta.icon} className="text-[22px]" />
                         )}
