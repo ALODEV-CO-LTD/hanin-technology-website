@@ -28,9 +28,8 @@ export default function ProductionFlow() {
               className="p-space-md sm:p-space-lg bg-slate-50 border border-slate-200 rounded-lg shadow-sm hover:border-steel-300 hover:shadow-md transition-all flex flex-col justify-between"
             >
               <div>
-                <div className="flex items-center justify-between gap-space-sm mb-space-sm">
+                <div className="mb-space-sm">
                   <span className="text-label-technical text-steel-600 font-bold">{s.step}</span>
-                  <span className="w-2 h-2 rounded-full bg-steel-600" />
                 </div>
                 <h3 className="text-headline-sm text-slate-900 uppercase mb-space-xs">
                   {t(`items.${s.key}.title`)}

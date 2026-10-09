@@ -24,7 +24,7 @@ export const SETTING_DEFS: SettingDef[] = [
   { key: "linkedinUrl", label: "LinkedIn", group: "Mạng xã hội & liên kết" },
   { key: "instagramUrl", label: "Instagram", group: "Mạng xã hội & liên kết" },
   { key: "mapsUrl", label: "Link Google Maps chỉ đường", group: "Bản đồ" , defaultValue: "https://www.google.com/maps?q=21.207361,105.754028" },
-  { key: "mapEmbedUrl", label: "Link nhúng bản đồ (iframe src)", group: "Bản đồ", help: "Lấy từ Google Maps → Chia sẻ → Nhúng bản đồ." },
+  { key: "mapEmbedUrl", label: "Link nhúng bản đồ (iframe src)", group: "Bản đồ", defaultValue: "https://maps.google.com/maps?q=21.2073611,105.7540278&hl=vi&z=17&output=embed", help: "Lấy từ Google Maps → Chia sẻ → Nhúng bản đồ." },
   { key: "profileUrl", label: "Link tải Hồ sơ năng lực (PDF)", group: "Tải xuống", help: "Tải PDF lên Thư viện ảnh rồi dán đường dẫn /uploads/... vào đây. Để trống thì nút tải sẽ dẫn tới form liên hệ." },
   { key: "inquiryNotifyEmail", label: "Email nhận thông báo yêu cầu mới", group: "Liên hệ", defaultValue: "Haninplating@gmail.com", help: "Lưu sẵn để dùng khi cấu hình SMTP; hiện yêu cầu mới xem trong CMS." },
 ];

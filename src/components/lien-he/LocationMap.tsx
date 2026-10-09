@@ -52,9 +52,9 @@ export default function LocationMap() {
               </div>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-space-sm pt-space-md bg-slate-50 -mx-space-lg -mb-space-lg p-space-md">
+            <div className="flex flex-col sm:flex-row sm:flex-wrap gap-space-sm pt-space-md bg-slate-50 -mx-space-lg -mb-space-lg p-space-md">
               <a
-                className="flex-1 py-space-sm px-space-md bg-steel-600 hover:bg-steel-700 text-white rounded text-label-md uppercase tracking-wider font-bold text-center transition-colors flex items-center justify-center gap-2"
+                className="flex-1 whitespace-nowrap py-space-sm px-space-md bg-steel-600 hover:bg-steel-700 text-white rounded text-label-md uppercase tracking-wider font-bold text-center transition-colors flex items-center justify-center gap-2"
                 href={mapsUrl || "https://maps.google.com"}
                 rel="noopener noreferrer"
                 target="_blank"
@@ -63,7 +63,7 @@ export default function LocationMap() {
                 <Icon name="open_in_new" className="text-[16px]" />
               </a>
               <a
-                className="py-space-sm px-space-md bg-white border border-slate-200 text-slate-900 hover:bg-slate-100 rounded text-label-md uppercase tracking-wider font-bold transition-colors flex items-center justify-center gap-2"
+                className="flex-1 whitespace-nowrap py-space-sm px-space-md bg-white border border-slate-200 text-slate-900 hover:bg-slate-100 rounded text-label-md uppercase tracking-wider font-bold transition-colors flex items-center justify-center gap-2"
                 href="#rfq-form"
               >
                 <Icon name="download" className="text-[18px]" />

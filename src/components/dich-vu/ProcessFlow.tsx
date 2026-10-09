@@ -1,5 +1,4 @@
 import { useTranslations } from "next-intl";
-import Icon from "@/components/ui/Icon";
 
 export default function ProcessFlow() {
   const t = useTranslations("DichVu.ProcessFlow");
@@ -26,7 +25,6 @@ export default function ProcessFlow() {
           >
             <div className="flex items-center justify-between mb-space-sm">
               <span className="text-headline-md text-steel-600 font-bold">{step.index}</span>
-              <Icon name={step.icon} className="text-slate-500 text-[24px]" />
             </div>
             <div>
               <h3 className="text-title-md text-slate-900 font-bold uppercase mb-1">{t(`${step.key}.title`)}</h3>

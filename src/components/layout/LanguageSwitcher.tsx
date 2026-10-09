@@ -5,6 +5,7 @@ import { useLocale, useTranslations } from "next-intl";
 import { usePathname, useRouter } from "@/i18n/navigation";
 import { routing } from "@/i18n/routing";
 import Icon from "@/components/ui/Icon";
+import { Flag } from "@/components/ui/Flag";
 
 const LOCALE_LABELS: Record<string, string> = {
   vi: "VI",
@@ -52,7 +53,10 @@ export default function LanguageSwitcher({ variant = "desktop" }: { variant?: "d
             aria-pressed={loc === locale}
             lang={loc}
           >
-            {LOCALE_LABELS[loc]}
+            <span className="inline-flex items-center gap-2">
+              <Flag locale={loc} />
+              {LOCALE_LABELS[loc]}
+            </span>
           </button>
         ))}
       </div>
@@ -69,7 +73,7 @@ export default function LanguageSwitcher({ variant = "desktop" }: { variant?: "d
         aria-label={`${t("label")}: ${t(locale)}`}
         className="flex min-h-11 items-center gap-1 px-3 py-1.5 rounded border border-slate-200 text-slate-600 text-label-technical uppercase transition-colors duration-200 hover:border-steel-300 hover:text-steel-600"
       >
-        <Icon name="language" className="text-[16px]" />
+        <Flag locale={locale} />
         {LOCALE_LABELS[locale]}
         <Icon name="expand_more" className={`text-[16px] transition-transform duration-200 ${open ? "rotate-180" : "" }`} />
       </button>
@@ -77,7 +81,7 @@ export default function LanguageSwitcher({ variant = "desktop" }: { variant?: "d
       {open && (
         <div
           role="listbox"
-          className="absolute right-0 top-full mt-2 w-36 rounded border border-slate-200 bg-white shadow-[0_10px_28px_-8px_rgba(15,23,42,0.22)] overflow-hidden z-50 reveal reveal-in"
+          className="absolute right-0 top-full mt-2 w-48 rounded border border-slate-200 bg-white shadow-[0_10px_28px_-8px_rgba(15,23,42,0.22)] overflow-hidden z-50 reveal reveal-in"
         >
           {routing.locales.map((loc) => (
             <button
@@ -93,8 +97,13 @@ export default function LanguageSwitcher({ variant = "desktop" }: { variant?: "d
                   : "text-slate-600 hover:bg-slate-50"
               }`}
             >
-              {LOCALE_LABELS[loc]}
-              <span className="block text-xs text-slate-600">{t(loc)}</span>
+              <span className="flex items-center gap-3">
+                <Flag locale={loc} className="h-5 w-[30px]" />
+                <span className="flex flex-col">
+                  <span>{LOCALE_LABELS[loc]}</span>
+                  <span className="text-xs font-normal text-slate-600">{t(loc)}</span>
+                </span>
+              </span>
             </button>
           ))}
         </div>

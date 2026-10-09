@@ -36,12 +36,7 @@ export default function PlatingServices() {
               className="relative overflow-hidden flex flex-col justify-between p-space-lg pt-[calc(var(--spacing-space-lg)+4px)] bg-white border border-slate-200 rounded shadow-md hover:shadow-xl hover:-translate-y-1 focus-visible:ring-2 focus-visible:ring-steel-600 transition-all duration-200 group before:absolute before:inset-x-0 before:top-0 before:h-1 before:[background:var(--color-steel-600)] before:content-['']"
             >
               <div className="flex flex-col gap-space-md">
-                <div className="flex items-center justify-between">
-                  <span className="text-headline-lg text-steel-600 font-bold">{String(i + 1).padStart(2, "0")}</span>
-                  <span className="text-xs px-2 py-1 rounded bg-steel-100 text-steel-700 uppercase font-semibold">
-                    {service.code}
-                  </span>
-                </div>
+                <span className="text-headline-lg text-steel-600 font-bold">{String(i + 1).padStart(2, "0")}</span>
                 <div className="flex flex-col gap-2">
                   <h3 className="text-headline-sm text-slate-900 font-bold group-hover:text-steel-600 transition-colors">
                     {service.title}

@@ -33,7 +33,6 @@ export default function RelatedServices({ currentSlug }: { currentSlug: string }
             <div>
               <div className="flex items-center justify-between text-slate-500 mb-2">
                 <span className="text-label-sm text-steel-600 uppercase font-semibold">{service.code}</span>
-                <Icon name="arrow_forward" className="group-hover:translate-x-1 transition-transform text-[20px]" />
               </div>
               <h3 className="text-title-md text-slate-900 uppercase group-hover:text-steel-600 transition-colors font-bold">
                 {service.title}

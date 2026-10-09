@@ -35,9 +35,6 @@ export default function CompanyJourney() {
                   <span className="w-8 h-8 rounded bg-steel-50 border border-steel-200 flex items-center justify-center text-label-technical text-steel-600 font-bold group-hover:bg-steel-600 group-hover:border-steel-600 group-hover:text-white transition-colors">
                     {`0${i + 1}`}
                   </span>
-                  <span className="text-xs uppercase tracking-wider text-slate-600 px-2 py-0.5 bg-slate-100 rounded border border-slate-200">
-                    {t(`${key}.yearTag`)}
-                  </span>
                 </div>
                 <h3 className="text-title-md text-slate-900 font-semibold mb-2 group-hover:text-steel-600 transition-colors">
                   {t(`${key}.title`)}

@@ -1,5 +1,4 @@
 import { useTranslations } from "next-intl";
-import Icon from "@/components/ui/Icon";
 
 export default function CoreStrengths() {
   const t = useTranslations("GioiThieu.CoreStrengths");
@@ -33,7 +32,6 @@ export default function CoreStrengths() {
                   <span className="flex h-9 w-9 items-center justify-center rounded bg-steel-50 border border-steel-200 text-label-technical font-bold text-steel-600 group-hover:bg-steel-600 group-hover:border-steel-600 group-hover:text-white transition-colors">
                     {item.index}
                   </span>
-                  <Icon name={item.icon} className="shrink-0 text-slate-400 group-hover:text-steel-600 transition-colors" />
                 </div>
                 <h3 className="text-headline-sm text-slate-900 uppercase font-bold mb-space-xs">{t(`${item.key}.title`)}</h3>
                 <p className="text-body-md text-slate-600 leading-relaxed">{t(`${item.key}.desc`)}</p>
