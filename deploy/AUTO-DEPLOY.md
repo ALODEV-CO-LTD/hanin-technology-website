@@ -3,6 +3,12 @@
 Cài một lần, sau đó mỗi lần push lên GitHub, server `khanh-dev` tự build và chạy bản mới trong 1–3 phút.
 
 ## Cài đặt (một lần)
+Kho hiện dùng: `https://github.com/trancongthangvn/hanin-technology-website` (công khai nên server clone bằng HTTPS, không cần khoá). Chỉ cần chạy một lệnh:
+```bash
+bash deploy/setup-auto-deploy.sh
+```
+Phần dưới là cách làm với kho riêng tư.
+
 1. Tạo repo trên GitHub (nên để Private), chưa cần có nội dung.
 2. Chạy trên máy bạn, từ thư mục `website`:
    ```bash

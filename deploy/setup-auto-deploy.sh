@@ -6,15 +6,17 @@
 # Can: da tao repo (nen de Private) tren GitHub; may ban da ssh duoc vao GitHub (de push) va vao `khanh-dev`.
 set -euo pipefail
 
-REPO_URL="${1:-}"
+REPO_URL="${1:-https://github.com/trancongthangvn/hanin-technology-website.git}"
 BRANCH="${BRANCH:-master}"
 TARGET_HOST="${TARGET_HOST:-khanh-dev}"
-if [ -z "$REPO_URL" ]; then echo "Cach dung: bash deploy/setup-auto-deploy.sh git@github.com:TEN/REPO.git"; exit 1; fi
+# Kho cong khai (https) thi server clone khong can khoa; kho rieng tu (git@...) thi can them khoa deploy.
+PUBLIC_REPO=0; case "$REPO_URL" in https://*) PUBLIC_REPO=1;; esac
 
 echo "==> [1/5] Dat remote git va day code len GitHub..."
 if git remote get-url origin >/dev/null 2>&1; then git remote set-url origin "$REPO_URL"; else git remote add origin "$REPO_URL"; fi
-git push -u origin "$BRANCH"
+git push -u origin "$BRANCH" || echo "(Bo qua loi push: co the code da len GitHub roi hoac may nay chua co quyen ghi.)"
 
+if [ "$PUBLIC_REPO" = "0" ]; then
 echo "==> [2/5] Tao khoa deploy (chi doc) tren container..."
 ssh "$TARGET_HOST" bash <<'REMOTE_KEY'
 set -e
@@ -29,6 +31,7 @@ echo ""
 echo "Vao GitHub: repo > Settings > Deploy keys > Add deploy key"
 echo "Dat Title 'hanin-server', dan khoa o tren, KHONG tick 'Allow write access', roi Add key."
 read -r -p "Da them xong thi nhan Enter de tiep tuc... " _
+fi
 
 echo "==> [3/5] Cai git/rsync, clone code tren container, chuyen sang kieu release..."
 ssh "$TARGET_HOST" REPO_URL="$REPO_URL" BRANCH="$BRANCH" bash <<'REMOTE_CLONE'
@@ -36,8 +39,9 @@ set -e
 export DEBIAN_FRONTEND=noninteractive
 command -v git >/dev/null || { apt-get update; apt-get install -y git; }
 command -v rsync >/dev/null || { apt-get update; apt-get install -y rsync; }
+mkdir -p /root/.ssh && chmod 700 /root/.ssh
 touch /root/.ssh/config /root/.ssh/known_hosts
-grep -q 'hanin_deploy' /root/.ssh/config || cat >> /root/.ssh/config <<'CFG'
+[ -f /root/.ssh/hanin_deploy ] && ! grep -q 'hanin_deploy' /root/.ssh/config && cat >> /root/.ssh/config <<'CFG'
 
 Host github.com
   IdentityFile /root/.ssh/hanin_deploy
