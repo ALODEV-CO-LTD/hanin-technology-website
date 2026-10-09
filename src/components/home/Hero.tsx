@@ -24,7 +24,7 @@ export default function Hero() {
   const banner = getBanner("home-hero", useLocale(), "/images/factory/ma-treo-2.jpg");
 
   return (
-    <section className="relative w-full min-h-[calc(100svh-var(--header-h))] flex flex-col overflow-hidden bg-slate-900">
+    <section className="relative w-full min-h-[min(calc(100svh-var(--header-h)),560px)] sm:min-h-[calc(100svh-var(--header-h))] flex flex-col overflow-hidden bg-slate-900">
       <div className="absolute inset-0 z-0">
         <HeroImage src={banner.image} alt={banner.alt || t("imageAlt")} />
       </div>

@@ -9,7 +9,7 @@ export default function CategoryHero() {
   const banner = getBanner("san-pham", useLocale(), "/images/factory/qc-1.jpg");
 
   return (
-    <section className="relative w-full min-h-[calc(100svh-var(--header-h))] overflow-hidden bg-slate-900 flex items-center">
+    <section className="relative w-full min-h-[min(calc(100svh-var(--header-h)),560px)] sm:min-h-[calc(100svh-var(--header-h))] overflow-hidden bg-slate-900 flex items-center">
       <div className="absolute inset-0 z-0 pointer-events-none">
         <HeroImage src={banner.image} alt={banner.alt || t("imageAlt")} />
       </div>

@@ -10,7 +10,7 @@ export default function ServiceBanner() {
   const tNav = useTranslations("Nav");
 
   return (
-    <section className="relative w-full min-h-[calc(100svh-var(--header-h))] bg-slate-900 overflow-hidden flex items-center">
+    <section className="relative w-full min-h-[min(calc(100svh-var(--header-h)),560px)] sm:min-h-[calc(100svh-var(--header-h))] bg-slate-900 overflow-hidden flex items-center">
       {/* Banner Background Image */}
       <HeroImage src={banner.image} alt={banner.alt || t("imageAlt")} />
 

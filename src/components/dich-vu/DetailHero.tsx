@@ -24,7 +24,7 @@ export default function DetailHero({ service, breadcrumb }: { service: PlatingSe
 
   return (
     <section className="w-full flex flex-col">
-      <div className="relative w-full min-h-[min(calc(100svh-var(--header-h)),720px)] overflow-hidden bg-slate-900 flex items-end">
+      <div className="relative w-full min-h-[480px] sm:min-h-[min(calc(100svh-var(--header-h)),720px)] overflow-hidden bg-slate-900 flex items-end">
         <HeroImage src={service.image} alt={service.imageAlt} />
         <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-r from-slate-950/90 via-slate-950/65 to-slate-950/25" />
         <div className="relative z-10 w-full px-margin py-space-lg lg:py-space-xl flex flex-col gap-space-md">
@@ -45,7 +45,7 @@ export default function DetailHero({ service, breadcrumb }: { service: PlatingSe
               { key: "saltSpray", value: `${t("saltSpray.value")} ${t("saltSpray.unit")}`.trim() },
               { key: "tolerance", value: t("tolerance.value") },
             ].map((item) => (
-              <div key={item.key} className="flex flex-col gap-1 bg-steel-50 p-space-sm">
+              <div key={item.key} className="flex flex-col gap-0.5 bg-steel-50 p-2 sm:p-space-sm sm:gap-1">
                 <dt className="text-label-technical uppercase text-steel-600 font-semibold">{t(`${item.key}.label`)}</dt>
                 <dd className="text-title-md font-bold text-slate-900">{item.value}</dd>
               </div>
