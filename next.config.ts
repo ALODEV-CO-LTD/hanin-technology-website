@@ -8,6 +8,8 @@ const withNextIntl = createNextIntlPlugin("./src/i18n/request.ts");
 const STATIC_CACHE = "public, max-age=604800, stale-while-revalidate=86400";
 
 const nextConfig: NextConfig = {
+  // Chỉ ảnh hưởng `next dev`: cho phép mở bản dev từ máy khác trong mạng LAN (nếu không JS/HMR bị chặn 403, trang trống).
+  allowedDevOrigins: ["192.168.*.*", "10.*.*.*", "172.16.*.*"],
   // Cho phép build vào thư mục tạm (scripts/safe-build.sh) rồi hoán đổi, tránh để người dùng thấy trang mất CSS khi đang build.
   distDir: process.env.NEXT_DIST_DIR || ".next",
   images: {

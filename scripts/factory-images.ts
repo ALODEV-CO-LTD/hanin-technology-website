@@ -34,7 +34,7 @@ export const SITE_IMAGE_MAP: Record<string, string> = {
   "nang-luc/ProductionLines#2": f("ma-quay-6"),
   "nang-luc/ProductionLines#3": f("ma-treo-3"),
   "nang-luc/TestingAnalysis#1": f("phan-tich-1"),
-  "lien-he/RfqForm#1": f("ma-quay-6"),
+  "lien-he/RfqForm#1": f("cong-nha-may"),
   "tuyen-dung/WorkEnvironment#1": f("ma-treo-2"),
   "tuyen-dung/WorkEnvironment#2": f("qc-7"),
   "tuyen-dung/WorkEnvironment#3": f("phan-tich-1"),

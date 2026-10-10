@@ -16,7 +16,7 @@ export default function RfqForm() {
               <Photo
                 alt={t("gateLabel")}
                 className="absolute inset-0 w-full h-full object-cover"
-                src={siteImg("lien-he/RfqForm#1", "/images/factory/ma-quay-6.jpg")}
+                src={siteImg("lien-he/RfqForm#1", "/images/factory/cong-nha-may.jpg")}
                 sizes="(min-width:1024px) 40vw, 100vw"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/10 to-transparent" />
