@@ -14,6 +14,7 @@ import RfqFormDetail from "@/components/dich-vu/RfqFormDetail";
 import RelatedServices from "@/components/dich-vu/RelatedServices";
 import { getServiceBySlug } from "@/server/public";
 import Reveal from "@/components/ui/Reveal";
+import ClientMessages from "@/i18n/client-messages";
 
 type PageParams = { slug: string };
 
@@ -44,6 +45,7 @@ export default async function DichVuChiTietPage({
   // từ messages, chỉnh sửa qua màn hình "Nội dung trang" của CMS.
 
   return (
+    <ClientMessages keys={["DichVu"]}>
     <div className="flex flex-col w-full">
       <DetailHero
         service={service}
@@ -64,5 +66,6 @@ export default async function DichVuChiTietPage({
       <Reveal><RelatedServices currentSlug={service.slug} /></Reveal>
       </div>
     </div>
+    </ClientMessages>
   );
 }

@@ -7,6 +7,7 @@ import ProcessFlow from "@/components/dich-vu/ProcessFlow";
 import QualityMetrology from "@/components/dich-vu/QualityMetrology";
 import RfqFormCategory from "@/components/dich-vu/RfqFormCategory";
 import Reveal from "@/components/ui/Reveal";
+import ClientMessages from "@/i18n/client-messages";
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("Meta");
@@ -15,6 +16,7 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export default function DichVuGiaCongMaPage() {
   return (
+    <ClientMessages keys={["DichVu.RfqFormCategory"]}>
     <>
       <ServiceBanner />
       <div className="px-margin py-space-lg flex flex-col w-full">
@@ -25,5 +27,6 @@ export default function DichVuGiaCongMaPage() {
         <Reveal><RfqFormCategory /></Reveal>
       </div>
     </>
+    </ClientMessages>
   );
 }

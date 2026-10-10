@@ -10,6 +10,7 @@ import QualityCertification from "@/components/home/QualityCertification";
 import NewsUpdates from "@/components/home/NewsUpdates";
 import FinalCta from "@/components/home/FinalCta";
 import Reveal from "@/components/ui/Reveal";
+import ClientMessages from "@/i18n/client-messages";
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("Meta");
@@ -18,6 +19,7 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export default function Home() {
   return (
+    <ClientMessages keys={["Home.FactoryShowcase"]}>
     <div className="flex flex-col w-full text-on-surface">
       <Hero />
       <Reveal direction="right"><AboutHanin /></Reveal>
@@ -29,5 +31,6 @@ export default function Home() {
       <Reveal><NewsUpdates /></Reveal>
       <Reveal direction="left"><FinalCta /></Reveal>
     </div>
+    </ClientMessages>
   );
 }

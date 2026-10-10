@@ -11,6 +11,7 @@ import RelatedServices from "@/components/san-pham/RelatedServices";
 import RelatedProjects from "@/components/san-pham/RelatedProjects";
 import ProductQuoteCta from "@/components/san-pham/ProductQuoteCta";
 import Reveal from "@/components/ui/Reveal";
+import ClientMessages from "@/i18n/client-messages";
 
 type PageProps = {
   params: Promise<{ slug: string }>;
@@ -37,6 +38,7 @@ export default async function ProductDetailPage({ params }: PageProps) {
   // nội dung mẫu dùng chung từ messages, chỉnh sửa qua màn hình "Nội dung trang" của CMS.
 
   return (
+    <ClientMessages keys={["SanPham.ProductGallery"]}>
     <div className="flex flex-col w-full">
       <ProductBreadcrumbBar product={product} />
       <ProductHero product={product} />
@@ -47,5 +49,6 @@ export default async function ProductDetailPage({ params }: PageProps) {
       <Reveal><RelatedProjects currentSlug={product.slug} /></Reveal>
       <Reveal direction="left"><ProductQuoteCta /></Reveal>
     </div>
+    </ClientMessages>
   );
 }

@@ -8,6 +8,7 @@ import NewsInquiryCta from "@/components/tin-tuc/NewsInquiryCta";
 import Reveal from "@/components/ui/Reveal";
 import { getNewsCategories } from "@/lib/news-data";
 import { getPostCounts, getPosts } from "@/server/public";
+import ClientMessages from "@/i18n/client-messages";
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("Meta");
@@ -35,6 +36,7 @@ export default async function TinTucPage() {
   const categories = getNewsCategories(t).map((c) => ({ ...c, count: counts[c.key] ?? 0 }));
 
   return (
+    <ClientMessages keys={["TinTuc.NewsFilterBar", "TinTuc.NewsGrid", "TinTuc.NewsPagination"]}>
     <div className="flex flex-col w-full text-slate-900">
       <NewsBanner />
       <NewsIntro />
@@ -42,5 +44,6 @@ export default async function TinTucPage() {
       <Reveal><NewsBrowser posts={posts} categories={categories} /></Reveal>
       <Reveal direction="left"><NewsInquiryCta /></Reveal>
     </div>
+    </ClientMessages>
   );
 }

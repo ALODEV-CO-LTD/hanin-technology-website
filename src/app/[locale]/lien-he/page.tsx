@@ -8,6 +8,7 @@ import DirectChannels from "@/components/lien-he/DirectChannels";
 import ContactFaq from "@/components/lien-he/ContactFaq";
 import BottomCta from "@/components/lien-he/BottomCta";
 import Reveal from "@/components/ui/Reveal";
+import ClientMessages from "@/i18n/client-messages";
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("Meta");
@@ -16,6 +17,7 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export default function LienHePage() {
   return (
+    <ClientMessages keys={["LienHe.ContactFaq", "DichVu.RfqFormCategory"]}>
     <div className="flex flex-col w-full text-slate-800">
       <ContactHero />
       <Reveal><ContactChannels /></Reveal>
@@ -25,5 +27,6 @@ export default function LienHePage() {
       <Reveal><ContactFaq /></Reveal>
       <Reveal><BottomCta /></Reveal>
     </div>
+    </ClientMessages>
   );
 }

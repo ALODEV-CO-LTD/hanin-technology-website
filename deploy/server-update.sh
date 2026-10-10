@@ -43,6 +43,12 @@ DATA_DIR="$DATA_DIR" npm run db:seed >>"$LOG" 2>&1 || fail "db:seed"
 DATA_DIR="$DATA_DIR" npm run db:client-logos >>"$LOG" 2>&1 || fail "db:client-logos"
 DATA_DIR="$DATA_DIR" SWC_NATIVE_BINDING_CACHE=/tmp/swc-cache npm run build >>"$LOG" 2>&1 || fail "build"
 
+# Giữ lại ảnh đã tối ưu (/_next/image) của bản trước: khoá bộ nhớ đệm theo URL ảnh + kích thước + chất lượng, không phụ thuộc
+# bản build, nên không cần tối ưu lại từ đầu sau mỗi lần deploy (khách đầu tiên sau deploy không phải chờ).
+if [ -n "$PREV" ] && [ -d "$PREV/.next/cache/images" ]; then
+  mkdir -p "$REL/.next/cache" && cp -a "$PREV/.next/cache/images" "$REL/.next/cache/" 2>/dev/null || true
+fi
+
 # Doi sang ban moi (nguyen tu), khoi dong lai pm2.
 ln -sfn "$REL" "$CURRENT.new" && mv -T "$CURRENT.new" "$CURRENT"
 start_app() {

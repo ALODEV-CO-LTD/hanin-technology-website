@@ -24,8 +24,17 @@ function withVersion(src: string): string {
   return `${src}${src.includes("?") ? "&" : "?"}v=${IMAGE_VERSION}`;
 }
 
+/**
+ * Chất lượng WebP: ảnh nhà máy/quy trình cần nét ở màn hình lớn (q85) nhưng trên điện thoại (≤1080px) q75 là đủ và
+ * nhẹ hơn khoảng 40%; ảnh khác (logo, tải lên CMS) q75. Giá trị phải nằm trong `images.qualities` của next.config.ts.
+ */
+function photoQuality(src: string, width: number): 75 | 85 {
+  const photo = src.startsWith("/images/factory") || src.startsWith("/images/process");
+  return photo && width > 1080 ? 85 : 75;
+}
+
 export function photoUrl(src: string, width: (typeof WIDTHS)[number] | (typeof LOGO_WIDTHS)[number] = 1920): string {
-  return isLocal(src) ? `/_next/image?url=${encodeURIComponent(withVersion(src))}&w=${width}&q=${src.startsWith("/images/factory") || src.startsWith("/images/process") ? 90 : 75}` : src;
+  return isLocal(src) ? `/_next/image?url=${encodeURIComponent(withVersion(src))}&w=${width}&q=${photoQuality(src, width)}` : src;
 }
 
 /** Giá trị cho thuộc tính srcSet của <img>; undefined nếu là ảnh ngoài. */

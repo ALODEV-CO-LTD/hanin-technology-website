@@ -11,4 +11,7 @@ export const gilroy = localFont({
   ],
   variable: "--font-gilroy",
   display: "swap",
+  // 6 file font (~150 KB) preload cùng lúc tranh băng thông với ảnh banner (LCP) trên mạng di động chậm; chữ hiện bằng
+  // font dự phòng đã chỉnh số đo rồi đổi sang Gilroy khi tải xong nên không gây xô lệch bố cục.
+  preload: false,
 });

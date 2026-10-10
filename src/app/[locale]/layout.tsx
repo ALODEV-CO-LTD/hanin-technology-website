@@ -1,7 +1,8 @@
 import SocialLinks from "@/components/ui/SocialLinks";
 import type { Metadata } from "next";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
-import { getTranslations } from "next-intl/server";
+import { getMessages, getTranslations } from "next-intl/server";
+import { LAYOUT_KEYS, pickMessages } from "@/i18n/client-messages";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import "./globals.css";
@@ -31,11 +32,12 @@ export default async function RootLayout({
   if (!hasLocale(routing.locales, locale)) {
     notFound();
   }
+  const messages = pickMessages(await getMessages(), LAYOUT_KEYS);
 
   return (
     <html lang={locale} data-scroll-behavior="smooth" className={gilroy.variable}>
       <body className="bg-slate-50 text-slate-800 antialiased selection:bg-steel-600 selection:text-white">
-        <NextIntlClientProvider>
+        <NextIntlClientProvider messages={messages}>
           <Header logoSrc={siteImg("layout/Logo#1", "/hanin-logo.png")} />
           <main className="w-full pt-[var(--header-h)] bg-slate-50 min-h-screen">
             <PageFade>{children}</PageFade>

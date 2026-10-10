@@ -13,6 +13,7 @@ import QualityStandards from "@/components/nang-luc/QualityStandards";
 import CompanyProfileCta from "@/components/nang-luc/CompanyProfileCta";
 import NangLucFinalCta from "@/components/nang-luc/NangLucFinalCta";
 import Reveal from "@/components/ui/Reveal";
+import ClientMessages from "@/i18n/client-messages";
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("Meta");
@@ -21,6 +22,7 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export default function NangLucSanXuatPage() {
   return (
+    <ClientMessages keys={["QuyTrinh"]}>
     <div className="flex flex-col w-full">
       <CapabilityHero />
       <Reveal direction="right"><FactoryOverview /></Reveal>
@@ -35,5 +37,6 @@ export default function NangLucSanXuatPage() {
       <Reveal direction="left"><CompanyProfileCta /></Reveal>
       <Reveal><NangLucFinalCta /></Reveal>
     </div>
+    </ClientMessages>
   );
 }

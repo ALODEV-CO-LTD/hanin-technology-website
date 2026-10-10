@@ -8,6 +8,7 @@ import FeaturedProjectSpotlight from "@/components/san-pham/FeaturedProjectSpotl
 import SpecTrustNote from "@/components/san-pham/SpecTrustNote";
 import ProductsCta from "@/components/san-pham/ProductsCta";
 import Reveal from "@/components/ui/Reveal";
+import ClientMessages from "@/i18n/client-messages";
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("Meta");
@@ -18,6 +19,7 @@ export default async function SanPhamDuAnPage() {
   const products = getProducts(await getLocale(), await getTranslations("SanPham"));
 
   return (
+    <ClientMessages keys={["SanPham.ProductCatalog", "SanPham.categoryTabs"]}>
     <div className="flex flex-col w-full">
       <CategoryHero />
       <Reveal>
@@ -29,5 +31,6 @@ export default async function SanPhamDuAnPage() {
       <Reveal><SpecTrustNote /></Reveal>
       <Reveal><ProductsCta /></Reveal>
     </div>
+    </ClientMessages>
   );
 }

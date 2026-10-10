@@ -15,8 +15,9 @@ const nextConfig: NextConfig = {
   images: {
     // Ảnh cục bộ được tối ưu qua /_next/image (WebP, đúng kích thước theo màn hình) rồi lưu đệm 30 ngày.
     formats: ["image/webp"],
-    // 75 (mặc định) cho ảnh nhỏ/logo; 90 cho ảnh nhà máy: WebP q75 làm vỡ khối ở vùng chuyển sắc và cạnh mảnh.
-    qualities: [75, 90],
+    // 75: logo và ảnh trên điện thoại; 85: ảnh nhà máy trên màn hình lớn (q75 làm vỡ khối ở vùng chuyển sắc); 90 giữ lại để
+    // các liên kết ảnh cũ đã lưu ở trình duyệt/Cloudflare vẫn hợp lệ.
+    qualities: [75, 85, 90],
     minimumCacheTTL: 60 * 60 * 24 * 30,
     localPatterns: [{ pathname: "/images/**" }, { pathname: "/uploads/**" }, { pathname: "/hanin-logo.png" }],
   },
