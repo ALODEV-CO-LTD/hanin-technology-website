@@ -49,6 +49,7 @@ export const PRODUCT_SLUGS = [
   "thanh-busbar-dong-ma-thiec-dan-dien",
   "bu-long-chot-dinh-vi-khoi-be-hoa-chat",
   "ong-lot-truc-ren-co-khi-chiu-mai-mon",
+  "linh-kien-nhom-tan-nhiet-anode-hoa-cung",
   "cum-linh-kien-khung-vo-banh-rang-b2b",
 ] as const;
 
@@ -145,6 +146,25 @@ export function getProducts(t: ProductsTranslator): Product[] {
         {
           label: t("products.ongLot.chips.blackZinc.label"),
           value: t("products.ongLot.chips.blackZinc.value"),
+        },
+      ],
+      showInGrid: true,
+    },
+    {
+      slug: "linh-kien-nhom-tan-nhiet-anode-hoa-cung",
+      title: t("products.nhomTanNhiet.title"),
+      category: t("products.nhomTanNhiet.category"),
+      categorySlug: "anodizing",
+      lot: "HN-PRD-768",
+      description: t("products.nhomTanNhiet.description"),
+      image:
+        "/images/factory/phan-tich-2.jpg",
+      imageAlt: t("products.nhomTanNhiet.imageAlt"),
+      imageBadge: t("products.nhomTanNhiet.imageBadge"),
+      specChips: [
+        {
+          label: t("products.nhomTanNhiet.chips.hardAnodizing.label"),
+          value: t("products.nhomTanNhiet.chips.hardAnodizing.value"),
         },
       ],
       showInGrid: true,

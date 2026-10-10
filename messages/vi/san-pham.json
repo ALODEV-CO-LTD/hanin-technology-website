@@ -186,6 +186,19 @@
           }
         }
       },
+      "nhomTanNhiet": {
+        "title": "Linh kiện nhôm tản nhiệt anode hóa cứng",
+        "category": "Linh kiện anodizing",
+        "description": "Anode hóa cứng tạo màng oxit Al₂O₃ bền, cách điện trên 1000 V DC và chịu mài mòn cho tản nhiệt, chi tiết nhôm trong thiết bị điện tử.",
+        "imageAlt": "Linh kiện nhôm tản nhiệt sau khi anode hóa cứng (ảnh minh họa)",
+        "imageBadge": "Linh kiện anodizing",
+        "chips": {
+          "hardAnodizing": {
+            "label": "Anode hóa cứng",
+            "value": "Hard coat: 50 µm"
+          }
+        }
+      },
       "cumLinhKien": {
         "title": "Dự án mạ cụm khung vỏ và bánh răng cho khách hàng ngành chế tạo máy",
         "category": "Dự án điển hình",

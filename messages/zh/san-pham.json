@@ -186,6 +186,19 @@
           }
         }
       },
+      "nhomTanNhiet": {
+        "title": "硬质阳极氧化铝散热件",
+        "category": "阳极氧化零件",
+        "description": "硬质阳极氧化形成坚固的 Al₂O₃ 氧化膜，绝缘性能超过 1000V DC 且耐磨，适用于电子设备的散热件与铝制零件。",
+        "imageAlt": "经硬质阳极氧化的铝制散热件（示意图）",
+        "imageBadge": "阳极氧化零件",
+        "chips": {
+          "hardAnodizing": {
+            "label": "硬质阳极氧化",
+            "value": "硬质膜层：50 µm"
+          }
+        }
+      },
       "cumLinhKien": {
         "title": "机械制造客户的壳体与齿轮部件电镀项目",
         "category": "典型项目",
