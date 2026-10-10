@@ -6,12 +6,9 @@ export const gilroy = localFont({
     { path: "./SVN-Gilroy_Medium.woff2", weight: "500", style: "normal" },
     { path: "./SVN-Gilroy_SemiBold.woff2", weight: "600", style: "normal" },
     { path: "./SVN-Gilroy_Bold.woff2", weight: "700", style: "normal" },
-    { path: "./SVN-Gilroy_Heavy.woff2", weight: "800", style: "normal" },
-    { path: "./SVN-Gilroy_Black.woff2", weight: "900", style: "normal" },
   ],
   variable: "--font-gilroy",
   display: "swap",
-  // 6 file font (~150 KB) preload cùng lúc tranh băng thông với ảnh banner (LCP) trên mạng di động chậm; chữ hiện bằng
-  // font dự phòng đã chỉnh số đo rồi đổi sang Gilroy khi tải xong nên không gây xô lệch bố cục.
-  preload: false,
+  // Chỉ nạp 4 độ đậm thật sự dùng (400/500/600/700). Heavy 800 (chỉ tiêu đề chân trang) và Black 900 (không dùng) đã bỏ:
+  // trình duyệt dùng bản 700 cho font-extrabold. Giữ preload để tải song song với CSS, tránh chuỗi CSS → font làm chậm FCP.
 });
