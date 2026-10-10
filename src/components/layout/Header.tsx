@@ -77,7 +77,7 @@ export default function Header({ logoSrc }: { logoSrc: string }) {
           <img
             src={photoUrl(logoSrc, 384)}
             srcSet={logoSrcSet(logoSrc)}
-            sizes="200px"
+            sizes="(min-width: 1280px) 220px, 140px"
             alt={t("logoAlt")}
             className={`h-9 xl:h-14 w-auto transition-transform duration-200 ease-out group-hover:scale-105 group-active:scale-95 ${
               logoPulsing ? "logo-click-pulse" : ""

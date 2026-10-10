@@ -10,9 +10,10 @@ import subsetFont from "subset-font";
 const DIR = "src/fonts";
 const ranges = [
   [0x20, 0x7e], // Basic Latin
-  [0xa0, 0x24f], // Latin-1 + Latin Extended-A/B
+  [0xa0, 0xff], // Latin-1
+  [0x102, 0x103], [0x110, 0x111], [0x128, 0x129], [0x168, 0x169], [0x1a0, 0x1a1], [0x1af, 0x1b0], // chữ cái riêng của tiếng Việt (Ă đ Ĩ Ũ Ơ Ư)
   [0x300, 0x30f], // dấu kết hợp
-  [0x1e00, 0x1eff], // Latin Extended Additional (tiếng Việt)
+  [0x1ea0, 0x1ef9], // Latin Extended Additional: chữ có dấu tiếng Việt
   [0x2010, 0x2027], // gạch ngang, nháy, dấu chấm lửng, bullet
   [0x2030, 0x203a],
   [0x2070, 0x209f], // chỉ số trên/dưới (m², ³…)

@@ -25,12 +25,13 @@ function withVersion(src: string): string {
 }
 
 /**
- * Chất lượng WebP: ảnh nhà máy/quy trình cần nét ở màn hình lớn (q85) nhưng trên điện thoại (≤1080px) q75 là đủ và
- * nhẹ hơn khoảng 40%; ảnh khác (logo, tải lên CMS) q75. Giá trị phải nằm trong `images.qualities` của next.config.ts.
+ * Chất lượng WebP: ảnh nhà máy/quy trình cần nét ở màn hình lớn (q85) nhưng trên điện thoại (≤1080px) q70 là đủ và
+ * nhẹ hơn khoảng 45%; ảnh khác (logo, tải lên CMS) q75. Giá trị phải nằm trong `images.qualities` của next.config.ts.
  */
 function photoQuality(src: string, width: number): PhotoQuality {
   const photo = src.startsWith("/images/factory") || src.startsWith("/images/process");
-  return photo && width > 1080 ? 85 : 75;
+  if (!photo) return 75;
+  return width > 1080 ? 85 : 70;
 }
 
 /** Banner đầu trang phủ lớp gradient tối nên q70 vẫn đẹp và nhẹ hơn nhiều (ảnh 1920px từ 250–650 KB xuống còn ~40%). */
