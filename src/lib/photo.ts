@@ -3,7 +3,7 @@
  * tự đổi sang WebP và cắt đúng kích thước theo màn hình, nhẹ hơn nhiều so với ảnh gốc.
  * Ảnh ngoài (http…) giữ nguyên.
  */
-const WIDTHS = [640, 828, 1080, 1200, 1920, 3840] as const;
+const WIDTHS = [640, 828, 1080, 1200, 1440, 1920, 3840] as const;
 /**
  * Số phiên bản ảnh: thêm vào đường dẫn ảnh cục bộ để trình duyệt, Cloudflare và bộ nhớ đệm của /_next/image
  * (lưu 30 ngày theo URL) không trả bản cũ khi ta thay file ảnh mà giữ nguyên tên. TĂNG số này mỗi lần xuất lại ảnh.
@@ -28,19 +28,27 @@ function withVersion(src: string): string {
  * Chất lượng WebP: ảnh nhà máy/quy trình cần nét ở màn hình lớn (q85) nhưng trên điện thoại (≤1080px) q75 là đủ và
  * nhẹ hơn khoảng 40%; ảnh khác (logo, tải lên CMS) q75. Giá trị phải nằm trong `images.qualities` của next.config.ts.
  */
-function photoQuality(src: string, width: number): 75 | 85 {
+function photoQuality(src: string, width: number): PhotoQuality {
   const photo = src.startsWith("/images/factory") || src.startsWith("/images/process");
   return photo && width > 1080 ? 85 : 75;
 }
 
-export function photoUrl(src: string, width: (typeof WIDTHS)[number] | (typeof LOGO_WIDTHS)[number] = 1920): string {
-  return isLocal(src) ? `/_next/image?url=${encodeURIComponent(withVersion(src))}&w=${width}&q=${photoQuality(src, width)}` : src;
+/** Banner đầu trang phủ lớp gradient tối nên q70 vẫn đẹp và nhẹ hơn nhiều (ảnh 1920px từ 250–650 KB xuống còn ~40%). */
+export const BANNER_QUALITY = 70;
+type PhotoQuality = 70 | 75 | 85;
+
+export function photoUrl(
+  src: string,
+  width: (typeof WIDTHS)[number] | (typeof LOGO_WIDTHS)[number] = 1920,
+  quality?: PhotoQuality,
+): string {
+  return isLocal(src) ? `/_next/image?url=${encodeURIComponent(withVersion(src))}&w=${width}&q=${quality ?? photoQuality(src, width)}` : src;
 }
 
 /** Giá trị cho thuộc tính srcSet của <img>; undefined nếu là ảnh ngoài. */
-export function photoSrcSet(src: string | undefined | null): string | undefined {
+export function photoSrcSet(src: string | undefined | null, quality?: PhotoQuality): string | undefined {
   if (!src || !isLocal(src)) return undefined;
-  return WIDTHS.map((w) => `${photoUrl(src, w)} ${w}w`).join(", ");
+  return WIDTHS.map((w) => `${photoUrl(src, w, quality)} ${w}w`).join(", ");
 }
 
 /** srcSet cho logo (WebP nhỏ gọn thay vì PNG gốc). */
