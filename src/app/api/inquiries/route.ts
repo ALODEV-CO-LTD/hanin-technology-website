@@ -3,7 +3,7 @@ import { HttpError } from "@/server/auth";
 import { route } from "@/server/api";
 import { run } from "@/server/db";
 import { clientIp, hashIp, rateLimit } from "@/server/rate-limit";
-import { ATTACHMENT_MAX_FILES, savePrivateAttachment, type StoredFile } from "@/server/uploads";
+import { ATTACHMENT_MAX_BYTES, ATTACHMENT_MAX_FILES, savePrivateAttachment, type StoredFile } from "@/server/uploads";
 import { isLocale } from "@/server/i18n";
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -23,6 +23,11 @@ export const POST = route(
     const ip = clientIp(request);
     if (!rateLimit(`inquiry:${ip}`, 6, 10 * 60)) {
       throw new HttpError(429, "Bạn gửi quá nhiều yêu cầu, vui lòng thử lại sau ít phút.");
+    }
+
+    const declared = Number(request.headers.get("content-length") ?? 0);
+    if (declared > ATTACHMENT_MAX_FILES * ATTACHMENT_MAX_BYTES + 1024 * 1024) {
+      throw new HttpError(413, "Dữ liệu gửi lên quá lớn");
     }
 
     let form: FormData;

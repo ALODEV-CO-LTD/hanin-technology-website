@@ -46,3 +46,6 @@ next-env.d.ts
 # build tạm khi hoán đổi (scripts/safe-build.sh)
 /.next-new/
 /.next-old/
+
+# SQLite in-memory nhầm tên
+:memory:*

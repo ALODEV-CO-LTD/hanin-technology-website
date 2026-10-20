@@ -20,7 +20,7 @@ export async function api<T = unknown>(path: string, options: { method?: string;
   const res = await fetch(`/api/admin/${path}`, init);
   const data = await res.json().catch(() => ({}));
   if (!res.ok) {
-    if (res.status === 401 && typeof window !== "undefined") window.location.href = "/admin/login";
+    if (res.status === 401 && typeof window !== "undefined") window.location.assign("/admin/login");
     throw new ApiError(data.error ?? "Có lỗi xảy ra", res.status, data.errors);
   }
   return data as T;

@@ -109,7 +109,13 @@ export async function requireUser(role?: Role): Promise<SessionUser> {
 /** Chặn CSRF cho request đổi dữ liệu: Origin (nếu có) phải trùng Host. */
 export function assertSameOrigin(request: Request): void {
   const origin = request.headers.get("origin");
-  if (!origin) return; // request không do trình duyệt cross-site gửi (curl, server-to-server)
+  // Trình duyệt luôn gửi Origin với request đổi dữ liệu; thiếu Origin chỉ khi có Sec-Fetch-Site (trình duyệt) → coi là cùng nguồn
+  // nếu giá trị là same-origin/none, còn lại (curl, server-to-server không có cookie trình duyệt) cho qua.
+  if (!origin) {
+    const site = request.headers.get("sec-fetch-site");
+    if (site && site !== "same-origin" && site !== "none") throw new HttpError(403, "Origin không được phép");
+    return;
+  }
   const host = request.headers.get("x-forwarded-host") ?? request.headers.get("host");
   let originHost = "";
   try {

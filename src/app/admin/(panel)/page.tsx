@@ -7,12 +7,16 @@ export const dynamic = "force-dynamic";
 
 const count = (table: string, where = "1=1") => Number(get<{ n: number }>(`SELECT COUNT(*) AS n FROM ${table} WHERE ${where}`)?.n ?? 0);
 
+/** Ngày (UTC, yyyy-mm-dd) cách hôm nay `ago` ngày. */
+function dayKey(ago: number): string {
+  return new Date(Date.now() - ago * 86400000).toISOString().slice(0, 10);
+}
+
 export default function DashboardPage() {
   const recent = all<{ id: number; kind: string; fullName: string; company: string; createdAt: string; status: string }>(
     "SELECT id, kind, full_name AS fullName, company, created_at AS createdAt, status FROM inquiries ORDER BY id DESC LIMIT 6",
   );
   const kindLabel: Record<string, string> = { rfq: "Báo giá", contact: "Liên hệ", application: "Ứng tuyển" };
-  const statusLabel: Record<string, string> = { new: "Mới", processing: "Đang xử lý", done: "Đã xử lý", spam: "Spam" };
 
   // 30 ngày gần nhất (giờ UTC của cơ sở dữ liệu); ngày không có yêu cầu hiển thị 0.
   const dayRows = all<{ d: string; n: number }>(
@@ -20,7 +24,7 @@ export default function DashboardPage() {
   );
   const byDay = new Map(dayRows.map((r) => [r.d, Number(r.n)]));
   const days = Array.from({ length: 30 }, (_, i) => {
-    const key = new Date(Date.now() - (29 - i) * 86400000).toISOString().slice(0, 10);
+    const key = dayKey(29 - i);
     return { label: key.slice(8, 10) + "/" + key.slice(5, 7), value: byDay.get(key) ?? 0 };
   });
   const last30 = days.reduce((a, b) => a + b.value, 0);
