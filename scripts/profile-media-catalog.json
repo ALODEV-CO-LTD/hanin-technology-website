@@ -1,0 +1,4788 @@
+[
+ {
+  "image": "image9_01",
+  "slug": "gia-treo-day-chuyen-ma-tu-dong",
+  "label": "Giá treo chi tiết trên dây chuyền mạ tự động",
+  "tags": [
+   "day-chuyen",
+   "ma-tu-dong",
+   "ma-treo"
+  ],
+  "placements": [
+   {
+    "page": "/",
+    "file": "src/components/home/FactoryShowcase.tsx",
+    "section": "Tab DÂY CHUYỀN (FactoryShowcase#2, khung h-460/540 cover)",
+    "replaces": "/images/factory/hd/showcase-treo.jpg",
+    "note": "Phương án thay thế/phụ cho 9_03; ảnh cận dải giá treo"
+   },
+   {
+    "page": "/nang-luc-san-xuat",
+    "file": "",
+    "section": "Dây chuyền mạ tự động",
+    "replaces": "thêm mới",
+    "note": "Gợi ý cho trang khác"
+   },
+   {
+    "page": "/nang-luc-san-xuat",
+    "file": "src/components/nang-luc/FactoryGallery.tsx",
+    "section": "Lưới 4 ảnh nhỏ, mục racks (aspect-video)",
+    "replaces": "/images/factory/qc-4.jpg",
+    "note": "Ảnh 2400x966 cắt 16:9 được; chủ thể là các giàn JIG đầy chi tiết dưới đường ray cẩu"
+   }
+  ],
+  "alt": {
+   "vi": "Các giá treo (JIG) xếp thành hàng dài trên dây chuyền mạ tự động trong nhà xưởng",
+   "zh": "自动电镀线上成排排列的挂具（JIG）",
+   "ko": "자동 도금 라인에서 길게 늘어선 걸이(JIG)"
+  },
+  "caption": {
+   "vi": "Giá treo JIG xếp hàng trên dây chuyền mạ tự động.",
+   "zh": "自动电镀线上成排的挂具（JIG）。",
+   "ko": "자동 도금 라인의 걸이(JIG) 배열."
+  },
+  "flags": [
+   "ai-like"
+  ]
+ },
+ {
+  "image": "image9_02",
+  "slug": "cong-nhan-kiem-tra-gia-treo-ma",
+  "label": "Công nhân kiểm tra giá treo chi tiết trước khi mạ",
+  "tags": [
+   "ma-treo",
+   "gia-treo",
+   "nhan-su"
+  ],
+  "placements": [
+   {
+    "page": "/tuyen-dung",
+    "file": "src/components/tuyen-dung/WorkEnvironment.tsx",
+    "section": "Ảnh 1 (WorkEnvironment#1)",
+    "replaces": "/images/factory/ma-treo-2.jpg",
+    "note": "Cảnh thao tác thật tại khu mạ treo"
+   },
+   {
+    "page": "/",
+    "file": "src/components/home/FactoryShowcase.tsx",
+    "section": "Tab DÂY CHUYỀN",
+    "replaces": "/images/factory/hd/showcase-treo.jpg",
+    "note": "Phương án"
+   },
+   {
+    "page": "/nang-luc-san-xuat",
+    "file": "src/components/nang-luc/FactoryGallery.tsx",
+    "section": "Lưới 4 ảnh nhỏ, mục control (Vận hành sản xuất)",
+    "replaces": "/images/factory/kho-6.jpg",
+    "note": "Nhân viên đeo găng gắn chi tiết lên JIG; khớp nhãn 'Nhân viên vận hành tại khu sản xuất'"
+   }
+  ],
+  "alt": {
+   "vi": "Công nhân đeo găng thao tác trên giá treo chi tiết ở khu dây chuyền mạ",
+   "zh": "戴手套的工人在电镀线挂具上作业",
+   "ko": "장갑을 낀 작업자가 도금 라인의 걸이에서 작업하는 모습"
+  },
+  "caption": {
+   "vi": "Thao tác gá chi tiết lên giá treo ở khu mạ treo.",
+   "zh": "在挂镀区将工件装挂到挂具上。",
+   "ko": "걸이 도금 구역에서 부품을 걸이에 거는 작업."
+  },
+  "flags": [
+   "ai-like",
+   "tay-nguoi-co-the-bien-dang"
+  ]
+ },
+ {
+  "image": "image9_03",
+  "slug": "day-chuyen-ma-tu-dong-cau-truc-cam",
+  "label": "Dây chuyền mạ tự động, cầu trục và dãy bể mạ",
+  "tags": [
+   "day-chuyen",
+   "ma-tu-dong",
+   "cau-truc"
+  ],
+  "placements": [
+   {
+    "page": "/",
+    "file": "src/components/home/FactoryShowcase.tsx",
+    "section": "Tab DÂY CHUYỀN (FactoryShowcase#2)",
+    "replaces": "/images/factory/hd/showcase-treo.jpg",
+    "note": "Ảnh chính của tab"
+   },
+   {
+    "page": "/",
+    "file": "src/components/home/ManufacturingCapability.tsx",
+    "section": "Ảnh trái khối Năng lực sản xuất (aspect 16/10)",
+    "replaces": "/images/factory/ma-treo-3.jpg",
+    "note": "Khớp imageAlt 'Bể mạ tự động'"
+   },
+   {
+    "page": "/gioi-thieu",
+    "file": "src/components/gioi-thieu/FactoryOverview.tsx",
+    "section": "Ảnh chính + Khu 1 Dây chuyền mạ (FactoryOverview#1)",
+    "replaces": "/images/factory/ma-quay-1.jpg",
+    "note": "Khớp mainImageAlt 'cầu trục và bể hóa chất'"
+   },
+   {
+    "page": "/nang-luc-san-xuat",
+    "file": "src/components/nang-luc/ProductionLines.tsx",
+    "section": "Thẻ 'auto' (Dây chuyền mạ tự động), cột ảnh 5/12, aspect 16:10",
+    "replaces": "/images/factory/ma-treo-3.jpg",
+    "note": "Khớp mô tả 'cẩu trục chuyển qua các bể trong khu bể mạ'"
+   },
+   {
+    "page": "/nang-luc-san-xuat",
+    "file": "src/components/nang-luc/AutomatedVsManual.tsx",
+    "section": "Cột Dây chuyền mạ tự động (h-56)",
+    "replaces": "/images/factory/ma-treo-2.jpg",
+    "note": "Phương án thay thế: image9_04"
+   }
+  ],
+  "alt": {
+   "vi": "Dây chuyền mạ tự động với cầu trục treo dọc dãy bể mạ trong nhà xưởng",
+   "zh": "自动电镀线：沿电镀槽排列的行车和槽体",
+   "ko": "자동 도금 라인: 도금조를 따라 설치된 크레인과 도금조"
+  },
+  "caption": {
+   "vi": "Dây chuyền mạ tự động: cầu trục và dãy bể mạ. Sản lượng 30–50 nghìn sản phẩm/ngày.",
+   "zh": "自动电镀线：行车与电镀槽。产量 3–5 万件/天。",
+   "ko": "자동 도금 라인: 크레인과 도금조. 생산량 일 3만~5만 개."
+  },
+  "flags": [
+   "ai-like"
+  ]
+ },
+ {
+  "image": "image9_04",
+  "slug": "day-chuyen-ma-nhin-tu-tren-cao",
+  "label": "Toàn cảnh dây chuyền mạ nhìn dọc nhà xưởng",
+  "tags": [
+   "day-chuyen",
+   "nha-xuong",
+   "cau-truc"
+  ],
+  "placements": [
+   {
+    "page": "/",
+    "file": "src/components/home/FactoryShowcase.tsx",
+    "section": "Tab NHÀ MÁY (FactoryShowcase#1)",
+    "replaces": "/images/factory/hd/showcase-kho.jpg",
+    "note": "Toàn cảnh xưởng mạ, hợp tab 'Nhà máy mạ rộng 2.230 m²'"
+   },
+   {
+    "page": "/gioi-thieu",
+    "file": "src/components/gioi-thieu/FactoryOverview.tsx",
+    "section": "Khu 4 Cầu trục (FactoryOverview#4)",
+    "replaces": "/images/factory/kho-5.jpg",
+    "note": "Khớp zone4ImageAlt cầu trục"
+   },
+   {
+    "page": "/nang-luc-san-xuat",
+    "file": "src/components/nang-luc/FactoryGallery.tsx",
+    "section": "Ảnh lớn đầu mục (mainImage, aspect 16:9, max-h 520)",
+    "replaces": "/images/factory/ma-quay-7.jpg",
+    "note": "Ảnh 2400x948 cắt 16:9 được"
+   },
+   {
+    "page": "/nang-luc-san-xuat",
+    "file": "src/components/nang-luc/AutomatedVsManual.tsx",
+    "section": "Cột Dây chuyền mạ tự động (h-56)",
+    "replaces": "/images/factory/ma-treo-2.jpg",
+    "note": "Chọn image9_03 hoặc ảnh này"
+   }
+  ],
+  "alt": {
+   "vi": "Toàn cảnh dãy bể mạ và hệ thống cầu trục dọc nhà xưởng mạ",
+   "zh": "电镀车间内成排电镀槽与行车系统全景",
+   "ko": "도금 공장 내 도금조 열과 크레인 시스템 전경"
+  },
+  "caption": {
+   "vi": "Toàn cảnh dãy bể mạ và cầu trục trong nhà xưởng mạ.",
+   "zh": "电镀车间槽体与行车全景。",
+   "ko": "도금 공장의 도금조와 크레인 전경."
+  },
+  "flags": [
+   "ai-like"
+  ]
+ },
+ {
+  "image": "image14_01",
+  "slug": "gia-treo-chi-tiet-den-khung-xanh",
+  "label": "Giá treo chi tiết sẫm màu trên khung xanh",
+  "tags": [
+   "ma-treo",
+   "gia-treo",
+   "tien-xu-ly"
+  ],
+  "placements": [
+   {
+    "page": "/",
+    "file": "src/components/home/FactoryShowcase.tsx",
+    "section": "Tab DÂY CHUYỀN",
+    "replaces": "/images/factory/hd/showcase-treo.jpg",
+    "note": "Phương án cận cảnh"
+   },
+   {
+    "page": "/nang-luc-san-xuat",
+    "file": "src/components/nang-luc/ProductionLines.tsx",
+    "section": "Thẻ 'rack' (Dây chuyền mạ treo kim loại bán tự động), 16:10",
+    "replaces": "/images/factory/ma-quay-6.jpg",
+    "note": "Giá treo màu xanh lá, chi tiết tấm kim loại màu tối"
+   },
+   {
+    "page": "/nang-luc-san-xuat",
+    "file": "src/components/nang-luc/FactoryGallery.tsx",
+    "section": "Lưới 4 ảnh nhỏ, mục racks (Giá treo)",
+    "replaces": "/images/factory/qc-4.jpg",
+    "note": "Phương án thay thế"
+   },
+   {
+    "page": "/nang-luc-san-xuat",
+    "file": "src/components/nang-luc/FactoryGallery.tsx",
+    "section": "Lưới 4 ảnh nhỏ, mục finished (Sản phẩm sau mạ)",
+    "replaces": "/images/factory/ma-treo-3.jpg",
+    "note": "Chỉ dùng nếu không có ảnh sản phẩm thật; lớp mạ trên chi tiết không xác định"
+   }
+  ],
+  "alt": {
+   "vi": "Các chi tiết sẫm màu gá trên khung treo mạ màu xanh lá",
+   "zh": "绿色挂镀架上装挂的深色工件",
+   "ko": "녹색 도금 걸이 프레임에 걸린 어두운 색 부품"
+  },
+  "caption": {
+   "vi": "Chi tiết gá trên giá treo mạ; nền vật liệu và lớp mạ theo từng mã hàng.",
+   "zh": "挂镀架上装挂的工件；基材与镀层按各零件而定。",
+   "ko": "도금 걸이에 장착된 부품; 소재와 도금층은 품번별로 상이."
+  },
+  "flags": [
+   "khong-chac-nen-vat-lieu",
+   "ai-like",
+   "khong-ro-lop-ma"
+  ]
+ },
+ {
+  "image": "image14_02",
+  "slug": "nha-xuong-ma-treo-be-ma",
+  "label": "Nhà xưởng mạ treo, khu bể mạ",
+  "tags": [
+   "nha-xuong",
+   "ma-treo"
+  ],
+  "placements": [
+   {
+    "page": "/",
+    "file": "src/components/home/FactoryShowcase.tsx",
+    "section": "Tab NHÀ MÁY (FactoryShowcase#1)",
+    "replaces": "/images/factory/hd/showcase-kho.jpg",
+    "note": "Phương án"
+   },
+   {
+    "page": "/gioi-thieu",
+    "file": "src/components/gioi-thieu/CompanyIntroduction.tsx",
+    "section": "Ảnh cạnh phần giới thiệu (CompanyIntroduction#1)",
+    "replaces": "/images/factory/ma-quay-5.jpg",
+    "note": "Ảnh nhà xưởng mạ"
+   },
+   {
+    "page": "/nang-luc-san-xuat",
+    "file": "src/components/nang-luc/FactoryOverview.tsx",
+    "section": "Ảnh bên trái 7/12 (aspect 4:3, min-h 420)",
+    "replaces": "/images/factory/ma-quay-7.jpg",
+    "note": "Ảnh 2092x1028 hợp khung; hiển thị khu xưởng khi ghi 'Khu mạ và xưởng sản xuất'"
+   }
+  ],
+  "alt": {
+   "vi": "Nhà xưởng mạ có đường ray treo, khu bể mạ và hệ thống thông gió",
+   "zh": "设有吊轨、电镀槽与通风系统的电镀车间",
+   "ko": "레일, 도금조, 환기 설비를 갖춘 도금 공장"
+  },
+  "caption": {
+   "vi": "Nhà xưởng mạ treo: đường ray, khu bể mạ, hệ thống thông gió.",
+   "zh": "挂镀车间：轨道、槽区、通风系统。",
+   "ko": "걸이 도금 공장: 레일, 도금조, 환기 설비."
+  },
+  "flags": [
+   "ai-like",
+   "mau-sac-bao-hoa"
+  ]
+ },
+ {
+  "image": "image18_01",
+  "slug": "buong-phun-son-inox",
+  "label": "Cụm buồng phun sơn",
+  "tags": [
+   "phun-son",
+   "thiet-bi"
+  ],
+  "placements": [
+   {
+    "page": "/",
+    "file": "src/components/home/FactoryShowcase.tsx",
+    "section": "Tab THIẾT BỊ (FactoryShowcase#4)",
+    "replaces": "/images/factory/hd/showcase-may.jpg",
+    "note": "Cho nửa 'buồng phun sơn' của tab"
+   },
+   {
+    "page": "/",
+    "file": "src/components/home/ManufacturingCapability.tsx",
+    "section": "Thẻ Thiết bị PVD, phun sơn và in",
+    "replaces": "thêm mới",
+    "note": "Ảnh minh họa phụ nếu có khối ảnh"
+   },
+   {
+    "page": "/nang-luc-san-xuat",
+    "file": "src/components/nang-luc/EquipmentGrid.tsx",
+    "section": "Thẻ 'paint' (Khu phun sơn), h-44",
+    "replaces": "/images/factory/ma-quay-7.jpg",
+    "note": "Ảnh hiện tại là ảnh khu mạ, không đúng; thay bằng ảnh phòng phun sơn"
+   }
+  ],
+  "alt": {
+   "vi": "Cụm buồng phun sơn vỏ inox trong phòng sạch có sàn kẻ vạch",
+   "zh": "洁净车间内的不锈钢喷涂房",
+   "ko": "바닥 구획선이 있는 클린룸의 스테인리스 도장 부스"
+  },
+  "caption": {
+   "vi": "Buồng phun sơn trong khu sơn và in; HANIN có phòng phun thủ công và phòng 6 súng.",
+   "zh": "喷涂区的喷漆房；HANIN 设有手工喷房与 6 枪喷房。",
+   "ko": "도장·인쇄 구역의 도장 부스; HANIN은 수동 부스와 6건 부스를 보유."
+  },
+  "flags": [
+   "khong-xac-dinh-so-buong",
+   "ai-like",
+   "khong-chac-so-tru-6-sung"
+  ]
+ },
+ {
+  "image": "image18_02",
+  "slug": "day-chuyen-phun-son-tu-dong",
+  "label": "Dây chuyền phun sơn tự động",
+  "tags": [
+   "phun-son",
+   "day-chuyen",
+   "thiet-bi"
+  ],
+  "placements": [
+   {
+    "page": "/",
+    "file": "src/components/home/FactoryShowcase.tsx",
+    "section": "Tab THIẾT BỊ (FactoryShowcase#4)",
+    "replaces": "/images/factory/hd/showcase-may.jpg",
+    "note": "Phương án cho phần dây chuyền phun sơn tự động"
+   },
+   {
+    "page": "/nang-luc-san-xuat",
+    "file": "src/components/nang-luc/EquipmentGrid.tsx",
+    "section": "Dự phòng thẻ 'paint'",
+    "replaces": "thêm mới",
+    "note": "Chưa xác định công đoạn (băng chuyền dài trong phòng sạch); chỉ dùng mô tả trung tính"
+   }
+  ],
+  "alt": {
+   "vi": "Dây chuyền phun sơn tự động với băng tải treo chi tiết trong phòng sạch",
+   "zh": "洁净车间内带输送挂具的自动喷涂线",
+   "ko": "클린룸의 컨베이어형 자동 도장 라인"
+  },
+  "caption": {
+   "vi": "Dây chuyền phun sơn tự động (1 dây chuyền tại HANIN).",
+   "zh": "自动喷涂线（HANIN 设有 1 条）。",
+   "ko": "자동 도장 라인(HANIN 1개 라인)."
+  },
+  "flags": [
+   "ai-like",
+   "khong-ro-cong-doan"
+  ]
+ },
+ {
+  "image": "image18_03",
+  "slug": "may-pvd-buong-chan-khong",
+  "label": "Máy PVD mạ chân không",
+  "tags": [
+   "pvd",
+   "thiet-bi",
+   "ma-chan-khong"
+  ],
+  "placements": [
+   {
+    "page": "/",
+    "file": "src/components/home/FactoryShowcase.tsx",
+    "section": "Tab THIẾT BỊ (FactoryShowcase#4)",
+    "replaces": "/images/factory/hd/showcase-may.jpg",
+    "note": "Ảnh chính tab 'Máy PVD và buồng phun sơn'"
+   },
+   {
+    "page": "/",
+    "file": "src/components/home/ManufacturingCapability.tsx",
+    "section": "Thẻ Thiết bị 'PVD, phun sơn và in'",
+    "replaces": "thêm mới",
+    "note": ""
+   },
+   {
+    "page": "/nang-luc-san-xuat",
+    "file": "src/components/nang-luc/EquipmentGrid.tsx",
+    "section": "Thẻ 'pvd' (Máy mạ chân không PVD), h-44",
+    "replaces": "/images/factory/phan-tich-2.jpg",
+    "note": "Ảnh hiện tại là ảnh phòng phân tích, sai chủ đề; dùng ảnh này hoặc image18_06"
+   },
+   {
+    "page": "/nang-luc-san-xuat",
+    "file": "src/components/nang-luc/CapabilityHero.tsx",
+    "section": "Dự phòng ảnh thẻ chỉ số PVD",
+    "replaces": "thêm mới",
+    "note": ""
+   }
+  ],
+  "alt": {
+   "vi": "Thân buồng máy PVD hình trụ màu kem kèm bơm chân không và tủ điều khiển",
+   "zh": "带真空泵与控制柜的奶白色圆柱形 PVD 镀膜机",
+   "ko": "진공 펌프와 제어반이 붙은 크림색 원통형 PVD 장비"
+  },
+  "caption": {
+   "vi": "Máy PVD mạ chân không; HANIN có 2 máy PVD, 2 dây chuyền PVD.",
+   "zh": "PVD 真空镀膜机；HANIN 设有 2 台 PVD、2 条 PVD 线。",
+   "ko": "PVD 진공 증착기; HANIN은 PVD 2대, 2개 라인 보유."
+  },
+  "flags": [
+   "ai-like",
+   "bien-hieu-may-co-chu-la"
+  ]
+ },
+ {
+  "image": "image18_04",
+  "slug": "dan-phun-son-tu-dong-bang-tai",
+  "label": "Dàn súng phun sơn tự động trên băng tải",
+  "tags": [
+   "phun-son",
+   "day-chuyen",
+   "thiet-bi"
+  ],
+  "placements": [
+   {
+    "page": "/",
+    "file": "src/components/home/FactoryShowcase.tsx",
+    "section": "Tab THIẾT BỊ",
+    "replaces": "thêm mới / phương án",
+    "note": "Cận cảnh dàn phun"
+   },
+   {
+    "page": "/nang-luc-san-xuat",
+    "file": "src/components/nang-luc/EquipmentGrid.tsx",
+    "section": "Thẻ 'paint' (Khu phun sơn) - ưu tiên số 1",
+    "replaces": "/images/factory/ma-quay-7.jpg",
+    "note": "Hiện đường ống khí và giá treo chi tiết dưới dãy súng phun; khớp 'dây chuyền phun sơn tự động'"
+   }
+  ],
+  "alt": {
+   "vi": "Dàn súng phun sơn tự động bố trí dọc băng tải, có bảng điều khiển phía sau",
+   "zh": "沿输送线布置的自动喷枪阵列及后方控制面板",
+   "ko": "컨베이어를 따라 배치된 자동 스프레이 건과 제어반"
+  },
+  "caption": {
+   "vi": "Dàn súng phun sơn tự động dọc băng tải.",
+   "zh": "沿输送线布置的自动喷枪。",
+   "ko": "컨베이어를 따라 배치된 자동 도장 건."
+  },
+  "flags": [
+   "ai-like"
+  ]
+ },
+ {
+  "image": "image18_05",
+  "slug": "moc-treo-bang-tai-phun-son",
+  "label": "Móc treo băng tải của dây chuyền phun sơn",
+  "tags": [
+   "phun-son",
+   "thiet-bi",
+   "moc-treo"
+  ],
+  "placements": [
+   {
+    "page": "/",
+    "file": "",
+    "section": "Dự phòng, chưa có vị trí chính",
+    "replaces": "thêm mới",
+    "note": "Chỉ dùng nếu cần ảnh cận móc treo"
+   },
+   {
+    "page": "/nang-luc-san-xuat",
+    "file": "src/components/nang-luc/EquipmentGrid.tsx",
+    "section": "Dự phòng thẻ 'paint'",
+    "replaces": "thêm mới",
+    "note": "Cận cảnh móc treo trắng trên băng chuyền xanh"
+   }
+  ],
+  "alt": {
+   "vi": "Hàng móc treo trên băng tải của dây chuyền sơn",
+   "zh": "涂装线输送带上的成排挂钩",
+   "ko": "도장 라인 컨베이어의 걸이 열"
+  },
+  "caption": {
+   "vi": "Móc treo băng tải trên dây chuyền sơn.",
+   "zh": "涂装线输送挂钩。",
+   "ko": "도장 라인 컨베이어 걸이."
+  },
+  "flags": [
+   "ai-like",
+   "muc-du-phong"
+  ]
+ },
+ {
+  "image": "image18_06",
+  "slug": "hai-may-pvd-phong-sach",
+  "label": "Hai máy PVD trong phòng sạch",
+  "tags": [
+   "pvd",
+   "thiet-bi",
+   "ma-chan-khong"
+  ],
+  "placements": [
+   {
+    "page": "/",
+    "file": "src/components/home/FactoryShowcase.tsx",
+    "section": "Tab THIẾT BỊ (FactoryShowcase#4)",
+    "replaces": "/images/factory/hd/showcase-may.jpg",
+    "note": "Khớp 'Máy PVD' (2 máy)"
+   },
+   {
+    "page": "/nang-luc-san-xuat",
+    "file": "",
+    "section": "Mạ PVD",
+    "replaces": "thêm mới",
+    "note": "Cho trang khác"
+   },
+   {
+    "page": "/nang-luc-san-xuat",
+    "file": "src/components/nang-luc/EquipmentGrid.tsx",
+    "section": "Thẻ 'pvd' - ưu tiên số 1 (khớp 'Số máy: 2 máy')",
+    "replaces": "/images/factory/phan-tich-2.jpg",
+    "note": "Hình có đúng hai buồng PVD cửa mở"
+   },
+   {
+    "page": "/nang-luc-san-xuat",
+    "file": "src/components/nang-luc/CapabilityOverviewStats.tsx",
+    "section": "Thẻ số 'MÁY PVD' (nếu thêm ảnh)",
+    "replaces": "thêm mới",
+    "note": ""
+   }
+  ],
+  "alt": {
+   "vi": "Hai máy PVD đặt cạnh nhau trong phòng sạch",
+   "zh": "洁净室内并排放置的两台 PVD 镀膜机",
+   "ko": "클린룸에 나란히 놓인 PVD 장비 2대"
+  },
+  "caption": {
+   "vi": "Hai máy PVD trong phòng sạch.",
+   "zh": "洁净室内的两台 PVD 机。",
+   "ko": "클린룸의 PVD 장비 2대."
+  },
+  "flags": [
+   "ai-like"
+  ]
+ },
+ {
+  "image": "image22_01",
+  "slug": "tu-dieu-khien-be-chua-xu-ly-nuoc-thai",
+  "label": "Tủ điều khiển và bể chứa hệ thống xử lý nước thải",
+  "tags": [
+   "xu-ly-nuoc-thai",
+   "thiet-bi"
+  ],
+  "placements": [
+   {
+    "page": "/",
+    "file": "src/components/home/ManufacturingCapability.tsx",
+    "section": "Thẻ XỬ LÝ NƯỚC THẢI",
+    "replaces": "thêm mới",
+    "note": "Ảnh phụ cho thẻ 130 m³/ngày đêm"
+   },
+   {
+    "page": "/gioi-thieu",
+    "file": "src/components/gioi-thieu/CapabilitySnapshot.tsx",
+    "section": "Mục môi trường",
+    "replaces": "thêm mới",
+    "note": ""
+   },
+   {
+    "page": "/nang-luc-san-xuat",
+    "file": "src/components/nang-luc/QualityStandards.tsx",
+    "section": "Thẻ 'wastewater' (thêm ảnh)",
+    "replaces": "thêm mới",
+    "note": "Tủ điều khiển và bồn chứa"
+   }
+  ],
+  "alt": {
+   "vi": "Tủ điều khiển điện cạnh các bể chứa trong hệ thống xử lý nước thải",
+   "zh": "废水处理系统中储罐旁的电气控制柜",
+   "ko": "폐수 처리 시스템의 저장 탱크 옆 전기 제어반"
+  },
+  "caption": {
+   "vi": "Tủ điều khiển và bể chứa của hệ thống xử lý nước thải, công suất 130 m³/ngày đêm.",
+   "zh": "废水处理系统控制柜与储罐，处理能力 130 m³/天。",
+   "ko": "폐수 처리 시스템 제어반과 탱크, 용량 130 m³/일."
+  },
+  "flags": [
+   "ai-like"
+  ]
+ },
+ {
+  "image": "image22_02",
+  "slug": "be-nhua-xanh-xu-ly-nuoc-thai",
+  "label": "Bể chứa hóa chất xử lý nước thải",
+  "tags": [
+   "xu-ly-nuoc-thai",
+   "be-chua"
+  ],
+  "placements": [
+   {
+    "page": "/",
+    "file": "src/components/home/ManufacturingCapability.tsx",
+    "section": "Thẻ XỬ LÝ NƯỚC THẢI",
+    "replaces": "thêm mới",
+    "note": "Phương án"
+   },
+   {
+    "page": "/nang-luc-san-xuat",
+    "file": "src/components/nang-luc/EquipmentGrid.tsx",
+    "section": "Thẻ 'wastewater' (Hệ thống xử lý nước thải), h-44 - ưu tiên số 1",
+    "replaces": "/images/factory/ma-treo-4.jpg",
+    "note": "Có nhãn 'BỂ LẮNG' trên bồn; khớp spec 'Bể lắng, máy ép bùn'"
+   },
+   {
+    "page": "/nang-luc-san-xuat",
+    "file": "src/components/nang-luc/QualityStandards.tsx",
+    "section": "Thẻ 'wastewater'",
+    "replaces": "thêm mới",
+    "note": ""
+   }
+  ],
+  "alt": {
+   "vi": "Các bể chứa nhựa xanh và bể lắng trong khu xử lý nước thải",
+   "zh": "废水处理区的蓝色塑料储罐与沉淀池",
+   "ko": "폐수 처리 구역의 파란색 탱크와 침전조"
+  },
+  "caption": {
+   "vi": "Bể chứa và bể lắng trong khu xử lý nước thải.",
+   "zh": "废水处理区储罐与沉淀池。",
+   "ko": "폐수 처리 구역의 탱크와 침전조."
+  },
+  "flags": [
+   "ai-like"
+  ]
+ },
+ {
+  "image": "image22_03",
+  "slug": "be-lang-nuoc-thai",
+  "label": "Bể lắng và đường ống khu xử lý nước thải",
+  "tags": [
+   "xu-ly-nuoc-thai",
+   "be-lang"
+  ],
+  "placements": [
+   {
+    "page": "/",
+    "file": "src/components/home/ManufacturingCapability.tsx",
+    "section": "Thẻ XỬ LÝ NƯỚC THẢI",
+    "replaces": "thêm mới",
+    "note": "Phương án"
+   },
+   {
+    "page": "/nang-luc-san-xuat",
+    "file": "src/components/nang-luc/FactoryGallery.tsx",
+    "section": "Dự phòng",
+    "replaces": "thêm mới",
+    "note": "Công đoạn xử lý cụ thể trong bể chưa xác định"
+   }
+  ],
+  "alt": {
+   "vi": "Bể lắng và hệ thống đường ống trong khu xử lý nước thải",
+   "zh": "废水处理区的沉淀池与管道系统",
+   "ko": "폐수 처리 구역의 침전조와 배관"
+  },
+  "caption": {
+   "vi": "Bể lắng và đường ống của hệ thống xử lý nước thải.",
+   "zh": "废水处理沉淀池与管道。",
+   "ko": "폐수 처리 침전조와 배관."
+  },
+  "flags": [
+   "ai-like",
+   "khong-ro-cong-doan"
+  ]
+ },
+ {
+  "image": "image22_04",
+  "slug": "may-ep-bun-xu-ly-nuoc-thai",
+  "label": "Máy ép bùn của hệ thống xử lý nước thải",
+  "tags": [
+   "xu-ly-nuoc-thai",
+   "ep-bun"
+  ],
+  "placements": [
+   {
+    "page": "/",
+    "file": "src/components/home/ManufacturingCapability.tsx",
+    "section": "Thẻ XỬ LÝ NƯỚC THẢI (ảnh chính nên chọn)",
+    "replaces": "thêm mới",
+    "note": "Khớp FACTS: bể lắng, máy ép bùn"
+   },
+   {
+    "page": "/nang-luc-san-xuat",
+    "file": "src/components/nang-luc/QualityStandards.tsx",
+    "section": "Thẻ 'wastewater' - ảnh chính",
+    "replaces": "thêm mới",
+    "note": "Khớp 'máy ép bùn' trong FACTS"
+   },
+   {
+    "page": "/nang-luc-san-xuat",
+    "file": "src/components/nang-luc/EquipmentGrid.tsx",
+    "section": "Dự phòng thẻ 'wastewater'",
+    "replaces": "/images/factory/ma-treo-4.jpg",
+    "note": ""
+   }
+  ],
+  "alt": {
+   "vi": "Máy ép bùn khung bản kèm bơm và đường ống trong hệ thống xử lý nước thải",
+   "zh": "废水处理系统中的板框压滤机及泵与管道",
+   "ko": "펌프와 배관이 연결된 폐수 처리용 슬러지 필터프레스"
+  },
+  "caption": {
+   "vi": "Máy ép bùn của hệ thống xử lý nước thải.",
+   "zh": "废水处理系统压泥机。",
+   "ko": "폐수 처리 시스템 슬러지 탈수기."
+  },
+  "flags": [
+   "ai-like"
+  ]
+ },
+ {
+  "image": "image23_01",
+  "slug": "xuong-ep-nhua-hanin-tech",
+  "label": "Xưởng máy ép nhựa của hệ thống Hanin Tech",
+  "tags": [
+   "hanin-tech",
+   "ep-nhua",
+   "nha-xuong"
+  ],
+  "placements": [
+   {
+    "page": "/gioi-thieu",
+    "file": "src/components/gioi-thieu/CompanyJourney.tsx",
+    "section": "Mốc 2021/2023 hoặc khối hệ thống Hanin Tech",
+    "replaces": "thêm mới",
+    "note": "Không dùng làm ảnh xưởng mạ"
+   },
+   {
+    "page": "/gioi-thieu",
+    "file": "src/components/gioi-thieu/DevelopmentDirection.tsx",
+    "section": "Hệ thống Hanin Tech",
+    "replaces": "thêm mới",
+    "note": ""
+   }
+  ],
+  "alt": {
+   "vi": "Dãy máy ép nhựa trong nhà xưởng thuộc hệ thống Hanin Tech",
+   "zh": "Hanin Tech 体系厂房内成排的注塑机",
+   "ko": "Hanin Tech 계열 공장의 사출 성형기 열"
+  },
+  "caption": {
+   "vi": "Xưởng ép nhựa thuộc hệ thống Hanin Tech (không phải xưởng mạ). Đúc nhựa: 25 máy, 75–1.000 tấn.",
+   "zh": "Hanin Tech 体系注塑车间（非电镀车间）。注塑：25 台，75–1000 吨。",
+   "ko": "Hanin Tech 계열 사출 공장(도금 공장 아님). 사출: 25대, 75~1,000톤."
+  },
+  "flags": [
+   "khong-phai-xuong-ma",
+   "ai-like"
+  ]
+ },
+ {
+  "image": "image23_02",
+  "slug": "xuong-khuon-ep-an-toan-la-tren-het",
+  "label": "Xưởng khuôn và ép nhựa, biển an toàn",
+  "tags": [
+   "hanin-tech",
+   "ep-nhua",
+   "nha-xuong"
+  ],
+  "placements": [
+   {
+    "page": "/gioi-thieu",
+    "file": "src/components/gioi-thieu/CompanyJourney.tsx",
+    "section": "Khối hệ thống Hanin Tech",
+    "replaces": "thêm mới",
+    "note": ""
+   }
+  ],
+  "alt": {
+   "vi": "Xưởng máy ép nhựa có cầu trục treo biển khẩu hiệu an toàn",
+   "zh": "设有行车及安全标语的注塑车间",
+   "ko": "안전 문구가 걸린 크레인이 있는 사출 공장"
+  },
+  "caption": {
+   "vi": "Xưởng ép nhựa thuộc hệ thống Hanin Tech.",
+   "zh": "Hanin Tech 体系注塑车间。",
+   "ko": "Hanin Tech 계열 사출 공장."
+  },
+  "flags": [
+   "khong-phai-xuong-ma",
+   "ai-like"
+  ]
+ },
+ {
+  "image": "image23_04",
+  "slug": "cong-nhan-day-chuyen-lap-rap-hanin-tech",
+  "label": "Công nhân tại dây chuyền lắp ráp, hệ thống Hanin Tech",
+  "tags": [
+   "hanin-tech",
+   "nhan-su"
+  ],
+  "placements": [
+   {
+    "page": "/tuyen-dung",
+    "file": "src/components/tuyen-dung/WorkEnvironment.tsx",
+    "section": "Ảnh 2 (WorkEnvironment#2)",
+    "replaces": "/images/factory/qc-7.jpg",
+    "note": "Cảnh làm việc; ghi rõ là hệ thống Hanin Tech"
+   },
+   {
+    "page": "/gioi-thieu",
+    "file": "src/components/gioi-thieu/CompanyIntroduction.tsx",
+    "section": "Nhân sự: 70 người nhà máy mạ / 350 người hệ thống",
+    "replaces": "thêm mới",
+    "note": ""
+   }
+  ],
+  "alt": {
+   "vi": "Công nhân mặc đồng phục đứng dọc hai dãy bàn thao tác trong xưởng",
+   "zh": "身穿制服的工人沿两排操作台站立",
+   "ko": "작업대 양쪽에 서 있는 유니폼 차림의 작업자"
+  },
+  "caption": {
+   "vi": "Công nhân tại dây chuyền lắp ráp, hệ thống Hanin Tech (350 người).",
+   "zh": "Hanin Tech 体系装配线工人（350 人）。",
+   "ko": "Hanin Tech 계열 조립 라인 작업자(350명)."
+  },
+  "flags": [
+   "khong-phai-xuong-ma",
+   "ai-like"
+  ]
+ },
+ {
+  "image": "image25_01",
+  "slug": "chung-chi-iso-9001-2015",
+  "label": "Giấy chứng nhận ISO 9001:2015",
+  "tags": [
+   "chung-nhan",
+   "iso-9001"
+  ],
+  "placements": [
+   {
+    "page": "/gioi-thieu",
+    "file": "src/components/gioi-thieu/QualityStandardsPreview.tsx",
+    "section": "Ảnh chứng chỉ (QualityStandardsPreview#1)",
+    "replaces": "/images/certificates/iso-9001-2015.jpg",
+    "note": "Dùng bản có sẵn nếu đạt chất lượng; chỉ đổi nếu 25_01 nét hơn"
+   },
+   {
+    "page": "/",
+    "file": "src/components/home/QualityCertification.tsx",
+    "section": "Khối chứng nhận",
+    "replaces": "thêm mới",
+    "note": ""
+   }
+  ],
+  "alt": {
+   "vi": "Giấy chứng nhận ISO 9001:2015 cấp cho Công ty Cổ phần Công nghệ Hanin Việt Nam",
+   "zh": "授予 Hanin Technology Vietnam 股份公司的 ISO 9001:2015 证书",
+   "ko": "Hanin Technology Vietnam 주식회사에 발급된 ISO 9001:2015 인증서"
+  },
+  "caption": {
+   "vi": "ISO 9001:2015, đơn vị được chứng nhận: Công ty CP Công nghệ Hanin Việt Nam; ICB, hiệu lực 11/08/2025–10/08/2028.",
+   "zh": "ISO 9001:2015，认证单位：Hanin Technology Vietnam；ICB 认证，有效期 2025/08/11–2028/08/10。",
+   "ko": "ISO 9001:2015, 인증 대상: Hanin Technology Vietnam; ICB, 유효기간 2025.08.11~2028.08.10."
+  },
+  "flags": []
+ },
+ {
+  "image": "image10_01",
+  "slug": "logo-crom-vinfast",
+  "label": "Logo VinFast mạ crom",
+  "tags": [
+   "ma-crom",
+   "oto",
+   "logo"
+  ],
+  "placements": [
+   {
+    "page": "/",
+    "file": "src/components/home/ProductsProjects.tsx",
+    "section": "Thẻ dự án (dữ liệu getProducts, ảnh h-64 cover)",
+    "replaces": "image của sản phẩm tương ứng trong CMS",
+    "note": "Dùng cho thẻ phụ tùng ô tô"
+   },
+   {
+    "page": "/dich-vu-gia-cong-ma/ma-crom-cung-cong-nghiep",
+    "file": "src/components/dich-vu/DetailGallery.tsx",
+    "section": "Mạ Niken-Crom trên nền nhựa ABS: thư viện ảnh chi tiết (DetailGallery 4 ảnh, DetailCapability 1 ảnh)",
+    "replaces": "một ảnh trong SERVICE_GALLERY_POOL (src/lib/factory-pool.ts, /images/factory/*)",
+    "note": "Ví dụ chi tiết thực tế theo nhóm FACTS; đưa vào pool riêng cho từng dịch vụ để không dùng chung cho cả 6 trang"
+   },
+   {
+    "page": "/san-pham-du-an",
+    "file": "src/components/san-pham/ProductCatalog.tsx",
+    "section": "Danh mục Phụ tùng ô tô và Smart Home (đề xuất danh mục mới; ảnh gán qua cột products.image trong CMS/seed)",
+    "replaces": "thêm mới (hiện products.image dùng /images/factory/qc-*.jpg, kho-*.jpg)",
+    "note": "Khung thẻ danh mục; trang chi tiết dùng ProductHero aspect 4/3 và ProductGallery 16/10; ảnh 16/17 nền sáng, dùng object-contain hoặc cover nền sáng"
+   }
+  ],
+  "alt": {
+   "vi": "Logo VinFast chữ V mạ crom trên nền đen",
+   "zh": "黑色底座上的镀铬 VinFast V 形标志",
+   "ko": "검은 바탕에 크롬 도금된 VinFast V 로고"
+  },
+  "caption": {
+   "vi": "Logo VinFast mạ crom (phụ tùng ô tô).",
+   "zh": "镀铬 VinFast 标志（汽车零部件）。",
+   "ko": "크롬 도금 VinFast 로고(자동차 부품)."
+  },
+  "flags": [
+   "ai-like"
+  ]
+ },
+ {
+  "image": "image11_03",
+  "slug": "chi-tiet-vien-den-oto-ma-crom",
+  "label": "Viền, khung và nẹp ô tô mạ crom",
+  "tags": [
+   "ma-crom",
+   "oto"
+  ],
+  "placements": [
+   {
+    "page": "/",
+    "file": "src/components/home/ProductsProjects.tsx",
+    "section": "Thẻ dự án phụ tùng ô tô",
+    "replaces": "ảnh sản phẩm trong CMS",
+    "note": ""
+   },
+   {
+    "page": "/dich-vu-gia-cong-ma/ma-crom-cung-cong-nghiep",
+    "file": "src/components/dich-vu/DetailGallery.tsx",
+    "section": "Mạ Niken-Crom trên nền nhựa ABS: thư viện ảnh chi tiết (DetailGallery 4 ảnh, DetailCapability 1 ảnh)",
+    "replaces": "một ảnh trong SERVICE_GALLERY_POOL (src/lib/factory-pool.ts, /images/factory/*)",
+    "note": "Ví dụ chi tiết thực tế theo nhóm FACTS; đưa vào pool riêng cho từng dịch vụ để không dùng chung cho cả 6 trang"
+   },
+   {
+    "page": "/san-pham-du-an",
+    "file": "src/components/san-pham/ProductCatalog.tsx",
+    "section": "Danh mục Phụ tùng ô tô và Smart Home (đề xuất danh mục mới; ảnh gán qua cột products.image trong CMS/seed)",
+    "replaces": "thêm mới (hiện products.image dùng /images/factory/qc-*.jpg, kho-*.jpg)",
+    "note": "Khung thẻ danh mục; trang chi tiết dùng ProductHero aspect 4/3 và ProductGallery 16/10; ảnh 16/17 nền sáng, dùng object-contain hoặc cover nền sáng"
+   }
+  ],
+  "alt": {
+   "vi": "Các chi tiết viền khung và nẹp trang trí ô tô mạ crom bóng",
+   "zh": "镀铬汽车饰框与饰条",
+   "ko": "광택 크롬 도금 자동차 트림·프레임 부품"
+  },
+  "caption": {
+   "vi": "Viền khung và nẹp mạ crom (phụ tùng ô tô).",
+   "zh": "镀铬饰框与饰条（汽车零部件）。",
+   "ko": "크롬 도금 프레임·트림(자동차 부품)."
+  },
+  "flags": [
+   "ai-like"
+  ]
+ },
+ {
+  "image": "image11_05",
+  "slug": "tay-gat-sen-tam-ma-crom",
+  "label": "Tay gạt, củ sen tắm mạ crom",
+  "tags": [
+   "ma-crom",
+   "thiet-bi-ve-sinh"
+  ],
+  "placements": [
+   {
+    "page": "/",
+    "file": "src/components/home/ProductsProjects.tsx",
+    "section": "Thẻ dự án thiết bị vệ sinh",
+    "replaces": "ảnh sản phẩm trong CMS",
+    "note": ""
+   },
+   {
+    "page": "/dich-vu-gia-cong-ma/ma-crom-cung-cong-nghiep",
+    "file": "src/components/dich-vu/DetailGallery.tsx",
+    "section": "Mạ Niken-Crom trên nền nhựa ABS: thư viện ảnh chi tiết (DetailGallery 4 ảnh, DetailCapability 1 ảnh)",
+    "replaces": "một ảnh trong SERVICE_GALLERY_POOL (src/lib/factory-pool.ts, /images/factory/*)",
+    "note": "Ví dụ chi tiết thực tế theo nhóm FACTS; đưa vào pool riêng cho từng dịch vụ để không dùng chung cho cả 6 trang"
+   },
+   {
+    "page": "/san-pham-du-an",
+    "file": "src/components/san-pham/ProductCatalog.tsx",
+    "section": "Danh mục Thiết bị vệ sinh, nhà bếp (đề xuất danh mục mới; ảnh gán qua cột products.image trong CMS/seed)",
+    "replaces": "thêm mới (hiện products.image dùng /images/factory/qc-*.jpg, kho-*.jpg)",
+    "note": "Khung thẻ danh mục; trang chi tiết dùng ProductHero aspect 4/3 và ProductGallery 16/10; ảnh 16/17 nền sáng, dùng object-contain hoặc cover nền sáng"
+   }
+  ],
+  "alt": {
+   "vi": "Bốn chi tiết tay sen tắm mạ crom bóng cùng một tay gạt nhỏ",
+   "zh": "四件镀铬花洒手柄与一个小拨杆",
+   "ko": "광택 크롬 도금 샤워 핸들 4개와 작은 레버"
+  },
+  "caption": {
+   "vi": "Phụ kiện sen tắm mạ crom (thiết bị vệ sinh).",
+   "zh": "镀铬花洒配件（卫浴设备）。",
+   "ko": "크롬 도금 샤워 부품(욕실 기기)."
+  },
+  "flags": [
+   "ai-like"
+  ]
+ },
+ {
+  "image": "image11_04",
+  "slug": "num-van-ma-crom-satin",
+  "label": "Núm vặn mạ crom/satin",
+  "tags": [
+   "ma-crom",
+   "gia-dung"
+  ],
+  "placements": [
+   {
+    "page": "/",
+    "file": "src/components/home/ProductsProjects.tsx",
+    "section": "Thẻ dự án gia dụng",
+    "replaces": "ảnh sản phẩm trong CMS",
+    "note": ""
+   },
+   {
+    "page": "/dich-vu-gia-cong-ma/ma-crom-cung-cong-nghiep",
+    "file": "src/components/dich-vu/DetailGallery.tsx",
+    "section": "Mạ Niken-Crom trên nền nhựa ABS: thư viện ảnh chi tiết (DetailGallery 4 ảnh, DetailCapability 1 ảnh)",
+    "replaces": "một ảnh trong SERVICE_GALLERY_POOL (src/lib/factory-pool.ts, /images/factory/*)",
+    "note": "Ví dụ chi tiết thực tế theo nhóm FACTS; đưa vào pool riêng cho từng dịch vụ để không dùng chung cho cả 6 trang"
+   },
+   {
+    "page": "/san-pham-du-an",
+    "file": "src/components/san-pham/ProductCatalog.tsx",
+    "section": "Danh mục Thiết bị gia dụng (đề xuất danh mục mới; ảnh gán qua cột products.image trong CMS/seed)",
+    "replaces": "thêm mới (hiện products.image dùng /images/factory/qc-*.jpg, kho-*.jpg)",
+    "note": "Khung thẻ danh mục; trang chi tiết dùng ProductHero aspect 4/3 và ProductGallery 16/10; ảnh 16/17 nền sáng, dùng object-contain hoặc cover nền sáng"
+   }
+  ],
+  "alt": {
+   "vi": "Các núm vặn kim loại mạ bề mặt sáng và núm vặn cận cảnh",
+   "zh": "表面镀层光亮的旋钮及特写",
+   "ko": "밝은 도금 표면의 손잡이와 확대 모습"
+  },
+  "caption": {
+   "vi": "Núm vặn mạ (thiết bị gia dụng, nhà bếp).",
+   "zh": "镀层旋钮（家电、厨房设备）。",
+   "ko": "도금 손잡이(가전·주방 기기)."
+  },
+  "flags": [
+   "ai-like",
+   "khong-chac-lop-ma"
+  ]
+ },
+ {
+  "image": "image13_01",
+  "slug": "may-rung-tay-dau-day-chuyen-ma-quay",
+  "label": "Máy rung và thùng quay (khu mạ quay)",
+  "tags": [
+   "ma-quay",
+   "may-rung",
+   "thiet-bi"
+  ],
+  "placements": [
+   {
+    "page": "/nang-luc-san-xuat",
+    "file": "src/components/nang-luc/EquipmentGrid.tsx",
+    "section": "Thẻ 'rotary' (Máy rung và tẩy dầu), h-44",
+    "replaces": "/images/factory/ma-treo-3.jpg",
+    "note": "Khớp tiêu đề 'Máy rung và tẩy dầu'; hình có máy rung tròn và thùng quay lục giác"
+   }
+  ],
+  "alt": {
+   "vi": "Máy rung dạng chén và thùng quay lục giác màu xanh dùng cho chi tiết nhỏ ở khu mạ quay",
+   "zh": "镀滚区用于小零件的蓝色振动机与六角滚筒",
+   "ko": "배럴 도금 구역에서 소형 부품에 사용하는 파란색 진동기와 육각 배럴"
+  },
+  "caption": {
+   "vi": "Máy rung và thùng quay trong khu mạ quay, dùng cho chi tiết nhỏ số lượng lớn.",
+   "zh": "滚镀区的振动机与滚筒，用于大批量小零件。",
+   "ko": "배럴 도금 구역의 진동기와 배럴. 소형 부품 대량 처리용."
+  },
+  "flags": [
+   "ai-like",
+   "chi-tiet-bien-dang",
+   "kiem-tra-lai-voi-anh-goc"
+  ]
+ },
+ {
+  "image": "image13_02",
+  "slug": "bo-ma-quay-ray-dan-ong",
+  "label": "Bể mạ quay và đường dẫn dung dịch",
+  "tags": [
+   "ma-quay",
+   "be-ma",
+   "day-chuyen"
+  ],
+  "placements": [
+   {
+    "page": "/nang-luc-san-xuat",
+    "file": "src/components/nang-luc/ProductionLines.tsx",
+    "section": "Thẻ 'barrel' (Dây chuyền mạ quay), ảnh 5/12 aspect 16:10 (hiện dùng chung ma-quay-6.jpg với thẻ rack)",
+    "replaces": "/images/factory/ma-quay-6.jpg",
+    "note": "Hiện thẻ barrel và rack dùng cùng một ảnh; tách thành ảnh riêng"
+   }
+  ],
+  "alt": {
+   "vi": "Các bể mạ có thanh dẫn điện và đường ống của dây chuyền mạ quay",
+   "zh": "滚镀线上带导电杆和管路的镀槽",
+   "ko": "배럴 도금 라인의 통전 바와 배관이 있는 도금조"
+  },
+  "caption": {
+   "vi": "Bể mạ của dây chuyền mạ quay (bể mạ đồng, bể mạ niken).",
+   "zh": "滚镀线的镀槽（镀铜槽、镀镍槽）。",
+   "ko": "배럴 도금 라인의 도금조(구리 도금조, 니켈 도금조)."
+  },
+  "flags": [
+   "ai-like",
+   "chua-xac-dinh-bo-nao"
+  ]
+ },
+ {
+  "image": "image13_03",
+  "slug": "bo-ma-quay-nhin-tu-tren",
+  "label": "Dãy bể mạ quay nhìn từ phía trên",
+  "tags": [
+   "ma-quay",
+   "be-ma"
+  ],
+  "placements": [
+   {
+    "page": "/nang-luc-san-xuat",
+    "file": "src/components/nang-luc/AutomatedVsManual.tsx",
+    "section": "Cột Mạ treo bán tự động và mạ quay (h-56)",
+    "replaces": "/images/factory/ma-quay-5.jpg",
+    "note": "Cận cảnh bể có thanh treo; dùng thay thế nếu image13_02 không đạt"
+   }
+  ],
+  "alt": {
+   "vi": "Dãy bể mạ có thanh dẫn điện và giá đỡ, nhìn từ phía trên",
+   "zh": "自上而下俯视的带导电杆与支架的镀槽列",
+   "ko": "위에서 내려다본 통전 바와 거치대가 있는 도금조 열"
+  },
+  "caption": {
+   "vi": "Các bể mạ trong khu mạ quay nhìn từ phía trên.",
+   "zh": "滚镀区镀槽俯视图。",
+   "ko": "배럴 도금 구역 도금조 상부 전경."
+  },
+  "flags": [
+   "ai-like"
+  ]
+ },
+ {
+  "image": "image13_04",
+  "slug": "nha-xuong-ma-hut-khi-be-ma",
+  "label": "Nhà xưởng mạ với bể mạ và tháp xử lý khí",
+  "tags": [
+   "nha-xuong",
+   "be-ma",
+   "hut-khi"
+  ],
+  "placements": [
+   {
+    "page": "/nang-luc-san-xuat",
+    "file": "src/components/nang-luc/FactoryGallery.tsx",
+    "section": "Lưới 4 ảnh nhỏ, mục campus (Nhà máy)",
+    "replaces": "/images/factory/ma-quay-6.jpg",
+    "note": "Ảnh 2400x649 (~3.7:1), cần object-cover cắt giữa; không phải ảnh bên ngoài tòa nhà nên nên đổi nhãn 'Nhà máy' thành 'Khu mạ'"
+   }
+  ],
+  "alt": {
+   "vi": "Nhà xưởng mạ với các bể mạ, ống hút khí và tủ điều khiển",
+   "zh": "电镀车间内的镀槽、排风管与控制柜",
+   "ko": "도금조, 배기 덕트와 제어반이 있는 도금 공장 내부"
+  },
+  "caption": {
+   "vi": "Khu bể mạ có ống hút khí trong nhà xưởng.",
+   "zh": "车间内带排风管的镀槽区。",
+   "ko": "공장 내 배기 덕트가 있는 도금조 구역."
+  },
+  "flags": [
+   "ai-like",
+   "ti-le-rong"
+  ]
+ },
+ {
+  "image": "image14_03",
+  "slug": "nha-xuong-ma-pano-hut-khi",
+  "label": "Ảnh panorama xưởng mạ (trùng ảnh image13_04)",
+  "tags": [
+   "nha-xuong",
+   "panorama"
+  ],
+  "placements": [],
+  "alt": {
+   "vi": "Toàn cảnh khu bể mạ và hệ thống hút khí, ảnh panorama",
+   "zh": "镀槽区及排风系统全景图",
+   "ko": "도금조 구역과 배기 설비 파노라마"
+  },
+  "caption": {
+   "vi": "Khu bể mạ và hệ thống hút khí.",
+   "zh": "镀槽区与排风系统。",
+   "ko": "도금조 구역과 배기 설비."
+  },
+  "flags": [
+   "trung-lap-voi-image13_04",
+   "ti-le-4:1",
+   "khong-dung"
+  ]
+ },
+ {
+  "image": "image15_01",
+  "slug": "phong-phan-tich-toan-canh",
+  "label": "Phòng phân tích toàn cảnh",
+  "tags": [
+   "phong-phan-tich",
+   "kiem-nghiem"
+  ],
+  "placements": [
+   {
+    "page": "/nang-luc-san-xuat",
+    "file": "src/components/nang-luc/TestingAnalysis.tsx",
+    "section": "Ảnh trái (aspect 16:10, min-h 380)",
+    "replaces": "/images/factory/phan-tich-1.jpg",
+    "note": "Khớp mục 'Phòng phân tích'"
+   },
+   {
+    "page": "/nang-luc-san-xuat",
+    "file": "src/components/nang-luc/QualityStandards.tsx",
+    "section": "Thẻ Thiết bị kiểm tra (nếu thêm ảnh)",
+    "replaces": "thêm mới",
+    "note": ""
+   }
+  ],
+  "alt": {
+   "vi": "Phòng phân tích với bàn thí nghiệm, tủ hóa chất phân tích và thiết bị đo",
+   "zh": "分析室内的实验台、分析试剂柜与检测仪器",
+   "ko": "실험대, 분석용 시약장과 측정 장비가 있는 분석실"
+  },
+  "caption": {
+   "vi": "Phòng phân tích dung dịch bể mạ: bàn thí nghiệm và hóa chất phân tích.",
+   "zh": "镀液分析室：实验台与分析试剂。",
+   "ko": "도금액 분석실: 실험대와 분석용 시약."
+  },
+  "flags": [
+   "ai-like"
+  ]
+ },
+ {
+  "image": "image15_02",
+  "slug": "ban-thi-nghiem-phan-tich-dung-dich",
+  "label": "Bàn thí nghiệm phân tích dung dịch mạ",
+  "tags": [
+   "phong-phan-tich",
+   "kiem-nghiem"
+  ],
+  "placements": [
+   {
+    "page": "/nang-luc-san-xuat",
+    "file": "src/components/nang-luc/TestingAnalysis.tsx",
+    "section": "Thẻ mục 01 'Phòng phân tích' (thêm ảnh nhỏ bên cạnh mô tả)",
+    "replaces": "thêm mới",
+    "note": "Khối hiện chỉ có chữ; có thể thêm ảnh 16:10 trên mỗi thẻ"
+   },
+   {
+    "page": "/nang-luc-san-xuat",
+    "file": "src/components/nang-luc/EquipmentGrid.tsx",
+    "section": "Dự phòng",
+    "replaces": "/images/factory/phan-tich-2.jpg",
+    "note": "Không dùng cho thẻ PVD (ảnh cũ phan-tich-2 đang đặt sai chỗ ở thẻ PVD)"
+   }
+  ],
+  "alt": {
+   "vi": "Bàn thí nghiệm có giá đỡ ống, thiết bị đo và các lọ hóa chất phân tích",
+   "zh": "带试管架、测量仪器和分析试剂瓶的实验台",
+   "ko": "시험관 거치대, 측정 장비와 분석용 시약병이 놓인 실험대"
+  },
+  "caption": {
+   "vi": "Bàn thí nghiệm trong phòng phân tích, có hóa chất phân tích.",
+   "zh": "分析室实验台及分析用试剂。",
+   "ko": "분석실 실험대와 분석용 시약."
+  },
+  "flags": [
+   "ai-like"
+  ]
+ },
+ {
+  "image": "image15_03",
+  "slug": "thiet-bi-dien-phan-thi-nghiem-coc-thuy-tinh",
+  "label": "Thiết bị điện phân thí nghiệm với cốc dung dịch",
+  "tags": [
+   "phong-phan-tich",
+   "hull-cell-tham-khao",
+   "kiem-nghiem"
+  ],
+  "placements": [
+   {
+    "page": "/nang-luc-san-xuat",
+    "file": "src/components/nang-luc/TestingAnalysis.tsx",
+    "section": "Thẻ mục 02 'Máy thử Hull cell' (thêm ảnh)",
+    "replaces": "thêm mới",
+    "note": "Có nguồn điện hiển thị số, cốc dung dịch xanh, điện cực; CHƯA xác nhận là Hull cell, cần Bên A xác nhận trước khi gán tên"
+   }
+  ],
+  "alt": {
+   "vi": "Nguồn điện có màn hiển thị số, cốc đựng dung dịch màu xanh và các điện cực trên bàn thí nghiệm",
+   "zh": "带数显的电源、盛蓝色溶液的烧杯与电极，置于实验台上",
+   "ko": "디지털 표시 전원, 파란 용액 비커와 전극이 놓인 실험대"
+  },
+  "caption": {
+   "vi": "Bộ thí nghiệm dung dịch mạ gồm nguồn điện, cốc dung dịch và điện cực.",
+   "zh": "镀液试验装置：电源、溶液烧杯与电极。",
+   "ko": "도금액 시험 장치: 전원, 용액 비커와 전극."
+  },
+  "flags": [
+   "ai-like",
+   "chua-xac-nhan-hull-cell"
+  ]
+ },
+ {
+  "image": "image15_04",
+  "slug": "may-do-do-day-lop-ma-apc-100",
+  "label": "Máy đo độ dày lớp mạ APC-100",
+  "tags": [
+   "kiem-nghiem",
+   "do-do-day",
+   "apc-100"
+  ],
+  "placements": [
+   {
+    "page": "/nang-luc-san-xuat",
+    "file": "src/components/nang-luc/TestingAnalysis.tsx",
+    "section": "Thẻ mục 03 'Máy đo độ dày lớp mạ' (thêm ảnh); hoặc ảnh chính bên trái",
+    "replaces": "thêm mới",
+    "note": "Nhìn thấy nhãn APC-100 và dòng chữ Automatic Precision Control"
+   },
+   {
+    "page": "/nang-luc-san-xuat",
+    "file": "src/components/nang-luc/QualityStandards.tsx",
+    "section": "Thẻ 'testing' (Thiết bị kiểm tra)",
+    "replaces": "thêm mới",
+    "note": ""
+   }
+  ],
+  "alt": {
+   "vi": "Máy đo độ dày lớp mạ APC-100 có màn hình, bàn phím số và đồ thị",
+   "zh": "带显示屏与数字键盘的 APC-100 镀层测厚仪",
+   "ko": "디스플레이와 숫자 키패드를 갖춘 APC-100 도금 두께 측정기"
+  },
+  "caption": {
+   "vi": "Máy đo độ dày lớp mạ APC-100.",
+   "zh": "APC-100 镀层测厚仪。",
+   "ko": "APC-100 도금 두께 측정기."
+  },
+  "flags": [
+   "ai-like",
+   "chu-tren-may-do-ai-dung-lai"
+  ]
+ },
+ {
+  "image": "image15_05",
+  "slug": "may-phun-muoi-trung-tinh-nss",
+  "label": "Máy phun muối trung tính NSS",
+  "tags": [
+   "kiem-nghiem",
+   "phun-muoi",
+   "nss"
+  ],
+  "placements": [
+   {
+    "page": "/nang-luc-san-xuat",
+    "file": "src/components/nang-luc/TestingAnalysis.tsx",
+    "section": "Thẻ mục 04 'Máy phun muối NSS và CASS' (thêm 2 ảnh NSS/CASS)",
+    "replaces": "thêm mới",
+    "note": "Nhãn 'Máy phun muối trung tính (NSS)' nhìn thấy trên máy"
+   },
+   {
+    "page": "/nang-luc-san-xuat",
+    "file": "src/components/nang-luc/ProductionFlow.tsx",
+    "section": "Bước 'Đo độ dày và phun muối'",
+    "replaces": "thêm mới",
+    "note": ""
+   }
+  ],
+  "alt": {
+   "vi": "Buồng phun muối trung tính NSS có nắp trong suốt và bảng điều khiển",
+   "zh": "带透明盖和控制面板的中性盐雾试验箱（NSS）",
+   "ko": "투명 덮개와 제어 패널이 있는 중성 염수분무시험기(NSS)"
+  },
+  "caption": {
+   "vi": "Máy phun muối trung tính (NSS).",
+   "zh": "中性盐雾试验机（NSS）。",
+   "ko": "중성 염수분무시험기(NSS)."
+  },
+  "flags": [
+   "ai-like",
+   "chu-tren-nhan-co-the-sai-dau"
+  ]
+ },
+ {
+  "image": "image15_06",
+  "slug": "may-phun-muoi-axit-cass",
+  "label": "Máy phun muối axit CASS",
+  "tags": [
+   "kiem-nghiem",
+   "phun-muoi",
+   "cass"
+  ],
+  "placements": [
+   {
+    "page": "/nang-luc-san-xuat",
+    "file": "src/components/nang-luc/TestingAnalysis.tsx",
+    "section": "Thẻ mục 04 'Máy phun muối NSS và CASS' (ảnh thứ hai)",
+    "replaces": "thêm mới",
+    "note": "Nhãn 'Máy phun muối axit (CASS)' nhìn thấy trên máy"
+   }
+  ],
+  "alt": {
+   "vi": "Buồng phun muối axit CASS có nắp trong suốt và bảng điều khiển",
+   "zh": "带透明盖和控制面板的铜加速乙酸盐雾试验箱（CASS）",
+   "ko": "투명 덮개와 제어 패널이 있는 동가속 초산염수분무시험기(CASS)"
+  },
+  "caption": {
+   "vi": "Máy phun muối axit (CASS).",
+   "zh": "酸性盐雾试验机（CASS）。",
+   "ko": "산성 염수분무시험기(CASS)."
+  },
+  "flags": [
+   "ai-like"
+  ]
+ },
+ {
+  "image": "image20_01",
+  "slug": "linh-kien-den-holder-nhua-truoc-sau-xu-ly",
+  "label": "Linh kiện holder đèn: nhựa trắng và chi tiết sơn bạc",
+  "tags": [
+   "son-in",
+   "linh-kien-den",
+   "nhua"
+  ],
+  "placements": [
+   {
+    "page": "/san-pham-du-an",
+    "file": "(thuộc phạm vi khác)",
+    "section": "Nhóm 'Sơn spray, in, laser' - linh kiện đèn ô tô holder",
+    "replaces": "thêm mới",
+    "note": "Chỉ tham chiếu; có thể dùng ở /dich-vu-gia-cong-ma mục Sơn và in"
+   },
+   {
+    "page": "/dich-vu-gia-cong-ma/day-chuyen-son-ma-ket-hop",
+    "file": "src/components/dich-vu/DetailGallery.tsx",
+    "section": "Phun sơn, in, laser: thư viện ảnh chi tiết (DetailGallery, DetailCapability)",
+    "replaces": "một ảnh trong SERVICE_GALLERY_POOL (src/lib/factory-pool.ts, /images/factory/*)",
+    "note": "Ví dụ chi tiết thực tế theo nhóm FACTS; đưa vào pool riêng cho từng dịch vụ để không dùng chung cho cả 6 trang"
+   },
+   {
+    "page": "/san-pham-du-an",
+    "file": "src/components/san-pham/ProductCatalog.tsx",
+    "section": "Danh mục Sơn, in, laser (đề xuất danh mục mới; ảnh gán qua cột products.image trong CMS/seed)",
+    "replaces": "thêm mới (hiện products.image dùng /images/factory/qc-*.jpg, kho-*.jpg)",
+    "note": "Khung thẻ danh mục; trang chi tiết dùng ProductHero aspect 4/3 và ProductGallery 16/10; ảnh 16/17 nền sáng, dùng object-contain hoặc cover nền sáng"
+   }
+  ],
+  "alt": {
+   "vi": "Hai chi tiết holder đèn nhiều lỗ: một chi tiết nhựa trắng và một chi tiết bề mặt xám bạc",
+   "zh": "两件多孔灯座部件：白色塑料件与银灰色表面件",
+   "ko": "다공형 램프 홀더 부품 2개: 흰색 플라스틱과 은회색 표면 부품"
+  },
+  "caption": {
+   "vi": "Holder đèn nhiều lỗ trước và sau xử lý bề mặt; lớp phủ xác định theo mã hàng.",
+   "zh": "多孔灯座部件，表面处理前后对比；涂层按型号确定。",
+   "ko": "다공형 램프 홀더의 표면 처리 전·후. 코팅은 품번별로 정해진다."
+  },
+  "flags": [
+   "khong-chac-lop-phu"
+  ]
+ },
+ {
+  "image": "image20_02",
+  "slug": "phim-bam-den-in-chu-l-r",
+  "label": "Phím nhựa đen in ký hiệu L và R",
+  "tags": [
+   "son-in",
+   "in",
+   "nhua"
+  ],
+  "placements": [
+   {
+    "page": "/san-pham-du-an",
+    "file": "(thuộc phạm vi khác)",
+    "section": "Nhóm sơn và in",
+    "replaces": "thêm mới",
+    "note": "Chi tiết nhựa đen in chữ trắng"
+   },
+   {
+    "page": "/dich-vu-gia-cong-ma/day-chuyen-son-ma-ket-hop",
+    "file": "src/components/dich-vu/DetailGallery.tsx",
+    "section": "Phun sơn, in, laser: thư viện ảnh chi tiết (DetailGallery, DetailCapability)",
+    "replaces": "một ảnh trong SERVICE_GALLERY_POOL (src/lib/factory-pool.ts, /images/factory/*)",
+    "note": "Ví dụ chi tiết thực tế theo nhóm FACTS; đưa vào pool riêng cho từng dịch vụ để không dùng chung cho cả 6 trang"
+   },
+   {
+    "page": "/san-pham-du-an",
+    "file": "src/components/san-pham/ProductCatalog.tsx",
+    "section": "Danh mục Sơn, in, laser (đề xuất danh mục mới; ảnh gán qua cột products.image trong CMS/seed)",
+    "replaces": "thêm mới (hiện products.image dùng /images/factory/qc-*.jpg, kho-*.jpg)",
+    "note": "Khung thẻ danh mục; trang chi tiết dùng ProductHero aspect 4/3 và ProductGallery 16/10; ảnh 16/17 nền sáng, dùng object-contain hoặc cover nền sáng"
+   }
+  ],
+  "alt": {
+   "vi": "Chi tiết nhựa đen bo tròn in ký hiệu L và R màu trắng",
+   "zh": "印有白色 L、R 标记的黑色圆角塑料件",
+   "ko": "흰색 L, R 표시가 인쇄된 검은색 둥근 플라스틱 부품"
+  },
+  "caption": {
+   "vi": "Chi tiết nhựa đen sơn và in ký hiệu.",
+   "zh": "喷涂并印刷标记的黑色塑料件。",
+   "ko": "도장 및 기호 인쇄된 검은색 플라스틱 부품."
+  },
+  "flags": []
+ },
+ {
+  "image": "image20_03",
+  "slug": "nap-nhua-den-in-fuel-seat",
+  "label": "Nắp nhựa đen in chữ FUEL và SEAT",
+  "tags": [
+   "son-in",
+   "in",
+   "nhua"
+  ],
+  "placements": [
+   {
+    "page": "/san-pham-du-an",
+    "file": "(thuộc phạm vi khác)",
+    "section": "Nhóm sơn và in",
+    "replaces": "thêm mới",
+    "note": "Cặp với image20_02"
+   },
+   {
+    "page": "/dich-vu-gia-cong-ma/day-chuyen-son-ma-ket-hop",
+    "file": "src/components/dich-vu/DetailGallery.tsx",
+    "section": "Phun sơn, in, laser: thư viện ảnh chi tiết (DetailGallery, DetailCapability)",
+    "replaces": "một ảnh trong SERVICE_GALLERY_POOL (src/lib/factory-pool.ts, /images/factory/*)",
+    "note": "Ví dụ chi tiết thực tế theo nhóm FACTS; đưa vào pool riêng cho từng dịch vụ để không dùng chung cho cả 6 trang"
+   },
+   {
+    "page": "/san-pham-du-an",
+    "file": "src/components/san-pham/ProductCatalog.tsx",
+    "section": "Danh mục Sơn, in, laser (đề xuất danh mục mới; ảnh gán qua cột products.image trong CMS/seed)",
+    "replaces": "thêm mới (hiện products.image dùng /images/factory/qc-*.jpg, kho-*.jpg)",
+    "note": "Khung thẻ danh mục; trang chi tiết dùng ProductHero aspect 4/3 và ProductGallery 16/10; ảnh 16/17 nền sáng, dùng object-contain hoặc cover nền sáng"
+   }
+  ],
+  "alt": {
+   "vi": "Nắp nhựa đen có vân bề mặt, in chữ FUEL và SEAT màu trắng",
+   "zh": "表面带纹理、印有白色 FUEL 与 SEAT 字样的黑色塑料盖",
+   "ko": "표면 질감이 있고 흰색 FUEL, SEAT가 인쇄된 검은색 플라스틱 커버"
+  },
+  "caption": {
+   "vi": "Nắp nhựa đen sơn và in chữ.",
+   "zh": "喷涂并印字的黑色塑料盖。",
+   "ko": "도장 및 문자 인쇄된 검은색 플라스틱 커버."
+  },
+  "flags": []
+ },
+ {
+  "image": "image20_04",
+  "slug": "khung-man-hinh-nhua-son-den",
+  "label": "Khung màn hình nhựa sơn đen",
+  "tags": [
+   "son-in",
+   "khung-man-hinh",
+   "nhua"
+  ],
+  "placements": [
+   {
+    "page": "/san-pham-du-an",
+    "file": "(thuộc phạm vi khác)",
+    "section": "Nhóm 'Sơn spray, in' - khung màn hình",
+    "replaces": "thêm mới",
+    "note": "Khớp danh mục 'khung màn hình' trong profile"
+   },
+   {
+    "page": "/dich-vu-gia-cong-ma/day-chuyen-son-ma-ket-hop",
+    "file": "src/components/dich-vu/DetailGallery.tsx",
+    "section": "Phun sơn, in, laser: thư viện ảnh chi tiết (DetailGallery, DetailCapability)",
+    "replaces": "một ảnh trong SERVICE_GALLERY_POOL (src/lib/factory-pool.ts, /images/factory/*)",
+    "note": "Ví dụ chi tiết thực tế theo nhóm FACTS; đưa vào pool riêng cho từng dịch vụ để không dùng chung cho cả 6 trang"
+   },
+   {
+    "page": "/san-pham-du-an",
+    "file": "src/components/san-pham/ProductCatalog.tsx",
+    "section": "Danh mục Sơn, in, laser (đề xuất danh mục mới; ảnh gán qua cột products.image trong CMS/seed)",
+    "replaces": "thêm mới (hiện products.image dùng /images/factory/qc-*.jpg, kho-*.jpg)",
+    "note": "Khung thẻ danh mục; trang chi tiết dùng ProductHero aspect 4/3 và ProductGallery 16/10; ảnh 16/17 nền sáng, dùng object-contain hoặc cover nền sáng"
+   }
+  ],
+  "alt": {
+   "vi": "Khung màn hình màu đen xám có khe loa và các lỗ nút",
+   "zh": "带扬声器格栅与按键孔的深灰黑色显示屏边框",
+   "ko": "스피커 그릴과 버튼 구멍이 있는 짙은 회흑색 디스플레이 프레임"
+  },
+  "caption": {
+   "vi": "Khung màn hình nhựa sơn.",
+   "zh": "喷涂塑料显示屏边框。",
+   "ko": "도장된 플라스틱 디스플레이 프레임."
+  },
+  "flags": []
+ },
+ {
+  "image": "image20_05",
+  "slug": "bang-dieu-khien-in-chu-xuoc-kim-loai",
+  "label": "Bảng điều khiển in ký hiệu, bề mặt xước",
+  "tags": [
+   "son-in",
+   "in",
+   "bang-dieu-khien"
+  ],
+  "placements": [
+   {
+    "page": "/san-pham-du-an",
+    "file": "(thuộc phạm vi khác)",
+    "section": "Nhóm 'bảng điều khiển sơn và in'",
+    "replaces": "thêm mới",
+    "note": "Ảnh 1443x183 (~8:1), chỉ dùng như dải ngang nhỏ"
+   },
+   {
+    "page": "/dich-vu-gia-cong-ma/day-chuyen-son-ma-ket-hop",
+    "file": "src/components/dich-vu/DetailGallery.tsx",
+    "section": "Phun sơn, in, laser: thư viện ảnh chi tiết (DetailGallery, DetailCapability)",
+    "replaces": "một ảnh trong SERVICE_GALLERY_POOL (src/lib/factory-pool.ts, /images/factory/*)",
+    "note": "Ví dụ chi tiết thực tế theo nhóm FACTS; đưa vào pool riêng cho từng dịch vụ để không dùng chung cho cả 6 trang"
+   },
+   {
+    "page": "/san-pham-du-an",
+    "file": "src/components/san-pham/ProductCatalog.tsx",
+    "section": "Danh mục Sơn, in, laser (đề xuất danh mục mới; ảnh gán qua cột products.image trong CMS/seed)",
+    "replaces": "thêm mới (hiện products.image dùng /images/factory/qc-*.jpg, kho-*.jpg)",
+    "note": "Khung thẻ danh mục; trang chi tiết dùng ProductHero aspect 4/3 và ProductGallery 16/10; ảnh 16/17 nền sáng, dùng object-contain hoặc cover nền sáng"
+   }
+  ],
+  "alt": {
+   "vi": "Dải bảng điều khiển bề mặt xước in các chức năng và màn hình số trên nền thảm cắt xanh",
+   "zh": "表面拉丝、印有功能标识与数码显示的控制面板条，置于绿色切割垫上",
+   "ko": "헤어라인 표면에 기능 표시와 숫자 디스플레이가 인쇄된 제어 패널 스트립(녹색 커팅 매트 위)"
+  },
+  "caption": {
+   "vi": "Bảng điều khiển in ký hiệu chức năng.",
+   "zh": "印有功能标识的控制面板。",
+   "ko": "기능 표시가 인쇄된 제어 패널."
+  },
+  "flags": [
+   "ti-le-8:1",
+   "khong-ro-vat-lieu-nen",
+   "low-res"
+  ]
+ },
+ {
+  "image": "image21_01",
+  "slug": "may-thu-mai-mon-rca-tester",
+  "label": "Máy thử mài mòn RCA Tester",
+  "tags": [
+   "kiem-nghiem",
+   "do-tin-cay-sau-son",
+   "rca-tester"
+  ],
+  "placements": [
+   {
+    "page": "/nang-luc-san-xuat",
+    "file": "src/components/nang-luc/TestingAnalysis.tsx",
+    "section": "Khối 'Thiết bị test độ tin cậy sau phun sơn' (10 loại), thêm lưới ảnh nhỏ cạnh danh sách r1-r10; ứng với r1 RCA Tester",
+    "replaces": "thêm mới",
+    "note": ""
+   }
+  ],
+  "alt": {
+   "vi": "Máy thử có hai cuộn băng giấy, đầu tì và bộ đếm, đặt trên bàn thí nghiệm",
+   "zh": "放在实验台上的测试机，带两个纸带卷轴、压头和计数器",
+   "ko": "두 개의 종이 테이프 릴, 가압 헤드와 카운터가 있는 시험기"
+  },
+  "caption": {
+   "vi": "RCA Tester (thử mài mòn).",
+   "zh": "RCA Tester（耐磨试验）。",
+   "ko": "RCA Tester(마모 시험)."
+  },
+  "flags": [
+   "ai-like"
+  ]
+ },
+ {
+  "image": "image21_02",
+  "slug": "thiet-bi-thu-nuoc-nong-hot-water",
+  "label": "Thiết bị dạng bể có bộ điều khiển (Hot Water)",
+  "tags": [
+   "kiem-nghiem",
+   "do-tin-cay-sau-son",
+   "hot-water"
+  ],
+  "placements": [
+   {
+    "page": "/nang-luc-san-xuat",
+    "file": "src/components/nang-luc/TestingAnalysis.tsx",
+    "section": "Khối 'Thiết bị test độ tin cậy sau phun sơn' (10 loại), thêm lưới ảnh nhỏ cạnh danh sách r1-r10; ứng với r2 Hot Water",
+    "replaces": "thêm mới",
+    "note": ""
+   }
+  ],
+  "alt": {
+   "vi": "Thiết bị dạng hộp màu xanh có tay xách và bảng điều khiển ở mặt trước",
+   "zh": "正面带控制面板和提手的蓝色箱式设备",
+   "ko": "전면에 제어 패널과 손잡이가 있는 파란색 박스형 장비"
+  },
+  "caption": {
+   "vi": "Thiết bị thử dạng bể có bộ điều khiển; khớp mục Hot Water (thử nước nóng) trong danh sách.",
+   "zh": "带控制器的槽式试验设备；对应清单中的 Hot Water（热水试验）。",
+   "ko": "제어부가 있는 수조형 시험 장비. 목록의 Hot Water(온수 시험) 항목에 해당."
+  },
+  "flags": [
+   "ai-like",
+   "chua-chac-ten-thiet-bi"
+  ]
+ },
+ {
+  "image": "image21_03",
+  "slug": "tu-thu-nhiet-do-cao-do-am-cao",
+  "label": "Tủ thử nhiệt độ cao, độ ẩm cao",
+  "tags": [
+   "kiem-nghiem",
+   "do-tin-cay-sau-son",
+   "high-temp-humidity"
+  ],
+  "placements": [
+   {
+    "page": "/nang-luc-san-xuat",
+    "file": "src/components/nang-luc/TestingAnalysis.tsx",
+    "section": "Khối 'Thiết bị test độ tin cậy sau phun sơn' (10 loại), thêm lưới ảnh nhỏ cạnh danh sách r1-r10; ứng với r3 High Temp & Humidity",
+    "replaces": "thêm mới",
+    "note": ""
+   }
+  ],
+  "alt": {
+   "vi": "Tủ thử môi trường màu xám có cửa sổ quan sát và màn hình điều khiển",
+   "zh": "带观察窗和控制屏的灰色环境试验箱",
+   "ko": "관찰 창과 제어 화면이 있는 회색 환경 시험 챔버"
+  },
+  "caption": {
+   "vi": "Tủ thử High Temp & Humidity (nhiệt độ cao, độ ẩm cao).",
+   "zh": "High Temp & Humidity（高温高湿）试验箱。",
+   "ko": "High Temp & Humidity(고온 고습) 시험 챔버."
+  },
+  "flags": [
+   "ai-like"
+  ]
+ },
+ {
+  "image": "image21_04",
+  "slug": "may-do-tia-uv",
+  "label": "Máy đo tia UV",
+  "tags": [
+   "kiem-nghiem",
+   "do-tin-cay-sau-son",
+   "uv-measure"
+  ],
+  "placements": [
+   {
+    "page": "/nang-luc-san-xuat",
+    "file": "src/components/nang-luc/TestingAnalysis.tsx",
+    "section": "Khối 'Thiết bị test độ tin cậy sau phun sơn' (10 loại), thêm lưới ảnh nhỏ cạnh danh sách r1-r10; ứng với r4 UV Measure",
+    "replaces": "thêm mới",
+    "note": ""
+   }
+  ],
+  "alt": {
+   "vi": "Thiết bị đo có màn hình hiển thị số 0.00 và nhãn UV Light",
+   "zh": "显示 0.00 并标有 UV Light 的测量仪",
+   "ko": "0.00이 표시되고 UV Light 라벨이 있는 측정기"
+  },
+  "caption": {
+   "vi": "UV Measure (đo tia UV).",
+   "zh": "UV Measure（紫外线测量）。",
+   "ko": "UV Measure(자외선 측정)."
+  },
+  "flags": [
+   "ai-like"
+  ]
+ },
+ {
+  "image": "image21_05",
+  "slug": "may-thu-cha-xat-ba-dau",
+  "label": "Máy thử chà xát ba đầu",
+  "tags": [
+   "kiem-nghiem",
+   "do-tin-cay-sau-son",
+   "cha-xat"
+  ],
+  "placements": [
+   {
+    "page": "/nang-luc-san-xuat",
+    "file": "src/components/nang-luc/TestingAnalysis.tsx",
+    "section": "Khối 'Thiết bị test độ tin cậy sau phun sơn' (10 loại), thêm lưới ảnh nhỏ cạnh danh sách r1-r10; ứng với r5 Alcohol/Eraser Rubbing (suy luận loại trừ, cần xác nhận)",
+    "replaces": "thêm mới",
+    "note": ""
+   }
+  ],
+  "alt": {
+   "vi": "Máy thử có ba đầu tì gắn quả cân chạy trên thanh trượt, kèm bộ điều khiển",
+   "zh": "带三个配重压头并在滑轨上往复运动的试验机，配控制器",
+   "ko": "추가 중량이 있는 세 개의 가압 헤드가 레일을 따라 움직이는 시험기와 컨트롤러"
+  },
+  "caption": {
+   "vi": "Máy thử chà xát nhiều đầu trên thanh trượt.",
+   "zh": "滑轨式多头摩擦试验机。",
+   "ko": "레일식 다두 마찰 시험기."
+  },
+  "flags": [
+   "ai-like",
+   "chua-chac-ten-thiet-bi",
+   "co-the-la-alcohol-eraser-rubbing"
+  ]
+ },
+ {
+  "image": "image21_06",
+  "slug": "may-thu-chi-do-cung-but-chi",
+  "label": "Máy thử bút chì trên bàn trượt",
+  "tags": [
+   "kiem-nghiem",
+   "do-tin-cay-sau-son",
+   "pencil-rubbing"
+  ],
+  "placements": [
+   {
+    "page": "/nang-luc-san-xuat",
+    "file": "src/components/nang-luc/TestingAnalysis.tsx",
+    "section": "Khối 'Thiết bị test độ tin cậy sau phun sơn' (10 loại), thêm lưới ảnh nhỏ cạnh danh sách r1-r10; ứng với r6 Pencil Rubbing",
+    "replaces": "thêm mới",
+    "note": ""
+   }
+  ],
+  "alt": {
+   "vi": "Máy có bút chì đặt nghiêng trong giá giữ màu xanh, mẫu đặt trên bàn trượt",
+   "zh": "铅笔倾斜夹持在蓝色夹具中、试样置于滑台上的试验机",
+   "ko": "파란 홀더에 연필이 비스듬히 고정되고 시료가 슬라이드 테이블에 놓인 시험기"
+  },
+  "caption": {
+   "vi": "Pencil Rubbing (chà bút chì): bút chì nghiêng đặt trên mẫu.",
+   "zh": "Pencil Rubbing（铅笔摩擦）：倾斜铅笔作用于试样。",
+   "ko": "Pencil Rubbing(연필 마찰): 비스듬한 연필이 시료에 접촉."
+  },
+  "flags": [
+   "ai-like"
+  ]
+ },
+ {
+  "image": "image21_07",
+  "slug": "may-thu-roi-dropping-tester",
+  "label": "Máy thử rơi Dropping Tester",
+  "tags": [
+   "kiem-nghiem",
+   "do-tin-cay-sau-son",
+   "dropping-tester"
+  ],
+  "placements": [
+   {
+    "page": "/nang-luc-san-xuat",
+    "file": "src/components/nang-luc/TestingAnalysis.tsx",
+    "section": "Khối 'Thiết bị test độ tin cậy sau phun sơn' (10 loại), thêm lưới ảnh nhỏ cạnh danh sách r1-r10; ứng với r7 Dropping Tester",
+    "replaces": "thêm mới",
+    "note": ""
+   }
+  ],
+  "alt": {
+   "vi": "Giá thử có hai trụ dẫn hướng thẳng đứng và đế đen",
+   "zh": "带两根竖直导柱和黑色底座的试验架",
+   "ko": "수직 가이드 기둥 두 개와 검은 받침이 있는 시험대"
+  },
+  "caption": {
+   "vi": "Dropping Tester (thử rơi).",
+   "zh": "Dropping Tester（跌落试验）。",
+   "ko": "Dropping Tester(낙하 시험)."
+  },
+  "flags": [
+   "ai-like",
+   "do-phan-giai-thap"
+  ]
+ },
+ {
+  "image": "image21_08",
+  "slug": "may-do-do-day-cam-tay-thickness-measure",
+  "label": "Máy đo độ dày cầm tay",
+  "tags": [
+   "kiem-nghiem",
+   "do-tin-cay-sau-son",
+   "thickness-measure"
+  ],
+  "placements": [
+   {
+    "page": "/nang-luc-san-xuat",
+    "file": "src/components/nang-luc/TestingAnalysis.tsx",
+    "section": "Khối 'Thiết bị test độ tin cậy sau phun sơn' (10 loại), thêm lưới ảnh nhỏ cạnh danh sách r1-r10; ứng với r8 Thickness Measure",
+    "replaces": "thêm mới",
+    "note": ""
+   }
+  ],
+  "alt": {
+   "vi": "Máy đo cầm tay có màn hình số và dây đầu dò đặt trong hộp xốp",
+   "zh": "放在泡棉盒中的手持测厚仪，带数显屏和探头线",
+   "ko": "폼 케이스 안에 놓인 디지털 표시와 프로브 케이블이 있는 휴대용 측정기"
+  },
+  "caption": {
+   "vi": "Thickness Measure (đo độ dày) dạng cầm tay.",
+   "zh": "手持式 Thickness Measure（测厚）。",
+   "ko": "휴대용 Thickness Measure(두께 측정)."
+  },
+  "flags": [
+   "ai-like",
+   "do-phan-giai-thap"
+  ]
+ },
+ {
+  "image": "image21_09",
+  "slug": "may-danh-bong-hai-dia-polisher",
+  "label": "Máy đánh bóng hai đĩa Polisher",
+  "tags": [
+   "kiem-nghiem",
+   "do-tin-cay-sau-son",
+   "polisher"
+  ],
+  "placements": [
+   {
+    "page": "/nang-luc-san-xuat",
+    "file": "src/components/nang-luc/TestingAnalysis.tsx",
+    "section": "Khối 'Thiết bị test độ tin cậy sau phun sơn' (10 loại), thêm lưới ảnh nhỏ cạnh danh sách r1-r10; ứng với r9 Polisher",
+    "replaces": "thêm mới",
+    "note": ""
+   }
+  ],
+  "alt": {
+   "vi": "Máy hai đĩa quay màu trắng có bảng điều khiển ở mặt trước",
+   "zh": "正面带控制面板的白色双盘设备",
+   "ko": "전면에 제어 패널이 있는 흰색 이중 디스크 장비"
+  },
+  "caption": {
+   "vi": "Polisher (máy đánh bóng) hai đĩa.",
+   "zh": "双盘 Polisher（抛光机）。",
+   "ko": "이중 디스크 Polisher(연마기)."
+  },
+  "flags": [
+   "ai-like"
+  ]
+ },
+ {
+  "image": "image21_10",
+  "slug": "may-thu-co-cau-ban-le-nghieng",
+  "label": "Máy thử có cơ cấu kẹp và tay đòn",
+  "tags": [
+   "kiem-nghiem",
+   "do-tin-cay-sau-son",
+   "may-thu"
+  ],
+  "placements": [
+   {
+    "page": "/nang-luc-san-xuat",
+    "file": "src/components/nang-luc/TestingAnalysis.tsx",
+    "section": "Khối 'Thiết bị test độ tin cậy sau phun sơn' (10 loại), thêm lưới ảnh nhỏ cạnh danh sách r1-r10; ứng với r10 Bending Tester (suy luận loại trừ, cần xác nhận)",
+    "replaces": "thêm mới",
+    "note": ""
+   }
+  ],
+  "alt": {
+   "vi": "Máy có cơ cấu kẹp tay đòn, nút dừng khẩn và nút khởi động trên mặt bàn xám",
+   "zh": "灰色台面上带夹持杠杆机构、急停与启动按钮的试验机",
+   "ko": "회색 작업대 위 클램프 레버 기구, 비상정지 및 시작 버튼이 있는 시험기"
+  },
+  "caption": {
+   "vi": "Máy thử cơ khí có nút dừng khẩn; khớp thiết bị còn lại trong danh sách (Bending Tester) nhưng chưa xác nhận.",
+   "zh": "带急停按钮的机械试验机；与清单中余下的 Bending Tester（弯曲试验）相符，但未确认。",
+   "ko": "비상정지 버튼이 있는 기계식 시험기. 목록의 남은 장비(Bending Tester)에 해당하나 미확인."
+  },
+  "flags": [
+   "ai-like",
+   "chua-chac-ten-thiet-bi",
+   "co-the-la-bending-tester"
+  ]
+ },
+ {
+  "image": "image8_01",
+  "slug": "logo-vinfast-ma-crom-minh-hoa",
+  "label": "Logo VinFast mạ crom (ảnh minh họa dựng)",
+  "tags": [
+   "o-to",
+   "ma-crom",
+   "logo"
+  ],
+  "placements": [
+   {
+    "page": "/san-pham-du-an",
+    "file": "src/components/san-pham/ProductCatalog.tsx",
+    "section": "Danh mục Phụ tùng ô tô và Smart Home (đề xuất danh mục mới; ảnh gán qua cột products.image trong CMS/seed)",
+    "replaces": "thêm mới (hiện products.image dùng /images/factory/qc-*.jpg, kho-*.jpg)",
+    "note": "Khung thẻ danh mục; trang chi tiết dùng ProductHero aspect 4/3 và ProductGallery 16/10; ảnh 16/17 nền sáng, dùng object-contain hoặc cover nền sáng"
+   }
+  ],
+  "alt": {
+   "vi": "Logo VinFast dạng chữ V bề mặt crom, nền xanh nhạt.",
+   "zh": "VinFast V形标志，铬面表面，浅蓝背景。",
+   "ko": "VinFast V자 로고, 크롬 표면, 연한 파란 배경."
+  },
+  "caption": {
+   "vi": "Logo VinFast dạng chữ V bề mặt crom, nền xanh nhạt.",
+   "zh": "VinFast V形标志，铬面表面，浅蓝背景。",
+   "ko": "VinFast V자 로고, 크롬 표면, 연한 파란 배경."
+  },
+  "flags": [
+   "ai-like",
+   "anh-dung-minh-hoa"
+  ]
+ },
+ {
+  "image": "image8_02",
+  "slug": "nut-engine-start-stop-vien-crom",
+  "label": "Nút Engine Start/Stop viền crom (ảnh minh họa dựng)",
+  "tags": [
+   "o-to",
+   "ma-crom",
+   "nut-khoi-dong"
+  ],
+  "placements": [
+   {
+    "page": "/san-pham-du-an",
+    "file": "src/components/san-pham/ProductCatalog.tsx",
+    "section": "Danh mục Phụ tùng ô tô và Smart Home (đề xuất danh mục mới; ảnh gán qua cột products.image trong CMS/seed)",
+    "replaces": "thêm mới (hiện products.image dùng /images/factory/qc-*.jpg, kho-*.jpg)",
+    "note": "Khung thẻ danh mục; trang chi tiết dùng ProductHero aspect 4/3 và ProductGallery 16/10; ảnh 16/17 nền sáng, dùng object-contain hoặc cover nền sáng"
+   }
+  ],
+  "alt": {
+   "vi": "Nút khởi động Engine Start/Stop viền mạ crom.",
+   "zh": "Engine Start/Stop启动按钮，镀铬边框。",
+   "ko": "Engine Start/Stop 시동 버튼, 크롬 도금 테두리."
+  },
+  "caption": {
+   "vi": "Nút khởi động Engine Start/Stop viền mạ crom.",
+   "zh": "Engine Start/Stop启动按钮，镀铬边框。",
+   "ko": "Engine Start/Stop 시동 버튼, 크롬 도금 테두리."
+  },
+  "flags": [
+   "ai-like",
+   "anh-dung-minh-hoa"
+  ]
+ },
+ {
+  "image": "image8_05",
+  "slug": "thiet-bi-vinsmart-minh-hoa",
+  "label": "Thiết bị thông minh Vinsmart (ảnh minh họa dựng)",
+  "tags": [
+   "smart-home"
+  ],
+  "placements": [
+   {
+    "page": "/san-pham-du-an",
+    "file": "src/components/san-pham/ProductCatalog.tsx",
+    "section": "Danh mục Phụ tùng ô tô và Smart Home (đề xuất danh mục mới; ảnh gán qua cột products.image trong CMS/seed)",
+    "replaces": "thêm mới (hiện products.image dùng /images/factory/qc-*.jpg, kho-*.jpg)",
+    "note": "Khung thẻ danh mục; trang chi tiết dùng ProductHero aspect 4/3 và ProductGallery 16/10; ảnh 16/17 nền sáng, dùng object-contain hoặc cover nền sáng"
+   }
+  ],
+  "alt": {
+   "vi": "Thiết bị thông minh Vinsmart vỏ đen.",
+   "zh": "Vinsmart智能设备，黑色外壳。",
+   "ko": "Vinsmart 스마트 기기, 검정 외관."
+  },
+  "caption": {
+   "vi": "Thiết bị thông minh Vinsmart vỏ đen.",
+   "zh": "Vinsmart智能设备，黑色外壳。",
+   "ko": "Vinsmart 스마트 기기, 검정 외관."
+  },
+  "flags": [
+   "ai-like",
+   "anh-dung-minh-hoa"
+  ]
+ },
+ {
+  "image": "image8_06",
+  "slug": "nut-dieu-khien-tron-vien-crom",
+  "label": "Nút điều khiển tròn viền crom (ảnh minh họa dựng)",
+  "tags": [
+   "smart-home",
+   "ma-crom",
+   "nut-dieu-khien"
+  ],
+  "placements": [
+   {
+    "page": "/san-pham-du-an",
+    "file": "src/components/san-pham/ProductCatalog.tsx",
+    "section": "Danh mục Phụ tùng ô tô và Smart Home (đề xuất danh mục mới; ảnh gán qua cột products.image trong CMS/seed)",
+    "replaces": "thêm mới (hiện products.image dùng /images/factory/qc-*.jpg, kho-*.jpg)",
+    "note": "Khung thẻ danh mục; trang chi tiết dùng ProductHero aspect 4/3 và ProductGallery 16/10; ảnh 16/17 nền sáng, dùng object-contain hoặc cover nền sáng"
+   }
+  ],
+  "alt": {
+   "vi": "Nút điều khiển tròn mặt đen, viền mạ crom.",
+   "zh": "黑色面板圆形控制按钮，镀铬边框。",
+   "ko": "검정 면 원형 컨트롤 버튼, 크롬 도금 테두리."
+  },
+  "caption": {
+   "vi": "Nút điều khiển tròn mặt đen, viền mạ crom.",
+   "zh": "黑色面板圆形控制按钮，镀铬边框。",
+   "ko": "검정 면 원형 컨트롤 버튼, 크롬 도금 테두리."
+  },
+  "flags": [
+   "ai-like",
+   "anh-dung-minh-hoa"
+  ]
+ },
+ {
+  "image": "image8_07",
+  "slug": "tu-lanh-hitachi-minh-hoa",
+  "label": "Tủ lạnh Hitachi (ảnh minh họa dựng)",
+  "tags": [
+   "gia-dung"
+  ],
+  "placements": [
+   {
+    "page": "/san-pham-du-an",
+    "file": "src/components/san-pham/ProductCatalog.tsx",
+    "section": "Danh mục Thiết bị gia dụng (đề xuất danh mục mới; ảnh gán qua cột products.image trong CMS/seed)",
+    "replaces": "thêm mới (hiện products.image dùng /images/factory/qc-*.jpg, kho-*.jpg)",
+    "note": "Khung thẻ danh mục; trang chi tiết dùng ProductHero aspect 4/3 và ProductGallery 16/10; ảnh 16/17 nền sáng, dùng object-contain hoặc cover nền sáng"
+   }
+  ],
+  "alt": {
+   "vi": "Tủ lạnh Hitachi hai cánh màu đen.",
+   "zh": "日立双门黑色冰箱。",
+   "ko": "히타치 2도어 검정 냉장고."
+  },
+  "caption": {
+   "vi": "Tủ lạnh Hitachi hai cánh màu đen.",
+   "zh": "日立双门黑色冰箱。",
+   "ko": "히타치 2도어 검정 냉장고."
+  },
+  "flags": [
+   "ai-like",
+   "anh-dung-minh-hoa"
+  ]
+ },
+ {
+  "image": "image8_08",
+  "slug": "tu-lanh-lg-minh-hoa",
+  "label": "Tủ lạnh LG (ảnh minh họa dựng)",
+  "tags": [
+   "gia-dung"
+  ],
+  "placements": [
+   {
+    "page": "/san-pham-du-an",
+    "file": "src/components/san-pham/ProductCatalog.tsx",
+    "section": "Danh mục Thiết bị gia dụng (đề xuất danh mục mới; ảnh gán qua cột products.image trong CMS/seed)",
+    "replaces": "thêm mới (hiện products.image dùng /images/factory/qc-*.jpg, kho-*.jpg)",
+    "note": "Khung thẻ danh mục; trang chi tiết dùng ProductHero aspect 4/3 và ProductGallery 16/10; ảnh 16/17 nền sáng, dùng object-contain hoặc cover nền sáng"
+   }
+  ],
+  "alt": {
+   "vi": "Tủ lạnh LG hai cánh màu đen.",
+   "zh": "LG双门黑色冰箱。",
+   "ko": "LG 2도어 검정 냉장고."
+  },
+  "caption": {
+   "vi": "Tủ lạnh LG hai cánh màu đen.",
+   "zh": "LG双门黑色冰箱。",
+   "ko": "LG 2도어 검정 냉장고."
+  },
+  "flags": [
+   "ai-like",
+   "anh-dung-minh-hoa"
+  ]
+ },
+ {
+  "image": "image8_09",
+  "slug": "may-giat-lg-minh-hoa",
+  "label": "Máy giặt LG (ảnh minh họa dựng)",
+  "tags": [
+   "gia-dung"
+  ],
+  "placements": [
+   {
+    "page": "/san-pham-du-an",
+    "file": "src/components/san-pham/ProductCatalog.tsx",
+    "section": "Danh mục Thiết bị gia dụng (đề xuất danh mục mới; ảnh gán qua cột products.image trong CMS/seed)",
+    "replaces": "thêm mới (hiện products.image dùng /images/factory/qc-*.jpg, kho-*.jpg)",
+    "note": "Khung thẻ danh mục; trang chi tiết dùng ProductHero aspect 4/3 và ProductGallery 16/10; ảnh 16/17 nền sáng, dùng object-contain hoặc cover nền sáng"
+   }
+  ],
+  "alt": {
+   "vi": "Máy giặt LG cửa trước màu bạc.",
+   "zh": "LG银色前开门洗衣机。",
+   "ko": "LG 은색 전면 도어 세탁기."
+  },
+  "caption": {
+   "vi": "Máy giặt LG cửa trước màu bạc.",
+   "zh": "LG银色前开门洗衣机。",
+   "ko": "LG 은색 전면 도어 세탁기."
+  },
+  "flags": [
+   "ai-like",
+   "anh-dung-minh-hoa"
+  ]
+ },
+ {
+  "image": "image8_10",
+  "slug": "tu-lanh-panasonic-minh-hoa",
+  "label": "Tủ lạnh Panasonic (ảnh minh họa dựng)",
+  "tags": [
+   "gia-dung"
+  ],
+  "placements": [
+   {
+    "page": "/san-pham-du-an",
+    "file": "src/components/san-pham/ProductCatalog.tsx",
+    "section": "Danh mục Thiết bị gia dụng (đề xuất danh mục mới; ảnh gán qua cột products.image trong CMS/seed)",
+    "replaces": "thêm mới (hiện products.image dùng /images/factory/qc-*.jpg, kho-*.jpg)",
+    "note": "Khung thẻ danh mục; trang chi tiết dùng ProductHero aspect 4/3 và ProductGallery 16/10; ảnh 16/17 nền sáng, dùng object-contain hoặc cover nền sáng"
+   }
+  ],
+  "alt": {
+   "vi": "Tủ lạnh Panasonic nhiều cánh màu bạc, có khay lấy nước.",
+   "zh": "松下银色多门冰箱，带取水口。",
+   "ko": "파나소닉 은색 다도어 냉장고, 물 디스펜서 포함."
+  },
+  "caption": {
+   "vi": "Tủ lạnh Panasonic nhiều cánh màu bạc, có khay lấy nước.",
+   "zh": "松下银色多门冰箱，带取水口。",
+   "ko": "파나소닉 은색 다도어 냉장고, 물 디스펜서 포함."
+  },
+  "flags": [
+   "ai-like",
+   "anh-dung-minh-hoa"
+  ]
+ },
+ {
+  "image": "image8_11",
+  "slug": "may-loc-nuoc-karofi-minh-hoa",
+  "label": "Máy lọc nước Karofi (ảnh minh họa dựng)",
+  "tags": [
+   "gia-dung"
+  ],
+  "placements": [
+   {
+    "page": "/san-pham-du-an",
+    "file": "src/components/san-pham/ProductCatalog.tsx",
+    "section": "Danh mục Thiết bị gia dụng (đề xuất danh mục mới; ảnh gán qua cột products.image trong CMS/seed)",
+    "replaces": "thêm mới (hiện products.image dùng /images/factory/qc-*.jpg, kho-*.jpg)",
+    "note": "Khung thẻ danh mục; trang chi tiết dùng ProductHero aspect 4/3 và ProductGallery 16/10; ảnh 16/17 nền sáng, dùng object-contain hoặc cover nền sáng"
+   }
+  ],
+  "alt": {
+   "vi": "Máy lọc nước Karofi vỏ đen.",
+   "zh": "Karofi黑色外壳净水器。",
+   "ko": "Karofi 검정 외관 정수기."
+  },
+  "caption": {
+   "vi": "Máy lọc nước Karofi vỏ đen.",
+   "zh": "Karofi黑色外壳净水器。",
+   "ko": "Karofi 검정 외관 정수기."
+  },
+  "flags": [
+   "ai-like",
+   "anh-dung-minh-hoa"
+  ]
+ },
+ {
+  "image": "image10_02",
+  "slug": "vien-khung-den-o-to-ma-crom",
+  "label": "Viền khung đèn ô tô mạ crom",
+  "tags": [
+   "o-to",
+   "ma-crom",
+   "vien-khung-den"
+  ],
+  "placements": [
+   {
+    "page": "/dich-vu-gia-cong-ma/ma-crom-cung-cong-nghiep",
+    "file": "src/components/dich-vu/DetailGallery.tsx",
+    "section": "Mạ Niken-Crom trên nền nhựa ABS: thư viện ảnh chi tiết (DetailGallery 4 ảnh, DetailCapability 1 ảnh)",
+    "replaces": "một ảnh trong SERVICE_GALLERY_POOL (src/lib/factory-pool.ts, /images/factory/*)",
+    "note": "Ví dụ chi tiết thực tế theo nhóm FACTS; đưa vào pool riêng cho từng dịch vụ để không dùng chung cho cả 6 trang"
+   },
+   {
+    "page": "/san-pham-du-an",
+    "file": "src/components/san-pham/ProductCatalog.tsx",
+    "section": "Danh mục Phụ tùng ô tô và Smart Home (đề xuất danh mục mới; ảnh gán qua cột products.image trong CMS/seed)",
+    "replaces": "thêm mới (hiện products.image dùng /images/factory/qc-*.jpg, kho-*.jpg)",
+    "note": "Khung thẻ danh mục; trang chi tiết dùng ProductHero aspect 4/3 và ProductGallery 16/10; ảnh 16/17 nền sáng, dùng object-contain hoặc cover nền sáng"
+   }
+  ],
+  "alt": {
+   "vi": "Viền khung đèn dạng chữ nhật mạ crom sáng, ảnh chi tiết sau xử lý bề mặt.",
+   "zh": "镀铬亮面矩形灯框饰圈，表面处理后的零件照片。",
+   "ko": "크롬 도금 광택 직사각형 램프 프레임 트림, 표면처리 후 부품 사진."
+  },
+  "caption": {
+   "vi": "Viền khung đèn dạng chữ nhật mạ crom sáng.",
+   "zh": "镀铬亮面矩形灯框饰圈。",
+   "ko": "크롬 도금 광택 직사각형 램프 프레임 트림."
+  },
+  "flags": [
+   "ai-like"
+  ]
+ },
+ {
+  "image": "image10_03",
+  "slug": "chi-tiet-op-mat-na-ma-crom",
+  "label": "Chi tiết ốp dạng khe thoát mạ crom",
+  "tags": [
+   "o-to",
+   "ma-crom"
+  ],
+  "placements": [
+   {
+    "page": "/dich-vu-gia-cong-ma/ma-crom-cung-cong-nghiep",
+    "file": "src/components/dich-vu/DetailGallery.tsx",
+    "section": "Mạ Niken-Crom trên nền nhựa ABS: thư viện ảnh chi tiết (DetailGallery 4 ảnh, DetailCapability 1 ảnh)",
+    "replaces": "một ảnh trong SERVICE_GALLERY_POOL (src/lib/factory-pool.ts, /images/factory/*)",
+    "note": "Ví dụ chi tiết thực tế theo nhóm FACTS; đưa vào pool riêng cho từng dịch vụ để không dùng chung cho cả 6 trang"
+   },
+   {
+    "page": "/san-pham-du-an",
+    "file": "src/components/san-pham/ProductCatalog.tsx",
+    "section": "Danh mục Phụ tùng ô tô và Smart Home (đề xuất danh mục mới; ảnh gán qua cột products.image trong CMS/seed)",
+    "replaces": "thêm mới (hiện products.image dùng /images/factory/qc-*.jpg, kho-*.jpg)",
+    "note": "Khung thẻ danh mục; trang chi tiết dùng ProductHero aspect 4/3 và ProductGallery 16/10; ảnh 16/17 nền sáng, dùng object-contain hoặc cover nền sáng"
+   }
+  ],
+  "alt": {
+   "vi": "Chi tiết ốp có các khe dài, bề mặt mạ crom bóng gương, ảnh chi tiết sau xử lý bề mặt.",
+   "zh": "带长条形开孔的镜面镀铬饰件，表面处理后的零件照片。",
+   "ko": "긴 슬릿이 있는 거울면 크롬 도금 장식 부품, 표면처리 후 부품 사진."
+  },
+  "caption": {
+   "vi": "Chi tiết ốp có các khe dài, bề mặt mạ crom bóng gương.",
+   "zh": "带长条形开孔的镜面镀铬饰件。",
+   "ko": "긴 슬릿이 있는 거울면 크롬 도금 장식 부품."
+  },
+  "flags": [
+   "ai-like"
+  ]
+ },
+ {
+  "image": "image10_04",
+  "slug": "chi-tiet-ong-con-ma-crom",
+  "label": "Chi tiết hình ống côn mạ crom",
+  "tags": [
+   "ma-crom",
+   "chi-tiet-hinh-tru"
+  ],
+  "placements": [
+   {
+    "page": "/dich-vu-gia-cong-ma/ma-crom-cung-cong-nghiep",
+    "file": "src/components/dich-vu/DetailGallery.tsx",
+    "section": "Mạ Niken-Crom trên nền nhựa ABS: thư viện ảnh chi tiết (DetailGallery 4 ảnh, DetailCapability 1 ảnh)",
+    "replaces": "một ảnh trong SERVICE_GALLERY_POOL (src/lib/factory-pool.ts, /images/factory/*)",
+    "note": "Ví dụ chi tiết thực tế theo nhóm FACTS; đưa vào pool riêng cho từng dịch vụ để không dùng chung cho cả 6 trang"
+   },
+   {
+    "page": "/san-pham-du-an",
+    "file": "src/components/san-pham/ProductCatalog.tsx",
+    "section": "Danh mục Ngũ kim - niken/crom sáng (đề xuất danh mục mới; ảnh gán qua cột products.image trong CMS/seed)",
+    "replaces": "thêm mới (hiện products.image dùng /images/factory/qc-*.jpg, kho-*.jpg)",
+    "note": "Khung thẻ danh mục; trang chi tiết dùng ProductHero aspect 4/3 và ProductGallery 16/10; ảnh 16/17 nền sáng, dùng object-contain hoặc cover nền sáng"
+   }
+  ],
+  "alt": {
+   "vi": "Chi tiết hình ống côn có mặt bích, bề mặt mạ crom bóng, ảnh chi tiết sau xử lý bề mặt.",
+   "zh": "带法兰的锥形管件，镜面镀铬，表面处理后的零件照片。",
+   "ko": "플랜지가 있는 원뿔형 관 부품, 크롬 도금 광택, 표면처리 후 부품 사진."
+  },
+  "caption": {
+   "vi": "Chi tiết hình ống côn có mặt bích, bề mặt mạ crom bóng.",
+   "zh": "带法兰的锥形管件，镜面镀铬。",
+   "ko": "플랜지가 있는 원뿔형 관 부품, 크롬 도금 광택."
+  },
+  "flags": [
+   "ai-like",
+   "khong-ro-nen"
+  ]
+ },
+ {
+  "image": "image10_05",
+  "slug": "tay-nam-ma-crom-dang-giot",
+  "label": "Tay nắm dạng giọt nước mạ crom",
+  "tags": [
+   "ma-crom",
+   "tay-nam"
+  ],
+  "placements": [
+   {
+    "page": "/dich-vu-gia-cong-ma/ma-crom-cung-cong-nghiep",
+    "file": "src/components/dich-vu/DetailGallery.tsx",
+    "section": "Mạ Niken-Crom trên nền nhựa ABS: thư viện ảnh chi tiết (DetailGallery 4 ảnh, DetailCapability 1 ảnh)",
+    "replaces": "một ảnh trong SERVICE_GALLERY_POOL (src/lib/factory-pool.ts, /images/factory/*)",
+    "note": "Ví dụ chi tiết thực tế theo nhóm FACTS; đưa vào pool riêng cho từng dịch vụ để không dùng chung cho cả 6 trang"
+   },
+   {
+    "page": "/san-pham-du-an",
+    "file": "src/components/san-pham/ProductCatalog.tsx",
+    "section": "Danh mục Thiết bị vệ sinh, nhà bếp (đề xuất danh mục mới; ảnh gán qua cột products.image trong CMS/seed)",
+    "replaces": "thêm mới (hiện products.image dùng /images/factory/qc-*.jpg, kho-*.jpg)",
+    "note": "Khung thẻ danh mục; trang chi tiết dùng ProductHero aspect 4/3 và ProductGallery 16/10; ảnh 16/17 nền sáng, dùng object-contain hoặc cover nền sáng"
+   }
+  ],
+  "alt": {
+   "vi": "Tay nắm dạng giọt nước, bề mặt mạ crom bóng, ảnh chi tiết sau xử lý bề mặt.",
+   "zh": "水滴形手柄，镜面镀铬，表面处理后的零件照片。",
+   "ko": "물방울형 손잡이, 크롬 도금 광택, 표면처리 후 부품 사진."
+  },
+  "caption": {
+   "vi": "Tay nắm dạng giọt nước, bề mặt mạ crom bóng.",
+   "zh": "水滴形手柄，镜面镀铬。",
+   "ko": "물방울형 손잡이, 크롬 도금 광택."
+  },
+  "flags": [
+   "ai-like"
+  ]
+ },
+ {
+  "image": "image10_06",
+  "slug": "nap-che-mat-cat-ma-crom-co-chu",
+  "label": "Nắp che mặt cắt cong mạ crom có chữ nổi",
+  "tags": [
+   "ma-crom",
+   "nap-che"
+  ],
+  "placements": [
+   {
+    "page": "/dich-vu-gia-cong-ma/ma-crom-cung-cong-nghiep",
+    "file": "src/components/dich-vu/DetailGallery.tsx",
+    "section": "Mạ Niken-Crom trên nền nhựa ABS: thư viện ảnh chi tiết (DetailGallery 4 ảnh, DetailCapability 1 ảnh)",
+    "replaces": "một ảnh trong SERVICE_GALLERY_POOL (src/lib/factory-pool.ts, /images/factory/*)",
+    "note": "Ví dụ chi tiết thực tế theo nhóm FACTS; đưa vào pool riêng cho từng dịch vụ để không dùng chung cho cả 6 trang"
+   },
+   {
+    "page": "/san-pham-du-an",
+    "file": "src/components/san-pham/ProductCatalog.tsx",
+    "section": "Danh mục Ngũ kim - niken/crom sáng (đề xuất danh mục mới; ảnh gán qua cột products.image trong CMS/seed)",
+    "replaces": "thêm mới (hiện products.image dùng /images/factory/qc-*.jpg, kho-*.jpg)",
+    "note": "Khung thẻ danh mục; trang chi tiết dùng ProductHero aspect 4/3 và ProductGallery 16/10; ảnh 16/17 nền sáng, dùng object-contain hoặc cover nền sáng"
+   }
+  ],
+  "alt": {
+   "vi": "Nắp che dạng bán nguyệt có chữ nổi, bề mặt mạ crom bóng, ảnh chi tiết sau xử lý bề mặt.",
+   "zh": "带凸起文字的半圆形盖件，镜面镀铬，表面处理后的零件照片。",
+   "ko": "돌출 문자가 있는 반원형 커버, 크롬 도금 광택, 표면처리 후 부품 사진."
+  },
+  "caption": {
+   "vi": "Nắp che dạng bán nguyệt có chữ nổi, bề mặt mạ crom bóng.",
+   "zh": "带凸起文字的半圆形盖件，镜面镀铬。",
+   "ko": "돌출 문자가 있는 반원형 커버, 크롬 도금 광택."
+  },
+  "flags": [
+   "ai-like"
+  ]
+ },
+ {
+  "image": "image10_07",
+  "slug": "vong-trang-tri-ma-crom",
+  "label": "Vòng trang trí mạ crom",
+  "tags": [
+   "ma-crom",
+   "vong-trang-tri"
+  ],
+  "placements": [
+   {
+    "page": "/dich-vu-gia-cong-ma/ma-crom-cung-cong-nghiep",
+    "file": "src/components/dich-vu/DetailGallery.tsx",
+    "section": "Mạ Niken-Crom trên nền nhựa ABS: thư viện ảnh chi tiết (DetailGallery 4 ảnh, DetailCapability 1 ảnh)",
+    "replaces": "một ảnh trong SERVICE_GALLERY_POOL (src/lib/factory-pool.ts, /images/factory/*)",
+    "note": "Ví dụ chi tiết thực tế theo nhóm FACTS; đưa vào pool riêng cho từng dịch vụ để không dùng chung cho cả 6 trang"
+   },
+   {
+    "page": "/san-pham-du-an",
+    "file": "src/components/san-pham/ProductCatalog.tsx",
+    "section": "Danh mục Ngũ kim - niken/crom sáng (đề xuất danh mục mới; ảnh gán qua cột products.image trong CMS/seed)",
+    "replaces": "thêm mới (hiện products.image dùng /images/factory/qc-*.jpg, kho-*.jpg)",
+    "note": "Khung thẻ danh mục; trang chi tiết dùng ProductHero aspect 4/3 và ProductGallery 16/10; ảnh 16/17 nền sáng, dùng object-contain hoặc cover nền sáng"
+   }
+  ],
+  "alt": {
+   "vi": "Vòng trang trí tròn mạ crom sáng, ảnh chi tiết sau xử lý bề mặt.",
+   "zh": "圆形装饰环，亮面镀铬，表面处理后的零件照片。",
+   "ko": "원형 장식 링, 크롬 도금 광택, 표면처리 후 부품 사진."
+  },
+  "caption": {
+   "vi": "Vòng trang trí tròn mạ crom sáng.",
+   "zh": "圆形装饰环，亮面镀铬。",
+   "ko": "원형 장식 링, 크롬 도금 광택."
+  },
+  "flags": [
+   "ai-like"
+  ]
+ },
+ {
+  "image": "image10_08",
+  "slug": "khung-vien-cong-tac-ma-crom",
+  "label": "Khung viền có hốc lắp công tắc mạ crom",
+  "tags": [
+   "ma-crom",
+   "smart-home",
+   "cong-tac"
+  ],
+  "placements": [
+   {
+    "page": "/dich-vu-gia-cong-ma/ma-crom-cung-cong-nghiep",
+    "file": "src/components/dich-vu/DetailGallery.tsx",
+    "section": "Mạ Niken-Crom trên nền nhựa ABS: thư viện ảnh chi tiết (DetailGallery 4 ảnh, DetailCapability 1 ảnh)",
+    "replaces": "một ảnh trong SERVICE_GALLERY_POOL (src/lib/factory-pool.ts, /images/factory/*)",
+    "note": "Ví dụ chi tiết thực tế theo nhóm FACTS; đưa vào pool riêng cho từng dịch vụ để không dùng chung cho cả 6 trang"
+   },
+   {
+    "page": "/san-pham-du-an",
+    "file": "src/components/san-pham/ProductCatalog.tsx",
+    "section": "Danh mục Phụ tùng ô tô và Smart Home (đề xuất danh mục mới; ảnh gán qua cột products.image trong CMS/seed)",
+    "replaces": "thêm mới (hiện products.image dùng /images/factory/qc-*.jpg, kho-*.jpg)",
+    "note": "Khung thẻ danh mục; trang chi tiết dùng ProductHero aspect 4/3 và ProductGallery 16/10; ảnh 16/17 nền sáng, dùng object-contain hoặc cover nền sáng"
+   }
+  ],
+  "alt": {
+   "vi": "Khung viền có các hốc lắp, bề mặt mạ crom bóng, ảnh chi tiết sau xử lý bề mặt.",
+   "zh": "带安装开口的镀铬饰框，表面处理后的零件照片。",
+   "ko": "설치용 개구부가 있는 크롬 도금 프레임, 표면처리 후 부품 사진."
+  },
+  "caption": {
+   "vi": "Khung viền có các hốc lắp, bề mặt mạ crom bóng.",
+   "zh": "带安装开口的镀铬饰框。",
+   "ko": "설치용 개구부가 있는 크롬 도금 프레임."
+  },
+  "flags": [
+   "ai-like"
+  ]
+ },
+ {
+  "image": "image10_09",
+  "slug": "nap-nut-tron-ma-crom-xuoc-tam",
+  "label": "Nắp núm tròn mạ crom, mặt xước tâm",
+  "tags": [
+   "ma-crom",
+   "num-van"
+  ],
+  "placements": [
+   {
+    "page": "/dich-vu-gia-cong-ma/ma-crom-cung-cong-nghiep",
+    "file": "src/components/dich-vu/DetailGallery.tsx",
+    "section": "Mạ Niken-Crom trên nền nhựa ABS: thư viện ảnh chi tiết (DetailGallery 4 ảnh, DetailCapability 1 ảnh)",
+    "replaces": "một ảnh trong SERVICE_GALLERY_POOL (src/lib/factory-pool.ts, /images/factory/*)",
+    "note": "Ví dụ chi tiết thực tế theo nhóm FACTS; đưa vào pool riêng cho từng dịch vụ để không dùng chung cho cả 6 trang"
+   },
+   {
+    "page": "/san-pham-du-an",
+    "file": "src/components/san-pham/ProductCatalog.tsx",
+    "section": "Danh mục Thiết bị vệ sinh, nhà bếp (đề xuất danh mục mới; ảnh gán qua cột products.image trong CMS/seed)",
+    "replaces": "thêm mới (hiện products.image dùng /images/factory/qc-*.jpg, kho-*.jpg)",
+    "note": "Khung thẻ danh mục; trang chi tiết dùng ProductHero aspect 4/3 và ProductGallery 16/10; ảnh 16/17 nền sáng, dùng object-contain hoặc cover nền sáng"
+   }
+  ],
+  "alt": {
+   "vi": "Nắp núm tròn, mặt trên xước đồng tâm, viền mạ crom bóng, ảnh chi tiết sau xử lý bề mặt.",
+   "zh": "圆形旋钮盖，顶面同心拉丝，边缘镀铬，表面处理后的零件照片。",
+   "ko": "원형 노브 캡, 상면 동심원 헤어라인, 테두리 크롬 도금, 표면처리 후 부품 사진."
+  },
+  "caption": {
+   "vi": "Nắp núm tròn, mặt trên xước đồng tâm, viền mạ crom bóng.",
+   "zh": "圆形旋钮盖，顶面同心拉丝，边缘镀铬。",
+   "ko": "원형 노브 캡, 상면 동심원 헤어라인, 테두리 크롬 도금."
+  },
+  "flags": [
+   "ai-like"
+  ]
+ },
+ {
+  "image": "image11_01",
+  "slug": "nep-chu-vinfast-niken-satin",
+  "label": "Nẹp chữ VinFast bề mặt satin/xước",
+  "tags": [
+   "o-to",
+   "niken-satin",
+   "nep-chu"
+  ],
+  "placements": [
+   {
+    "page": "/dich-vu-gia-cong-ma/ma-crom-cung-cong-nghiep",
+    "file": "src/components/dich-vu/DetailGallery.tsx",
+    "section": "Mạ Niken-Crom trên nền nhựa ABS: thư viện ảnh chi tiết (DetailGallery 4 ảnh, DetailCapability 1 ảnh)",
+    "replaces": "một ảnh trong SERVICE_GALLERY_POOL (src/lib/factory-pool.ts, /images/factory/*)",
+    "note": "Ví dụ chi tiết thực tế theo nhóm FACTS; đưa vào pool riêng cho từng dịch vụ để không dùng chung cho cả 6 trang"
+   },
+   {
+    "page": "/san-pham-du-an",
+    "file": "src/components/san-pham/ProductCatalog.tsx",
+    "section": "Danh mục Phụ tùng ô tô và Smart Home (đề xuất danh mục mới; ảnh gán qua cột products.image trong CMS/seed)",
+    "replaces": "thêm mới (hiện products.image dùng /images/factory/qc-*.jpg, kho-*.jpg)",
+    "note": "Khung thẻ danh mục; trang chi tiết dùng ProductHero aspect 4/3 và ProductGallery 16/10; ảnh 16/17 nền sáng, dùng object-contain hoặc cover nền sáng"
+   }
+  ],
+  "alt": {
+   "vi": "Nẹp chữ VinFast bề mặt satin xước, viền sáng, ảnh chi tiết sau xử lý bề mặt.",
+   "zh": "VinFast字标饰条，缎面拉丝表面，边缘亮面，表面处理后的零件照片。",
+   "ko": "VinFast 문자 트림, 새틴 헤어라인 표면, 광택 테두리, 표면처리 후 부품 사진."
+  },
+  "caption": {
+   "vi": "Nẹp chữ VinFast bề mặt satin xước, viền sáng.",
+   "zh": "VinFast字标饰条，缎面拉丝表面，边缘亮面。",
+   "ko": "VinFast 문자 트림, 새틴 헤어라인 표면, 광택 테두리."
+  },
+  "flags": [
+   "ai-like"
+  ]
+ },
+ {
+  "image": "image11_02",
+  "slug": "chu-noi-logo-vinfast-ma-crom",
+  "label": "Logo và chữ nổi VinFast mạ crom",
+  "tags": [
+   "o-to",
+   "ma-crom",
+   "logo"
+  ],
+  "placements": [
+   {
+    "page": "/dich-vu-gia-cong-ma/ma-crom-cung-cong-nghiep",
+    "file": "src/components/dich-vu/DetailGallery.tsx",
+    "section": "Mạ Niken-Crom trên nền nhựa ABS: thư viện ảnh chi tiết (DetailGallery 4 ảnh, DetailCapability 1 ảnh)",
+    "replaces": "một ảnh trong SERVICE_GALLERY_POOL (src/lib/factory-pool.ts, /images/factory/*)",
+    "note": "Ví dụ chi tiết thực tế theo nhóm FACTS; đưa vào pool riêng cho từng dịch vụ để không dùng chung cho cả 6 trang"
+   },
+   {
+    "page": "/san-pham-du-an",
+    "file": "src/components/san-pham/ProductCatalog.tsx",
+    "section": "Danh mục Phụ tùng ô tô và Smart Home (đề xuất danh mục mới; ảnh gán qua cột products.image trong CMS/seed)",
+    "replaces": "thêm mới (hiện products.image dùng /images/factory/qc-*.jpg, kho-*.jpg)",
+    "note": "Khung thẻ danh mục; trang chi tiết dùng ProductHero aspect 4/3 và ProductGallery 16/10; ảnh 16/17 nền sáng, dùng object-contain hoặc cover nền sáng"
+   }
+  ],
+  "alt": {
+   "vi": "Logo và chữ nổi VinFast bề mặt mạ crom, ảnh chi tiết sau xử lý bề mặt.",
+   "zh": "VinFast标志与凸起字标，镀铬表面，表面处理后的零件照片。",
+   "ko": "VinFast 로고와 입체 문자, 크롬 도금 표면, 표면처리 후 부품 사진."
+  },
+  "caption": {
+   "vi": "Logo và chữ nổi VinFast bề mặt mạ crom.",
+   "zh": "VinFast标志与凸起字标，镀铬表面。",
+   "ko": "VinFast 로고와 입체 문자, 크롬 도금 표면."
+  },
+  "flags": [
+   "ai-like"
+  ]
+ },
+ {
+  "image": "image12_01",
+  "slug": "khoi-kim-loai-be-mat-den-van-nham",
+  "label": "Khối kim loại bề mặt đen vân nhám",
+  "tags": [
+   "mau-den",
+   "ngu-kim"
+  ],
+  "placements": [
+   {
+    "page": "/dich-vu-gia-cong-ma/ma-kem-hop-kim-kem-niken",
+    "file": "src/components/dich-vu/DetailGallery.tsx",
+    "section": "Mạ kẽm, đồng, thiếc, phốt phát đen: thư viện ảnh chi tiết (DetailGallery, DetailCapability)",
+    "replaces": "một ảnh trong SERVICE_GALLERY_POOL (src/lib/factory-pool.ts, /images/factory/*)",
+    "note": "Ví dụ chi tiết thực tế theo nhóm FACTS; đưa vào pool riêng cho từng dịch vụ để không dùng chung cho cả 6 trang"
+   },
+   {
+    "page": "/san-pham-du-an",
+    "file": "src/components/san-pham/ProductCatalog.tsx",
+    "section": "Danh mục Ngũ kim - niken đen/crom đen (đề xuất danh mục mới; ảnh gán qua cột products.image trong CMS/seed)",
+    "replaces": "thêm mới (hiện products.image dùng /images/factory/qc-*.jpg, kho-*.jpg)",
+    "note": "Khung thẻ danh mục; trang chi tiết dùng ProductHero aspect 4/3 và ProductGallery 16/10; ảnh 16/17 nền sáng, dùng object-contain hoặc cover nền sáng"
+   }
+  ],
+  "alt": {
+   "vi": "Khối kim loại có lỗ, bề mặt màu đen vân nhám, ảnh chi tiết sau xử lý bề mặt.",
+   "zh": "带孔金属块，黑色纹理哑光表面，表面处理后的零件照片。",
+   "ko": "구멍이 있는 금속 블록, 검정 질감 무광 표면, 표면처리 후 부품 사진."
+  },
+  "caption": {
+   "vi": "Khối kim loại có lỗ, bề mặt màu đen vân nhám.",
+   "zh": "带孔金属块，黑色纹理哑光表面。",
+   "ko": "구멍이 있는 금속 블록, 검정 질감 무광 표면."
+  },
+  "flags": [
+   "ai-like",
+   "khong-chac-lop-ma"
+  ]
+ },
+ {
+  "image": "image12_02",
+  "slug": "bon-chi-tiet-den-bong-hai-lo",
+  "label": "Bốn chi tiết hai lỗ bề mặt đen bóng",
+  "tags": [
+   "mau-den",
+   "niken-den"
+  ],
+  "placements": [
+   {
+    "page": "/dich-vu-gia-cong-ma/ma-crom-cung-cong-nghiep",
+    "file": "src/components/dich-vu/DetailGallery.tsx",
+    "section": "Mạ Niken-Crom trên nền nhựa ABS: thư viện ảnh chi tiết (DetailGallery 4 ảnh, DetailCapability 1 ảnh)",
+    "replaces": "một ảnh trong SERVICE_GALLERY_POOL (src/lib/factory-pool.ts, /images/factory/*)",
+    "note": "Ví dụ chi tiết thực tế theo nhóm FACTS; đưa vào pool riêng cho từng dịch vụ để không dùng chung cho cả 6 trang"
+   },
+   {
+    "page": "/san-pham-du-an",
+    "file": "src/components/san-pham/ProductCatalog.tsx",
+    "section": "Danh mục Ngũ kim - niken đen/crom đen (đề xuất danh mục mới; ảnh gán qua cột products.image trong CMS/seed)",
+    "replaces": "thêm mới (hiện products.image dùng /images/factory/qc-*.jpg, kho-*.jpg)",
+    "note": "Khung thẻ danh mục; trang chi tiết dùng ProductHero aspect 4/3 và ProductGallery 16/10; ảnh 16/17 nền sáng, dùng object-contain hoặc cover nền sáng"
+   }
+  ],
+  "alt": {
+   "vi": "Bốn chi tiết hai lỗ bắt vít, bề mặt đen bóng viền sáng, ảnh chi tiết sau xử lý bề mặt.",
+   "zh": "四个双孔零件，黑色亮面表面，边缘亮色，表面处理后的零件照片。",
+   "ko": "나사 구멍 2개가 있는 부품 4개, 검정 광택 표면과 밝은 모서리, 표면처리 후 부품 사진."
+  },
+  "caption": {
+   "vi": "Bốn chi tiết hai lỗ bắt vít, bề mặt đen bóng viền sáng.",
+   "zh": "四个双孔零件，黑色亮面表面，边缘亮色。",
+   "ko": "나사 구멍 2개가 있는 부품 4개, 검정 광택 표면과 밝은 모서리."
+  },
+  "flags": [
+   "ai-like",
+   "khong-chac-lop-ma"
+  ]
+ },
+ {
+  "image": "image12_03",
+  "slug": "nhom-chi-tiet-den-bong-num-vong-tay-nam",
+  "label": "Nhóm núm, vòng và tay nắm bề mặt đen bóng",
+  "tags": [
+   "mau-den",
+   "crom-den"
+  ],
+  "placements": [
+   {
+    "page": "/dich-vu-gia-cong-ma/ma-crom-cung-cong-nghiep",
+    "file": "src/components/dich-vu/DetailGallery.tsx",
+    "section": "Mạ Niken-Crom trên nền nhựa ABS: thư viện ảnh chi tiết (DetailGallery 4 ảnh, DetailCapability 1 ảnh)",
+    "replaces": "một ảnh trong SERVICE_GALLERY_POOL (src/lib/factory-pool.ts, /images/factory/*)",
+    "note": "Ví dụ chi tiết thực tế theo nhóm FACTS; đưa vào pool riêng cho từng dịch vụ để không dùng chung cho cả 6 trang"
+   },
+   {
+    "page": "/san-pham-du-an",
+    "file": "src/components/san-pham/ProductCatalog.tsx",
+    "section": "Danh mục Ngũ kim - niken đen/crom đen (đề xuất danh mục mới; ảnh gán qua cột products.image trong CMS/seed)",
+    "replaces": "thêm mới (hiện products.image dùng /images/factory/qc-*.jpg, kho-*.jpg)",
+    "note": "Khung thẻ danh mục; trang chi tiết dùng ProductHero aspect 4/3 và ProductGallery 16/10; ảnh 16/17 nền sáng, dùng object-contain hoặc cover nền sáng"
+   }
+  ],
+  "alt": {
+   "vi": "Nhóm núm, vòng và tay nắm bề mặt đen bóng, mép chi tiết ánh sáng, ảnh chi tiết sau xử lý bề mặt.",
+   "zh": "黑色亮面旋钮、圆环与手柄组合，表面处理后的零件照片。",
+   "ko": "검정 광택 노브, 링, 손잡이 세트, 표면처리 후 부품 사진."
+  },
+  "caption": {
+   "vi": "Nhóm núm, vòng và tay nắm bề mặt đen bóng, mép chi tiết ánh sáng.",
+   "zh": "黑色亮面旋钮、圆环与手柄组合。",
+   "ko": "검정 광택 노브, 링, 손잡이 세트."
+  },
+  "flags": [
+   "ai-like",
+   "khong-chac-lop-ma"
+  ]
+ },
+ {
+  "image": "image12_04",
+  "slug": "dia-tron-xuoc-dong-tam-niken-satin",
+  "label": "Đĩa tròn bề mặt xước đồng tâm",
+  "tags": [
+   "satin",
+   "xuoc"
+  ],
+  "placements": [
+   {
+    "page": "/dich-vu-gia-cong-ma/ma-crom-cung-cong-nghiep",
+    "file": "src/components/dich-vu/DetailGallery.tsx",
+    "section": "Mạ Niken-Crom trên nền nhựa ABS: thư viện ảnh chi tiết (DetailGallery 4 ảnh, DetailCapability 1 ảnh)",
+    "replaces": "một ảnh trong SERVICE_GALLERY_POOL (src/lib/factory-pool.ts, /images/factory/*)",
+    "note": "Ví dụ chi tiết thực tế theo nhóm FACTS; đưa vào pool riêng cho từng dịch vụ để không dùng chung cho cả 6 trang"
+   },
+   {
+    "page": "/san-pham-du-an",
+    "file": "src/components/san-pham/ProductCatalog.tsx",
+    "section": "Danh mục Ngũ kim - mạ satin/inox satin (đề xuất danh mục mới; ảnh gán qua cột products.image trong CMS/seed)",
+    "replaces": "thêm mới (hiện products.image dùng /images/factory/qc-*.jpg, kho-*.jpg)",
+    "note": "Khung thẻ danh mục; trang chi tiết dùng ProductHero aspect 4/3 và ProductGallery 16/10; ảnh 16/17 nền sáng, dùng object-contain hoặc cover nền sáng"
+   }
+  ],
+  "alt": {
+   "vi": "Đĩa tròn có lỗ giữa, bề mặt xước đồng tâm kiểu satin, ảnh chi tiết sau xử lý bề mặt.",
+   "zh": "中心带孔圆盘，同心拉丝缎面表面，表面处理后的零件照片。",
+   "ko": "중앙에 구멍이 있는 원판, 동심원 새틴 헤어라인, 표면처리 후 부품 사진."
+  },
+  "caption": {
+   "vi": "Đĩa tròn có lỗ giữa, bề mặt xước đồng tâm kiểu satin.",
+   "zh": "中心带孔圆盘，同心拉丝缎面表面。",
+   "ko": "중앙에 구멍이 있는 원판, 동심원 새틴 헤어라인."
+  },
+  "flags": [
+   "ai-like"
+  ]
+ },
+ {
+  "image": "image12_05",
+  "slug": "chi-tiet-bac-thang-xuoc-satin",
+  "label": "Chi tiết hình bậc thang bề mặt xước satin",
+  "tags": [
+   "satin",
+   "xuoc"
+  ],
+  "placements": [
+   {
+    "page": "/dich-vu-gia-cong-ma/ma-crom-cung-cong-nghiep",
+    "file": "src/components/dich-vu/DetailGallery.tsx",
+    "section": "Mạ Niken-Crom trên nền nhựa ABS: thư viện ảnh chi tiết (DetailGallery 4 ảnh, DetailCapability 1 ảnh)",
+    "replaces": "một ảnh trong SERVICE_GALLERY_POOL (src/lib/factory-pool.ts, /images/factory/*)",
+    "note": "Ví dụ chi tiết thực tế theo nhóm FACTS; đưa vào pool riêng cho từng dịch vụ để không dùng chung cho cả 6 trang"
+   },
+   {
+    "page": "/san-pham-du-an",
+    "file": "src/components/san-pham/ProductCatalog.tsx",
+    "section": "Danh mục Ngũ kim - mạ satin/inox satin (đề xuất danh mục mới; ảnh gán qua cột products.image trong CMS/seed)",
+    "replaces": "thêm mới (hiện products.image dùng /images/factory/qc-*.jpg, kho-*.jpg)",
+    "note": "Khung thẻ danh mục; trang chi tiết dùng ProductHero aspect 4/3 và ProductGallery 16/10; ảnh 16/17 nền sáng, dùng object-contain hoặc cover nền sáng"
+   }
+  ],
+  "alt": {
+   "vi": "Chi tiết hình trụ bậc thang, bề mặt xước ngang kiểu satin, ảnh chi tiết sau xử lý bề mặt.",
+   "zh": "阶梯形圆柱件，横向拉丝缎面表面，表面处理后的零件照片。",
+   "ko": "계단형 원통 부품, 가로 헤어라인 새틴 표면, 표면처리 후 부품 사진."
+  },
+  "caption": {
+   "vi": "Chi tiết hình trụ bậc thang, bề mặt xước ngang kiểu satin.",
+   "zh": "阶梯形圆柱件，横向拉丝缎面表面。",
+   "ko": "계단형 원통 부품, 가로 헤어라인 새틴 표면."
+  },
+  "flags": [
+   "ai-like"
+  ]
+ },
+ {
+  "image": "image12_06",
+  "slug": "tam-cong-xuoc-doc-hair-line",
+  "label": "Tấm cong bề mặt xước dọc (Hair Line)",
+  "tags": [
+   "hair-line",
+   "satin"
+  ],
+  "placements": [
+   {
+    "page": "/dich-vu-gia-cong-ma/ma-crom-cung-cong-nghiep",
+    "file": "src/components/dich-vu/DetailGallery.tsx",
+    "section": "Mạ Niken-Crom trên nền nhựa ABS: thư viện ảnh chi tiết (DetailGallery 4 ảnh, DetailCapability 1 ảnh)",
+    "replaces": "một ảnh trong SERVICE_GALLERY_POOL (src/lib/factory-pool.ts, /images/factory/*)",
+    "note": "Ví dụ chi tiết thực tế theo nhóm FACTS; đưa vào pool riêng cho từng dịch vụ để không dùng chung cho cả 6 trang"
+   },
+   {
+    "page": "/san-pham-du-an",
+    "file": "src/components/san-pham/ProductCatalog.tsx",
+    "section": "Danh mục Ngũ kim - mạ satin/inox satin (đề xuất danh mục mới; ảnh gán qua cột products.image trong CMS/seed)",
+    "replaces": "thêm mới (hiện products.image dùng /images/factory/qc-*.jpg, kho-*.jpg)",
+    "note": "Khung thẻ danh mục; trang chi tiết dùng ProductHero aspect 4/3 và ProductGallery 16/10; ảnh 16/17 nền sáng, dùng object-contain hoặc cover nền sáng"
+   }
+  ],
+  "alt": {
+   "vi": "Tấm cong có bề mặt xước dọc dạng Hair Line, ảnh chi tiết sau xử lý bề mặt.",
+   "zh": "带纵向拉丝（Hair Line）的弧形板，表面处理后的零件照片。",
+   "ko": "세로 헤어라인 표면의 곡면 판, 표면처리 후 부품 사진."
+  },
+  "caption": {
+   "vi": "Tấm cong có bề mặt xước dọc dạng Hair Line.",
+   "zh": "带纵向拉丝（Hair Line）的弧形板。",
+   "ko": "세로 헤어라인 표면의 곡면 판."
+  },
+  "flags": [
+   "ai-like"
+  ]
+ },
+ {
+  "image": "image16_01",
+  "slug": "moc-chu-s-niken-sang",
+  "label": "Móc chữ S bề mặt niken/crom sáng",
+  "tags": [
+   "ngu-kim",
+   "niken-sang"
+  ],
+  "placements": [
+   {
+    "page": "/dich-vu-gia-cong-ma/ma-niken-hoa-hoc-enp",
+    "file": "src/components/dich-vu/DetailGallery.tsx",
+    "section": "Mạ niken trên nền kim loại: thư viện ảnh chi tiết (DetailGallery, DetailCapability)",
+    "replaces": "một ảnh trong SERVICE_GALLERY_POOL (src/lib/factory-pool.ts, /images/factory/*)",
+    "note": "Ví dụ chi tiết thực tế theo nhóm FACTS; đưa vào pool riêng cho từng dịch vụ để không dùng chung cho cả 6 trang"
+   },
+   {
+    "page": "/san-pham-du-an",
+    "file": "src/components/san-pham/ProductCatalog.tsx",
+    "section": "Danh mục Ngũ kim - niken/crom sáng (đề xuất danh mục mới; ảnh gán qua cột products.image trong CMS/seed)",
+    "replaces": "thêm mới (hiện products.image dùng /images/factory/qc-*.jpg, kho-*.jpg)",
+    "note": "Khung thẻ danh mục; trang chi tiết dùng ProductHero aspect 4/3 và ProductGallery 16/10; ảnh 16/17 nền sáng, dùng object-contain hoặc cover nền sáng"
+   }
+  ],
+  "alt": {
+   "vi": "Móc thanh chữ S uốn cong, bề mặt mạ sáng (niken/crom), ảnh chi tiết sau xử lý bề mặt.",
+   "zh": "S形弯折挂钩，亮面镀层（镍/铬），表面处理后的零件照片。",
+   "ko": "S자형 굽힘 걸이, 광택 도금(니켈/크롬), 표면처리 후 부품 사진."
+  },
+  "caption": {
+   "vi": "Móc thanh chữ S uốn cong, bề mặt mạ sáng (niken/crom).",
+   "zh": "S形弯折挂钩，亮面镀层（镍/铬）。",
+   "ko": "S자형 굽힘 걸이, 광택 도금(니켈/크롬)."
+  },
+  "flags": [
+   "ai-like"
+  ]
+ },
+ {
+  "image": "image16_02",
+  "slug": "chi-tiet-hinh-non-niken-sang",
+  "label": "Sáu chi tiết hình nón bề mặt niken sáng",
+  "tags": [
+   "ngu-kim",
+   "niken-sang"
+  ],
+  "placements": [
+   {
+    "page": "/dich-vu-gia-cong-ma/ma-niken-hoa-hoc-enp",
+    "file": "src/components/dich-vu/DetailGallery.tsx",
+    "section": "Mạ niken trên nền kim loại: thư viện ảnh chi tiết (DetailGallery, DetailCapability)",
+    "replaces": "một ảnh trong SERVICE_GALLERY_POOL (src/lib/factory-pool.ts, /images/factory/*)",
+    "note": "Ví dụ chi tiết thực tế theo nhóm FACTS; đưa vào pool riêng cho từng dịch vụ để không dùng chung cho cả 6 trang"
+   },
+   {
+    "page": "/san-pham-du-an",
+    "file": "src/components/san-pham/ProductCatalog.tsx",
+    "section": "Danh mục Ngũ kim - niken/crom sáng (đề xuất danh mục mới; ảnh gán qua cột products.image trong CMS/seed)",
+    "replaces": "thêm mới (hiện products.image dùng /images/factory/qc-*.jpg, kho-*.jpg)",
+    "note": "Khung thẻ danh mục; trang chi tiết dùng ProductHero aspect 4/3 và ProductGallery 16/10; ảnh 16/17 nền sáng, dùng object-contain hoặc cover nền sáng"
+   }
+  ],
+  "alt": {
+   "vi": "Sáu chi tiết hình nón rỗng, bề mặt mạ niken sáng, ảnh chi tiết sau xử lý bề mặt.",
+   "zh": "六个空心锥形零件，亮面镀镍表面，表面处理后的零件照片。",
+   "ko": "속이 빈 원뿔형 부품 6개, 광택 니켈 도금 표면, 표면처리 후 부품 사진."
+  },
+  "caption": {
+   "vi": "Sáu chi tiết hình nón rỗng, bề mặt mạ niken sáng.",
+   "zh": "六个空心锥形零件，亮面镀镍表面。",
+   "ko": "속이 빈 원뿔형 부품 6개, 광택 니켈 도금 표면."
+  },
+  "flags": [
+   "ai-like"
+  ]
+ },
+ {
+  "image": "image16_03",
+  "slug": "bu-long-dac-biet-ma-niken-sang",
+  "label": "Bu-lông đặc biệt đầu tròn, bề mặt niken sáng",
+  "tags": [
+   "ngu-kim",
+   "niken-sang",
+   "bu-long"
+  ],
+  "placements": [
+   {
+    "page": "/dich-vu-gia-cong-ma/ma-niken-hoa-hoc-enp",
+    "file": "src/components/dich-vu/DetailGallery.tsx",
+    "section": "Mạ niken trên nền kim loại: thư viện ảnh chi tiết (DetailGallery, DetailCapability)",
+    "replaces": "một ảnh trong SERVICE_GALLERY_POOL (src/lib/factory-pool.ts, /images/factory/*)",
+    "note": "Ví dụ chi tiết thực tế theo nhóm FACTS; đưa vào pool riêng cho từng dịch vụ để không dùng chung cho cả 6 trang"
+   },
+   {
+    "page": "/san-pham-du-an",
+    "file": "src/components/san-pham/ProductCatalog.tsx",
+    "section": "Danh mục Ngũ kim - niken/crom sáng (đề xuất danh mục mới; ảnh gán qua cột products.image trong CMS/seed)",
+    "replaces": "thêm mới (hiện products.image dùng /images/factory/qc-*.jpg, kho-*.jpg)",
+    "note": "Khung thẻ danh mục; trang chi tiết dùng ProductHero aspect 4/3 và ProductGallery 16/10; ảnh 16/17 nền sáng, dùng object-contain hoặc cover nền sáng"
+   }
+  ],
+  "alt": {
+   "vi": "Hai bu-lông ren thô có đầu tròn, bề mặt mạ niken sáng, ảnh chi tiết sau xử lý bề mặt.",
+   "zh": "两颗圆头粗牙螺栓，亮面镀镍表面，表面处理后的零件照片。",
+   "ko": "원형 머리의 굵은 나사 볼트 2개, 광택 니켈 도금, 표면처리 후 부품 사진."
+  },
+  "caption": {
+   "vi": "Hai bu-lông ren thô có đầu tròn, bề mặt mạ niken sáng.",
+   "zh": "两颗圆头粗牙螺栓，亮面镀镍表面。",
+   "ko": "원형 머리의 굵은 나사 볼트 2개, 광택 니켈 도금."
+  },
+  "flags": [
+   "ai-like"
+  ]
+ },
+ {
+  "image": "image16_04",
+  "slug": "chot-vong-tron-ma-niken",
+  "label": "Hai chốt đầu vòng bề mặt mạ sáng",
+  "tags": [
+   "ngu-kim",
+   "niken-sang",
+   "chot"
+  ],
+  "placements": [
+   {
+    "page": "/dich-vu-gia-cong-ma/ma-niken-hoa-hoc-enp",
+    "file": "src/components/dich-vu/DetailGallery.tsx",
+    "section": "Mạ niken trên nền kim loại: thư viện ảnh chi tiết (DetailGallery, DetailCapability)",
+    "replaces": "một ảnh trong SERVICE_GALLERY_POOL (src/lib/factory-pool.ts, /images/factory/*)",
+    "note": "Ví dụ chi tiết thực tế theo nhóm FACTS; đưa vào pool riêng cho từng dịch vụ để không dùng chung cho cả 6 trang"
+   },
+   {
+    "page": "/san-pham-du-an",
+    "file": "src/components/san-pham/ProductCatalog.tsx",
+    "section": "Danh mục Ngũ kim - niken/crom sáng (đề xuất danh mục mới; ảnh gán qua cột products.image trong CMS/seed)",
+    "replaces": "thêm mới (hiện products.image dùng /images/factory/qc-*.jpg, kho-*.jpg)",
+    "note": "Khung thẻ danh mục; trang chi tiết dùng ProductHero aspect 4/3 và ProductGallery 16/10; ảnh 16/17 nền sáng, dùng object-contain hoặc cover nền sáng"
+   }
+  ],
+  "alt": {
+   "vi": "Hai chốt đầu vòng tròn, thân có rãnh, bề mặt mạ sáng, ảnh chi tiết sau xử lý bề mặt.",
+   "zh": "两个圆环头销，杆部带槽，亮面镀层，表面处理后的零件照片。",
+   "ko": "원형 고리 머리 핀 2개, 몸체에 홈, 광택 도금, 표면처리 후 부품 사진."
+  },
+  "caption": {
+   "vi": "Hai chốt đầu vòng tròn, thân có rãnh, bề mặt mạ sáng.",
+   "zh": "两个圆环头销，杆部带槽，亮面镀层。",
+   "ko": "원형 고리 머리 핀 2개, 몸체에 홈, 광택 도금."
+  },
+  "flags": [
+   "ai-like",
+   "khong-chac-lop-ma"
+  ]
+ },
+ {
+  "image": "image16_05",
+  "slug": "thanh-uon-dap-bong-ma-sang",
+  "label": "Hai thanh dập uốn có lỗ, bề mặt mạ sáng",
+  "tags": [
+   "ngu-kim",
+   "niken-sang",
+   "chi-tiet-dap"
+  ],
+  "placements": [
+   {
+    "page": "/dich-vu-gia-cong-ma/ma-niken-hoa-hoc-enp",
+    "file": "src/components/dich-vu/DetailGallery.tsx",
+    "section": "Mạ niken trên nền kim loại: thư viện ảnh chi tiết (DetailGallery, DetailCapability)",
+    "replaces": "một ảnh trong SERVICE_GALLERY_POOL (src/lib/factory-pool.ts, /images/factory/*)",
+    "note": "Ví dụ chi tiết thực tế theo nhóm FACTS; đưa vào pool riêng cho từng dịch vụ để không dùng chung cho cả 6 trang"
+   },
+   {
+    "page": "/san-pham-du-an",
+    "file": "src/components/san-pham/ProductCatalog.tsx",
+    "section": "Danh mục Ngũ kim - niken/crom sáng (đề xuất danh mục mới; ảnh gán qua cột products.image trong CMS/seed)",
+    "replaces": "thêm mới (hiện products.image dùng /images/factory/qc-*.jpg, kho-*.jpg)",
+    "note": "Khung thẻ danh mục; trang chi tiết dùng ProductHero aspect 4/3 và ProductGallery 16/10; ảnh 16/17 nền sáng, dùng object-contain hoặc cover nền sáng"
+   }
+  ],
+  "alt": {
+   "vi": "Hai chi tiết dập uốn có lỗ bắt vít, bề mặt mạ sáng gương, ảnh chi tiết sau xử lý bề mặt.",
+   "zh": "两个带孔冲压弯折件，镜面亮面镀层，表面处理后的零件照片。",
+   "ko": "나사 구멍이 있는 프레스 굽힘 부품 2개, 거울면 도금, 표면처리 후 부품 사진."
+  },
+  "caption": {
+   "vi": "Hai chi tiết dập uốn có lỗ bắt vít, bề mặt mạ sáng gương.",
+   "zh": "两个带孔冲压弯折件，镜面亮面镀层。",
+   "ko": "나사 구멍이 있는 프레스 굽힘 부품 2개, 거울면 도금."
+  },
+  "flags": [
+   "ai-like",
+   "khong-chac-lop-ma"
+  ]
+ },
+ {
+  "image": "image16_06",
+  "slug": "truc-tru-xep-chong-ma-sang",
+  "label": "Ba trục trụ xếp chồng bề mặt mạ sáng",
+  "tags": [
+   "ngu-kim",
+   "niken-sang"
+  ],
+  "placements": [
+   {
+    "page": "/dich-vu-gia-cong-ma/ma-niken-hoa-hoc-enp",
+    "file": "src/components/dich-vu/DetailGallery.tsx",
+    "section": "Mạ niken trên nền kim loại: thư viện ảnh chi tiết (DetailGallery, DetailCapability)",
+    "replaces": "một ảnh trong SERVICE_GALLERY_POOL (src/lib/factory-pool.ts, /images/factory/*)",
+    "note": "Ví dụ chi tiết thực tế theo nhóm FACTS; đưa vào pool riêng cho từng dịch vụ để không dùng chung cho cả 6 trang"
+   },
+   {
+    "page": "/san-pham-du-an",
+    "file": "src/components/san-pham/ProductCatalog.tsx",
+    "section": "Danh mục Ngũ kim - niken/crom sáng (đề xuất danh mục mới; ảnh gán qua cột products.image trong CMS/seed)",
+    "replaces": "thêm mới (hiện products.image dùng /images/factory/qc-*.jpg, kho-*.jpg)",
+    "note": "Khung thẻ danh mục; trang chi tiết dùng ProductHero aspect 4/3 và ProductGallery 16/10; ảnh 16/17 nền sáng, dùng object-contain hoặc cover nền sáng"
+   }
+  ],
+  "alt": {
+   "vi": "Ba chi tiết hình trụ xếp chồng, bề mặt mạ sáng, ảnh chi tiết sau xử lý bề mặt.",
+   "zh": "三个叠放的圆柱形零件，亮面镀层，表面处理后的零件照片。",
+   "ko": "쌓아 놓은 원통형 부품 3개, 광택 도금, 표면처리 후 부품 사진."
+  },
+  "caption": {
+   "vi": "Ba chi tiết hình trụ xếp chồng, bề mặt mạ sáng.",
+   "zh": "三个叠放的圆柱形零件，亮面镀层。",
+   "ko": "쌓아 놓은 원통형 부품 3개, 광택 도금."
+  },
+  "flags": [
+   "ai-like",
+   "khong-chac-lop-ma"
+  ]
+ },
+ {
+  "image": "image16_07",
+  "slug": "vit-tu-ren-phot-phat-den",
+  "label": "Vít tự ren có long đen, bề mặt đen (phốt phát đen)",
+  "tags": [
+   "ngu-kim",
+   "phot-phat-den",
+   "vit"
+  ],
+  "placements": [
+   {
+    "page": "/dich-vu-gia-cong-ma/ma-kem-hop-kim-kem-niken",
+    "file": "src/components/dich-vu/DetailGallery.tsx",
+    "section": "Mạ kẽm, đồng, thiếc, phốt phát đen: thư viện ảnh chi tiết (DetailGallery, DetailCapability)",
+    "replaces": "một ảnh trong SERVICE_GALLERY_POOL (src/lib/factory-pool.ts, /images/factory/*)",
+    "note": "Ví dụ chi tiết thực tế theo nhóm FACTS; đưa vào pool riêng cho từng dịch vụ để không dùng chung cho cả 6 trang"
+   },
+   {
+    "page": "/san-pham-du-an",
+    "file": "src/components/san-pham/ProductCatalog.tsx",
+    "section": "Danh mục Ngũ kim - phốt phát đen (đề xuất danh mục mới; ảnh gán qua cột products.image trong CMS/seed)",
+    "replaces": "thêm mới (hiện products.image dùng /images/factory/qc-*.jpg, kho-*.jpg)",
+    "note": "Khung thẻ danh mục; trang chi tiết dùng ProductHero aspect 4/3 và ProductGallery 16/10; ảnh 16/17 nền sáng, dùng object-contain hoặc cover nền sáng"
+   }
+  ],
+  "alt": {
+   "vi": "Hai vít tự ren đầu kèm long đen, bề mặt phủ đen kiểu phốt phát, ảnh chi tiết sau xử lý bề mặt.",
+   "zh": "两颗带垫圈自攻螺钉，黑色磷化类表面，表面处理后的零件照片。",
+   "ko": "와셔 일체형 셀프태핑 나사 2개, 흑색 인산염 계열 표면, 표면처리 후 부품 사진."
+  },
+  "caption": {
+   "vi": "Hai vít tự ren đầu kèm long đen, bề mặt phủ đen kiểu phốt phát.",
+   "zh": "两颗带垫圈自攻螺钉，黑色磷化类表面。",
+   "ko": "와셔 일체형 셀프태핑 나사 2개, 흑색 인산염 계열 표면."
+  },
+  "flags": [
+   "ai-like"
+  ]
+ },
+ {
+  "image": "image16_08",
+  "slug": "bu-long-chu-t-phot-phat-den",
+  "label": "Bu-lông và bu-lông chữ T, bề mặt đen (phốt phát đen)",
+  "tags": [
+   "ngu-kim",
+   "phot-phat-den",
+   "bu-long"
+  ],
+  "placements": [
+   {
+    "page": "/dich-vu-gia-cong-ma/ma-kem-hop-kim-kem-niken",
+    "file": "src/components/dich-vu/DetailGallery.tsx",
+    "section": "Mạ kẽm, đồng, thiếc, phốt phát đen: thư viện ảnh chi tiết (DetailGallery, DetailCapability)",
+    "replaces": "một ảnh trong SERVICE_GALLERY_POOL (src/lib/factory-pool.ts, /images/factory/*)",
+    "note": "Ví dụ chi tiết thực tế theo nhóm FACTS; đưa vào pool riêng cho từng dịch vụ để không dùng chung cho cả 6 trang"
+   },
+   {
+    "page": "/san-pham-du-an",
+    "file": "src/components/san-pham/ProductCatalog.tsx",
+    "section": "Danh mục Ngũ kim - phốt phát đen (đề xuất danh mục mới; ảnh gán qua cột products.image trong CMS/seed)",
+    "replaces": "thêm mới (hiện products.image dùng /images/factory/qc-*.jpg, kho-*.jpg)",
+    "note": "Khung thẻ danh mục; trang chi tiết dùng ProductHero aspect 4/3 và ProductGallery 16/10; ảnh 16/17 nền sáng, dùng object-contain hoặc cover nền sáng"
+   }
+  ],
+  "alt": {
+   "vi": "Bu-lông đầu trụ và bu-lông đầu chữ T, bề mặt đen mờ kiểu phốt phát, ảnh chi tiết sau xử lý bề mặt.",
+   "zh": "圆柱头螺栓与T形头螺栓，黑色哑光磷化类表面，表面处理后的零件照片。",
+   "ko": "원통머리 볼트와 T형 볼트, 흑색 무광 인산염 계열 표면, 표면처리 후 부품 사진."
+  },
+  "caption": {
+   "vi": "Bu-lông đầu trụ và bu-lông đầu chữ T, bề mặt đen mờ kiểu phốt phát.",
+   "zh": "圆柱头螺栓与T形头螺栓，黑色哑光磷化类表面。",
+   "ko": "원통머리 볼트와 T형 볼트, 흑색 무광 인산염 계열 표면."
+  },
+  "flags": [
+   "ai-like"
+  ]
+ },
+ {
+  "image": "image16_09",
+  "slug": "nap-che-oval-ma-den",
+  "label": "Hai nắp che oval, bề mặt đen",
+  "tags": [
+   "ngu-kim",
+   "mau-den",
+   "nap-che"
+  ],
+  "placements": [
+   {
+    "page": "/dich-vu-gia-cong-ma/ma-kem-hop-kim-kem-niken",
+    "file": "src/components/dich-vu/DetailGallery.tsx",
+    "section": "Mạ kẽm, đồng, thiếc, phốt phát đen: thư viện ảnh chi tiết (DetailGallery, DetailCapability)",
+    "replaces": "một ảnh trong SERVICE_GALLERY_POOL (src/lib/factory-pool.ts, /images/factory/*)",
+    "note": "Ví dụ chi tiết thực tế theo nhóm FACTS; đưa vào pool riêng cho từng dịch vụ để không dùng chung cho cả 6 trang"
+   },
+   {
+    "page": "/san-pham-du-an",
+    "file": "src/components/san-pham/ProductCatalog.tsx",
+    "section": "Danh mục Ngũ kim - phốt phát đen (đề xuất danh mục mới; ảnh gán qua cột products.image trong CMS/seed)",
+    "replaces": "thêm mới (hiện products.image dùng /images/factory/qc-*.jpg, kho-*.jpg)",
+    "note": "Khung thẻ danh mục; trang chi tiết dùng ProductHero aspect 4/3 và ProductGallery 16/10; ảnh 16/17 nền sáng, dùng object-contain hoặc cover nền sáng"
+   }
+  ],
+  "alt": {
+   "vi": "Hai nắp che hình oval có lỗ nhỏ, bề mặt đen, ảnh chi tiết sau xử lý bề mặt.",
+   "zh": "两个带小孔的椭圆盖板，黑色表面，表面处理后的零件照片。",
+   "ko": "작은 구멍이 있는 타원형 커버 2개, 검정 표면, 표면처리 후 부품 사진."
+  },
+  "caption": {
+   "vi": "Hai nắp che hình oval có lỗ nhỏ, bề mặt đen.",
+   "zh": "两个带小孔的椭圆盖板，黑色表面。",
+   "ko": "작은 구멍이 있는 타원형 커버 2개, 검정 표면."
+  },
+  "flags": [
+   "ai-like",
+   "khong-chac-lop-ma"
+  ]
+ },
+ {
+  "image": "image16_10",
+  "slug": "vit-long-den-ren-thua-phot-phat-den",
+  "label": "Vít có long đen, bề mặt đen (phốt phát đen)",
+  "tags": [
+   "ngu-kim",
+   "phot-phat-den",
+   "vit"
+  ],
+  "placements": [
+   {
+    "page": "/dich-vu-gia-cong-ma/ma-kem-hop-kim-kem-niken",
+    "file": "src/components/dich-vu/DetailGallery.tsx",
+    "section": "Mạ kẽm, đồng, thiếc, phốt phát đen: thư viện ảnh chi tiết (DetailGallery, DetailCapability)",
+    "replaces": "một ảnh trong SERVICE_GALLERY_POOL (src/lib/factory-pool.ts, /images/factory/*)",
+    "note": "Ví dụ chi tiết thực tế theo nhóm FACTS; đưa vào pool riêng cho từng dịch vụ để không dùng chung cho cả 6 trang"
+   },
+   {
+    "page": "/san-pham-du-an",
+    "file": "src/components/san-pham/ProductCatalog.tsx",
+    "section": "Danh mục Ngũ kim - phốt phát đen (đề xuất danh mục mới; ảnh gán qua cột products.image trong CMS/seed)",
+    "replaces": "thêm mới (hiện products.image dùng /images/factory/qc-*.jpg, kho-*.jpg)",
+    "note": "Khung thẻ danh mục; trang chi tiết dùng ProductHero aspect 4/3 và ProductGallery 16/10; ảnh 16/17 nền sáng, dùng object-contain hoặc cover nền sáng"
+   }
+  ],
+  "alt": {
+   "vi": "Vít ren thưa có long đen đầu lục giác, bề mặt đen kiểu phốt phát, ảnh chi tiết sau xử lý bề mặt.",
+   "zh": "六角垫圈头粗牙螺钉，黑色磷化类表面，表面处理后的零件照片。",
+   "ko": "육각 와셔 머리 굵은 나사, 흑색 인산염 계열 표면, 표면처리 후 부품 사진."
+  },
+  "caption": {
+   "vi": "Vít ren thưa có long đen đầu lục giác, bề mặt đen kiểu phốt phát.",
+   "zh": "六角垫圈头粗牙螺钉，黑色磷化类表面。",
+   "ko": "육각 와셔 머리 굵은 나사, 흑색 인산염 계열 표면."
+  },
+  "flags": [
+   "ai-like"
+  ]
+ },
+ {
+  "image": "image16_11",
+  "slug": "vit-tu-ren-long-den-phot-phat-den",
+  "label": "Vít tự ren đầu kèm long đen, bề mặt đen",
+  "tags": [
+   "ngu-kim",
+   "phot-phat-den",
+   "vit"
+  ],
+  "placements": [
+   {
+    "page": "/dich-vu-gia-cong-ma/ma-kem-hop-kim-kem-niken",
+    "file": "src/components/dich-vu/DetailGallery.tsx",
+    "section": "Mạ kẽm, đồng, thiếc, phốt phát đen: thư viện ảnh chi tiết (DetailGallery, DetailCapability)",
+    "replaces": "một ảnh trong SERVICE_GALLERY_POOL (src/lib/factory-pool.ts, /images/factory/*)",
+    "note": "Ví dụ chi tiết thực tế theo nhóm FACTS; đưa vào pool riêng cho từng dịch vụ để không dùng chung cho cả 6 trang"
+   },
+   {
+    "page": "/san-pham-du-an",
+    "file": "src/components/san-pham/ProductCatalog.tsx",
+    "section": "Danh mục Ngũ kim - phốt phát đen (đề xuất danh mục mới; ảnh gán qua cột products.image trong CMS/seed)",
+    "replaces": "thêm mới (hiện products.image dùng /images/factory/qc-*.jpg, kho-*.jpg)",
+    "note": "Khung thẻ danh mục; trang chi tiết dùng ProductHero aspect 4/3 và ProductGallery 16/10; ảnh 16/17 nền sáng, dùng object-contain hoặc cover nền sáng"
+   }
+  ],
+  "alt": {
+   "vi": "Vít tự ren có long đen, bề mặt đen kiểu phốt phát, ảnh chi tiết sau xử lý bề mặt.",
+   "zh": "带垫圈自攻螺钉，黑色磷化类表面，表面处理后的零件照片。",
+   "ko": "와셔 일체형 셀프태핑 나사, 흑색 인산염 계열 표면, 표면처리 후 부품 사진."
+  },
+  "caption": {
+   "vi": "Vít tự ren có long đen, bề mặt đen kiểu phốt phát.",
+   "zh": "带垫圈自攻螺钉，黑色磷化类表面。",
+   "ko": "와셔 일체형 셀프태핑 나사, 흑색 인산염 계열 표면."
+  },
+  "flags": [
+   "ai-like"
+  ]
+ },
+ {
+  "image": "image16_12",
+  "slug": "ban-ma-cong-phot-phat-den",
+  "label": "Hai bản mã cong có lỗ, bề mặt đen",
+  "tags": [
+   "ngu-kim",
+   "phot-phat-den",
+   "ban-ma"
+  ],
+  "placements": [
+   {
+    "page": "/dich-vu-gia-cong-ma/ma-kem-hop-kim-kem-niken",
+    "file": "src/components/dich-vu/DetailGallery.tsx",
+    "section": "Mạ kẽm, đồng, thiếc, phốt phát đen: thư viện ảnh chi tiết (DetailGallery, DetailCapability)",
+    "replaces": "một ảnh trong SERVICE_GALLERY_POOL (src/lib/factory-pool.ts, /images/factory/*)",
+    "note": "Ví dụ chi tiết thực tế theo nhóm FACTS; đưa vào pool riêng cho từng dịch vụ để không dùng chung cho cả 6 trang"
+   },
+   {
+    "page": "/san-pham-du-an",
+    "file": "src/components/san-pham/ProductCatalog.tsx",
+    "section": "Danh mục Ngũ kim - phốt phát đen (đề xuất danh mục mới; ảnh gán qua cột products.image trong CMS/seed)",
+    "replaces": "thêm mới (hiện products.image dùng /images/factory/qc-*.jpg, kho-*.jpg)",
+    "note": "Khung thẻ danh mục; trang chi tiết dùng ProductHero aspect 4/3 và ProductGallery 16/10; ảnh 16/17 nền sáng, dùng object-contain hoặc cover nền sáng"
+   }
+  ],
+  "alt": {
+   "vi": "Hai bản mã cong có lỗ bắt vít, bề mặt đen, ảnh chi tiết sau xử lý bề mặt.",
+   "zh": "两块带孔弧形连接板，黑色表面，表面处理后的零件照片。",
+   "ko": "나사 구멍이 있는 곡면 플레이트 2개, 검정 표면, 표면처리 후 부품 사진."
+  },
+  "caption": {
+   "vi": "Hai bản mã cong có lỗ bắt vít, bề mặt đen.",
+   "zh": "两块带孔弧形连接板，黑色表面。",
+   "ko": "나사 구멍이 있는 곡면 플레이트 2개, 검정 표면."
+  },
+  "flags": [
+   "ai-like",
+   "khong-chac-lop-ma"
+  ]
+ },
+ {
+  "image": "image16_13",
+  "slug": "banh-rang-xich-niken-hoa",
+  "label": "Bánh răng xích bề mặt niken",
+  "tags": [
+   "ngu-kim",
+   "niken-hoa",
+   "banh-rang"
+  ],
+  "placements": [
+   {
+    "page": "/dich-vu-gia-cong-ma/ma-niken-hoa-hoc-enp",
+    "file": "src/components/dich-vu/DetailGallery.tsx",
+    "section": "Mạ niken trên nền kim loại: thư viện ảnh chi tiết (DetailGallery, DetailCapability)",
+    "replaces": "một ảnh trong SERVICE_GALLERY_POOL (src/lib/factory-pool.ts, /images/factory/*)",
+    "note": "Ví dụ chi tiết thực tế theo nhóm FACTS; đưa vào pool riêng cho từng dịch vụ để không dùng chung cho cả 6 trang"
+   },
+   {
+    "page": "/san-pham-du-an",
+    "file": "src/components/san-pham/ProductCatalog.tsx",
+    "section": "Danh mục Ngũ kim - niken hóa (đề xuất danh mục mới; ảnh gán qua cột products.image trong CMS/seed)",
+    "replaces": "thêm mới (hiện products.image dùng /images/factory/qc-*.jpg, kho-*.jpg)",
+    "note": "Khung thẻ danh mục; trang chi tiết dùng ProductHero aspect 4/3 và ProductGallery 16/10; ảnh 16/17 nền sáng, dùng object-contain hoặc cover nền sáng"
+   }
+  ],
+  "alt": {
+   "vi": "Bánh răng xích có lỗ then, bề mặt kim loại sáng mờ kiểu niken, ảnh chi tiết sau xử lý bề mặt.",
+   "zh": "带键槽的链轮，哑光镍色金属表面，表面处理后的零件照片。",
+   "ko": "키홈이 있는 체인 스프로킷, 무광 니켈 계열 표면, 표면처리 후 부품 사진."
+  },
+  "caption": {
+   "vi": "Bánh răng xích có lỗ then, bề mặt kim loại sáng mờ kiểu niken.",
+   "zh": "带键槽的链轮，哑光镍色金属表面。",
+   "ko": "키홈이 있는 체인 스프로킷, 무광 니켈 계열 표면."
+  },
+  "flags": [
+   "khong-chac-lop-ma"
+  ]
+ },
+ {
+  "image": "image16_14",
+  "slug": "hang-truc-chot-ngu-kim-xep-khay",
+  "label": "Hàng trục-chốt ngũ kim xếp trên khay",
+  "tags": [
+   "ngu-kim",
+   "niken-hoa",
+   "truc-chot"
+  ],
+  "placements": [
+   {
+    "page": "/dich-vu-gia-cong-ma/ma-niken-hoa-hoc-enp",
+    "file": "src/components/dich-vu/DetailGallery.tsx",
+    "section": "Mạ niken trên nền kim loại: thư viện ảnh chi tiết (DetailGallery, DetailCapability)",
+    "replaces": "một ảnh trong SERVICE_GALLERY_POOL (src/lib/factory-pool.ts, /images/factory/*)",
+    "note": "Ví dụ chi tiết thực tế theo nhóm FACTS; đưa vào pool riêng cho từng dịch vụ để không dùng chung cho cả 6 trang"
+   },
+   {
+    "page": "/san-pham-du-an",
+    "file": "src/components/san-pham/ProductCatalog.tsx",
+    "section": "Danh mục Ngũ kim - niken hóa (đề xuất danh mục mới; ảnh gán qua cột products.image trong CMS/seed)",
+    "replaces": "thêm mới (hiện products.image dùng /images/factory/qc-*.jpg, kho-*.jpg)",
+    "note": "Khung thẻ danh mục; trang chi tiết dùng ProductHero aspect 4/3 và ProductGallery 16/10; ảnh 16/17 nền sáng, dùng object-contain hoặc cover nền sáng"
+   }
+  ],
+  "alt": {
+   "vi": "Hàng trục-chốt ngũ kim xếp thẳng trên khay, bề mặt kim loại sáng, ảnh chi tiết sau xử lý bề mặt.",
+   "zh": "托盘上整齐排列的五金轴销，亮色金属表面，表面处理后的零件照片。",
+   "ko": "트레이에 나란히 놓은 금속 축-핀, 밝은 금속 표면, 표면처리 후 부품 사진."
+  },
+  "caption": {
+   "vi": "Hàng trục-chốt ngũ kim xếp thẳng trên khay, bề mặt kim loại sáng.",
+   "zh": "托盘上整齐排列的五金轴销，亮色金属表面。",
+   "ko": "트레이에 나란히 놓은 금속 축-핀, 밝은 금속 표면."
+  },
+  "flags": [
+   "khong-chac-lop-ma"
+  ]
+ },
+ {
+  "image": "image16_15",
+  "slug": "tam-chi-tiet-may-niken-hoa",
+  "label": "Tấm chi tiết máy có lỗ góc, bề mặt niken",
+  "tags": [
+   "ngu-kim",
+   "niken-hoa",
+   "tam-chi-tiet"
+  ],
+  "placements": [
+   {
+    "page": "/dich-vu-gia-cong-ma/ma-niken-hoa-hoc-enp",
+    "file": "src/components/dich-vu/DetailGallery.tsx",
+    "section": "Mạ niken trên nền kim loại: thư viện ảnh chi tiết (DetailGallery, DetailCapability)",
+    "replaces": "một ảnh trong SERVICE_GALLERY_POOL (src/lib/factory-pool.ts, /images/factory/*)",
+    "note": "Ví dụ chi tiết thực tế theo nhóm FACTS; đưa vào pool riêng cho từng dịch vụ để không dùng chung cho cả 6 trang"
+   },
+   {
+    "page": "/san-pham-du-an",
+    "file": "src/components/san-pham/ProductCatalog.tsx",
+    "section": "Danh mục Ngũ kim - niken hóa (đề xuất danh mục mới; ảnh gán qua cột products.image trong CMS/seed)",
+    "replaces": "thêm mới (hiện products.image dùng /images/factory/qc-*.jpg, kho-*.jpg)",
+    "note": "Khung thẻ danh mục; trang chi tiết dùng ProductHero aspect 4/3 và ProductGallery 16/10; ảnh 16/17 nền sáng, dùng object-contain hoặc cover nền sáng"
+   }
+  ],
+  "alt": {
+   "vi": "Tấm chi tiết máy hình chữ nhật có bốn lỗ góc, bề mặt kim loại sáng mờ, ảnh chi tiết sau xử lý bề mặt.",
+   "zh": "四角带孔的矩形机件板，哑光亮色金属表面，表面处理后的零件照片。",
+   "ko": "네 모서리에 구멍이 있는 직사각형 기계 부품 판, 무광 밝은 금속, 표면처리 후 부품 사진."
+  },
+  "caption": {
+   "vi": "Tấm chi tiết máy hình chữ nhật có bốn lỗ góc, bề mặt kim loại sáng mờ.",
+   "zh": "四角带孔的矩形机件板，哑光亮色金属表面。",
+   "ko": "네 모서리에 구멍이 있는 직사각형 기계 부품 판, 무광 밝은 금속."
+  },
+  "flags": [
+   "khong-chac-lop-ma"
+  ]
+ },
+ {
+  "image": "image16_16",
+  "slug": "chi-tiet-chu-t-dap-tam",
+  "label": "Chi tiết dập chữ T gắn khối trên đế mỏng",
+  "tags": [
+   "ngu-kim",
+   "chi-tiet-dap"
+  ],
+  "placements": [
+   {
+    "page": "/dich-vu-gia-cong-ma/ma-niken-hoa-hoc-enp",
+    "file": "src/components/dich-vu/DetailGallery.tsx",
+    "section": "Mạ niken trên nền kim loại: thư viện ảnh chi tiết (DetailGallery, DetailCapability)",
+    "replaces": "một ảnh trong SERVICE_GALLERY_POOL (src/lib/factory-pool.ts, /images/factory/*)",
+    "note": "Ví dụ chi tiết thực tế theo nhóm FACTS; đưa vào pool riêng cho từng dịch vụ để không dùng chung cho cả 6 trang"
+   },
+   {
+    "page": "/san-pham-du-an",
+    "file": "src/components/san-pham/ProductCatalog.tsx",
+    "section": "Danh mục Ngũ kim - niken hóa (đề xuất danh mục mới; ảnh gán qua cột products.image trong CMS/seed)",
+    "replaces": "thêm mới (hiện products.image dùng /images/factory/qc-*.jpg, kho-*.jpg)",
+    "note": "Khung thẻ danh mục; trang chi tiết dùng ProductHero aspect 4/3 và ProductGallery 16/10; ảnh 16/17 nền sáng, dùng object-contain hoặc cover nền sáng"
+   }
+  ],
+  "alt": {
+   "vi": "Chi tiết dập đế mỏng gắn khối kim loại, bề mặt kim loại sáng, ảnh chi tiết sau xử lý bề mặt.",
+   "zh": "薄底板上带金属块的冲压件，亮色金属表面，表面处理后的零件照片。",
+   "ko": "얇은 베이스에 금속 블록이 붙은 프레스 부품, 밝은 금속 표면, 표면처리 후 부품 사진."
+  },
+  "caption": {
+   "vi": "Chi tiết dập đế mỏng gắn khối kim loại, bề mặt kim loại sáng.",
+   "zh": "薄底板上带金属块的冲压件，亮色金属表面。",
+   "ko": "얇은 베이스에 금속 블록이 붙은 프레스 부품, 밝은 금속 표면."
+  },
+  "flags": [
+   "khong-chac-lop-ma"
+  ]
+ },
+ {
+  "image": "image16_17",
+  "slug": "thanh-gia-do-ma-niken-sang",
+  "label": "Ba thanh giá đỡ có lỗ, bề mặt mạ sáng",
+  "tags": [
+   "ngu-kim",
+   "niken-sang"
+  ],
+  "placements": [
+   {
+    "page": "/dich-vu-gia-cong-ma/ma-niken-hoa-hoc-enp",
+    "file": "src/components/dich-vu/DetailGallery.tsx",
+    "section": "Mạ niken trên nền kim loại: thư viện ảnh chi tiết (DetailGallery, DetailCapability)",
+    "replaces": "một ảnh trong SERVICE_GALLERY_POOL (src/lib/factory-pool.ts, /images/factory/*)",
+    "note": "Ví dụ chi tiết thực tế theo nhóm FACTS; đưa vào pool riêng cho từng dịch vụ để không dùng chung cho cả 6 trang"
+   },
+   {
+    "page": "/san-pham-du-an",
+    "file": "src/components/san-pham/ProductCatalog.tsx",
+    "section": "Danh mục Ngũ kim - niken/crom sáng (đề xuất danh mục mới; ảnh gán qua cột products.image trong CMS/seed)",
+    "replaces": "thêm mới (hiện products.image dùng /images/factory/qc-*.jpg, kho-*.jpg)",
+    "note": "Khung thẻ danh mục; trang chi tiết dùng ProductHero aspect 4/3 và ProductGallery 16/10; ảnh 16/17 nền sáng, dùng object-contain hoặc cover nền sáng"
+   }
+  ],
+  "alt": {
+   "vi": "Ba thanh giá đỡ có lỗ và rãnh, bề mặt mạ niken sáng, ảnh chi tiết sau xử lý bề mặt.",
+   "zh": "三根带孔与槽的支撑条，亮面镀镍表面，表面处理后的零件照片。",
+   "ko": "구멍과 홈이 있는 지지 바 3개, 광택 니켈 도금, 표면처리 후 부품 사진."
+  },
+  "caption": {
+   "vi": "Ba thanh giá đỡ có lỗ và rãnh, bề mặt mạ niken sáng.",
+   "zh": "三根带孔与槽的支撑条，亮面镀镍表面。",
+   "ko": "구멍과 홈이 있는 지지 바 3개, 광택 니켈 도금."
+  },
+  "flags": [
+   "ai-like"
+  ]
+ },
+ {
+  "image": "image16_18",
+  "slug": "gia-do-chu-l-ma-niken",
+  "label": "Giá đỡ chữ L đúc, bề mặt mạ sáng",
+  "tags": [
+   "ngu-kim",
+   "niken-sang",
+   "gia-do"
+  ],
+  "placements": [
+   {
+    "page": "/dich-vu-gia-cong-ma/ma-niken-hoa-hoc-enp",
+    "file": "src/components/dich-vu/DetailGallery.tsx",
+    "section": "Mạ niken trên nền kim loại: thư viện ảnh chi tiết (DetailGallery, DetailCapability)",
+    "replaces": "một ảnh trong SERVICE_GALLERY_POOL (src/lib/factory-pool.ts, /images/factory/*)",
+    "note": "Ví dụ chi tiết thực tế theo nhóm FACTS; đưa vào pool riêng cho từng dịch vụ để không dùng chung cho cả 6 trang"
+   },
+   {
+    "page": "/san-pham-du-an",
+    "file": "src/components/san-pham/ProductCatalog.tsx",
+    "section": "Danh mục Ngũ kim - niken/crom sáng (đề xuất danh mục mới; ảnh gán qua cột products.image trong CMS/seed)",
+    "replaces": "thêm mới (hiện products.image dùng /images/factory/qc-*.jpg, kho-*.jpg)",
+    "note": "Khung thẻ danh mục; trang chi tiết dùng ProductHero aspect 4/3 và ProductGallery 16/10; ảnh 16/17 nền sáng, dùng object-contain hoặc cover nền sáng"
+   }
+  ],
+  "alt": {
+   "vi": "Giá đỡ chữ L có gân, bề mặt mạ sáng, ảnh chi tiết sau xử lý bề mặt.",
+   "zh": "带筋的L形支架，亮面镀层，表面处理后的零件照片。",
+   "ko": "리브가 있는 L자형 브래킷, 광택 도금, 표면처리 후 부품 사진."
+  },
+  "caption": {
+   "vi": "Giá đỡ chữ L có gân, bề mặt mạ sáng.",
+   "zh": "带筋的L形支架，亮面镀层。",
+   "ko": "리브가 있는 L자형 브래킷, 광택 도금."
+  },
+  "flags": [
+   "ai-like"
+  ]
+ },
+ {
+  "image": "image16_19",
+  "slug": "vong-tron-ma-crom-niken",
+  "label": "Vòng tròn mạ sáng",
+  "tags": [
+   "ngu-kim",
+   "ma-crom"
+  ],
+  "placements": [
+   {
+    "page": "/dich-vu-gia-cong-ma/ma-niken-hoa-hoc-enp",
+    "file": "src/components/dich-vu/DetailGallery.tsx",
+    "section": "Mạ niken trên nền kim loại: thư viện ảnh chi tiết (DetailGallery, DetailCapability)",
+    "replaces": "một ảnh trong SERVICE_GALLERY_POOL (src/lib/factory-pool.ts, /images/factory/*)",
+    "note": "Ví dụ chi tiết thực tế theo nhóm FACTS; đưa vào pool riêng cho từng dịch vụ để không dùng chung cho cả 6 trang"
+   },
+   {
+    "page": "/san-pham-du-an",
+    "file": "src/components/san-pham/ProductCatalog.tsx",
+    "section": "Danh mục Ngũ kim - niken/crom sáng (đề xuất danh mục mới; ảnh gán qua cột products.image trong CMS/seed)",
+    "replaces": "thêm mới (hiện products.image dùng /images/factory/qc-*.jpg, kho-*.jpg)",
+    "note": "Khung thẻ danh mục; trang chi tiết dùng ProductHero aspect 4/3 và ProductGallery 16/10; ảnh 16/17 nền sáng, dùng object-contain hoặc cover nền sáng"
+   }
+  ],
+  "alt": {
+   "vi": "Vòng tròn dày có bậc, bề mặt mạ crom/niken sáng, ảnh chi tiết sau xử lý bề mặt.",
+   "zh": "带台阶的厚圆环，亮面镀铬/镍表面，表面处理后的零件照片。",
+   "ko": "단차가 있는 두꺼운 링, 광택 크롬/니켈 도금, 표면처리 후 부품 사진."
+  },
+  "caption": {
+   "vi": "Vòng tròn dày có bậc, bề mặt mạ crom/niken sáng.",
+   "zh": "带台阶的厚圆环，亮面镀铬/镍表面。",
+   "ko": "단차가 있는 두꺼운 링, 광택 크롬/니켈 도금."
+  },
+  "flags": [
+   "ai-like"
+  ]
+ },
+ {
+  "image": "image16_20",
+  "slug": "chi-tiet-nap-van-dai-ma-crom",
+  "label": "Chi tiết trụ cổ có đế tròn, bề mặt mạ crom",
+  "tags": [
+   "ve-sinh",
+   "ma-crom"
+  ],
+  "placements": [
+   {
+    "page": "/dich-vu-gia-cong-ma/ma-crom-cung-cong-nghiep",
+    "file": "src/components/dich-vu/DetailGallery.tsx",
+    "section": "Mạ Niken-Crom trên nền nhựa ABS: thư viện ảnh chi tiết (DetailGallery 4 ảnh, DetailCapability 1 ảnh)",
+    "replaces": "một ảnh trong SERVICE_GALLERY_POOL (src/lib/factory-pool.ts, /images/factory/*)",
+    "note": "Ví dụ chi tiết thực tế theo nhóm FACTS; đưa vào pool riêng cho từng dịch vụ để không dùng chung cho cả 6 trang"
+   },
+   {
+    "page": "/san-pham-du-an",
+    "file": "src/components/san-pham/ProductCatalog.tsx",
+    "section": "Danh mục Thiết bị vệ sinh, nhà bếp (đề xuất danh mục mới; ảnh gán qua cột products.image trong CMS/seed)",
+    "replaces": "thêm mới (hiện products.image dùng /images/factory/qc-*.jpg, kho-*.jpg)",
+    "note": "Khung thẻ danh mục; trang chi tiết dùng ProductHero aspect 4/3 và ProductGallery 16/10; ảnh 16/17 nền sáng, dùng object-contain hoặc cover nền sáng"
+   }
+  ],
+  "alt": {
+   "vi": "Chi tiết trụ có đế tròn dạng nắp van, bề mặt mạ crom bóng gương, ảnh chi tiết sau xử lý bề mặt.",
+   "zh": "带圆形底座的圆柱件，镜面镀铬，表面处理后的零件照片。",
+   "ko": "원형 받침이 있는 원통형 부품, 거울면 크롬 도금, 표면처리 후 부품 사진."
+  },
+  "caption": {
+   "vi": "Chi tiết trụ có đế tròn dạng nắp van, bề mặt mạ crom bóng gương.",
+   "zh": "带圆形底座的圆柱件，镜面镀铬。",
+   "ko": "원형 받침이 있는 원통형 부품, 거울면 크롬 도금."
+  },
+  "flags": [
+   "ai-like",
+   "khong-ro-nen"
+  ]
+ },
+ {
+  "image": "image16_21",
+  "slug": "vo-chi-tiet-co-canh-tan-nhiet-ma-sang",
+  "label": "Vỏ chi tiết có gân, bề mặt mạ sáng",
+  "tags": [
+   "ngu-kim",
+   "niken-sang"
+  ],
+  "placements": [
+   {
+    "page": "/dich-vu-gia-cong-ma/ma-niken-hoa-hoc-enp",
+    "file": "src/components/dich-vu/DetailGallery.tsx",
+    "section": "Mạ niken trên nền kim loại: thư viện ảnh chi tiết (DetailGallery, DetailCapability)",
+    "replaces": "một ảnh trong SERVICE_GALLERY_POOL (src/lib/factory-pool.ts, /images/factory/*)",
+    "note": "Ví dụ chi tiết thực tế theo nhóm FACTS; đưa vào pool riêng cho từng dịch vụ để không dùng chung cho cả 6 trang"
+   },
+   {
+    "page": "/san-pham-du-an",
+    "file": "src/components/san-pham/ProductCatalog.tsx",
+    "section": "Danh mục Ngũ kim - niken/crom sáng (đề xuất danh mục mới; ảnh gán qua cột products.image trong CMS/seed)",
+    "replaces": "thêm mới (hiện products.image dùng /images/factory/qc-*.jpg, kho-*.jpg)",
+    "note": "Khung thẻ danh mục; trang chi tiết dùng ProductHero aspect 4/3 và ProductGallery 16/10; ảnh 16/17 nền sáng, dùng object-contain hoặc cover nền sáng"
+   }
+  ],
+  "alt": {
+   "vi": "Vỏ chi tiết đúc có nhiều gân song song, bề mặt kim loại sáng, ảnh chi tiết sau xử lý bề mặt.",
+   "zh": "带多条平行筋的压铸件外壳，亮色金属表面，表面处理后的零件照片。",
+   "ko": "평행 리브가 많은 다이캐스팅 하우징, 밝은 금속 표면, 표면처리 후 부품 사진."
+  },
+  "caption": {
+   "vi": "Vỏ chi tiết đúc có nhiều gân song song, bề mặt kim loại sáng.",
+   "zh": "带多条平行筋的压铸件外壳，亮色金属表面。",
+   "ko": "평행 리브가 많은 다이캐스팅 하우징, 밝은 금속 표면."
+  },
+  "flags": [
+   "ai-like",
+   "khong-chac-lop-ma"
+  ]
+ },
+ {
+  "image": "image16_22",
+  "slug": "voi-nuoc-ma-crom",
+  "label": "Chi tiết vòi cong mạ crom",
+  "tags": [
+   "ve-sinh",
+   "ma-crom",
+   "voi-nuoc"
+  ],
+  "placements": [
+   {
+    "page": "/dich-vu-gia-cong-ma/ma-crom-cung-cong-nghiep",
+    "file": "src/components/dich-vu/DetailGallery.tsx",
+    "section": "Mạ Niken-Crom trên nền nhựa ABS: thư viện ảnh chi tiết (DetailGallery 4 ảnh, DetailCapability 1 ảnh)",
+    "replaces": "một ảnh trong SERVICE_GALLERY_POOL (src/lib/factory-pool.ts, /images/factory/*)",
+    "note": "Ví dụ chi tiết thực tế theo nhóm FACTS; đưa vào pool riêng cho từng dịch vụ để không dùng chung cho cả 6 trang"
+   },
+   {
+    "page": "/san-pham-du-an",
+    "file": "src/components/san-pham/ProductCatalog.tsx",
+    "section": "Danh mục Thiết bị vệ sinh, nhà bếp (đề xuất danh mục mới; ảnh gán qua cột products.image trong CMS/seed)",
+    "replaces": "thêm mới (hiện products.image dùng /images/factory/qc-*.jpg, kho-*.jpg)",
+    "note": "Khung thẻ danh mục; trang chi tiết dùng ProductHero aspect 4/3 và ProductGallery 16/10; ảnh 16/17 nền sáng, dùng object-contain hoặc cover nền sáng"
+   }
+  ],
+  "alt": {
+   "vi": "Chi tiết vòi cong có đế loe, bề mặt mạ crom bóng, ảnh chi tiết sau xử lý bề mặt.",
+   "zh": "带喇叭形底座的弯管水龙头件，镜面镀铬，表面处理后的零件照片。",
+   "ko": "나팔형 받침이 있는 곡관형 수전 부품, 크롬 도금 광택, 표면처리 후 부품 사진."
+  },
+  "caption": {
+   "vi": "Chi tiết vòi cong có đế loe, bề mặt mạ crom bóng.",
+   "zh": "带喇叭形底座的弯管水龙头件，镜面镀铬。",
+   "ko": "나팔형 받침이 있는 곡관형 수전 부품, 크롬 도금 광택."
+  },
+  "flags": [
+   "ai-like"
+  ]
+ },
+ {
+  "image": "image16_23",
+  "slug": "gia-do-uon-ma-sang",
+  "label": "Giá đỡ uốn có lỗ, bề mặt mạ sáng",
+  "tags": [
+   "ngu-kim",
+   "niken-sang"
+  ],
+  "placements": [
+   {
+    "page": "/dich-vu-gia-cong-ma/ma-niken-hoa-hoc-enp",
+    "file": "src/components/dich-vu/DetailGallery.tsx",
+    "section": "Mạ niken trên nền kim loại: thư viện ảnh chi tiết (DetailGallery, DetailCapability)",
+    "replaces": "một ảnh trong SERVICE_GALLERY_POOL (src/lib/factory-pool.ts, /images/factory/*)",
+    "note": "Ví dụ chi tiết thực tế theo nhóm FACTS; đưa vào pool riêng cho từng dịch vụ để không dùng chung cho cả 6 trang"
+   },
+   {
+    "page": "/san-pham-du-an",
+    "file": "src/components/san-pham/ProductCatalog.tsx",
+    "section": "Danh mục Ngũ kim - niken/crom sáng (đề xuất danh mục mới; ảnh gán qua cột products.image trong CMS/seed)",
+    "replaces": "thêm mới (hiện products.image dùng /images/factory/qc-*.jpg, kho-*.jpg)",
+    "note": "Khung thẻ danh mục; trang chi tiết dùng ProductHero aspect 4/3 và ProductGallery 16/10; ảnh 16/17 nền sáng, dùng object-contain hoặc cover nền sáng"
+   }
+  ],
+  "alt": {
+   "vi": "Giá đỡ uốn nhiều đoạn có lỗ, bề mặt mạ sáng, ảnh chi tiết sau xử lý bề mặt.",
+   "zh": "带孔多段弯折支架，亮面镀层，表面处理后的零件照片。",
+   "ko": "구멍이 있는 다단 굽힘 브래킷, 광택 도금, 표면처리 후 부품 사진."
+  },
+  "caption": {
+   "vi": "Giá đỡ uốn nhiều đoạn có lỗ, bề mặt mạ sáng.",
+   "zh": "带孔多段弯折支架，亮面镀层。",
+   "ko": "구멍이 있는 다단 굽힘 브래킷, 광택 도금."
+  },
+  "flags": [
+   "ai-like"
+  ]
+ },
+ {
+  "image": "image16_24",
+  "slug": "ba-chi-tiet-tru-vo-ma-crom",
+  "label": "Ba chi tiết trụ rỗng, bề mặt mạ crom",
+  "tags": [
+   "ngu-kim",
+   "ma-crom"
+  ],
+  "placements": [
+   {
+    "page": "/dich-vu-gia-cong-ma/ma-niken-hoa-hoc-enp",
+    "file": "src/components/dich-vu/DetailGallery.tsx",
+    "section": "Mạ niken trên nền kim loại: thư viện ảnh chi tiết (DetailGallery, DetailCapability)",
+    "replaces": "một ảnh trong SERVICE_GALLERY_POOL (src/lib/factory-pool.ts, /images/factory/*)",
+    "note": "Ví dụ chi tiết thực tế theo nhóm FACTS; đưa vào pool riêng cho từng dịch vụ để không dùng chung cho cả 6 trang"
+   },
+   {
+    "page": "/san-pham-du-an",
+    "file": "src/components/san-pham/ProductCatalog.tsx",
+    "section": "Danh mục Ngũ kim - niken/crom sáng (đề xuất danh mục mới; ảnh gán qua cột products.image trong CMS/seed)",
+    "replaces": "thêm mới (hiện products.image dùng /images/factory/qc-*.jpg, kho-*.jpg)",
+    "note": "Khung thẻ danh mục; trang chi tiết dùng ProductHero aspect 4/3 và ProductGallery 16/10; ảnh 16/17 nền sáng, dùng object-contain hoặc cover nền sáng"
+   }
+  ],
+  "alt": {
+   "vi": "Ba chi tiết trụ rỗng có cắt vát, bề mặt mạ crom bóng, ảnh chi tiết sau xử lý bề mặt.",
+   "zh": "三个带斜切的空心圆柱件，镜面镀铬，表面处理后的零件照片。",
+   "ko": "경사 절단된 속이 빈 원통 부품 3개, 크롬 도금 광택, 표면처리 후 부품 사진."
+  },
+  "caption": {
+   "vi": "Ba chi tiết trụ rỗng có cắt vát, bề mặt mạ crom bóng.",
+   "zh": "三个带斜切的空心圆柱件，镜面镀铬。",
+   "ko": "경사 절단된 속이 빈 원통 부품 3개, 크롬 도금 광택."
+  },
+  "flags": [
+   "ai-like"
+  ]
+ },
+ {
+  "image": "image17_01",
+  "slug": "chi-tiet-ngu-kim-den-bong-xep-luoi",
+  "label": "Chín chi tiết ngũ kim bề mặt đen bóng",
+  "tags": [
+   "ngu-kim",
+   "mau-den",
+   "niken-den"
+  ],
+  "placements": [
+   {
+    "page": "/dich-vu-gia-cong-ma/ma-niken-hoa-hoc-enp",
+    "file": "src/components/dich-vu/DetailGallery.tsx",
+    "section": "Mạ niken trên nền kim loại: thư viện ảnh chi tiết (DetailGallery, DetailCapability)",
+    "replaces": "một ảnh trong SERVICE_GALLERY_POOL (src/lib/factory-pool.ts, /images/factory/*)",
+    "note": "Ví dụ chi tiết thực tế theo nhóm FACTS; đưa vào pool riêng cho từng dịch vụ để không dùng chung cho cả 6 trang"
+   },
+   {
+    "page": "/san-pham-du-an",
+    "file": "src/components/san-pham/ProductCatalog.tsx",
+    "section": "Danh mục Ngũ kim - niken đen/crom đen (đề xuất danh mục mới; ảnh gán qua cột products.image trong CMS/seed)",
+    "replaces": "thêm mới (hiện products.image dùng /images/factory/qc-*.jpg, kho-*.jpg)",
+    "note": "Khung thẻ danh mục; trang chi tiết dùng ProductHero aspect 4/3 và ProductGallery 16/10; ảnh 16/17 nền sáng, dùng object-contain hoặc cover nền sáng"
+   }
+  ],
+  "alt": {
+   "vi": "Chín chi tiết dạng chén có lỗ, bề mặt đen bóng, ảnh chi tiết sau xử lý bề mặt.",
+   "zh": "九个带孔杯形零件，黑色亮面表面，表面处理后的零件照片。",
+   "ko": "구멍이 있는 컵형 부품 9개, 검정 광택 표면, 표면처리 후 부품 사진."
+  },
+  "caption": {
+   "vi": "Chín chi tiết dạng chén có lỗ, bề mặt đen bóng.",
+   "zh": "九个带孔杯形零件，黑色亮面表面。",
+   "ko": "구멍이 있는 컵형 부품 9개, 검정 광택 표면."
+  },
+  "flags": [
+   "ai-like",
+   "khong-chac-lop-ma"
+  ]
+ },
+ {
+  "image": "image17_02",
+  "slug": "chi-tiet-tru-ma-sang-phan-den",
+  "label": "Chi tiết trụ có hốc, mạ sáng phối phần đen",
+  "tags": [
+   "ngu-kim",
+   "niken-sang"
+  ],
+  "placements": [
+   {
+    "page": "/dich-vu-gia-cong-ma/ma-niken-hoa-hoc-enp",
+    "file": "src/components/dich-vu/DetailGallery.tsx",
+    "section": "Mạ niken trên nền kim loại: thư viện ảnh chi tiết (DetailGallery, DetailCapability)",
+    "replaces": "một ảnh trong SERVICE_GALLERY_POOL (src/lib/factory-pool.ts, /images/factory/*)",
+    "note": "Ví dụ chi tiết thực tế theo nhóm FACTS; đưa vào pool riêng cho từng dịch vụ để không dùng chung cho cả 6 trang"
+   },
+   {
+    "page": "/san-pham-du-an",
+    "file": "src/components/san-pham/ProductCatalog.tsx",
+    "section": "Danh mục Ngũ kim - niken/crom sáng (đề xuất danh mục mới; ảnh gán qua cột products.image trong CMS/seed)",
+    "replaces": "thêm mới (hiện products.image dùng /images/factory/qc-*.jpg, kho-*.jpg)",
+    "note": "Khung thẻ danh mục; trang chi tiết dùng ProductHero aspect 4/3 và ProductGallery 16/10; ảnh 16/17 nền sáng, dùng object-contain hoặc cover nền sáng"
+   }
+  ],
+  "alt": {
+   "vi": "Chi tiết trụ có hốc rỗng, bề mặt mạ sáng xen vùng đen, ảnh chi tiết sau xử lý bề mặt.",
+   "zh": "带凹槽的圆柱件，亮面镀层与黑色区域相间，表面处理后的零件照片。",
+   "ko": "홈이 있는 원통 부품, 광택 도금과 검정 영역 혼합, 표면처리 후 부품 사진."
+  },
+  "caption": {
+   "vi": "Chi tiết trụ có hốc rỗng, bề mặt mạ sáng xen vùng đen.",
+   "zh": "带凹槽的圆柱件，亮面镀层与黑色区域相间。",
+   "ko": "홈이 있는 원통 부품, 광택 도금과 검정 영역 혼합."
+  },
+  "flags": [
+   "ai-like",
+   "khong-chac-lop-ma"
+  ]
+ },
+ {
+  "image": "image17_03",
+  "slug": "tam-dep-va-khoi-chu-t-mau-toi",
+  "label": "Hai tấm phẳng và khối chữ T bề mặt tối",
+  "tags": [
+   "ngu-kim",
+   "niken-den"
+  ],
+  "placements": [
+   {
+    "page": "/dich-vu-gia-cong-ma/ma-niken-hoa-hoc-enp",
+    "file": "src/components/dich-vu/DetailGallery.tsx",
+    "section": "Mạ niken trên nền kim loại: thư viện ảnh chi tiết (DetailGallery, DetailCapability)",
+    "replaces": "một ảnh trong SERVICE_GALLERY_POOL (src/lib/factory-pool.ts, /images/factory/*)",
+    "note": "Ví dụ chi tiết thực tế theo nhóm FACTS; đưa vào pool riêng cho từng dịch vụ để không dùng chung cho cả 6 trang"
+   },
+   {
+    "page": "/san-pham-du-an",
+    "file": "src/components/san-pham/ProductCatalog.tsx",
+    "section": "Danh mục Ngũ kim - niken đen/crom đen (đề xuất danh mục mới; ảnh gán qua cột products.image trong CMS/seed)",
+    "replaces": "thêm mới (hiện products.image dùng /images/factory/qc-*.jpg, kho-*.jpg)",
+    "note": "Khung thẻ danh mục; trang chi tiết dùng ProductHero aspect 4/3 và ProductGallery 16/10; ảnh 16/17 nền sáng, dùng object-contain hoặc cover nền sáng"
+   }
+  ],
+  "alt": {
+   "vi": "Hai tấm phẳng và một khối chữ T, bề mặt màu tối kim loại, ảnh chi tiết sau xử lý bề mặt.",
+   "zh": "两块平板与一个T形块，深色金属表面，表面处理后的零件照片。",
+   "ko": "평판 2개와 T형 블록, 어두운 금속 표면, 표면처리 후 부품 사진."
+  },
+  "caption": {
+   "vi": "Hai tấm phẳng và một khối chữ T, bề mặt màu tối kim loại.",
+   "zh": "两块平板与一个T形块，深色金属表面。",
+   "ko": "평판 2개와 T형 블록, 어두운 금속 표면."
+  },
+  "flags": [
+   "ai-like",
+   "khong-chac-lop-ma"
+  ]
+ },
+ {
+  "image": "image17_04",
+  "slug": "chi-tiet-vanh-khuyen-mau-xam-den",
+  "label": "Ba chi tiết dạng vành, bề mặt xám đen ánh kim",
+  "tags": [
+   "ngu-kim",
+   "niken-den"
+  ],
+  "placements": [
+   {
+    "page": "/dich-vu-gia-cong-ma/ma-niken-hoa-hoc-enp",
+    "file": "src/components/dich-vu/DetailGallery.tsx",
+    "section": "Mạ niken trên nền kim loại: thư viện ảnh chi tiết (DetailGallery, DetailCapability)",
+    "replaces": "một ảnh trong SERVICE_GALLERY_POOL (src/lib/factory-pool.ts, /images/factory/*)",
+    "note": "Ví dụ chi tiết thực tế theo nhóm FACTS; đưa vào pool riêng cho từng dịch vụ để không dùng chung cho cả 6 trang"
+   },
+   {
+    "page": "/san-pham-du-an",
+    "file": "src/components/san-pham/ProductCatalog.tsx",
+    "section": "Danh mục Ngũ kim - niken đen/crom đen (đề xuất danh mục mới; ảnh gán qua cột products.image trong CMS/seed)",
+    "replaces": "thêm mới (hiện products.image dùng /images/factory/qc-*.jpg, kho-*.jpg)",
+    "note": "Khung thẻ danh mục; trang chi tiết dùng ProductHero aspect 4/3 và ProductGallery 16/10; ảnh 16/17 nền sáng, dùng object-contain hoặc cover nền sáng"
+   }
+  ],
+  "alt": {
+   "vi": "Ba chi tiết dạng vành có lỗ, bề mặt xám đen ánh kim, ảnh chi tiết sau xử lý bề mặt.",
+   "zh": "三个带孔环形零件，灰黑色金属光泽表面，表面处理后的零件照片。",
+   "ko": "구멍이 있는 링형 부품 3개, 회흑색 금속 광택 표면, 표면처리 후 부품 사진."
+  },
+  "caption": {
+   "vi": "Ba chi tiết dạng vành có lỗ, bề mặt xám đen ánh kim.",
+   "zh": "三个带孔环形零件，灰黑色金属光泽表面。",
+   "ko": "구멍이 있는 링형 부품 3개, 회흑색 금속 광택 표면."
+  },
+  "flags": [
+   "ai-like",
+   "khong-chac-lop-ma"
+  ]
+ },
+ {
+  "image": "image17_05",
+  "slug": "hai-tam-phang-xam-den-phot-phat",
+  "label": "Hai tấm phẳng bề mặt xám đen mờ",
+  "tags": [
+   "ngu-kim",
+   "phot-phat-den",
+   "tam-phang"
+  ],
+  "placements": [
+   {
+    "page": "/dich-vu-gia-cong-ma/ma-kem-hop-kim-kem-niken",
+    "file": "src/components/dich-vu/DetailGallery.tsx",
+    "section": "Mạ kẽm, đồng, thiếc, phốt phát đen: thư viện ảnh chi tiết (DetailGallery, DetailCapability)",
+    "replaces": "một ảnh trong SERVICE_GALLERY_POOL (src/lib/factory-pool.ts, /images/factory/*)",
+    "note": "Ví dụ chi tiết thực tế theo nhóm FACTS; đưa vào pool riêng cho từng dịch vụ để không dùng chung cho cả 6 trang"
+   },
+   {
+    "page": "/san-pham-du-an",
+    "file": "src/components/san-pham/ProductCatalog.tsx",
+    "section": "Danh mục Ngũ kim - phốt phát đen (đề xuất danh mục mới; ảnh gán qua cột products.image trong CMS/seed)",
+    "replaces": "thêm mới (hiện products.image dùng /images/factory/qc-*.jpg, kho-*.jpg)",
+    "note": "Khung thẻ danh mục; trang chi tiết dùng ProductHero aspect 4/3 và ProductGallery 16/10; ảnh 16/17 nền sáng, dùng object-contain hoặc cover nền sáng"
+   }
+  ],
+  "alt": {
+   "vi": "Hai tấm phẳng bề mặt xám đen mờ, ảnh chi tiết sau xử lý bề mặt.",
+   "zh": "两块平板，灰黑色哑光表面，表面处理后的零件照片。",
+   "ko": "평판 2개, 회흑색 무광 표면, 표면처리 후 부품 사진."
+  },
+  "caption": {
+   "vi": "Hai tấm phẳng bề mặt xám đen mờ.",
+   "zh": "两块平板，灰黑色哑光表面。",
+   "ko": "평판 2개, 회흑색 무광 표면."
+  },
+  "flags": [
+   "ai-like",
+   "khong-chac-lop-ma"
+  ]
+ },
+ {
+  "image": "image17_06",
+  "slug": "khung-day-uon-chu-u-phu-den",
+  "label": "Khung dây uốn chữ U bề mặt đen bóng",
+  "tags": [
+   "ngu-kim",
+   "mau-den"
+  ],
+  "placements": [
+   {
+    "page": "/dich-vu-gia-cong-ma/ma-kem-hop-kim-kem-niken",
+    "file": "src/components/dich-vu/DetailGallery.tsx",
+    "section": "Mạ kẽm, đồng, thiếc, phốt phát đen: thư viện ảnh chi tiết (DetailGallery, DetailCapability)",
+    "replaces": "một ảnh trong SERVICE_GALLERY_POOL (src/lib/factory-pool.ts, /images/factory/*)",
+    "note": "Ví dụ chi tiết thực tế theo nhóm FACTS; đưa vào pool riêng cho từng dịch vụ để không dùng chung cho cả 6 trang"
+   },
+   {
+    "page": "/san-pham-du-an",
+    "file": "src/components/san-pham/ProductCatalog.tsx",
+    "section": "Danh mục Ngũ kim - phốt phát đen (đề xuất danh mục mới; ảnh gán qua cột products.image trong CMS/seed)",
+    "replaces": "thêm mới (hiện products.image dùng /images/factory/qc-*.jpg, kho-*.jpg)",
+    "note": "Khung thẻ danh mục; trang chi tiết dùng ProductHero aspect 4/3 và ProductGallery 16/10; ảnh 16/17 nền sáng, dùng object-contain hoặc cover nền sáng"
+   }
+  ],
+  "alt": {
+   "vi": "Khung dây thép uốn chữ U, bề mặt phủ đen bóng, ảnh chi tiết sau xử lý bề mặt.",
+   "zh": "U形弯折钢丝架，黑色亮面涂层，表面处理后的零件照片。",
+   "ko": "U자형 굽힘 강선 프레임, 검정 광택 코팅, 표면처리 후 부품 사진."
+  },
+  "caption": {
+   "vi": "Khung dây thép uốn chữ U, bề mặt phủ đen bóng.",
+   "zh": "U形弯折钢丝架，黑色亮面涂层。",
+   "ko": "U자형 굽힘 강선 프레임, 검정 광택 코팅."
+  },
+  "flags": [
+   "ai-like",
+   "khong-chac-lop-ma"
+  ]
+ },
+ {
+  "image": "image17_07",
+  "slug": "tam-chu-nhat-ma-kem-trang",
+  "label": "Tấm chữ nhật mạ kẽm (màu trắng ánh xanh)",
+  "tags": [
+   "ngu-kim",
+   "ma-kem",
+   "tam-kim-loai"
+  ],
+  "placements": [
+   {
+    "page": "/dich-vu-gia-cong-ma/ma-kem-hop-kim-kem-niken",
+    "file": "src/components/dich-vu/DetailGallery.tsx",
+    "section": "Mạ kẽm, đồng, thiếc, phốt phát đen: thư viện ảnh chi tiết (DetailGallery, DetailCapability)",
+    "replaces": "một ảnh trong SERVICE_GALLERY_POOL (src/lib/factory-pool.ts, /images/factory/*)",
+    "note": "Ví dụ chi tiết thực tế theo nhóm FACTS; đưa vào pool riêng cho từng dịch vụ để không dùng chung cho cả 6 trang"
+   },
+   {
+    "page": "/san-pham-du-an",
+    "file": "src/components/san-pham/ProductCatalog.tsx",
+    "section": "Danh mục Ngũ kim - mạ kẽm (đề xuất danh mục mới; ảnh gán qua cột products.image trong CMS/seed)",
+    "replaces": "thêm mới (hiện products.image dùng /images/factory/qc-*.jpg, kho-*.jpg)",
+    "note": "Khung thẻ danh mục; trang chi tiết dùng ProductHero aspect 4/3 và ProductGallery 16/10; ảnh 16/17 nền sáng, dùng object-contain hoặc cover nền sáng"
+   }
+  ],
+  "alt": {
+   "vi": "Tấm kim loại hình chữ nhật có gờ, bề mặt mạ kẽm màu trắng ánh xanh, ảnh chi tiết sau xử lý bề mặt.",
+   "zh": "带折边矩形金属板，蓝白色镀锌表面，表面处理后的零件照片。",
+   "ko": "테두리가 있는 직사각형 금속판, 청백색 아연 도금, 표면처리 후 부품 사진."
+  },
+  "caption": {
+   "vi": "Tấm kim loại hình chữ nhật có gờ, bề mặt mạ kẽm màu trắng ánh xanh.",
+   "zh": "带折边矩形金属板，蓝白色镀锌表面。",
+   "ko": "테두리가 있는 직사각형 금속판, 청백색 아연 도금."
+  },
+  "flags": [
+   "ai-like"
+  ]
+ },
+ {
+  "image": "image17_08",
+  "slug": "ong-lot-ren-ma-kem",
+  "label": "Ống lót có ren, bề mặt mạ kẽm",
+  "tags": [
+   "ngu-kim",
+   "ma-kem",
+   "ong-lot"
+  ],
+  "placements": [
+   {
+    "page": "/dich-vu-gia-cong-ma/ma-kem-hop-kim-kem-niken",
+    "file": "src/components/dich-vu/DetailGallery.tsx",
+    "section": "Mạ kẽm, đồng, thiếc, phốt phát đen: thư viện ảnh chi tiết (DetailGallery, DetailCapability)",
+    "replaces": "một ảnh trong SERVICE_GALLERY_POOL (src/lib/factory-pool.ts, /images/factory/*)",
+    "note": "Ví dụ chi tiết thực tế theo nhóm FACTS; đưa vào pool riêng cho từng dịch vụ để không dùng chung cho cả 6 trang"
+   },
+   {
+    "page": "/san-pham-du-an",
+    "file": "src/components/san-pham/ProductCatalog.tsx",
+    "section": "Danh mục Ngũ kim - mạ kẽm (đề xuất danh mục mới; ảnh gán qua cột products.image trong CMS/seed)",
+    "replaces": "thêm mới (hiện products.image dùng /images/factory/qc-*.jpg, kho-*.jpg)",
+    "note": "Khung thẻ danh mục; trang chi tiết dùng ProductHero aspect 4/3 và ProductGallery 16/10; ảnh 16/17 nền sáng, dùng object-contain hoặc cover nền sáng"
+   }
+  ],
+  "alt": {
+   "vi": "Ống lót có ren và cửa sổ, bề mặt mạ kẽm màu trắng ánh xanh, ảnh chi tiết sau xử lý bề mặt.",
+   "zh": "带螺纹和窗口的衬套，蓝白色镀锌表面，表面处理后的零件照片。",
+   "ko": "나사와 창이 있는 부시, 청백색 아연 도금, 표면처리 후 부품 사진."
+  },
+  "caption": {
+   "vi": "Ống lót có ren và cửa sổ, bề mặt mạ kẽm màu trắng ánh xanh.",
+   "zh": "带螺纹和窗口的衬套，蓝白色镀锌表面。",
+   "ko": "나사와 창이 있는 부시, 청백색 아연 도금."
+  },
+  "flags": [
+   "ai-like"
+  ]
+ },
+ {
+  "image": "image17_09",
+  "slug": "ong-tru-dai-ma-kem",
+  "label": "Ống trụ dài, bề mặt mạ kẽm",
+  "tags": [
+   "ngu-kim",
+   "ma-kem",
+   "ong-lot"
+  ],
+  "placements": [
+   {
+    "page": "/dich-vu-gia-cong-ma/ma-kem-hop-kim-kem-niken",
+    "file": "src/components/dich-vu/DetailGallery.tsx",
+    "section": "Mạ kẽm, đồng, thiếc, phốt phát đen: thư viện ảnh chi tiết (DetailGallery, DetailCapability)",
+    "replaces": "một ảnh trong SERVICE_GALLERY_POOL (src/lib/factory-pool.ts, /images/factory/*)",
+    "note": "Ví dụ chi tiết thực tế theo nhóm FACTS; đưa vào pool riêng cho từng dịch vụ để không dùng chung cho cả 6 trang"
+   },
+   {
+    "page": "/san-pham-du-an",
+    "file": "src/components/san-pham/ProductCatalog.tsx",
+    "section": "Danh mục Ngũ kim - mạ kẽm (đề xuất danh mục mới; ảnh gán qua cột products.image trong CMS/seed)",
+    "replaces": "thêm mới (hiện products.image dùng /images/factory/qc-*.jpg, kho-*.jpg)",
+    "note": "Khung thẻ danh mục; trang chi tiết dùng ProductHero aspect 4/3 và ProductGallery 16/10; ảnh 16/17 nền sáng, dùng object-contain hoặc cover nền sáng"
+   }
+  ],
+  "alt": {
+   "vi": "Ống trụ dài có vành, bề mặt mạ kẽm màu trắng ánh xanh, ảnh chi tiết sau xử lý bề mặt.",
+   "zh": "带凸缘长圆管，蓝白色镀锌表面，表面处理后的零件照片。",
+   "ko": "플랜지가 있는 긴 원통관, 청백색 아연 도금, 표면처리 후 부품 사진."
+  },
+  "caption": {
+   "vi": "Ống trụ dài có vành, bề mặt mạ kẽm màu trắng ánh xanh.",
+   "zh": "带凸缘长圆管，蓝白色镀锌表面。",
+   "ko": "플랜지가 있는 긴 원통관, 청백색 아연 도금."
+  },
+  "flags": [
+   "ai-like"
+  ]
+ },
+ {
+  "image": "image17_10",
+  "slug": "vit-dau-tron-ma-kem",
+  "label": "Vít đầu tròn ren thưa, bề mặt mạ kẽm",
+  "tags": [
+   "ngu-kim",
+   "ma-kem",
+   "vit"
+  ],
+  "placements": [
+   {
+    "page": "/dich-vu-gia-cong-ma/ma-kem-hop-kim-kem-niken",
+    "file": "src/components/dich-vu/DetailGallery.tsx",
+    "section": "Mạ kẽm, đồng, thiếc, phốt phát đen: thư viện ảnh chi tiết (DetailGallery, DetailCapability)",
+    "replaces": "một ảnh trong SERVICE_GALLERY_POOL (src/lib/factory-pool.ts, /images/factory/*)",
+    "note": "Ví dụ chi tiết thực tế theo nhóm FACTS; đưa vào pool riêng cho từng dịch vụ để không dùng chung cho cả 6 trang"
+   },
+   {
+    "page": "/san-pham-du-an",
+    "file": "src/components/san-pham/ProductCatalog.tsx",
+    "section": "Danh mục Ngũ kim - mạ kẽm (đề xuất danh mục mới; ảnh gán qua cột products.image trong CMS/seed)",
+    "replaces": "thêm mới (hiện products.image dùng /images/factory/qc-*.jpg, kho-*.jpg)",
+    "note": "Khung thẻ danh mục; trang chi tiết dùng ProductHero aspect 4/3 và ProductGallery 16/10; ảnh 16/17 nền sáng, dùng object-contain hoặc cover nền sáng"
+   }
+  ],
+  "alt": {
+   "vi": "Vít đầu tròn ren thưa, bề mặt mạ kẽm màu trắng ánh xanh, ảnh chi tiết sau xử lý bề mặt.",
+   "zh": "圆头粗牙螺钉，蓝白色镀锌表面，表面处理后的零件照片。",
+   "ko": "원형 머리 굵은 나사, 청백색 아연 도금, 표면처리 후 부품 사진."
+  },
+  "caption": {
+   "vi": "Vít đầu tròn ren thưa, bề mặt mạ kẽm màu trắng ánh xanh.",
+   "zh": "圆头粗牙螺钉，蓝白色镀锌表面。",
+   "ko": "원형 머리 굵은 나사, 청백색 아연 도금."
+  },
+  "flags": [
+   "ai-like"
+  ]
+ },
+ {
+  "image": "image17_11",
+  "slug": "chot-truc-bac-ma-sang",
+  "label": "Hai chốt trục bậc, bề mặt mạ sáng",
+  "tags": [
+   "ngu-kim",
+   "niken-sang",
+   "chot-truc"
+  ],
+  "placements": [
+   {
+    "page": "/dich-vu-gia-cong-ma/ma-niken-hoa-hoc-enp",
+    "file": "src/components/dich-vu/DetailGallery.tsx",
+    "section": "Mạ niken trên nền kim loại: thư viện ảnh chi tiết (DetailGallery, DetailCapability)",
+    "replaces": "một ảnh trong SERVICE_GALLERY_POOL (src/lib/factory-pool.ts, /images/factory/*)",
+    "note": "Ví dụ chi tiết thực tế theo nhóm FACTS; đưa vào pool riêng cho từng dịch vụ để không dùng chung cho cả 6 trang"
+   },
+   {
+    "page": "/san-pham-du-an",
+    "file": "src/components/san-pham/ProductCatalog.tsx",
+    "section": "Danh mục Ngũ kim - niken/crom sáng (đề xuất danh mục mới; ảnh gán qua cột products.image trong CMS/seed)",
+    "replaces": "thêm mới (hiện products.image dùng /images/factory/qc-*.jpg, kho-*.jpg)",
+    "note": "Khung thẻ danh mục; trang chi tiết dùng ProductHero aspect 4/3 và ProductGallery 16/10; ảnh 16/17 nền sáng, dùng object-contain hoặc cover nền sáng"
+   }
+  ],
+  "alt": {
+   "vi": "Hai chốt trục có bậc, bề mặt mạ sáng (niken/crom), ảnh chi tiết sau xử lý bề mặt.",
+   "zh": "两个阶梯轴销，亮面镀层（镍/铬），表面处理后的零件照片。",
+   "ko": "계단형 축 핀 2개, 광택 도금(니켈/크롬), 표면처리 후 부품 사진."
+  },
+  "caption": {
+   "vi": "Hai chốt trục có bậc, bề mặt mạ sáng (niken/crom).",
+   "zh": "两个阶梯轴销，亮面镀层（镍/铬）。",
+   "ko": "계단형 축 핀 2개, 광택 도금(니켈/크롬)."
+  },
+  "flags": [
+   "ai-like",
+   "khong-chac-lop-ma"
+  ]
+ },
+ {
+  "image": "image17_12",
+  "slug": "nhom-chi-tiet-nho-mau-trang-bac",
+  "label": "Nhóm chi tiết nhỏ đổ đống, bề mặt màu trắng bạc",
+  "tags": [
+   "ngu-kim",
+   "ma-lo",
+   "chi-tiet-nho"
+  ],
+  "placements": [
+   {
+    "page": "/dich-vu-gia-cong-ma/ma-kem-hop-kim-kem-niken",
+    "file": "src/components/dich-vu/DetailGallery.tsx",
+    "section": "Mạ kẽm, đồng, thiếc, phốt phát đen: thư viện ảnh chi tiết (DetailGallery, DetailCapability)",
+    "replaces": "một ảnh trong SERVICE_GALLERY_POOL (src/lib/factory-pool.ts, /images/factory/*)",
+    "note": "Ví dụ chi tiết thực tế theo nhóm FACTS; đưa vào pool riêng cho từng dịch vụ để không dùng chung cho cả 6 trang"
+   },
+   {
+    "page": "/san-pham-du-an",
+    "file": "src/components/san-pham/ProductCatalog.tsx",
+    "section": "Danh mục Ngũ kim - mạ kẽm (đề xuất danh mục mới; ảnh gán qua cột products.image trong CMS/seed)",
+    "replaces": "thêm mới (hiện products.image dùng /images/factory/qc-*.jpg, kho-*.jpg)",
+    "note": "Khung thẻ danh mục; trang chi tiết dùng ProductHero aspect 4/3 và ProductGallery 16/10; ảnh 16/17 nền sáng, dùng object-contain hoặc cover nền sáng"
+   }
+  ],
+  "alt": {
+   "vi": "Nhóm chi tiết nhỏ dập uốn đổ thành đống, bề mặt màu trắng bạc, ảnh chi tiết sau xử lý bề mặt.",
+   "zh": "堆放的小型冲压弯折件，银白色表面，表面处理后的零件照片。",
+   "ko": "쌓여 있는 소형 프레스 굽힘 부품, 은백색 표면, 표면처리 후 부품 사진."
+  },
+  "caption": {
+   "vi": "Nhóm chi tiết nhỏ dập uốn đổ thành đống, bề mặt màu trắng bạc.",
+   "zh": "堆放的小型冲压弯折件，银白色表面。",
+   "ko": "쌓여 있는 소형 프레스 굽힘 부품, 은백색 표면."
+  },
+  "flags": [
+   "ai-like",
+   "khong-chac-lop-ma"
+  ]
+ },
+ {
+  "image": "image17_13",
+  "slug": "chot-chu-t-ren-ma-kem",
+  "label": "Ba chốt chữ T có ren, bề mặt mạ kẽm",
+  "tags": [
+   "ngu-kim",
+   "ma-kem",
+   "chot-truc"
+  ],
+  "placements": [
+   {
+    "page": "/dich-vu-gia-cong-ma/ma-kem-hop-kim-kem-niken",
+    "file": "src/components/dich-vu/DetailGallery.tsx",
+    "section": "Mạ kẽm, đồng, thiếc, phốt phát đen: thư viện ảnh chi tiết (DetailGallery, DetailCapability)",
+    "replaces": "một ảnh trong SERVICE_GALLERY_POOL (src/lib/factory-pool.ts, /images/factory/*)",
+    "note": "Ví dụ chi tiết thực tế theo nhóm FACTS; đưa vào pool riêng cho từng dịch vụ để không dùng chung cho cả 6 trang"
+   },
+   {
+    "page": "/san-pham-du-an",
+    "file": "src/components/san-pham/ProductCatalog.tsx",
+    "section": "Danh mục Ngũ kim - mạ kẽm (đề xuất danh mục mới; ảnh gán qua cột products.image trong CMS/seed)",
+    "replaces": "thêm mới (hiện products.image dùng /images/factory/qc-*.jpg, kho-*.jpg)",
+    "note": "Khung thẻ danh mục; trang chi tiết dùng ProductHero aspect 4/3 và ProductGallery 16/10; ảnh 16/17 nền sáng, dùng object-contain hoặc cover nền sáng"
+   }
+  ],
+  "alt": {
+   "vi": "Ba chốt đầu chữ T có ren ở thân, bề mặt mạ kẽm màu trắng ánh xanh, ảnh chi tiết sau xử lý bề mặt.",
+   "zh": "三个杆部带螺纹的T形销，蓝白色镀锌表面，表面处理后的零件照片。",
+   "ko": "몸체에 나사가 있는 T형 핀 3개, 청백색 아연 도금, 표면처리 후 부품 사진."
+  },
+  "caption": {
+   "vi": "Ba chốt đầu chữ T có ren ở thân, bề mặt mạ kẽm màu trắng ánh xanh.",
+   "zh": "三个杆部带螺纹的T形销，蓝白色镀锌表面。",
+   "ko": "몸체에 나사가 있는 T형 핀 3개, 청백색 아연 도금."
+  },
+  "flags": [
+   "ai-like"
+  ]
+ },
+ {
+  "image": "image17_14",
+  "slug": "thanh-dong-ma-thiec",
+  "label": "Thanh đồng dẹt mạ thiếc",
+  "tags": [
+   "ngu-kim",
+   "ma-thiec",
+   "thanh-dong"
+  ],
+  "placements": [
+   {
+    "page": "/dich-vu-gia-cong-ma/ma-kem-hop-kim-kem-niken",
+    "file": "src/components/dich-vu/DetailGallery.tsx",
+    "section": "Mạ kẽm, đồng, thiếc, phốt phát đen: thư viện ảnh chi tiết (DetailGallery, DetailCapability)",
+    "replaces": "một ảnh trong SERVICE_GALLERY_POOL (src/lib/factory-pool.ts, /images/factory/*)",
+    "note": "Ví dụ chi tiết thực tế theo nhóm FACTS; đưa vào pool riêng cho từng dịch vụ để không dùng chung cho cả 6 trang"
+   },
+   {
+    "page": "/san-pham-du-an",
+    "file": "src/components/san-pham/ProductCatalog.tsx",
+    "section": "Danh mục Ngũ kim - mạ thiếc/đồng (đầu cos, thanh dẫn) (đề xuất danh mục mới; ảnh gán qua cột products.image trong CMS/seed)",
+    "replaces": "thêm mới (hiện products.image dùng /images/factory/qc-*.jpg, kho-*.jpg)",
+    "note": "Khung thẻ danh mục; trang chi tiết dùng ProductHero aspect 4/3 và ProductGallery 16/10; ảnh 16/17 nền sáng, dùng object-contain hoặc cover nền sáng"
+   }
+  ],
+  "alt": {
+   "vi": "Thanh đồng dẹt, mặt mạ màu bạc, mép đồng lộ ra, ảnh chi tiết sau xử lý bề mặt.",
+   "zh": "扁铜排，银色镀层面，铜色边缘外露，表面处理后的零件照片。",
+   "ko": "동 편평 바, 은색 도금면과 노출된 동 모서리, 표면처리 후 부품 사진."
+  },
+  "caption": {
+   "vi": "Thanh đồng dẹt, mặt mạ màu bạc, mép đồng lộ ra.",
+   "zh": "扁铜排，银色镀层面，铜色边缘外露。",
+   "ko": "동 편평 바, 은색 도금면과 노출된 동 모서리."
+  },
+  "flags": [
+   "ai-like"
+  ]
+ },
+ {
+  "image": "image17_15",
+  "slug": "chi-tiet-kep-dap-ma-trang",
+  "label": "Năm chi tiết kẹp dập, bề mặt mạ trắng mờ",
+  "tags": [
+   "ngu-kim",
+   "ma-thiec",
+   "chi-tiet-dap"
+  ],
+  "placements": [
+   {
+    "page": "/dich-vu-gia-cong-ma/ma-kem-hop-kim-kem-niken",
+    "file": "src/components/dich-vu/DetailGallery.tsx",
+    "section": "Mạ kẽm, đồng, thiếc, phốt phát đen: thư viện ảnh chi tiết (DetailGallery, DetailCapability)",
+    "replaces": "một ảnh trong SERVICE_GALLERY_POOL (src/lib/factory-pool.ts, /images/factory/*)",
+    "note": "Ví dụ chi tiết thực tế theo nhóm FACTS; đưa vào pool riêng cho từng dịch vụ để không dùng chung cho cả 6 trang"
+   },
+   {
+    "page": "/san-pham-du-an",
+    "file": "src/components/san-pham/ProductCatalog.tsx",
+    "section": "Danh mục Ngũ kim - mạ thiếc/đồng (đầu cos, thanh dẫn) (đề xuất danh mục mới; ảnh gán qua cột products.image trong CMS/seed)",
+    "replaces": "thêm mới (hiện products.image dùng /images/factory/qc-*.jpg, kho-*.jpg)",
+    "note": "Khung thẻ danh mục; trang chi tiết dùng ProductHero aspect 4/3 và ProductGallery 16/10; ảnh 16/17 nền sáng, dùng object-contain hoặc cover nền sáng"
+   }
+  ],
+  "alt": {
+   "vi": "Năm chi tiết kẹp dập có lỗ, bề mặt mạ màu trắng mờ, ảnh chi tiết sau xử lý bề mặt.",
+   "zh": "五个带孔冲压夹件，哑光白色镀层表面，表面处理后的零件照片。",
+   "ko": "구멍이 있는 프레스 클립 5개, 무광 백색 도금, 표면처리 후 부품 사진."
+  },
+  "caption": {
+   "vi": "Năm chi tiết kẹp dập có lỗ, bề mặt mạ màu trắng mờ.",
+   "zh": "五个带孔冲压夹件，哑光白色镀层表面。",
+   "ko": "구멍이 있는 프레스 클립 5개, 무광 백색 도금."
+  },
+  "flags": [
+   "ai-like",
+   "khong-chac-lop-ma"
+  ]
+ },
+ {
+  "image": "image17_16",
+  "slug": "nhom-chi-tiet-tru-ren-ma-kem-nen-xanh",
+  "label": "Nhóm chi tiết trụ ren, bề mặt mạ kẽm",
+  "tags": [
+   "ngu-kim",
+   "ma-kem"
+  ],
+  "placements": [
+   {
+    "page": "/dich-vu-gia-cong-ma/ma-kem-hop-kim-kem-niken",
+    "file": "src/components/dich-vu/DetailGallery.tsx",
+    "section": "Mạ kẽm, đồng, thiếc, phốt phát đen: thư viện ảnh chi tiết (DetailGallery, DetailCapability)",
+    "replaces": "một ảnh trong SERVICE_GALLERY_POOL (src/lib/factory-pool.ts, /images/factory/*)",
+    "note": "Ví dụ chi tiết thực tế theo nhóm FACTS; đưa vào pool riêng cho từng dịch vụ để không dùng chung cho cả 6 trang"
+   },
+   {
+    "page": "/san-pham-du-an",
+    "file": "src/components/san-pham/ProductCatalog.tsx",
+    "section": "Danh mục Ngũ kim - mạ kẽm (đề xuất danh mục mới; ảnh gán qua cột products.image trong CMS/seed)",
+    "replaces": "thêm mới (hiện products.image dùng /images/factory/qc-*.jpg, kho-*.jpg)",
+    "note": "Khung thẻ danh mục; trang chi tiết dùng ProductHero aspect 4/3 và ProductGallery 16/10; ảnh 16/17 nền sáng, dùng object-contain hoặc cover nền sáng"
+   }
+  ],
+  "alt": {
+   "vi": "Nhóm chi tiết trụ và bích có ren, bề mặt mạ màu trắng ánh xanh, ảnh chi tiết sau xử lý bề mặt.",
+   "zh": "带螺纹的圆柱与法兰件，蓝白色镀层表面，表面处理后的零件照片。",
+   "ko": "나사가 있는 원통·플랜지 부품 모음, 청백색 도금, 표면처리 후 부품 사진."
+  },
+  "caption": {
+   "vi": "Nhóm chi tiết trụ và bích có ren, bề mặt mạ màu trắng ánh xanh.",
+   "zh": "带螺纹的圆柱与法兰件，蓝白色镀层表面。",
+   "ko": "나사가 있는 원통·플랜지 부품 모음, 청백색 도금."
+  },
+  "flags": [
+   "ai-like",
+   "khong-chac-lop-ma"
+  ]
+ },
+ {
+  "image": "image17_17",
+  "slug": "chot-dinh-vi-tru-bac-ma-sang",
+  "label": "Chốt định vị và trụ bậc, bề mặt mạ sáng",
+  "tags": [
+   "ngu-kim",
+   "niken-sang",
+   "chot-dinh-vi"
+  ],
+  "placements": [
+   {
+    "page": "/dich-vu-gia-cong-ma/ma-niken-hoa-hoc-enp",
+    "file": "src/components/dich-vu/DetailGallery.tsx",
+    "section": "Mạ niken trên nền kim loại: thư viện ảnh chi tiết (DetailGallery, DetailCapability)",
+    "replaces": "một ảnh trong SERVICE_GALLERY_POOL (src/lib/factory-pool.ts, /images/factory/*)",
+    "note": "Ví dụ chi tiết thực tế theo nhóm FACTS; đưa vào pool riêng cho từng dịch vụ để không dùng chung cho cả 6 trang"
+   },
+   {
+    "page": "/san-pham-du-an",
+    "file": "src/components/san-pham/ProductCatalog.tsx",
+    "section": "Danh mục Ngũ kim - niken/crom sáng (đề xuất danh mục mới; ảnh gán qua cột products.image trong CMS/seed)",
+    "replaces": "thêm mới (hiện products.image dùng /images/factory/qc-*.jpg, kho-*.jpg)",
+    "note": "Khung thẻ danh mục; trang chi tiết dùng ProductHero aspect 4/3 và ProductGallery 16/10; ảnh 16/17 nền sáng, dùng object-contain hoặc cover nền sáng"
+   }
+  ],
+  "alt": {
+   "vi": "Chốt định vị và trụ bậc, bề mặt mạ sáng, ảnh chi tiết sau xử lý bề mặt.",
+   "zh": "定位销与阶梯柱，亮面镀层，表面处理后的零件照片。",
+   "ko": "위치결정 핀과 계단형 기둥, 광택 도금, 표면처리 후 부품 사진."
+  },
+  "caption": {
+   "vi": "Chốt định vị và trụ bậc, bề mặt mạ sáng.",
+   "zh": "定位销与阶梯柱，亮面镀层。",
+   "ko": "위치결정 핀과 계단형 기둥, 광택 도금."
+  },
+  "flags": [
+   "ai-like",
+   "khong-chac-lop-ma"
+  ]
+ },
+ {
+  "image": "image17_18",
+  "slug": "dau-cos-dap-ma-trang",
+  "label": "Hai đầu cos có chữ dập, bề mặt mạ trắng",
+  "tags": [
+   "ngu-kim",
+   "dau-cos",
+   "ma-thiec"
+  ],
+  "placements": [
+   {
+    "page": "/dich-vu-gia-cong-ma/ma-kem-hop-kim-kem-niken",
+    "file": "src/components/dich-vu/DetailGallery.tsx",
+    "section": "Mạ kẽm, đồng, thiếc, phốt phát đen: thư viện ảnh chi tiết (DetailGallery, DetailCapability)",
+    "replaces": "một ảnh trong SERVICE_GALLERY_POOL (src/lib/factory-pool.ts, /images/factory/*)",
+    "note": "Ví dụ chi tiết thực tế theo nhóm FACTS; đưa vào pool riêng cho từng dịch vụ để không dùng chung cho cả 6 trang"
+   },
+   {
+    "page": "/san-pham-du-an",
+    "file": "src/components/san-pham/ProductCatalog.tsx",
+    "section": "Danh mục Ngũ kim - mạ thiếc/đồng (đầu cos, thanh dẫn) (đề xuất danh mục mới; ảnh gán qua cột products.image trong CMS/seed)",
+    "replaces": "thêm mới (hiện products.image dùng /images/factory/qc-*.jpg, kho-*.jpg)",
+    "note": "Khung thẻ danh mục; trang chi tiết dùng ProductHero aspect 4/3 và ProductGallery 16/10; ảnh 16/17 nền sáng, dùng object-contain hoặc cover nền sáng"
+   }
+  ],
+  "alt": {
+   "vi": "Hai đầu cos ép có chữ dập nổi, bề mặt mạ màu trắng bạc, ảnh chi tiết sau xử lý bề mặt.",
+   "zh": "两个压印文字的接线端子，银白色镀层表面，表面处理后的零件照片。",
+   "ko": "문자가 각인된 압착 단자 2개, 은백색 도금, 표면처리 후 부품 사진."
+  },
+  "caption": {
+   "vi": "Hai đầu cos ép có chữ dập nổi, bề mặt mạ màu trắng bạc.",
+   "zh": "两个压印文字的接线端子，银白色镀层表面。",
+   "ko": "문자가 각인된 압착 단자 2개, 은백색 도금."
+  },
+  "flags": [
+   "ai-like",
+   "khong-chac-lop-ma"
+  ]
+ },
+ {
+  "image": "image17_19",
+  "slug": "tam-inox-satin-xuoc",
+  "label": "Tấm phẳng bề mặt satin xước",
+  "tags": [
+   "satin",
+   "tam-phang"
+  ],
+  "placements": [
+   {
+    "page": "/dich-vu-gia-cong-ma/ma-niken-hoa-hoc-enp",
+    "file": "src/components/dich-vu/DetailGallery.tsx",
+    "section": "Mạ niken trên nền kim loại: thư viện ảnh chi tiết (DetailGallery, DetailCapability)",
+    "replaces": "một ảnh trong SERVICE_GALLERY_POOL (src/lib/factory-pool.ts, /images/factory/*)",
+    "note": "Ví dụ chi tiết thực tế theo nhóm FACTS; đưa vào pool riêng cho từng dịch vụ để không dùng chung cho cả 6 trang"
+   },
+   {
+    "page": "/san-pham-du-an",
+    "file": "src/components/san-pham/ProductCatalog.tsx",
+    "section": "Danh mục Ngũ kim - mạ satin/inox satin (đề xuất danh mục mới; ảnh gán qua cột products.image trong CMS/seed)",
+    "replaces": "thêm mới (hiện products.image dùng /images/factory/qc-*.jpg, kho-*.jpg)",
+    "note": "Khung thẻ danh mục; trang chi tiết dùng ProductHero aspect 4/3 và ProductGallery 16/10; ảnh 16/17 nền sáng, dùng object-contain hoặc cover nền sáng"
+   }
+  ],
+  "alt": {
+   "vi": "Tấm phẳng vuông, bề mặt satin xước một chiều, ảnh chi tiết sau xử lý bề mặt.",
+   "zh": "方形平板，单向拉丝缎面表面，表面处理后的零件照片。",
+   "ko": "정사각 평판, 단방향 새틴 헤어라인, 표면처리 후 부품 사진."
+  },
+  "caption": {
+   "vi": "Tấm phẳng vuông, bề mặt satin xước một chiều.",
+   "zh": "方形平板，单向拉丝缎面表面。",
+   "ko": "정사각 평판, 단방향 새틴 헤어라인."
+  },
+  "flags": [
+   "ai-like"
+  ]
+ },
+ {
+  "image": "image17_20",
+  "slug": "tay-nam-cua-satin",
+  "label": "Tay nắm cửa bề mặt satin",
+  "tags": [
+   "satin",
+   "tay-nam-cua"
+  ],
+  "placements": [
+   {
+    "page": "/dich-vu-gia-cong-ma/ma-niken-hoa-hoc-enp",
+    "file": "src/components/dich-vu/DetailGallery.tsx",
+    "section": "Mạ niken trên nền kim loại: thư viện ảnh chi tiết (DetailGallery, DetailCapability)",
+    "replaces": "một ảnh trong SERVICE_GALLERY_POOL (src/lib/factory-pool.ts, /images/factory/*)",
+    "note": "Ví dụ chi tiết thực tế theo nhóm FACTS; đưa vào pool riêng cho từng dịch vụ để không dùng chung cho cả 6 trang"
+   },
+   {
+    "page": "/san-pham-du-an",
+    "file": "src/components/san-pham/ProductCatalog.tsx",
+    "section": "Danh mục Ngũ kim - mạ satin/inox satin (đề xuất danh mục mới; ảnh gán qua cột products.image trong CMS/seed)",
+    "replaces": "thêm mới (hiện products.image dùng /images/factory/qc-*.jpg, kho-*.jpg)",
+    "note": "Khung thẻ danh mục; trang chi tiết dùng ProductHero aspect 4/3 và ProductGallery 16/10; ảnh 16/17 nền sáng, dùng object-contain hoặc cover nền sáng"
+   }
+  ],
+  "alt": {
+   "vi": "Tay nắm cửa có đế tròn, bề mặt satin, ảnh chi tiết sau xử lý bề mặt.",
+   "zh": "带圆形底座的门把手，缎面表面，表面处理后的零件照片。",
+   "ko": "원형 받침이 있는 도어 핸들, 새틴 표면, 표면처리 후 부품 사진."
+  },
+  "caption": {
+   "vi": "Tay nắm cửa có đế tròn, bề mặt satin.",
+   "zh": "带圆形底座的门把手，缎面表面。",
+   "ko": "원형 받침이 있는 도어 핸들, 새틴 표면."
+  },
+  "flags": [
+   "ai-like"
+  ]
+ },
+ {
+  "image": "image17_21",
+  "slug": "thanh-tru-inox-satin",
+  "label": "Bó thanh trụ bề mặt satin",
+  "tags": [
+   "satin",
+   "thanh-inox"
+  ],
+  "placements": [
+   {
+    "page": "/dich-vu-gia-cong-ma/ma-niken-hoa-hoc-enp",
+    "file": "src/components/dich-vu/DetailGallery.tsx",
+    "section": "Mạ niken trên nền kim loại: thư viện ảnh chi tiết (DetailGallery, DetailCapability)",
+    "replaces": "một ảnh trong SERVICE_GALLERY_POOL (src/lib/factory-pool.ts, /images/factory/*)",
+    "note": "Ví dụ chi tiết thực tế theo nhóm FACTS; đưa vào pool riêng cho từng dịch vụ để không dùng chung cho cả 6 trang"
+   },
+   {
+    "page": "/san-pham-du-an",
+    "file": "src/components/san-pham/ProductCatalog.tsx",
+    "section": "Danh mục Ngũ kim - mạ satin/inox satin (đề xuất danh mục mới; ảnh gán qua cột products.image trong CMS/seed)",
+    "replaces": "thêm mới (hiện products.image dùng /images/factory/qc-*.jpg, kho-*.jpg)",
+    "note": "Khung thẻ danh mục; trang chi tiết dùng ProductHero aspect 4/3 và ProductGallery 16/10; ảnh 16/17 nền sáng, dùng object-contain hoặc cover nền sáng"
+   }
+  ],
+  "alt": {
+   "vi": "Bó thanh trụ đặc, bề mặt satin xước dọc, ảnh chi tiết sau xử lý bề mặt.",
+   "zh": "成捆实心圆棒，纵向拉丝缎面表面，表面处理后的零件照片。",
+   "ko": "묶음 원봉, 세로 새틴 헤어라인, 표면처리 후 부품 사진."
+  },
+  "caption": {
+   "vi": "Bó thanh trụ đặc, bề mặt satin xước dọc.",
+   "zh": "成捆实心圆棒，纵向拉丝缎面表面。",
+   "ko": "묶음 원봉, 세로 새틴 헤어라인."
+  },
+  "flags": [
+   "ai-like"
+  ]
+ },
+ {
+  "image": "image17_22",
+  "slug": "gia-do-uon-niken-satin",
+  "label": "Giá đỡ uốn có lỗ, bề mặt niken satin",
+  "tags": [
+   "satin",
+   "gia-do"
+  ],
+  "placements": [
+   {
+    "page": "/dich-vu-gia-cong-ma/ma-niken-hoa-hoc-enp",
+    "file": "src/components/dich-vu/DetailGallery.tsx",
+    "section": "Mạ niken trên nền kim loại: thư viện ảnh chi tiết (DetailGallery, DetailCapability)",
+    "replaces": "một ảnh trong SERVICE_GALLERY_POOL (src/lib/factory-pool.ts, /images/factory/*)",
+    "note": "Ví dụ chi tiết thực tế theo nhóm FACTS; đưa vào pool riêng cho từng dịch vụ để không dùng chung cho cả 6 trang"
+   },
+   {
+    "page": "/san-pham-du-an",
+    "file": "src/components/san-pham/ProductCatalog.tsx",
+    "section": "Danh mục Ngũ kim - mạ satin/inox satin (đề xuất danh mục mới; ảnh gán qua cột products.image trong CMS/seed)",
+    "replaces": "thêm mới (hiện products.image dùng /images/factory/qc-*.jpg, kho-*.jpg)",
+    "note": "Khung thẻ danh mục; trang chi tiết dùng ProductHero aspect 4/3 và ProductGallery 16/10; ảnh 16/17 nền sáng, dùng object-contain hoặc cover nền sáng"
+   }
+  ],
+  "alt": {
+   "vi": "Giá đỡ uốn có bốn lỗ, bề mặt kim loại satin, ảnh chi tiết sau xử lý bề mặt.",
+   "zh": "带四孔弯折支架，缎面金属表面，表面处理后的零件照片。",
+   "ko": "구멍 4개의 굽힘 브래킷, 새틴 금속 표면, 표면처리 후 부품 사진."
+  },
+  "caption": {
+   "vi": "Giá đỡ uốn có bốn lỗ, bề mặt kim loại satin.",
+   "zh": "带四孔弯折支架，缎面金属表面。",
+   "ko": "구멍 4개의 굽힘 브래킷, 새틴 금속 표면."
+  },
+  "flags": [
+   "ai-like"
+  ]
+ },
+ {
+  "image": "image17_23",
+  "slug": "luoi-gio-khe-niken-satin",
+  "label": "Lưới thông gió dạng khe, bề mặt satin",
+  "tags": [
+   "satin",
+   "chi-tiet-trang-tri"
+  ],
+  "placements": [
+   {
+    "page": "/dich-vu-gia-cong-ma/ma-niken-hoa-hoc-enp",
+    "file": "src/components/dich-vu/DetailGallery.tsx",
+    "section": "Mạ niken trên nền kim loại: thư viện ảnh chi tiết (DetailGallery, DetailCapability)",
+    "replaces": "một ảnh trong SERVICE_GALLERY_POOL (src/lib/factory-pool.ts, /images/factory/*)",
+    "note": "Ví dụ chi tiết thực tế theo nhóm FACTS; đưa vào pool riêng cho từng dịch vụ để không dùng chung cho cả 6 trang"
+   },
+   {
+    "page": "/san-pham-du-an",
+    "file": "src/components/san-pham/ProductCatalog.tsx",
+    "section": "Danh mục Ngũ kim - mạ satin/inox satin (đề xuất danh mục mới; ảnh gán qua cột products.image trong CMS/seed)",
+    "replaces": "thêm mới (hiện products.image dùng /images/factory/qc-*.jpg, kho-*.jpg)",
+    "note": "Khung thẻ danh mục; trang chi tiết dùng ProductHero aspect 4/3 và ProductGallery 16/10; ảnh 16/17 nền sáng, dùng object-contain hoặc cover nền sáng"
+   }
+  ],
+  "alt": {
+   "vi": "Lưới thông gió dạng khe dài, bề mặt satin, ảnh chi tiết sau xử lý bề mặt.",
+   "zh": "长条槽形通风格栅，缎面表面，表面处理后的零件照片。",
+   "ko": "긴 슬릿형 환기 그릴, 새틴 표면, 표면처리 후 부품 사진."
+  },
+  "caption": {
+   "vi": "Lưới thông gió dạng khe dài, bề mặt satin.",
+   "zh": "长条槽形通风格栅，缎面表面。",
+   "ko": "긴 슬릿형 환기 그릴, 새틴 표면."
+  },
+  "flags": [
+   "ai-like"
+  ]
+ },
+ {
+  "image": "image17_24",
+  "slug": "dau-cos-ong-satin",
+  "label": "Đầu cos ống ép, bề mặt satin",
+  "tags": [
+   "dau-cos",
+   "satin"
+  ],
+  "placements": [
+   {
+    "page": "/dich-vu-gia-cong-ma/ma-kem-hop-kim-kem-niken",
+    "file": "src/components/dich-vu/DetailGallery.tsx",
+    "section": "Mạ kẽm, đồng, thiếc, phốt phát đen: thư viện ảnh chi tiết (DetailGallery, DetailCapability)",
+    "replaces": "một ảnh trong SERVICE_GALLERY_POOL (src/lib/factory-pool.ts, /images/factory/*)",
+    "note": "Ví dụ chi tiết thực tế theo nhóm FACTS; đưa vào pool riêng cho từng dịch vụ để không dùng chung cho cả 6 trang"
+   },
+   {
+    "page": "/san-pham-du-an",
+    "file": "src/components/san-pham/ProductCatalog.tsx",
+    "section": "Danh mục Ngũ kim - mạ thiếc/đồng (đầu cos, thanh dẫn) (đề xuất danh mục mới; ảnh gán qua cột products.image trong CMS/seed)",
+    "replaces": "thêm mới (hiện products.image dùng /images/factory/qc-*.jpg, kho-*.jpg)",
+    "note": "Khung thẻ danh mục; trang chi tiết dùng ProductHero aspect 4/3 và ProductGallery 16/10; ảnh 16/17 nền sáng, dùng object-contain hoặc cover nền sáng"
+   }
+  ],
+  "alt": {
+   "vi": "Đầu cos ống ép có lỗ bắt, bề mặt kim loại satin, ảnh chi tiết sau xử lý bề mặt.",
+   "zh": "带安装孔的压接管端子，缎面金属表面，表面处理后的零件照片。",
+   "ko": "체결 구멍이 있는 압착 튜브 단자, 새틴 금속 표면, 표면처리 후 부품 사진."
+  },
+  "caption": {
+   "vi": "Đầu cos ống ép có lỗ bắt, bề mặt kim loại satin.",
+   "zh": "带安装孔的压接管端子，缎面金属表面。",
+   "ko": "체결 구멍이 있는 압착 튜브 단자, 새틴 금속 표면."
+  },
+  "flags": [
+   "ai-like",
+   "khong-chac-lop-ma"
+  ]
+ }
+]

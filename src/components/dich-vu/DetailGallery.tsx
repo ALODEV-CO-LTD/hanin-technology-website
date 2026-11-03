@@ -1,13 +1,13 @@
 import { useServiceNs } from "@/lib/service-ns";
 import { useTranslations } from "next-intl";
 import type { PlatingService } from "@/lib/services-data";
-import { SERVICE_GALLERY_POOL, pickImages } from "@/lib/factory-pool";
+import { serviceImages } from "@/lib/factory-pool";
 import Photo from "@/components/ui/Photo";
 
 export default function DetailGallery({ service }: { service: PlatingService }) {
   const t = useTranslations(useServiceNs(service.slug, "DetailGallery"));
   // Ảnh #1 của bộ chọn dành cho khối "Năng lực" (DetailCapability), nên ở đây lấy 3 ảnh tiếp theo.
-  const [, ...picked] = pickImages(service.slug, SERVICE_GALLERY_POOL, 4, [service.image]);
+  const [, ...picked] = serviceImages(service.slug, [service.image]);
   const GALLERY = [
     { key: "line", src: picked[0] },
     { key: "surface", src: picked[1] },

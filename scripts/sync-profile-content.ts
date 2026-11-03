@@ -3,7 +3,7 @@
  *   npm run db:profile-sync        (an toàn chạy lại; sao lưu trước bằng npm run db:backup)
  * - Thông tin liên hệ: hotline, email, Zalo.
  * - Dịch vụ: lấy chữ từ messages/<locale>/dich-vu.json (DichVu.services.*) ghi vào bảng services (3 ngôn ngữ). Không đổi ảnh/slug.
- * - Sản phẩm: lấy chữ từ messages/<locale>/san-pham.json (SanPham.products.*) ghi vào bảng products. Không đổi ảnh/slug.
+ * - Sản phẩm: lấy chữ từ messages/<locale>/san-pham.json (SanPham.products.*) ghi vào bảng products, kèm ảnh trong public/images/profile-lib (chạy db:profile-media trước). Không đổi slug.
  * - Khách hàng: thêm các khách hàng có trong profile (ẩn sẵn, chưa có logo). Vào CMS tải logo rồi bật hiển thị.
  * Ảnh do người dùng tự tải trong CMS không bị đụng tới.
  */
@@ -48,14 +48,14 @@ const SERVICES: Record<string, { key: string; titleEn: string }> = {
 };
 
 /* ---------- 3. Sản phẩm: slug -> khoá trong messages (SanPham.products.<key>) ---------- */
-const PRODUCTS: Record<string, { key: string; category: string }> = {
-  "banh-rang-truc-vit-ma-niken-hoa-hoc": { key: "kimLoaiMa", category: "co-khi-chinh-xac" },
-  "truc-piston-ty-ben-thuy-luc-o-to": { key: "phuTungOTo", category: "phu-tung-o-to-xe-may" },
-  "thanh-busbar-dong-ma-thiec-dan-dien": { key: "smartHome", category: "dau-cosse-thiet-bi-dien" },
-  "bu-long-chot-dinh-vi-khoi-be-hoa-chat": { key: "veSinhNhaBep", category: "anodizing" },
-  "ong-lot-truc-ren-co-khi-chiu-mai-mon": { key: "satinAbs", category: "co-khi-chinh-xac" },
-  "cum-linh-kien-khung-vo-banh-rang-b2b": { key: "cromDenHairLine", category: "co-khi-chinh-xac" },
-  "chi-tiet-kim-loai-ma-treo-day-chuyen-tu-dong": { key: "giaDung", category: "dau-cosse-thiet-bi-dien" },
+const PRODUCTS: Record<string, { key: string; category: string; image: string }> = {
+  "banh-rang-truc-vit-ma-niken-hoa-hoc": { key: "kimLoaiMa", category: "co-khi-chinh-xac", image: "/images/profile-lib/hang-truc-chot-ngu-kim-xep-khay.jpg" },
+  "truc-piston-ty-ben-thuy-luc-o-to": { key: "phuTungOTo", category: "phu-tung-o-to-xe-may", image: "/images/profile-lib/chi-tiet-vien-den-oto-ma-crom.jpg" },
+  "thanh-busbar-dong-ma-thiec-dan-dien": { key: "smartHome", category: "dau-cosse-thiet-bi-dien", image: "/images/profile-lib/khung-vien-cong-tac-ma-crom.jpg" },
+  "bu-long-chot-dinh-vi-khoi-be-hoa-chat": { key: "veSinhNhaBep", category: "anodizing", image: "/images/profile-lib/tay-gat-sen-tam-ma-crom.jpg" },
+  "ong-lot-truc-ren-co-khi-chiu-mai-mon": { key: "satinAbs", category: "co-khi-chinh-xac", image: "/images/profile-lib/nap-nut-tron-ma-crom-xuoc-tam.jpg" },
+  "cum-linh-kien-khung-vo-banh-rang-b2b": { key: "cromDenHairLine", category: "co-khi-chinh-xac", image: "/images/profile-lib/nhom-chi-tiet-den-bong-num-vong-tay-nam.jpg" },
+  "chi-tiet-kim-loai-ma-treo-day-chuyen-tu-dong": { key: "giaDung", category: "dau-cosse-thiet-bi-dien", image: "/images/profile-lib/num-van-ma-crom-satin.jpg" },
 };
 
 /* ---------- 4. Khách hàng trong profile (tên hiển thị) ---------- */
@@ -82,13 +82,13 @@ transaction(() => {
     );
     nSvc++;
   }
-  for (const [slug, { key, category }] of Object.entries(PRODUCTS)) {
+  for (const [slug, { key, category, image }] of Object.entries(PRODUCTS)) {
     if (!get("SELECT id FROM products WHERE slug = ?", slug)) continue;
     if (!dig(messages.vi.sanPham, "products", key, "title")) continue;
     const f = (field: string) => i18n((l) => dig(messages[l].sanPham, "products", key, field));
     run(
-      "UPDATE products SET title = ?, description = ?, image_badge = ?, image_alt = ?, category_slug = ?, spec_chips = '[]', lot = '', updated_at = datetime('now') WHERE slug = ?",
-      f("title"), f("description"), f("imageBadge"), f("imageAlt"), category, slug,
+      "UPDATE products SET title = ?, description = ?, image_badge = ?, image_alt = ?, image = ?, category_slug = ?, spec_chips = '[]', lot = '', updated_at = datetime('now') WHERE slug = ?",
+      f("title"), f("description"), f("imageBadge"), f("imageAlt"), image, category, slug,
     );
     nProd++;
   }

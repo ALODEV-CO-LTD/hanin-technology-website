@@ -62,9 +62,9 @@ export function getProductDetailContent(t: ProductsTranslator) {
   return {
     specEyebrow: t("detail.specEyebrow"),
     heroStats: [
-      { label: t("detail.heroStats.coatingThickness.label"), value: "10 – 25 µm", note: t("detail.heroStats.coatingThickness.note") },
-      { label: t("detail.heroStats.saltSpray.label"), value: "500h+", note: t("detail.heroStats.saltSpray.note") },
-      { label: t("detail.heroStats.tolerance.label"), value: "±0.2 µm", note: t("detail.heroStats.tolerance.note") },
+      { label: t("detail.heroStats.coatingThickness.label"), value: t("detail.heroStats.coatingThickness.value"), note: t("detail.heroStats.coatingThickness.note") },
+      { label: t("detail.heroStats.saltSpray.label"), value: t("detail.heroStats.saltSpray.value"), note: t("detail.heroStats.saltSpray.note") },
+      { label: t("detail.heroStats.tolerance.label"), value: t("detail.heroStats.tolerance.value"), note: t("detail.heroStats.tolerance.note") },
     ],
     heroDescription: t("detail.heroDescription"),
     heroImageAlt: t("detail.heroImageAlt"),

@@ -49,3 +49,6 @@ next-env.d.ts
 
 # SQLite in-memory nhầm tên
 :memory:*
+
+# ảnh gốc trích từ Company Profile (nặng); bản web nằm ở public/images/profile-lib
+/public/images/profile/

@@ -10,17 +10,17 @@ export default function ProductionLines() {
   const LINES = [
     {
       key: "barrel",
-      image: siteImg("nang-luc/ProductionLines#1", "/images/factory/ma-quay-6.jpg"),
+      image: siteImg("nang-luc/ProductionLines#1", "/images/profile-lib/bo-ma-quay-ray-dan-ong.jpg"),
       imageOrder: "order-first lg:order-last",
     },
     {
       key: "rack",
-      image: siteImg("nang-luc/ProductionLines#2", "/images/factory/ma-quay-6.jpg"),
+      image: siteImg("nang-luc/ProductionLines#2", "/images/profile-lib/gia-treo-chi-tiet-den-khung-xanh.jpg"),
       imageOrder: "",
     },
     {
       key: "auto",
-      image: siteImg("nang-luc/ProductionLines#3", "/images/factory/ma-treo-3.jpg"),
+      image: siteImg("nang-luc/ProductionLines#3", "/images/profile-lib/day-chuyen-ma-tu-dong-cau-truc-cam.jpg"),
       imageOrder: "order-first lg:order-last",
     },
   ] as const;

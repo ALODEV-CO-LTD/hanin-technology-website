@@ -4,6 +4,20 @@ import Photo from "@/components/ui/Photo";
 
 const RELIABILITY = ["r1", "r2", "r3", "r4", "r5", "r6", "r7", "r8", "r9", "r10"] as const;
 
+// Ảnh thiết bị thử tương ứng r1–r10 (trích từ Company Profile). r2, r5, r10 chưa xác nhận tên máy nên chỉ minh họa.
+const RELIABILITY_IMAGES: Record<(typeof RELIABILITY)[number], string> = {
+  r1: "may-thu-mai-mon-rca-tester",
+  r2: "thiet-bi-thu-nuoc-nong-hot-water",
+  r3: "tu-thu-nhiet-do-cao-do-am-cao",
+  r4: "may-do-tia-uv",
+  r5: "may-thu-cha-xat-ba-dau",
+  r6: "may-thu-chi-do-cung-but-chi",
+  r7: "may-thu-roi-dropping-tester",
+  r8: "may-do-do-day-cam-tay-thickness-measure",
+  r9: "may-danh-bong-hai-dia-polisher",
+  r10: "may-thu-co-cau-ban-le-nghieng",
+};
+
 const ITEMS = [
   { key: "lab", no: "01" },
   { key: "hullCell", no: "02" },
@@ -55,7 +69,13 @@ export default function TestingAnalysis() {
           <p className="text-body-sm text-slate-600 leading-relaxed mb-space-md">{t("reliability.desc")}</p>
           <ol className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-space-lg">
             {RELIABILITY.map((r, i) => (
-              <li key={r} className="flex items-baseline gap-3 border-b border-slate-200 py-2.5">
+              <li key={r} className="flex items-center gap-3 border-b border-slate-200 py-2.5">
+                <Photo
+                  src={`/images/profile-lib/${RELIABILITY_IMAGES[r]}.jpg`}
+                  alt={t(`reliability.items.${r}`)}
+                  sizes="64px"
+                  className="h-12 w-16 shrink-0 rounded border border-slate-200 object-cover"
+                />
                 <span className="w-6 shrink-0 text-body-sm font-bold tabular-nums text-steel-600">{String(i + 1).padStart(2, "0")}</span>
                 <span className="text-body-sm font-medium text-slate-900">{t(`reliability.items.${r}`)}</span>
               </li>
