@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { localizedPath, pageMetadata } from "@/lib/seo";
 import { notFound } from "next/navigation";
 import { getLocale, getTranslations } from "next-intl/server";
 import PageBreadcrumb from "@/components/layout/PageBreadcrumb";
@@ -7,20 +8,24 @@ import { Link } from "@/i18n/navigation";
 import { getPostBySlug, getPosts } from "@/server/public";
 import Icon from "@/components/ui/Icon";
 import Photo from "@/components/ui/Photo";
+import JsonLd from "@/components/ui/JsonLd";
+import { SITE_URL, absUrl } from "@/lib/site-url";
 
 type PageParams = { slug: string };
 
-export async function generateMetadata({ params }: { params: Promise<PageParams> }): Promise<Metadata> {
-  const { slug } = await params;
-  const locale = await getLocale();
-  const t = await getTranslations("TinTuc");
+export async function generateMetadata({ params }: { params: Promise<PageParams & { locale: string }> }): Promise<Metadata> {
+  const { slug, locale } = await params;
+  const t = await getTranslations({ locale, namespace: "TinTuc" });
   const post = getPostBySlug(slug, locale, t);
   if (!post) return {};
-  return {
+  return pageMetadata({
+    locale,
+    path: `/tin-tuc/${slug}`,
     title: post.title,
     description: post.excerpt,
-    openGraph: post.image ? { images: [post.image] } : undefined,
-  };
+    image: post.image,
+    type: "article",
+  });
 }
 
 export default async function TinTucChiTietPage({ params }: { params: Promise<PageParams> }) {
@@ -35,8 +40,35 @@ export default async function TinTucChiTietPage({ params }: { params: Promise<Pa
     .filter((p) => p.id !== post.id)
     .slice(0, 3);
 
+  const pageUrl = absUrl(localizedPath(locale, `/tin-tuc/${post.id}`));
+  const articleLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        headline: post.title,
+        description: post.excerpt || undefined,
+        datePublished: post.isoDate,
+        inLanguage: locale,
+        image: post.image ? (/^https?:/.test(post.image) ? post.image : absUrl(post.image)) : undefined,
+        mainEntityOfPage: pageUrl,
+        author: { "@type": "Organization", name: "HANIN Plating" },
+        publisher: { "@id": `${SITE_URL}/#organization` },
+      },
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: tNav("trangChu"), item: absUrl(localizedPath(locale, "/")) },
+          { "@type": "ListItem", position: 2, name: t("NewsBreadcrumb.news"), item: absUrl(localizedPath(locale, "/tin-tuc")) },
+          { "@type": "ListItem", position: 3, name: post.title, item: pageUrl },
+        ],
+      },
+    ],
+  };
+
   return (
     <div className="px-margin py-space-lg flex flex-col w-full">
+      <JsonLd data={articleLd} />
       <PageBreadcrumb
         className="mb-space-md"
         items={[

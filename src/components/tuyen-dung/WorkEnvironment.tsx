@@ -23,8 +23,7 @@ export default function WorkEnvironment() {
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 src={siteImg("tuyen-dung/WorkEnvironment#1", "/images/factory/ma-treo-2.jpg")}
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-slate-900/85 via-slate-900/30 to-transparent" />
-              <div className="absolute bottom-space-lg left-space-lg right-space-lg flex flex-col gap-1 text-white">
+              <div className="absolute inset-x-0 bottom-0 p-space-lg bg-slate-900/80 flex flex-col gap-1 text-white">
                 <div className="text-white text-label-sm uppercase tracking-wider font-bold">
                   {t("mainBadge")}
                 </div>
@@ -46,8 +45,7 @@ export default function WorkEnvironment() {
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 src={siteImg("tuyen-dung/WorkEnvironment#2", "/images/factory/qc-7.jpg")}
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-slate-900/85 via-transparent to-transparent" />
-              <div className="absolute bottom-space-md left-space-md right-space-md flex flex-col text-white">
+              <div className="absolute inset-x-0 bottom-0 p-space-md bg-slate-900/80 flex flex-col text-white">
                 <span className="text-label-sm text-white uppercase tracking-wider font-semibold">
                   {t("secondaryBadge")}
                 </span>

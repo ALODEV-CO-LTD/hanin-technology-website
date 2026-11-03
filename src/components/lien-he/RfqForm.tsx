@@ -19,8 +19,7 @@ export default function RfqForm() {
                 src={siteImg("lien-he/RfqForm#1", "/images/factory/cong-nha-may.jpg")}
                 sizes="(min-width:1024px) 40vw, 100vw"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/10 to-transparent" />
-              <div className="absolute bottom-space-md left-space-md right-space-md text-white">
+              <div className="absolute inset-x-0 bottom-0 p-space-md bg-slate-900/80 text-white">
                 <p className="text-title-md font-bold uppercase">{t("gateLabel")}</p>
                 <p className="text-body-sm text-white">{t("plotLabel")}</p>
               </div>

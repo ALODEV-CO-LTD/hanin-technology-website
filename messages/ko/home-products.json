@@ -1,0 +1,37 @@
+{
+  "HomeProducts": {
+    "platingLabel": "도금층",
+    "substrateLabel": "소재",
+    "byDrawing": "도면 요구에 따름",
+    "badges": {
+      "banh-rang-truc-vit-ma-niken-hoa-hoc": {
+        "plating": "니켈, 아연, 주석, 흑색 인산염, 새틴",
+        "substrate": "도면 요구에 따름"
+      },
+      "truc-piston-ty-ben-thuy-luc-o-to": {
+        "plating": "니켈-크롬",
+        "substrate": "ABS 플라스틱"
+      },
+      "thanh-busbar-dong-ma-thiec-dan-dien": {
+        "plating": "니켈-크롬",
+        "substrate": "ABS 플라스틱"
+      },
+      "bu-long-chot-dinh-vi-khoi-be-hoa-chat": {
+        "plating": "크롬",
+        "substrate": "도면 요구에 따름"
+      },
+      "ong-lot-truc-ren-co-khi-chiu-mai-mon": {
+        "plating": "새틴 니켈",
+        "substrate": "ABS, ABS/PC 플라스틱"
+      },
+      "cum-linh-kien-khung-vo-banh-rang-b2b": {
+        "plating": "블랙 니켈 크롬",
+        "substrate": "ABS 플라스틱"
+      },
+      "chi-tiet-kim-loai-ma-treo-day-chuyen-tu-dong": {
+        "plating": "새틴 크롬",
+        "substrate": "ABS 플라스틱"
+      }
+    }
+  }
+}

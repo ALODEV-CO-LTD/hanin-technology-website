@@ -31,7 +31,6 @@ export default function FeaturedArticle() {
               alt={article.imageAlt}
               src={article.image}
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent" />
             <div className="absolute top-space-md left-space-md flex flex-wrap items-center gap-space-xs">
               {article.tag && (
                 <span className="px-space-sm py-1 bg-steel-600 text-white text-label-sm uppercase font-bold tracking-wider rounded">

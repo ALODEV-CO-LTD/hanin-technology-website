@@ -13,7 +13,7 @@ export default function CategoryHero() {
       <div className="absolute inset-0 z-0 pointer-events-none">
         <HeroImage src={banner.image} alt={banner.alt || t("imageAlt")} />
       </div>
-      <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-r from-slate-950/85 via-slate-950/65 to-slate-950/35" />
+      <div aria-hidden="true" className="absolute inset-0 bg-slate-950/60" />
       <div className="relative z-10 w-full px-margin flex flex-col gap-space-sm banner-text">
         <PageBreadcrumb
           variant="dark"

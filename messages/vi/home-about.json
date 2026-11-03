@@ -1,0 +1,59 @@
+{
+  "HomeAbout": {
+    "eyebrow": "Về HANIN và hệ thống Hanin Tech",
+    "title": "Nhà máy mạ HANIN",
+    "intro1": "HANIN xử lý mạ trên nền nhựa ABS và kim loại. Nhà máy có mạ chân không PVD, đồng thời nhận sơn và in trên sản phẩm nhựa, kim loại.",
+    "intro2": "Nhà máy đặt tại Lô 49G, KCN Quang Minh, Hà Nội, trên mặt bằng 2.230 m² với 70 nhân sự. HANIN thuộc hệ thống Hanin Tech.",
+    "imageAlt": "Dây chuyền mạ quay trong nhà máy mạ HANIN tại Lô 49G, KCN Quang Minh",
+    "statsLabel": "Số liệu chính",
+    "stats": {
+      "0": {
+        "value": "350",
+        "label": "Nhân sự toàn hệ thống Hanin Tech"
+      },
+      "1": {
+        "value": "70",
+        "label": "Nhân sự nhà máy mạ HANIN"
+      },
+      "2": {
+        "value": "25",
+        "label": "Máy đúc nhựa, 75–1.000 tấn (hệ thống Hanin Tech)"
+      },
+      "3": {
+        "value": "2.230 m²",
+        "label": "Mặt bằng nhà máy mạ"
+      }
+    },
+    "timelineTitle": "Lộ trình phát triển hệ thống Hanin Tech",
+    "timelineIntro": "Hanin Tech là công ty mẹ, đầu tư và phát triển các nhà máy trong hệ thống. Trụ sở Hanin Tech đặt tại Lô 660, KCN Quang Minh; nhà máy mạ HANIN đặt tại Lô 49G.",
+    "thisFactory": "Nhà máy này",
+    "milestones": {
+      "0": {
+        "year": "2018",
+        "name": "Thành lập Hanin Tech",
+        "desc": "Công ty mẹ của hệ thống."
+      },
+      "1": {
+        "year": "2021",
+        "name": "Nhà máy khuôn IPM",
+        "desc": "Khuôn press, khuôn nhựa, khuôn đúc nhôm."
+      },
+      "2": {
+        "year": "2023",
+        "name": "Nhà máy mạ Hanin Plating",
+        "desc": "Mạ nền nhựa và kim loại, PVD, sơn và in."
+      },
+      "3": {
+        "year": "2025",
+        "name": "Nhà máy số 4 – Press",
+        "desc": "Dập kim loại."
+      },
+      "4": {
+        "year": "2026",
+        "name": "Nhà máy số 5 – Showa",
+        "desc": "Đúc và lắp ráp."
+      }
+    },
+    "ctaLink": "Xem thêm về HANIN"
+  }
+}

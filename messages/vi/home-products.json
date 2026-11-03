@@ -1,0 +1,37 @@
+{
+  "HomeProducts": {
+    "platingLabel": "Lớp mạ",
+    "substrateLabel": "Vật liệu nền",
+    "byDrawing": "Theo yêu cầu bản vẽ",
+    "badges": {
+      "banh-rang-truc-vit-ma-niken-hoa-hoc": {
+        "plating": "Niken, kẽm, thiếc, phốt phát đen, satin",
+        "substrate": "Theo yêu cầu bản vẽ"
+      },
+      "truc-piston-ty-ben-thuy-luc-o-to": {
+        "plating": "Niken-crom",
+        "substrate": "Nhựa ABS"
+      },
+      "thanh-busbar-dong-ma-thiec-dan-dien": {
+        "plating": "Niken-crom",
+        "substrate": "Nhựa ABS"
+      },
+      "bu-long-chot-dinh-vi-khoi-be-hoa-chat": {
+        "plating": "Crom",
+        "substrate": "Theo yêu cầu bản vẽ"
+      },
+      "ong-lot-truc-ren-co-khi-chiu-mai-mon": {
+        "plating": "Niken satin",
+        "substrate": "Nhựa ABS, ABS/PC"
+      },
+      "cum-linh-kien-khung-vo-banh-rang-b2b": {
+        "plating": "Niken crom đen",
+        "substrate": "Nhựa ABS"
+      },
+      "chi-tiet-kim-loai-ma-treo-day-chuyen-tu-dong": {
+        "plating": "Crom satin",
+        "substrate": "Nhựa ABS"
+      }
+    }
+  }
+}

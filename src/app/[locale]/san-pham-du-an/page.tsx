@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import { Suspense } from "react";
 import { getLocale, getTranslations } from "next-intl/server";
 import { getProducts } from "@/server/public";
@@ -10,9 +11,10 @@ import ProductsCta from "@/components/san-pham/ProductsCta";
 import Reveal from "@/components/ui/Reveal";
 import ClientMessages from "@/i18n/client-messages";
 
-export async function generateMetadata(): Promise<Metadata> {
-  const t = await getTranslations("Meta");
-  return { title: t("sanPham.title"), description: t("sanPham.description") };
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "Meta" });
+  return pageMetadata({ locale, path: "/san-pham-du-an", title: t("sanPham.title"), description: t("sanPham.description") });
 }
 
 export default async function SanPhamDuAnPage() {

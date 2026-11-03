@@ -26,7 +26,6 @@ export default function ManufacturingCapability() {
                 className="w-full h-full object-cover"
                 src={siteImg("home/ManufacturingCapability#1", "/images/factory/ma-treo-3.jpg")}
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent" />
             </div>
           </div>
 

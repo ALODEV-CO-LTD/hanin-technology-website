@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import { notFound } from "next/navigation";
 import { getLocale, getMessages, getTranslations } from "next-intl/server";
 import { serviceNs } from "@/lib/service-ns";
@@ -21,12 +22,18 @@ type PageParams = { slug: string };
 export async function generateMetadata({
   params,
 }: {
-  params: Promise<PageParams>;
+  params: Promise<PageParams & { locale: string }>;
 }): Promise<Metadata> {
-  const { slug } = await params;
-  const service = getServiceBySlug(slug, await getLocale());
+  const { slug, locale } = await params;
+  const service = getServiceBySlug(slug, locale);
   if (!service) return {};
-  return { title: service.title, description: service.description };
+  return pageMetadata({
+    locale,
+    path: `/dich-vu-gia-cong-ma/${slug}`,
+    title: service.title,
+    description: service.description,
+    image: (service as { image?: string | null }).image,
+  });
 }
 
 export default async function DichVuChiTietPage({

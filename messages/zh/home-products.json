@@ -1,0 +1,37 @@
+{
+  "HomeProducts": {
+    "platingLabel": "镀层",
+    "substrateLabel": "基材",
+    "byDrawing": "按图纸要求",
+    "badges": {
+      "banh-rang-truc-vit-ma-niken-hoa-hoc": {
+        "plating": "镍、锌、锡、黑色磷化、缎面",
+        "substrate": "按图纸要求"
+      },
+      "truc-piston-ty-ben-thuy-luc-o-to": {
+        "plating": "镍铬",
+        "substrate": "ABS塑料"
+      },
+      "thanh-busbar-dong-ma-thiec-dan-dien": {
+        "plating": "镍铬",
+        "substrate": "ABS塑料"
+      },
+      "bu-long-chot-dinh-vi-khoi-be-hoa-chat": {
+        "plating": "铬",
+        "substrate": "按图纸要求"
+      },
+      "ong-lot-truc-ren-co-khi-chiu-mai-mon": {
+        "plating": "缎面镍",
+        "substrate": "ABS、ABS/PC塑料"
+      },
+      "cum-linh-kien-khung-vo-banh-rang-b2b": {
+        "plating": "黑铬",
+        "substrate": "ABS塑料"
+      },
+      "chi-tiet-kim-loai-ma-treo-day-chuyen-tu-dong": {
+        "plating": "缎面铬",
+        "substrate": "ABS塑料"
+      }
+    }
+  }
+}

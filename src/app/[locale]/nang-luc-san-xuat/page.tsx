@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import { getTranslations } from "next-intl/server";
 import CapabilityHero from "@/components/nang-luc/CapabilityHero";
 import FactoryOverview from "@/components/nang-luc/FactoryOverview";
@@ -15,9 +16,10 @@ import NangLucFinalCta from "@/components/nang-luc/NangLucFinalCta";
 import Reveal from "@/components/ui/Reveal";
 import ClientMessages from "@/i18n/client-messages";
 
-export async function generateMetadata(): Promise<Metadata> {
-  const t = await getTranslations("Meta");
-  return { title: t("nangLuc.title"), description: t("nangLuc.description") };
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "Meta" });
+  return pageMetadata({ locale, path: "/nang-luc-san-xuat", title: t("nangLuc.title"), description: t("nangLuc.description") });
 }
 
 export default function NangLucSanXuatPage() {

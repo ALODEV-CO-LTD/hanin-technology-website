@@ -1,0 +1,39 @@
+{
+  "HomeTrust": {
+    "iso": {
+      "title": "Chứng nhận ISO 9001:2015",
+      "scopeNote": "Chứng nhận thuộc Công ty Cổ phần Công nghệ Hanin Việt Nam (Hanin Tech), không phải riêng Công ty Cổ phần Công nghiệp Mạ HANIN.",
+      "rows": {
+        "holder": [
+          "Đơn vị được chứng nhận",
+          "Công ty Cổ phần Công nghệ Hanin Việt Nam"
+        ],
+        "body": [
+          "Tổ chức chứng nhận",
+          "Công ty Cổ phần Chứng nhận Quốc tế (ICB)"
+        ],
+        "no": [
+          "Chứng chỉ số",
+          "250615.QMS.CN25"
+        ],
+        "issued": [
+          "Ngày cấp",
+          "11/08/2025"
+        ],
+        "valid": [
+          "Hiệu lực đến",
+          "10/08/2028"
+        ],
+        "scope": [
+          "Phạm vi",
+          "Sản xuất, gia công, đúc, ép, in, sơn, xử lý bề mặt các sản phẩm từ nhựa"
+        ]
+      }
+    },
+    "clients": {
+      "title": "Khách hàng tiêu biểu",
+      "logoAlt": "Logo {name}",
+      "note": "Danh sách theo Company Profile. Các ô chỉ ghi tên là khách hàng chưa có logo trong hệ thống."
+    }
+  }
+}

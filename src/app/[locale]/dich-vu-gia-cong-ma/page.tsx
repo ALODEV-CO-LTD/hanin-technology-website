@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import { getTranslations } from "next-intl/server";
 import ServiceBanner from "@/components/dich-vu/ServiceBanner";
 import CapacityOverview from "@/components/dich-vu/CapacityOverview";
@@ -9,9 +10,10 @@ import RfqFormCategory from "@/components/dich-vu/RfqFormCategory";
 import Reveal from "@/components/ui/Reveal";
 import ClientMessages from "@/i18n/client-messages";
 
-export async function generateMetadata(): Promise<Metadata> {
-  const t = await getTranslations("Meta");
-  return { title: t("dichVu.title"), description: t("dichVu.description") };
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "Meta" });
+  return pageMetadata({ locale, path: "/dich-vu-gia-cong-ma", title: t("dichVu.title"), description: t("dichVu.description") });
 }
 
 export default function DichVuGiaCongMaPage() {

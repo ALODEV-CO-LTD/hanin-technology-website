@@ -28,11 +28,11 @@ export default function Hero() {
         <HeroImage src={banner.image} alt={banner.alt || t("imageAlt")} />
       </div>
 
-      <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-r from-[#0A1423]/90 via-[#0A1423]/65 to-[#0A1423]/20" />
+      <div aria-hidden="true" className="absolute inset-0 bg-[#0A1423]/60" />
       {/* Lệch lên khoảng 50px so với tâm vùng giữa header và dải số liệu: đáy đệm lớn hơn đỉnh 100px trở lên. */}
       <div className="relative z-10 w-full flex-1 px-margin pt-space-lg pb-space-xl sm:pt-space-md sm:pb-[116px] flex flex-col justify-center">
         <div className="max-w-3xl flex flex-col">
-          <span className="mb-4 inline-flex w-fit items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3 py-1 text-sm font-medium text-amber-400 backdrop-blur-sm">
+          <span className="mb-4 inline-flex w-fit items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3 py-1 text-sm font-medium text-amber-400">
             <Icon name="location_on" className="text-[16px]" />
             {t("badge")}
           </span>

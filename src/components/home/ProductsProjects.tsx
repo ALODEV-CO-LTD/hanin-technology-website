@@ -3,15 +3,21 @@ import { useLocale, useTranslations } from "next-intl";
 import { getProducts } from "@/server/public";
 import Icon from "@/components/ui/Icon";
 import Photo from "@/components/ui/Photo";
+import ProductBadges from "@/components/san-pham/ProductBadges";
+import { withProductBadges } from "@/lib/products-data";
 
 
 export default function ProductsProjects() {
   const t = useTranslations("Home.ProductsProjects");
   const tp = useTranslations("SanPham");
+  const th = useTranslations("HomeProducts");
   const locale = useLocale();
-  const projects = getProducts(locale, tp)
-    .filter((product) => product.showInGrid)
-    .slice(0, 3);
+  const projects = withProductBadges(
+    getProducts(locale, tp)
+      .filter((product) => product.showInGrid)
+      .slice(0, 3),
+    th,
+  );
 
   if (projects.length === 0) return null;
 
@@ -54,6 +60,12 @@ export default function ProductsProjects() {
                 <h3 className="text-headline-sm text-slate-900 font-bold group-hover:text-steel-600 transition-colors">
                   {project.title}
                 </h3>
+                <ProductBadges
+                  plating={project.plating ?? ""}
+                  substrate={project.substrate ?? ""}
+                  platingLabel={th("platingLabel")}
+                  substrateLabel={th("substrateLabel")}
+                />
                 <div className="flex items-center gap-2 pt-space-xs text-slate-600 group-hover:text-steel-600 transition-colors">
                   <span className="text-label-technical uppercase tracking-wider font-semibold">
                     {t("project1.cta")}

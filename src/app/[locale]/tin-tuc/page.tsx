@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import { getLocale, getTranslations } from "next-intl/server";
 import NewsBanner from "@/components/tin-tuc/NewsBanner";
 import NewsIntro from "@/components/tin-tuc/NewsIntro";
@@ -10,9 +11,10 @@ import { getNewsCategories } from "@/lib/news-data";
 import { getPostCounts, getPosts } from "@/server/public";
 import ClientMessages from "@/i18n/client-messages";
 
-export async function generateMetadata(): Promise<Metadata> {
-  const t = await getTranslations("Meta");
-  return { title: t("tinTuc.title"), description: t("tinTuc.description") };
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "Meta" });
+  return pageMetadata({ locale, path: "/tin-tuc", title: t("tinTuc.title"), description: t("tinTuc.description") });
 }
 
 export default async function TinTucPage() {

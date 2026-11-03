@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import { notFound } from "next/navigation";
 import { getLocale, getTranslations } from "next-intl/server";
 import { getProductBySlug } from "@/server/public";
@@ -14,19 +15,22 @@ import Reveal from "@/components/ui/Reveal";
 import ClientMessages from "@/i18n/client-messages";
 
 type PageProps = {
-  params: Promise<{ slug: string }>;
+  params: Promise<{ slug: string; locale: string }>;
 };
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const { slug } = await params;
-  const t = await getTranslations("SanPham");
-  const product = getProductBySlug(slug, await getLocale(), t);
+  const { slug, locale } = await params;
+  const t = await getTranslations({ locale, namespace: "SanPham" });
+  const product = getProductBySlug(slug, locale, t);
   if (!product) return {};
 
-  return {
+  return pageMetadata({
+    locale,
+    path: `/san-pham-du-an/${slug}`,
     title: `${product.title}`,
     description: product.description,
-  };
+    image: (product as { image?: string | null }).image,
+  });
 }
 
 export default async function ProductDetailPage({ params }: PageProps) {

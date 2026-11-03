@@ -28,20 +28,28 @@
     "url": "/images/factory/ma-quay-2.jpg"
   },
   {
-    "key": "home/FactoryShowcase#1",
-    "url": "/images/factory/hd/showcase-kho.jpg"
+    "key": "home/FactoryZones#1",
+    "url": "/images/profile-lib/day-chuyen-ma-tu-dong-cau-truc-cam.jpg"
   },
   {
-    "key": "home/FactoryShowcase#2",
-    "url": "/images/factory/hd/showcase-treo.jpg"
+    "key": "home/FactoryZones#2",
+    "url": "/images/profile-lib/bo-ma-quay-nhin-tu-tren.jpg"
   },
   {
-    "key": "home/FactoryShowcase#3",
-    "url": "/images/factory/hd/showcase-lab.jpg"
+    "key": "home/FactoryZones#3",
+    "url": "/images/profile-lib/nha-xuong-ma-treo-be-ma.jpg"
   },
   {
-    "key": "home/FactoryShowcase#4",
-    "url": "/images/factory/hd/showcase-may.jpg"
+    "key": "home/FactoryZones#4",
+    "url": "/images/profile-lib/hai-may-pvd-phong-sach.jpg"
+  },
+  {
+    "key": "home/FactoryZones#5",
+    "url": "/images/profile-lib/phong-phan-tich-toan-canh.jpg"
+  },
+  {
+    "key": "home/FactoryZones#6",
+    "url": "/images/profile-lib/be-lang-nuoc-thai.jpg"
   },
   {
     "key": "home/ManufacturingCapability#1",
@@ -61,27 +69,27 @@
   },
   {
     "key": "nang-luc/AutomatedVsManual#1",
-    "url": "/images/factory/ma-treo-2.jpg"
+    "url": "/images/profile-lib/day-chuyen-ma-nhin-tu-tren-cao.jpg"
   },
   {
     "key": "nang-luc/AutomatedVsManual#2",
-    "url": "/images/factory/ma-quay-5.jpg"
+    "url": "/images/profile-lib/bo-ma-quay-nhin-tu-tren.jpg"
   },
   {
     "key": "nang-luc/EquipmentGrid#1",
-    "url": "/images/factory/phan-tich-2.jpg"
+    "url": "/images/profile-lib/hai-may-pvd-phong-sach.jpg"
   },
   {
     "key": "nang-luc/EquipmentGrid#2",
-    "url": "/images/factory/ma-quay-7.jpg"
+    "url": "/images/profile-lib/dan-phun-son-tu-dong-bang-tai.jpg"
   },
   {
     "key": "nang-luc/EquipmentGrid#3",
-    "url": "/images/factory/ma-treo-3.jpg"
+    "url": "/images/profile-lib/may-rung-tay-dau-day-chuyen-ma-quay.jpg"
   },
   {
     "key": "nang-luc/EquipmentGrid#4",
-    "url": "/images/factory/ma-treo-4.jpg"
+    "url": "/images/profile-lib/be-nhua-xanh-xu-ly-nuoc-thai.jpg"
   },
   {
     "key": "nang-luc/FactoryGallery#1",
@@ -109,15 +117,15 @@
   },
   {
     "key": "nang-luc/ProductionLines#1",
-    "url": "/images/factory/ma-quay-6.jpg"
+    "url": "/images/profile-lib/bo-ma-quay-ray-dan-ong.jpg"
   },
   {
     "key": "nang-luc/ProductionLines#2",
-    "url": "/images/factory/ma-quay-6.jpg"
+    "url": "/images/profile-lib/gia-treo-chi-tiet-den-khung-xanh.jpg"
   },
   {
     "key": "nang-luc/ProductionLines#3",
-    "url": "/images/factory/ma-treo-3.jpg"
+    "url": "/images/profile-lib/day-chuyen-ma-tu-dong-cau-truc-cam.jpg"
   },
   {
     "key": "nang-luc/TestingAnalysis#1",

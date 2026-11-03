@@ -28,3 +28,8 @@ export function normalizeSocialUrl(key: string, raw: string): string {
   if (/^https?:\/\//i.test(v)) return v;
   return `https://${v.replace(/^\/+/, "")}`;
 }
+
+/** Số tư vấn Zalo / WeChat / KakaoTalk (dữ kiện đã xác nhận với chủ dự án; số hotline lấy từ CMS). */
+export const CONSULT_ZALO_WECHAT = "0978240827";
+export const CONSULT_ZALO_WECHAT_KAKAO = "0945170982";
+export const DEFAULT_HOTLINE = "0964067199";

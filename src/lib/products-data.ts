@@ -32,6 +32,9 @@ export interface Product {
   showInGrid: boolean;
   /** true = card lớn (featured) trong lưới danh mục */
   featured?: boolean;
+  /** Loại lớp mạ và vật liệu nền (từ messages HomeProducts, khoá theo slug) */
+  plating?: string;
+  substrate?: string;
 }
 
 /**
@@ -39,6 +42,17 @@ export interface Product {
  * hoặc `getTranslations("SanPham")`, cả client lẫn server component).
  */
 export type ProductsTranslator = (key: string, values?: Record<string, string | number | Date>) => string;
+
+export type BadgeTranslator = ProductsTranslator & { has: (key: string) => boolean };
+
+/** Gắn nhãn lớp mạ và vật liệu nền theo slug; thiếu dữ liệu thì ghi "theo yêu cầu bản vẽ". */
+export function withProductBadges<T extends Product>(products: T[], t: BadgeTranslator): T[] {
+  return products.map((p) => ({
+    ...p,
+    plating: t.has(`badges.${p.slug}.plating`) ? t(`badges.${p.slug}.plating`) : t("byDrawing"),
+    substrate: t.has(`badges.${p.slug}.substrate`) ? t(`badges.${p.slug}.substrate`) : t("byDrawing"),
+  }));
+}
 
 export function getCategoryTabs(
   t: ProductsTranslator,

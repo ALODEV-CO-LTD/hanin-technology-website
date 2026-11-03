@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import { getTranslations } from "next-intl/server";
 import IntroHero from "@/components/gioi-thieu/IntroHero";
 import CompanyIntroduction from "@/components/gioi-thieu/CompanyIntroduction";
@@ -12,9 +13,10 @@ import ProfileDownloadCta from "@/components/gioi-thieu/ProfileDownloadCta";
 import ContactCta from "@/components/gioi-thieu/ContactCta";
 import Reveal from "@/components/ui/Reveal";
 
-export async function generateMetadata(): Promise<Metadata> {
-  const t = await getTranslations("Meta");
-  return { title: t("gioiThieu.title"), description: t("gioiThieu.description") };
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "Meta" });
+  return pageMetadata({ locale, path: "/gioi-thieu", title: t("gioiThieu.title"), description: t("gioiThieu.description") });
 }
 
 export default function GioiThieuPage() {

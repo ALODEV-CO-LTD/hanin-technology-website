@@ -28,7 +28,7 @@ export default function IntroHero() {
       <HeroImage src={banner.image} alt={banner.alt || t("imageAlt")} />
 
       {/* Content Container */}
-      <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-r from-slate-950/85 via-slate-950/65 to-slate-950/35" />
+      <div aria-hidden="true" className="absolute inset-0 bg-slate-950/60" />
       <div className="relative z-10 w-full flex-1 flex flex-col justify-center px-margin py-space-xl banner-text">
         <PageBreadcrumb
           className="mb-space-sm"

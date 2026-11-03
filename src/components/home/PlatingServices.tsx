@@ -1,14 +1,16 @@
 import { Link } from "@/i18n/navigation";
-import { useLocale, useTranslations } from "next-intl";
-import { getServices } from "@/server/public";
+import { useTranslations } from "next-intl";
 import Icon from "@/components/ui/Icon";
+import ServicePhotoCard from "@/components/ui/ServicePhotoCard";
+
+const PILLARS = [
+  { href: "/dich-vu-gia-cong-ma/ma-crom-cung-cong-nghiep", image: "/images/profile-lib/chi-tiet-op-mat-na-ma-crom.jpg" },
+  { href: "/dich-vu-gia-cong-ma/ma-niken-hoa-hoc-enp", image: "/images/profile-lib/tam-chi-tiet-may-niken-hoa.jpg" },
+  { href: "/dich-vu-gia-cong-ma/day-chuyen-son-ma-ket-hop", image: "/images/profile-lib/day-chuyen-phun-son-tu-dong.jpg" },
+] as const;
 
 export default function PlatingServices() {
-  const t = useTranslations("Home.PlatingServices");
-  const locale = useLocale();
-  const services = getServices(locale, 4);
-
-  if (services.length === 0) return null;
+  const t = useTranslations("HomeServices");
 
   return (
     <section className="w-full py-space-xl bg-white border-y border-slate-200">
@@ -28,28 +30,19 @@ export default function PlatingServices() {
           </Link>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
-          {services.map((service, i) => (
-            <Link
-              key={service.slug}
-              href={`/dich-vu-gia-cong-ma/${service.slug}`}
-              className="relative overflow-hidden flex flex-col justify-between p-space-lg pt-[calc(var(--spacing-space-lg)+4px)] bg-white border border-slate-200 rounded shadow-md hover:shadow-xl hover:-translate-y-1 focus-visible:ring-2 focus-visible:ring-steel-600 transition-all duration-200 group before:absolute before:inset-x-0 before:top-0 before:h-1 before:[background:var(--color-steel-600)] before:content-['']"
-            >
-              <div className="flex flex-col gap-space-md">
-                <span className="text-headline-lg text-steel-600 font-bold">{String(i + 1).padStart(2, "0")}</span>
-                <div className="flex flex-col gap-2">
-                  <h3 className="text-headline-sm text-slate-900 font-bold group-hover:text-steel-600 transition-colors">
-                    {service.title}
-                  </h3>
-                </div>
-              </div>
-              <div className="pt-space-lg mt-space-md border-t border-slate-200 flex items-center justify-between text-steel-600 transition-colors">
-                <span className="text-xs uppercase tracking-wider font-semibold">
-                  {t("detailLabel")}
-                </span>
-                <Icon name="east" className="text-[20px] group-hover:translate-x-1 transition-transform" />
-              </div>
-            </Link>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+          {PILLARS.map((p, i) => (
+            <ServicePhotoCard
+              key={p.href}
+              href={p.href}
+              image={p.image}
+              imageAlt={t(`pillars.${i}.imageAlt`)}
+              title={t(`pillars.${i}.title`)}
+              description={t(`pillars.${i}.desc`)}
+              chips={t.raw(`pillars.${i}.chips`) as string[]}
+              index={i}
+              footer={t("detailLabel")}
+            />
           ))}
         </div>
       </div>

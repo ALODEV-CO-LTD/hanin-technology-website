@@ -21,7 +21,6 @@ export default function CompanyJourney() {
         <div className="relative pt-6">
           {/* Connecting Technical Ruler Line */}
           <div className="hidden lg:block absolute top-10 left-6 right-6 h-px bg-slate-200">
-            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-steel-600/30 to-transparent" />
           </div>
 
           {/* 5 Milestone Cards */}

@@ -110,7 +110,7 @@ export default function Footer() {
                 </span>
                 <p className="leading-tight break-all">
                   <span className="text-slate-900 font-bold mr-1">{t("emailLabel")}</span>
-                  {[...new Set([salesEmail, engineeringEmail])].map((email, i) => (
+                  {[...new Set([salesEmail, engineeringEmail].filter(Boolean))].map((email, i) => (
                     <span key={email}>
                       {i > 0 && " / "}
                       <a href={`mailto:${email}`} className="hover:text-steel-600 hover:underline underline-offset-2">{email}</a>

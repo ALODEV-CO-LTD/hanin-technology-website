@@ -1,0 +1,34 @@
+{
+  "HomeContact": {
+    "Direct": {
+      "heading": "直接联系",
+      "addressLabel": "工厂地址",
+      "address": "河内市光明工业区 49G 地块",
+      "taxLabel": "税号",
+      "hotlineLabel": "热线",
+      "consultLabel": "Zalo / 微信 / KakaoTalk 咨询",
+      "consultA": "Zalo / 微信",
+      "consultB": "Zalo / 微信 / KakaoTalk",
+      "emailLabel": "电子邮件",
+      "distanceHeading": "距工厂距离",
+      "airport": "内排机场",
+      "center": "河内市中心",
+      "haiphong": "海防"
+    },
+    "Social": {
+      "aria": "快速联系渠道",
+      "hotline": "热线",
+      "wechat": "微信",
+      "kakao": "KakaoTalk",
+      "close": "关闭窗口",
+      "idLabel": "账号 / 电话号码",
+      "copy": "复制",
+      "copied": "已复制",
+      "qrAlt": "HANIN 的{name}二维码",
+      "qrHint": "请用{name}扫描二维码添加好友。",
+      "noQrHint": "暂无二维码。请在{name}中使用下方账号 / 电话号码搜索并添加好友。",
+      "wechatHow": "在微信中：通讯录 > 添加朋友，输入 {id}，然后发送好友申请。",
+      "kakaoHow": "在 KakaoTalk 中：添加好友，输入 {id}，然后发送好友申请。"
+    }
+  }
+}

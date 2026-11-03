@@ -28,7 +28,7 @@ export const PUT = route(async (request) => {
       ? value === "" || /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)
       : def.key === "mapEmbedUrl"
         ? isSafeMapEmbed(value)
-        : def.key === "profileUrl"
+        : def.key === "profileUrl" || def.key === "wechatQr" || def.key === "kakaoQr"
           ? isSafeLink(value) || /^\/uploads\/[\w./-]+$/.test(value)
           : isSafeLink(value);
     if (!valid) throw new HttpError(422, `${def.label}: giá trị không hợp lệ`);

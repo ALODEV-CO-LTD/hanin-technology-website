@@ -19,6 +19,8 @@ export const SETTING_DEFS: SettingDef[] = [
   { key: "engineeringEmail", label: "Email kỹ thuật", group: "Thông tin liên hệ chung", kind: "email", defaultValue: "huyvinh82@gmail.com" },
   { key: "hrEmail", label: "Email tuyển dụng", group: "Thông tin liên hệ chung", kind: "email", defaultValue: "huyvinh82@gmail.com" },
   { key: "zaloUrl", label: "Zalo (link chat)", group: "Mạng xã hội & liên kết", defaultValue: "https://zalo.me/0978240827", help: "Ví dụ https://zalo.me/0988123456" },
+  { key: "wechatQr", label: "Ảnh mã QR WeChat", group: "Mạng xã hội & liên kết", help: "Tải ảnh QR lên Thư viện ảnh rồi dán đường dẫn /uploads/... vào đây. Để trống thì cửa sổ WeChat trên website chỉ hiện số điện thoại kèm nút sao chép." },
+  { key: "kakaoQr", label: "Ảnh mã QR KakaoTalk", group: "Mạng xã hội & liên kết", help: "Tải ảnh QR lên Thư viện ảnh rồi dán đường dẫn /uploads/... vào đây. Để trống thì cửa sổ KakaoTalk trên website chỉ hiện số điện thoại kèm nút sao chép." },
   { key: "facebookUrl", label: "Facebook", group: "Mạng xã hội & liên kết" },
   { key: "youtubeUrl", label: "YouTube", group: "Mạng xã hội & liên kết" },
   { key: "linkedinUrl", label: "LinkedIn", group: "Mạng xã hội & liên kết" },

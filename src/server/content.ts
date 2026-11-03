@@ -16,6 +16,12 @@ export const NAMESPACE_FILES = [
   "tuyen-dung",
   "phap-ly",
   "quy-trinh",
+  "home-about",
+  "home-services",
+  "home-products",
+  "home-zones",
+  "home-trust",
+  "home-contact",
 ];
 
 /**

@@ -10,16 +10,18 @@ import QualityCertification from "@/components/home/QualityCertification";
 import NewsUpdates from "@/components/home/NewsUpdates";
 import FinalCta from "@/components/home/FinalCta";
 import Reveal from "@/components/ui/Reveal";
+import { pageMetadata } from "@/lib/seo";
 import ClientMessages from "@/i18n/client-messages";
 
-export async function generateMetadata(): Promise<Metadata> {
-  const t = await getTranslations("Meta");
-  return { title: t("home.title"), description: t("home.description") };
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "Meta" });
+  return pageMetadata({ locale, path: "/", title: t("home.title"), description: t("home.description") });
 }
 
 export default function Home() {
   return (
-    <ClientMessages keys={["Home.FactoryShowcase"]}>
+    <ClientMessages keys={["AttachField", "DichVu.RfqFormCategory"]}>
     <div className="flex flex-col w-full text-on-surface">
       <Hero />
       <Reveal direction="right"><AboutHanin /></Reveal>

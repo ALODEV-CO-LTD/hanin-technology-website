@@ -7,7 +7,7 @@
 const fs = require("fs");
 const path = require("path");
 const ROOT = path.join(__dirname, "../messages");
-const ALL = ["common", "home", "gioi-thieu", "dich-vu", "san-pham", "nang-luc", "tin-tuc", "lien-he", "tuyen-dung", "phap-ly", "quy-trinh"];
+const ALL = ["common", "home", "gioi-thieu", "dich-vu", "san-pham", "nang-luc", "tin-tuc", "lien-he", "tuyen-dung", "phap-ly", "quy-trinh", "home-about", "home-services", "home-products", "home-zones", "home-trust", "home-contact"];
 const files = process.argv.slice(2).length ? process.argv.slice(2) : ALL;
 
 const flat = (o, p = "", out = {}) => { for (const [k, v] of Object.entries(o)) { if (v && typeof v === "object") flat(v, p + k + ".", out); else out[p + k] = v; } return out; };

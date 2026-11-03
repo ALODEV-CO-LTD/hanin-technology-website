@@ -1,0 +1,59 @@
+{
+  "HomeAbout": {
+    "eyebrow": "关于 HANIN 与 Hanin Tech 体系",
+    "title": "HANIN 电镀工厂",
+    "intro1": "HANIN 从事 ABS 塑料及金属基材的电镀处理。工厂设有 PVD 真空镀，并承接塑料、金属产品的喷漆与印刷。",
+    "intro2": "工厂位于河内光明工业区 49G 号地块，占地 2,230 平方米，员工 70 人。HANIN 隶属于 Hanin Tech 体系。",
+    "imageAlt": "HANIN 电镀工厂内的滚镀生产线，位于光明工业区 49G 号地块",
+    "statsLabel": "主要数据",
+    "stats": {
+      "0": {
+        "value": "350",
+        "label": "Hanin Tech 体系员工总数"
+      },
+      "1": {
+        "value": "70",
+        "label": "HANIN 电镀工厂员工"
+      },
+      "2": {
+        "value": "25",
+        "label": "注塑机，75–1,000 吨（Hanin Tech 体系）"
+      },
+      "3": {
+        "value": "2,230 m²",
+        "label": "电镀工厂占地面积"
+      }
+    },
+    "timelineTitle": "Hanin Tech 体系发展历程",
+    "timelineIntro": "Hanin Tech 是母公司，负责投资并发展体系内各工厂。Hanin Tech 总部位于光明工业区 660 号地块；HANIN 电镀工厂位于 49G 号地块。",
+    "thisFactory": "本工厂",
+    "milestones": {
+      "0": {
+        "year": "2018",
+        "name": "成立 Hanin Tech",
+        "desc": "体系母公司。"
+      },
+      "1": {
+        "year": "2021",
+        "name": "IPM 模具工厂",
+        "desc": "冲压模、塑料模、铝压铸模。"
+      },
+      "2": {
+        "year": "2023",
+        "name": "Hanin Plating 电镀工厂",
+        "desc": "塑料与金属电镀、PVD、喷漆与印刷。"
+      },
+      "3": {
+        "year": "2025",
+        "name": "第 4 工厂 – Press",
+        "desc": "金属冲压。"
+      },
+      "4": {
+        "year": "2026",
+        "name": "第 5 工厂 – Showa",
+        "desc": "注塑与组装。"
+      }
+    },
+    "ctaLink": "了解更多关于 HANIN"
+  }
+}

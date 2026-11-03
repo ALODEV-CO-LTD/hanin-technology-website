@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import { getTranslations } from "next-intl/server";
 import LegalPage from "@/components/legal/LegalPage";
 
-export async function generateMetadata(): Promise<Metadata> {
-  const t = await getTranslations("Meta");
-  return { title: t("dieuKhoan.title"), description: t("dieuKhoan.description") };
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "Meta" });
+  return pageMetadata({ locale, path: "/dieu-khoan-dich-vu", title: t("dieuKhoan.title"), description: t("dieuKhoan.description") });
 }
 
 export default async function TermsPage() {

@@ -1,0 +1,34 @@
+{
+  "HomeContact": {
+    "Direct": {
+      "heading": "Liên hệ trực tiếp",
+      "addressLabel": "Địa chỉ nhà máy",
+      "address": "Lô 49G, KCN Quang Minh, TP Hà Nội",
+      "taxLabel": "Mã số thuế",
+      "hotlineLabel": "Hotline",
+      "consultLabel": "Tư vấn Zalo / WeChat / KakaoTalk",
+      "consultA": "Zalo / WeChat",
+      "consultB": "Zalo / WeChat / KakaoTalk",
+      "emailLabel": "Email",
+      "distanceHeading": "Khoảng cách từ nhà máy",
+      "airport": "Sân bay Nội Bài",
+      "center": "Trung tâm Hà Nội",
+      "haiphong": "Hải Phòng"
+    },
+    "Social": {
+      "aria": "Kênh liên hệ nhanh",
+      "hotline": "Hotline",
+      "wechat": "WeChat",
+      "kakao": "KakaoTalk",
+      "close": "Đóng cửa sổ",
+      "idLabel": "ID / số điện thoại",
+      "copy": "Sao chép",
+      "copied": "Đã sao chép",
+      "qrAlt": "Mã QR {name} của HANIN",
+      "qrHint": "Quét mã QR bằng ứng dụng {name} để kết bạn.",
+      "noQrHint": "Chưa có mã QR. Dùng ID / số điện thoại dưới đây để tìm và kết bạn trong ứng dụng {name}.",
+      "wechatHow": "Trong WeChat: Contacts > Add Contacts, nhập {id}, rồi gửi lời mời kết bạn.",
+      "kakaoHow": "Trong KakaoTalk: Thêm bạn, nhập {id}, rồi gửi lời mời kết bạn."
+    }
+  }
+}

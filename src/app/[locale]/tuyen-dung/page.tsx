@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import { getLocale, getTranslations } from "next-intl/server";
 import PageHero from "@/components/tuyen-dung/PageHero";
 import WhyHanin from "@/components/tuyen-dung/WhyHanin";
@@ -9,9 +10,10 @@ import Reveal from "@/components/ui/Reveal";
 import { getJobs } from "@/server/public";
 import ClientMessages from "@/i18n/client-messages";
 
-export async function generateMetadata(): Promise<Metadata> {
-  const t = await getTranslations("Meta");
-  return { title: t("tuyenDung.title"), description: t("tuyenDung.description") };
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "Meta" });
+  return pageMetadata({ locale, path: "/tuyen-dung", title: t("tuyenDung.title"), description: t("tuyenDung.description") });
 }
 
 export default async function TuyenDungPage() {

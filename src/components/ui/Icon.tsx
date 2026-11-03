@@ -103,6 +103,15 @@ const Instagram = createLucideIcon("instagram", [
   ["line", { x1: "17.5", x2: "17.51", y1: "6.5", y2: "6.5", key: "l" }],
 ]);
 
+/* WeChat: hai bong bóng thoại chồng nhau; KakaoTalk: bong bóng thoại tròn có đuôi. Vẽ tay cùng bộ nét. */
+const Wechat = createLucideIcon("wechat", [
+  ["path", { d: "M9.5 3C5.4 3 2 5.7 2 9.2c0 2 1.1 3.7 2.8 4.9L4 16.5l2.8-1.4c.9.3 1.8.4 2.7.4", key: "a" }],
+  ["path", { d: "M15.5 8.5c-3.6 0-6.5 2.3-6.5 5.2s2.9 5.3 6.5 5.3c.8 0 1.6-.1 2.3-.4L20.5 20l-.7-2.4c1.3-1 2.2-2.4 2.2-4 0-2.9-2.9-5.1-6.5-5.1z", key: "b" }],
+]);
+const Kakao = createLucideIcon("kakao", [
+  ["path", { d: "M12 3C6.5 3 2 6.4 2 10.6c0 2.7 1.8 5.1 4.5 6.4L5.6 21l4.4-2.7c.7.1 1.3.2 2 .2 5.5 0 10-3.4 10-7.6S17.5 3 12 3z", key: "k" }],
+]);
+
 /**
  * Bộ icon duy nhất của website (Lucide, nét 1.75, bo tròn).
  * Giữ nguyên tên Material cũ làm khoá để dữ liệu CMS/seed đã lưu `icon: "science"`… vẫn chạy.
@@ -195,6 +204,8 @@ const MAP: Record<string, LucideIcon> = {
   zoom_in: ZoomIn,
   // Mạng xã hội / kênh liên hệ (khoá = tên kênh trong CMS)
   zalo: MessageCircle,
+  wechat: Wechat,
+  kakao: Kakao,
   facebook: Facebook,
   youtube: Youtube,
   linkedin: Linkedin,

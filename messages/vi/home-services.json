@@ -1,0 +1,46 @@
+{
+  "HomeServices": {
+    "title": "Dịch vụ gia công mạ",
+    "ctaAll": "XEM TẤT CẢ DỊCH VỤ",
+    "detailLabel": "CHI TIẾT KỸ THUẬT",
+    "pillars": [
+      {
+        "title": "Mạ trên nền nhựa ABS và ABS/PC",
+        "desc": "Xử lý bề mặt chi tiết nhựa ABS và ABS/PC bằng mạ treo; có thể tạo xước Hair Line trên lớp niken.",
+        "imageAlt": "Chi tiết ốp mặt nạ nhựa ABS sau mạ niken crom",
+        "chips": [
+          "Niken Crom 3+",
+          "Niken Crom 6+",
+          "Niken Satin",
+          "Niken Crom đen",
+          "Xước Hair Line"
+        ]
+      },
+      {
+        "title": "Mạ trên nền kim loại",
+        "desc": "Mạ trên nền sắt, đồng, thép, nhôm và các kim loại khác.",
+        "imageAlt": "Chi tiết kim loại sau mạ niken hóa học",
+        "chips": [
+          "Niken điện phân",
+          "Niken hóa",
+          "Niken đen",
+          "Mạ kẽm",
+          "Mạ đồng",
+          "Mạ thiếc",
+          "Phốt phát mangan đen"
+        ]
+      },
+      {
+        "title": "Sơn tự động, mạ chân không PVD, in và laser",
+        "desc": "3 phòng phun sơn 6 súng, 1 dây chuyền phun sơn tự động, 20 buồng ionizer; 2 máy PVD và 2 dây chuyền PVD.",
+        "imageAlt": "Dây chuyền phun sơn tự động trên băng tải",
+        "chips": [
+          "Sơn spray",
+          "Mạ chân không PVD",
+          "In",
+          "Laser cutting"
+        ]
+      }
+    ]
+  }
+}

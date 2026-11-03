@@ -12,7 +12,7 @@ import type { ReactNode } from "react";
  */
 type Messages = Record<string, unknown>;
 
-export const LAYOUT_KEYS = ["Nav", "LanguageSwitcher"];
+export const LAYOUT_KEYS = ["Nav", "LanguageSwitcher", "HomeContact.Social"];
 
 /** Lấy các khoá dạng "Ns" hoặc "Ns.Sub" (không có thì bỏ qua). */
 export function pickMessages(messages: Messages, keys: string[]): Messages {

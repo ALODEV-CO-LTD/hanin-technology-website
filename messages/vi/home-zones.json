@@ -1,0 +1,43 @@
+{
+  "HomeZones": {
+    "title": "Nhà xưởng và thiết bị",
+    "zones": {
+      "0": {
+        "title": "Dây chuyền mạ tự động",
+        "capacity": "30.000–50.000 sản phẩm/ngày",
+        "detail": "JIG móc hàng, cẩu trục.",
+        "alt": "Dây chuyền mạ tự động với cẩu trục và JIG móc hàng"
+      },
+      "1": {
+        "title": "Dây chuyền mạ quay",
+        "capacity": "3.000–5.000 kg/ngày",
+        "detail": "Tương đương 10.000–30.000 sản phẩm/ngày.",
+        "alt": "Bể mạ quay nhìn từ phía trên"
+      },
+      "2": {
+        "title": "Dây chuyền mạ kim loại bán tự động (mạ treo)",
+        "capacity": "10.000–20.000 pcs/ngày",
+        "detail": "Mạ treo trên giá treo chi tiết.",
+        "alt": "Nhà xưởng dây chuyền mạ treo bán tự động"
+      },
+      "3": {
+        "title": "Sơn tự động và mạ chân không PVD",
+        "capacity": "2 máy PVD, 2 dây chuyền PVD",
+        "detail": "1 dây chuyền phun sơn tự động, 20 buồng ionizer.",
+        "alt": "Hai máy PVD buồng chân không trong phòng sạch"
+      },
+      "4": {
+        "title": "Phòng phân tích và đo kiểm",
+        "capacity": "APC-100, NSS, CASS, Hull cell",
+        "detail": "Máy đo độ dày APC-100, máy phun muối NSS, máy phun muối CASS, máy thử Hull cell, hóa chất phân tích. Bộ 10 thiết bị test độ tin cậy sau sơn: RCA Tester, Hot Water, High Temp & Humidity, UV Measure, Alcohol/Eraser Rubbing, Pencil Rubbing, Dropping Tester, Thickness Measure, Polisher, Bending Tester.",
+        "alt": "Toàn cảnh phòng phân tích với bàn thí nghiệm và hóa chất phân tích"
+      },
+      "5": {
+        "title": "Hệ thống xử lý nước thải",
+        "capacity": "130 m³/ngày đêm",
+        "detail": "Bể lắng, máy ép bùn. Cam kết tuân thủ quy định.",
+        "alt": "Bể lắng và đường ống của hệ thống xử lý nước thải"
+      }
+    }
+  }
+}
