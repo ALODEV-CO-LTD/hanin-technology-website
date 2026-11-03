@@ -50,7 +50,7 @@
       },
       "imageAlt": "Kỹ sư giám sát quy trình mạ kim loại tại HANIN",
       "badgeTag": "Kiểm soát chất lượng",
-      "badgeTitle": "Kiểm tra theo từng công đoạn",
+      "badgeTitle": "Đo độ dày và thử phun muối",
       "badgeSubtitle": "XỬ LÝ BỀ MẶT NHỰA VÀ KIM LOẠI",
       "title": "Về HANIN",
       "paragraph1": "HANIN chuyên xử lý mạ trên nền nhựa ABS và kim loại, đồng thời nhận sơn và in trên sản phẩm nhựa, kim loại.",
@@ -211,8 +211,8 @@
       "articles": {
         "0": {
           "tag": "Tin doanh nghiệp",
-          "title": "Mở rộng năng lực mạ nhựa, mạ kim loại và PVD",
-          "excerpt": "Dây chuyền mạ, máy PVD và buồng phun sơn đáp ứng yêu cầu của khách hàng doanh nghiệp..."
+          "title": "Năng lực mạ nhựa, mạ kim loại và PVD",
+          "excerpt": "Dây chuyền mạ, máy PVD và buồng phun sơn tại nhà máy KCN Quang Minh..."
         },
         "1": {
           "tag": "Hoạt động sản xuất",
@@ -233,8 +233,8 @@
       "cta": "XEM VỊ TRÍ TUYỂN DỤNG"
     },
     "FinalCta": {
-      "title": "BẠN CẦN GIA CÔNG MẠ?",
-      "description": "Gửi yêu cầu kèm bản vẽ hoặc thông số kỹ thuật, bộ phận kỹ thuật sẽ liên hệ lại.",
+      "title": "YÊU CẦU BÁO GIÁ GIA CÔNG MẠ",
+      "description": "Gửi bản vẽ hoặc mẫu, vật liệu nền, lớp mạ yêu cầu và số lượng. Bộ phận kỹ thuật sẽ phản hồi qua email hoặc điện thoại.",
       "cta": "GỬI YÊU CẦU BÁO GIÁ",
       "contactTitle": "LIÊN HỆ TRỰC TIẾP",
       "hotlineLabel": "HOTLINE",

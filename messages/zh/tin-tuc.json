@@ -20,19 +20,19 @@
       "empty": "未找到相关文章。"
     },
     "NewsInquiryCta": {
-      "titlePrefix": "需要咨询",
-      "titleHighlight": "产品或项目？",
-      "description": "HANIN 工程师解答电镀及表面处理技术问题，为您的产品推荐合适方案。",
+      "titlePrefix": "技术沟通：",
+      "titleHighlight": "待电镀产品",
+      "description": "HANIN工程师根据各产品的基材和要求，解答电镀与表面处理方面的技术问题。",
       "hotlineLabel": "热线：",
       "emailLabel": "邮箱：",
-      "ctaContact": "联系 HANIN",
-      "ctaQuote": "获取项目报价"
+      "ctaContact": "联系",
+      "ctaQuote": "发送报价申请"
     },
     "NewsIntro": {
       "titlePrefix": "新闻与",
       "titleHighlight": "技术简报",
       "titleSuffix": "资讯",
-      "description": "公司动态、表面处理技术、检测标准及 HANIN 工厂的技术文章。",
+      "description": "公司动态、表面处理技术、镀层检测及HANIN工厂的技术文章。",
       "archiveLabel": "存档",
       "archiveValue": "{count} 篇文章",
       "auditLabel": "分类",
@@ -57,7 +57,7 @@
       "date": "2026年4月18日",
       "readTime": "阅读时长 5 分钟",
       "title": "ABS塑料镍铬电镀：从前处理到成品的各工序",
-      "excerpt": "ABS塑料零件依次经过除油、粗化、钯活化，再镀镍铬，获得光亮且持久的表面。",
+      "excerpt": "ABS塑胶件依次经过除油、粗化、钯活化，然后电镀镍铬。",
       "metrics": {
         "0": {
           "label": "基材"
@@ -95,8 +95,8 @@
       "2": {
         "categoryLabel": "企业动态",
         "readTime": "阅读时长 3 分钟",
-        "title": "客户参观 HANIN 生产基地",
-        "excerpt": "客户参观电镀与质检区，交流机械零件和汽车零部件的技术要求。",
+        "title": "工厂电镀区与质量检测区",
+        "excerpt": "介绍HANIN生产基地的电镀区、分析室和成品检验区。",
         "author": "业务部",
         "imageAlt": "Hanin Technology 越南总部外观"
       },
@@ -104,7 +104,7 @@
         "categoryLabel": "技术",
         "readTime": "阅读时长 7 分钟",
         "title": "装饰零件的缎面与黑铬电镀",
-        "excerpt": "缎面镍呈现哑光细腻表面，黑色镍铬呈现深色外观，镍铬表面还可做拉丝(Hair Line)处理。",
+        "excerpt": "缎面镍形成哑光表面，镍黑铬形成深色表面；镍铬层上可做发丝纹（Hair Line）。",
         "author": "技术部",
         "imageAlt": "缎面与黑铬电镀的装饰零件"
       },
@@ -113,16 +113,16 @@
         "readTime": "阅读时长 5 分钟",
         "title": "锌基材镀镍工艺流程",
         "excerpt": "从除油、硫酸处理、镀铜、光亮镍，到烘干、测厚和盐雾试验，最后包装。",
-        "author": "热处理部",
+        "author": "生产部门",
         "imageAlt": "身穿防护服的技术人员检查悬挂在药液槽上方的电镀零件"
       },
       "5": {
         "categoryLabel": "招聘",
         "readTime": "阅读时长 3 分钟",
-        "title": "HANIN 2026 年第二季度电镀与冶金技术工程师培训计划",
-        "excerpt": "学员在车间技术人员指导下了解电镀工艺、质检室及检测标准。",
+        "title": "新员工电镀技术培训",
+        "excerpt": "车间培训内容：电镀工艺、镀层测厚及QC室检验。",
         "author": "人事部",
-        "imageAlt": "HANIN 工厂电镀与冶金技术工程师培训计划"
+        "imageAlt": "HANIN工厂电镀技术培训"
       }
     },
     "PostDetail": {

@@ -50,7 +50,7 @@
       },
       "imageAlt": "HANIN 工程师监控金属电镀工艺",
       "badgeTag": "质量控制",
-      "badgeTitle": "每道工序均有检验",
+      "badgeTitle": "测厚与盐雾试验",
       "badgeSubtitle": "塑料与金属表面处理",
       "title": "关于 HANIN",
       "paragraph1": "HANIN 专业从事 ABS 塑料及金属基材的电镀处理，同时承接塑料、金属产品的喷漆与印刷。",
@@ -211,8 +211,8 @@
       "articles": {
         "0": {
           "tag": "企业新闻",
-          "title": "扩大塑料电镀、金属电镀和 PVD 能力",
-          "excerpt": "电镀线、PVD 设备和喷漆房满足企业客户的要求..."
+          "title": "塑胶电镀、金属电镀与PVD能力",
+          "excerpt": "光明工业区工厂的电镀线、PVD设备和喷涂房……"
         },
         "1": {
           "tag": "生产动态",
@@ -233,8 +233,8 @@
       "cta": "查看招聘职位"
     },
     "FinalCta": {
-      "title": "有电镀加工需求？",
-      "description": "请提交需求并附图纸或技术参数，技术部门会与您联系。",
+      "title": "电镀加工报价申请",
+      "description": "请提供图纸或样品、基材、所需镀层及数量。技术部门将通过邮件或电话回复。",
       "cta": "提交报价需求",
       "contactTitle": "直接联系",
       "hotlineLabel": "热线",

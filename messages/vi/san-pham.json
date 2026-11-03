@@ -6,7 +6,7 @@
       "breadcrumbCurrent": "Sản phẩm & Dự án",
       "breadcrumbTag": "Danh mục sản phẩm đã mạ",
       "title": "Sản phẩm & Dự án",
-      "description": "Sản phẩm HANIN đã mạ cho ô tô, smart home, thiết bị gia dụng, thiết bị vệ sinh và nhà bếp, cùng các chi tiết kim loại mạ niken, kẽm, thiếc."
+      "description": "Chi tiết đã mạ tại HANIN theo ngành ứng dụng: ô tô, smart home, thiết bị gia dụng, thiết bị vệ sinh và nhà bếp, ngũ kim. Nền vật liệu gồm nhựa ABS, ABS/PC và kim loại; lớp mạ gồm niken-crom, niken satin, niken, kẽm, thiếc, phốt phát đen."
     },
     "FeaturedProjectSpotlight": {
       "heading": "Dự án tiêu biểu",
@@ -20,7 +20,7 @@
     },
     "ProductCatalog": {
       "heading": "Sản phẩm đã mạ",
-      "subheading": "Chọn sản phẩm để xem lớp mạ và quy trình áp dụng.",
+      "subheading": "Chọn sản phẩm để xem nền vật liệu, lớp mạ và quy trình áp dụng.",
       "lotNumber": "Mã sản phẩm",
       "ctaViewDetail": "XEM CHI TIẾT SẢN PHẨM",
       "viewDetailAriaLabel": "Xem chi tiết",
@@ -39,7 +39,7 @@
       "closeAriaLabel": "Đóng"
     },
     "ProductHero": {
-      "ctaRequestQuote": "LIÊN HỆ BÁO GIÁ DỰ ÁN",
+      "ctaRequestQuote": "GỬI YÊU CẦU BÁO GIÁ",
       "ctaDownloadSpecSheet": "GỬI MẪU HOẶC BẢN VẼ",
       "materialLabel": "Nền vật liệu:",
       "materialValue": "Nhựa ABS, ABS/PC hoặc kim loại"
@@ -50,41 +50,41 @@
     },
     "ProductProcessTimeline": {
       "title": "Quy trình thực hiện",
-      "description": "Từ nhận hàng đến kiểm tra trước khi giao."
+      "description": "Từ nhập hàng đến kiểm tra thành phẩm."
     },
     "ProductQuoteCta": {
-      "title": "Sản phẩm của bạn cần mạ tương tự?",
-      "descriptionPrefix": "Gửi mẫu, ảnh sản phẩm hoặc bản vẽ kèm yêu cầu bề mặt. HANIN trao đổi về phương án mạ phù hợp và",
-      "descriptionHighlight": "gửi báo giá chi tiết",
+      "title": "Thông tin cần gửi khi yêu cầu mạ",
+      "descriptionPrefix": "Gửi mẫu hoặc bản vẽ, vật liệu nền, lớp mạ và độ dày yêu cầu, yêu cầu thử nghiệm, số lượng và tiến độ. HANIN sẽ xác định phương án mạ và",
+      "descriptionHighlight": "gửi báo giá",
       "ctaSendQuote": "GỬI YÊU CẦU BÁO GIÁ",
       "hotlineLabel": "Hotline:",
       "emailLabel": "Email nhận bản vẽ:"
     },
     "ProductsCta": {
-      "title": "Bạn có sản phẩm cần mạ?",
-      "description": "Gửi mẫu, ảnh hoặc bản vẽ, hoặc trao đổi trực tiếp với HANIN để nhận báo giá và phương án mạ phù hợp.",
-      "cta": "NHẬN BÁO GIÁ",
+      "title": "Gửi yêu cầu mạ",
+      "description": "Gửi mẫu, ảnh hoặc bản vẽ kèm vật liệu nền, lớp mạ yêu cầu và số lượng để nhận báo giá.",
+      "cta": "GỬI YÊU CẦU BÁO GIÁ",
       "emailLabel": "Email:",
       "hotlineLabel": "Hotline:"
     },
     "RelatedProjects": {
-      "title": "Dự án và sản phẩm khác",
+      "title": "Sản phẩm khác",
       "description": "Một số sản phẩm khác đã mạ tại HANIN.",
       "lot": "MÃ",
       "ctaViewDetail": "XEM CHI TIẾT DỰ ÁN"
     },
     "RelatedServices": {
       "title": "Dịch vụ mạ liên quan",
-      "description": "Các phương pháp xử lý bề mặt HANIN có thể áp dụng cho nhóm sản phẩm này.",
+      "description": "Các công nghệ xử lý bề mặt áp dụng cho nhóm sản phẩm này.",
       "ctaViewAll": "XEM TẤT CẢ DỊCH VỤ MẠ"
     },
     "SpecTrustNote": {
       "title": "Lưu ý về thông tin sản phẩm",
-      "description": "Nội dung trên trang chỉ giới thiệu chung theo nhóm sản phẩm; yêu cầu áp dụng cho từng đơn hàng được thống nhất theo mẫu hoặc bản vẽ của khách hàng."
+      "description": "Nội dung trang nêu thông tin theo nhóm sản phẩm. Lớp mạ, độ dày, độ bóng và yêu cầu thử nghiệm cho từng đơn hàng được xác định theo mẫu hoặc bản vẽ của khách hàng."
     },
     "categoryTabs": {
       "all": "Tất cả sản phẩm",
-      "coKhiChinhXac": "Chi tiết kim loại mạ",
+      "coKhiChinhXac": "Ngũ kim và chi tiết kim loại",
       "phuTungOToXeMay": "Phụ tùng ô tô",
       "dauCosseThietBiDien": "Thiết bị gia dụng và điện tử",
       "anodizing": "Thiết bị vệ sinh và nhà bếp"
@@ -93,33 +93,33 @@
       "phuTungOTo": {
         "title": "Phụ tùng ô tô: logo, nút khởi động, viền khung đèn, nẹp chữ",
         "category": "Phụ tùng ô tô",
-        "description": "Logo VinFast, Infiniti, Nissan, nút khởi động xe, viền khung đèn và nẹp chữ, mạ niken-crom trên nhựa ABS.",
+        "description": "Logo VinFast, Infiniti, Nissan, nút khởi động Engine Start/Stop, viền khung đèn, ốp mặt nạ xe máy, nẹp chữ và chữ nổi VinFast. Nền nhựa ABS, lớp mạ niken-crom.",
         "imageAlt": "Logo, nút khởi động và viền khung đèn ô tô sau khi mạ",
         "imageBadge": "Phụ tùng ô tô",
         "chips": {
           "coating": {
             "label": "Lớp mạ",
-            "value": "Niken-crom trên nhựa ABS"
+            "value": "Niken-crom trên nhựa ABS; niken crom đen"
           }
         }
       },
       "smartHome": {
         "title": "Smart home và điện tử: nút điều khiển, công tắc",
         "category": "Smart home và điện tử",
-        "description": "Nút điều khiển và công tắc cho thiết bị thông minh Vinsmart, mạ trang trí trên nhựa ABS.",
+        "description": "Nút điều khiển và công tắc cho thiết bị thông minh Vinsmart. Nền nhựa ABS, lớp mạ trang trí niken-crom.",
         "imageAlt": "Nút điều khiển thiết bị thông minh sau khi mạ",
         "imageBadge": "Smart home và điện tử",
         "chips": {
           "coating": {
             "label": "Lớp mạ",
-            "value": "Mạ trang trí trên nhựa ABS"
+            "value": "Niken-crom trang trí trên nhựa ABS"
           }
         }
       },
       "giaDung": {
         "title": "Thiết bị gia dụng: tủ lạnh, máy giặt, máy lọc nước",
         "category": "Thiết bị gia dụng",
-        "description": "Chi tiết trang trí cho tủ lạnh, máy giặt, máy lọc nước và núm vặn lò nướng của các thương hiệu gia dụng.",
+        "description": "Tủ lạnh Hitachi, LG, Panasonic, Samsung; máy giặt LG và khung nắp máy giặt; máy lọc nước Karofi; núm vặn lò nướng LG. Chi tiết trang trí mạ trên nhựa ABS.",
         "imageAlt": "Chi tiết trang trí thiết bị gia dụng sau khi mạ",
         "imageBadge": "Thiết bị gia dụng",
         "chips": {
@@ -132,7 +132,7 @@
       "veSinhNhaBep": {
         "title": "Thiết bị vệ sinh và nhà bếp: vòi sen, tay gạt, núm vặn",
         "category": "Thiết bị vệ sinh và nhà bếp",
-        "description": "Vòi sen, vòi rửa, tay gạt củ sen tắm, núm vặn lọc nước, khung và núm vặn thiết bị nhà bếp Sunhouse.",
+        "description": "Vòi sen, vòi rửa, phụ kiện vệ sinh, tay gạt củ sen tắm, núm vặn lọc nước, khung và núm vặn thiết bị nhà bếp Sunhouse. Lớp mạ crom.",
         "imageAlt": "Vòi sen và núm vặn thiết bị nhà bếp sau khi mạ",
         "imageBadge": "Vệ sinh và nhà bếp",
         "chips": {
@@ -145,7 +145,7 @@
       "satinAbs": {
         "title": "Mạ satin trên nhựa ABS",
         "category": "Mạ satin",
-        "description": "Bề mặt niken satin mờ, mịn cho chi tiết nhựa ABS cần vẻ ngoài sang nhưng không phản chiếu mạnh.",
+        "description": "Nhựa ABS, ABS/PC mạ niken satin, bề mặt mờ mịn, ít phản chiếu, dùng cho chi tiết trang trí.",
         "imageAlt": "Chi tiết nhựa ABS mạ niken satin",
         "imageBadge": "Mạ satin",
         "chips": {
@@ -158,7 +158,7 @@
       "cromDenHairLine": {
         "title": "Mạ crom đen và tạo xước Hair Line",
         "category": "Crom đen và Hair Line",
-        "description": "Lớp niken crom đen và bề mặt xước Hair Line trên niken crom, dùng cho chi tiết trang trí.",
+        "description": "Nhựa ABS mạ niken crom đen; bề mặt xước Hair Line tạo trên lớp niken crom. Dùng cho chi tiết trang trí.",
         "imageAlt": "Chi tiết mạ crom đen và bề mặt xước Hair Line",
         "imageBadge": "Crom đen và Hair Line",
         "chips": {
@@ -169,9 +169,9 @@
         }
       },
       "kimLoaiMa": {
-        "title": "Chi tiết kim loại mạ niken, kẽm, thiếc, phốt phát đen",
+        "title": "Chi tiết kim loại mạ niken, kẽm, thiếc, phốt phát đen, satin",
         "category": "Chi tiết kim loại mạ",
-        "description": "Bu-lông, vít, bản lề, chốt, trục, đai ốc, đầu cos và chi tiết máy mạ niken, mạ kẽm, mạ thiếc hoặc phốt phát đen.",
+        "description": "Niken điện phân: tay nắm, bản lề, chốt định vị. Niken hóa: bánh răng, chốt, khóa. Phốt phát đen: vít, bu-lông, nắp che. Mạ thiếc: đai ốc, đinh tán, đầu cos. Mạ kẽm: ống lót, chốt trục, vít. Mạ satin: tấm inox, tay nắm cửa, thanh inox.",
         "imageAlt": "Bu-lông, vít và chi tiết kim loại sau khi mạ",
         "imageBadge": "Chi tiết kim loại",
         "chips": {
@@ -201,13 +201,13 @@
           "note": "Phun muối trung tính và phun muối axit"
         }
       },
-      "heroDescription": "Sản phẩm trang trí cần bề mặt đẹp và bền được mạ trên nền nhựa ABS hoặc kim loại. HANIN xử lý trước bề mặt, mạ theo công nghệ phù hợp với vật liệu và kiểm tra lớp mạ trước khi giao.",
+      "heroDescription": "Chi tiết trang trí hoặc chống ăn mòn được mạ trên nền nhựa ABS, ABS/PC hoặc kim loại. Trình tự: tiền xử lý bề mặt, mạ theo công nghệ phù hợp với vật liệu nền, kiểm tra lớp mạ.",
       "heroImageAlt": "Chi tiết trang trí sau khi mạ tại nhà máy HANIN",
       "gallery": {
         "item1": {
           "alt": "Chi tiết sau khi mạ",
           "thumbLabel": "Chi tiết sau khi mạ",
-          "caption": "Chi tiết sau khi mạ, bề mặt sáng và đồng đều"
+          "caption": "Chi tiết sau khi mạ"
         },
         "item2": {
           "alt": "Đo độ dày lớp mạ tại phòng QC",
@@ -232,15 +232,15 @@
       },
       "achievements": {
         "item1": {
-          "title": "Bề mặt sáng bóng hoặc satin",
-          "description": "Niken-crom sáng bóng, niken satin mờ, crom đen hoặc xước Hair Line, chọn theo mẫu của khách hàng."
+          "title": "Hoàn thiện bề mặt",
+          "description": "Niken-crom bóng, niken satin, crom đen hoặc xước Hair Line, chọn theo mẫu của khách hàng."
         },
         "item2": {
-          "title": "Nhiều công nghệ trong một nhà máy",
-          "description": "Mạ nhựa ABS, mạ niken, kẽm, đồng, thiếc, phốt phát đen, PVD và sơn in, nên một đơn hàng có thể xử lý trọn quy trình tại cùng một nơi."
+          "title": "Công nghệ tại nhà máy",
+          "description": "Mạ nhựa ABS, mạ niken, kẽm, đồng, thiếc, phốt phát đen, mạ chân không PVD, sơn và in."
         },
         "item3": {
-          "title": "Kiểm tra trước khi giao",
+          "title": "Kiểm tra lớp mạ",
           "description": "Đo độ dày lớp mạ, thử phun muối NSS và CASS, kiểm tra thành phẩm."
         }
       },
@@ -277,22 +277,22 @@
       "process": {
         "step1": {
           "title": "Nhận hàng và tiền xử lý",
-          "description": "Nhập hàng, lưu kho, tẩy dầu siêu âm, bể HCl và hoạt hóa bề mặt; giữa các bước đều rửa nước.",
+          "description": "Nhập hàng, lưu kho, tẩy dầu siêu âm, bể HCl, hoạt hóa bề mặt; rửa nước giữa các bước.",
           "phase": "Tiền xử lý"
         },
         "step2": {
           "title": "Treo móc và mạ",
-          "description": "Nhựa ABS mạ niken-crom trên dây chuyền tự động; kim loại mạ niken, kẽm, đồng, thiếc hoặc phốt phát đen trên dây chuyền mạ treo hoặc mạ quay.",
+          "description": "Nhựa ABS: mạ niken-crom trên dây chuyền mạ treo tự động. Kim loại: mạ niken, kẽm, đồng, thiếc hoặc phốt phát đen trên dây chuyền mạ treo hoặc mạ quay.",
           "phase": "Mạ"
         },
         "step3": {
           "title": "Hoàn thiện bề mặt",
-          "description": "Làm satin, crom đen hoặc xước Hair Line theo yêu cầu, rồi sấy khô. Có thể phun sơn hoặc in thêm trên chi tiết.",
+          "description": "Tạo satin, crom đen hoặc xước Hair Line theo yêu cầu, sau đó sấy khô. Có thể phun sơn hoặc in thêm.",
           "phase": "Hoàn thiện"
         },
         "step4": {
           "title": "Kiểm tra và đóng gói",
-          "description": "Đo độ dày lớp mạ, thử phun muối, kiểm tra thành phẩm rồi đóng gói giao hàng.",
+          "description": "Đo độ dày lớp mạ, thử phun muối, kiểm tra thành phẩm, đóng gói.",
           "phase": "Kiểm tra và bàn giao"
         }
       },

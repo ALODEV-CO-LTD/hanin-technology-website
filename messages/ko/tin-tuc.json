@@ -20,19 +20,19 @@
       "empty": "일치하는 게시물이 없습니다."
     },
     "NewsInquiryCta": {
-      "titlePrefix": "문의하실",
-      "titleHighlight": "제품 또는 프로젝트가 있으십니까?",
-      "description": "HANIN 엔지니어가 도금 및 표면처리 기술 문의에 답하고 제품에 맞는 방안을 안내합니다.",
+      "titlePrefix": "기술 협의:",
+      "titleHighlight": "도금 대상 제품",
+      "description": "HANIN 엔지니어가 제품별 소재와 요구사항에 따라 도금 및 표면처리 관련 기술 문의에 답변합니다.",
       "hotlineLabel": "전화:",
       "emailLabel": "이메일:",
-      "ctaContact": "HANIN 문의하기",
-      "ctaQuote": "프로젝트 견적 받기"
+      "ctaContact": "문의",
+      "ctaQuote": "견적 요청"
     },
     "NewsIntro": {
       "titlePrefix": "뉴스 &",
       "titleHighlight": "기술 소식",
       "titleSuffix": "안내",
-      "description": "회사 소식, 표면처리 기술, 검사 기준, HANIN 공장의 기술 기사를 소개합니다.",
+      "description": "회사 소식, 표면처리 기술, 도금층 검사 및 HANIN 공장의 기술 자료.",
       "archiveLabel": "보관함",
       "archiveValue": "{count}개 게시물",
       "auditLabel": "분류",
@@ -57,7 +57,7 @@
       "date": "2026년 4월 18일",
       "readTime": "읽는 시간 5분",
       "title": "ABS 플라스틱 니켈-크롬 도금: 전처리부터 완제품까지의 공정",
-      "excerpt": "ABS 플라스틱 부품은 탈지, 에칭, 팔라듐 활성화를 거쳐 니켈-크롬 도금되어 광택 있고 변색에 강한 표면을 얻습니다.",
+      "excerpt": "ABS 수지 부품은 탈지, 에칭, 팔라듐 활성화를 거쳐 니켈-크롬 도금을 합니다.",
       "metrics": {
         "0": {
           "label": "소재"
@@ -95,8 +95,8 @@
       "2": {
         "categoryLabel": "기업 소식",
         "readTime": "읽는 시간 3분",
-        "title": "고객사의 HANIN 생산 시설 방문",
-        "excerpt": "방문객이 도금 공정과 품질 검사 구역을 둘러보고 기계·자동차 부품의 기술 요구 사항을 협의했습니다.",
+        "title": "공장 도금 구역 및 품질 검사 구역",
+        "excerpt": "HANIN 생산 시설의 도금 구역, 분석실 및 완제품 검사 구역을 소개합니다.",
         "author": "영업 부서",
         "imageAlt": "베트남 Hanin Technology 본사 외관"
       },
@@ -104,7 +104,7 @@
         "categoryLabel": "기술",
         "readTime": "읽는 시간 7분",
         "title": "장식 부품의 새틴 및 블랙 크롬 도금",
-        "excerpt": "새틴 니켈은 매트하고 부드러운 표면을, 블랙 니켈-크롬은 어두운 외관을 만들며 니켈-크롬 위에 헤어라인 가공을 더할 수 있습니다.",
+        "excerpt": "새틴 니켈은 무광 표면, 니켈 흑크롬은 어두운 색 표면을 형성하며, 니켈-크롬 위에 헤어라인 처리가 가능합니다.",
         "author": "기술 부서",
         "imageAlt": "새틴 및 블랙 크롬 도금한 장식 부품"
       },
@@ -113,16 +113,16 @@
         "readTime": "읽는 시간 5분",
         "title": "아연 소재 니켈 도금 공정",
         "excerpt": "탈지, H2SO4 처리, 구리 도금, 광택 니켈에서 건조, 두께 측정, 염수분무 시험을 거쳐 포장합니다.",
-        "author": "열처리 부서",
+        "author": "생산 부서",
         "imageAlt": "보호복을 입은 기술자가 약품조 위에 걸린 도금 부품을 검사하는 모습"
       },
       "5": {
         "categoryLabel": "채용",
         "readTime": "읽는 시간 3분",
-        "title": "HANIN 2026년 2분기 도금·야금 기술 엔지니어 교육 프로그램",
-        "excerpt": "교육생은 현장 기술자의 지도 아래 도금 공정, 품질 검사실, 검사 기준을 익힙니다.",
+        "title": "신규 인력 전해 도금 기술 교육",
+        "excerpt": "현장 교육 내용: 전해 도금 공정, 도금 두께 측정 및 QC실 검사.",
         "author": "인사 부서",
-        "imageAlt": "HANIN 공장의 도금·야금 기술 엔지니어 교육 프로그램"
+        "imageAlt": "HANIN 공장 도금 기술 교육"
       }
     },
     "PostDetail": {

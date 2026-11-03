@@ -2,7 +2,7 @@
   "NangLuc": {
     "AutomatedVsManual": {
       "title": "自动生产线与半自动生产线",
-      "description": "大批量订单在自动电镀线上生产。中小批量金属件在半自动挂镀线或滚镀线上生产。",
+      "description": "自动电镀线产量为每天3–5万件。金属零件在半自动挂镀线（每天10,000–20,000件）或滚镀线（每天3,000–5,000 kg）上加工。",
       "automated": {
         "imageAlt": "厂房内带有电镀槽和行车的自动电镀线",
         "title": "自动电镀线",
@@ -18,7 +18,7 @@
       "breadcrumbHome": "首页",
       "breadcrumbCurrent": "生产能力",
       "title": "生产能力",
-      "description": "HANIN 的厂房、电镀生产线与检测实验室。",
+      "description": "HANIN 的厂房、电镀生产线、检测设备及废水处理系统。",
       "ctaExplore": "查看厂区",
       "ctaLines": "生产线",
       "ctaQa": "检测实验室"
@@ -76,7 +76,7 @@
         "pvd": {
           "badge": "真空电镀",
           "title": "PVD 真空电镀设备",
-          "desc": "用于对外观要求高的塑料和金属件的 PVD 镀膜。",
+          "desc": "两台 PVD 设备在两条 PVD 生产线上运行。",
           "alt": "HANIN 工厂的 PVD 真空电镀设备",
           "spec1Label": "设备数量",
           "spec1Value": "2 台",
@@ -167,10 +167,10 @@
       "ctaGallery": "查看工厂图片"
     },
     "NangLucFinalCta": {
-      "title": "需要电镀加工？",
-      "description": "请发送图纸或样品及技术要求，HANIN 工程师将与您沟通电镀方案和交期。",
-      "ctaContact": "联系 HANIN",
-      "ctaQuote": "申请报价",
+      "title": "提交需求时请提供的信息",
+      "description": "图纸或样品、基材、所需镀层、厚度、试验要求、数量及交货期。",
+      "ctaContact": "联系",
+      "ctaQuote": "提交报价需求",
       "hotlineLabel": "热线："
     },
     "ProductionFlow": {
@@ -179,7 +179,7 @@
       "items": {
         "receiving": {
           "title": "接收来料",
-          "desc": "收货、外观检查、清点数量并入库。"
+          "desc": "收货并入库存放。"
         },
         "surfacePrep": {
           "title": "前处理",
@@ -195,11 +195,11 @@
         },
         "finalCheck": {
           "title": "成品检验",
-          "desc": "按样品检查表面和颜色。不合格批次单独存放返工。"
+          "desc": "成品检验：外观及颜色按样品或客户要求。"
         },
         "packaging": {
           "title": "包装",
-          "desc": "包装并标注产品编号和数量，然后入库或交付客户。"
+          "desc": "包装后入库或交付客户。"
         }
       },
       "viewDetail": "查看各类电镀的详细工序"
@@ -222,7 +222,7 @@
         "rack": {
           "tag": "挂镀",
           "title": "金属半自动挂镀线",
-          "desc": "金属零件挂在挂具上电镀，适合对外观要求高、避免碰撞的零件。",
+          "desc": "金属零件装挂在挂具上电镀。",
           "alt": "金属半自动挂镀线",
           "capacityLabel": "产能：",
           "capacityValue": "1 万–2 万件/天",
@@ -242,7 +242,7 @@
       }
     },
     "QualityStandards": {
-      "sectionTitle": "质量与标准",
+      "sectionTitle": "认证与质量检测",
       "sectionDescription": "HANIN 的认证、废水处理与质量检测设备。",
       "ctaDetail": "查看认证详情",
       "items": {
@@ -272,7 +272,7 @@
       "items": {
         "lab": {
           "title": "分析室",
-          "desc": "使用专用分析试剂分析镀槽溶液。"
+          "desc": "使用分析试剂对镀槽溶液进行分析。"
         },
         "hullCell": {
           "title": "哈林槽（Hull cell）试验机",
@@ -280,7 +280,7 @@
         },
         "thickness": {
           "title": "镀层测厚仪",
-          "desc": "使用 APC-100 测量镀层厚度，不损伤产品。"
+          "desc": "使用 APC-100 测量镀层厚度。"
         },
         "saltSpray": {
           "title": "NSS 与 CASS 盐雾试验机",

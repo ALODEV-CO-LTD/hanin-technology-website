@@ -5,7 +5,7 @@
       "breadcrumbHome": "Trang chủ",
       "breadcrumbCurrent": "Giới thiệu",
       "title": "Giới thiệu HANIN",
-      "subtitle": "Định hướng phát triển và năng lực phục vụ khách hàng công nghiệp của HANIN."
+      "subtitle": "Thông tin công ty, hệ thống Hanin Tech, dây chuyền mạ và chứng nhận."
     },
     "CompanyIntroduction": {
       "imageAlt": "Mặt tiền kiến trúc hiện đại của nhà máy tại KCN Quang Minh, Hà Nội",
@@ -14,7 +14,7 @@
       "heading": "Gia công mạ cho khách hàng công nghiệp",
       "paragraph1Strong": "Công ty Cổ phần Công nghiệp Mạ HANIN",
       "paragraph1Rest": "chuyên xử lý mạ trên nền nhựa ABS và kim loại, đồng thời nhận sơn và in trên sản phẩm nhựa, kim loại.",
-      "paragraph2": "Công ty thành lập năm 2023, nhà máy đặt tại Lô 49G, KCN Quang Minh, Hà Nội, trên mặt bằng 2.230 m². Nhà máy có 70 nhân sự, trong đó có các bộ phận mạ treo, mạ quay và QC; hơn 100 khách hàng đang sử dụng dịch vụ.",
+      "paragraph2": "Công ty thành lập năm 2023, nhà máy đặt tại Lô 49G, KCN Quang Minh, Hà Nội, trên mặt bằng 2.230 m². Nhà máy có 70 nhân sự. Hơn 100 khách hàng sử dụng dịch vụ gia công.",
       "field": {
         "label": "Lĩnh vực",
         "value": "Xử lý mạ nhựa và kim loại",
@@ -62,13 +62,13 @@
       }
     },
     "ContactCta": {
-      "heading": "Cần trao đổi về nhu cầu gia công mạ?",
-      "subtitle": "Gửi yêu cầu hoặc bản vẽ để HANIN tư vấn và báo giá.",
-      "ctaPrimary": "LIÊN HỆ HANIN",
-      "ctaSecondary": "NHẬN BÁO GIÁ"
+      "heading": "Gửi yêu cầu gia công mạ",
+      "subtitle": "Gửi bản vẽ hoặc mẫu, vật liệu nền, lớp mạ yêu cầu và số lượng để HANIN báo giá.",
+      "ctaPrimary": "LIÊN HỆ",
+      "ctaSecondary": "GỬI YÊU CẦU BÁO GIÁ"
     },
     "CoreStrengths": {
-      "heading": "Năng lực của HANIN",
+      "heading": "Năng lực sản xuất và kiểm tra",
       "production": {
         "title": "Năng lực sản xuất",
         "desc": "Mạ tự động 30–50 nghìn sản phẩm/ngày, mạ treo bán tự động 10–20 nghìn/ngày, mạ quay 3–5 tấn/ngày.",
@@ -88,28 +88,28 @@
         "metricValue": "NSS, CASS, Hull cell"
       },
       "support": {
-        "title": "Kỹ thuật và hỗ trợ",
-        "desc": "Tư vấn quy trình mạ theo bản vẽ và yêu cầu kỹ thuật từng chi tiết.",
+        "title": "Kỹ thuật",
+        "desc": "Xác định quy trình mạ theo bản vẽ và yêu cầu kỹ thuật của từng chi tiết.",
         "metricLabel": "Tư vấn kỹ thuật",
         "metricValue": "Theo bản vẽ"
       }
     },
     "DevelopmentDirection": {
-      "heading": "Định hướng phát triển",
-      "subtitle": "Nâng cao chất lượng lớp mạ, chuẩn hóa quy trình và kiểm soát chi phí cho khách hàng.",
+      "heading": "Nguyên tắc làm việc",
+      "subtitle": "Yêu cầu kỹ thuật được xác định trên bản vẽ và kiểm tra bằng thiết bị tại nhà máy.",
       "precision": {
-        "title": "Đúng yêu cầu",
-        "desc": "Mạ và kiểm tra lớp mạ theo yêu cầu trên bản vẽ của khách hàng.",
+        "title": "Theo bản vẽ",
+        "desc": "Mạ theo yêu cầu trên bản vẽ của khách hàng và đo độ dày lớp mạ.",
         "note": "Đo độ dày lớp mạ"
       },
       "stability": {
-        "title": "Ổn định",
-        "desc": "Giữ chất lượng đồng đều giữa các lô.",
-        "note": "Chất lượng đồng đều giữa các lô"
+        "title": "Kiểm soát bể mạ",
+        "desc": "Phân tích dung dịch bể mạ và thử Hull cell tại phòng phân tích.",
+        "note": "Phòng phân tích, Hull cell"
       },
       "partnership": {
-        "title": "Phối hợp",
-        "desc": "Cùng khách hàng xử lý các yêu cầu kỹ thuật về bề mặt.",
+        "title": "Trao đổi kỹ thuật",
+        "desc": "Trao đổi với bộ phận kỹ thuật của khách hàng về yêu cầu bề mặt.",
         "note": "Làm việc với bộ phận kỹ thuật của khách hàng"
       }
     },
@@ -144,8 +144,8 @@
       "cardViewLabel": "Xem tài liệu"
     },
     "QualityStandardsPreview": {
-      "heading": "Chất lượng và tiêu chuẩn",
-      "subtitle": "Hệ thống quản lý chất lượng và chứng nhận của HANIN.",
+      "heading": "Chứng nhận và kiểm tra chất lượng",
+      "subtitle": "Chứng nhận ISO 9001:2015, hệ thống xử lý nước thải và thiết bị kiểm tra.",
       "cta": "XEM CHỨNG NHẬN",
       "certificateImageAlt": "Giấy chứng nhận ISO 9001:2015 của Hanin Technology Việt Nam do ICB cấp",
       "certificateTag": "Giấy chứng nhận",
@@ -159,7 +159,7 @@
       "iso9001": {
         "tag": "Chứng nhận ISO",
         "title": "Hệ thống quản lý chất lượng",
-        "desc": "ISO 9001:2015, cấp ngày 11/08/2025, hiệu lực đến 10/08/2028.",
+        "desc": "ISO 9001:2015 cấp cho Công ty Cổ phần Công nghệ Hanin Việt Nam, cấp ngày 11/08/2025, hiệu lực đến 10/08/2028.",
         "standard": "Tiêu chuẩn: ISO 9001:2015",
         "status": "Còn hiệu lực"
       },
@@ -168,7 +168,7 @@
         "title": "Xử lý nước thải",
         "desc": "Hệ thống công suất 130 m³/ngày đêm, có bể lắng và máy ép bùn.",
         "standard": "Công suất: 130 m³/ngày đêm",
-        "status": "Đang vận hành"
+        "status": "Tại nhà máy mạ"
       },
       "equipment": {
         "tag": "Kiểm tra",

@@ -2,7 +2,7 @@
   "NangLuc": {
     "AutomatedVsManual": {
       "title": "Dây chuyền tự động và bán tự động",
-      "description": "Hàng số lượng lớn chạy trên dây chuyền mạ tự động. Chi tiết kim loại theo lô vừa và nhỏ chạy trên dây chuyền mạ treo bán tự động hoặc mạ quay.",
+      "description": "Dây chuyền mạ tự động đạt 30–50 nghìn sản phẩm/ngày. Chi tiết kim loại chạy trên dây chuyền mạ treo bán tự động (10.000–20.000 sản phẩm/ngày) hoặc mạ quay (3.000–5.000 kg/ngày).",
       "automated": {
         "imageAlt": "Dây chuyền mạ tự động với các bể mạ và cẩu trục trong nhà xưởng",
         "title": "Dây chuyền mạ tự động",
@@ -18,7 +18,7 @@
       "breadcrumbHome": "Trang chủ",
       "breadcrumbCurrent": "Năng lực sản xuất",
       "title": "NĂNG LỰC SẢN XUẤT",
-      "description": "Nhà xưởng, các dây chuyền mạ và phòng kiểm nghiệm của HANIN.",
+      "description": "Nhà xưởng, dây chuyền mạ, thiết bị kiểm tra và hệ thống xử lý nước thải của HANIN.",
       "ctaExplore": "XEM NHÀ MÁY",
       "ctaLines": "DÂY CHUYỀN SẢN XUẤT",
       "ctaQa": "PHÒNG KIỂM NGHIỆM"
@@ -76,7 +76,7 @@
         "pvd": {
           "badge": "Mạ chân không",
           "title": "Máy mạ chân không PVD",
-          "desc": "Mạ PVD cho chi tiết nhựa và kim loại cần bề mặt đẹp.",
+          "desc": "Hai máy PVD vận hành trên hai dây chuyền PVD.",
           "alt": "Máy mạ chân không PVD tại nhà máy HANIN",
           "spec1Label": "Số máy",
           "spec1Value": "2 máy",
@@ -167,10 +167,10 @@
       "ctaGallery": "XEM HÌNH ẢNH NHÀ MÁY"
     },
     "NangLucFinalCta": {
-      "title": "Cần gia công mạ?",
-      "description": "Gửi bản vẽ hoặc mẫu và yêu cầu kỹ thuật để kỹ sư HANIN trao đổi về phương án mạ và tiến độ.",
-      "ctaContact": "LIÊN HỆ HANIN",
-      "ctaQuote": "YÊU CẦU BÁO GIÁ",
+      "title": "Thông tin cần cung cấp khi gửi yêu cầu",
+      "description": "Bản vẽ hoặc mẫu, vật liệu nền, lớp mạ yêu cầu, độ dày, yêu cầu thử nghiệm, số lượng và tiến độ giao hàng.",
+      "ctaContact": "LIÊN HỆ",
+      "ctaQuote": "GỬI YÊU CẦU BÁO GIÁ",
       "hotlineLabel": "Hotline:"
     },
     "ProductionFlow": {
@@ -179,7 +179,7 @@
       "items": {
         "receiving": {
           "title": "Tiếp nhận hàng",
-          "desc": "Nhập hàng, kiểm tra bên ngoài, đếm số lượng và lưu kho."
+          "desc": "Nhập hàng và lưu kho."
         },
         "surfacePrep": {
           "title": "Tiền xử lý",
@@ -195,11 +195,11 @@
         },
         "finalCheck": {
           "title": "Kiểm tra thành phẩm",
-          "desc": "Kiểm tra bề mặt, màu sắc theo mẫu. Lô không đạt được tách riêng để xử lý lại."
+          "desc": "Kiểm tra thành phẩm: bề mặt và màu sắc theo mẫu hoặc yêu cầu của khách."
         },
         "packaging": {
           "title": "Đóng gói",
-          "desc": "Đóng gói, dán nhãn mã hàng và số lượng rồi nhập kho hoặc giao cho khách."
+          "desc": "Đóng gói, sau đó nhập kho hoặc giao cho khách."
         }
       },
       "viewDetail": "Xem quy trình công đoạn chi tiết từng loại mạ"
@@ -222,7 +222,7 @@
         "rack": {
           "tag": "Mạ treo",
           "title": "Dây chuyền mạ treo kim loại bán tự động",
-          "desc": "Mạ chi tiết kim loại gắn trên giá treo, phù hợp chi tiết cần bề mặt đẹp và không va chạm.",
+          "desc": "Mạ chi tiết kim loại gắn trên giá treo.",
           "alt": "Dây chuyền mạ treo kim loại bán tự động",
           "capacityLabel": "CÔNG SUẤT:",
           "capacityValue": "10.000–20.000 sản phẩm/ngày",
@@ -242,7 +242,7 @@
       }
     },
     "QualityStandards": {
-      "sectionTitle": "Chất lượng và tiêu chuẩn",
+      "sectionTitle": "Chứng nhận và kiểm tra chất lượng",
       "sectionDescription": "Chứng nhận, xử lý nước thải và thiết bị kiểm tra chất lượng của HANIN.",
       "ctaDetail": "XEM CHI TIẾT CHỨNG NHẬN",
       "items": {
@@ -272,7 +272,7 @@
       "items": {
         "lab": {
           "title": "Phòng phân tích",
-          "desc": "Phân tích dung dịch bể mạ bằng hóa chất phân tích chuyên dụng."
+          "desc": "Phân tích dung dịch bể mạ bằng hóa chất phân tích."
         },
         "hullCell": {
           "title": "Máy thử Hull cell",
@@ -280,7 +280,7 @@
         },
         "thickness": {
           "title": "Máy đo độ dày lớp mạ",
-          "desc": "Đo độ dày lớp mạ bằng máy APC-100, không làm hỏng sản phẩm."
+          "desc": "Đo độ dày lớp mạ bằng máy APC-100."
         },
         "saltSpray": {
           "title": "Máy phun muối NSS và CASS",

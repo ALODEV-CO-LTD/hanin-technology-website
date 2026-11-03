@@ -8,7 +8,7 @@
     "tinTuc": "Tin tức",
     "tuyenDung": "Tuyển dụng",
     "lienHe": "Liên hệ",
-    "cta": "Nhận báo giá",
+    "cta": "Yêu cầu báo giá",
     "menuOpen": "Mở menu",
     "menuClose": "Đóng menu",
     "logoAlt": "HANIN Plating"
@@ -81,7 +81,7 @@
     },
     "tinTuc": {
       "title": "Tin tức và bản tin kỹ thuật",
-      "description": "Tin doanh nghiệp, kiến thức xử lý bề mặt và hoạt động sản xuất tại HANIN."
+      "description": "Tin doanh nghiệp, bài kỹ thuật về mạ và xử lý bề mặt, hoạt động sản xuất tại HANIN."
     },
     "tuyenDung": {
       "title": "Tuyển dụng",
@@ -110,7 +110,7 @@
     "badType": "Định dạng tệp chưa được hỗ trợ. Dùng PDF, DWG, DXF, STEP, ZIP, JPG hoặc PNG."
   },
   "StickyContact": {
-    "label": "Gọi ngay",
+    "label": "Gọi",
     "zalo": "Zalo",
     "quote": "Báo giá",
     "aria": "Liên hệ nhanh"

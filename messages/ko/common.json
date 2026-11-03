@@ -81,7 +81,7 @@
     },
     "tinTuc": {
       "title": "뉴스 및 기술 소식",
-      "description": "HANIN의 기업 소식, 표면 처리 지식 및 생산 활동."
+      "description": "회사 소식, 도금 및 표면처리 기술 자료, HANIN 생산 활동."
     },
     "tuyenDung": {
       "title": "채용",
@@ -110,7 +110,7 @@
     "badType": "지원하지 않는 파일 형식입니다. PDF, DWG, DXF, STEP, ZIP, JPG 또는 PNG를 사용하세요."
   },
   "StickyContact": {
-    "label": "전화하기",
+    "label": "전화",
     "zalo": "Zalo",
     "quote": "견적",
     "aria": "빠른 연락"

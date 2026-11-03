@@ -6,7 +6,7 @@
       "breadcrumbCurrent": "제품 및 프로젝트",
       "breadcrumbTag": "도금 제품 목록",
       "title": "제품 및 프로젝트",
-      "description": "HANIN이 도금한 자동차, 스마트홈, 가전제품, 위생·주방 기기 제품과 니켈·아연·주석 도금 금속 부품입니다."
+      "description": "HANIN 도금 제품을 적용 산업별로 분류했습니다: 자동차, 스마트홈, 가전, 위생·주방 기기, 금속 부품. 소재는 ABS, ABS/PC 수지와 금속이며 도금층은 니켈-크롬, 새틴 니켈, 니켈, 아연, 주석, 흑색 인산염입니다."
     },
     "FeaturedProjectSpotlight": {
       "heading": "대표 프로젝트",
@@ -20,7 +20,7 @@
     },
     "ProductCatalog": {
       "heading": "도금 제품",
-      "subheading": "제품을 선택하면 적용된 도금과 공정을 볼 수 있습니다.",
+      "subheading": "제품을 선택하면 소재, 도금층, 적용 공정을 볼 수 있습니다.",
       "lotNumber": "제품 코드",
       "ctaViewDetail": "제품 상세 보기",
       "viewDetailAriaLabel": "상세 보기",
@@ -39,7 +39,7 @@
       "closeAriaLabel": "닫기"
     },
     "ProductHero": {
-      "ctaRequestQuote": "프로젝트 견적 문의",
+      "ctaRequestQuote": "견적 요청 보내기",
       "ctaDownloadSpecSheet": "샘플 또는 도면 보내기",
       "materialLabel": "소재:",
       "materialValue": "ABS, ABS/PC 플라스틱 또는 금속"
@@ -50,41 +50,41 @@
     },
     "ProductProcessTimeline": {
       "title": "진행 공정",
-      "description": "입고부터 출하 전 검사까지입니다."
+      "description": "입고부터 완제품 검사까지."
     },
     "ProductQuoteCta": {
-      "title": "귀사 제품에도 비슷한 도금이 필요하신가요?",
-      "descriptionPrefix": "표면 요구사항과 함께 샘플, 제품 사진 또는 도면을 보내 주십시오. HANIN이 적합한 도금 방안을 협의하고",
-      "descriptionHighlight": "상세 견적을 보내 드립니다",
+      "title": "도금 요청 시 필요한 정보",
+      "descriptionPrefix": "샘플 또는 도면, 소재, 요구 도금층과 두께, 시험 요구, 수량, 납기를 보내 주세요. HANIN이 도금 방안을 정하고",
+      "descriptionHighlight": "견적을 보내드립니다",
       "ctaSendQuote": "견적 요청 보내기",
       "hotlineLabel": "핫라인:",
       "emailLabel": "도면 수신 이메일:"
     },
     "ProductsCta": {
-      "title": "도금이 필요한 제품이 있으신가요?",
-      "description": "샘플, 사진 또는 도면을 보내 주시거나 HANIN과 직접 상담하시면 견적과 적합한 도금 방안을 안내해 드립니다.",
-      "cta": "견적 받기",
+      "title": "도금 요청 보내기",
+      "description": "샘플, 사진 또는 도면과 함께 소재, 요구 도금층, 수량을 보내 주시면 견적을 드립니다.",
+      "cta": "견적 요청 보내기",
       "emailLabel": "이메일:",
       "hotlineLabel": "핫라인:"
     },
     "RelatedProjects": {
-      "title": "다른 프로젝트 및 제품",
+      "title": "다른 제품",
       "description": "HANIN에서 도금한 다른 제품입니다.",
       "lot": "코드",
       "ctaViewDetail": "프로젝트 상세 보기"
     },
     "RelatedServices": {
       "title": "관련 도금 서비스",
-      "description": "이 제품군에 적용할 수 있는 HANIN의 표면 처리 방법입니다.",
+      "description": "이 제품군에 적용되는 표면처리 공정입니다.",
       "ctaViewAll": "전체 도금 서비스 보기"
     },
     "SpecTrustNote": {
       "title": "제품 정보 안내",
-      "description": "페이지 내용은 제품군별 일반 소개이며, 각 주문의 요구사항은 고객이 제공한 샘플 또는 도면에 따라 협의합니다."
+      "description": "이 페이지는 제품군별 정보를 제공합니다. 주문별 도금층, 두께, 광택, 시험 요건은 고객의 샘플 또는 도면에 따라 정합니다."
     },
     "categoryTabs": {
       "all": "전체 제품",
-      "coKhiChinhXac": "도금 금속 부품",
+      "coKhiChinhXac": "금속 부품",
       "phuTungOToXeMay": "자동차 부품",
       "dauCosseThietBiDien": "가전 및 전자기기",
       "anodizing": "위생 및 주방 기기"
@@ -93,33 +93,33 @@
       "phuTungOTo": {
         "title": "자동차 부품: 로고, 시동 버튼, 램프 프레임 테두리, 문자 몰딩",
         "category": "자동차 부품",
-        "description": "VinFast, Infiniti, Nissan 로고, 시동 버튼, 램프 프레임 테두리와 문자 몰딩으로, ABS 플라스틱에 니켈-크롬 도금을 적용합니다.",
+        "description": "VinFast, Infiniti, Nissan 로고, Engine Start/Stop 시동 버튼, 램프 프레임 테두리, 오토바이 마스크 커버, VinFast 문자 몰딩 및 입체 문자. ABS 수지 소재, 니켈-크롬 도금.",
         "imageAlt": "도금한 자동차 로고, 시동 버튼 및 램프 프레임 테두리",
         "imageBadge": "자동차 부품",
         "chips": {
           "coating": {
             "label": "도금",
-            "value": "ABS 플라스틱 니켈-크롬 도금"
+            "value": "ABS 수지 니켈-크롬; 니켈 흑색 크롬"
           }
         }
       },
       "smartHome": {
         "title": "스마트홈 및 전자기기: 컨트롤 버튼, 스위치",
         "category": "스마트홈 및 전자기기",
-        "description": "Vinsmart 스마트 기기용 컨트롤 버튼과 스위치로, ABS 플라스틱에 장식 도금을 적용합니다.",
+        "description": "Vinsmart 스마트 기기용 조작 버튼과 스위치. ABS 수지 소재, 장식용 니켈-크롬 도금.",
         "imageAlt": "도금한 스마트 기기 컨트롤 버튼",
         "imageBadge": "스마트홈 및 전자기기",
         "chips": {
           "coating": {
             "label": "도금",
-            "value": "ABS 플라스틱 장식 도금"
+            "value": "ABS 수지 장식용 니켈-크롬"
           }
         }
       },
       "giaDung": {
         "title": "가전제품: 냉장고, 세탁기, 정수기",
         "category": "가전제품",
-        "description": "가전 브랜드의 냉장고, 세탁기, 정수기 및 오븐 손잡이용 장식 부품입니다.",
+        "description": "Hitachi, LG, Panasonic, Samsung 냉장고, LG 세탁기와 세탁기 뚜껑 프레임, Karofi 정수기, LG 오븐 손잡이. ABS 수지 장식 부품 도금.",
         "imageAlt": "도금한 가전제품 장식 부품",
         "imageBadge": "가전제품",
         "chips": {
@@ -132,7 +132,7 @@
       "veSinhNhaBep": {
         "title": "위생 및 주방 기기: 샤워기, 레버, 손잡이",
         "category": "위생 및 주방 기기",
-        "description": "샤워기, 수도꼭지, 샤워 레버, 정수기 손잡이, Sunhouse 주방 기기의 프레임과 손잡이입니다.",
+        "description": "샤워기, 수전, 위생 부속품, 샤워 수전 레버, 정수기 손잡이, Sunhouse 주방 기기 프레임과 손잡이. 크롬 도금.",
         "imageAlt": "도금한 샤워기 및 주방 기기 손잡이",
         "imageBadge": "위생 및 주방",
         "chips": {
@@ -145,7 +145,7 @@
       "satinAbs": {
         "title": "ABS 플라스틱 새틴 도금",
         "category": "새틴 도금",
-        "description": "강한 반사 없이 고급스러운 외관이 필요한 ABS 플라스틱 부품에 적용하는 매트하고 부드러운 새틴 니켈 표면입니다.",
+        "description": "ABS, ABS/PC 수지에 새틴 니켈을 도금한 부드러운 무광·저반사 표면으로 장식 부품에 사용합니다.",
         "imageAlt": "새틴 니켈 도금한 ABS 플라스틱 부품",
         "imageBadge": "새틴 도금",
         "chips": {
@@ -158,7 +158,7 @@
       "cromDenHairLine": {
         "title": "블랙 크롬 도금 및 헤어라인 가공",
         "category": "블랙 크롬 및 헤어라인",
-        "description": "장식 부품에 사용하는 블랙 니켈-크롬 도금과 니켈-크롬 위 헤어라인 가공입니다.",
+        "description": "ABS 수지에 니켈 흑색 크롬을 도금하며, 니켈-크롬층 위에 헤어라인(Hair Line) 스크래치 표면을 가공합니다. 장식 부품용입니다.",
         "imageAlt": "블랙 크롬 도금 및 헤어라인 표면 부품",
         "imageBadge": "블랙 크롬 및 헤어라인",
         "chips": {
@@ -169,9 +169,9 @@
         }
       },
       "kimLoaiMa": {
-        "title": "니켈·아연·주석 도금 및 흑색 인산염 처리 금속 부품",
+        "title": "니켈, 아연, 주석, 흑색 인산염, 새틴 도금 금속 부품",
         "category": "도금 금속 부품",
-        "description": "볼트, 나사, 경첩, 핀, 축, 너트, 압착 단자 및 기계 부품에 니켈, 아연, 주석 도금 또는 흑색 인산염 처리를 합니다.",
+        "description": "전해 니켈: 손잡이, 경첩, 위치결정 핀. 무전해 니켈: 기어, 핀, 자물쇠. 흑색 인산염: 나사, 볼트, 커버. 주석 도금: 너트, 리벳, 단자. 아연 도금: 부싱, 축 핀, 나사. 새틴 도금: 스테인리스 판, 도어 손잡이, 스테인리스 봉.",
         "imageAlt": "도금한 볼트, 나사 및 금속 부품",
         "imageBadge": "금속 부품",
         "chips": {
@@ -201,13 +201,13 @@
           "note": "중성 염수분무 및 산성 염수분무"
         }
       },
-      "heroDescription": "아름답고 내구성 있는 표면이 필요한 장식 제품을 ABS 플라스틱 또는 금속 소재에 도금합니다. HANIN은 표면 전처리 후 소재에 맞는 도금 공정을 적용하고 출하 전에 도금층을 검사합니다.",
+      "heroDescription": "장식용 또는 방식용 부품을 ABS, ABS/PC 수지 또는 금속 소재에 도금합니다. 순서: 표면 전처리, 소재에 맞는 도금 공정, 도금층 검사.",
       "heroImageAlt": "HANIN 공장에서 도금한 장식 부품",
       "gallery": {
         "item1": {
           "alt": "도금 후 부품",
           "thumbLabel": "도금 후 부품",
-          "caption": "도금 후 부품, 표면이 밝고 균일합니다"
+          "caption": "도금 후 부품"
         },
         "item2": {
           "alt": "품질 검사실에서 도금 두께 측정",
@@ -232,15 +232,15 @@
       },
       "achievements": {
         "item1": {
-          "title": "광택 또는 새틴 표면",
-          "description": "광택 니켈-크롬, 매트 새틴 니켈, 블랙 크롬 또는 헤어라인 중 고객 샘플에 맞춰 선택합니다."
+          "title": "표면 마감",
+          "description": "광택 니켈-크롬, 새틴 니켈, 흑색 크롬 또는 헤어라인, 고객 샘플에 따라 선택합니다."
         },
         "item2": {
-          "title": "한 공장에서 다양한 공정",
-          "description": "ABS 플라스틱 도금, 니켈·아연·구리·주석 도금, 흑색 인산염, PVD, 도장 및 인쇄를 갖추고 있어 한 주문을 한 곳에서 처리할 수 있습니다."
+          "title": "공장 보유 공정",
+          "description": "ABS 수지 도금, 니켈·아연·구리·주석·흑색 인산염 도금, PVD 진공 증착, 도장 및 인쇄."
         },
         "item3": {
-          "title": "출하 전 검사",
+          "title": "도금층 검사",
           "description": "도금 두께 측정, NSS 및 CASS 염수분무 시험, 완제품 검사를 합니다."
         }
       },
@@ -277,22 +277,22 @@
       "process": {
         "step1": {
           "title": "입고 및 전처리",
-          "description": "입고 및 보관, 초음파 탈지, HCl 조, 표면 활성화를 거치며 각 단계 사이에 수세합니다.",
+          "description": "입고, 보관, 초음파 탈지, 염산 조, 표면 활성화; 각 단계 사이에 수세.",
           "phase": "전처리"
         },
         "step2": {
           "title": "지그 장착 및 도금",
-          "description": "ABS 플라스틱은 자동 라인에서 니켈-크롬 도금, 금속은 걸이 또는 배럴 라인에서 니켈·아연·구리·주석 도금 또는 흑색 인산염 처리를 합니다.",
+          "description": "ABS 수지: 자동 랙 도금 라인에서 니켈-크롬 도금. 금속: 랙 도금 또는 배럴 도금 라인에서 니켈, 아연, 구리, 주석 또는 흑색 인산염 도금.",
           "phase": "도금"
         },
         "step3": {
           "title": "표면 마감",
-          "description": "요청에 따라 새틴, 블랙 크롬 또는 헤어라인 가공 후 건조합니다. 부품에 도장이나 인쇄를 추가할 수도 있습니다.",
+          "description": "요구에 따라 새틴, 흑색 크롬 또는 헤어라인을 가공한 뒤 건조합니다. 도장이나 인쇄를 추가할 수 있습니다.",
           "phase": "마감"
         },
         "step4": {
           "title": "검사 및 포장",
-          "description": "도금 두께 측정, 염수분무 시험, 완제품 검사 후 포장하여 출하합니다.",
+          "description": "도금 두께 측정, 염수분무시험, 완제품 검사, 포장.",
           "phase": "검사 및 인도"
         }
       },

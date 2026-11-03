@@ -20,19 +20,19 @@
       "empty": "Không tìm thấy bài viết phù hợp."
     },
     "NewsInquiryCta": {
-      "titlePrefix": "Cần trao đổi về",
-      "titleHighlight": "sản phẩm hoặc dự án?",
-      "description": "Kỹ sư HANIN giải đáp câu hỏi kỹ thuật về mạ và xử lý bề mặt, tư vấn phương án phù hợp với sản phẩm của bạn.",
+      "titlePrefix": "Trao đổi kỹ thuật về",
+      "titleHighlight": "sản phẩm cần mạ",
+      "description": "Kỹ sư HANIN trả lời câu hỏi kỹ thuật về mạ và xử lý bề mặt theo vật liệu nền và yêu cầu của từng sản phẩm.",
       "hotlineLabel": "Hotline:",
       "emailLabel": "Email:",
-      "ctaContact": "LIÊN HỆ HANIN",
-      "ctaQuote": "NHẬN BÁO GIÁ DỰ ÁN"
+      "ctaContact": "LIÊN HỆ",
+      "ctaQuote": "GỬI YÊU CẦU BÁO GIÁ"
     },
     "NewsIntro": {
       "titlePrefix": "Tin tức &",
       "titleHighlight": "bản tin",
       "titleSuffix": "kỹ thuật",
-      "description": "Tin hoạt động công ty, công nghệ xử lý bề mặt, tiêu chuẩn đo kiểm và bài kỹ thuật từ nhà máy HANIN.",
+      "description": "Tin hoạt động công ty, công nghệ xử lý bề mặt, phép đo kiểm lớp mạ và bài kỹ thuật từ nhà máy HANIN.",
       "archiveLabel": "Lưu trữ",
       "archiveValue": "{count} bài viết",
       "auditLabel": "Phân loại",
@@ -57,7 +57,7 @@
       "date": "18 Tháng 4, 2026",
       "readTime": "5 phút đọc",
       "title": "Mạ niken-crom trên nhựa ABS: các bước từ tiền xử lý đến thành phẩm",
-      "excerpt": "Chi tiết nhựa ABS đi qua tẩy dầu, xâm thực, hoạt hóa Paradi rồi mạ niken-crom để có bề mặt sáng bóng và bền màu.",
+      "excerpt": "Chi tiết nhựa ABS đi qua tẩy dầu, xâm thực, hoạt hóa Paradi, sau đó mạ niken-crom.",
       "metrics": {
         "0": {
           "label": "Nền vật liệu"
@@ -95,8 +95,8 @@
       "2": {
         "categoryLabel": "CÔNG TY",
         "readTime": "3 phút đọc",
-        "title": "Khách hàng tham quan cơ sở sản xuất của HANIN",
-        "excerpt": "Khách tham quan khu mạ và kiểm tra chất lượng, trao đổi yêu cầu kỹ thuật với chi tiết cơ khí và linh kiện ô tô.",
+        "title": "Khu mạ và kiểm tra chất lượng tại nhà máy",
+        "excerpt": "Giới thiệu khu mạ, phòng phân tích và khu kiểm tra thành phẩm tại cơ sở sản xuất của HANIN.",
         "author": "Bộ phận kinh doanh",
         "imageAlt": "Mặt tiền trụ sở Hanin Technology tại Việt Nam"
       },
@@ -104,7 +104,7 @@
         "categoryLabel": "CÔNG NGHỆ",
         "readTime": "7 phút đọc",
         "title": "Mạ satin và crom đen cho chi tiết trang trí",
-        "excerpt": "Niken satin cho bề mặt mờ mịn, niken crom đen cho vẻ ngoài tối màu, có thể thêm xước Hair Line trên niken crom.",
+        "excerpt": "Niken satin cho bề mặt mờ, niken crom đen cho bề mặt tối màu; có thể tạo xước Hair Line trên niken crom.",
         "author": "Bộ phận kỹ thuật",
         "imageAlt": "Chi tiết trang trí mạ satin và crom đen"
       },
@@ -113,16 +113,16 @@
         "readTime": "5 phút đọc",
         "title": "Quy trình mạ niken nền kẽm",
         "excerpt": "Từ tẩy dầu, tẩy H2SO4, mạ đồng, niken sáng đến sấy khô, đo độ dày và phun muối trước khi đóng gói.",
-        "author": "Bộ phận xử lý nhiệt",
+        "author": "Bộ phận sản xuất",
         "imageAlt": "Kỹ thuật viên mặc đồ bảo hộ kiểm tra chi tiết mạ treo trên bể hóa chất"
       },
       "5": {
         "categoryLabel": "TUYỂN DỤNG",
         "readTime": "3 phút đọc",
-        "title": "Chương trình đào tạo kỹ sư công nghệ mạ và luyện kim khóa Q2/2026 tại HANIN",
-        "excerpt": "Học viên làm quen quy trình mạ điện phân, phòng kiểm tra chất lượng và tiêu chuẩn đo kiểm dưới sự hướng dẫn tại xưởng.",
+        "title": "Đào tạo kỹ thuật cho nhân sự mới về mạ điện phân",
+        "excerpt": "Nội dung hướng dẫn tại xưởng: quy trình mạ điện phân, đo độ dày lớp mạ và kiểm tra tại phòng QC.",
         "author": "Phòng Nhân sự",
-        "imageAlt": "Chương trình đào tạo kỹ sư công nghệ mạ và luyện kim tại nhà máy HANIN"
+        "imageAlt": "Đào tạo kỹ thuật mạ tại nhà máy HANIN"
       }
     },
     "PostDetail": {

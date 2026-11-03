@@ -1,26 +1,26 @@
 {
   "LienHe": {
     "BottomCta": {
-      "heading": "샘플 또는 도면을 보내 도금 견적 받기",
-      "description": "HANIN 엔지니어가 샘플 또는 도면을 확인하고 소재, 도금 종류, 원하는 표면에 대해 협의한 후 견적을 드립니다.",
+      "heading": "샘플 또는 도면 송부 후 견적",
+      "description": "견적 전에 HANIN 엔지니어가 샘플 또는 도면을 검토하고 소재, 도금층, 요구 표면에 대해 협의합니다.",
       "ctaPrimary": "도면 보내기"
     },
     "ContactChannels": {
       "heading": "연락처",
-      "subtitle": "국내 고객 및 수출 주문 대상",
+      "subtitle": "주소, 전화, 이메일 및 근무시간",
       "card1": {
         "badge": "도금 공장",
         "title": "",
         "address": "하노이시 꽝민사 꽝민 공단 49G 부지",
         "footerLabel": "생산 시설",
-        "footerValue": "자동 도금 라인, 걸이 도금, 배럴 도금 라인 및 품질 검사 구역"
+        "footerValue": "자동 도금 라인, 걸이 도금, 바렐 도금 및 분석·검사실"
       },
       "card2": {
         "badge": "전화",
-        "title": "견적 및 기술 상담",
+        "title": "견적 및 기술 문의",
         "quoteLabel": "견적 담당:",
         "engineerLabel": "기술 엔지니어(도면, 사양):",
-        "engineerHotlineSuffix": "기술 핫라인",
+        "engineerHotlineSuffix": "핫라인",
         "footerLabel": "Zalo 또는 WeChat으로 상담 가능"
       },
       "card3": {
@@ -45,8 +45,8 @@
       "subtitle": "보내실 정보, 파일 형식, 수량 및 샘플 시험.",
       "items": {
         "0": {
-          "question": "1. 견적을 위해 무엇을 보내야 하나요?",
-          "answer": "제품 샘플, 사진 또는 도면과 소재(ABS 플라스틱 또는 금속), 원하는 표면, 예상 수량을 보내 주십시오. 필요하면 HANIN 엔지니어가 추가로 협의한 후 견적을 드립니다."
+          "question": "1. 견적에 필요한 정보는 무엇입니까?",
+          "answer": "샘플, 사진 또는 도면, 소재(ABS, ABS/PC 수지 또는 금속), 요구 도금층, 두께·색상·광택(해당 시), 시험 요구사항(두께 측정, NSS/CASS 염수분무), 로트당 수량 및 납기를 보내 주십시오. 필요 시 HANIN 엔지니어가 추가 협의 후 견적을 드립니다."
         },
         "1": {
           "question": "2. 어떤 형식의 파일을 보낼 수 있나요?",
@@ -72,20 +72,20 @@
       "titlePrefix": "문의 및",
       "titleHighlight": "기술 견적",
       "titleSuffix": "요청",
-      "description": "HANIN은 ABS 플라스틱과 금속 도금, 도장 및 인쇄를 자동차, 가전, 전자, 위생 및 주방 기기 제조 기업에 제공합니다. 샘플 또는 도면을 보내 견적을 받으십시오.",
+      "description": "HANIN은 ABS 수지 및 금속 소재 도금과 도장·인쇄를 수행하며, 자동차, 가전, 위생 및 주방 기기 제조 업체를 대상으로 합니다. 샘플 또는 도면을 보내 견적을 요청하십시오.",
       "ctaPrimary": "견적 요청하기",
       "ctaSecondary": "공장 위치 보기",
       "specHighlights": {
         "sample": {
           "label": "샘플 및 사진 전송",
-          "desc": "사진, 샘플 또는 도면을 보내 주시면 HANIN이 먼저 검토한 후 견적을 드립니다"
+          "desc": "견적 전 검토를 위해 사진, 샘플 또는 도면을 보내 주십시오"
         },
         "cad": {
           "label": "2D 및 3D 도면",
           "desc": "PDF, DWG, DXF, STEP, ZIP, JPG, PNG 지원, 파일당 최대 50 MB"
         },
         "consulting": {
-          "label": "기술 상담",
+          "label": "기술 협의",
           "desc": "엔지니어가 소재, 도금 종류 및 원하는 표면에 대해 협의합니다"
         }
       },
@@ -93,12 +93,12 @@
     },
     "DirectChannels": {
       "heading": "직접 연락",
-      "subtitle": "긴급 주문, 수출 주문 또는 공장 방문 예약 시 이용하십시오.",
+      "subtitle": "긴급 주문 또는 공장 방문 신청 시 이용하십시오.",
       "channels": {
         "hotline": {
           "label": "전화 문의",
-          "desc": "기술 담당자와 직접 통화합니다.",
-          "cta": "전화하기"
+          "desc": "기술 부서와 상담합니다.",
+          "cta": "전화"
         },
         "zalo": {
           "label": "Zalo",
@@ -179,16 +179,16 @@
           "bac": "PVD(진공 증착), 도장 및 인쇄",
           "other": "기타 / 상담 필요"
         },
-        "volumeLabel": "예상 수량 및 납기",
+        "volumeLabel": "로트당 수량 및 납기",
         "volumeOptions": {
           "sample": "샘플 시험(소량)",
           "pilot": "시험 생산 로트",
           "mass": "정기 대량 생산",
           "oem": "장기 계약"
         },
-        "descriptionLabel": "표면 및 검사 요구사항",
-        "descriptionStandards": "색상, 광택 또는 새틴과 검사 요구사항이 있으면 적어 주십시오",
-        "descriptionPlaceholder": "예: ABS 플라스틱 소재, 광택 니켈-크롬, 색상과 광택은 첨부 샘플 기준, 요청 시 염수분무 시험"
+        "descriptionLabel": "도금층, 두께, 표면 및 검사 요구사항",
+        "descriptionStandards": "해당 시 도금층, 두께, 색상, 광택 또는 새틴, 시험 요구사항(두께 측정, NSS/CASS 염수분무)을 기재하십시오",
+        "descriptionPlaceholder": "예: ABS 수지 소재; 니켈-크롬(Cr³⁺); 두께는 도면 기준; 색상·광택은 첨부 샘플 기준; NSS 염수분무시험"
       },
       "step3": {
         "heading": "도면 첨부 (2D 또는 3D)",

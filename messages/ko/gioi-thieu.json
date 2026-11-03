@@ -5,7 +5,7 @@
       "breadcrumbHome": "홈",
       "breadcrumbCurrent": "회사 소개",
       "title": "HANIN 소개",
-      "subtitle": "HANIN의 발전 방향과 산업 고객 대응 역량을 소개합니다."
+      "subtitle": "회사 정보, Hanin Tech 그룹, 도금 라인 및 인증."
     },
     "CompanyIntroduction": {
       "imageAlt": "하노이 꽝민공단에 위치한 공장의 현대적인 외관",
@@ -14,7 +14,7 @@
       "heading": "산업 고객을 위한 도금 가공",
       "paragraph1Strong": "HANIN 도금산업 주식회사",
       "paragraph1Rest": "ABS 플라스틱과 금속 소재의 도금 처리를 전문으로 하며, 플라스틱·금속 제품의 도장과 인쇄도 수행합니다.",
-      "paragraph2": "2023년에 설립되었으며, 하노이 꽝민공단 49G 구역 2,230 m² 부지에 공장이 있습니다. 직원 70명이 랙 도금, 배럴 도금, QC 등의 부서에서 근무하며, 100곳 이상의 고객사가 서비스를 이용하고 있습니다.",
+      "paragraph2": "2023년 설립. 공장은 하노이 꽝민 산업단지 Lô 49G에 있으며 부지 면적은 2,230 m², 직원은 70명입니다. 100곳 이상의 고객사가 가공 서비스를 이용하고 있습니다.",
       "field": {
         "label": "사업 분야",
         "value": "플라스틱·금속 도금 처리",
@@ -62,13 +62,13 @@
       }
     },
     "ContactCta": {
-      "heading": "도금 가공 관련 상담이 필요하십니까?",
-      "subtitle": "요청 사항이나 도면을 보내 주시면 HANIN이 상담과 견적을 안내합니다.",
-      "ctaPrimary": "HANIN 문의하기",
-      "ctaSecondary": "견적 받기"
+      "heading": "도금 가공 요청 접수",
+      "subtitle": "도면 또는 샘플, 소재, 요구 도금층, 수량을 보내 주시면 HANIN이 견적을 제출합니다.",
+      "ctaPrimary": "문의",
+      "ctaSecondary": "견적 요청"
     },
     "CoreStrengths": {
-      "heading": "HANIN의 역량",
+      "heading": "생산 및 검사 능력",
       "production": {
         "title": "생산 능력",
         "desc": "자동 라인 일 3만~5만 개, 반자동 랙 도금 일 1만~2만 개, 배럴 도금 일 3~5톤.",
@@ -88,28 +88,28 @@
         "metricValue": "NSS, CASS, Hull cell"
       },
       "support": {
-        "title": "기술 및 지원",
-        "desc": "도면과 부품별 기술 요구에 맞추어 도금 공정을 상담합니다.",
+        "title": "기술",
+        "desc": "도면과 부품별 기술 요구사항에 따라 도금 공정을 정합니다.",
         "metricLabel": "기술 상담",
         "metricValue": "도면 기준"
       }
     },
     "DevelopmentDirection": {
-      "heading": "발전 방향",
-      "subtitle": "도금 품질을 높이고 공정을 표준화하며 고객의 비용 관리를 지원합니다.",
+      "heading": "작업 방식",
+      "subtitle": "기술 요구사항은 도면을 기준으로 하며 공장 내 장비로 검사합니다.",
       "precision": {
-        "title": "요구 사항 준수",
-        "desc": "고객 도면의 요구에 따라 도금하고 도금층을 검사합니다.",
+        "title": "도면 기준",
+        "desc": "고객 도면 요구에 따라 도금하고 도금층 두께를 측정합니다.",
         "note": "도금 두께 측정"
       },
       "stability": {
-        "title": "안정성",
-        "desc": "로트 간 품질을 균일하게 유지합니다.",
-        "note": "로트 간 균일한 품질"
+        "title": "도금조 관리",
+        "desc": "분석실에서 도금액을 분석하고 Hull cell 시험을 합니다.",
+        "note": "분석실, Hull cell"
       },
       "partnership": {
-        "title": "협업",
-        "desc": "고객과 함께 표면처리 관련 기술 과제를 해결합니다.",
+        "title": "기술 협의",
+        "desc": "고객사 기술 부서와 표면 요구사항을 협의합니다.",
         "note": "고객 기술 부서와 직접 협의"
       }
     },
@@ -144,8 +144,8 @@
       "cardViewLabel": "자료 보기"
     },
     "QualityStandardsPreview": {
-      "heading": "품질 및 표준",
-      "subtitle": "HANIN의 품질 관리 체계와 인증입니다.",
+      "heading": "인증 및 품질 검사",
+      "subtitle": "ISO 9001:2015 인증, 폐수처리 시스템 및 검사 장비.",
       "cta": "인증서 보기",
       "certificateImageAlt": "ICB가 발급한 Hanin Technology Vietnam의 ISO 9001:2015 인증서",
       "certificateTag": "인증서",
@@ -159,7 +159,7 @@
       "iso9001": {
         "tag": "ISO 인증",
         "title": "품질경영시스템",
-        "desc": "ISO 9001:2015, 2025년 8월 11일 발급, 2028년 8월 10일까지 유효.",
+        "desc": "ISO 9001:2015, Hanin Technology Vietnam 주식회사에 발급. 발급일 2025.08.11, 유효기간 2028.08.10.",
         "standard": "표준: ISO 9001:2015",
         "status": "유효"
       },
@@ -168,7 +168,7 @@
         "title": "폐수 처리",
         "desc": "처리 용량 일 130 m³이며 침전조와 슬러지 압착기를 갖추고 있습니다.",
         "standard": "처리 용량: 일 130 m³",
-        "status": "가동 중"
+        "status": "도금 공장 내"
       },
       "equipment": {
         "tag": "검사",

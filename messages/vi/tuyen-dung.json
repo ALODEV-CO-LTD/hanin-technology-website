@@ -7,7 +7,7 @@
       "titlePrefix": "Cơ hội việc làm",
       "titleHighlight": "tại HANIN",
       "companyName": "",
-      "description": "HANIN tuyển kỹ sư và nhân sự sản xuất cho gia công cơ khí và xử lý bề mặt kim loại tại KCN Quang Minh, Hà Nội.",
+      "description": "HANIN tuyển kỹ sư và nhân sự sản xuất cho mạ nhựa, mạ kim loại, PVD, phun sơn và in tại KCN Quang Minh, Hà Nội.",
       "ctaPrimary": "Xem vị trí tuyển dụng",
       "ctaSecondary": "Liên hệ nhân sự",
       "standardLabel": "Quy trình",
@@ -38,7 +38,7 @@
       "pillar2": {
         "tag": "Lộ trình phát triển",
         "title": "Phát triển nghề nghiệp",
-        "desc": "Có thể phát triển theo hướng chuyên môn hoặc quản lý; kết quả công việc và đề xuất cải tiến (Kaizen) được xem xét định kỳ.",
+        "desc": "Phát triển theo hướng chuyên môn hoặc quản lý; kết quả công việc được đánh giá định kỳ.",
         "metricLabel": "Đánh giá công việc",
         "metricValue": "Định kỳ"
       },
@@ -52,9 +52,9 @@
       "pillar4": {
         "tag": "Chế độ đãi ngộ",
         "title": "Chế độ đãi ngộ",
-        "desc": "Lương theo năng lực, thưởng sản xuất, bảo hiểm theo quy định, bữa ăn ca và xe đưa đón tuyến Hà Nội - KCN Quang Minh.",
-        "metricLabel": "Xe đưa đón",
-        "metricValue": "Tuyến nội thành Hà Nội"
+        "desc": "Lương theo năng lực; bảo hiểm và phụ cấp theo quy định và chính sách công ty.",
+        "metricLabel": "Bảo hiểm",
+        "metricValue": "Theo quy định"
       }
     },
     "JobBoard": {
@@ -132,72 +132,72 @@
         "departmentLabel": "Kỹ thuật và R&D",
         "typeLabel": "Toàn thời gian",
         "locationLabel": "KCN Quang Minh, Hà Nội",
-        "salary": "Lương: 18 - 25 triệu đồng",
+        "salary": "Lương: thỏa thuận theo năng lực",
         "tags": {
           "0": "Kinh nghiệm từ 2 năm",
-          "1": "Biết mạ niken, mạ nhựa ABS và phân tích dung dịch bằng Hull Cell",
-          "2": "Phân tích nồng độ dung dịch mạ bằng Hull Cell"
+          "1": "Biết mạ niken, mạ nhựa ABS",
+          "2": "Phân tích dung dịch mạ, thử Hull cell"
         },
-        "deadline": "30/04/2026"
+        "deadline": "Liên hệ nhân sự"
       },
       "1": {
         "title": "Trưởng nhóm quản lý chất lượng (QA/QC)",
         "departmentLabel": "Quản lý chất lượng (QA/QC)",
         "typeLabel": "Toàn thời gian",
         "locationLabel": "KCN Quang Minh, Hà Nội",
-        "salary": "Lương: 20 - 30 triệu đồng",
+        "salary": "Lương: thỏa thuận theo năng lực",
         "tags": {
-          "0": "Kinh nghiệm 3 - 5 năm, am hiểu hệ thống quản lý chất lượng ISO 9001",
-          "1": "Đo độ dày lớp mạ và thử phun muối",
-          "2": "Kinh nghiệm: 3 - 5 năm"
+          "0": "Am hiểu hệ thống quản lý chất lượng ISO 9001",
+          "1": "Đo độ dày lớp mạ, thử phun muối NSS/CASS",
+          "2": "Kinh nghiệm 3 - 5 năm"
         },
-        "deadline": "15/05/2026"
+        "deadline": "Liên hệ nhân sự"
       },
       "2": {
         "title": "Kỹ thuật viên vận hành dây chuyền mạ tự động",
         "departmentLabel": "Sản xuất và vận hành",
         "typeLabel": "Làm theo ca",
         "locationLabel": "KCN Quang Minh, Hà Nội",
-        "salary": "Lương: 10 - 15 triệu đồng, có phụ cấp ca",
+        "salary": "Lương: thỏa thuận theo năng lực, có phụ cấp ca",
         "tags": {
           "0": "Tốt nghiệp trung cấp hoặc cao đẳng cơ khí, điện",
-          "1": "Giám sát hệ thống SCADA và cẩu chuyển tự động"
+          "1": "Vận hành dây chuyền mạ tự động: JIG móc hàng, cẩu trục, bể mạ"
         },
         "deadline": "Tuyển liên tục"
       },
       "3": {
-        "title": "Kỹ sư bảo trì cơ điện và hệ thống PLC",
+        "title": "Kỹ sư bảo trì cơ điện dây chuyền mạ",
         "departmentLabel": "Bảo trì và cơ điện",
         "typeLabel": "Toàn thời gian",
         "locationLabel": "KCN Quang Minh, Hà Nội",
-        "salary": "Lương: 15 - 22 triệu đồng",
+        "salary": "Lương: thỏa thuận theo năng lực",
         "tags": {
-          "0": "PLC Siemens S7-1200 hoặc Mitsubishi",
-          "1": "Bảo trì nguồn chỉnh lưu và hệ thống lọc tuần hoàn"
+          "0": "Kinh nghiệm bảo trì điện, cơ cho thiết bị sản xuất",
+          "1": "Bảo trì cẩu trục, nguồn chỉnh lưu và hệ thống lọc tuần hoàn"
         },
-        "deadline": "25/04/2026"
+        "deadline": "Liên hệ nhân sự"
       },
       "4": {
         "title": "Chuyên viên kinh doanh dự án (cơ khí và gia công phụ trợ)",
         "departmentLabel": "Kinh doanh và phát triển thị trường",
         "typeLabel": "Toàn thời gian",
         "locationLabel": "Văn phòng và nhà máy Hà Nội",
-        "salary": "Lương cố định và thưởng theo dự án",
+        "salary": "Lương cố định và thưởng theo chính sách công ty",
         "tags": {
           "0": "Giao tiếp được tiếng Anh, tiếng Hàn hoặc tiếng Nhật",
-          "1": "Phát triển khách hàng FDI, OEM"
+          "1": "Làm việc với khách hàng công nghiệp trong nước và nước ngoài"
         },
-        "deadline": "10/05/2026"
+        "deadline": "Liên hệ nhân sự"
       },
       "5": {
         "title": "Thực tập sinh kỹ thuật cơ khí / luyện kim",
         "departmentLabel": "Kỹ thuật và công nghệ",
         "typeLabel": "Thực tập sinh (3 - 6 tháng)",
         "locationLabel": "KCN Quang Minh, Hà Nội",
-        "salary": "Trợ cấp thực tập, phụ cấp ăn trưa và đi lại",
+        "salary": "Trợ cấp thực tập theo chính sách công ty",
         "tags": {
           "0": "Được kỹ sư của nhà máy hướng dẫn trực tiếp",
-          "1": "Có cơ hội làm việc chính thức sau thực tập"
+          "1": "Có thể xem xét tuyển chính thức sau thực tập"
         },
         "deadline": "Tuyển thường xuyên"
       }

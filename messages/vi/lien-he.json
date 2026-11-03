@@ -1,26 +1,26 @@
 {
   "LienHe": {
     "BottomCta": {
-      "heading": "Gửi mẫu hoặc bản vẽ để nhận báo giá mạ",
-      "description": "Kỹ sư HANIN xem mẫu hoặc bản vẽ và trao đổi về vật liệu nền, loại lớp mạ, bề mặt mong muốn trước khi báo giá.",
+      "heading": "Gửi mẫu hoặc bản vẽ để báo giá",
+      "description": "Kỹ sư HANIN xem mẫu hoặc bản vẽ, trao đổi về vật liệu nền, lớp mạ và bề mặt yêu cầu trước khi báo giá.",
       "ctaPrimary": "Gửi bản vẽ"
     },
     "ContactChannels": {
       "heading": "Thông tin liên hệ",
-      "subtitle": "Dành cho khách hàng trong nước và đơn hàng xuất khẩu",
+      "subtitle": "Địa chỉ, điện thoại, email và giờ làm việc",
       "card1": {
         "badge": "Nhà máy mạ",
         "title": "",
         "address": "Lô 49G, KCN Quang Minh, xã Quang Minh, TP Hà Nội",
         "footerLabel": "Cơ sở sản xuất",
-        "footerValue": "Dây chuyền mạ tự động, mạ treo, mạ quay và khu kiểm tra chất lượng"
+        "footerValue": "Dây chuyền mạ tự động, mạ treo, mạ quay và phòng phân tích, kiểm tra"
       },
       "card2": {
         "badge": "Điện thoại",
-        "title": "Tư vấn báo giá và kỹ thuật",
+        "title": "Báo giá và trao đổi kỹ thuật",
         "quoteLabel": "Bộ phận báo giá:",
         "engineerLabel": "Kỹ sư kỹ thuật (bản vẽ, thông số):",
-        "engineerHotlineSuffix": "Hotline kỹ thuật",
+        "engineerHotlineSuffix": "Hotline",
         "footerLabel": "Trao đổi qua Zalo hoặc WeChat"
       },
       "card3": {
@@ -45,8 +45,8 @@
       "subtitle": "Thông tin cần gửi, định dạng tệp, số lượng và mẫu thử.",
       "items": {
         "0": {
-          "question": "1. Cần gửi gì để HANIN báo giá?",
-          "answer": "Quý khách gửi mẫu, ảnh hoặc bản vẽ sản phẩm, vật liệu nền (nhựa ABS hay kim loại), loại bề mặt mong muốn và số lượng dự kiến. Kỹ sư HANIN trao đổi thêm nếu cần rồi báo giá."
+          "question": "1. Cần gửi thông tin gì để báo giá?",
+          "answer": "Gửi mẫu, ảnh hoặc bản vẽ; vật liệu nền (nhựa ABS, ABS/PC hoặc kim loại); lớp mạ yêu cầu; độ dày, màu và độ bóng nếu có; yêu cầu thử nghiệm (đo độ dày, phun muối NSS/CASS); số lượng mỗi lô và tiến độ. Kỹ sư HANIN trao đổi thêm nếu cần rồi báo giá."
         },
         "1": {
           "question": "2. Có thể gửi tệp ở những định dạng nào?",
@@ -72,7 +72,7 @@
       "titlePrefix": "Liên hệ và",
       "titleHighlight": "yêu cầu báo giá",
       "titleSuffix": "kỹ thuật",
-      "description": "HANIN nhận mạ trên nền nhựa ABS và kim loại, cùng sơn và in, cho doanh nghiệp sản xuất ô tô, thiết bị gia dụng, điện tử, thiết bị vệ sinh và nhà bếp. Gửi mẫu hoặc bản vẽ để được báo giá.",
+      "description": "HANIN nhận mạ trên nền nhựa ABS và kim loại, cùng sơn và in, cho khách hàng sản xuất ô tô, thiết bị gia dụng, thiết bị vệ sinh và nhà bếp. Gửi mẫu hoặc bản vẽ để được báo giá.",
       "ctaPrimary": "Gửi yêu cầu báo giá",
       "ctaSecondary": "Xem vị trí nhà máy",
       "specHighlights": {
@@ -85,7 +85,7 @@
           "desc": "Nhận PDF, DWG, DXF, STEP, ZIP, JPG, PNG, tối đa 50 MB mỗi tệp"
         },
         "consulting": {
-          "label": "Tư vấn kỹ thuật",
+          "label": "Trao đổi kỹ thuật",
           "desc": "Kỹ sư trao đổi về vật liệu nền, loại lớp mạ và bề mặt mong muốn"
         }
       },
@@ -93,12 +93,12 @@
     },
     "DirectChannels": {
       "heading": "Liên hệ trực tiếp",
-      "subtitle": "Dành cho đơn hàng gấp, đơn hàng xuất khẩu hoặc đăng ký đến khảo sát nhà máy.",
+      "subtitle": "Dùng cho đơn hàng gấp hoặc đăng ký khảo sát nhà máy.",
       "channels": {
         "hotline": {
           "label": "Gọi điện thoại",
-          "desc": "Trao đổi với chuyên viên kỹ thuật.",
-          "cta": "Gọi ngay"
+          "desc": "Trao đổi với bộ phận kỹ thuật.",
+          "cta": "Gọi"
         },
         "zalo": {
           "label": "Zalo",
@@ -179,16 +179,16 @@
           "bac": "PVD (mạ chân không), phun sơn và in",
           "other": "Khác / cần tư vấn"
         },
-        "volumeLabel": "Sản lượng dự kiến và tiến độ giao hàng",
+        "volumeLabel": "Số lượng mỗi lô và tiến độ giao hàng",
         "volumeOptions": {
           "sample": "Mẫu thử (số lượng ít)",
           "pilot": "Lô sản xuất thử",
           "mass": "Sản xuất hàng loạt định kỳ",
           "oem": "Hợp đồng dài hạn"
         },
-        "descriptionLabel": "Yêu cầu bề mặt và kiểm tra",
-        "descriptionStandards": "Nêu màu, độ bóng hoặc satin và yêu cầu kiểm tra nếu có",
-        "descriptionPlaceholder": "Ví dụ: nền nhựa ABS; niken-crom sáng bóng; màu và độ bóng theo mẫu đính kèm; thử phun muối theo yêu cầu"
+        "descriptionLabel": "Lớp mạ, độ dày, bề mặt và yêu cầu kiểm tra",
+        "descriptionStandards": "Nêu lớp mạ, độ dày, màu, độ bóng hoặc satin và yêu cầu thử (đo độ dày, phun muối NSS/CASS) nếu có",
+        "descriptionPlaceholder": "Ví dụ: nền nhựa ABS; niken-crom 3+; độ dày theo bản vẽ; màu và độ bóng theo mẫu đính kèm; thử phun muối NSS"
       },
       "step3": {
         "heading": "Đính kèm bản vẽ (2D hoặc 3D)",

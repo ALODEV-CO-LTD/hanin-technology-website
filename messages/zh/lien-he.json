@@ -1,26 +1,26 @@
 {
   "LienHe": {
     "BottomCta": {
-      "heading": "发送样品或图纸，获取电镀报价",
-      "description": "HANIN工程师会先查看样品或图纸，并就基材、镀层类型和所需表面效果与您沟通，然后报价。",
+      "heading": "发送样品或图纸以获取报价",
+      "description": "报价前，HANIN工程师审阅样品或图纸，并沟通基材、镀层及表面要求。",
       "ctaPrimary": "提交图纸"
     },
     "ContactChannels": {
       "heading": "联系方式",
-      "subtitle": "面向国内客户及出口订单",
+      "subtitle": "地址、电话、邮箱及工作时间",
       "card1": {
         "badge": "电镀工厂",
         "title": "",
         "address": "河内市光明乡光明工业区49G地块",
         "footerLabel": "生产设施",
-        "footerValue": "自动电镀线、挂镀线、滚镀线及质量检验区"
+        "footerValue": "自动电镀线、挂镀、滚镀及分析检测室"
       },
       "card2": {
         "badge": "电话",
-        "title": "报价与技术咨询",
+        "title": "报价与技术沟通",
         "quoteLabel": "报价部门：",
         "engineerLabel": "技术工程师（图纸、技术参数）：",
-        "engineerHotlineSuffix": "技术热线",
+        "engineerHotlineSuffix": "热线",
         "footerLabel": "可通过Zalo或微信沟通"
       },
       "card3": {
@@ -45,8 +45,8 @@
       "subtitle": "需提供的信息、文件格式、数量与试样。",
       "items": {
         "0": {
-          "question": "1. 报价需要提供哪些资料？",
-          "answer": "请提供产品样品、照片或图纸，说明基材（ABS塑料或金属）、所需表面效果和预计数量。如有需要，HANIN工程师会进一步沟通后报价。"
+          "question": "1. 报价需要提供哪些信息？",
+          "answer": "请提供样品、照片或图纸；基材（ABS、ABS/PC塑胶或金属）；所需镀层；厚度、颜色和光泽（如有）；试验要求（测厚、NSS/CASS盐雾试验）；每批数量及交期。必要时HANIN工程师会进一步沟通后报价。"
         },
         "1": {
           "question": "2. 可以发送哪些格式的文件？",
@@ -72,20 +72,20 @@
       "titlePrefix": "联系我们与",
       "titleHighlight": "技术报价",
       "titleSuffix": "申请",
-      "description": "HANIN承接ABS塑料和金属电镀以及喷漆、印刷，服务于汽车、家用电器、电子、卫浴与厨房设备等制造企业。请发送样品或图纸获取报价。",
+      "description": "HANIN承接塑胶（ABS）及金属基材电镀，以及喷涂和印刷，服务于汽车、家电、卫浴及厨房设备制造企业。请发送样品或图纸以获取报价。",
       "ctaPrimary": "提交报价申请",
       "ctaSecondary": "查看工厂位置",
       "specHighlights": {
         "sample": {
           "label": "发送样品与照片",
-          "desc": "发送照片、样品或图纸，HANIN先行查看再报价"
+          "desc": "报价前请提供照片、样品或图纸供HANIN审阅"
         },
         "cad": {
           "label": "2D 与 3D 图纸",
           "desc": "支持PDF、DWG、DXF、STEP、ZIP、JPG、PNG，每个文件最大50 MB"
         },
         "consulting": {
-          "label": "技术咨询",
+          "label": "技术沟通",
           "desc": "工程师就基材、镀层类型和所需表面效果进行沟通"
         }
       },
@@ -93,12 +93,12 @@
     },
     "DirectChannels": {
       "heading": "直接联系",
-      "subtitle": "适用于加急订单、出口订单或预约参观工厂。",
+      "subtitle": "适用于加急订单或预约工厂考察。",
       "channels": {
         "hotline": {
           "label": "电话咨询",
-          "desc": "直接与技术专员沟通。",
-          "cta": "立即拨打"
+          "desc": "与技术部门沟通。",
+          "cta": "致电"
         },
         "zalo": {
           "label": "Zalo",
@@ -138,7 +138,7 @@
         }
       },
       "openMapsCta": "打开 Google 地图",
-      "downloadMapCta": "提交报价需求",
+      "downloadMapCta": "发送报价申请",
       "satelliteImageAlt": "河内光明乡光明工业区卫星图",
       "gateLabel": "HANIN电镀工厂",
       "plotLabel": "光明工业区49G地块"
@@ -179,16 +179,16 @@
           "bac": "PVD（真空镀）、喷漆与印刷",
           "other": "其他 / 需要咨询"
         },
-        "volumeLabel": "预计数量与交货进度",
+        "volumeLabel": "每批数量及交货进度",
         "volumeOptions": {
           "sample": "试样（少量）",
           "pilot": "试生产批量",
           "mass": "定期批量生产",
           "oem": "长期合同"
         },
-        "descriptionLabel": "表面与检验要求",
-        "descriptionStandards": "请说明颜色、光泽或缎面及检验要求（如有）",
-        "descriptionPlaceholder": "例如：ABS塑料基材；光亮镍铬；颜色与光泽以附件样品为准；按要求做盐雾试验"
+        "descriptionLabel": "镀层、厚度、表面及检验要求",
+        "descriptionStandards": "如有，请注明镀层、厚度、颜色、光泽或缎面，以及试验要求（测厚、NSS/CASS盐雾）",
+        "descriptionPlaceholder": "例：ABS塑胶基材；镍铬（Cr³⁺）；厚度按图纸；颜色和光泽按附件样品；NSS盐雾试验"
       },
       "step3": {
         "heading": "上传图纸（2D 或 3D）",

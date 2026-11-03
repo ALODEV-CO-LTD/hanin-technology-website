@@ -6,7 +6,7 @@
       "breadcrumbCurrent": "产品与项目",
       "breadcrumbTag": "已电镀产品目录",
       "title": "产品与项目",
-      "description": "HANIN已完成电镀的产品，涵盖汽车、智能家居、家用电器、卫浴与厨房设备，以及镀镍、镀锌、镀锡的金属零件。"
+      "description": "HANIN已电镀产品按应用行业分类：汽车、智能家居、家电、卫浴厨房、五金。基材包括ABS、ABS/PC塑料和金属；镀层包括镍铬、缎面镍、镍、锌、锡、黑色磷化。"
     },
     "FeaturedProjectSpotlight": {
       "heading": "代表性项目",
@@ -20,7 +20,7 @@
     },
     "ProductCatalog": {
       "heading": "已电镀产品",
-      "subheading": "选择产品，查看所用镀层与工艺流程。",
+      "subheading": "选择产品查看基材、镀层及适用工艺。",
       "lotNumber": "产品编号",
       "ctaViewDetail": "查看产品详情",
       "viewDetailAriaLabel": "查看详情",
@@ -39,7 +39,7 @@
       "closeAriaLabel": "关闭"
     },
     "ProductHero": {
-      "ctaRequestQuote": "联系获取项目报价",
+      "ctaRequestQuote": "发送报价需求",
       "ctaDownloadSpecSheet": "发送样品或图纸",
       "materialLabel": "基材：",
       "materialValue": "ABS、ABS/PC塑料或金属"
@@ -50,76 +50,76 @@
     },
     "ProductProcessTimeline": {
       "title": "实施流程",
-      "description": "从收货到出货前检验。"
+      "description": "从入库到成品检验。"
     },
     "ProductQuoteCta": {
-      "title": "您的产品需要类似的电镀吗？",
-      "descriptionPrefix": "请发送样品、产品照片或图纸，并说明表面要求。HANIN会与您沟通合适的电镀方案，并",
-      "descriptionHighlight": "提供详细报价",
+      "title": "申请电镀时需提供的信息",
+      "descriptionPrefix": "请提供样品或图纸、基材、所需镀层与厚度、试验要求、数量及交期。HANIN据此确定电镀方案并",
+      "descriptionHighlight": "提供报价",
       "ctaSendQuote": "提交报价需求",
       "hotlineLabel": "热线：",
       "emailLabel": "接收图纸邮箱："
     },
     "ProductsCta": {
-      "title": "您有需要电镀的产品吗？",
-      "description": "发送样品、照片或图纸，或直接与HANIN沟通，获取报价和合适的电镀方案。",
-      "cta": "获取报价",
+      "title": "发送电镀需求",
+      "description": "请提供样品、照片或图纸，并注明基材、所需镀层和数量，以获取报价。",
+      "cta": "发送报价需求",
       "emailLabel": "邮箱：",
       "hotlineLabel": "热线："
     },
     "RelatedProjects": {
-      "title": "其他项目与产品",
-      "description": "HANIN已完成电镀的其他部分产品。",
+      "title": "其他产品",
+      "description": "HANIN已电镀的其他产品。",
       "lot": "编号",
       "ctaViewDetail": "查看项目详情"
     },
     "RelatedServices": {
       "title": "相关电镀服务",
-      "description": "HANIN可用于此类产品的表面处理方法。",
+      "description": "适用于此类产品的表面处理工艺。",
       "ctaViewAll": "查看全部电镀服务"
     },
     "SpecTrustNote": {
       "title": "产品信息说明",
-      "description": "页面内容仅按产品类别作一般介绍；每个订单的具体要求，以客户提供的样品或图纸为准。"
+      "description": "本页按产品类别提供信息。每个订单的镀层、厚度、光泽度和试验要求，依据客户样品或图纸确定。"
     },
     "categoryTabs": {
       "all": "全部产品",
-      "coKhiChinhXac": "金属电镀件",
+      "coKhiChinhXac": "五金及金属件",
       "phuTungOToXeMay": "汽车零部件",
       "dauCosseThietBiDien": "家电与电子设备",
       "anodizing": "卫浴与厨房设备"
     },
     "products": {
       "phuTungOTo": {
-        "title": "汽车零部件：车标、启动按钮、灯框饰圈、字标饰条",
+        "title": "汽车配件：徽标、启动按钮、车灯边框、字标饰条",
         "category": "汽车零部件",
-        "description": "VinFast、Infiniti、Nissan车标，启动按钮，灯框饰圈和字标饰条，均采用ABS塑料镍铬电镀。",
+        "description": "VinFast、Infiniti、Nissan徽标，Engine Start/Stop启动按钮，车灯边框，摩托车面罩饰板，VinFast字标饰条和立体字。基材为ABS塑料，镀层为镍铬。",
         "imageAlt": "电镀后的汽车车标、启动按钮和灯框饰圈",
         "imageBadge": "汽车零部件",
         "chips": {
           "coating": {
             "label": "镀层",
-            "value": "ABS塑料镍铬电镀"
+            "value": "ABS塑料镍铬；镍铬黑"
           }
         }
       },
       "smartHome": {
         "title": "智能家居与电子产品：控制按钮、开关",
         "category": "智能家居与电子产品",
-        "description": "Vinsmart智能设备的控制按钮和开关，采用ABS塑料装饰性电镀。",
+        "description": "Vinsmart智能设备的控制按钮和开关。基材为ABS塑料，镀层为装饰性镍铬。",
         "imageAlt": "电镀后的智能设备控制按钮",
         "imageBadge": "智能家居与电子产品",
         "chips": {
           "coating": {
             "label": "镀层",
-            "value": "ABS塑料装饰性电镀"
+            "value": "ABS塑料装饰性镍铬"
           }
         }
       },
       "giaDung": {
         "title": "家用电器：冰箱、洗衣机、净水器",
         "category": "家用电器",
-        "description": "用于家用电器品牌冰箱、洗衣机、净水器及烤箱旋钮的装饰零件。",
+        "description": "日立、LG、松下、三星冰箱；LG洗衣机及洗衣机盖框；Karofi净水器；LG烤箱旋钮。ABS塑料装饰件电镀。",
         "imageAlt": "电镀后的家电装饰零件",
         "imageBadge": "家用电器",
         "chips": {
@@ -132,7 +132,7 @@
       "veSinhNhaBep": {
         "title": "卫浴与厨房设备：花洒、手柄、旋钮",
         "category": "卫浴与厨房设备",
-        "description": "花洒、水龙头、花洒切换手柄、净水器旋钮，以及Sunhouse厨房设备的框架和旋钮。",
+        "description": "花洒、水龙头、卫浴配件、淋浴龙头手柄、净水器旋钮、Sunhouse厨房设备框架和旋钮。镀层为镀铬。",
         "imageAlt": "电镀后的花洒和厨房设备旋钮",
         "imageBadge": "卫浴与厨房",
         "chips": {
@@ -145,7 +145,7 @@
       "satinAbs": {
         "title": "ABS塑料缎面电镀",
         "category": "缎面电镀",
-        "description": "哑光细腻的缎面镍表面，适用于需要质感外观但不宜强反光的ABS塑料零件。",
+        "description": "ABS、ABS/PC塑料镀缎面镍，表面细腻哑光、低反光，用于装饰件。",
         "imageAlt": "缎面镍电镀的ABS塑料零件",
         "imageBadge": "缎面电镀",
         "chips": {
@@ -158,7 +158,7 @@
       "cromDenHairLine": {
         "title": "黑铬电镀与拉丝(Hair Line)处理",
         "category": "黑铬与拉丝",
-        "description": "黑色镍铬镀层以及镍铬表面的拉丝(Hair Line)处理，用于装饰零件。",
+        "description": "ABS塑料镀镍铬黑；在镍铬层上加工Hair Line拉丝表面。用于装饰件。",
         "imageAlt": "黑铬电镀及拉丝表面的零件",
         "imageBadge": "黑铬与拉丝",
         "chips": {
@@ -169,9 +169,9 @@
         }
       },
       "kimLoaiMa": {
-        "title": "镀镍、镀锌、镀锡、黑色磷化金属零件",
+        "title": "镀镍、锌、锡、黑色磷化、缎面的金属件",
         "category": "金属电镀件",
-        "description": "螺栓、螺钉、合页、销、轴、螺母、接线端子及机械零件，采用镀镍、镀锌、镀锡或黑色磷化处理。",
+        "description": "电解镍：拉手、合页、定位销。化学镍：齿轮、销、锁。黑色磷化：螺丝、螺栓、盖板。镀锡：螺母、铆钉、接线端子。镀锌：衬套、轴销、螺丝。缎面：不锈钢板、门把手、不锈钢条。",
         "imageAlt": "电镀后的螺栓、螺钉和金属零件",
         "imageBadge": "金属零件",
         "chips": {
@@ -201,13 +201,13 @@
           "note": "中性盐雾与酸性盐雾试验"
         }
       },
-      "heroDescription": "需要美观耐用表面的装饰产品，可在ABS塑料或金属基材上电镀。HANIN先进行表面前处理，按材质选用合适的电镀工艺，并在交货前检验镀层。",
+      "heroDescription": "装饰或防腐蚀零件在ABS、ABS/PC塑料或金属基材上电镀。流程：表面前处理、按基材选择电镀工艺、镀层检验。",
       "heroImageAlt": "HANIN工厂电镀后的装饰零件",
       "gallery": {
         "item1": {
           "alt": "电镀后的零件",
           "thumbLabel": "电镀后的零件",
-          "caption": "电镀后的零件，表面光亮均匀"
+          "caption": "电镀后的零件"
         },
         "item2": {
           "alt": "在质检室测量镀层厚度",
@@ -232,15 +232,15 @@
       },
       "achievements": {
         "item1": {
-          "title": "光亮或缎面表面",
-          "description": "光亮镍铬、哑光缎面镍、黑铬或拉丝(Hair Line)，按客户样品选择。"
+          "title": "表面效果",
+          "description": "光亮镍铬、缎面镍、黑铬或Hair Line拉丝，按客户样品选择。"
         },
         "item2": {
-          "title": "一家工厂多种工艺",
-          "description": "可进行ABS塑料电镀、镀镍、锌、铜、锡、黑色磷化、PVD和喷漆印刷，一个订单可在同一地点完成全部工序。"
+          "title": "工厂工艺",
+          "description": "ABS塑料电镀，镀镍、锌、铜、锡、黑色磷化，PVD真空镀，喷漆和印刷。"
         },
         "item3": {
-          "title": "交货前检验",
+          "title": "镀层检验",
           "description": "测量镀层厚度，进行NSS和CASS盐雾试验及成品检验。"
         }
       },
@@ -277,22 +277,22 @@
       "process": {
         "step1": {
           "title": "收货与前处理",
-          "description": "收货入库、超声波除油、盐酸槽、表面活化；各工序之间均进行水洗。",
+          "description": "入库、仓储、超声波除油、盐酸槽、表面活化；各步骤之间水洗。",
           "phase": "前处理"
         },
         "step2": {
           "title": "挂具装挂与电镀",
-          "description": "ABS塑料在自动线上镀镍铬；金属在挂镀线或滚镀线上镀镍、锌、铜、锡或黑色磷化。",
+          "description": "ABS塑料：在自动挂镀线上镀镍铬。金属：在挂镀线或滚镀线上镀镍、锌、铜、锡或黑色磷化。",
           "phase": "电镀"
         },
         "step3": {
           "title": "表面精加工",
-          "description": "按要求做缎面、黑铬或拉丝(Hair Line)处理，然后烘干。零件上也可增加喷漆或印刷。",
+          "description": "按要求加工缎面、黑铬或Hair Line拉丝，然后干燥。可另行喷漆或印刷。",
           "phase": "精加工"
         },
         "step4": {
           "title": "检验与包装",
-          "description": "测量镀层厚度、盐雾试验、成品检验，然后包装发货。",
+          "description": "测量镀层厚度、盐雾试验、成品检验、包装。",
           "phase": "检验与交付"
         }
       },

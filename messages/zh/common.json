@@ -8,7 +8,7 @@
     "tinTuc": "新闻资讯",
     "tuyenDung": "招聘信息",
     "lienHe": "联系我们",
-    "cta": "获取报价",
+    "cta": "申请报价",
     "menuOpen": "打开菜单",
     "menuClose": "关闭菜单",
     "logoAlt": "HANIN Plating"
@@ -81,7 +81,7 @@
     },
     "tinTuc": {
       "title": "新闻与技术简报",
-      "description": "HANIN企业新闻、表面处理知识及生产动态。"
+      "description": "公司动态、电镀与表面处理技术文章及HANIN生产动态。"
     },
     "tuyenDung": {
       "title": "招聘",
@@ -110,9 +110,9 @@
     "badType": "不支持该文件格式。请使用 PDF、DWG、DXF、STEP、ZIP、JPG 或 PNG。"
   },
   "StickyContact": {
-    "label": "立即致电",
+    "label": "致电",
     "zalo": "Zalo",
-    "quote": "获取报价",
+    "quote": "报价",
     "aria": "快速联系"
   }
 }

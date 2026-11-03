@@ -5,7 +5,7 @@
       "breadcrumbHome": "首页",
       "breadcrumbCurrent": "关于我们",
       "title": "关于 HANIN",
-      "subtitle": "了解 HANIN 的发展方向及服务工业客户的生产能力。"
+      "subtitle": "公司信息、Hanin Tech 体系、电镀生产线及认证。"
     },
     "CompanyIntroduction": {
       "imageAlt": "位于河内光明工业区的现代化厂区外观",
@@ -14,7 +14,7 @@
       "heading": "面向工业客户的电镀加工",
       "paragraph1Strong": "HANIN 电镀工业股份公司",
       "paragraph1Rest": "专业从事 ABS 塑料及金属基材的电镀处理，同时承接塑料、金属产品的喷漆与印刷。",
-      "paragraph2": "公司成立于 2023 年，工厂位于河内光明工业区 49G 号地块，占地 2,230 平方米。工厂有员工 70 人，设有挂镀、滚镀和 QC 等部门，服务客户超过 100 家。",
+      "paragraph2": "公司成立于2023年，工厂位于河内光明工业区49G地块，占地2,230 m²，现有员工70人。已有100多家客户使用加工服务。",
       "field": {
         "label": "经营领域",
         "value": "塑料与金属电镀处理",
@@ -62,13 +62,13 @@
       }
     },
     "ContactCta": {
-      "heading": "需要洽谈电镀加工事宜？",
-      "subtitle": "请发送需求或图纸，HANIN 将提供技术咨询和报价。",
-      "ctaPrimary": "联系 HANIN",
-      "ctaSecondary": "获取报价"
+      "heading": "提交电镀加工需求",
+      "subtitle": "请提供图纸或样品、基材、所需镀层及数量，HANIN 据此报价。",
+      "ctaPrimary": "联系",
+      "ctaSecondary": "提交报价需求"
     },
     "CoreStrengths": {
-      "heading": "HANIN 的能力",
+      "heading": "生产与检测能力",
       "production": {
         "title": "生产能力",
         "desc": "自动线每日 3 万至 5 万件，半自动挂镀每日 1 万至 2 万件，滚镀每日 3 至 5 吨。",
@@ -88,28 +88,28 @@
         "metricValue": "NSS、CASS、Hull cell"
       },
       "support": {
-        "title": "技术与支持",
-        "desc": "根据图纸及各零件的技术要求提供电镀工艺咨询。",
+        "title": "技术",
+        "desc": "按图纸及各零件的技术要求确定电镀工艺。",
         "metricLabel": "技术咨询",
         "metricValue": "按图纸"
       }
     },
     "DevelopmentDirection": {
-      "heading": "发展方向",
-      "subtitle": "提升镀层质量，规范工艺，帮助客户控制成本。",
+      "heading": "工作方式",
+      "subtitle": "技术要求以图纸为准，并在工厂内用设备检测。",
       "precision": {
-        "title": "符合要求",
-        "desc": "按客户图纸要求进行电镀并检测镀层。",
+        "title": "按图纸",
+        "desc": "按客户图纸要求电镀并测量镀层厚度。",
         "note": "镀层测厚"
       },
       "stability": {
-        "title": "稳定性",
-        "desc": "保持各批次质量一致。",
-        "note": "批次间质量一致"
+        "title": "槽液控制",
+        "desc": "在分析室对镀液进行分析并做赫尔槽试验。",
+        "note": "分析室、赫尔槽试验"
       },
       "partnership": {
-        "title": "协作",
-        "desc": "与客户共同解决表面处理方面的技术问题。",
+        "title": "技术沟通",
+        "desc": "与客户技术部门沟通表面处理要求。",
         "note": "与客户技术部门对接"
       }
     },
@@ -144,8 +144,8 @@
       "cardViewLabel": "查看资料"
     },
     "QualityStandardsPreview": {
-      "heading": "质量与标准",
-      "subtitle": "HANIN 的质量管理体系与认证。",
+      "heading": "认证与质量检测",
+      "subtitle": "ISO 9001:2015 认证、废水处理系统及检测设备。",
       "cta": "查看认证证书",
       "certificateImageAlt": "ICB 颁发的 Hanin Technology 越南公司 ISO 9001:2015 证书",
       "certificateTag": "认证证书",
@@ -159,7 +159,7 @@
       "iso9001": {
         "tag": "ISO 认证",
         "title": "质量管理体系",
-        "desc": "ISO 9001:2015，2025 年 8 月 11 日颁发，有效期至 2028 年 8 月 10 日。",
+        "desc": "ISO 9001:2015 颁发给 Hanin Technology Vietnam 股份公司，签发日期2025年8月11日，有效期至2028年8月10日。",
         "standard": "标准：ISO 9001:2015",
         "status": "有效"
       },
@@ -168,7 +168,7 @@
         "title": "废水处理",
         "desc": "处理能力 130 立方米/昼夜，配有沉淀池和压泥机。",
         "standard": "处理能力：130 立方米/昼夜",
-        "status": "运行中"
+        "status": "位于电镀工厂"
       },
       "equipment": {
         "tag": "检测",
