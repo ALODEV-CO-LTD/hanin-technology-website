@@ -13,7 +13,7 @@ export default function SocialLinks({ className = "", floating = false }: { clas
     <ul
       className={
         floating
-          ? `fixed right-0 top-1/2 z-40 flex -translate-y-1/2 flex-col items-end gap-space-sm ${className}`
+          ? `fixed right-0 top-1/2 z-40 max-lg:hidden flex -translate-y-1/2 flex-col items-end gap-space-sm ${className}`
           : `flex flex-wrap items-center gap-space-sm ${className}`
       }
     >

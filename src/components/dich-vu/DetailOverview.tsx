@@ -5,7 +5,7 @@ import Icon from "@/components/ui/Icon";
 export default function DetailOverview({ slug }: { slug: string }) {
   const t = useTranslations(useServiceNs(slug, "DetailOverview"));
 
-  const SUBSTRATES = ["alloySteel", "carbonSteel", "stainless", "aluminum", "brass", "ductileIron"] as const;
+  const SUBSTRATES = (["m1", "m2", "m3", "m4", "m5", "m6"] as const).filter((key) => t.has(`col3.substrates.${key}`));
 
   return (
     <section className="w-full mb-space-xl">
@@ -28,9 +28,11 @@ export default function DetailOverview({ slug }: { slug: string }) {
             <p className="text-body-md text-slate-600">
               {t("col1.p1")} <strong className="text-slate-900 font-semibold">{t("col1.p1Strong")}</strong>.
             </p>
-            <div className="bg-white border border-slate-200 p-space-sm rounded text-sm text-slate-700 my-2 overflow-x-auto">
-              <code>{t("col1.formula")}</code>
-            </div>
+            {t.has("col1.formula") && (
+              <div className="bg-white border border-slate-200 p-space-sm rounded text-sm text-slate-700 my-2 overflow-x-auto">
+                <code>{t("col1.formula")}</code>
+              </div>
+            )}
             <p className="text-body-md text-slate-600">{t("col1.p2")}</p>
           </div>
 

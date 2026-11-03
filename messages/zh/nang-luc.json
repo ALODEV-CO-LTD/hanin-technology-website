@@ -1,309 +1,306 @@
 {
   "NangLuc": {
     "AutomatedVsManual": {
-      "title": "自动线与手工线",
-      "description": "大批量订单在自动线上生产,结构特殊的零件由技术人员手工处理。",
+      "title": "自动生产线与半自动生产线",
+      "description": "大批量订单在自动电镀线上生产。中小批量金属件在半自动挂镀线或滚镀线上生产。",
       "automated": {
-        "imageAlt": "配有 PLC SCADA 控制屏的自动电镀线,行车将零件送入处理槽",
-        "title": "自动生产线",
-        "desc": "PLC SCADA 控制浸槽时间、电流密度并自动补加药剂,保持槽液稳定。",
-        "feature1": "PLC 与 SCADA 联动控制",
-        "feature2": "按批次监控镀层厚度",
-        "feature3": "生产周期稳定,减少人工操作误差"
+        "imageAlt": "厂房内带有电镀槽和行车的自动电镀线",
+        "title": "自动电镀线",
+        "desc": "产品挂在挂具（JIG）上，由行车依次转移到电镀区各槽。日产量 3–5 万件，可镀铬、镍、缎面。"
       },
       "manual": {
-        "imageAlt": "身穿防护服的技术人员在入槽前检查金属零件挂具",
-        "title": "手工及半自动生产线",
-        "desc": "用于样品、试制件和复杂零件,按图纸单独制作挂具。",
-        "feature1": "可处理结构复杂的零件",
-        "feature2": "承接样品、试制和小批量订单",
-        "feature3": "由技术人员直接调整装挂治具"
+        "imageAlt": "HANIN 厂房内的挂镀与滚镀区域",
+        "title": "半自动挂镀线与滚镀线",
+        "desc": "半自动挂镀线用于金属件，日产 1 万–2 万件。滚镀线用于小件大批量，日产 3,000–5,000 公斤。"
       }
     },
     "CapabilityHero": {
       "breadcrumbHome": "首页",
       "breadcrumbCurrent": "生产能力",
       "title": "生产能力",
-      "description": "HANIN 的厂房、PLC SCADA 控制的电镀生产线和检测实验室。",
+      "description": "HANIN 的厂房、电镀生产线与检测实验室。",
       "ctaExplore": "查看厂区",
       "ctaLines": "生产线",
-      "ctaQa": "QA/QC 检测实验室"
+      "ctaQa": "检测实验室"
     },
     "CapabilityOverviewStats": {
       "items": {
-        "equipment": {
-          "label": "设备总数",
-          "desc": "电镀与辅助设备",
-          "end": "42",
-          "prefix": "",
-          "suffix": "+",
-          "unit": ""
-        },
         "lines": {
-          "label": "生产线",
-          "desc": "PLC 自动线与半自动线",
-          "end": "16",
+          "label": "电镀生产线",
+          "desc": "自动电镀、半自动挂镀和滚镀",
+          "end": "3",
           "prefix": "",
           "suffix": "",
-          "unit": ""
+          "unit": "条"
         },
-        "zones": {
-          "label": "功能分区",
-          "desc": "电镀区、药剂区、检测实验室",
-          "end": "5",
+        "pvd": {
+          "label": "PVD 设备",
+          "desc": "真空电镀，2 条 PVD 生产线",
+          "end": "2",
           "prefix": "",
           "suffix": "",
-          "unit": ""
+          "unit": "台"
         },
-        "precision": {
-          "label": "厚度公差",
-          "desc": "自动线上的镀层厚度公差",
-          "end": "0.2",
-          "prefix": "±",
+        "wastewater": {
+          "label": "废水处理",
+          "desc": "废水处理系统处理能力",
+          "end": "130",
+          "prefix": "",
           "suffix": "",
-          "unit": "µm"
+          "unit": "立方米/昼夜"
+        },
+        "staff": {
+          "label": "员工",
+          "desc": "电镀工厂员工人数",
+          "end": "70",
+          "prefix": "",
+          "suffix": "",
+          "unit": "人"
         }
       }
     },
     "CompanyProfileCta": {
       "title": "HANIN 能力资料",
-      "description": "厂房布局、生产线参数、检测设备清单和生产能力。",
-      "ctaDownload": "查看 Company Profile(PDF)",
-      "fileBadge": "PDF 14.5 MB",
-      "cardTitle": "HANIN 能力资料 2026",
+      "description": "介绍 HANIN 的工厂、电镀生产线、检测设备与服务。",
+      "ctaDownload": "查看公司简介 (PDF)",
+      "fileBadge": "PDF",
+      "cardTitle": "HANIN 公司简介",
       "cardSubtitle": "能力介绍资料",
-      "cardEdition": "2026年1月版",
-      "cardReady": "可下载"
+      "cardEdition": "Company profile",
+      "cardReady": "可在线查看"
     },
     "EquipmentGrid": {
-      "sectionTitle": "机械设备",
-      "sectionDescription": "涵盖前处理、主镀和表面后处理各工序的设备。",
+      "sectionTitle": "机器与设备",
+      "sectionDescription": "PVD 设备、喷漆区、滚镀设备和废水处理系统。",
       "items": {
-        "rectifier": {
-          "badge": "供电系统",
-          "title": "电镀槽与整流电源",
-          "desc": "PLC 控制的高频整流电源,为大型电镀槽提供稳定电流。",
-          "alt": "电镀槽整流电源控制柜,带数显表和开关",
-          "specLoad": "负载电流:",
-          "specStability": "稳定度:",
-          "specControl": "控制方式:",
-          "specLoadValue": "12,000A",
-          "specStabilityValue": "±1%",
-          "specControlValue": "PLC"
+        "pvd": {
+          "badge": "真空电镀",
+          "title": "PVD 真空电镀设备",
+          "desc": "用于对外观要求高的塑料和金属件的 PVD 镀膜。",
+          "alt": "HANIN 工厂的 PVD 真空电镀设备",
+          "spec1Label": "设备数量",
+          "spec1Value": "2 台",
+          "spec2Label": "生产线",
+          "spec2Value": "2 条 PVD 生产线",
+          "spec3Label": "工艺",
+          "spec3Value": "真空电镀"
         },
-        "ultrasonic": {
-          "badge": "表面前处理",
-          "title": "多频超声波清洗除油槽",
-          "desc": "多频超声波清除毛刺和加工油污,电镀前保持表面洁净。",
-          "alt": "HANIN 电镀车间的清洗与除油槽区域",
-          "specFrequency": "频率:",
-          "specHeating": "加热方式:",
-          "specHeatingValue": "自动",
-          "specVolume": "容积:",
-          "specFrequencyValue": "28 - 40 kHz",
-          "specVolumeValue": "850 m³"
+        "paint": {
+          "badge": "喷漆与印刷",
+          "title": "喷漆区",
+          "desc": "对塑料和金属零件进行喷漆，并提供印刷和激光切割。",
+          "alt": "HANIN 工厂的喷漆区",
+          "spec1Label": "手工喷漆房",
+          "spec1Value": "2 间",
+          "spec2Label": "6 轴喷漆房（6 支喷枪）",
+          "spec2Value": "3 间",
+          "spec3Label": "自动喷漆线",
+          "spec3Value": "1 条",
+          "spec4Label": "离子风除尘房",
+          "spec4Value": "20 间"
         },
-        "hoist": {
-          "badge": "厂内转运",
-          "title": "自动行车(hoist)",
-          "desc": "自动行车激光定位,按设定工序将挂具送入各槽。",
-          "alt": "自动线上升降挂具的自动行车",
-          "specLoad": "载重:",
-          "specLoadUnit": "吨",
-          "specSpeed": "速度:",
-          "specSpeedValue": "可调",
-          "specSensor": "传感器:",
-          "specLoadValue": "25",
-          "specSensorValue": "Laser"
+        "rotary": {
+          "badge": "滚镀",
+          "title": "振动与除油设备",
+          "desc": "在滚镀线上，小件先除油，再进入镀铜槽和镀镍槽。",
+          "alt": "HANIN 工厂滚镀线上的设备",
+          "spec1Label": "生产线",
+          "spec1Value": "滚镀线",
+          "spec2Label": "产能",
+          "spec2Value": "3,000–5,000 公斤/天",
+          "spec3Label": "镀槽",
+          "spec3Value": "镀铜槽、镀镍槽"
         },
-        "deEmbrittlement": {
-          "badge": "镀后热处理",
-          "title": "镀后除氢炉(de-embrittlement)",
-          "desc": "带热风循环的加热炉,为高强度钢除氢。",
-          "alt": "车间内带温控面板的烘干炉",
-          "specMaxTemp": "最高温度:",
-          "specSensor": "传感器:",
-          "specStandard": "标准:",
-          "specMaxTempValue": "300°C - 500°C",
-          "specSensorValue": "PID Digital",
-          "specStandardValue": "ASTM F519"
+        "wastewater": {
+          "badge": "环保",
+          "title": "废水处理系统",
+          "desc": "生产废水经沉淀池和压泥机处理。",
+          "alt": "HANIN 工厂的废水处理区",
+          "spec1Label": "处理能力",
+          "spec1Value": "130 立方米/昼夜",
+          "spec2Label": "设施",
+          "spec2Value": "沉淀池、压泥机"
         }
       }
     },
     "FactoryGallery": {
-      "sectionTitle": "厂区与生产线实景",
-      "sectionDescription": "HANIN 工厂实拍:厂区外观、电镀线、设备区、操作人员和检测室。",
+      "sectionTitle": "工厂与生产线图片",
+      "sectionDescription": "HANIN 工厂实拍：电镀区、生产线、设备和检测实验室。",
       "mainImage": {
-        "alt": "车间内的自动电镀线,可见药液槽和行车",
-        "badge": "主生产区"
+        "alt": "厂房内带电镀槽的电镀生产线",
+        "badge": "主要生产区域"
       },
       "items": {
         "campus": {
-          "label": "厂区外观",
-          "alt": "HANIN Technology Việt Nam 位于光明工业区的厂房外观"
+          "label": "工厂",
+          "alt": "HANIN 电镀工厂，位于广明工业区 49G 地块"
         },
         "control": {
-          "label": "控制与操作",
-          "alt": "工程师在控制面板前调整电流密度和浸槽时间"
+          "label": "生产运行",
+          "alt": "生产区域的操作人员"
         },
         "finished": {
-          "label": "成品",
-          "alt": "电镀后的金属零件特写"
+          "label": "电镀成品",
+          "alt": "电镀后零件特写"
         },
         "racks": {
-          "label": "挂具(rack)",
-          "alt": "放置挂具的金属表面处理区域"
+          "label": "挂具",
+          "alt": "带挂具的电镀区域"
         }
       }
     },
     "FactoryOverview": {
       "sectionTitle": "工厂概况",
       "image": {
-        "alt": "HANIN 工厂光明工业区电镀车间全景"
+        "alt": "HANIN 工厂的电镀区与生产车间，广明工业区"
       },
-      "factoryTitle": "厂房",
-      "factoryDescription": "厂房设有电镀区、药剂区和检测实验室,废水在自建处理站按 QCVN 40:2011/BTNMT 处理。",
+      "factoryTitle": "工厂",
+      "factoryDescription": "HANIN 电镀工厂位于广明工业区 49G 地块，设有塑料与金属电镀线、PVD、喷漆和印刷。废水处理系统处理能力为 130 立方米/昼夜。",
       "specs": {
         "locationLabel": "地点",
         "areaLabel": "厂房占地面积",
         "capabilityLabel": "加工项目",
-        "capabilityValue": "工业电镀与化学镀",
-        "locationValue": "河内市光明乡光明工业区 49G 号地块",
+        "capabilityValue": "ABS 塑料电镀、金属电镀、PVD、喷漆与印刷",
+        "locationValue": "河内市广明乡广明工业区 49G 地块",
         "areaValue": "2,230 m²"
       },
       "ctaGallery": "查看工厂图片"
     },
     "NangLucFinalCta": {
-      "title": "需要电镀加工?",
-      "description": "请提供图纸和技术要求,HANIN 工程师将与您沟通公差和交期。",
+      "title": "需要电镀加工？",
+      "description": "请发送图纸或样品及技术要求，HANIN 工程师将与您沟通电镀方案和交期。",
       "ctaContact": "联系 HANIN",
       "ctaQuote": "申请报价",
-      "hotlineLabel": "技术热线:",
-      "responseLabel": "技术答复:",
-      "responseValue": "24 小时内"
+      "hotlineLabel": "热线："
     },
     "ProductionFlow": {
       "sectionTitle": "生产流程",
-      "sectionDescription": "共六步,从接收图纸到检验交付。",
+      "sectionDescription": "六个步骤，从接收来料到检验和包装。",
       "items": {
         "receiving": {
-          "title": "接收需求与图纸",
-          "desc": "审阅 CAD 图纸,计算电镀面积,制定工艺流程。",
-          "standard": "可加工性评估(DFM)"
+          "title": "接收来料",
+          "desc": "收货、外观检查、清点数量并入库。"
         },
         "surfacePrep": {
-          "title": "表面前处理",
-          "desc": "除油、除锈并活化,去除氧化膜。",
-          "standard": "除油、除锈、表面活化"
+          "title": "前处理",
+          "desc": "超声波除油、盐酸槽、表面活化，各步骤之间水洗。"
         },
         "mainPlating": {
-          "title": "主电镀加工",
-          "desc": "按 PLC 设定的工序电镀或化学镀,持续监控。",
-          "standard": "由自动控制系统监控"
+          "title": "电镀",
+          "desc": "按生产线类型电镀：滚镀、挂镀或自动线。"
         },
-        "inspection": {
-          "title": "检测与测量",
-          "desc": "XRF 测厚,按 ASTM D3359 测附着力,逐批检查外观。",
-          "standard": "XRF 测厚、附着力测试"
+        "thickness": {
+          "title": "测厚与盐雾试验",
+          "desc": "测量镀层厚度，在 NSS 或 CASS 盐雾箱中进行耐腐蚀试验。"
         },
-        "finishing": {
-          "title": "后处理与除氢",
-          "desc": "钝化并烘干,承载零件按 ASTM F519 除氢。",
-          "standard": "按 ASTM F519 除氢"
+        "finalCheck": {
+          "title": "成品检验",
+          "desc": "按样品检查表面和颜色。不合格批次单独存放返工。"
         },
         "packaging": {
-          "title": "包装与交付",
-          "desc": "VCI 防潮包装,二维码标签可追溯,随货附 COA。",
-          "standard": "VCI 防潮包装"
+          "title": "包装",
+          "desc": "包装并标注产品编号和数量，然后入库或交付客户。"
         }
       },
-      "viewDetail": "查看各镀种的详细工序"
+      "viewDetail": "查看各类电镀的详细工序"
     },
     "ProductionLines": {
       "sectionTitle": "生产线",
-      "sectionDescription": "机械件和电子元件各有对应的表面处理生产线。",
-      "cta": "查看生产线参数",
+      "sectionDescription": "三条电镀线：滚镀、金属半自动挂镀和自动电镀。",
+      "cta": "查看电镀服务",
       "items": {
         "barrel": {
-          "title": "PLC 自动滚镀线",
-          "desc": "滚筒成批电镀螺钉、螺栓和小配件,各批次镀层一致。",
-          "alt": "自动滚镀线,滚筒浸入电镀槽",
-          "capacityLabel": "产能:",
-          "capacityUnit": "吨/月",
-          "toleranceLabel": "公差:",
           "tag": "滚镀",
-          "badge": "自动控制",
-          "capacityValue": "850",
-          "toleranceValue": "±0.2 µm"
+          "title": "滚镀线",
+          "desc": "小件大批量在滚筒中电镀。配有振动除油设备、镀铜槽和镀镍槽。",
+          "alt": "滚镀线，滚筒浸入电镀槽",
+          "capacityLabel": "产能：",
+          "capacityValue": "3,000–5,000 公斤/天（1 万–3 万件/天）",
+          "techLabel": "工艺：",
+          "techValue": "电解镍、化学镍、黑镍、黑锰磷化、镀锌"
         },
         "rack": {
-          "title": "自动及半自动挂镀线",
-          "desc": "精密机械件、油缸活塞杆、模具和大型齿轮,装专用挂具电镀。",
-          "alt": "身穿防护服的 QA 工程师在工厂操作控制面板",
-          "capacityLabel": "产能:",
-          "capacityUnit": "件/月",
-          "tankSizeLabel": "槽体尺寸:",
           "tag": "挂镀",
-          "badge": "大型零件",
-          "capacityValue": "120,000",
-          "tankSizeValue": "60 × 40 m"
+          "title": "金属半自动挂镀线",
+          "desc": "金属零件挂在挂具上电镀，适合对外观要求高、避免碰撞的零件。",
+          "alt": "金属半自动挂镀线",
+          "capacityLabel": "产能：",
+          "capacityValue": "1 万–2 万件/天",
+          "techLabel": "工艺：",
+          "techValue": "电解镍、化学镍、黑镍、黑锰磷化、镀锌"
         },
-        "chemical": {
-          "title": "化学镀及铝材处理线",
-          "desc": "化学镀镍(ENP)和铝阳极氧化,镀层硬度高,耐磨耐蚀。",
-          "alt": "工厂内的金属表面处理区域",
-          "reactorLabel": "反应槽:",
-          "reactorValue": "温度稳定在 ±1°C",
-          "thicknessLabel": "厚度:",
-          "tag": "化学镀与阳极氧化",
-          "badge": "按客户技术要求",
-          "thicknessValue": "5 - 50 µm"
+        "auto": {
+          "tag": "自动电镀",
+          "title": "自动电镀线",
+          "desc": "产品挂在挂具（JIG）上，由行车转移通过电镀区各槽。",
+          "alt": "带行车和镀槽的自动电镀线",
+          "capacityLabel": "产能：",
+          "capacityValue": "3–5 万件/天",
+          "techLabel": "工艺：",
+          "techValue": "铬、镍、缎面"
         }
       }
     },
     "QualityStandards": {
       "sectionTitle": "质量与标准",
-      "sectionDescription": "各生产工序适用的质量管理体系和技术标准。",
+      "sectionDescription": "HANIN 的认证、废水处理与质量检测设备。",
       "ctaDetail": "查看认证详情",
       "items": {
         "iso9001": {
           "tagLabel": "质量管理",
-          "desc": "质量管理体系,保持各加工批次质量稳定。",
-          "title": "ISO 9001:2015",
-          "footer": "每年定期复审"
+          "desc": "证书颁发给 Hanin 越南技术股份公司（Hanin Technology Việt Nam），有效期至 2028 年 8 月 10 日。",
+          "title": "ISO 9001:2015"
         },
-        "iso14001": {
-          "tagLabel": "环境管理",
-          "desc": "按越南环保法规管理环境并处理工业废水。",
-          "title": "ISO 14001:2015",
-          "footer": "自建站处理废水"
+        "wastewater": {
+          "tagLabel": "环保",
+          "desc": "废水处理系统配有沉淀池和压泥机。HANIN 承诺遵守环保规定。",
+          "title": "废水处理 130 立方米/昼夜"
         },
-        "astmRohs": {
-          "tagLabel": "出口要求",
-          "desc": "按 RoHS/REACH 加工;客户要求时按 ASTM B117、ASTM B633 及 JIS 测试。",
-          "title": "ASTM 与 RoHS/REACH",
-          "footer": "按 RoHS/REACH 限制有害物质"
+        "testing": {
+          "tagLabel": "质量检测",
+          "desc": "镀层测厚、NSS 和 CASS 盐雾试验、哈林槽（Hull cell）试验。",
+          "title": "检测设备"
         }
       }
     },
     "TestingAnalysis": {
       "sectionTitle": "分析与检测",
-      "sectionDescription": "实验室分析槽液成分、测量镀层,并在出库前检验每批货物。",
+      "sectionDescription": "用于镀槽控制的分析室、镀层检测设备，以及喷漆后可靠性测试设备。",
       "image": {
-        "alt": "放在检验台上的电镀后金属零件"
+        "alt": "HANIN 分析室的检测设备"
       },
       "items": {
+        "lab": {
+          "title": "分析室",
+          "desc": "使用专用分析试剂分析镀槽溶液。"
+        },
+        "hullCell": {
+          "title": "哈林槽（Hull cell）试验机",
+          "desc": "在试片上试验镀液，评估槽内镀层质量。"
+        },
+        "thickness": {
+          "title": "镀层测厚仪",
+          "desc": "使用 APC-100 测量镀层厚度，不损伤产品。"
+        },
         "saltSpray": {
-          "title": "盐雾试验(salt spray)",
-          "desc": "符合 ASTM B117 的盐雾箱,锌、镍、铬镀层试验可超过 1,000 小时。"
-        },
-        "xrf": {
-          "title": "X 射线荧光(XRF)测厚",
-          "desc": "无损测量多层镀层的微米级厚度。"
-        },
-        "bathControl": {
-          "title": "槽液与药剂浓度控制",
-          "desc": "每天分析金属离子和添加剂浓度,在线监测槽液 pH 值。"
+          "title": "NSS 与 CASS 盐雾试验机",
+          "desc": "通过中性盐雾（NSS）和醋酸盐雾（CASS）箱进行耐腐蚀试验。"
+        }
+      },
+      "reliability": {
+        "title": "喷漆后可靠性测试设备",
+        "desc": "10 种设备，检测漆层与印刷层的耐久性。",
+        "items": {
+          "r1": "RCA Tester（耐磨试验）",
+          "r2": "Hot Water（热水试验）",
+          "r3": "High Temp & Humidity（高温高湿试验）",
+          "r4": "UV Measure（紫外线测量）",
+          "r5": "Alcohol/Eraser Rubbing（酒精、橡皮擦拭试验）",
+          "r6": "Pencil Rubbing（铅笔硬度擦拭）",
+          "r7": "Dropping Tester（跌落试验）",
+          "r8": "Thickness Measure（厚度测量）",
+          "r9": "Polisher（抛光机）",
+          "r10": "Bending Tester（弯曲试验）"
         }
       }
     }

@@ -1,15 +1,13 @@
-import { useLocale, useTranslations } from "next-intl";
+import { useTranslations } from "next-intl";
 import { Clock, Mail, MapPin, Phone } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { getPhones, getSettings } from "@/server/settings";
 import { siteImg } from "@/server/site-images";
 import PhoneLinks from "@/components/ui/PhoneLinks";
-import { getServices } from "@/server/public";
 import { logoSrcSet, photoUrl } from "@/lib/photo";
 
 export default function Footer() {
   const t = useTranslations("Footer");
-  const locale = useLocale();
   const logo = siteImg("layout/Logo#1", "/hanin-logo.png");
   const { mapsUrl, salesEmail, engineeringEmail } = getSettings();
   const { general } = getPhones();
@@ -22,11 +20,12 @@ export default function Footer() {
     { label: t("companyLinks.tuyenDung"), href: "/tuyen-dung" },
   ];
 
-  // Liên kết dịch vụ lấy từ CMS (4 dịch vụ đầu), luôn khớp danh sách dịch vụ đang hiển thị.
-  const serviceLinks = [
-    ...getServices(locale, 4).map((service) => ({ label: service.title, href: `/dich-vu-gia-cong-ma/${service.slug}` })),
-    { label: t("serviceLinks.specSheet"), href: "/nang-luc-san-xuat" },
-  ];
+  // Liên kết dịch vụ: tên theo danh mục dịch vụ của nhà máy, dẫn tới trang Dịch vụ mạ.
+  const serviceLinks = (["abs", "nickel", "zincCopperTin", "paintPrint", "pvd"] as const).map((key) => ({
+    label: t(`serviceLinks.${key}`),
+    href: "/dich-vu-gia-cong-ma",
+    key,
+  }));
 
   return (
     <footer className="w-full bg-white border-t border-slate-200 mt-space-xl">
@@ -48,12 +47,6 @@ export default function Footer() {
             <div className="hidden sm:flex flex-wrap items-center gap-space-xs pt-space-xs">
               <span className="text-label-technical text-slate-700 uppercase px-2.5 py-0.5 bg-slate-100 rounded border border-slate-200 font-bold">
                 {t("certIso9001")}
-              </span>
-              <span className="text-label-technical text-slate-700 uppercase px-2.5 py-0.5 bg-slate-100 rounded border border-slate-200 font-bold">
-                {t("certIso14001")}
-              </span>
-              <span className="text-label-technical text-slate-700 uppercase px-2.5 py-0.5 bg-slate-100 rounded border border-slate-200 font-bold">
-                {t("certRohs")}
               </span>
             </div>
           </div>
@@ -79,7 +72,7 @@ export default function Footer() {
             </h3>
             <ul className="flex flex-col gap-space-xs text-body-sm font-medium">
               {serviceLinks.map((link, i) => (
-                <li key={link.href} className={`py-0.5 ${i >= 4 ? "hidden sm:list-item" : ""}`}>
+                <li key={link.key} className={`py-0.5 ${i >= 4 ? "hidden sm:list-item" : ""}`}>
                   <Link href={link.href} className="relative text-slate-600 hover:text-steel-600 transition-colors before:absolute before:-inset-y-2 before:inset-x-0 before:content-['']">
                     {link.label}
                   </Link>

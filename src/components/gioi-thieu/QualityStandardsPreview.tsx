@@ -18,8 +18,8 @@ export default function QualityStandardsPreview() {
 
   const CERTIFICATES = [
     { key: "iso9001", icon: "workspace_premium" },
-    { key: "iso14001", icon: "eco" },
-    { key: "rohs", icon: "fact_check" },
+    { key: "wastewater", icon: "water_drop" },
+    { key: "equipment", icon: "fact_check" },
   ] as const;
 
   return (

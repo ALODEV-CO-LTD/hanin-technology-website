@@ -11,6 +11,7 @@ import Header from "@/components/layout/Header";
 import { siteImg } from "@/server/site-images";
 import Footer from "@/components/layout/Footer";
 import PageFade from "@/components/ui/PageFade";
+import StickyContact from "@/components/layout/StickyContact";
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("Meta");
@@ -43,6 +44,8 @@ export default async function RootLayout({
             <PageFade>{children}</PageFade>
           </main>
           <Footer />
+          <div aria-hidden="true" className="h-[calc(3.5rem+env(safe-area-inset-bottom))] bg-white lg:hidden" />
+          <StickyContact />
           <SocialLinks floating />
         </NextIntlClientProvider>
       </body>

@@ -5,7 +5,7 @@ export default function CapacityOverview() {
   const t = useTranslations("DichVu.CapacityOverview");
 
   const CAPABILITIES = [
-    { key: "scada", icon: "precision_manufacturing", iconBg: "bg-steel-100", iconColor: "text-steel-600", statRightColor: "text-steel-600" },
+    { key: "auto", icon: "precision_manufacturing", iconBg: "bg-steel-100", iconColor: "text-steel-600", statRightColor: "text-steel-600" },
     { key: "complex", icon: "science", iconBg: "bg-steel-100", iconColor: "text-steel-700", statRightColor: "text-steel-700" },
     { key: "wastewater", icon: "water_ec", iconBg: "bg-slate-200", iconColor: "text-slate-700", statRightColor: "text-slate-900" },
   ] as const;

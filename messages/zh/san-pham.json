@@ -1,356 +1,331 @@
 {
   "SanPham": {
     "CategoryHero": {
-      "imageAlt": "电镀加工后的机械零件",
+      "imageAlt": "HANIN工厂电镀后的塑料与金属零件",
       "breadcrumbHome": "首页",
       "breadcrumbCurrent": "产品与项目",
-      "breadcrumbTag": "项目与加工零件目录",
+      "breadcrumbTag": "已电镀产品目录",
       "title": "产品与项目",
-      "description": "HANIN 承接的金属电镀产品与项目，关注厚度公差、镀层均匀性和耐腐蚀性能。",
-      "badgeActiveProjects": "按批次承接加工",
-      "badgeQualityRate": "逐批质量检验",
-      "badgeCompliance": "按 RoHS、REACH 要求"
+      "description": "HANIN已完成电镀的产品，涵盖汽车、智能家居、家用电器、卫浴与厨房设备，以及镀镍、镀锌、镀锡的金属零件。"
     },
     "FeaturedProjectSpotlight": {
-      "heading": "代表项目",
-      "bathTemperature": "镀液温度：58.4°C",
-      "automatedCycle": "PLC 控制循环：悬挂式传送线",
-      "monthlyOutput": "按批次、按订单生产",
+      "heading": "代表性项目",
       "ctaViewDetail": "查看项目详情",
-      "ctaDownloadCaseStudy": "下载项目资料（PDF）↓"
+      "ctaDownloadCaseStudy": "提交报价需求"
     },
     "ProductBreadcrumbBar": {
       "home": "首页",
       "productsAndProjects": "产品与项目",
-      "lot": "批次"
+      "lot": "编号"
     },
     "ProductCatalog": {
-      "heading": "已加工产品",
-      "subheading": "点击产品查看镀层、标准和适用工艺。",
-      "lotNumber": "生产批次",
+      "heading": "已电镀产品",
+      "subheading": "选择产品，查看所用镀层与工艺流程。",
+      "lotNumber": "产品编号",
       "ctaViewDetail": "查看产品详情",
       "viewDetailAriaLabel": "查看详情",
       "searchPlaceholder": "搜索产品或项目...",
       "showingResults": "当前显示",
-      "resultsUnit": "项结果",
+      "resultsUnit": "条结果",
       "emptyState": "没有符合当前筛选条件的产品或项目。",
-      "filterViewing": "当前筛选",
+      "filterViewing": "当前查看",
       "filterViewAll": "查看全部产品",
-      "filterCount": "{count} 项结果"
+      "filterCount": "{count} 条结果"
     },
     "ProductGallery": {
-      "title": "细节图片与实际检测",
-      "description": "镀后零件照片、显微镜下的截面及质检室的测量。",
-      "highQualityImages": "现场实拍",
-      "zoomOptical": "光学放大 40 倍",
+      "title": "细节与实际检测图片",
       "zoomInAriaLabel": "放大图片",
       "fullscreenAriaLabel": "全屏查看",
-      "closeAriaLabel": "关闭",
-      "frame": "图",
-      "resolution": "工厂现场拍摄",
-      "date": "日期：2026-03-29",
-      "statusApproved": "已通过 QC 检验"
+      "closeAriaLabel": "关闭"
     },
     "ProductHero": {
       "ctaRequestQuote": "联系获取项目报价",
-      "ctaDownloadSpecSheet": "下载技术图纸（PDF）",
-      "badgeIso": "参照 ISO 9001:2015",
-      "badgeRohs": "按 RoHS、REACH 要求",
-      "badgeXrf": "XRF 镀层测厚",
-      "metrologyInspected": "按批次尺寸检测",
-      "toleranceValue": "公差：±0.1 µm",
-      "digitalCallout": "数显千分尺读数：12.74 mm",
-      "robustPass": "合格",
-      "microHardnessLabel": "除氢热处理后的显微硬度：",
-      "microHardnessValue": "850 - 920 HV"
+      "ctaDownloadSpecSheet": "发送样品或图纸",
+      "materialLabel": "基材：",
+      "materialValue": "ABS、ABS/PC塑料或金属"
     },
     "ProductOverview": {
-      "title": "项目概况",
-      "specSheetTitle": "技术参数表",
-      "specSheetRevision": "版本：2.4",
-      "batchStatusLabel": "批次检验结果：",
-      "batchStatusValue": "符合要求"
+      "title": "产品概述",
+      "specSheetTitle": "基本信息"
     },
     "ProductProcessTimeline": {
-      "title": "项目实施流程",
-      "description": "从接收图纸到出货前检验。"
+      "title": "实施流程",
+      "description": "从收货到出货前检验。"
     },
     "ProductQuoteCta": {
-      "title": "您的项目有类似的加工需求吗？",
-      "descriptionPrefix": "请发送 2D/3D 图纸（PDF、CAD、STP）及表面要求。HANIN 工程师将提出合适的工艺并在以下时间内发送详细报价：",
-      "descriptionHighlight": "4 个工作小时",
-      "ctaSendQuote": "提交报价请求",
-      "ndaNote": "图纸按 NDA 协议保密",
-      "responseTime": "4 个工作小时内技术答复",
-      "hotlineLabel": "技术热线：",
-      "emailLabel": "CAD 图纸接收邮箱："
+      "title": "您的产品需要类似的电镀吗？",
+      "descriptionPrefix": "请发送样品、产品照片或图纸，并说明表面要求。HANIN会与您沟通合适的电镀方案，并",
+      "descriptionHighlight": "提供详细报价",
+      "ctaSendQuote": "提交报价需求",
+      "hotlineLabel": "热线：",
+      "emailLabel": "接收图纸邮箱："
     },
     "ProductsCta": {
-      "title": "您有需要加工的项目吗？",
-      "description": "发送 2D/3D 图纸，或直接与 HANIN 工程师沟通，获取报价及合适的电镀方案。",
+      "title": "您有需要电镀的产品吗？",
+      "description": "发送样品、照片或图纸，或直接与HANIN沟通，获取报价和合适的电镀方案。",
       "cta": "获取报价",
-      "email": "邮箱：Haninplating@gmail.com",
-      "responseTime": "4 个工作小时内技术答复",
-      "hotlineLabel": "技术热线："
+      "emailLabel": "邮箱：",
+      "hotlineLabel": "热线："
     },
     "RelatedProjects": {
       "title": "其他项目与产品",
-      "description": "HANIN 加工过的部分精密机械零件。",
-      "lot": "批次",
+      "description": "HANIN已完成电镀的其他部分产品。",
+      "lot": "编号",
       "ctaViewDetail": "查看项目详情"
     },
     "RelatedServices": {
       "title": "相关电镀服务",
-      "description": "适用于此类零件的电镀工艺。",
+      "description": "HANIN可用于此类产品的表面处理方法。",
       "ctaViewAll": "查看全部电镀服务"
     },
     "SpecTrustNote": {
-      "title": "关于技术数据的说明",
-      "description": "本页数据仅供各类零件参考，订单适用参数以图纸约定为准。"
+      "title": "产品信息说明",
+      "description": "页面内容仅按产品类别作一般介绍；每个订单的具体要求，以客户提供的样品或图纸为准。"
     },
     "categoryTabs": {
       "all": "全部产品",
-      "coKhiChinhXac": "精密机械零件",
-      "phuTungOToXeMay": "汽车、摩托车零配件",
-      "dauCosseThietBiDien": "接线端子、电气设备",
-      "anodizing": "阳极氧化零件"
+      "coKhiChinhXac": "金属电镀件",
+      "phuTungOToXeMay": "汽车零部件",
+      "dauCosseThietBiDien": "家电与电子设备",
+      "anodizing": "卫浴与厨房设备"
     },
     "products": {
-      "banhRang": {
-        "title": "蜗轮蜗杆及千分尺检测的机械零件",
-        "category": "精密机械零件",
-        "description": "镀镍，厚度公差 ±0.2 µm，降低滑动摩擦，提高小型传动机构的硬度。",
-        "imageAlt": "用千分尺测量的齿轮及机械零件",
-        "imageBadge": "精密机械",
+      "phuTungOTo": {
+        "title": "汽车零部件：车标、启动按钮、灯框饰圈、字标饰条",
+        "category": "汽车零部件",
+        "description": "VinFast、Infiniti、Nissan车标，启动按钮，灯框饰圈和字标饰条，均采用ABS塑料镍铬电镀。",
+        "imageAlt": "电镀后的汽车车标、启动按钮和灯框饰圈",
+        "imageBadge": "汽车零部件",
         "chips": {
           "coating": {
-            "label": "镀层"
-          },
-          "thickness": {
-            "label": "厚度"
-          },
-          "tolerance": {
-            "label": "公差"
+            "label": "镀层",
+            "value": "ABS塑料镍铬电镀"
           }
         }
       },
-      "pistonTruc": {
-        "title": "汽车活塞杆及液压顶杆",
-        "category": "汽车、摩托车零配件",
-        "description": "硬铬镀层，耐划伤、耐腐蚀，按 ASTM B117 盐雾试验超过 720 小时。",
-        "imageAlt": "镀硬铬的汽车活塞杆及液压顶杆",
-        "imageBadge": "汽车、摩托车配件",
+      "smartHome": {
+        "title": "智能家居与电子产品：控制按钮、开关",
+        "category": "智能家居与电子产品",
+        "description": "Vinsmart智能设备的控制按钮和开关，采用ABS塑料装饰性电镀。",
+        "imageAlt": "电镀后的智能设备控制按钮",
+        "imageBadge": "智能家居与电子产品",
         "chips": {
-          "hardChrome": {
-            "label": "硬铬",
-            "value": "盐雾试验：720 小时"
+          "coating": {
+            "label": "镀层",
+            "value": "ABS塑料装饰性电镀"
           }
         }
       },
-      "busbar": {
-        "title": "镀锡铜排",
-        "category": "接线端子、电气设备",
-        "description": "镀锡保护变电站铜排，防氧化并保持较低的接触电阻。",
-        "imageAlt": "配电柜中的镀锡铜排",
-        "imageBadge": "接线端子、电气设备",
+      "giaDung": {
+        "title": "家用电器：冰箱、洗衣机、净水器",
+        "category": "家用电器",
+        "description": "用于家用电器品牌冰箱、洗衣机、净水器及烤箱旋钮的装饰零件。",
+        "imageAlt": "电镀后的家电装饰零件",
+        "imageBadge": "家用电器",
         "chips": {
-          "tin": {
-            "label": "镀锡",
-            "value": "纯度：99.9%"
+          "coating": {
+            "label": "镀层",
+            "value": "镍铬或缎面镍"
           }
         }
       },
-      "buLong": {
-        "title": "药液槽模块用定位螺栓与销钉",
-        "category": "阳极氧化零件",
-        "description": "锌镍镀层加三价钝化，耐碱和弱酸，螺纹不因锈蚀卡死。",
-        "imageAlt": "镀锌镍的药液槽模块定位螺栓与销钉",
-        "imageBadge": "液压与阀块",
+      "veSinhNhaBep": {
+        "title": "卫浴与厨房设备：花洒、手柄、旋钮",
+        "category": "卫浴与厨房设备",
+        "description": "花洒、水龙头、花洒切换手柄、净水器旋钮，以及Sunhouse厨房设备的框架和旋钮。",
+        "imageAlt": "电镀后的花洒和厨房设备旋钮",
+        "imageBadge": "卫浴与厨房",
         "chips": {
-          "zincNickel": {
-            "label": "镀层：锌镍合金",
-            "value": "按 ISO 4042"
+          "coating": {
+            "label": "镀层",
+            "value": "镀铬"
           }
         }
       },
-      "ongLot": {
-        "title": "耐磨衬套与螺纹轴",
-        "category": "精密机械零件",
-        "description": "黑锌镀层，减少表面反光并保护螺纹，机器人装配时螺纹不残留毛刺。",
-        "imageAlt": "镀黑锌后的耐磨衬套与螺纹轴",
-        "imageBadge": "精密机械零件",
+      "satinAbs": {
+        "title": "ABS塑料缎面电镀",
+        "category": "缎面电镀",
+        "description": "哑光细腻的缎面镍表面，适用于需要质感外观但不宜强反光的ABS塑料零件。",
+        "imageAlt": "缎面镍电镀的ABS塑料零件",
+        "imageBadge": "缎面电镀",
         "chips": {
-          "blackZinc": {
-            "label": "镀黑锌",
-            "value": "螺纹规格：M12-M48"
+          "coating": {
+            "label": "镀层",
+            "value": "缎面镍"
           }
         }
       },
-      "nhomTanNhiet": {
-        "title": "硬质阳极氧化铝散热件",
-        "category": "阳极氧化零件",
-        "description": "硬质阳极氧化形成坚固的 Al₂O₃ 氧化膜，绝缘性能超过 1000V DC 且耐磨，适用于电子设备的散热件与铝制零件。",
-        "imageAlt": "经硬质阳极氧化的铝制散热件（示意图）",
-        "imageBadge": "阳极氧化零件",
+      "cromDenHairLine": {
+        "title": "黑铬电镀与拉丝(Hair Line)处理",
+        "category": "黑铬与拉丝",
+        "description": "黑色镍铬镀层以及镍铬表面的拉丝(Hair Line)处理，用于装饰零件。",
+        "imageAlt": "黑铬电镀及拉丝表面的零件",
+        "imageBadge": "黑铬与拉丝",
         "chips": {
-          "hardAnodizing": {
-            "label": "硬质阳极氧化",
-            "value": "硬质膜层：50 µm"
+          "coating": {
+            "label": "镀层",
+            "value": "黑色镍铬"
           }
         }
       },
-      "cumLinhKien": {
-        "title": "机械制造客户的壳体与齿轮部件电镀项目",
-        "category": "典型项目",
-        "description": "自动电镀加多层钝化，用于批量生产的零件；XRF 测厚，盐雾试验 500 小时。",
-        "imageAlt": "HANIN 工厂内由 PLC 控制的自动电镀生产线",
-        "imageBadge": "壳体与齿轮",
+      "kimLoaiMa": {
+        "title": "镀镍、镀锌、镀锡、黑色磷化金属零件",
+        "category": "金属电镀件",
+        "description": "螺栓、螺钉、合页、销、轴、螺母、接线端子及机械零件，采用镀镍、镀锌、镀锡或黑色磷化处理。",
+        "imageAlt": "电镀后的螺栓、螺钉和金属零件",
+        "imageBadge": "金属零件",
         "chips": {
-          "industry": {
-            "label": "应用行业",
-            "value": "精密机械制造、机器人"
-          },
-          "technology": {
-            "label": "电镀工艺",
-            "value": "镀镍与镀锌，PLC 控制"
-          },
-          "detail": {
-            "label": "零件",
-            "value": "齿轮、定位轴、键槽联轴器"
-          },
-          "standard": {
-            "label": "质量标准",
-            "value": "ISO 9001、RoHS、ASTM B117"
+          "coating": {
+            "label": "镀层",
+            "value": "镍、锌、锡、黑色磷化"
           }
         }
       }
     },
     "detail": {
-      "specEyebrow": "标准 ASTM B733 · ASTM B117",
+      "specEyebrow": "ABS塑料与金属电镀流程",
       "heroStats": {
         "coatingThickness": {
-          "label": "镀层厚度",
-          "note": "按图纸要求"
+          "label": "基材",
+          "value": "ABS/金属",
+          "note": "ABS、ABS/PC塑料，铁、钢、铜、铝"
         },
         "saltSpray": {
-          "label": "盐雾试验",
-          "note": "按 ASTM B117"
+          "label": "电镀工艺",
+          "value": "镍铬",
+          "note": "另有缎面镍、锌、铜、锡"
         },
         "tolerance": {
-          "label": "公差",
-          "note": "光学测量"
+          "label": "检测",
+          "value": "NSS / CASS",
+          "note": "中性盐雾与酸性盐雾试验"
         }
       },
-      "heroDescription": "用于工业机器人斜齿轮、蜗杆和差速机构的高磷化学镀镍。镀层均匀覆盖齿根和花键槽，不影响螺距，满足微米级装配公差。",
-      "heroImageAlt": "在花岗岩平台上用数显千分尺检测公差的精密钢制齿轮",
+      "heroDescription": "需要美观耐用表面的装饰产品，可在ABS塑料或金属基材上电镀。HANIN先进行表面前处理，按材质选用合适的电镀工艺，并在交货前检验镀层。",
+      "heroImageAlt": "HANIN工厂电镀后的装饰零件",
       "gallery": {
         "item1": {
-          "alt": "化学镀镍后的齿面与螺纹表面特写",
-          "thumbLabel": "齿面与螺纹",
-          "caption": "镀后的齿面与螺纹表面，镀层分布均匀"
+          "alt": "电镀后的零件",
+          "thumbLabel": "电镀后的零件",
+          "caption": "电镀后的零件，表面光亮均匀"
         },
         "item2": {
-          "alt": "在 QC 计量室用数显千分尺检测公差",
-          "thumbLabel": "千分尺测厚",
-          "caption": "在 QC 计量室用数显千分尺检测公差"
+          "alt": "在质检室测量镀层厚度",
+          "thumbLabel": "镀层厚度测量",
+          "caption": "在质检室使用APC-100测厚仪测量镀层厚度"
         },
         "item3": {
-          "alt": "自动电镀线上的钛挂具",
-          "thumbLabel": "产线挂具",
-          "caption": "零件挂在钛挂具上，置于药液浓度受控的镀槽中"
+          "alt": "挂在挂具上的零件，位于电镀生产线",
+          "thumbLabel": "生产线上的零件",
+          "caption": "零件挂在挂具(JIG)上，通过自动线的各个电镀槽"
         },
         "item4": {
-          "alt": "ASTM B117 盐雾试验箱",
-          "thumbLabel": "ASTM B117 盐雾试验",
-          "caption": "按 ASTM B117 进行盐雾腐蚀试验，试验时间超过 720 小时"
+          "alt": "用于检验镀层的盐雾试验机",
+          "thumbLabel": "盐雾试验",
+          "caption": "中性盐雾(NSS)与酸性盐雾(CASS)试验"
         }
       },
       "overviewParagraphs": {
-        "p1": "项目需为减速箱用 SCM440 钢斜齿锥齿轮和花键轴提供耐磨镀层。零件带深螺纹槽，常规电镀易在螺纹顶部电流集中，槽底镀层偏薄。",
-        "p2": "工艺选用高磷（10.5% – 12% P）化学镀镍（ENP）。反应不依赖电流，镀层沿零件轮廓生长，整个齿形厚度偏差不超过 ±0.5 µm。",
-        "p3": "镀后整批零件在 400°C 下烘烤 1 小时除氢。热处理使显微硬度由 500 HV 提高到 920 HV，与硬铬相当，滑动摩擦系数降低 30%。"
+        "p1": "ABS或ABS/PC塑料零件先装上挂具，经除油、粗化、中和、盐酸活化和钯活化后，再进行镍铬电镀。缎面镍、黑铬和拉丝(Hair Line)效果均在此基础上完成。",
+        "p2": "对于铁、钢、铜、铝等金属，流程包括除油、除锈、活化，再根据零件要求进行镀镍、镀锌、镀铜、镀锡或黑色磷化。小零件可滚镀，较大零件挂镀。",
+        "p3": "电镀后，零件经烘干、镀层厚度测量、按要求进行盐雾试验及成品检验，然后包装。"
       },
       "achievements": {
         "item1": {
-          "title": "镀层均匀",
-          "description": "覆盖棱角、盲螺纹孔和深腔，无需辅助电极。"
+          "title": "光亮或缎面表面",
+          "description": "光亮镍铬、哑光缎面镍、黑铬或拉丝(Hair Line)，按客户样品选择。"
         },
         "item2": {
-          "title": "热处理后显微硬度 850 – 950 HV",
-          "description": "镀后除氢，降低重载传动机构的疲劳开裂风险。"
+          "title": "一家工厂多种工艺",
+          "description": "可进行ABS塑料电镀、镀镍、锌、铜、锡、黑色磷化、PVD和喷漆印刷，一个订单可在同一地点完成全部工序。"
         },
         "item3": {
-          "title": "ASTM B117 盐雾试验超过 720 小时",
-          "description": "镀层为非晶结构，无晶界，可阻挡潮气和酸性润滑油渗入。"
+          "title": "交货前检验",
+          "description": "测量镀层厚度，进行NSS和CASS盐雾试验及成品检验。"
         }
       },
       "specSheet": {
         "product": {
           "label": "产品",
-          "value": "蜗轮蜗杆、花键轴、精密联轴器"
+          "value": "需要装饰性或防腐蚀镀层的ABS塑料或金属零件"
         },
         "application": {
-          "label": "应用行业",
-          "value": "机器人制造、CNC 机床、汽车传动配件"
+          "label": "应用领域",
+          "value": "汽车、智能家居、家用电器、卫浴与厨房设备"
         },
         "process": {
           "label": "电镀工艺",
-          "value": "化学镀镍（ENP，高磷型）+ 400°C 热处理"
+          "value": "ABS塑料镍铬电镀；金属镀镍、锌、铜、锡及黑色磷化"
         },
         "substrate": {
           "label": "基材",
-          "value": "SCM440 合金钢、S45C 碳钢、C3604 黄铜"
+          "value": "ABS、ABS/PC塑料；铁、钢、铜、铝"
         },
         "requirement": {
-          "label": "特殊要求",
-          "value": "螺纹公差 < ±0.5 µm，无毛刺，表面粗糙度 Ra 0.2"
+          "label": "表面要求",
+          "value": "颜色、光泽或缎面效果，按客户样品和图纸"
         },
         "standard": {
-          "label": "检测标准",
-          "value": "ASTM B733、AMS 2404、RoHS、REACH"
+          "label": "检测项目",
+          "value": "镀层厚度测量、NSS与CASS盐雾试验、成品检验"
         },
         "lab": {
           "label": "检测设备",
-          "value": "X 射线荧光测厚仪（XRF Fischer）、Matsuzawa 维氏硬度计"
+          "value": "APC-100镀层测厚仪、NSS与CASS盐雾试验机、霍尔槽试验仪"
         }
       },
       "process": {
         "step1": {
-          "title": "接收图纸与技术核算",
-          "description": "审核 2D/3D 文件（STEP、DWG），核算表面积（dm²），确定电流和药液参数，设计钛挂具。",
-          "phase": "技术"
+          "title": "收货与前处理",
+          "description": "收货入库、超声波除油、盐酸槽、表面活化；各工序之间均进行水洗。",
+          "phase": "前处理"
         },
         "step2": {
-          "title": "前处理与超声波除油",
-          "description": "经 4 道超声波化学槽清洗、除锈、表面活化，再用去离子水冲洗。",
-          "phase": "表面清洁"
-        },
-        "step3": {
-          "title": "电镀或化学镀",
-          "description": "PLC 稳定槽温，持续补充金属离子并监控电流密度。",
+          "title": "挂具装挂与电镀",
+          "description": "ABS塑料在自动线上镀镍铬；金属在挂镀线或滚镀线上镀镍、锌、铜、锡或黑色磷化。",
           "phase": "电镀"
         },
+        "step3": {
+          "title": "表面精加工",
+          "description": "按要求做缎面、黑铬或拉丝(Hair Line)处理，然后烘干。零件上也可增加喷漆或印刷。",
+          "phase": "精加工"
+        },
         "step4": {
-          "title": "XRF 检测与出具 COA",
-          "description": "XRF 测厚，划格法检测附着力，随货提供 COA，并真空 VCI 包装。",
+          "title": "检验与包装",
+          "description": "测量镀层厚度、盐雾试验、成品检验，然后包装发货。",
           "phase": "检验与交付"
         }
       },
       "relatedServices": {
         "item1": {
-          "title": "锌镍电镀服务",
-          "description": "锌镍合金（Zn-Ni 12-15%）镀层，用于汽车底盘件和螺栓，盐雾试验超过 1000 小时。",
-          "cta": "了解锌镍电镀服务"
+          "title": "表面前处理",
+          "description": "电镀前的超声波除油、盐酸槽及表面活化。",
+          "cta": "了解服务"
         },
         "item2": {
-          "title": "硬铬电镀服务",
-          "description": "将轧辊轴和液压缸活塞杆硬度提高到 68 HRC（1000 HV），耐划伤、耐磨。",
-          "cta": "了解硬铬电镀服务"
+          "title": "ABS塑料镍铬电镀",
+          "description": "在ABS或ABS/PC塑料上进行三价铬、六价铬镍铬电镀，以及缎面镍、黑色镍铬和拉丝(Hair Line)。",
+          "cta": "了解服务"
         },
         "item3": {
-          "title": "铝阳极氧化服务",
-          "description": "硬质阳极氧化 Type III（MIL-A-8625），绝缘耐热，用于电子和航空设备铝壳。",
-          "cta": "了解阳极氧化服务"
+          "title": "金属镀镍",
+          "description": "为铁、钢、铜、铝零件提供电解镍、化学镍、黑镍、缎面镍及镍铬。",
+          "cta": "了解服务"
+        },
+        "item4": {
+          "title": "镀锌、镀铜、镀锡、黑色磷化",
+          "description": "为螺栓、螺钉、螺母、接线端子提供镀锌、镀铜、镀锡及锰系黑色磷化。",
+          "cta": "了解服务"
+        },
+        "item5": {
+          "title": "喷漆与印刷",
+          "description": "在塑料和金属产品上进行手工与自动喷漆、丝印、喷墨印刷和激光加工。",
+          "cta": "了解服务"
+        },
+        "item6": {
+          "title": "PVD真空镀",
+          "description": "通过2台PVD设备和2条PVD生产线进行真空镀膜。",
+          "cta": "了解服务"
         }
       }
     }

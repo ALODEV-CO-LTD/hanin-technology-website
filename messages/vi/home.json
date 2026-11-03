@@ -8,7 +8,7 @@
       },
       "staff": {
         "label1": "NHÂN SỰ",
-        "end": "58",
+        "end": "70",
         "suffix": ""
       },
       "area": {
@@ -23,16 +23,19 @@
       }
     },
     "Hero": {
+      "stats": {
+        "partners": "KHÁCH HÀNG CÔNG NGHIỆP",
+        "staff": "NHÂN SỰ",
+        "area": "QUY MÔ NHÀ XƯỞNG",
+        "quality": "CHỨNG NHẬN QUẢN LÝ CHẤT LƯỢNG",
+        "qualityValue": "ISO 9001:2015"
+      },
       "titlePrefix": "GIA CÔNG MẠ",
-      "titleHighlight": "KIM LOẠI",
-      "subtitle": "Nhà máy gia công mạ kim loại tại KCN Quang Minh, Hà Nội.",
-      "description": "Gia công mạ cho khách hàng công nghiệp, kiểm soát độ dày lớp mạ và dung sai theo bản vẽ.",
+      "titleHighlight": "NHỰA & KIM LOẠI",
+      "badge": "Nhà máy tại KCN Quang Minh, Hà Nội",
+      "description": "Chuyên xử lý mạ trên nền nhựa ABS và kim loại, mạ chân không PVD, phun sơn và in cho khách hàng công nghiệp.",
       "ctaPrimary": "XEM NĂNG LỰC SẢN XUẤT",
       "ctaSecondary": "YÊU CẦU TƯ VẤN",
-      "lineLabel": "CÔNG NGHỆ:",
-      "lineValue": "MẠ TREO · MẠ QUAY",
-      "toleranceLabel": "DUNG SAI:",
-      "toleranceValue": "±0.002 MM",
       "locationLabel": "ĐỊA ĐIỂM:",
       "locationValue": "KCN QUANG MINH, HÀ NỘI",
       "scrollCta": "CUỘN XUỐNG",
@@ -40,18 +43,18 @@
     },
     "AboutHanin": {
       "highlights": {
-        "0": "Lớp mạ bám dính tốt, chống ăn mòn",
-        "1": "Đo độ dày lớp mạ theo micron",
-        "2": "Gia công hàng loạt",
-        "3": "Có hệ thống xử lý nước thải"
+        "0": "Mạ nhựa ABS và mạ kim loại",
+        "1": "Mạ chân không PVD, phun sơn và in",
+        "2": "Đo độ dày lớp mạ, phun muối NSS và CASS",
+        "3": "Hệ thống xử lý nước thải 130 m³/ngày đêm"
       },
       "imageAlt": "Kỹ sư giám sát quy trình mạ kim loại tại HANIN",
       "badgeTag": "Kiểm soát chất lượng",
       "badgeTitle": "Kiểm tra theo từng công đoạn",
-      "badgeSubtitle": "XỬ LÝ BỀ MẶT KIM LOẠI CÔNG NGHIỆP",
+      "badgeSubtitle": "XỬ LÝ BỀ MẶT NHỰA VÀ KIM LOẠI",
       "title": "Về HANIN",
-      "paragraph1": "HANIN chuyên gia công mạ kim loại cho khách hàng công nghiệp.",
-      "paragraph2": "HANIN chuyên gia công mạ kim loại cho khách hàng công nghiệp. Thành lập năm 2023, nhà máy rộng 2.230 m² tại KCN Quang Minh, Hà Nội, 58 nhân sự, hơn 100 khách hàng.",
+      "paragraph1": "HANIN chuyên xử lý mạ trên nền nhựa ABS và kim loại, đồng thời nhận sơn và in trên sản phẩm nhựa, kim loại.",
+      "paragraph2": "HANIN thành lập năm 2023, thuộc hệ thống Hanin Tech (thành lập năm 2018). Nhà máy rộng 2.230 m² tại Lô 49G, KCN Quang Minh, Hà Nội, có 70 nhân sự và hơn 100 khách hàng.",
       "ctaLink": "XEM THÊM VỀ HANIN"
     },
     "PlatingServices": {
@@ -60,148 +63,144 @@
       "detailLabel": "CHI TIẾT KỸ THUẬT",
       "services": {
         "0": {
-          "tag": "CƠ KHÍ CHÍNH XÁC",
-          "title": "Mạ chi tiết cơ khí",
-          "desc": "Mạ bề mặt chi tiết cơ khí chính xác để tăng độ bền và khả năng chống ăn mòn."
+          "tag": "NỀN NHỰA ABS",
+          "title": "Mạ nhựa ABS, ABS/PC",
+          "desc": "Niken crom 3+, niken crom 6+, niken satin, niken crom đen; có thể tạo xước Hair Line trên niken crom."
         },
         "1": {
-          "tag": "DẪN ĐIỆN & LINH KIỆN",
-          "title": "Mạ chi tiết điện, điện tử",
-          "desc": "Mạ bảo vệ bề mặt, tăng khả năng dẫn điện và cải thiện ngoại quan cho linh kiện kỹ thuật."
+          "tag": "NỀN KIM LOẠI",
+          "title": "Mạ niken, crom, satin trên kim loại",
+          "desc": "Niken điện phân, niken hóa, niken đen, niken crom và mạ satin cho chi tiết bằng sắt, đồng, thép, nhôm."
         },
         "2": {
-          "tag": "KIỂM SOÁT MICRON",
-          "title": "Mạ theo độ dày yêu cầu",
-          "desc": "Kiểm soát độ dày lớp mạ theo micron, đo kiểm bằng thiết bị chuyên dụng."
+          "tag": "KẼM · ĐỒNG · THIẾC",
+          "title": "Mạ kẽm, đồng, thiếc, phốt phát đen",
+          "desc": "Mạ kẽm, đồng, thiếc và phốt phát mangan đen để chống gỉ, tăng độ bám dính."
         },
         "3": {
-          "tag": "HÀNG LOẠT",
-          "title": "Mạ số lượng lớn",
-          "desc": "Gia công mạ hàng loạt, giữ độ đồng đều lớp mạ giữa các mẻ."
+          "tag": "PVD · SƠN · IN",
+          "title": "PVD, phun sơn và in",
+          "desc": "Mạ chân không PVD trên 2 máy; phun sơn, in và laser trên sản phẩm nhựa, kim loại."
         }
       }
     },
     "ManufacturingCapability": {
       "title": "NĂNG LỰC SẢN XUẤT",
-      "description": "Dây chuyền mạ, bể mạ và thiết bị kiểm nghiệm được bố trí theo thứ tự các công đoạn.",
+      "description": "Dây chuyền mạ, máy PVD, buồng phun sơn và phòng phân tích nằm trong cùng một nhà máy.",
       "imageAlt": "Bể mạ tự động tại nhà máy HANIN",
-      "statusLabel": "Bể mạ đang vận hành",
-      "tempLabel": "Nhiệt độ bể",
-      "voltageLabel": "Điện áp",
-      "filterLabel": "Lọc tuần hoàn",
       "cta": "XEM NĂNG LỰC SẢN XUẤT",
       "specs": {
         "0": {
           "tag": "DÂY CHUYỀN MẠ",
-          "title": "Dây chuyền mạ treo và mạ quay",
-          "desc": "PLC lập trình hành trình bể và thời gian ngâm; dòng điện chỉnh theo từng mã hàng."
+          "title": "Mạ tự động, mạ treo, mạ quay",
+          "desc": "Dây chuyền tự động 30–50 nghìn sản phẩm/ngày; mạ treo bán tự động 10–20 nghìn/ngày; mạ quay 3–5 tấn/ngày."
         },
         "1": {
           "tag": "THIẾT BỊ",
-          "title": "Bể mạ và thiết bị phụ trợ",
-          "desc": "Bể mạ có lọc tuần hoàn, gia nhiệt tự động và công đoạn sấy khô."
+          "title": "PVD, phun sơn và in",
+          "desc": "2 máy PVD; 2 phòng phun sơn thủ công, 3 phòng phun sơn 6 súng và 1 dây chuyền phun sơn tự động."
         },
         "2": {
           "tag": "KIỂM SOÁT CHẤT LƯỢNG",
           "title": "Thiết bị kiểm tra lớp mạ",
-          "desc": "Máy đo XRF, buồng thử phun sương muối ASTM B117, kiểm tra độ bám dính."
+          "desc": "Máy đo độ dày lớp mạ, máy phun muối NSS và CASS, máy thử Hull cell, phòng phân tích."
         },
         "3": {
-          "tag": "ĐIỀU PHỐI SẢN XUẤT",
-          "title": "Sản xuất theo đơn hàng",
-          "desc": "Kế hoạch sản xuất sắp theo số lượng và tiến độ giao hàng."
+          "tag": "XỬ LÝ NƯỚC THẢI",
+          "title": "Hệ thống xử lý nước thải",
+          "desc": "Công suất 130 m³/ngày đêm, có bể lắng và máy ép bùn."
         }
       }
     },
     "FactoryShowcase": {
       "title": "Nhà xưởng và thiết bị",
-      "description": "Nhà xưởng, dây chuyền và phòng kiểm nghiệm được bố trí thành các khu vực riêng.",
+      "description": "Nhà xưởng, dây chuyền, phòng phân tích và khu PVD, phun sơn nằm trong cùng một khu đất.",
       "tabs": {
         "0": {
           "label": "NHÀ MÁY",
           "sector": "Nhà máy",
-          "tagline": "Khu xử lý khí thải và bể dung dịch",
+          "tagline": "Nhà máy tại Lô 49G, KCN Quang Minh",
           "order": "Nhà xưởng",
-          "title": "Nhà xưởng bố trí theo luồng vật liệu",
-          "desc": "Sàn epoxy chịu hóa chất, thông gió cưỡng bức và thu hồi hơi axit."
+          "title": "Nhà máy mạ rộng 2.230 m²",
+          "desc": "Nhà máy có dây chuyền mạ, khu PVD, khu phun sơn, phòng phân tích và hệ thống xử lý nước thải."
         },
         "1": {
           "label": "DÂY CHUYỀN",
           "sector": "Dây chuyền",
           "tagline": "Dây chuyền mạ",
           "order": "Gia công mạ",
-          "title": "Dây chuyền mạ điều khiển bằng PLC",
-          "desc": "Hành trình bể, dòng điện và thời gian xử lý thiết lập theo từng vật liệu."
+          "title": "Dây chuyền mạ tự động, bán tự động và mạ quay",
+          "desc": "Dây chuyền tự động dùng JIG móc hàng và cẩu trục; mạ quay có máy rung, tẩy dầu, bể mạ đồng và bể mạ niken."
         },
         "2": {
           "label": "PHÒNG KIỂM NGHIỆM",
           "sector": "Phòng kiểm nghiệm",
           "tagline": "Phòng phân tích và kiểm tra",
           "order": "Kiểm soát chất lượng",
-          "title": "Phòng kiểm nghiệm lớp mạ",
-          "desc": "Máy đo XRF, buồng thử phun sương muối ASTM B117, kiểm tra độ bám dính."
+          "title": "Phòng phân tích và kiểm tra lớp mạ",
+          "desc": "Máy đo độ dày lớp mạ, máy phun muối NSS và CASS, máy thử Hull cell, hóa chất phân tích."
         },
         "3": {
           "label": "THIẾT BỊ",
           "sector": "Thiết bị",
-          "tagline": "Thiết bị phụ trợ",
+          "tagline": "Máy PVD và buồng phun sơn",
           "order": "Thiết bị",
-          "title": "Thiết bị phụ trợ",
-          "desc": "Lọc tuần hoàn, gia nhiệt tự động và sấy khô sản phẩm."
+          "title": "Máy PVD và buồng phun sơn",
+          "desc": "2 máy PVD, buồng phun sơn thủ công, buồng phun sơn 6 súng và dây chuyền phun sơn tự động."
         }
       }
     },
     "ProductsProjects": {
-      "title": "Sản phẩm và dự án",
-      "description": "Một số sản phẩm và dự án gia công mạ do HANIN thực hiện.",
-      "ctaAll": "XEM TẤT CẢ DỰ ÁN",
+      "title": "Sản phẩm tiêu biểu",
+      "description": "Ba nhóm sản phẩm HANIN gia công mạ, sơn và in.",
+      "ctaAll": "XEM TẤT CẢ SẢN PHẨM",
       "project1": {
-        "imageAlt": "Chi tiết bánh răng và trục cơ khí chính xác sau gia công mạ",
-        "label": "DỰ ÁN 01",
-        "category": "Cơ khí chính xác",
-        "title": "Chi tiết truyền động và bánh răng",
-        "desc": "Mạ bảo vệ bề mặt để chống mài mòn, giữ độ chính xác bước răng và kéo dài tuổi thọ chi tiết làm việc trong môi trường ma sát cao.",
-        "cta": "THÔNG SỐ LỚP MẠ"
+        "imageAlt": "Chi tiết phụ tùng ô tô sau khi mạ",
+        "label": "NHÓM 01",
+        "category": "Ô tô, Smart Home",
+        "title": "Phụ tùng ô tô",
+        "desc": "Logo VinFast, Infiniti, Nissan, chữ nổi VinFast, nút khởi động xe, công tắc điều khiển và viền khung đèn ô tô.",
+        "cta": "XEM SẢN PHẨM"
       },
       "project2": {
-        "imageAlt": "Trục piston và ty ben thủy lực ô tô mạ crom cứng",
-        "label": "DỰ ÁN 02",
-        "category": "Ô tô, xe máy",
-        "title": "Linh kiện vỏ kim loại và phụ kiện",
-        "desc": "Lớp mạ đồng đều, kiểm tra khả năng chống ăn mòn bằng thử nghiệm phun sương muối, dùng cho phụ tùng xe máy và ô tô.",
-        "cta": "XEM CHI TIẾT DỰ ÁN"
+        "imageAlt": "Chi tiết thiết bị gia dụng sau khi mạ",
+        "label": "NHÓM 02",
+        "category": "Điện gia dụng",
+        "title": "Thiết bị gia dụng",
+        "desc": "Chi tiết cho tủ lạnh, máy giặt, máy lọc nước và lò nướng, như khung nắp máy giặt, núm vặn.",
+        "cta": "XEM SẢN PHẨM"
       },
       "project3": {
-        "imageAlt": "Thanh busbar đồng mạ thiếc trong tủ điện cao thế",
-        "label": "DỰ ÁN 03",
-        "category": "Thiết bị điện, điện tử",
-        "title": "Phụ kiện kim loại kỹ thuật",
-        "desc": "Mạ khối đấu nối, chân cắm tiếp xúc và thanh dẫn điện, độ dày lớp mạ kiểm soát dưới 5 micron.",
-        "cta": "XEM CHI TIẾT DỰ ÁN"
+        "imageAlt": "Vòi sen và phụ kiện vệ sinh sau khi mạ",
+        "label": "NHÓM 03",
+        "category": "Vệ sinh, nhà bếp",
+        "title": "Thiết bị vệ sinh và nhà bếp",
+        "desc": "Vòi sen, vòi rửa, phụ kiện vệ sinh, núm vặn lọc nước, khung và núm vặn thiết bị nhà bếp.",
+        "cta": "XEM SẢN PHẨM"
       }
     },
     "QualityCertification": {
-      "title": "Kiểm soát chất lượng ở mọi công đoạn.",
-      "description": "Sản phẩm được kiểm tra từ khâu tiếp nhận nguyên liệu, pha chế dung dịch đến kiểm tra trước khi xuất xưởng.",
+      "title": "Kiểm tra lớp mạ trước khi giao hàng.",
+      "description": "Lớp mạ được đo độ dày và thử phun muối; dung dịch bể mạ được phân tích tại phòng phân tích riêng.",
       "ctaView": "XEM CHỨNG NHẬN",
       "certs": {
         "0": {
           "label": "ISO 9001",
-          "title": "Quản lý chất lượng sản xuất",
-          "desc": "Quy trình kiểm soát chất lượng chuẩn hóa cho từng công đoạn.",
-          "status": "Quản lý chất lượng"
+          "title": "Quản lý chất lượng",
+          "desc": "Chứng chỉ ISO 9001:2015 của Hanin Technology Việt Nam, hiệu lực đến 10/08/2028.",
+          "status": "Còn hiệu lực đến 10/08/2028"
         },
         "1": {
-          "label": "ISO 14001",
-          "title": "Quản lý môi trường",
-          "desc": "Kiểm soát xả thải, tuần hoàn nước, lưu trữ hóa chất an toàn.",
-          "status": "Quản lý môi trường"
+          "label": "130 m³",
+          "title": "Xử lý nước thải",
+          "desc": "Hệ thống công suất 130 m³/ngày đêm, có bể lắng và máy ép bùn.",
+          "status": "Xử lý nước thải"
         },
         "2": {
           "label": "Kiểm định",
-          "title": "Kiểm tra lớp mạ",
-          "desc": "Đánh giá độ dày, độ nhám bề mặt và khả năng chống ăn mòn.",
-          "status": "Thử nghiệm tại phòng kiểm nghiệm"
+          "title": "Thiết bị kiểm tra",
+          "desc": "Máy đo độ dày lớp mạ, máy phun muối NSS và CASS, máy thử Hull cell.",
+          "status": "Kiểm tra tại phòng phân tích"
         }
       }
     },
@@ -212,18 +211,18 @@
       "articles": {
         "0": {
           "tag": "Tin doanh nghiệp",
-          "title": "Định hướng nâng cao năng lực công nghệ và mở rộng gia công mạ",
-          "excerpt": "Nâng cao độ chính xác kỹ thuật và đáp ứng yêu cầu kỹ thuật của khách hàng doanh nghiệp..."
+          "title": "Mở rộng năng lực mạ nhựa, mạ kim loại và PVD",
+          "excerpt": "Dây chuyền mạ, máy PVD và buồng phun sơn đáp ứng yêu cầu của khách hàng doanh nghiệp..."
         },
         "1": {
           "tag": "Hoạt động sản xuất",
-          "title": "Kiểm soát độ dày lớp mạ theo tiêu chuẩn công nghiệp",
-          "excerpt": "Đo độ dày lớp mạ bằng thiết bị chuyên dụng để kiểm tra độ đồng đều giữa các lô hàng..."
+          "title": "Kiểm tra độ dày lớp mạ và thử phun muối",
+          "excerpt": "Đo độ dày lớp mạ và thử phun muối NSS, CASS để kiểm tra các lô hàng..."
         },
         "2": {
           "tag": "Cập nhật dự án",
-          "title": "Hoàn thành các đơn gia công linh kiện cho chuỗi cung ứng",
-          "excerpt": "Giao hàng đúng tiến độ và đáp ứng yêu cầu kỹ thuật của nhóm chi tiết cơ khí phụ trợ..."
+          "title": "Gia công mạ cho linh kiện ô tô và thiết bị gia dụng",
+          "excerpt": "Gia công mạ, sơn và in cho linh kiện ô tô, thiết bị gia dụng và thiết bị vệ sinh..."
         }
       }
     },

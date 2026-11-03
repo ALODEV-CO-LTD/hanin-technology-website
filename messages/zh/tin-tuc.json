@@ -56,42 +56,41 @@
       "category": "技术",
       "date": "2026年4月18日",
       "readTime": "阅读时长 5 分钟",
-      "title": "化学镀镍（ENP）在重载齿轮及工业机器人零件上的应用",
-      "excerpt": "在深螺纹槽内将镀层厚度公差控制在 ±0.2 µm，提高耐磨性，并按 ASTM B733 控制氢脆。",
+      "title": "ABS塑料镍铬电镀：从前处理到成品的各工序",
+      "excerpt": "ABS塑料零件依次经过除油、粗化、钯活化，再镀镍铬，获得光亮且持久的表面。",
       "metrics": {
         "0": {
-          "label": "厚度公差"
+          "label": "基材"
         },
         "1": {
-          "label": "维氏硬度"
+          "label": "电镀工艺"
         },
         "2": {
-          "label": "盐雾试验",
-          "unit": "小时"
+          "label": "检测"
         }
       },
       "location": "光明工业区自动电镀生产线",
       "liveLabel": "HANIN 技术部",
       "author": "技术部",
       "authorRole": "Hanin Technology VN",
-      "imageAlt": "自动电镀生产线，药液槽及吊装汽车底盘零件的行车"
+      "imageAlt": "带电镀槽和行车吊装零件的自动电镀生产线"
     },
     "articles": {
       "0": {
         "categoryLabel": "质量",
         "readTime": "阅读时长 4 分钟",
-        "title": "用 X 射线荧光（XRF）测量镀层厚度",
-        "excerpt": "XRF 是一种无损检测（NDT）方法，可测定形状复杂零件上镍磷镀层的厚度及磷含量。",
+        "title": "使用APC-100测量镀层厚度",
+        "excerpt": "质检室测量成品镀层厚度，对照客户要求，并结合NSS与CASS盐雾试验。",
         "author": "QC 部",
         "imageAlt": "电子卡尺测量小型齿轮，钢制零件置于质量检测台上"
       },
       "1": {
         "categoryLabel": "生产",
         "readTime": "阅读时长 6 分钟",
-        "title": "PLC 控制的自动锌镍电镀槽",
-        "excerpt": "自动电镀系统：双行程机械臂、补加药液稳定槽液浓度、脉冲电流控制。",
+        "title": "ABS塑料零件自动电镀生产线",
+        "excerpt": "零件挂在挂具(JIG)上，由行车依次送入各电镀槽；生产线日产量为3万至5万件。",
         "author": "生产部",
-        "imageAlt": "生产线上由 PLC 控制的自动锌镍电镀槽"
+        "imageAlt": "HANIN工厂内的自动电镀生产线"
       },
       "2": {
         "categoryLabel": "企业动态",
@@ -104,16 +103,16 @@
       "3": {
         "categoryLabel": "技术",
         "readTime": "阅读时长 7 分钟",
-        "title": "铝件 III 型硬质阳极氧化（MIL-A-8625）",
-        "excerpt": "低温电解生成硬度超过 65 HRC 的氧化铝层，绝缘性好，耐盐雾。",
+        "title": "装饰零件的缎面与黑铬电镀",
+        "excerpt": "缎面镍呈现哑光细腻表面，黑色镍铬呈现深色外观，镍铬表面还可做拉丝(Hair Line)处理。",
         "author": "技术部",
-        "imageAlt": "技术零件铝表面的硬质阳极氧化"
+        "imageAlt": "缎面与黑铬电镀的装饰零件"
       },
       "4": {
         "categoryLabel": "生产",
         "readTime": "阅读时长 5 分钟",
-        "title": "高强度螺栓的镀后除氢（De-Embrittlement）",
-        "excerpt": "镀后螺栓在 200°C ± 5°C 下烘烤 4 至 24 小时，使氢逸出，避免氢脆断裂。",
+        "title": "锌基材镀镍工艺流程",
+        "excerpt": "从除油、硫酸处理、镀铜、光亮镍，到烘干、测厚和盐雾试验，最后包装。",
         "author": "热处理部",
         "imageAlt": "身穿防护服的技术人员检查悬挂在药液槽上方的电镀零件"
       },

@@ -3,6 +3,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { DATA_DIR } from "./db";
 import { HttpError } from "./auth";
+import { ATTACHMENT_EXTS, ATTACHMENT_MAX_BYTES, ATTACHMENT_MAX_FILES } from "@/lib/attachments";
 
 export const PUBLIC_UPLOAD_DIR = path.join(DATA_DIR, "uploads");
 export const PRIVATE_UPLOAD_DIR = path.join(DATA_DIR, "private");
@@ -71,9 +72,7 @@ export async function saveMedia(file: File): Promise<StoredFile> {
 }
 
 /** Định dạng file đính kèm cho form báo giá / ứng tuyển. */
-export const ATTACHMENT_EXTS = ["pdf", "step", "stp", "dwg", "dxf", "igs", "iges", "zip", "rar", "doc", "docx", "jpg", "jpeg", "png"];
-export const ATTACHMENT_MAX_BYTES = 50 * 1024 * 1024;
-export const ATTACHMENT_MAX_FILES = 5;
+export { ATTACHMENT_EXTS, ATTACHMENT_MAX_BYTES, ATTACHMENT_MAX_FILES };
 
 /** Lưu file đính kèm: KHÔNG public, chỉ admin tải được qua API có xác thực. */
 export async function savePrivateAttachment(file: File): Promise<StoredFile> {

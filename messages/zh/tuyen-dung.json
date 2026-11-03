@@ -45,7 +45,7 @@
       "pillar3": {
         "tag": "技术培训",
         "title": "技术培训",
-        "desc": "新员工接受内部培训，内容包括电镀工艺、XRF 镀层测厚和自动化设备操作。",
+        "desc": "新员工接受电镀流程、镀层厚度测量和生产线操作的内部培训。",
         "metricLabel": "培训",
         "metricValue": "按岗位安排"
       },
@@ -61,7 +61,7 @@
       "title": "招聘职位",
       "description": "HANIN 办公室及工厂的在招岗位。",
       "boardStatus": "共 {count} 个职位",
-      "searchPlaceholder": "按职位或关键词搜索（PLC、QA、机械）",
+      "searchPlaceholder": "按职位或关键词搜索（QA、化学品、机械）",
       "departmentLabel": "部门",
       "typeLabel": "工作类型",
       "locationLabel": "工作地点",
@@ -104,15 +104,15 @@
       "mainImageAlt": "HANIN 工厂自动化电镀线操作区",
       "mainBadge": "生产区",
       "mainTitle": "自动化电镀线操作区",
-      "mainDesc": "镍及硬铬电镀线，配有废气处理和 PLC 监控。",
+      "mainDesc": "自动电镀线、电镀槽区及废水处理系统。",
       "secondaryImageAlt": "HANIN 工厂电镀后的机械零件",
       "secondaryBadge": "质量检验",
       "secondaryTitle": "电镀后的机械零件",
-      "secondaryDesc": "使用 XRF 测量镀层厚度（µm）",
+      "secondaryDesc": "使用APC-100测量镀层厚度",
       "labTitle": "检测实验室",
-      "labDesc": "盐雾试验箱、镀层附着力测试仪和镀液分析用赫尔槽（Hull Cell）。",
+      "labDesc": "NSS与CASS盐雾试验机、霍尔槽试验仪及化学分析室。",
       "labImageAlt": "镀液分析实验室与检测设备",
-      "labFooter": "出厂批次按客户要求附检验记录",
+      "labFooter": "产品在交货前经过成品检验",
       "labBadge": "QC 部门"
     },
     "ApplicationCta": {
@@ -135,7 +135,7 @@
         "salary": "薪资：1,800 - 2,500 万越南盾",
         "tags": {
           "0": "2 年以上经验",
-          "1": "熟悉自动电镀槽（PLC）、化学镀镍（ENP），会用赫尔槽分析镀液",
+          "1": "熟悉镀镍、ABS塑料电镀及霍尔槽溶液分析",
           "2": "使用赫尔槽分析镀液浓度"
         },
         "deadline": "30/04/2026"
@@ -147,8 +147,8 @@
         "locationLabel": "河内光明工业区",
         "salary": "薪资：2,000 - 3,000 万越南盾",
         "tags": {
-          "0": "3 - 5 年经验，持有 ISO 9001 或 IATF 16949 证书",
-          "1": "XRF 检测及盐雾试验",
+          "0": "3-5年经验，熟悉ISO 9001质量管理体系",
+          "1": "镀层厚度测量与盐雾试验",
           "2": "经验：3 - 5 年"
         },
         "deadline": "15/05/2026"

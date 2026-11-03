@@ -10,8 +10,8 @@ import Icon from "@/components/ui/Icon";
 import { logoSrcSet, photoUrl } from "@/lib/photo";
 
 const NAV_PILL =
-  "relative inline-flex items-center gap-1 px-2.5 2xl:px-3.5 py-2 text-body-sm 2xl:text-body-md whitespace-nowrap transition-colors duration-200 " +
-  "after:content-[''] after:absolute after:left-2.5 after:right-2.5 2xl:after:left-3.5 2xl:after:right-3.5 after:bottom-0 after:h-0.5 after:rounded-full after:bg-current " +
+  "relative inline-flex shrink-0 items-center gap-1 px-2 2xl:px-3.5 py-2 text-body-sm 2xl:text-body-md whitespace-nowrap transition-colors duration-200 " +
+  "after:content-[''] after:absolute after:left-2 after:right-2 2xl:after:left-3.5 2xl:after:right-3.5 after:bottom-0 after:h-0.5 after:rounded-full after:bg-current " +
   "after:origin-center after:transition-transform after:duration-300 after:ease-out outline-none active:after:scale-x-100";
 // Mục của trang đang xem: chữ đậm, màu nhấn và luôn có gạch chân như khi rê chuột.
 /** Gạch chân giữ nguyên trong lúc trang đang chuyển (sau khi bấm), tự thu lại khi trang mới đã tải xong. */
@@ -20,12 +20,12 @@ function PendingUnderline({ pressed }: { pressed: boolean }) {
   return (
     <span
       aria-hidden="true"
-      className={`pointer-events-none absolute bottom-0 left-2.5 right-2.5 2xl:left-3.5 2xl:right-3.5 h-0.5 origin-center rounded-full bg-current transition-transform duration-200 ease-out ${pending || pressed ? "scale-x-100" : "scale-x-0"}`}
+      className={`pointer-events-none absolute bottom-0 left-2 right-2 2xl:left-3.5 2xl:right-3.5 h-0.5 origin-center rounded-full bg-current transition-transform duration-200 ease-out ${pending || pressed ? "scale-x-100" : "scale-x-0"}`}
     />
   );
 }
 
-const NAV_PILL_ACTIVE = `${NAV_PILL} font-bold text-steel-600 after:scale-x-100`;
+const NAV_PILL_ACTIVE = `${NAV_PILL} font-semibold text-steel-600 after:scale-x-100`;
 // Các mục còn lại: gạch chân chạy từ giữa khi rê chuột hoặc điều hướng bằng bàn phím.
 const NAV_PILL_IDLE = `${NAV_PILL} font-medium text-slate-600 after:scale-x-0 hover:text-steel-600 focus-visible:text-steel-600 hover:after:scale-x-100 focus-visible:after:scale-x-100`;
 
@@ -85,7 +85,7 @@ export default function Header({ logoSrc }: { logoSrc: string }) {
           />
         </Link>
 
-        <nav className="hidden xl:flex flex-1 min-w-0 items-center justify-center gap-0.5 2xl:gap-2">
+        <nav className="hidden xl:flex flex-1 min-w-0 items-center justify-center gap-2 min-[1366px]:gap-4 2xl:gap-6">
           {NAV_LINKS.map((link) => (
             <Link
               key={link.href}
@@ -108,10 +108,10 @@ export default function Header({ logoSrc }: { logoSrc: string }) {
             href="/lien-he"
             aria-label={t("cta")}
             title={t("cta")}
-            className="inline-flex items-center justify-center min-h-11 min-w-11 px-3 min-[1440px]:px-5 bg-steel-600 hover:bg-steel-700 text-white rounded text-label-technical uppercase tracking-wider transition-all duration-200 hover:shadow-md hover:-translate-y-px active:scale-[0.97] shadow-sm font-semibold whitespace-nowrap"
+            className="inline-flex items-center justify-center gap-2 min-h-11 px-3 sm:px-4 py-2 bg-[#E5A93C] hover:bg-[#D4962A] text-[#0F172A] rounded-md text-body-sm font-semibold whitespace-nowrap transition-all duration-200 hover:-translate-y-px active:scale-[0.97]"
           >
-            <span className="hidden sm:inline xl:max-[1439px]:hidden">{t("cta")}</span>
-            <Icon name="request_quote" className="text-[22px] sm:hidden xl:max-[1439px]:inline" />
+            <Icon name="request_quote" className="text-[20px]" />
+            <span className="hidden sm:inline">{t("cta")}</span>
           </Link>
 
           <button
@@ -154,8 +154,9 @@ export default function Header({ logoSrc }: { logoSrc: string }) {
         <Link
           href="/lien-he"
           onClick={() => setMobileOpen(false)}
-          className="mt-space-sm min-h-11 inline-flex items-center justify-center px-space-md py-space-sm bg-steel-600 hover:bg-steel-700 text-white rounded text-label-technical uppercase tracking-wider font-semibold transition-colors duration-200 active:scale-95"
+          className="mt-space-sm min-h-11 inline-flex items-center justify-center gap-2 px-4 py-2 bg-[#E5A93C] hover:bg-[#D4962A] text-[#0F172A] rounded-md text-body-sm font-semibold transition-colors duration-200 active:scale-95"
         >
+          <Icon name="request_quote" className="text-[20px]" />
           {t("cta")}
         </Link>
         <LanguageSwitcher variant="mobile" />

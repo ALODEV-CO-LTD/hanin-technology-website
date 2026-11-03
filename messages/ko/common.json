@@ -20,8 +20,8 @@
     "ko": "한국어"
   },
   "Footer": {
-    "tagline": "금속 도금 가공",
-    "description": "하노이 꽝민공단의 금속 도금 가공 공장입니다.",
+    "tagline": "플라스틱 및 금속 도금 처리",
+    "description": "하노이 꽝민공단에서 ABS 플라스틱과 금속 도금, 도장 및 인쇄를 하는 공장입니다.",
     "companyHeading": "기업 정보",
     "companyLinks": {
       "trangChu": "홈",
@@ -32,66 +32,64 @@
     },
     "serviceHeading": "서비스 및 제품",
     "serviceLinks": {
-      "enp": "무전해 니켈 도금(ENP)",
-      "hardChrome": "공업용 경질 크롬 도금",
-      "anodizing": "알루미늄 아노다이징 및 하드 아노다이징",
-      "zincNickel": "내식성 아연-니켈 합금 도금",
-      "specSheet": "도금 두께 공차표"
+      "abs": "ABS 플라스틱 니켈-크롬 도금",
+      "nickel": "금속 니켈 도금",
+      "zincCopperTin": "아연·구리·주석 도금, 흑색 인산염",
+      "paintPrint": "도장 및 인쇄",
+      "pvd": "PVD 진공 증착"
     },
     "contactHeading": "기술 문의처",
     "addressLabel": "주소:",
-    "address": "본사: 베트남 하노이시 꽝민사 꽝민공단 660 로트.",
+    "address": "하노이시 꽝민사 꽝민공단 49G 부지.",
     "hotlineLabel": "핫라인:",
     "emailLabel": "이메일:",
     "hoursLabel": "근무 시간:",
     "hours": "월~토: 08:00 - 17:30",
     "zaloChat": "Zalo 기술 상담",
     "googleMaps": "Google 지도 길찾기",
-    "statusLine": "금속 도금 가공 공장 · 하노이 꽝민공단",
-    "copyright": "© 2026 HANIN Technology 베트남 도금산업 주식회사 · 사업자번호 0110300983. All rights reserved.",
+    "statusLine": "플라스틱 및 금속 도금 처리 · 하노이 꽝민공단",
+    "copyright": "© 2026 HANIN 도금산업 주식회사 · 사업자번호 0110300983. All rights reserved.",
     "privacyPolicy": "개인정보 처리방침",
     "termsOfService": "서비스 이용약관",
     "certIso9001": "ISO 9001:2015",
-    "certIso14001": "ISO 14001",
-    "certRohs": "RoHS & REACH",
     "logoAlt": "HANIN Plating"
   },
   "Meta": {
     "site": {
       "title": "HANIN",
-      "description": "산업 고객을 위한 금속 도금 가공 및 표면처리."
+      "description": "산업 고객을 위한 ABS 플라스틱 및 금속 도금, 도장 및 인쇄."
     },
     "home": {
       "title": "HANIN",
-      "description": "산업 고객을 위한 금속 도금 가공 및 표면처리."
+      "description": "산업 고객을 위한 ABS 플라스틱 및 금속 도금, 도장 및 인쇄."
     },
     "gioiThieu": {
       "title": "회사 소개",
-      "description": "HANIN과 산업 고객을 위한 금속 도금 가공 역량을 소개합니다."
+      "description": "HANIN 소개 및 플라스틱·금속 도금 처리 역량."
     },
     "dichVu": {
-      "title": "도금 가공 및 표면처리 서비스",
-      "description": "전해 도금, 무전해 도금 및 금속 표면처리: 경질 크롬 도금, 무전해 니켈 도금(ENP), 아연-니켈 도금, 알루미늄 아노다이징."
+      "title": "도금 및 표면 처리 서비스",
+      "description": "ABS 플라스틱 니켈-크롬 도금, 금속 니켈 도금, 아연·구리·주석 도금, 흑색 인산염, PVD, 도장 및 인쇄."
     },
     "sanPham": {
       "title": "제품 및 프로젝트",
-      "description": "금속 도금 가공 제품 및 프로젝트: 마이크론 단위 공차 관리, 도금층 균일성, 가혹한 환경에서의 내구성."
+      "description": "자동차, 스마트홈, 가전, 위생 및 주방 기기용으로 HANIN이 도금한 제품."
     },
     "nangLuc": {
       "title": "생산 역량",
-      "description": "공장, PLC로 제어하는 도금 라인, 도금층 시험실."
+      "description": "공장, 자동 도금 라인, 걸이·배럴 도금 라인 및 도금층 검사 구역."
     },
     "tinTuc": {
       "title": "뉴스 및 기술 소식",
-      "description": "기업 소식, 금속 표면처리 기술, 품질 검사 기준, 생산 활동."
+      "description": "HANIN의 기업 소식, 표면 처리 지식 및 생산 활동."
     },
     "tuyenDung": {
       "title": "채용",
-      "description": "금속 도금 및 정밀 기계 분야의 현재 모집 중인 직무입니다."
+      "description": "HANIN 도금 공장의 현재 채용 중인 직무."
     },
     "lienHe": {
       "title": "문의 및 견적 요청",
-      "description": "금속 도금 가공 문의 및 CAD 도면을 첨부한 견적(RFQ) 요청."
+      "description": "ABS 플라스틱·금속 도금 문의 및 샘플 또는 도면과 함께 견적 요청."
     },
     "chinhSachBaoMat": {
       "title": "개인정보 처리방침",
@@ -104,5 +102,17 @@
   },
   "Common": {
     "profileUnavailable": "회사소개서를 아직 다운로드할 수 없습니다. HANIN에 문의해 주세요."
+  },
+  "AttachField": {
+    "hint": "PDF, DWG, DXF, STEP, ZIP, JPG, PNG. 최대 5개, 파일당 50 MB.",
+    "tooMany": "한 번에 최대 5개 파일까지 보낼 수 있습니다.",
+    "tooBig": "50 MB를 넘는 파일이 있습니다.",
+    "badType": "지원하지 않는 파일 형식입니다. PDF, DWG, DXF, STEP, ZIP, JPG 또는 PNG를 사용하세요."
+  },
+  "StickyContact": {
+    "label": "전화하기",
+    "zalo": "Zalo",
+    "quote": "견적",
+    "aria": "빠른 연락"
   }
 }

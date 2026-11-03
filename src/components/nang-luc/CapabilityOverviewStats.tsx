@@ -2,24 +2,10 @@ import { useTranslations } from "next-intl";
 import CountUp from "@/components/ui/CountUp";
 
 const STATS = [
-  {
-    key: "equipment",
-    accent: false,
-  },
-  {
-    key: "lines",
-    accent: false,
-  },
-  {
-    key: "zones",
-    padStart: 2,
-    accent: false,
-  },
-  {
-    key: "precision",
-    decimals: 1,
-    accent: true,
-  },
+  { key: "lines", accent: false },
+  { key: "pvd", accent: false },
+  { key: "wastewater", accent: false },
+  { key: "staff", accent: true },
 ] as const;
 
 export default function CapabilityOverviewStats() {
@@ -51,11 +37,9 @@ export default function CapabilityOverviewStats() {
                   end={num(`items.${stat.key}.end`)}
                   prefix={t(`items.${stat.key}.prefix`)}
                   suffix={t(`items.${stat.key}.suffix`)}
-                  decimals={"decimals" in stat ? stat.decimals : 0}
-                  padStart={"padStart" in stat ? stat.padStart : 0}
                 />
                 {t(`items.${stat.key}.unit`) && (
-                  <span className="text-headline-md font-normal text-slate-600">{t(`items.${stat.key}.unit`)}</span>
+                  <span className="ml-1 text-title-md font-normal text-slate-600">{t(`items.${stat.key}.unit`)}</span>
                 )}
               </div>
             </div>

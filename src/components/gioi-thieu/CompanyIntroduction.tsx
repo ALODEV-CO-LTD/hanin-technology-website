@@ -33,6 +33,7 @@ export default function CompanyIntroduction() {
                 <strong className="text-slate-900 font-semibold">{t("paragraph1Strong")}</strong> {t("paragraph1Rest")}
               </p>
               <p>{t("paragraph2")}</p>
+              <p>{t("paragraph3")}</p>
             </div>
             {/* Metadata Technical Grid Box */}
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-space-sm mt-space-xs">

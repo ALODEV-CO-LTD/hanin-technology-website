@@ -56,42 +56,41 @@
       "category": "CÔNG NGHỆ",
       "date": "18 Tháng 4, 2026",
       "readTime": "5 phút đọc",
-      "title": "Mạ niken hóa học (ENP) cho bánh răng và chi tiết robot công nghiệp chịu tải lớn",
-      "excerpt": "Kiểm soát độ dày lớp mạ đồng đều trong rãnh ren sâu, dung sai ±0.2 µm, chống mài mòn và hạn chế giòn hydro theo ASTM B733.",
+      "title": "Mạ niken-crom trên nhựa ABS: các bước từ tiền xử lý đến thành phẩm",
+      "excerpt": "Chi tiết nhựa ABS đi qua tẩy dầu, xâm thực, hoạt hóa Paradi rồi mạ niken-crom để có bề mặt sáng bóng và bền màu.",
       "metrics": {
         "0": {
-          "label": "Dung sai độ dày"
+          "label": "Nền vật liệu"
         },
         "1": {
-          "label": "Độ cứng Vickers"
+          "label": "Công nghệ mạ"
         },
         "2": {
-          "label": "Thử phun muối",
-          "unit": "Giờ"
+          "label": "Kiểm tra"
         }
       },
       "location": "Dây chuyền mạ tự động, KCN Quang Minh",
       "liveLabel": "Bộ phận kỹ thuật HANIN",
       "author": "Bộ phận kỹ thuật",
       "authorRole": "Hanin Technology VN",
-      "imageAlt": "Dây chuyền mạ điện tự động với các bể hóa chất và cẩu trục nâng hạ chi tiết khung gầm ô tô"
+      "imageAlt": "Dây chuyền mạ tự động với các bể mạ và cẩu trục nâng hạ chi tiết"
     },
     "articles": {
       "0": {
         "categoryLabel": "CHẤT LƯỢNG",
         "readTime": "4 phút đọc",
-        "title": "Đo độ dày lớp mạ bằng huỳnh quang tia X (XRF)",
-        "excerpt": "XRF là phương pháp đo không phá hủy (NDT), xác định độ dày và hàm lượng phốt pho của lớp mạ niken-phốt pho trên chi tiết có hình dạng phức tạp.",
+        "title": "Đo độ dày lớp mạ bằng máy APC-100",
+        "excerpt": "Phòng QC đo độ dày lớp mạ trên thành phẩm để đối chiếu yêu cầu của khách hàng, kết hợp thử phun muối NSS và CASS.",
         "author": "Bộ phận QC",
         "imageAlt": "Thước cặp điện tử đo bánh răng nhỏ, chi tiết thép đặt trên bàn kiểm tra chất lượng"
       },
       "1": {
         "categoryLabel": "SẢN XUẤT",
         "readTime": "6 phút đọc",
-        "title": "Bể mạ kẽm-niken tự động điều khiển bằng PLC",
-        "excerpt": "Hệ thống mạ tự động: cánh tay robot hai hành trình, bổ sung hóa chất giữ nồng độ bể ổn định, điều khiển dòng xung.",
+        "title": "Dây chuyền mạ tự động cho chi tiết nhựa ABS",
+        "excerpt": "Chi tiết treo trên móc (JIG), cẩu trục đưa qua các bể mạ; dây chuyền cho sản lượng 30–50 nghìn sản phẩm mỗi ngày.",
         "author": "Bộ phận sản xuất",
-        "imageAlt": "Bể mạ kẽm-niken tự động điều khiển bằng PLC trên dây chuyền sản xuất"
+        "imageAlt": "Dây chuyền mạ tự động trong nhà máy HANIN"
       },
       "2": {
         "categoryLabel": "CÔNG TY",
@@ -104,16 +103,16 @@
       "3": {
         "categoryLabel": "CÔNG NGHỆ",
         "readTime": "7 phút đọc",
-        "title": "Anod hóa cứng Type III theo MIL-A-8625 cho chi tiết nhôm",
-        "excerpt": "Điện phân nhiệt độ thấp tạo lớp oxide nhôm cứng trên 65 HRC, cách điện tốt, chịu sương muối.",
+        "title": "Mạ satin và crom đen cho chi tiết trang trí",
+        "excerpt": "Niken satin cho bề mặt mờ mịn, niken crom đen cho vẻ ngoài tối màu, có thể thêm xước Hair Line trên niken crom.",
         "author": "Bộ phận kỹ thuật",
-        "imageAlt": "Anod hóa cứng bề mặt nhôm của linh kiện kỹ thuật"
+        "imageAlt": "Chi tiết trang trí mạ satin và crom đen"
       },
       "4": {
         "categoryLabel": "SẢN XUẤT",
         "readTime": "5 phút đọc",
-        "title": "Khử hydro sau mạ (de-embrittlement) cho bu-lông cường độ cao",
-        "excerpt": "Bu-lông sau mạ được sấy ở 200°C ± 5°C, 4 đến 24 giờ để hydro thoát ra, tránh gãy giòn.",
+        "title": "Quy trình mạ niken nền kẽm",
+        "excerpt": "Từ tẩy dầu, tẩy H2SO4, mạ đồng, niken sáng đến sấy khô, đo độ dày và phun muối trước khi đóng gói.",
         "author": "Bộ phận xử lý nhiệt",
         "imageAlt": "Kỹ thuật viên mặc đồ bảo hộ kiểm tra chi tiết mạ treo trên bể hóa chất"
       },

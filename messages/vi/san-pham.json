@@ -1,33 +1,27 @@
 {
   "SanPham": {
     "CategoryHero": {
-      "imageAlt": "Chi tiết cơ khí sau khi mạ",
+      "imageAlt": "Chi tiết nhựa và kim loại sau khi mạ tại nhà máy HANIN",
       "breadcrumbHome": "Trang chủ",
       "breadcrumbCurrent": "Sản phẩm & Dự án",
-      "breadcrumbTag": "Danh mục dự án và chi tiết gia công",
+      "breadcrumbTag": "Danh mục sản phẩm đã mạ",
       "title": "Sản phẩm & Dự án",
-      "description": "Sản phẩm và dự án mạ kim loại do HANIN thực hiện: dung sai độ dày, độ đồng đều lớp mạ và độ bền trong môi trường ăn mòn.",
-      "badgeActiveProjects": "Nhận gia công theo lô",
-      "badgeQualityRate": "Kiểm tra chất lượng từng lô",
-      "badgeCompliance": "Theo yêu cầu RoHS, REACH"
+      "description": "Sản phẩm HANIN đã mạ cho ô tô, smart home, thiết bị gia dụng, thiết bị vệ sinh và nhà bếp, cùng các chi tiết kim loại mạ niken, kẽm, thiếc."
     },
     "FeaturedProjectSpotlight": {
       "heading": "Dự án tiêu biểu",
-      "bathTemperature": "Nhiệt độ bể mạ: 58.4°C",
-      "automatedCycle": "Chu trình điều khiển bằng PLC: băng tải treo",
-      "monthlyOutput": "Sản xuất theo lô, theo đơn hàng",
       "ctaViewDetail": "XEM CHI TIẾT DỰ ÁN",
-      "ctaDownloadCaseStudy": "TẢI HỒ SƠ DỰ ÁN (PDF) ↓"
+      "ctaDownloadCaseStudy": "GỬI YÊU CẦU BÁO GIÁ"
     },
     "ProductBreadcrumbBar": {
       "home": "TRANG CHỦ",
       "productsAndProjects": "SẢN PHẨM & DỰ ÁN",
-      "lot": "LÔ"
+      "lot": "MÃ"
     },
     "ProductCatalog": {
-      "heading": "Sản phẩm đã gia công",
-      "subheading": "Chọn sản phẩm để xem lớp mạ, tiêu chuẩn và quy trình áp dụng.",
-      "lotNumber": "Lô sản xuất",
+      "heading": "Sản phẩm đã mạ",
+      "subheading": "Chọn sản phẩm để xem lớp mạ và quy trình áp dụng.",
+      "lotNumber": "Mã sản phẩm",
       "ctaViewDetail": "XEM CHI TIẾT SẢN PHẨM",
       "viewDetailAriaLabel": "Xem chi tiết",
       "searchPlaceholder": "Tìm sản phẩm hoặc dự án...",
@@ -40,317 +34,298 @@
     },
     "ProductGallery": {
       "title": "Hình ảnh chi tiết và kiểm tra thực tế",
-      "description": "Ảnh chi tiết sau khi mạ, mặt cắt dưới kính hiển vi và phép đo tại phòng QC.",
-      "highQualityImages": "Ảnh chụp thực tế",
-      "zoomOptical": "Phóng đại quang học 40 lần",
       "zoomInAriaLabel": "Phóng to ảnh",
       "fullscreenAriaLabel": "Xem toàn màn hình",
-      "closeAriaLabel": "Đóng",
-      "frame": "Ảnh",
-      "resolution": "Chụp tại nhà máy",
-      "date": "Ngày: 2026-03-29",
-      "statusApproved": "Đã qua kiểm tra QC"
+      "closeAriaLabel": "Đóng"
     },
     "ProductHero": {
       "ctaRequestQuote": "LIÊN HỆ BÁO GIÁ DỰ ÁN",
-      "ctaDownloadSpecSheet": "TẢI BẢN VẼ KỸ THUẬT (PDF)",
-      "badgeIso": "Tham chiếu ISO 9001:2015",
-      "badgeRohs": "Theo yêu cầu RoHS, REACH",
-      "badgeXrf": "Đo lớp mạ bằng XRF",
-      "metrologyInspected": "Đo kiểm kích thước theo lô",
-      "toleranceValue": "Dung sai: ±0.1 µm",
-      "digitalCallout": "Panme điện tử: 12.74 mm",
-      "robustPass": "Đạt",
-      "microHardnessLabel": "Độ cứng tế vi sau xử lý nhiệt khử hydro:",
-      "microHardnessValue": "850 - 920 HV"
+      "ctaDownloadSpecSheet": "GỬI MẪU HOẶC BẢN VẼ",
+      "materialLabel": "Nền vật liệu:",
+      "materialValue": "Nhựa ABS, ABS/PC hoặc kim loại"
     },
     "ProductOverview": {
-      "title": "Tổng quan dự án",
-      "specSheetTitle": "Bảng thông số kỹ thuật",
-      "specSheetRevision": "Phiên bản: 2.4",
-      "batchStatusLabel": "Kết quả kiểm tra lô hàng:",
-      "batchStatusValue": "Đạt yêu cầu"
+      "title": "Tổng quan sản phẩm",
+      "specSheetTitle": "Thông tin chung"
     },
     "ProductProcessTimeline": {
-      "title": "Quy trình thực hiện dự án",
-      "description": "Từ nhận bản vẽ đến kiểm tra trước khi xuất hàng."
+      "title": "Quy trình thực hiện",
+      "description": "Từ nhận hàng đến kiểm tra trước khi giao."
     },
     "ProductQuoteCta": {
-      "title": "Dự án của bạn có yêu cầu gia công tương tự?",
-      "descriptionPrefix": "Gửi bản vẽ 2D/3D (PDF, CAD, STP) và yêu cầu bề mặt. Kỹ sư HANIN đề xuất quy trình phù hợp và gửi báo giá chi tiết trong vòng",
-      "descriptionHighlight": "04 giờ làm việc",
+      "title": "Sản phẩm của bạn cần mạ tương tự?",
+      "descriptionPrefix": "Gửi mẫu, ảnh sản phẩm hoặc bản vẽ kèm yêu cầu bề mặt. HANIN trao đổi về phương án mạ phù hợp và",
+      "descriptionHighlight": "gửi báo giá chi tiết",
       "ctaSendQuote": "GỬI YÊU CẦU BÁO GIÁ",
-      "ndaNote": "Bảo mật bản vẽ theo thỏa thuận NDA",
-      "responseTime": "Phản hồi kỹ thuật trong 4 giờ làm việc",
-      "hotlineLabel": "Hotline kỹ thuật:",
-      "emailLabel": "Email nhận bản vẽ CAD:"
+      "hotlineLabel": "Hotline:",
+      "emailLabel": "Email nhận bản vẽ:"
     },
     "ProductsCta": {
-      "title": "Bạn có dự án cần gia công?",
-      "description": "Gửi bản vẽ 2D/3D hoặc trao đổi trực tiếp với kỹ sư HANIN để nhận báo giá và phương án mạ phù hợp.",
+      "title": "Bạn có sản phẩm cần mạ?",
+      "description": "Gửi mẫu, ảnh hoặc bản vẽ, hoặc trao đổi trực tiếp với HANIN để nhận báo giá và phương án mạ phù hợp.",
       "cta": "NHẬN BÁO GIÁ",
-      "email": "Email: Haninplating@gmail.com",
-      "responseTime": "Phản hồi kỹ thuật trong 04 giờ làm việc",
-      "hotlineLabel": "Hotline kỹ thuật:"
+      "emailLabel": "Email:",
+      "hotlineLabel": "Hotline:"
     },
     "RelatedProjects": {
       "title": "Dự án và sản phẩm khác",
-      "description": "Một số chi tiết cơ khí chính xác đã gia công tại HANIN.",
-      "lot": "LÔ",
+      "description": "Một số sản phẩm khác đã mạ tại HANIN.",
+      "lot": "MÃ",
       "ctaViewDetail": "XEM CHI TIẾT DỰ ÁN"
     },
     "RelatedServices": {
       "title": "Dịch vụ mạ liên quan",
-      "description": "Các phương pháp mạ có thể áp dụng cho nhóm chi tiết này.",
+      "description": "Các phương pháp xử lý bề mặt HANIN có thể áp dụng cho nhóm sản phẩm này.",
       "ctaViewAll": "XEM TẤT CẢ DỊCH VỤ MẠ"
     },
     "SpecTrustNote": {
-      "title": "Lưu ý về số liệu kỹ thuật",
-      "description": "Số liệu trên trang chỉ để tham khảo theo từng loại chi tiết; thông số áp dụng cho đơn hàng được thống nhất theo bản vẽ."
+      "title": "Lưu ý về thông tin sản phẩm",
+      "description": "Nội dung trên trang chỉ giới thiệu chung theo nhóm sản phẩm; yêu cầu áp dụng cho từng đơn hàng được thống nhất theo mẫu hoặc bản vẽ của khách hàng."
     },
     "categoryTabs": {
       "all": "Tất cả sản phẩm",
-      "coKhiChinhXac": "Chi tiết cơ khí chính xác",
-      "phuTungOToXeMay": "Phụ tùng ô tô, xe máy",
-      "dauCosseThietBiDien": "Đầu cosse, thiết bị điện",
-      "anodizing": "Linh kiện anodizing"
+      "coKhiChinhXac": "Chi tiết kim loại mạ",
+      "phuTungOToXeMay": "Phụ tùng ô tô",
+      "dauCosseThietBiDien": "Thiết bị gia dụng và điện tử",
+      "anodizing": "Thiết bị vệ sinh và nhà bếp"
     },
     "products": {
-      "banhRang": {
-        "title": "Bánh răng trục vít và chi tiết cơ khí đo bằng panme",
-        "category": "Chi tiết cơ khí chính xác",
-        "description": "Mạ niken, dung sai độ dày ±0.2 µm. Giảm ma sát trượt, tăng độ cứng cho cơ cấu truyền động nhỏ.",
-        "imageAlt": "Bánh răng và chi tiết cơ khí được đo bằng panme",
-        "imageBadge": "Cơ khí chính xác",
+      "phuTungOTo": {
+        "title": "Phụ tùng ô tô: logo, nút khởi động, viền khung đèn, nẹp chữ",
+        "category": "Phụ tùng ô tô",
+        "description": "Logo VinFast, Infiniti, Nissan, nút khởi động xe, viền khung đèn và nẹp chữ, mạ niken-crom trên nhựa ABS.",
+        "imageAlt": "Logo, nút khởi động và viền khung đèn ô tô sau khi mạ",
+        "imageBadge": "Phụ tùng ô tô",
         "chips": {
           "coating": {
-            "label": "Lớp mạ"
-          },
-          "thickness": {
-            "label": "Độ dày"
-          },
-          "tolerance": {
-            "label": "Dung sai"
+            "label": "Lớp mạ",
+            "value": "Niken-crom trên nhựa ABS"
           }
         }
       },
-      "pistonTruc": {
-        "title": "Trục piston và ty ben thủy lực ô tô",
-        "category": "Phụ tùng ô tô, xe máy",
-        "description": "Mạ crom cứng, chống trầy xước và ăn mòn. Thử phun muối trên 720 giờ theo ASTM B117.",
-        "imageAlt": "Trục piston và ty ben thủy lực ô tô mạ crom cứng",
-        "imageBadge": "Phụ tùng ô tô, xe máy",
+      "smartHome": {
+        "title": "Smart home và điện tử: nút điều khiển, công tắc",
+        "category": "Smart home và điện tử",
+        "description": "Nút điều khiển và công tắc cho thiết bị thông minh Vinsmart, mạ trang trí trên nhựa ABS.",
+        "imageAlt": "Nút điều khiển thiết bị thông minh sau khi mạ",
+        "imageBadge": "Smart home và điện tử",
         "chips": {
-          "hardChrome": {
-            "label": "Crom cứng",
-            "value": "Thử phun muối: 720 giờ"
+          "coating": {
+            "label": "Lớp mạ",
+            "value": "Mạ trang trí trên nhựa ABS"
           }
         }
       },
-      "busbar": {
-        "title": "Thanh busbar đồng mạ thiếc",
-        "category": "Đầu cosse, thiết bị điện",
-        "description": "Mạ thiếc bảo vệ thanh dẫn đồng trong trạm biến áp, chống oxy hóa, giữ điện trở tiếp xúc thấp.",
-        "imageAlt": "Thanh busbar đồng mạ thiếc trong tủ điện",
-        "imageBadge": "Đầu cosse, thiết bị điện",
+      "giaDung": {
+        "title": "Thiết bị gia dụng: tủ lạnh, máy giặt, máy lọc nước",
+        "category": "Thiết bị gia dụng",
+        "description": "Chi tiết trang trí cho tủ lạnh, máy giặt, máy lọc nước và núm vặn lò nướng của các thương hiệu gia dụng.",
+        "imageAlt": "Chi tiết trang trí thiết bị gia dụng sau khi mạ",
+        "imageBadge": "Thiết bị gia dụng",
         "chips": {
-          "tin": {
-            "label": "Mạ thiếc",
-            "value": "Độ tinh khiết: 99.9%"
+          "coating": {
+            "label": "Lớp mạ",
+            "value": "Niken-crom hoặc niken satin"
           }
         }
       },
-      "buLong": {
-        "title": "Bu-lông và chốt định vị cho khối bể hóa chất",
-        "category": "Linh kiện anodizing",
-        "description": "Mạ kẽm niken, thụ động hóa 3 hóa trị. Chịu kiềm và acid nhẹ, ren không kẹt do gỉ.",
-        "imageAlt": "Bu-lông và chốt định vị cho khối bể hóa chất mạ kẽm niken",
-        "imageBadge": "Thủy lực và khối van",
+      "veSinhNhaBep": {
+        "title": "Thiết bị vệ sinh và nhà bếp: vòi sen, tay gạt, núm vặn",
+        "category": "Thiết bị vệ sinh và nhà bếp",
+        "description": "Vòi sen, vòi rửa, tay gạt củ sen tắm, núm vặn lọc nước, khung và núm vặn thiết bị nhà bếp Sunhouse.",
+        "imageAlt": "Vòi sen và núm vặn thiết bị nhà bếp sau khi mạ",
+        "imageBadge": "Vệ sinh và nhà bếp",
         "chips": {
-          "zincNickel": {
-            "label": "Lớp mạ: kẽm-niken",
-            "value": "Theo ISO 4042"
+          "coating": {
+            "label": "Lớp mạ",
+            "value": "Mạ crom"
           }
         }
       },
-      "ongLot": {
-        "title": "Ống lót và trục ren chịu mài mòn",
-        "category": "Chi tiết cơ khí chính xác",
-        "description": "Mạ kẽm đen, hạn chế lóa bề mặt và bảo vệ ren, ren không đọng ba via khi lắp robot.",
-        "imageAlt": "Ống lót và trục ren chịu mài mòn sau khi mạ kẽm đen",
-        "imageBadge": "Chi tiết cơ khí chính xác",
+      "satinAbs": {
+        "title": "Mạ satin trên nhựa ABS",
+        "category": "Mạ satin",
+        "description": "Bề mặt niken satin mờ, mịn cho chi tiết nhựa ABS cần vẻ ngoài sang nhưng không phản chiếu mạnh.",
+        "imageAlt": "Chi tiết nhựa ABS mạ niken satin",
+        "imageBadge": "Mạ satin",
         "chips": {
-          "blackZinc": {
-            "label": "Mạ kẽm đen",
-            "value": "Cỡ ren: M12-M48"
+          "coating": {
+            "label": "Lớp mạ",
+            "value": "Niken satin"
           }
         }
       },
-      "nhomTanNhiet": {
-        "title": "Linh kiện nhôm tản nhiệt anode hóa cứng",
-        "category": "Linh kiện anodizing",
-        "description": "Anode hóa cứng tạo màng oxit Al₂O₃ bền, cách điện trên 1000 V DC và chịu mài mòn cho tản nhiệt, chi tiết nhôm trong thiết bị điện tử.",
-        "imageAlt": "Linh kiện nhôm tản nhiệt sau khi anode hóa cứng (ảnh minh họa)",
-        "imageBadge": "Linh kiện anodizing",
+      "cromDenHairLine": {
+        "title": "Mạ crom đen và tạo xước Hair Line",
+        "category": "Crom đen và Hair Line",
+        "description": "Lớp niken crom đen và bề mặt xước Hair Line trên niken crom, dùng cho chi tiết trang trí.",
+        "imageAlt": "Chi tiết mạ crom đen và bề mặt xước Hair Line",
+        "imageBadge": "Crom đen và Hair Line",
         "chips": {
-          "hardAnodizing": {
-            "label": "Anode hóa cứng",
-            "value": "Hard coat: 50 µm"
+          "coating": {
+            "label": "Lớp mạ",
+            "value": "Niken crom đen"
           }
         }
       },
-      "cumLinhKien": {
-        "title": "Dự án mạ cụm khung vỏ và bánh răng cho khách hàng ngành chế tạo máy",
-        "category": "Dự án điển hình",
-        "description": "Mạ điện phân tự động kết hợp thụ động hóa nhiều lớp cho chi tiết sản xuất theo lô. Đo bằng XRF, thử phun muối 500 giờ.",
-        "imageAlt": "Dây chuyền mạ điện phân tự động điều khiển bằng PLC tại nhà máy HANIN",
-        "imageBadge": "Khung vỏ và bánh răng",
+      "kimLoaiMa": {
+        "title": "Chi tiết kim loại mạ niken, kẽm, thiếc, phốt phát đen",
+        "category": "Chi tiết kim loại mạ",
+        "description": "Bu-lông, vít, bản lề, chốt, trục, đai ốc, đầu cos và chi tiết máy mạ niken, mạ kẽm, mạ thiếc hoặc phốt phát đen.",
+        "imageAlt": "Bu-lông, vít và chi tiết kim loại sau khi mạ",
+        "imageBadge": "Chi tiết kim loại",
         "chips": {
-          "industry": {
-            "label": "Ngành ứng dụng",
-            "value": "Chế tạo cơ khí chính xác, robot"
-          },
-          "technology": {
-            "label": "Công nghệ mạ",
-            "value": "Mạ niken và mạ kẽm, điều khiển bằng PLC"
-          },
-          "detail": {
-            "label": "Chi tiết",
-            "value": "Bánh răng, trục định vị, khớp then"
-          },
-          "standard": {
-            "label": "Tiêu chuẩn chất lượng",
-            "value": "ISO 9001, RoHS, ASTM B117"
+          "coating": {
+            "label": "Lớp mạ",
+            "value": "Niken, kẽm, thiếc, phốt phát đen"
           }
         }
       }
     },
     "detail": {
-      "specEyebrow": "Tiêu chuẩn ASTM B733 · ASTM B117",
+      "specEyebrow": "Quy trình mạ nhựa ABS và kim loại",
       "heroStats": {
         "coatingThickness": {
-          "label": "Độ dày lớp mạ",
-          "note": "Theo bản vẽ"
+          "label": "Nền vật liệu",
+          "value": "ABS / kim loại",
+          "note": "Nhựa ABS, ABS/PC, sắt, thép, đồng, nhôm"
         },
         "saltSpray": {
-          "label": "Thử phun muối",
-          "note": "Theo ASTM B117"
+          "label": "Công nghệ mạ",
+          "value": "Niken-crom",
+          "note": "Còn có niken satin, kẽm, đồng, thiếc"
         },
         "tolerance": {
-          "label": "Dung sai",
-          "note": "Đo bằng quang học"
+          "label": "Kiểm tra",
+          "value": "NSS / CASS",
+          "note": "Phun muối trung tính và phun muối axit"
         }
       },
-      "heroDescription": "Mạ niken hóa học (phốt pho cao) cho bánh răng xoắn, trục vít và cơ cấu vi sai của robot công nghiệp. Lớp mạ phủ đều chân răng và rãnh then hoa, giữ nguyên bước ren, đáp ứng dung sai lắp ghép cỡ micromet.",
-      "heroImageAlt": "Bánh răng thép chính xác được đo dung sai bằng panme điện tử trên bàn đá granite",
+      "heroDescription": "Sản phẩm trang trí cần bề mặt đẹp và bền được mạ trên nền nhựa ABS hoặc kim loại. HANIN xử lý trước bề mặt, mạ theo công nghệ phù hợp với vật liệu và kiểm tra lớp mạ trước khi giao.",
+      "heroImageAlt": "Chi tiết trang trí sau khi mạ tại nhà máy HANIN",
       "gallery": {
         "item1": {
-          "alt": "Cận cảnh bề mặt răng và ren sau khi mạ niken hóa học",
-          "thumbLabel": "Bề mặt răng và ren",
-          "caption": "Bề mặt răng và ren sau khi mạ, lớp mạ phân bố đều"
+          "alt": "Chi tiết sau khi mạ",
+          "thumbLabel": "Chi tiết sau khi mạ",
+          "caption": "Chi tiết sau khi mạ, bề mặt sáng và đồng đều"
         },
         "item2": {
-          "alt": "Kiểm tra dung sai bằng panme điện tử tại phòng đo lường QC",
-          "thumbLabel": "Panme đo độ dày",
-          "caption": "Kiểm tra dung sai bằng panme điện tử tại phòng đo lường QC"
+          "alt": "Đo độ dày lớp mạ tại phòng QC",
+          "thumbLabel": "Đo độ dày lớp mạ",
+          "caption": "Đo độ dày lớp mạ bằng máy APC-100 tại phòng QC"
         },
         "item3": {
-          "alt": "Gá treo titan trong dây chuyền mạ tự động",
-          "thumbLabel": "Gá treo trên dây chuyền",
-          "caption": "Chi tiết treo trên gá titan trong bể mạ có kiểm soát nồng độ hóa chất"
+          "alt": "Chi tiết treo trên móc trong dây chuyền mạ",
+          "thumbLabel": "Chi tiết trên dây chuyền",
+          "caption": "Chi tiết treo trên móc (JIG) đi qua các bể mạ của dây chuyền tự động"
         },
         "item4": {
-          "alt": "Buồng thử phun muối ASTM B117",
-          "thumbLabel": "Thử phun muối ASTM B117",
-          "caption": "Thử ăn mòn trong buồng phun muối theo ASTM B117, thời gian thử trên 720 giờ"
+          "alt": "Máy phun muối kiểm tra lớp mạ",
+          "thumbLabel": "Thử phun muối",
+          "caption": "Thử phun muối trung tính (NSS) và phun muối axit (CASS)"
         }
       },
       "overviewParagraphs": {
-        "p1": "Dự án cần lớp mạ chống mài mòn cho bánh răng côn xoắn và trục then hoa thép SCM440 dùng trong hộp số giảm tốc. Chi tiết có hốc ren sâu, nơi mạ điện thông thường dễ tụ dòng ở đỉnh ren và thiếu độ dày ở đáy rãnh.",
-        "p2": "Quy trình chọn là mạ niken hóa học (ENP) phốt pho cao (10.5% – 12% P). Phản ứng không dùng dòng điện nên lớp mạ bám theo biên dạng, sai lệch độ dày không quá ±0.5 µm trên toàn bộ răng.",
-        "p3": "Sau mạ, cả lô được sấy ở 400°C trong 1 giờ để khử hydro. Xử lý nhiệt làm tăng độ cứng tế vi từ 500 HV lên 920 HV, tương đương crom cứng, và giảm hệ số ma sát trượt 30%."
+        "p1": "Với nhựa ABS hoặc ABS/PC, chi tiết được lắp lên móc treo rồi qua các bước tẩy dầu, xâm thực, trung hòa, hoạt hóa HCl và hoạt hóa Paradi trước khi mạ niken-crom. Các lớp niken satin, crom đen và xước Hair Line được làm trên nền này.",
+        "p2": "Với kim loại như sắt, thép, đồng, nhôm, quy trình gồm tẩy dầu, tẩy gỉ, hoạt hóa rồi mạ niken, kẽm, đồng, thiếc hoặc phốt phát đen, tùy yêu cầu của chi tiết. Chi tiết nhỏ có thể mạ quay, chi tiết lớn hơn mạ treo.",
+        "p3": "Sau khi mạ, chi tiết được sấy khô, đo độ dày lớp mạ, thử phun muối theo yêu cầu và kiểm tra thành phẩm trước khi đóng gói."
       },
       "achievements": {
         "item1": {
-          "title": "Lớp mạ đồng đều",
-          "description": "Phủ cả góc cạnh, lỗ ren mù và hốc sâu, không cần điện cực phụ."
+          "title": "Bề mặt sáng bóng hoặc satin",
+          "description": "Niken-crom sáng bóng, niken satin mờ, crom đen hoặc xước Hair Line, chọn theo mẫu của khách hàng."
         },
         "item2": {
-          "title": "Độ cứng tế vi 850 – 950 HV sau ủ nhiệt",
-          "description": "Khử hydro sau mạ, hạn chế nứt mỏi ở cơ cấu truyền động chịu tải nặng."
+          "title": "Nhiều công nghệ trong một nhà máy",
+          "description": "Mạ nhựa ABS, mạ niken, kẽm, đồng, thiếc, phốt phát đen, PVD và sơn in, nên một đơn hàng có thể xử lý trọn quy trình tại cùng một nơi."
         },
         "item3": {
-          "title": "Thử phun muối ASTM B117 trên 720 giờ",
-          "description": "Lớp mạ vô định hình, không có biên hạt, hạn chế hơi ẩm và dầu bôi trơn acid thấm vào."
+          "title": "Kiểm tra trước khi giao",
+          "description": "Đo độ dày lớp mạ, thử phun muối NSS và CASS, kiểm tra thành phẩm."
         }
       },
       "specSheet": {
         "product": {
           "label": "Sản phẩm",
-          "value": "Bánh răng trục vít, trục then hoa, khớp nối chính xác"
+          "value": "Chi tiết nhựa ABS hoặc kim loại cần lớp mạ trang trí hoặc chống ăn mòn"
         },
         "application": {
-          "label": "Ngành ứng dụng",
-          "value": "Chế tạo robot, máy công cụ CNC, phụ tùng truyền động ô tô"
+          "label": "Ứng dụng",
+          "value": "Ô tô, smart home, thiết bị gia dụng, thiết bị vệ sinh và nhà bếp"
         },
         "process": {
-          "label": "Quy trình mạ",
-          "value": "Mạ niken hóa học không điện (ENP, phốt pho cao) + xử lý nhiệt 400°C"
+          "label": "Công nghệ mạ",
+          "value": "Niken-crom trên nhựa ABS; niken, kẽm, đồng, thiếc, phốt phát đen trên kim loại"
         },
         "substrate": {
           "label": "Vật liệu nền",
-          "value": "Thép hợp kim SCM440, thép carbon S45C, đồng thau C3604"
+          "value": "Nhựa ABS, ABS/PC; sắt, thép, đồng, nhôm"
         },
         "requirement": {
-          "label": "Yêu cầu đặc biệt",
-          "value": "Dung sai ren < ±0.5 µm, không còn ba via, độ nhám bề mặt Ra 0.2"
+          "label": "Yêu cầu bề mặt",
+          "value": "Màu, độ bóng hoặc satin theo mẫu và bản vẽ của khách hàng"
         },
         "standard": {
-          "label": "Tiêu chuẩn đo kiểm",
-          "value": "ASTM B733, AMS 2404, RoHS, REACH"
+          "label": "Kiểm tra",
+          "value": "Đo độ dày lớp mạ, thử phun muối NSS và CASS, kiểm tra thành phẩm"
         },
         "lab": {
-          "label": "Thiết bị đo kiểm",
-          "value": "Máy đo huỳnh quang tia X (XRF Fischer), máy đo độ cứng Vickers Matsuzawa"
+          "label": "Thiết bị kiểm tra",
+          "value": "Máy đo độ dày lớp mạ APC-100, máy phun muối NSS và CASS, máy thử Hull cell"
         }
       },
       "process": {
         "step1": {
-          "title": "Nhận bản vẽ và tính toán kỹ thuật",
-          "description": "Rà soát file 2D/3D (STEP, DWG), tính diện tích bề mặt (dm²), xác định thông số dòng điện và hóa chất, thiết kế gá treo titan.",
-          "phase": "Kỹ thuật"
+          "title": "Nhận hàng và tiền xử lý",
+          "description": "Nhập hàng, lưu kho, tẩy dầu siêu âm, bể HCl và hoạt hóa bề mặt; giữa các bước đều rửa nước.",
+          "phase": "Tiền xử lý"
         },
         "step2": {
-          "title": "Tiền xử lý và tẩy dầu siêu âm",
-          "description": "Làm sạch phôi qua 4 bể hóa chất có siêu âm, tẩy gỉ, hoạt hóa bề mặt, rồi rửa bằng nước DI.",
-          "phase": "Làm sạch bề mặt"
-        },
-        "step3": {
-          "title": "Mạ điện phân hoặc mạ hóa học",
-          "description": "PLC giữ nhiệt độ bể ổn định, bổ sung ion kim loại liên tục và theo dõi mật độ dòng điện.",
+          "title": "Treo móc và mạ",
+          "description": "Nhựa ABS mạ niken-crom trên dây chuyền tự động; kim loại mạ niken, kẽm, đồng, thiếc hoặc phốt phát đen trên dây chuyền mạ treo hoặc mạ quay.",
           "phase": "Mạ"
         },
+        "step3": {
+          "title": "Hoàn thiện bề mặt",
+          "description": "Làm satin, crom đen hoặc xước Hair Line theo yêu cầu, rồi sấy khô. Có thể phun sơn hoặc in thêm trên chi tiết.",
+          "phase": "Hoàn thiện"
+        },
         "step4": {
-          "title": "Đo XRF và cấp chứng nhận COA",
-          "description": "Đo độ dày bằng XRF, thử bám dính cross-hatch, cấp COA kèm lô hàng và đóng gói VCI hút chân không.",
+          "title": "Kiểm tra và đóng gói",
+          "description": "Đo độ dày lớp mạ, thử phun muối, kiểm tra thành phẩm rồi đóng gói giao hàng.",
           "phase": "Kiểm tra và bàn giao"
         }
       },
       "relatedServices": {
         "item1": {
-          "title": "Dịch vụ mạ kẽm niken",
-          "description": "Mạ hợp kim kẽm-niken (Zn-Ni 12-15%) cho phụ tùng gầm ô tô và bu-lông, thử phun muối trên 1000 giờ.",
-          "cta": "TÌM HIỂU DỊCH VỤ MẠ KẼM"
+          "title": "Tiền xử lý bề mặt",
+          "description": "Tẩy dầu siêu âm, bể HCl và hoạt hóa bề mặt trước khi mạ.",
+          "cta": "TÌM HIỂU DỊCH VỤ"
         },
         "item2": {
-          "title": "Dịch vụ mạ crom cứng",
-          "description": "Tăng độ cứng trục cán và ty ben xi-lanh thủy lực lên đến 68 HRC (1000 HV), chống trầy xước và mài mòn.",
-          "cta": "TÌM HIỂU DỊCH VỤ MẠ CROM"
+          "title": "Mạ niken-crom nhựa ABS",
+          "description": "Niken Crom 3+, Niken Crom 6+, niken satin, niken crom đen và xước Hair Line trên nhựa ABS hoặc ABS/PC.",
+          "cta": "TÌM HIỂU DỊCH VỤ"
         },
         "item3": {
-          "title": "Dịch vụ anodizing nhôm",
-          "description": "Anod hóa cứng Type III (MIL-A-8625), cách điện, chịu nhiệt, dùng cho vỏ nhôm thiết bị điện tử và hàng không.",
-          "cta": "TÌM HIỂU DỊCH VỤ ANODIZE"
+          "title": "Mạ niken kim loại",
+          "description": "Niken điện phân, niken hóa, niken đen, niken satin và niken crom cho chi tiết sắt, thép, đồng, nhôm.",
+          "cta": "TÌM HIỂU DỊCH VỤ"
+        },
+        "item4": {
+          "title": "Mạ kẽm, đồng, thiếc, phốt phát đen",
+          "description": "Mạ kẽm, đồng, thiếc và phốt phát mangan đen cho bu-lông, vít, đai ốc, đầu cos.",
+          "cta": "TÌM HIỂU DỊCH VỤ"
+        },
+        "item5": {
+          "title": "Phun sơn và in",
+          "description": "Phun sơn thủ công và tự động, in lụa, in phun, laser trên sản phẩm nhựa và kim loại.",
+          "cta": "TÌM HIỂU DỊCH VỤ"
+        },
+        "item6": {
+          "title": "Mạ chân không PVD",
+          "description": "Mạ chân không PVD trên 2 máy và 2 dây chuyền PVD.",
+          "cta": "TÌM HIỂU DỊCH VỤ"
         }
       }
     }

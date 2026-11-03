@@ -4,13 +4,7 @@ import { useTranslations } from "next-intl";
 export default function DetailQaTable({ slug }: { slug: string }) {
   const t = useTranslations(useServiceNs(slug, "DetailQaTable"));
 
-  const ROWS = [
-    { key: "thickness", standard: "ASTM B568 · ISO 3497" },
-    { key: "microhardness", standard: "ASTM E384" },
-    { key: "saltSpray", standard: "ASTM B117 · ISO 9227" },
-    { key: "adhesion", standard: "ASTM B571" },
-    { key: "porosity", standard: "ASTM B733 Sec. 9.6" },
-  ] as const;
+  const ROWS = (["r1", "r2", "r3", "r4", "r5"] as const).filter((key) => t.has(`${key}.item`));
 
   return (
     <section className="w-full mb-space-xl">
@@ -22,29 +16,25 @@ export default function DetailQaTable({ slug }: { slug: string }) {
         </div>
 
         <div className="w-full overflow-x-auto">
-          <table className="w-full min-w-[720px] text-left text-body-md">
+          <table className="w-full min-w-[560px] text-left text-body-md">
             <thead>
               <tr className="bg-slate-100 text-slate-900 text-label-technical uppercase">
                 <th scope="col" className="py-3 px-4">{t("colItem")}</th>
                 <th scope="col" className="py-3 px-4">{t("colDevice")}</th>
-                <th scope="col" className="py-3 px-4">{t("colStandard")}</th>
                 <th scope="col" className="py-3 px-4">{t("colCriteria")}</th>
-                <th scope="col" className="py-3 px-4">{t("colFrequency")}</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-slate-200">
               {ROWS.map((row) => (
-                <tr key={row.key} className="hover:bg-slate-50 transition-colors">
+                <tr key={row} className="hover:bg-slate-50 transition-colors">
                   <td className="py-3 px-4 font-semibold text-slate-900">
                     <span className="inline-flex items-center gap-2">
                       <span aria-hidden="true" className="w-2 h-2 rounded-full bg-steel-600 shrink-0" />
-                      {t(`${row.key}.item`)}
+                      {t(`${row}.item`)}
                     </span>
                   </td>
-                  <td className="py-3 px-4 text-slate-600">{t(`${row.key}.device`)}</td>
-                  <td className="py-3 px-4 text-sm text-slate-600">{row.standard}</td>
-                  <td className="py-3 px-4 text-slate-900 font-medium">{t(`${row.key}.criteria`)}</td>
-                  <td className="py-3 px-4 text-slate-600">{t(`${row.key}.frequency`)}</td>
+                  <td className="py-3 px-4 text-slate-600">{t(`${row}.device`)}</td>
+                  <td className="py-3 px-4 text-slate-900 font-medium">{t(`${row}.criteria`)}</td>
                 </tr>
               ))}
             </tbody>

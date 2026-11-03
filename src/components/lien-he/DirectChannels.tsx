@@ -7,9 +7,9 @@ const CHANNEL_META: Record<
   (typeof CHANNEL_KEYS)[number],
   { icon: string; href: string; external: boolean }
 > = {
-  hotline: { icon: "call", href: "tel:02438186868", external: false },
+  hotline: { icon: "call", href: "tel:0978240827", external: false },
   zalo: { icon: "chat", href: "https://zalo.me", external: true },
-  email: { icon: "forward_to_inbox", href: "mailto:Haninplating@gmail.com", external: false },
+  email: { icon: "forward_to_inbox", href: "mailto:huyvinh82@gmail.com", external: false },
   audit: { icon: "domain_verification", href: "#rfq-form", external: false },
 };
 
@@ -56,7 +56,7 @@ export default function DirectChannels() {
                       {t(`channels.${key}.label`)}
                     </span>
                     <h3 className="text-title-md font-bold text-slate-900 sm:mb-space-sm break-words">
-                      {key === "hotline" ? hotline : t(`channels.${key}.title`)}
+                      {key === "hotline" ? hotline : key === "email" ? salesEmail : t(`channels.${key}.title`)}
                     </h3>
                     <p className="hidden sm:block text-body-sm text-slate-600 leading-normal">
                       {t(`channels.${key}.desc`)}

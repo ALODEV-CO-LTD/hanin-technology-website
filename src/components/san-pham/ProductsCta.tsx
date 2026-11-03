@@ -1,12 +1,13 @@
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
-import { getPhones } from "@/server/settings";
+import { getPhones, getSettings } from "@/server/settings";
 import PhoneLinks from "@/components/ui/PhoneLinks";
 import Icon from "@/components/ui/Icon";
 
 export default function ProductsCta() {
   const t = useTranslations("SanPham.ProductsCta");
   const { general } = getPhones();
+  const { salesEmail } = getSettings();
 
   return (
     <section className="w-full bg-white border-y border-slate-200 py-space-xl my-space-lg">
@@ -32,7 +33,7 @@ export default function ProductsCta() {
           </div>
           <div className="px-space-md py-2 min-h-11 bg-white border border-slate-200 rounded flex items-center gap-1.5 shadow-sm">
             <Icon name="mail" className="text-steel-600 text-[16px]" />
-            <span>{t("email")}</span>
+            <span>{t("emailLabel")} {salesEmail}</span>
           </div>
         </div>
       </div>

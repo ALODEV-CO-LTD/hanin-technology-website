@@ -3,1735 +3,1701 @@
     "services": {
       "tienXuLy": {
         "title": "Tiền xử lý bề mặt",
-        "description": "Tẩy dầu mỡ siêu âm nhiều khoang, tẩy gỉ bằng axit có kiểm soát nồng độ và hoạt hóa bề mặt để lớp mạ bám chắc trên nền kim loại.",
+        "description": "Nhập hàng, tẩy dầu siêu âm, bể HCl và hoạt hóa bề mặt, có rửa nước giữa các bước, để lớp mạ bám chắc.",
         "applicationLabel": "Ứng dụng điển hình:",
-        "applicationText": "Phôi dập nóng, dập nguội và chi tiết sau gia công phay, tiện CNC.",
-        "statLabel": "Kiểm tra bằng thử màng nước (water-break)",
-        "imageAlt": "Khu vực tiền xử lý và tẩy dầu bề mặt kim loại"
+        "applicationText": "Chi tiết nhựa và kim loại trước khi vào dây chuyền mạ.",
+        "statLabel": "Tẩy dầu siêu âm · Bể HCl · Hoạt hóa",
+        "imageAlt": "Khu vực tiền xử lý bề mặt tại nhà máy HANIN"
       },
       "hardChrome": {
-        "badge": "Chống mài mòn",
-        "title": "Mạ crom cứng công nghiệp",
-        "description": "Lớp mạ cứng 65 - 72 HRC, hệ số ma sát thấp, chịu mài mòn cơ học và làm việc ổn định ở nhiệt độ cao.",
+        "badge": "Mạ trên nhựa",
+        "title": "Mạ Niken-Crom trên nền nhựa ABS",
+        "description": "Niken Crom 3+, Niken Crom 6+, Niken Satin và Niken Crom đen trên nhựa ABS hoặc ABS/PC, có tạo xước Hair Line.",
         "applicationLabel": "Ứng dụng điển hình:",
-        "applicationText": "Ty piston xi lanh thủy lực, trục cán, khuôn dập chính xác.",
-        "statLabel": "Độ cứng: 65 - 72 HRC | Bề dày đến 300µm",
-        "imageAlt": "Trục và chi tiết cơ khí mạ crom cứng công nghiệp"
+        "applicationText": "Phụ tùng ô tô, vòi sen và thiết bị vệ sinh, núm vặn thiết bị gia dụng và nhà bếp.",
+        "statLabel": "Niken Crom 3+ · 6+ · Satin · Crom đen",
+        "imageAlt": "Chi tiết nhựa ABS mạ niken-crom"
       },
       "electrolessNickel": {
-        "title": "Mạ niken hóa học không dùng điện",
-        "description": "Phản ứng khử hóa học tự xúc tác cho lớp mạ có độ dày đồng đều trên góc nhọn, ren sâu và lỗ, chịu hóa chất tốt.",
+        "title": "Mạ niken trên nền kim loại",
+        "description": "Niken điện phân sáng bóng, niken hóa chống mài mòn và chịu nhiệt, cùng niken đen, niken satin, niken crom trên sắt, đồng, thép, nhôm.",
         "applicationLabel": "Ứng dụng điển hình:",
-        "applicationText": "Van công nghiệp, chi tiết máy, thiết bị bán dẫn.",
-        "statLabel": "Hàm lượng P: trung bình (6-9%) và cao (>10%)",
-        "imageAlt": "Van và chi tiết cơ khí mạ niken hóa học ENP"
+        "applicationText": "Tay nắm, bản lề, bánh răng, chốt, khóa và chi tiết máy.",
+        "statLabel": "Mạ treo 10.000–20.000 sp/ngày · Mạ quay 3.000–5.000 kg/ngày",
+        "imageAlt": "Chi tiết kim loại mạ niken"
       },
       "kemNiken": {
-        "title": "Mạ kẽm và hợp kim kẽm-niken",
-        "description": "Lớp Zn-Ni bảo vệ nền thép theo cơ chế hy sinh, chịu phun muối trên 1.200 giờ trước khi xuất hiện gỉ đỏ và chịu được nhiệt độ trong khoang động cơ.",
+        "title": "Mạ kẽm, đồng, thiếc và phốt phát đen",
+        "description": "Mạ kẽm, mạ đồng, mạ thiếc và phốt phát mangan đen cho chi tiết kim loại nhỏ, giúp chống gỉ sét, tăng độ bám dính và bền màu.",
         "applicationLabel": "Ứng dụng điển hình:",
-        "applicationText": "Bu lông, đai ốc cường độ cao, chi tiết dập gầm ô tô và xe máy, phụ tùng phanh.",
-        "statLabel": "Chịu phun muối: >1200 giờ theo ASTM B117",
-        "imageAlt": "Bu lông và chi tiết dập gầm ô tô mạ kẽm-niken"
+        "applicationText": "Vít, bu lông, nắp che, đầu cos, đai ốc, đinh tán.",
+        "statLabel": "Mạ quay 3.000–5.000 kg/ngày",
+        "imageAlt": "Vít và bu lông mạ kẽm, phốt phát đen"
       },
       "sonMaKetHop": {
-        "title": "Sơn và mạ kết hợp",
-        "description": "Mạ kẽm hoặc phốt phát hóa làm lớp lót, sau đó sấy và sơn tĩnh điện để màng sơn bám tốt hơn, dùng cho môi trường ẩm và vùng gần biển.",
+        "title": "Phun sơn, in và laser",
+        "description": "Sơn spray, in và laser cutting trên sản phẩm nhựa và kim loại, với phòng phun thủ công, phòng 6 trụ và dây chuyền phun tự động.",
         "applicationLabel": "Ứng dụng điển hình:",
-        "applicationText": "Vỏ tủ điện điều khiển, khung máy cơ khí, thiết bị viễn thông.",
-        "statLabel": "Độ bám dính: cấp 0 (ISO 2409)",
-        "imageAlt": "Kỹ sư kiểm tra dây chuyền sơn và mạ"
+        "applicationText": "Linh kiện đèn ô tô, khung màn hình, bảng điều khiển sơn và in.",
+        "statLabel": "2 phòng thủ công · 3 phòng 6 trụ · 1 dây chuyền tự động",
+        "imageAlt": "Khu vực phun sơn tại nhà máy HANIN"
       },
       "xuLyNhom": {
-        "title": "Xử lý nhôm và mạ kim loại khác",
-        "description": "Anod hóa tạo màng oxit nhôm Al₂O₃, anod hóa cứng (hard anodizing), mạ đồng (Cu), mạ thiếc (Sn) và thụ động hóa Cr(III).",
+        "title": "Mạ chân không PVD",
+        "description": "Mạ chân không PVD với 2 máy và 2 dây chuyền, cho bề mặt có tính thẩm mỹ cao và độ bền tốt.",
         "applicationLabel": "Ứng dụng điển hình:",
-        "applicationText": "Linh kiện nhôm tản nhiệt, chi tiết quang học, thanh cái (busbar) dẫn điện.",
-        "statLabel": "Cách điện: >1000V DC | Hard coat 50µm",
-        "imageAlt": "Chi tiết nhôm anod hóa và mạ kim loại khác"
+        "applicationText": "Chi tiết cần bề mặt thẩm mỹ cao và độ bền tốt.",
+        "statLabel": "2 máy PVD · 2 dây chuyền PVD",
+        "imageAlt": "Chi tiết mạ chân không PVD"
       }
     },
     "ServiceCategories": {
-      "heading": "Các công nghệ mạ chính",
+      "heading": "Các dịch vụ chính",
       "badge": "Các nhóm dịch vụ mạ và xử lý bề mặt",
       "codeLabel": "MÃ",
       "detailLink": "Chi tiết"
     },
     "RelatedServices": {
-      "heading": "Các dịch vụ mạ và xử lý bề mặt khác",
+      "heading": "Các dịch vụ khác của HANIN",
       "viewAll": "XEM TẤT CẢ DỊCH VỤ"
     },
     "CapacityOverview": {
-      "heading": "Thiết bị và hệ thống mạ",
-      "subtitle": "Nhà máy tại KCN Quang Minh có hệ thống xử lý nước thải đi kèm dây chuyền mạ. Nồng độ và nhiệt độ bể mạ được theo dõi trong suốt quá trình sản xuất.",
-      "scada": {
+      "heading": "Dây chuyền và hệ thống mạ",
+      "subtitle": "Nhà máy tại Lô 49G, KCN Quang Minh có dây chuyền mạ tự động, mạ treo bán tự động, mạ quay và hệ thống xử lý nước thải đi kèm.",
+      "auto": {
         "title": "Dây chuyền mạ tự động",
-        "desc": "PLC điều khiển hành trình cẩu trục, mật độ dòng điện và thời gian nhúng bể, giảm sai lệch do thao tác thủ công.",
-        "statLeft": "Vận hành theo từng mẻ",
-        "statRight": "Truy xuất theo lô"
+        "desc": "JIG móc hàng, cẩu trục và khu bể mạ; 30–50 nghìn sản phẩm mỗi ngày, mạ crom, niken, satin."
       },
       "complex": {
-        "title": "Gá treo cho chi tiết phức tạp",
-        "desc": "Đồ gá chế tạo riêng cho chi tiết nhỏ, có ren trong, hốc sâu hoặc cần che vùng lắp ghép.",
-        "statLeft": "Rãnh sâu dưới 0,5 mm",
-        "statRight": "Gá treo theo chi tiết"
+        "title": "Mạ treo bán tự động và mạ quay",
+        "desc": "Mạ treo 10.000–20.000 sản phẩm mỗi ngày; mạ quay 3.000–5.000 kg mỗi ngày (10.000–30.000 sản phẩm)."
       },
       "wastewater": {
         "title": "Xử lý nước thải",
-        "desc": "Nước thải được lọc, tuần hoàn và trung hòa để đạt QCVN 40:2011/BTNMT trước khi xả.",
-        "statLeft": "Theo QCVN 40:2011/BTNMT",
-        "statRight": "Tuần hoàn nước rửa"
+        "desc": "Hệ thống xử lý nước thải công suất 130 m³/ngày đêm, có bể lắng và máy ép bùn."
       }
     },
     "CategoryHero": {
-      "title": "Dịch vụ gia công mạ và xử lý bề mặt công nghiệp",
-      "subtitle": "Mạ điện phân, mạ hóa học và xử lý bề mặt cho chi tiết ô tô, thiết bị điện và cơ khí chính xác. Độ dày lớp mạ và tiêu chuẩn thử theo bản vẽ khách hàng.",
-      "thickness": {
-        "label": "Dung sai bề dày",
-        "note": "Theo bản vẽ"
-      },
-      "saltSpray": {
-        "label": "Thử phun muối",
-        "note": "ASTM B117 / ISO 9227"
-      },
-      "qms": {
-        "label": "Kiểm soát chất lượng",
-        "note": "Theo từng lô"
-      },
+      "title": "Dịch vụ gia công mạ nhựa, mạ kim loại và sơn in",
+      "subtitle": "Mạ niken-crom trên nhựa ABS, mạ niken, kẽm, đồng, thiếc trên kim loại, mạ chân không PVD, phun sơn và in. Yêu cầu lớp mạ theo bản vẽ của khách hàng.",
       "ctaPrimary": "YÊU CẦU BÁO GIÁ",
       "ctaSecondary": "XEM NĂNG LỰC SẢN XUẤT",
-      "imageAlt": "Dây chuyền mạ điện phân tự động, cẩu trục nâng chi tiết cơ khí",
+      "imageAlt": "Dây chuyền mạ tự động, cẩu trục chuyển JIG qua các bể mạ",
       "lineTag": "Dây chuyền mạ tự động"
     },
-    "DetailApplications": {
-      "heading": "Chi tiết cơ khí mạ ENP tại HANIN",
-      "subtitle": "Các ngành sử dụng",
-      "oilGas": {
-        "tag": "Dầu khí và thủy lực",
-        "title": "Thân van và bi van áp suất cao",
-        "desc": "High-Phos ENP (>10.5% P) chịu axit hữu cơ, khí H2S và nước muối ở áp suất 5,000 PSI.",
-        "thickness": "Độ dày lớp mạ: 25-50 µm"
-      },
-      "mold": {
-        "tag": "Khuôn mẫu và truyền động chính xác",
-        "title": "Trục vít me và khuôn nhựa",
-        "desc": "Lớp mạ đồng đều giúp khuôn nhả dễ; rãnh bi vít me thường không phải mài lại sau mạ.",
-        "thickness": "Độ dày lớp mạ: 10-15 µm"
-      },
-      "electronics": {
-        "tag": "Điện tử và viễn thông",
-        "title": "Hộp tản nhiệt và hốc sóng",
-        "desc": "Mạ trên nền nhôm Al6061, chống oxy hóa, giữ khả năng dẫn nhiệt và hàn thiếc.",
-        "thickness": "Độ dày lớp mạ: 5-8 µm"
-      },
-      "automotive": {
-        "tag": "Ô tô",
-        "title": "Piston phanh và trục khớp",
-        "desc": "Hệ số ma sát trượt thấp, dùng cho chi tiết trong cụm phanh. Thử phun muối theo yêu cầu khách.",
-        "thickness": "Độ dày lớp mạ: 20-30 µm"
-      }
-    },
-    "DetailCapability": {
-      "imageAlt": "Kỹ sư HANIN theo dõi màn hình điều khiển SCADA của dây chuyền mạ tự động",
-      "lineCapacityLabel": "Loại dây chuyền",
-      "lineCapacityValue": "Mạ treo và mạ quay",
-      "tankSizeLabel": "Kích thước bể tối đa",
-      "heading": "Bể mạ và kiểm soát nồng độ dung dịch",
-      "subtitle": "Bể mạ bằng polypropylene chịu hóa chất, gia cường khung thép không gỉ SUS304. Dung dịch được gia nhiệt gián tiếp qua bộ trao đổi nhiệt Teflon và thạch anh để không bị phân hủy cục bộ.",
-      "dosing": {
-        "title": "Châm hóa chất bù tự động:",
-        "desc": "Cảm biến quang đo ion niken tự do, bơm định lượng bù hóa chất giữ nồng độ trong ±0.2 g/L."
-      },
-      "crane": {
-        "title": "Cẩu trục chuyển tải tự động:",
-        "desc": "Giá mạ rung và xoay trong bể để bọt khí hydro thoát khỏi lỗ ren sâu và hốc mù."
-      },
-      "filtration": {
-        "title": "Lọc tuần hoàn 10 lần thể tích bể mỗi giờ:",
-        "desc": "Dung dịch chạy qua lõi lọc polypropylene 1 micron, giữ cặn kim loại và hạn chế mạ nổi hạt."
-      },
-      "tankSizeValue": "1800 x 900 x 1200 mm"
-    },
-    "DetailGallery": {
-      "heading": "Dây chuyền và chi tiết sau khi mạ",
-      "subtitle": "Nhà máy HANIN, lô 49G KCN Quang Minh",
-      "line": {
-        "alt": "Dây chuyền mạ niken tự động với bể tuần hoàn",
-        "tag": "Bể mạ tự động",
-        "title": "Dây chuyền bể mạ hóa học tuần hoàn",
-        "desc": "Khí từ các bể được hút về tháp xử lý khí (scrubber); nhiệt độ bể kiểm soát tự động."
-      },
-      "surface": {
-        "alt": "Bánh răng và trục cơ khí chính xác sau khi mạ niken",
-        "tag": "Chi tiết sau khi mạ",
-        "title": "Mặt tiếp xúc và độ nhẵn bề mặt",
-        "desc": "Lớp Ni-P giữ cạnh sắc của bước ren, không tạo gờ ở mép cắt."
-      },
-      "prep": {
-        "alt": "Khu vực kiểm tra và chuẩn bị phôi cơ khí trước khi mạ",
-        "tag": "Chuẩn bị phôi",
-        "title": "Khu vực phôi và kiểm tra kích thước",
-        "desc": "Phôi được vệ sinh, đánh bavia bằng hạt thủy tinh rồi chuyển sang bể tẩy dầu siêu âm."
-      }
-    },
     "DetailHero": {
-      "title": "Mạ niken hóa học không dùng điện",
-      "titleEn": "(Electroless Nickel Plating, ENP)",
-      "subtitle": "Phản ứng khử hóa học tự xúc tác Ni-P tạo lớp phủ đồng đều trên chi tiết có biên dạng phức tạp, ren trong, lỗ mù và hốc sâu, những vị trí mạ điện phân thông thường khó tiếp cận.",
-      "phos": {
-        "label": "Hàm lượng phospho",
-        "note": "Phospho trung bình / cao",
-        "value": "6–9% / trên 10,5%"
+      "stat1": {
+        "label": "Niken điện phân",
+        "value": "Sáng bóng, bền"
       },
-      "hardness": {
-        "label": "Độ cứng sau xử lý nhiệt",
-        "note": "Nung 400°C trong 1 giờ",
-        "value": "65-68 HRC"
+      "stat2": {
+        "label": "Niken hóa",
+        "value": "Cứng, chống mài mòn"
       },
-      "saltSpray": {
-        "label": "Chịu phun muối",
-        "unit": "giờ",
-        "note": "ASTM B117, NSS",
-        "value": "> 1,000"
+      "stat3": {
+        "label": "Mạ treo bán tự động",
+        "value": "10.000–20.000 sp/ngày"
       },
-      "tolerance": {
-        "label": "Dung sai chiều dày",
-        "note": "Đo bằng XRF",
-        "value": "±1.0 µm"
+      "stat4": {
+        "label": "Mạ quay",
+        "value": "3.000–5.000 kg/ngày"
       },
       "ctaPrimary": "YÊU CẦU BÁO GIÁ",
-      "ctaSecondary": "TẢI THÔNG SỐ KỸ THUẬT (AMS 2404)",
-      "verifyLabel": "Mỗi lô có chứng chỉ kiểm tra kèm theo",
-      "imageAlt": "Chi tiết cơ khí sau khi mạ niken hóa học",
-      "xrfLabel": "Đo XRF: 8.5 µm ± 0.4",
-      "roughnessLabel": "Độ nhám bề mặt: Ra < 0.2 µm",
-      "coatingLabel": "Lớp phủ: high-phosphorus (11.2% P)",
-      "imageCaption": "Bánh răng hành tinh và van phân phối sau khi mạ ENP và sấy khử ứng suất hydro."
+      "ctaSecondary": "LIÊN HỆ TƯ VẤN KỸ THUẬT"
     },
     "DetailOverview": {
-      "heading": "Nguyên lý và phạm vi ứng dụng",
-      "complianceLabel": "Phù hợp RoHS và REACH (không chì, không cadmium)",
+      "heading": "Các loại niken và phạm vi ứng dụng",
       "col1": {
-        "title": "Cơ chế phản ứng",
-        "p1": "Mạ điện phân phụ thuộc mật độ dòng điện nên lớp mạ dày ở mép, góc và mỏng ở rãnh sâu. Mạ niken hóa học (ENP) theo nguyên lý",
-        "p1Strong": "lắng đọng tự xúc tác",
-        "p2": "Lớp niken-phospho (Ni-P) hình thành đồng đều trên mọi bề mặt tiếp xúc dung dịch, cấu trúc vô định hình giúp chống ăn mòn.",
-        "formula": "Ni²⁺ + 2e⁻ → Ni · H₂PO₂⁻ + H₂O → H₂PO₃⁻ + 2H⁺ + 2e⁻"
+        "title": "Các loại niken",
+        "p1": "HANIN mạ năm nhóm niken trên nền kim loại:",
+        "p1Strong": "niken điện phân, niken hóa, niken đen, niken satin và niken crom",
+        "p2": "Niken điện phân cho lớp mạ sáng bóng, bền. Niken hóa có độ cứng cao, chống mài mòn và chịu nhiệt tốt."
       },
       "col2": {
-        "title": "Phạm vi ứng dụng",
-        "intro": "Dùng cho thiết bị làm việc trong điều kiện ma sát cao, ăn mòn hóa chất hoặc nhiệt độ cao:",
-        "item1Strong": "Dầu khí và khí hóa lỏng:",
-        "item1": "Van bi áp suất cao, ống dẫn khí H2S/CO2.",
-        "item2Strong": "Khuôn mẫu chính xác:",
-        "item2": "Khuôn ép nhựa quang học, hạn chế dính khuôn.",
-        "item3Strong": "Bán dẫn và thiết bị chân không:",
-        "item3": "Giảm thoát khí từ vật liệu (outgassing)."
+        "title": "Sản phẩm tiêu biểu",
+        "intro": "Một số chi tiết đã mạ tại nhà máy:",
+        "item1Strong": "Niken điện phân:",
+        "item1": "Tay nắm kim loại, chi tiết máy, bu lông đặc biệt, bản lề, chốt định vị.",
+        "item2Strong": "Niken hóa:",
+        "item2": "Bánh răng, chốt, tấm chi tiết máy, khóa, trục-chốt, chi tiết lắp ráp.",
+        "item3Strong": "Niken đen, niken satin, niken crom:",
+        "item3": "Vòng trang trí, phụ kiện phòng tắm, vòi nước, tay nắm."
       },
       "col3": {
         "title": "Vật liệu nền",
-        "intro": "Sau tiền xử lý, ENP mạ được trên các vật liệu:",
+        "intro": "Các nền kim loại thường mạ:",
         "substrates": {
-          "alloySteel": "Thép hợp kim: SCM440, SKD11",
-          "carbonSteel": "Thép cacbon: S45C, S50C, SS400",
-          "stainless": "Inox austenit và martensit",
-          "aluminum": "Hợp kim nhôm: A6061, A7075 (xử lý zincate)",
-          "brass": "Đồng thau và đồng đỏ",
-          "ductileIron": "Gang cầu"
+          "m1": "Sắt",
+          "m2": "Thép",
+          "m3": "Đồng",
+          "m4": "Nhôm",
+          "m5": "Nền kẽm"
         }
       }
     },
     "DetailProcess": {
-      "heading": "Quy trình mạ niken hóa học 6 bước",
-      "subtitle": "Mỗi mẻ được theo dõi theo thông số của từng bước",
-      "stepLabel": "BƯỚC",
+      "heading": "Ví dụ quy trình mạ niken nền kẽm",
+      "subtitle": "Rút gọn từ quy trình thực tế tại nhà máy",
       "s1": {
-        "title": "Tẩy dầu siêu âm",
-        "desc": "Tẩy dầu bằng hóa chất kết hợp siêu âm 40 kHz, loại dầu làm mát CNC và màng oxit mỏng.",
-        "note": "Kiểm tra bằng thử màng nước (water-break free)."
+        "title": "Tẩy dầu, vắt khô, sấy",
+        "desc": "Tẩy dầu, vắt khô rồi sấy để chi tiết sạch trước khi vào bể axit."
       },
       "s2": {
-        "title": "Hoạt hóa bề mặt",
-        "desc": "Tẩy gỉ nhẹ bằng axit có chất ức chế ăn mòn nền, làm lộ cấu trúc tinh thể kim loại.",
-        "note": "Thời gian: 30 - 90 giây tùy mác thép."
+        "title": "Bể H₂SO₄ và làm trắng",
+        "desc": "Xử lý axit H₂SO₄ và làm trắng bề mặt."
       },
       "s3": {
-        "title": "Mạ ENP",
-        "desc": "Nhúng bể mạ có lọc tuần hoàn 1 µm. Nhiệt độ 88–90°C, pH 4.6–4.8 tự động kiểm soát.",
-        "note": "Tốc độ tạo màng: 15–20 µm/giờ."
+        "title": "Hoạt hóa và bể đồng",
+        "desc": "Hoạt hóa bề mặt rồi mạ lớp đồng (Cu) làm nền cho lớp niken."
       },
       "s4": {
-        "title": "Rửa bằng nước DI",
-        "desc": "Rửa tràn ba cấp bằng nước DI (< 5 µS/cm) để loại hóa chất dư.",
-        "note": "Độ dẫn điện nước xả: < 15 µS/cm."
+        "title": "Mạ niken sáng",
+        "desc": "Mạ niken sáng cho bề mặt bóng."
       },
       "s5": {
-        "title": "Xử lý nhiệt sau mạ",
-        "desc": "Ủ lò điện đối lưu: khử giòn hydro (200°C x 4h) hoặc nung Ni₃P (400°C x 1h) để tăng độ cứng.",
-        "note": "Độ cứng đạt khoảng 68 HRC sau xử lý nhiệt."
+        "title": "Bể bảo vệ, sấy khô",
+        "desc": "Qua bể bảo vệ rồi sấy khô."
       },
       "s6": {
-        "title": "Kiểm tra và đóng gói VCI",
-        "desc": "Đo chiều dày bằng XRF theo mẻ, AQL 0.4. Hàng xuất khẩu đóng gói màng chống gỉ VCI.",
-        "note": "Kèm chứng chỉ phân tích (CoA)."
+        "title": "Đo độ dày, thử và đóng gói",
+        "desc": "Đo độ dày lớp mạ, phun muối, kiểm tra thành phẩm rồi đóng gói."
+      },
+      "stepLabel": "BƯỚC"
+    },
+    "DetailCapability": {
+      "imageAlt": "Khu vực sản xuất tại nhà máy HANIN",
+      "lineCapacityLabel": "Mạ treo bán tự động",
+      "lineCapacityValue": "10.000–20.000 sp/ngày",
+      "tankSizeLabel": "Mạ quay",
+      "tankSizeValue": "3.000–5.000 kg/ngày",
+      "heading": "Dây chuyền mạ treo và mạ quay",
+      "subtitle": "Hai dây chuyền cùng làm niken điện phân, niken hóa, niken đen, phốt phát mangan đen và mạ kẽm.",
+      "f1": {
+        "title": "Mạ treo bán tự động:",
+        "desc": "10.000–20.000 sản phẩm mỗi ngày."
+      },
+      "f2": {
+        "title": "Mạ quay:",
+        "desc": "3.000–5.000 kg mỗi ngày, tương đương 10.000–30.000 sản phẩm; có máy rung, tẩy dầu, bể mạ đồng và bể mạ niken."
+      },
+      "f3": {
+        "title": "Dây chuyền mạ tự động:",
+        "desc": "30–50 nghìn sản phẩm mỗi ngày, mạ crom, niken, satin."
+      }
+    },
+    "DetailApplications": {
+      "heading": "Chi tiết mạ niken tại HANIN",
+      "subtitle": "Các nhóm sản phẩm",
+      "a1": {
+        "tag": "Chi tiết máy",
+        "title": "Bánh răng, chốt, trục",
+        "desc": "Bánh răng, chốt, tấm chi tiết máy, trục-chốt, chi tiết lắp ráp.",
+        "note": "Niken hóa"
+      },
+      "a2": {
+        "tag": "Phụ kiện cửa, khóa",
+        "title": "Tay nắm, bản lề, chốt",
+        "desc": "Tay nắm kim loại, bản lề, khóa, chốt định vị, bu lông đặc biệt.",
+        "note": "Niken điện phân"
+      },
+      "a3": {
+        "tag": "Vệ sinh",
+        "title": "Vòi nước và phụ kiện",
+        "desc": "Vòi nước, phụ kiện phòng tắm, tay nắm.",
+        "note": "Mạ crom"
+      },
+      "a4": {
+        "tag": "Trang trí",
+        "title": "Inox satin và chi tiết trang trí",
+        "desc": "Tấm inox satin, tay nắm cửa, thanh inox, bản lề, chi tiết trang trí.",
+        "note": "Mạ satin"
       }
     },
     "DetailQaTable": {
-      "heading": "Kiểm soát chất lượng lớp mạ ENP",
-      "subtitle": "Dữ liệu kiểm tra của từng lô được lưu lại",
       "colItem": "Hạng mục kiểm tra",
-      "colDevice": "Thiết bị đo",
-      "colStandard": "Tiêu chuẩn áp dụng",
-      "colCriteria": "Tiêu chí đạt",
-      "colFrequency": "Tần suất kiểm tra",
-      "thickness": {
+      "colDevice": "Thiết bị",
+      "colCriteria": "Nội dung kiểm tra",
+      "heading": "Kiểm soát chất lượng lớp mạ niken",
+      "subtitle": "Thiết bị kiểm tra của nhà máy HANIN",
+      "r1": {
+        "item": "Dung dịch và hóa chất",
+        "device": "Phòng phân tích và hóa chất phân tích",
+        "criteria": "Phân tích thành phần dung dịch, hóa chất trước khi đưa vào sản xuất."
+      },
+      "r2": {
+        "item": "Dung dịch mạ",
+        "device": "Máy thử Hull cell",
+        "criteria": "Thử Hull cell để kiểm tra dung dịch mạ."
+      },
+      "r3": {
         "item": "Độ dày lớp mạ",
-        "device": "Máy đo huỳnh quang tia X (XRF)",
-        "criteria": "Trong ±1.0 µm so với bản vẽ",
-        "frequency": "5 mẫu mỗi mẻ (AQL L-II)"
+        "device": "Máy đo độ dày lớp mạ APC-100",
+        "criteria": "Đo độ dày lớp mạ, đối chiếu yêu cầu bản vẽ."
       },
-      "microhardness": {
-        "item": "Độ cứng tế vi",
-        "device": "Máy đo độ cứng Vickers (tải 100gf)",
-        "criteria": "> 500 HV (sau mạ) / > 900 HV (sau nung)",
-        "frequency": "1 mẫu thử mỗi ca"
+      "r4": {
+        "item": "Chống ăn mòn (trung tính)",
+        "device": "Máy phun muối trung tính NSS",
+        "criteria": "Thử phun muối trung tính theo yêu cầu của khách hàng."
       },
-      "saltSpray": {
-        "item": "Khả năng chịu phun muối",
-        "device": "Buồng phun muối NSS, dung dịch 5% NaCl",
-        "criteria": "Không gỉ đỏ trong 500h - 1,000h",
-        "frequency": "Lấy mẫu đại diện hằng tháng"
-      },
-      "adhesion": {
-        "item": "Độ bám dính lớp mạ",
-        "device": "Thử uốn quanh trục 180° và thử sốc nhiệt",
-        "criteria": "Lớp mạ không bong, không tách lớp",
-        "frequency": "Toàn bộ mẫu thử kèm theo lô"
-      },
-      "porosity": {
-        "item": "Độ xốp",
-        "device": "Thử Ferroxyl",
-        "criteria": "Không xuất hiện chấm xanh ferricyanua sắt",
-        "frequency": "Mẫu thử theo mẻ"
+      "r5": {
+        "item": "Chống ăn mòn (axit)",
+        "device": "Máy phun muối axit CASS",
+        "criteria": "Thử phun muối axit CASS khi khách hàng yêu cầu."
       }
+    },
+    "DetailGallery": {
+      "heading": "Hình ảnh tại nhà máy",
+      "subtitle": "Nhà máy HANIN, lô 49G KCN Quang Minh",
+      "line": {
+        "alt": "Khu vực mạ tại nhà máy HANIN",
+        "tag": "Khu vực mạ",
+        "title": "Khu vực mạ",
+        "desc": "Dây chuyền mạ tại nhà máy HANIN, KCN Quang Minh."
+      },
+      "surface": {
+        "alt": "Khu vực sản xuất của nhà máy HANIN",
+        "tag": "Sản xuất",
+        "title": "Khu vực sản xuất",
+        "desc": "Nhà máy có mặt bằng 2.230 m²."
+      },
+      "prep": {
+        "alt": "Khu vực kho và phân tích của nhà máy HANIN",
+        "tag": "Kho và phân tích",
+        "title": "Kho và phòng phân tích",
+        "desc": "Nhập hàng, lưu kho và phân tích hóa chất trước khi đưa vào dây chuyền."
+      }
+    },
+    "RfqFormDetail": {
+      "heading": "Gửi yêu cầu mạ niken trên nền kim loại",
+      "subtitle": "Bộ phận kỹ thuật HANIN sẽ phản hồi về báo giá và kế hoạch mạ mẫu.",
+      "hotlineLabel": "Hotline kỹ thuật:",
+      "submitAlert": "Yêu cầu báo giá mạ niken trên nền kim loại đã được gửi đến bộ phận kỹ thuật HANIN.",
+      "companyLabel": "Tên doanh nghiệp",
+      "companyPlaceholder": "VD: Công ty TNHH ABC",
+      "contactLabel": "Người liên hệ",
+      "contactPlaceholder": "VD: Nguyễn Văn A, phụ trách mua hàng",
+      "emailLabel": "Email nhận báo giá",
+      "substrateLabel": "Vật liệu nền",
+      "substrateOptions": {
+        "carbonSteel": "Sắt, thép",
+        "alloySteel": "Thép hợp kim",
+        "stainless": "Inox",
+        "aluminum": "Nhôm",
+        "copper": "Đồng, đồng thau",
+        "castIron": "Gang"
+      },
+      "phosLabel": "Loại mạ yêu cầu",
+      "phosOptions": {
+        "high": "Niken Crom trên nhựa ABS",
+        "medium": "Niken trên nền kim loại",
+        "low": "Mạ kẽm, đồng, thiếc hoặc phốt phát đen",
+        "consult": "Cần HANIN tư vấn theo sản phẩm"
+      },
+      "thicknessLabel": "Yêu cầu độ dày lớp mạ",
+      "thicknessPlaceholder": "VD: theo bản vẽ",
+      "volumeLabel": "Sản lượng dự kiến",
+      "volumePlaceholder": "VD: 5.000 chiếc/tháng (hoặc mẫu thử)",
+      "notesLabel": "Ghi chú kỹ thuật (vị trí cần che, màu sắc, tiêu chuẩn thử nghiệm)",
+      "notesPlaceholder": "Ghi rõ vị trí cần che, màu sắc hoặc độ bóng mong muốn, yêu cầu thử phun muối...",
+      "attachTitle": "Đính kèm bản vẽ 2D / 3D",
+      "attachDesc": "Định dạng: STEP, IGES, DWG, PDF (tối đa 50MB)",
+      "chooseFile": "CHỌN TỆP BẢN VẼ",
+      "ndaNote": "Bản vẽ chỉ được dùng để báo giá và tư vấn kỹ thuật.",
+      "submitButton": "GỬI YÊU CẦU BÁO GIÁ MẠ NIKEN TRÊN NỀN KIM LOẠI",
+      "submitError": "Không gửi được yêu cầu. Vui lòng kiểm tra thông tin/tệp đính kèm và thử lại."
     },
     "ProcessFlow": {
       "heading": "Các công đoạn gia công mạ",
-      "subtitle": "Mỗi công đoạn theo dõi pH, nhiệt độ và dòng điện, ghi vào nhật ký sản xuất để truy xuất theo lô.",
+      "subtitle": "Hàng đi từ tiền xử lý qua mạ, rửa và kiểm tra trước khi đóng gói.",
       "s1": {
-        "title": "Chuẩn bị và tiền xử lý",
-        "desc": "Làm sạch cơ học, tẩy dầu siêu âm nhiều giai đoạn, tẩy gỉ bằng axit.",
-        "note": "Kiểm tra sức căng bề mặt"
+        "title": "Tiền xử lý",
+        "desc": "Tẩy dầu siêu âm, bể HCl, hoạt hóa bề mặt."
       },
       "s2": {
-        "title": "Mạ điện phân hoặc mạ hóa học",
-        "desc": "Nguồn chỉnh lưu, nhiệt độ và thời gian phản ứng được theo dõi liên tục.",
-        "note": "Dung sai nhiệt độ bể: ±0.5°C"
+        "title": "Mạ",
+        "desc": "Mạ treo hoặc mạ quay: bể đồng, niken, crom, kẽm, thiếc theo yêu cầu."
       },
       "s3": {
-        "title": "Rửa nhiều cấp và thụ động hóa",
-        "desc": "Rửa ngược dòng bằng nước khử ion, thụ động hóa Cr(III) chống hoen ố.",
-        "note": "Khử ứng suất hydro"
+        "title": "Rửa và bảo vệ",
+        "desc": "Rửa nước giữa các bước, bể bảo vệ, sấy khô."
       },
       "s4": {
-        "title": "Kiểm tra QA/QC",
-        "desc": "Đo chiều dày bằng XRF, thử uốn kiểm tra độ bám dính, thử phun muối.",
-        "note": "Báo cáo CoA theo lô"
+        "title": "Kiểm tra",
+        "desc": "Đo độ dày lớp mạ, thử phun muối NSS và CASS, kiểm tra thành phẩm."
       },
       "s5": {
-        "title": "Đóng gói bảo quản VCI",
-        "desc": "Sấy khô, đóng gói bằng túi màng chống gỉ VCI cho hàng đi đường biển.",
-        "note": "Theo yêu cầu đóng gói xuất khẩu"
+        "title": "Đóng gói",
+        "desc": "Đóng gói thành phẩm và giao cho khách hàng."
       }
     },
     "QualityMetrology": {
-      "heading": "Thiết bị đo kiểm chất lượng",
-      "subtitle": "Mỗi lô thành phẩm được đối chiếu với tiêu chuẩn áp dụng. Chứng chỉ phân tích (CoA) cấp theo yêu cầu của khách hàng.",
-      "tableTitle": "Bảng tiêu chuẩn thử nghiệm",
-      "colMethod": "Phương pháp",
-      "colStandard": "Tiêu chuẩn áp dụng",
-      "colCriteria": "Chỉ tiêu đạt",
-      "colFrequency": "Tần suất kiểm tra",
-      "calibrationNote": "Thiết bị đo được hiệu chuẩn định kỳ",
-      "warrantyLabel": "Bảo hành lớp mạ theo hợp đồng",
-      "xrf": {
-        "title": "Máy quang phổ huỳnh quang tia X (XRF)",
-        "desc": "Đo chiều dày lớp mạ nhiều tầng (Ni/Cr, Zn/Ni), không phá hủy mẫu."
-      },
-      "saltSpray": {
-        "title": "Buồng phun muối",
-        "desc": "Vận hành theo ASTM B117 và ISO 9227, sương muối NaCl 5%.",
-        "method": "Chịu phun muối",
-        "criteria": "Không gỉ trắng trước 240h, không gỉ đỏ trước 1000h",
-        "frequency": "Hằng tuần",
-        "standard": "ASTM B117 / ISO 9227"
-      },
-      "cmm": {
-        "title": "Máy đo CMM và kính hiển vi quang học",
-        "desc": "Phân tích mặt cắt kim tương, kiểm tra vết nứt vi mô, đo độ cứng micro Vickers."
+      "heading": "Thiết bị kiểm tra chất lượng",
+      "subtitle": "Phòng phân tích và các thiết bị đo, thử của nhà máy HANIN.",
+      "tableTitle": "Thiết bị và nội dung kiểm tra",
+      "colMethod": "Hạng mục",
+      "colDevice": "Thiết bị",
+      "colCriteria": "Nội dung kiểm tra",
+      "lab": {
+        "title": "Phòng phân tích",
+        "desc": "Phòng phân tích và hóa chất phân tích; máy thử Hull cell kiểm tra dung dịch mạ."
       },
       "thickness": {
+        "title": "Máy đo độ dày APC-100",
+        "desc": "Đo độ dày lớp mạ để đối chiếu yêu cầu bản vẽ.",
         "method": "Độ dày lớp mạ",
-        "criteria": "Theo dung sai bản vẽ",
-        "frequency": "Mỗi lô",
-        "standard": "ASTM B568 / ISO 3497"
+        "device": "Máy đo độ dày lớp mạ APC-100",
+        "criteria": "Đối chiếu với yêu cầu bản vẽ."
       },
-      "adhesion": {
-        "method": "Độ bám dính lớp mạ",
-        "criteria": "Không bong khi uốn 180°",
-        "frequency": "Theo ca sản xuất",
-        "standard": "ASTM B571 / ISO 2819"
+      "saltSpray": {
+        "title": "Máy phun muối NSS và CASS",
+        "desc": "Máy phun muối trung tính NSS và máy phun muối axit CASS thử khả năng chống ăn mòn.",
+        "method": "Chống ăn mòn",
+        "device": "Máy phun muối NSS và CASS",
+        "criteria": "Thử theo yêu cầu của khách hàng."
       },
-      "dehydrogenation": {
-        "method": "Khử hydro (nung)",
-        "criteria": "200°C ± 5°C trong 4h - 24h",
-        "frequency": "Mọi chi tiết có độ bền trên 1000 MPa",
-        "standard": "ASTM B850 / ISO 9588"
+      "bath": {
+        "method": "Dung dịch mạ",
+        "device": "Phòng phân tích, máy thử Hull cell",
+        "criteria": "Phân tích hóa chất và kiểm tra dung dịch mạ."
       },
-      "revision": "Cập nhật 2025"
+      "paint": {
+        "method": "Độ tin cậy sau phun sơn",
+        "device": "10 thiết bị test: RCA Tester, Hot Water, UV Measure...",
+        "criteria": "Thử mài mòn, nước nóng, nhiệt ẩm, tia UV, chà cồn, rơi, uốn và đo độ dày màng sơn."
+      }
     },
     "RfqFormCategory": {
       "heading": "Yêu cầu báo giá dịch vụ mạ",
-      "subtitle": "Gửi thông số, bản vẽ và tiêu chuẩn kiểm tra. HANIN sẽ phản hồi báo giá.",
+      "subtitle": "Gửi thông tin sản phẩm và bản vẽ. HANIN sẽ phản hồi báo giá.",
       "submitAlert": "Yêu cầu báo giá đã được chuyển đến bộ phận kỹ thuật HANIN.",
       "companyLabel": "Tên doanh nghiệp *",
-      "companyPlaceholder": "VD: Công ty TNHH Cơ khí chính xác...",
+      "companyPlaceholder": "VD: Công ty TNHH ABC...",
       "contactLabel": "Người liên hệ và chức vụ *",
       "contactPlaceholder": "Họ tên, chức vụ (kỹ sư vật tư, trưởng phòng mua hàng...)",
       "phoneLabel": "Số điện thoại / Zalo *",
       "emailLabel": "Email nhận báo giá *",
       "projectLabel": "Tên sản phẩm hoặc dự án",
-      "projectPlaceholder": "VD: trục piston thủy lực, busbar đồng",
-      "platingTypeLabel": "Loại mạ yêu cầu *",
+      "projectPlaceholder": "VD: núm vặn lò nướng, viền khung đèn ô tô",
+      "platingTypeLabel": "Loại dịch vụ yêu cầu *",
       "platingTypeOptions": {
-        "default": "-- Chọn loại mạ --",
-        "hardChrome": "Mạ crom cứng công nghiệp (hard chrome)",
-        "enp": "Mạ niken hóa học (ENP)",
-        "zincNickel": "Mạ hợp kim kẽm-niken (Zn-Ni)",
-        "anodizing": "Anod hóa nhôm kỹ thuật",
-        "custom": "Kết hợp nhiều lớp mạ theo bản vẽ"
+        "default": "-- Chọn loại dịch vụ --",
+        "hardChrome": "Mạ Niken-Crom trên nền nhựa ABS",
+        "enp": "Mạ niken trên nền kim loại",
+        "zincNickel": "Mạ kẽm, đồng, thiếc, phốt phát đen",
+        "anodizing": "Mạ chân không PVD",
+        "custom": "Phun sơn, in và laser",
+        "other": "Dịch vụ khác / cần tư vấn"
       },
       "volumeLabel": "Sản lượng dự kiến mỗi đợt giao *",
-      "volumePlaceholder": "VD: 5,000 pcs / tháng hoặc đơn thử nghiệm",
-      "requirementsLabel": "Yêu cầu kỹ thuật (bề dày mạ, giờ phun muối, vật liệu nền)",
-      "requirementsPlaceholder": "Nhập tiêu chuẩn mong muốn, ví dụ: nền thép S45C, bề dày mạ Ni 15-20µm, phun muối >480h không gỉ đỏ...",
+      "volumePlaceholder": "VD: 5.000 chiếc/tháng hoặc đơn thử nghiệm",
+      "requirementsLabel": "Yêu cầu kỹ thuật (loại mạ, màu sắc, vật liệu nền)",
+      "requirementsPlaceholder": "Nhập yêu cầu mong muốn, ví dụ: nền nhựa ABS, Niken Crom 3+, tạo xước Hair Line...",
       "attachTitle": "Đính kèm bản vẽ kỹ thuật",
       "attachDesc": "Định dạng: PDF, STEP, DWG, IGES (tối đa 25MB)",
       "chooseFile": "CHỌN TỆP",
-      "ndaNote": "Bản vẽ của khách hàng được bảo mật theo thỏa thuận NDA.",
+      "ndaNote": "Bản vẽ chỉ được dùng để báo giá và tư vấn kỹ thuật.",
       "submitButton": "GỬI YÊU CẦU BÁO GIÁ",
-      "submitError": "Không gửi được yêu cầu. Vui lòng kiểm tra thông tin/tệp đính kèm và thử lại."
-    },
-    "RfqFormDetail": {
-      "heading": "Gửi thông số và yêu cầu mạ niken hóa học (ENP)",
-      "subtitle": "Bộ phận kỹ thuật HANIN sẽ phản hồi về báo giá và kế hoạch mạ mẫu.",
-      "hotlineLabel": "Hotline kỹ thuật:",
-      "submitAlert": "Yêu cầu báo giá mạ ENP đã được gửi đến bộ phận kỹ thuật HANIN.",
-      "companyLabel": "Tên doanh nghiệp",
-      "companyPlaceholder": "VD: Công ty TNHH Cơ khí ABC",
-      "contactLabel": "Người liên hệ",
-      "contactPlaceholder": "VD: Nguyễn Văn A, kỹ sư phụ trách",
-      "emailLabel": "Email nhận báo giá",
-      "substrateLabel": "Vật liệu nền",
-      "substrateOptions": {
-        "carbonSteel": "Thép cacbon (S45C, S50C, SS400)",
-        "alloySteel": "Thép hợp kim (SCM440, SKD11, SUJ2)",
-        "stainless": "Thép không gỉ (SUS304, SUS316, SUS420)",
-        "aluminum": "Hợp kim nhôm (A6061-T6, A7075)",
-        "copper": "Đồng / đồng thau",
-        "castIron": "Gang đúc / gang cầu FCD"
-      },
-      "phosLabel": "Hàm lượng phospho yêu cầu",
-      "phosOptions": {
-        "high": "High Phos (>10% P): chống ăn mòn",
-        "medium": "Medium Phos (6-9% P): chống mài mòn",
-        "low": "Low Phos (1-4% P): tăng độ cứng nền",
-        "consult": "Cần kỹ sư HANIN tư vấn theo ứng dụng"
-      },
-      "thicknessLabel": "Chiều dày lớp mạ (µm)",
-      "thicknessPlaceholder": "VD: 15 µm ± 1.5 µm",
-      "volumeLabel": "Sản lượng dự kiến",
-      "volumePlaceholder": "VD: 2,500 chiếc/tháng (hoặc mẫu thử)",
-      "notesLabel": "Ghi chú kỹ thuật (vị trí ren cần che, yêu cầu xử lý nhiệt, tiêu chuẩn thử nghiệm)",
-      "notesPlaceholder": "Ghi rõ vị trí cần che (bịt lỗ ren), nhiệt độ nung khử giòn hydro hoặc yêu cầu chứng chỉ thử phun muối ASTM B117...",
-      "attachTitle": "Đính kèm bản vẽ 2D / 3D",
-      "attachDesc": "Định dạng: STEP, IGES, DWG, PDF (tối đa 50MB)",
-      "chooseFile": "CHỌN TỆP BẢN VẼ",
-      "ndaNote": "Bản vẽ được bảo mật theo thỏa thuận NDA.",
-      "submitButton": "GỬI YÊU CẦU BÁO GIÁ MẠ ENP",
       "submitError": "Không gửi được yêu cầu. Vui lòng kiểm tra thông tin/tệp đính kèm và thử lại."
     },
     "breadcrumbCategory": "Dịch vụ gia công mạ và xử lý bề mặt",
     "breadcrumbDetailFallback": "Chi tiết dịch vụ",
+    "HeroSummary": {
+      "process": "Quy trình"
+    },
     "ServiceDetail": {
       "tien-xu-ly-be-mat": {
         "DetailHero": {
-          "title": "Tiền xử lý bề mặt",
-          "titleEn": "(Surface Pre-treatment & Cleaning)",
-          "subtitle": "Tẩy dầu siêu âm, tẩy rỉ bằng axit và hoạt hóa bề mặt để lớp mạ bám chắc trên nền kim loại.",
-          "phos": {
-            "label": "Độ sạch bề mặt",
-            "note": "Thử màng nước",
-            "value": "Không đứt màng"
+          "stat1": {
+            "label": "Tẩy dầu",
+            "value": "Siêu âm"
           },
-          "hardness": {
-            "label": "Độ nhám bề mặt",
-            "note": "Đo Ra bằng máy đo nhám",
-            "value": "Theo bản vẽ"
+          "stat2": {
+            "label": "Tẩy gỉ, oxit",
+            "value": "Bể HCl"
           },
-          "saltSpray": {
-            "label": "Số công đoạn chính",
-            "unit": "công đoạn",
-            "note": "Tẩy dầu, tẩy rỉ, hoạt hóa",
-            "value": "3"
+          "stat3": {
+            "label": "Giữa các bước",
+            "value": "Rửa nước"
           },
-          "tolerance": {
-            "label": "Độ bám dính sau mạ",
-            "note": "Thử trên mẫu kèm lô",
-            "value": "Đạt theo yêu cầu"
+          "stat4": {
+            "label": "Bước tiếp theo",
+            "value": "Mạ theo yêu cầu"
           },
           "ctaPrimary": "YÊU CẦU BÁO GIÁ",
-          "ctaSecondary": "TẢI THÔNG SỐ KỸ THUẬT",
-          "verifyLabel": "Kết quả kiểm tra được ghi theo từng lô",
-          "imageAlt": "Chi tiết kim loại sau khi tiền xử lý bề mặt",
-          "xrfLabel": "Thử màng nước: không đứt màng",
-          "roughnessLabel": "Độ nhám bề mặt: theo bản vẽ",
-          "coatingLabel": "Bước tiếp theo: mạ theo yêu cầu",
-          "imageCaption": "Chi tiết kim loại sau tẩy dầu, tẩy rỉ và hoạt hóa, chuẩn bị đưa vào bể mạ."
+          "ctaSecondary": "LIÊN HỆ TƯ VẤN KỸ THUẬT"
         },
         "DetailOverview": {
-          "heading": "Nguyên lý và phạm vi áp dụng",
-          "complianceLabel": "Hóa chất sử dụng được quản lý và xử lý nước thải theo quy định",
+          "heading": "Mục đích và phạm vi áp dụng",
           "col1": {
-            "title": "Cơ chế làm sạch",
-            "p1": "Lớp mạ chỉ bám tốt khi nền không còn dầu, oxit và gỉ. Tiền xử lý làm sạch nền qua ba cơ chế:",
-            "p1Strong": "nhũ hóa dầu, hòa tan oxit, hoạt hóa bề mặt",
-            "p2": "Siêu âm tạo bọt khí cavitation bóc dầu khỏi khe hẹp và lỗ ren; axit hòa tan gỉ và màng oxit.",
+            "title": "Vì sao cần tiền xử lý",
+            "p1": "Lớp mạ chỉ bám tốt khi bề mặt không còn dầu, oxit và gỉ. Tiền xử lý làm sạch nền qua ba việc:",
+            "p1Strong": "tẩy dầu, tẩy gỉ và oxit, hoạt hóa bề mặt",
+            "p2": "Siêu âm bóc dầu khỏi khe hẹp và lỗ ren; axit HCl hòa tan gỉ và màng oxit; hoạt hóa giúp lớp mạ đầu tiên bám vào nền.",
             "formula": "Fe₂O₃ + 6HCl → 2FeCl₃ + 3H₂O · FeO + 2HCl → FeCl₂ + H₂O"
           },
           "col2": {
             "title": "Phạm vi áp dụng",
-            "intro": "Áp dụng cho chi tiết cần mạ, tùy tình trạng bề mặt đầu vào:",
-            "item1Strong": "Chi tiết gia công cơ khí:",
-            "item1": "Dính dầu cắt gọt, dầu làm mát, dầu bảo quản.",
+            "intro": "Áp dụng cho hàng nhập về trước khi vào dây chuyền mạ:",
+            "item1Strong": "Chi tiết kim loại:",
+            "item1": "Dính dầu và bụi bẩn từ gia công, bảo quản.",
             "item2Strong": "Chi tiết có gỉ hoặc oxit:",
-            "item2": "Gỉ nhẹ, màng oxit sau xử lý nhiệt hoặc hàn.",
-            "item3Strong": "Chi tiết hình dạng phức tạp:",
-            "item3": "Ren, lỗ mù, khe hẹp cần làm sạch kỹ."
+            "item2": "Tẩy trong bể HCl trước khi hoạt hóa.",
+            "item3Strong": "Hàng nhập kho:",
+            "item3": "Nhập hàng, lưu kho rồi đưa vào dây chuyền."
           },
           "col3": {
             "title": "Vật liệu nền",
-            "intro": "Quy trình được chọn theo vật liệu nền:",
+            "intro": "Các nền kim loại thường gặp:",
             "substrates": {
-              "alloySteel": "Thép hợp kim: tẩy rỉ có chất ức chế, hạn chế giòn hydro",
-              "carbonSteel": "Thép cacbon: tẩy dầu, tẩy rỉ axit, hoạt hóa",
-              "stainless": "Inox: hoạt hóa riêng trước khi mạ",
-              "aluminum": "Hợp kim nhôm: tẩy dầu kiềm nhẹ, xử lý zincate",
-              "brass": "Đồng thau và đồng: tẩy dầu, hoạt hóa axit loãng",
-              "ductileIron": "Gang: cần xử lý riêng để loại than chì bề mặt"
+              "m1": "Sắt",
+              "m2": "Thép",
+              "m3": "Đồng",
+              "m4": "Nhôm",
+              "m5": "Nền kẽm"
             }
           }
         },
         "DetailProcess": {
-          "heading": "Quy trình tiền xử lý bề mặt 6 bước",
-          "subtitle": "Điều kiện từng bước chọn theo vật liệu và tình trạng chi tiết",
-          "stepLabel": "BƯỚC",
+          "heading": "Quy trình tiền xử lý",
+          "subtitle": "Có rửa nước giữa các bước",
           "s1": {
-            "title": "Tẩy dầu sơ bộ",
-            "desc": "Ngâm trong dung dịch tẩy dầu để loại phần lớn dầu cắt gọt và dầu bảo quản.",
-            "note": "Dung dịch chọn theo loại dầu."
+            "title": "Nhập hàng và lưu kho",
+            "desc": "Tiếp nhận hàng, lưu kho rồi đưa vào dây chuyền theo kế hoạch sản xuất."
           },
           "s2": {
             "title": "Tẩy dầu siêu âm",
-            "desc": "Siêu âm bóc lớp dầu còn lại ở ren, lỗ mù và khe hẹp mà ngâm thường khó làm sạch.",
-            "note": "Áp dụng cho chi tiết phức tạp."
+            "desc": "Bể tẩy dầu kết hợp siêu âm, bóc dầu khỏi khe hẹp và lỗ ren, sau đó rửa nước."
           },
           "s3": {
-            "title": "Rửa tràn",
-            "desc": "Rửa nhiều cấp bằng nước sạch để cuốn trôi dung dịch tẩy dầu còn bám.",
-            "note": "Tránh mang hóa chất sang bể sau."
+            "title": "Bể HCl",
+            "desc": "Tẩy gỉ và màng oxit bằng axit HCl, sau đó rửa nước."
           },
           "s4": {
-            "title": "Tẩy rỉ bằng axit",
-            "desc": "Axit có chất ức chế hòa tan gỉ và màng oxit, hạn chế ăn mòn nền.",
-            "note": "Nồng độ và thời gian được kiểm soát."
+            "title": "Hoạt hóa bề mặt",
+            "desc": "Hoạt hóa nền để lớp mạ đầu tiên bám chắc, sau đó rửa nước."
           },
           "s5": {
-            "title": "Hoạt hóa bề mặt",
-            "desc": "Nhúng axit loãng ngay trước bể mạ để loại màng oxit mỏng mới hình thành.",
-            "note": "Chuyển sang bể mạ không để khô."
+            "title": "Chuyển sang mạ",
+            "desc": "Hàng đã hoạt hóa được chuyển sang bể mạ theo yêu cầu của đơn hàng."
           },
-          "s6": {
-            "title": "Rửa và kiểm tra",
-            "desc": "Rửa lần cuối rồi thử màng nước và xem ngoại quan trước khi đưa vào mạ.",
-            "note": "Không đạt thì làm lại từ tẩy dầu."
-          }
+          "stepLabel": "BƯỚC"
         },
         "DetailCapability": {
-          "imageAlt": "Bể xử lý bề mặt trong dây chuyền mạ tại nhà máy HANIN",
-          "lineCapacityLabel": "Loại dây chuyền",
-          "lineCapacityValue": "Mạ treo và mạ quay",
-          "tankSizeLabel": "Kích thước bể tối đa",
-          "heading": "Bể xử lý và kiểm soát dung dịch",
-          "subtitle": "Các bể tẩy dầu, tẩy rỉ và hoạt hóa nằm cùng dây chuyền với bể mạ, nên chi tiết chuyển bể nhanh và ít bị oxy hóa lại.",
-          "dosing": {
-            "title": "Kiểm soát nồng độ dung dịch:",
-            "desc": "Nồng độ dung dịch tẩy dầu và axit được chuẩn độ định kỳ và bổ sung khi giảm."
+          "imageAlt": "Khu vực sản xuất tại nhà máy HANIN",
+          "lineCapacityLabel": "Bước chính",
+          "lineCapacityValue": "Tẩy dầu siêu âm",
+          "tankSizeLabel": "Giữa các bước",
+          "tankSizeValue": "Rửa nước",
+          "heading": "Thiết bị tiền xử lý",
+          "subtitle": "Tiền xử lý nằm trong dây chuyền mạ của nhà máy HANIN tại KCN Quang Minh, trước các bể mạ.",
+          "f1": {
+            "title": "Bể tẩy dầu siêu âm:",
+            "desc": "Bóc dầu và bụi bẩn khỏi khe hẹp, lỗ ren."
           },
-          "crane": {
-            "title": "Treo và quay chi tiết:",
-            "desc": "Chi tiết lớn xử lý trên giá treo, chi tiết nhỏ xử lý trong thùng quay để dung dịch tiếp xúc đều."
+          "f2": {
+            "title": "Bể HCl:",
+            "desc": "Tẩy gỉ và màng oxit trước khi hoạt hóa."
           },
-          "filtration": {
-            "title": "Lọc và thay dung dịch:",
-            "desc": "Dung dịch được lọc cặn, thay khi hết hiệu lực để tránh mang dầu và kim loại hòa tan sang bước sau."
-          },
-          "tankSizeValue": "Theo bản vẽ"
+          "f3": {
+            "title": "Rửa nước xen kẽ:",
+            "desc": "Giữ hóa chất của bể trước không lẫn sang bể sau."
+          }
         },
         "DetailApplications": {
-          "heading": "Chi tiết cần tiền xử lý tại HANIN",
-          "subtitle": "Các ngành sử dụng",
-          "oilGas": {
-            "tag": "Cơ khí chính xác",
-            "title": "Chi tiết tiện, phay trước khi mạ",
-            "desc": "Loại dầu cắt gọt và dầu bảo quản để lớp mạ sau đó bám đều.",
-            "thickness": "Lớp mạ đi sau: kẽm, niken, crom"
+          "heading": "Hàng cần tiền xử lý tại HANIN",
+          "subtitle": "Các nhóm sản phẩm",
+          "a1": {
+            "tag": "Ô tô",
+            "title": "Phụ tùng ô tô",
+            "desc": "Nút khởi động, công tắc điều khiển, viền khung đèn, nẹp chữ.",
+            "note": "Bước tiếp theo: mạ niken-crom"
           },
-          "mold": {
-            "tag": "Khuôn mẫu",
-            "title": "Khuôn và chi tiết thép dụng cụ",
-            "desc": "Loại gỉ và oxit sau gia công nhiệt, giữ bề mặt đủ sạch cho lớp mạ.",
-            "thickness": "Lớp mạ đi sau: niken, crom cứng"
+          "a2": {
+            "tag": "Thiết bị gia dụng",
+            "title": "Núm vặn và khung",
+            "desc": "Núm vặn lò nướng, khung nắp máy giặt, núm máy lọc nước.",
+            "note": "Bước tiếp theo: mạ theo yêu cầu"
           },
-          "electronics": {
-            "tag": "Điện tử và điện",
-            "title": "Vỏ, giá đỡ và đầu nối",
-            "desc": "Làm sạch dầu dập, màng oxit trên đồng, đồng thau, nhôm trước khi mạ.",
-            "thickness": "Lớp mạ đi sau: niken, thiếc, kẽm"
+          "a3": {
+            "tag": "Vệ sinh, nhà bếp",
+            "title": "Vòi và phụ kiện",
+            "desc": "Vòi sen, vòi rửa, phụ kiện vệ sinh, thiết bị nhà bếp.",
+            "note": "Bước tiếp theo: mạ niken-crom"
           },
-          "automotive": {
-            "tag": "Ô tô và xe máy",
-            "title": "Bu lông, giá đỡ và chi tiết dập",
-            "desc": "Tẩy dầu dập và gỉ nhẹ cho lô chi tiết nhỏ xử lý trong thùng quay.",
-            "thickness": "Lớp mạ đi sau: kẽm, kẽm-niken"
+          "a4": {
+            "tag": "Chi tiết kim loại",
+            "title": "Bu lông, vít, bản lề",
+            "desc": "Bu lông, vít, đai ốc, bản lề, chốt định vị.",
+            "note": "Bước tiếp theo: mạ niken, kẽm, thiếc"
           }
         },
         "DetailQaTable": {
-          "heading": "Kiểm soát chất lượng tiền xử lý",
-          "subtitle": "Kết quả kiểm tra của từng lô được lưu lại",
           "colItem": "Hạng mục kiểm tra",
-          "colDevice": "Phương pháp và thiết bị",
-          "colStandard": "Tiêu chuẩn áp dụng",
-          "colCriteria": "Tiêu chí đạt",
-          "colFrequency": "Tần suất kiểm tra",
-          "thickness": {
-            "item": "Ngoại quan bề mặt",
-            "device": "Kiểm tra bằng mắt dưới đèn chiếu sáng",
-            "criteria": "Không dầu, không gỉ, không cặn",
-            "frequency": "Từng lô"
+          "colDevice": "Thiết bị",
+          "colCriteria": "Nội dung kiểm tra",
+          "heading": "Kiểm soát chất lượng sau tiền xử lý",
+          "subtitle": "Thiết bị kiểm tra của nhà máy HANIN",
+          "r1": {
+            "item": "Dung dịch tiền xử lý",
+            "device": "Phòng phân tích và hóa chất phân tích",
+            "criteria": "Phân tích thành phần bể tẩy dầu và bể axit."
           },
-          "microhardness": {
-            "item": "Thử màng nước",
-            "device": "Nhúng hoặc xả nước, quan sát màng nước (tham khảo ASTM F22)",
-            "criteria": "Màng nước liên tục, không đứt",
-            "frequency": "Mẫu đại diện mỗi lô"
+          "r2": {
+            "item": "Dung dịch mạ sau tiền xử lý",
+            "device": "Máy thử Hull cell",
+            "criteria": "Thử Hull cell để kiểm tra dung dịch mạ."
           },
-          "saltSpray": {
-            "item": "Độ nhám bề mặt",
-            "device": "Máy đo nhám tiếp xúc, thông số Ra (ISO 4287)",
-            "criteria": "Theo bản vẽ",
-            "frequency": "Khi khách yêu cầu"
+          "r3": {
+            "item": "Độ dày lớp mạ",
+            "device": "Máy đo độ dày lớp mạ APC-100",
+            "criteria": "Đo độ dày lớp mạ, đối chiếu yêu cầu bản vẽ."
           },
-          "adhesion": {
-            "item": "Độ bám dính sau mạ",
-            "device": "Thử uốn hoặc thử nhiệt trên mẫu kèm lô (ASTM B571)",
-            "criteria": "Lớp mạ không bong, không tách lớp",
-            "frequency": "Mẫu thử kèm theo lô"
+          "r4": {
+            "item": "Chống ăn mòn (trung tính)",
+            "device": "Máy phun muối trung tính NSS",
+            "criteria": "Thử phun muối trung tính theo yêu cầu của khách hàng."
           },
-          "porosity": {
-            "item": "Chất lượng nước rửa",
-            "device": "Máy đo độ dẫn điện và pH",
-            "criteria": "Theo yêu cầu quy trình",
-            "frequency": "Theo kế hoạch kiểm soát"
+          "r5": {
+            "item": "Chống ăn mòn (axit)",
+            "device": "Máy phun muối axit CASS",
+            "criteria": "Thử phun muối axit CASS khi khách hàng yêu cầu."
           }
         },
         "DetailGallery": {
-          "heading": "Dây chuyền và khu chuẩn bị chi tiết",
+          "heading": "Hình ảnh tại nhà máy",
           "subtitle": "Nhà máy HANIN, lô 49G KCN Quang Minh",
           "line": {
-            "alt": "Dây chuyền bể mạ tại nhà máy HANIN",
-            "tag": "Dây chuyền mạ",
-            "title": "Dây chuyền bể xử lý và bể mạ",
-            "desc": "Các bể xử lý bề mặt bố trí cùng dây chuyền với bể mạ."
+            "alt": "Khu vực mạ tại nhà máy HANIN",
+            "tag": "Khu vực mạ",
+            "title": "Khu vực mạ",
+            "desc": "Dây chuyền mạ tại nhà máy HANIN, KCN Quang Minh."
           },
           "surface": {
-            "alt": "Chi tiết kim loại sau khi xử lý bề mặt",
-            "tag": "Chi tiết sau xử lý",
-            "title": "Bề mặt sau khi làm sạch",
-            "desc": "Bề mặt cần sạch, đều màu và không còn vết dầu trước khi mạ."
+            "alt": "Khu vực sản xuất của nhà máy HANIN",
+            "tag": "Sản xuất",
+            "title": "Khu vực sản xuất",
+            "desc": "Nhà máy có mặt bằng 2.230 m²."
           },
           "prep": {
-            "alt": "Khu vực chuẩn bị chi tiết trước khi mạ",
-            "tag": "Chuẩn bị chi tiết",
-            "title": "Khu vực tiếp nhận và chuẩn bị",
-            "desc": "Chi tiết được kiểm tra, phân loại và gá lên giá trước khi vào bể."
+            "alt": "Khu vực kho và phân tích của nhà máy HANIN",
+            "tag": "Kho và phân tích",
+            "title": "Kho và phòng phân tích",
+            "desc": "Nhập hàng, lưu kho và phân tích hóa chất trước khi đưa vào dây chuyền."
           }
         },
         "RfqFormDetail": {
           "heading": "Gửi yêu cầu tiền xử lý bề mặt",
-          "subtitle": "Bộ phận kỹ thuật HANIN sẽ phản hồi về quy trình xử lý và báo giá.",
+          "subtitle": "Bộ phận kỹ thuật HANIN sẽ phản hồi về báo giá và kế hoạch mạ mẫu.",
           "hotlineLabel": "Hotline kỹ thuật:",
           "submitAlert": "Yêu cầu báo giá tiền xử lý bề mặt đã được gửi đến bộ phận kỹ thuật HANIN.",
           "companyLabel": "Tên doanh nghiệp",
-          "companyPlaceholder": "VD: Công ty TNHH Cơ khí ABC",
+          "companyPlaceholder": "VD: Công ty TNHH ABC",
           "contactLabel": "Người liên hệ",
-          "contactPlaceholder": "VD: Nguyễn Văn A, kỹ sư phụ trách",
+          "contactPlaceholder": "VD: Nguyễn Văn A, phụ trách mua hàng",
           "emailLabel": "Email nhận báo giá",
           "substrateLabel": "Vật liệu nền",
           "substrateOptions": {
-            "carbonSteel": "Thép cacbon (S45C, S50C, SS400)",
-            "alloySteel": "Thép hợp kim (SCM440, SKD11, SUJ2)",
-            "stainless": "Thép không gỉ (SUS304, SUS316, SUS420)",
-            "aluminum": "Hợp kim nhôm (A6061-T6, A7075)",
-            "copper": "Đồng / đồng thau",
-            "castIron": "Gang đúc / gang cầu FCD"
+            "carbonSteel": "Sắt, thép",
+            "alloySteel": "Thép hợp kim",
+            "stainless": "Inox",
+            "aluminum": "Nhôm",
+            "copper": "Đồng, đồng thau",
+            "castIron": "Gang"
           },
-          "phosLabel": "Tình trạng bề mặt đầu vào",
+          "phosLabel": "Loại mạ yêu cầu",
           "phosOptions": {
-            "high": "Dính dầu cắt gọt hoặc dầu bảo quản",
-            "medium": "Có gỉ hoặc màng oxit",
-            "low": "Dầu và gỉ cùng có",
-            "consult": "Cần kỹ sư HANIN tư vấn theo ứng dụng"
+            "high": "Niken Crom trên nhựa ABS",
+            "medium": "Niken trên nền kim loại",
+            "low": "Mạ kẽm, đồng, thiếc hoặc phốt phát đen",
+            "consult": "Cần HANIN tư vấn theo sản phẩm"
           },
-          "thicknessLabel": "Lớp mạ đi sau",
-          "thicknessPlaceholder": "VD: mạ kẽm 8 µm, hoặc mạ niken",
+          "thicknessLabel": "Yêu cầu độ dày lớp mạ",
+          "thicknessPlaceholder": "VD: theo bản vẽ",
           "volumeLabel": "Sản lượng dự kiến",
-          "volumePlaceholder": "VD: 2,500 chiếc/tháng (hoặc mẫu thử)",
-          "notesLabel": "Ghi chú kỹ thuật (loại dầu, vị trí cần che, yêu cầu về giòn hydro, tiêu chuẩn thử nghiệm)",
-          "notesPlaceholder": "Ghi rõ loại dầu hoặc gỉ trên chi tiết, vị trí cần che, yêu cầu khử giòn hydro với thép cường độ cao...",
+          "volumePlaceholder": "VD: 5.000 chiếc/tháng (hoặc mẫu thử)",
+          "notesLabel": "Ghi chú kỹ thuật (vị trí cần che, màu sắc, tiêu chuẩn thử nghiệm)",
+          "notesPlaceholder": "Ghi rõ vị trí cần che, màu sắc hoặc độ bóng mong muốn, yêu cầu thử phun muối...",
           "attachTitle": "Đính kèm bản vẽ 2D / 3D",
           "attachDesc": "Định dạng: STEP, IGES, DWG, PDF (tối đa 50MB)",
           "chooseFile": "CHỌN TỆP BẢN VẼ",
-          "ndaNote": "Bản vẽ được bảo mật theo thỏa thuận NDA.",
-          "submitButton": "GỬI YÊU CẦU TIỀN XỬ LÝ BỀ MẶT",
+          "ndaNote": "Bản vẽ chỉ được dùng để báo giá và tư vấn kỹ thuật.",
+          "submitButton": "GỬI YÊU CẦU BÁO GIÁ TIỀN XỬ LÝ BỀ MẶT",
           "submitError": "Không gửi được yêu cầu. Vui lòng kiểm tra thông tin/tệp đính kèm và thử lại."
         }
       },
       "ma-crom-cung-cong-nghiep": {
         "DetailHero": {
-          "title": "Mạ crom cứng công nghiệp",
-          "titleEn": "(Hard Chrome Plating)",
-          "subtitle": "Lớp crom cứng chống mài mòn, ma sát thấp cho trục piston, ty ben thủy lực và chi tiết trượt.",
-          "phos": {
-            "label": "Độ dày lớp mạ",
-            "note": "Tùy yêu cầu mài mòn, mạ phục hồi",
-            "value": "đến 300 µm"
+          "stat1": {
+            "label": "Nền mạ",
+            "value": "ABS, ABS/PC"
           },
-          "hardness": {
-            "label": "Độ cứng lớp mạ",
-            "note": "Lớp mạ crom cứng",
-            "value": "65-72 HRC"
+          "stat2": {
+            "label": "Lớp hoàn thiện",
+            "value": "4 loại niken crom"
           },
-          "saltSpray": {
-            "label": "Hoàn thiện sau mạ",
-            "unit": "",
-            "note": "Theo độ nhám trên bản vẽ",
-            "value": "Mài, đánh bóng"
+          "stat3": {
+            "label": "Tạo xước",
+            "value": "Hair Line"
           },
-          "tolerance": {
-            "label": "Dung sai độ dày",
-            "note": "Đo kiểm theo từng lô",
-            "value": "Theo bản vẽ"
+          "stat4": {
+            "label": "Phương pháp",
+            "value": "Mạ treo"
           },
           "ctaPrimary": "YÊU CẦU BÁO GIÁ",
-          "ctaSecondary": "TẢI THÔNG SỐ KỸ THUẬT",
-          "verifyLabel": "Mỗi lô có kiểm tra độ dày kèm theo",
-          "imageAlt": "Trục thép sau khi mạ crom cứng",
-          "xrfLabel": "Đo độ dày theo từng lô",
-          "roughnessLabel": "Độ nhám theo bản vẽ",
-          "coatingLabel": "Lớp phủ: crom cứng",
-          "imageCaption": "Trục thép sau khi mạ crom cứng và mài hoàn thiện."
+          "ctaSecondary": "LIÊN HỆ TƯ VẤN KỸ THUẬT"
         },
         "DetailOverview": {
-          "heading": "Nguyên lý và phạm vi ứng dụng",
-          "complianceLabel": "Xử lý nước thải và khí thải theo quy định môi trường",
+          "heading": "Các loại mạ và phạm vi ứng dụng",
           "col1": {
-            "title": "Cơ chế phản ứng",
-            "p1": "Mạ crom cứng là mạ điện phân trong dung dịch axit cromic và chất xúc tác sunfat. Chi tiết làm catot, ion crom hóa trị sáu được khử thành",
-            "p1Strong": "kim loại crom",
-            "p2": "Lớp crom cứng, bám chắc, chịu mài mòn và có hệ số ma sát thấp. Độ dày phụ thuộc mật độ dòng điện và thời gian mạ.",
-            "formula": "CrO₃ + H₂SO₄ (xúc tác) · Cr⁶⁺ + 6e⁻ → Cr"
+            "title": "Mạ trên nền nhựa",
+            "p1": "Nhựa không dẫn điện nên phải xử lý bề mặt trước khi mạ kim loại. Hàng ABS đi qua các bước xâm thực, trung hòa, hoạt hóa Paradi, sau đó",
+            "p1Strong": "mạ niken và crom",
+            "p2": "Có thể tạo xước Hair Line trên lớp niken crom khi sản phẩm yêu cầu."
           },
           "col2": {
-            "title": "Phạm vi ứng dụng",
-            "intro": "Dùng cho chi tiết trượt, chịu mài mòn hoặc cần phục hồi kích thước:",
-            "item1Strong": "Thủy lực và khí nén:",
-            "item1": "Ty ben, trục piston, xy lanh.",
-            "item2Strong": "Khuôn mẫu:",
-            "item2": "Lõi khuôn, chày cối, trục cán.",
-            "item3Strong": "Phục hồi chi tiết:",
-            "item3": "Mạ đắp trục mòn rồi mài về kích thước."
+            "title": "Các loại mạ",
+            "intro": "Bốn loại mạ trên nền nhựa ABS:",
+            "item1Strong": "Niken Crom 3+ và Niken Crom 6+:",
+            "item1": "Hai công nghệ mạ crom, bề mặt sáng bóng.",
+            "item2Strong": "Niken Satin:",
+            "item2": "Bề mặt satin.",
+            "item3Strong": "Niken Crom đen:",
+            "item3": "Bề mặt đen; tạo xước Hair Line trên niken crom khi cần."
           },
           "col3": {
             "title": "Vật liệu nền",
-            "intro": "Crom cứng mạ phổ biến nhất trên nền thép:",
+            "intro": "Nhà máy mạ trên các nền nhựa:",
             "substrates": {
-              "alloySteel": "Thép hợp kim: SCM440, SUJ2",
-              "carbonSteel": "Thép cacbon: S45C, S50C",
-              "stainless": "Inox: xử lý hoạt hóa riêng",
-              "aluminum": "Hợp kim nhôm: cần lớp lót, xem xét theo bản vẽ",
-              "brass": "Đồng thau: cần lớp lót niken",
-              "ductileIron": "Gang: xử lý bề mặt riêng"
+              "m1": "Nhựa ABS",
+              "m2": "Nhựa ABS/PC"
             }
           }
         },
         "DetailProcess": {
-          "heading": "Quy trình mạ crom cứng 6 bước",
-          "subtitle": "Mỗi mẻ được theo dõi theo thông số của từng bước",
-          "stepLabel": "BƯỚC",
+          "heading": "Quy trình mạ treo nhựa ABS",
+          "subtitle": "Rút gọn từ quy trình thực tế tại nhà máy",
           "s1": {
-            "title": "Tẩy dầu",
-            "desc": "Tẩy dầu mỡ và dầu gia công cơ khí khỏi bề mặt chi tiết trước khi mạ.",
-            "note": "Kiểm tra bằng thử màng nước"
+            "title": "Móc treo",
+            "desc": "Gắn chi tiết nhựa lên móc treo (JIG) để đi qua các bể."
           },
           "s2": {
-            "title": "Gá và che chắn",
-            "desc": "Gá chi tiết lên giá mạ, che các vùng không mạ như ren, rãnh then bằng vật liệu chịu axit.",
-            "note": "Theo vùng mạ trên bản vẽ"
+            "title": "Tẩy dầu và bể ngâm",
+            "desc": "Tẩy dầu, ngâm bể để làm sạch bề mặt nhựa."
           },
           "s3": {
-            "title": "Tẩy điện hóa",
-            "desc": "Chi tiết làm anot trong dung dịch axit cromic, làm sạch màng oxit và tạo bề mặt bám tốt.",
-            "note": "Dòng ngược ngay trước khi mạ"
+            "title": "Xâm thực",
+            "desc": "Xâm thực bề mặt ABS để lớp kim loại sau này bám vào nền nhựa."
           },
           "s4": {
-            "title": "Mạ crom cứng",
-            "desc": "Mạ trong bể axit cromic và xúc tác sunfat, kiểm soát nhiệt độ và mật độ dòng điện.",
-            "note": "Thời gian theo độ dày yêu cầu"
+            "title": "Trung hòa",
+            "desc": "Trung hòa hóa chất còn lại; có bước thu hồi và sóng rung để rửa sạch."
           },
           "s5": {
-            "title": "Rửa và khử giòn hydro",
-            "desc": "Rửa sạch, gỡ che chắn, sấy khử giòn hydro với chi tiết thép cường độ cao nếu có yêu cầu.",
-            "note": "Theo mác thép và bản vẽ"
+            "title": "Hoạt hóa HCl và Paradi",
+            "desc": "Hoạt hóa bằng HCl rồi hoạt hóa Paradi để nhựa nhận lớp kim loại đầu tiên."
           },
           "s6": {
-            "title": "Mài và kiểm tra",
-            "desc": "Mài, đánh bóng về kích thước và độ nhám yêu cầu, đo độ dày rồi đóng gói chống gỉ.",
-            "note": "Kèm biên bản kiểm tra nếu cần"
-          }
+            "title": "Mạ niken, crom và kiểm tra",
+            "desc": "Mạ các lớp niken và crom theo yêu cầu rồi kiểm tra thành phẩm."
+          },
+          "stepLabel": "BƯỚC"
         },
         "DetailCapability": {
-          "imageAlt": "Dây chuyền bể mạ tại nhà máy HANIN",
-          "lineCapacityLabel": "Loại dây chuyền",
-          "lineCapacityValue": "Mạ treo",
-          "tankSizeLabel": "Kích thước bể tối đa",
-          "heading": "Bể mạ và kiểm soát dung dịch",
-          "subtitle": "Bể mạ crom cứng dùng vật liệu chịu axit cromic, có hút khí tại miệng bể và hệ thống xử lý khí thải. Nhiệt độ bể được duy trì ổn định trong quá trình mạ.",
-          "dosing": {
-            "title": "Kiểm soát dung dịch:",
-            "desc": "Phân tích định kỳ nồng độ axit cromic và tỷ lệ xúc tác sunfat, bổ sung khi lệch khỏi dải làm việc."
+          "imageAlt": "Khu vực sản xuất tại nhà máy HANIN",
+          "lineCapacityLabel": "Dây chuyền mạ tự động",
+          "lineCapacityValue": "30–50 nghìn sản phẩm/ngày",
+          "tankSizeLabel": "Loại mạ",
+          "tankSizeValue": "Crom, niken, satin",
+          "heading": "Dây chuyền mạ tự động",
+          "subtitle": "Hàng treo trên JIG, cẩu trục chuyển qua các bể trong khu bể mạ của nhà máy HANIN.",
+          "f1": {
+            "title": "JIG móc hàng:",
+            "desc": "Chi tiết được treo trên JIG để đi qua từng bể."
           },
-          "crane": {
-            "title": "Gá mạ và anot:",
-            "desc": "Bố trí giá mạ và anot theo hình dạng chi tiết để lớp mạ trên trục phân bố đều."
+          "f2": {
+            "title": "Cẩu trục:",
+            "desc": "Chuyển JIG giữa các bể theo trình tự quy trình."
           },
-          "filtration": {
-            "title": "Nguồn điện và nhiệt độ bể:",
-            "desc": "Chỉnh dòng điện một chiều và giữ nhiệt độ dung dịch ổn định, vì hai thông số này quyết định độ cứng và độ dày."
-          },
-          "tankSizeValue": "Theo bản vẽ"
+          "f3": {
+            "title": "Khu bể mạ:",
+            "desc": "Mạ crom, niken, satin; công suất 30–50 nghìn sản phẩm mỗi ngày."
+          }
         },
         "DetailApplications": {
-          "heading": "Chi tiết mạ crom cứng tại HANIN",
-          "subtitle": "Các ngành sử dụng",
-          "oilGas": {
-            "tag": "Thủy lực và khí nén",
-            "title": "Ty ben và trục piston",
-            "desc": "Bề mặt cứng, nhẵn giúp phớt làm kín ít mòn và chịu trượt lặp lại.",
-            "thickness": "Độ dày thường dùng: 20-50 µm"
+          "heading": "Sản phẩm mạ trên nhựa ABS tại HANIN",
+          "subtitle": "Các nhóm sản phẩm",
+          "a1": {
+            "tag": "Ô tô",
+            "title": "Phụ tùng ô tô",
+            "desc": "Nút khởi động, công tắc điều khiển, viền khung đèn, nẹp chữ, chữ nổi và logo xe.",
+            "note": "Niken Crom 3+ hoặc 6+"
           },
-          "mold": {
-            "tag": "Khuôn mẫu và gia công nhựa",
-            "title": "Lõi khuôn, trục vít và trục cán",
-            "desc": "Giảm mài mòn do nhựa và vật liệu gia công, dễ nhả sản phẩm.",
-            "thickness": "Độ dày thường dùng: 10-30 µm"
+          "a2": {
+            "tag": "Thiết bị gia dụng",
+            "title": "Núm vặn và khung",
+            "desc": "Núm vặn lò nướng, khung nắp máy giặt, núm máy lọc nước.",
+            "note": "Niken Satin hoặc Niken Crom"
           },
-          "electronics": {
-            "tag": "In ấn và dệt",
-            "title": "Trục cán, trục in",
-            "desc": "Bề mặt chịu mài mòn cho trục tiếp xúc liên tục với giấy, màng và sợi.",
-            "thickness": "Độ dày thường dùng: 20-60 µm"
+          "a3": {
+            "tag": "Vệ sinh, nhà bếp",
+            "title": "Vòi sen và phụ kiện",
+            "desc": "Vòi sen, tay gạt củ sen tắm, phụ kiện vệ sinh, khung và núm vặn thiết bị nhà bếp.",
+            "note": "Niken Crom, Hair Line khi cần"
           },
-          "automotive": {
-            "tag": "Ô tô và máy công trình",
-            "title": "Trục, ty giảm chấn và chi tiết phục hồi",
-            "desc": "Mạ đắp phục hồi trục mòn rồi mài lại về kích thước.",
-            "thickness": "Độ dày thường dùng: 25-150 µm"
+          "a4": {
+            "tag": "Điện tử, Smart Home",
+            "title": "Thiết bị thông minh",
+            "desc": "Nút điều khiển và chi tiết của thiết bị Smart Home.",
+            "note": "Niken Crom đen hoặc Niken Satin"
           }
         },
         "DetailQaTable": {
-          "heading": "Kiểm soát chất lượng lớp mạ crom cứng",
-          "subtitle": "Dữ liệu kiểm tra của từng lô được lưu lại",
           "colItem": "Hạng mục kiểm tra",
-          "colDevice": "Thiết bị đo",
-          "colStandard": "Tiêu chuẩn áp dụng",
-          "colCriteria": "Tiêu chí đạt",
-          "colFrequency": "Tần suất kiểm tra",
-          "thickness": {
+          "colDevice": "Thiết bị",
+          "colCriteria": "Nội dung kiểm tra",
+          "heading": "Kiểm soát chất lượng lớp mạ trên nhựa ABS",
+          "subtitle": "Thiết bị kiểm tra của nhà máy HANIN",
+          "r1": {
+            "item": "Dung dịch và hóa chất",
+            "device": "Phòng phân tích và hóa chất phân tích",
+            "criteria": "Phân tích thành phần dung dịch, hóa chất trước khi đưa vào sản xuất."
+          },
+          "r2": {
+            "item": "Dung dịch mạ",
+            "device": "Máy thử Hull cell",
+            "criteria": "Thử Hull cell để kiểm tra dung dịch mạ."
+          },
+          "r3": {
             "item": "Độ dày lớp mạ",
-            "device": "Máy đo độ dày từ tính hoặc XRF",
-            "criteria": "Theo bản vẽ",
-            "frequency": "Mẫu theo từng mẻ"
+            "device": "Máy đo độ dày lớp mạ APC-100",
+            "criteria": "Đo độ dày lớp mạ, đối chiếu yêu cầu bản vẽ."
           },
-          "microhardness": {
-            "item": "Độ cứng",
-            "device": "Máy đo độ cứng tế vi Vickers",
-            "criteria": "Theo bản vẽ",
-            "frequency": "Theo yêu cầu khách"
+          "r4": {
+            "item": "Chống ăn mòn (trung tính)",
+            "device": "Máy phun muối trung tính NSS",
+            "criteria": "Thử phun muối trung tính theo yêu cầu của khách hàng."
           },
-          "saltSpray": {
-            "item": "Khả năng chịu phun muối",
-            "device": "Buồng phun muối trung tính (NSS)",
-            "criteria": "Đạt theo giờ thử quy định",
-            "frequency": "Theo yêu cầu khách"
-          },
-          "adhesion": {
-            "item": "Độ bám dính lớp mạ",
-            "device": "Thử uốn hoặc thử bám dính theo phương pháp thỏa thuận",
-            "criteria": "Lớp mạ không bong, không tách lớp",
-            "frequency": "Mẫu thử theo mẻ"
-          },
-          "porosity": {
-            "item": "Độ nhám bề mặt sau mài",
-            "device": "Máy đo độ nhám cầm tay",
-            "criteria": "Theo bản vẽ",
-            "frequency": "Mẫu theo từng mẻ"
+          "r5": {
+            "item": "Chống ăn mòn (axit)",
+            "device": "Máy phun muối axit CASS",
+            "criteria": "Thử phun muối axit CASS khi khách hàng yêu cầu."
           }
         },
         "DetailGallery": {
-          "heading": "Dây chuyền và chi tiết sau khi mạ",
+          "heading": "Hình ảnh tại nhà máy",
           "subtitle": "Nhà máy HANIN, lô 49G KCN Quang Minh",
           "line": {
-            "alt": "Dây chuyền bể mạ tại nhà máy",
-            "tag": "Bể mạ",
-            "title": "Dây chuyền bể mạ",
-            "desc": "Các bể xử lý bố trí theo thứ tự công đoạn, có hút khí tại miệng bể."
+            "alt": "Khu vực mạ tại nhà máy HANIN",
+            "tag": "Khu vực mạ",
+            "title": "Khu vực mạ",
+            "desc": "Dây chuyền mạ tại nhà máy HANIN, KCN Quang Minh."
           },
           "surface": {
-            "alt": "Chi tiết kim loại sau khi mạ",
-            "tag": "Chi tiết sau khi mạ",
-            "title": "Bề mặt sau khi mạ",
-            "desc": "Bề mặt chi tiết được kiểm tra bằng mắt trước khi chuyển sang kiểm tra kích thước."
+            "alt": "Khu vực sản xuất của nhà máy HANIN",
+            "tag": "Sản xuất",
+            "title": "Khu vực sản xuất",
+            "desc": "Nhà máy có mặt bằng 2.230 m²."
           },
           "prep": {
-            "alt": "Khu vực chuẩn bị chi tiết trước khi mạ",
-            "tag": "Chuẩn bị chi tiết",
-            "title": "Khu vực chuẩn bị",
-            "desc": "Chi tiết được kiểm tra, gá lên giá và che chắn trước khi vào bể."
+            "alt": "Khu vực kho và phân tích của nhà máy HANIN",
+            "tag": "Kho và phân tích",
+            "title": "Kho và phòng phân tích",
+            "desc": "Nhập hàng, lưu kho và phân tích hóa chất trước khi đưa vào dây chuyền."
           }
         },
         "RfqFormDetail": {
-          "heading": "Gửi thông số và yêu cầu mạ crom cứng",
+          "heading": "Gửi yêu cầu mạ niken-crom trên nhựa ABS",
           "subtitle": "Bộ phận kỹ thuật HANIN sẽ phản hồi về báo giá và kế hoạch mạ mẫu.",
           "hotlineLabel": "Hotline kỹ thuật:",
-          "submitAlert": "Yêu cầu báo giá mạ crom cứng đã được gửi đến bộ phận kỹ thuật HANIN.",
+          "submitAlert": "Yêu cầu báo giá mạ niken-crom trên nhựa ABS đã được gửi đến bộ phận kỹ thuật HANIN.",
           "companyLabel": "Tên doanh nghiệp",
-          "companyPlaceholder": "VD: Công ty TNHH Cơ khí ABC",
+          "companyPlaceholder": "VD: Công ty TNHH ABC",
           "contactLabel": "Người liên hệ",
-          "contactPlaceholder": "VD: Nguyễn Văn A, kỹ sư phụ trách",
+          "contactPlaceholder": "VD: Nguyễn Văn A, phụ trách mua hàng",
           "emailLabel": "Email nhận báo giá",
           "substrateLabel": "Vật liệu nền",
           "substrateOptions": {
-            "carbonSteel": "Thép cacbon (S45C, S50C, SS400)",
-            "alloySteel": "Thép hợp kim (SCM440, SKD11, SUJ2)",
-            "stainless": "Thép không gỉ (SUS304, SUS316, SUS420)",
-            "aluminum": "Hợp kim nhôm (A6061-T6, A7075)",
-            "copper": "Đồng / đồng thau",
-            "castIron": "Gang đúc / gang cầu FCD"
+            "carbonSteel": "Sắt, thép",
+            "alloySteel": "Thép hợp kim",
+            "stainless": "Inox",
+            "aluminum": "Nhôm",
+            "copper": "Đồng, đồng thau",
+            "castIron": "Gang"
           },
-          "phosLabel": "Mục đích lớp mạ",
+          "phosLabel": "Loại mạ yêu cầu",
           "phosOptions": {
-            "high": "Chống mài mòn",
-            "medium": "Chống ăn mòn",
-            "low": "Phục hồi kích thước",
-            "consult": "Cần kỹ sư HANIN tư vấn theo ứng dụng"
+            "high": "Niken Crom trên nhựa ABS",
+            "medium": "Niken trên nền kim loại",
+            "low": "Mạ kẽm, đồng, thiếc hoặc phốt phát đen",
+            "consult": "Cần HANIN tư vấn theo sản phẩm"
           },
-          "thicknessLabel": "Độ dày lớp mạ (µm)",
-          "thicknessPlaceholder": "VD: 30 µm, mài về Ø50 h7",
+          "thicknessLabel": "Yêu cầu độ dày lớp mạ",
+          "thicknessPlaceholder": "VD: theo bản vẽ",
           "volumeLabel": "Sản lượng dự kiến",
-          "volumePlaceholder": "VD: 200 trục/tháng (hoặc mẫu thử)",
-          "notesLabel": "Ghi chú kỹ thuật (vùng cần che, độ nhám sau mài, yêu cầu khử giòn hydro)",
-          "notesPlaceholder": "Ghi rõ vùng không mạ, độ nhám Ra sau mài, yêu cầu khử giòn hydro hoặc thử phun muối ASTM B117...",
+          "volumePlaceholder": "VD: 5.000 chiếc/tháng (hoặc mẫu thử)",
+          "notesLabel": "Ghi chú kỹ thuật (vị trí cần che, màu sắc, tiêu chuẩn thử nghiệm)",
+          "notesPlaceholder": "Ghi rõ vị trí cần che, màu sắc hoặc độ bóng mong muốn, yêu cầu thử phun muối...",
           "attachTitle": "Đính kèm bản vẽ 2D / 3D",
           "attachDesc": "Định dạng: STEP, IGES, DWG, PDF (tối đa 50MB)",
           "chooseFile": "CHỌN TỆP BẢN VẼ",
-          "ndaNote": "Bản vẽ được bảo mật theo thỏa thuận NDA.",
-          "submitButton": "GỬI YÊU CẦU BÁO GIÁ MẠ CROM CỨNG",
+          "ndaNote": "Bản vẽ chỉ được dùng để báo giá và tư vấn kỹ thuật.",
+          "submitButton": "GỬI YÊU CẦU BÁO GIÁ MẠ NIKEN-CROM TRÊN NHỰA ABS",
+          "submitError": "Không gửi được yêu cầu. Vui lòng kiểm tra thông tin/tệp đính kèm và thử lại."
+        }
+      },
+      "ma-niken-hoa-hoc-enp": {
+        "DetailHero": {
+          "stat1": {
+            "label": "Niken điện phân",
+            "value": "Sáng bóng, bền"
+          },
+          "stat2": {
+            "label": "Niken hóa",
+            "value": "Cứng, chống mài mòn"
+          },
+          "stat3": {
+            "label": "Mạ treo bán tự động",
+            "value": "10.000–20.000 sp/ngày"
+          },
+          "stat4": {
+            "label": "Mạ quay",
+            "value": "3.000–5.000 kg/ngày"
+          },
+          "ctaPrimary": "YÊU CẦU BÁO GIÁ",
+          "ctaSecondary": "LIÊN HỆ TƯ VẤN KỸ THUẬT"
+        },
+        "DetailOverview": {
+          "heading": "Các loại niken và phạm vi ứng dụng",
+          "col1": {
+            "title": "Các loại niken",
+            "p1": "HANIN mạ năm nhóm niken trên nền kim loại:",
+            "p1Strong": "niken điện phân, niken hóa, niken đen, niken satin và niken crom",
+            "p2": "Niken điện phân cho lớp mạ sáng bóng, bền. Niken hóa có độ cứng cao, chống mài mòn và chịu nhiệt tốt."
+          },
+          "col2": {
+            "title": "Sản phẩm tiêu biểu",
+            "intro": "Một số chi tiết đã mạ tại nhà máy:",
+            "item1Strong": "Niken điện phân:",
+            "item1": "Tay nắm kim loại, chi tiết máy, bu lông đặc biệt, bản lề, chốt định vị.",
+            "item2Strong": "Niken hóa:",
+            "item2": "Bánh răng, chốt, tấm chi tiết máy, khóa, trục-chốt, chi tiết lắp ráp.",
+            "item3Strong": "Niken đen, niken satin, niken crom:",
+            "item3": "Vòng trang trí, phụ kiện phòng tắm, vòi nước, tay nắm."
+          },
+          "col3": {
+            "title": "Vật liệu nền",
+            "intro": "Các nền kim loại thường mạ:",
+            "substrates": {
+              "m1": "Sắt",
+              "m2": "Thép",
+              "m3": "Đồng",
+              "m4": "Nhôm",
+              "m5": "Nền kẽm"
+            }
+          }
+        },
+        "DetailProcess": {
+          "heading": "Ví dụ quy trình mạ niken nền kẽm",
+          "subtitle": "Rút gọn từ quy trình thực tế tại nhà máy",
+          "s1": {
+            "title": "Tẩy dầu, vắt khô, sấy",
+            "desc": "Tẩy dầu, vắt khô rồi sấy để chi tiết sạch trước khi vào bể axit."
+          },
+          "s2": {
+            "title": "Bể H₂SO₄ và làm trắng",
+            "desc": "Xử lý axit H₂SO₄ và làm trắng bề mặt."
+          },
+          "s3": {
+            "title": "Hoạt hóa và bể đồng",
+            "desc": "Hoạt hóa bề mặt rồi mạ lớp đồng (Cu) làm nền cho lớp niken."
+          },
+          "s4": {
+            "title": "Mạ niken sáng",
+            "desc": "Mạ niken sáng cho bề mặt bóng."
+          },
+          "s5": {
+            "title": "Bể bảo vệ, sấy khô",
+            "desc": "Qua bể bảo vệ rồi sấy khô."
+          },
+          "s6": {
+            "title": "Đo độ dày, thử và đóng gói",
+            "desc": "Đo độ dày lớp mạ, phun muối, kiểm tra thành phẩm rồi đóng gói."
+          },
+          "stepLabel": "BƯỚC"
+        },
+        "DetailCapability": {
+          "imageAlt": "Khu vực sản xuất tại nhà máy HANIN",
+          "lineCapacityLabel": "Mạ treo bán tự động",
+          "lineCapacityValue": "10.000–20.000 sp/ngày",
+          "tankSizeLabel": "Mạ quay",
+          "tankSizeValue": "3.000–5.000 kg/ngày",
+          "heading": "Dây chuyền mạ treo và mạ quay",
+          "subtitle": "Hai dây chuyền cùng làm niken điện phân, niken hóa, niken đen, phốt phát mangan đen và mạ kẽm.",
+          "f1": {
+            "title": "Mạ treo bán tự động:",
+            "desc": "10.000–20.000 sản phẩm mỗi ngày."
+          },
+          "f2": {
+            "title": "Mạ quay:",
+            "desc": "3.000–5.000 kg mỗi ngày, tương đương 10.000–30.000 sản phẩm; có máy rung, tẩy dầu, bể mạ đồng và bể mạ niken."
+          },
+          "f3": {
+            "title": "Dây chuyền mạ tự động:",
+            "desc": "30–50 nghìn sản phẩm mỗi ngày, mạ crom, niken, satin."
+          }
+        },
+        "DetailApplications": {
+          "heading": "Chi tiết mạ niken tại HANIN",
+          "subtitle": "Các nhóm sản phẩm",
+          "a1": {
+            "tag": "Chi tiết máy",
+            "title": "Bánh răng, chốt, trục",
+            "desc": "Bánh răng, chốt, tấm chi tiết máy, trục-chốt, chi tiết lắp ráp.",
+            "note": "Niken hóa"
+          },
+          "a2": {
+            "tag": "Phụ kiện cửa, khóa",
+            "title": "Tay nắm, bản lề, chốt",
+            "desc": "Tay nắm kim loại, bản lề, khóa, chốt định vị, bu lông đặc biệt.",
+            "note": "Niken điện phân"
+          },
+          "a3": {
+            "tag": "Vệ sinh",
+            "title": "Vòi nước và phụ kiện",
+            "desc": "Vòi nước, phụ kiện phòng tắm, tay nắm.",
+            "note": "Mạ crom"
+          },
+          "a4": {
+            "tag": "Trang trí",
+            "title": "Inox satin và chi tiết trang trí",
+            "desc": "Tấm inox satin, tay nắm cửa, thanh inox, bản lề, chi tiết trang trí.",
+            "note": "Mạ satin"
+          }
+        },
+        "DetailQaTable": {
+          "colItem": "Hạng mục kiểm tra",
+          "colDevice": "Thiết bị",
+          "colCriteria": "Nội dung kiểm tra",
+          "heading": "Kiểm soát chất lượng lớp mạ niken",
+          "subtitle": "Thiết bị kiểm tra của nhà máy HANIN",
+          "r1": {
+            "item": "Dung dịch và hóa chất",
+            "device": "Phòng phân tích và hóa chất phân tích",
+            "criteria": "Phân tích thành phần dung dịch, hóa chất trước khi đưa vào sản xuất."
+          },
+          "r2": {
+            "item": "Dung dịch mạ",
+            "device": "Máy thử Hull cell",
+            "criteria": "Thử Hull cell để kiểm tra dung dịch mạ."
+          },
+          "r3": {
+            "item": "Độ dày lớp mạ",
+            "device": "Máy đo độ dày lớp mạ APC-100",
+            "criteria": "Đo độ dày lớp mạ, đối chiếu yêu cầu bản vẽ."
+          },
+          "r4": {
+            "item": "Chống ăn mòn (trung tính)",
+            "device": "Máy phun muối trung tính NSS",
+            "criteria": "Thử phun muối trung tính theo yêu cầu của khách hàng."
+          },
+          "r5": {
+            "item": "Chống ăn mòn (axit)",
+            "device": "Máy phun muối axit CASS",
+            "criteria": "Thử phun muối axit CASS khi khách hàng yêu cầu."
+          }
+        },
+        "DetailGallery": {
+          "heading": "Hình ảnh tại nhà máy",
+          "subtitle": "Nhà máy HANIN, lô 49G KCN Quang Minh",
+          "line": {
+            "alt": "Khu vực mạ tại nhà máy HANIN",
+            "tag": "Khu vực mạ",
+            "title": "Khu vực mạ",
+            "desc": "Dây chuyền mạ tại nhà máy HANIN, KCN Quang Minh."
+          },
+          "surface": {
+            "alt": "Khu vực sản xuất của nhà máy HANIN",
+            "tag": "Sản xuất",
+            "title": "Khu vực sản xuất",
+            "desc": "Nhà máy có mặt bằng 2.230 m²."
+          },
+          "prep": {
+            "alt": "Khu vực kho và phân tích của nhà máy HANIN",
+            "tag": "Kho và phân tích",
+            "title": "Kho và phòng phân tích",
+            "desc": "Nhập hàng, lưu kho và phân tích hóa chất trước khi đưa vào dây chuyền."
+          }
+        },
+        "RfqFormDetail": {
+          "heading": "Gửi yêu cầu mạ niken trên nền kim loại",
+          "subtitle": "Bộ phận kỹ thuật HANIN sẽ phản hồi về báo giá và kế hoạch mạ mẫu.",
+          "hotlineLabel": "Hotline kỹ thuật:",
+          "submitAlert": "Yêu cầu báo giá mạ niken trên nền kim loại đã được gửi đến bộ phận kỹ thuật HANIN.",
+          "companyLabel": "Tên doanh nghiệp",
+          "companyPlaceholder": "VD: Công ty TNHH ABC",
+          "contactLabel": "Người liên hệ",
+          "contactPlaceholder": "VD: Nguyễn Văn A, phụ trách mua hàng",
+          "emailLabel": "Email nhận báo giá",
+          "substrateLabel": "Vật liệu nền",
+          "substrateOptions": {
+            "carbonSteel": "Sắt, thép",
+            "alloySteel": "Thép hợp kim",
+            "stainless": "Inox",
+            "aluminum": "Nhôm",
+            "copper": "Đồng, đồng thau",
+            "castIron": "Gang"
+          },
+          "phosLabel": "Loại mạ yêu cầu",
+          "phosOptions": {
+            "high": "Niken Crom trên nhựa ABS",
+            "medium": "Niken trên nền kim loại",
+            "low": "Mạ kẽm, đồng, thiếc hoặc phốt phát đen",
+            "consult": "Cần HANIN tư vấn theo sản phẩm"
+          },
+          "thicknessLabel": "Yêu cầu độ dày lớp mạ",
+          "thicknessPlaceholder": "VD: theo bản vẽ",
+          "volumeLabel": "Sản lượng dự kiến",
+          "volumePlaceholder": "VD: 5.000 chiếc/tháng (hoặc mẫu thử)",
+          "notesLabel": "Ghi chú kỹ thuật (vị trí cần che, màu sắc, tiêu chuẩn thử nghiệm)",
+          "notesPlaceholder": "Ghi rõ vị trí cần che, màu sắc hoặc độ bóng mong muốn, yêu cầu thử phun muối...",
+          "attachTitle": "Đính kèm bản vẽ 2D / 3D",
+          "attachDesc": "Định dạng: STEP, IGES, DWG, PDF (tối đa 50MB)",
+          "chooseFile": "CHỌN TỆP BẢN VẼ",
+          "ndaNote": "Bản vẽ chỉ được dùng để báo giá và tư vấn kỹ thuật.",
+          "submitButton": "GỬI YÊU CẦU BÁO GIÁ MẠ NIKEN TRÊN NỀN KIM LOẠI",
           "submitError": "Không gửi được yêu cầu. Vui lòng kiểm tra thông tin/tệp đính kèm và thử lại."
         }
       },
       "ma-kem-hop-kim-kem-niken": {
         "DetailHero": {
-          "title": "Mạ kẽm và hợp kim kẽm-niken",
-          "titleEn": "(Zinc and Zinc-Nickel Plating, Zn-Ni)",
-          "subtitle": "Lớp mạ kẽm và kẽm-niken bảo vệ cathodic hy sinh cho chi tiết thép, thụ động hóa crom hóa trị 3, chống ăn mòn muối cho cụm chi tiết ô tô và công nghiệp.",
-          "phos": {
-            "label": "Niken trong hợp kim Zn-Ni",
-            "note": "Hệ Zn-Ni điển hình",
-            "value": "12–15%"
+          "stat1": {
+            "label": "Phốt phát mangan đen",
+            "value": "Chống gỉ, bền màu"
           },
-          "hardness": {
-            "label": "Độ dày lớp mạ thường dùng",
-            "note": "Tùy yêu cầu bản vẽ",
-            "value": "5–25 µm"
+          "stat2": {
+            "label": "Mạ thiếc",
+            "value": "Bu lông, đai ốc, đầu cos"
           },
-          "saltSpray": {
-            "label": "Chịu phun muối",
-            "unit": "giờ",
-            "note": "ASTM B117, tùy hệ thụ động",
-            "value": "Đến 1.500"
+          "stat3": {
+            "label": "Mạ kẽm",
+            "value": "Vít, ống lót, chốt"
           },
-          "tolerance": {
-            "label": "Lớp thụ động hóa",
-            "note": "Không chứa crom hóa trị 6",
-            "value": "Cr(III)"
+          "stat4": {
+            "label": "Mạ quay",
+            "value": "3.000–5.000 kg/ngày"
           },
           "ctaPrimary": "YÊU CẦU BÁO GIÁ",
-          "ctaSecondary": "TẢI THÔNG SỐ KỸ THUẬT",
-          "verifyLabel": "Mỗi lô có hồ sơ kiểm tra kèm theo",
-          "imageAlt": "Chi tiết thép sau khi mạ kẽm-niken và thụ động hóa",
-          "xrfLabel": "Đo độ dày bằng XRF",
-          "roughnessLabel": "Ngoại quan lớp thụ động",
-          "coatingLabel": "Lớp phủ: hợp kim kẽm-niken",
-          "imageCaption": "Chi tiết thép sau khi mạ kẽm-niken và thụ động hóa crom hóa trị 3."
+          "ctaSecondary": "LIÊN HỆ TƯ VẤN KỸ THUẬT"
         },
         "DetailOverview": {
-          "heading": "Nguyên lý và phạm vi ứng dụng",
-          "complianceLabel": "Thụ động hóa Cr(III), không dùng crom hóa trị 6",
+          "heading": "Các lớp mạ và phạm vi ứng dụng",
           "col1": {
-            "title": "Cơ chế bảo vệ",
-            "p1": "Kẽm có điện thế âm hơn thép nên bị ăn mòn trước, giữ cho nền thép không gỉ. Hợp kim kẽm-niken tạo lớp bảo vệ",
-            "p1Strong": "cathodic hy sinh",
-            "p2": "Niken làm lớp mạ ăn mòn chậm hơn kẽm thuần, kéo dài thời gian bảo vệ. Lớp thụ động hóa phủ lên trên tăng khả năng chống muối.",
-            "formula": "Zn²⁺ + 2e⁻ → Zn · Ni²⁺ + 2e⁻ → Ni (đồng lắng đọng)"
+            "title": "Các lớp mạ và xử lý",
+            "p1": "HANIN mạ kẽm, mạ đồng, mạ thiếc và xử lý phốt phát mangan đen cho chi tiết kim loại nhỏ. Lớp phốt phát mangan đen",
+            "p1Strong": "chống gỉ sét, tăng độ bám dính và bền màu",
+            "p2": "Mạ kẽm và phốt phát mangan đen chạy được trên cả dây chuyền mạ treo bán tự động và mạ quay."
           },
           "col2": {
-            "title": "Phạm vi ứng dụng",
-            "intro": "Dùng cho chi tiết thép cần chống ăn mòn khí quyển, muối hoặc nhiệt độ cao:",
-            "item1Strong": "Ô tô:",
-            "item1": "Chi tiết khoang động cơ, cụm phanh, kẹp ống.",
-            "item2Strong": "Bulông và ốc vít:",
-            "item2": "Chi tiết liên kết cần chống gỉ đỏ lâu dài.",
-            "item3Strong": "Cơ khí và công nghiệp:",
-            "item3": "Giá đỡ, khung, chi tiết dập làm việc ngoài trời."
+            "title": "Sản phẩm tiêu biểu",
+            "intro": "Một số chi tiết đã xử lý tại nhà máy:",
+            "item1Strong": "Phốt phát đen:",
+            "item1": "Vít, bu lông, nắp che, bản mã.",
+            "item2Strong": "Mạ thiếc:",
+            "item2": "Bu lông, thanh kim loại, đai ốc, đinh tán, đầu cos.",
+            "item3Strong": "Mạ kẽm:",
+            "item3": "Tấm kim loại, ống lót, chốt trục, vít, trục định vị."
           },
           "col3": {
             "title": "Vật liệu nền",
-            "intro": "Sau tiền xử lý, mạ kẽm và kẽm-niken áp dụng cho:",
+            "intro": "Các nền kim loại thường xử lý:",
             "substrates": {
-              "alloySteel": "Thép hợp kim, thép cường độ cao (cần khử giòn hydro)",
-              "carbonSteel": "Thép cacbon: S45C, S50C, SS400",
-              "stainless": "Inox: cần hoạt hóa riêng, báo trước khi mạ",
-              "aluminum": "Nhôm: xử lý riêng, trao đổi với kỹ sư HANIN",
-              "brass": "Đồng thau và đồng đỏ: mạ qua tiền xử lý",
-              "ductileIron": "Gang đúc, gang cầu: cần hoạt hóa riêng"
+              "m1": "Sắt",
+              "m2": "Thép",
+              "m3": "Đồng",
+              "m4": "Nhôm"
             }
           }
         },
         "DetailProcess": {
-          "heading": "Quy trình mạ kẽm-niken 6 bước",
-          "subtitle": "Mỗi mẻ được theo dõi theo thông số của từng bước",
-          "stepLabel": "BƯỚC",
+          "heading": "Các bước chính",
+          "subtitle": "Rút gọn từ quy trình thực tế tại nhà máy",
           "s1": {
             "title": "Tẩy dầu",
-            "desc": "Tẩy dầu hóa học và điện phân để loại dầu gia công và bụi bẩn khỏi bề mặt.",
-            "note": "Kiểm tra bằng thử màng nước"
+            "desc": "Hàng mạ quay qua máy rung và tẩy dầu; hàng mạ treo tẩy dầu rồi vắt khô."
           },
           "s2": {
-            "title": "Tẩy gỉ và hoạt hóa",
-            "desc": "Tẩy gỉ bằng axit rồi hoạt hóa bề mặt để lớp mạ bám đều trên nền thép.",
-            "note": "Rửa sạch giữa các bước"
+            "title": "Tẩy axit và hoạt hóa",
+            "desc": "Xử lý axit và hoạt hóa bề mặt, rửa nước giữa các bước."
           },
           "s3": {
-            "title": "Mạ Zn-Ni",
-            "desc": "Mạ điện phân trong bể kẽm-niken, kiểm soát mật độ dòng điện và thành phần niken.",
-            "note": "Theo độ dày bản vẽ"
+            "title": "Mạ kẽm, đồng hoặc thiếc",
+            "desc": "Mạ lớp kẽm, đồng hoặc thiếc theo yêu cầu của chi tiết."
           },
           "s4": {
-            "title": "Khử giòn hydro",
-            "desc": "Sấy chi tiết thép cường độ cao sau mạ để thoát hydro hấp thụ trong quá trình mạ.",
-            "note": "Nhiệt độ và thời gian theo bản vẽ"
+            "title": "Phốt phát mangan đen",
+            "desc": "Xử lý phốt phát mangan đen cho chi tiết cần chống gỉ, bền màu."
           },
           "s5": {
-            "title": "Thụ động hóa Cr(III)",
-            "desc": "Nhúng bể crom hóa trị 3 tạo màng thụ động, có thể phủ kín thêm để tăng chống muối.",
-            "note": "Màu theo yêu cầu khách"
+            "title": "Bể bảo vệ, sấy khô",
+            "desc": "Qua bể bảo vệ rồi sấy khô."
           },
           "s6": {
-            "title": "Kiểm tra và đóng gói",
-            "desc": "Đo độ dày bằng XRF, kiểm tra ngoại quan theo lô, đóng gói chống va chạm và ẩm.",
-            "note": "Kèm hồ sơ kiểm tra lô"
-          }
+            "title": "Đo độ dày, thử và đóng gói",
+            "desc": "Đo độ dày lớp mạ, kiểm tra thành phẩm rồi đóng gói."
+          },
+          "stepLabel": "BƯỚC"
         },
         "DetailCapability": {
-          "imageAlt": "Bể mạ và khu vực dây chuyền tại nhà máy HANIN",
-          "lineCapacityLabel": "Loại dây chuyền",
-          "lineCapacityValue": "Mạ treo và mạ quay",
-          "tankSizeLabel": "Kích thước bể tối đa",
-          "heading": "Bể mạ và kiểm soát dung dịch",
-          "subtitle": "Bể mạ chịu hóa chất, lọc tuần hoàn. Thành phần dung dịch, nhiệt độ và mật độ dòng điện được kiểm soát để giữ tỷ lệ niken ổn định trong lớp mạ.",
-          "dosing": {
-            "title": "Bổ sung hóa chất theo phân tích:",
-            "desc": "Phân tích định kỳ nồng độ kẽm, niken và phụ gia, bổ sung để giữ thành phần lớp mạ ổn định."
+          "imageAlt": "Khu vực sản xuất tại nhà máy HANIN",
+          "lineCapacityLabel": "Mạ quay",
+          "lineCapacityValue": "3.000–5.000 kg/ngày",
+          "tankSizeLabel": "Mạ treo bán tự động",
+          "tankSizeValue": "10.000–20.000 sp/ngày",
+          "heading": "Dây chuyền mạ quay và mạ treo",
+          "subtitle": "Chi tiết nhỏ chạy trên dây chuyền mạ quay; chi tiết mạ treo chạy trên dây chuyền bán tự động.",
+          "f1": {
+            "title": "Máy rung và tẩy dầu:",
+            "desc": "Làm sạch hàng mạ quay trước khi vào bể."
           },
-          "crane": {
-            "title": "Mạ treo và mạ quay:",
-            "desc": "Chi tiết lớn mạ treo trên giá, bulông và chi tiết nhỏ mạ quay trong thùng quay."
+          "f2": {
+            "title": "Bể mạ đồng và bể mạ niken:",
+            "desc": "Có sẵn trên dây chuyền mạ quay."
           },
-          "filtration": {
-            "title": "Lọc tuần hoàn dung dịch:",
-            "desc": "Lọc liên tục để giữ cặn ra khỏi bể, hạn chế hạt bám và bề mặt thô."
-          },
-          "tankSizeValue": "Theo bản vẽ"
+          "f3": {
+            "title": "Công suất mạ quay:",
+            "desc": "3.000–5.000 kg mỗi ngày, tương đương 10.000–30.000 sản phẩm."
+          }
         },
         "DetailApplications": {
-          "heading": "Chi tiết mạ kẽm-niken tại HANIN",
-          "subtitle": "Các ngành sử dụng",
-          "oilGas": {
-            "tag": "Ô tô",
-            "title": "Chi tiết khoang động cơ và cụm phanh",
-            "desc": "Zn-Ni chịu nhiệt tốt hơn kẽm thuần, phù hợp chi tiết gần động cơ và hệ thống phanh.",
-            "thickness": "Độ dày thường dùng: 8–15 µm"
+          "heading": "Chi tiết xử lý tại HANIN",
+          "subtitle": "Các nhóm sản phẩm",
+          "a1": {
+            "tag": "Phốt phát đen",
+            "title": "Vít, bu lông, nắp che",
+            "desc": "Vít, bu lông, nắp che, bản mã.",
+            "note": "Chống gỉ sét, bền màu"
           },
-          "mold": {
-            "tag": "Bulông và ốc vít",
-            "title": "Bulông, đai ốc, kẹp ống",
-            "desc": "Chống gỉ đỏ lâu dài; chi tiết thép cường độ cao cần khử giòn hydro sau mạ.",
-            "thickness": "Độ dày thường dùng: 5–12 µm"
+          "a2": {
+            "tag": "Mạ thiếc",
+            "title": "Đai ốc, đinh tán",
+            "desc": "Bu lông, thanh kim loại, đai ốc, đinh tán.",
+            "note": "Mạ thiếc"
           },
-          "electronics": {
-            "tag": "Điện và viễn thông",
-            "title": "Vỏ tủ, giá đỡ, chi tiết đấu nối",
-            "desc": "Mạ kẽm trên thép tấm và chi tiết dập, thụ động hóa để chống gỉ trong nhà và ngoài trời.",
-            "thickness": "Độ dày thường dùng: 5–12 µm"
+          "a3": {
+            "tag": "Mạ kẽm",
+            "title": "Ống lót, chốt trục",
+            "desc": "Tấm kim loại, ống lót, chốt trục, vít, trục định vị.",
+            "note": "Mạ kẽm"
           },
-          "automotive": {
-            "tag": "Cơ khí và xây dựng",
-            "title": "Giá đỡ, khung và chi tiết dập",
-            "desc": "Chống ăn mòn khí quyển cho chi tiết làm việc ngoài trời, có thể làm lớp lót trước khi sơn.",
-            "thickness": "Độ dày thường dùng: 8–25 µm"
+          "a4": {
+            "tag": "Chi tiết điện",
+            "title": "Đầu cos",
+            "desc": "Đầu cos mạ thiếc.",
+            "note": "Mạ thiếc"
           }
         },
         "DetailQaTable": {
-          "heading": "Kiểm soát chất lượng lớp mạ kẽm-niken",
-          "subtitle": "Dữ liệu kiểm tra của từng lô được lưu lại",
           "colItem": "Hạng mục kiểm tra",
-          "colDevice": "Thiết bị và tiêu chuẩn",
-          "colStandard": "Tiêu chuẩn áp dụng",
-          "colCriteria": "Tiêu chí đạt",
-          "colFrequency": "Tần suất kiểm tra",
-          "thickness": {
+          "colDevice": "Thiết bị",
+          "colCriteria": "Nội dung kiểm tra",
+          "heading": "Kiểm soát chất lượng lớp mạ",
+          "subtitle": "Thiết bị kiểm tra của nhà máy HANIN",
+          "r1": {
+            "item": "Dung dịch và hóa chất",
+            "device": "Phòng phân tích và hóa chất phân tích",
+            "criteria": "Phân tích thành phần dung dịch, hóa chất trước khi đưa vào sản xuất."
+          },
+          "r2": {
+            "item": "Dung dịch mạ",
+            "device": "Máy thử Hull cell",
+            "criteria": "Thử Hull cell để kiểm tra dung dịch mạ."
+          },
+          "r3": {
             "item": "Độ dày lớp mạ",
-            "device": "Máy đo huỳnh quang tia X (XRF), ISO 3497",
-            "criteria": "Theo bản vẽ",
-            "frequency": "Lấy mẫu theo lô"
+            "device": "Máy đo độ dày lớp mạ APC-100",
+            "criteria": "Đo độ dày lớp mạ, đối chiếu yêu cầu bản vẽ."
           },
-          "microhardness": {
-            "item": "Hàm lượng niken trong lớp mạ",
-            "device": "Máy XRF phân tích hợp kim",
-            "criteria": "Theo yêu cầu bản vẽ",
-            "frequency": "Lấy mẫu theo lô"
+          "r4": {
+            "item": "Chống ăn mòn (trung tính)",
+            "device": "Máy phun muối trung tính NSS",
+            "criteria": "Thử phun muối trung tính theo yêu cầu của khách hàng."
           },
-          "saltSpray": {
-            "item": "Khả năng chịu phun muối",
-            "device": "Buồng phun muối trung tính, ASTM B117 / ISO 9227",
-            "criteria": "Đạt theo giờ thử quy định",
-            "frequency": "Theo yêu cầu khách"
-          },
-          "adhesion": {
-            "item": "Độ bám dính lớp mạ",
-            "device": "Thử uốn và thử bám dính, ASTM B571",
-            "criteria": "Lớp mạ không bong, không tách lớp",
-            "frequency": "Mẫu thử kèm theo lô"
-          },
-          "porosity": {
-            "item": "Ngoại quan và lớp thụ động",
-            "device": "Kiểm tra bằng mắt dưới ánh sáng chuẩn",
-            "criteria": "Theo mẫu chuẩn của khách",
-            "frequency": "Kiểm tra từng lô"
+          "r5": {
+            "item": "Chống ăn mòn (axit)",
+            "device": "Máy phun muối axit CASS",
+            "criteria": "Thử phun muối axit CASS khi khách hàng yêu cầu."
           }
         },
         "DetailGallery": {
-          "heading": "Dây chuyền và chi tiết sau khi mạ",
+          "heading": "Hình ảnh tại nhà máy",
           "subtitle": "Nhà máy HANIN, lô 49G KCN Quang Minh",
           "line": {
-            "alt": "Khu vực bể mạ tại nhà máy HANIN",
-            "tag": "Bể mạ",
-            "title": "Khu vực bể mạ",
-            "desc": "Các bể mạ và bể rửa được bố trí theo thứ tự công đoạn."
+            "alt": "Khu vực mạ tại nhà máy HANIN",
+            "tag": "Khu vực mạ",
+            "title": "Khu vực mạ",
+            "desc": "Dây chuyền mạ tại nhà máy HANIN, KCN Quang Minh."
           },
           "surface": {
-            "alt": "Chi tiết kim loại sau khi mạ",
-            "tag": "Chi tiết sau khi mạ",
-            "title": "Bề mặt sau mạ",
-            "desc": "Chi tiết được kiểm tra ngoại quan và độ dày trước khi đóng gói."
+            "alt": "Khu vực sản xuất của nhà máy HANIN",
+            "tag": "Sản xuất",
+            "title": "Khu vực sản xuất",
+            "desc": "Nhà máy có mặt bằng 2.230 m²."
           },
           "prep": {
-            "alt": "Khu vực chuẩn bị chi tiết trước khi mạ",
-            "tag": "Chuẩn bị chi tiết",
-            "title": "Khu vực chuẩn bị",
-            "desc": "Chi tiết được kiểm tra, treo hoặc cho vào thùng quay trước khi vào dây chuyền."
+            "alt": "Khu vực kho và phân tích của nhà máy HANIN",
+            "tag": "Kho và phân tích",
+            "title": "Kho và phòng phân tích",
+            "desc": "Nhập hàng, lưu kho và phân tích hóa chất trước khi đưa vào dây chuyền."
           }
         },
         "RfqFormDetail": {
-          "heading": "Gửi thông số và yêu cầu mạ kẽm, kẽm-niken",
+          "heading": "Gửi yêu cầu mạ kẽm, đồng, thiếc, phốt phát đen",
           "subtitle": "Bộ phận kỹ thuật HANIN sẽ phản hồi về báo giá và kế hoạch mạ mẫu.",
           "hotlineLabel": "Hotline kỹ thuật:",
-          "submitAlert": "Yêu cầu báo giá mạ kẽm-niken đã được gửi đến bộ phận kỹ thuật HANIN.",
+          "submitAlert": "Yêu cầu báo giá mạ kẽm, đồng, thiếc, phốt phát đen đã được gửi đến bộ phận kỹ thuật HANIN.",
           "companyLabel": "Tên doanh nghiệp",
-          "companyPlaceholder": "VD: Công ty TNHH Cơ khí ABC",
+          "companyPlaceholder": "VD: Công ty TNHH ABC",
           "contactLabel": "Người liên hệ",
-          "contactPlaceholder": "VD: Nguyễn Văn A, kỹ sư phụ trách",
+          "contactPlaceholder": "VD: Nguyễn Văn A, phụ trách mua hàng",
           "emailLabel": "Email nhận báo giá",
           "substrateLabel": "Vật liệu nền",
           "substrateOptions": {
-            "carbonSteel": "Thép cacbon (S45C, S50C, SS400)",
-            "alloySteel": "Thép hợp kim (SCM440, SKD11, SUJ2)",
-            "stainless": "Thép không gỉ (SUS304, SUS316, SUS420)",
-            "aluminum": "Hợp kim nhôm (A6061-T6, A7075)",
-            "copper": "Đồng / đồng thau",
-            "castIron": "Gang đúc / gang cầu FCD"
+            "carbonSteel": "Sắt, thép",
+            "alloySteel": "Thép hợp kim",
+            "stainless": "Inox",
+            "aluminum": "Nhôm",
+            "copper": "Đồng, đồng thau",
+            "castIron": "Gang"
           },
-          "phosLabel": "Mục đích lớp mạ",
+          "phosLabel": "Loại mạ yêu cầu",
           "phosOptions": {
-            "high": "Chống ăn mòn muối (kẽm-niken)",
-            "medium": "Chống gỉ thông thường (kẽm)",
-            "low": "Lớp lót trước khi sơn hoặc phủ",
-            "consult": "Cần kỹ sư HANIN tư vấn theo ứng dụng"
+            "high": "Niken Crom trên nhựa ABS",
+            "medium": "Niken trên nền kim loại",
+            "low": "Mạ kẽm, đồng, thiếc hoặc phốt phát đen",
+            "consult": "Cần HANIN tư vấn theo sản phẩm"
           },
-          "thicknessLabel": "Chiều dày lớp mạ (µm)",
-          "thicknessPlaceholder": "VD: 8–12 µm",
+          "thicknessLabel": "Yêu cầu độ dày lớp mạ",
+          "thicknessPlaceholder": "VD: theo bản vẽ",
           "volumeLabel": "Sản lượng dự kiến",
-          "volumePlaceholder": "VD: 2,500 chiếc/tháng (hoặc mẫu thử)",
-          "notesLabel": "Ghi chú kỹ thuật (màu thụ động, khử giòn hydro, thử phun muối)",
-          "notesPlaceholder": "Ghi rõ màu lớp thụ động, yêu cầu khử giòn hydro hoặc số giờ thử phun muối ASTM B117...",
+          "volumePlaceholder": "VD: 5.000 chiếc/tháng (hoặc mẫu thử)",
+          "notesLabel": "Ghi chú kỹ thuật (vị trí cần che, màu sắc, tiêu chuẩn thử nghiệm)",
+          "notesPlaceholder": "Ghi rõ vị trí cần che, màu sắc hoặc độ bóng mong muốn, yêu cầu thử phun muối...",
           "attachTitle": "Đính kèm bản vẽ 2D / 3D",
           "attachDesc": "Định dạng: STEP, IGES, DWG, PDF (tối đa 50MB)",
           "chooseFile": "CHỌN TỆP BẢN VẼ",
-          "ndaNote": "Bản vẽ được bảo mật theo thỏa thuận NDA.",
-          "submitButton": "GỬI YÊU CẦU BÁO GIÁ MẠ KẼM-NIKEN",
+          "ndaNote": "Bản vẽ chỉ được dùng để báo giá và tư vấn kỹ thuật.",
+          "submitButton": "GỬI YÊU CẦU BÁO GIÁ MẠ KẼM, ĐỒNG, THIẾC, PHỐT PHÁT ĐEN",
           "submitError": "Không gửi được yêu cầu. Vui lòng kiểm tra thông tin/tệp đính kèm và thử lại."
         }
       },
       "day-chuyen-son-ma-ket-hop": {
         "DetailHero": {
-          "title": "Dây chuyền sơn và mạ kết hợp",
-          "titleEn": "(Painting & Plating Duplex Line)",
-          "subtitle": "Mạ lớp nền kẽm hoặc phốt phát hóa rồi phun sơn tĩnh điện và sấy đóng rắn, để màng sơn bám chắc và chống ăn mòn tốt hơn khi dùng ngoài trời hoặc ven biển.",
-          "phos": {
-            "label": "Lớp nền",
-            "note": "Mạ kẽm hoặc phốt phát hóa",
-            "value": "Zn / phốt phát"
+          "stat1": {
+            "label": "Phòng phun thủ công",
+            "value": "2 phòng"
           },
-          "hardness": {
-            "label": "Lớp phủ ngoài",
-            "note": "Sơn tĩnh điện, sấy đóng rắn",
-            "value": "Sơn bột"
+          "stat2": {
+            "label": "Phòng phun 6 trụ",
+            "value": "3 phòng"
           },
-          "saltSpray": {
-            "label": "Thử phun muối",
-            "note": "ASTM B117 hoặc ISO 9227",
-            "value": "Theo yêu cầu",
-            "unit": ""
+          "stat3": {
+            "label": "Phun sơn tự động",
+            "value": "1 dây chuyền"
           },
-          "tolerance": {
-            "label": "Độ bám dính",
-            "note": "Thử cắt ô lưới (ISO 2409)",
-            "value": "Theo bản vẽ"
+          "stat4": {
+            "label": "Buồng ionizer",
+            "value": "20 buồng"
           },
           "ctaPrimary": "YÊU CẦU BÁO GIÁ",
-          "ctaSecondary": "TẢI THÔNG SỐ KỸ THUẬT",
-          "verifyLabel": "Dữ liệu kiểm tra của từng lô được lưu lại",
-          "imageAlt": "Chi tiết kim loại sau khi mạ lớp nền và sơn phủ",
-          "xrfLabel": "Đo độ dày lớp nền và màng sơn",
-          "roughnessLabel": "Kiểm tra ngoại quan sau sơn",
-          "coatingLabel": "Lớp phủ: mạ nền và sơn tĩnh điện",
-          "imageCaption": "Chi tiết thép sau khi mạ lớp nền và sơn phủ."
+          "ctaSecondary": "LIÊN HỆ TƯ VẤN KỸ THUẬT"
         },
         "DetailOverview": {
-          "heading": "Nguyên lý và phạm vi ứng dụng",
-          "complianceLabel": "Phù hợp RoHS và REACH khi dùng hệ lớp nền không chứa chì và cadmium",
+          "heading": "Phạm vi dịch vụ sơn và in",
           "col1": {
-            "title": "Cơ chế bảo vệ kép",
-            "p1": "Lớp nền mạ kẽm hoặc phốt phát hóa bảo vệ thép và tạo bề mặt nhám vi mô. Bột sơn tích điện bám lên chi tiết nối đất rồi",
-            "p1Strong": "chảy và đóng rắn khi sấy",
-            "p2": "Nếu màng sơn trầy xước, lớp kẽm bên dưới vẫn hạn chế gỉ lan dưới màng.",
-            "formula": "Zn²⁺ + 2e⁻ → Zn (lớp nền) · bột sơn nóng chảy, đóng rắn thành màng liên tục"
+            "title": "Sơn và in trên nhựa, kim loại",
+            "p1": "Ngoài mạ, HANIN nhận sơn và in trên sản phẩm nhựa và kim loại, gồm",
+            "p1Strong": "sơn spray, in và laser cutting",
+            "p2": "Sản phẩm được phun trong các phòng sơn có buồng ionizer và được kiểm tra độ tin cậy bằng 10 loại thiết bị sau khi phun."
           },
           "col2": {
-            "title": "Phạm vi ứng dụng",
-            "intro": "Dùng cho chi tiết thép cần cả độ bền ăn mòn và màu sắc hoàn thiện:",
-            "item1Strong": "Ngoài trời và ven biển:",
-            "item1": "Giá đỡ, khung, phụ kiện lắp đặt ngoài trời.",
-            "item2Strong": "Kết cấu và thiết bị:",
-            "item2": "Vỏ tủ, khung máy, chi tiết thép gia công.",
-            "item3Strong": "Ô tô và xe máy:",
-            "item3": "Giá đỡ, chi tiết gầm, phụ kiện thân xe."
+            "title": "Sản phẩm tiêu biểu",
+            "intro": "Một số sản phẩm đã sơn và in tại nhà máy:",
+            "item1Strong": "Linh kiện đèn ô tô:",
+            "item1": "Holder sơn spray.",
+            "item2Strong": "Khung màn hình:",
+            "item2": "Sơn và in.",
+            "item3Strong": "Bảng điều khiển:",
+            "item3": "Sơn và in."
           },
           "col3": {
             "title": "Vật liệu nền",
-            "intro": "Hệ nền kẽm và sơn thích hợp nhất với thép:",
+            "intro": "Nền được sơn và in:",
             "substrates": {
-              "alloySteel": "Thép hợp kim: khử giòn hydro nếu độ bền cao",
-              "carbonSteel": "Thép cacbon: nền phổ biến nhất",
-              "stainless": "Inox: xem xét riêng theo bản vẽ",
-              "aluminum": "Hợp kim nhôm: xử lý nền riêng trước khi sơn",
-              "brass": "Đồng thau: xem xét riêng theo bản vẽ",
-              "ductileIron": "Gang cầu: xử lý nền riêng theo bản vẽ"
+              "m1": "Sản phẩm nhựa",
+              "m2": "Sản phẩm kim loại"
             }
           }
         },
         "DetailProcess": {
-          "heading": "Quy trình sơn và mạ kết hợp 6 bước",
-          "subtitle": "Mỗi mẻ được theo dõi theo từng bước",
-          "stepLabel": "BƯỚC",
+          "heading": "Các bước sơn và kiểm tra",
+          "subtitle": "Chọn phòng phun theo từng sản phẩm",
           "s1": {
-            "title": "Tẩy dầu và làm sạch",
-            "desc": "Loại dầu, mỡ và cặn gia công khỏi bề mặt bằng hóa chất tẩy dầu và rửa.",
-            "note": "Kiểm tra bằng thử màng nước"
+            "title": "Chọn phương án phun",
+            "desc": "Chọn phòng phun thủ công, phòng 6 trụ hoặc dây chuyền tự động theo sản phẩm."
           },
           "s2": {
-            "title": "Tẩy gỉ và hoạt hóa",
-            "desc": "Tẩy gỉ, lớp oxit bằng axit rồi hoạt hóa để lớp mạ bám đều.",
-            "note": "Thời gian theo tình trạng bề mặt"
+            "title": "Phun sơn spray",
+            "desc": "Phun sơn trong phòng có buồng ionizer."
           },
           "s3": {
-            "title": "Mạ lớp nền",
-            "desc": "Mạ kẽm lên chi tiết để chống ăn mòn và làm nền cho màng sơn.",
-            "note": "Chi tiết cường độ cao: khử giòn hydro"
+            "title": "In và laser cutting",
+            "desc": "In hoặc cắt laser khi sản phẩm yêu cầu."
           },
           "s4": {
-            "title": "Phốt phát hóa và sấy khô",
-            "desc": "Phủ lớp chuyển hóa tăng bám dính, rửa sạch rồi sấy khô hoàn toàn.",
-            "note": "Không để nước đọng trong hốc"
+            "title": "Kiểm tra độ tin cậy",
+            "desc": "Kiểm tra sau phun bằng 10 loại thiết bị: mài mòn, nước nóng, nhiệt ẩm, UV..."
           },
-          "s5": {
-            "title": "Phun sơn tĩnh điện",
-            "desc": "Phun bột sơn tích điện lên chi tiết nối đất, đạt độ dày đều trên bề mặt.",
-            "note": "Che ren và vị trí tiếp địa nếu cần"
-          },
-          "s6": {
-            "title": "Sấy đóng rắn và kiểm tra",
-            "desc": "Sấy trong lò để màng sơn đóng rắn, sau đó kiểm tra ngoại quan và độ bám dính.",
-            "note": "Nhiệt độ và thời gian theo loại bột sơn"
-          }
+          "stepLabel": "BƯỚC"
         },
         "DetailCapability": {
-          "imageAlt": "Dây chuyền bể mạ và khu vực xử lý bề mặt tại nhà máy HANIN",
-          "lineCapacityLabel": "Loại dây chuyền",
-          "lineCapacityValue": "Mạ treo và mạ quay",
-          "tankSizeLabel": "Kích thước chi tiết tối đa",
-          "tankSizeValue": "Theo bản vẽ",
-          "heading": "Kiểm soát lớp nền và sấy đóng rắn",
-          "subtitle": "Chi tiết đi qua bể mạ, bể phốt phát hóa và các bể rửa, được sấy khô rồi mới phun sơn và đưa vào lò sấy đóng rắn.",
-          "dosing": {
-            "title": "Kiểm soát dung dịch:",
-            "desc": "Phân tích định kỳ nồng độ và pH các bể, bổ sung hóa chất để lớp nền ổn định."
+          "imageAlt": "Khu vực sản xuất tại nhà máy HANIN",
+          "lineCapacityLabel": "Phòng phun 6 trụ",
+          "lineCapacityValue": "3 phòng (6 súng)",
+          "tankSizeLabel": "Phun sơn tự động",
+          "tankSizeValue": "1 dây chuyền",
+          "heading": "Phòng phun và dây chuyền sơn",
+          "subtitle": "Các phòng phun thủ công, phòng 6 trụ và dây chuyền tự động cùng làm việc với các buồng ionizer.",
+          "f1": {
+            "title": "Phòng phun thủ công:",
+            "desc": "2 phòng, phun theo từng sản phẩm."
           },
-          "crane": {
-            "title": "Treo giá và mạ quay:",
-            "desc": "Chi tiết được treo hoặc cho vào thùng quay, bố trí để dung dịch tiếp cận mọi mặt cần phủ."
+          "f2": {
+            "title": "Phòng phun 6 trụ:",
+            "desc": "3 phòng, mỗi phòng 6 súng phun."
           },
-          "filtration": {
-            "title": "Rửa và sấy khô trước khi sơn:",
-            "desc": "Rửa nhiều cấp rồi sấy khô, tránh nước và hóa chất dư gây phồng rộp màng sơn."
+          "f3": {
+            "title": "Dây chuyền tự động và ionizer:",
+            "desc": "1 dây chuyền phun sơn tự động và 20 buồng ionizer."
           }
         },
         "DetailApplications": {
-          "heading": "Chi tiết sơn và mạ kết hợp tại HANIN",
-          "subtitle": "Các ngành sử dụng",
-          "oilGas": {
-            "tag": "Ngoài trời và ven biển",
-            "title": "Giá đỡ và phụ kiện lắp đặt",
-            "desc": "Lớp nền kẽm kết hợp sơn tĩnh điện, dùng cho chi tiết chịu mưa, độ ẩm và sương muối.",
-            "thickness": "Độ dày thường dùng: kẽm 8-15 µm, sơn 80-120 µm"
+          "heading": "Sản phẩm sơn và in tại HANIN",
+          "subtitle": "Các nhóm sản phẩm",
+          "a1": {
+            "tag": "Ô tô",
+            "title": "Linh kiện đèn ô tô",
+            "desc": "Holder đèn ô tô sơn spray.",
+            "note": "Sơn spray"
           },
-          "mold": {
-            "tag": "Kết cấu thép và thiết bị",
-            "title": "Khung máy và chi tiết thép",
-            "desc": "Màng sơn đồng màu, có lớp nền bảo vệ ở các cạnh và hốc khó phủ.",
-            "thickness": "Độ dày thường dùng: kẽm 5-12 µm, sơn 60-100 µm"
+          "a2": {
+            "tag": "Điện tử",
+            "title": "Khung màn hình",
+            "desc": "Khung màn hình sơn và in.",
+            "note": "Sơn và in"
           },
-          "electronics": {
-            "tag": "Điện và viễn thông",
-            "title": "Vỏ tủ và giá đỡ thiết bị",
-            "desc": "Chống ăn mòn cho vỏ tủ ngoài trời, màu sơn theo mã RAL của khách hàng.",
-            "thickness": "Độ dày thường dùng: kẽm 5-8 µm, sơn 60-80 µm"
-          },
-          "automotive": {
-            "tag": "Ô tô và xe máy",
-            "title": "Giá đỡ và chi tiết gầm",
-            "desc": "Chi tiết thép dưới gầm xe cần chịu bùn nước và muối đường. Thử phun muối theo yêu cầu khách.",
-            "thickness": "Độ dày thường dùng: kẽm 5-12 µm, sơn 60-100 µm"
+          "a3": {
+            "tag": "Điều khiển",
+            "title": "Bảng điều khiển",
+            "desc": "Bảng điều khiển sơn và in.",
+            "note": "Sơn và in"
           }
         },
         "DetailQaTable": {
-          "heading": "Kiểm soát chất lượng lớp mạ nền và màng sơn",
-          "subtitle": "Dữ liệu kiểm tra của từng lô được lưu lại",
           "colItem": "Hạng mục kiểm tra",
-          "colDevice": "Thiết bị đo",
-          "colStandard": "Tiêu chuẩn áp dụng",
-          "colCriteria": "Tiêu chí đạt",
-          "colFrequency": "Tần suất kiểm tra",
-          "thickness": {
-            "item": "Độ dày lớp kẽm và màng sơn",
-            "device": "XRF cho lớp kẽm (ASTM B568); máy đo từ tính cho màng sơn",
-            "criteria": "Theo bản vẽ",
-            "frequency": "Mẫu theo mẻ"
+          "colDevice": "Thiết bị",
+          "colCriteria": "Nội dung kiểm tra",
+          "heading": "Kiểm tra độ tin cậy sau khi phun sơn",
+          "subtitle": "10 loại thiết bị test của nhà máy",
+          "r1": {
+            "item": "Độ mài mòn",
+            "device": "RCA Tester",
+            "criteria": "Thử mài mòn lớp sơn và in."
           },
-          "microhardness": {
-            "item": "Ngoại quan màng sơn",
-            "device": "Quan sát bằng mắt, so với mẫu màu đã duyệt",
-            "criteria": "Không chảy sơn, rỗ hoặc bong; màu theo mẫu duyệt",
-            "frequency": "Từng lô"
+          "r2": {
+            "item": "Nước nóng, nhiệt ẩm",
+            "device": "Hot Water, High Temp & Humidity",
+            "criteria": "Thử khả năng chịu nước nóng và môi trường nhiệt độ, độ ẩm cao."
           },
-          "saltSpray": {
-            "item": "Khả năng chịu phun muối",
-            "device": "Buồng phun muối NSS, dung dịch 5% NaCl (ASTM B117, ISO 9227)",
-            "criteria": "Đạt theo giờ thử quy định",
-            "frequency": "Theo yêu cầu khách hàng"
+          "r3": {
+            "item": "Tia UV",
+            "device": "UV Measure",
+            "criteria": "Thử ảnh hưởng của tia UV lên lớp sơn."
           },
-          "adhesion": {
-            "item": "Độ bám dính màng sơn",
-            "device": "Thử cắt ô lưới (ISO 2409) hoặc thử kéo đứt",
-            "criteria": "Theo bản vẽ hoặc yêu cầu khách hàng",
-            "frequency": "Mẫu thử kèm theo lô"
+          "r4": {
+            "item": "Chà cồn, chà bút chì",
+            "device": "Alcohol/Eraser Rubbing, Pencil Rubbing",
+            "criteria": "Thử chà cồn, chà tẩy và chà bút chì lên bề mặt sơn."
           },
-          "porosity": {
-            "item": "Độ đóng rắn màng sơn",
-            "device": "Thử chà dung môi",
-            "criteria": "Theo yêu cầu khách hàng",
-            "frequency": "Mẫu thử theo mẻ"
+          "r5": {
+            "item": "Va đập, uốn, độ dày",
+            "device": "Dropping Tester, Bending Tester, Thickness Measure, Polisher",
+            "criteria": "Thử rơi, thử uốn, đo độ dày màng sơn và kiểm tra bề mặt đánh bóng."
           }
         },
         "DetailGallery": {
-          "heading": "Dây chuyền và chi tiết sau khi xử lý",
+          "heading": "Hình ảnh tại nhà máy",
           "subtitle": "Nhà máy HANIN, lô 49G KCN Quang Minh",
           "line": {
-            "alt": "Dây chuyền bể mạ tại nhà máy HANIN",
-            "tag": "Bể mạ",
-            "title": "Dây chuyền bể mạ và rửa",
-            "desc": "Chi tiết đi lần lượt qua các bể mạ và bể rửa trước khi sang khâu sơn."
+            "alt": "Khu vực mạ tại nhà máy HANIN",
+            "tag": "Khu vực mạ",
+            "title": "Khu vực mạ",
+            "desc": "Dây chuyền mạ tại nhà máy HANIN, KCN Quang Minh."
           },
           "surface": {
-            "alt": "Chi tiết kim loại sau khi xử lý bề mặt",
-            "tag": "Chi tiết sau xử lý",
-            "title": "Bề mặt sau xử lý",
-            "desc": "Bề mặt được kiểm tra ngoại quan trước khi giao hoặc chuyển sang công đoạn tiếp theo."
+            "alt": "Khu vực sản xuất của nhà máy HANIN",
+            "tag": "Sản xuất",
+            "title": "Khu vực sản xuất",
+            "desc": "Nhà máy có mặt bằng 2.230 m²."
           },
           "prep": {
-            "alt": "Khu vực chuẩn bị chi tiết trước khi mạ",
-            "tag": "Chuẩn bị chi tiết",
-            "title": "Khu vực chuẩn bị",
-            "desc": "Chi tiết được kiểm tra và treo giá hoặc cho vào thùng quay trước khi vào dây chuyền."
+            "alt": "Khu vực kho và phân tích của nhà máy HANIN",
+            "tag": "Kho và phân tích",
+            "title": "Kho và phòng phân tích",
+            "desc": "Nhập hàng, lưu kho và phân tích hóa chất trước khi đưa vào dây chuyền."
           }
         },
         "RfqFormDetail": {
-          "heading": "Gửi thông số và yêu cầu sơn, mạ kết hợp",
-          "subtitle": "Bộ phận kỹ thuật HANIN sẽ phản hồi về báo giá và kế hoạch chạy mẫu.",
+          "heading": "Gửi yêu cầu phun sơn, in và laser",
+          "subtitle": "Bộ phận kỹ thuật HANIN sẽ phản hồi về báo giá và kế hoạch mạ mẫu.",
           "hotlineLabel": "Hotline kỹ thuật:",
-          "submitAlert": "Yêu cầu báo giá sơn và mạ kết hợp đã được gửi đến bộ phận kỹ thuật HANIN.",
+          "submitAlert": "Yêu cầu báo giá phun sơn, in và laser đã được gửi đến bộ phận kỹ thuật HANIN.",
           "companyLabel": "Tên doanh nghiệp",
-          "companyPlaceholder": "VD: Công ty TNHH Cơ khí ABC",
+          "companyPlaceholder": "VD: Công ty TNHH ABC",
           "contactLabel": "Người liên hệ",
-          "contactPlaceholder": "VD: Nguyễn Văn A, kỹ sư phụ trách",
+          "contactPlaceholder": "VD: Nguyễn Văn A, phụ trách mua hàng",
           "emailLabel": "Email nhận báo giá",
           "substrateLabel": "Vật liệu nền",
           "substrateOptions": {
-            "carbonSteel": "Thép cacbon (S45C, S50C, SS400)",
-            "alloySteel": "Thép hợp kim (SCM440, SKD11, SUJ2)",
-            "stainless": "Thép không gỉ (SUS304, SUS316, SUS420)",
-            "aluminum": "Hợp kim nhôm (A6061-T6, A7075)",
-            "copper": "Đồng / đồng thau",
-            "castIron": "Gang đúc / gang cầu FCD"
+            "carbonSteel": "Sắt, thép",
+            "alloySteel": "Thép hợp kim",
+            "stainless": "Inox",
+            "aluminum": "Nhôm",
+            "copper": "Đồng, đồng thau",
+            "castIron": "Gang"
           },
-          "phosLabel": "Mục đích sử dụng",
+          "phosLabel": "Loại mạ yêu cầu",
           "phosOptions": {
-            "high": "Chống ăn mòn ngoài trời, ven biển",
-            "medium": "Tăng độ bám dính cho màng sơn",
-            "low": "Trang trí, phân biệt màu sắc",
-            "consult": "Cần kỹ sư HANIN tư vấn theo ứng dụng"
+            "high": "Niken Crom trên nhựa ABS",
+            "medium": "Niken trên nền kim loại",
+            "low": "Mạ kẽm, đồng, thiếc hoặc phốt phát đen",
+            "consult": "Cần HANIN tư vấn theo sản phẩm"
           },
-          "thicknessLabel": "Độ dày lớp mạ nền và màng sơn (µm)",
-          "thicknessPlaceholder": "VD: kẽm 8 µm, sơn 80 µm",
+          "thicknessLabel": "Yêu cầu độ dày lớp mạ",
+          "thicknessPlaceholder": "VD: theo bản vẽ",
           "volumeLabel": "Sản lượng dự kiến",
-          "volumePlaceholder": "VD: 2,500 chiếc/tháng (hoặc mẫu thử)",
-          "notesLabel": "Ghi chú kỹ thuật (vị trí cần che, mã màu, tiêu chuẩn thử nghiệm)",
-          "notesPlaceholder": "Ghi rõ vị trí cần che (ren, mặt tiếp địa), mã màu RAL, bề mặt sơn (bóng, mờ, nhám) hoặc yêu cầu thử phun muối ASTM B117...",
+          "volumePlaceholder": "VD: 5.000 chiếc/tháng (hoặc mẫu thử)",
+          "notesLabel": "Ghi chú kỹ thuật (vị trí cần che, màu sắc, tiêu chuẩn thử nghiệm)",
+          "notesPlaceholder": "Ghi rõ vị trí cần che, màu sắc hoặc độ bóng mong muốn, yêu cầu thử phun muối...",
           "attachTitle": "Đính kèm bản vẽ 2D / 3D",
           "attachDesc": "Định dạng: STEP, IGES, DWG, PDF (tối đa 50MB)",
           "chooseFile": "CHỌN TỆP BẢN VẼ",
-          "ndaNote": "Bản vẽ được bảo mật theo thỏa thuận NDA.",
-          "submitButton": "GỬI YÊU CẦU BÁO GIÁ SƠN VÀ MẠ",
+          "ndaNote": "Bản vẽ chỉ được dùng để báo giá và tư vấn kỹ thuật.",
+          "submitButton": "GỬI YÊU CẦU BÁO GIÁ PHUN SƠN, IN VÀ LASER",
           "submitError": "Không gửi được yêu cầu. Vui lòng kiểm tra thông tin/tệp đính kèm và thử lại."
         }
       },
       "xu-ly-nhom-ma-kim-loai-khac": {
         "DetailHero": {
-          "title": "Xử lý nhôm và mạ kim loại khác",
-          "titleEn": "(Anodizing & Specialized Finishing)",
-          "subtitle": "Anode hóa nhôm, anode hóa cứng, mạ đồng, mạ thiếc và thụ động hóa Cr(III) theo bản vẽ của khách.",
-          "phos": {
-            "label": "Độ dày anode cứng",
-            "note": "Anode hóa cứng, theo bản vẽ",
-            "value": "25–75 µm"
+          "stat1": {
+            "label": "Máy PVD",
+            "value": "2 máy"
           },
-          "hardness": {
-            "label": "Độ cứng lớp anode cứng",
-            "note": "Tùy mác hợp kim nhôm",
-            "value": "400–600 HV"
+          "stat2": {
+            "label": "Dây chuyền PVD",
+            "value": "2 dây chuyền"
           },
-          "saltSpray": {
-            "label": "Thụ động hóa",
-            "unit": "",
-            "note": "Gốc crom hóa trị ba",
-            "value": "Cr(III)"
-          },
-          "tolerance": {
-            "label": "Kim loại mạ thêm",
-            "note": "Mạ đồng, mạ thiếc",
-            "value": "Cu · Sn"
+          "stat3": {
+            "label": "Bề mặt",
+            "value": "Thẩm mỹ, bền"
           },
           "ctaPrimary": "YÊU CẦU BÁO GIÁ",
-          "ctaSecondary": "TẢI THÔNG SỐ KỸ THUẬT",
-          "verifyLabel": "Mỗi lô có phiếu kiểm tra kèm theo",
-          "imageAlt": "Chi tiết nhôm sau khi anode hóa",
-          "xrfLabel": "Đo độ dày lớp phủ",
-          "roughnessLabel": "Kiểm tra bề mặt",
-          "coatingLabel": "Lớp phủ: anode hóa hoặc mạ",
-          "imageCaption": "Chi tiết nhôm và đồng sau xử lý bề mặt."
+          "ctaSecondary": "LIÊN HỆ TƯ VẤN KỸ THUẬT"
         },
         "DetailOverview": {
-          "heading": "Nguyên lý và phạm vi ứng dụng",
-          "complianceLabel": "Phù hợp RoHS và REACH (không chì, không cadmium)",
+          "heading": "Mạ chân không PVD",
           "col1": {
-            "title": "Cơ chế phản ứng",
-            "p1": "Anode hóa không phủ thêm kim loại lên nhôm mà",
-            "p1Strong": "oxy hóa chính bề mặt nhôm",
-            "p2": "Chi tiết làm cực dương trong bể axit, màng Al₂O₃ mọc từ nền nên bám chắc; sau đó được bịt lỗ.",
-            "formula": "2Al + 3H₂O → Al₂O₃ + 6H⁺ + 6e⁻ (tại cực dương)"
+            "title": "Mạ chân không là gì",
+            "p1": "PVD (Physical Vapor Deposition) là phương pháp mạ trong buồng chân không,",
+            "p1Strong": "phủ lớp kim loại lên bề mặt chi tiết",
+            "p2": "HANIN dùng PVD cho sản phẩm cần bề mặt thẩm mỹ cao và độ bền tốt. Thông số lớp phủ được trao đổi theo từng sản phẩm."
           },
           "col2": {
-            "title": "Phạm vi ứng dụng",
-            "intro": "Dùng cho chi tiết nhôm cần chống mòn, chống ăn mòn và chi tiết dẫn điện cần mạ:",
-            "item1Strong": "Cơ khí và thủy lực:",
-            "item1": "Piston, xi lanh, đồ gá nhôm cần anode hóa cứng.",
-            "item2Strong": "Điện và điện tử:",
-            "item2": "Thanh dẫn, đầu cốt, tiếp điểm mạ đồng hoặc mạ thiếc.",
-            "item3Strong": "Hoàn thiện bề mặt:",
-            "item3": "Anode hóa nhuộm màu và thụ động hóa Cr(III)."
+            "title": "Năng lực PVD",
+            "intro": "Nhà máy có:",
+            "item1Strong": "2 máy PVD:",
+            "item1": "Mạ chân không theo mẻ.",
+            "item2Strong": "2 dây chuyền PVD:",
+            "item2": "Xử lý chi tiết theo đơn hàng.",
+            "item3Strong": "Bề mặt hoàn thiện:",
+            "item3": "Thẩm mỹ cao, độ bền tốt."
           },
           "col3": {
             "title": "Vật liệu nền",
-            "intro": "Tùy quy trình, xử lý được các vật liệu sau:",
+            "intro": "Nhà máy xử lý mạ trên:",
             "substrates": {
-              "carbonSteel": "Nhôm đúc: màng kém đều hơn, cần trao đổi trước",
-              "alloySteel": "Nhôm 7075, 2024: anode hóa, điều chỉnh quy trình",
-              "stainless": "Thép: mạ đồng làm lớp lót theo bản vẽ",
-              "aluminum": "Nhôm 6061, 6063, 5052: anode hóa",
-              "brass": "Đồng và đồng thau: mạ thiếc, mạ đồng",
-              "ductileIron": "Kim loại khác: trao đổi với kỹ sư HANIN"
+              "m1": "Nền nhựa",
+              "m2": "Nền kim loại"
             }
           }
         },
         "DetailProcess": {
-          "heading": "Quy trình xử lý nhôm và mạ 6 bước",
-          "subtitle": "Mỗi mẻ được theo dõi theo thông số của từng bước",
-          "stepLabel": "BƯỚC",
+          "heading": "Các bước mạ PVD",
+          "subtitle": "Chi tiết từng sản phẩm được trao đổi với khách hàng",
           "s1": {
-            "title": "Tẩy dầu",
-            "desc": "Loại dầu cắt gọt và chất bẩn bằng dung dịch tẩy dầu phù hợp với nền nhôm hoặc đồng.",
-            "note": "Kiểm tra bằng thử màng nước."
+            "title": "Tiếp nhận hàng",
+            "desc": "Nhận hàng, kiểm tra và làm sạch bề mặt trước khi vào máy."
           },
           "s2": {
-            "title": "Ăn mòn nhẹ và tẩy ám",
-            "desc": "Ăn mòn nhẹ để đều bề mặt, sau đó tẩy lớp ám bằng axit trước khi vào bể.",
-            "note": "Thời gian theo mác nhôm."
+            "title": "Đưa hàng vào máy PVD",
+            "desc": "Treo hoặc xếp chi tiết vào buồng chân không."
           },
           "s3": {
-            "title": "Anode hóa hoặc mạ",
-            "desc": "Anode hóa trong bể axit sulfuric, hoặc mạ đồng, mạ thiếc trong bể riêng theo bản vẽ.",
-            "note": "Điện áp, nhiệt độ theo phiếu công nghệ."
+            "title": "Mạ chân không",
+            "desc": "Mạ lớp phủ PVD trên máy hoặc dây chuyền PVD."
           },
           "s4": {
-            "title": "Rửa nhiều cấp",
-            "desc": "Rửa sạch dung dịch dư giữa các công đoạn để không mang hóa chất sang bể sau.",
-            "note": "Rửa tràn nhiều cấp."
+            "title": "Kiểm tra thành phẩm",
+            "desc": "Kiểm tra thành phẩm trước khi giao hàng."
           },
-          "s5": {
-            "title": "Hoàn thiện bề mặt",
-            "desc": "Nhuộm màu, bịt lỗ màng anode hoặc thụ động hóa Cr(III), tùy yêu cầu của khách.",
-            "note": "Chọn theo yêu cầu sử dụng."
-          },
-          "s6": {
-            "title": "Kiểm tra và đóng gói",
-            "desc": "Đo độ dày, kiểm tra ngoại quan rồi đóng gói chống va chạm để không trầy màng.",
-            "note": "Phiếu kiểm tra kèm theo lô."
-          }
+          "stepLabel": "BƯỚC"
         },
         "DetailCapability": {
-          "imageAlt": "Dây chuyền xử lý bề mặt nhôm tại nhà máy HANIN",
-          "lineCapacityLabel": "Loại dây chuyền",
-          "lineCapacityValue": "Mạ treo và mạ quay",
-          "tankSizeLabel": "Kích thước chi tiết tối đa",
-          "tankSizeValue": "Theo bản vẽ",
-          "heading": "Bể xử lý và kiểm soát dung dịch",
-          "subtitle": "Dung dịch từng công đoạn được kiểm soát nồng độ, nhiệt độ và thời gian theo phiếu công nghệ của chi tiết.",
-          "dosing": {
-            "title": "Kiểm soát nhiệt độ và nồng độ:",
-            "desc": "Bể anode hóa giữ nhiệt độ ổn định vì nhiệt độ ảnh hưởng độ cứng màng; nồng độ axit được phân tích định kỳ."
+          "imageAlt": "Khu vực sản xuất tại nhà máy HANIN",
+          "lineCapacityLabel": "Máy PVD",
+          "lineCapacityValue": "2 máy",
+          "tankSizeLabel": "Dây chuyền PVD",
+          "tankSizeValue": "2 dây chuyền",
+          "heading": "Máy và dây chuyền PVD",
+          "subtitle": "Mạ chân không PVD là một dịch vụ riêng của nhà máy HANIN, bên cạnh mạ điện phân và mạ hóa học.",
+          "f1": {
+            "title": "Máy PVD:",
+            "desc": "2 máy mạ chân không."
           },
-          "crane": {
-            "title": "Giá treo và tiếp điểm điện:",
-            "desc": "Chi tiết gá chắc trên giá có tiếp điểm tốt, giúp dòng điện phân bố đều và màng không bị cháy."
+          "f2": {
+            "title": "Dây chuyền PVD:",
+            "desc": "2 dây chuyền xử lý chi tiết theo đơn hàng."
           },
-          "filtration": {
-            "title": "Rửa nhiều cấp giữa các công đoạn:",
-            "desc": "Hạn chế mang dung dịch sang bể sau, đặc biệt trước khi bịt lỗ và thụ động hóa."
+          "f3": {
+            "title": "Phòng phân tích:",
+            "desc": "Hỗ trợ kiểm tra hóa chất và chất lượng của nhà máy."
           }
         },
         "DetailApplications": {
-          "heading": "Chi tiết nhôm và kim loại mạ tại HANIN",
-          "subtitle": "Các ngành sử dụng",
-          "oilGas": {
-            "tag": "Cơ khí và thủy lực",
-            "title": "Piston, xi lanh và thân van nhôm",
-            "desc": "Anode hóa cứng tăng khả năng chống mài mòn và trầy xước cho bề mặt nhôm trượt hoặc tiếp xúc.",
-            "thickness": "Độ dày thường dùng: 25-75 µm"
+          "heading": "Sản phẩm phù hợp mạ PVD",
+          "subtitle": "Liên hệ HANIN để trao đổi từng sản phẩm",
+          "a1": {
+            "tag": "Ô tô",
+            "title": "Chi tiết trang trí ô tô",
+            "desc": "Chi tiết cần bề mặt thẩm mỹ cao và độ bền.",
+            "note": "Mạ chân không PVD"
           },
-          "mold": {
-            "tag": "Tự động hóa và đồ gá",
-            "title": "Đồ gá, tấm đế và chi tiết máy nhôm",
-            "desc": "Màng anode cứng, bề mặt ổn định, hạn chế mòn khi tháo lắp nhiều lần.",
-            "thickness": "Độ dày thường dùng: 10-50 µm"
+          "a2": {
+            "tag": "Thiết bị gia dụng",
+            "title": "Chi tiết thiết bị gia dụng",
+            "desc": "Chi tiết cần bề mặt đẹp và bền.",
+            "note": "Mạ chân không PVD"
           },
-          "electronics": {
-            "tag": "Điện và điện tử",
-            "title": "Thanh dẫn, đầu cốt và tiếp điểm",
-            "desc": "Mạ thiếc hoặc đồng để dẫn điện tốt, giữ khả năng hàn và hạn chế oxy hóa mối nối.",
-            "thickness": "Độ dày thường dùng: 3-10 µm (thiếc)"
-          },
-          "automotive": {
-            "tag": "Ô tô và xe máy",
-            "title": "Chi tiết nhôm và linh kiện mạ",
-            "desc": "Anode hóa hoặc thụ động hóa Cr(III) để chống ăn mòn. Thử phun muối theo yêu cầu khách.",
-            "thickness": "Độ dày thường dùng: màng thụ động dưới 1 µm"
+          "a3": {
+            "tag": "Vệ sinh, nhà bếp",
+            "title": "Phụ kiện vệ sinh, nhà bếp",
+            "desc": "Phụ kiện cần bề mặt thẩm mỹ cao.",
+            "note": "Mạ chân không PVD"
           }
         },
         "DetailQaTable": {
-          "heading": "Kiểm soát chất lượng lớp phủ",
-          "subtitle": "Dữ liệu kiểm tra của từng lô được lưu lại",
           "colItem": "Hạng mục kiểm tra",
-          "colDevice": "Thiết bị đo",
-          "colStandard": "Tiêu chuẩn áp dụng",
-          "colCriteria": "Tiêu chí đạt",
-          "colFrequency": "Tần suất kiểm tra",
-          "thickness": {
-            "item": "Độ dày lớp phủ",
-            "device": "Máy đo dòng xoáy (ISO 2360), máy XRF (ISO 3497)",
-            "criteria": "Theo bản vẽ",
-            "frequency": "Mẫu theo mẻ"
+          "colDevice": "Thiết bị",
+          "colCriteria": "Nội dung kiểm tra",
+          "heading": "Kiểm soát chất lượng",
+          "subtitle": "Thiết bị kiểm tra của nhà máy HANIN",
+          "r1": {
+            "item": "Dung dịch và hóa chất",
+            "device": "Phòng phân tích và hóa chất phân tích",
+            "criteria": "Phân tích thành phần dung dịch, hóa chất trước khi đưa vào sản xuất."
           },
-          "microhardness": {
-            "item": "Độ cứng màng anode cứng",
-            "device": "Máy đo độ cứng tế vi Vickers",
-            "criteria": "Theo bản vẽ",
-            "frequency": "Mẫu thử theo yêu cầu"
+          "r2": {
+            "item": "Thành phẩm",
+            "device": "Kiểm tra thành phẩm",
+            "criteria": "Kiểm tra ngoại quan và yêu cầu của khách hàng trước khi giao."
           },
-          "saltSpray": {
-            "item": "Khả năng chịu phun muối",
-            "device": "Buồng phun muối NSS 5% NaCl (ASTM B117, ISO 9227)",
-            "criteria": "Đạt theo giờ thử quy định",
-            "frequency": "Theo yêu cầu khách"
+          "r3": {
+            "item": "Độ dày lớp mạ",
+            "device": "Máy đo độ dày lớp mạ APC-100",
+            "criteria": "Đo độ dày lớp mạ, đối chiếu yêu cầu bản vẽ."
           },
-          "adhesion": {
-            "item": "Độ bám dính lớp mạ",
-            "device": "Thử uốn, băng keo hoặc sốc nhiệt (ISO 2819)",
-            "criteria": "Lớp mạ không bong, không tách lớp",
-            "frequency": "Mẫu thử theo lô"
+          "r4": {
+            "item": "Chống ăn mòn (trung tính)",
+            "device": "Máy phun muối trung tính NSS",
+            "criteria": "Thử phun muối trung tính theo yêu cầu của khách hàng."
           },
-          "porosity": {
-            "item": "Chất lượng bịt lỗ màng anode",
-            "device": "Thử hấp thụ thuốc nhuộm (ISO 2143)",
-            "criteria": "Theo bản vẽ",
-            "frequency": "Mẫu thử theo mẻ"
+          "r5": {
+            "item": "Chống ăn mòn (axit)",
+            "device": "Máy phun muối axit CASS",
+            "criteria": "Thử phun muối axit CASS khi khách hàng yêu cầu."
           }
         },
         "DetailGallery": {
-          "heading": "Dây chuyền và chi tiết sau khi xử lý",
+          "heading": "Hình ảnh tại nhà máy",
           "subtitle": "Nhà máy HANIN, lô 49G KCN Quang Minh",
           "line": {
-            "alt": "Dây chuyền bể xử lý bề mặt tại nhà máy HANIN",
-            "tag": "Dây chuyền bể",
-            "title": "Khu bể xử lý bề mặt",
-            "desc": "Các bể được bố trí theo thứ tự công đoạn, có rửa nước giữa các bể."
+            "alt": "Khu vực mạ tại nhà máy HANIN",
+            "tag": "Khu vực mạ",
+            "title": "Khu vực mạ",
+            "desc": "Dây chuyền mạ tại nhà máy HANIN, KCN Quang Minh."
           },
           "surface": {
-            "alt": "Chi tiết kim loại sau khi xử lý bề mặt",
-            "tag": "Chi tiết sau xử lý",
-            "title": "Bề mặt sau xử lý",
-            "desc": "Bề mặt được kiểm tra ngoại quan và độ dày trước khi giao."
+            "alt": "Khu vực sản xuất của nhà máy HANIN",
+            "tag": "Sản xuất",
+            "title": "Khu vực sản xuất",
+            "desc": "Nhà máy có mặt bằng 2.230 m²."
           },
           "prep": {
-            "alt": "Khu vực chuẩn bị chi tiết trước khi xử lý",
-            "tag": "Chuẩn bị chi tiết",
-            "title": "Khu vực chuẩn bị và kiểm tra",
-            "desc": "Chi tiết được kiểm tra, gá lên giá rồi chuyển sang bể tẩy dầu."
+            "alt": "Khu vực kho và phân tích của nhà máy HANIN",
+            "tag": "Kho và phân tích",
+            "title": "Kho và phòng phân tích",
+            "desc": "Nhập hàng, lưu kho và phân tích hóa chất trước khi đưa vào dây chuyền."
           }
         },
         "RfqFormDetail": {
-          "heading": "Gửi thông số và yêu cầu xử lý nhôm, mạ kim loại khác",
-          "subtitle": "Bộ phận kỹ thuật HANIN sẽ phản hồi về báo giá và kế hoạch xử lý mẫu.",
+          "heading": "Gửi yêu cầu mạ chân không PVD",
+          "subtitle": "Bộ phận kỹ thuật HANIN sẽ phản hồi về báo giá và kế hoạch mạ mẫu.",
           "hotlineLabel": "Hotline kỹ thuật:",
-          "submitAlert": "Yêu cầu báo giá xử lý nhôm và mạ kim loại khác đã được gửi đến bộ phận kỹ thuật HANIN.",
+          "submitAlert": "Yêu cầu báo giá mạ chân không PVD đã được gửi đến bộ phận kỹ thuật HANIN.",
           "companyLabel": "Tên doanh nghiệp",
-          "companyPlaceholder": "VD: Công ty TNHH Cơ khí ABC",
+          "companyPlaceholder": "VD: Công ty TNHH ABC",
           "contactLabel": "Người liên hệ",
-          "contactPlaceholder": "VD: Nguyễn Văn A, kỹ sư phụ trách",
+          "contactPlaceholder": "VD: Nguyễn Văn A, phụ trách mua hàng",
           "emailLabel": "Email nhận báo giá",
           "substrateLabel": "Vật liệu nền",
           "substrateOptions": {
-            "carbonSteel": "Nhôm đúc (ADC12, A356...)",
-            "alloySteel": "Nhôm 7075 / 2024",
-            "stainless": "Thép (mạ đồng làm lớp lót)",
-            "aluminum": "Hợp kim nhôm (A6061, A6063, A5052)",
-            "copper": "Đồng / đồng thau",
-            "castIron": "Kim loại khác (ghi rõ trong ghi chú)"
+            "carbonSteel": "Sắt, thép",
+            "alloySteel": "Thép hợp kim",
+            "stainless": "Inox",
+            "aluminum": "Nhôm",
+            "copper": "Đồng, đồng thau",
+            "castIron": "Gang"
           },
-          "phosLabel": "Mục đích xử lý bề mặt",
+          "phosLabel": "Loại mạ yêu cầu",
           "phosOptions": {
-            "high": "Chống mài mòn: anode hóa cứng",
-            "medium": "Chống ăn mòn, trang trí: anode hóa, thụ động hóa Cr(III)",
-            "low": "Dẫn điện, hàn: mạ đồng, mạ thiếc",
-            "consult": "Cần kỹ sư HANIN tư vấn theo ứng dụng"
+            "high": "Niken Crom trên nhựa ABS",
+            "medium": "Niken trên nền kim loại",
+            "low": "Mạ kẽm, đồng, thiếc hoặc phốt phát đen",
+            "consult": "Cần HANIN tư vấn theo sản phẩm"
           },
-          "thicknessLabel": "Chiều dày lớp phủ (µm)",
-          "thicknessPlaceholder": "VD: anode cứng 50 µm ± 5 µm",
+          "thicknessLabel": "Yêu cầu độ dày lớp mạ",
+          "thicknessPlaceholder": "VD: theo bản vẽ",
           "volumeLabel": "Sản lượng dự kiến",
-          "volumePlaceholder": "VD: 2,500 chiếc/tháng (hoặc mẫu thử)",
+          "volumePlaceholder": "VD: 5.000 chiếc/tháng (hoặc mẫu thử)",
           "notesLabel": "Ghi chú kỹ thuật (vị trí cần che, màu sắc, tiêu chuẩn thử nghiệm)",
-          "notesPlaceholder": "Ghi rõ vị trí cần che hoặc chừa tiếp điểm, màu nhuộm, yêu cầu bịt lỗ hoặc thử phun muối ASTM B117...",
+          "notesPlaceholder": "Ghi rõ vị trí cần che, màu sắc hoặc độ bóng mong muốn, yêu cầu thử phun muối...",
           "attachTitle": "Đính kèm bản vẽ 2D / 3D",
           "attachDesc": "Định dạng: STEP, IGES, DWG, PDF (tối đa 50MB)",
           "chooseFile": "CHỌN TỆP BẢN VẼ",
-          "ndaNote": "Bản vẽ được bảo mật theo thỏa thuận NDA.",
-          "submitButton": "GỬI YÊU CẦU BÁO GIÁ",
+          "ndaNote": "Bản vẽ chỉ được dùng để báo giá và tư vấn kỹ thuật.",
+          "submitButton": "GỬI YÊU CẦU BÁO GIÁ MẠ CHÂN KHÔNG PVD",
           "submitError": "Không gửi được yêu cầu. Vui lòng kiểm tra thông tin/tệp đính kèm và thử lại."
         }
       }
-    },
-    "HeroSummary": {
-      "process": "Quy trình"
     }
   }
 }

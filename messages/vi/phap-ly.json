@@ -15,7 +15,7 @@
       },
       "security": {
         "title": "Bảo mật tài liệu kỹ thuật",
-        "p1": "Bản vẽ và tệp đính kèm được lưu ở khu vực riêng, không truy cập công khai và chỉ nhân sự được phân quyền mới xem được. Quý khách có thể yêu cầu ký thỏa thuận bảo mật (NDA) trước khi gửi bản vẽ."
+        "p1": "Bản vẽ và tệp đính kèm được lưu ở khu vực riêng, không truy cập công khai và chỉ nhân sự được phân quyền mới xem được."
       },
       "retention": {
         "title": "Thời gian lưu trữ và quyền của quý khách",
@@ -23,7 +23,7 @@
       },
       "contact": {
         "title": "Liên hệ",
-        "p1": "Mọi câu hỏi về chính sách này, vui lòng gửi tới Haninplating@gmail.com hoặc gọi {phones}."
+        "p1": "Mọi câu hỏi về chính sách này, vui lòng gửi tới huyvinh82@gmail.com hoặc gọi {phones}."
       }
     },
     "terms": {
@@ -48,17 +48,17 @@
       },
       "contact": {
         "title": "Liên hệ",
-        "p1": "Câu hỏi về điều khoản này, vui lòng liên hệ Haninplating@gmail.com."
+        "p1": "Câu hỏi về điều khoản này, vui lòng liên hệ huyvinh82@gmail.com."
       }
     },
     "operator": {
       "title": "Đơn vị vận hành website",
-      "name": "Tên công ty: Công ty Cổ phần Công nghiệp Mạ HANIN Technology Việt Nam.",
+      "name": "Tên công ty: Công ty Cổ phần Công nghiệp Mạ HANIN (thương hiệu HANIN Plating).",
       "tax": "Mã số thuế: 0110300983.",
-      "hq": "Trụ sở: Lô 660, Khu Công Nghiệp Quang Minh, xã Quang Minh, TP. Hà Nội, Việt Nam.",
-      "fac": "Nhà máy: Lô 49G, Khu Công Nghiệp Quang Minh, xã Quang Minh, TP. Hà Nội, Việt Nam.",
+      "hq": "Địa chỉ: Lô 49G, KCN Quang Minh, xã Quang Minh, TP Hà Nội.",
+      "fac": "Công ty mẹ: Hanin Tech, Lô 660, KCN Quang Minh, TP Hà Nội.",
       "rep": "Người đại diện: Ông Nguyễn Huy Vinh, Giám đốc.",
-      "mail": "Email: Haninplating@gmail.com."
+      "mail": "Email: huyvinh82@gmail.com, vankhanhminhkhang@gmail.com."
     }
   }
 }

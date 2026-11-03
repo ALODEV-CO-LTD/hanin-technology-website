@@ -12,13 +12,13 @@ export interface SettingDef {
 }
 
 export const SETTING_DEFS: SettingDef[] = [
-  { key: "hotline", label: "Hotline chính", group: "Thông tin liên hệ chung", kind: "phone", defaultValue: "0975080648", help: "Nhập một hoặc nhiều số (gõ số rồi bấm Enter hoặc dấu phẩy). Số đầu tiên là số gọi chính; tất cả hiện ở trang chủ, Liên hệ, Tin tức, Sản phẩm, Dịch vụ, chân trang. Mỗi số đúng 10 chữ số, ví dụ 0975080648." },
+  { key: "hotline", label: "Hotline chính", group: "Thông tin liên hệ chung", kind: "phone", defaultValue: "0978240827,0945170982,0964067199", help: "Nhập một hoặc nhiều số (gõ số rồi bấm Enter hoặc dấu phẩy). Số đầu tiên là số gọi chính; tất cả hiện ở trang chủ, Liên hệ, Tin tức, Sản phẩm, Dịch vụ, chân trang. Mỗi số đúng 10 chữ số, ví dụ 0975080648." },
   { key: "engineerHotline", label: "Hotline kỹ sư", group: "Thông tin liên hệ chung", kind: "phone", help: "Một hoặc nhiều số, để trống nếu không dùng." },
   { key: "hrHotline", label: "Điện thoại tuyển dụng", group: "Thông tin liên hệ chung", kind: "phone", help: "Một hoặc nhiều số, hiện ở trang Tuyển dụng. Để trống thì trang đó dùng hotline chính." },
-  { key: "salesEmail", label: "Email kinh doanh / báo giá", group: "Thông tin liên hệ chung", kind: "email", defaultValue: "Haninplating@gmail.com" },
-  { key: "engineeringEmail", label: "Email kỹ thuật", group: "Thông tin liên hệ chung", kind: "email", defaultValue: "Haninplating@gmail.com" },
-  { key: "hrEmail", label: "Email tuyển dụng", group: "Thông tin liên hệ chung", kind: "email", defaultValue: "tuyendung@hanintech.vn" },
-  { key: "zaloUrl", label: "Zalo (link chat)", group: "Mạng xã hội & liên kết", help: "Ví dụ https://zalo.me/0988123456" },
+  { key: "salesEmail", label: "Email kinh doanh / báo giá", group: "Thông tin liên hệ chung", kind: "email", defaultValue: "huyvinh82@gmail.com" },
+  { key: "engineeringEmail", label: "Email kỹ thuật", group: "Thông tin liên hệ chung", kind: "email", defaultValue: "huyvinh82@gmail.com" },
+  { key: "hrEmail", label: "Email tuyển dụng", group: "Thông tin liên hệ chung", kind: "email", defaultValue: "huyvinh82@gmail.com" },
+  { key: "zaloUrl", label: "Zalo (link chat)", group: "Mạng xã hội & liên kết", defaultValue: "https://zalo.me/0978240827", help: "Ví dụ https://zalo.me/0988123456" },
   { key: "facebookUrl", label: "Facebook", group: "Mạng xã hội & liên kết" },
   { key: "youtubeUrl", label: "YouTube", group: "Mạng xã hội & liên kết" },
   { key: "linkedinUrl", label: "LinkedIn", group: "Mạng xã hội & liên kết" },
@@ -26,7 +26,7 @@ export const SETTING_DEFS: SettingDef[] = [
   { key: "mapsUrl", label: "Link Google Maps chỉ đường", group: "Bản đồ" , defaultValue: "https://www.google.com/maps?q=21.207361,105.754028" },
   { key: "mapEmbedUrl", label: "Link nhúng bản đồ (iframe src)", group: "Bản đồ", defaultValue: "https://maps.google.com/maps?q=21.2073611,105.7540278&hl=vi&z=17&output=embed", help: "Lấy từ Google Maps → Chia sẻ → Nhúng bản đồ." },
   { key: "profileUrl", label: "Link tải Hồ sơ năng lực (PDF)", group: "Tải xuống", help: "Tải PDF lên Thư viện ảnh rồi dán đường dẫn /uploads/... vào đây. Để trống thì nút tải sẽ dẫn tới form liên hệ." },
-  { key: "inquiryNotifyEmail", label: "Email nhận thông báo yêu cầu mới", group: "Liên hệ", defaultValue: "Haninplating@gmail.com", help: "Lưu sẵn để dùng khi cấu hình SMTP; hiện yêu cầu mới xem trong CMS." },
+  { key: "inquiryNotifyEmail", label: "Email nhận thông báo yêu cầu mới", group: "Liên hệ", defaultValue: "huyvinh82@gmail.com", help: "Lưu sẵn để dùng khi cấu hình SMTP; hiện yêu cầu mới xem trong CMS." },
 ];
 
 const KEYS = new Set(SETTING_DEFS.map((d) => d.key));

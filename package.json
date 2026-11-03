@@ -14,7 +14,8 @@
     "db:create-admin": "node --disable-warning=ExperimentalWarning --import tsx scripts/create-admin.ts",
     "images:scan": "node --import tsx scripts/scan-images.ts",
     "prebuild": "npm run images:scan",
-    "db:client-logos": "node --disable-warning=ExperimentalWarning --import tsx scripts/apply-client-logos.ts"
+    "db:client-logos": "node --disable-warning=ExperimentalWarning --import tsx scripts/apply-client-logos.ts",
+    "db:profile-sync": "node --disable-warning=ExperimentalWarning --import tsx scripts/sync-profile-content.ts"
   },
   "dependencies": {
     "lucide-react": "^1.51.0",

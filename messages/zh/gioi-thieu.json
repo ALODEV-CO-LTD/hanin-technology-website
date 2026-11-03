@@ -10,54 +10,55 @@
     "CompanyIntroduction": {
       "imageAlt": "位于河内光明工业区的现代化厂区外观",
       "scaleBadge": "位于光明工业区的工厂",
-      "coordBadge": "坐标 21.2074° N",
       "areaBadge": "厂区面积：2,230 平方米",
       "heading": "面向工业客户的电镀加工",
-      "paragraph1Strong": "HANIN Technology 越南镀业工业股份公司",
-      "paragraph1Rest": "专业从事金属电镀加工及精密机械零件表面处理，服务制造业和机械零部件行业。",
-      "paragraph2": "公司成立于 2023 年 3 月 28 日，工厂位于河内光明工业区，厂区面积 2,230 平方米。现有员工 58 人，分布于挂镀、滚镀、QC 和办公室等部门，服务客户超过 100 家。",
+      "paragraph1Strong": "HANIN 电镀工业股份公司",
+      "paragraph1Rest": "专业从事 ABS 塑料及金属基材的电镀处理，同时承接塑料、金属产品的喷漆与印刷。",
+      "paragraph2": "公司成立于 2023 年，工厂位于河内光明工业区 49G 号地块，占地 2,230 平方米。工厂有员工 70 人，设有挂镀、滚镀和 QC 等部门，服务客户超过 100 家。",
       "field": {
         "label": "经营领域",
-        "value": "金属电镀加工",
-        "note": "电镀及表面处理"
+        "value": "塑料与金属电镀处理",
+        "note": "ABS 电镀、金属电镀、PVD、喷漆与印刷"
       },
       "target": {
         "label": "服务对象",
         "value": "工业客户",
-        "note": "一级与二级 OEM/ODM 供应商"
+        "note": "汽车、家电、卫浴及厨房设备"
       },
       "location": {
         "label": "厂址",
         "value": "河内光明工业区",
-        "note": "总部 660 号地块 · 工厂 49G 号地块"
-      }
+        "note": "地址：光明工业区 49G 号地块"
+      },
+      "paragraph3": "HANIN 隶属于 Hanin Tech 体系，该体系包括 IPM 模具厂、HANIN 电镀厂、Press 冲压厂和 Showa 厂，共 350 人。"
     },
     "CompanyJourney": {
       "heading": "发展历程",
-      "subtitle": "HANIN 各发展阶段概览。",
+      "subtitle": "Hanin Tech 体系的发展历程，HANIN 是其中一员。",
       "m1": {
-        "yearTag": "2023",
-        "phase": "第一阶段 · 起步",
-        "title": "公司成立与工艺建立",
-        "desc": "2023 年 3 月 28 日成立，建立电镀工艺及处理药水配方。"
+        "yearTag": "2018",
+        "title": "Hanin Tech 成立",
+        "desc": "成立 Hanin Tech 公司，作为投资和发展各工厂的母公司。"
       },
       "m2": {
-        "yearTag": "发展阶段",
-        "phase": "第二阶段 · 扩建",
-        "title": "扩建生产线",
-        "desc": "扩建电镀生产线，升级质量控制区域。"
+        "yearTag": "2021",
+        "title": "IPM 模具厂",
+        "desc": "IPM 模具厂投入运营。"
       },
       "m3": {
-        "yearTag": "规范化阶段",
-        "phase": "第三阶段 · 规范化",
-        "title": "检测与工艺规范化",
-        "desc": "按客户要求规范镀层厚度测量及表面处理工艺。"
+        "yearTag": "2023",
+        "title": "HANIN 电镀厂",
+        "desc": "在光明工业区 49G 号地块设立 HANIN Plating 电镀厂。"
       },
       "m4": {
-        "yearTag": "当前",
-        "phase": "第四阶段 · 现阶段",
-        "title": "电镀加工合作伙伴",
-        "desc": "为配套工业供应链提供电镀加工，持续完善工艺。"
+        "yearTag": "2025",
+        "title": "第 4 工厂（Press）",
+        "desc": "新增金属冲压工厂。"
+      },
+      "m5": {
+        "yearTag": "2026",
+        "title": "第 5 工厂（Showa）",
+        "desc": "新增压铸与组装工厂。"
       }
     },
     "ContactCta": {
@@ -70,21 +71,21 @@
       "heading": "HANIN 的能力",
       "production": {
         "title": "生产能力",
-        "desc": "挂镀和滚镀生产线可承接大批量订单。",
-        "metricLabel": "供货",
-        "metricValue": "按订单计划"
+        "desc": "自动线每日 3 万至 5 万件，半自动挂镀每日 1 万至 2 万件，滚镀每日 3 至 5 吨。",
+        "metricLabel": "生产线",
+        "metricValue": "3 条电镀线"
       },
       "technology": {
         "title": "技术与设备",
-        "desc": "半自动及 PLC 控制的自动生产线，电流整流 ±1%。",
-        "metricLabel": "控制",
-        "metricValue": "PLC，电流整流 ±1%"
+        "desc": "2 台 PVD 设备，手工和自动喷漆房，自动电镀线采用 JIG 挂具和行车。",
+        "metricLabel": "工艺",
+        "metricValue": "电镀、PVD、喷漆"
       },
       "quality": {
         "title": "质量控制",
-        "desc": "使用 XRF 测厚仪测量镀层厚度，按 ASTM B117 进行盐雾试验。",
+        "desc": "镀层测厚、NSS 和 CASS 盐雾试验、Hull cell 试验，设有分析室。",
         "metricLabel": "检测",
-        "metricValue": "XRF，ASTM B117"
+        "metricValue": "NSS、CASS、Hull cell"
       },
       "support": {
         "title": "技术与支持",
@@ -97,9 +98,9 @@
       "heading": "发展方向",
       "subtitle": "提升镀层质量，规范工艺，帮助客户控制成本。",
       "precision": {
-        "title": "精度",
-        "desc": "按图纸要求控制镀层厚度公差。",
-        "note": "公差以微米计"
+        "title": "符合要求",
+        "desc": "按客户图纸要求进行电镀并检测镀层。",
+        "note": "镀层测厚"
       },
       "stability": {
         "title": "稳定性",
@@ -118,13 +119,13 @@
       "mainImageAlt": "设有药水槽和行车的电镀生产线",
       "zone1Tag": "1区 · 电镀生产线",
       "zone1Title": "工业电镀生产线",
-      "zone1Desc": "碱性、酸性电镀槽及钝化槽",
-      "zone2ImageAlt": "质量控制人员在电镀槽旁的 PLC 控制站操作",
+      "zone1Desc": "自动、挂镀和滚镀电镀线",
+      "zone2ImageAlt": "质检人员在镀槽区域作业",
       "zone2Tag": "2区 · 分析与质量控制",
-      "zone2Title": "分析与调度室",
-      "zone3ImageAlt": "检测台上已电镀的机械零件（锌、镍、铬）",
+      "zone2Title": "分析室",
+      "zone3ImageAlt": "检验台上的已电镀零件",
       "zone3Tag": "3区 · 挂具与检测",
-      "zone3Title": "尺寸检测台",
+      "zone3Title": "产品检验台",
       "zone4ImageAlt": "行车沿挂镀线转运零件",
       "zone4Tag": "4区 · 行车",
       "zone4Title": "行车作业区",
@@ -146,71 +147,71 @@
       "heading": "质量与标准",
       "subtitle": "HANIN 的质量管理体系与认证。",
       "cta": "查看认证证书",
-      "certificateImageAlt": "DQS GmbH 颁发的 HANIN Technology Việt Nam ISO 9001:2015 认证证书",
+      "certificateImageAlt": "ICB 颁发的 Hanin Technology 越南公司 ISO 9001:2015 证书",
       "certificateTag": "认证证书",
       "certificateTitle": "ISO 9001:2015 — 质量管理体系",
-      "certificateIssuer": "认证机构：DQS GmbH（德国）",
+      "certificateIssuer": "认证机构：国际认证股份公司（ICB）",
       "certificateHolderLabel": "获证单位",
-      "certificateHolderValue": "HANIN Technology Viet Nam Joint-Stock Company",
-      "certificateAccreditationLabel": "认可标识",
-      "certificateAccreditationValue": "IAF · DAkkS · IQNet",
-      "certificateScope": "范围：塑料产品的生产、加工、注塑、印刷、喷漆及表面处理。",
+      "certificateHolderValue": "Hanin 越南科技股份公司（HANIN TECHNOLOGY VIETNAM JOINT-STOCK COMPANY）",
+      "certificateAccreditationLabel": "证书编号",
+      "certificateAccreditationValue": "250615.QMS.CN25 · VICAS 022-QMS",
+      "certificateScope": "范围：塑料制品的生产、加工、压铸、注塑、印刷、喷漆及表面处理。",
       "iso9001": {
         "tag": "ISO 认证",
         "title": "质量管理体系",
-        "desc": "ISO 9001:2015：管控机械加工及电镀工艺流程。",
+        "desc": "ISO 9001:2015，2025 年 8 月 11 日颁发，有效期至 2028 年 8 月 10 日。",
         "standard": "标准：ISO 9001:2015",
-        "status": "已确认"
+        "status": "有效"
       },
-      "iso14001": {
-        "tag": "ISO 认证",
-        "title": "环境管理体系",
-        "desc": "ISO 14001:2015：管控生产过程中的废水和废气。",
-        "standard": "标准：ISO 14001:2015",
-        "status": "已确认"
+      "wastewater": {
+        "tag": "环境",
+        "title": "废水处理",
+        "desc": "处理能力 130 立方米/昼夜，配有沉淀池和压泥机。",
+        "standard": "处理能力：130 立方米/昼夜",
+        "status": "运行中"
       },
-      "rohs": {
-        "tag": "标准",
-        "title": "工艺与表面管控",
-        "desc": "符合 RoHS 指令，并按 ASTM 进行盐雾试验。",
-        "standard": "标准：RoHS",
-        "status": "合格"
+      "equipment": {
+        "tag": "检测",
+        "title": "检测设备",
+        "desc": "镀层测厚仪、NSS 和 CASS 盐雾试验机、Hull cell 试验机。",
+        "standard": "设备：APC-100、NSS、CASS、Hull cell",
+        "status": "在分析室"
       }
     },
     "CapabilitySnapshot": {
-      "equipment": {
-        "label": "设备",
-        "desc": "设备数量",
-        "note": "用于生产与检测",
-        "end": "50",
-        "suffix": "+"
-      },
       "lines": {
-        "label": "生产线",
-        "desc": "生产线",
-        "note": "滚镀与挂镀",
-        "end": "6",
-        "suffix": "+"
-      },
-      "zones": {
-        "label": "车间区域",
-        "desc": "生产区域",
-        "note": "按工序划分",
-        "end": "4",
+        "label": "电镀线",
+        "desc": "条",
+        "note": "自动、半自动和滚镀",
+        "end": "3",
         "suffix": ""
       },
-      "capacity": {
-        "label": "月产量",
-        "desc": "吨产品 / 月",
-        "note": "按订单计划",
-        "end": "1200",
-        "suffix": "+"
+      "pvd": {
+        "label": "PVD 设备",
+        "desc": "台",
+        "note": "真空镀",
+        "end": "2",
+        "suffix": ""
+      },
+      "wastewater": {
+        "label": "废水处理",
+        "desc": "立方米/昼夜",
+        "note": "配有沉淀池和压泥机",
+        "end": "130",
+        "suffix": " m³"
+      },
+      "staff": {
+        "label": "电镀厂员工",
+        "desc": "人",
+        "note": "位于光明工业区 49G 号地块",
+        "end": "70",
+        "suffix": ""
       }
     },
     "FeaturedClients": {
       "eyebrow": "代表客户",
       "title": "制造业客户",
-      "description": "超过 100 家大小客户委托 HANIN 进行电镀加工。以下为五金、卫浴设备及工业制造领域的部分代表客户。"
+      "description": "超过 100 家客户委托 HANIN 加工，其中包括 LG Electronics、松下越南、VinFast 和 Viglacera。"
     }
   }
 }

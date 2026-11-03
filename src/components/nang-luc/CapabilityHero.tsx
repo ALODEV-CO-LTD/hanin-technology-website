@@ -7,10 +7,10 @@ import CountUp from "@/components/ui/CountUp";
 import HeroStatBar from "@/components/ui/HeroStatBar";
 
 const STATS = [
-  { key: "equipment" },
-  { key: "lines" },
-  { key: "zones", padStart: 2 },
-  { key: "precision", decimals: 1 },
+  { key: "lines", padStart: 2 },
+  { key: "pvd", padStart: 2 },
+  { key: "wastewater" },
+  { key: "staff" },
 ] as const;
 
 export default function CapabilityHero() {
@@ -78,8 +78,7 @@ export default function CapabilityHero() {
                 end={num(`items.${stat.key}.end`)}
                 prefix={ts(`items.${stat.key}.prefix`)}
                 suffix={ts(`items.${stat.key}.suffix`)}
-                decimals={"decimals" in stat ? stat.decimals : 0}
-                padStart={"padStart" in stat ? stat.padStart : 0}
+                                padStart={"padStart" in stat ? stat.padStart : 0}
               />
               {ts(`items.${stat.key}.unit`) && <span className="text-headline-sm font-normal">{ts(`items.${stat.key}.unit`)}</span>}
             </>

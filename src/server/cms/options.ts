@@ -1,10 +1,10 @@
 import type { SelectOption } from "./fields";
 
 export const PRODUCT_CATEGORIES: SelectOption[] = [
-  { value: "co-khi-chinh-xac", label: "Chi tiết cơ khí chính xác" },
-  { value: "phu-tung-o-to-xe-may", label: "Linh kiện phụ tùng ô tô xe máy" },
-  { value: "dau-cosse-thiet-bi-dien", label: "Đầu cosse thiết bị điện" },
-  { value: "anodizing", label: "Linh kiện xử lý Anodizing" },
+  { value: "co-khi-chinh-xac", label: "Chi tiết kim loại mạ" },
+  { value: "phu-tung-o-to-xe-may", label: "Phụ tùng ô tô" },
+  { value: "dau-cosse-thiet-bi-dien", label: "Thiết bị gia dụng và điện tử" },
+  { value: "anodizing", label: "Thiết bị vệ sinh và nhà bếp" },
 ];
 
 export const NEWS_CATEGORIES: SelectOption[] = [

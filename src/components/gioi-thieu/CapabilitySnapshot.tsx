@@ -5,10 +5,10 @@ export default function CapabilitySnapshot() {
   const t = useTranslations("GioiThieu.CapabilitySnapshot");
 
   const SNAPSHOT_STATS = [
-    { key: "equipment", padStart: 0, thousandsSeparator: "" },
+    { key: "pvd", padStart: 2, thousandsSeparator: "" },
     { key: "lines", padStart: 2, thousandsSeparator: "" },
-    { key: "zones", padStart: 2, thousandsSeparator: "" },
-    { key: "capacity", padStart: 0, thousandsSeparator: "." },
+    { key: "wastewater", padStart: 0, thousandsSeparator: "" },
+    { key: "staff", padStart: 0, thousandsSeparator: "" },
   ] as const;
   // Giá trị số và hậu tố lấy từ messages để chủ site sửa được trong CMS.
   const num = (key: string) => {

@@ -6,6 +6,7 @@ import { useLocale, useTranslations } from "next-intl";
 import { usePathname } from "@/i18n/navigation";
 import { submitInquiry } from "@/lib/submit-inquiry";
 import Icon from "@/components/ui/Icon";
+import { ATTACHMENT_ACCEPT, checkAttachments, type AttachmentProblem } from "@/lib/attachments";
 
 export default function RfqFormDetail({ hotline, ns = "DichVu.RfqFormDetail" }: { hotline: string; ns?: string }) {
   const t = useTranslations(ns);
@@ -14,10 +15,18 @@ export default function RfqFormDetail({ hotline, ns = "DichVu.RfqFormDetail" }: 
   const [busy, setBusy] = useState(false);
   const [status, setStatus] = useState<"idle" | "ok" | "fail">("idle");
   const [fileNames, setFileNames] = useState("");
+  const [fileError, setFileError] = useState<AttachmentProblem | null>(null);
+  const ta = useTranslations("AttachField");
+  const onPickFiles = (list: FileList | null) => {
+    const files = Array.from(list ?? []);
+    setFileNames(files.map((f) => f.name).join(", "));
+    setFileError(checkAttachments(files));
+  };
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     const form = event.currentTarget;
+    if (fileError) return;
     const data = new FormData(form);
     // Các thông số kỹ thuật riêng của form này được gộp vào phần nội dung yêu cầu.
     const technical = [
@@ -33,6 +42,7 @@ export default function RfqFormDetail({ hotline, ns = "DichVu.RfqFormDetail" }: 
     if (result.ok) {
       form.reset();
       setFileNames("");
+      setFileError(null);
       setStatus("ok");
     } else {
       setStatus("fail");
@@ -113,9 +123,9 @@ export default function RfqFormDetail({ hotline, ns = "DichVu.RfqFormDetail" }: 
                 name="substrate"
                 defaultValue="S45C"
                 options={[
-                  { value: "S45C", label: t("substrateOptions.carbonSteel") },
-                  { value: "SCM440", label: t("substrateOptions.alloySteel") },
-                  { value: "SUS", label: t("substrateOptions.stainless") },
+                  { value: "CARBON_STEEL", label: t("substrateOptions.carbonSteel") },
+                  { value: "ALLOY_STEEL", label: t("substrateOptions.alloySteel") },
+                  { value: "STAINLESS", label: t("substrateOptions.stainless") },
                   { value: "ALUMINUM", label: t("substrateOptions.aluminum") },
                   { value: "COPPER", label: t("substrateOptions.copper") },
                   { value: "CAST_IRON", label: t("substrateOptions.castIron") },
@@ -128,11 +138,11 @@ export default function RfqFormDetail({ hotline, ns = "DichVu.RfqFormDetail" }: 
                 className="h-10 px-3 bg-slate-50 border border-slate-200 text-slate-900 text-body-md rounded focus:outline-none focus:bg-white focus:border-steel-600 focus:ring-2 focus:ring-steel-600/30 transition-colors"
                 id="rfq-d-phosphorus"
                 name="phosphorus"
-                defaultValue="HIGH_PHOS"
+                defaultValue="CONSULT"
                 options={[
-                  { value: "HIGH_PHOS", label: t("phosOptions.high") },
-                  { value: "MED_PHOS", label: t("phosOptions.medium") },
-                  { value: "LOW_PHOS", label: t("phosOptions.low") },
+                  { value: "ABS_NICKEL_CHROME", label: t("phosOptions.high") },
+                  { value: "NICKEL_METAL", label: t("phosOptions.medium") },
+                  { value: "ZINC_COPPER_TIN_PHOSPHATE", label: t("phosOptions.low") },
                   { value: "CONSULT", label: t("phosOptions.consult") },
                 ]}
               />
@@ -173,7 +183,8 @@ export default function RfqFormDetail({ hotline, ns = "DichVu.RfqFormDetail" }: 
             <div className="md:col-span-4 flex flex-col justify-between bg-slate-50 border border-slate-200 p-space-sm rounded">
               <div className="flex flex-col gap-1">
                 <span className="text-label-sm text-slate-900 font-semibold uppercase">{t("attachTitle")}</span>
-                <p className="text-label-sm text-slate-500">{fileNames || t("attachDesc")}</p>
+                <p className="text-label-sm text-slate-500">{fileNames || ta("hint")}</p>
+                {fileError ? <p role="alert" className="text-label-sm font-semibold text-red-700">{ta(fileError)}</p> : null}
               </div>
               <label className="cursor-pointer focus-within:ring-2 focus-within:ring-steel-600/40 min-h-11 mt-2 w-full py-2.5 px-3 bg-white hover:bg-slate-100 border border-slate-200 text-slate-800 text-center text-label-technical uppercase rounded transition-colors flex items-center justify-center gap-1.5 shadow-sm">
                 <Icon name="cloud_upload" className="text-steel-600 text-[18px]" />
@@ -183,7 +194,8 @@ export default function RfqFormDetail({ hotline, ns = "DichVu.RfqFormDetail" }: 
                 type="file"
                 name="files"
                 multiple
-                onChange={(e) => setFileNames(Array.from(e.target.files ?? []).map((f) => f.name).join(", "))}
+                accept={ATTACHMENT_ACCEPT}
+                onChange={(e) => onPickFiles(e.target.files)}
               />
               </label>
             </div>

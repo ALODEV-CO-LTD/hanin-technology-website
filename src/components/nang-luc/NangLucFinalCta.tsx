@@ -37,12 +37,6 @@ export default function NangLucFinalCta() {
                   {t("hotlineLabel")} <strong className="text-slate-900"><PhoneLinks phones={general} /></strong>
                 </span>
               </div>
-              <div className="flex items-center gap-2">
-                <Icon name="schedule" className="text-[18px] text-steel-600" />
-                <span>
-                  {t("responseLabel")} <strong className="text-slate-900">{t("responseValue")}</strong>
-                </span>
-              </div>
             </div>
           </div>
         </div>

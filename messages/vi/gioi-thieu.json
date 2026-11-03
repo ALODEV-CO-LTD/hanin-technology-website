@@ -10,54 +10,55 @@
     "CompanyIntroduction": {
       "imageAlt": "Mặt tiền kiến trúc hiện đại của nhà máy tại KCN Quang Minh, Hà Nội",
       "scaleBadge": "Nhà máy tại KCN Quang Minh",
-      "coordBadge": "Tọa độ 21.2074° B",
       "areaBadge": "Diện tích mặt bằng: 2.230 m²",
       "heading": "Gia công mạ cho khách hàng công nghiệp",
-      "paragraph1Strong": "Công ty Cổ phần Công nghiệp Mạ HANIN Technology Việt Nam",
-      "paragraph1Rest": "là đơn vị gia công mạ kim loại và xử lý bề mặt chi tiết cơ khí chính xác cho các ngành chế tạo và phụ tùng cơ khí.",
-      "paragraph2": "Thành lập ngày 28/03/2023, nhà máy đặt tại KCN Quang Minh, Hà Nội, trên mặt bằng 2.230 m². 58 nhân sự làm việc tại các bộ phận mạ treo, mạ quay, QC và văn phòng; hơn 100 khách hàng đang sử dụng dịch vụ.",
+      "paragraph1Strong": "Công ty Cổ phần Công nghiệp Mạ HANIN",
+      "paragraph1Rest": "chuyên xử lý mạ trên nền nhựa ABS và kim loại, đồng thời nhận sơn và in trên sản phẩm nhựa, kim loại.",
+      "paragraph2": "Công ty thành lập năm 2023, nhà máy đặt tại Lô 49G, KCN Quang Minh, Hà Nội, trên mặt bằng 2.230 m². Nhà máy có 70 nhân sự, trong đó có các bộ phận mạ treo, mạ quay và QC; hơn 100 khách hàng đang sử dụng dịch vụ.",
       "field": {
         "label": "Lĩnh vực",
-        "value": "Gia công mạ kim loại",
-        "note": "Mạ điện và hoàn thiện bề mặt"
+        "value": "Xử lý mạ nhựa và kim loại",
+        "note": "Mạ ABS, mạ kim loại, PVD, sơn và in"
       },
       "target": {
         "label": "Đối tượng",
         "value": "Khách hàng công nghiệp",
-        "note": "Nhà cung ứng OEM/ODM cấp 1 và cấp 2"
+        "note": "Ô tô, gia dụng, thiết bị vệ sinh và nhà bếp"
       },
       "location": {
         "label": "Vị trí",
         "value": "KCN Quang Minh, Hà Nội",
-        "note": "Trụ sở Lô 660 · Nhà máy Lô 49G"
-      }
+        "note": "Địa chỉ: Lô 49G, KCN Quang Minh"
+      },
+      "paragraph3": "HANIN thuộc hệ thống Hanin Tech, gồm xưởng khuôn IPM, nhà máy mạ HANIN, xưởng Press và xưởng Showa, với 350 người."
     },
     "CompanyJourney": {
       "heading": "Hành trình phát triển",
-      "subtitle": "Các giai đoạn hình thành và phát triển của HANIN.",
+      "subtitle": "Các mốc phát triển của hệ thống Hanin Tech, trong đó có HANIN.",
       "m1": {
-        "yearTag": "2023",
-        "phase": "Giai đoạn 1 · Khởi đầu",
-        "title": "Thành lập và xây dựng quy trình",
-        "desc": "Thành lập ngày 28/03/2023, xây dựng quy trình mạ và công thức hóa chất xử lý."
+        "yearTag": "2018",
+        "title": "Thành lập Hanin Tech",
+        "desc": "Thành lập công ty Hanin Tech, công ty mẹ đầu tư và phát triển các nhà máy."
       },
       "m2": {
-        "yearTag": "Giai đoạn phát triển",
-        "phase": "Giai đoạn 2 · Mở rộng",
-        "title": "Mở rộng dây chuyền",
-        "desc": "Mở rộng dây chuyền mạ, nâng cấp khu vực kiểm soát chất lượng."
+        "yearTag": "2021",
+        "title": "Nhà máy khuôn IPM",
+        "desc": "Đưa vào hoạt động nhà máy làm khuôn IPM."
       },
       "m3": {
-        "yearTag": "Giai đoạn chuẩn hóa",
-        "phase": "Giai đoạn 3 · Chuẩn hóa",
-        "title": "Chuẩn hóa kiểm tra và quy trình",
-        "desc": "Chuẩn hóa đo độ dày lớp mạ và quy trình xử lý bề mặt theo yêu cầu khách hàng."
+        "yearTag": "2023",
+        "title": "Nhà máy mạ HANIN",
+        "desc": "Thành lập nhà máy mạ HANIN Plating tại Lô 49G, KCN Quang Minh."
       },
       "m4": {
-        "yearTag": "Hiện tại",
-        "phase": "Giai đoạn 4 · Hiện tại",
-        "title": "Đối tác gia công mạ",
-        "desc": "Gia công mạ cho chuỗi công nghiệp phụ trợ, tiếp tục hoàn thiện quy trình."
+        "yearTag": "2025",
+        "title": "Nhà máy số 4 (Press)",
+        "desc": "Thêm nhà máy dập kim loại."
+      },
+      "m5": {
+        "yearTag": "2026",
+        "title": "Nhà máy số 5 (Showa)",
+        "desc": "Thêm nhà máy đúc và lắp ráp."
       }
     },
     "ContactCta": {
@@ -70,21 +71,21 @@
       "heading": "Năng lực của HANIN",
       "production": {
         "title": "Năng lực sản xuất",
-        "desc": "Dây chuyền mạ treo và mạ quay xử lý đơn hàng số lượng lớn.",
-        "metricLabel": "Cung ứng",
-        "metricValue": "Theo kế hoạch đơn hàng"
+        "desc": "Mạ tự động 30–50 nghìn sản phẩm/ngày, mạ treo bán tự động 10–20 nghìn/ngày, mạ quay 3–5 tấn/ngày.",
+        "metricLabel": "Dây chuyền",
+        "metricValue": "3 dây chuyền mạ"
       },
       "technology": {
         "title": "Công nghệ và thiết bị",
-        "desc": "Dây chuyền bán tự động và tự động điều khiển bằng PLC, chỉnh lưu dòng ±1%.",
-        "metricLabel": "Điều khiển",
-        "metricValue": "PLC, chỉnh lưu dòng ±1%"
+        "desc": "2 máy PVD, buồng phun sơn thủ công và tự động, dây chuyền mạ tự động dùng JIG và cẩu trục.",
+        "metricLabel": "Công nghệ",
+        "metricValue": "Mạ, PVD, phun sơn"
       },
       "quality": {
         "title": "Kiểm soát chất lượng",
-        "desc": "Đo độ dày lớp mạ bằng máy XRF, thử phun sương muối theo ASTM B117.",
+        "desc": "Đo độ dày lớp mạ, phun muối NSS và CASS, thử Hull cell, phòng phân tích.",
         "metricLabel": "Kiểm tra",
-        "metricValue": "XRF, ASTM B117"
+        "metricValue": "NSS, CASS, Hull cell"
       },
       "support": {
         "title": "Kỹ thuật và hỗ trợ",
@@ -97,9 +98,9 @@
       "heading": "Định hướng phát triển",
       "subtitle": "Nâng cao chất lượng lớp mạ, chuẩn hóa quy trình và kiểm soát chi phí cho khách hàng.",
       "precision": {
-        "title": "Chính xác",
-        "desc": "Kiểm soát dung sai độ dày lớp mạ theo bản vẽ.",
-        "note": "Dung sai tính theo micron"
+        "title": "Đúng yêu cầu",
+        "desc": "Mạ và kiểm tra lớp mạ theo yêu cầu trên bản vẽ của khách hàng.",
+        "note": "Đo độ dày lớp mạ"
       },
       "stability": {
         "title": "Ổn định",
@@ -118,13 +119,13 @@
       "mainImageAlt": "Dây chuyền mạ điện với các bể hóa chất và cầu trục",
       "zone1Tag": "Khu 1 · Dây chuyền mạ",
       "zone1Title": "Dây chuyền mạ công nghiệp",
-      "zone1Desc": "Các bể mạ kiềm, axit và thụ động hóa bề mặt",
-      "zone2ImageAlt": "Nhân viên kiểm soát chất lượng thao tác tại trạm điều khiển PLC cạnh bể mạ",
+      "zone1Desc": "Dây chuyền mạ tự động, mạ treo và mạ quay",
+      "zone2ImageAlt": "Nhân viên kiểm tra chất lượng tại khu vực bể mạ",
       "zone2Tag": "Khu 2 · Phân tích và kiểm soát chất lượng",
-      "zone2Title": "Phòng phân tích và điều phối",
-      "zone3ImageAlt": "Chi tiết cơ khí đã mạ (kẽm, niken, crôm) trên bàn kiểm tra",
+      "zone2Title": "Phòng phân tích",
+      "zone3ImageAlt": "Chi tiết đã mạ trên bàn kiểm tra",
       "zone3Tag": "Khu 3 · Đồ gá và kiểm tra",
-      "zone3Title": "Bàn kiểm tra kích thước",
+      "zone3Title": "Bàn kiểm tra sản phẩm",
       "zone4ImageAlt": "Cầu trục di chuyển chi tiết dọc dây chuyền mạ treo",
       "zone4Tag": "Khu 4 · Cầu trục",
       "zone4Title": "Khu vực cầu trục",
@@ -146,71 +147,71 @@
       "heading": "Chất lượng và tiêu chuẩn",
       "subtitle": "Hệ thống quản lý chất lượng và chứng nhận của HANIN.",
       "cta": "XEM CHỨNG NHẬN",
-      "certificateImageAlt": "Giấy chứng nhận ISO 9001:2015 của HANIN Technology Việt Nam do DQS GmbH cấp",
+      "certificateImageAlt": "Giấy chứng nhận ISO 9001:2015 của Hanin Technology Việt Nam do ICB cấp",
       "certificateTag": "Giấy chứng nhận",
       "certificateTitle": "ISO 9001:2015 — Hệ thống quản lý chất lượng",
-      "certificateIssuer": "Tổ chức chứng nhận: DQS GmbH (Đức)",
+      "certificateIssuer": "Tổ chức chứng nhận: Công ty Cổ phần Chứng nhận Quốc tế (ICB)",
       "certificateHolderLabel": "Đơn vị được chứng nhận",
-      "certificateHolderValue": "HANIN Technology Viet Nam Joint-Stock Company",
-      "certificateAccreditationLabel": "Công nhận",
-      "certificateAccreditationValue": "IAF · DAkkS · IQNet",
-      "certificateScope": "Phạm vi: sản xuất, gia công, ép phun, in, sơn và xử lý bề mặt sản phẩm nhựa.",
+      "certificateHolderValue": "Công ty Cổ phần Công nghệ Hanin Việt Nam",
+      "certificateAccreditationLabel": "Số chứng chỉ",
+      "certificateAccreditationValue": "250615.QMS.CN25 · VICAS 022-QMS",
+      "certificateScope": "Phạm vi: sản xuất, gia công, đúc, ép, in, sơn và xử lý bề mặt các sản phẩm từ nhựa.",
       "iso9001": {
         "tag": "Chứng nhận ISO",
         "title": "Hệ thống quản lý chất lượng",
-        "desc": "ISO 9001:2015: kiểm soát quy trình gia công cơ khí và mạ.",
+        "desc": "ISO 9001:2015, cấp ngày 11/08/2025, hiệu lực đến 10/08/2028.",
         "standard": "Tiêu chuẩn: ISO 9001:2015",
-        "status": "Đã xác nhận"
+        "status": "Còn hiệu lực"
       },
-      "iso14001": {
-        "tag": "Chứng nhận ISO",
-        "title": "Hệ thống quản lý môi trường",
-        "desc": "ISO 14001:2015: kiểm soát nước thải và khí thải trong sản xuất.",
-        "standard": "Tiêu chuẩn: ISO 14001:2015",
-        "status": "Đã xác nhận"
+      "wastewater": {
+        "tag": "Môi trường",
+        "title": "Xử lý nước thải",
+        "desc": "Hệ thống công suất 130 m³/ngày đêm, có bể lắng và máy ép bùn.",
+        "standard": "Công suất: 130 m³/ngày đêm",
+        "status": "Đang vận hành"
       },
-      "rohs": {
-        "tag": "Tiêu chuẩn",
-        "title": "Quy trình và kiểm soát bề mặt",
-        "desc": "Đáp ứng chỉ thị RoHS; thử nghiệm phun muối theo ASTM.",
-        "standard": "Tiêu chuẩn: RoHS",
-        "status": "Đạt"
+      "equipment": {
+        "tag": "Kiểm tra",
+        "title": "Thiết bị kiểm tra",
+        "desc": "Máy đo độ dày lớp mạ, phun muối NSS và CASS, thử Hull cell.",
+        "standard": "Thiết bị: APC-100, NSS, CASS, Hull cell",
+        "status": "Tại phòng phân tích"
       }
     },
     "CapabilitySnapshot": {
-      "equipment": {
-        "label": "Thiết bị máy móc",
-        "desc": "Thiết bị",
-        "note": "Sản xuất và kiểm tra",
-        "end": "50",
-        "suffix": "+"
-      },
       "lines": {
-        "label": "Dây chuyền sản xuất",
+        "label": "Dây chuyền mạ",
         "desc": "Dây chuyền",
-        "note": "Mạ quay và mạ treo",
-        "end": "6",
-        "suffix": "+"
-      },
-      "zones": {
-        "label": "Khu vực nhà xưởng",
-        "desc": "Khu sản xuất",
-        "note": "Phân theo công đoạn",
-        "end": "4",
+        "note": "Tự động, bán tự động và mạ quay",
+        "end": "3",
         "suffix": ""
       },
-      "capacity": {
-        "label": "Sản lượng hàng tháng",
-        "desc": "Tấn sản phẩm / tháng",
-        "note": "Theo kế hoạch đơn hàng",
-        "end": "1200",
-        "suffix": "+"
+      "pvd": {
+        "label": "Máy PVD",
+        "desc": "Máy",
+        "note": "Mạ chân không",
+        "end": "2",
+        "suffix": ""
+      },
+      "wastewater": {
+        "label": "Xử lý nước thải",
+        "desc": "m³/ngày đêm",
+        "note": "Có bể lắng và máy ép bùn",
+        "end": "130",
+        "suffix": " m³"
+      },
+      "staff": {
+        "label": "Nhân sự nhà máy mạ",
+        "desc": "Người",
+        "note": "Tại Lô 49G, KCN Quang Minh",
+        "end": "70",
+        "suffix": ""
       }
     },
     "FeaturedClients": {
       "eyebrow": "KHÁCH HÀNG TIÊU BIỂU",
       "title": "Khách hàng trong ngành sản xuất",
-      "description": "Hơn 100 khách hàng lớn nhỏ gửi gia công mạ tại HANIN. Một số khách hàng tiêu biểu thuộc ngành ngũ kim, thiết bị vệ sinh và sản xuất công nghiệp."
+      "description": "Hơn 100 khách hàng gửi gia công tại HANIN, trong đó có LG Electronics, Panasonic Việt Nam, VinFast và Viglacera."
     }
   }
 }

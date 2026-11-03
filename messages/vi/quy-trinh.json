@@ -42,7 +42,7 @@
     "galleryTitle": "Hình ảnh thực tế tại xưởng",
     "galleryAlt": "Bể xử lý và dây chuyền mạ tại xưởng HANIN",
     "photoAlt": "Ảnh thực tế công đoạn",
-    "note": "Website chỉ trình bày trình tự các công đoạn. Thông số chi tiết được kiểm soát nội bộ và cung cấp theo hợp đồng và thỏa thuận bảo mật NDA.",
+    "note": "Website chỉ trình bày trình tự các công đoạn. Thông số chi tiết do xưởng kiểm soát nội bộ và được trao đổi riêng theo từng đơn hàng.",
     "ctaTitle": "Cần quy trình phù hợp cho sản phẩm của bạn?",
     "ctaDesc": "Gửi bản vẽ hoặc mẫu, kỹ sư HANIN sẽ tư vấn loại mạ và quy trình phù hợp.",
     "ctaButton": "Yêu cầu tư vấn",
@@ -255,7 +255,7 @@
       },
       "pack": {
         "name": "Đóng gói",
-        "desc": "Đóng gói đúng quy cách, dán tem nhãn đầy đủ (mã hàng, số lô, số lượng) để dễ truy xuất khi cần, sau đó nhập kho hoặc giao cho khách."
+        "desc": "Đóng gói đúng quy cách, ghi mã hàng và số lượng trên nhãn, sau đó nhập kho hoặc giao cho khách."
       },
       "rackLoad": {
         "name": "Lên móc treo",

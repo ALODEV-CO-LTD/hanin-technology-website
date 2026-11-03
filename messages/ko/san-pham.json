@@ -1,356 +1,331 @@
 {
   "SanPham": {
     "CategoryHero": {
-      "imageAlt": "도금 가공을 마친 기계 부품",
+      "imageAlt": "HANIN 공장에서 도금한 플라스틱 및 금속 부품",
       "breadcrumbHome": "홈",
       "breadcrumbCurrent": "제품 및 프로젝트",
-      "breadcrumbTag": "프로젝트 및 가공 부품 목록",
+      "breadcrumbTag": "도금 제품 목록",
       "title": "제품 및 프로젝트",
-      "description": "HANIN이 수행한 금속 도금 제품 및 프로젝트로, 두께 공차, 도금층 균일성, 내식성을 중시합니다.",
-      "badgeActiveProjects": "로트 단위 가공",
-      "badgeQualityRate": "로트별 품질 검사",
-      "badgeCompliance": "RoHS, REACH 요구 사항 적용"
+      "description": "HANIN이 도금한 자동차, 스마트홈, 가전제품, 위생·주방 기기 제품과 니켈·아연·주석 도금 금속 부품입니다."
     },
     "FeaturedProjectSpotlight": {
       "heading": "대표 프로젝트",
-      "bathTemperature": "도금조 온도: 58.4°C",
-      "automatedCycle": "PLC 제어 사이클: 행잉 컨베이어",
-      "monthlyOutput": "로트 및 주문 단위 생산",
       "ctaViewDetail": "프로젝트 상세 보기",
-      "ctaDownloadCaseStudy": "프로젝트 자료 다운로드 (PDF) ↓"
+      "ctaDownloadCaseStudy": "견적 요청 보내기"
     },
     "ProductBreadcrumbBar": {
       "home": "홈",
       "productsAndProjects": "제품 및 프로젝트",
-      "lot": "로트"
+      "lot": "코드"
     },
     "ProductCatalog": {
-      "heading": "가공 제품",
-      "subheading": "제품을 선택하면 도금층, 규격, 적용 공정을 볼 수 있습니다.",
-      "lotNumber": "생산 로트",
+      "heading": "도금 제품",
+      "subheading": "제품을 선택하면 적용된 도금과 공정을 볼 수 있습니다.",
+      "lotNumber": "제품 코드",
       "ctaViewDetail": "제품 상세 보기",
       "viewDetailAriaLabel": "상세 보기",
       "searchPlaceholder": "제품 또는 프로젝트 검색...",
       "showingResults": "표시 중",
-      "resultsUnit": "건 결과",
-      "emptyState": "현재 필터 조건에 맞는 제품 또는 프로젝트가 없습니다.",
-      "filterViewing": "현재 보기",
+      "resultsUnit": "건",
+      "emptyState": "현재 필터에 맞는 제품 또는 프로젝트가 없습니다.",
+      "filterViewing": "보는 중",
       "filterViewAll": "전체 제품 보기",
-      "filterCount": "{count}개 결과"
+      "filterCount": "{count}건"
     },
     "ProductGallery": {
       "title": "상세 이미지 및 실제 검사",
-      "description": "도금 후 부품 사진, 현미경 단면, QC실 측정 장면입니다.",
-      "highQualityImages": "현장 촬영",
-      "zoomOptical": "광학 40배 확대",
       "zoomInAriaLabel": "이미지 확대",
-      "fullscreenAriaLabel": "전체 화면으로 보기",
-      "closeAriaLabel": "닫기",
-      "frame": "사진",
-      "resolution": "공장 현장 촬영",
-      "date": "날짜: 2026-03-29",
-      "statusApproved": "QC 검사 완료"
+      "fullscreenAriaLabel": "전체 화면 보기",
+      "closeAriaLabel": "닫기"
     },
     "ProductHero": {
       "ctaRequestQuote": "프로젝트 견적 문의",
-      "ctaDownloadSpecSheet": "기술 도면 다운로드 (PDF)",
-      "badgeIso": "ISO 9001:2015 참조",
-      "badgeRohs": "RoHS, REACH 요구 사항 적용",
-      "badgeXrf": "XRF 도금 두께 측정",
-      "metrologyInspected": "로트별 치수 검사",
-      "toleranceValue": "공차: ±0.1 µm",
-      "digitalCallout": "디지털 마이크로미터: 12.74 mm",
-      "robustPass": "합격",
-      "microHardnessLabel": "수소 제거 열처리 후 미세 경도:",
-      "microHardnessValue": "850 - 920 HV"
+      "ctaDownloadSpecSheet": "샘플 또는 도면 보내기",
+      "materialLabel": "소재:",
+      "materialValue": "ABS, ABS/PC 플라스틱 또는 금속"
     },
     "ProductOverview": {
-      "title": "프로젝트 개요",
-      "specSheetTitle": "기술 사양표",
-      "specSheetRevision": "버전: 2.4",
-      "batchStatusLabel": "로트 검사 결과:",
-      "batchStatusValue": "기준 충족"
+      "title": "제품 개요",
+      "specSheetTitle": "기본 정보"
     },
     "ProductProcessTimeline": {
-      "title": "프로젝트 수행 공정",
-      "description": "도면 접수부터 출하 전 검사까지."
+      "title": "진행 공정",
+      "description": "입고부터 출하 전 검사까지입니다."
     },
     "ProductQuoteCta": {
-      "title": "귀사 프로젝트에도 비슷한 가공이 필요하십니까?",
-      "descriptionPrefix": "2D/3D 도면(PDF, CAD, STP)과 표면 요구 사항을 보내 주십시오. HANIN 엔지니어가 적합한 공정을 제안하고 다음 시간 이내에 상세 견적을 보내 드립니다:",
-      "descriptionHighlight": "근무 시간 기준 4시간",
-      "ctaSendQuote": "견적 요청하기",
-      "ndaNote": "도면은 NDA에 따라 기밀 유지",
-      "responseTime": "근무 시간 기준 4시간 이내 기술 회신",
-      "hotlineLabel": "기술 상담 전화:",
-      "emailLabel": "CAD 도면 접수 이메일:"
+      "title": "귀사 제품에도 비슷한 도금이 필요하신가요?",
+      "descriptionPrefix": "표면 요구사항과 함께 샘플, 제품 사진 또는 도면을 보내 주십시오. HANIN이 적합한 도금 방안을 협의하고",
+      "descriptionHighlight": "상세 견적을 보내 드립니다",
+      "ctaSendQuote": "견적 요청 보내기",
+      "hotlineLabel": "핫라인:",
+      "emailLabel": "도면 수신 이메일:"
     },
     "ProductsCta": {
-      "title": "가공이 필요한 프로젝트가 있으십니까?",
-      "description": "2D/3D 도면을 보내 주시거나 HANIN 엔지니어와 직접 상담하시면 견적과 적합한 도금 방안을 안내해 드립니다.",
+      "title": "도금이 필요한 제품이 있으신가요?",
+      "description": "샘플, 사진 또는 도면을 보내 주시거나 HANIN과 직접 상담하시면 견적과 적합한 도금 방안을 안내해 드립니다.",
       "cta": "견적 받기",
-      "email": "이메일: Haninplating@gmail.com",
-      "responseTime": "근무 시간 기준 4시간 이내 기술 회신",
-      "hotlineLabel": "기술 상담 전화:"
+      "emailLabel": "이메일:",
+      "hotlineLabel": "핫라인:"
     },
     "RelatedProjects": {
       "title": "다른 프로젝트 및 제품",
-      "description": "HANIN에서 가공한 정밀 기계 부품 사례입니다.",
-      "lot": "로트",
+      "description": "HANIN에서 도금한 다른 제품입니다.",
+      "lot": "코드",
       "ctaViewDetail": "프로젝트 상세 보기"
     },
     "RelatedServices": {
       "title": "관련 도금 서비스",
-      "description": "이 부품군에 적용할 수 있는 도금 방식입니다.",
+      "description": "이 제품군에 적용할 수 있는 HANIN의 표면 처리 방법입니다.",
       "ctaViewAll": "전체 도금 서비스 보기"
     },
     "SpecTrustNote": {
-      "title": "기술 데이터 관련 안내",
-      "description": "이 페이지의 수치는 부품별 참고용이며, 주문에 적용되는 사양은 도면 기준으로 협의합니다."
+      "title": "제품 정보 안내",
+      "description": "페이지 내용은 제품군별 일반 소개이며, 각 주문의 요구사항은 고객이 제공한 샘플 또는 도면에 따라 협의합니다."
     },
     "categoryTabs": {
       "all": "전체 제품",
-      "coKhiChinhXac": "정밀 기계 부품",
-      "phuTungOToXeMay": "자동차, 오토바이 부품",
-      "dauCosseThietBiDien": "전기 단자, 전기 설비",
-      "anodizing": "아노다이징 부품"
+      "coKhiChinhXac": "도금 금속 부품",
+      "phuTungOToXeMay": "자동차 부품",
+      "dauCosseThietBiDien": "가전 및 전자기기",
+      "anodizing": "위생 및 주방 기기"
     },
     "products": {
-      "banhRang": {
-        "title": "웜 기어 및 마이크로미터 측정 기계 부품",
-        "category": "정밀 기계 부품",
-        "description": "니켈 도금, 두께 공차 ±0.2 µm. 소형 구동 기구의 미끄럼 마찰을 줄이고 경도를 높입니다.",
-        "imageAlt": "마이크로미터로 측정하는 기어 및 기계 부품",
-        "imageBadge": "정밀 기계",
+      "phuTungOTo": {
+        "title": "자동차 부품: 로고, 시동 버튼, 램프 프레임 테두리, 문자 몰딩",
+        "category": "자동차 부품",
+        "description": "VinFast, Infiniti, Nissan 로고, 시동 버튼, 램프 프레임 테두리와 문자 몰딩으로, ABS 플라스틱에 니켈-크롬 도금을 적용합니다.",
+        "imageAlt": "도금한 자동차 로고, 시동 버튼 및 램프 프레임 테두리",
+        "imageBadge": "자동차 부품",
         "chips": {
           "coating": {
-            "label": "도금층"
-          },
-          "thickness": {
-            "label": "두께"
-          },
-          "tolerance": {
-            "label": "공차"
+            "label": "도금",
+            "value": "ABS 플라스틱 니켈-크롬 도금"
           }
         }
       },
-      "pistonTruc": {
-        "title": "자동차 피스톤 축 및 유압 램",
-        "category": "자동차, 오토바이 부품",
-        "description": "경질 크롬 도금으로 긁힘과 부식에 강하며, ASTM B117 염수분무 시험 720시간 이상.",
-        "imageAlt": "경질 크롬 도금된 자동차 피스톤 축 및 유압 램",
-        "imageBadge": "자동차, 오토바이 부품",
+      "smartHome": {
+        "title": "스마트홈 및 전자기기: 컨트롤 버튼, 스위치",
+        "category": "스마트홈 및 전자기기",
+        "description": "Vinsmart 스마트 기기용 컨트롤 버튼과 스위치로, ABS 플라스틱에 장식 도금을 적용합니다.",
+        "imageAlt": "도금한 스마트 기기 컨트롤 버튼",
+        "imageBadge": "스마트홈 및 전자기기",
         "chips": {
-          "hardChrome": {
-            "label": "경질 크롬",
-            "value": "염수분무 시험: 720시간"
+          "coating": {
+            "label": "도금",
+            "value": "ABS 플라스틱 장식 도금"
           }
         }
       },
-      "busbar": {
-        "title": "주석 도금 구리 부스바",
-        "category": "전기 단자, 전기 설비",
-        "description": "변전소 구리 부스바를 주석 도금으로 보호하여 산화를 막고 접촉 저항을 낮게 유지합니다.",
-        "imageAlt": "배전반 내 주석 도금 구리 부스바",
-        "imageBadge": "전기 단자, 전기 설비",
+      "giaDung": {
+        "title": "가전제품: 냉장고, 세탁기, 정수기",
+        "category": "가전제품",
+        "description": "가전 브랜드의 냉장고, 세탁기, 정수기 및 오븐 손잡이용 장식 부품입니다.",
+        "imageAlt": "도금한 가전제품 장식 부품",
+        "imageBadge": "가전제품",
         "chips": {
-          "tin": {
-            "label": "주석 도금",
-            "value": "순도: 99.9%"
+          "coating": {
+            "label": "도금",
+            "value": "니켈-크롬 또는 새틴 니켈"
           }
         }
       },
-      "buLong": {
-        "title": "약품조 블록용 위치 고정 볼트 및 핀",
-        "category": "아노다이징 부품",
-        "description": "아연-니켈 도금과 3가 부동태 처리. 알칼리와 약산에 강하고 녹으로 나사가 끼지 않습니다.",
-        "imageAlt": "아연-니켈 도금된 약품조 블록용 위치 고정 볼트 및 핀",
-        "imageBadge": "유압 및 밸브 블록",
+      "veSinhNhaBep": {
+        "title": "위생 및 주방 기기: 샤워기, 레버, 손잡이",
+        "category": "위생 및 주방 기기",
+        "description": "샤워기, 수도꼭지, 샤워 레버, 정수기 손잡이, Sunhouse 주방 기기의 프레임과 손잡이입니다.",
+        "imageAlt": "도금한 샤워기 및 주방 기기 손잡이",
+        "imageBadge": "위생 및 주방",
         "chips": {
-          "zincNickel": {
-            "label": "도금층: 아연-니켈",
-            "value": "ISO 4042 적용"
+          "coating": {
+            "label": "도금",
+            "value": "크롬 도금"
           }
         }
       },
-      "ongLot": {
-        "title": "내마모 부싱 및 나사 축",
-        "category": "정밀 기계 부품",
-        "description": "흑색 아연 도금으로 표면 반사를 줄이고 나사를 보호하며, 로봇 조립 시 나사에 버가 남지 않습니다.",
-        "imageAlt": "흑색 아연 도금된 내마모 부싱 및 나사 축",
-        "imageBadge": "정밀 기계 부품",
+      "satinAbs": {
+        "title": "ABS 플라스틱 새틴 도금",
+        "category": "새틴 도금",
+        "description": "강한 반사 없이 고급스러운 외관이 필요한 ABS 플라스틱 부품에 적용하는 매트하고 부드러운 새틴 니켈 표면입니다.",
+        "imageAlt": "새틴 니켈 도금한 ABS 플라스틱 부품",
+        "imageBadge": "새틴 도금",
         "chips": {
-          "blackZinc": {
-            "label": "흑색 아연 도금",
-            "value": "나사 규격: M12-M48"
+          "coating": {
+            "label": "도금",
+            "value": "새틴 니켈"
           }
         }
       },
-      "nhomTanNhiet": {
-        "title": "하드 아노다이징 알루미늄 방열 부품",
-        "category": "아노다이징 부품",
-        "description": "하드 아노다이징으로 내구성 있는 Al₂O₃ 산화 피막을 형성하며, 1000V DC 이상의 절연성과 내마모성으로 전자 장비의 방열판 및 알루미늄 부품에 적합합니다.",
-        "imageAlt": "하드 아노다이징 처리된 알루미늄 방열 부품 (예시 이미지)",
-        "imageBadge": "아노다이징 부품",
+      "cromDenHairLine": {
+        "title": "블랙 크롬 도금 및 헤어라인 가공",
+        "category": "블랙 크롬 및 헤어라인",
+        "description": "장식 부품에 사용하는 블랙 니켈-크롬 도금과 니켈-크롬 위 헤어라인 가공입니다.",
+        "imageAlt": "블랙 크롬 도금 및 헤어라인 표면 부품",
+        "imageBadge": "블랙 크롬 및 헤어라인",
         "chips": {
-          "hardAnodizing": {
-            "label": "하드 아노다이징",
-            "value": "하드코트: 50µm"
+          "coating": {
+            "label": "도금",
+            "value": "블랙 니켈-크롬"
           }
         }
       },
-      "cumLinhKien": {
-        "title": "기계 제조 고객사의 하우징 및 기어 부품 도금 프로젝트",
-        "category": "대표 프로젝트",
-        "description": "자동 전해 도금과 다층 부동태 처리를 로트 생산 부품에 적용하며, XRF 측정과 염수분무 500시간 시험을 실시합니다.",
-        "imageAlt": "HANIN 공장의 PLC 제어 자동 전해 도금 라인",
-        "imageBadge": "하우징 및 기어",
+      "kimLoaiMa": {
+        "title": "니켈·아연·주석 도금 및 흑색 인산염 처리 금속 부품",
+        "category": "도금 금속 부품",
+        "description": "볼트, 나사, 경첩, 핀, 축, 너트, 압착 단자 및 기계 부품에 니켈, 아연, 주석 도금 또는 흑색 인산염 처리를 합니다.",
+        "imageAlt": "도금한 볼트, 나사 및 금속 부품",
+        "imageBadge": "금속 부품",
         "chips": {
-          "industry": {
-            "label": "적용 산업",
-            "value": "정밀 기계 제조, 로봇"
-          },
-          "technology": {
-            "label": "도금 공법",
-            "value": "니켈 및 아연 도금, PLC 제어"
-          },
-          "detail": {
-            "label": "부품",
-            "value": "기어, 위치 결정 축, 스플라인 커플링"
-          },
-          "standard": {
-            "label": "품질 기준",
-            "value": "ISO 9001, RoHS, ASTM B117"
+          "coating": {
+            "label": "도금",
+            "value": "니켈, 아연, 주석, 흑색 인산염"
           }
         }
       }
     },
     "detail": {
-      "specEyebrow": "ASTM B733 · ASTM B117 기준",
+      "specEyebrow": "ABS 플라스틱 및 금속 도금 공정",
       "heroStats": {
         "coatingThickness": {
-          "label": "도금층 두께",
-          "note": "도면 기준"
+          "label": "소재",
+          "value": "ABS / 금속",
+          "note": "ABS, ABS/PC 플라스틱, 철, 강, 구리, 알루미늄"
         },
         "saltSpray": {
-          "label": "염수분무 시험",
-          "note": "ASTM B117 기준"
+          "label": "도금 공정",
+          "value": "니켈-크롬",
+          "note": "새틴 니켈, 아연, 구리, 주석도 가능"
         },
         "tolerance": {
-          "label": "공차",
-          "note": "광학 측정"
+          "label": "검사",
+          "value": "NSS / CASS",
+          "note": "중성 염수분무 및 산성 염수분무"
         }
       },
-      "heroDescription": "산업용 로봇의 헬리컬 기어, 웜 축, 차동 기구에 적용하는 고인 무전해 니켈 도금입니다. 기어 뿌리와 스플라인 홈까지 고르게 도금되고 피치가 변하지 않아 마이크론 단위 조립 공차를 충족합니다.",
-      "heroImageAlt": "화강암 정반 위에서 디지털 마이크로미터로 공차를 측정하는 정밀 강철 기어",
+      "heroDescription": "아름답고 내구성 있는 표면이 필요한 장식 제품을 ABS 플라스틱 또는 금속 소재에 도금합니다. HANIN은 표면 전처리 후 소재에 맞는 도금 공정을 적용하고 출하 전에 도금층을 검사합니다.",
+      "heroImageAlt": "HANIN 공장에서 도금한 장식 부품",
       "gallery": {
         "item1": {
-          "alt": "무전해 니켈 도금 후 치면 및 나사산 표면 확대 사진",
-          "thumbLabel": "치면 및 나사산",
-          "caption": "도금 후 치면과 나사산 표면, 도금층이 고르게 분포되어 있습니다"
+          "alt": "도금 후 부품",
+          "thumbLabel": "도금 후 부품",
+          "caption": "도금 후 부품, 표면이 밝고 균일합니다"
         },
         "item2": {
-          "alt": "QC 측정실에서 디지털 마이크로미터로 공차를 검사하는 모습",
-          "thumbLabel": "마이크로미터 두께 측정",
-          "caption": "QC 측정실에서 디지털 마이크로미터로 공차를 검사하는 모습"
+          "alt": "품질 검사실에서 도금 두께 측정",
+          "thumbLabel": "도금 두께 측정",
+          "caption": "품질 검사실에서 APC-100으로 도금 두께 측정"
         },
         "item3": {
-          "alt": "자동 도금 라인의 티타늄 지그",
-          "thumbLabel": "라인 지그",
-          "caption": "약품 농도를 관리하는 도금조에서 티타늄 지그에 걸린 부품"
+          "alt": "도금 라인에서 지그에 걸린 부품",
+          "thumbLabel": "라인 위 부품",
+          "caption": "부품이 지그(JIG)에 걸려 자동 라인의 도금조를 지나갑니다"
         },
         "item4": {
-          "alt": "ASTM B117 염수분무 시험 챔버",
-          "thumbLabel": "ASTM B117 염수분무 시험",
-          "caption": "ASTM B117에 따른 염수분무 부식 시험, 시험 시간 720시간 초과"
+          "alt": "도금층 검사용 염수분무기",
+          "thumbLabel": "염수분무 시험",
+          "caption": "중성 염수분무(NSS) 및 산성 염수분무(CASS) 시험"
         }
       },
       "overviewParagraphs": {
-        "p1": "감속기용 SCM440 강 헬리컬 베벨 기어와 스플라인 축에 내마모 도금이 필요했습니다. 깊은 나사홈이 있어 일반 전해 도금은 나사산 정상부에 전류가 몰리고 홈 바닥이 얇아지기 쉽습니다.",
-        "p2": "공정은 고인(10.5% – 12% P) 무전해 니켈 도금(ENP)입니다. 전류를 쓰지 않아 도금층이 형상을 따라 형성되며, 기어 전체의 두께 편차는 ±0.5 µm 이내입니다.",
-        "p3": "도금 후 로트 전체를 400°C에서 1시간 가열해 수소를 제거합니다. 열처리로 미세 경도가 500 HV에서 920 HV로 높아져 경질 크롬과 비슷하며, 미끄럼 마찰 계수는 30% 낮아집니다."
+        "p1": "ABS 또는 ABS/PC 플라스틱 부품은 지그에 장착한 뒤 탈지, 에칭, 중화, HCl 활성화, 팔라듐 활성화를 거쳐 니켈-크롬 도금을 합니다. 새틴 니켈, 블랙 크롬, 헤어라인 가공은 이 바탕 위에 진행합니다.",
+        "p2": "철, 강, 구리, 알루미늄 등 금속은 탈지, 녹 제거, 활성화를 거쳐 부품 요구에 따라 니켈, 아연, 구리, 주석 도금 또는 흑색 인산염 처리를 합니다. 작은 부품은 배럴 도금, 큰 부품은 걸이 도금을 합니다.",
+        "p3": "도금 후 부품은 건조, 도금 두께 측정, 요청에 따른 염수분무 시험과 완제품 검사를 거쳐 포장합니다."
       },
       "achievements": {
         "item1": {
-          "title": "균일한 도금층",
-          "description": "모서리, 막힌 나사 구멍, 깊은 홈까지 보조 전극 없이 도금됩니다."
+          "title": "광택 또는 새틴 표면",
+          "description": "광택 니켈-크롬, 매트 새틴 니켈, 블랙 크롬 또는 헤어라인 중 고객 샘플에 맞춰 선택합니다."
         },
         "item2": {
-          "title": "열처리 후 미세 경도 850 – 950 HV",
-          "description": "도금 후 수소를 제거하여 고하중 구동 기구의 피로 균열을 줄입니다."
+          "title": "한 공장에서 다양한 공정",
+          "description": "ABS 플라스틱 도금, 니켈·아연·구리·주석 도금, 흑색 인산염, PVD, 도장 및 인쇄를 갖추고 있어 한 주문을 한 곳에서 처리할 수 있습니다."
         },
         "item3": {
-          "title": "ASTM B117 염수분무 시험 720시간 초과",
-          "description": "도금층이 비정질이라 결정립계가 없어 습기와 산성 윤활유의 침투를 억제합니다."
+          "title": "출하 전 검사",
+          "description": "도금 두께 측정, NSS 및 CASS 염수분무 시험, 완제품 검사를 합니다."
         }
       },
       "specSheet": {
         "product": {
           "label": "제품",
-          "value": "웜 기어, 스플라인 축, 정밀 커플링"
+          "value": "장식 또는 부식 방지 도금이 필요한 ABS 플라스틱 또는 금속 부품"
         },
         "application": {
-          "label": "적용 산업",
-          "value": "로봇 제조, CNC 공작기계, 자동차 동력 전달 부품"
+          "label": "용도",
+          "value": "자동차, 스마트홈, 가전제품, 위생 및 주방 기기"
         },
         "process": {
           "label": "도금 공정",
-          "value": "무전해 니켈 도금(ENP, 고인형) + 400°C 열처리"
+          "value": "ABS 플라스틱 니켈-크롬 도금, 금속 니켈·아연·구리·주석 도금 및 흑색 인산염"
         },
         "substrate": {
           "label": "소재",
-          "value": "SCM440 합금강, S45C 탄소강, C3604 황동"
+          "value": "ABS, ABS/PC 플라스틱, 철, 강, 구리, 알루미늄"
         },
         "requirement": {
-          "label": "특별 요구 사항",
-          "value": "나사산 공차 < ±0.5 µm, 버 없음, 표면 거칠기 Ra 0.2"
+          "label": "표면 요구사항",
+          "value": "색상, 광택 또는 새틴 여부는 고객 샘플과 도면에 따름"
         },
         "standard": {
-          "label": "검사 기준",
-          "value": "ASTM B733, AMS 2404, RoHS, REACH"
+          "label": "검사 항목",
+          "value": "도금 두께 측정, NSS 및 CASS 염수분무 시험, 완제품 검사"
         },
         "lab": {
-          "label": "검사 장비",
-          "value": "X선 형광 두께 측정기(XRF Fischer), Matsuzawa 비커스 경도계"
+          "label": "검사 설비",
+          "value": "APC-100 도금 두께 측정기, NSS 및 CASS 염수분무기, 헐셀 시험기"
         }
       },
       "process": {
         "step1": {
-          "title": "도면 접수 및 기술 검토",
-          "description": "2D/3D 파일(STEP, DWG) 검토, 표면적(dm²) 산출, 전류·약품 조건 설정, 티타늄 지그 설계.",
-          "phase": "기술"
+          "title": "입고 및 전처리",
+          "description": "입고 및 보관, 초음파 탈지, HCl 조, 표면 활성화를 거치며 각 단계 사이에 수세합니다.",
+          "phase": "전처리"
         },
         "step2": {
-          "title": "전처리 및 초음파 탈지",
-          "description": "초음파 약품조 4단계 세정, 녹 제거, 표면 활성화 후 DI수로 세척합니다.",
-          "phase": "표면 세정"
-        },
-        "step3": {
-          "title": "전해 도금 또는 무전해 도금",
-          "description": "PLC로 도금조 온도를 일정하게 유지하고 금속 이온을 보충하며 전류 밀도를 감시합니다.",
+          "title": "지그 장착 및 도금",
+          "description": "ABS 플라스틱은 자동 라인에서 니켈-크롬 도금, 금속은 걸이 또는 배럴 라인에서 니켈·아연·구리·주석 도금 또는 흑색 인산염 처리를 합니다.",
           "phase": "도금"
         },
+        "step3": {
+          "title": "표면 마감",
+          "description": "요청에 따라 새틴, 블랙 크롬 또는 헤어라인 가공 후 건조합니다. 부품에 도장이나 인쇄를 추가할 수도 있습니다.",
+          "phase": "마감"
+        },
         "step4": {
-          "title": "XRF 검사 및 COA 발급",
-          "description": "XRF 두께 측정, 크로스해치 밀착성 시험, 로트별 COA 발급, VCI 진공 포장.",
+          "title": "검사 및 포장",
+          "description": "도금 두께 측정, 염수분무 시험, 완제품 검사 후 포장하여 출하합니다.",
           "phase": "검사 및 인도"
         }
       },
       "relatedServices": {
         "item1": {
-          "title": "아연-니켈 도금 서비스",
-          "description": "아연-니켈 합금(Zn-Ni 12-15%) 도금으로 자동차 섀시 부품과 볼트에 적용하며, 염수분무 1000시간 이상.",
-          "cta": "아연-니켈 도금 서비스 알아보기"
+          "title": "표면 전처리",
+          "description": "도금 전 초음파 탈지, HCl 조 및 표면 활성화.",
+          "cta": "서비스 알아보기"
         },
         "item2": {
-          "title": "경질 크롬 도금 서비스",
-          "description": "압연 롤 축과 유압 실린더 로드의 경도를 최대 68 HRC(1000 HV)로 높여 긁힘과 마모에 강합니다.",
-          "cta": "경질 크롬 도금 서비스 알아보기"
+          "title": "ABS 플라스틱 니켈-크롬 도금",
+          "description": "ABS 또는 ABS/PC 플라스틱에 3가 크롬·6가 크롬 니켈-크롬, 새틴 니켈, 블랙 니켈-크롬, 헤어라인을 적용합니다.",
+          "cta": "서비스 알아보기"
         },
         "item3": {
-          "title": "알루미늄 아노다이징 서비스",
-          "description": "경질 아노다이징 Type III(MIL-A-8625), 절연성과 내열성이 좋아 전자·항공 장비 알루미늄 케이스에 사용됩니다.",
-          "cta": "아노다이징 서비스 알아보기"
+          "title": "금속 니켈 도금",
+          "description": "철, 강, 구리, 알루미늄 부품에 전해 니켈, 무전해 니켈, 블랙 니켈, 새틴 니켈, 니켈-크롬을 적용합니다.",
+          "cta": "서비스 알아보기"
+        },
+        "item4": {
+          "title": "아연·구리·주석 도금, 흑색 인산염",
+          "description": "볼트, 나사, 너트, 압착 단자에 아연, 구리, 주석 도금과 망간 흑색 인산염 처리를 합니다.",
+          "cta": "서비스 알아보기"
+        },
+        "item5": {
+          "title": "도장 및 인쇄",
+          "description": "플라스틱 및 금속 제품에 수동·자동 도장, 실크 인쇄, 잉크젯 인쇄, 레이저 가공을 합니다.",
+          "cta": "서비스 알아보기"
+        },
+        "item6": {
+          "title": "PVD 진공 증착",
+          "description": "PVD 장비 2대와 PVD 라인 2개로 진공 증착을 합니다.",
+          "cta": "서비스 알아보기"
         }
       }
     }

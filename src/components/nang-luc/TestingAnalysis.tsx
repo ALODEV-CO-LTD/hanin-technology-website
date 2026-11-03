@@ -2,10 +2,13 @@ import { useTranslations } from "next-intl";
 import { siteImg } from "@/server/site-images";
 import Photo from "@/components/ui/Photo";
 
+const RELIABILITY = ["r1", "r2", "r3", "r4", "r5", "r6", "r7", "r8", "r9", "r10"] as const;
+
 const ITEMS = [
-  { key: "saltSpray", no: "01" },
-  { key: "xrf", no: "02" },
-  { key: "bathControl", no: "03" },
+  { key: "lab", no: "01" },
+  { key: "hullCell", no: "02" },
+  { key: "thickness", no: "03" },
+  { key: "saltSpray", no: "04" },
 ] as const;
 
 export default function TestingAnalysis() {
@@ -29,7 +32,7 @@ export default function TestingAnalysis() {
           </div>
 
           {/* RIGHT: 3 Technical Information Blocks */}
-          <div className="lg:col-span-6 flex flex-col gap-space-md">
+          <div className="lg:col-span-6 flex flex-col gap-space-sm">
             {ITEMS.map((item) => (
               <div
                 key={item.key}
@@ -45,6 +48,19 @@ export default function TestingAnalysis() {
               </div>
             ))}
           </div>
+        </div>
+
+        <div className="mt-space-lg p-space-md sm:p-space-lg bg-white border border-slate-200 rounded-lg shadow-sm">
+          <h3 className="text-headline-sm text-slate-900 uppercase mb-space-xs">{t("reliability.title")}</h3>
+          <p className="text-body-sm text-slate-600 leading-relaxed mb-space-md">{t("reliability.desc")}</p>
+          <ol className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-space-lg">
+            {RELIABILITY.map((r, i) => (
+              <li key={r} className="flex items-baseline gap-3 border-b border-slate-200 py-2.5">
+                <span className="w-6 shrink-0 text-body-sm font-bold tabular-nums text-steel-600">{String(i + 1).padStart(2, "0")}</span>
+                <span className="text-body-sm font-medium text-slate-900">{t(`reliability.items.${r}`)}</span>
+              </li>
+            ))}
+          </ol>
         </div>
       </div>
     </section>

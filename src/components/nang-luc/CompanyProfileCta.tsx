@@ -25,7 +25,7 @@ export default function CompanyProfileCta() {
           <div className="lg:col-span-5 flex justify-center lg:justify-end">
             <div className="w-full max-w-sm bg-slate-800 border border-slate-700 text-white p-space-lg rounded-lg shadow-2xl relative overflow-hidden">
               <div className="flex items-center justify-between pb-space-sm mb-space-md border-b border-slate-700">
-                <span className="text-label-technical text-steel-300 font-semibold uppercase">HANIN VIETNAM</span>
+                <span className="text-label-technical text-steel-300 font-semibold uppercase">HANIN PLATING</span>
                 <span className="px-space-xs py-0.5 bg-slate-700 text-slate-300 rounded text-label-sm">
                   {t("fileBadge")}
                 </span>

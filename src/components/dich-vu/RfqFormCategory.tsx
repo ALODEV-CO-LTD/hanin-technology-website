@@ -6,6 +6,7 @@ import { useLocale, useTranslations } from "next-intl";
 import { usePathname } from "@/i18n/navigation";
 import { submitInquiry } from "@/lib/submit-inquiry";
 import Icon from "@/components/ui/Icon";
+import { ATTACHMENT_ACCEPT, checkAttachments, type AttachmentProblem } from "@/lib/attachments";
 
 export default function RfqFormCategory({ className = "mb-space-xl", aside }: { className?: string; aside?: ReactNode }) {
   const t = useTranslations("DichVu.RfqFormCategory");
@@ -14,10 +15,18 @@ export default function RfqFormCategory({ className = "mb-space-xl", aside }: { 
   const [busy, setBusy] = useState(false);
   const [status, setStatus] = useState<"idle" | "ok" | "fail">("idle");
   const [fileNames, setFileNames] = useState("");
+  const [fileError, setFileError] = useState<AttachmentProblem | null>(null);
+  const ta = useTranslations("AttachField");
+  const onPickFiles = (list: FileList | null) => {
+    const files = Array.from(list ?? []);
+    setFileNames(files.map((f) => f.name).join(", "));
+    setFileError(checkAttachments(files));
+  };
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     const form = event.currentTarget;
+    if (fileError) return;
     setBusy(true);
     setStatus("idle");
     const result = await submitInquiry(new FormData(form), { kind: "rfq", locale, source: pathname });
@@ -25,6 +34,7 @@ export default function RfqFormCategory({ className = "mb-space-xl", aside }: { 
     if (result.ok) {
       form.reset();
       setFileNames("");
+      setFileError(null);
       setStatus("ok");
     } else {
       setStatus("fail");
@@ -113,11 +123,12 @@ export default function RfqFormCategory({ className = "mb-space-xl", aside }: { 
               defaultValue=""
               options={[
                 { value: "", label: t("platingTypeOptions.default") },
-                { value: "hard-chrome", label: t("platingTypeOptions.hardChrome") },
-                { value: "electroless-nickel", label: t("platingTypeOptions.enp") },
-                { value: "zinc-nickel", label: t("platingTypeOptions.zincNickel") },
-                { value: "anodizing", label: t("platingTypeOptions.anodizing") },
-                { value: "custom", label: t("platingTypeOptions.custom") },
+                { value: "abs-nickel-chrome", label: t("platingTypeOptions.hardChrome") },
+                { value: "nickel-metal", label: t("platingTypeOptions.enp") },
+                { value: "zinc-copper-tin-phosphate", label: t("platingTypeOptions.zincNickel") },
+                { value: "pvd", label: t("platingTypeOptions.anodizing") },
+                { value: "paint-print-laser", label: t("platingTypeOptions.custom") },
+                { value: "other", label: t("platingTypeOptions.other") },
               ]}
             />
           </div>
@@ -146,7 +157,8 @@ export default function RfqFormCategory({ className = "mb-space-xl", aside }: { 
               <Icon name="attach_file" className="text-steel-600 text-[26px] sm:text-[32px] shrink-0" />
               <div>
                 <p className="text-body-md sm:text-title-md text-slate-900 font-bold">{t("attachTitle")}</p>
-                <p className={`text-sm break-all ${fileNames ? "text-steel-700 font-medium" : "hidden sm:block text-slate-600"}`}>{fileNames || t("attachDesc")}</p>
+                <p className={`text-sm break-all ${fileNames ? "text-steel-700 font-medium" : "hidden sm:block text-slate-600"}`}>{fileNames || ta("hint")}</p>
+                {fileError ? <p role="alert" className="text-sm font-semibold text-red-700">{ta(fileError)}</p> : null}
               </div>
             </div>
             <label className="cursor-pointer focus-within:ring-2 focus-within:ring-steel-600/40 min-h-11 shrink-0 inline-flex items-center justify-center bg-white hover:bg-slate-100 border border-slate-200 text-slate-800 px-space-sm sm:px-space-md py-2 rounded text-label-technical font-semibold transition-all">
@@ -156,7 +168,8 @@ export default function RfqFormCategory({ className = "mb-space-xl", aside }: { 
                 type="file"
                 name="files"
                 multiple
-                onChange={(e) => setFileNames(Array.from(e.target.files ?? []).map((f) => f.name).join(", "))}
+                accept={ATTACHMENT_ACCEPT}
+                onChange={(e) => onPickFiles(e.target.files)}
               />
             </label>
           </div>

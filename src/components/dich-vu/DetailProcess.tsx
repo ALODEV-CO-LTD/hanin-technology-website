@@ -4,14 +4,10 @@ import { useTranslations } from "next-intl";
 export default function DetailProcess({ slug }: { slug: string }) {
   const t = useTranslations(useServiceNs(slug, "DetailProcess"));
 
-  const STEPS = [
-    { key: "s1", icon: "cleaning_services", highlight: false },
-    { key: "s2", icon: "science", highlight: false },
-    { key: "s3", icon: "precision_manufacturing", highlight: true },
-    { key: "s4", icon: "water_drop", highlight: false },
-    { key: "s5", icon: "local_fire_department", highlight: false },
-    { key: "s6", icon: "verified", highlight: false },
-  ] as const;
+  const STEPS = (["s1", "s2", "s3", "s4", "s5", "s6"] as const)
+    .filter((key) => t.has(`${key}.title`))
+    .map((key) => ({ key, highlight: false }));
+  const COLS = STEPS.length >= 6 ? "xl:grid-cols-6" : STEPS.length === 5 ? "xl:grid-cols-5" : "xl:grid-cols-4";
 
   return (
     <section className="w-full mb-space-xl">
@@ -22,7 +18,7 @@ export default function DetailProcess({ slug }: { slug: string }) {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-space-sm">
+        <div className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ${COLS} gap-space-sm`}>
           {STEPS.map((step, i) => (
             <div
               key={step.key}

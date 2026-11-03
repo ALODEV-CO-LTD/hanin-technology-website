@@ -1,309 +1,306 @@
 {
   "NangLuc": {
     "AutomatedVsManual": {
-      "title": "자동 라인과 수작업 라인",
-      "description": "대량 주문은 자동 라인에서 생산하고, 형상이 특수한 부품은 기술자가 수작업으로 처리합니다.",
+      "title": "자동 라인과 반자동 라인",
+      "description": "대량 주문은 자동 도금 라인에서 생산합니다. 중소량 금속 부품은 반자동 걸이 도금 라인 또는 회전 도금 라인에서 처리합니다.",
       "automated": {
-        "imageAlt": "PLC SCADA 제어 화면을 갖춘 자동 도금 라인과 부품을 처리조로 옮기는 호이스트",
-        "title": "자동 라인",
-        "desc": "PLC SCADA가 침지 시간과 전류 밀도를 제어하고 약품을 보충하여 도금액을 안정적으로 유지합니다.",
-        "feature1": "PLC와 SCADA 연동 제어",
-        "feature2": "배치별 도금 두께 관리",
-        "feature3": "생산 주기가 일정하고 작업 편차가 적음"
+        "imageAlt": "공장 내 도금조와 크레인이 있는 자동 도금 라인",
+        "title": "자동 도금 라인",
+        "desc": "제품을 JIG 걸이에 걸고 크레인이 도금조를 차례로 이동시킵니다. 하루 3만~5만 개를 생산하며 크롬, 니켈, 새틴 도금이 가능합니다."
       },
       "manual": {
-        "imageAlt": "보호복을 입은 기술자가 침지 전에 금속 부품 지그를 점검하는 모습",
-        "title": "수작업 및 반자동 라인",
-        "desc": "샘플, 시제품, 복잡한 부품에 사용합니다. 도면에 따라 지그를 별도로 제작합니다.",
-        "feature1": "복잡한 형상의 부품 처리 가능",
-        "feature2": "샘플, 시제품, 소량 주문 대응",
-        "feature3": "기술자가 지그를 직접 조정"
+        "imageAlt": "HANIN 공장의 걸이 도금 및 회전 도금 구역",
+        "title": "반자동 걸이 도금 라인과 회전 도금 라인",
+        "desc": "반자동 걸이 도금은 금속 부품용으로 하루 1만~2만 개입니다. 회전 도금은 소형 부품 대량 생산용으로 하루 3,000~5,000kg입니다."
       }
     },
     "CapabilityHero": {
       "breadcrumbHome": "홈",
-      "breadcrumbCurrent": "생산 능력",
-      "title": "생산 능력",
-      "description": "HANIN의 공장, PLC SCADA로 제어하는 도금 라인, 시험실을 소개합니다.",
+      "breadcrumbCurrent": "생산 역량",
+      "title": "생산 역량",
+      "description": "HANIN의 공장, 도금 라인 및 시험실을 소개합니다.",
       "ctaExplore": "공장 보기",
       "ctaLines": "생산 라인",
-      "ctaQa": "QA/QC 검사실"
+      "ctaQa": "시험실"
     },
     "CapabilityOverviewStats": {
       "items": {
-        "equipment": {
-          "label": "설비 & 장비",
-          "desc": "도금 및 보조 설비",
-          "end": "42",
-          "prefix": "",
-          "suffix": "+",
-          "unit": ""
-        },
         "lines": {
-          "label": "생산 라인",
-          "desc": "PLC 자동 라인 및 반자동 라인",
-          "end": "16",
+          "label": "도금 라인",
+          "desc": "자동, 반자동 걸이 및 회전 도금",
+          "end": "3",
           "prefix": "",
           "suffix": "",
-          "unit": ""
+          "unit": "개 라인"
         },
-        "zones": {
-          "label": "구역",
-          "desc": "도금 구역, 약품 구역, 시험실",
-          "end": "5",
+        "pvd": {
+          "label": "PVD 설비",
+          "desc": "진공 도금, PVD 라인 2개",
+          "end": "2",
           "prefix": "",
           "suffix": "",
-          "unit": ""
+          "unit": "대"
         },
-        "precision": {
-          "label": "두께 공차",
-          "desc": "자동 라인의 도금 두께 공차",
-          "end": "0.2",
-          "prefix": "±",
+        "wastewater": {
+          "label": "폐수 처리",
+          "desc": "폐수 처리 시스템 용량",
+          "end": "130",
+          "prefix": "",
           "suffix": "",
-          "unit": "µm"
+          "unit": "m³/일"
+        },
+        "staff": {
+          "label": "인원",
+          "desc": "도금 공장 인원",
+          "end": "70",
+          "prefix": "",
+          "suffix": "",
+          "unit": "명"
         }
       }
     },
     "CompanyProfileCta": {
       "title": "HANIN 역량 자료",
-      "description": "공장 배치, 라인 사양, 시험 장비 목록, 생산 역량을 수록했습니다.",
-      "ctaDownload": "Company Profile 보기(PDF)",
-      "fileBadge": "PDF 14.5 MB",
-      "cardTitle": "HANIN 역량 자료 2026",
+      "description": "HANIN의 공장, 도금 라인, 검사 장비 및 서비스를 소개합니다.",
+      "ctaDownload": "회사 소개서 보기 (PDF)",
+      "fileBadge": "PDF",
+      "cardTitle": "HANIN 회사 소개서",
       "cardSubtitle": "역량 소개 자료",
-      "cardEdition": "2026년 1월 발행",
-      "cardReady": "다운로드 가능"
+      "cardEdition": "Company profile",
+      "cardReady": "온라인 열람 가능"
     },
     "EquipmentGrid": {
       "sectionTitle": "기계 및 설비",
-      "sectionDescription": "전처리, 본 도금, 표면 마감 공정에 쓰는 설비입니다.",
+      "sectionDescription": "PVD 설비, 도장 구역, 회전 도금 설비 및 폐수 처리 시스템입니다.",
       "items": {
-        "rectifier": {
-          "badge": "전원 설비",
-          "title": "도금조 및 정류기",
-          "desc": "PLC로 제어하는 고주파 정류기로 대형 도금조에 안정적인 전류를 공급합니다.",
-          "alt": "디지털 계기와 스위치를 갖춘 도금조 정류기 제어반",
-          "specLoad": "부하 전류:",
-          "specStability": "안정도:",
-          "specControl": "제어 방식:",
-          "specLoadValue": "12,000A",
-          "specStabilityValue": "±1%",
-          "specControlValue": "PLC"
+        "pvd": {
+          "badge": "진공 도금",
+          "title": "PVD 진공 도금기",
+          "desc": "외관이 중요한 플라스틱 및 금속 부품에 PVD 코팅을 합니다.",
+          "alt": "HANIN 공장의 PVD 진공 도금기",
+          "spec1Label": "설비 수",
+          "spec1Value": "2대",
+          "spec2Label": "라인",
+          "spec2Value": "PVD 라인 2개",
+          "spec3Label": "공법",
+          "spec3Value": "진공 도금"
         },
-        "ultrasonic": {
-          "badge": "표면 전처리",
-          "title": "다주파 초음파 세척·탈지조",
-          "desc": "다주파 초음파로 버와 가공유를 제거하여 도금 전 표면을 깨끗하게 합니다.",
-          "alt": "HANIN 도금 공장의 세척 및 탈지 탱크 구역",
-          "specFrequency": "주파수:",
-          "specHeating": "가열 방식:",
-          "specHeatingValue": "자동",
-          "specVolume": "용량:",
-          "specFrequencyValue": "28 - 40 kHz",
-          "specVolumeValue": "850 m³"
+        "paint": {
+          "badge": "도장 및 인쇄",
+          "title": "도장 구역",
+          "desc": "플라스틱 및 금속 부품 스프레이 도장과 함께 인쇄, 레이저 커팅을 합니다.",
+          "alt": "HANIN 공장의 도장 구역",
+          "spec1Label": "수동 도장실",
+          "spec1Value": "2실",
+          "spec2Label": "6축 도장실(건 6개)",
+          "spec2Value": "3실",
+          "spec3Label": "자동 도장 라인",
+          "spec3Value": "1라인",
+          "spec4Label": "이오나이저 부스",
+          "spec4Value": "20개"
         },
-        "hoist": {
-          "badge": "내부 운반",
-          "title": "자동 호이스트",
-          "desc": "레이저로 위치를 잡는 자동 호이스트가 설정된 공정대로 지그를 각 조로 이송합니다.",
-          "alt": "자동 라인에서 지그를 승강시키는 호이스트",
-          "specLoad": "하중:",
-          "specLoadUnit": "톤",
-          "specSpeed": "속도:",
-          "specSpeedValue": "조절 가능",
-          "specSensor": "센서:",
-          "specLoadValue": "25",
-          "specSensorValue": "Laser"
+        "rotary": {
+          "badge": "회전 도금",
+          "title": "진동기 및 탈지 설비",
+          "desc": "회전 도금 라인에서 소형 부품을 탈지한 뒤 구리 도금조와 니켈 도금조로 보냅니다.",
+          "alt": "HANIN 공장 회전 도금 라인의 설비",
+          "spec1Label": "라인",
+          "spec1Value": "회전 도금",
+          "spec2Label": "용량",
+          "spec2Value": "3,000~5,000kg/일",
+          "spec3Label": "도금조",
+          "spec3Value": "구리 도금조, 니켈 도금조"
         },
-        "deEmbrittlement": {
-          "badge": "도금 후 열처리",
-          "title": "도금 후 수소 취성 제거로",
-          "desc": "열풍 순환식 가열로로 고강도강의 수소 취성을 제거합니다.",
-          "alt": "공장 내 온도 제어 패널이 있는 건조로",
-          "specMaxTemp": "최고 온도:",
-          "specSensor": "센서:",
-          "specStandard": "기준:",
-          "specMaxTempValue": "300°C - 500°C",
-          "specSensorValue": "PID Digital",
-          "specStandardValue": "ASTM F519"
+        "wastewater": {
+          "badge": "환경",
+          "title": "폐수 처리 시스템",
+          "desc": "생산 폐수를 침전조와 슬러지 압착기로 처리합니다.",
+          "alt": "HANIN 공장의 폐수 처리 구역",
+          "spec1Label": "처리 용량",
+          "spec1Value": "130m³/일",
+          "spec2Label": "구성",
+          "spec2Value": "침전조, 슬러지 압착기"
         }
       }
     },
     "FactoryGallery": {
-      "sectionTitle": "공장 및 라인 현장 사진",
-      "sectionDescription": "HANIN 공장 현장 사진입니다. 외관, 도금 라인, 설비 구역, 작업자, 검사실을 보여 드립니다.",
+      "sectionTitle": "공장 및 라인 사진",
+      "sectionDescription": "HANIN 공장에서 촬영한 사진입니다. 도금 구역, 라인, 설비, 시험실을 보실 수 있습니다.",
       "mainImage": {
-        "alt": "공장 내 자동 도금 라인. 약품조와 호이스트가 보입니다",
-        "badge": "주 생산 구역"
+        "alt": "공장 내 도금조가 있는 도금 라인",
+        "badge": "주요 생산 구역"
       },
       "items": {
         "campus": {
-          "label": "공장 외관",
-          "alt": "광밍 공단에 위치한 HANIN Technology Việt Nam 공장 외관"
+          "label": "공장",
+          "alt": "꽝민 산업단지 49G 부지의 HANIN 도금 공장"
         },
         "control": {
-          "label": "제어 및 운전",
-          "alt": "제어반에서 전류 밀도와 침지 시간을 조정하는 엔지니어"
+          "label": "생산 운영",
+          "alt": "생산 구역의 작업자"
         },
         "finished": {
           "label": "도금 완료품",
-          "alt": "도금을 마친 금속 부품 근접 촬영"
+          "alt": "도금 후 부품 근접 촬영"
         },
         "racks": {
-          "label": "지그(rack)",
-          "alt": "지그가 놓인 금속 표면 처리 구역"
+          "label": "걸이",
+          "alt": "부품 걸이가 있는 도금 구역"
         }
       }
     },
     "FactoryOverview": {
       "sectionTitle": "공장 개요",
       "image": {
-        "alt": "광밍 공단 HANIN 공장의 도금 작업장 전경"
+        "alt": "꽝민 산업단지 HANIN 공장의 도금 구역과 생산 현장"
       },
       "factoryTitle": "공장",
-      "factoryDescription": "공장에는 도금 구역, 약품 구역, 시험실이 있습니다. 폐수는 자체 처리장에서 QCVN 40:2011/BTNMT 기준에 따라 처리합니다.",
+      "factoryDescription": "HANIN 도금 공장은 꽝민 산업단지 49G 부지에 있으며 플라스틱 및 금속 도금 라인, PVD, 도장, 인쇄 설비를 갖추고 있습니다. 폐수 처리 시스템 용량은 130m³/일입니다.",
       "specs": {
         "locationLabel": "위치",
         "areaLabel": "공장 부지 면적",
-        "capabilityLabel": "가공 항목",
-        "capabilityValue": "공업용 전기도금 및 무전해 도금",
-        "locationValue": "하노이시 꽝민사 꽝민공단 49G 로트",
-        "areaValue": "2,230 m²"
+        "capabilityLabel": "가공 분야",
+        "capabilityValue": "ABS 플라스틱 도금, 금속 도금, PVD, 도장 및 인쇄",
+        "locationValue": "하노이 꽝민사 꽝민 산업단지 49G 부지",
+        "areaValue": "2,230㎡"
       },
       "ctaGallery": "공장 사진 보기"
     },
     "NangLucFinalCta": {
       "title": "도금 가공이 필요하십니까?",
-      "description": "도면과 기술 요구 사항을 보내 주시면 HANIN 엔지니어가 공차와 납기를 협의드립니다.",
-      "ctaContact": "HANIN에 문의하기",
+      "description": "도면 또는 샘플과 기술 요구사항을 보내 주시면 HANIN 엔지니어가 도금 방식과 납기를 상담해 드립니다.",
+      "ctaContact": "HANIN에 문의",
       "ctaQuote": "견적 요청",
-      "hotlineLabel": "기술 상담 전화:",
-      "responseLabel": "기술 회신:",
-      "responseValue": "24시간 이내"
+      "hotlineLabel": "핫라인:"
     },
     "ProductionFlow": {
       "sectionTitle": "생산 공정",
-      "sectionDescription": "도면 접수부터 검사·인도까지 여섯 단계로 진행합니다.",
+      "sectionDescription": "입고부터 검사와 포장까지 여섯 단계입니다.",
       "items": {
         "receiving": {
-          "title": "요청 및 도면 접수",
-          "desc": "CAD 도면을 검토하고 도금 면적을 산정하여 공정 계획을 작성합니다.",
-          "standard": "가공성 평가(DFM)"
+          "title": "제품 입고",
+          "desc": "입고, 외관 검사, 수량 확인 후 창고에 보관합니다."
         },
         "surfacePrep": {
-          "title": "표면 전처리",
-          "desc": "탈지, 녹 제거, 활성화로 산화막을 없앱니다.",
-          "standard": "탈지, 녹 제거, 표면 활성화"
+          "title": "전처리",
+          "desc": "초음파 탈지, HCl 조, 표면 활성화를 하며 단계 사이에 수세합니다."
         },
         "mainPlating": {
-          "title": "주 도금 가공",
-          "desc": "PLC에 설정된 공정대로 전기도금 또는 무전해 도금을 하며 계속 모니터링합니다.",
-          "standard": "자동 제어 시스템으로 모니터링"
+          "title": "도금",
+          "desc": "라인 종류에 따라 회전 도금, 걸이 도금 또는 자동 라인에서 도금합니다."
         },
-        "inspection": {
-          "title": "검사 및 측정",
-          "desc": "XRF 두께 측정, ASTM D3359 밀착성 시험, 배치별 외관 검사를 합니다.",
-          "standard": "XRF 측정, 밀착성 시험"
+        "thickness": {
+          "title": "두께 측정 및 염수 분무",
+          "desc": "도금 두께를 측정하고 NSS 또는 CASS 염수 분무 시험으로 내식성을 확인합니다."
         },
-        "finishing": {
-          "title": "마무리 및 수소 제거",
-          "desc": "부동태화 후 건조하고, 하중 부품은 ASTM F519에 따라 수소 취성을 제거합니다.",
-          "standard": "ASTM F519 수소 취성 제거"
+        "finalCheck": {
+          "title": "완제품 검사",
+          "desc": "샘플 기준으로 표면과 색상을 검사합니다. 불합격 로트는 분리하여 재작업합니다."
         },
         "packaging": {
-          "title": "포장 및 인도",
-          "desc": "VCI 방습 포장, 추적용 QR 라벨 부착, COA와 함께 인도합니다.",
-          "standard": "VCI 방습 포장"
+          "title": "포장",
+          "desc": "품번과 수량을 표기해 포장한 뒤 입고하거나 고객에게 인도합니다."
         }
       },
       "viewDetail": "도금 종류별 상세 공정 보기"
     },
     "ProductionLines": {
       "sectionTitle": "생산 라인",
-      "sectionDescription": "기계 부품과 전자 부품별로 표면 처리 라인을 구분하여 운영합니다.",
-      "cta": "생산 라인 사양 보기",
+      "sectionDescription": "세 가지 도금 라인: 회전 도금, 금속 반자동 걸이 도금, 자동 도금.",
+      "cta": "도금 서비스 보기",
       "items": {
         "barrel": {
-          "title": "PLC 자동 배럴 도금 라인",
-          "desc": "나사, 볼트, 소형 부품을 배치 단위로 도금하며 배치 간 도금 두께가 일정합니다.",
-          "alt": "전기도금조에 배럴이 잠겨 있는 자동 배럴 도금 라인",
-          "capacityLabel": "생산 능력:",
-          "capacityUnit": "톤/월",
-          "toleranceLabel": "공차:",
-          "tag": "배럴 도금",
-          "badge": "자동 제어",
-          "capacityValue": "850",
-          "toleranceValue": "±0.2 µm"
+          "tag": "회전 도금",
+          "title": "회전 도금 라인",
+          "desc": "소형 부품을 배럴에 넣어 대량으로 도금합니다. 진동기 및 탈지 설비, 구리 도금조, 니켈 도금조가 있습니다.",
+          "alt": "도금조에 배럴이 잠긴 회전 도금 라인",
+          "capacityLabel": "용량:",
+          "capacityValue": "3,000~5,000kg/일 (1만~3만 개/일)",
+          "techLabel": "공법:",
+          "techValue": "전해 니켈, 무전해 니켈, 블랙 니켈, 블랙 망간 인산염, 아연 도금"
         },
         "rack": {
-          "title": "자동·반자동 랙 도금 라인",
-          "desc": "정밀 기계 부품, 실린더 로드, 금형, 대형 기어를 전용 지그에 걸어 도금합니다.",
-          "alt": "보호복을 입은 QA 엔지니어가 공장에서 제어반을 조작하는 모습",
-          "capacityLabel": "생산 능력:",
-          "capacityUnit": "개/월",
-          "tankSizeLabel": "도금조 크기:",
-          "tag": "랙 도금",
-          "badge": "대형 부품",
-          "capacityValue": "120,000",
-          "tankSizeValue": "60 × 40 m"
+          "tag": "걸이 도금",
+          "title": "금속 반자동 걸이 도금 라인",
+          "desc": "금속 부품을 걸이에 걸어 도금하며, 외관이 중요하고 부품끼리 부딪히면 안 되는 제품에 적합합니다.",
+          "alt": "금속 반자동 걸이 도금 라인",
+          "capacityLabel": "용량:",
+          "capacityValue": "1만~2만 개/일",
+          "techLabel": "공법:",
+          "techValue": "전해 니켈, 무전해 니켈, 블랙 니켈, 블랙 망간 인산염, 아연 도금"
         },
-        "chemical": {
-          "title": "무전해 도금 및 알루미늄 처리 라인",
-          "desc": "무전해 니켈(ENP)과 알루미늄 아노다이징으로 경도가 높고 내마모성, 내식성이 좋습니다.",
-          "alt": "공장 내 금속 표면 처리 구역",
-          "reactorLabel": "반응조:",
-          "reactorValue": "온도 ±1°C 유지",
-          "thicknessLabel": "두께:",
-          "tag": "무전해 도금·아노다이징",
-          "badge": "고객 사양 기준",
-          "thicknessValue": "5 - 50 µm"
+        "auto": {
+          "tag": "자동 도금",
+          "title": "자동 도금 라인",
+          "desc": "제품을 JIG 걸이에 걸고 크레인이 도금조를 차례로 이동시킵니다.",
+          "alt": "크레인과 도금조가 있는 자동 도금 라인",
+          "capacityLabel": "용량:",
+          "capacityValue": "3만~5만 개/일",
+          "techLabel": "공법:",
+          "techValue": "크롬, 니켈, 새틴"
         }
       }
     },
     "QualityStandards": {
       "sectionTitle": "품질 및 표준",
-      "sectionDescription": "생산 공정별로 적용하는 품질 경영 체계와 기술 표준입니다.",
+      "sectionDescription": "HANIN의 인증, 폐수 처리 및 품질 검사 장비입니다.",
       "ctaDetail": "인증 상세 보기",
       "items": {
         "iso9001": {
           "tagLabel": "품질 경영",
-          "desc": "가공 배치 간 품질을 일정하게 유지하는 품질 경영 체계입니다.",
-          "title": "ISO 9001:2015",
-          "footer": "연 1회 정기 점검"
+          "desc": "Hanin Technology Việt Nam(하닌 테크놀로지 베트남 주식회사)에 발급된 인증이며 2028년 8월 10일까지 유효합니다.",
+          "title": "ISO 9001:2015"
         },
-        "iso14001": {
-          "tagLabel": "환경 경영",
-          "desc": "베트남 환경 규정에 따라 환경을 관리하고 산업 폐수를 처리합니다.",
-          "title": "ISO 14001:2015",
-          "footer": "자체 처리장에서 폐수 처리"
+        "wastewater": {
+          "tagLabel": "환경",
+          "desc": "침전조와 슬러지 압착기를 갖춘 폐수 처리 시스템을 운영합니다. HANIN은 환경 관련 규정 준수를 약속드립니다.",
+          "title": "폐수 처리 130m³/일"
         },
-        "astmRohs": {
-          "tagLabel": "수출 요건",
-          "desc": "RoHS/REACH 요건에 맞춰 가공하며, 요청 시 ASTM B117, ASTM B633, JIS로 시험합니다.",
-          "title": "ASTM 및 RoHS/REACH",
-          "footer": "RoHS/REACH 유해물질 제한"
+        "testing": {
+          "tagLabel": "품질 검사",
+          "desc": "도금 두께 측정, NSS 및 CASS 염수 분무, Hull cell 시험.",
+          "title": "검사 장비"
         }
       }
     },
     "TestingAnalysis": {
       "sectionTitle": "분석 및 시험",
-      "sectionDescription": "시험실에서 도금액을 분석하고 도금층을 측정하며, 출고 전에 배치별로 검사합니다.",
+      "sectionDescription": "도금조 관리를 위한 분석실, 도금 검사 장비 및 도장 후 신뢰성 시험 장비입니다.",
       "image": {
-        "alt": "검사대 위에 놓인 도금 완료 금속 부품"
+        "alt": "HANIN 분석실의 검사 장비"
       },
       "items": {
+        "lab": {
+          "title": "분석실",
+          "desc": "전용 분석 시약으로 도금조 용액을 분석합니다."
+        },
+        "hullCell": {
+          "title": "Hull cell 시험기",
+          "desc": "시편에 도금액을 시험해 조 내 도금 품질을 평가합니다."
+        },
+        "thickness": {
+          "title": "도금 두께 측정기",
+          "desc": "APC-100으로 제품 손상 없이 도금 두께를 측정합니다."
+        },
         "saltSpray": {
-          "title": "염수분무 시험(salt spray)",
-          "desc": "ASTM B117 염수분무 챔버로 아연, 니켈, 크롬 도금을 1,000시간 이상 시험합니다."
-        },
-        "xrf": {
-          "title": "X선 형광(XRF) 두께 측정",
-          "desc": "다층 도금 두께를 마이크로미터 단위까지 비파괴로 측정합니다."
-        },
-        "bathControl": {
-          "title": "도금액 및 약품 농도 관리",
-          "desc": "금속 이온과 첨가제 농도를 매일 분석하고 도금액 pH를 온라인으로 모니터링합니다."
+          "title": "NSS 및 CASS 염수 분무기",
+          "desc": "중성 염수 분무(NSS)와 산성 염수 분무(CASS) 챔버로 내식성을 시험합니다."
+        }
+      },
+      "reliability": {
+        "title": "도장 후 신뢰성 시험 장비",
+        "desc": "도장 및 인쇄 층의 내구성을 확인하는 10종의 장비입니다.",
+        "items": {
+          "r1": "RCA Tester (마모 시험)",
+          "r2": "Hot Water (온수 시험)",
+          "r3": "High Temp & Humidity (고온 고습 시험)",
+          "r4": "UV Measure (자외선 측정)",
+          "r5": "Alcohol/Eraser Rubbing (알코올·지우개 마찰 시험)",
+          "r6": "Pencil Rubbing (연필 마찰 시험)",
+          "r7": "Dropping Tester (낙하 시험)",
+          "r8": "Thickness Measure (두께 측정)",
+          "r9": "Polisher (연마기)",
+          "r10": "Bending Tester (굽힘 시험)"
         }
       }
     }

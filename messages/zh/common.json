@@ -20,8 +20,8 @@
     "ko": "한국어"
   },
   "Footer": {
-    "tagline": "金属电镀加工",
-    "description": "位于河内光明工业区的金属电镀加工工厂。",
+    "tagline": "塑料与金属电镀处理",
+    "description": "位于河内光明工业区的工厂，承接ABS塑料和金属电镀以及喷漆、印刷。",
     "companyHeading": "企业信息",
     "companyLinks": {
       "trangChu": "首页",
@@ -32,66 +32,64 @@
     },
     "serviceHeading": "服务与产品",
     "serviceLinks": {
-      "enp": "化学镀镍（ENP）",
-      "hardChrome": "工业硬铬电镀",
-      "anodizing": "铝阳极氧化与硬质阳极氧化",
-      "zincNickel": "耐腐蚀锌镍合金电镀",
-      "specSheet": "镀层厚度公差表"
+      "abs": "ABS塑料镍铬电镀",
+      "nickel": "金属镀镍",
+      "zincCopperTin": "镀锌、铜、锡及黑色磷化",
+      "paintPrint": "喷漆与印刷",
+      "pvd": "PVD真空镀"
     },
     "contactHeading": "技术联系方式",
     "addressLabel": "地址：",
-    "address": "总部：越南河内市光明乡光明工业区 660 号地块。",
+    "address": "河内市光明乡光明工业区49G地块。",
     "hotlineLabel": "热线：",
     "emailLabel": "邮箱：",
     "hoursLabel": "工作时间：",
     "hours": "周一至周六：08:00 - 17:30",
     "zaloChat": "Zalo 技术咨询",
     "googleMaps": "Google 地图导航",
-    "statusLine": "金属电镀加工工厂 · 河内光明工业区",
-    "copyright": "© 2026 HANIN Technology 越南镀业工业股份公司 · 税号 0110300983。保留所有权利。",
+    "statusLine": "塑料与金属电镀处理 · 河内光明工业区",
+    "copyright": "© 2026 HANIN电镀工业股份公司 · 税号 0110300983。保留所有权利。",
     "privacyPolicy": "隐私政策",
     "termsOfService": "服务条款",
     "certIso9001": "ISO 9001:2015",
-    "certIso14001": "ISO 14001",
-    "certRohs": "RoHS & REACH",
     "logoAlt": "HANIN Plating"
   },
   "Meta": {
     "site": {
       "title": "HANIN",
-      "description": "面向工业客户的金属电镀加工与表面处理。"
+      "description": "面向工业客户的ABS塑料与金属电镀、喷漆及印刷。"
     },
     "home": {
       "title": "HANIN",
-      "description": "面向工业客户的金属电镀加工与表面处理。"
+      "description": "面向工业客户的ABS塑料与金属电镀、喷漆及印刷。"
     },
     "gioiThieu": {
       "title": "关于我们",
-      "description": "了解 HANIN，以及为工业客户提供金属电镀加工的能力。"
+      "description": "HANIN简介及塑料与金属电镀处理能力。"
     },
     "dichVu": {
-      "title": "电镀加工与表面处理服务",
-      "description": "电解电镀、化学镀及金属表面处理：硬铬电镀、化学镀镍（ENP）、锌镍合金电镀、铝阳极氧化。"
+      "title": "电镀与表面处理服务",
+      "description": "ABS塑料镍铬电镀、金属镀镍、镀锌铜锡、黑色磷化、PVD、喷漆与印刷。"
     },
     "sanPham": {
       "title": "产品与项目",
-      "description": "金属电镀加工产品与项目：微米级公差控制、镀层均匀性及恶劣环境下的耐久性。"
+      "description": "HANIN为汽车、智能家居、家用电器、卫浴与厨房设备完成电镀的产品。"
     },
     "nangLuc": {
       "title": "生产能力",
-      "description": "厂房、PLC 控制的电镀生产线和镀层检测室。"
+      "description": "厂房、自动电镀线、挂镀线、滚镀线及镀层检验区。"
     },
     "tinTuc": {
       "title": "新闻与技术简报",
-      "description": "企业动态、金属表面处理技术、质量检测标准及生产活动。"
+      "description": "HANIN企业新闻、表面处理知识及生产动态。"
     },
     "tuyenDung": {
       "title": "招聘",
-      "description": "金属电镀与精密机械领域当前开放的招聘职位。"
+      "description": "HANIN电镀工厂目前开放的招聘职位。"
     },
     "lienHe": {
       "title": "联系我们与报价需求",
-      "description": "咨询金属电镀加工，并附 CAD 图纸提交报价需求（RFQ）。"
+      "description": "咨询ABS塑料与金属电镀，并附样品或图纸提交报价需求。"
     },
     "chinhSachBaoMat": {
       "title": "隐私政策",
@@ -104,5 +102,17 @@
   },
   "Common": {
     "profileUnavailable": "企业能力手册暂时无法下载，请联系 HANIN 获取。"
+  },
+  "AttachField": {
+    "hint": "PDF、DWG、DXF、STEP、ZIP、JPG、PNG。最多 5 个文件，每个不超过 50 MB。",
+    "tooMany": "每次最多提交 5 个文件。",
+    "tooBig": "有文件超过 50 MB。",
+    "badType": "不支持该文件格式。请使用 PDF、DWG、DXF、STEP、ZIP、JPG 或 PNG。"
+  },
+  "StickyContact": {
+    "label": "立即致电",
+    "zalo": "Zalo",
+    "quote": "获取报价",
+    "aria": "快速联系"
   }
 }

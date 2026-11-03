@@ -11,10 +11,10 @@ export default function DetailCapability({ service }: { service: PlatingService 
   const [capabilityImage] = pickImages(service.slug, SERVICE_GALLERY_POOL, 4, [service.image]);
 
   const FEATURES = [
-    { key: "dosing", icon: "tune" },
-    { key: "crane", icon: "cyclone" },
-    { key: "filtration", icon: "filter_alt" },
-  ] as const;
+    { key: "f1", icon: "precision_manufacturing" },
+    { key: "f2", icon: "factory" },
+    { key: "f3", icon: "verified" },
+  ].filter((f) => t.has(`${f.key}.title`));
 
   return (
     <section className="w-full bg-white mb-space-xl">

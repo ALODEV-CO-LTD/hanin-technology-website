@@ -14,13 +14,15 @@ export default function DetailHero({ service, breadcrumb }: { service: PlatingSe
   const th = useTranslations("DichVu.HeroSummary");
   const clean = (text: string) => text.split(":")[0].replace(/\s*\(.*\)\s*$/, "").trim();
   const APPLICATIONS = ["item1Strong", "item2Strong", "item3Strong"].map((k) => clean(to(`col2.${k}`)));
-  const SUBSTRATES = ["alloySteel", "carbonSteel", "stainless", "aluminum", "brass", "ductileIron"].map((k) => clean(to(`col3.substrates.${k}`)));
-  const STEPS = ["s1", "s2", "s3", "s4", "s5", "s6"].map((k) => tp(`${k}.title`));
+  const SUBSTRATES = ["m1", "m2", "m3", "m4", "m5", "m6"].filter((k) => to.has(`col3.substrates.${k}`)).map((k) => clean(to(`col3.substrates.${k}`)));
+  const STEPS = ["s1", "s2", "s3", "s4", "s5", "s6"].filter((k) => tp.has(`${k}.title`)).map((k) => tp(`${k}.title`));
+  const STATS = ["stat1", "stat2", "stat3", "stat4"].filter((k) => t.has(`${k}.label`)).map((k) => ({ key: k, value: t(`${k}.value`) }));
+  const STAT_COLS = STATS.length >= 4 ? "lg:grid-cols-4" : STATS.length === 3 ? "lg:grid-cols-3" : "lg:grid-cols-2";
   const GROUPS = [
     { label: to("col2.title"), items: APPLICATIONS, numbered: false },
     { label: to("col3.title"), items: SUBSTRATES, numbered: false },
     { label: th("process"), items: STEPS, numbered: true },
-  ];
+  ].filter((g) => g.items.length > 0);
 
   return (
     <section className="w-full flex flex-col">
@@ -38,13 +40,8 @@ export default function DetailHero({ service, breadcrumb }: { service: PlatingSe
             <p className="text-body-md md:text-body-lg text-white leading-relaxed">{service.description}</p>
           </div>
 
-          <dl className="grid grid-cols-2 lg:grid-cols-4 gap-px overflow-hidden rounded border border-steel-200 bg-steel-200 max-w-4xl">
-            {[
-              { key: "phos", value: t("phos.value") },
-              { key: "hardness", value: t("hardness.value") },
-              { key: "saltSpray", value: `${t("saltSpray.value")} ${t("saltSpray.unit")}`.trim() },
-              { key: "tolerance", value: t("tolerance.value") },
-            ].map((item) => (
+          <dl className={`grid grid-cols-2 ${STAT_COLS} gap-px overflow-hidden rounded border border-steel-200 bg-steel-200 max-w-4xl`}>
+            {STATS.map((item) => (
               <div key={item.key} className="flex flex-col gap-0.5 bg-steel-50 p-2 sm:p-space-sm sm:gap-1">
                 <dt className="text-label-technical uppercase text-steel-600 font-semibold">{t(`${item.key}.label`)}</dt>
                 <dd className="text-title-md font-bold text-slate-900">{item.value}</dd>
@@ -64,7 +61,7 @@ export default function DetailHero({ service, breadcrumb }: { service: PlatingSe
               href="/lien-he#rfq-form"
               className="inline-flex min-h-11 items-center gap-space-xs bg-white hover:bg-slate-100 text-slate-900 px-space-md py-3 rounded text-label-technical uppercase tracking-wider transition-all"
             >
-              <Icon name="download" className="text-[18px]" />
+              <Icon name="support_agent" className="text-[18px]" />
               <span>{t("ctaSecondary")}</span>
             </Link>
           </div>

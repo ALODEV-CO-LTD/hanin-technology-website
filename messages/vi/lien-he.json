@@ -1,99 +1,95 @@
 {
   "LienHe": {
     "BottomCta": {
-      "heading": "Gửi bản vẽ để nhận báo giá xử lý bề mặt",
-      "description": "Kỹ sư HANIN xem bản vẽ và trao đổi về vật liệu nền, chiều dày lớp mạ, tiêu chuẩn thử nghiệm trước khi báo giá.",
+      "heading": "Gửi mẫu hoặc bản vẽ để nhận báo giá mạ",
+      "description": "Kỹ sư HANIN xem mẫu hoặc bản vẽ và trao đổi về vật liệu nền, loại lớp mạ, bề mặt mong muốn trước khi báo giá.",
       "ctaPrimary": "Gửi bản vẽ"
     },
     "ContactChannels": {
       "heading": "Thông tin liên hệ",
       "subtitle": "Dành cho khách hàng trong nước và đơn hàng xuất khẩu",
       "card1": {
-        "badge": "Trụ sở và nhà máy",
+        "badge": "Nhà máy mạ",
         "title": "",
-        "address": "Trụ sở: Lô 660, Khu Công Nghiệp Quang Minh, xã Quang Minh, TP. Hà Nội, Việt Nam. Nhà máy: Lô 49G, Khu Công Nghiệp Quang Minh, xã Quang Minh, TP. Hà Nội, Việt Nam.",
+        "address": "Lô 49G, KCN Quang Minh, xã Quang Minh, TP Hà Nội",
         "footerLabel": "Cơ sở sản xuất",
-        "footerValue": "Dây chuyền mạ treo, mạ quay và bộ phận kiểm tra chất lượng (QC)"
+        "footerValue": "Dây chuyền mạ tự động, mạ treo, mạ quay và khu kiểm tra chất lượng"
       },
       "card2": {
         "badge": "Điện thoại",
-        "title": "Tư vấn báo giá và dung sai",
+        "title": "Tư vấn báo giá và kỹ thuật",
         "quoteLabel": "Bộ phận báo giá:",
         "engineerLabel": "Kỹ sư kỹ thuật (bản vẽ, thông số):",
         "engineerHotlineSuffix": "Hotline kỹ thuật",
-        "footerLabel": "Trao đổi qua Zalo hoặc WhatsApp"
+        "footerLabel": "Trao đổi qua Zalo hoặc WeChat"
       },
       "card3": {
         "badge": "Email",
-        "title": "Tiếp nhận hồ sơ thầu và yêu cầu báo giá",
-        "salesLabel": "Kinh doanh và đơn hàng mới:",
-        "engineeringLabel": "Kỹ thuật, R&D và thử nghiệm:",
-        "footerText": "Có thể trao đổi tài liệu mã hóa (PGP) theo yêu cầu"
+        "title": "Tiếp nhận yêu cầu báo giá",
+        "salesLabel": "Email chính:",
+        "engineeringLabel": "Email phụ:",
+        "footerText": "Có thể gửi mẫu, ảnh và bản vẽ qua email"
       },
       "card4": {
         "badge": "Giờ làm việc",
         "title": "Văn phòng và sản xuất",
         "officeLabel": "Văn phòng và kỹ thuật:",
         "officeValue": "Thứ 2 – Thứ 7: 08:00 – 17:30",
-        "workshopLabel": "Xưởng mạ và gia công:",
+        "workshopLabel": "Xưởng mạ:",
         "workshopValue": "Làm theo ca, theo lệnh sản xuất",
-        "footerBadge": "Có người trực xử lý sự cố dây chuyền ngoài giờ hành chính"
+        "footerBadge": "Xưởng làm việc theo ca, theo kế hoạch sản xuất"
       }
     },
     "ContactFaq": {
       "heading": "Câu hỏi thường gặp khi yêu cầu báo giá",
-      "subtitle": "Thời gian báo giá, định dạng bản vẽ, bảo mật thông tin và gia công mẫu.",
+      "subtitle": "Thông tin cần gửi, định dạng tệp, số lượng và mẫu thử.",
       "items": {
         "0": {
-          "question": "1. HANIN báo giá trong bao lâu?",
-          "answer": "Sau khi nhận đủ bản vẽ 2D (PDF, DWG) hoặc 3D (STEP), vật liệu nền và yêu cầu chiều dày lớp mạ. Đơn cần xử lý nhiệt hoặc theo tiêu chuẩn ASTM riêng cần thêm thời gian thẩm định; kỹ sư sẽ báo thời gian cụ thể."
+          "question": "1. Cần gửi gì để HANIN báo giá?",
+          "answer": "Quý khách gửi mẫu, ảnh hoặc bản vẽ sản phẩm, vật liệu nền (nhựa ABS hay kim loại), loại bề mặt mong muốn và số lượng dự kiến. Kỹ sư HANIN trao đổi thêm nếu cần rồi báo giá."
         },
         "1": {
-          "question": "2. Có thể gửi bản vẽ ở những định dạng nào?",
-          "answer": "HANIN nhận .STEP, .STP, .DWG, .DXF, .IGES, .X_T, .PDF và tệp nén .ZIP/.RAR, tối đa 50MB mỗi tệp. Tệp lớn hơn, quý khách gửi đường dẫn tải về qua email Haninplating@gmail.com."
+          "question": "2. Có thể gửi tệp ở những định dạng nào?",
+          "answer": "Form báo giá nhận PDF, DWG, DXF, STEP, ZIP, JPG, PNG, tối đa 5 tệp, mỗi tệp 50 MB. Tệp lớn hơn, quý khách gửi đường dẫn tải về qua email huyvinh82@gmail.com."
         },
         "2": {
-          "question": "3. Bản vẽ có được bảo mật không?",
-          "answer": "HANIN ký thỏa thuận bảo mật (NDA) trước hoặc khi nhận dữ liệu. Bản vẽ, mô hình 3D và thông số kỹ thuật chỉ chuyển cho kỹ sư phụ trách và không chia sẻ cho bên thứ ba."
+          "question": "3. Thông tin và bản vẽ gửi đi được xử lý thế nào?",
+          "answer": "Bản vẽ và tệp đính kèm chỉ chuyển cho nhân sự phụ trách báo giá và kỹ thuật, không chia sẻ cho bên thứ ba. Chi tiết xem tại Chính sách bảo mật."
         },
         "3": {
           "question": "4. Số lượng đặt hàng tối thiểu là bao nhiêu?",
-          "answer": "HANIN nhận gia công từ 01 chi tiết mẫu, lô thử khoảng 500 - 1.000 chi tiết, đến đơn hàng sản xuất hàng loạt theo kế hoạch hàng tháng. Số lượng tối thiểu cụ thể phụ thuộc vào loại chi tiết và công đoạn mạ."
+          "answer": "Số lượng tối thiểu phụ thuộc vào loại chi tiết và công nghệ mạ. Quý khách vui lòng liên hệ để HANIN tư vấn theo từng sản phẩm."
         },
         "4": {
-          "question": "5. HANIN có nhận gia công mẫu trước khi ký hợp đồng không?",
-          "answer": "Có. HANIN mạ mẫu, đo chiều dày lớp mạ bằng máy XRF, kiểm tra độ bám dính và thử phun sương muối theo ASTM B117. Biên bản kiểm tra được gửi để quý khách phê duyệt trước khi sản xuất hàng loạt."
+          "question": "5. HANIN có nhận mạ thử mẫu không?",
+          "answer": "Quý khách vui lòng liên hệ để trao đổi về mẫu thử cho sản phẩm cụ thể. HANIN có máy đo độ dày lớp mạ và máy phun muối NSS, CASS để kiểm tra theo yêu cầu."
         }
       }
     },
     "ContactHero": {
       "breadcrumbHome": "Trang chủ",
       "breadcrumbCurrent": "Liên hệ và báo giá",
-      "slaStatus": "Phản hồi yêu cầu báo giá trong thời gian sớm nhất",
       "titlePrefix": "Liên hệ và",
       "titleHighlight": "yêu cầu báo giá",
       "titleSuffix": "kỹ thuật",
-      "description": "HANIN nhận yêu cầu mạ kim loại và gia công cơ khí từ doanh nghiệp, nhà thầu OEM/Tier-1 và FDI. Gửi bản vẽ và thông số để được báo giá.",
+      "description": "HANIN nhận mạ trên nền nhựa ABS và kim loại, cùng sơn và in, cho doanh nghiệp sản xuất ô tô, thiết bị gia dụng, điện tử, thiết bị vệ sinh và nhà bếp. Gửi mẫu hoặc bản vẽ để được báo giá.",
       "ctaPrimary": "Gửi yêu cầu báo giá",
       "ctaSecondary": "Xem vị trí nhà máy",
       "specHighlights": {
-        "nda": {
-          "label": "Bảo mật theo NDA",
-          "desc": "Bản vẽ và tài liệu kỹ thuật được bảo mật theo thỏa thuận"
+        "sample": {
+          "label": "Gửi mẫu và ảnh",
+          "desc": "Gửi ảnh, mẫu hoặc bản vẽ để HANIN xem trước khi báo giá"
         },
         "cad": {
           "label": "Bản vẽ 2D và 3D",
-          "desc": "Nhận STEP, DWG, DXF, IGES, PDF, tối đa 50MB mỗi tệp"
+          "desc": "Nhận PDF, DWG, DXF, STEP, ZIP, JPG, PNG, tối đa 50 MB mỗi tệp"
         },
         "consulting": {
           "label": "Tư vấn kỹ thuật",
-          "desc": "Kỹ sư trao đổi về chiều dày lớp mạ, tiêu chuẩn ASTM và dung sai"
+          "desc": "Kỹ sư trao đổi về vật liệu nền, loại lớp mạ và bề mặt mong muốn"
         }
       },
-      "imageAlt": "Toàn cảnh nhà máy",
-      "overlayLabel": "Trụ sở và nhà máy",
-      "overlayLocation": "KCN Quang Minh, xã Quang Minh, Hà Nội",
-      "overlayCoordinates": "Tọa độ: 21.2074° N, 105.7540° E"
+      "imageAlt": "Toàn cảnh nhà máy"
     },
     "DirectChannels": {
       "heading": "Liên hệ trực tiếp",
@@ -106,13 +102,13 @@
         },
         "zalo": {
           "label": "Zalo",
-          "title": "HANIN Technology",
+          "title": "HANIN Plating",
           "desc": "Gửi ảnh mẫu và bản vẽ sơ bộ qua Zalo.",
           "cta": "Mở Zalo"
         },
         "email": {
-          "label": "Email gửi tệp dung lượng lớn",
-          "title": "Haninplating@gmail.com",
+          "label": "Email gửi mẫu và bản vẽ",
+          "title": "huyvinh82@gmail.com",
           "desc": "Dùng cho hồ sơ lớn, kèm đường dẫn Drive hoặc WeTransfer.",
           "cta": "Soạn email"
         },
@@ -125,49 +121,46 @@
       }
     },
     "LocationMap": {
-      "heading": "Vị trí nhà máy và đường đi cho xe container",
-      "description": "Nhà máy nằm trong KCN Quang Minh, xã Quang Minh, Hà Nội. Xe tải và container đi vào qua cao tốc Thăng Long - Nội Bài và đường Vành đai 3.",
+      "heading": "Vị trí nhà máy",
+      "description": "Nhà máy mạ nằm tại Lô 49G, KCN Quang Minh, xã Quang Minh, TP Hà Nội.",
       "distances": {
         "airport": {
           "label": "Sân bay quốc tế Nội Bài",
-          "value": "12 km (khoảng 15 phút)"
+          "value": "Khoảng 10 km"
         },
         "seaport": {
-          "label": "Cảng quốc tế Hải Phòng (Lạch Huyện)",
-          "value": "120 km (khoảng 1 giờ 45 phút)"
+          "label": "Hải Phòng",
+          "value": "Khoảng 140 km"
         },
-        "industrialParks": {
-          "label": "KCN Bắc Thăng Long / VSIP Bắc Ninh",
-          "value": "18 - 35 km"
+        "city": {
+          "label": "Trung tâm Hà Nội",
+          "value": "Khoảng 20 km"
         }
       },
       "openMapsCta": "Mở Google Maps",
-      "downloadMapCta": "Sơ đồ đường cho xe container (PDF)",
+      "downloadMapCta": "Gửi yêu cầu báo giá",
       "satelliteImageAlt": "Ảnh vệ tinh khu vực KCN Quang Minh, xã Quang Minh, Hà Nội",
-      "gateLabel": "Cổng nhà máy HANIN",
-      "plotLabel": "Lô 49G, KCN Quang Minh",
-      "securityNote": "Xe container 40 feet vào nhà máy qua cổng bảo vệ, vui lòng báo trước",
-      "gridLabel": "Hà Nội, Việt Nam",
-      "elevationLabel": "21.2074° N, 105.7540° E"
+      "gateLabel": "Nhà máy mạ HANIN",
+      "plotLabel": "Lô 49G, KCN Quang Minh"
     },
     "RfqForm": {
       "heading": "Gửi yêu cầu báo giá và tài liệu kỹ thuật",
-      "securityBadge": "Thông tin được bảo mật theo NDA",
+      "securityBadge": "Thông tin chỉ dùng để xem xét và báo giá",
       "status": {
         "submitting": "Đang gửi yêu cầu báo giá...",
         "successTitle": "Đã gửi yêu cầu báo giá",
         "successDesc": "Bộ phận kỹ thuật HANIN đã nhận yêu cầu và sẽ phản hồi qua email hoặc điện thoại.",
         "successResetCta": "Tạo yêu cầu khác",
-        "errorMessage": "Vui lòng điền các trường bắt buộc (*) và đồng ý bảo mật NDA trước khi gửi.",
+        "errorMessage": "Vui lòng điền các trường bắt buộc (*) và đồng ý xử lý thông tin trước khi gửi.",
         "errorRetryCta": "Thử lại",
-        "sendError": "Không gửi được yêu cầu. Vui lòng kiểm tra thông tin, tệp đính kèm (tối đa 50MB mỗi tệp) rồi thử lại."
+        "sendError": "Không gửi được yêu cầu. Vui lòng kiểm tra thông tin, tệp đính kèm (tối đa 5 tệp, mỗi tệp 50 MB) rồi thử lại."
       },
       "step1": {
         "heading": "Thông tin liên hệ",
         "fullNameLabel": "Họ và tên người liên hệ",
         "fullNamePlaceholder": "Nguyễn Văn A",
         "companyLabel": "Tên công ty",
-        "companyPlaceholder": "Công ty CP Cơ khí Chế tạo...",
+        "companyPlaceholder": "Tên công ty của bạn",
         "emailLabel": "Email nhận báo giá",
         "emailPlaceholder": "name@company.com",
         "phoneLabel": "Số điện thoại / Zalo",
@@ -176,43 +169,40 @@
       "step2": {
         "heading": "Thông tin kỹ thuật",
         "projectNameLabel": "Tên sản phẩm hoặc dự án",
-        "projectNamePlaceholder": "Ví dụ: trục piston thủy lực, busbar đồng, vỏ khuôn nhôm",
-        "platingServiceLabel": "Dịch vụ xi mạ cần báo giá",
+        "projectNamePlaceholder": "Ví dụ: logo ô tô, núm vặn thiết bị gia dụng, vòi sen",
+        "platingServiceLabel": "Dịch vụ mạ cần báo giá",
         "platingOptions": {
-          "niken": "Mạ niken hóa học (Electroless Nickel - ENP)",
-          "crom": "Mạ crom cứng kỹ thuật (Hard Chrome)",
-          "kem": "Mạ kẽm và thụ động hóa Cr3+ (kẽm, kẽm-niken)",
-          "anodize": "Anodizing nhôm / Hard Anodize Type III",
-          "bac": "Mạ thiếc, mạ bạc cho thiết bị điện và busbar",
-          "other": "Mạ kết hợp gia công CNC (tiện, phay) theo yêu cầu"
+          "niken": "Niken-Crom trên nhựa ABS",
+          "crom": "Niken kim loại (điện phân, hóa, đen, satin)",
+          "kem": "Kẽm, đồng, thiếc",
+          "phosphate": "Phốt phát đen",
+          "bac": "PVD (mạ chân không), phun sơn và in",
+          "other": "Khác / cần tư vấn"
         },
         "volumeLabel": "Sản lượng dự kiến và tiến độ giao hàng",
         "volumeOptions": {
-          "sample": "Mẫu thử R&D (1 - 50 chi tiết)",
-          "pilot": "Lô sản xuất thử (500 - 2.000 chi tiết)",
-          "mass": "Sản xuất hàng loạt định kỳ (trên 10.000 chi tiết mỗi tháng)",
-          "oem": "Hợp đồng OEM dài hạn"
+          "sample": "Mẫu thử (số lượng ít)",
+          "pilot": "Lô sản xuất thử",
+          "mass": "Sản xuất hàng loạt định kỳ",
+          "oem": "Hợp đồng dài hạn"
         },
-        "descriptionLabel": "Dung sai, chiều dày lớp mạ và tiêu chuẩn thử nghiệm",
-        "descriptionStandards": "Tiêu chuẩn áp dụng: ISO, ASTM, DIN, JIS",
-        "descriptionPlaceholder": "Ví dụ: nền thép S45C; mạ crom cứng dày 30-40 µm; độ cứng ≥ 850 HV; thử phun sương muối ASTM B117 đạt 96 giờ"
+        "descriptionLabel": "Yêu cầu bề mặt và kiểm tra",
+        "descriptionStandards": "Nêu màu, độ bóng hoặc satin và yêu cầu kiểm tra nếu có",
+        "descriptionPlaceholder": "Ví dụ: nền nhựa ABS; niken-crom sáng bóng; màu và độ bóng theo mẫu đính kèm; thử phun muối theo yêu cầu"
       },
       "step3": {
         "heading": "Đính kèm bản vẽ (2D hoặc 3D)",
         "dropzoneTitle": "Kéo thả bản vẽ vào đây hoặc bấm để chọn tệp",
         "formatsPrefix": "Định dạng hỗ trợ:",
-        "formatsSuffix": "(tối đa 50MB mỗi tệp)",
-        "badgeVirusScan": "Quét virus tự động",
-        "badgeEncryption": "Mã hóa khi truyền tải",
-        "badgeNda": "Bảo mật theo NDA",
+        "formatsSuffix": "(tối đa 5 tệp, mỗi tệp 50 MB)",
         "filesSelected": "Đã chọn {count} tệp:",
-        "noFileSelected": "Chưa chọn tệp. Có thể gửi bản vẽ qua email Haninplating@gmail.com",
-        "maxSize": "Tối đa 50MB"
+        "noFileSelected": "Chưa chọn tệp. Có thể gửi mẫu hoặc bản vẽ qua email huyvinh82@gmail.com",
+        "maxSize": "Tối đa 50 MB"
       },
       "step4": {
         "ndaConsentPrefix": "Tôi đồng ý để HANIN",
-        "ndaConsentMiddle": "xử lý thông tin kỹ thuật này để đánh giá khả năng gia công và báo giá, theo thỏa thuận bảo mật",
-        "ndaConsentSuffix": "đã ký giữa hai bên.",
+        "ndaConsentMiddle": "xử lý thông tin này để đánh giá yêu cầu và gửi báo giá.",
+        "ndaConsentSuffix": "Thông tin không dùng cho mục đích khác.",
         "submitCta": "Gửi yêu cầu báo giá",
         "submittingCta": "Đang gửi..."
       }

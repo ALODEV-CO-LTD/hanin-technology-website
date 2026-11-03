@@ -5,16 +5,16 @@ export default function QualityMetrology() {
   const t = useTranslations("DichVu.QualityMetrology");
 
   const LAB_ITEMS = [
-    { key: "xrf", icon: "biotech" },
+    { key: "lab", icon: "biotech" },
+    { key: "thickness", icon: "straighten" },
     { key: "saltSpray", icon: "water" },
-    { key: "cmm", icon: "straighten" },
   ] as const;
 
   const TEST_TABLE = [
+    { key: "bath" },
     { key: "thickness" },
     { key: "saltSpray" },
-    { key: "adhesion" },
-    { key: "dehydrogenation" },
+    { key: "paint" },
   ] as const;
 
   return (
@@ -41,22 +41,20 @@ export default function QualityMetrology() {
             <h3 className="text-title-md text-slate-900 font-bold uppercase">{t("tableTitle")}</h3>
           </div>
           <div className="overflow-x-auto">
-            <table className="w-full min-w-[640px] table-fixed text-left text-body-md">
+            <table className="w-full min-w-[560px] table-fixed text-left text-body-md">
               <thead>
                 <tr className="border-b border-slate-200 text-label-sm uppercase tracking-wider text-slate-600">
-                  <th scope="col" className="w-[22%] px-space-md py-3 font-semibold">{t("colMethod")}</th>
-                  <th scope="col" className="w-[26%] px-space-md py-3 font-semibold">{t("colStandard")}</th>
-                  <th scope="col" className="w-[32%] px-space-md py-3 font-semibold">{t("colCriteria")}</th>
-                  <th scope="col" className="w-[20%] px-space-md py-3 font-semibold">{t("colFrequency")}</th>
+                  <th scope="col" className="w-[24%] px-space-md py-3 font-semibold">{t("colMethod")}</th>
+                  <th scope="col" className="w-[30%] px-space-md py-3 font-semibold">{t("colDevice")}</th>
+                  <th scope="col" className="w-[46%] px-space-md py-3 font-semibold">{t("colCriteria")}</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-slate-200">
                 {TEST_TABLE.map((row) => (
                   <tr key={row.key}>
                     <td className="px-space-md py-3.5 align-top font-semibold text-slate-900">{t(`${row.key}.method`)}</td>
-                    <td className="px-space-md py-3.5 align-top text-slate-600 leading-snug">{t(`${row.key}.standard`)}</td>
-                    <td className="px-space-md py-3.5 align-top font-bold text-steel-700 leading-snug">{t(`${row.key}.criteria`)}</td>
-                    <td className="px-space-md py-3.5 align-top text-slate-600 leading-snug">{t(`${row.key}.frequency`)}</td>
+                    <td className="px-space-md py-3.5 align-top text-slate-600 leading-snug">{t(`${row.key}.device`)}</td>
+                    <td className="px-space-md py-3.5 align-top font-semibold text-steel-700 leading-snug">{t(`${row.key}.criteria`)}</td>
                   </tr>
                 ))}
               </tbody>

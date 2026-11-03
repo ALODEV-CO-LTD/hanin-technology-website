@@ -15,7 +15,7 @@
       },
       "security": {
         "title": "技术资料保密",
-        "p1": "图纸和附件存放在独立区域，不对外公开，仅经授权的人员可查阅。在发送图纸前，您可以要求签署保密协议（NDA）。"
+        "p1": "图纸和附件存放在独立区域，不对外公开，仅经授权的人员可查阅。"
       },
       "retention": {
         "title": "保存期限与您的权利",
@@ -23,7 +23,7 @@
       },
       "contact": {
         "title": "联系方式",
-        "p1": "如对本政策有任何疑问，请发送邮件至 Haninplating@gmail.com 或致电 {phones}。"
+        "p1": "如对本政策有任何疑问，请发送邮件至 huyvinh82@gmail.com 或致电 {phones}。"
       }
     },
     "terms": {
@@ -48,17 +48,17 @@
       },
       "contact": {
         "title": "联系方式",
-        "p1": "如对本条款有任何疑问，请联系 Haninplating@gmail.com。"
+        "p1": "如对本条款有任何疑问，请联系 huyvinh82@gmail.com。"
       }
     },
     "operator": {
       "title": "网站运营单位",
-      "name": "公司名称：HANIN Technology 越南镀业工业股份公司。",
+      "name": "公司名称：HANIN电镀工业股份公司（品牌：HANIN Plating）。",
       "tax": "税号：0110300983。",
-      "hq": "总部：越南河内市光明乡光明工业区 660 号地块。",
-      "fac": "工厂：越南河内市光明乡光明工业区 49G 号地块。",
+      "hq": "地址：河内市光明乡光明工业区49G地块。",
+      "fac": "母公司：Hanin Tech，河内市光明工业区660号地块。",
       "rep": "法定代表人：Nguyễn Huy Vinh 先生（总经理）。",
-      "mail": "邮箱：Haninplating@gmail.com。"
+      "mail": "邮箱：huyvinh82@gmail.com、vankhanhminhkhang@gmail.com。"
     }
   }
 }

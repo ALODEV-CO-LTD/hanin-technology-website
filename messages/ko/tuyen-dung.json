@@ -45,7 +45,7 @@
       "pillar3": {
         "tag": "기술 교육",
         "title": "기술 교육",
-        "desc": "신입 직원은 도금 공정, XRF 도금 두께 측정, 자동 설비 운전을 사내에서 교육받습니다.",
+        "desc": "신입 직원은 도금 공정, 도금 두께 측정 및 라인 운영에 대해 사내 교육을 받습니다.",
         "metricLabel": "교육",
         "metricValue": "직무별 진행"
       },
@@ -61,7 +61,7 @@
       "title": "채용 중인 직무",
       "description": "HANIN 사무실과 공장의 채용 직무입니다.",
       "boardStatus": "채용 직무 {count}건",
-      "searchPlaceholder": "직무 또는 키워드로 검색 (PLC, QA, 기계)",
+      "searchPlaceholder": "직무 또는 키워드로 검색(QA, 화학, 기계)",
       "departmentLabel": "부서",
       "typeLabel": "근무 형태",
       "locationLabel": "근무지",
@@ -104,15 +104,15 @@
       "mainImageAlt": "HANIN 공장 자동 도금 라인 운영 구역",
       "mainBadge": "생산 구역",
       "mainTitle": "자동 도금 라인 운영 구역",
-      "mainDesc": "니켈 및 경질 크롬 도금 라인, 배기 처리 및 PLC 감시 설비 포함.",
+      "mainDesc": "자동 도금 라인, 도금조 구역 및 폐수 처리 시스템.",
       "secondaryImageAlt": "HANIN 공장에서 도금을 마친 기계 부품",
       "secondaryBadge": "품질 검사",
       "secondaryTitle": "도금을 마친 기계 부품",
-      "secondaryDesc": "XRF로 도금 두께(µm) 측정",
+      "secondaryDesc": "APC-100으로 도금 두께 측정",
       "labTitle": "시험실",
-      "labDesc": "염수분무 시험기, 도금 밀착력 측정기, 도금액 분석용 Hull Cell을 갖추고 있습니다.",
+      "labDesc": "NSS 및 CASS 염수분무기, 헐셀 시험기와 화학 분석실.",
       "labImageAlt": "도금액 분석 실험실과 시험 장비",
-      "labFooter": "출하 로트는 고객 요청에 따라 검사 기록을 첨부합니다",
+      "labFooter": "제품은 출하 전 완제품 검사를 거칩니다",
       "labBadge": "QC 부서"
     },
     "ApplicationCta": {
@@ -135,7 +135,7 @@
         "salary": "급여: 1,800만 - 2,500만 동",
         "tags": {
           "0": "경력 2년 이상",
-          "1": "자동 도금조(PLC), 무전해 니켈(ENP) 이해, Hull Cell 도금액 분석",
+          "1": "니켈 도금, ABS 플라스틱 도금 및 헐셀 용액 분석 이해",
           "2": "헐셀을 이용한 도금액 농도 분석"
         },
         "deadline": "30/04/2026"
@@ -147,8 +147,8 @@
         "locationLabel": "하노이 꽝민 산업단지",
         "salary": "급여: 2,000만 - 3,000만 동",
         "tags": {
-          "0": "경력 3 - 5년, ISO 9001 또는 IATF 16949 자격 보유",
-          "1": "XRF 측정 및 염수분무 시험",
+          "0": "3~5년 경력, ISO 9001 품질경영시스템 이해",
+          "1": "도금 두께 측정 및 염수분무 시험",
           "2": "경력: 3 - 5년"
         },
         "deadline": "15/05/2026"

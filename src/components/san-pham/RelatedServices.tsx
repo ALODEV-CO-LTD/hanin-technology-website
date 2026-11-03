@@ -1,12 +1,27 @@
 import { useTranslations } from "next-intl";
-import { getProductDetailContent } from "@/lib/products-data";
 import Icon from "@/components/ui/Icon";
 import { Link } from "@/i18n/navigation";
 
 export default function RelatedServices() {
   const tp = useTranslations("SanPham");
   const t = useTranslations("SanPham.RelatedServices");
-  const { relatedServices } = getProductDetailContent(tp);
+  const relatedServices = (
+    [
+      ["item1", "cleaning_services"],
+      ["item2", "layers"],
+      ["item3", "construction"],
+      ["item4", "shield_with_heart"],
+      ["item5", "format_paint"],
+      ["item6", "blur_on"],
+    ] as const
+  ).map(([key, icon]) => ({
+    key,
+    icon,
+    href: "/dich-vu-gia-cong-ma",
+    title: tp(`detail.relatedServices.${key}.title`),
+    description: tp(`detail.relatedServices.${key}.description`),
+    cta: tp(`detail.relatedServices.${key}.cta`),
+  }));
 
   return (
     <section className="w-full bg-slate-50 py-space-xl border-b border-slate-200">
@@ -28,7 +43,7 @@ export default function RelatedServices() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-gutter">
           {relatedServices.map((service) => (
             <div
-              key={service.code}
+              key={service.key}
               className="p-space-md bg-white border border-slate-200 rounded flex flex-col justify-between gap-space-md hover:border-steel-500 hover:shadow-md transition-all group"
             >
               <div className="flex flex-col gap-space-sm">

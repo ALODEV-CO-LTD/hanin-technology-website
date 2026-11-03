@@ -10,13 +10,13 @@ const CARDS = [
     tagAccent: true,
   },
   {
-    key: "iso14001",
+    key: "wastewater",
     icon: "eco",
     iconAccent: false,
     tagAccent: false,
   },
   {
-    key: "astmRohs",
+    key: "testing",
     icon: "rule",
     iconAccent: false,
     tagAccent: false,

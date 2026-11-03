@@ -6,52 +6,19 @@ export default function EquipmentGrid() {
   const t = useTranslations("NangLuc.EquipmentGrid");
 
   const MACHINES = [
-    {
-      key: "rectifier",
-      image: siteImg("nang-luc/EquipmentGrid#1", "/images/factory/phan-tich-2.jpg"),
-    },
-    {
-      key: "ultrasonic",
-      image: siteImg("nang-luc/EquipmentGrid#2", "/images/factory/ma-quay-7.jpg"),
-    },
-    {
-      key: "hoist",
-      image: siteImg("nang-luc/EquipmentGrid#3", "/images/factory/ma-treo-3.jpg"),
-    },
-    {
-      key: "deEmbrittlement",
-      image: siteImg("nang-luc/EquipmentGrid#4", "/images/factory/ma-treo-4.jpg"),
-    },
+    { key: "pvd", image: siteImg("nang-luc/EquipmentGrid#1", "/images/factory/phan-tich-2.jpg") },
+    { key: "paint", image: siteImg("nang-luc/EquipmentGrid#2", "/images/factory/ma-quay-7.jpg") },
+    { key: "rotary", image: siteImg("nang-luc/EquipmentGrid#3", "/images/factory/ma-treo-3.jpg") },
+    { key: "wastewater", image: siteImg("nang-luc/EquipmentGrid#4", "/images/factory/ma-treo-4.jpg") },
   ] as const;
 
   const specs = (key: (typeof MACHINES)[number]["key"]): { label: string; value: string }[] => {
-    const v = (k: string) => t(`items.${key}.${k}`);
-    switch (key) {
-      case "rectifier":
-        return [
-          { label: v("specLoad"), value: v("specLoadValue") },
-          { label: v("specStability"), value: v("specStabilityValue") },
-          { label: v("specControl"), value: v("specControlValue") },
-        ];
-      case "ultrasonic":
-        return [
-          { label: v("specFrequency"), value: v("specFrequencyValue") },
-          { label: v("specHeating"), value: v("specHeatingValue") },
-          { label: v("specVolume"), value: v("specVolumeValue") },
-        ];
-      case "hoist":
-        return [
-          { label: v("specLoad"), value: `${v("specLoadValue")} ${v("specLoadUnit")}` },
-          { label: v("specSpeed"), value: `${v("specSpeedValue")} PLC` },
-          { label: v("specSensor"), value: v("specSensorValue") },
-        ];
-      default:
-        return [
-          { label: v("specMaxTemp"), value: v("specMaxTempValue") },
-          { label: v("specSensor"), value: v("specSensorValue") },
-          { label: v("specStandard"), value: v("specStandardValue") },
-        ];
+    const rows: { label: string; value: string }[] = [];
+    for (let i = 1; i <= 4; i++) {
+      if (!t.has(`items.${key}.spec${i}Label`)) break;
+      rows.push({ label: t(`items.${key}.spec${i}Label`), value: t(`items.${key}.spec${i}Value`) });
     }
+    return rows;
   };
 
   return (

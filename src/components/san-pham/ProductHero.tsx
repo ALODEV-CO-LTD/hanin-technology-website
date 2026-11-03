@@ -7,7 +7,12 @@ import Photo from "@/components/ui/Photo";
 export default function ProductHero({ product }: { product: Product }) {
   const tp = useTranslations("SanPham");
   const t = useTranslations("SanPham.ProductHero");
-  const { heroStats, heroDescription, heroImageAlt } = getProductDetailContent(tp);
+  const { heroDescription, heroImageAlt } = getProductDetailContent(tp);
+  const heroStats = (["coatingThickness", "saltSpray", "tolerance"] as const).map((key) => ({
+    label: tp(`detail.heroStats.${key}.label`),
+    value: tp(`detail.heroStats.${key}.value`),
+    note: tp(`detail.heroStats.${key}.note`),
+  }));
   const heroImage = product.image;
 
   return (
@@ -75,10 +80,10 @@ export default function ProductHero({ product }: { product: Product }) {
               <div className="flex items-center gap-2">
                 <Icon name="science" className="text-steel-600 text-[20px]" />
                 <span className="text-sm text-slate-700 font-medium">
-                  {t("microHardnessLabel")}
+                  {t("materialLabel")}
                 </span>
               </div>
-              <span className="text-base font-bold text-steel-600">{t("microHardnessValue")}</span>
+              <span className="text-base font-bold text-steel-600">{t("materialValue")}</span>
             </div>
           </div>
         </div>

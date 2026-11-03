@@ -4,8 +4,8 @@ const STEPS = [
   { key: "receiving", step: "01" },
   { key: "surfacePrep", step: "02" },
   { key: "mainPlating", step: "03" },
-  { key: "inspection", step: "04" },
-  { key: "finishing", step: "05" },
+  { key: "thickness", step: "04" },
+  { key: "finalCheck", step: "05" },
   { key: "packaging", step: "06" },
 ] as const;
 

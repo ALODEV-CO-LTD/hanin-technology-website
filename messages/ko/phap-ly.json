@@ -15,7 +15,7 @@
       },
       "security": {
         "title": "기술 자료 보안",
-        "p1": "도면 및 첨부 파일은 별도의 공간에 보관되며 외부에 공개되지 않고, 권한을 부여받은 직원만 열람할 수 있습니다. 도면을 보내기 전에 비밀유지계약(NDA) 체결을 요청하실 수 있습니다."
+        "p1": "도면 및 첨부 파일은 별도의 공간에 보관되며 외부에 공개되지 않고, 권한을 부여받은 직원만 열람할 수 있습니다."
       },
       "retention": {
         "title": "보관 기간 및 고객의 권리",
@@ -23,7 +23,7 @@
       },
       "contact": {
         "title": "문의",
-        "p1": "본 방침에 관한 문의는 Haninplating@gmail.com 으로 보내 주시거나 {phones} 로 전화해 주십시오."
+        "p1": "본 방침에 관한 문의는 huyvinh82@gmail.com 으로 보내 주시거나 {phones} 로 전화해 주십시오."
       }
     },
     "terms": {
@@ -48,17 +48,17 @@
       },
       "contact": {
         "title": "문의",
-        "p1": "본 약관에 관한 문의는 Haninplating@gmail.com 으로 연락해 주십시오."
+        "p1": "본 약관에 관한 문의는 huyvinh82@gmail.com 으로 연락해 주십시오."
       }
     },
     "operator": {
       "title": "웹사이트 운영 주체",
-      "name": "회사명: HANIN Technology 베트남 도금산업 주식회사.",
+      "name": "회사명: HANIN 도금산업 주식회사(브랜드: HANIN Plating).",
       "tax": "사업자등록번호: 0110300983.",
-      "hq": "본사: 베트남 하노이시 꽝민사 꽝민공단 660 로트.",
-      "fac": "공장: 베트남 하노이시 꽝민사 꽝민공단 49G 로트.",
+      "hq": "주소: 하노이시 꽝민사 꽝민공단 49G 부지.",
+      "fac": "모회사: Hanin Tech, 하노이시 꽝민공단 660 부지.",
       "rep": "대표자: Nguyễn Huy Vinh 대표이사.",
-      "mail": "이메일: Haninplating@gmail.com."
+      "mail": "이메일: huyvinh82@gmail.com, vankhanhminhkhang@gmail.com."
     }
   }
 }

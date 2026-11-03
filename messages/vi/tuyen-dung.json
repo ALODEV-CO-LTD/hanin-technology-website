@@ -45,7 +45,7 @@
       "pillar3": {
         "tag": "Đào tạo kỹ thuật",
         "title": "Đào tạo kỹ thuật",
-        "desc": "Nhân viên mới được hướng dẫn nội bộ về quy trình mạ, đo chiều dày lớp mạ bằng XRF và vận hành hệ thống tự động.",
+        "desc": "Nhân viên mới được hướng dẫn nội bộ về quy trình mạ, đo độ dày lớp mạ và vận hành dây chuyền.",
         "metricLabel": "Đào tạo",
         "metricValue": "Theo từng vị trí"
       },
@@ -61,7 +61,7 @@
       "title": "Vị trí đang tuyển",
       "description": "Các vị trí tại văn phòng và nhà máy HANIN.",
       "boardStatus": "{count} vị trí đang tuyển",
-      "searchPlaceholder": "Tìm theo vị trí hoặc từ khóa (PLC, QA, cơ khí)",
+      "searchPlaceholder": "Tìm theo vị trí hoặc từ khóa (QA, hóa chất, cơ khí)",
       "departmentLabel": "Phòng ban",
       "typeLabel": "Hình thức làm việc",
       "locationLabel": "Địa điểm làm việc",
@@ -104,15 +104,15 @@
       "mainImageAlt": "Khu vận hành dây chuyền mạ tự động tại nhà máy HANIN",
       "mainBadge": "Khu sản xuất",
       "mainTitle": "Khu vận hành dây chuyền mạ tự động",
-      "mainDesc": "Dây chuyền mạ niken và crom cứng, có xử lý khí thải và giám sát PLC.",
+      "mainDesc": "Dây chuyền mạ tự động, khu bể mạ và hệ thống xử lý nước thải.",
       "secondaryImageAlt": "Linh kiện cơ khí sau khi mạ tại nhà máy HANIN",
       "secondaryBadge": "Kiểm tra chất lượng",
       "secondaryTitle": "Linh kiện cơ khí sau khi mạ",
-      "secondaryDesc": "Đo chiều dày lớp mạ (µm) bằng máy XRF",
+      "secondaryDesc": "Đo độ dày lớp mạ bằng máy APC-100",
       "labTitle": "Phòng kiểm nghiệm",
-      "labDesc": "Buồng phun sương muối, máy đo độ bám dính lớp mạ và dụng cụ phân tích dung dịch (Hull Cell).",
+      "labDesc": "Máy phun muối NSS và CASS, máy thử Hull cell và phòng phân tích hóa chất.",
       "labImageAlt": "Ảnh phòng kiểm nghiệm hóa chất và thiết bị phân tích dung dịch mạ",
-      "labFooter": "Lô hàng xuất xưởng kèm hồ sơ kiểm tra theo yêu cầu của khách hàng",
+      "labFooter": "Sản phẩm được kiểm tra thành phẩm trước khi giao",
       "labBadge": "Phòng QC"
     },
     "ApplicationCta": {
@@ -135,7 +135,7 @@
         "salary": "Lương: 18 - 25 triệu đồng",
         "tags": {
           "0": "Kinh nghiệm từ 2 năm",
-          "1": "Biết bể mạ tự động (PLC), mạ niken hóa học (ENP), phân tích dung dịch bằng Hull Cell",
+          "1": "Biết mạ niken, mạ nhựa ABS và phân tích dung dịch bằng Hull Cell",
           "2": "Phân tích nồng độ dung dịch mạ bằng Hull Cell"
         },
         "deadline": "30/04/2026"
@@ -147,8 +147,8 @@
         "locationLabel": "KCN Quang Minh, Hà Nội",
         "salary": "Lương: 20 - 30 triệu đồng",
         "tags": {
-          "0": "Kinh nghiệm 3 - 5 năm, có chứng chỉ ISO 9001 hoặc IATF 16949",
-          "1": "Đo XRF và thử phun sương muối",
+          "0": "Kinh nghiệm 3 - 5 năm, am hiểu hệ thống quản lý chất lượng ISO 9001",
+          "1": "Đo độ dày lớp mạ và thử phun muối",
           "2": "Kinh nghiệm: 3 - 5 năm"
         },
         "deadline": "15/05/2026"

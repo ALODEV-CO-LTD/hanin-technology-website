@@ -6,12 +6,11 @@ import HeroImage from "@/components/ui/HeroImage";
 import CountUp from "@/components/ui/CountUp";
 import HeroStatBar from "@/components/ui/HeroStatBar";
 
-// Số liệu chính thức do Bên A cung cấp (khách hàng: "hơn 100"; nhân sự 58; mặt bằng xưởng 2.230 m²; thành lập 28/03/2023).
+// Số liệu chính thức do Bên A cung cấp (khách hàng: "hơn 100"; nhân sự 58; mặt bằng xưởng 2.230 m²). Ô cuối là chứng nhận ISO 9001 (chữ, không đếm số).
 const STATS = [
-  { key: "partners", separator: "" },
-  { key: "staff", separator: "" },
-  { key: "area", separator: "." },
-  { key: "founded", separator: "" },
+  { key: "partners", separator: "", icon: "handshake" },
+  { key: "staff", separator: "", icon: "engineering" },
+  { key: "area", separator: ".", icon: "factory" },
 ] as const;
 
 export default function Hero() {
@@ -29,33 +28,36 @@ export default function Hero() {
         <HeroImage src={banner.image} alt={banner.alt || t("imageAlt")} />
       </div>
 
-      <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-r from-slate-950/85 via-slate-950/65 to-slate-950/35" />
-      <div className="relative z-10 w-full flex-1 px-margin py-space-xl flex flex-col justify-center">
-        <div className="max-w-3xl flex flex-col gap-space-md">
-          <div className="flex flex-col gap-2 banner-text">
+      <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-r from-[#0A1423]/90 via-[#0A1423]/65 to-[#0A1423]/20" />
+      {/* Lệch lên khoảng 50px so với tâm vùng giữa header và dải số liệu: đáy đệm lớn hơn đỉnh 100px trở lên. */}
+      <div className="relative z-10 w-full flex-1 px-margin pt-space-lg pb-space-xl sm:pt-space-md sm:pb-[116px] flex flex-col justify-center">
+        <div className="max-w-3xl flex flex-col">
+          <span className="mb-4 inline-flex w-fit items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3 py-1 text-sm font-medium text-amber-400 backdrop-blur-sm">
+            <Icon name="location_on" className="text-[16px]" />
+            {t("badge")}
+          </span>
+
+          <div className="banner-text">
             <BannerH1 className="text-white uppercase tracking-tight font-bold">
               {t("titlePrefix")} <span>{t("titleHighlight")}</span>
             </BannerH1>
-            <p className="text-headline-md text-white font-semibold tracking-tight">
-              {t("subtitle")}
-            </p>
           </div>
 
-          <p className="banner-lead text-white leading-relaxed banner-text">
+          <p className="banner-lead mt-space-md max-w-xl text-gray-200 leading-relaxed banner-text">
             {t("description")}
           </p>
 
-          <div className="flex flex-wrap items-center gap-space-md pt-space-sm">
+          <div className="flex flex-wrap items-center gap-space-md pt-space-lg">
             <a
               href="#nang-luc"
-              className="inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-steel-600 hover:bg-steel-700 text-white text-title-md uppercase tracking-wider rounded transition-all duration-150 shadow-lg shadow-steel-950/30"
+              className="inline-flex items-center justify-center gap-2 px-6 py-3.5 border border-transparent bg-[#E5A93C] hover:bg-[#D4962A] text-[#0F172A] text-title-md font-semibold uppercase tracking-wider rounded transition-all duration-150"
             >
               {t("ctaPrimary")}
               <Icon name="arrow_forward" className="text-[18px]" />
             </a>
             <a
               href="#bao-gia"
-              className="inline-flex items-center justify-center gap-2 py-3.5 text-white hover:text-white text-title-md uppercase tracking-wider underline-offset-8 decoration-2 hover:underline transition-colors duration-150 banner-text"
+              className="inline-flex items-center justify-center gap-2 px-6 py-3.5 border border-white/80 bg-white/5 text-white hover:bg-white hover:text-slate-900 text-title-md font-semibold uppercase tracking-wider rounded transition-all duration-150"
             >
               {t("ctaSecondary")}
             </a>
@@ -65,11 +67,16 @@ export default function Hero() {
 
       <HeroStatBar
         id="company-snapshot"
-        items={STATS.map((stat) => ({
-          key: stat.key,
-          label: ts(`${stat.key}.label1`),
-          value: <CountUp end={num(`${stat.key}.end`)} suffix={ts(`${stat.key}.suffix`)} thousandsSeparator={stat.separator} />,
-        }))}
+        variant="left"
+        items={[
+          ...STATS.map((stat) => ({
+            key: stat.key,
+            icon: stat.icon,
+            label: t(`stats.${stat.key}`),
+            value: <CountUp end={num(`${stat.key}.end`)} suffix={ts(`${stat.key}.suffix`)} thousandsSeparator={stat.separator} />,
+          })),
+          { key: "quality", icon: "verified", label: t("stats.quality"), value: t("stats.qualityValue") },
+        ]}
       />
     </section>
   );

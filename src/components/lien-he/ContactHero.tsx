@@ -5,9 +5,9 @@ import HeroImage from "@/components/ui/HeroImage";
 import PageBreadcrumb from "@/components/layout/PageBreadcrumb";
 import Icon from "@/components/ui/Icon";
 
-const SPEC_HIGHLIGHT_KEYS = ["nda", "cad", "consulting"] as const;
+const SPEC_HIGHLIGHT_KEYS = ["sample", "cad", "consulting"] as const;
 const SPEC_HIGHLIGHT_ICONS: Record<(typeof SPEC_HIGHLIGHT_KEYS)[number], string> = {
-  nda: "verified_user",
+  sample: "photo_camera",
   cad: "file_present",
   consulting: "science",
 };

@@ -3,13 +3,13 @@ import { useTranslations } from "next-intl";
 import { getSettings, isSafeMapEmbed } from "@/server/settings";
 import Icon from "@/components/ui/Icon";
 import Photo from "@/components/ui/Photo";
-import { IndustrialParkIcon, PortIcon } from "@/components/ui/CustomIcons";
+import { PortIcon } from "@/components/ui/CustomIcons";
 
-const DISTANCE_KEYS = ["airport", "seaport", "industrialParks"] as const;
+const DISTANCE_KEYS = ["airport", "city", "seaport"] as const;
 const DISTANCE_META: Record<(typeof DISTANCE_KEYS)[number], { icon: string }> = {
   airport: { icon: "flight_takeoff" },
   seaport: { icon: "directions_boat" },
-  industrialParks: { icon: "factory" },
+  city: { icon: "location_city" },
 };
 
 export default function LocationMap() {
@@ -36,8 +36,6 @@ export default function LocationMap() {
                       <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded bg-steel-50 text-steel-600">
                         {key === "seaport" ? (
                           <PortIcon className="h-7 w-7" />
-                        ) : key === "industrialParks" ? (
-                          <IndustrialParkIcon className="h-7 w-7" />
                         ) : (
                           <Icon name={meta.icon} className="text-[22px]" />
                         )}
@@ -66,7 +64,7 @@ export default function LocationMap() {
                 className="flex-1 whitespace-nowrap py-space-sm px-space-md bg-white border border-slate-200 text-slate-900 hover:bg-slate-100 rounded text-label-md uppercase tracking-wider font-bold transition-colors flex items-center justify-center gap-2"
                 href="#rfq-form"
               >
-                <Icon name="download" className="text-[18px]" />
+                <Icon name="request_quote" className="text-[18px]" />
                 <span>{t("downloadMapCta")}</span>
               </a>
             </div>

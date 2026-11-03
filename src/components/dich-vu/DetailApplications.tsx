@@ -6,11 +6,11 @@ export default function DetailApplications({ slug }: { slug: string }) {
   const t = useTranslations(useServiceNs(slug, "DetailApplications"));
 
   const APPLICATIONS = [
-    { key: "oilGas", icon: "valve" },
-    { key: "mold", icon: "precision_manufacturing" },
-    { key: "electronics", icon: "sensors" },
-    { key: "automotive", icon: "directions_car" },
-  ] as const;
+    { key: "a1", icon: "layers" },
+    { key: "a2", icon: "precision_manufacturing" },
+    { key: "a3", icon: "factory" },
+    { key: "a4", icon: "verified" },
+  ].filter((item) => t.has(`${item.key}.title`));
 
   return (
     <section className="w-full mb-space-xl">
@@ -21,7 +21,7 @@ export default function DetailApplications({ slug }: { slug: string }) {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+        <div className={`grid grid-cols-1 md:grid-cols-2 ${APPLICATIONS.length === 3 ? "lg:grid-cols-3" : "lg:grid-cols-4"} gap-space-md`}>
           {APPLICATIONS.map((item) => (
             <div key={item.key} className="bg-white border border-slate-200 p-space-md rounded flex flex-col justify-between">
               <div>
@@ -32,7 +32,7 @@ export default function DetailApplications({ slug }: { slug: string }) {
                 <h3 className="text-title-md text-slate-900 uppercase mt-1 mb-2 font-bold">{t(`${item.key}.title`)}</h3>
                 <p className="text-body-md text-slate-600">{t(`${item.key}.desc`)}</p>
               </div>
-              <div className="mt-space-md pt-space-sm border-t border-slate-200 text-sm text-slate-600">{t(`${item.key}.thickness`)}</div>
+              <div className="mt-space-md pt-space-sm border-t border-slate-200 text-sm text-slate-600">{t(`${item.key}.note`)}</div>
             </div>
           ))}
         </div>

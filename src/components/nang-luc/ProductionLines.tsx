@@ -19,7 +19,7 @@ export default function ProductionLines() {
       imageOrder: "",
     },
     {
-      key: "chemical",
+      key: "auto",
       image: siteImg("nang-luc/ProductionLines#3", "/images/factory/ma-treo-3.jpg"),
       imageOrder: "order-first lg:order-last",
     },
@@ -63,37 +63,11 @@ export default function ProductionLines() {
                 </div>
                 <div className="bg-white border border-slate-200 p-space-md rounded flex flex-wrap items-center justify-between gap-space-sm">
                   <div className="text-label-technical text-slate-800">
-                    {line.key === "barrel" && (
-                      <>
-                        <span className="text-slate-600">{t("items.barrel.capacityLabel")}</span>{" "}
-                        <span className="text-steel-600 font-bold">
-                          {t("items.barrel.capacityValue")} {t("items.barrel.capacityUnit")}
-                        </span>
-                        <><span className="hidden sm:inline">{" · "}</span><br className="sm:hidden" /></>
-                        <span className="text-slate-600">{t("items.barrel.toleranceLabel")}</span>{" "}
-                        <span className="text-slate-900 font-bold">{t("items.barrel.toleranceValue")}</span>
-                      </>
-                    )}
-                    {line.key === "rack" && (
-                      <>
-                        <span className="text-slate-600">{t("items.rack.capacityLabel")}</span>{" "}
-                        <span className="text-steel-600 font-bold">
-                          {t("items.rack.capacityValue")} {t("items.rack.capacityUnit")}
-                        </span>
-                        <><span className="hidden sm:inline">{" · "}</span><br className="sm:hidden" /></>
-                        <span className="text-slate-600">{t("items.rack.tankSizeLabel")}</span>{" "}
-                        <span className="text-slate-900 font-bold">{t("items.rack.tankSizeValue")}</span>
-                      </>
-                    )}
-                    {line.key === "chemical" && (
-                      <>
-                        <span className="text-slate-600">{t("items.chemical.reactorLabel")}</span>{" "}
-                        <span className="text-steel-600 font-bold">{t("items.chemical.reactorValue")}</span>
-                        <><span className="hidden sm:inline">{" · "}</span><br className="sm:hidden" /></>
-                        <span className="text-slate-600">{t("items.chemical.thicknessLabel")}</span>{" "}
-                        <span className="text-slate-900 font-bold">{t("items.chemical.thicknessValue")}</span>
-                      </>
-                    )}
+                    <span className="text-slate-600">{t(`items.${line.key}.capacityLabel`)}</span>{" "}
+                    <span className="text-steel-600 font-bold">{t(`items.${line.key}.capacityValue`)}</span>
+                    <br />
+                    <span className="text-slate-600">{t(`items.${line.key}.techLabel`)}</span>{" "}
+                    <span className="text-slate-900 font-bold">{t(`items.${line.key}.techValue`)}</span>
                   </div>
                   <Link
                     className="inline-flex items-center gap-1 text-label-technical text-steel-600 hover:text-slate-900 font-semibold uppercase transition-colors"
