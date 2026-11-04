@@ -23,12 +23,12 @@ export default function Hero() {
   const banner = getBanner("home-hero", useLocale(), "/images/factory/ma-treo-2.jpg");
 
   return (
-    <section className="relative w-full min-h-[min(calc(100svh-var(--header-h)),560px)] sm:min-h-[calc(100svh-var(--header-h))] flex flex-col overflow-hidden bg-slate-900">
+    <section className="relative w-full min-h-[min(calc(100svh-var(--header-h)),560px)] sm:min-h-[calc(100svh-var(--header-h))] flex flex-col overflow-hidden bg-slate-50">
       <div className="absolute inset-0 z-0">
         <HeroImage src={banner.image} alt={banner.alt || t("imageAlt")} />
       </div>
 
-      <div aria-hidden="true" className="absolute inset-0 bg-[#0A1423]/60" />
+      <div aria-hidden="true" className="absolute inset-y-0 left-0 w-full lg:w-3/4 banner-scrim" />
       {/* Lệch lên khoảng 50px so với tâm vùng giữa header và dải số liệu: đáy đệm lớn hơn đỉnh 100px trở lên. */}
       <div className="relative z-10 w-full flex-1 px-margin pt-space-lg pb-space-xl sm:pt-space-md sm:pb-[116px] flex flex-col justify-center">
         <div className="max-w-3xl flex flex-col">

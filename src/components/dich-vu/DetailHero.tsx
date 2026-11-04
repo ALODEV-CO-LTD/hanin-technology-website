@@ -26,9 +26,9 @@ export default function DetailHero({ service, breadcrumb }: { service: PlatingSe
 
   return (
     <section className="w-full flex flex-col">
-      <div className="relative w-full min-h-[480px] sm:min-h-[min(calc(100svh-var(--header-h)),720px)] overflow-hidden bg-slate-900 flex items-end">
+      <div className="relative flex min-h-[min(calc(100svh-var(--header-h)),560px)] sm:min-h-[calc(100svh-var(--header-h))] w-full flex-col justify-end overflow-hidden bg-slate-50">
         <HeroImage src={service.image} alt={service.imageAlt} />
-        <div aria-hidden="true" className="absolute inset-0 bg-slate-950/60" />
+        <div aria-hidden="true" className="absolute inset-y-0 left-0 w-full lg:w-3/4 banner-scrim" />
         <div className="relative z-10 w-full px-margin py-space-lg lg:py-space-xl flex flex-col gap-space-md">
           <PageBreadcrumb className="banner-text" variant="dark" items={breadcrumb} />
           <div className="flex flex-col gap-space-sm max-w-3xl banner-text">
@@ -59,7 +59,7 @@ export default function DetailHero({ service, breadcrumb }: { service: PlatingSe
             </a>
             <Link
               href="/lien-he#rfq-form"
-              className="inline-flex min-h-11 items-center gap-space-xs bg-white hover:bg-slate-100 text-slate-900 px-space-md py-3 rounded text-label-technical uppercase tracking-wider transition-all"
+              className="inline-flex min-h-11 items-center gap-space-xs border border-slate-300 bg-white hover:bg-slate-100 text-slate-900 px-space-md py-3 rounded text-label-technical uppercase tracking-wider transition-all"
             >
               <Icon name="support_agent" className="text-[18px]" />
               <span>{t("ctaSecondary")}</span>

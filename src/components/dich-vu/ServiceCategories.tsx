@@ -25,7 +25,7 @@ export default function ServiceCategories() {
             key={service.slug}
             className="relative bg-white border border-slate-200 rounded overflow-hidden shadow-sm flex flex-col group hover:-translate-y-1 hover:shadow-md focus-within:border-steel-600 transition-all"
           >
-            <div className="relative h-48 w-full overflow-hidden bg-slate-900">
+            <div className="relative h-48 w-full overflow-hidden bg-slate-50">
               <Photo
                 alt={service.imageAlt}
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"

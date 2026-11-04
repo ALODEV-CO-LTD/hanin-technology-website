@@ -24,7 +24,7 @@ export default function ManufacturingCapability() {
               <Photo
                 alt={t("imageAlt")}
                 className="w-full h-full object-cover"
-                src={siteImg("home/ManufacturingCapability#1", "/images/factory/ma-treo-3.jpg")}
+                src={siteImg("home/ManufacturingCapability#1", "/images/hanin/slide04-khu-vuc-be-ma.webp")}
               />
             </div>
           </div>

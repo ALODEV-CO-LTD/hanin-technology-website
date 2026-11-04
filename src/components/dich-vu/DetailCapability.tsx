@@ -20,7 +20,7 @@ export default function DetailCapability({ service }: { service: PlatingService 
     <section className="w-full bg-white mb-space-xl">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center">
         <div className="lg:col-span-6 flex flex-col gap-space-sm">
-          <div className="w-full h-80 rounded overflow-hidden shadow-sm relative bg-slate-900">
+          <div className="w-full h-80 rounded overflow-hidden shadow-sm relative bg-slate-50">
             <Photo
               alt={t("imageAlt")}
               className="w-full h-full object-cover"

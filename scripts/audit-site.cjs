@@ -174,7 +174,8 @@ function audit(html, finalUrl) {
   const internal = new Set();
   for (const t of anchors) {
     const href = attr(t, "href");
-    if (!href || !href.startsWith("/") || href.startsWith("//")) continue;
+    // /cdn-cgi/ do Cloudflare chèn (che email), không phải link của site.
+    if (!href || !href.startsWith("/") || href.startsWith("//") || href.startsWith("/cdn-cgi/")) continue;
     internal.add(href.split("#")[0].split("?")[0] || "/");
   }
   return { errors: [...new Set(errors)], warns, internal: [...internal] };

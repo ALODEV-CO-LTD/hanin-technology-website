@@ -17,20 +17,22 @@ export default function WorkEnvironment() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
           {/* Main featured image */}
           <div className="lg:col-span-7 flex flex-col">
-            <div className="relative w-full h-[440px] md:h-[500px] rounded overflow-hidden shadow-sm group bg-slate-200">
+            <div className="relative w-full h-[440px] md:h-[500px] rounded overflow-hidden shadow-sm group bg-white border border-slate-200 flex flex-col">
+              <div className="relative flex-1 min-h-0 overflow-hidden bg-slate-50">
               <Photo
                 alt={t("mainImageAlt")}
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                src={siteImg("tuyen-dung/WorkEnvironment#1", "/images/factory/ma-treo-2.jpg")}
+                className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                src={siteImg("tuyen-dung/WorkEnvironment#1", "/images/hanin/slide04-khu-vuc-be-ma.webp")}
               />
-              <div className="absolute inset-x-0 bottom-0 p-space-lg bg-slate-900/80 flex flex-col gap-1 text-white">
-                <div className="text-white text-label-sm uppercase tracking-wider font-bold">
+              </div>
+              <div className="p-space-lg bg-white flex flex-col gap-1 text-slate-900">
+                <div className="text-steel-600 text-label-sm uppercase tracking-wider font-bold">
                   {t("mainBadge")}
                 </div>
-                <h3 className="text-headline-sm uppercase text-white font-semibold">
+                <h3 className="text-headline-sm uppercase text-slate-900 font-semibold">
                   {t("mainTitle")}
                 </h3>
-                <p className="text-body-sm text-white max-w-xl">
+                <p className="text-body-sm text-slate-600 max-w-xl">
                   {t("mainDesc")}
                 </p>
               </div>
@@ -39,20 +41,22 @@ export default function WorkEnvironment() {
 
           {/* Supporting visuals */}
           <div className="lg:col-span-5 flex flex-col gap-gutter">
-            <div className="relative w-full h-[236px] md:h-[238px] rounded overflow-hidden shadow-sm group bg-slate-200">
+            <div className="relative w-full h-[236px] md:h-[238px] rounded overflow-hidden shadow-sm group bg-white border border-slate-200 flex flex-col">
+              <div className="relative flex-1 min-h-0 overflow-hidden bg-slate-50">
               <Photo
                 alt={t("secondaryImageAlt")}
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                src={siteImg("tuyen-dung/WorkEnvironment#2", "/images/factory/qc-7.jpg")}
+                className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                src={siteImg("tuyen-dung/WorkEnvironment#2", "/images/hanin/slide11-kim-loai-ma-crom-tay-nam.webp")}
               />
-              <div className="absolute inset-x-0 bottom-0 p-space-md bg-slate-900/80 flex flex-col text-white">
-                <span className="text-label-sm text-white uppercase tracking-wider font-semibold">
+              </div>
+              <div className="p-space-md bg-white flex flex-col text-slate-900">
+                <span className="text-label-sm text-steel-600 uppercase tracking-wider font-semibold">
                   {t("secondaryBadge")}
                 </span>
-                <h3 className="text-title-md uppercase font-semibold">
+                <h3 className="text-title-md text-slate-900 uppercase font-semibold">
                   {t("secondaryTitle")}
                 </h3>
-                <p className="text-label-sm text-white">
+                <p className="text-label-sm text-slate-600">
                   {t("secondaryDesc")}
                 </p>
               </div>
@@ -63,7 +67,7 @@ export default function WorkEnvironment() {
                 <Photo
                   alt={t("labImageAlt")}
                   className="w-full h-full object-cover"
-                  src={siteImg("tuyen-dung/WorkEnvironment#3", "/images/factory/phan-tich-1.jpg")}
+                  src={siteImg("tuyen-dung/WorkEnvironment#3", "/images/hanin/slide10-phong-phan-tich.webp")}
                 />
               </div>
               <div className="p-space-md flex flex-col gap-1">

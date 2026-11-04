@@ -23,14 +23,14 @@ export default function FactoryOverview() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-gutter mb-space-lg">
           {/* Main Large Photo: Modern Electroplating Line */}
           <div className="lg:col-span-8 w-full min-w-0 relative aspect-[16/10] lg:aspect-auto lg:h-full min-h-[220px] lg:min-h-[320px] rounded-lg overflow-hidden bg-slate-100 border border-slate-200 shadow-sm group">
-            <Photo src={siteImg("gioi-thieu/FactoryOverview#1", "/images/factory/ma-quay-1.jpg")} alt={t("mainImageAlt")} className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105" />
+            <Photo src={siteImg("gioi-thieu/FactoryOverview#1", "/images/hanin/slide04-day-chuyen-ma-tu-dong.webp")} alt={t("mainImageAlt")} className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105" />
           </div>
 
           {/* 3 Smaller Auxiliary Photos */}
           <div className="lg:col-span-4 grid grid-rows-3 gap-gutter">
             {/* Aux Photo 1: Operator Monitoring Line */}
             <div className="relative h-full min-h-[150px] sm:min-h-[180px] rounded-lg overflow-hidden bg-slate-100 border border-slate-200 shadow-sm group">
-              <Photo src={siteImg("gioi-thieu/FactoryOverview#2", "/images/factory/ma-treo-2.jpg")} alt={t("zone2ImageAlt")} className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105" />
+              <Photo src={siteImg("gioi-thieu/FactoryOverview#2", "/images/hanin/slide04-san-pham-moc-vao-jig.webp")} alt={t("zone2ImageAlt")} className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105" />
             </div>
 
             {/* Aux Photo 2: Precision Caliper Inspection */}
@@ -38,13 +38,13 @@ export default function FactoryOverview() {
               <Photo
                 alt={t("zone3ImageAlt")}
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                src={siteImg("gioi-thieu/FactoryOverview#3", "/images/factory/phan-tich-1.jpg")}
+                src={siteImg("gioi-thieu/FactoryOverview#3", "/images/hanin/slide10-phong-phan-tich.webp")}
               />
             </div>
 
             {/* Aux Photo 3: Heavy Automated Crane System */}
             <div className="relative h-full min-h-[150px] sm:min-h-[180px] rounded-lg overflow-hidden bg-slate-100 border border-slate-200 shadow-sm group">
-              <Photo src={siteImg("gioi-thieu/FactoryOverview#4", "/images/factory/kho-5.jpg")} alt={t("zone4ImageAlt")} className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105" />
+              <Photo src={siteImg("gioi-thieu/FactoryOverview#4", "/images/hanin/slide09-line-ma-ban-tu-dong.webp")} alt={t("zone4ImageAlt")} className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105" />
             </div>
           </div>
         </div>

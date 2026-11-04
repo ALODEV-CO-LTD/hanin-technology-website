@@ -74,6 +74,7 @@ npm ci
 DATA_DIR=$DATA_DIR_REMOTE ADMIN_EMAIL='$ADMIN_EMAIL' ADMIN_PASSWORD='$ADMIN_PASSWORD' npm run db:seed
 # Gan logo khach hang co san trong public/images/clients (khong ghi de logo tai len qua CMS).
 DATA_DIR=$DATA_DIR_REMOTE npm run db:client-logos
+DATA_DIR=$DATA_DIR_REMOTE npm run db:hanin-images
 DATA_DIR=$DATA_DIR_REMOTE SWC_NATIVE_BINDING_CACHE=/tmp/swc-cache npm run build
 REMOTE_BUILD
 

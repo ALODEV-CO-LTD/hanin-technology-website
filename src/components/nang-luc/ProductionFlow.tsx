@@ -1,4 +1,6 @@
 import { useTranslations } from "next-intl";
+import Photo from "@/components/ui/Photo";
+import { PRODUCTION_FLOW_IMAGES } from "@/lib/block-images";
 
 const STEPS = [
   { key: "receiving", step: "01" },
@@ -28,6 +30,9 @@ export default function ProductionFlow() {
               className="p-space-md sm:p-space-lg bg-slate-50 border border-slate-200 rounded-lg shadow-sm hover:border-steel-300 hover:shadow-md transition-all flex flex-col justify-between"
             >
               <div>
+                <div className="relative aspect-[4/3] overflow-hidden rounded bg-slate-200 mb-space-sm">
+                  <Photo src={PRODUCTION_FLOW_IMAGES[s.key]} alt={t(`items.${s.key}.title`)} sizes="(min-width: 1024px) 25vw, (min-width: 768px) 50vw, 100vw" className="h-full w-full object-cover" />
+                </div>
                 <div className="mb-space-sm">
                   <span className="text-label-technical text-steel-600 font-bold">{s.step}</span>
                 </div>

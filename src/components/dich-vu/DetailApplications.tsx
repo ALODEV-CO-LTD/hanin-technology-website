@@ -1,6 +1,8 @@
 import { useServiceNs } from "@/lib/service-ns";
 import { useTranslations } from "next-intl";
 import Icon from "@/components/ui/Icon";
+import Photo from "@/components/ui/Photo";
+import { SERVICE_APPLICATION_IMAGES } from "@/lib/block-images";
 
 export default function DetailApplications({ slug }: { slug: string }) {
   const t = useTranslations(useServiceNs(slug, "DetailApplications"));
@@ -25,9 +27,15 @@ export default function DetailApplications({ slug }: { slug: string }) {
           {APPLICATIONS.map((item) => (
             <div key={item.key} className="bg-white border border-slate-200 p-space-md rounded flex flex-col justify-between">
               <div>
-                <div className="w-10 h-10 rounded bg-slate-200 flex items-center justify-center text-steel-600 mb-space-sm">
-                  <Icon name={item.icon} className="text-[24px]" />
+                {SERVICE_APPLICATION_IMAGES[slug]?.[item.key] ? (
+                  <div className="relative aspect-[4/3] overflow-hidden rounded bg-slate-200 mb-space-sm">
+                  <Photo src={SERVICE_APPLICATION_IMAGES[slug][item.key]} alt={t(`${item.key}.title`)} sizes="(min-width: 1024px) 25vw, (min-width: 768px) 50vw, 100vw" className="h-full w-full object-cover" />
                 </div>
+                ) : (
+                  <div className="w-10 h-10 rounded bg-slate-200 flex items-center justify-center text-steel-600 mb-space-sm">
+                    <Icon name={item.icon} className="text-[24px]" />
+                  </div>
+                )}
                 <span className="text-label-sm text-steel-600 uppercase font-semibold">{t(`${item.key}.tag`)}</span>
                 <h3 className="text-title-md text-slate-900 uppercase mt-1 mb-2 font-bold">{t(`${item.key}.title`)}</h3>
                 <p className="text-body-md text-slate-600">{t(`${item.key}.desc`)}</p>

@@ -3,6 +3,7 @@ import Icon from "@/components/ui/Icon";
 import { Link } from "@/i18n/navigation";
 import { siteImg } from "@/server/site-images";
 import Photo from "@/components/ui/Photo";
+import { CERT_IMAGES } from "@/lib/block-images";
 
 export default function QualityStandardsPreview() {
   const t = useTranslations("GioiThieu.QualityStandardsPreview");
@@ -17,9 +18,9 @@ export default function QualityStandardsPreview() {
   const accreditation = { label: t("certificateAccreditationLabel"), value: t("certificateAccreditationValue") };
 
   const CERTIFICATES = [
-    { key: "iso9001", icon: "workspace_premium" },
-    { key: "wastewater", icon: "water_drop" },
-    { key: "equipment", icon: "fact_check" },
+    { key: "iso9001", icon: "workspace_premium", image: "" },
+    { key: "wastewater", icon: "water_drop", image: CERT_IMAGES.wastewaterPress },
+    { key: "equipment", icon: "fact_check", image: CERT_IMAGES.labBench },
   ] as const;
 
   return (
@@ -38,7 +39,7 @@ export default function QualityStandardsPreview() {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center p-space-md sm:p-space-lg rounded bg-slate-50 border border-slate-200 shadow-sm">
           <div className="md:col-span-4 lg:col-span-3 flex justify-center md:self-start">
             <Photo
-              src={siteImg("gioi-thieu/QualityStandardsPreview#1", "/images/certificates/iso-9001-2015.jpg")}
+              src={siteImg("gioi-thieu/QualityStandardsPreview#1", "/images/hanin/slide18-chung-nhan-iso-9001-2015-icb.webp")}
               alt={t("certificateImageAlt")}
               className="w-full max-w-[360px] h-auto rounded border border-slate-200 bg-white shadow-md"
             />
@@ -61,9 +62,18 @@ export default function QualityStandardsPreview() {
             <ul className="grid grid-cols-1 border-t border-slate-200 sm:grid-cols-3 sm:divide-x sm:divide-slate-200 max-sm:divide-y max-sm:divide-slate-200">
               {CERTIFICATES.map((cert) => (
                 <li key={cert.key} className="flex items-start gap-3 py-space-md sm:px-space-md sm:first:pl-0 sm:last:pr-0">
-                  <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded bg-steel-50 text-steel-600">
-                    <Icon name={cert.icon} className="text-[22px]" />
-                  </span>
+                  {cert.image ? (
+                    <Photo
+                      src={cert.image}
+                      alt={t(`${cert.key}.title`)}
+                      sizes="96px"
+                      className="h-14 w-20 shrink-0 rounded border border-slate-200 object-cover"
+                    />
+                  ) : (
+                    <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded bg-steel-50 text-steel-600">
+                      <Icon name={cert.icon} className="text-[22px]" />
+                    </span>
+                  )}
                   <span className="flex min-w-0 flex-col gap-1">
                     <span className="text-title-md font-bold text-slate-900">{t(`${cert.key}.title`)}</span>
                     <span className="text-body-sm text-slate-600">{t(`${cert.key}.desc`)}</span>

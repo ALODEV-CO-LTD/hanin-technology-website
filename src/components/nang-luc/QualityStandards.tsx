@@ -1,22 +1,30 @@
 import { useTranslations } from "next-intl";
 import Icon from "@/components/ui/Icon";
 import { Link } from "@/i18n/navigation";
+import Photo from "@/components/ui/Photo";
+import { CERT_IMAGES } from "@/lib/block-images";
 
 const CARDS = [
   {
     key: "iso9001",
+    image: CERT_IMAGES.iso,
+    contain: true,
     icon: "verified",
     iconAccent: true,
     tagAccent: true,
   },
   {
     key: "wastewater",
+    image: CERT_IMAGES.wastewaterTank,
+    contain: false,
     icon: "eco",
     iconAccent: false,
     tagAccent: false,
   },
   {
     key: "testing",
+    image: CERT_IMAGES.lab,
+    contain: false,
     icon: "rule",
     iconAccent: false,
     tagAccent: false,
@@ -42,6 +50,14 @@ export default function QualityStandards() {
               className="p-space-lg bg-slate-50 border border-slate-200 rounded-lg shadow-sm hover:border-steel-300 hover:shadow-md transition-all flex flex-col justify-between"
             >
               <div>
+                <div className="relative aspect-[16/10] overflow-hidden rounded bg-white border border-slate-200 mb-space-md">
+                  <Photo
+                    src={card.image}
+                    alt={t(`items.${card.key}.title`)}
+                    sizes="(min-width: 768px) 33vw, 100vw"
+                    className={`h-full w-full ${card.contain ? "object-contain" : "object-cover"}`}
+                  />
+                </div>
                 <div
                   className={`w-10 h-10 rounded flex items-center justify-center mb-space-md font-bold ${
                     card.iconAccent ? "bg-steel-100 text-steel-600" : "bg-slate-200/80 text-slate-700"

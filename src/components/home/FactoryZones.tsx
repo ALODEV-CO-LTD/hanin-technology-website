@@ -3,6 +3,16 @@ import Photo from "@/components/ui/Photo";
 
 const ZONE_KEYS = ["0", "1", "2", "3", "4", "5"] as const;
 
+/** Điểm lấy nét (object-position) theo từng ảnh phân khu để khung 4:3 không thừa trần tôn hay sàn. */
+const POSITIONS: Record<(typeof ZONE_KEYS)[number], string> = {
+  "0": "50% 50%",
+  "1": "50% 65%",
+  "2": "50% 75%",
+  "3": "50% 50%",
+  "4": "50% 50%",
+  "5": "50% 50%",
+};
+
 /** Lưới 3x2 phân khu nhà xưởng: ảnh 4:3, tên phân khu, công suất và chi tiết bên dưới ảnh. */
 export default function FactoryZones({ images }: { images: Record<(typeof ZONE_KEYS)[number], string> }) {
   const t = useTranslations("HomeZones");
@@ -23,6 +33,7 @@ export default function FactoryZones({ images }: { images: Record<(typeof ZONE_K
                   alt={t(`zones.${key}.alt`)}
                   sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
                   className="h-full w-full object-cover"
+                  style={{ objectPosition: POSITIONS[key] }}
                 />
               </div>
               <div className="flex flex-col gap-space-xs p-space-md">

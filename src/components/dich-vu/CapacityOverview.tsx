@@ -1,13 +1,15 @@
 import { useTranslations } from "next-intl";
 import Icon from "@/components/ui/Icon";
+import Photo from "@/components/ui/Photo";
+import { CERT_IMAGES } from "@/lib/block-images";
 
 export default function CapacityOverview() {
   const t = useTranslations("DichVu.CapacityOverview");
 
   const CAPABILITIES = [
-    { key: "auto", icon: "precision_manufacturing", iconBg: "bg-steel-100", iconColor: "text-steel-600", statRightColor: "text-steel-600" },
-    { key: "complex", icon: "science", iconBg: "bg-steel-100", iconColor: "text-steel-700", statRightColor: "text-steel-700" },
-    { key: "wastewater", icon: "water_ec", iconBg: "bg-slate-200", iconColor: "text-slate-700", statRightColor: "text-slate-900" },
+    { key: "auto", image: CERT_IMAGES.autoLine, icon: "precision_manufacturing", iconBg: "bg-steel-100", iconColor: "text-steel-600", statRightColor: "text-steel-600" },
+    { key: "complex", image: CERT_IMAGES.rotaryLine, icon: "science", iconBg: "bg-steel-100", iconColor: "text-steel-700", statRightColor: "text-steel-700" },
+    { key: "wastewater", image: CERT_IMAGES.wastewaterSettling, icon: "water_ec", iconBg: "bg-slate-200", iconColor: "text-slate-700", statRightColor: "text-slate-900" },
   ] as const;
 
   return (
@@ -24,6 +26,9 @@ export default function CapacityOverview() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-space-md">
           {CAPABILITIES.map((item) => (
             <div key={item.key} className="bg-white border border-slate-200 p-space-md rounded shadow-sm">
+              <div className="relative aspect-[16/10] overflow-hidden rounded bg-slate-200 mb-space-sm">
+                <Photo src={item.image} alt={t(`${item.key}.title`)} sizes="(min-width: 768px) 33vw, 100vw" className="h-full w-full object-cover" />
+              </div>
               <div className={`w-10 h-10 rounded ${item.iconBg} flex items-center justify-center ${item.iconColor} mb-space-sm`}>
                 <Icon name={item.icon} className="text-[24px]" />
               </div>

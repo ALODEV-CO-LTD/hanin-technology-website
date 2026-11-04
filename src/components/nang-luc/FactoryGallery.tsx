@@ -8,19 +8,19 @@ export default function FactoryGallery() {
   const THUMBS = [
     {
       key: "campus",
-      image: siteImg("nang-luc/FactoryGallery#1", "/images/factory/ma-quay-6.jpg"),
+      image: siteImg("nang-luc/FactoryGallery#1", "/images/factory/cong-nha-may.jpg"),
     },
     {
       key: "control",
-      image: siteImg("nang-luc/FactoryGallery#2", "/images/factory/kho-6.jpg"),
+      image: siteImg("nang-luc/FactoryGallery#2", "/images/factory/qc-8.jpg"),
     },
     {
       key: "finished",
-      image: siteImg("nang-luc/FactoryGallery#3", "/images/factory/ma-treo-3.jpg"),
+      image: siteImg("nang-luc/FactoryGallery#3", "/images/hanin/slide05-tay-gat-sen-tam.webp"),
     },
     {
       key: "racks",
-      image: siteImg("nang-luc/FactoryGallery#4", "/images/factory/qc-4.jpg"),
+      image: siteImg("nang-luc/FactoryGallery#4", "/images/hanin/slide09-be-ma.webp"),
     },
   ] as const;
 
@@ -38,7 +38,7 @@ export default function FactoryGallery() {
           <Photo
             className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-700"
             alt={t("mainImage.alt")}
-            src={siteImg("nang-luc/FactoryGallery#5", "/images/factory/ma-quay-7.jpg")}
+            src={siteImg("nang-luc/FactoryGallery#5", "/images/hanin/slide09-line-ma-ban-tu-dong.webp")}
             sizes="100vw"
           />
         </div>

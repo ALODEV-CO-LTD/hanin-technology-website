@@ -24,14 +24,11 @@ export default function ClientsGrid() {
                 sizes="160px"
                 className="h-12 w-auto max-w-[85%] object-contain"
               />
-            ) : (
-              <span className="text-body-sm font-semibold text-slate-800">{c.name}</span>
-            )}
-            {c.logo && <span className="mt-1 line-clamp-1 text-xs text-slate-500">{c.name}</span>}
+            ) : null}
+            <span className="mt-1 line-clamp-1 text-xs text-slate-500">{c.name}</span>
           </li>
         ))}
       </ul>
-      <p className="text-body-sm text-slate-500">{t("note")}</p>
     </div>
   );
 }

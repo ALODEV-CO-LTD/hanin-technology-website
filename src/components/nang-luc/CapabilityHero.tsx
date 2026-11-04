@@ -2,7 +2,7 @@ import { useLocale, useTranslations } from "next-intl";
 import BannerH1 from "@/components/ui/BannerH1";
 import { getBanner } from "@/server/public";
 import PageBreadcrumb from "@/components/layout/PageBreadcrumb";
-import HeroImage from "@/components/ui/HeroImage";
+import BannerFrame from "@/components/ui/BannerFrame";
 import CountUp from "@/components/ui/CountUp";
 import HeroStatBar from "@/components/ui/HeroStatBar";
 
@@ -23,15 +23,30 @@ export default function CapabilityHero() {
   const banner = getBanner("nang-luc", useLocale(), "/images/factory/ma-quay-5.jpg");
 
   return (
-    <section className="relative w-full min-h-[min(calc(100svh-var(--header-h)),560px)] sm:min-h-[calc(100svh-var(--header-h))] overflow-hidden bg-slate-900 flex flex-col">
-      <HeroImage src={banner.image} alt={banner.alt} />
-
-      <div aria-hidden="true" className="absolute inset-0 bg-slate-950/60" />
-      <div className="relative px-margin w-full flex-1 flex flex-col justify-center py-space-xl">
-        <div className="banner-text">
-          <PageBreadcrumb
+    <BannerFrame image={banner.image} alt={banner.alt}
+      bar={<HeroStatBar
+            items={STATS.map((stat) => ({
+              key: stat.key,
+              label: ts(`items.${stat.key}.label`),
+              value: (
+                <>
+                  <CountUp
+                    end={num(`items.${stat.key}.end`)}
+                    prefix={ts(`items.${stat.key}.prefix`)}
+                    suffix={ts(`items.${stat.key}.suffix`)}
+                                    padStart={"padStart" in stat ? stat.padStart : 0}
+                  />
+                  {ts(`items.${stat.key}.unit`) && <span className="text-headline-sm font-normal">{ts(`items.${stat.key}.unit`)}</span>}
+                </>
+              ),
+            }))}
+          />}
+    >
+      <div className="w-full px-margin py-space-lg">
+        <div className="">
+          <PageBreadcrumb variant="dark"
             className="pb-6"
-            variant="dark"
+           
             items={[
               { label: t("breadcrumbHome"), href: "/" },
               { label: t("breadcrumbCurrent") },
@@ -48,43 +63,25 @@ export default function CapabilityHero() {
 
         <div className="flex flex-wrap items-center gap-space-md pt-8">
           <a
-            className="inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-steel-600 hover:bg-steel-700 text-white text-title-md uppercase tracking-wider rounded transition-all duration-150 shadow-lg shadow-steel-950/30"
+            className="inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-steel-600 hover:bg-steel-700 text-white text-title-md uppercase tracking-wider rounded transition-all duration-150 "
             href="#he-thong-nha-may"
           >
             {t("ctaExplore")}
           </a>
           <a
-            className="inline-flex items-center justify-center gap-2 py-3.5 text-white hover:text-white text-title-md uppercase tracking-wider underline-offset-8 decoration-2 hover:underline transition-colors duration-150 banner-text"
+            className="inline-flex items-center justify-center gap-2 py-3.5 text-white hover:text-white text-title-md uppercase tracking-wider underline-offset-8 decoration-2 hover:underline transition-colors duration-150"
             href="#day-chuyen"
           >
             {t("ctaLines")}
           </a>
           <a
-            className="inline-flex items-center justify-center gap-2 py-3.5 text-white hover:text-white text-title-md uppercase tracking-wider underline-offset-8 decoration-2 hover:underline transition-colors duration-150 banner-text"
+            className="inline-flex items-center justify-center gap-2 py-3.5 text-white hover:text-white text-title-md uppercase tracking-wider underline-offset-8 decoration-2 hover:underline transition-colors duration-150"
             href="#kiem-nghiem"
           >
             {t("ctaQa")}
           </a>
         </div>
       </div>
-
-      <HeroStatBar
-        items={STATS.map((stat) => ({
-          key: stat.key,
-          label: ts(`items.${stat.key}.label`),
-          value: (
-            <>
-              <CountUp
-                end={num(`items.${stat.key}.end`)}
-                prefix={ts(`items.${stat.key}.prefix`)}
-                suffix={ts(`items.${stat.key}.suffix`)}
-                                padStart={"padStart" in stat ? stat.padStart : 0}
-              />
-              {ts(`items.${stat.key}.unit`) && <span className="text-headline-sm font-normal">{ts(`items.${stat.key}.unit`)}</span>}
-            </>
-          ),
-        }))}
-      />
-    </section>
+    </BannerFrame>
   );
 }

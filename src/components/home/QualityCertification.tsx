@@ -2,11 +2,13 @@ import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
 import Icon from "@/components/ui/Icon";
 import ClientsGrid from "@/components/home/ClientsGrid";
+import Photo from "@/components/ui/Photo";
+import { CERT_IMAGES } from "@/lib/block-images";
 
 const CERT_KEYS = ["1", "2"] as const;
-const ICONS: Record<(typeof CERT_KEYS)[number], string> = {
-  "1": "eco",
-  "2": "fact_check",
+const CERT_PHOTOS: Record<(typeof CERT_KEYS)[number], string> = {
+  "1": CERT_IMAGES.wastewaterControl,
+  "2": CERT_IMAGES.thickness,
 };
 
 export default function QualityCertification() {
@@ -47,8 +49,13 @@ export default function QualityCertification() {
               key={key}
               className="p-space-lg bg-slate-50 border border-slate-200 rounded shadow-sm flex flex-col gap-space-md relative overflow-hidden group hover:border-steel-300 hover:bg-white hover:shadow-md transition-all"
             >
-              <div className="w-12 h-12 rounded bg-steel-100 flex items-center justify-center text-steel-600 font-bold shadow-sm">
-                <Icon name={ICONS[key]} className="text-[26px]" />
+              <div className="relative aspect-[16/9] overflow-hidden rounded bg-slate-200">
+                <Photo
+                  src={CERT_PHOTOS[key]}
+                  alt={t(`certs.${key}.title`)}
+                  sizes="(min-width: 768px) 50vw, 100vw"
+                  className="h-full w-full object-cover"
+                />
               </div>
               <div className="flex flex-col gap-1.5">
                 <span className="text-headline-md text-steel-600 font-bold">{t(`certs.${key}.label`)}</span>

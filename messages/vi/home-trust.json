@@ -32,8 +32,7 @@
     },
     "clients": {
       "title": "Khách hàng tiêu biểu",
-      "logoAlt": "Logo {name}",
-      "note": "Danh sách theo Company Profile. Các ô chỉ ghi tên là khách hàng chưa có logo trong hệ thống."
+      "logoAlt": "Logo {name}"
     }
   }
 }

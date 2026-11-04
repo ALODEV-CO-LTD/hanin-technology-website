@@ -6,10 +6,10 @@ export default function EquipmentGrid() {
   const t = useTranslations("NangLuc.EquipmentGrid");
 
   const MACHINES = [
-    { key: "pvd", image: siteImg("nang-luc/EquipmentGrid#1", "/images/profile-lib/hai-may-pvd-phong-sach.jpg") },
-    { key: "paint", image: siteImg("nang-luc/EquipmentGrid#2", "/images/profile-lib/dan-phun-son-tu-dong-bang-tai.jpg") },
-    { key: "rotary", image: siteImg("nang-luc/EquipmentGrid#3", "/images/profile-lib/may-rung-tay-dau-day-chuyen-ma-quay.jpg") },
-    { key: "wastewater", image: siteImg("nang-luc/EquipmentGrid#4", "/images/profile-lib/be-nhua-xanh-xu-ly-nuoc-thai.jpg") },
+    { key: "pvd", image: siteImg("nang-luc/EquipmentGrid#1", "/images/hanin/slide13-may-ma-chan-khong-pvd.webp") },
+    { key: "paint", image: siteImg("nang-luc/EquipmentGrid#2", "/images/hanin/slide13-day-chuyen-phun-son-tu-dong.webp") },
+    { key: "rotary", image: siteImg("nang-luc/EquipmentGrid#3", "/images/hanin/slide08-may-rung-va-tay-dau.webp") },
+    { key: "wastewater", image: siteImg("nang-luc/EquipmentGrid#4", "/images/hanin/slide16-tu-dieu-khien-va-be-xanh.webp") },
   ] as const;
 
   const specs = (key: (typeof MACHINES)[number]["key"]): { label: string; value: string }[] => {

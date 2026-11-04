@@ -41,7 +41,7 @@ export default function TestingAnalysis() {
             <Photo
               alt={t("image.alt")}
               className="absolute inset-0 w-full h-full object-cover"
-              src={siteImg("nang-luc/TestingAnalysis#1", "/images/factory/phan-tich-1.jpg")}
+              src={siteImg("nang-luc/TestingAnalysis#1", "/images/hanin/slide10-may-thu-hull-cell.webp")}
             />
           </div>
 

@@ -14,10 +14,11 @@
     "db:create-admin": "node --disable-warning=ExperimentalWarning --import tsx scripts/create-admin.ts",
     "images:scan": "node --import tsx scripts/scan-images.ts",
     "prebuild": "npm run images:scan",
-    "db:client-logos": "node --disable-warning=ExperimentalWarning --import tsx scripts/apply-client-logos.ts",
+    "db:client-logos": "node --disable-warning=ExperimentalWarning --import tsx scripts/sync-clients.ts",
     "db:knowledge": "node --disable-warning=ExperimentalWarning --import tsx scripts/seed-knowledge-posts.ts",
     "audit:site": "node scripts/audit-site.cjs",
     "db:profile-media": "node --disable-warning=ExperimentalWarning --import tsx scripts/sync-profile-media.ts",
+    "db:hanin-images": "node --disable-warning=ExperimentalWarning --import tsx scripts/apply-hanin-images.ts",
     "db:profile-sync": "node --disable-warning=ExperimentalWarning --import tsx scripts/sync-profile-content.ts"
   },
   "dependencies": {

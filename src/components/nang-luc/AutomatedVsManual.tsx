@@ -20,7 +20,7 @@ export default function AutomatedVsManual() {
                 <Photo
                   className="w-full h-full object-cover"
                   alt={t("automated.imageAlt")}
-                  src={siteImg("nang-luc/AutomatedVsManual#1", "/images/profile-lib/day-chuyen-ma-nhin-tu-tren-cao.jpg")}
+                  src={siteImg("nang-luc/AutomatedVsManual#1", "/images/hanin/slide04-khu-vuc-be-ma.webp")}
                 />
               </div>
               <h3 className="text-headline-sm text-slate-900 uppercase mb-space-xs">{t("automated.title")}</h3>
@@ -35,7 +35,7 @@ export default function AutomatedVsManual() {
                 <Photo
                   className="w-full h-full object-cover"
                   alt={t("manual.imageAlt")}
-                  src={siteImg("nang-luc/AutomatedVsManual#2", "/images/profile-lib/bo-ma-quay-nhin-tu-tren.jpg")}
+                  src={siteImg("nang-luc/AutomatedVsManual#2", "/images/hanin/slide08-be-me-dong.webp")}
                 />
               </div>
               <h3 className="text-headline-sm text-slate-900 uppercase mb-space-xs">{t("manual.title")}</h3>

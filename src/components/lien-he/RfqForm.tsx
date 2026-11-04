@@ -16,12 +16,12 @@ export default function RfqForm() {
               <Photo
                 alt={t("gateLabel")}
                 className="absolute inset-0 w-full h-full object-cover"
-                src={siteImg("lien-he/RfqForm#1", "/images/factory/cong-nha-may.jpg")}
+                src={siteImg("lien-he/RfqForm#1", "/images/factory/qc-8.jpg")}
                 sizes="(min-width:1024px) 40vw, 100vw"
               />
-              <div className="absolute inset-x-0 bottom-0 p-space-md bg-slate-900/80 text-white">
+              <div className="absolute inset-x-0 bottom-0 p-space-md bg-white text-slate-900 border-t border-slate-200">
                 <p className="text-title-md font-bold uppercase">{t("gateLabel")}</p>
-                <p className="text-body-sm text-white">{t("plotLabel")}</p>
+                <p className="text-body-sm text-slate-600">{t("plotLabel")}</p>
               </div>
             </>
           }

@@ -1,4 +1,6 @@
 import { useTranslations } from "next-intl";
+import Photo from "@/components/ui/Photo";
+import { SERVICE_FLOW_IMAGES } from "@/lib/block-images";
 
 export default function ProcessFlow() {
   const t = useTranslations("DichVu.ProcessFlow");
@@ -23,6 +25,9 @@ export default function ProcessFlow() {
             key={step.key}
             className="bg-slate-50 hover:bg-slate-100 border border-slate-200 p-space-md rounded flex flex-col justify-between transition-colors"
           >
+            <div className="relative aspect-[4/3] overflow-hidden rounded bg-slate-200 mb-space-sm">
+                  <Photo src={SERVICE_FLOW_IMAGES[step.key]} alt={t(`${step.key}.title`)} sizes="(min-width: 1024px) 25vw, (min-width: 768px) 50vw, 100vw" className="h-full w-full object-cover" />
+                </div>
             <div className="flex items-center justify-between mb-space-sm">
               <span className="text-headline-md text-steel-600 font-bold">{step.index}</span>
             </div>

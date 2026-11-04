@@ -113,7 +113,7 @@ export const RESOURCES: ResourceDef[] = [
     label: "Khách hàng tiêu biểu",
     singular: "khách hàng",
     icon: "handshake",
-    description: "Danh sách công ty khách hàng chạy ngang ở trang Giới thiệu. Chưa có logo thì website hiện tên công ty bằng chữ.",
+    description: "Nguồn chung cho lưới Khách hàng tiêu biểu ở Trang chủ và dải chạy ngang ở trang Giới thiệu (30 khách hàng theo Company Profile). Đổi logo hoặc thứ tự ở đây, cả hai trang đổi theo.",
     titleField: "name",
     listColumns: ["logo", "name", "legalName", "sort", "active"],
     searchFields: ["name", "legal_name"],

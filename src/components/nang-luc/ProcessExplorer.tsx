@@ -4,6 +4,8 @@ import { useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import Icon from "@/components/ui/Icon";
+import Photo from "@/components/ui/Photo";
+import { PROCESS_STAGE_IMAGES } from "@/lib/block-images";
 import {
   COMPACT_STEPS,
   PROCESSES,
@@ -141,7 +143,13 @@ export default function ProcessExplorer() {
                   }
                   className="flex min-h-12 w-full items-center justify-between gap-space-sm px-space-md py-space-sm text-left hover:bg-slate-50 transition-colors"
                 >
-                  <span className="flex min-w-0 flex-col sm:flex-row sm:items-baseline sm:gap-space-sm">
+                  <Photo
+                    src={PROCESS_STAGE_IMAGES[family][stage]}
+                    alt={t(`stages.${stage}`)}
+                    sizes="96px"
+                    className="h-12 w-16 shrink-0 rounded border border-slate-200 object-cover"
+                  />
+                  <span className="flex min-w-0 flex-1 flex-col sm:flex-row sm:items-baseline sm:gap-space-sm">
                     <span className="text-title-md font-bold text-slate-900">{t(`stages.${stage}`)}</span>
                     <span className="text-label-sm text-slate-600">{t("categoryCount", { count: group.length })}</span>
                   </span>

@@ -1,59 +1,59 @@
 [
   {
     "key": "gioi-thieu/CompanyIntroduction#1",
-    "url": "/images/factory/ma-quay-5.jpg"
+    "url": "/images/factory/cong-nha-may.jpg"
   },
   {
     "key": "gioi-thieu/FactoryOverview#1",
-    "url": "/images/factory/ma-quay-1.jpg"
+    "url": "/images/hanin/slide04-day-chuyen-ma-tu-dong.webp"
   },
   {
     "key": "gioi-thieu/FactoryOverview#2",
-    "url": "/images/factory/ma-treo-2.jpg"
+    "url": "/images/hanin/slide04-san-pham-moc-vao-jig.webp"
   },
   {
     "key": "gioi-thieu/FactoryOverview#3",
-    "url": "/images/factory/phan-tich-1.jpg"
+    "url": "/images/hanin/slide10-phong-phan-tich.webp"
   },
   {
     "key": "gioi-thieu/FactoryOverview#4",
-    "url": "/images/factory/kho-5.jpg"
+    "url": "/images/hanin/slide09-line-ma-ban-tu-dong.webp"
   },
   {
     "key": "gioi-thieu/QualityStandardsPreview#1",
-    "url": "/images/certificates/iso-9001-2015.jpg"
+    "url": "/images/hanin/slide18-chung-nhan-iso-9001-2015-icb.webp"
   },
   {
     "key": "home/AboutHanin#1",
-    "url": "/images/factory/ma-quay-2.jpg"
+    "url": "/images/hanin/slide17-xuong-in-lua.webp"
   },
   {
     "key": "home/FactoryZones#1",
-    "url": "/images/profile-lib/day-chuyen-ma-tu-dong-cau-truc-cam.jpg"
+    "url": "/images/hanin/slide04-day-chuyen-ma-tu-dong.webp"
   },
   {
     "key": "home/FactoryZones#2",
-    "url": "/images/profile-lib/bo-ma-quay-nhin-tu-tren.jpg"
+    "url": "/images/hanin/slide08-toan-canh-day-chuyen-ma-quay.webp"
   },
   {
     "key": "home/FactoryZones#3",
-    "url": "/images/profile-lib/nha-xuong-ma-treo-be-ma.jpg"
+    "url": "/images/hanin/slide09-be-ma.webp"
   },
   {
     "key": "home/FactoryZones#4",
-    "url": "/images/profile-lib/hai-may-pvd-phong-sach.jpg"
+    "url": "/images/hanin/slide13-may-ma-chan-khong-pvd.webp"
   },
   {
     "key": "home/FactoryZones#5",
-    "url": "/images/profile-lib/phong-phan-tich-toan-canh.jpg"
+    "url": "/images/hanin/slide10-hoa-chat-va-thiet-bi-phan-tich.webp"
   },
   {
     "key": "home/FactoryZones#6",
-    "url": "/images/profile-lib/be-lang-nuoc-thai.jpg"
+    "url": "/images/hanin/slide16-cum-be-lang.webp"
   },
   {
     "key": "home/ManufacturingCapability#1",
-    "url": "/images/factory/ma-treo-3.jpg"
+    "url": "/images/hanin/slide04-khu-vuc-be-ma.webp"
   },
   {
     "key": "layout/Logo#1",
@@ -61,86 +61,86 @@
   },
   {
     "key": "lien-he/LocationMap#1",
-    "url": "/images/factory/kho-6.jpg"
-  },
-  {
-    "key": "lien-he/RfqForm#1",
     "url": "/images/factory/cong-nha-may.jpg"
   },
   {
+    "key": "lien-he/RfqForm#1",
+    "url": "/images/factory/qc-8.jpg"
+  },
+  {
     "key": "nang-luc/AutomatedVsManual#1",
-    "url": "/images/profile-lib/day-chuyen-ma-nhin-tu-tren-cao.jpg"
+    "url": "/images/hanin/slide04-khu-vuc-be-ma.webp"
   },
   {
     "key": "nang-luc/AutomatedVsManual#2",
-    "url": "/images/profile-lib/bo-ma-quay-nhin-tu-tren.jpg"
+    "url": "/images/hanin/slide08-be-me-dong.webp"
   },
   {
     "key": "nang-luc/EquipmentGrid#1",
-    "url": "/images/profile-lib/hai-may-pvd-phong-sach.jpg"
+    "url": "/images/hanin/slide13-may-ma-chan-khong-pvd.webp"
   },
   {
     "key": "nang-luc/EquipmentGrid#2",
-    "url": "/images/profile-lib/dan-phun-son-tu-dong-bang-tai.jpg"
+    "url": "/images/hanin/slide13-day-chuyen-phun-son-tu-dong.webp"
   },
   {
     "key": "nang-luc/EquipmentGrid#3",
-    "url": "/images/profile-lib/may-rung-tay-dau-day-chuyen-ma-quay.jpg"
+    "url": "/images/hanin/slide08-may-rung-va-tay-dau.webp"
   },
   {
     "key": "nang-luc/EquipmentGrid#4",
-    "url": "/images/profile-lib/be-nhua-xanh-xu-ly-nuoc-thai.jpg"
+    "url": "/images/hanin/slide16-tu-dieu-khien-va-be-xanh.webp"
   },
   {
     "key": "nang-luc/FactoryGallery#1",
-    "url": "/images/factory/ma-quay-6.jpg"
+    "url": "/images/factory/cong-nha-may.jpg"
   },
   {
     "key": "nang-luc/FactoryGallery#2",
-    "url": "/images/factory/kho-6.jpg"
+    "url": "/images/factory/qc-8.jpg"
   },
   {
     "key": "nang-luc/FactoryGallery#3",
-    "url": "/images/factory/ma-treo-3.jpg"
+    "url": "/images/hanin/slide05-tay-gat-sen-tam.webp"
   },
   {
     "key": "nang-luc/FactoryGallery#4",
-    "url": "/images/factory/qc-4.jpg"
+    "url": "/images/hanin/slide09-be-ma.webp"
   },
   {
     "key": "nang-luc/FactoryGallery#5",
-    "url": "/images/factory/ma-quay-7.jpg"
+    "url": "/images/hanin/slide09-line-ma-ban-tu-dong.webp"
   },
   {
     "key": "nang-luc/FactoryOverview#1",
-    "url": "/images/factory/ma-quay-7.jpg"
+    "url": "/images/hanin/slide08-toan-canh-day-chuyen-ma-quay.webp"
   },
   {
     "key": "nang-luc/ProductionLines#1",
-    "url": "/images/profile-lib/bo-ma-quay-ray-dan-ong.jpg"
+    "url": "/images/hanin/slide08-be-ma-niken.webp"
   },
   {
     "key": "nang-luc/ProductionLines#2",
-    "url": "/images/profile-lib/gia-treo-chi-tiet-den-khung-xanh.jpg"
+    "url": "/images/hanin/slide09-jig-san-pham-cho-ma.webp"
   },
   {
     "key": "nang-luc/ProductionLines#3",
-    "url": "/images/profile-lib/day-chuyen-ma-tu-dong-cau-truc-cam.jpg"
+    "url": "/images/hanin/slide04-day-chuyen-ma-tu-dong.webp"
   },
   {
     "key": "nang-luc/TestingAnalysis#1",
-    "url": "/images/factory/phan-tich-1.jpg"
+    "url": "/images/hanin/slide10-may-thu-hull-cell.webp"
   },
   {
     "key": "tuyen-dung/WorkEnvironment#1",
-    "url": "/images/factory/ma-treo-2.jpg"
+    "url": "/images/hanin/slide04-khu-vuc-be-ma.webp"
   },
   {
     "key": "tuyen-dung/WorkEnvironment#2",
-    "url": "/images/factory/qc-7.jpg"
+    "url": "/images/hanin/slide11-kim-loai-ma-crom-tay-nam.webp"
   },
   {
     "key": "tuyen-dung/WorkEnvironment#3",
-    "url": "/images/factory/phan-tich-1.jpg"
+    "url": "/images/hanin/slide10-phong-phan-tich.webp"
   }
 ]

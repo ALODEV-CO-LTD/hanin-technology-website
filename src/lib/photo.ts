@@ -8,7 +8,7 @@ const WIDTHS = [640, 828, 1080, 1200, 1440, 1920, 3840] as const;
  * Số phiên bản ảnh: thêm vào đường dẫn ảnh cục bộ để trình duyệt, Cloudflare và bộ nhớ đệm của /_next/image
  * (lưu 30 ngày theo URL) không trả bản cũ khi ta thay file ảnh mà giữ nguyên tên. TĂNG số này mỗi lần xuất lại ảnh.
  */
-export const IMAGE_VERSION = "20261009d";
+export const IMAGE_VERSION = "20261104j";
 /** Kích thước cho logo (ảnh nhỏ hiển thị ~200px, 2x cho màn hình nét). */
 export const LOGO_WIDTHS = [256, 384] as const;
 
@@ -29,13 +29,13 @@ function withVersion(src: string): string {
  * nhẹ hơn khoảng 45%; ảnh khác (logo, tải lên CMS) q75. Giá trị phải nằm trong `images.qualities` của next.config.ts.
  */
 function photoQuality(src: string, width: number): PhotoQuality {
-  const photo = src.startsWith("/images/factory") || src.startsWith("/images/process");
+  const photo = src.startsWith("/images/factory") || src.startsWith("/images/process") || src.startsWith("/images/hanin");
   if (!photo) return 75;
   return width > 1080 ? 85 : 70;
 }
 
-/** Banner đầu trang phủ lớp gradient tối nên q70 vẫn đẹp và nhẹ hơn nhiều (ảnh 1920px từ 250–650 KB xuống còn ~40%). */
-export const BANNER_QUALITY = 70;
+/** Banner không còn lớp phủ che ảnh nên dùng q85 để giữ màu và độ nét gốc. */
+export const BANNER_QUALITY = 85;
 type PhotoQuality = 70 | 75 | 85;
 
 export function photoUrl(

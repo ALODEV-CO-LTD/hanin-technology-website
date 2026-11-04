@@ -1,5 +1,7 @@
 import { useServiceNs } from "@/lib/service-ns";
 import { useTranslations } from "next-intl";
+import Photo from "@/components/ui/Photo";
+import { SERVICE_PROCESS_IMAGES } from "@/lib/block-images";
 
 export default function DetailProcess({ slug }: { slug: string }) {
   const t = useTranslations(useServiceNs(slug, "DetailProcess"));
@@ -26,6 +28,11 @@ export default function DetailProcess({ slug }: { slug: string }) {
                 step.highlight ? "bg-steel-50 border border-steel-200" : "bg-white border border-slate-200"
               }`}
             >
+              {SERVICE_PROCESS_IMAGES[slug]?.[step.key] && (
+                <div className="relative aspect-[4/3] overflow-hidden rounded bg-slate-200 mb-space-xs">
+                  <Photo src={SERVICE_PROCESS_IMAGES[slug][step.key]} alt={t(`${step.key}.title`)} sizes="(min-width: 1024px) 25vw, (min-width: 768px) 50vw, 100vw" className="h-full w-full object-cover" />
+                </div>
+              )}
               <div className="flex items-center justify-between text-steel-600 text-title-md mb-2">
                 <span className="font-bold">
                   {t("stepLabel")} 0{i + 1}

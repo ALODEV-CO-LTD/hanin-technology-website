@@ -1,6 +1,8 @@
 import { useTranslations } from "next-intl";
 import Icon from "@/components/ui/Icon";
 import { Link } from "@/i18n/navigation";
+import Photo from "@/components/ui/Photo";
+import { RELATED_SERVICE_IMAGES } from "@/lib/block-images";
 
 export default function RelatedServices() {
   const tp = useTranslations("SanPham");
@@ -47,8 +49,8 @@ export default function RelatedServices() {
               className="p-space-md bg-white border border-slate-200 rounded flex flex-col justify-between gap-space-md hover:border-steel-500 hover:shadow-md transition-all group"
             >
               <div className="flex flex-col gap-space-sm">
-                <div className="flex items-center justify-between">
-                  <Icon name={service.icon} className="text-steel-600 text-[28px]" />
+                <div className="relative aspect-[16/10] overflow-hidden rounded bg-slate-200">
+                  <Photo src={RELATED_SERVICE_IMAGES[service.key]} alt={service.title} sizes="(min-width: 768px) 33vw, 100vw" className="h-full w-full object-cover" />
                 </div>
                 <h3 className="text-headline-sm text-slate-900 group-hover:text-steel-600 transition-colors uppercase">
                   {service.title}

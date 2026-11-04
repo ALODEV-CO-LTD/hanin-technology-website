@@ -1,4 +1,6 @@
 import { useTranslations } from "next-intl";
+import Photo from "@/components/ui/Photo";
+import { CORE_STRENGTH_IMAGES } from "@/lib/block-images";
 
 export default function CoreStrengths() {
   const t = useTranslations("GioiThieu.CoreStrengths");
@@ -28,6 +30,9 @@ export default function CoreStrengths() {
               className="p-space-md sm:p-space-lg rounded bg-slate-50 border border-slate-200 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group flex flex-col justify-between"
             >
               <div>
+                <div className="relative aspect-[16/9] overflow-hidden rounded bg-slate-200 mb-space-sm">
+                  <Photo src={CORE_STRENGTH_IMAGES[item.key]} alt={t(`${item.key}.title`)} sizes="(min-width: 768px) 50vw, 100vw" className="h-full w-full object-cover" />
+                </div>
                 <div className="flex items-center justify-between gap-space-sm mb-space-sm">
                   <span className="flex h-9 w-9 items-center justify-center rounded bg-steel-50 border border-steel-200 text-label-technical font-bold text-steel-600 group-hover:bg-steel-600 group-hover:border-steel-600 group-hover:text-white transition-colors">
                     {item.index}

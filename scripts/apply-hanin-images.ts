@@ -1,0 +1,53 @@
+/**
+ * Đưa ảnh tách từ Company Profile 11126 (public/images/hanin) vào CMS.
+ *   npm run db:hanin-images        (idempotent)
+ * - Xóa ghi đè ảnh vị trí (image_overrides) đang trỏ nhầm vào ảnh hero hoặc vào vị trí đã bỏ, để ảnh mặc định trong code có hiệu lực.
+ * - Dịch vụ: gán ảnh chụp thật độ phân giải cao (dùng cả làm banner chi tiết), thay ảnh hero nhầm.
+ * Ảnh do quản trị tự tải lên (không nằm trong /images/ và không phải ảnh hero nhầm) không bị ghi đè.
+ */
+import { all, run, transaction } from "../src/server/db";
+
+const HERO_MISTAKE = "/uploads/2026/10/9aba27ef-09c9-4d1f-81b1-e88797abb4e8-tu-nhien.jpg";
+const H = (name: string) => `/images/hanin/${name}.webp`;
+
+// Ảnh dịch vụ còn là ảnh banner toàn màn hình ở trang chi tiết nên dùng ảnh chụp thật độ phân giải cao (3200 px), không dùng ảnh cắt nhỏ từ slide.
+const SERVICE_IMAGES: Record<string, string> = {
+  "tien-xu-ly-be-mat": "/images/factory/ma-quay-1.jpg",
+  "ma-crom-cung-cong-nghiep": "/images/factory/ma-treo-3.jpg",
+  "ma-niken-hoa-hoc-enp": "/images/factory/ma-quay-5.jpg",
+  "ma-kem-hop-kim-kem-niken": "/images/factory/ma-quay-7.jpg",
+  "day-chuyen-son-ma-ket-hop": "/images/factory/ma-treo-2.jpg",
+  "xu-ly-nhom-ma-kim-loai-khac": "/images/factory/ma-quay-6.jpg",
+};
+const POST_IMAGES: Record<string, string> = {
+  "van-hanh-he-thong-be-ma-tu-dong-hoa": H("slide04-khu-vuc-be-ma"),
+};
+
+let overrides = 0;
+let rows = 0;
+transaction(() => {
+  for (const o of all<{ key: string; url: string }>("SELECT key, url FROM image_overrides")) {
+    if (o.url === HERO_MISTAKE || o.key === "home/FactoryShowcase#2") {
+      run("DELETE FROM image_overrides WHERE key = ?", o.key);
+      overrides++;
+    }
+  }
+  const replaceable = (img: string) => !img || img === HERO_MISTAKE || img.startsWith("/images/factory/") || img.startsWith("/images/hanin/");
+  for (const [slug, image] of Object.entries(SERVICE_IMAGES)) {
+    for (const r of all<{ id: number; image: string }>("SELECT id, image FROM services WHERE slug = ?", slug)) {
+      if (replaceable(r.image) && r.image !== image) {
+        run("UPDATE services SET image = ?, updated_at = datetime('now') WHERE id = ?", image, r.id);
+        rows++;
+      }
+    }
+  }
+  for (const [slug, image] of Object.entries(POST_IMAGES)) {
+    for (const r of all<{ id: number; image: string }>("SELECT id, image FROM posts WHERE slug = ?", slug)) {
+      if (replaceable(r.image) && r.image !== image) {
+        run("UPDATE posts SET image = ?, updated_at = datetime('now') WHERE id = ?", image, r.id);
+        rows++;
+      }
+    }
+  }
+});
+console.log(`Đã bỏ ${overrides} ghi đè ảnh vị trí sai, cập nhật ảnh cho ${rows} bản ghi dịch vụ/bài viết.`);

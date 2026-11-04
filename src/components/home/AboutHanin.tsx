@@ -42,7 +42,7 @@ export default function AboutHanin() {
               <Photo
                 alt={t("imageAlt")}
                 className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
-                src={siteImg("home/AboutHanin#1", "/images/factory/ma-quay-2.jpg")}
+                src={siteImg("home/AboutHanin#1", "/images/hanin/slide17-xuong-in-lua.webp")}
               />
             </div>
           </div>

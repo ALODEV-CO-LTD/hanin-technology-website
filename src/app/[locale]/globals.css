@@ -385,11 +385,24 @@ select:focus-visible,
 }
 
 
+/* Lớp làm dịu chỉ nằm ở nửa trái (chỗ có chữ), đậm nhất sát lề và tan hết trước giữa ảnh nên bên phải vẫn giữ màu gốc.
+   Dưới 640px chữ chiếm cả bề ngang nên dùng một lớp đều, nhẹ. */
+.banner-scrim {
+  background: linear-gradient(90deg, rgba(8, 16, 30, 0.56) 0%, rgba(8, 16, 30, 0.42) 55%, rgba(8, 16, 30, 0) 100%);
+}
+@media (max-width: 639px) {
+  .banner-scrim {
+    background: rgba(8, 16, 30, 0.4);
+  }
+}
+
 /* Chữ trên banner ảnh: bóng đậm để nổi bật. Tên class cố ý KHÔNG chứa "shadow"
    để không dính các luật box-shadow dành cho khối tối ở trên. */
 .banner-text {
-  text-shadow: 0 1px 3px rgba(2, 6, 23, 0.85);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.95), 0 2px 14px rgba(0, 0, 0, 0.7);
 }
+.banner-text p {
+  font-weight: 500;}
 
 /* ---- Dải khách hàng chạy vô hạn (trang Giới thiệu) ---- */
 .marquee-track {

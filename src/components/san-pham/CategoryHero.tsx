@@ -2,21 +2,17 @@ import { useLocale, useTranslations } from "next-intl";
 import BannerH1 from "@/components/ui/BannerH1";
 import { getBanner } from "@/server/public";
 import PageBreadcrumb from "@/components/layout/PageBreadcrumb";
-import HeroImage from "@/components/ui/HeroImage";
+import BannerFrame from "@/components/ui/BannerFrame";
 
 export default function CategoryHero() {
   const t = useTranslations("SanPham.CategoryHero");
   const banner = getBanner("san-pham", useLocale(), "/images/factory/qc-1.jpg");
 
   return (
-    <section className="relative w-full min-h-[min(calc(100svh-var(--header-h)),560px)] sm:min-h-[calc(100svh-var(--header-h))] overflow-hidden bg-slate-900 flex items-center">
-      <div className="absolute inset-0 z-0 pointer-events-none">
-        <HeroImage src={banner.image} alt={banner.alt || t("imageAlt")} />
-      </div>
-      <div aria-hidden="true" className="absolute inset-0 bg-slate-950/60" />
-      <div className="relative z-10 w-full px-margin flex flex-col gap-space-sm banner-text">
-        <PageBreadcrumb
-          variant="dark"
+    <BannerFrame image={banner.image} alt={banner.alt || t("imageAlt")}>
+      <div className="w-full px-margin py-space-lg flex flex-col gap-space-sm">
+        <PageBreadcrumb variant="dark"
+         
           items={[
             { label: t("breadcrumbHome"), href: "/" },
             { label: t("breadcrumbCurrent") },
@@ -29,6 +25,6 @@ export default function CategoryHero() {
           {t("description")}
         </p>
       </div>
-    </section>
+    </BannerFrame>
   );
 }

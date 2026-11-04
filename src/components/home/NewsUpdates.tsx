@@ -2,6 +2,7 @@ import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { getPosts } from "@/server/public";
 import Icon from "@/components/ui/Icon";
+import Photo from "@/components/ui/Photo";
 
 export default function NewsUpdates() {
   const t = useTranslations("Home.NewsUpdates");
@@ -34,6 +35,11 @@ export default function NewsUpdates() {
               className="p-space-lg bg-white border border-slate-200 rounded shadow-sm hover:shadow-xl hover:border-steel-300 transition-all duration-200 flex flex-col justify-between group"
             >
               <div className="flex flex-col gap-space-sm">
+                {post.image && (
+                  <div className="relative aspect-[16/10] overflow-hidden rounded bg-slate-200">
+                    <Photo src={post.image} alt={post.imageAlt || post.title} sizes="(min-width: 768px) 33vw, 100vw" className="h-full w-full object-cover" />
+                  </div>
+                )}
                 <div className="flex items-center text-slate-600">
                   <span className="text-xs px-2 py-0.5 rounded bg-steel-50 text-steel-700 uppercase font-semibold">
                     {post.categoryLabel}

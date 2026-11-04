@@ -19,7 +19,7 @@ export default function FactoryOverview() {
             <Photo
               className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               alt={t("image.alt")}
-              src={siteImg("nang-luc/FactoryOverview#1", "/images/factory/ma-quay-7.jpg")}
+              src={siteImg("nang-luc/FactoryOverview#1", "/images/hanin/slide08-toan-canh-day-chuyen-ma-quay.webp")}
             />
           </div>
 

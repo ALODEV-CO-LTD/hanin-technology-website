@@ -82,7 +82,7 @@ export default function LocationMap() {
                 allowFullScreen
               />
             ) : (
-            <Photo src={siteImg("lien-he/LocationMap#1", "/images/factory/kho-6.jpg")} alt={t("satelliteImageAlt")} className="w-full h-full min-h-[420px] object-cover object-center relative" />
+            <Photo src={siteImg("lien-he/LocationMap#1", "/images/factory/cong-nha-may.jpg")} alt={t("satelliteImageAlt")} className="w-full h-full min-h-[420px] object-cover object-center relative" />
             )}
           </div>
         </div>
