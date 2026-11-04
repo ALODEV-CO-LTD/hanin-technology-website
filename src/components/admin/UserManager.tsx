@@ -3,6 +3,7 @@
 import { useEffect, useState, type FormEvent } from "react";
 import { api, ApiError } from "./api";
 import { useToast } from "./Toast";
+import { useConfirm } from "./ConfirmDialog";
 import Dropdown from "./Dropdown";
 
 interface User {
@@ -18,6 +19,7 @@ export default function UserManager() {
   const [users, setUsers] = useState<User[]>([]);
   const [error, setError] = useState("");
   const toast = useToast();
+  const confirm = useConfirm();
 
   const [version, setVersion] = useState(0);
   const [newRole, setNewRole] = useState("editor");
@@ -91,7 +93,9 @@ export default function UserManager() {
               >
                 Đặt lại MK
               </button>
-              <button onClick={() => confirm(`Xoá tài khoản ${u.email}?`) && guard(() => api(`users/${u.id}`, { method: "DELETE" }), "Đã xoá tài khoản.")} className="px-3 h-10 rounded border border-red-200 text-red-700 bg-white text-xs whitespace-nowrap">Xoá</button>
+              <button onClick={async () => {
+                if (await confirm({ title: `Xoá tài khoản ${u.email}?`, message: "Người này sẽ không đăng nhập được nữa.", danger: true })) guard(() => api(`users/${u.id}`, { method: "DELETE" }), "Đã xoá tài khoản.");
+              }} className="px-3 h-10 rounded border border-red-200 text-red-700 bg-white text-xs whitespace-nowrap">Xoá</button>
             </div>
           </div>
         ))}

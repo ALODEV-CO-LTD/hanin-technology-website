@@ -8,7 +8,7 @@ import HeroImage from "@/components/ui/HeroImage";
  */
 export default function BannerFrame({ image, alt, children, bar }: { image: string; alt: string; children: ReactNode; bar?: ReactNode }) {
   return (
-    <section className="relative w-full min-h-[min(calc(100svh-var(--header-h)),560px)] sm:min-h-[calc(100svh-var(--header-h))] flex flex-col overflow-hidden bg-slate-50">
+    <section className="relative w-full hero-screen flex flex-col overflow-hidden bg-slate-50">
       <HeroImage src={image} alt={alt} />
       <div aria-hidden="true" className="absolute inset-y-0 left-0 w-full lg:w-3/4 banner-scrim" />
       <div className="relative z-10 flex flex-1 flex-col justify-center banner-text">{children}</div>

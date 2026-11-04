@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState } from "react";
 import { api, ApiError } from "./api";
 import { MediaPickerModal } from "./MediaPicker";
 import { useToast } from "./Toast";
+import { useConfirm } from "./ConfirmDialog";
 
 interface Slot {
   key: string;
@@ -28,6 +29,7 @@ export default function SiteImages() {
   const [picking, setPicking] = useState<string | null>(null);
   const [error, setError] = useState("");
   const toast = useToast();
+  const confirm = useConfirm();
   const [version, setVersion] = useState(0);
   const [onlyChanged, setOnlyChanged] = useState(false);
 
@@ -68,7 +70,7 @@ export default function SiteImages() {
   }
 
   async function resetAll() {
-    if (!confirm(`Khôi phục TẤT CẢ ${changedCount} ảnh đã đổi về ảnh gốc?\nKhông thể hoàn tác.`)) return;
+    if (!(await confirm({ title: `Khôi phục tất cả ${changedCount} ảnh về ảnh gốc?`, message: "Mọi ảnh đã đổi sẽ quay về ảnh mặc định. Không thể hoàn tác.", confirmLabel: "Khôi phục", danger: true }))) return;
     try {
       await api("site-images", { method: "PUT", body: { resetAll: true } });
       toast.success("Đã khôi phục tất cả ảnh về ảnh gốc.");

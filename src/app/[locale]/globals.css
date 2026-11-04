@@ -434,6 +434,9 @@ select:focus-visible,
 
 /* ---- Tối ưu cho điện thoại ---- */
 :root { --header-h: 64px; }
+/* Section đầu trang (hero): cao đúng một màn hình nhìn thấy được, tự co theo thiết bị. Dưới 1024px trừ thêm thanh liên hệ dính đáy (3,5rem). */
+.hero-screen { min-height: calc(100svh - var(--header-h) - 3.5rem); }
+@media (min-width: 1024px) { .hero-screen { min-height: calc(100svh - var(--header-h)); } }
 @media (min-width: 1280px) { :root { --header-h: 86px; } }
 
 /* Cỡ chữ và khoảng cách: chữ đọc được trên màn nhỏ (≥14px cho nội dung, 16px đoạn chính), lề hẹp hơn để rộng chỗ cho nội dung. */

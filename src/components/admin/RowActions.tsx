@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { api, ApiError } from "./api";
 import { useToast } from "./Toast";
+import { useConfirm } from "./ConfirmDialog";
 
 interface Props {
   resource: string;
@@ -17,6 +18,7 @@ export default function RowActions({ resource, id, publishField, published }: Pr
   const router = useRouter();
   const [busy, setBusy] = useState(false);
   const toast = useToast();
+  const confirm = useConfirm();
 
   async function toggle() {
     if (!publishField) return;
@@ -34,7 +36,7 @@ export default function RowActions({ resource, id, publishField, published }: Pr
   }
 
   async function remove() {
-    if (!confirm("Xoá mục này? Thao tác không thể hoàn tác.")) return;
+    if (!(await confirm({ title: "Xoá mục này?", message: "Thao tác không thể hoàn tác trực tiếp. Mục đã xoá nằm trong \"Đã xoá\" bên dưới danh sách và có thể khôi phục.", danger: true }))) return;
     setBusy(true);
     try {
       await api(`${resource}/${id}`, { method: "DELETE" });

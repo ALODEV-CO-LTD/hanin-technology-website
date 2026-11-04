@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState, type ChangeEvent, type DragEvent } from "react";
 import { api, ApiError } from "./api";
 import { useToast } from "./Toast";
+import { useConfirm } from "./ConfirmDialog";
 
 export interface MediaItem {
   id: number;
@@ -44,6 +45,7 @@ export function MediaLibrary({ onSelect }: { onSelect?: (item: MediaItem) => voi
   }, [page, version]);
 
   const toast = useToast();
+  const confirm = useConfirm();
   const [dragging, setDragging] = useState(false);
   const [progress, setProgress] = useState("");
   const dragDepth = useRef(0);
@@ -111,7 +113,7 @@ export function MediaLibrary({ onSelect }: { onSelect?: (item: MediaItem) => voi
   }
 
   async function remove(item: MediaItem) {
-    if (!confirm(`Xoá "${item.original}"? Nếu ảnh đang được dùng ở đâu đó, chỗ đó sẽ bị mất ảnh.`)) return;
+    if (!(await confirm({ title: `Xoá "${item.original}"?`, message: "Nếu ảnh đang được dùng ở đâu đó, chỗ đó sẽ bị mất ảnh.", danger: true }))) return;
     try {
       await api(`media/${item.id}`, { method: "DELETE" });
       toast.success("Đã xoá tệp.");

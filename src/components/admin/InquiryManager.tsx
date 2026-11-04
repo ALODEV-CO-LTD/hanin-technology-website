@@ -5,6 +5,7 @@ import { api, ApiError } from "./api";
 import Dropdown from "./Dropdown";
 import { formatSize } from "./MediaPicker";
 import { useToast } from "./Toast";
+import { useConfirm } from "./ConfirmDialog";
 
 interface Inquiry {
   id: number;
@@ -43,6 +44,7 @@ export default function InquiryManager({ initialStatus = "" }: { initialStatus?:
   const [open, setOpen] = useState<number | null>(null);
   const [error, setError] = useState("");
   const toast = useToast();
+  const confirm = useConfirm();
 
   const [version, setVersion] = useState(0);
   const reload = () => setVersion((v) => v + 1);
@@ -79,7 +81,7 @@ export default function InquiryManager({ initialStatus = "" }: { initialStatus?:
   }
 
   async function remove(id: number) {
-    if (!confirm("Xoá yêu cầu này và toàn bộ tệp đính kèm? Không thể hoàn tác.")) return;
+    if (!(await confirm({ title: "Xoá yêu cầu này?", message: "Toàn bộ tệp đính kèm cũng bị xoá. Không thể hoàn tác.", danger: true }))) return;
     await api(`inquiries/${id}`, { method: "DELETE" });
     toast.success("Đã xoá yêu cầu.");
     setOpen(null);

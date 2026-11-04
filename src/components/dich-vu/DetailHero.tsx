@@ -26,7 +26,7 @@ export default function DetailHero({ service, breadcrumb }: { service: PlatingSe
 
   return (
     <section className="w-full flex flex-col">
-      <div className="relative flex min-h-[min(calc(100svh-var(--header-h)),560px)] sm:min-h-[calc(100svh-var(--header-h))] w-full flex-col justify-end overflow-hidden bg-slate-50">
+      <div className="relative flex hero-screen w-full flex-col justify-end overflow-hidden bg-slate-50">
         <HeroImage src={service.image} alt={service.imageAlt} />
         <div aria-hidden="true" className="absolute inset-y-0 left-0 w-full lg:w-3/4 banner-scrim" />
         <div className="relative z-10 w-full px-margin py-space-lg lg:py-space-xl flex flex-col gap-space-md">

@@ -1,5 +1,6 @@
 "use client";
 
+import { useConfirm } from "./ConfirmDialog";
 import { useEffect, useState } from "react";
 import { api, ApiError } from "./api";
 
@@ -12,6 +13,7 @@ interface Revision {
 
 /** Lịch sử các lần sửa của một mục + nút khôi phục về từng phiên bản. */
 export default function HistoryPanel({ resource, id }: { resource: string; id: number }) {
+  const confirm = useConfirm();
   const [items, setItems] = useState<Revision[] | null>(null);
   const [busy, setBusy] = useState(0);
   const [message, setMessage] = useState("");
@@ -28,7 +30,7 @@ export default function HistoryPanel({ resource, id }: { resource: string; id: n
 
   async function restore(rev: Revision) {
     const what = rev.changed.length ? `Các trường sẽ quay về phiên bản này: ${rev.changed.join(", ")}.` : "Phiên bản này giống bản hiện tại.";
-    if (!confirm(`Khôi phục về phiên bản ${rev.createdAt}?\n${what}\n\nBản hiện tại vẫn được lưu lại trong lịch sử nên có thể hoàn tác.`)) return;
+    if (!(await confirm({ title: `Khôi phục về phiên bản ${rev.createdAt}?`, message: `${what}\n\nBản hiện tại vẫn được lưu trong lịch sử nên có thể hoàn tác.`, confirmLabel: "Khôi phục" }))) return;
     setBusy(rev.id);
     setMessage("");
     try {

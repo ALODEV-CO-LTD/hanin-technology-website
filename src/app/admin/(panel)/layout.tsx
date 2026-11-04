@@ -4,6 +4,7 @@ import { get } from "@/server/db";
 import { RESOURCES } from "@/server/cms/resources";
 import Sidebar from "@/components/admin/Sidebar";
 import { ToastProvider } from "@/components/admin/Toast";
+import { ConfirmProvider } from "@/components/admin/ConfirmDialog";
 
 export const dynamic = "force-dynamic";
 
@@ -14,6 +15,7 @@ export default async function PanelLayout({ children }: { children: React.ReactN
 
   return (
     <ToastProvider>
+    <ConfirmProvider>
     <div className="min-h-screen">
       <Sidebar
         user={user}
@@ -24,6 +26,7 @@ export default async function PanelLayout({ children }: { children: React.ReactN
         <div className="w-full p-4 sm:p-8 xl:px-10">{children}</div>
       </main>
     </div>
+    </ConfirmProvider>
     </ToastProvider>
   );
 }

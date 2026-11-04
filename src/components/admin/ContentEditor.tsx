@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState } from "react";
 import { api, ApiError } from "./api";
 import SaveButton, { useSavedFlash } from "./SaveButton";
 import { useToast } from "./Toast";
+import { useConfirm } from "./ConfirmDialog";
 import Dropdown from "./Dropdown";
 
 type Locale = "vi" | "zh" | "ko";
@@ -76,6 +77,7 @@ export default function ContentEditor() {
   const [changedView, setChangedView] = useState(false); // xem mọi mục đã sửa trên toàn website
   const [onlyChanged, setOnlyChanged] = useState(false);
   const toast = useToast();
+  const confirm = useConfirm();
   const { saved, flash } = useSavedFlash();
   const [saving, setSaving] = useState(false);
 
@@ -168,14 +170,14 @@ export default function ContentEditor() {
   }
 
   async function reset(key: string, loc: Locale = locale) {
-    if (!confirm(`Khôi phục nội dung gốc (${loc.toUpperCase()}) cho mục này?`)) return;
+    if (!(await confirm({ title: `Khôi phục nội dung gốc (${loc.toUpperCase()}) cho mục này?`, confirmLabel: "Khôi phục" }))) return;
     await api("content", { method: "PUT", body: { changes: [{ locale: loc, key, scope, value: null }] } });
     toast.success("Đã khôi phục nội dung gốc.");
     reload();
   }
 
   async function resetMany(body: Record<string, unknown>, label: string) {
-    if (!confirm(`${label}\n\nTất cả chỉnh sửa trong phạm vi này (mọi ngôn ngữ) sẽ quay về nội dung gốc. Không thể hoàn tác.`)) return;
+    if (!(await confirm({ title: label, message: "Tất cả chỉnh sửa trong phạm vi này (mọi ngôn ngữ) sẽ quay về nội dung gốc. Không thể hoàn tác.", confirmLabel: "Khôi phục", danger: true }))) return;
     try {
       const r = await api<{ reset: number }>("content", { method: "PUT", body: { resetAll: true, ...body } });
       toast.success(`Đã khôi phục ${r.reset} mục về nội dung gốc.`);
