@@ -8,7 +8,7 @@ const WIDTHS = [640, 828, 1080, 1200, 1440, 1920, 3840] as const;
  * Số phiên bản ảnh: thêm vào đường dẫn ảnh cục bộ để trình duyệt, Cloudflare và bộ nhớ đệm của /_next/image
  * (lưu 30 ngày theo URL) không trả bản cũ khi ta thay file ảnh mà giữ nguyên tên. TĂNG số này mỗi lần xuất lại ảnh.
  */
-export const IMAGE_VERSION = "20261106i";
+export const IMAGE_VERSION = "20261106j";
 /** Kích thước cho logo (ảnh nhỏ hiển thị ~200px, 2x cho màn hình nét). */
 export const LOGO_WIDTHS = [256, 384] as const;
 

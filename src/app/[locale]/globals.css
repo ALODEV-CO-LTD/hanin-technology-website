@@ -385,7 +385,14 @@ select:focus-visible,
 }
 
 
-/* Chữ trên banner ảnh: không dùng lớp phủ/gradient, chỉ bóng chữ nhiều lớp (sát nét + quầng mềm) để đọc được trên ảnh sáng. Tên class cố ý KHÔNG chứa "shadow"
+/* Lớp làm tối ĐỀU trên toàn ảnh banner (không gradient, không dải, không đổi tông màu) để chữ trắng nổi khỏi nền.
+   Từng thử bỏ hẳn lớp phủ: chữ chìm vào ảnh sáng/bận. Gradient một phía thì bị chê xấu. Đều + nhẹ là mức cân bằng. */
+.banner-veil {
+  background: rgba(8, 16, 30, 0.34);
+  pointer-events: none;
+}
+
+/* Chữ trên banner ảnh: bóng chữ nhiều lớp (sát nét + quầng mềm) Tên class cố ý KHÔNG chứa "shadow"
    để không dính các luật box-shadow dành cho khối tối ở trên. */
 .banner-text {
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.95), 0 0 8px rgba(0, 0, 0, 0.7), 0 2px 24px rgba(0, 0, 0, 0.85);
