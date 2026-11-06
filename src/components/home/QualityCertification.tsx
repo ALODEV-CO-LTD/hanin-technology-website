@@ -6,12 +6,11 @@ import Photo from "@/components/ui/Photo";
 import { CERT_IMAGES } from "@/lib/block-images";
 
 const CERT_KEYS = ["1", "2"] as const;
-const CERT_PHOTOS: Record<(typeof CERT_KEYS)[number], string> = {
-  "1": CERT_IMAGES.wastewaterControl,
-  "2": CERT_IMAGES.thickness,
-};
-
 export default function QualityCertification() {
+  const CERT_PHOTOS: Record<(typeof CERT_KEYS)[number], string> = {
+    "1": CERT_IMAGES.wastewaterControl,
+    "2": CERT_IMAGES.thickness,
+  };
   const t = useTranslations("Home.QualityCertification");
   const h = useTranslations("HomeTrust.iso");
   const ROWS = ["holder", "body", "no", "issued", "valid", "scope"] as const;

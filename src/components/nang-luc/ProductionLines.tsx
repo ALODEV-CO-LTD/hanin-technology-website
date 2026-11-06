@@ -10,7 +10,7 @@ export default function ProductionLines() {
   const LINES = [
     {
       key: "barrel",
-      image: siteImg("nang-luc/ProductionLines#1", "/images/hanin/slide08-be-ma-niken.webp"),
+      image: siteImg("nang-luc/ProductionLines#1", "/images/profile-lib/bo-ma-quay-nhin-tu-tren.jpg"),
       imageOrder: "order-first lg:order-last",
     },
     {

@@ -1,0 +1,1142 @@
+{
+ "/images/certificates/iso-9001-2015.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/block-images-data"
+  }
+ ],
+ "/images/factory/cong-nha-may.jpg": [
+  {
+   "page": "gioi-thieu",
+   "section": "gioi-thieu/CompanyIntroduction"
+  },
+  {
+   "page": "lien-he",
+   "section": "lien-he/LocationMap"
+  },
+  {
+   "page": "nang-luc",
+   "section": "nang-luc/FactoryGallery"
+  }
+ ],
+ "/images/factory/hd/showcase-kho.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/photo-focus"
+  }
+ ],
+ "/images/factory/hd/showcase-lab.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/photo-focus"
+  }
+ ],
+ "/images/factory/hd/showcase-may.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/photo-focus"
+  }
+ ],
+ "/images/factory/hd/showcase-treo.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/photo-focus"
+  }
+ ],
+ "/images/factory/kho-1.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/photo-focus"
+  }
+ ],
+ "/images/factory/kho-2.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/photo-focus"
+  }
+ ],
+ "/images/factory/kho-3.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/photo-focus"
+  }
+ ],
+ "/images/factory/kho-4.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/photo-focus"
+  }
+ ],
+ "/images/factory/kho-5.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/photo-focus"
+  }
+ ],
+ "/images/factory/kho-6.jpg": [
+  {
+   "page": "gioi-thieu",
+   "section": "gioi-thieu/IntroHero"
+  },
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/factory-pool"
+  },
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/photo-focus"
+  }
+ ],
+ "/images/factory/ma-quay-1.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/photo-focus"
+  }
+ ],
+ "/images/factory/ma-quay-2.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/photo-focus"
+  }
+ ],
+ "/images/factory/ma-quay-3.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/photo-focus"
+  }
+ ],
+ "/images/factory/ma-quay-4.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/photo-focus"
+  }
+ ],
+ "/images/factory/ma-quay-5.jpg": [
+  {
+   "page": "nang-luc",
+   "section": "nang-luc/CapabilityHero"
+  },
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/factory-pool"
+  },
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/photo-focus"
+  }
+ ],
+ "/images/factory/ma-quay-6.jpg": [
+  {
+   "page": "dich-vu",
+   "section": "dich-vu/ServiceBanner"
+  },
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/factory-pool"
+  },
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/photo-focus"
+  }
+ ],
+ "/images/factory/ma-quay-7.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/factory-pool"
+  },
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/photo-focus"
+  }
+ ],
+ "/images/factory/ma-treo-1.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/photo-focus"
+  }
+ ],
+ "/images/factory/ma-treo-2.jpg": [
+  {
+   "page": "home",
+   "section": "home/Hero"
+  },
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/factory-pool"
+  },
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/photo-focus"
+  }
+ ],
+ "/images/factory/ma-treo-3.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/factory-pool"
+  },
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/photo-focus"
+  }
+ ],
+ "/images/factory/ma-treo-4.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/photo-focus"
+  }
+ ],
+ "/images/factory/ma-treo-5.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/photo-focus"
+  }
+ ],
+ "/images/factory/phan-tich-1.jpg": [
+  {
+   "page": "tin-tuc",
+   "section": "tin-tuc/NewsBanner"
+  },
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/factory-pool"
+  },
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/photo-focus"
+  }
+ ],
+ "/images/factory/phan-tich-2.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/factory-pool"
+  },
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/photo-focus"
+  }
+ ],
+ "/images/factory/phan-tich-3.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/factory-pool"
+  },
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/photo-focus"
+  }
+ ],
+ "/images/factory/phan-tich-4.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/photo-focus"
+  }
+ ],
+ "/images/factory/qc-1.jpg": [
+  {
+   "page": "san-pham",
+   "section": "san-pham/CategoryHero"
+  },
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/factory-pool"
+  },
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/photo-focus"
+  }
+ ],
+ "/images/factory/qc-2.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/photo-focus"
+  }
+ ],
+ "/images/factory/qc-3.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/photo-focus"
+  }
+ ],
+ "/images/factory/qc-4.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/factory-pool"
+  },
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/photo-focus"
+  }
+ ],
+ "/images/factory/qc-5.jpg": [
+  {
+   "page": "tuyen-dung",
+   "section": "tuyen-dung/PageHero"
+  },
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/photo-focus"
+  }
+ ],
+ "/images/factory/qc-6.jpg": [
+  {
+   "page": "lien-he",
+   "section": "lien-he/ContactHero"
+  },
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/factory-pool"
+  },
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/photo-focus"
+  }
+ ],
+ "/images/factory/qc-7.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/photo-focus"
+  }
+ ],
+ "/images/factory/qc-8.jpg": [
+  {
+   "page": "lien-he",
+   "section": "lien-he/RfqForm"
+  },
+  {
+   "page": "nang-luc",
+   "section": "nang-luc/FactoryGallery"
+  },
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/factory-pool"
+  },
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/photo-focus"
+  }
+ ],
+ "/images/hanin/slide04-day-chuyen-ma-tu-dong.webp": [
+  {
+   "page": "gioi-thieu",
+   "section": "gioi-thieu/FactoryOverview"
+  },
+  {
+   "page": "home",
+   "section": "home/FactoryShowcase"
+  },
+  {
+   "page": "nang-luc",
+   "section": "nang-luc/ProductionLines"
+  }
+ ],
+ "/images/hanin/slide04-khu-vuc-be-ma.webp": [
+  {
+   "page": "home",
+   "section": "home/ManufacturingCapability"
+  },
+  {
+   "page": "nang-luc",
+   "section": "nang-luc/AutomatedVsManual"
+  },
+  {
+   "page": "tuyen-dung",
+   "section": "tuyen-dung/WorkEnvironment"
+  }
+ ],
+ "/images/hanin/slide04-san-pham-moc-vao-jig.webp": [
+  {
+   "page": "gioi-thieu",
+   "section": "gioi-thieu/FactoryOverview"
+  }
+ ],
+ "/images/hanin/slide05-tay-gat-sen-tam.webp": [
+  {
+   "page": "nang-luc",
+   "section": "nang-luc/FactoryGallery"
+  }
+ ],
+ "/images/hanin/slide08-be-me-dong.webp": [
+  {
+   "page": "nang-luc",
+   "section": "nang-luc/AutomatedVsManual"
+  }
+ ],
+ "/images/hanin/slide08-may-rung-va-tay-dau.webp": [
+  {
+   "page": "nang-luc",
+   "section": "nang-luc/EquipmentGrid"
+  }
+ ],
+ "/images/hanin/slide08-toan-canh-day-chuyen-ma-quay.webp": [
+  {
+   "page": "home",
+   "section": "home/FactoryShowcase"
+  },
+  {
+   "page": "nang-luc",
+   "section": "nang-luc/FactoryOverview"
+  }
+ ],
+ "/images/hanin/slide09-be-ma.webp": [
+  {
+   "page": "home",
+   "section": "home/FactoryShowcase"
+  },
+  {
+   "page": "nang-luc",
+   "section": "nang-luc/FactoryGallery"
+  }
+ ],
+ "/images/hanin/slide09-jig-san-pham-cho-ma.webp": [
+  {
+   "page": "nang-luc",
+   "section": "nang-luc/ProductionLines"
+  }
+ ],
+ "/images/hanin/slide09-line-ma-ban-tu-dong.webp": [
+  {
+   "page": "gioi-thieu",
+   "section": "gioi-thieu/FactoryOverview"
+  },
+  {
+   "page": "nang-luc",
+   "section": "nang-luc/FactoryGallery"
+  }
+ ],
+ "/images/hanin/slide10-hoa-chat-va-thiet-bi-phan-tich.webp": [
+  {
+   "page": "home",
+   "section": "home/FactoryShowcase"
+  }
+ ],
+ "/images/hanin/slide10-may-thu-hull-cell.webp": [
+  {
+   "page": "nang-luc",
+   "section": "nang-luc/TestingAnalysis"
+  }
+ ],
+ "/images/hanin/slide10-phong-phan-tich.webp": [
+  {
+   "page": "gioi-thieu",
+   "section": "gioi-thieu/FactoryOverview"
+  },
+  {
+   "page": "tuyen-dung",
+   "section": "tuyen-dung/WorkEnvironment"
+  }
+ ],
+ "/images/hanin/slide11-kim-loai-ma-crom-tay-nam.webp": [
+  {
+   "page": "tuyen-dung",
+   "section": "tuyen-dung/WorkEnvironment"
+  }
+ ],
+ "/images/hanin/slide13-day-chuyen-phun-son-tu-dong.webp": [
+  {
+   "page": "nang-luc",
+   "section": "nang-luc/EquipmentGrid"
+  }
+ ],
+ "/images/hanin/slide13-may-ma-chan-khong-pvd.webp": [
+  {
+   "page": "home",
+   "section": "home/FactoryShowcase"
+  },
+  {
+   "page": "nang-luc",
+   "section": "nang-luc/EquipmentGrid"
+  }
+ ],
+ "/images/hanin/slide16-cum-be-lang.webp": [
+  {
+   "page": "home",
+   "section": "home/FactoryShowcase"
+  }
+ ],
+ "/images/hanin/slide16-tu-dieu-khien-va-be-xanh.webp": [
+  {
+   "page": "nang-luc",
+   "section": "nang-luc/EquipmentGrid"
+  }
+ ],
+ "/images/hanin/slide17-xuong-in-lua.webp": [
+  {
+   "page": "home",
+   "section": "home/AboutHanin"
+  }
+ ],
+ "/images/hanin/slide18-chung-nhan-iso-9001-2015-icb.webp": [
+  {
+   "page": "gioi-thieu",
+   "section": "gioi-thieu/QualityStandardsPreview"
+  }
+ ],
+ "/images/process/ky-thuat-nhan-vien-kiem-tra-gia-treo.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/block-images-data"
+  }
+ ],
+ "/images/process/q-10.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/block-images-data"
+  }
+ ],
+ "/images/process/q-12.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/block-images-data"
+  }
+ ],
+ "/images/process/q-17.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/block-images-data"
+  }
+ ],
+ "/images/process/q-18.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/block-images-data"
+  }
+ ],
+ "/images/process/q-2.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/block-images-data"
+  }
+ ],
+ "/images/process/q-21.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/block-images-data"
+  }
+ ],
+ "/images/process/q-3.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/block-images-data"
+  }
+ ],
+ "/images/process/q-4.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/block-images-data"
+  }
+ ],
+ "/images/process/t-10.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/block-images-data"
+  }
+ ],
+ "/images/process/t-12.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/block-images-data"
+  }
+ ],
+ "/images/process/t-14.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/block-images-data"
+  }
+ ],
+ "/images/process/t-17.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/block-images-data"
+  }
+ ],
+ "/images/process/t-18.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/block-images-data"
+  }
+ ],
+ "/images/process/t-2.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/block-images-data"
+  }
+ ],
+ "/images/process/t-20.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/block-images-data"
+  }
+ ],
+ "/images/process/t-22.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/block-images-data"
+  }
+ ],
+ "/images/process/t-24.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/block-images-data"
+  }
+ ],
+ "/images/process/t-25.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/block-images-data"
+  }
+ ],
+ "/images/process/t-29.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/block-images-data"
+  }
+ ],
+ "/images/process/t-3.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/block-images-data"
+  }
+ ],
+ "/images/process/t-7.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/block-images-data"
+  }
+ ],
+ "/images/profile-lib/ba-chi-tiet-tru-vo-ma-crom.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/block-images-data"
+  }
+ ],
+ "/images/profile-lib/ban-thi-nghiem-phan-tich-dung-dich.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/block-images-data"
+  }
+ ],
+ "/images/profile-lib/bang-dieu-khien-in-chu-xuoc-kim-loai.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/block-images-data"
+  }
+ ],
+ "/images/profile-lib/banh-rang-xich-niken-hoa.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/block-images-data"
+  },
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/factory-pool"
+  }
+ ],
+ "/images/profile-lib/be-lang-nuoc-thai.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/block-images-data"
+  }
+ ],
+ "/images/profile-lib/be-nhua-xanh-xu-ly-nuoc-thai.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/block-images-data"
+  }
+ ],
+ "/images/profile-lib/bo-ma-quay-nhin-tu-tren.jpg": [
+  {
+   "page": "nang-luc",
+   "section": "nang-luc/ProductionLines"
+  },
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/block-images-data"
+  },
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/factory-pool"
+  }
+ ],
+ "/images/profile-lib/bo-ma-quay-ray-dan-ong.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/factory-pool"
+  }
+ ],
+ "/images/profile-lib/bu-long-chu-t-phot-phat-den.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/block-images-data"
+  }
+ ],
+ "/images/profile-lib/bu-long-dac-biet-ma-niken-sang.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/block-images-data"
+  },
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/factory-pool"
+  }
+ ],
+ "/images/profile-lib/buong-phun-son-inox.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/block-images-data"
+  },
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/factory-pool"
+  }
+ ],
+ "/images/profile-lib/chi-tiet-kep-dap-ma-trang.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/block-images-data"
+  }
+ ],
+ "/images/profile-lib/chi-tiet-ong-con-ma-crom.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/block-images-data"
+  }
+ ],
+ "/images/profile-lib/chi-tiet-op-mat-na-ma-crom.jpg": [
+  {
+   "page": "home",
+   "section": "home/PlatingServices"
+  },
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/block-images-data"
+  }
+ ],
+ "/images/profile-lib/chi-tiet-vanh-khuyen-mau-xam-den.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/block-images-data"
+  }
+ ],
+ "/images/profile-lib/chi-tiet-vien-den-oto-ma-crom.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/factory-pool"
+  }
+ ],
+ "/images/profile-lib/chot-chu-t-ren-ma-kem.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/block-images-data"
+  }
+ ],
+ "/images/profile-lib/chot-truc-bac-ma-sang.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/block-images-data"
+  }
+ ],
+ "/images/profile-lib/chot-vong-tron-ma-niken.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/block-images-data"
+  }
+ ],
+ "/images/profile-lib/cong-nhan-kiem-tra-gia-treo-ma.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/block-images-data"
+  },
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/factory-pool"
+  }
+ ],
+ "/images/profile-lib/dan-phun-son-tu-dong-bang-tai.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/block-images-data"
+  }
+ ],
+ "/images/profile-lib/dau-cos-dap-ma-trang.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/block-images-data"
+  }
+ ],
+ "/images/profile-lib/dau-cos-ong-satin.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/block-images-data"
+  }
+ ],
+ "/images/profile-lib/day-chuyen-ma-tu-dong-cau-truc-cam.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/block-images-data"
+  },
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/factory-pool"
+  }
+ ],
+ "/images/profile-lib/day-chuyen-phun-son-tu-dong.jpg": [
+  {
+   "page": "home",
+   "section": "home/PlatingServices"
+  },
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/factory-pool"
+  }
+ ],
+ "/images/profile-lib/dia-tron-xuoc-dong-tam-niken-satin.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/block-images-data"
+  }
+ ],
+ "/images/profile-lib/gia-do-uon-ma-sang.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/block-images-data"
+  }
+ ],
+ "/images/profile-lib/gia-do-uon-niken-satin.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/block-images-data"
+  }
+ ],
+ "/images/profile-lib/gia-treo-chi-tiet-den-khung-xanh.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/block-images-data"
+  },
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/factory-pool"
+  }
+ ],
+ "/images/profile-lib/gia-treo-day-chuyen-ma-tu-dong.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/factory-pool"
+  }
+ ],
+ "/images/profile-lib/hai-may-pvd-phong-sach.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/block-images-data"
+  },
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/factory-pool"
+  }
+ ],
+ "/images/profile-lib/khoi-kim-loai-be-mat-den-van-nham.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/block-images-data"
+  }
+ ],
+ "/images/profile-lib/khung-man-hinh-nhua-son-den.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/block-images-data"
+  },
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/factory-pool"
+  }
+ ],
+ "/images/profile-lib/linh-kien-den-holder-nhua-truoc-sau-xu-ly.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/block-images-data"
+  },
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/factory-pool"
+  }
+ ],
+ "/images/profile-lib/logo-crom-vinfast.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/block-images-data"
+  },
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/factory-pool"
+  }
+ ],
+ "/images/profile-lib/may-danh-bong-hai-dia-polisher.jpg": [
+  {
+   "page": "nang-luc",
+   "section": "nang-luc/TestingAnalysis"
+  }
+ ],
+ "/images/profile-lib/may-do-do-day-cam-tay-thickness-measure.jpg": [
+  {
+   "page": "nang-luc",
+   "section": "nang-luc/TestingAnalysis"
+  },
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/block-images-data"
+  }
+ ],
+ "/images/profile-lib/may-do-do-day-lop-ma-apc-100.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/block-images-data"
+  }
+ ],
+ "/images/profile-lib/may-do-tia-uv.jpg": [
+  {
+   "page": "nang-luc",
+   "section": "nang-luc/TestingAnalysis"
+  }
+ ],
+ "/images/profile-lib/may-ep-bun-xu-ly-nuoc-thai.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/block-images-data"
+  }
+ ],
+ "/images/profile-lib/may-pvd-buong-chan-khong.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/block-images-data"
+  },
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/factory-pool"
+  }
+ ],
+ "/images/profile-lib/may-rung-tay-dau-day-chuyen-ma-quay.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/factory-pool"
+  }
+ ],
+ "/images/profile-lib/may-thu-cha-xat-ba-dau.jpg": [
+  {
+   "page": "nang-luc",
+   "section": "nang-luc/TestingAnalysis"
+  }
+ ],
+ "/images/profile-lib/may-thu-chi-do-cung-but-chi.jpg": [
+  {
+   "page": "nang-luc",
+   "section": "nang-luc/TestingAnalysis"
+  }
+ ],
+ "/images/profile-lib/may-thu-co-cau-ban-le-nghieng.jpg": [
+  {
+   "page": "nang-luc",
+   "section": "nang-luc/TestingAnalysis"
+  }
+ ],
+ "/images/profile-lib/may-thu-mai-mon-rca-tester.jpg": [
+  {
+   "page": "nang-luc",
+   "section": "nang-luc/TestingAnalysis"
+  },
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/block-images-data"
+  }
+ ],
+ "/images/profile-lib/may-thu-roi-dropping-tester.jpg": [
+  {
+   "page": "nang-luc",
+   "section": "nang-luc/TestingAnalysis"
+  }
+ ],
+ "/images/profile-lib/nap-che-mat-cat-ma-crom-co-chu.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/block-images-data"
+  }
+ ],
+ "/images/profile-lib/nap-nut-tron-ma-crom-xuoc-tam.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/factory-pool"
+  }
+ ],
+ "/images/profile-lib/nha-xuong-ma-treo-be-ma.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/block-images-data"
+  },
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/factory-pool"
+  }
+ ],
+ "/images/profile-lib/nhom-chi-tiet-nho-mau-trang-bac.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/block-images-data"
+  }
+ ],
+ "/images/profile-lib/nhom-chi-tiet-tru-ren-ma-kem-nen-xanh.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/block-images-data"
+  }
+ ],
+ "/images/profile-lib/num-van-ma-crom-satin.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/block-images-data"
+  }
+ ],
+ "/images/profile-lib/nut-dieu-khien-tron-vien-crom.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/block-images-data"
+  }
+ ],
+ "/images/profile-lib/nut-engine-start-stop-vien-crom.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/block-images-data"
+  }
+ ],
+ "/images/profile-lib/ong-lot-ren-ma-kem.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/block-images-data"
+  },
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/factory-pool"
+  }
+ ],
+ "/images/profile-lib/ong-tru-dai-ma-kem.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/block-images-data"
+  }
+ ],
+ "/images/profile-lib/phong-phan-tich-toan-canh.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/block-images-data"
+  },
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/factory-pool"
+  }
+ ],
+ "/images/profile-lib/tam-chi-tiet-may-niken-hoa.jpg": [
+  {
+   "page": "home",
+   "section": "home/PlatingServices"
+  },
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/block-images-data"
+  }
+ ],
+ "/images/profile-lib/tam-chu-nhat-ma-kem-trang.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/block-images-data"
+  }
+ ],
+ "/images/profile-lib/tam-dep-va-khoi-chu-t-mau-toi.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/block-images-data"
+  }
+ ],
+ "/images/profile-lib/tam-inox-satin-xuoc.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/block-images-data"
+  }
+ ],
+ "/images/profile-lib/tay-gat-sen-tam-ma-crom.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/block-images-data"
+  }
+ ],
+ "/images/profile-lib/tay-nam-ma-crom-dang-giot.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/block-images-data"
+  }
+ ],
+ "/images/profile-lib/thanh-tru-inox-satin.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/block-images-data"
+  }
+ ],
+ "/images/profile-lib/thanh-uon-dap-bong-ma-sang.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/block-images-data"
+  }
+ ],
+ "/images/profile-lib/thiet-bi-thu-nuoc-nong-hot-water.jpg": [
+  {
+   "page": "nang-luc",
+   "section": "nang-luc/TestingAnalysis"
+  }
+ ],
+ "/images/profile-lib/thiet-bi-vinsmart-minh-hoa.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/block-images-data"
+  }
+ ],
+ "/images/profile-lib/tu-dieu-khien-be-chua-xu-ly-nuoc-thai.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/block-images-data"
+  }
+ ],
+ "/images/profile-lib/tu-thu-nhiet-do-cao-do-am-cao.jpg": [
+  {
+   "page": "nang-luc",
+   "section": "nang-luc/TestingAnalysis"
+  }
+ ],
+ "/images/profile-lib/vit-dau-tron-ma-kem.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/block-images-data"
+  },
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/factory-pool"
+  }
+ ],
+ "/images/profile-lib/vit-long-den-ren-thua-phot-phat-den.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/block-images-data"
+  }
+ ],
+ "/images/profile-lib/vit-tu-ren-phot-phat-den.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/block-images-data"
+  },
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/factory-pool"
+  }
+ ],
+ "/images/profile-lib/voi-nuoc-ma-crom.jpg": [
+  {
+   "page": "dung-chung",
+   "section": "dung-chung/block-images-data"
+  }
+ ]
+}

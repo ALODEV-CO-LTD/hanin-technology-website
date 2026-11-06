@@ -4,34 +4,35 @@ import { Link } from "@/i18n/navigation";
 import Photo from "@/components/ui/Photo";
 import { CERT_IMAGES } from "@/lib/block-images";
 
-const CARDS = [
-  {
-    key: "iso9001",
-    image: CERT_IMAGES.iso,
-    contain: true,
-    icon: "verified",
-    iconAccent: true,
-    tagAccent: true,
-  },
-  {
-    key: "wastewater",
-    image: CERT_IMAGES.wastewaterTank,
-    contain: false,
-    icon: "eco",
-    iconAccent: false,
-    tagAccent: false,
-  },
-  {
-    key: "testing",
-    image: CERT_IMAGES.lab,
-    contain: false,
-    icon: "rule",
-    iconAccent: false,
-    tagAccent: false,
-  },
-] as const;
+
 
 export default function QualityStandards() {
+  const CARDS = [
+    {
+      key: "iso9001",
+      image: CERT_IMAGES.iso,
+      contain: true,
+      icon: "verified",
+      iconAccent: true,
+      tagAccent: true,
+    },
+    {
+      key: "wastewater",
+      image: CERT_IMAGES.wastewaterTank,
+      contain: false,
+      icon: "eco",
+      iconAccent: false,
+      tagAccent: false,
+    },
+    {
+      key: "testing",
+      image: CERT_IMAGES.lab,
+      contain: false,
+      icon: "rule",
+      iconAccent: false,
+      tagAccent: false,
+    },
+  ] as const;
   const t = useTranslations("NangLuc.QualityStandards");
 
   return (

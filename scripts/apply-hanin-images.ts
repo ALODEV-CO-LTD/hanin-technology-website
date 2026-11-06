@@ -70,4 +70,23 @@ transaction(() => {
     }
   }
 });
+// Thư viện ảnh: thêm ảnh mới và cập nhật kích thước các ảnh đã thay bản nét hơn (chỉ ảnh trong public/images, chạy lại an toàn).
+import fs from "node:fs";
+import path from "node:path";
+const NEW_MEDIA = [
+  { path: "/images/process/ky-thuat-nhan-vien-kiem-tra-gia-treo.jpg", original: "Kỹ thuật – nhân viên kiểm tra chi tiết mạ trên giá treo (ky-thuat-nhan-vien-kiem-tra-gia-treo).jpg" },
+];
+transaction(() => {
+  for (const m of NEW_MEDIA) {
+    const abs = path.join(process.cwd(), "public", m.path);
+    if (!fs.existsSync(abs)) continue;
+    run("INSERT OR IGNORE INTO media (path, original, mime, size) VALUES (?, ?, 'image/jpeg', ?)", m.path, m.original, fs.statSync(abs).size);
+  }
+  for (const r of all<{ id: number; path: string; size: number }>("SELECT id, path, size FROM media WHERE path LIKE '/images/%'")) {
+    const abs = path.join(process.cwd(), "public", r.path);
+    if (!fs.existsSync(abs)) continue;
+    const size = fs.statSync(abs).size;
+    if (size !== r.size) run("UPDATE media SET size = ? WHERE id = ?", size, r.id);
+  }
+});
 console.log(`Đã bỏ ${overrides} ghi đè ảnh vị trí sai, cập nhật ảnh cho ${rows} bản ghi dịch vụ/bài viết.`);

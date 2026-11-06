@@ -5,7 +5,6 @@ import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import Icon from "@/components/ui/Icon";
 import Photo from "@/components/ui/Photo";
-import { PROCESS_STAGE_IMAGES } from "@/lib/block-images";
 import {
   COMPACT_STEPS,
   PROCESSES,
@@ -18,7 +17,9 @@ const FAMILIES: ProcessFamily[] = ["quay", "treo"];
 
 const STAGES: StepStage[] = ["prep", "plate", "finish", "qc"];
 
-export default function ProcessExplorer() {
+type StageImages = Record<"quay" | "treo", Record<"prep" | "plate" | "finish" | "qc", string>>;
+
+export default function ProcessExplorer({ stageImages }: { stageImages: StageImages }) {
   const t = useTranslations("QuyTrinh");
   const [family, setFamily] = useState<ProcessFamily>("quay");
   const [openStages, setOpenStages] = useState<StepStage[]>(["prep"]);
@@ -144,7 +145,7 @@ export default function ProcessExplorer() {
                   className="flex min-h-12 w-full items-center justify-between gap-space-sm px-space-md py-space-sm text-left hover:bg-slate-50 transition-colors"
                 >
                   <Photo
-                    src={PROCESS_STAGE_IMAGES[family][stage]}
+                    src={stageImages[family][stage]}
                     alt={t(`stages.${stage}`)}
                     sizes="96px"
                     className="h-12 w-16 shrink-0 rounded border border-slate-200 object-cover"

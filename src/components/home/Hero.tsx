@@ -28,7 +28,6 @@ export default function Hero() {
         <HeroImage src={banner.image} alt={banner.alt || t("imageAlt")} />
       </div>
 
-      <div aria-hidden="true" className="absolute inset-y-0 left-0 w-full lg:w-3/4 banner-scrim" />
       <div aria-hidden="true" className="absolute inset-0 hero-dots" />
       {/* Lệch lên khoảng 50px so với tâm vùng giữa header và dải số liệu: đáy đệm lớn hơn đỉnh 100px trở lên. */}
       <div className="relative z-10 w-full flex-1 px-margin pt-space-lg pb-space-xl sm:pt-space-md sm:pb-[116px] flex flex-col justify-center">

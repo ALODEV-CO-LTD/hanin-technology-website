@@ -8,6 +8,7 @@ import AutomatedVsManual from "@/components/nang-luc/AutomatedVsManual";
 import EquipmentGrid from "@/components/nang-luc/EquipmentGrid";
 import TestingAnalysis from "@/components/nang-luc/TestingAnalysis";
 import ProductionFlow from "@/components/nang-luc/ProductionFlow";
+import { PROCESS_STAGE_IMAGES } from "@/lib/block-images";
 import ProcessExplorer from "@/components/nang-luc/ProcessExplorer";
 import FactoryGallery from "@/components/nang-luc/FactoryGallery";
 import QualityStandards from "@/components/nang-luc/QualityStandards";
@@ -33,7 +34,7 @@ export default function NangLucSanXuatPage() {
       <Reveal><EquipmentGrid /></Reveal>
       <Reveal direction="right"><TestingAnalysis /></Reveal>
       <Reveal><ProductionFlow /></Reveal>
-      <ProcessExplorer />
+      <ProcessExplorer stageImages={JSON.parse(JSON.stringify(PROCESS_STAGE_IMAGES))} />
       <Reveal><FactoryGallery /></Reveal>
       <Reveal><QualityStandards /></Reveal>
       <Reveal direction="left"><CompanyProfileCta /></Reveal>

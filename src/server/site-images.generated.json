@@ -1,5 +1,237 @@
 [
   {
+    "key": "dich-vu/cong-doan/s1",
+    "url": "/images/process/t-2.jpg"
+  },
+  {
+    "key": "dich-vu/cong-doan/s2",
+    "url": "/images/process/t-7.jpg"
+  },
+  {
+    "key": "dich-vu/cong-doan/s3",
+    "url": "/images/process/t-3.jpg"
+  },
+  {
+    "key": "dich-vu/cong-doan/s4",
+    "url": "/images/process/q-3.jpg"
+  },
+  {
+    "key": "dich-vu/cong-doan/s5",
+    "url": "/images/process/t-18.jpg"
+  },
+  {
+    "key": "dich-vu/quy-trinh/day-chuyen-son-ma-ket-hop/s1",
+    "url": "/images/profile-lib/buong-phun-son-inox.jpg"
+  },
+  {
+    "key": "dich-vu/quy-trinh/day-chuyen-son-ma-ket-hop/s2",
+    "url": "/images/profile-lib/dan-phun-son-tu-dong-bang-tai.jpg"
+  },
+  {
+    "key": "dich-vu/quy-trinh/day-chuyen-son-ma-ket-hop/s3",
+    "url": "/images/profile-lib/bang-dieu-khien-in-chu-xuoc-kim-loai.jpg"
+  },
+  {
+    "key": "dich-vu/quy-trinh/day-chuyen-son-ma-ket-hop/s4",
+    "url": "/images/profile-lib/may-thu-mai-mon-rca-tester.jpg"
+  },
+  {
+    "key": "dich-vu/quy-trinh/ma-crom-cung-cong-nghiep/s1",
+    "url": "/images/process/t-14.jpg"
+  },
+  {
+    "key": "dich-vu/quy-trinh/ma-crom-cung-cong-nghiep/s2",
+    "url": "/images/process/t-2.jpg"
+  },
+  {
+    "key": "dich-vu/quy-trinh/ma-crom-cung-cong-nghiep/s3",
+    "url": "/images/process/t-20.jpg"
+  },
+  {
+    "key": "dich-vu/quy-trinh/ma-crom-cung-cong-nghiep/s4",
+    "url": "/images/process/t-25.jpg"
+  },
+  {
+    "key": "dich-vu/quy-trinh/ma-crom-cung-cong-nghiep/s5",
+    "url": "/images/process/t-22.jpg"
+  },
+  {
+    "key": "dich-vu/quy-trinh/ma-crom-cung-cong-nghiep/s6",
+    "url": "/images/process/t-7.jpg"
+  },
+  {
+    "key": "dich-vu/quy-trinh/ma-kem-hop-kim-kem-niken/s1",
+    "url": "/images/process/q-4.jpg"
+  },
+  {
+    "key": "dich-vu/quy-trinh/ma-kem-hop-kim-kem-niken/s2",
+    "url": "/images/process/t-10.jpg"
+  },
+  {
+    "key": "dich-vu/quy-trinh/ma-kem-hop-kim-kem-niken/s3",
+    "url": "/images/process/q-12.jpg"
+  },
+  {
+    "key": "dich-vu/quy-trinh/ma-kem-hop-kim-kem-niken/s4",
+    "url": "/images/profile-lib/bu-long-chu-t-phot-phat-den.jpg"
+  },
+  {
+    "key": "dich-vu/quy-trinh/ma-kem-hop-kim-kem-niken/s5",
+    "url": "/images/process/q-17.jpg"
+  },
+  {
+    "key": "dich-vu/quy-trinh/ma-kem-hop-kim-kem-niken/s6",
+    "url": "/images/process/q-2.jpg"
+  },
+  {
+    "key": "dich-vu/quy-trinh/ma-niken-hoa-hoc-enp/s1",
+    "url": "/images/process/q-18.jpg"
+  },
+  {
+    "key": "dich-vu/quy-trinh/ma-niken-hoa-hoc-enp/s2",
+    "url": "/images/process/t-29.jpg"
+  },
+  {
+    "key": "dich-vu/quy-trinh/ma-niken-hoa-hoc-enp/s3",
+    "url": "/images/process/t-10.jpg"
+  },
+  {
+    "key": "dich-vu/quy-trinh/ma-niken-hoa-hoc-enp/s4",
+    "url": "/images/process/t-7.jpg"
+  },
+  {
+    "key": "dich-vu/quy-trinh/ma-niken-hoa-hoc-enp/s5",
+    "url": "/images/process/q-17.jpg"
+  },
+  {
+    "key": "dich-vu/quy-trinh/ma-niken-hoa-hoc-enp/s6",
+    "url": "/images/process/q-3.jpg"
+  },
+  {
+    "key": "dich-vu/quy-trinh/tien-xu-ly-be-mat/s1",
+    "url": "/images/process/q-21.jpg"
+  },
+  {
+    "key": "dich-vu/quy-trinh/tien-xu-ly-be-mat/s2",
+    "url": "/images/process/t-2.jpg"
+  },
+  {
+    "key": "dich-vu/quy-trinh/tien-xu-ly-be-mat/s3",
+    "url": "/images/process/t-24.jpg"
+  },
+  {
+    "key": "dich-vu/quy-trinh/tien-xu-ly-be-mat/s4",
+    "url": "/images/process/t-10.jpg"
+  },
+  {
+    "key": "dich-vu/quy-trinh/tien-xu-ly-be-mat/s5",
+    "url": "/images/process/t-7.jpg"
+  },
+  {
+    "key": "dich-vu/quy-trinh/xu-ly-nhom-ma-kim-loai-khac/s1",
+    "url": "/images/process/q-21.jpg"
+  },
+  {
+    "key": "dich-vu/quy-trinh/xu-ly-nhom-ma-kim-loai-khac/s2",
+    "url": "/images/profile-lib/may-pvd-buong-chan-khong.jpg"
+  },
+  {
+    "key": "dich-vu/quy-trinh/xu-ly-nhom-ma-kim-loai-khac/s3",
+    "url": "/images/profile-lib/hai-may-pvd-phong-sach.jpg"
+  },
+  {
+    "key": "dich-vu/quy-trinh/xu-ly-nhom-ma-kim-loai-khac/s4",
+    "url": "/images/profile-lib/may-do-do-day-cam-tay-thickness-measure.jpg"
+  },
+  {
+    "key": "dich-vu/ung-dung/day-chuyen-son-ma-ket-hop/a1",
+    "url": "/images/profile-lib/linh-kien-den-holder-nhua-truoc-sau-xu-ly.jpg"
+  },
+  {
+    "key": "dich-vu/ung-dung/day-chuyen-son-ma-ket-hop/a2",
+    "url": "/images/profile-lib/khung-man-hinh-nhua-son-den.jpg"
+  },
+  {
+    "key": "dich-vu/ung-dung/day-chuyen-son-ma-ket-hop/a3",
+    "url": "/images/profile-lib/bang-dieu-khien-in-chu-xuoc-kim-loai.jpg"
+  },
+  {
+    "key": "dich-vu/ung-dung/ma-crom-cung-cong-nghiep/a1",
+    "url": "/images/profile-lib/logo-crom-vinfast.jpg"
+  },
+  {
+    "key": "dich-vu/ung-dung/ma-crom-cung-cong-nghiep/a2",
+    "url": "/images/profile-lib/nap-che-mat-cat-ma-crom-co-chu.jpg"
+  },
+  {
+    "key": "dich-vu/ung-dung/ma-crom-cung-cong-nghiep/a3",
+    "url": "/images/profile-lib/voi-nuoc-ma-crom.jpg"
+  },
+  {
+    "key": "dich-vu/ung-dung/ma-crom-cung-cong-nghiep/a4",
+    "url": "/images/profile-lib/thiet-bi-vinsmart-minh-hoa.jpg"
+  },
+  {
+    "key": "dich-vu/ung-dung/ma-kem-hop-kim-kem-niken/a1",
+    "url": "/images/profile-lib/vit-long-den-ren-thua-phot-phat-den.jpg"
+  },
+  {
+    "key": "dich-vu/ung-dung/ma-kem-hop-kim-kem-niken/a2",
+    "url": "/images/profile-lib/chi-tiet-kep-dap-ma-trang.jpg"
+  },
+  {
+    "key": "dich-vu/ung-dung/ma-kem-hop-kim-kem-niken/a3",
+    "url": "/images/profile-lib/ong-lot-ren-ma-kem.jpg"
+  },
+  {
+    "key": "dich-vu/ung-dung/ma-kem-hop-kim-kem-niken/a4",
+    "url": "/images/profile-lib/dau-cos-dap-ma-trang.jpg"
+  },
+  {
+    "key": "dich-vu/ung-dung/ma-niken-hoa-hoc-enp/a1",
+    "url": "/images/profile-lib/banh-rang-xich-niken-hoa.jpg"
+  },
+  {
+    "key": "dich-vu/ung-dung/ma-niken-hoa-hoc-enp/a2",
+    "url": "/images/profile-lib/gia-do-uon-niken-satin.jpg"
+  },
+  {
+    "key": "dich-vu/ung-dung/ma-niken-hoa-hoc-enp/a3",
+    "url": "/images/profile-lib/tay-nam-ma-crom-dang-giot.jpg"
+  },
+  {
+    "key": "dich-vu/ung-dung/ma-niken-hoa-hoc-enp/a4",
+    "url": "/images/profile-lib/tam-inox-satin-xuoc.jpg"
+  },
+  {
+    "key": "dich-vu/ung-dung/tien-xu-ly-be-mat/a1",
+    "url": "/images/profile-lib/nut-engine-start-stop-vien-crom.jpg"
+  },
+  {
+    "key": "dich-vu/ung-dung/tien-xu-ly-be-mat/a2",
+    "url": "/images/profile-lib/num-van-ma-crom-satin.jpg"
+  },
+  {
+    "key": "dich-vu/ung-dung/tien-xu-ly-be-mat/a3",
+    "url": "/images/profile-lib/tay-gat-sen-tam-ma-crom.jpg"
+  },
+  {
+    "key": "dich-vu/ung-dung/tien-xu-ly-be-mat/a4",
+    "url": "/images/profile-lib/bu-long-dac-biet-ma-niken-sang.jpg"
+  },
+  {
+    "key": "dich-vu/ung-dung/xu-ly-nhom-ma-kim-loai-khac/a1",
+    "url": "/images/profile-lib/chi-tiet-op-mat-na-ma-crom.jpg"
+  },
+  {
+    "key": "dich-vu/ung-dung/xu-ly-nhom-ma-kim-loai-khac/a2",
+    "url": "/images/profile-lib/nut-dieu-khien-tron-vien-crom.jpg"
+  },
+  {
+    "key": "dich-vu/ung-dung/xu-ly-nhom-ma-kim-loai-khac/a3",
+    "url": "/images/profile-lib/voi-nuoc-ma-crom.jpg"
+  },
+  {
     "key": "gioi-thieu/CompanyIntroduction#1",
     "url": "/images/factory/cong-nha-may.jpg"
   },
@@ -22,6 +254,22 @@
   {
     "key": "gioi-thieu/QualityStandardsPreview#1",
     "url": "/images/hanin/slide18-chung-nhan-iso-9001-2015-icb.webp"
+  },
+  {
+    "key": "gioi-thieu/the-manh/production",
+    "url": "/images/profile-lib/day-chuyen-ma-tu-dong-cau-truc-cam.jpg"
+  },
+  {
+    "key": "gioi-thieu/the-manh/quality",
+    "url": "/images/profile-lib/phong-phan-tich-toan-canh.jpg"
+  },
+  {
+    "key": "gioi-thieu/the-manh/support",
+    "url": "/images/process/ky-thuat-nhan-vien-kiem-tra-gia-treo.jpg"
+  },
+  {
+    "key": "gioi-thieu/the-manh/technology",
+    "url": "/images/profile-lib/may-pvd-buong-chan-khong.jpg"
   },
   {
     "key": "home/AboutHanin#1",
@@ -76,6 +324,78 @@
     "url": "/images/hanin/slide08-be-me-dong.webp"
   },
   {
+    "key": "nang-luc/chung-nhan/autoLine",
+    "url": "/images/profile-lib/day-chuyen-ma-tu-dong-cau-truc-cam.jpg"
+  },
+  {
+    "key": "nang-luc/chung-nhan/iso",
+    "url": "/images/certificates/iso-9001-2015.jpg"
+  },
+  {
+    "key": "nang-luc/chung-nhan/lab",
+    "url": "/images/profile-lib/phong-phan-tich-toan-canh.jpg"
+  },
+  {
+    "key": "nang-luc/chung-nhan/labBench",
+    "url": "/images/profile-lib/ban-thi-nghiem-phan-tich-dung-dich.jpg"
+  },
+  {
+    "key": "nang-luc/chung-nhan/rotaryLine",
+    "url": "/images/profile-lib/bo-ma-quay-nhin-tu-tren.jpg"
+  },
+  {
+    "key": "nang-luc/chung-nhan/thickness",
+    "url": "/images/profile-lib/may-do-do-day-lop-ma-apc-100.jpg"
+  },
+  {
+    "key": "nang-luc/chung-nhan/wastewaterControl",
+    "url": "/images/profile-lib/tu-dieu-khien-be-chua-xu-ly-nuoc-thai.jpg"
+  },
+  {
+    "key": "nang-luc/chung-nhan/wastewaterPress",
+    "url": "/images/profile-lib/may-ep-bun-xu-ly-nuoc-thai.jpg"
+  },
+  {
+    "key": "nang-luc/chung-nhan/wastewaterSettling",
+    "url": "/images/profile-lib/be-lang-nuoc-thai.jpg"
+  },
+  {
+    "key": "nang-luc/chung-nhan/wastewaterTank",
+    "url": "/images/profile-lib/be-nhua-xanh-xu-ly-nuoc-thai.jpg"
+  },
+  {
+    "key": "nang-luc/cong-doan-quy-trinh/quay/finish",
+    "url": "/images/process/q-17.jpg"
+  },
+  {
+    "key": "nang-luc/cong-doan-quy-trinh/quay/plate",
+    "url": "/images/process/q-10.jpg"
+  },
+  {
+    "key": "nang-luc/cong-doan-quy-trinh/quay/prep",
+    "url": "/images/process/q-4.jpg"
+  },
+  {
+    "key": "nang-luc/cong-doan-quy-trinh/quay/qc",
+    "url": "/images/process/q-2.jpg"
+  },
+  {
+    "key": "nang-luc/cong-doan-quy-trinh/treo/finish",
+    "url": "/images/process/t-12.jpg"
+  },
+  {
+    "key": "nang-luc/cong-doan-quy-trinh/treo/plate",
+    "url": "/images/process/t-7.jpg"
+  },
+  {
+    "key": "nang-luc/cong-doan-quy-trinh/treo/prep",
+    "url": "/images/process/t-2.jpg"
+  },
+  {
+    "key": "nang-luc/cong-doan-quy-trinh/treo/qc",
+    "url": "/images/process/q-3.jpg"
+  },
+  {
     "key": "nang-luc/EquipmentGrid#1",
     "url": "/images/hanin/slide13-may-ma-chan-khong-pvd.webp"
   },
@@ -117,7 +437,7 @@
   },
   {
     "key": "nang-luc/ProductionLines#1",
-    "url": "/images/hanin/slide08-be-ma-niken.webp"
+    "url": "/images/profile-lib/bo-ma-quay-nhin-tu-tren.jpg"
   },
   {
     "key": "nang-luc/ProductionLines#2",
@@ -128,8 +448,168 @@
     "url": "/images/hanin/slide04-day-chuyen-ma-tu-dong.webp"
   },
   {
+    "key": "nang-luc/quy-trinh-san-xuat/finalCheck",
+    "url": "/images/process/t-17.jpg"
+  },
+  {
+    "key": "nang-luc/quy-trinh-san-xuat/mainPlating",
+    "url": "/images/process/t-7.jpg"
+  },
+  {
+    "key": "nang-luc/quy-trinh-san-xuat/packaging",
+    "url": "/images/process/t-18.jpg"
+  },
+  {
+    "key": "nang-luc/quy-trinh-san-xuat/receiving",
+    "url": "/images/process/q-21.jpg"
+  },
+  {
+    "key": "nang-luc/quy-trinh-san-xuat/surfacePrep",
+    "url": "/images/process/t-2.jpg"
+  },
+  {
+    "key": "nang-luc/quy-trinh-san-xuat/thickness",
+    "url": "/images/process/q-2.jpg"
+  },
+  {
     "key": "nang-luc/TestingAnalysis#1",
     "url": "/images/hanin/slide10-may-thu-hull-cell.webp"
+  },
+  {
+    "key": "san-pham/dich-vu-lien-quan/item1",
+    "url": "/images/profile-lib/nha-xuong-ma-treo-be-ma.jpg"
+  },
+  {
+    "key": "san-pham/dich-vu-lien-quan/item2",
+    "url": "/images/profile-lib/logo-crom-vinfast.jpg"
+  },
+  {
+    "key": "san-pham/dich-vu-lien-quan/item3",
+    "url": "/images/profile-lib/banh-rang-xich-niken-hoa.jpg"
+  },
+  {
+    "key": "san-pham/dich-vu-lien-quan/item4",
+    "url": "/images/profile-lib/vit-dau-tron-ma-kem.jpg"
+  },
+  {
+    "key": "san-pham/dich-vu-lien-quan/item5",
+    "url": "/images/profile-lib/khung-man-hinh-nhua-son-den.jpg"
+  },
+  {
+    "key": "san-pham/dich-vu-lien-quan/item6",
+    "url": "/images/profile-lib/may-pvd-buong-chan-khong.jpg"
+  },
+  {
+    "key": "san-pham/thu-vien/banh-rang-truc-vit-ma-niken-hoa-hoc/0",
+    "url": "/images/profile-lib/tam-chi-tiet-may-niken-hoa.jpg"
+  },
+  {
+    "key": "san-pham/thu-vien/banh-rang-truc-vit-ma-niken-hoa-hoc/1",
+    "url": "/images/profile-lib/dia-tron-xuoc-dong-tam-niken-satin.jpg"
+  },
+  {
+    "key": "san-pham/thu-vien/banh-rang-truc-vit-ma-niken-hoa-hoc/2",
+    "url": "/images/profile-lib/chot-vong-tron-ma-niken.jpg"
+  },
+  {
+    "key": "san-pham/thu-vien/banh-rang-truc-vit-ma-niken-hoa-hoc/3",
+    "url": "/images/profile-lib/bu-long-dac-biet-ma-niken-sang.jpg"
+  },
+  {
+    "key": "san-pham/thu-vien/bu-long-chot-dinh-vi-khoi-be-hoa-chat/0",
+    "url": "/images/profile-lib/chot-chu-t-ren-ma-kem.jpg"
+  },
+  {
+    "key": "san-pham/thu-vien/bu-long-chot-dinh-vi-khoi-be-hoa-chat/1",
+    "url": "/images/profile-lib/vit-dau-tron-ma-kem.jpg"
+  },
+  {
+    "key": "san-pham/thu-vien/bu-long-chot-dinh-vi-khoi-be-hoa-chat/2",
+    "url": "/images/profile-lib/nhom-chi-tiet-nho-mau-trang-bac.jpg"
+  },
+  {
+    "key": "san-pham/thu-vien/bu-long-chot-dinh-vi-khoi-be-hoa-chat/3",
+    "url": "/images/profile-lib/nhom-chi-tiet-tru-ren-ma-kem-nen-xanh.jpg"
+  },
+  {
+    "key": "san-pham/thu-vien/chi-tiet-kim-loai-ma-treo-day-chuyen-tu-dong/0",
+    "url": "/images/profile-lib/gia-treo-chi-tiet-den-khung-xanh.jpg"
+  },
+  {
+    "key": "san-pham/thu-vien/chi-tiet-kim-loai-ma-treo-day-chuyen-tu-dong/1",
+    "url": "/images/profile-lib/nha-xuong-ma-treo-be-ma.jpg"
+  },
+  {
+    "key": "san-pham/thu-vien/chi-tiet-kim-loai-ma-treo-day-chuyen-tu-dong/2",
+    "url": "/images/profile-lib/gia-do-uon-ma-sang.jpg"
+  },
+  {
+    "key": "san-pham/thu-vien/chi-tiet-kim-loai-ma-treo-day-chuyen-tu-dong/3",
+    "url": "/images/profile-lib/cong-nhan-kiem-tra-gia-treo-ma.jpg"
+  },
+  {
+    "key": "san-pham/thu-vien/cum-linh-kien-khung-vo-banh-rang-b2b/0",
+    "url": "/images/profile-lib/ba-chi-tiet-tru-vo-ma-crom.jpg"
+  },
+  {
+    "key": "san-pham/thu-vien/cum-linh-kien-khung-vo-banh-rang-b2b/1",
+    "url": "/images/profile-lib/chi-tiet-vanh-khuyen-mau-xam-den.jpg"
+  },
+  {
+    "key": "san-pham/thu-vien/cum-linh-kien-khung-vo-banh-rang-b2b/2",
+    "url": "/images/profile-lib/khoi-kim-loai-be-mat-den-van-nham.jpg"
+  },
+  {
+    "key": "san-pham/thu-vien/cum-linh-kien-khung-vo-banh-rang-b2b/3",
+    "url": "/images/profile-lib/tam-dep-va-khoi-chu-t-mau-toi.jpg"
+  },
+  {
+    "key": "san-pham/thu-vien/ong-lot-truc-ren-co-khi-chiu-mai-mon/0",
+    "url": "/images/profile-lib/ong-tru-dai-ma-kem.jpg"
+  },
+  {
+    "key": "san-pham/thu-vien/ong-lot-truc-ren-co-khi-chiu-mai-mon/1",
+    "url": "/images/profile-lib/bu-long-chu-t-phot-phat-den.jpg"
+  },
+  {
+    "key": "san-pham/thu-vien/ong-lot-truc-ren-co-khi-chiu-mai-mon/2",
+    "url": "/images/profile-lib/vit-long-den-ren-thua-phot-phat-den.jpg"
+  },
+  {
+    "key": "san-pham/thu-vien/ong-lot-truc-ren-co-khi-chiu-mai-mon/3",
+    "url": "/images/profile-lib/vit-tu-ren-phot-phat-den.jpg"
+  },
+  {
+    "key": "san-pham/thu-vien/thanh-busbar-dong-ma-thiec-dan-dien/0",
+    "url": "/images/profile-lib/dau-cos-dap-ma-trang.jpg"
+  },
+  {
+    "key": "san-pham/thu-vien/thanh-busbar-dong-ma-thiec-dan-dien/1",
+    "url": "/images/profile-lib/dau-cos-ong-satin.jpg"
+  },
+  {
+    "key": "san-pham/thu-vien/thanh-busbar-dong-ma-thiec-dan-dien/2",
+    "url": "/images/profile-lib/thanh-uon-dap-bong-ma-sang.jpg"
+  },
+  {
+    "key": "san-pham/thu-vien/thanh-busbar-dong-ma-thiec-dan-dien/3",
+    "url": "/images/profile-lib/tam-chu-nhat-ma-kem-trang.jpg"
+  },
+  {
+    "key": "san-pham/thu-vien/truc-piston-ty-ben-thuy-luc-o-to/0",
+    "url": "/images/profile-lib/thanh-tru-inox-satin.jpg"
+  },
+  {
+    "key": "san-pham/thu-vien/truc-piston-ty-ben-thuy-luc-o-to/1",
+    "url": "/images/profile-lib/chi-tiet-ong-con-ma-crom.jpg"
+  },
+  {
+    "key": "san-pham/thu-vien/truc-piston-ty-ben-thuy-luc-o-to/2",
+    "url": "/images/profile-lib/chot-truc-bac-ma-sang.jpg"
+  },
+  {
+    "key": "san-pham/thu-vien/truc-piston-ty-ben-thuy-luc-o-to/3",
+    "url": "/images/profile-lib/tay-nam-ma-crom-dang-giot.jpg"
   },
   {
     "key": "tuyen-dung/WorkEnvironment#1",
