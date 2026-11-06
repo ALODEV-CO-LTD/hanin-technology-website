@@ -2,7 +2,7 @@
  * Thêm bản tiếng Anh cho nội dung CMS (bảng posts, jobs, banners, services, products).
  *   npm run db:add-en   (idempotent; deploy tự chạy)
  * Chỉ thêm khoá "en" khi còn trống: KHÔNG ghi đè bản tiếng Anh đã nhập trong CMS và không đụng vi/zh/ko.
- * Nguồn bản dịch, ưu tiên: scripts/data/en-db.json (theo bảng/id/cột), rồi khớp nguyên văn tiếng Việt với messages/vi -> messages/en.
+ * Nguồn bản dịch, ưu tiên: scripts/en-db.json (theo bảng/id/cột), rồi khớp nguyên văn tiếng Việt với messages/vi -> messages/en.
  */
 import fs from "node:fs";
 import path from "node:path";
@@ -26,7 +26,7 @@ for (const f of fs.readdirSync(path.join(MSG, "vi")).filter((n) => n.endsWith(".
     /* thiếu file thì bỏ qua */
   }
 }
-const explicit = JSON.parse(fs.readFileSync(path.join(process.cwd(), "scripts/data/en-db.json"), "utf8")) as Record<string, Record<string, Record<string, string>>>;
+const explicit = JSON.parse(fs.readFileSync(path.join(process.cwd(), "scripts/en-db.json"), "utf8")) as Record<string, Record<string, Record<string, string>>>;
 
 const TABLES = ["posts", "jobs", "banners", "services", "products"];
 let added = 0;
