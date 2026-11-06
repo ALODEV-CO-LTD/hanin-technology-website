@@ -55,8 +55,8 @@
       "title": "Đơn vị vận hành website",
       "name": "Tên công ty: Công ty Cổ phần Công nghiệp Mạ HANIN (thương hiệu HANIN Plating).",
       "tax": "Mã số thuế: 0110300983.",
-      "hq": "Địa chỉ: Lô 49G, KCN Quang Minh, xã Quang Minh, TP Hà Nội.",
-      "fac": "Công ty mẹ: Hanin Tech, Lô 660, KCN Quang Minh, TP Hà Nội.",
+      "hq": "Địa chỉ: Lô {{lot}}, KCN Quang Minh, xã Quang Minh, TP Hà Nội.",
+      "fac": "Công ty mẹ: Hanin Tech, Lô {{hqLot}}, KCN Quang Minh, TP Hà Nội.",
       "rep": "Người đại diện: Ông Nguyễn Huy Vinh, Giám đốc.",
       "mail": "Email: huyvinh82@gmail.com, vankhanhminhkhang@gmail.com."
     }

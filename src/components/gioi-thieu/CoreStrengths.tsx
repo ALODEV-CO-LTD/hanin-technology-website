@@ -6,8 +6,8 @@ export default function CoreStrengths() {
   const t = useTranslations("GioiThieu.CoreStrengths");
 
   const STRENGTHS = [
-    { key: "production", index: "01", icon: "precision_manufacturing", metricClass: "text-steel-700" },
-    { key: "technology", index: "02", icon: "memory", metricClass: "text-steel-700" },
+    { key: "production", index: "01", icon: "factory", metricClass: "text-steel-700" },
+    { key: "technology", index: "02", icon: "precision_manufacturing", metricClass: "text-steel-700" },
     { key: "quality", index: "03", icon: "verified", metricClass: "text-steel-700" },
     { key: "support", index: "04", icon: "support_agent", metricClass: "text-steel-600 font-bold" },
   ] as const;

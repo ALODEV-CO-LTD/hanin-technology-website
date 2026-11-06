@@ -3,13 +3,14 @@
 import { useEffect, useMemo, useState } from "react";
 import { api, ApiError } from "./api";
 import SaveButton, { useSavedFlash } from "./SaveButton";
-import { useToast } from "./Toast";
-import { useConfirm } from "./ConfirmDialog";
+import { toast } from "@/components/ct999/thong-bao-toast/store";
+import { confirm } from "./dialog";
 import Dropdown from "./Dropdown";
 
-type Locale = "vi" | "zh" | "ko";
+type Locale = "vi" | "en" | "zh" | "ko";
 const LOCALES: { key: Locale; label: string }[] = [
   { key: "vi", label: "Tiếng Việt" },
+  { key: "en", label: "English" },
   { key: "zh", label: "中文" },
   { key: "ko", label: "한국어" },
 ];
@@ -76,8 +77,6 @@ export default function ContentEditor() {
   const searching = !scope && search.trim().length >= 2;
   const [changedView, setChangedView] = useState(false); // xem mọi mục đã sửa trên toàn website
   const [onlyChanged, setOnlyChanged] = useState(false);
-  const toast = useToast();
-  const confirm = useConfirm();
   const { saved, flash } = useSavedFlash();
   const [saving, setSaving] = useState(false);
 

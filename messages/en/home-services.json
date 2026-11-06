@@ -1,0 +1,46 @@
+{
+  "HomeServices": {
+    "title": "Plating Services",
+    "ctaAll": "VIEW ALL SERVICES",
+    "detailLabel": "TECHNICAL DETAILS",
+    "pillars": [
+      {
+        "title": "Plating on ABS and ABS/PC Substrates",
+        "desc": "Surface treatment of ABS and ABS/PC plastic parts by rack plating; a hairline finish can be applied on the nickel layer.",
+        "imageAlt": "ABS plastic grille trim part after nickel-chrome plating",
+        "chips": [
+          "Nickel Chrome 3+",
+          "Nickel Chrome 6+",
+          "Satin Nickel",
+          "Black Nickel Chrome",
+          "Hairline finish"
+        ]
+      },
+      {
+        "title": "Plating on Metal Substrates",
+        "desc": "Plating on iron, copper, steel, aluminum and other metals.",
+        "imageAlt": "Metal part after electroless nickel plating",
+        "chips": [
+          "Electrolytic Nickel",
+          "Electroless Nickel",
+          "Black nickel",
+          "Zinc plating",
+          "Copper plating",
+          "Tin plating",
+          "Black manganese phosphating"
+        ]
+      },
+      {
+        "title": "Automatic Painting, PVD Vacuum Coating, Printing and Laser",
+        "desc": "3 six-gun spray booths, 1 automatic spray painting line, 20 ionizer booths; 2 PVD machines.",
+        "imageAlt": "Automatic spray painting line on a conveyor",
+        "chips": [
+          "Spray painting",
+          "PVD Vacuum Coating",
+          "Printing",
+          "Laser cutting"
+        ]
+      }
+    ]
+  }
+}

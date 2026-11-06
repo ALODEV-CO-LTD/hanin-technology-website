@@ -2,16 +2,16 @@
   "NangLuc": {
     "AutomatedVsManual": {
       "title": "自动生产线与半自动生产线",
-      "description": "自动电镀线产量为每天3–5万件。金属零件在半自动挂镀线（每天10,000–20,000件）或滚镀线（每天3,000–5,000 kg）上加工。",
+      "description": "自动电镀线产量为每天{{auto:wan}}万件。金属零件在半自动挂镀线（每天{{hang:full}}件）或滚镀线（每天{{rot:full}} kg）上加工。",
       "automated": {
         "imageAlt": "厂房内带有电镀槽和行车的自动电镀线",
         "title": "自动电镀线",
-        "desc": "产品挂在挂具（JIG）上，由行车依次转移到电镀区各槽。日产量 3–5 万件，可镀铬、镍、缎面。"
+        "desc": "产品挂在挂具（JIG）上，由行车依次转移到电镀区各槽。日产量 {{auto:wan}} 万件，可镀铬、镍、缎面。"
       },
       "manual": {
         "imageAlt": "HANIN 厂房内的挂镀与滚镀区域",
         "title": "半自动挂镀线与滚镀线",
-        "desc": "半自动挂镀线用于金属件，日产 1 万–2 万件。滚镀线用于小件大批量，日产 3,000–5,000 公斤。"
+        "desc": "半自动挂镀线用于金属件，日产 1 万–2 万件。滚镀线用于小件大批量，日产 {{rot:full}} 公斤。"
       }
     },
     "CapabilityHero": {
@@ -35,7 +35,7 @@
         },
         "pvd": {
           "label": "PVD 设备",
-          "desc": "真空电镀，2 条 PVD 生产线",
+          "desc": "真空电镀，2 台 PVD 设备",
           "end": "2",
           "prefix": "",
           "suffix": "",
@@ -76,12 +76,12 @@
         "pvd": {
           "badge": "真空电镀",
           "title": "PVD 真空电镀设备",
-          "desc": "两台 PVD 设备在两条 PVD 生产线上运行。",
+          "desc": "两台 PVD 设备进行真空电镀。",
           "alt": "HANIN 工厂的 PVD 真空电镀设备",
           "spec1Label": "设备数量",
           "spec1Value": "2 台",
-          "spec2Label": "生产线",
-          "spec2Value": "2 条 PVD 生产线",
+          "spec2Label": "位置",
+          "spec2Value": "光明工业区",
           "spec3Label": "工艺",
           "spec3Value": "真空电镀"
         },
@@ -107,7 +107,7 @@
           "spec1Label": "生产线",
           "spec1Value": "滚镀线",
           "spec2Label": "产能",
-          "spec2Value": "3,000–5,000 公斤/天",
+          "spec2Value": "{{rot:full}} 公斤/天",
           "spec3Label": "镀槽",
           "spec3Value": "镀铜槽、镀镍槽"
         },
@@ -117,7 +117,7 @@
           "desc": "生产废水经沉淀池和压泥机处理。",
           "alt": "HANIN 工厂的废水处理区",
           "spec1Label": "处理能力",
-          "spec1Value": "130 立方米/昼夜",
+          "spec1Value": "{{waste}} 立方米/昼夜",
           "spec2Label": "设施",
           "spec2Value": "沉淀池、压泥机"
         }
@@ -133,7 +133,7 @@
       "items": {
         "campus": {
           "label": "工厂",
-          "alt": "HANIN 电镀工厂，位于广明工业区 49G 地块"
+          "alt": "HANIN 电镀工厂，位于广明工业区 {{lot}} 地块"
         },
         "control": {
           "label": "生产运行",
@@ -155,14 +155,14 @@
         "alt": "HANIN 工厂的电镀区与生产车间，广明工业区"
       },
       "factoryTitle": "工厂",
-      "factoryDescription": "HANIN 电镀工厂位于广明工业区 49G 地块，设有塑料与金属电镀线、PVD、喷漆和印刷。废水处理系统处理能力为 130 立方米/昼夜。",
+      "factoryDescription": "HANIN 电镀工厂位于广明工业区 {{lot}} 地块，设有塑料与金属电镀线、PVD、喷漆和印刷。废水处理系统处理能力为 {{waste}} 立方米/昼夜。",
       "specs": {
         "locationLabel": "地点",
         "areaLabel": "厂房占地面积",
         "capabilityLabel": "加工项目",
         "capabilityValue": "ABS 塑料电镀、金属电镀、PVD、喷漆与印刷",
-        "locationValue": "河内市广明乡广明工业区 49G 地块",
-        "areaValue": "2,230 m²"
+        "locationValue": "河内市广明乡广明工业区 {{lot}} 地块",
+        "areaValue": "{{area}} m²"
       },
       "ctaGallery": "查看工厂图片"
     },
@@ -215,7 +215,7 @@
           "desc": "小件大批量在滚筒中电镀。配有振动除油设备、镀铜槽和镀镍槽。",
           "alt": "滚镀线，滚筒浸入电镀槽",
           "capacityLabel": "产能：",
-          "capacityValue": "3,000–5,000 公斤/天（1 万–3 万件/天）",
+          "capacityValue": "{{rot:full}} 公斤/天（1 万–3 万件/天）",
           "techLabel": "工艺：",
           "techValue": "电解镍、化学镍、黑镍、黑锰磷化、镀锌"
         },
@@ -235,7 +235,7 @@
           "desc": "产品挂在挂具（JIG）上，由行车转移通过电镀区各槽。",
           "alt": "带行车和镀槽的自动电镀线",
           "capacityLabel": "产能：",
-          "capacityValue": "3–5 万件/天",
+          "capacityValue": "{{auto:wan}} 万件/天",
           "techLabel": "工艺：",
           "techValue": "铬、镍、缎面"
         }
@@ -254,7 +254,7 @@
         "wastewater": {
           "tagLabel": "环保",
           "desc": "废水处理系统配有沉淀池和压泥机。HANIN 承诺遵守环保规定。",
-          "title": "废水处理 130 立方米/昼夜"
+          "title": "废水处理 {{waste}} 立方米/昼夜"
         },
         "testing": {
           "tagLabel": "质量检测",
@@ -280,7 +280,7 @@
         },
         "thickness": {
           "title": "镀层测厚仪",
-          "desc": "使用 APC-100 测量镀层厚度。"
+          "desc": "使用 {{apc}} 测量镀层厚度。"
         },
         "saltSpray": {
           "title": "NSS 与 CASS 盐雾试验机",

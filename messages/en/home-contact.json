@@ -1,0 +1,34 @@
+{
+  "HomeContact": {
+    "Direct": {
+      "heading": "Direct Contact",
+      "addressLabel": "Factory address",
+      "address": "Lot {{lot}}, Quang Minh Industrial Park, Hanoi",
+      "taxLabel": "Tax code",
+      "hotlineLabel": "Hotline",
+      "consultLabel": "Advice via Zalo / WeChat / KakaoTalk",
+      "consultA": "Zalo / WeChat",
+      "consultB": "Zalo / WeChat / KakaoTalk",
+      "emailLabel": "Email",
+      "distanceHeading": "Distance from the factory",
+      "airport": "Noi Bai Airport",
+      "center": "Central Hanoi",
+      "haiphong": "Hai Phong"
+    },
+    "Social": {
+      "aria": "Quick contact channels",
+      "hotline": "Hotline",
+      "wechat": "WeChat",
+      "kakao": "KakaoTalk",
+      "close": "Close window",
+      "idLabel": "ID / phone number",
+      "copy": "Copy",
+      "copied": "Copied",
+      "qrAlt": "HANIN {name} QR code",
+      "qrHint": "Scan the QR code with the {name} app to add us as a friend.",
+      "noQrHint": "No QR code yet. Use the ID / phone number below to find and add us in the {name} app.",
+      "wechatHow": "In WeChat: Contacts > Add Contacts, enter {id}, then send a friend request.",
+      "kakaoHow": "In KakaoTalk: Add Friend, enter {id}, then send a friend request."
+    }
+  }
+}

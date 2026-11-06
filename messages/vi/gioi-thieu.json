@@ -10,11 +10,11 @@
     "CompanyIntroduction": {
       "imageAlt": "Mặt tiền kiến trúc hiện đại của nhà máy tại KCN Quang Minh, Hà Nội",
       "scaleBadge": "Nhà máy tại KCN Quang Minh",
-      "areaBadge": "Diện tích mặt bằng: 2.230 m²",
+      "areaBadge": "Diện tích mặt bằng: {{area}} m²",
       "heading": "Gia công mạ cho khách hàng công nghiệp",
       "paragraph1Strong": "Công ty Cổ phần Công nghiệp Mạ HANIN",
       "paragraph1Rest": "chuyên xử lý mạ trên nền nhựa ABS và kim loại, đồng thời nhận sơn và in trên sản phẩm nhựa, kim loại.",
-      "paragraph2": "Công ty thành lập năm 2023, nhà máy đặt tại Lô 49G, KCN Quang Minh, Hà Nội, trên mặt bằng 2.230 m². Nhà máy có 70 nhân sự. Hơn 100 khách hàng sử dụng dịch vụ gia công.",
+      "paragraph2": "Công ty thành lập năm {{founded}}, nhà máy đặt tại Lô {{lot}}, KCN Quang Minh, Hà Nội, trên mặt bằng {{area}} m². Nhà máy có {{staff}} nhân sự. Hơn {{customers}} khách hàng sử dụng dịch vụ gia công.",
       "field": {
         "label": "Lĩnh vực",
         "value": "Xử lý mạ nhựa và kim loại",
@@ -28,9 +28,9 @@
       "location": {
         "label": "Vị trí",
         "value": "KCN Quang Minh, Hà Nội",
-        "note": "Địa chỉ: Lô 49G, KCN Quang Minh"
+        "note": "Địa chỉ: Lô {{lot}}, KCN Quang Minh"
       },
-      "paragraph3": "HANIN thuộc hệ thống Hanin Tech, gồm xưởng khuôn IPM, nhà máy mạ HANIN, xưởng Press và xưởng Showa, với 350 người."
+      "paragraph3": "HANIN thuộc hệ thống Hanin Tech, gồm xưởng khuôn IPM, nhà máy mạ HANIN, xưởng Press và xưởng Showa, với {{hqStaff}} người."
     },
     "CompanyJourney": {
       "heading": "Hành trình phát triển",
@@ -48,7 +48,7 @@
       "m3": {
         "yearTag": "2023",
         "title": "Nhà máy mạ HANIN",
-        "desc": "Thành lập nhà máy mạ HANIN Plating tại Lô 49G, KCN Quang Minh."
+        "desc": "Thành lập nhà máy mạ HANIN Plating tại Lô {{lot}}, KCN Quang Minh."
       },
       "m4": {
         "yearTag": "2025",
@@ -71,7 +71,7 @@
       "heading": "Năng lực sản xuất và kiểm tra",
       "production": {
         "title": "Năng lực sản xuất",
-        "desc": "Mạ tự động 30–50 nghìn sản phẩm/ngày, mạ treo bán tự động 10–20 nghìn/ngày, mạ quay 3–5 tấn/ngày.",
+        "desc": "Mạ tự động {{auto:k}} nghìn sản phẩm/ngày, mạ treo bán tự động {{hang:k}} nghìn/ngày, mạ quay {{rot:ton}} tấn/ngày.",
         "metricLabel": "Dây chuyền",
         "metricValue": "3 dây chuyền mạ"
       },
@@ -166,15 +166,15 @@
       "wastewater": {
         "tag": "Môi trường",
         "title": "Xử lý nước thải",
-        "desc": "Hệ thống công suất 130 m³/ngày đêm, có bể lắng và máy ép bùn.",
-        "standard": "Công suất: 130 m³/ngày đêm",
+        "desc": "Hệ thống công suất {{waste}} m³/ngày đêm, có bể lắng và máy ép bùn.",
+        "standard": "Công suất: {{waste}} m³/ngày đêm",
         "status": "Tại nhà máy mạ"
       },
       "equipment": {
         "tag": "Kiểm tra",
         "title": "Thiết bị kiểm tra",
         "desc": "Máy đo độ dày lớp mạ, phun muối NSS và CASS, thử Hull cell.",
-        "standard": "Thiết bị: APC-100, NSS, CASS, Hull cell",
+        "standard": "Thiết bị: {{apc}}, NSS, CASS, Hull cell",
         "status": "Tại phòng phân tích"
       }
     },
@@ -203,7 +203,7 @@
       "staff": {
         "label": "Nhân sự nhà máy mạ",
         "desc": "Người",
-        "note": "Tại Lô 49G, KCN Quang Minh",
+        "note": "Tại Lô {{lot}}, KCN Quang Minh",
         "end": "70",
         "suffix": ""
       }
@@ -211,7 +211,7 @@
     "FeaturedClients": {
       "eyebrow": "KHÁCH HÀNG TIÊU BIỂU",
       "title": "Khách hàng trong ngành sản xuất",
-      "description": "Hơn 100 khách hàng gửi gia công tại HANIN, trong đó có LG Electronics, Panasonic Việt Nam, VinFast và Viglacera."
+      "description": "Hơn {{customers}} khách hàng gửi gia công tại HANIN, trong đó có LG Electronics, Panasonic Việt Nam, VinFast và Viglacera."
     }
   }
 }

@@ -3,7 +3,7 @@
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { api, ApiError } from "./api";
-import { useToast } from "./Toast";
+import { toast } from "@/components/ct999/thong-bao-toast/store";
 
 interface Deleted {
   id: number;
@@ -18,7 +18,6 @@ export default function TrashPanel({ resource }: { resource: string }) {
   const [items, setItems] = useState<Deleted[]>([]);
   const [version, setVersion] = useState(0);
   const [error, setError] = useState("");
-  const toast = useToast();
 
   useEffect(() => {
     let cancelled = false;

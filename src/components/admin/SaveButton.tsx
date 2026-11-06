@@ -1,7 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState, type ButtonHTMLAttributes, type ReactNode } from "react";
-import { Spinner } from "./Toast";
+import { Spinner } from "./Spinner";
 
 /** Giữ trạng thái "vừa lưu xong" trong một khoảng ngắn để nút hiện dấu ✓ rồi tự trở lại bình thường. */
 export function useSavedFlash(ms = 1800) {

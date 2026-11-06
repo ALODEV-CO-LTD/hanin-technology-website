@@ -33,7 +33,7 @@
       "titlePrefix": "ABS 塑料与金属基材",
       "titleHighlight": "电镀加工",
       "badge": "工厂位于河内光明工业区",
-      "description": "自动喷涂与 PVD 真空镀，工厂位于河内光明工业区 49G 地块。",
+      "description": "自动喷涂与 PVD 真空镀，工厂位于河内光明工业区 {{lot}} 地块。",
       "ctaPrimary": "了解生产能力",
       "ctaSecondary": "咨询报价",
       "locationLabel": "厂址:",
@@ -46,7 +46,7 @@
         "0": "ABS 塑料电镀与金属电镀",
         "1": "PVD 真空镀、喷漆与印刷",
         "2": "镀层测厚、NSS 和 CASS 盐雾试验",
-        "3": "废水处理系统 130 立方米/昼夜"
+        "3": "废水处理系统 {{waste}} 立方米/昼夜"
       },
       "imageAlt": "Hanin Tech 系统生产车间的工人",
       "badgeTag": "质量控制",
@@ -54,7 +54,7 @@
       "badgeSubtitle": "塑料与金属表面处理",
       "title": "关于 HANIN",
       "paragraph1": "HANIN 专业从事 ABS 塑料及金属基材的电镀处理，同时承接塑料、金属产品的喷漆与印刷。",
-      "paragraph2": "HANIN 成立于 2023 年，隶属于 2018 年成立的 Hanin Tech 体系。工厂位于河内光明工业区 49G 号地块，占地 2,230 平方米，员工 70 人，客户超过 100 家。",
+      "paragraph2": "HANIN 成立于 {{founded}} 年，隶属于 {{hqFounded}} 年成立的 Hanin Tech 体系。工厂位于河内光明工业区 {{lot}} 号地块，占地 {{area}} 平方米，员工 {{staff}} 人，客户超过 {{customers}} 家。",
       "ctaLink": "了解更多关于 HANIN"
     },
     "PlatingServices": {
@@ -108,7 +108,7 @@
         "3": {
           "tag": "废水处理",
           "title": "废水处理系统",
-          "desc": "处理能力 130 立方米/昼夜，配有沉淀池和压泥机。"
+          "desc": "处理能力 {{waste}} 立方米/昼夜，配有沉淀池和压泥机。"
         }
       }
     },
@@ -119,9 +119,9 @@
         "0": {
           "label": "工厂",
           "sector": "工厂",
-          "tagline": "位于光明工业区 49G 号地块的工厂",
+          "tagline": "位于光明工业区 {{lot}} 号地块的工厂",
           "order": "厂房",
-          "title": "占地 2,230 平方米的电镀工厂",
+          "title": "占地 {{area}} 平方米的电镀工厂",
           "desc": "工厂设有电镀线、PVD 区、喷漆区、分析室和废水处理系统。"
         },
         "1": {
@@ -191,9 +191,9 @@
           "status": "有效期至 2028 年 8 月 10 日"
         },
         "1": {
-          "label": "130 m³",
+          "label": "{{waste}} m³",
           "title": "废水处理",
-          "desc": "处理能力 130 立方米/昼夜，配有沉淀池和压泥机。",
+          "desc": "处理能力 {{waste}} 立方米/昼夜，配有沉淀池和压泥机。",
           "status": "废水处理"
         },
         "2": {
@@ -242,7 +242,7 @@
       "zaloCta": "通过 Zalo 留言",
       "emailLabel": "报价邮箱",
       "addressLabel": "工厂地址",
-      "addressValue": "越南河内市光明乡光明工业区 49G 号地块"
+      "addressValue": "越南河内市光明乡光明工业区 {{lot}} 号地块"
     }
   }
 }

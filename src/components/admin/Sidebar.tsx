@@ -3,21 +3,7 @@
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
-import {
-  Briefcase,
-  FlaskConical,
-  FolderOpen,
-  GalleryHorizontal,
-  Images,
-  Inbox,
-  LayoutDashboard,
-  Link2,
-  Newspaper,
-  Package,
-  PenLine,
-  Users,
-  type LucideIcon,
-} from "lucide-react";
+import { LucideIcon } from "@/components/ui/LucideIcon";
 import { api } from "./api";
 
 interface Props {
@@ -27,19 +13,19 @@ interface Props {
 }
 
 /** Icon Lucide cho từng mục (cùng bộ với website). */
-const ICONS: Record<string, LucideIcon> = {
-  dashboard: LayoutDashboard,
-  banners: GalleryHorizontal,
-  services: FlaskConical,
-  products: Package,
-  posts: Newspaper,
-  jobs: Briefcase,
-  inquiries: Inbox,
-  content: PenLine,
-  "site-images": Images,
-  media: FolderOpen,
-  settings: Link2,
-  users: Users,
+const ICONS: Record<string, string> = {
+  dashboard: "layout-dashboard",
+  banners: "gallery-horizontal",
+  services: "flask-conical",
+  products: "package",
+  posts: "newspaper",
+  jobs: "briefcase",
+  inquiries: "inbox",
+  content: "pen-line",
+  "site-images": "images",
+  media: "folder-open",
+  settings: "link-2",
+  users: "users",
 };
 
 const DESCRIPTIONS: Record<string, string> = {
@@ -125,9 +111,7 @@ export default function Sidebar({ user, newInquiries, resources }: Props) {
           aria-expanded={open}
           aria-controls="admin-drawer"
         >
-          <svg viewBox="0 0 24 24" className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" aria-hidden="true">
-            <path d="M4 7h16M4 12h16M4 17h16" />
-          </svg>
+          <LucideIcon name="menu" className="w-5 h-5" />
           Menu
         </button>
       </div>
@@ -152,9 +136,7 @@ export default function Sidebar({ user, newInquiries, resources }: Props) {
             className="lg:hidden h-9 w-9 shrink-0 inline-flex items-center justify-center rounded bg-white/10"
             aria-label="Đóng menu"
           >
-            <svg viewBox="0 0 24 24" className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" aria-hidden="true">
-              <path d="M6 6l12 12M18 6L6 18" />
-            </svg>
+            <LucideIcon name="x" className="w-5 h-5" />
           </button>
         </div>
 
@@ -166,7 +148,7 @@ export default function Sidebar({ user, newInquiries, resources }: Props) {
               )}
               {group.items.map((item) => {
                 const active = isActive(item.href);
-                const NavIcon = ICONS[item.id] ?? ICONS.content;
+                const navIcon = ICONS[item.id] ?? ICONS.content;
                 return (
                   <Link
                     key={item.id}
@@ -177,7 +159,7 @@ export default function Sidebar({ user, newInquiries, resources }: Props) {
                       active ? "bg-steel-600 text-white" : "text-slate-300 hover:bg-white/10 hover:text-white"
                     }`}
                   >
-                    <NavIcon className={`shrink-0 ${active ? "text-white" : "text-steel-300"}`} strokeWidth={1.75} width={20} height={20} aria-hidden="true" />
+                    <LucideIcon name={navIcon} className={`shrink-0 ${active ? "text-white" : "text-steel-300"}`} strokeWidth={1.75} width={20} height={20} />
                     <span className="min-w-0 flex-1">
                       <span className="block text-[15px] font-semibold leading-tight">{item.label}</span>
                       <span className={`block text-xs leading-snug mt-0.5 truncate ${active ? "text-steel-100" : "text-slate-500 group-hover:text-slate-400"}`}>

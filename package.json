@@ -19,10 +19,11 @@
     "audit:site": "node scripts/audit-site.cjs",
     "db:profile-media": "node --disable-warning=ExperimentalWarning --import tsx scripts/sync-profile-media.ts",
     "db:hanin-images": "node --disable-warning=ExperimentalWarning --import tsx scripts/apply-hanin-images.ts",
-    "db:profile-sync": "node --disable-warning=ExperimentalWarning --import tsx scripts/sync-profile-content.ts"
+    "db:profile-sync": "node --disable-warning=ExperimentalWarning --import tsx scripts/sync-profile-content.ts",
+    "db:chot-profile": "node --disable-warning=ExperimentalWarning --import tsx scripts/chot-cms-profile.ts",
+    "db:add-en": "node --disable-warning=ExperimentalWarning --import tsx scripts/add-english-db.ts"
   },
   "dependencies": {
-    "lucide-react": "^1.51.0",
     "next": "16.3.7",
     "next-intl": "^4.14.8",
     "react": "19.2.8",

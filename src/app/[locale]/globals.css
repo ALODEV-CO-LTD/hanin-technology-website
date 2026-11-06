@@ -491,3 +491,18 @@ a, button, [role="button"], [role="tab"], [role="combobox"] { touch-action: mani
 
 /* Tiêu đề cân dòng: tránh để một từ lẻ ở dòng cuối ("... thiết / bị"). */
 main :is(h1, h2, h3) { text-wrap: balance; }
+
+
+/* ---- Hiển thị ảnh sắc nét ---- */
+/* Ảnh chụp trong nội dung: ưu tiên giữ cạnh sắc khi trình duyệt co/giãn; backface-visibility tránh nhoè do lớp composite. */
+main img:not([src*=".svg"]) {
+  image-rendering: -webkit-optimize-contrast;
+  backface-visibility: hidden;
+}
+/* Họa tiết chấm lưới kỹ thuật rất mịn (16px, độ đậm 6%) phủ trên ảnh banner, tạo cảm giác kỹ thuật chính xác. Không đổi màu ảnh. */
+.hero-dots {
+  background-image: radial-gradient(circle, #fff 1px, transparent 1.2px);
+  background-size: 16px 16px;
+  opacity: 0.06;
+  pointer-events: none;
+}

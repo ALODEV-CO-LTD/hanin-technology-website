@@ -1,17 +1,24 @@
 /**
  * Đồng bộ dữ liệu CMS với Company Profile mới nhất của Bên A (11/2026).
- *   npm run db:profile-sync        (an toàn chạy lại; sao lưu trước bằng npm run db:backup)
+ *   npm run db:profile-sync                 (CHỈ XEM: liệt kê bản ghi sẽ bị ghi, không ghi gì)
+ *   npm run db:profile-sync -- --ghi-de     (ghi thật; tự sao lưu DB trước, tệp chỉ chủ sở hữu đọc được)
+ *   thêm --ep-buoc để ghi cả những bản ghi đã được sửa trong CMS sau lần đồng bộ trước (mặc định bị bỏ qua để không mất chỉnh sửa)
+ * Chống mất/lộ dữ liệu: mặc định không ghi; cài đặt liên hệ đang có giá trị khác thì không đè; không in email/số điện thoại ra màn hình.
  * - Thông tin liên hệ: hotline, email, Zalo.
  * - Dịch vụ: lấy chữ từ messages/<locale>/dich-vu.json (DichVu.services.*) ghi vào bảng services (3 ngôn ngữ). Không đổi ảnh/slug.
  * - Sản phẩm: lấy chữ từ messages/<locale>/san-pham.json (SanPham.products.*) ghi vào bảng products, kèm ảnh trong public/images/profile-lib (chạy db:profile-media trước). Không đổi slug.
- * - Khách hàng: thêm các khách hàng có trong profile (ẩn sẵn, chưa có logo). Vào CMS tải logo rồi bật hiển thị.
+ * - Khách hàng: KHÔNG xử lý ở đây (đã chuyển sang npm run db:client-logos, tránh tạo bản ghi trùng tên viết hoa/thường).
  * Ảnh do người dùng tự tải trong CMS không bị đụng tới.
  */
 import fs from "node:fs";
 import path from "node:path";
 import { all, get, run, transaction } from "../src/server/db";
 
-const LOCALES = ["vi", "zh", "ko"] as const;
+const WRITE = process.argv.includes("--ghi-de");
+const FORCE = process.argv.includes("--ep-buoc");
+const skipped: string[] = [];
+
+const LOCALES = ["vi", "en", "zh", "ko"] as const;
 type Msg = Record<string, unknown>;
 const messages: Record<string, { dichVu: Msg; sanPham: Msg }> = {};
 for (const l of LOCALES) {
@@ -58,15 +65,30 @@ const PRODUCTS: Record<string, { key: string; category: string; image: string }>
   "chi-tiet-kim-loai-ma-treo-day-chuyen-tu-dong": { key: "giaDung", category: "dau-cosse-thiet-bi-dien", image: "/images/profile-lib/num-van-ma-crom-satin.jpg" },
 };
 
-/* ---------- 4. Khách hàng trong profile (tên hiển thị) ---------- */
-const CLIENTS = [
-  "LG ELECTRONICS", "D&M GLOBAL", "WORLD CO.", "DONG KWANG VINA", "ANAM ELECTRONICS", "SEGI", "SKYLINK", "PANASONIC",
-  "TAKAGI", "TKR", "MIZUHO", "MITAC", "VINFAST", "WMA", "KYOEI", "INNOTEK", "FUZUKAKU", "AN PHÚ VIỆT", "UNIDEN",
-];
-
-let nSet = 0, nSvc = 0, nProd = 0, nCli = 0;
+let nSet = 0, nSvc = 0, nProd = 0;
+const lastSync = get<{ value: string }>("SELECT value FROM settings WHERE key = 'profileSyncAt'")?.value ?? "";
+/** Bản ghi đã sửa trong CMS sau lần đồng bộ trước thì giữ nguyên (trừ khi --ep-buoc). */
+const editedSince = (table: string, slug: string) => {
+  if (FORCE || !lastSync) return false;
+  const r = get<{ u: string }>(`SELECT updated_at AS u FROM ${table} WHERE slug = ?`, slug);
+  return !!r && r.u > lastSync.replace("T", " ").slice(0, 19);
+};
+if (WRITE) {
+  const dir = path.join(process.env.DATA_DIR || path.join(process.cwd(), "data"), "backups");
+  fs.mkdirSync(dir, { recursive: true, mode: 0o700 });
+  const file = path.join(dir, `hanin-${new Date().toISOString().replace(/[-:T]/g, "").slice(0, 12)}-truoc-profile-sync.db`);
+  run("VACUUM INTO ?", file);
+  fs.chmodSync(file, 0o600);
+  console.log(`Đã sao lưu DB: ${path.basename(file)}`);
+}
 transaction(() => {
   for (const [key, value] of Object.entries(SETTINGS)) {
+    const cur = get<{ value: string }>("SELECT value FROM settings WHERE key = ?", key)?.value;
+    if (cur && cur !== value && !FORCE) {
+      skipped.push(`cài đặt ${key}`);
+      continue;
+    }
+    if (!WRITE) { nSet++; continue; }
     run("INSERT INTO settings (key, value) VALUES (?, ?) ON CONFLICT(key) DO UPDATE SET value = excluded.value", key, value);
     nSet++;
   }
@@ -75,6 +97,8 @@ transaction(() => {
     const f = (field: string) => i18n((l) => dig(messages[l].dichVu, "services", key, field));
     const title = f("title");
     if (!dig(messages.vi.dichVu, "services", key, "title")) continue;
+    if (editedSince("services", slug)) { skipped.push(`dịch vụ ${slug}`); continue; }
+    if (!WRITE) { nSvc++; continue; }
     run(
       "UPDATE services SET title = ?, title_en = ?, description = ?, application_label = ?, application_text = ?, stat_label = ?, image_alt = ?, badge = ?, updated_at = datetime('now') WHERE slug = ?",
       title, titleEn, f("description"), f("applicationLabel"), f("applicationText"), f("statLabel"), f("imageAlt"),
@@ -85,19 +109,16 @@ transaction(() => {
   for (const [slug, { key, category, image }] of Object.entries(PRODUCTS)) {
     if (!get("SELECT id FROM products WHERE slug = ?", slug)) continue;
     if (!dig(messages.vi.sanPham, "products", key, "title")) continue;
+    if (editedSince("products", slug)) { skipped.push(`sản phẩm ${slug}`); continue; }
     const f = (field: string) => i18n((l) => dig(messages[l].sanPham, "products", key, field));
+    if (!WRITE) { nProd++; continue; }
     run(
       "UPDATE products SET title = ?, description = ?, image_badge = ?, image_alt = ?, image = ?, category_slug = ?, spec_chips = '[]', lot = '', updated_at = datetime('now') WHERE slug = ?",
       f("title"), f("description"), f("imageBadge"), f("imageAlt"), image, category, slug,
     );
     nProd++;
   }
-  const maxSort = (get<{ m: number }>("SELECT COALESCE(MAX(sort), 0) AS m FROM clients")?.m ?? 0) as number;
-  let sort = maxSort;
-  for (const name of CLIENTS) {
-    if (all("SELECT id FROM clients WHERE name = ?", name).length) continue;
-    run("INSERT INTO clients (name, legal_name, logo, sort, active) VALUES (?, '', '', ?, 0)", name, ++sort);
-    nCli++;
-  }
+  if (WRITE) run("INSERT INTO settings (key, value) VALUES ('profileSyncAt', ?) ON CONFLICT(key) DO UPDATE SET value = excluded.value", new Date().toISOString());
 });
-console.log(`Đã cập nhật: ${nSet} cài đặt, ${nSvc} dịch vụ, ${nProd} sản phẩm; thêm ${nCli} khách hàng (đang ẩn, chờ logo).`);
+if (skipped.length) console.log(`Bỏ qua (đã sửa trong CMS, hoặc khác giá trị hiện có): ${skipped.join(", ")}. Dùng --ep-buoc để ghi đè.`);
+console.log(`${WRITE ? "Đã cập nhật" : "[CHỈ XEM] Sẽ cập nhật"}: ${nSet} cài đặt, ${nSvc} dịch vụ, ${nProd} sản phẩm.`);

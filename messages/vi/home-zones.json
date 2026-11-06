@@ -4,37 +4,37 @@
     "zones": {
       "0": {
         "title": "Dây chuyền mạ tự động",
-        "capacity": "30.000–50.000 sản phẩm/ngày",
+        "capacity": "{{auto:full}} sản phẩm/ngày",
         "detail": "JIG móc hàng, cẩu trục.",
         "alt": "Dây chuyền mạ tự động với cẩu trục cam và JIG móc hàng"
       },
       "1": {
         "title": "Dây chuyền mạ quay",
-        "capacity": "3.000–5.000 kg/ngày",
-        "detail": "Tương đương 10.000–30.000 sản phẩm/ngày.",
+        "capacity": "{{rot:full}} kg/ngày",
+        "detail": "Tương đương {{rotPcs:full}} sản phẩm/ngày.",
         "alt": "Toàn cảnh dây chuyền mạ quay với các bể mạ và hệ thống hút khí"
       },
       "2": {
         "title": "Dây chuyền mạ kim loại bán tự động (mạ treo)",
-        "capacity": "10.000–20.000 pcs/ngày",
+        "capacity": "{{hang:full}} pcs/ngày",
         "detail": "Mạ treo trên giá treo chi tiết.",
         "alt": "Dãy bể mạ của dây chuyền mạ kim loại bán tự động"
       },
       "3": {
         "title": "Sơn tự động và mạ chân không PVD",
-        "capacity": "2 máy PVD, 2 dây chuyền PVD",
+        "capacity": "2 máy PVD",
         "detail": "1 dây chuyền phun sơn tự động, 20 buồng ionizer.",
         "alt": "Máy mạ chân không PVD buồng tròn trong nhà máy"
       },
       "4": {
         "title": "Phòng phân tích và đo kiểm",
-        "capacity": "APC-100, NSS, CASS, Hull cell",
-        "detail": "Máy đo độ dày APC-100, máy phun muối NSS, máy phun muối CASS, máy thử Hull cell, hóa chất phân tích. Bộ 10 thiết bị test độ tin cậy sau sơn: RCA Tester, Hot Water, High Temp & Humidity, UV Measure, Alcohol/Eraser Rubbing, Pencil Rubbing, Dropping Tester, Thickness Measure, Polisher, Bending Tester.",
+        "capacity": "{{apc}}, NSS, CASS, Hull cell",
+        "detail": "Máy đo độ dày {{apc}}, máy phun muối NSS, máy phun muối CASS, máy thử Hull cell, hóa chất phân tích. Bộ 10 thiết bị test độ tin cậy sau sơn: RCA Tester, Hot Water, High Temp & Humidity, UV Measure, Alcohol/Eraser Rubbing, Pencil Rubbing, Dropping Tester, Thickness Measure, Polisher, Bending Tester.",
         "alt": "Hóa chất phân tích và thiết bị chuẩn độ trên bàn thí nghiệm"
       },
       "5": {
         "title": "Hệ thống xử lý nước thải",
-        "capacity": "130 m³/ngày đêm",
+        "capacity": "{{waste}} m³/ngày đêm",
         "detail": "Bể lắng, máy ép bùn. Cam kết tuân thủ quy định.",
         "alt": "Cụm bể lắng màu xanh dương của hệ thống xử lý nước thải"
       }

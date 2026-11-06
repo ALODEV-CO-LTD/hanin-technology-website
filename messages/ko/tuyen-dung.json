@@ -108,7 +108,7 @@
       "secondaryImageAlt": "HANIN 공장에서 도금을 마친 기계 부품",
       "secondaryBadge": "품질 검사",
       "secondaryTitle": "도금을 마친 기계 부품",
-      "secondaryDesc": "APC-100으로 도금 두께 측정",
+      "secondaryDesc": "{{apc}}으로 도금 두께 측정",
       "labTitle": "시험실",
       "labDesc": "NSS 및 CASS 염수분무기, 헐셀 시험기와 화학 분석실.",
       "labImageAlt": "도금액 분석 실험실과 시험 장비",

@@ -8,11 +8,12 @@ import Dropdown from "./Dropdown";
 import HistoryPanel from "./HistoryPanel";
 import { MediaPickerModal } from "./MediaPicker";
 import SaveButton, { useSavedFlash } from "./SaveButton";
-import { useToast } from "./Toast";
+import { toast } from "@/components/ct999/thong-bao-toast/store";
 
-type Locale = "vi" | "zh" | "ko";
+type Locale = "vi" | "en" | "zh" | "ko";
 const LOCALES: { key: Locale; label: string }[] = [
   { key: "vi", label: "Tiếng Việt" },
+  { key: "en", label: "English" },
   { key: "zh", label: "中文" },
   { key: "ko", label: "한국어" },
 ];
@@ -40,7 +41,7 @@ function emptyValue(field: FieldDefLite): unknown {
   switch (field.type) {
     case "i18n-text":
     case "i18n-textarea":
-      return { vi: "", zh: "", ko: "" };
+      return { vi: "", en: "", zh: "", ko: "" };
     case "list":
       return [];
     case "boolean":
@@ -252,7 +253,6 @@ export default function ResourceForm({ resource, initial, id }: Props) {
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [message, setMessage] = useState<{ type: "ok" | "error"; text: string } | null>(null);
   const [saving, setSaving] = useState(false);
-  const toast = useToast();
   const { saved, flash } = useSavedFlash();
 
   const hasI18n = useMemo(() => resource.fields.some((f) => f.type.startsWith("i18n") || f.type === "list"), [resource.fields]);

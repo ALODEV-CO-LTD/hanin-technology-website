@@ -22,7 +22,7 @@ const list = (v: unknown): Row[] => {
   }
 };
 
-const INTL_LOCALE: Record<string, string> = { vi: "vi-VN", zh: "zh-CN", ko: "ko-KR" };
+const INTL_LOCALE: Record<string, string> = { vi: "vi-VN", en: "en-US", zh: "zh-CN", ko: "ko-KR" };
 
 export function formatDate(iso: string, locale: string, style: "short" | "long" = "short"): string {
   const date = new Date(`${iso}T00:00:00Z`);

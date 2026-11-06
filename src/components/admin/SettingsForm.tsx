@@ -4,7 +4,7 @@ import { useEffect, useState, type FormEvent } from "react";
 import { api, ApiError } from "./api";
 import PhoneListInput from "./PhoneListInput";
 import SaveButton, { useSavedFlash } from "./SaveButton";
-import { useToast } from "./Toast";
+import { toast } from "@/components/ct999/thong-bao-toast/store";
 
 interface Def {
   key: string;
@@ -19,7 +19,6 @@ export default function SettingsForm() {
   const [defs, setDefs] = useState<Def[]>([]);
   const [values, setValues] = useState<Record<string, string>>({});
   const [saving, setSaving] = useState(false);
-  const toast = useToast();
   const { saved, flash } = useSavedFlash();
 
   useEffect(() => {

@@ -1,0 +1,38 @@
+{
+  "HomeTrust": {
+    "iso": {
+      "title": "ISO 9001:2015 Certification",
+      "scopeNote": "The certificate belongs to Hanin Technology Vietnam Joint Stock Company (Hanin Tech), not solely to HANIN Plating Industrial Joint Stock Company.",
+      "rows": {
+        "holder": [
+          "Certified entity",
+          "Hanin Technology Vietnam Joint Stock Company"
+        ],
+        "body": [
+          "Certification body",
+          "International Certification Body Joint Stock Company (ICB)"
+        ],
+        "no": [
+          "Certificate number",
+          "250615.QMS.CN25"
+        ],
+        "issued": [
+          "Issue date",
+          "11/08/2025"
+        ],
+        "valid": [
+          "Valid until",
+          "10/08/2028"
+        ],
+        "scope": [
+          "Scope",
+          "Manufacturing, processing, casting, molding, printing, painting and surface treatment of plastic products"
+        ]
+      }
+    },
+    "clients": {
+      "title": "Featured Customers",
+      "logoAlt": "{name} logo"
+    }
+  }
+}

@@ -52,7 +52,7 @@ export default async function DichVuChiTietPage({
   // từ messages, chỉnh sửa qua màn hình "Nội dung trang" của CMS.
 
   return (
-    <ClientMessages keys={["DichVu"]}>
+    <ClientMessages keys={["AttachField", "DichVu"]}>
     <div className="flex flex-col w-full">
       <DetailHero
         service={service}

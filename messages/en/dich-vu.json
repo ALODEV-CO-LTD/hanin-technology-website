@@ -1,0 +1,1703 @@
+{
+  "DichVu": {
+    "services": {
+      "tienXuLy": {
+        "title": "Surface Pretreatment",
+        "description": "Goods receipt, ultrasonic degreasing, HCl tank and surface activation, with water rinsing between steps, so the plating adheres firmly.",
+        "applicationLabel": "Typical applications:",
+        "applicationText": "Plastic and metal parts before entering the plating line.",
+        "statLabel": "Ultrasonic degreasing · HCl tank · Activation",
+        "imageAlt": "Surface pretreatment area at the HANIN factory"
+      },
+      "hardChrome": {
+        "badge": "Plating on Plastic",
+        "title": "Nickel-Chrome Plating on ABS",
+        "description": "Nickel Chrome 3+, Nickel Chrome 6+, Satin Nickel and Black Nickel Chrome on ABS or ABS/PC, with hairline finish available.",
+        "applicationLabel": "Typical applications:",
+        "applicationText": "Automotive parts, shower and sanitary fittings, knobs for home appliances and kitchen equipment.",
+        "statLabel": "Nickel Chrome 3+ · 6+ · Satin · Black Chrome",
+        "imageAlt": "Nickel-chrome plated ABS parts"
+      },
+      "electrolessNickel": {
+        "title": "Nickel Plating on Metal",
+        "description": "Bright electrolytic nickel, electroless nickel for wear and heat resistance, plus black nickel, satin nickel and nickel chrome on iron, copper, steel and aluminum.",
+        "applicationLabel": "Typical applications:",
+        "applicationText": "Handles, hinges, gears, pins, locks and machine parts.",
+        "statLabel": "Rack plating {{hang:full}} pcs/day · Barrel plating {{rot:full}} kg/day",
+        "imageAlt": "Nickel-plated metal parts"
+      },
+      "kemNiken": {
+        "title": "Zinc, Copper, Tin Plating and Black Phosphating",
+        "description": "Zinc plating, copper plating, tin plating and black manganese phosphating for small metal parts, to resist rust, improve adhesion and keep color.",
+        "applicationLabel": "Typical applications:",
+        "applicationText": "Screws, bolts, cover caps, cable lugs, nuts, rivets.",
+        "statLabel": "Barrel plating {{rot:full}} kg/day",
+        "imageAlt": "Zinc-plated screws and bolts, black phosphated"
+      },
+      "sonMaKetHop": {
+        "title": "Spray Painting, Printing and Laser",
+        "description": "Spray painting, printing and laser cutting on plastic and metal products, with manual spray booths, 6-gun booths and an automatic spray line.",
+        "applicationLabel": "Typical applications:",
+        "applicationText": "Automotive lamp components, display frames, painted and printed control panels.",
+        "statLabel": "2 manual booths · 3 six-gun booths · 1 automatic line",
+        "imageAlt": "Spray painting area at the HANIN factory"
+      },
+      "xuLyNhom": {
+        "title": "PVD Vacuum Coating",
+        "description": "PVD vacuum coating with 2 machines, for surfaces with high aesthetic quality and good durability.",
+        "applicationLabel": "Typical applications:",
+        "applicationText": "Parts that need a high-quality aesthetic surface and good durability.",
+        "statLabel": "2 PVD machines",
+        "imageAlt": "PVD vacuum-coated parts"
+      }
+    },
+    "ServiceCategories": {
+      "heading": "Main Services",
+      "badge": "Plating and Surface Treatment Service Groups",
+      "codeLabel": "CODE",
+      "detailLink": "Details"
+    },
+    "RelatedServices": {
+      "heading": "Other HANIN Services",
+      "viewAll": "VIEW ALL SERVICES"
+    },
+    "CapacityOverview": {
+      "heading": "Plating Lines and Systems",
+      "subtitle": "The factory at Lot {{lot}}, Quang Minh Industrial Park has an automatic plating line, semi-automatic rack plating, barrel plating and an accompanying wastewater treatment system.",
+      "auto": {
+        "title": "Automatic Plating Line",
+        "desc": "Hanging jigs, overhead cranes and plating tank area; {{auto:k}} thousand products per day, chrome, nickel and satin plating."
+      },
+      "complex": {
+        "title": "Semi-Automatic Rack Plating and Barrel Plating",
+        "desc": "Rack plating {{hang:full}} products per day; barrel plating {{rot:full}} kg per day ({{rotPcs:full}} products)."
+      },
+      "wastewater": {
+        "title": "Wastewater Treatment",
+        "desc": "Wastewater treatment system with a capacity of {{waste}} m³/day and night, with a settling tank and filter press."
+      }
+    },
+    "CategoryHero": {
+      "title": "Plastic Plating, Metal Plating and Paint-Print Services",
+      "subtitle": "Nickel-chrome plating on ABS plastic; nickel, zinc, copper and tin plating on metal; PVD vacuum coating; spray painting and printing. Plating layer requirements follow the customer's drawing.",
+      "ctaPrimary": "REQUEST A QUOTE",
+      "ctaSecondary": "VIEW MANUFACTURING CAPABILITY",
+      "imageAlt": "Automatic plating line, with overhead cranes moving jigs through the plating tanks",
+      "lineTag": "Automatic Plating Line"
+    },
+    "DetailHero": {
+      "stat1": {
+        "label": "Electrolytic Nickel",
+        "value": "Bright, durable"
+      },
+      "stat2": {
+        "label": "Electroless Nickel",
+        "value": "Hard, wear-resistant"
+      },
+      "stat3": {
+        "label": "Semi-Automatic Rack Plating",
+        "value": "{{hang:full}} pcs/day"
+      },
+      "stat4": {
+        "label": "Barrel Plating",
+        "value": "{{rot:full}} kg/day"
+      },
+      "ctaPrimary": "REQUEST A QUOTE",
+      "ctaSecondary": "CONTACT FOR TECHNICAL ADVICE"
+    },
+    "DetailOverview": {
+      "heading": "Nickel Types and Applications",
+      "col1": {
+        "title": "Nickel Types",
+        "p1": "HANIN plates five nickel groups on metal substrates:",
+        "p1Strong": "electrolytic nickel, electroless nickel, black nickel, satin nickel and nickel chrome",
+        "p2": "Electrolytic nickel gives a bright, durable plating layer. Electroless nickel has high hardness, wear resistance and good heat resistance."
+      },
+      "col2": {
+        "title": "Featured Products",
+        "intro": "Some parts plated at the factory:",
+        "item1Strong": "Electrolytic nickel:",
+        "item1": "Metal handles, machine parts, special bolts, hinges, locating pins.",
+        "item2Strong": "Electroless nickel:",
+        "item2": "Gears, pins, machine plates, locks, shaft pins, assembly parts.",
+        "item3Strong": "Black nickel, satin nickel, nickel chrome:",
+        "item3": "Decorative rings, bathroom accessories, faucets, handles."
+      },
+      "col3": {
+        "title": "Substrate Materials",
+        "intro": "Metal substrates commonly plated:",
+        "substrates": {
+          "m1": "Iron",
+          "m2": "Steel",
+          "m3": "Copper",
+          "m4": "Aluminum",
+          "m5": "Zinc substrate"
+        }
+      }
+    },
+    "DetailProcess": {
+      "heading": "Example: nickel plating process on a zinc substrate",
+      "subtitle": "Simplified from the actual factory process",
+      "s1": {
+        "title": "Degreasing, wringing, drying",
+        "desc": "Degrease, wring dry, then dry so parts are clean before entering the acid tank."
+      },
+      "s2": {
+        "title": "H₂SO₄ tank and whitening",
+        "desc": "H₂SO₄ acid treatment and surface whitening."
+      },
+      "s3": {
+        "title": "Activation and copper tank",
+        "desc": "Surface activation, then a copper (Cu) layer as the base for the nickel layer."
+      },
+      "s4": {
+        "title": "Bright nickel plating",
+        "desc": "Bright nickel plating for a glossy surface."
+      },
+      "s5": {
+        "title": "Protection tank, drying",
+        "desc": "Pass through the protection tank, then dry."
+      },
+      "s6": {
+        "title": "Thickness measurement, testing and packing",
+        "desc": "Plating thickness measurement, salt spray testing and final inspection, then packing."
+      },
+      "stepLabel": "STEP"
+    },
+    "DetailCapability": {
+      "imageAlt": "Production area at the HANIN factory",
+      "lineCapacityLabel": "Semi-Automatic Rack Plating",
+      "lineCapacityValue": "{{hang:full}} pcs/day",
+      "tankSizeLabel": "Barrel Plating",
+      "tankSizeValue": "{{rot:full}} kg/day",
+      "heading": "Rack and Barrel Plating Lines",
+      "subtitle": "Two lines both run electrolytic nickel, electroless nickel, black nickel, black manganese phosphating and zinc plating.",
+      "f1": {
+        "title": "Semi-automatic rack plating:",
+        "desc": "{{hang:full}} products per day."
+      },
+      "f2": {
+        "title": "Barrel plating:",
+        "desc": "{{rot:full}} kg per day, equal to {{rotPcs:full}} products; with a vibratory machine, degreasing, a copper plating tank and a nickel plating tank."
+      },
+      "f3": {
+        "title": "Automatic plating line:",
+        "desc": "{{auto:k}} thousand products per day, chrome, nickel and satin plating."
+      }
+    },
+    "DetailApplications": {
+      "heading": "Nickel-plated parts at HANIN",
+      "subtitle": "Product Groups",
+      "a1": {
+        "tag": "Machine parts",
+        "title": "Gears, pins, shafts",
+        "desc": "Electroless nickel: even plating inside threads and deep holes, high hardness, wear resistance.",
+        "note": "Electroless Nickel"
+      },
+      "a2": {
+        "tag": "Door hardware, locks",
+        "title": "Handles, hinges, pins",
+        "desc": "Electrolytic nickel: a bright, durable plating layer.",
+        "note": "Electrolytic Nickel"
+      },
+      "a3": {
+        "tag": "Sanitary",
+        "title": "Faucets and accessories",
+        "desc": "Black nickel, satin nickel or nickel chrome per the surface requirement.",
+        "note": "Chrome plating"
+      },
+      "a4": {
+        "tag": "Decorative",
+        "title": "Satin stainless steel and decorative parts",
+        "desc": "Satin nickel or nickel chrome for a fine matte or glossy surface.",
+        "note": "Satin plating"
+      }
+    },
+    "DetailQaTable": {
+      "colItem": "Inspection Items",
+      "colDevice": "Equipment",
+      "colCriteria": "What Is Inspected",
+      "heading": "Nickel Plating Quality Control",
+      "subtitle": "Inspection equipment at the HANIN factory",
+      "r1": {
+        "item": "Solutions and Chemicals",
+        "device": "Analysis Lab and Analytical Chemicals",
+        "criteria": "Analyzing the composition of solutions and chemicals before they go into production."
+      },
+      "r2": {
+        "item": "Plating solution",
+        "device": "Hull Cell Tester",
+        "criteria": "Hull cell test to check the plating solution."
+      },
+      "r3": {
+        "item": "Plating Thickness",
+        "device": "{{apc}} Plating Thickness Gauge",
+        "criteria": "Measure plating thickness and compare it with the drawing requirement."
+      },
+      "r4": {
+        "item": "Corrosion Resistance (Neutral)",
+        "device": "NSS Neutral Salt Spray Chamber",
+        "criteria": "Neutral salt spray test per customer requirements."
+      },
+      "r5": {
+        "item": "Corrosion Resistance (Acid)",
+        "device": "CASS Acid Salt Spray Chamber",
+        "criteria": "CASS acid salt spray test when the customer requires it."
+      }
+    },
+    "DetailGallery": {
+      "heading": "Photos at the Factory",
+      "subtitle": "HANIN factory, Lot {{lot}}, Quang Minh Industrial Park",
+      "line": {
+        "alt": "Plating area at the HANIN factory",
+        "tag": "Plating area",
+        "title": "Plating area",
+        "desc": "Plating line at the HANIN factory, Quang Minh Industrial Park."
+      },
+      "surface": {
+        "alt": "Production area of the HANIN factory",
+        "tag": "Production",
+        "title": "Production area",
+        "desc": "The factory covers {{area}} m²."
+      },
+      "prep": {
+        "alt": "Warehouse and analysis area of the HANIN factory",
+        "tag": "Warehouse and analysis",
+        "title": "Warehouse and analysis lab",
+        "desc": "Receiving goods, storage and chemical analysis before they go onto the line."
+      }
+    },
+    "RfqFormDetail": {
+      "heading": "Send a nickel-plating-on-metal request",
+      "subtitle": "The HANIN technical team will reply with a quote and a sample plating plan.",
+      "hotlineLabel": "Technical hotline:",
+      "submitAlert": "Your nickel-plating-on-metal quote request has been sent to the HANIN technical team.",
+      "companyLabel": "Company name",
+      "companyPlaceholder": "e.g. ABC Co., Ltd",
+      "contactLabel": "Contact person",
+      "contactPlaceholder": "e.g. Nguyen Van A, purchasing manager",
+      "emailLabel": "Email to receive the quote",
+      "substrateLabel": "Substrate Materials",
+      "substrateOptions": {
+        "carbonSteel": "Iron, steel",
+        "alloySteel": "Alloy steel",
+        "stainless": "Stainless steel",
+        "aluminum": "Aluminum",
+        "copper": "Copper, brass",
+        "castIron": "Cast iron"
+      },
+      "phosLabel": "Plating type required",
+      "phosOptions": {
+        "high": "Nickel Chrome on ABS",
+        "medium": "Nickel on metal",
+        "low": "Zinc, copper, tin plating or black phosphating",
+        "consult": "Need HANIN to advise by product"
+      },
+      "thicknessLabel": "Required plating thickness",
+      "thicknessPlaceholder": "e.g. per drawing",
+      "volumeLabel": "Expected volume",
+      "volumePlaceholder": "e.g. 5,000 pcs/month (or a trial sample)",
+      "notesLabel": "Technical notes (areas to mask, color, test standard)",
+      "notesPlaceholder": "State the areas to mask, desired color or gloss, salt spray test requirements...",
+      "attachTitle": "Attach 2D / 3D drawing",
+      "attachDesc": "Formats: STEP, IGES, DWG, PDF (max 50MB)",
+      "chooseFile": "CHOOSE DRAWING FILE",
+      "ndaNote": "Drawings are used only for quoting and technical consultation.",
+      "submitButton": "SEND NICKEL-ON-METAL QUOTE REQUEST",
+      "submitError": "The request could not be sent. Please check the information and attachments and try again."
+    },
+    "ProcessFlow": {
+      "heading": "Plating Process Steps",
+      "subtitle": "Goods go from pretreatment through plating, rinsing and inspection before packing.",
+      "s1": {
+        "title": "Pretreatment",
+        "desc": "Ultrasonic degreasing, HCl tank, surface activation."
+      },
+      "s2": {
+        "title": "Plating",
+        "desc": "Rack or barrel plating: copper, nickel, chrome, zinc, tin tanks as required."
+      },
+      "s3": {
+        "title": "Rinsing and Protection",
+        "desc": "Water rinsing between steps, protection tank, drying."
+      },
+      "s4": {
+        "title": "Inspection",
+        "desc": "Plating thickness measurement, NSS and CASS salt spray tests, final inspection."
+      },
+      "s5": {
+        "title": "Packing",
+        "desc": "Packing finished goods and delivering them to the customer."
+      }
+    },
+    "QualityMetrology": {
+      "heading": "Quality Inspection Equipment",
+      "subtitle": "The analysis lab and the measuring and testing equipment of the HANIN factory.",
+      "tableTitle": "Equipment and What Is Inspected",
+      "colMethod": "Item",
+      "colDevice": "Equipment",
+      "colCriteria": "What Is Inspected",
+      "lab": {
+        "title": "Analysis lab",
+        "desc": "Analysis lab and analytical chemicals; Hull cell tester checks the plating solution."
+      },
+      "thickness": {
+        "title": "{{apc}} Thickness Gauge",
+        "desc": "Measure plating thickness to compare with the drawing requirement.",
+        "method": "Plating Thickness",
+        "device": "{{apc}} Plating Thickness Gauge",
+        "criteria": "Compare against the drawing requirement."
+      },
+      "saltSpray": {
+        "title": "NSS and CASS Salt Spray Chambers",
+        "desc": "Neutral salt spray (NSS) and acid salt spray (CASS) chambers test corrosion resistance.",
+        "method": "Corrosion resistance",
+        "device": "NSS and CASS Salt Spray Chambers",
+        "criteria": "Tested per customer requirements."
+      },
+      "bath": {
+        "method": "Plating solution",
+        "device": "Analysis lab, Hull cell tester",
+        "criteria": "Chemical analysis and plating solution checks."
+      },
+      "paint": {
+        "method": "Reliability After Spray Painting",
+        "device": "10 test devices: RCA Tester, Hot Water, UV Measure...",
+        "criteria": "Tests for abrasion, hot water, heat and humidity, UV, alcohol rubbing, drop, bending and paint film thickness."
+      }
+    },
+    "RfqFormCategory": {
+      "heading": "Plating Service Quote Request",
+      "subtitle": "Send product information and drawings. HANIN will reply with a quote.",
+      "submitAlert": "The quote request has been passed to the HANIN technical team.",
+      "companyLabel": "Company name *",
+      "companyPlaceholder": "e.g. ABC Co., Ltd...",
+      "contactLabel": "Contact person and position *",
+      "contactPlaceholder": "Full name, position (materials engineer, purchasing manager...)",
+      "phoneLabel": "Phone / Zalo *",
+      "emailLabel": "Email to receive the quote *",
+      "projectLabel": "Product or project name",
+      "projectPlaceholder": "e.g. oven knob, automotive lamp bezel",
+      "platingTypeLabel": "Type of service required *",
+      "platingTypeOptions": {
+        "default": "-- Select a service type --",
+        "hardChrome": "Nickel-Chrome Plating on ABS",
+        "enp": "Nickel Plating on Metal",
+        "zincNickel": "Zinc, Copper, Tin Plating and Black Phosphating",
+        "anodizing": "PVD Vacuum Coating",
+        "custom": "Spray Painting, Printing and Laser",
+        "other": "Other service / need advice"
+      },
+      "volumeLabel": "Expected volume per delivery *",
+      "volumePlaceholder": "e.g. 5,000 pcs/month or a trial order",
+      "requirementsLabel": "Technical requirements (plating type, color, substrate)",
+      "requirementsPlaceholder": "Enter your requirements, for example: ABS substrate, Nickel Chrome 3+, hairline finish...",
+      "attachTitle": "Attach technical drawing",
+      "attachDesc": "Formats: PDF, STEP, DWG, IGES (max 25MB)",
+      "chooseFile": "CHOOSE FILE",
+      "ndaNote": "Drawings are used only for quoting and technical consultation.",
+      "submitButton": "REQUEST A QUOTE",
+      "submitError": "The request could not be sent. Please check the information and attachments and try again."
+    },
+    "breadcrumbCategory": "Plating and Surface Treatment Services",
+    "breadcrumbDetailFallback": "Service Details",
+    "HeroSummary": {
+      "process": "Process"
+    },
+    "ServiceDetail": {
+      "tien-xu-ly-be-mat": {
+        "DetailHero": {
+          "stat1": {
+            "label": "Degreasing",
+            "value": "Ultrasonic"
+          },
+          "stat2": {
+            "label": "Rust and oxide removal",
+            "value": "HCl tank"
+          },
+          "stat3": {
+            "label": "Between steps",
+            "value": "Water rinse"
+          },
+          "stat4": {
+            "label": "Next step",
+            "value": "Plating as required"
+          },
+          "ctaPrimary": "REQUEST A QUOTE",
+          "ctaSecondary": "CONTACT FOR TECHNICAL ADVICE"
+        },
+        "DetailOverview": {
+          "heading": "Purpose and Scope",
+          "col1": {
+            "title": "Why Pretreatment Is Needed",
+            "p1": "Plating adheres well only when the surface is free of oil, oxide and rust. Pretreatment cleans the substrate in three ways:",
+            "p1Strong": "degreasing, removing rust and oxide, and activating the surface",
+            "p2": "Ultrasonic action lifts oil from narrow gaps and threaded holes; HCl acid dissolves rust and oxide film; activation lets the first plating layer bond to the substrate.",
+            "formula": "Fe₂O₃ + 6HCl → 2FeCl₃ + 3H₂O · FeO + 2HCl → FeCl₂ + H₂O"
+          },
+          "col2": {
+            "title": "Scope of Application",
+            "intro": "Applies to incoming goods before they enter the plating line:",
+            "item1Strong": "Metal parts:",
+            "item1": "Carry oil and dirt from machining and storage.",
+            "item2Strong": "Parts with rust or oxide:",
+            "item2": "Pickled in the HCl tank before activation.",
+            "item3Strong": "Goods in storage:",
+            "item3": "Received, stored, then sent to the line."
+          },
+          "col3": {
+            "title": "Substrate Materials",
+            "intro": "Common metal substrates:",
+            "substrates": {
+              "m1": "Iron",
+              "m2": "Steel",
+              "m3": "Copper",
+              "m4": "Aluminum",
+              "m5": "Zinc substrate"
+            }
+          }
+        },
+        "DetailProcess": {
+          "heading": "Pretreatment Process",
+          "subtitle": "With water rinsing between steps",
+          "s1": {
+            "title": "Goods Receipt and Storage",
+            "desc": "Goods are received, stored, then sent to the line per the production plan."
+          },
+          "s2": {
+            "title": "Ultrasonic Degreasing",
+            "desc": "Degreasing tank with ultrasonics lifts oil from narrow gaps and threaded holes, followed by a water rinse."
+          },
+          "s3": {
+            "title": "HCl tank",
+            "desc": "Rust and oxide film are removed with HCl acid, followed by a water rinse."
+          },
+          "s4": {
+            "title": "Surface Activation",
+            "desc": "The substrate is activated so the first plating layer adheres firmly, followed by a water rinse."
+          },
+          "s5": {
+            "title": "Transfer to Plating",
+            "desc": "Activated goods are moved to the plating tanks per the order requirements."
+          },
+          "stepLabel": "STEP"
+        },
+        "DetailCapability": {
+          "imageAlt": "Production area at the HANIN factory, serving surface pretreatment",
+          "lineCapacityLabel": "Main step",
+          "lineCapacityValue": "Ultrasonic Degreasing",
+          "tankSizeLabel": "Between steps",
+          "tankSizeValue": "Water rinse",
+          "heading": "Pretreatment Equipment",
+          "subtitle": "Pretreatment sits inside the plating line at the HANIN factory in Quang Minh Industrial Park, ahead of the plating tanks.",
+          "f1": {
+            "title": "Ultrasonic degreasing tank:",
+            "desc": "Lifts oil and dirt from narrow gaps and threaded holes."
+          },
+          "f2": {
+            "title": "HCl tank:",
+            "desc": "Removes rust and oxide film before activation."
+          },
+          "f3": {
+            "title": "Alternating water rinses:",
+            "desc": "Keep chemicals from one tank from carrying over into the next."
+          }
+        },
+        "DetailApplications": {
+          "heading": "Goods Pretreated at HANIN",
+          "subtitle": "Product Groups",
+          "a1": {
+            "tag": "Automotive",
+            "title": "Automotive parts",
+            "desc": "Start buttons, control switches, lamp bezels, lettering trim.",
+            "note": "Next step: nickel-chrome plating"
+          },
+          "a2": {
+            "tag": "Home Appliances",
+            "title": "Knobs and frames",
+            "desc": "Oven knobs, washing machine lid frames, water purifier knobs.",
+            "note": "Next step: plating as required"
+          },
+          "a3": {
+            "tag": "Sanitary, Kitchen",
+            "title": "Faucets and fittings",
+            "desc": "Shower heads, sink faucets, sanitary fittings, kitchen equipment.",
+            "note": "Next step: nickel-chrome plating"
+          },
+          "a4": {
+            "tag": "Metal parts",
+            "title": "Bolts, screws, hinges",
+            "desc": "Bolts, screws, nuts, hinges, locating pins.",
+            "note": "Next step: nickel, zinc, tin plating"
+          }
+        },
+        "DetailQaTable": {
+          "colItem": "Inspection Items",
+          "colDevice": "Equipment",
+          "colCriteria": "What Is Inspected",
+          "heading": "Quality Control After Pretreatment",
+          "subtitle": "HANIN factory inspection equipment used for surface pretreatment",
+          "r1": {
+            "item": "Pretreatment solutions",
+            "device": "Analysis Lab and Analytical Chemicals",
+            "criteria": "Analysis of the degreasing tank and acid tank composition."
+          },
+          "r2": {
+            "item": "Plating solution after pretreatment",
+            "device": "Hull Cell Tester",
+            "criteria": "Hull cell test to check the plating solution."
+          },
+          "r3": {
+            "item": "Plating Thickness",
+            "device": "{{apc}} Plating Thickness Gauge",
+            "criteria": "Measure plating thickness and compare it with the drawing requirement."
+          },
+          "r4": {
+            "item": "Corrosion Resistance (Neutral)",
+            "device": "NSS Neutral Salt Spray Chamber",
+            "criteria": "Neutral salt spray test per customer requirements."
+          },
+          "r5": {
+            "item": "Corrosion Resistance (Acid)",
+            "device": "CASS Acid Salt Spray Chamber",
+            "criteria": "CASS acid salt spray test when the customer requires it."
+          }
+        },
+        "DetailGallery": {
+          "heading": "Photos at the Factory",
+          "subtitle": "Surface pretreatment: area at the HANIN factory, Lot {{lot}}, Quang Minh Industrial Park",
+          "line": {
+            "alt": "Plating area at the HANIN factory, serving surface pretreatment",
+            "tag": "Plating area",
+            "title": "Plating area",
+            "desc": "Line serving surface pretreatment at the HANIN factory, Quang Minh Industrial Park."
+          },
+          "surface": {
+            "alt": "Production area of the HANIN factory, where surface pretreatment is carried out",
+            "tag": "Production",
+            "title": "Production area",
+            "desc": "The factory covers {{area}} m², where surface pretreatment is carried out."
+          },
+          "prep": {
+            "alt": "Warehouse and analysis area of the HANIN factory, preparing for surface pretreatment",
+            "tag": "Warehouse and analysis",
+            "title": "Warehouse and analysis lab",
+            "desc": "Receiving goods, storage and chemical analysis before they go onto the line (surface pretreatment)."
+          }
+        },
+        "RfqFormDetail": {
+          "heading": "Send a surface pretreatment request",
+          "subtitle": "The HANIN technical team will reply with a quote and a sample plating plan.",
+          "hotlineLabel": "Technical hotline:",
+          "submitAlert": "Your surface pretreatment quote request has been sent to the HANIN technical team.",
+          "companyLabel": "Company name",
+          "companyPlaceholder": "e.g. ABC Co., Ltd",
+          "contactLabel": "Contact person",
+          "contactPlaceholder": "e.g. Nguyen Van A, purchasing manager",
+          "emailLabel": "Email to receive the quote",
+          "substrateLabel": "Substrate Materials",
+          "substrateOptions": {
+            "carbonSteel": "Iron, steel",
+            "alloySteel": "Alloy steel",
+            "stainless": "Stainless steel",
+            "aluminum": "Aluminum",
+            "copper": "Copper, brass",
+            "castIron": "Cast iron"
+          },
+          "phosLabel": "Plating type required",
+          "phosOptions": {
+            "high": "Nickel Chrome on ABS",
+            "medium": "Nickel on metal",
+            "low": "Zinc, copper, tin plating or black phosphating",
+            "consult": "Need HANIN to advise by product"
+          },
+          "thicknessLabel": "Required plating thickness",
+          "thicknessPlaceholder": "e.g. per drawing",
+          "volumeLabel": "Expected volume",
+          "volumePlaceholder": "e.g. 5,000 pcs/month (or a trial sample)",
+          "notesLabel": "Technical notes (areas to mask, color, test standard)",
+          "notesPlaceholder": "State the areas to mask, desired color or gloss, salt spray test requirements...",
+          "attachTitle": "Attach 2D / 3D drawing",
+          "attachDesc": "Formats: STEP, IGES, DWG, PDF (max 50MB)",
+          "chooseFile": "CHOOSE DRAWING FILE",
+          "ndaNote": "Drawings are used only for quoting and technical consultation.",
+          "submitButton": "SEND SURFACE PRETREATMENT QUOTE REQUEST",
+          "submitError": "The request could not be sent. Please check the information and attachments and try again."
+        }
+      },
+      "ma-crom-cung-cong-nghiep": {
+        "DetailHero": {
+          "stat1": {
+            "label": "Plating substrate",
+            "value": "ABS, ABS/PC"
+          },
+          "stat2": {
+            "label": "Finish",
+            "value": "4 nickel-chrome types"
+          },
+          "stat3": {
+            "label": "Brushing",
+            "value": "Hairline"
+          },
+          "stat4": {
+            "label": "Method",
+            "value": "Rack plating"
+          },
+          "ctaPrimary": "REQUEST A QUOTE",
+          "ctaSecondary": "CONTACT FOR TECHNICAL ADVICE"
+        },
+        "DetailOverview": {
+          "heading": "Plating Types and Applications",
+          "col1": {
+            "title": "Plating on Plastic Substrates",
+            "p1": "Plastic does not conduct electricity, so the surface must be treated before metal plating. ABS goods pass through etching, neutralization and palladium activation, then",
+            "p1Strong": "nickel and chrome plating",
+            "p2": "A hairline finish can be applied on the nickel-chrome layer when the product requires it."
+          },
+          "col2": {
+            "title": "Plating Types",
+            "intro": "Four plating types on ABS plastic:",
+            "item1Strong": "Nickel Chrome 3+ and Nickel Chrome 6+:",
+            "item1": "Two chrome plating technologies, with a bright glossy surface.",
+            "item2Strong": "Satin Nickel:",
+            "item2": "Satin surface.",
+            "item3Strong": "Black Nickel Chrome:",
+            "item3": "Black surface; hairline finish on nickel chrome when needed."
+          },
+          "col3": {
+            "title": "Substrate Materials",
+            "intro": "The factory plates on these plastic substrates:",
+            "substrates": {
+              "m1": "ABS plastic",
+              "m2": "ABS/PC plastic"
+            }
+          }
+        },
+        "DetailProcess": {
+          "heading": "ABS Plastic Rack Plating Process",
+          "subtitle": "Simplified from the actual factory process",
+          "s1": {
+            "title": "Hanging rack",
+            "desc": "Plastic parts are mounted on a hanging jig (JIG) to pass through the tanks."
+          },
+          "s2": {
+            "title": "Degreasing and soak tanks",
+            "desc": "Degreasing and tank soaking to clean the plastic surface."
+          },
+          "s3": {
+            "title": "Etching",
+            "desc": "The ABS surface is etched so the metal layer can later bond to the plastic substrate."
+          },
+          "s4": {
+            "title": "Neutralization",
+            "desc": "Remaining chemicals are neutralized; a recovery step and vibration rinse clean the parts."
+          },
+          "s5": {
+            "title": "HCl and palladium activation",
+            "desc": "Activation with HCl then palladium so the plastic accepts the first metal layer."
+          },
+          "s6": {
+            "title": "Nickel, chrome plating and inspection",
+            "desc": "Nickel and chrome layers are plated as required, then the finished goods are inspected."
+          },
+          "stepLabel": "STEP"
+        },
+        "DetailCapability": {
+          "imageAlt": "Production area at the HANIN factory, serving nickel-chrome plating on ABS",
+          "lineCapacityLabel": "Automatic Plating Line",
+          "lineCapacityValue": "{{auto:k}} thousand products/day",
+          "tankSizeLabel": "Plating type",
+          "tankSizeValue": "Chrome, nickel, satin",
+          "heading": "Automatic Plating Line",
+          "subtitle": "Goods hang on jigs, and overhead cranes move them through the tanks in the HANIN plating tank area.",
+          "f1": {
+            "title": "Hanging jigs:",
+            "desc": "Parts hang on jigs to pass through each tank."
+          },
+          "f2": {
+            "title": "Overhead cranes:",
+            "desc": "Move jigs between tanks in the process sequence."
+          },
+          "f3": {
+            "title": "Plating tank area:",
+            "desc": "Chrome, nickel and satin plating; capacity {{auto:k}} thousand products per day."
+          }
+        },
+        "DetailApplications": {
+          "heading": "ABS plastic plated products at HANIN",
+          "subtitle": "Product Groups",
+          "a1": {
+            "tag": "Automotive",
+            "title": "Automotive parts",
+            "desc": "Start buttons, control switches, lamp bezels, lettering trim, raised letters and vehicle logos.",
+            "note": "Nickel Chrome 3+ or 6+"
+          },
+          "a2": {
+            "tag": "Home Appliances",
+            "title": "Knobs and frames",
+            "desc": "Oven knobs, washing machine lid frames, water purifier knobs.",
+            "note": "Satin Nickel or Nickel Chrome"
+          },
+          "a3": {
+            "tag": "Sanitary, Kitchen",
+            "title": "Shower heads and fittings",
+            "desc": "Shower heads, shower handles, sanitary fittings, frames and knobs for kitchen equipment.",
+            "note": "Nickel Chrome, hairline when needed"
+          },
+          "a4": {
+            "tag": "Electronics, Smart Home",
+            "title": "Smart devices",
+            "desc": "Control knobs and parts for Smart Home devices.",
+            "note": "Black Nickel Chrome or Satin Nickel"
+          }
+        },
+        "DetailQaTable": {
+          "colItem": "Inspection Items",
+          "colDevice": "Equipment",
+          "colCriteria": "What Is Inspected",
+          "heading": "Plating Quality Control on ABS Plastic",
+          "subtitle": "HANIN factory inspection equipment used for nickel-chrome plating on ABS",
+          "r1": {
+            "item": "Solutions and Chemicals",
+            "device": "Analysis Lab and Analytical Chemicals",
+            "criteria": "Analyzing the composition of solutions and chemicals before they go into production."
+          },
+          "r2": {
+            "item": "Plating solution",
+            "device": "Hull Cell Tester",
+            "criteria": "Hull cell test to check the plating solution."
+          },
+          "r3": {
+            "item": "Plating Thickness",
+            "device": "{{apc}} Plating Thickness Gauge",
+            "criteria": "Measure plating thickness and compare it with the drawing requirement."
+          },
+          "r4": {
+            "item": "Corrosion Resistance (Neutral)",
+            "device": "NSS Neutral Salt Spray Chamber",
+            "criteria": "Neutral salt spray test per customer requirements."
+          },
+          "r5": {
+            "item": "Corrosion Resistance (Acid)",
+            "device": "CASS Acid Salt Spray Chamber",
+            "criteria": "CASS acid salt spray test when the customer requires it."
+          }
+        },
+        "DetailGallery": {
+          "heading": "Photos at the Factory",
+          "subtitle": "Nickel-chrome plating on ABS: area at the HANIN factory, Lot {{lot}}, Quang Minh Industrial Park",
+          "line": {
+            "alt": "Plating area at the HANIN factory, serving nickel-chrome plating on ABS",
+            "tag": "Plating area",
+            "title": "Plating area",
+            "desc": "Line serving nickel-chrome plating on ABS at the HANIN factory, Quang Minh Industrial Park."
+          },
+          "surface": {
+            "alt": "Production area of the HANIN factory, where nickel-chrome plating on ABS is carried out",
+            "tag": "Production",
+            "title": "Production area",
+            "desc": "The factory covers {{area}} m², where nickel-chrome plating on ABS is carried out."
+          },
+          "prep": {
+            "alt": "Warehouse and analysis area of the HANIN factory, preparing for nickel-chrome plating on ABS",
+            "tag": "Warehouse and analysis",
+            "title": "Warehouse and analysis lab",
+            "desc": "Receiving goods, storage and chemical analysis before they go onto the line (nickel-chrome plating on ABS)."
+          }
+        },
+        "RfqFormDetail": {
+          "heading": "Send a nickel-chrome-on-ABS request",
+          "subtitle": "The HANIN technical team will reply with a quote and a sample plating plan.",
+          "hotlineLabel": "Technical hotline:",
+          "submitAlert": "Your nickel-chrome-on-ABS quote request has been sent to the HANIN technical team.",
+          "companyLabel": "Company name",
+          "companyPlaceholder": "e.g. ABC Co., Ltd",
+          "contactLabel": "Contact person",
+          "contactPlaceholder": "e.g. Nguyen Van A, purchasing manager",
+          "emailLabel": "Email to receive the quote",
+          "substrateLabel": "Substrate Materials",
+          "substrateOptions": {
+            "carbonSteel": "Iron, steel",
+            "alloySteel": "Alloy steel",
+            "stainless": "Stainless steel",
+            "aluminum": "Aluminum",
+            "copper": "Copper, brass",
+            "castIron": "Cast iron"
+          },
+          "phosLabel": "Plating type required",
+          "phosOptions": {
+            "high": "Nickel Chrome on ABS",
+            "medium": "Nickel on metal",
+            "low": "Zinc, copper, tin plating or black phosphating",
+            "consult": "Need HANIN to advise by product"
+          },
+          "thicknessLabel": "Required plating thickness",
+          "thicknessPlaceholder": "e.g. per drawing",
+          "volumeLabel": "Expected volume",
+          "volumePlaceholder": "e.g. 5,000 pcs/month (or a trial sample)",
+          "notesLabel": "Technical notes (areas to mask, color, test standard)",
+          "notesPlaceholder": "State the areas to mask, desired color or gloss, salt spray test requirements...",
+          "attachTitle": "Attach 2D / 3D drawing",
+          "attachDesc": "Formats: STEP, IGES, DWG, PDF (max 50MB)",
+          "chooseFile": "CHOOSE DRAWING FILE",
+          "ndaNote": "Drawings are used only for quoting and technical consultation.",
+          "submitButton": "SEND NICKEL-CHROME-ON-ABS QUOTE REQUEST",
+          "submitError": "The request could not be sent. Please check the information and attachments and try again."
+        }
+      },
+      "ma-niken-hoa-hoc-enp": {
+        "DetailHero": {
+          "stat1": {
+            "label": "Electrolytic Nickel",
+            "value": "Bright, durable"
+          },
+          "stat2": {
+            "label": "Electroless Nickel",
+            "value": "Hard, wear-resistant"
+          },
+          "stat3": {
+            "label": "Semi-Automatic Rack Plating",
+            "value": "{{hang:full}} pcs/day"
+          },
+          "stat4": {
+            "label": "Barrel Plating",
+            "value": "{{rot:full}} kg/day"
+          },
+          "ctaPrimary": "REQUEST A QUOTE",
+          "ctaSecondary": "CONTACT FOR TECHNICAL ADVICE"
+        },
+        "DetailOverview": {
+          "heading": "Nickel Types and Applications",
+          "col1": {
+            "title": "Nickel Types",
+            "p1": "HANIN plates five nickel groups on metal substrates:",
+            "p1Strong": "electrolytic nickel, electroless nickel, black nickel, satin nickel and nickel chrome",
+            "p2": "Electrolytic nickel gives a bright, durable plating layer. Electroless nickel has high hardness, wear resistance and good heat resistance."
+          },
+          "col2": {
+            "title": "Featured Products",
+            "intro": "Some parts plated at the factory:",
+            "item1Strong": "Electrolytic nickel:",
+            "item1": "Metal handles, machine parts, special bolts, hinges, locating pins.",
+            "item2Strong": "Electroless nickel:",
+            "item2": "Gears, pins, machine plates, locks, shaft pins, assembly parts.",
+            "item3Strong": "Black nickel, satin nickel, nickel chrome:",
+            "item3": "Decorative rings, bathroom accessories, faucets, handles."
+          },
+          "col3": {
+            "title": "Substrate Materials",
+            "intro": "Metal substrates commonly plated:",
+            "substrates": {
+              "m1": "Iron",
+              "m2": "Steel",
+              "m3": "Copper",
+              "m4": "Aluminum",
+              "m5": "Zinc substrate"
+            }
+          }
+        },
+        "DetailProcess": {
+          "heading": "Example: nickel plating process on a zinc substrate",
+          "subtitle": "Simplified from the actual factory process",
+          "s1": {
+            "title": "Degreasing, wringing, drying",
+            "desc": "Degrease, wring dry, then dry so parts are clean before entering the acid tank."
+          },
+          "s2": {
+            "title": "H₂SO₄ tank and whitening",
+            "desc": "H₂SO₄ acid treatment and surface whitening."
+          },
+          "s3": {
+            "title": "Activation and copper tank",
+            "desc": "Surface activation, then a copper (Cu) layer as the base for the nickel layer."
+          },
+          "s4": {
+            "title": "Bright nickel plating",
+            "desc": "Bright nickel plating for a glossy surface."
+          },
+          "s5": {
+            "title": "Protection tank, drying",
+            "desc": "Pass through the protection tank, then dry."
+          },
+          "s6": {
+            "title": "Thickness measurement, testing and packing",
+            "desc": "Plating thickness measurement, salt spray testing and final inspection, then packing."
+          },
+          "stepLabel": "STEP"
+        },
+        "DetailCapability": {
+          "imageAlt": "Production area at the HANIN factory, serving nickel plating on metal",
+          "lineCapacityLabel": "Semi-Automatic Rack Plating",
+          "lineCapacityValue": "{{hang:full}} pcs/day",
+          "tankSizeLabel": "Barrel Plating",
+          "tankSizeValue": "{{rot:full}} kg/day",
+          "heading": "Rack and Barrel Plating Lines",
+          "subtitle": "Two lines both run electrolytic nickel, electroless nickel, black nickel, black manganese phosphating and zinc plating.",
+          "f1": {
+            "title": "Semi-automatic rack plating:",
+            "desc": "{{hang:full}} products per day."
+          },
+          "f2": {
+            "title": "Barrel plating:",
+            "desc": "{{rot:full}} kg per day, equal to {{rotPcs:full}} products; with a vibratory machine, degreasing, a copper plating tank and a nickel plating tank."
+          },
+          "f3": {
+            "title": "Automatic plating line:",
+            "desc": "{{auto:k}} thousand products per day, chrome, nickel and satin plating."
+          }
+        },
+        "DetailApplications": {
+          "heading": "Nickel-plated parts at HANIN",
+          "subtitle": "Product Groups",
+          "a1": {
+            "tag": "Machine parts",
+            "title": "Gears, pins, shafts",
+            "desc": "Electroless nickel: even plating inside threads and deep holes, high hardness, wear resistance.",
+            "note": "Electroless Nickel"
+          },
+          "a2": {
+            "tag": "Door hardware, locks",
+            "title": "Handles, hinges, pins",
+            "desc": "Electrolytic nickel: a bright, durable plating layer.",
+            "note": "Electrolytic Nickel"
+          },
+          "a3": {
+            "tag": "Sanitary",
+            "title": "Faucets and accessories",
+            "desc": "Black nickel, satin nickel or nickel chrome per the surface requirement.",
+            "note": "Chrome plating"
+          },
+          "a4": {
+            "tag": "Decorative",
+            "title": "Satin stainless steel and decorative parts",
+            "desc": "Satin nickel or nickel chrome for a fine matte or glossy surface.",
+            "note": "Satin plating"
+          }
+        },
+        "DetailQaTable": {
+          "colItem": "Inspection Items",
+          "colDevice": "Equipment",
+          "colCriteria": "What Is Inspected",
+          "heading": "Nickel Plating Quality Control",
+          "subtitle": "HANIN factory inspection equipment used for nickel plating on metal",
+          "r1": {
+            "item": "Solutions and Chemicals",
+            "device": "Analysis Lab and Analytical Chemicals",
+            "criteria": "Analyzing the composition of solutions and chemicals before they go into production."
+          },
+          "r2": {
+            "item": "Plating solution",
+            "device": "Hull Cell Tester",
+            "criteria": "Hull cell test to check the plating solution."
+          },
+          "r3": {
+            "item": "Plating Thickness",
+            "device": "{{apc}} Plating Thickness Gauge",
+            "criteria": "Measure plating thickness and compare it with the drawing requirement."
+          },
+          "r4": {
+            "item": "Corrosion Resistance (Neutral)",
+            "device": "NSS Neutral Salt Spray Chamber",
+            "criteria": "Neutral salt spray test per customer requirements."
+          },
+          "r5": {
+            "item": "Corrosion Resistance (Acid)",
+            "device": "CASS Acid Salt Spray Chamber",
+            "criteria": "CASS acid salt spray test when the customer requires it."
+          }
+        },
+        "DetailGallery": {
+          "heading": "Photos at the Factory",
+          "subtitle": "Nickel plating on metal: area at the HANIN factory, Lot {{lot}}, Quang Minh Industrial Park",
+          "line": {
+            "alt": "Plating area at the HANIN factory, serving nickel plating on metal",
+            "tag": "Plating area",
+            "title": "Plating area",
+            "desc": "Line serving nickel plating on metal at the HANIN factory, Quang Minh Industrial Park."
+          },
+          "surface": {
+            "alt": "Production area of the HANIN factory, where nickel plating on metal is carried out",
+            "tag": "Production",
+            "title": "Production area",
+            "desc": "The factory covers {{area}} m², where nickel plating on metal is carried out."
+          },
+          "prep": {
+            "alt": "Warehouse and analysis area of the HANIN factory, preparing for nickel plating on metal",
+            "tag": "Warehouse and analysis",
+            "title": "Warehouse and analysis lab",
+            "desc": "Receiving goods, storage and chemical analysis before they go onto the line (nickel plating on metal)."
+          }
+        },
+        "RfqFormDetail": {
+          "heading": "Send a nickel-plating-on-metal request",
+          "subtitle": "The HANIN technical team will reply with a quote and a sample plating plan.",
+          "hotlineLabel": "Technical hotline:",
+          "submitAlert": "Your nickel-plating-on-metal quote request has been sent to the HANIN technical team.",
+          "companyLabel": "Company name",
+          "companyPlaceholder": "e.g. ABC Co., Ltd",
+          "contactLabel": "Contact person",
+          "contactPlaceholder": "e.g. Nguyen Van A, purchasing manager",
+          "emailLabel": "Email to receive the quote",
+          "substrateLabel": "Substrate Materials",
+          "substrateOptions": {
+            "carbonSteel": "Iron, steel",
+            "alloySteel": "Alloy steel",
+            "stainless": "Stainless steel",
+            "aluminum": "Aluminum",
+            "copper": "Copper, brass",
+            "castIron": "Cast iron"
+          },
+          "phosLabel": "Plating type required",
+          "phosOptions": {
+            "high": "Nickel Chrome on ABS",
+            "medium": "Nickel on metal",
+            "low": "Zinc, copper, tin plating or black phosphating",
+            "consult": "Need HANIN to advise by product"
+          },
+          "thicknessLabel": "Required plating thickness",
+          "thicknessPlaceholder": "e.g. per drawing",
+          "volumeLabel": "Expected volume",
+          "volumePlaceholder": "e.g. 5,000 pcs/month (or a trial sample)",
+          "notesLabel": "Technical notes (areas to mask, color, test standard)",
+          "notesPlaceholder": "State the areas to mask, desired color or gloss, salt spray test requirements...",
+          "attachTitle": "Attach 2D / 3D drawing",
+          "attachDesc": "Formats: STEP, IGES, DWG, PDF (max 50MB)",
+          "chooseFile": "CHOOSE DRAWING FILE",
+          "ndaNote": "Drawings are used only for quoting and technical consultation.",
+          "submitButton": "SEND NICKEL-ON-METAL QUOTE REQUEST",
+          "submitError": "The request could not be sent. Please check the information and attachments and try again."
+        }
+      },
+      "ma-kem-hop-kim-kem-niken": {
+        "DetailHero": {
+          "stat1": {
+            "label": "Black manganese phosphating",
+            "value": "Rust resistant, color-fast"
+          },
+          "stat2": {
+            "label": "Tin plating",
+            "value": "Bolts, nuts, cable lugs"
+          },
+          "stat3": {
+            "label": "Zinc plating",
+            "value": "Screws, bushings, pins"
+          },
+          "stat4": {
+            "label": "Barrel Plating",
+            "value": "{{rot:full}} kg/day"
+          },
+          "ctaPrimary": "REQUEST A QUOTE",
+          "ctaSecondary": "CONTACT FOR TECHNICAL ADVICE"
+        },
+        "DetailOverview": {
+          "heading": "Plating Layers and Applications",
+          "col1": {
+            "title": "Plating and Treatment Layers",
+            "p1": "HANIN performs zinc plating, copper plating, tin plating and black manganese phosphating for small metal parts. The black manganese phosphate layer",
+            "p1Strong": "resists rust, improves adhesion and keeps color",
+            "p2": "Zinc plating and black manganese phosphating run on both the semi-automatic rack plating line and barrel plating."
+          },
+          "col2": {
+            "title": "Featured Products",
+            "intro": "Some parts treated at the factory:",
+            "item1Strong": "Black phosphating:",
+            "item1": "Screws, bolts, cover caps, base plates.",
+            "item2Strong": "Tin plating:",
+            "item2": "Bolts, metal bars, nuts, rivets, cable lugs.",
+            "item3Strong": "Zinc plating:",
+            "item3": "Metal plates, bushings, shaft pins, screws, locating shafts."
+          },
+          "col3": {
+            "title": "Substrate Materials",
+            "intro": "Metal substrates commonly treated:",
+            "substrates": {
+              "m1": "Iron",
+              "m2": "Steel",
+              "m3": "Copper",
+              "m4": "Aluminum"
+            }
+          }
+        },
+        "DetailProcess": {
+          "heading": "Main steps",
+          "subtitle": "Simplified from the actual factory process",
+          "s1": {
+            "title": "Degreasing",
+            "desc": "Barrel-plated goods pass through the vibratory machine and degreasing; rack-plated goods are degreased then wrung dry."
+          },
+          "s2": {
+            "title": "Acid pickling and activation",
+            "desc": "Acid treatment and surface activation, with water rinsing between steps."
+          },
+          "s3": {
+            "title": "Zinc, copper or tin plating",
+            "desc": "A zinc, copper or tin layer is plated as the part requires."
+          },
+          "s4": {
+            "title": "Black manganese phosphating",
+            "desc": "Black manganese phosphating is applied to parts that need rust resistance and color retention."
+          },
+          "s5": {
+            "title": "Protection tank, drying",
+            "desc": "Pass through the protection tank, then dry."
+          },
+          "s6": {
+            "title": "Thickness measurement, testing and packing",
+            "desc": "Plating thickness measurement and final inspection, then packing."
+          },
+          "stepLabel": "STEP"
+        },
+        "DetailCapability": {
+          "imageAlt": "Production area at the HANIN factory, serving zinc, copper, tin plating and black phosphating",
+          "lineCapacityLabel": "Barrel Plating",
+          "lineCapacityValue": "{{rot:full}} kg/day",
+          "tankSizeLabel": "Semi-Automatic Rack Plating",
+          "tankSizeValue": "{{hang:full}} pcs/day",
+          "heading": "Barrel and Rack Plating Lines",
+          "subtitle": "Small parts run on the barrel plating line; rack-plated parts run on the semi-automatic line.",
+          "f1": {
+            "title": "Vibratory machine and degreasing:",
+            "desc": "Cleans barrel-plated goods before they enter the tanks."
+          },
+          "f2": {
+            "title": "Copper plating tank and nickel plating tank:",
+            "desc": "Available on the barrel plating line."
+          },
+          "f3": {
+            "title": "Barrel plating capacity:",
+            "desc": "{{rot:full}} kg per day, equal to {{rotPcs:full}} products."
+          }
+        },
+        "DetailApplications": {
+          "heading": "Parts processed at HANIN",
+          "subtitle": "Product Groups",
+          "a1": {
+            "tag": "Black phosphating",
+            "title": "Screws, bolts, cover caps",
+            "desc": "Screws, bolts, cover caps, base plates.",
+            "note": "Rust resistant, color-fast"
+          },
+          "a2": {
+            "tag": "Tin plating",
+            "title": "Nuts, rivets",
+            "desc": "Bolts, metal bars, nuts, rivets.",
+            "note": "Tin plating"
+          },
+          "a3": {
+            "tag": "Zinc plating",
+            "title": "Bushings, shaft pins",
+            "desc": "Metal plates, bushings, shaft pins, screws, locating shafts.",
+            "note": "Zinc plating"
+          },
+          "a4": {
+            "tag": "Electrical parts",
+            "title": "Cable lugs",
+            "desc": "Tin-plated cable lugs.",
+            "note": "Tin plating"
+          }
+        },
+        "DetailQaTable": {
+          "colItem": "Inspection Items",
+          "colDevice": "Equipment",
+          "colCriteria": "What Is Inspected",
+          "heading": "Plating Quality Control",
+          "subtitle": "HANIN factory inspection equipment used for zinc, copper, tin plating and black phosphating",
+          "r1": {
+            "item": "Solutions and Chemicals",
+            "device": "Analysis Lab and Analytical Chemicals",
+            "criteria": "Analyzing the composition of solutions and chemicals before they go into production."
+          },
+          "r2": {
+            "item": "Plating solution",
+            "device": "Hull Cell Tester",
+            "criteria": "Hull cell test to check the plating solution."
+          },
+          "r3": {
+            "item": "Plating Thickness",
+            "device": "{{apc}} Plating Thickness Gauge",
+            "criteria": "Measure plating thickness and compare it with the drawing requirement."
+          },
+          "r4": {
+            "item": "Corrosion Resistance (Neutral)",
+            "device": "NSS Neutral Salt Spray Chamber",
+            "criteria": "Neutral salt spray test per customer requirements."
+          },
+          "r5": {
+            "item": "Corrosion Resistance (Acid)",
+            "device": "CASS Acid Salt Spray Chamber",
+            "criteria": "CASS acid salt spray test when the customer requires it."
+          }
+        },
+        "DetailGallery": {
+          "heading": "Photos at the Factory",
+          "subtitle": "Zinc, copper, tin plating and black phosphating: area at the HANIN factory, Lot {{lot}}, Quang Minh Industrial Park",
+          "line": {
+            "alt": "Plating area at the HANIN factory, serving zinc, copper, tin plating and black phosphating",
+            "tag": "Plating area",
+            "title": "Plating area",
+            "desc": "Line serving zinc, copper, tin plating and black phosphating at the HANIN factory, Quang Minh Industrial Park."
+          },
+          "surface": {
+            "alt": "Production area of the HANIN factory, where zinc, copper, tin plating and black phosphating is carried out",
+            "tag": "Production",
+            "title": "Production area",
+            "desc": "The factory covers {{area}} m², where zinc, copper, tin plating and black phosphating is carried out."
+          },
+          "prep": {
+            "alt": "Warehouse and analysis area of the HANIN factory, preparing for zinc, copper, tin plating and black phosphating",
+            "tag": "Warehouse and analysis",
+            "title": "Warehouse and analysis lab",
+            "desc": "Receiving goods, storage and chemical analysis before they go onto the line (zinc, copper, tin plating and black phosphating)."
+          }
+        },
+        "RfqFormDetail": {
+          "heading": "Send a zinc, copper, tin plating and black phosphating request",
+          "subtitle": "The HANIN technical team will reply with a quote and a sample plating plan.",
+          "hotlineLabel": "Technical hotline:",
+          "submitAlert": "Your quote request for zinc, copper, tin plating and black phosphating has been sent to the HANIN technical team.",
+          "companyLabel": "Company name",
+          "companyPlaceholder": "e.g. ABC Co., Ltd",
+          "contactLabel": "Contact person",
+          "contactPlaceholder": "e.g. Nguyen Van A, purchasing manager",
+          "emailLabel": "Email to receive the quote",
+          "substrateLabel": "Substrate Materials",
+          "substrateOptions": {
+            "carbonSteel": "Iron, steel",
+            "alloySteel": "Alloy steel",
+            "stainless": "Stainless steel",
+            "aluminum": "Aluminum",
+            "copper": "Copper, brass",
+            "castIron": "Cast iron"
+          },
+          "phosLabel": "Plating type required",
+          "phosOptions": {
+            "high": "Nickel Chrome on ABS",
+            "medium": "Nickel on metal",
+            "low": "Zinc, copper, tin plating or black phosphating",
+            "consult": "Need HANIN to advise by product"
+          },
+          "thicknessLabel": "Required plating thickness",
+          "thicknessPlaceholder": "e.g. per drawing",
+          "volumeLabel": "Expected volume",
+          "volumePlaceholder": "e.g. 5,000 pcs/month (or a trial sample)",
+          "notesLabel": "Technical notes (areas to mask, color, test standard)",
+          "notesPlaceholder": "State the areas to mask, desired color or gloss, salt spray test requirements...",
+          "attachTitle": "Attach 2D / 3D drawing",
+          "attachDesc": "Formats: STEP, IGES, DWG, PDF (max 50MB)",
+          "chooseFile": "CHOOSE DRAWING FILE",
+          "ndaNote": "Drawings are used only for quoting and technical consultation.",
+          "submitButton": "SEND QUOTE REQUEST FOR ZINC, COPPER, TIN PLATING AND BLACK PHOSPHATING",
+          "submitError": "The request could not be sent. Please check the information and attachments and try again."
+        }
+      },
+      "day-chuyen-son-ma-ket-hop": {
+        "DetailHero": {
+          "stat1": {
+            "label": "Manual spray booth",
+            "value": "2 booths"
+          },
+          "stat2": {
+            "label": "6-gun spray booth",
+            "value": "3 booths"
+          },
+          "stat3": {
+            "label": "Automatic spray painting",
+            "value": "1 line"
+          },
+          "stat4": {
+            "label": "Ionizer booth",
+            "value": "20 booths"
+          },
+          "ctaPrimary": "REQUEST A QUOTE",
+          "ctaSecondary": "CONTACT FOR TECHNICAL ADVICE"
+        },
+        "DetailOverview": {
+          "heading": "Painting and Printing Service Scope",
+          "col1": {
+            "title": "Painting and printing on plastic and metal",
+            "p1": "Besides plating, HANIN also paints and prints on plastic and metal products, including",
+            "p1Strong": "spray painting, printing and laser cutting",
+            "p2": "Products are sprayed in paint booths with ionizer booths and checked for reliability with 10 types of equipment after spraying."
+          },
+          "col2": {
+            "title": "Featured Products",
+            "intro": "Some products painted and printed at the factory:",
+            "item1Strong": "Automotive lamp components:",
+            "item1": "Spray-painted holders.",
+            "item2Strong": "Display frames:",
+            "item2": "Painted and printed.",
+            "item3Strong": "Control panels:",
+            "item3": "Painted and printed."
+          },
+          "col3": {
+            "title": "Substrate Materials",
+            "intro": "Substrates painted and printed:",
+            "substrates": {
+              "m1": "Plastic products",
+              "m2": "Metal products"
+            }
+          }
+        },
+        "DetailProcess": {
+          "heading": "Painting and Inspection Steps",
+          "subtitle": "Choose the spray booth per product",
+          "s1": {
+            "title": "Choose the spraying option",
+            "desc": "Choose a manual booth, 6-gun booth or automatic line depending on the product."
+          },
+          "s2": {
+            "title": "Spray painting",
+            "desc": "Spray painting in booths with ionizer booths."
+          },
+          "s3": {
+            "title": "Printing and laser cutting",
+            "desc": "Printing or laser cutting when the product requires it."
+          },
+          "s4": {
+            "title": "Reliability testing",
+            "desc": "Post-spray testing with 10 types of equipment: abrasion, hot water, heat and humidity, UV..."
+          },
+          "stepLabel": "STEP"
+        },
+        "DetailCapability": {
+          "imageAlt": "Production area at the HANIN factory, serving spray painting, printing and laser",
+          "lineCapacityLabel": "6-gun spray booth",
+          "lineCapacityValue": "3 booths (6 guns)",
+          "tankSizeLabel": "Automatic spray painting",
+          "tankSizeValue": "1 line",
+          "heading": "Spray Booths and Paint Line",
+          "subtitle": "The manual booths, 6-gun booths and automatic line work together with the ionizer booths.",
+          "f1": {
+            "title": "Manual spray booths:",
+            "desc": "2 booths, spraying per product."
+          },
+          "f2": {
+            "title": "6-gun spray booths:",
+            "desc": "3 booths, each with 6 spray guns."
+          },
+          "f3": {
+            "title": "Automatic line and ionizers:",
+            "desc": "1 automatic spray painting line and 20 ionizer booths."
+          }
+        },
+        "DetailApplications": {
+          "heading": "Painted and printed products at HANIN",
+          "subtitle": "Product Groups",
+          "a1": {
+            "tag": "Automotive",
+            "title": "Automotive lamp components",
+            "desc": "Spray-painted automotive lamp holders.",
+            "note": "Spray painting"
+          },
+          "a2": {
+            "tag": "Electronics",
+            "title": "Display frames",
+            "desc": "Painted and printed display frames.",
+            "note": "Painting and printing"
+          },
+          "a3": {
+            "tag": "Controls",
+            "title": "Control panel",
+            "desc": "Painted and printed control panels.",
+            "note": "Painting and printing"
+          }
+        },
+        "DetailQaTable": {
+          "colItem": "Inspection Items",
+          "colDevice": "Equipment",
+          "colCriteria": "What Is Inspected",
+          "heading": "Reliability Testing After Spray Painting",
+          "subtitle": "HANIN factory inspection equipment used for spray painting, printing and laser",
+          "r1": {
+            "item": "Abrasion",
+            "device": "RCA Tester",
+            "criteria": "Abrasion test of the paint and print layer."
+          },
+          "r2": {
+            "item": "Hot water, heat and humidity",
+            "device": "Hot Water, High Temp & Humidity",
+            "criteria": "Tests resistance to hot water and to high-temperature, high-humidity environments."
+          },
+          "r3": {
+            "item": "UV",
+            "device": "UV Measure",
+            "criteria": "Tests the effect of UV on the paint layer."
+          },
+          "r4": {
+            "item": "Alcohol and pencil rubbing",
+            "device": "Alcohol/Eraser Rubbing, Pencil Rubbing",
+            "criteria": "Alcohol, eraser and pencil rubbing tests on the painted surface."
+          },
+          "r5": {
+            "item": "Impact, bending, thickness",
+            "device": "Dropping Tester, Bending Tester, Thickness Measure, Polisher",
+            "criteria": "Drop test, bending test, paint film thickness measurement and polished surface inspection."
+          }
+        },
+        "DetailGallery": {
+          "heading": "Photos at the Factory",
+          "subtitle": "Spray painting, printing and laser: area at the HANIN factory, Lot {{lot}}, Quang Minh Industrial Park",
+          "line": {
+            "alt": "Plating area at the HANIN factory, serving spray painting, printing and laser",
+            "tag": "Plating area",
+            "title": "Plating area",
+            "desc": "Line serving spray painting, printing and laser at the HANIN factory, Quang Minh Industrial Park."
+          },
+          "surface": {
+            "alt": "Production area of the HANIN factory, where spray painting, printing and laser is carried out",
+            "tag": "Production",
+            "title": "Production area",
+            "desc": "The factory covers {{area}} m², where spray painting, printing and laser is carried out."
+          },
+          "prep": {
+            "alt": "Warehouse and analysis area of the HANIN factory, preparing for spray painting, printing and laser",
+            "tag": "Warehouse and analysis",
+            "title": "Warehouse and analysis lab",
+            "desc": "Receiving goods, storage and chemical analysis before they go onto the line (spray painting, printing and laser)."
+          }
+        },
+        "RfqFormDetail": {
+          "heading": "Send a spray painting, printing and laser request",
+          "subtitle": "The HANIN technical team will reply with a quote and a sample plating plan.",
+          "hotlineLabel": "Technical hotline:",
+          "submitAlert": "Your spray painting, printing and laser quote request has been sent to the HANIN technical team.",
+          "companyLabel": "Company name",
+          "companyPlaceholder": "e.g. ABC Co., Ltd",
+          "contactLabel": "Contact person",
+          "contactPlaceholder": "e.g. Nguyen Van A, purchasing manager",
+          "emailLabel": "Email to receive the quote",
+          "substrateLabel": "Substrate Materials",
+          "substrateOptions": {
+            "carbonSteel": "Iron, steel",
+            "alloySteel": "Alloy steel",
+            "stainless": "Stainless steel",
+            "aluminum": "Aluminum",
+            "copper": "Copper, brass",
+            "castIron": "Cast iron"
+          },
+          "phosLabel": "Plating type required",
+          "phosOptions": {
+            "high": "Nickel Chrome on ABS",
+            "medium": "Nickel on metal",
+            "low": "Zinc, copper, tin plating or black phosphating",
+            "consult": "Need HANIN to advise by product"
+          },
+          "thicknessLabel": "Required plating thickness",
+          "thicknessPlaceholder": "e.g. per drawing",
+          "volumeLabel": "Expected volume",
+          "volumePlaceholder": "e.g. 5,000 pcs/month (or a trial sample)",
+          "notesLabel": "Technical notes (areas to mask, color, test standard)",
+          "notesPlaceholder": "State the areas to mask, desired color or gloss, salt spray test requirements...",
+          "attachTitle": "Attach 2D / 3D drawing",
+          "attachDesc": "Formats: STEP, IGES, DWG, PDF (max 50MB)",
+          "chooseFile": "CHOOSE DRAWING FILE",
+          "ndaNote": "Drawings are used only for quoting and technical consultation.",
+          "submitButton": "SEND SPRAY PAINTING, PRINTING AND LASER QUOTE REQUEST",
+          "submitError": "The request could not be sent. Please check the information and attachments and try again."
+        }
+      },
+      "xu-ly-nhom-ma-kim-loai-khac": {
+        "DetailHero": {
+          "stat1": {
+            "label": "PVD Machines",
+            "value": "2 machines"
+          },
+          "stat2": {
+            "label": "Factory",
+            "value": "Quang Minh Industrial Park"
+          },
+          "stat3": {
+            "label": "Surface",
+            "value": "Aesthetic, durable"
+          },
+          "ctaPrimary": "REQUEST A QUOTE",
+          "ctaSecondary": "CONTACT FOR TECHNICAL ADVICE"
+        },
+        "DetailOverview": {
+          "heading": "PVD Vacuum Coating",
+          "col1": {
+            "title": "What Is Vacuum Coating",
+            "p1": "PVD (Physical Vapor Deposition) is a coating method in a vacuum chamber,",
+            "p1Strong": "depositing a metal layer onto the part surface",
+            "p2": "HANIN uses PVD for products that need a high-quality aesthetic surface and good durability. Coating parameters are agreed for each product."
+          },
+          "col2": {
+            "title": "PVD Capability",
+            "intro": "The factory has:",
+            "item1Strong": "2 PVD machines:",
+            "item1": "Batch vacuum coating.",
+            "item2Strong": "Location:",
+            "item2": "Lot {{lot}}, Quang Minh Industrial Park, Hanoi, in the same area as the HANIN plating factory.",
+            "item3Strong": "Finished surface:",
+            "item3": "High aesthetic quality, good durability."
+          },
+          "col3": {
+            "title": "Substrate Materials",
+            "intro": "The factory plates on:",
+            "substrates": {
+              "m1": "Plastic substrate",
+              "m2": "Metal substrate"
+            }
+          }
+        },
+        "DetailProcess": {
+          "heading": "PVD Coating Steps",
+          "subtitle": "Details for each product are agreed with the customer",
+          "s1": {
+            "title": "Goods Receipt",
+            "desc": "Goods are received, inspected and surface-cleaned before entering the machine."
+          },
+          "s2": {
+            "title": "Loading Goods into the PVD Machine",
+            "desc": "Parts are hung or placed in the vacuum chamber."
+          },
+          "s3": {
+            "title": "Vacuum Coating",
+            "desc": "PVD coating layer is applied in the PVD machine."
+          },
+          "s4": {
+            "title": "Final Inspection",
+            "desc": "Finished goods are inspected before delivery."
+          },
+          "stepLabel": "STEP"
+        },
+        "DetailCapability": {
+          "imageAlt": "Production area at the HANIN factory, serving PVD vacuum coating",
+          "lineCapacityLabel": "PVD Machines",
+          "lineCapacityValue": "2 machines",
+          "tankSizeLabel": "Factory",
+          "tankSizeValue": "Quang Minh Industrial Park",
+          "heading": "PVD Machines",
+          "subtitle": "PVD vacuum coating is a separate service at the HANIN factory, alongside electroplating and electroless plating.",
+          "f1": {
+            "title": "PVD machines:",
+            "desc": "2 vacuum coating machines."
+          },
+          "f2": {
+            "title": "Location:",
+            "desc": "Lot {{lot}}, Quang Minh Industrial Park, Hanoi, in the same area as the HANIN plating factory."
+          },
+          "f3": {
+            "title": "Analysis lab:",
+            "desc": "Supports the factory's chemical and quality checks."
+          }
+        },
+        "DetailApplications": {
+          "heading": "Products Suitable for PVD Coating",
+          "subtitle": "Contact HANIN to discuss each product",
+          "a1": {
+            "tag": "Automotive",
+            "title": "Automotive decorative parts",
+            "desc": "Parts that need a high-quality aesthetic surface and durability.",
+            "note": "PVD Vacuum Coating"
+          },
+          "a2": {
+            "tag": "Home Appliances",
+            "title": "Home appliance parts",
+            "desc": "Parts that need an attractive, durable surface.",
+            "note": "PVD Vacuum Coating"
+          },
+          "a3": {
+            "tag": "Sanitary, Kitchen",
+            "title": "Sanitary and kitchen fittings",
+            "desc": "Fittings that need a high-quality aesthetic surface.",
+            "note": "PVD Vacuum Coating"
+          }
+        },
+        "DetailQaTable": {
+          "colItem": "Inspection Items",
+          "colDevice": "Equipment",
+          "colCriteria": "What Is Inspected",
+          "heading": "Quality Control",
+          "subtitle": "HANIN factory inspection equipment used for PVD vacuum coating",
+          "r1": {
+            "item": "Solutions and Chemicals",
+            "device": "Analysis Lab and Analytical Chemicals",
+            "criteria": "Analyzing the composition of solutions and chemicals before they go into production."
+          },
+          "r2": {
+            "item": "Finished goods",
+            "device": "Final Inspection",
+            "criteria": "Appearance and customer requirements are checked before delivery."
+          },
+          "r3": {
+            "item": "Plating Thickness",
+            "device": "{{apc}} Plating Thickness Gauge",
+            "criteria": "Measure plating thickness and compare it with the drawing requirement."
+          },
+          "r4": {
+            "item": "Corrosion Resistance (Neutral)",
+            "device": "NSS Neutral Salt Spray Chamber",
+            "criteria": "Neutral salt spray test per customer requirements."
+          },
+          "r5": {
+            "item": "Corrosion Resistance (Acid)",
+            "device": "CASS Acid Salt Spray Chamber",
+            "criteria": "CASS acid salt spray test when the customer requires it."
+          }
+        },
+        "DetailGallery": {
+          "heading": "Photos at the Factory",
+          "subtitle": "PVD vacuum coating: area at the HANIN factory, Lot {{lot}}, Quang Minh Industrial Park",
+          "line": {
+            "alt": "Plating area at the HANIN factory, serving PVD vacuum coating",
+            "tag": "Plating area",
+            "title": "Plating area",
+            "desc": "Line serving PVD vacuum coating at the HANIN factory, Quang Minh Industrial Park."
+          },
+          "surface": {
+            "alt": "Production area of the HANIN factory, where PVD vacuum coating is carried out",
+            "tag": "Production",
+            "title": "Production area",
+            "desc": "The factory covers {{area}} m², where PVD vacuum coating is carried out."
+          },
+          "prep": {
+            "alt": "Warehouse and analysis area of the HANIN factory, preparing for PVD vacuum coating",
+            "tag": "Warehouse and analysis",
+            "title": "Warehouse and analysis lab",
+            "desc": "Receiving goods, storage and chemical analysis before they go onto the line (PVD vacuum coating)."
+          }
+        },
+        "RfqFormDetail": {
+          "heading": "Send a PVD vacuum coating request",
+          "subtitle": "The HANIN technical team will reply with a quote and a sample plating plan.",
+          "hotlineLabel": "Technical hotline:",
+          "submitAlert": "Your PVD vacuum coating quote request has been sent to the HANIN technical team.",
+          "companyLabel": "Company name",
+          "companyPlaceholder": "e.g. ABC Co., Ltd",
+          "contactLabel": "Contact person",
+          "contactPlaceholder": "e.g. Nguyen Van A, purchasing manager",
+          "emailLabel": "Email to receive the quote",
+          "substrateLabel": "Substrate Materials",
+          "substrateOptions": {
+            "carbonSteel": "Iron, steel",
+            "alloySteel": "Alloy steel",
+            "stainless": "Stainless steel",
+            "aluminum": "Aluminum",
+            "copper": "Copper, brass",
+            "castIron": "Cast iron"
+          },
+          "phosLabel": "Plating type required",
+          "phosOptions": {
+            "high": "Nickel Chrome on ABS",
+            "medium": "Nickel on metal",
+            "low": "Zinc, copper, tin plating or black phosphating",
+            "consult": "Need HANIN to advise by product"
+          },
+          "thicknessLabel": "Required plating thickness",
+          "thicknessPlaceholder": "e.g. per drawing",
+          "volumeLabel": "Expected volume",
+          "volumePlaceholder": "e.g. 5,000 pcs/month (or a trial sample)",
+          "notesLabel": "Technical notes (areas to mask, color, test standard)",
+          "notesPlaceholder": "State the areas to mask, desired color or gloss, salt spray test requirements...",
+          "attachTitle": "Attach 2D / 3D drawing",
+          "attachDesc": "Formats: STEP, IGES, DWG, PDF (max 50MB)",
+          "chooseFile": "CHOOSE DRAWING FILE",
+          "ndaNote": "Drawings are used only for quoting and technical consultation.",
+          "submitButton": "SEND PVD VACUUM COATING QUOTE REQUEST",
+          "submitError": "The request could not be sent. Please check the information and attachments and try again."
+        }
+      }
+    }
+  }
+}

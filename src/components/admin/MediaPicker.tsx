@@ -2,8 +2,8 @@
 
 import { useEffect, useRef, useState, type ChangeEvent, type DragEvent } from "react";
 import { api, ApiError } from "./api";
-import { useToast } from "./Toast";
-import { useConfirm } from "./ConfirmDialog";
+import { toast } from "@/components/ct999/thong-bao-toast/store";
+import { confirm } from "./dialog";
 
 export interface MediaItem {
   id: number;
@@ -44,8 +44,6 @@ export function MediaLibrary({ onSelect }: { onSelect?: (item: MediaItem) => voi
     };
   }, [page, version]);
 
-  const toast = useToast();
-  const confirm = useConfirm();
   const [dragging, setDragging] = useState(false);
   const [progress, setProgress] = useState("");
   const dragDepth = useRef(0);

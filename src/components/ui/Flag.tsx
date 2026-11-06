@@ -12,6 +12,16 @@ export function Flag({ locale, className = "h-4 w-6" }: { locale: string; classN
       <polygon points="9.22,8.38 9.90,8.63 10.35,8.06 10.32,8.79 11.00,9.05 10.30,9.24 10.26,9.96 9.87,9.36 9.16,9.55 9.62,8.98" fill="#FFDE00" />
       </svg>
     );
+  if (locale === "en")
+    return (
+      <svg {...common}>
+        <rect width="30" height="20" fill="#012169" />
+        <path d="M0 0L30 20M30 0L0 20" stroke="#fff" strokeWidth="4" />
+        <path d="M0 0L30 20M30 0L0 20" stroke="#C8102E" strokeWidth="1.6" />
+        <path d="M15 0V20M0 10H30" stroke="#fff" strokeWidth="6.5" />
+        <path d="M15 0V20M0 10H30" stroke="#C8102E" strokeWidth="3.6" />
+      </svg>
+    );
   if (locale === "ko")
     return (
       <svg {...common}>

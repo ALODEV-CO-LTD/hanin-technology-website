@@ -1,0 +1,211 @@
+{
+  "LienHe": {
+    "BottomCta": {
+      "heading": "Send a sample or drawing for a quote",
+      "description": "HANIN engineers review the sample or drawing and discuss the substrate, plating and required surface before quoting.",
+      "ctaPrimary": "Send a drawing"
+    },
+    "ContactChannels": {
+      "heading": "Contact Information",
+      "subtitle": "Address, phone, email and working hours",
+      "card1": {
+        "badge": "Plating Factory",
+        "title": "",
+        "address": "Lot {{lot}}, Quang Minh Industrial Park, Quang Minh Commune, Hanoi",
+        "footerLabel": "Production site",
+        "footerValue": "Automatic, rack and barrel plating lines, plus the analysis and inspection lab"
+      },
+      "card2": {
+        "badge": "Phone",
+        "title": "Quotes and technical discussion",
+        "quoteLabel": "Quoting department:",
+        "engineerLabel": "Technical engineer (drawings, specifications):",
+        "engineerHotlineSuffix": "Hotline",
+        "footerLabel": "Discuss via Zalo or WeChat"
+      },
+      "card3": {
+        "badge": "Email",
+        "title": "Receiving quote requests",
+        "salesLabel": "Primary email:",
+        "engineeringLabel": "Secondary email:",
+        "footerText": "Samples, photos and drawings can be sent by email"
+      },
+      "card4": {
+        "badge": "Working Hours",
+        "title": "Office and production",
+        "officeLabel": "Office and engineering:",
+        "officeValue": "Monday – Saturday: 08:00 – 17:30",
+        "workshopLabel": "Plating workshop:",
+        "workshopValue": "Shift work, per production order",
+        "footerBadge": "The workshop works in shifts, per the production plan"
+      }
+    },
+    "ContactFaq": {
+      "heading": "Frequently Asked Questions About Quote Requests",
+      "subtitle": "What to send, file formats, quantities and trial samples.",
+      "items": {
+        "0": {
+          "question": "1. What information do I need to send for a quote?",
+          "answer": "Send a sample, photo or drawing; the substrate material (ABS plastic, ABS/PC or metal); the required plating; thickness, color and gloss if any; test requirements (thickness measurement, NSS/CASS salt spray); quantity per lot and schedule. HANIN engineers will ask for more if needed, then quote."
+        },
+        "1": {
+          "question": "2. What file formats can I send?",
+          "answer": "The quote form accepts PDF, DWG, DXF, STEP, ZIP, JPG, PNG, up to 5 files, 50 MB each. For larger files, please send a download link to huyvinh82@gmail.com."
+        },
+        "2": {
+          "question": "3. How are the information and drawings I send handled?",
+          "answer": "Drawings and attachments go only to the staff in charge of quoting and engineering and are not shared with third parties. See the Privacy Policy for details."
+        },
+        "3": {
+          "question": "4. What is the minimum order quantity?",
+          "answer": "The minimum quantity depends on the part type and plating technology. Please contact us so HANIN can advise on each product."
+        },
+        "4": {
+          "question": "5. Does HANIN accept trial sample plating?",
+          "answer": "Please contact us to discuss trial samples for a specific product. HANIN has a plating thickness gauge and NSS and CASS salt spray chambers to test on request."
+        }
+      }
+    },
+    "ContactHero": {
+      "breadcrumbHome": "Home",
+      "breadcrumbCurrent": "Contact and Quote",
+      "titlePrefix": "Contact and",
+      "titleHighlight": "request a quote",
+      "titleSuffix": "technical",
+      "description": "HANIN plates on ABS plastic and metal substrates, plus painting and printing, for manufacturers of automobiles, home appliances, sanitary ware and kitchen equipment. Send a sample or drawing to get a quote.",
+      "ctaPrimary": "Send a quote request",
+      "ctaSecondary": "View factory location",
+      "specHighlights": {
+        "sample": {
+          "label": "Send samples and photos",
+          "desc": "Send photos, samples or drawings so HANIN can review them before quoting"
+        },
+        "cad": {
+          "label": "2D and 3D drawings",
+          "desc": "Accepts PDF, DWG, DXF, STEP, ZIP, JPG, PNG, up to 50 MB per file"
+        },
+        "consulting": {
+          "label": "Technical Exchange",
+          "desc": "Engineers discuss the substrate, plating type and desired surface"
+        }
+      },
+      "imageAlt": "Factory panorama"
+    },
+    "DirectChannels": {
+      "heading": "Direct Contact",
+      "subtitle": "For urgent orders or to arrange a factory audit.",
+      "channels": {
+        "hotline": {
+          "label": "Call",
+          "desc": "Talk to the technical team.",
+          "cta": "Call"
+        },
+        "zalo": {
+          "label": "Zalo",
+          "title": "HANIN Plating",
+          "desc": "Send sample photos and preliminary drawings via Zalo.",
+          "cta": "Open Zalo"
+        },
+        "email": {
+          "label": "Email samples and drawings",
+          "title": "huyvinh82@gmail.com",
+          "desc": "For large files, with a Drive or WeTransfer link.",
+          "cta": "Compose email"
+        },
+        "audit": {
+          "label": "Request a factory audit",
+          "title": "Visit and supplier assessment",
+          "desc": "We host audit and supplier assessment delegations by appointment.",
+          "cta": "Book an appointment"
+        }
+      }
+    },
+    "LocationMap": {
+      "heading": "Factory location",
+      "description": "The plating factory is at Lot {{lot}}, Quang Minh Industrial Park, Quang Minh Commune, Hanoi.",
+      "distances": {
+        "airport": {
+          "label": "Noi Bai International Airport",
+          "value": "About 10 km"
+        },
+        "seaport": {
+          "label": "Hai Phong",
+          "value": "About 140 km"
+        },
+        "city": {
+          "label": "Central Hanoi",
+          "value": "About 20 km"
+        }
+      },
+      "openMapsCta": "Open Google Maps",
+      "downloadMapCta": "Send a quote request",
+      "satelliteImageAlt": "Front of the HANIN factory at Lot {{lot}}, Quang Minh Industrial Park, Hanoi",
+      "gateLabel": "HANIN Plating Factory",
+      "plotLabel": "Lot {{lot}}, Quang Minh Industrial Park"
+    },
+    "RfqForm": {
+      "heading": "Send a quote request and technical documents",
+      "securityBadge": "Information is used only for review and quoting",
+      "status": {
+        "submitting": "Sending your quote request...",
+        "successTitle": "Quote request sent",
+        "successDesc": "The HANIN technical team has received your request and will reply by email or phone.",
+        "successResetCta": "Create another request",
+        "errorMessage": "Please fill in the required fields (*) and agree to the processing of your information before sending.",
+        "errorRetryCta": "Try again",
+        "sendError": "The request could not be sent. Please check the information and attachments (up to 5 files, 50 MB each) and try again."
+      },
+      "step1": {
+        "heading": "Contact Information",
+        "fullNameLabel": "Contact person's full name",
+        "fullNamePlaceholder": "Nguyen Van A",
+        "companyLabel": "Company name",
+        "companyPlaceholder": "Your company name",
+        "emailLabel": "Email to receive the quote",
+        "emailPlaceholder": "name@company.com",
+        "phoneLabel": "Phone / Zalo",
+        "phonePlaceholder": "0912 345 678"
+      },
+      "step2": {
+        "heading": "Technical information",
+        "projectNameLabel": "Product or project name",
+        "projectNamePlaceholder": "Example: car logo, home appliance knob, shower head",
+        "platingServiceLabel": "Plating service to quote",
+        "platingOptions": {
+          "niken": "Nickel-Chrome on ABS",
+          "crom": "Metal nickel (electrolytic, electroless, black, satin)",
+          "kem": "Zinc, copper, tin",
+          "phosphate": "Black phosphating",
+          "bac": "PVD (vacuum coating), spray painting and printing",
+          "other": "Other / need advice"
+        },
+        "volumeLabel": "Quantity per lot and delivery schedule",
+        "volumeOptions": {
+          "sample": "Trial samples (small quantity)",
+          "pilot": "Trial production lot",
+          "mass": "Regular mass production",
+          "oem": "Long-term contract"
+        },
+        "descriptionLabel": "Plating, thickness, surface and inspection requirements",
+        "descriptionStandards": "State the plating, thickness, color, gloss or satin and test requirements (thickness measurement, NSS/CASS salt spray) if any",
+        "descriptionPlaceholder": "Example: ABS substrate; nickel-chrome 3+; thickness per drawing; color and gloss per attached sample; NSS salt spray test"
+      },
+      "step3": {
+        "heading": "Attach drawing (2D or 3D)",
+        "dropzoneTitle": "Drag and drop drawings here or click to choose files",
+        "formatsPrefix": "Supported formats:",
+        "formatsSuffix": "(up to 5 files, 50 MB each)",
+        "filesSelected": "{count} files selected:",
+        "noFileSelected": "No file selected. You can send samples or drawings by email to huyvinh82@gmail.com",
+        "maxSize": "Max 50 MB"
+      },
+      "step4": {
+        "ndaConsentPrefix": "I agree to let HANIN",
+        "ndaConsentMiddle": "process this information to evaluate the request and send a quote.",
+        "ndaConsentSuffix": "The information is not used for other purposes.",
+        "submitCta": "Send a quote request",
+        "submittingCta": "Sending..."
+      }
+    }
+  }
+}

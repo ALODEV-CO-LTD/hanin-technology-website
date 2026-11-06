@@ -6,7 +6,7 @@ export default function DevelopmentDirection() {
 
   const CORE_VALUES = [
     { key: "precision", icon: "straighten", index: "/ 01" },
-    { key: "stability", icon: "cyclone", index: "/ 02" },
+    { key: "stability", icon: "science", index: "/ 02" },
     { key: "partnership", icon: "handshake", index: "/ 03" },
   ] as const;
 

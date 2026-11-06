@@ -243,7 +243,7 @@
       },
       "thickness": {
         "name": "Đo độ dày lớp mạ",
-        "desc": "Đo độ dày lớp mạ bằng máy APC-100, không làm hỏng sản phẩm. Kết quả đối chiếu với yêu cầu của khách hàng. Độ dày ảnh hưởng đến khả năng chống ăn mòn và dung sai lắp ghép."
+        "desc": "Đo độ dày lớp mạ bằng máy {{apc}}, không làm hỏng sản phẩm. Kết quả đối chiếu với yêu cầu của khách hàng. Độ dày ảnh hưởng đến khả năng chống ăn mòn và dung sai lắp ghép."
       },
       "saltSpray": {
         "name": "Thử phun sương muối",

@@ -4,37 +4,37 @@
     "zones": {
       "0": {
         "title": "自动电镀线",
-        "capacity": "30,000–50,000件/天",
+        "capacity": "{{auto:full}}件/天",
         "detail": "挂具(JIG)、行车。",
         "alt": "配有橙色行车和挂具的自动电镀线"
       },
       "1": {
         "title": "滚镀线",
-        "capacity": "3,000–5,000 kg/天",
-        "detail": "相当于10,000–30,000件/天。",
+        "capacity": "{{rot:full}} kg/天",
+        "detail": "相当于{{rotPcs:full}}件/天。",
         "alt": "滚镀线全景,可见镀槽和排气系统"
       },
       "2": {
         "title": "半自动金属电镀线(挂镀)",
-        "capacity": "10,000–20,000件/天",
+        "capacity": "{{hang:full}}件/天",
         "detail": "在挂架上进行挂镀。",
         "alt": "半自动镀线的镀槽"
       },
       "3": {
         "title": "自动喷涂与PVD真空镀",
-        "capacity": "2台PVD设备、2条PVD生产线",
+        "capacity": "2 台 PVD 设备",
         "detail": "1条自动喷涂线、20个离子风(ionizer)房。",
         "alt": "工厂内的圆形腔体PVD真空镀设备"
       },
       "4": {
         "title": "分析与检测室",
-        "capacity": "APC-100、NSS、CASS、赫尔槽",
-        "detail": "APC-100镀层测厚仪、NSS中性盐雾试验机、CASS酸性盐雾试验机、赫尔槽试验仪、分析用化学品。涂装后可靠性测试设备共10种:RCA Tester、Hot Water、High Temp & Humidity、UV Measure、Alcohol/Eraser Rubbing、Pencil Rubbing、Dropping Tester、Thickness Measure、Polisher、Bending Tester。",
+        "capacity": "{{apc}}、NSS、CASS、赫尔槽",
+        "detail": "{{apc}}镀层测厚仪、NSS中性盐雾试验机、CASS酸性盐雾试验机、赫尔槽试验仪、分析用化学品。涂装后可靠性测试设备共10种:RCA Tester、Hot Water、High Temp & Humidity、UV Measure、Alcohol/Eraser Rubbing、Pencil Rubbing、Dropping Tester、Thickness Measure、Polisher、Bending Tester。",
         "alt": "实验台上的分析用化学品和滴定设备"
       },
       "5": {
         "title": "废水处理系统",
-        "capacity": "130 m³/天",
+        "capacity": "{{waste}} m³/天",
         "detail": "沉淀池、压泥机。承诺遵守相关规定。",
         "alt": "废水处理系统的蓝色沉淀池"
       }

@@ -1,0 +1,342 @@
+{
+  "QuyTrinh": {
+    "eyebrow": "PROCESS STEPS",
+    "title": "Process Steps at the HANIN Plating Factory",
+    "lead": "The plating process is a series of consecutive steps: pretreatment, plating, inspection. This page presents the sequence of steps run at the factory and the technical purpose of each.",
+    "howTo": {
+      "title": "How to Read This Page",
+      "items": {
+        "one": {
+          "title": "Plating group",
+          "desc": "Barrel plating is for small parts in large quantities such as screws and bolts. Rack plating is for parts that need a good surface appearance, such as decorative plastic parts."
+        },
+        "two": {
+          "title": "Process by Substrate",
+          "desc": "Each process corresponds to one substrate and one plating layer. Surface preparation differs by substrate."
+        },
+        "three": {
+          "title": "Steps",
+          "desc": "Each step states what is done and its technical purpose. Water rinse steps are grouped into one line."
+        }
+      }
+    },
+    "stages": {
+      "prep": "Pretreatment",
+      "plate": "Plating",
+      "finish": "Finishing",
+      "qc": "Inspection and packing"
+    },
+    "stageHint": "Stage",
+    "stepWord": "Step",
+    "stepsCount": "{count} steps",
+    "platingStepsCount": "{count} plating steps",
+    "rinseNote": "Rinse with water between two tanks so chemicals do not carry over into the next tank.",
+    "factsTitle": "Key information",
+    "factMaterial": "Substrate Materials",
+    "factResult": "Plating layer",
+    "factUsage": "Commonly used for",
+    "stepsTitle": "Steps in order",
+    "categoryCount": "{count} steps",
+    "showDetail": "View details",
+    "hideDetail": "Collapse",
+    "galleryTitle": "Photos from the Workshop",
+    "galleryAlt": "Treatment tanks and plating line in the HANIN workshop",
+    "photoAlt": "Real photos of the steps",
+    "note": "This page states only the sequence of steps. Tank parameters (concentration, temperature, time, current) are set for each part number.",
+    "ctaTitle": "Information Needed to Choose a Process",
+    "ctaDesc": "Send a drawing or sample, substrate material, required plating and quantity so HANIN can determine the applicable process.",
+    "ctaButton": "Send a quote request",
+    "families": {
+      "quay": {
+        "name": "Barrel Plating",
+        "short": "Small parts, large quantities",
+        "desc": "Small parts go into a rotating barrel and are plated in a whole batch at once."
+      },
+      "treo": {
+        "name": "Rack plating",
+        "short": "Parts that need good surface appearance",
+        "desc": "Each part is mounted on a rack so parts do not knock into each other, limiting surface scratches."
+      }
+    },
+    "processes": {
+      "nikenHoaNenSat": {
+        "name": "Electroless Nickel Plating on Iron",
+        "tagline": "Electroless nickel on iron and steel",
+        "intro": "Nickel is deposited by a chemical reaction without electric current, so the plating covers threads and deep holes.",
+        "material": "Iron, steel",
+        "result": "Electroless nickel (high hardness, wear resistance)",
+        "usage": "Gears, pins, shaft pins, assembly parts"
+      },
+      "nikenDienNenSat": {
+        "name": "Electrolytic Nickel Plating on Iron",
+        "tagline": "Electrolytic nickel on iron and steel",
+        "intro": "Electric current deposits nickel onto iron and steel. Thickness depends on plating time and current, and is set per customer requirement.",
+        "material": "Iron, steel",
+        "result": "Electrolytic nickel (bright, rust resistant)",
+        "usage": "Metal handles, machine parts, bolts, hinges, locating pins"
+      },
+      "nikenDienNenKem": {
+        "name": "Electrolytic Nickel Plating on Zinc",
+        "tagline": "Copper undercoat and nickel on die-cast zinc",
+        "intro": "Die-cast zinc is plated with a copper undercoat first, then bright nickel is plated over the copper.",
+        "material": "Zinc, die-cast zinc alloy",
+        "result": "Copper undercoat + bright nickel",
+        "usage": "Decorative parts and fittings made of die-cast zinc"
+      },
+      "nikenDienNenDong": {
+        "name": "Electrolytic Nickel Plating on Copper",
+        "tagline": "Electrolytic nickel on copper and brass",
+        "intro": "A nickel layer over the surface of copper and brass resists tarnishing and increases surface hardness.",
+        "material": "Copper, brass",
+        "result": "Electrolytic Nickel",
+        "usage": "Cable lugs, electrical contact parts, copper fittings"
+      },
+      "nikenHoaNenInox": {
+        "name": "Electroless Nickel Plating on Stainless Steel",
+        "tagline": "Electroless nickel on stainless steel",
+        "intro": "Stainless steel has a passive film, so a thin nickel layer is plated first to activate the surface, then electroless nickel is plated.",
+        "material": "Stainless steel",
+        "result": "Electroless nickel",
+        "usage": "Stainless steel parts that need greater hardness and wear resistance"
+      },
+      "nikenDenNenInox": {
+        "name": "Black Nickel Plating on Stainless Steel",
+        "tagline": "Black nickel on stainless steel",
+        "intro": "Surface preparation is the same as for electroless nickel plating, then black nickel is plated.",
+        "material": "Stainless steel",
+        "result": "Black nickel",
+        "usage": "Stainless steel parts that need a black surface and reduced reflection"
+      },
+      "dongDo": {
+        "name": "Copper Plating",
+        "tagline": "Copper plating",
+        "intro": "The copper layer conducts electricity well and is used for electrical contact parts, decoration, or as a base for other plating layers.",
+        "material": "Iron, steel and other metals",
+        "result": "Copper",
+        "usage": "Electrical contact parts, decoration, base layer for further plating"
+      },
+      "photPhatDen": {
+        "name": "Black Phosphating",
+        "tagline": "Black manganese phosphate on steel",
+        "intro": "A black phosphate film is formed on steel, then the part is dipped in rust-preventive oil.",
+        "material": "Steel",
+        "result": "Black phosphate film + rust-preventive oil",
+        "usage": "Screws, bolts, cover caps, base plates"
+      },
+      "treoNikenCrom": {
+        "name": "Nickel-Chrome Plating on Plastic",
+        "tagline": "Nickel-chrome on ABS plastic",
+        "intro": "ABS plastic is plated in turn with copper, multi-layer nickel and an outer chrome layer.",
+        "material": "ABS, ABS/PC plastic",
+        "result": "Copper, multi-layer nickel, chrome",
+        "usage": "Logos, control knobs, lamp bezels, home appliance fittings"
+      },
+      "treoSatin": {
+        "name": "Satin Nickel Plating on Plastic (Cr6+)",
+        "tagline": "Satin nickel on ABS plastic",
+        "intro": "The process is like nickel-chrome, with an added satin nickel layer to create a matte surface.",
+        "material": "ABS, ABS/PC plastic",
+        "result": "Satin nickel + chrome",
+        "usage": "Decorative plastic parts that need a matte surface"
+      },
+      "treoCr3Den": {
+        "name": "Black Chrome 3 Plating on Plastic",
+        "tagline": "Black trivalent chrome on ABS plastic",
+        "intro": "The outer layer is black trivalent chrome, plated over multi-layer nickel.",
+        "material": "ABS, ABS/PC plastic",
+        "result": "Black chrome 3 on multi-layer nickel",
+        "usage": "Decorative black plastic parts"
+      }
+    },
+    "steps": {
+      "receive": {
+        "name": "Goods Receipt and Storage",
+        "desc": "Visual check, quantity count and comparison with the agreed OK/NG sample before accepting into the workshop. Purpose: catch rusty, scratched or contaminated goods early that would affect the plating."
+      },
+      "vibroDegrease": {
+        "name": "Vibratory Degreasing",
+        "desc": "Products go into the vibratory machine with degreasing solution. Vibration lets the solution reach threads, holes and blind corners to remove cutting oil and preservation grease. Leftover oil is a common cause of plating peeling."
+      },
+      "ultrasonicDegrease": {
+        "name": "Ultrasonic Degreasing",
+        "desc": "Ultrasonic waves create bubbles that collapse on the surface, lifting oil, grease and dirt that is hard to clean otherwise, especially on small parts, deep threads and blind holes."
+      },
+      "degrease": {
+        "name": "Degreasing",
+        "desc": "Oil and grease are cleaned with degreasing solution. Die-cast zinc and plastic use a milder solution so the substrate is not damaged. A degreased surface is a condition for plating adhesion."
+      },
+      "rinse": {
+        "name": "Water rinse",
+        "desc": "Rinse with clean water to remove chemicals from the previous tank so they do not carry over into the next. Every tank change has a water rinse."
+      },
+      "recovery": {
+        "name": "Recovery Tank",
+        "desc": "A still water tank placed after a chemical tank to hold chemicals clinging to products and return them to the main tank. Purpose: reduce chemical loss and the amount of chemicals entering wastewater."
+      },
+      "hotRinse": {
+        "name": "Hot Water Rinse",
+        "desc": "A final hot water rinse so products dry quickly and water-spot marks are limited."
+      },
+      "hcl": {
+        "name": "Hydrochloric Acid Tank",
+        "desc": "A short soak in dilute hydrochloric acid to remove rust and oxide from metal, so the plating adheres to a clean metal surface."
+      },
+      "acid": {
+        "name": "Dilute Sulfuric Acid Tank",
+        "desc": "A soak in dilute sulfuric acid to remove leftover thin oxide and neutralize excess alkali from the degreasing step, evening out the surface before plating."
+      },
+      "activate": {
+        "name": "Surface Activation",
+        "desc": "A short treatment in activation solution to remove the very thin oxide formed during water rinsing, helping the plating adhere."
+      },
+      "nickelStrike": {
+        "name": "Nickel Strike",
+        "desc": "A very thin nickel layer is plated to break the passive film on stainless steel, forming an intermediate layer for the main nickel layer to bond to."
+      },
+      "whitening": {
+        "name": "Whitening Tank",
+        "desc": "Cleans tarnish and oxide from die-cast zinc, giving an even surface before copper undercoat plating. Zinc corrodes easily, so handling is controlled."
+      },
+      "copperStrike": {
+        "name": "Copper Undercoat Plating",
+        "desc": "Die-cast zinc is hard to nickel-plate directly, so a copper undercoat is plated first. The copper bonds to zinc and is the base for the outer nickel layer."
+      },
+      "nickelBright": {
+        "name": "Bright nickel plating",
+        "desc": "A bright nickel layer is plated with electric current. This layer gives surface brightness and is the main protection against corrosion and scratches."
+      },
+      "nickelElectro": {
+        "name": "Electrolytic Nickel Plating",
+        "desc": "Products are plated in a rotating barrel, and current deposits nickel on the surface. Thickness depends on plating time and current, and is set per product requirement."
+      },
+      "nickelChem": {
+        "name": "Electroless Nickel Plating",
+        "desc": "Nickel forms by a chemical reaction in solution without electric current, so it also covers inside threads, deep holes and blind corners. The plating has high hardness and wear resistance. On plastic, this is the first metal layer, giving a conductive surface for the electroplating that follows."
+      },
+      "copperRed": {
+        "name": "Copper plating",
+        "desc": "A red copper layer is plated. Copper conducts electricity well and is used for electrical contact parts, decorative parts or as a base for other plating layers."
+      },
+      "phosphate": {
+        "name": "Phosphating",
+        "desc": "Steel is soaked in phosphate solution to form a black crystal film on the surface. This is a conversion layer, not a metal coating; the film has micro-pores that hold rust-preventive oil."
+      },
+      "rustOil": {
+        "name": "Rust-Preventive Oil Dip",
+        "desc": "After phosphating, the parts are dipped in rust-preventive oil. The oil soaks into the porous phosphate film, forming a rust-resistant layer and making the black deeper and more even."
+      },
+      "oilSpin": {
+        "name": "Oil Wringing",
+        "desc": "Excess oil is wrung off so products are dry, do not stick to hands and do not leave dirt during packing."
+      },
+      "protect": {
+        "name": "Protection Tank",
+        "desc": "Soaking in a protective solution forms a very thin film against tarnish and oxidation during storage and transport."
+      },
+      "spinDry": {
+        "name": "Centrifugal Dryer",
+        "desc": "Centrifugal spinning removes water from products, avoiding water trapped in threads and holes, speeding up drying and limiting water spots."
+      },
+      "dry": {
+        "name": "Drying",
+        "desc": "Drying in an oven with controlled temperature and time. Purpose: prevent rust, stains and water marks, and stabilize the plating before inspection."
+      },
+      "thickness": {
+        "name": "Plating thickness measurement",
+        "desc": "Plating thickness is measured with the {{apc}} gauge without damaging the product. Results are compared with the customer's requirements. Thickness affects corrosion resistance and assembly tolerance."
+      },
+      "saltSpray": {
+        "name": "Salt Spray Test",
+        "desc": "Neutral salt spray (NSS) or acid salt spray (CASS) testing evaluates the corrosion resistance of the plating. Test conditions follow the customer's requirements."
+      },
+      "inspect": {
+        "name": "Final Inspection",
+        "desc": "Visual inspection against the agreed OK/NG sample: surface, color, peeling, pitting, spots. Non-conforming lots are separated for rework and do not move on to packing."
+      },
+      "pack": {
+        "name": "Packing",
+        "desc": "Proper packing, with part number and quantity on the label, then storage or delivery to the customer."
+      },
+      "rackLoad": {
+        "name": "Loading onto Racks",
+        "desc": "Each product is mounted on a rack, ensuring electrical contact and keeping a suitable gap so solution and current reach all sides of the part."
+      },
+      "swell": {
+        "name": "Soak Tank",
+        "desc": "Soaking the plastic in solution slightly softens the outer layer, preparing for the etching step so acid acts evenly on the part."
+      },
+      "etch": {
+        "name": "Surface Etching",
+        "desc": "ABS plastic is soaked in strong acid solution to controllably etch the surface layer, creating micro-pores. The metal layer bonds into these pores, so this is the step that decides adhesion in plastic plating."
+      },
+      "ultrasonicTank": {
+        "name": "Vibration Rinse Tank",
+        "desc": "Rinsing by vibration or ultrasonics pushes out solution trapped in the part's gaps and cavities that ordinary rinsing can hardly reach."
+      },
+      "neutralize": {
+        "name": "Neutralization Tank",
+        "desc": "Neutralizes and rinses off excess chemicals after etching, avoiding carrying impurities into later tanks."
+      },
+      "hclActivate": {
+        "name": "HCl Activation",
+        "desc": "A short soak in dilute acid to prepare the surface for the catalyst step."
+      },
+      "catalyst": {
+        "name": "Palladium Activation (Catalyst)",
+        "desc": "Palladium catalyst particles are deposited on the plastic surface. Plastic does not conduct electricity, so this catalyst layer is needed for electroless nickel plating, which is the base for the later electroplated layers."
+      },
+      "colorCompare": {
+        "name": "Solution Color Comparison",
+        "desc": "The catalyst solution color is compared with a standard sample to know whether it is still active enough, avoiding unplated areas."
+      },
+      "accelerate": {
+        "name": "Accelerator Tank",
+        "desc": "Removes the excess around the catalyst particles so they are exposed and active, helping electroless nickel form evenly with no unplated areas."
+      },
+      "copperMatte": {
+        "name": "Matte Copper Plating",
+        "desc": "The first copper layer, plated with a small current on the already conductive substrate. This layer is the base for the thick copper layer that follows, limiting burning or peeling at sharp edges."
+      },
+      "copperAcid": {
+        "name": "Acid Copper Plating",
+        "desc": "A thick copper layer levels the surface and hides small defects of the plastic substrate. Copper is soft and ductile, so it reduces stress between the plastic and the hard outer metal layers."
+      },
+      "activateTank": {
+        "name": "Activation Tank",
+        "desc": "A short soak in activation solution to remove the thin oxide, helping the next plating layer adhere."
+      },
+      "regulator": {
+        "name": "Conditioning Tank",
+        "desc": "Adjusts the surface state and solution before the next steps so the process is stable between lots."
+      },
+      "nickelSemi": {
+        "name": "Semi-Bright Nickel Plating",
+        "desc": "A slightly matte, ductile and thick base nickel layer that carries most of the corrosion resistance of the decorative plating system. It differs in composition from the bright nickel layer above, so under corrosion the bright layer is attacked first and protects the base layer."
+      },
+      "nickelSeal": {
+        "name": "Micro-Porous Nickel Tank (Micro-Porous Nickel)",
+        "desc": "A very thin nickel layer containing non-conductive particles is plated. When chrome is plated on top, it forms micro-pores around the particles, spreading the corrosion current instead of concentrating it at one point."
+      },
+      "preChrome": {
+        "name": "Activation Before Chrome",
+        "desc": "Cleans and activates the nickel surface right before the chrome tank, because nickel left in air quickly passivates. Purpose: chrome adheres firmly and evenly."
+      },
+      "chrome": {
+        "name": "Chrome plating",
+        "desc": "The thin outer chrome layer gives a glossy surface, high hardness, and resistance to scratches and stains."
+      },
+      "satinNickel": {
+        "name": "Satin Nickel Plating",
+        "desc": "A nickel layer for a fine matte (satin) surface instead of a glossy one. This surface hides fingerprints and small scratches."
+      },
+      "chrome3": {
+        "name": "Trivalent Chrome Plating (Black)",
+        "desc": "Trivalent chrome is used to create the black outer layer. Trivalent chrome is less hazardous than hexavalent chrome."
+      },
+      "unrack": {
+        "name": "Removing Products from the Rack",
+        "desc": "Remove products from the rack carefully so the plating is not scratched. Check the contact points with the rack for defects."
+      }
+    }
+  }
+}

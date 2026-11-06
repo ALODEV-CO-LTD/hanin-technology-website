@@ -3,7 +3,7 @@
     "Direct": {
       "heading": "直接联系",
       "addressLabel": "工厂地址",
-      "address": "河内市光明工业区 49G 地块",
+      "address": "河内市光明工业区 {{lot}} 地块",
       "taxLabel": "税号",
       "hotlineLabel": "热线",
       "consultLabel": "Zalo / 微信 / KakaoTalk 咨询",

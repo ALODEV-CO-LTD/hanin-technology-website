@@ -52,3 +52,6 @@ next-env.d.ts
 
 # ảnh gốc trích từ Company Profile (nặng); bản web nằm ở public/images/profile-lib
 /public/images/profile/
+
+# Bản gốc ảnh trước khi phục hồi chất lượng (scripts/restore-site-images.py)
+/_backup_originals/

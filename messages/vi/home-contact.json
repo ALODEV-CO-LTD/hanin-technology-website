@@ -3,7 +3,7 @@
     "Direct": {
       "heading": "Liên hệ trực tiếp",
       "addressLabel": "Địa chỉ nhà máy",
-      "address": "Lô 49G, KCN Quang Minh, TP Hà Nội",
+      "address": "Lô {{lot}}, KCN Quang Minh, TP Hà Nội",
       "taxLabel": "Mã số thuế",
       "hotlineLabel": "Hotline",
       "consultLabel": "Tư vấn Zalo / WeChat / KakaoTalk",

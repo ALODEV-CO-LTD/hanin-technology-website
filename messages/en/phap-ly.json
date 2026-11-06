@@ -1,0 +1,64 @@
+{
+  "Legal": {
+    "privacy": {
+      "title": "Privacy Policy",
+      "updated": "Updated: 10/2026",
+      "intro": "HANIN protects the personal information and technical documents you provide through the website.",
+      "collect": {
+        "title": "Information Collected",
+        "p1": "Full name, email, phone number, company name and request content when you submit a quote form, contact form or job application.",
+        "p2": "Attachments (CAD drawings, application documents) that you upload yourself."
+      },
+      "purpose": {
+        "title": "Purpose of Use",
+        "p1": "To respond to quote requests, provide technical advice, process job applications and improve service quality. HANIN does not sell or share information with third parties for commercial purposes."
+      },
+      "security": {
+        "title": "Technical Document Security",
+        "p1": "Drawings and attachments are stored in a private area, are not publicly accessible and can be viewed only by authorized staff."
+      },
+      "retention": {
+        "title": "Retention Period and Your Rights",
+        "p1": "Information is kept for as long as needed to handle the request. You have the right to ask to view, correct or delete your information by contacting HANIN."
+      },
+      "contact": {
+        "title": "Contact",
+        "p1": "For any questions about this policy, please email huyvinh82@gmail.com or call {phones}."
+      }
+    },
+    "terms": {
+      "title": "Terms of Service",
+      "updated": "Updated: 10/2026",
+      "intro": "By accessing and using this website, you agree to the terms below.",
+      "scope": {
+        "title": "Website Scope",
+        "p1": "The website presents capabilities and contract plating services and accepts quote requests. Information on the website is for reference and may change without notice."
+      },
+      "quote": {
+        "title": "Request a Quote",
+        "p1": "A quote is valid only when confirmed in writing by HANIN. Technical specifications, schedule and final price depend on the drawings, materials and actual volume."
+      },
+      "ip": {
+        "title": "Intellectual Property",
+        "p1": "Content, images and trademarks on the website belong to HANIN. Drawings and documents you send remain your property and are used only to fulfill your request."
+      },
+      "liability": {
+        "title": "Limitation of Liability",
+        "p1": "HANIN updates information to keep it accurate, but is not liable for damages arising from using information on the website without official confirmation."
+      },
+      "contact": {
+        "title": "Contact",
+        "p1": "For questions about these terms, please contact huyvinh82@gmail.com."
+      }
+    },
+    "operator": {
+      "title": "Website Operator",
+      "name": "Company name: HANIN Plating Industrial Joint Stock Company (brand HANIN Plating).",
+      "tax": "Tax code: 0110300983.",
+      "hq": "Address: Lot {{lot}}, Quang Minh Industrial Park, Quang Minh Commune, Hanoi.",
+      "fac": "Parent company: Hanin Tech, Lot {{hqLot}}, Quang Minh Industrial Park, Hanoi.",
+      "rep": "Representative: Mr. Nguyen Huy Vinh, Director.",
+      "mail": "Email: huyvinh82@gmail.com, vankhanhminhkhang@gmail.com."
+    }
+  }
+}

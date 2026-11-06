@@ -79,7 +79,7 @@
       "0": {
         "categoryLabel": "CHẤT LƯỢNG",
         "readTime": "4 phút đọc",
-        "title": "Đo độ dày lớp mạ bằng máy APC-100",
+        "title": "Đo độ dày lớp mạ bằng máy {{apc}}",
         "excerpt": "Phòng QC đo độ dày lớp mạ trên thành phẩm để đối chiếu yêu cầu của khách hàng, kết hợp thử phun muối NSS và CASS.",
         "author": "Bộ phận QC",
         "imageAlt": "Thước cặp điện tử đo bánh răng nhỏ, chi tiết thép đặt trên bàn kiểm tra chất lượng"
@@ -88,7 +88,7 @@
         "categoryLabel": "SẢN XUẤT",
         "readTime": "6 phút đọc",
         "title": "Dây chuyền mạ tự động cho chi tiết nhựa ABS",
-        "excerpt": "Chi tiết treo trên móc (JIG), cẩu trục đưa qua các bể mạ; dây chuyền cho sản lượng 30–50 nghìn sản phẩm mỗi ngày.",
+        "excerpt": "Chi tiết treo trên móc (JIG), cẩu trục đưa qua các bể mạ; dây chuyền cho sản lượng {{auto:k}} nghìn sản phẩm mỗi ngày.",
         "author": "Bộ phận sản xuất",
         "imageAlt": "Dây chuyền mạ tự động trong nhà máy HANIN"
       },

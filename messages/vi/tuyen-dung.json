@@ -108,7 +108,7 @@
       "secondaryImageAlt": "Linh kiện cơ khí sau khi mạ tại nhà máy HANIN",
       "secondaryBadge": "Kiểm tra chất lượng",
       "secondaryTitle": "Linh kiện cơ khí sau khi mạ",
-      "secondaryDesc": "Đo độ dày lớp mạ bằng máy APC-100",
+      "secondaryDesc": "Đo độ dày lớp mạ bằng máy {{apc}}",
       "labTitle": "Phòng kiểm nghiệm",
       "labDesc": "Máy phun muối NSS và CASS, máy thử Hull cell và phòng phân tích hóa chất.",
       "labImageAlt": "Ảnh phòng kiểm nghiệm hóa chất và thiết bị phân tích dung dịch mạ",

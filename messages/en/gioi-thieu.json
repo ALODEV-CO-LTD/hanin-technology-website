@@ -1,0 +1,217 @@
+{
+  "GioiThieu": {
+    "IntroHero": {
+      "imageAlt": "Panorama of the HANIN industrial factory with its modern plating workshop",
+      "breadcrumbHome": "Home",
+      "breadcrumbCurrent": "About",
+      "title": "About HANIN",
+      "subtitle": "Company information, the Hanin Tech system, plating lines and certification."
+    },
+    "CompanyIntroduction": {
+      "imageAlt": "Modern architectural facade of the factory at Quang Minh Industrial Park, Hanoi",
+      "scaleBadge": "Factory at Quang Minh Industrial Park",
+      "areaBadge": "Site area: {{area}} m²",
+      "heading": "Plating Services for Industrial Customers",
+      "paragraph1Strong": "HANIN Plating Industrial Joint Stock Company",
+      "paragraph1Rest": "specializes in plating on ABS plastic and metal substrates, and also paints and prints on plastic and metal products.",
+      "paragraph2": "The company was founded in {{founded}}; the factory is at Lot {{lot}}, Quang Minh Industrial Park, Hanoi, on a site of {{area}} m². The factory has {{staff}} employees. More than {{customers}} customers use the processing services.",
+      "field": {
+        "label": "Field",
+        "value": "Plastic and metal plating",
+        "note": "ABS plating, metal plating, PVD, painting and printing"
+      },
+      "target": {
+        "label": "Customers",
+        "value": "Industrial customers",
+        "note": "Automotive, home appliances, sanitary ware and kitchen equipment"
+      },
+      "location": {
+        "label": "Location",
+        "value": "Quang Minh Industrial Park, Hanoi",
+        "note": "Address: Lot {{lot}}, Quang Minh Industrial Park"
+      },
+      "paragraph3": "HANIN belongs to the Hanin Tech system, which includes the IPM mold workshop, the HANIN plating factory, the Press workshop and the Showa workshop, with {{hqStaff}} people."
+    },
+    "CompanyJourney": {
+      "heading": "Development Journey",
+      "subtitle": "Milestones of the Hanin Tech system, which includes HANIN.",
+      "m1": {
+        "yearTag": "2018",
+        "title": "Hanin Tech Founded",
+        "desc": "Hanin Tech was founded as the parent company that invests in and develops the factories."
+      },
+      "m2": {
+        "yearTag": "2021",
+        "title": "IPM Mold Factory",
+        "desc": "The IPM mold factory began operation."
+      },
+      "m3": {
+        "yearTag": "2023",
+        "title": "HANIN Plating Factory",
+        "desc": "The HANIN Plating factory was established at Lot {{lot}}, Quang Minh Industrial Park."
+      },
+      "m4": {
+        "yearTag": "2025",
+        "title": "Factory No. 4 (Press)",
+        "desc": "A metal stamping factory was added."
+      },
+      "m5": {
+        "yearTag": "2026",
+        "title": "Factory No. 5 (Showa)",
+        "desc": "A casting and assembly factory was added."
+      }
+    },
+    "ContactCta": {
+      "heading": "Send a plating service request",
+      "subtitle": "Send a drawing or sample, substrate material, required plating and quantity so HANIN can quote.",
+      "ctaPrimary": "CONTACT",
+      "ctaSecondary": "REQUEST A QUOTE"
+    },
+    "CoreStrengths": {
+      "heading": "Production and Inspection Capability",
+      "production": {
+        "title": "Manufacturing Capability",
+        "desc": "Automatic plating {{auto:k}} thousand products/day, semi-automatic rack plating {{hang:k}} thousand/day, barrel plating {{rot:ton}} tons/day.",
+        "metricLabel": "Lines",
+        "metricValue": "3 plating lines"
+      },
+      "technology": {
+        "title": "Technology and Equipment",
+        "desc": "2 PVD machines, manual and automatic spray booths, an automatic plating line using jigs and overhead cranes.",
+        "metricLabel": "Technology",
+        "metricValue": "Plating, PVD, spray painting"
+      },
+      "quality": {
+        "title": "Quality Control",
+        "desc": "Plating thickness measurement, NSS and CASS salt spray, Hull cell test, analysis lab.",
+        "metricLabel": "Inspection",
+        "metricValue": "NSS, CASS, Hull cell"
+      },
+      "support": {
+        "title": "Engineering",
+        "desc": "The plating process is determined from the drawing and technical requirements of each part.",
+        "metricLabel": "Technical consultation",
+        "metricValue": "Per drawing"
+      }
+    },
+    "DevelopmentDirection": {
+      "heading": "Working Principles",
+      "subtitle": "Technical requirements are set on the drawing and checked with equipment at the factory.",
+      "precision": {
+        "title": "Per drawing",
+        "desc": "Plating follows the requirements on the customer's drawing, with plating thickness measured.",
+        "note": "Plating thickness measurement"
+      },
+      "stability": {
+        "title": "Plating Tank Control",
+        "desc": "Plating solution analysis and Hull cell tests in the analysis lab.",
+        "note": "Analysis lab, Hull cell"
+      },
+      "partnership": {
+        "title": "Technical Exchange",
+        "desc": "Discuss surface requirements with the customer's technical team.",
+        "note": "Working with the customer's technical team"
+      }
+    },
+    "FactoryOverview": {
+      "heading": "Factory",
+      "subtitle": "The HANIN production and inspection area.",
+      "mainImageAlt": "Electroplating line with chemical tanks and overhead crane",
+      "zone1Tag": "Area 1 · Plating Line",
+      "zone1Title": "Industrial Plating Line",
+      "zone1Desc": "Automatic plating line, rack plating and barrel plating",
+      "zone2ImageAlt": "A worker hangs products on a jig at the plating line",
+      "zone2Tag": "Area 2 · Analysis and Quality Control",
+      "zone2Title": "Analysis lab",
+      "zone3ImageAlt": "Analysis lab with lab benches and analytical chemicals",
+      "zone3Tag": "Area 3 · Fixtures and Inspection",
+      "zone3Title": "Product inspection table",
+      "zone4ImageAlt": "Plating tanks of the semi-automatic metal plating line",
+      "zone4Tag": "Area 4 · Overhead Crane",
+      "zone4Title": "Overhead crane area",
+      "cta": "VIEW MANUFACTURING CAPABILITY"
+    },
+    "ProfileDownloadCta": {
+      "heading": "HANIN Capability Profile",
+      "subtitle": "Introduction to the factory, equipment, production capability and HANIN's quality system.",
+      "cta": "DOWNLOAD CAPABILITY PROFILE (PDF)",
+      "cardCompanyName": "HANIN VIETNAM",
+      "cardCatalogLabel": "Company profile",
+      "cardTitle": "HANIN Capability Profile",
+      "cardVersion": "2026 edition",
+      "cardTagline": "Technical specifications and featured projects",
+      "cardFormat": "PDF",
+      "cardViewLabel": "View document"
+    },
+    "QualityStandardsPreview": {
+      "heading": "Certification and Quality Inspection",
+      "subtitle": "ISO 9001:2015 certification, wastewater treatment system and inspection equipment.",
+      "cta": "VIEW CERTIFICATE",
+      "certificateImageAlt": "ISO 9001:2015 certificate of Hanin Technology Vietnam, issued by ICB",
+      "certificateTag": "Certificate",
+      "certificateTitle": "ISO 9001:2015 — Quality Management System",
+      "certificateIssuer": "Certification body: International Certification Body Joint Stock Company (ICB)",
+      "certificateHolderLabel": "Certified entity",
+      "certificateHolderValue": "Hanin Technology Vietnam Joint Stock Company",
+      "certificateAccreditationLabel": "Certificate number",
+      "certificateAccreditationValue": "250615.QMS.CN25 · VICAS 022-QMS",
+      "certificateScope": "Scope: manufacturing, processing, casting, molding, printing, painting and surface treatment of plastic products.",
+      "iso9001": {
+        "tag": "ISO Certification",
+        "title": "Quality Management System",
+        "desc": "ISO 9001:2015 issued to Hanin Technology Vietnam Joint Stock Company, issued on 11/08/2025, valid until 10/08/2028.",
+        "standard": "Standard: ISO 9001:2015",
+        "status": "Valid"
+      },
+      "wastewater": {
+        "tag": "Environment",
+        "title": "Wastewater Treatment",
+        "desc": "System with a capacity of {{waste}} m³/day and night, with a settling tank and filter press.",
+        "standard": "Capacity: {{waste}} m³/day and night",
+        "status": "At the plating factory"
+      },
+      "equipment": {
+        "tag": "Inspection",
+        "title": "Inspection Equipment",
+        "desc": "Plating thickness gauge, NSS and CASS salt spray chambers, Hull cell tester.",
+        "standard": "Equipment: {{apc}}, NSS, CASS, Hull cell",
+        "status": "In the analysis lab"
+      }
+    },
+    "CapabilitySnapshot": {
+      "lines": {
+        "label": "Plating Lines",
+        "desc": "Lines",
+        "note": "Automatic, semi-automatic and barrel",
+        "end": "3",
+        "suffix": ""
+      },
+      "pvd": {
+        "label": "PVD Machines",
+        "desc": "Machines",
+        "note": "Vacuum Coating",
+        "end": "2",
+        "suffix": ""
+      },
+      "wastewater": {
+        "label": "Wastewater Treatment",
+        "desc": "m³/day and night",
+        "note": "With settling tank and filter press",
+        "end": "130",
+        "suffix": " m³"
+      },
+      "staff": {
+        "label": "Plating Factory Employees",
+        "desc": "People",
+        "note": "At Lot {{lot}}, Quang Minh Industrial Park",
+        "end": "70",
+        "suffix": ""
+      }
+    },
+    "FeaturedClients": {
+      "eyebrow": "FEATURED CUSTOMERS",
+      "title": "Customers in Manufacturing",
+      "description": "More than {{customers}} customers send work to HANIN, including LG Electronics, Panasonic Vietnam, VinFast and Viglacera."
+    }
+  }
+}

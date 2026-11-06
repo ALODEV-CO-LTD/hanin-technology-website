@@ -1,0 +1,43 @@
+{
+  "id": "component:khac-thong-bao-toast",
+  "ten": "Toast thong bao (success/error/info/undo) singleton",
+  "nhom": "khac",
+  "nguon_du_an": "qmvn (CT104)",
+  "nguon_duong_dan": [
+    "ct104:/home/claude/104/projects/qmvn/components/toast/store.ts",
+    "ct104:/home/claude/104/projects/qmvn/components/toast/Toaster.tsx"
+  ],
+  "sha": "3514eaf3a500d0075766dd67097f5ed53cc7f62e",
+  "ngay_sao_chep": "2026-10-15",
+  "phu_thuoc": [
+    {
+      "ten": "react",
+      "phien_ban": "19.2.4"
+    },
+    {
+      "ten": "react-dom",
+      "phien_ban": "19.2.4"
+    },
+    {
+      "ten": "tailwindcss",
+      "phien_ban": "4.x",
+      "ghi_chu": "chi lop tien ich trong className; khong co thi mat kieu, logic van chay"
+    }
+  ],
+  "ngon_ngu": "TypeScript + React (TSX)",
+  "giay_phep": "ma noi bo QMVN (du an cua CEO), khong ma ben thu ba",
+  "kiem_dinh": "da-chay",
+  "lenh_kiem": "cd allinone/thu-vien-thanh-phan/_kiem-ct104 && npm ci && npx vitest run && npx tsc --noEmit -p tsconfig.json ; demo: npm run demo (cong 3197)",
+  "tu_khoa": [
+    "toast",
+    "thong bao",
+    "notification",
+    "hoan tac",
+    "undo",
+    "snackbar"
+  ],
+  "tep": [
+    "src/store.ts",
+    "src/Toaster.tsx"
+  ]
+}

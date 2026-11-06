@@ -1,0 +1,248 @@
+{
+  "Home": {
+    "CompanySnapshot": {
+      "partners": {
+        "label1": "CUSTOMERS",
+        "end": "100",
+        "suffix": "+"
+      },
+      "staff": {
+        "label1": "EMPLOYEES",
+        "end": "70",
+        "suffix": ""
+      },
+      "area": {
+        "label1": "FACTORY SITE",
+        "end": "2230",
+        "suffix": "m²"
+      },
+      "founded": {
+        "label1": "YEAR FOUNDED",
+        "end": "2023",
+        "suffix": ""
+      }
+    },
+    "Hero": {
+      "stats": {
+        "partners": "INDUSTRIAL CUSTOMERS",
+        "staff": "EMPLOYEES",
+        "area": "FACTORY SCALE",
+        "quality": "QUALITY MANAGEMENT CERTIFICATION",
+        "qualityValue": "ISO 9001:2015"
+      },
+      "titlePrefix": "CONTRACT PLATING ON",
+      "titleHighlight": "ABS PLASTIC & METAL",
+      "badge": "Factory at Quang Minh Industrial Park, Hanoi",
+      "description": "Automatic painting and PVD vacuum coating at the Lot {{lot}} factory, Quang Minh Industrial Park, Hanoi.",
+      "ctaPrimary": "VIEW MANUFACTURING CAPABILITY",
+      "ctaSecondary": "REQUEST ADVICE",
+      "locationLabel": "LOCATION:",
+      "locationValue": "QUANG MINH INDUSTRIAL PARK, HANOI",
+      "scrollCta": "SCROLL DOWN",
+      "imageAlt": "Plating line at the HANIN factory"
+    },
+    "AboutHanin": {
+      "highlights": {
+        "0": "ABS plastic plating and metal plating",
+        "1": "PVD vacuum coating, spray painting and printing",
+        "2": "Plating thickness measurement, NSS and CASS salt spray",
+        "3": "Wastewater treatment system {{waste}} m³/day and night"
+      },
+      "imageAlt": "Workers in the production workshop of the Hanin Tech system",
+      "badgeTag": "Quality Control",
+      "badgeTitle": "Thickness measurement and salt spray testing",
+      "badgeSubtitle": "PLASTIC AND METAL SURFACE TREATMENT",
+      "title": "About HANIN",
+      "paragraph1": "HANIN specializes in plating on ABS plastic and metal substrates, and also paints and prints on plastic and metal products.",
+      "paragraph2": "HANIN was founded in {{founded}} and belongs to the Hanin Tech system (founded in {{hqFounded}}). The factory covers {{area}} m² at Lot {{lot}}, Quang Minh Industrial Park, Hanoi, with {{staff}} employees and more than {{customers}} customers.",
+      "ctaLink": "LEARN MORE ABOUT HANIN"
+    },
+    "PlatingServices": {
+      "title": "Plating Services",
+      "ctaAll": "VIEW ALL SERVICES",
+      "detailLabel": "TECHNICAL DETAILS",
+      "services": {
+        "0": {
+          "tag": "ABS PLASTIC SUBSTRATE",
+          "title": "ABS and ABS/PC Plating",
+          "desc": "Nickel chrome 3+, nickel chrome 6+, satin nickel, black nickel chrome; a hairline finish can be applied on nickel chrome."
+        },
+        "1": {
+          "tag": "METAL SUBSTRATE",
+          "title": "Nickel, Chrome and Satin Plating on Metal",
+          "desc": "Electrolytic nickel, electroless nickel, black nickel, nickel chrome and satin plating for iron, copper, steel and aluminum parts."
+        },
+        "2": {
+          "tag": "ZINC · COPPER · TIN",
+          "title": "Zinc, Copper, Tin Plating and Black Phosphating",
+          "desc": "Zinc, copper, tin plating and black manganese phosphating for rust resistance and better adhesion."
+        },
+        "3": {
+          "tag": "PVD · PAINT · PRINT",
+          "title": "PVD, Spray Painting and Printing",
+          "desc": "PVD vacuum coating on 2 machines; spray painting, printing and laser on plastic and metal products."
+        }
+      }
+    },
+    "ManufacturingCapability": {
+      "title": "MANUFACTURING CAPABILITY",
+      "description": "The plating lines, PVD machines, spray booths and analysis lab are in the same factory.",
+      "imageAlt": "Automatic plating tanks at the HANIN factory",
+      "cta": "VIEW MANUFACTURING CAPABILITY",
+      "specs": {
+        "0": {
+          "tag": "PLATING LINES",
+          "title": "Automatic, rack and barrel plating",
+          "desc": "Automatic line {{auto:k}} thousand products/day; semi-automatic rack plating {{hang:k}} thousand/day; barrel plating {{rot:ton}} tons/day."
+        },
+        "1": {
+          "tag": "EQUIPMENT",
+          "title": "PVD, Spray Painting and Printing",
+          "desc": "2 PVD machines; 2 manual spray booths, 3 six-gun spray booths and 1 automatic spray painting line."
+        },
+        "2": {
+          "tag": "QUALITY CONTROL",
+          "title": "Plating inspection equipment",
+          "desc": "Plating thickness gauge, NSS and CASS salt spray chambers, Hull cell tester, analysis lab."
+        },
+        "3": {
+          "tag": "WASTEWATER TREATMENT",
+          "title": "Wastewater Treatment System",
+          "desc": "Capacity {{waste}} m³/day and night, with a settling tank and filter press."
+        }
+      }
+    },
+    "FactoryShowcase": {
+      "title": "Factory and Equipment",
+      "description": "The workshop, lines, analysis lab, PVD area and spray area are on the same site.",
+      "tabs": {
+        "0": {
+          "label": "FACTORY",
+          "sector": "Factory",
+          "tagline": "Factory at Lot {{lot}}, Quang Minh Industrial Park",
+          "order": "Workshop",
+          "title": "Plating factory of {{area}} m²",
+          "desc": "The factory has plating lines, a PVD area, a spray painting area, an analysis lab and a wastewater treatment system."
+        },
+        "1": {
+          "label": "LINES",
+          "sector": "Lines",
+          "tagline": "Plating Lines",
+          "order": "Contract plating",
+          "title": "Automatic, semi-automatic and barrel plating lines",
+          "desc": "The automatic line uses hanging jigs and overhead cranes; barrel plating has a vibratory machine, degreasing, a copper plating tank and a nickel plating tank."
+        },
+        "2": {
+          "label": "TESTING LAB",
+          "sector": "Testing lab",
+          "tagline": "Analysis and inspection lab",
+          "order": "Quality Control",
+          "title": "Plating analysis and inspection lab",
+          "desc": "Plating thickness gauge, NSS and CASS salt spray chambers, Hull cell tester, analytical chemicals."
+        },
+        "3": {
+          "label": "EQUIPMENT",
+          "sector": "Equipment",
+          "tagline": "PVD machines and spray booths",
+          "order": "Equipment",
+          "title": "PVD machines and spray booths",
+          "desc": "2 PVD machines, manual spray booths, 6-gun spray booths and an automatic spray painting line."
+        }
+      }
+    },
+    "ProductsProjects": {
+      "title": "Featured Products",
+      "description": "Three product groups that HANIN plates, paints and prints.",
+      "ctaAll": "VIEW ALL PRODUCTS",
+      "project1": {
+        "imageAlt": "Automotive parts after plating",
+        "label": "GROUP 01",
+        "category": "Automotive, Smart Home",
+        "title": "Automotive parts",
+        "desc": "VinFast, Infiniti and Nissan logos, VinFast raised lettering, engine start buttons, control switches and automotive lamp bezels.",
+        "cta": "VIEW PRODUCTS"
+      },
+      "project2": {
+        "imageAlt": "Home appliance parts after plating",
+        "label": "GROUP 02",
+        "category": "Home Appliances",
+        "title": "Home Appliances",
+        "desc": "Parts for refrigerators, washing machines, water purifiers and ovens, such as washing machine lid frames and knobs.",
+        "cta": "VIEW PRODUCTS"
+      },
+      "project3": {
+        "imageAlt": "Shower heads and sanitary fittings after plating",
+        "label": "GROUP 03",
+        "category": "Sanitary, Kitchen",
+        "title": "Sanitary and Kitchen Equipment",
+        "desc": "Shower heads, sink faucets, sanitary fittings, water purifier knobs, frames and knobs for kitchen equipment.",
+        "cta": "VIEW PRODUCTS"
+      }
+    },
+    "QualityCertification": {
+      "title": "Plating inspection before delivery.",
+      "description": "Plating thickness is measured and salt spray tested; plating solutions are analyzed in a dedicated analysis lab.",
+      "ctaView": "VIEW CERTIFICATE",
+      "certs": {
+        "0": {
+          "label": "ISO 9001",
+          "title": "Quality management",
+          "desc": "ISO 9001:2015 certificate of Hanin Technology Vietnam, valid until 10/08/2028.",
+          "status": "Valid until 10/08/2028"
+        },
+        "1": {
+          "label": "{{waste}} m³",
+          "title": "Wastewater Treatment",
+          "desc": "System with a capacity of {{waste}} m³/day and night, with a settling tank and filter press.",
+          "status": "Wastewater Treatment"
+        },
+        "2": {
+          "label": "Inspection",
+          "title": "Inspection Equipment",
+          "desc": "Plating thickness gauge, NSS and CASS salt spray chambers, Hull cell tester.",
+          "status": "Inspection in the analysis lab"
+        }
+      }
+    },
+    "NewsUpdates": {
+      "title": "News and Updates",
+      "ctaAll": "VIEW ALL",
+      "readMore": "READ ARTICLE",
+      "articles": {
+        "0": {
+          "tag": "Company news",
+          "title": "Plastic plating, metal plating and PVD capability",
+          "excerpt": "Plating lines, PVD machines and spray booths at the Quang Minh Industrial Park factory..."
+        },
+        "1": {
+          "tag": "Production activities",
+          "title": "Plating thickness inspection and salt spray testing",
+          "excerpt": "Plating thickness measurement and NSS, CASS salt spray testing to check lots..."
+        },
+        "2": {
+          "tag": "Project updates",
+          "title": "Contract plating for automotive parts and home appliances",
+          "excerpt": "Contract plating, painting and printing for automotive parts, home appliances and sanitary ware..."
+        }
+      }
+    },
+    "RecruitmentBanner": {
+      "title": "Careers at HANIN",
+      "description": "HANIN is hiring engineering and operations staff for the factory at Quang Minh Industrial Park.",
+      "positionsLabel": "OPEN POSITIONS",
+      "cta": "VIEW OPEN POSITIONS"
+    },
+    "FinalCta": {
+      "title": "REQUEST A PLATING QUOTE",
+      "description": "Send a drawing or sample, substrate material, required plating and quantity. The technical team will reply by email or phone.",
+      "cta": "REQUEST A QUOTE",
+      "contactTitle": "DIRECT CONTACT",
+      "hotlineLabel": "HOTLINE",
+      "zaloLabel": "TECHNICAL ZALO",
+      "zaloCta": "MESSAGE VIA ZALO",
+      "emailLabel": "QUOTE EMAIL",
+      "addressLabel": "FACTORY ADDRESS",
+      "addressValue": "Lot {{lot}}, Quang Minh Industrial Park, Quang Minh Commune, Hanoi"
+    }
+  }
+}

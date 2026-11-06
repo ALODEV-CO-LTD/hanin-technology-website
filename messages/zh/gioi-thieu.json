@@ -10,11 +10,11 @@
     "CompanyIntroduction": {
       "imageAlt": "位于河内光明工业区的现代化厂区外观",
       "scaleBadge": "位于光明工业区的工厂",
-      "areaBadge": "厂区面积：2,230 平方米",
+      "areaBadge": "厂区面积：{{area}} 平方米",
       "heading": "面向工业客户的电镀加工",
       "paragraph1Strong": "HANIN 电镀工业股份公司",
       "paragraph1Rest": "专业从事 ABS 塑料及金属基材的电镀处理，同时承接塑料、金属产品的喷漆与印刷。",
-      "paragraph2": "公司成立于2023年，工厂位于河内光明工业区49G地块，占地2,230 m²，现有员工70人。已有100多家客户使用加工服务。",
+      "paragraph2": "公司成立于{{founded}}年，工厂位于河内光明工业区{{lot}}地块，占地{{area}} m²，现有员工{{staff}}人。已有{{customers}}多家客户使用加工服务。",
       "field": {
         "label": "经营领域",
         "value": "塑料与金属电镀处理",
@@ -28,9 +28,9 @@
       "location": {
         "label": "厂址",
         "value": "河内光明工业区",
-        "note": "地址：光明工业区 49G 号地块"
+        "note": "地址：光明工业区 {{lot}} 号地块"
       },
-      "paragraph3": "HANIN 隶属于 Hanin Tech 体系，该体系包括 IPM 模具厂、HANIN 电镀厂、Press 冲压厂和 Showa 厂，共 350 人。"
+      "paragraph3": "HANIN 隶属于 Hanin Tech 体系，该体系包括 IPM 模具厂、HANIN 电镀厂、Press 冲压厂和 Showa 厂，共 {{hqStaff}} 人。"
     },
     "CompanyJourney": {
       "heading": "发展历程",
@@ -48,7 +48,7 @@
       "m3": {
         "yearTag": "2023",
         "title": "HANIN 电镀厂",
-        "desc": "在光明工业区 49G 号地块设立 HANIN Plating 电镀厂。"
+        "desc": "在光明工业区 {{lot}} 号地块设立 HANIN Plating 电镀厂。"
       },
       "m4": {
         "yearTag": "2025",
@@ -166,15 +166,15 @@
       "wastewater": {
         "tag": "环境",
         "title": "废水处理",
-        "desc": "处理能力 130 立方米/昼夜，配有沉淀池和压泥机。",
-        "standard": "处理能力：130 立方米/昼夜",
+        "desc": "处理能力 {{waste}} 立方米/昼夜，配有沉淀池和压泥机。",
+        "standard": "处理能力：{{waste}} 立方米/昼夜",
         "status": "位于电镀工厂"
       },
       "equipment": {
         "tag": "检测",
         "title": "检测设备",
         "desc": "镀层测厚仪、NSS 和 CASS 盐雾试验机、Hull cell 试验机。",
-        "standard": "设备：APC-100、NSS、CASS、Hull cell",
+        "standard": "设备：{{apc}}、NSS、CASS、Hull cell",
         "status": "在分析室"
       }
     },
@@ -203,7 +203,7 @@
       "staff": {
         "label": "电镀厂员工",
         "desc": "人",
-        "note": "位于光明工业区 49G 号地块",
+        "note": "位于光明工业区 {{lot}} 号地块",
         "end": "70",
         "suffix": ""
       }
@@ -211,7 +211,7 @@
     "FeaturedClients": {
       "eyebrow": "代表客户",
       "title": "制造业客户",
-      "description": "超过 100 家客户委托 HANIN 加工，其中包括 LG Electronics、松下越南、VinFast 和 Viglacera。"
+      "description": "超过 {{customers}} 家客户委托 HANIN 加工，其中包括 LG Electronics、松下越南、VinFast 和 Viglacera。"
     }
   }
 }

@@ -3,8 +3,8 @@
     "eyebrow": "Về HANIN và hệ thống Hanin Tech",
     "title": "Nhà máy mạ HANIN",
     "intro1": "HANIN xử lý mạ trên nền nhựa ABS và kim loại. Nhà máy có mạ chân không PVD, đồng thời nhận sơn và in trên sản phẩm nhựa, kim loại.",
-    "intro2": "Nhà máy đặt tại Lô 49G, KCN Quang Minh, Hà Nội, trên mặt bằng 2.230 m² với 70 nhân sự. HANIN thuộc hệ thống Hanin Tech.",
-    "imageAlt": "Dây chuyền mạ quay trong nhà máy mạ HANIN tại Lô 49G, KCN Quang Minh",
+    "intro2": "Nhà máy đặt tại Lô {{lot}}, KCN Quang Minh, Hà Nội, trên mặt bằng {{area}} m² với {{staff}} nhân sự. HANIN thuộc hệ thống Hanin Tech.",
+    "imageAlt": "Dây chuyền mạ quay trong nhà máy mạ HANIN tại Lô {{lot}}, KCN Quang Minh",
     "statsLabel": "Số liệu chính",
     "stats": {
       "0": {
@@ -20,12 +20,12 @@
         "label": "Máy đúc nhựa, 75–1.000 tấn (hệ thống Hanin Tech)"
       },
       "3": {
-        "value": "2.230 m²",
+        "value": "{{area}} m²",
         "label": "Mặt bằng nhà máy mạ"
       }
     },
     "timelineTitle": "Lộ trình phát triển hệ thống Hanin Tech",
-    "timelineIntro": "Hanin Tech là công ty mẹ, đầu tư và phát triển các nhà máy trong hệ thống. Trụ sở Hanin Tech đặt tại Lô 660, KCN Quang Minh; nhà máy mạ HANIN đặt tại Lô 49G.",
+    "timelineIntro": "Hanin Tech là công ty mẹ, đầu tư và phát triển các nhà máy trong hệ thống. Trụ sở Hanin Tech đặt tại Lô {{hqLot}}, KCN Quang Minh; nhà máy mạ HANIN đặt tại Lô {{lot}}.",
     "thisFactory": "Nhà máy này",
     "milestones": {
       "0": {

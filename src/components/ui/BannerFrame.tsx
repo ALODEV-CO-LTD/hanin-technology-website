@@ -11,6 +11,7 @@ export default function BannerFrame({ image, alt, children, bar }: { image: stri
     <section className="relative w-full hero-screen flex flex-col overflow-hidden bg-slate-50">
       <HeroImage src={image} alt={alt} />
       <div aria-hidden="true" className="absolute inset-y-0 left-0 w-full lg:w-3/4 banner-scrim" />
+      <div aria-hidden="true" className="absolute inset-0 hero-dots" />
       <div className="relative z-10 flex flex-1 flex-col justify-center banner-text">{children}</div>
       {bar}
     </section>

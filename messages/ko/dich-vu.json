@@ -23,7 +23,7 @@
         "description": "철, 구리, 강철, 알루미늄에 광택 전해 니켈, 내마모·내열 무전해 니켈, 흑색 니켈, 새틴 니켈, 니켈 크롬 도금을 합니다.",
         "applicationLabel": "대표 적용 제품:",
         "applicationText": "손잡이, 경첩, 기어, 핀, 잠금장치, 기계 부품.",
-        "statLabel": "걸이 도금 하루 1만~2만 개 · 회전 도금 하루 3,000~5,000kg",
+        "statLabel": "걸이 도금 하루 1만~2만 개 · 회전 도금 하루 {{rot:fullTilde}}kg",
         "imageAlt": "니켈 도금된 금속 부품"
       },
       "kemNiken": {
@@ -31,7 +31,7 @@
         "description": "소형 금속 부품에 아연 도금, 구리 도금, 주석 도금, 망간 흑색 인산염 처리를 하여 방청, 부착력, 색상 유지를 높입니다.",
         "applicationLabel": "대표 적용 제품:",
         "applicationText": "나사, 볼트, 커버, 단자, 너트, 리벳.",
-        "statLabel": "회전 도금 하루 3,000~5,000kg",
+        "statLabel": "회전 도금 하루 {{rot:fullTilde}}kg",
         "imageAlt": "아연 도금 및 흑색 인산염 처리된 나사와 볼트"
       },
       "sonMaKetHop": {
@@ -44,10 +44,10 @@
       },
       "xuLyNhom": {
         "title": "PVD 진공 도금",
-        "description": "PVD 장비 2대와 라인 2개로 미관이 뛰어나고 내구성이 좋은 진공 도금을 제공합니다.",
+        "description": "PVD 장비 2대로 미관이 뛰어나고 내구성이 좋은 진공 도금을 제공합니다.",
         "applicationLabel": "대표 적용 제품:",
         "applicationText": "미관과 내구성이 높게 요구되는 부품.",
-        "statLabel": "PVD 장비 2대 · PVD 라인 2개",
+        "statLabel": "PVD 장비 2대",
         "imageAlt": "PVD 진공 도금 부품"
       }
     },
@@ -63,18 +63,18 @@
     },
     "CapacityOverview": {
       "heading": "도금 라인 및 시스템",
-      "subtitle": "꽝민 산업단지 49G 구역의 공장은 자동 도금 라인, 반자동 걸이 도금 라인, 회전 도금 라인과 폐수 처리 시스템을 갖추고 있습니다.",
+      "subtitle": "꽝민 산업단지 {{lot}} 구역의 공장은 자동 도금 라인, 반자동 걸이 도금 라인, 회전 도금 라인과 폐수 처리 시스템을 갖추고 있습니다.",
       "auto": {
         "title": "자동 도금 라인",
         "desc": "JIG 지그, 크레인, 도금 조 구역을 갖추고 하루 3만~5만 개를 처리하며 크롬, 니켈, 새틴 도금을 합니다."
       },
       "complex": {
         "title": "반자동 걸이 도금 및 회전 도금",
-        "desc": "걸이 도금은 하루 1만~2만 개, 회전 도금은 하루 3,000~5,000kg(1만~3만 개)을 처리합니다."
+        "desc": "걸이 도금은 하루 1만~2만 개, 회전 도금은 하루 {{rot:fullTilde}}kg(1만~3만 개)을 처리합니다."
       },
       "wastewater": {
         "title": "폐수 처리",
-        "desc": "폐수 처리 시스템은 처리 용량이 하루 130㎥이며 침전조와 슬러지 압착기를 갖추고 있습니다."
+        "desc": "폐수 처리 시스템은 처리 용량이 하루 {{waste}}㎥이며 침전조와 슬러지 압착기를 갖추고 있습니다."
       }
     },
     "CategoryHero": {
@@ -100,7 +100,7 @@
       },
       "stat4": {
         "label": "회전 도금",
-        "value": "하루 3,000~5,000kg"
+        "value": "하루 {{rot:fullTilde}}kg"
       },
       "ctaPrimary": "견적 요청",
       "ctaSecondary": "기술 상담 문의"
@@ -169,7 +169,7 @@
       "lineCapacityLabel": "반자동 걸이 도금",
       "lineCapacityValue": "하루 1만~2만 개",
       "tankSizeLabel": "회전 도금",
-      "tankSizeValue": "하루 3,000~5,000kg",
+      "tankSizeValue": "하루 {{rot:fullTilde}}kg",
       "heading": "걸이 도금 및 회전 도금 라인",
       "subtitle": "두 라인 모두 전해 니켈, 무전해 니켈, 흑색 니켈, 망간 흑색 인산염 처리, 아연 도금을 할 수 있습니다.",
       "f1": {
@@ -178,7 +178,7 @@
       },
       "f2": {
         "title": "회전 도금 라인:",
-        "desc": "하루 3,000~5,000kg(약 1만~3만 개)을 처리하며, 진동기, 탈지, 구리 도금 조, 니켈 도금 조를 갖추고 있습니다."
+        "desc": "하루 {{rot:fullTilde}}kg(약 1만~3만 개)을 처리하며, 진동기, 탈지, 구리 도금 조, 니켈 도금 조를 갖추고 있습니다."
       },
       "f3": {
         "title": "자동 도금 라인:",
@@ -191,25 +191,25 @@
       "a1": {
         "tag": "기계 부품",
         "title": "기어, 핀, 축",
-        "desc": "기어, 핀, 기계 부품 플레이트, 축-핀, 조립 부품.",
+        "desc": "무전해 니켈: 나사산과 깊은 구멍 안까지 도금이 고르고 경도가 높으며 내마모성이 좋습니다.",
         "note": "무전해 니켈"
       },
       "a2": {
         "tag": "도어·잠금 부품",
         "title": "손잡이, 경첩, 핀",
-        "desc": "금속 손잡이, 경첩, 잠금장치, 위치결정 핀, 특수 볼트.",
+        "desc": "전해 니켈: 밝고 내구성이 좋은 도금층.",
         "note": "전해 니켈"
       },
       "a3": {
         "tag": "위생",
         "title": "수전과 액세서리",
-        "desc": "수전, 욕실 액세서리, 손잡이.",
+        "desc": "흑색 니켈, 새틴 니켈 또는 니켈 크롬을 표면 요구에 맞춰 적용합니다.",
         "note": "크롬 도금"
       },
       "a4": {
         "tag": "장식",
         "title": "새틴 스테인리스와 장식 부품",
-        "desc": "새틴 스테인리스 판, 문 손잡이, 스테인리스 바, 경첩, 장식 부품.",
+        "desc": "새틴 니켈 또는 니켈 크롬으로 고운 무광 또는 광택 표면을 만듭니다.",
         "note": "새틴 도금"
       }
     },
@@ -231,7 +231,7 @@
       },
       "r3": {
         "item": "도금 두께",
-        "device": "APC-100 도금 두께 측정기",
+        "device": "{{apc}} 도금 두께 측정기",
         "criteria": "도금 두께를 측정하여 도면 요구 사항과 대조합니다."
       },
       "r4": {
@@ -247,7 +247,7 @@
     },
     "DetailGallery": {
       "heading": "공장 현장 사진",
-      "subtitle": "HANIN 공장, 꽝민 산업단지 49G 구역",
+      "subtitle": "HANIN 공장, 꽝민 산업단지 {{lot}} 구역",
       "line": {
         "alt": "HANIN 공장 도금 구역",
         "tag": "도금 구역",
@@ -258,7 +258,7 @@
         "alt": "HANIN 공장 생산 구역",
         "tag": "생산",
         "title": "생산 구역",
-        "desc": "공장 부지 면적은 2,230㎡입니다."
+        "desc": "공장 부지 면적은 {{area}}㎡입니다."
       },
       "prep": {
         "alt": "HANIN 공장 창고 및 분석 구역",
@@ -342,10 +342,10 @@
         "desc": "분석실과 분석용 화학약품을 갖추고 있으며, 헐셀 시험기로 도금액을 점검합니다."
       },
       "thickness": {
-        "title": "APC-100 두께 측정기",
+        "title": "{{apc}} 두께 측정기",
         "desc": "도금 두께를 측정하여 도면 요구 사항과 대조합니다.",
         "method": "도금 두께",
-        "device": "APC-100 도금 두께 측정기",
+        "device": "{{apc}} 도금 두께 측정기",
         "criteria": "도면 요구 사항과 대조합니다."
       },
       "saltSpray": {
@@ -483,7 +483,7 @@
           "stepLabel": "단계"
         },
         "DetailCapability": {
-          "imageAlt": "HANIN 공장 생산 구역",
+          "imageAlt": "HANIN 공장 생산 구역, 표면 전처리 담당",
           "lineCapacityLabel": "주요 공정",
           "lineCapacityValue": "초음파 탈지",
           "tankSizeLabel": "공정 사이",
@@ -536,7 +536,7 @@
           "colDevice": "장비",
           "colCriteria": "검사 내용",
           "heading": "전처리 후 품질 관리",
-          "subtitle": "HANIN 공장의 검사 장비",
+          "subtitle": "표면 전처리에 적용되는 HANIN 공장 검사 장비",
           "r1": {
             "item": "전처리 용액",
             "device": "분석실 및 분석용 화학약품",
@@ -549,7 +549,7 @@
           },
           "r3": {
             "item": "도금 두께",
-            "device": "APC-100 도금 두께 측정기",
+            "device": "{{apc}} 도금 두께 측정기",
             "criteria": "도금 두께를 측정하여 도면 요구 사항과 대조합니다."
           },
           "r4": {
@@ -565,24 +565,24 @@
         },
         "DetailGallery": {
           "heading": "공장 현장 사진",
-          "subtitle": "HANIN 공장, 꽝민 산업단지 49G 구역",
+          "subtitle": "표면 전처리: HANIN 공장 구역(꽝민 산업단지 {{lot}} 부지)",
           "line": {
-            "alt": "HANIN 공장 도금 구역",
+            "alt": "HANIN 공장 도금 구역, 표면 전처리 담당",
             "tag": "도금 구역",
             "title": "도금 구역",
-            "desc": "꽝민 산업단지 HANIN 공장의 도금 라인입니다."
+            "desc": "HANIN 공장(꽝민 산업단지)의 표면 전처리 라인."
           },
           "surface": {
-            "alt": "HANIN 공장 생산 구역",
+            "alt": "HANIN 공장 생산 구역, 표면 전처리 작업 수행",
             "tag": "생산",
             "title": "생산 구역",
-            "desc": "공장 부지 면적은 2,230㎡입니다."
+            "desc": "공장 부지 면적은 {{area}}㎡이며, 이곳에서 표면 전처리을(를) 수행합니다."
           },
           "prep": {
-            "alt": "HANIN 공장 창고 및 분석 구역",
+            "alt": "HANIN 공장 창고 및 분석 구역, 표면 전처리 준비",
             "tag": "창고 및 분석",
             "title": "창고 및 분석실",
-            "desc": "입고 및 보관 후 라인 투입 전에 화학약품을 분석합니다."
+            "desc": "입고, 보관, 화학 분석 후 라인에 투입합니다(표면 전처리)."
           }
         },
         "RfqFormDetail": {
@@ -703,7 +703,7 @@
           "stepLabel": "단계"
         },
         "DetailCapability": {
-          "imageAlt": "HANIN 공장 생산 구역",
+          "imageAlt": "HANIN 공장 생산 구역, ABS 플라스틱 니켈-크롬 도금 담당",
           "lineCapacityLabel": "자동 도금 라인",
           "lineCapacityValue": "하루 3만~5만 개",
           "tankSizeLabel": "도금 종류",
@@ -756,7 +756,7 @@
           "colDevice": "장비",
           "colCriteria": "검사 내용",
           "heading": "ABS 플라스틱 도금층 품질 관리",
-          "subtitle": "HANIN 공장의 검사 장비",
+          "subtitle": "ABS 플라스틱 니켈-크롬 도금에 적용되는 HANIN 공장 검사 장비",
           "r1": {
             "item": "용액 및 화학약품",
             "device": "분석실 및 분석용 화학약품",
@@ -769,7 +769,7 @@
           },
           "r3": {
             "item": "도금 두께",
-            "device": "APC-100 도금 두께 측정기",
+            "device": "{{apc}} 도금 두께 측정기",
             "criteria": "도금 두께를 측정하여 도면 요구 사항과 대조합니다."
           },
           "r4": {
@@ -785,24 +785,24 @@
         },
         "DetailGallery": {
           "heading": "공장 현장 사진",
-          "subtitle": "HANIN 공장, 꽝민 산업단지 49G 구역",
+          "subtitle": "ABS 플라스틱 니켈-크롬 도금: HANIN 공장 구역(꽝민 산업단지 {{lot}} 부지)",
           "line": {
-            "alt": "HANIN 공장 도금 구역",
+            "alt": "HANIN 공장 도금 구역, ABS 플라스틱 니켈-크롬 도금 담당",
             "tag": "도금 구역",
             "title": "도금 구역",
-            "desc": "꽝민 산업단지 HANIN 공장의 도금 라인입니다."
+            "desc": "HANIN 공장(꽝민 산업단지)의 ABS 플라스틱 니켈-크롬 도금 라인."
           },
           "surface": {
-            "alt": "HANIN 공장 생산 구역",
+            "alt": "HANIN 공장 생산 구역, ABS 플라스틱 니켈-크롬 도금 작업 수행",
             "tag": "생산",
             "title": "생산 구역",
-            "desc": "공장 부지 면적은 2,230㎡입니다."
+            "desc": "공장 부지 면적은 {{area}}㎡이며, 이곳에서 ABS 플라스틱 니켈-크롬 도금을(를) 수행합니다."
           },
           "prep": {
-            "alt": "HANIN 공장 창고 및 분석 구역",
+            "alt": "HANIN 공장 창고 및 분석 구역, ABS 플라스틱 니켈-크롬 도금 준비",
             "tag": "창고 및 분석",
             "title": "창고 및 분석실",
-            "desc": "입고 및 보관 후 라인 투입 전에 화학약품을 분석합니다."
+            "desc": "입고, 보관, 화학 분석 후 라인에 투입합니다(ABS 플라스틱 니켈-크롬 도금)."
           }
         },
         "RfqFormDetail": {
@@ -861,7 +861,7 @@
           },
           "stat4": {
             "label": "회전 도금",
-            "value": "하루 3,000~5,000kg"
+            "value": "하루 {{rot:fullTilde}}kg"
           },
           "ctaPrimary": "견적 요청",
           "ctaSecondary": "기술 상담 문의"
@@ -926,11 +926,11 @@
           "stepLabel": "단계"
         },
         "DetailCapability": {
-          "imageAlt": "HANIN 공장 생산 구역",
+          "imageAlt": "HANIN 공장 생산 구역, 금속 소재 니켈 도금 담당",
           "lineCapacityLabel": "반자동 걸이 도금",
           "lineCapacityValue": "하루 1만~2만 개",
           "tankSizeLabel": "회전 도금",
-          "tankSizeValue": "하루 3,000~5,000kg",
+          "tankSizeValue": "하루 {{rot:fullTilde}}kg",
           "heading": "걸이 도금 및 회전 도금 라인",
           "subtitle": "두 라인 모두 전해 니켈, 무전해 니켈, 흑색 니켈, 망간 흑색 인산염 처리, 아연 도금을 할 수 있습니다.",
           "f1": {
@@ -939,7 +939,7 @@
           },
           "f2": {
             "title": "회전 도금 라인:",
-            "desc": "하루 3,000~5,000kg(약 1만~3만 개)을 처리하며, 진동기, 탈지, 구리 도금 조, 니켈 도금 조를 갖추고 있습니다."
+            "desc": "하루 {{rot:fullTilde}}kg(약 1만~3만 개)을 처리하며, 진동기, 탈지, 구리 도금 조, 니켈 도금 조를 갖추고 있습니다."
           },
           "f3": {
             "title": "자동 도금 라인:",
@@ -952,25 +952,25 @@
           "a1": {
             "tag": "기계 부품",
             "title": "기어, 핀, 축",
-            "desc": "기어, 핀, 기계 부품 플레이트, 축-핀, 조립 부품.",
+            "desc": "무전해 니켈: 나사산과 깊은 구멍 안까지 도금이 고르고 경도가 높으며 내마모성이 좋습니다.",
             "note": "무전해 니켈"
           },
           "a2": {
             "tag": "도어·잠금 부품",
             "title": "손잡이, 경첩, 핀",
-            "desc": "금속 손잡이, 경첩, 잠금장치, 위치결정 핀, 특수 볼트.",
+            "desc": "전해 니켈: 밝고 내구성이 좋은 도금층.",
             "note": "전해 니켈"
           },
           "a3": {
             "tag": "위생",
             "title": "수전과 액세서리",
-            "desc": "수전, 욕실 액세서리, 손잡이.",
+            "desc": "흑색 니켈, 새틴 니켈 또는 니켈 크롬을 표면 요구에 맞춰 적용합니다.",
             "note": "크롬 도금"
           },
           "a4": {
             "tag": "장식",
             "title": "새틴 스테인리스와 장식 부품",
-            "desc": "새틴 스테인리스 판, 문 손잡이, 스테인리스 바, 경첩, 장식 부품.",
+            "desc": "새틴 니켈 또는 니켈 크롬으로 고운 무광 또는 광택 표면을 만듭니다.",
             "note": "새틴 도금"
           }
         },
@@ -979,7 +979,7 @@
           "colDevice": "장비",
           "colCriteria": "검사 내용",
           "heading": "니켈 도금층 품질 관리",
-          "subtitle": "HANIN 공장의 검사 장비",
+          "subtitle": "금속 소재 니켈 도금에 적용되는 HANIN 공장 검사 장비",
           "r1": {
             "item": "용액 및 화학약품",
             "device": "분석실 및 분석용 화학약품",
@@ -992,7 +992,7 @@
           },
           "r3": {
             "item": "도금 두께",
-            "device": "APC-100 도금 두께 측정기",
+            "device": "{{apc}} 도금 두께 측정기",
             "criteria": "도금 두께를 측정하여 도면 요구 사항과 대조합니다."
           },
           "r4": {
@@ -1008,24 +1008,24 @@
         },
         "DetailGallery": {
           "heading": "공장 현장 사진",
-          "subtitle": "HANIN 공장, 꽝민 산업단지 49G 구역",
+          "subtitle": "금속 소재 니켈 도금: HANIN 공장 구역(꽝민 산업단지 {{lot}} 부지)",
           "line": {
-            "alt": "HANIN 공장 도금 구역",
+            "alt": "HANIN 공장 도금 구역, 금속 소재 니켈 도금 담당",
             "tag": "도금 구역",
             "title": "도금 구역",
-            "desc": "꽝민 산업단지 HANIN 공장의 도금 라인입니다."
+            "desc": "HANIN 공장(꽝민 산업단지)의 금속 소재 니켈 도금 라인."
           },
           "surface": {
-            "alt": "HANIN 공장 생산 구역",
+            "alt": "HANIN 공장 생산 구역, 금속 소재 니켈 도금 작업 수행",
             "tag": "생산",
             "title": "생산 구역",
-            "desc": "공장 부지 면적은 2,230㎡입니다."
+            "desc": "공장 부지 면적은 {{area}}㎡이며, 이곳에서 금속 소재 니켈 도금을(를) 수행합니다."
           },
           "prep": {
-            "alt": "HANIN 공장 창고 및 분석 구역",
+            "alt": "HANIN 공장 창고 및 분석 구역, 금속 소재 니켈 도금 준비",
             "tag": "창고 및 분석",
             "title": "창고 및 분석실",
-            "desc": "입고 및 보관 후 라인 투입 전에 화학약품을 분석합니다."
+            "desc": "입고, 보관, 화학 분석 후 라인에 투입합니다(금속 소재 니켈 도금)."
           }
         },
         "RfqFormDetail": {
@@ -1084,7 +1084,7 @@
           },
           "stat4": {
             "label": "회전 도금",
-            "value": "하루 3,000~5,000kg"
+            "value": "하루 {{rot:fullTilde}}kg"
           },
           "ctaPrimary": "견적 요청",
           "ctaSecondary": "기술 상담 문의"
@@ -1148,9 +1148,9 @@
           "stepLabel": "단계"
         },
         "DetailCapability": {
-          "imageAlt": "HANIN 공장 생산 구역",
+          "imageAlt": "HANIN 공장 생산 구역, 아연·구리·주석 도금 및 흑색 인산염 처리 담당",
           "lineCapacityLabel": "회전 도금",
-          "lineCapacityValue": "하루 3,000~5,000kg",
+          "lineCapacityValue": "하루 {{rot:fullTilde}}kg",
           "tankSizeLabel": "반자동 걸이 도금",
           "tankSizeValue": "하루 1만~2만 개",
           "heading": "회전 도금 및 걸이 도금 라인",
@@ -1165,7 +1165,7 @@
           },
           "f3": {
             "title": "회전 도금 처리 능력:",
-            "desc": "하루 3,000~5,000kg으로 약 1만~3만 개에 해당합니다."
+            "desc": "하루 {{rot:fullTilde}}kg으로 약 1만~3만 개에 해당합니다."
           }
         },
         "DetailApplications": {
@@ -1201,7 +1201,7 @@
           "colDevice": "장비",
           "colCriteria": "검사 내용",
           "heading": "도금층 품질 관리",
-          "subtitle": "HANIN 공장의 검사 장비",
+          "subtitle": "아연·구리·주석 도금 및 흑색 인산염 처리에 적용되는 HANIN 공장 검사 장비",
           "r1": {
             "item": "용액 및 화학약품",
             "device": "분석실 및 분석용 화학약품",
@@ -1214,7 +1214,7 @@
           },
           "r3": {
             "item": "도금 두께",
-            "device": "APC-100 도금 두께 측정기",
+            "device": "{{apc}} 도금 두께 측정기",
             "criteria": "도금 두께를 측정하여 도면 요구 사항과 대조합니다."
           },
           "r4": {
@@ -1230,24 +1230,24 @@
         },
         "DetailGallery": {
           "heading": "공장 현장 사진",
-          "subtitle": "HANIN 공장, 꽝민 산업단지 49G 구역",
+          "subtitle": "아연·구리·주석 도금 및 흑색 인산염 처리: HANIN 공장 구역(꽝민 산업단지 {{lot}} 부지)",
           "line": {
-            "alt": "HANIN 공장 도금 구역",
+            "alt": "HANIN 공장 도금 구역, 아연·구리·주석 도금 및 흑색 인산염 처리 담당",
             "tag": "도금 구역",
             "title": "도금 구역",
-            "desc": "꽝민 산업단지 HANIN 공장의 도금 라인입니다."
+            "desc": "HANIN 공장(꽝민 산업단지)의 아연·구리·주석 도금 및 흑색 인산염 처리 라인."
           },
           "surface": {
-            "alt": "HANIN 공장 생산 구역",
+            "alt": "HANIN 공장 생산 구역, 아연·구리·주석 도금 및 흑색 인산염 처리 작업 수행",
             "tag": "생산",
             "title": "생산 구역",
-            "desc": "공장 부지 면적은 2,230㎡입니다."
+            "desc": "공장 부지 면적은 {{area}}㎡이며, 이곳에서 아연·구리·주석 도금 및 흑색 인산염 처리을(를) 수행합니다."
           },
           "prep": {
-            "alt": "HANIN 공장 창고 및 분석 구역",
+            "alt": "HANIN 공장 창고 및 분석 구역, 아연·구리·주석 도금 및 흑색 인산염 처리 준비",
             "tag": "창고 및 분석",
             "title": "창고 및 분석실",
-            "desc": "입고 및 보관 후 라인 투입 전에 화학약품을 분석합니다."
+            "desc": "입고, 보관, 화학 분석 후 라인에 투입합니다(아연·구리·주석 도금 및 흑색 인산염 처리)."
           }
         },
         "RfqFormDetail": {
@@ -1360,7 +1360,7 @@
           "stepLabel": "단계"
         },
         "DetailCapability": {
-          "imageAlt": "HANIN 공장 생산 구역",
+          "imageAlt": "HANIN 공장 생산 구역, 도장·인쇄·레이저 담당",
           "lineCapacityLabel": "6축 도장실",
           "lineCapacityValue": "3실 (6건)",
           "tankSizeLabel": "자동 도장",
@@ -1407,7 +1407,7 @@
           "colDevice": "장비",
           "colCriteria": "검사 내용",
           "heading": "도장 후 신뢰성 시험",
-          "subtitle": "공장의 시험 장비 10종",
+          "subtitle": "도장·인쇄·레이저에 적용되는 HANIN 공장 검사 장비",
           "r1": {
             "item": "내마모성",
             "device": "RCA Tester",
@@ -1436,24 +1436,24 @@
         },
         "DetailGallery": {
           "heading": "공장 현장 사진",
-          "subtitle": "HANIN 공장, 꽝민 산업단지 49G 구역",
+          "subtitle": "도장·인쇄·레이저: HANIN 공장 구역(꽝민 산업단지 {{lot}} 부지)",
           "line": {
-            "alt": "HANIN 공장 도금 구역",
+            "alt": "HANIN 공장 도금 구역, 도장·인쇄·레이저 담당",
             "tag": "도금 구역",
             "title": "도금 구역",
-            "desc": "꽝민 산업단지 HANIN 공장의 도금 라인입니다."
+            "desc": "HANIN 공장(꽝민 산업단지)의 도장·인쇄·레이저 라인."
           },
           "surface": {
-            "alt": "HANIN 공장 생산 구역",
+            "alt": "HANIN 공장 생산 구역, 도장·인쇄·레이저 작업 수행",
             "tag": "생산",
             "title": "생산 구역",
-            "desc": "공장 부지 면적은 2,230㎡입니다."
+            "desc": "공장 부지 면적은 {{area}}㎡이며, 이곳에서 도장·인쇄·레이저을(를) 수행합니다."
           },
           "prep": {
-            "alt": "HANIN 공장 창고 및 분석 구역",
+            "alt": "HANIN 공장 창고 및 분석 구역, 도장·인쇄·레이저 준비",
             "tag": "창고 및 분석",
             "title": "창고 및 분석실",
-            "desc": "입고 및 보관 후 라인 투입 전에 화학약품을 분석합니다."
+            "desc": "입고, 보관, 화학 분석 후 라인에 투입합니다(도장·인쇄·레이저)."
           }
         },
         "RfqFormDetail": {
@@ -1503,8 +1503,8 @@
             "value": "2대"
           },
           "stat2": {
-            "label": "PVD 라인",
-            "value": "2개 라인"
+            "label": "공장",
+            "value": "꽝민 산업단지"
           },
           "stat3": {
             "label": "표면",
@@ -1526,8 +1526,8 @@
             "intro": "공장 보유 설비:",
             "item1Strong": "PVD 장비 2대:",
             "item1": "배치 단위로 진공 도금을 합니다.",
-            "item2Strong": "PVD 라인 2개:",
-            "item2": "주문에 따라 부품을 처리합니다.",
+            "item2Strong": "위치:",
+            "item2": "하노이 꽝민 산업단지 {{lot}}, HANIN 도금 공장과 같은 구역입니다.",
             "item3Strong": "표면 마감:",
             "item3": "미관이 뛰어나고 내구성이 좋습니다."
           },
@@ -1553,7 +1553,7 @@
           },
           "s3": {
             "title": "진공 도금",
-            "desc": "PVD 장비 또는 라인에서 PVD 막을 도금합니다."
+            "desc": "PVD 장비에서 PVD 막을 도금합니다."
           },
           "s4": {
             "title": "완제품 검사",
@@ -1562,20 +1562,20 @@
           "stepLabel": "단계"
         },
         "DetailCapability": {
-          "imageAlt": "HANIN 공장 생산 구역",
+          "imageAlt": "HANIN 공장 생산 구역, PVD 진공 증착 담당",
           "lineCapacityLabel": "PVD 장비",
           "lineCapacityValue": "2대",
-          "tankSizeLabel": "PVD 라인",
-          "tankSizeValue": "2개 라인",
-          "heading": "PVD 장비 및 라인",
+          "tankSizeLabel": "공장",
+          "tankSizeValue": "꽝민 산업단지",
+          "heading": "PVD 장비",
           "subtitle": "PVD 진공 도금은 HANIN 공장에서 전해·무전해 도금과 별도로 제공하는 서비스입니다.",
           "f1": {
             "title": "PVD 장비:",
             "desc": "진공 도금 장비 2대."
           },
           "f2": {
-            "title": "PVD 라인:",
-            "desc": "라인 2개로 주문에 따라 부품을 처리합니다."
+            "title": "위치:",
+            "desc": "하노이 꽝민 산업단지 {{lot}}, HANIN 도금 공장과 같은 구역입니다."
           },
           "f3": {
             "title": "분석실:",
@@ -1609,7 +1609,7 @@
           "colDevice": "장비",
           "colCriteria": "검사 내용",
           "heading": "품질 관리",
-          "subtitle": "HANIN 공장의 검사 장비",
+          "subtitle": "PVD 진공 증착에 적용되는 HANIN 공장 검사 장비",
           "r1": {
             "item": "용액 및 화학약품",
             "device": "분석실 및 분석용 화학약품",
@@ -1622,7 +1622,7 @@
           },
           "r3": {
             "item": "도금 두께",
-            "device": "APC-100 도금 두께 측정기",
+            "device": "{{apc}} 도금 두께 측정기",
             "criteria": "도금 두께를 측정하여 도면 요구 사항과 대조합니다."
           },
           "r4": {
@@ -1638,24 +1638,24 @@
         },
         "DetailGallery": {
           "heading": "공장 현장 사진",
-          "subtitle": "HANIN 공장, 꽝민 산업단지 49G 구역",
+          "subtitle": "PVD 진공 증착: HANIN 공장 구역(꽝민 산업단지 {{lot}} 부지)",
           "line": {
-            "alt": "HANIN 공장 도금 구역",
+            "alt": "HANIN 공장 도금 구역, PVD 진공 증착 담당",
             "tag": "도금 구역",
             "title": "도금 구역",
-            "desc": "꽝민 산업단지 HANIN 공장의 도금 라인입니다."
+            "desc": "HANIN 공장(꽝민 산업단지)의 PVD 진공 증착 라인."
           },
           "surface": {
-            "alt": "HANIN 공장 생산 구역",
+            "alt": "HANIN 공장 생산 구역, PVD 진공 증착 작업 수행",
             "tag": "생산",
             "title": "생산 구역",
-            "desc": "공장 부지 면적은 2,230㎡입니다."
+            "desc": "공장 부지 면적은 {{area}}㎡이며, 이곳에서 PVD 진공 증착을(를) 수행합니다."
           },
           "prep": {
-            "alt": "HANIN 공장 창고 및 분석 구역",
+            "alt": "HANIN 공장 창고 및 분석 구역, PVD 진공 증착 준비",
             "tag": "창고 및 분석",
             "title": "창고 및 분석실",
-            "desc": "입고 및 보관 후 라인 투입 전에 화학약품을 분석합니다."
+            "desc": "입고, 보관, 화학 분석 후 라인에 투입합니다(PVD 진공 증착)."
           }
         },
         "RfqFormDetail": {

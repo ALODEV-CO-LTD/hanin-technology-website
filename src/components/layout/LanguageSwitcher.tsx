@@ -9,6 +9,7 @@ import { Flag } from "@/components/ui/Flag";
 
 const LOCALE_LABELS: Record<string, string> = {
   vi: "VI",
+  en: "EN",
   zh: "中文",
   ko: "한국어",
 };

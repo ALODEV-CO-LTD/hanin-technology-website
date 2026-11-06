@@ -2,7 +2,7 @@
   "NangLuc": {
     "AutomatedVsManual": {
       "title": "자동 라인과 반자동 라인",
-      "description": "자동 도금 라인은 일 3~5만 개를 처리합니다. 금속 부품은 반자동 걸이 도금 라인(일 10,000~20,000개) 또는 배럴 도금 라인(일 3,000~5,000 kg)에서 가공합니다.",
+      "description": "자동 도금 라인은 일 3~5만 개를 처리합니다. 금속 부품은 반자동 걸이 도금 라인(일 {{hang:fullTilde}}개) 또는 배럴 도금 라인(일 {{rot:fullTilde}} kg)에서 가공합니다.",
       "automated": {
         "imageAlt": "공장 내 도금조와 크레인이 있는 자동 도금 라인",
         "title": "자동 도금 라인",
@@ -11,7 +11,7 @@
       "manual": {
         "imageAlt": "HANIN 공장의 걸이 도금 및 회전 도금 구역",
         "title": "반자동 걸이 도금 라인과 회전 도금 라인",
-        "desc": "반자동 걸이 도금은 금속 부품용으로 하루 1만~2만 개입니다. 회전 도금은 소형 부품 대량 생산용으로 하루 3,000~5,000kg입니다."
+        "desc": "반자동 걸이 도금은 금속 부품용으로 하루 1만~2만 개입니다. 회전 도금은 소형 부품 대량 생산용으로 하루 {{rot:fullTilde}}kg입니다."
       }
     },
     "CapabilityHero": {
@@ -35,7 +35,7 @@
         },
         "pvd": {
           "label": "PVD 설비",
-          "desc": "진공 도금, PVD 라인 2개",
+          "desc": "진공 도금, PVD 장비 2대",
           "end": "2",
           "prefix": "",
           "suffix": "",
@@ -76,12 +76,12 @@
         "pvd": {
           "badge": "진공 도금",
           "title": "PVD 진공 도금기",
-          "desc": "PVD 장비 2대가 PVD 라인 2개에서 가동됩니다.",
+          "desc": "PVD 장비 2대로 진공 도금을 합니다.",
           "alt": "HANIN 공장의 PVD 진공 도금기",
           "spec1Label": "설비 수",
           "spec1Value": "2대",
-          "spec2Label": "라인",
-          "spec2Value": "PVD 라인 2개",
+          "spec2Label": "위치",
+          "spec2Value": "꽝민 산업단지",
           "spec3Label": "공법",
           "spec3Value": "진공 도금"
         },
@@ -107,7 +107,7 @@
           "spec1Label": "라인",
           "spec1Value": "회전 도금",
           "spec2Label": "용량",
-          "spec2Value": "3,000~5,000kg/일",
+          "spec2Value": "{{rot:fullTilde}}kg/일",
           "spec3Label": "도금조",
           "spec3Value": "구리 도금조, 니켈 도금조"
         },
@@ -117,7 +117,7 @@
           "desc": "생산 폐수를 침전조와 슬러지 압착기로 처리합니다.",
           "alt": "HANIN 공장의 폐수 처리 구역",
           "spec1Label": "처리 용량",
-          "spec1Value": "130m³/일",
+          "spec1Value": "{{waste}}m³/일",
           "spec2Label": "구성",
           "spec2Value": "침전조, 슬러지 압착기"
         }
@@ -133,7 +133,7 @@
       "items": {
         "campus": {
           "label": "공장",
-          "alt": "꽝민 산업단지 49G 부지의 HANIN 도금 공장"
+          "alt": "꽝민 산업단지 {{lot}} 부지의 HANIN 도금 공장"
         },
         "control": {
           "label": "생산 운영",
@@ -155,14 +155,14 @@
         "alt": "꽝민 산업단지 HANIN 공장의 도금 구역과 생산 현장"
       },
       "factoryTitle": "공장",
-      "factoryDescription": "HANIN 도금 공장은 꽝민 산업단지 49G 부지에 있으며 플라스틱 및 금속 도금 라인, PVD, 도장, 인쇄 설비를 갖추고 있습니다. 폐수 처리 시스템 용량은 130m³/일입니다.",
+      "factoryDescription": "HANIN 도금 공장은 꽝민 산업단지 {{lot}} 부지에 있으며 플라스틱 및 금속 도금 라인, PVD, 도장, 인쇄 설비를 갖추고 있습니다. 폐수 처리 시스템 용량은 {{waste}}m³/일입니다.",
       "specs": {
         "locationLabel": "위치",
         "areaLabel": "공장 부지 면적",
         "capabilityLabel": "가공 분야",
         "capabilityValue": "ABS 플라스틱 도금, 금속 도금, PVD, 도장 및 인쇄",
-        "locationValue": "하노이 꽝민사 꽝민 산업단지 49G 부지",
-        "areaValue": "2,230㎡"
+        "locationValue": "하노이 꽝민사 꽝민 산업단지 {{lot}} 부지",
+        "areaValue": "{{area}}㎡"
       },
       "ctaGallery": "공장 사진 보기"
     },
@@ -215,7 +215,7 @@
           "desc": "소형 부품을 배럴에 넣어 대량으로 도금합니다. 진동기 및 탈지 설비, 구리 도금조, 니켈 도금조가 있습니다.",
           "alt": "도금조에 배럴이 잠긴 회전 도금 라인",
           "capacityLabel": "용량:",
-          "capacityValue": "3,000~5,000kg/일 (1만~3만 개/일)",
+          "capacityValue": "{{rot:fullTilde}}kg/일 (1만~3만 개/일)",
           "techLabel": "공법:",
           "techValue": "전해 니켈, 무전해 니켈, 블랙 니켈, 블랙 망간 인산염, 아연 도금"
         },
@@ -254,7 +254,7 @@
         "wastewater": {
           "tagLabel": "환경",
           "desc": "침전조와 슬러지 압착기를 갖춘 폐수 처리 시스템을 운영합니다. HANIN은 환경 관련 규정 준수를 약속드립니다.",
-          "title": "폐수 처리 130m³/일"
+          "title": "폐수 처리 {{waste}}m³/일"
         },
         "testing": {
           "tagLabel": "품질 검사",
@@ -280,7 +280,7 @@
         },
         "thickness": {
           "title": "도금 두께 측정기",
-          "desc": "APC-100으로 도금층 두께를 측정합니다."
+          "desc": "{{apc}}으로 도금층 두께를 측정합니다."
         },
         "saltSpray": {
           "title": "NSS 및 CASS 염수 분무기",

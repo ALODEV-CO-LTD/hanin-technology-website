@@ -4,8 +4,8 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { api, ApiError } from "./api";
-import { useToast } from "./Toast";
-import { useConfirm } from "./ConfirmDialog";
+import { toast } from "@/components/ct999/thong-bao-toast/store";
+import { confirm } from "./dialog";
 
 interface Props {
   resource: string;
@@ -17,8 +17,6 @@ interface Props {
 export default function RowActions({ resource, id, publishField, published }: Props) {
   const router = useRouter();
   const [busy, setBusy] = useState(false);
-  const toast = useToast();
-  const confirm = useConfirm();
 
   async function toggle() {
     if (!publishField) return;
@@ -40,8 +38,20 @@ export default function RowActions({ resource, id, publishField, published }: Pr
     setBusy(true);
     try {
       await api(`${resource}/${id}`, { method: "DELETE" });
-      toast.success("Đã xoá. Có thể khôi phục trong mục \"Đã xoá\" bên dưới danh sách.");
       router.refresh();
+      // toast.undo của ct999: nút Hoàn tác trong ~6,5 giây, dùng bản sao lưu trong "Đã xoá" để khôi phục ngay.
+      toast.undo("Đã xoá mục này.", async () => {
+        try {
+          const { items } = await api<{ items: { id: number }[] }>(`${resource}/trash`);
+          const latest = items[0]; // danh sách xếp mới nhất trước: mục vừa xoá
+          if (!latest) throw new ApiError("Không tìm thấy bản sao để khôi phục", 404);
+          await api(`${resource}/trash`, { body: { revisionId: latest.id } });
+          toast.success("Đã khôi phục.");
+          router.refresh();
+        } catch (err) {
+          toast.error(err instanceof ApiError ? err.message : "Không khôi phục được. Thử trong mục \"Đã xoá\".");
+        }
+      });
     } catch (err) {
       toast.error(err instanceof ApiError ? err.message : "Không xoá được");
       setBusy(false);

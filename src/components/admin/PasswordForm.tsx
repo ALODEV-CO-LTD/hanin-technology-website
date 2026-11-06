@@ -3,11 +3,10 @@
 import { useState, type FormEvent } from "react";
 import { api, ApiError } from "./api";
 import SaveButton, { useSavedFlash } from "./SaveButton";
-import { useToast } from "./Toast";
+import { toast } from "@/components/ct999/thong-bao-toast/store";
 
 export default function PasswordForm() {
   const [saving, setSaving] = useState(false);
-  const toast = useToast();
   const { saved, flash } = useSavedFlash();
 
   async function onSubmit(event: FormEvent<HTMLFormElement>) {

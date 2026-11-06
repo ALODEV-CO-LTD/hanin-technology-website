@@ -17,7 +17,8 @@
     "label": "Ngôn ngữ",
     "vi": "Tiếng Việt",
     "zh": "中文",
-    "ko": "한국어"
+    "ko": "한국어",
+    "en": "English"
   },
   "Footer": {
     "tagline": "XỬ LÝ MẠ NHỰA VÀ KIM LOẠI",
@@ -40,7 +41,7 @@
     },
     "contactHeading": "Liên hệ kỹ thuật",
     "addressLabel": "Địa chỉ:",
-    "address": "Lô 49G, KCN Quang Minh, xã Quang Minh, TP Hà Nội.",
+    "address": "Lô {{lot}}, KCN Quang Minh, xã Quang Minh, TP Hà Nội.",
     "hotlineLabel": "Hotline:",
     "emailLabel": "Email:",
     "hoursLabel": "Giờ làm việc:",
@@ -60,11 +61,11 @@
       "description": "Xử lý mạ trên nền nhựa ABS và kim loại, sơn và in cho khách hàng công nghiệp."
     },
     "home": {
-      "title": "HANIN",
+      "title": "HANIN | Gia công mạ nhựa ABS và kim loại, PVD, sơn, in",
       "description": "Xử lý mạ trên nền nhựa ABS và kim loại, sơn và in cho khách hàng công nghiệp."
     },
     "gioiThieu": {
-      "title": "Giới thiệu",
+      "title": "Giới thiệu HANIN | Nhà máy mạ tại KCN Quang Minh",
       "description": "Thông tin về HANIN và năng lực xử lý mạ trên nền nhựa và kim loại."
     },
     "dichVu": {
@@ -84,8 +85,8 @@
       "description": "Tin doanh nghiệp, bài kỹ thuật về mạ và xử lý bề mặt, hoạt động sản xuất tại HANIN."
     },
     "tuyenDung": {
-      "title": "Tuyển dụng",
-      "description": "Vị trí tuyển dụng đang mở tại nhà máy mạ HANIN."
+      "title": "Tuyển dụng tại nhà máy mạ HANIN",
+      "description": "Vị trí tuyển dụng đang mở tại nhà máy mạ HANIN, KCN Quang Minh, Hà Nội: kỹ thuật, sản xuất, QA/QC."
     },
     "lienHe": {
       "title": "Liên hệ và yêu cầu báo giá",

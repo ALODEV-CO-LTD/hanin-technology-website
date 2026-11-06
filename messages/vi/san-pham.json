@@ -119,7 +119,7 @@
       "giaDung": {
         "title": "Thiết bị gia dụng: tủ lạnh, máy giặt, máy lọc nước",
         "category": "Thiết bị gia dụng",
-        "description": "Tủ lạnh Hitachi, LG, Panasonic, Samsung; máy giặt LG và khung nắp máy giặt; máy lọc nước Karofi; núm vặn lò nướng LG. Chi tiết trang trí mạ trên nhựa ABS.",
+        "description": "Tủ lạnh Hitachi, LG, Panasonic; máy giặt LG và khung nắp máy giặt; máy lọc nước Karofi; núm vặn lò nướng LG. Chi tiết trang trí mạ trên nhựa ABS.",
         "imageAlt": "Chi tiết trang trí thiết bị gia dụng sau khi mạ",
         "imageBadge": "Thiết bị gia dụng",
         "chips": {
@@ -212,7 +212,7 @@
         "item2": {
           "alt": "Đo độ dày lớp mạ tại phòng QC",
           "thumbLabel": "Đo độ dày lớp mạ",
-          "caption": "Đo độ dày lớp mạ bằng máy APC-100 tại phòng QC"
+          "caption": "Đo độ dày lớp mạ bằng máy {{apc}} tại phòng QC"
         },
         "item3": {
           "alt": "Chi tiết treo trên móc trong dây chuyền mạ",
@@ -271,7 +271,7 @@
         },
         "lab": {
           "label": "Thiết bị kiểm tra",
-          "value": "Máy đo độ dày lớp mạ APC-100, máy phun muối NSS và CASS, máy thử Hull cell"
+          "value": "Máy đo độ dày lớp mạ {{apc}}, máy phun muối NSS và CASS, máy thử Hull cell"
         }
       },
       "process": {
@@ -324,7 +324,7 @@
         },
         "item6": {
           "title": "Mạ chân không PVD",
-          "description": "Mạ chân không PVD trên 2 máy và 2 dây chuyền PVD.",
+          "description": "Mạ chân không PVD trên 2 máy PVD.",
           "cta": "TÌM HIỂU DỊCH VỤ"
         }
       }

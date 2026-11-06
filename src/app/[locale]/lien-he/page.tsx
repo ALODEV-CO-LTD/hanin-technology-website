@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 
 export default function LienHePage() {
   return (
-    <ClientMessages keys={["LienHe.ContactFaq", "DichVu.RfqFormCategory"]}>
+    <ClientMessages keys={["AttachField", "LienHe.ContactFaq", "DichVu.RfqFormCategory"]}>
     <div className="flex flex-col w-full text-slate-800">
       <ContactHero />
       <Reveal><ContactChannels /></Reveal>

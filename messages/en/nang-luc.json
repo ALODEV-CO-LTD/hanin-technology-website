@@ -1,0 +1,308 @@
+{
+  "NangLuc": {
+    "AutomatedVsManual": {
+      "title": "Automatic and Semi-Automatic Lines",
+      "description": "The automatic plating line reaches {{auto:k}} thousand products/day. Metal parts run on the semi-automatic rack plating line ({{hang:full}} products/day) or barrel plating ({{rot:full}} kg/day).",
+      "automated": {
+        "imageAlt": "Automatic plating line with plating tanks and overhead cranes in the workshop",
+        "title": "Automatic Plating Line",
+        "desc": "Products hang on jigs, and overhead cranes move them through the tanks in the plating tank area. Output {{auto:k}} thousand products/day; chrome, nickel and satin plating."
+      },
+      "manual": {
+        "imageAlt": "Rack and barrel plating area in the HANIN workshop",
+        "title": "Semi-Automatic Rack Plating and Barrel Plating Lines",
+        "desc": "Semi-automatic rack plating for metal parts, {{hang:full}} products/day. Barrel plating for small parts in large quantities, {{rot:full}} kg/day."
+      }
+    },
+    "CapabilityHero": {
+      "breadcrumbHome": "Home",
+      "breadcrumbCurrent": "Manufacturing Capability",
+      "title": "MANUFACTURING CAPABILITY",
+      "description": "The workshop, plating lines, inspection equipment and wastewater treatment system of HANIN.",
+      "ctaExplore": "VIEW THE FACTORY",
+      "ctaLines": "PRODUCTION LINES",
+      "ctaQa": "TESTING LAB"
+    },
+    "CapabilityOverviewStats": {
+      "items": {
+        "lines": {
+          "label": "PLATING LINES",
+          "desc": "Automatic, semi-automatic rack and barrel plating",
+          "end": "3",
+          "prefix": "",
+          "suffix": "",
+          "unit": "lines"
+        },
+        "pvd": {
+          "label": "PVD MACHINES",
+          "desc": "Vacuum coating, 2 PVD machines",
+          "end": "2",
+          "prefix": "",
+          "suffix": "",
+          "unit": "machines"
+        },
+        "wastewater": {
+          "label": "WASTEWATER TREATMENT",
+          "desc": "Wastewater treatment system capacity",
+          "end": "130",
+          "prefix": "",
+          "suffix": "",
+          "unit": "m³/day and night"
+        },
+        "staff": {
+          "label": "EMPLOYEES",
+          "desc": "Employees at the plating factory",
+          "end": "70",
+          "prefix": "",
+          "suffix": "",
+          "unit": "people"
+        }
+      }
+    },
+    "CompanyProfileCta": {
+      "title": "HANIN Capability Documents",
+      "description": "Introduction to the factory, plating lines, inspection equipment and HANIN services.",
+      "ctaDownload": "VIEW COMPANY PROFILE (PDF)",
+      "fileBadge": "PDF",
+      "cardTitle": "HANIN Capability Profile",
+      "cardSubtitle": "Capability overview document",
+      "cardEdition": "Company profile",
+      "cardReady": "Available to view"
+    },
+    "EquipmentGrid": {
+      "sectionTitle": "Machinery and Equipment",
+      "sectionDescription": "PVD machines, spray area, barrel plating equipment and wastewater treatment system.",
+      "items": {
+        "pvd": {
+          "badge": "Vacuum Coating",
+          "title": "PVD Vacuum Coating Machines",
+          "desc": "Two PVD vacuum coating machines.",
+          "alt": "PVD vacuum coating machine at the HANIN factory",
+          "spec1Label": "Number of machines",
+          "spec1Value": "2 machines",
+          "spec2Label": "Location",
+          "spec2Value": "Quang Minh Industrial Park",
+          "spec3Label": "Method",
+          "spec3Value": "Vacuum Coating"
+        },
+        "paint": {
+          "badge": "Painting and Printing",
+          "title": "Spray Painting Area",
+          "desc": "Spray painting for plastic and metal components, plus printing and laser cutting.",
+          "alt": "Spray painting area at the HANIN factory",
+          "spec1Label": "Manual spray booth",
+          "spec1Value": "2 booths",
+          "spec2Label": "6-gun booth (6 guns)",
+          "spec2Value": "3 booths",
+          "spec3Label": "Automatic spray line",
+          "spec3Value": "1 line",
+          "spec4Label": "Ionizer booth",
+          "spec4Value": "20 booths"
+        },
+        "rotary": {
+          "badge": "Barrel Plating",
+          "title": "Vibratory Machine and Degreasing",
+          "desc": "Degreasing of small parts before they enter the copper and nickel plating tanks of the barrel plating line.",
+          "alt": "Equipment on the barrel plating line at the HANIN factory",
+          "spec1Label": "Lines",
+          "spec1Value": "Barrel Plating",
+          "spec2Label": "Capacity",
+          "spec2Value": "{{rot:full}} kg/day",
+          "spec3Label": "Plating tank",
+          "spec3Value": "Copper plating tank, nickel plating tank"
+        },
+        "wastewater": {
+          "badge": "Environment",
+          "title": "Wastewater Treatment System",
+          "desc": "Production wastewater is treated with a settling tank and filter press.",
+          "alt": "Wastewater treatment area of the HANIN factory",
+          "spec1Label": "Capacity",
+          "spec1Value": "{{waste}} m³/day and night",
+          "spec2Label": "Item",
+          "spec2Value": "Settling tank, filter press"
+        }
+      }
+    },
+    "FactoryGallery": {
+      "sectionTitle": "Photos of the Factory and Lines",
+      "sectionDescription": "Photos taken at the HANIN factory: plating area, lines, machines and testing lab.",
+      "mainImage": {
+        "alt": "Plating line with plating tanks in the workshop",
+        "badge": "Main production area"
+      },
+      "items": {
+        "campus": {
+          "label": "Factory",
+          "alt": "HANIN plating factory at Lot {{lot}}, Quang Minh Industrial Park"
+        },
+        "control": {
+          "label": "Production operations",
+          "alt": "Operators in the production area"
+        },
+        "finished": {
+          "label": "Plated Products",
+          "alt": "Parts after plating, close-up"
+        },
+        "racks": {
+          "label": "Part racks",
+          "alt": "Plating area with part-holding racks"
+        }
+      }
+    },
+    "FactoryOverview": {
+      "sectionTitle": "Factory Overview",
+      "image": {
+        "alt": "Plating area and production workshop at the HANIN factory, Quang Minh Industrial Park"
+      },
+      "factoryTitle": "FACTORY",
+      "factoryDescription": "The HANIN plating factory at Lot {{lot}}, Quang Minh Industrial Park, has plastic and metal plating lines, PVD, spray painting and printing. The wastewater treatment system has a capacity of {{waste}} m³/day and night.",
+      "specs": {
+        "locationLabel": "Location",
+        "areaLabel": "Workshop site area",
+        "capabilityLabel": "Processing scope",
+        "capabilityValue": "ABS plating, metal plating, PVD, spray painting and printing",
+        "locationValue": "Lot {{lot}}, Quang Minh Industrial Park, Quang Minh Commune, Hanoi",
+        "areaValue": "{{area}} m²"
+      },
+      "ctaGallery": "VIEW FACTORY PHOTOS"
+    },
+    "NangLucFinalCta": {
+      "title": "Information to Provide When Sending a Request",
+      "description": "Drawing or sample, substrate material, required plating, thickness, test requirements, quantity and delivery schedule.",
+      "ctaContact": "CONTACT",
+      "ctaQuote": "REQUEST A QUOTE",
+      "hotlineLabel": "Hotline:"
+    },
+    "ProductionFlow": {
+      "sectionTitle": "Production Process",
+      "sectionDescription": "Six steps, from goods receipt to inspection and packing.",
+      "items": {
+        "receiving": {
+          "title": "Goods Receipt",
+          "desc": "Goods receipt and storage."
+        },
+        "surfacePrep": {
+          "title": "Pretreatment",
+          "desc": "Ultrasonic degreasing, HCl tank, surface activation, with water rinsing between steps."
+        },
+        "mainPlating": {
+          "title": "Plating",
+          "desc": "Plating by line type: barrel plating, rack plating or automatic line."
+        },
+        "thickness": {
+          "title": "Thickness and Salt Spray",
+          "desc": "Plating thickness measurement and corrosion testing in an NSS or CASS salt spray chamber."
+        },
+        "finalCheck": {
+          "title": "Final Inspection",
+          "desc": "Final inspection: surface and color against the sample or customer requirements."
+        },
+        "packaging": {
+          "title": "Packing",
+          "desc": "Packing, then storage or delivery to the customer."
+        }
+      },
+      "viewDetail": "See the detailed process steps for each plating type"
+    },
+    "ProductionLines": {
+      "sectionTitle": "Production Lines",
+      "sectionDescription": "Three plating lines: barrel plating, semi-automatic metal rack plating and automatic plating.",
+      "cta": "VIEW PLATING SERVICES",
+      "items": {
+        "barrel": {
+          "tag": "Barrel Plating",
+          "title": "Barrel Plating Line",
+          "desc": "Plating small parts in large quantities in a rotating barrel. With a vibratory machine and degreasing, a copper plating tank and a nickel plating tank.",
+          "alt": "Barrel plating line, with the barrel immersed in the plating tank",
+          "capacityLabel": "CAPACITY:",
+          "capacityValue": "{{rot:full}} kg/day ({{rotPcs:full}} products/day)",
+          "techLabel": "TECHNOLOGY:",
+          "techValue": "Electrolytic nickel, electroless nickel, black nickel, black manganese phosphating, zinc plating"
+        },
+        "rack": {
+          "tag": "Rack plating",
+          "title": "Semi-Automatic Metal Rack Plating Line",
+          "desc": "Plating metal parts mounted on racks.",
+          "alt": "Semi-Automatic Metal Rack Plating Line",
+          "capacityLabel": "CAPACITY:",
+          "capacityValue": "{{hang:full}} products/day",
+          "techLabel": "TECHNOLOGY:",
+          "techValue": "Electrolytic nickel, electroless nickel, black nickel, black manganese phosphating, zinc plating"
+        },
+        "auto": {
+          "tag": "Automatic Plating",
+          "title": "Automatic Plating Line",
+          "desc": "Products hang on jigs, and overhead cranes move them through the tanks in the plating tank area.",
+          "alt": "Automatic plating line with overhead cranes and plating tank area",
+          "capacityLabel": "CAPACITY:",
+          "capacityValue": "{{auto:k}} thousand products/day",
+          "techLabel": "TECHNOLOGY:",
+          "techValue": "Chrome, Nickel, Satin"
+        }
+      }
+    },
+    "QualityStandards": {
+      "sectionTitle": "Certification and Quality Inspection",
+      "sectionDescription": "Certification, wastewater treatment and quality inspection equipment of HANIN.",
+      "ctaDetail": "VIEW CERTIFICATE DETAILS",
+      "items": {
+        "iso9001": {
+          "tagLabel": "Quality management",
+          "desc": "The certificate was issued to Hanin Technology Vietnam Joint Stock Company (Hanin Technology Vietnam), valid until 10/08/2028.",
+          "title": "ISO 9001:2015"
+        },
+        "wastewater": {
+          "tagLabel": "Environment",
+          "desc": "The wastewater treatment system has a settling tank and filter press. HANIN is committed to complying with environmental regulations.",
+          "title": "Wastewater treatment {{waste}} m³/day and night"
+        },
+        "testing": {
+          "tagLabel": "Quality Inspection",
+          "desc": "Plating thickness measurement, NSS and CASS salt spray, Hull cell test.",
+          "title": "Inspection Equipment"
+        }
+      }
+    },
+    "TestingAnalysis": {
+      "sectionTitle": "Analysis and Testing",
+      "sectionDescription": "The analysis lab controls the plating tanks, with plating inspection equipment and reliability test equipment for after spray painting.",
+      "image": {
+        "alt": "Inspection equipment in the HANIN analysis lab"
+      },
+      "items": {
+        "lab": {
+          "title": "Analysis lab",
+          "desc": "Analyzing the plating solution with analytical chemicals."
+        },
+        "hullCell": {
+          "title": "Hull Cell Tester",
+          "desc": "Testing the plating solution on a sample panel to assess the plating quality in the tank."
+        },
+        "thickness": {
+          "title": "Plating thickness gauge",
+          "desc": "Measuring plating thickness with the {{apc}} gauge."
+        },
+        "saltSpray": {
+          "title": "NSS and CASS Salt Spray Chambers",
+          "desc": "Corrosion testing in neutral salt spray (NSS) and acid salt spray (CASS) chambers."
+        }
+      },
+      "reliability": {
+        "title": "Reliability Test Equipment After Spray Painting",
+        "desc": "10 devices that test the durability of the paint and print layer.",
+        "items": {
+          "r1": "RCA Tester (abrasion test)",
+          "r2": "Hot Water (hot water test)",
+          "r3": "High Temp & Humidity (high temperature, high humidity)",
+          "r4": "UV Measure (UV measurement)",
+          "r5": "Alcohol/Eraser Rubbing (alcohol and eraser rubbing)",
+          "r6": "Pencil Rubbing (pencil rubbing)",
+          "r7": "Dropping Tester (drop test)",
+          "r8": "Thickness Measure (thickness measurement)",
+          "r9": "Polisher (polishing machine)",
+          "r10": "Bending Tester (bending test)"
+        }
+      }
+    }
+  }
+}

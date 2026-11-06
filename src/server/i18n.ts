@@ -1,16 +1,17 @@
 /** Trường đa ngôn ngữ: khoá là mã locale, vi là ngôn ngữ gốc/fallback. */
-export const LOCALES = ["vi", "zh", "ko"] as const;
+export const LOCALES = ["vi", "en", "zh", "ko"] as const;
 export type Locale = (typeof LOCALES)[number];
 export type I18nText = Partial<Record<Locale, string>>;
 
 export const LOCALE_LABELS: Record<Locale, string> = {
   vi: "Tiếng Việt",
+  en: "English",
   zh: "中文",
   ko: "한국어",
 };
 
 export function emptyI18n(): I18nText {
-  return { vi: "", zh: "", ko: "" };
+  return { vi: "", en: "", zh: "", ko: "" };
 }
 
 export function parseI18n(raw: unknown): I18nText {

@@ -33,7 +33,7 @@
       "titlePrefix": "GIA CÔNG MẠ TRÊN NỀN",
       "titleHighlight": "NHỰA ABS & KIM LOẠI",
       "badge": "Nhà máy tại KCN Quang Minh, Hà Nội",
-      "description": "Sơn tự động và mạ chân không PVD tại nhà máy Lô 49G, KCN Quang Minh, TP Hà Nội.",
+      "description": "Sơn tự động và mạ chân không PVD tại nhà máy Lô {{lot}}, KCN Quang Minh, TP Hà Nội.",
       "ctaPrimary": "XEM NĂNG LỰC SẢN XUẤT",
       "ctaSecondary": "YÊU CẦU TƯ VẤN",
       "locationLabel": "ĐỊA ĐIỂM:",
@@ -46,7 +46,7 @@
         "0": "Mạ nhựa ABS và mạ kim loại",
         "1": "Mạ chân không PVD, phun sơn và in",
         "2": "Đo độ dày lớp mạ, phun muối NSS và CASS",
-        "3": "Hệ thống xử lý nước thải 130 m³/ngày đêm"
+        "3": "Hệ thống xử lý nước thải {{waste}} m³/ngày đêm"
       },
       "imageAlt": "Công nhân tại xưởng sản xuất của hệ thống Hanin Tech",
       "badgeTag": "Kiểm soát chất lượng",
@@ -54,7 +54,7 @@
       "badgeSubtitle": "XỬ LÝ BỀ MẶT NHỰA VÀ KIM LOẠI",
       "title": "Về HANIN",
       "paragraph1": "HANIN chuyên xử lý mạ trên nền nhựa ABS và kim loại, đồng thời nhận sơn và in trên sản phẩm nhựa, kim loại.",
-      "paragraph2": "HANIN thành lập năm 2023, thuộc hệ thống Hanin Tech (thành lập năm 2018). Nhà máy rộng 2.230 m² tại Lô 49G, KCN Quang Minh, Hà Nội, có 70 nhân sự và hơn 100 khách hàng.",
+      "paragraph2": "HANIN thành lập năm {{founded}}, thuộc hệ thống Hanin Tech (thành lập năm {{hqFounded}}). Nhà máy rộng {{area}} m² tại Lô {{lot}}, KCN Quang Minh, Hà Nội, có {{staff}} nhân sự và hơn {{customers}} khách hàng.",
       "ctaLink": "XEM THÊM VỀ HANIN"
     },
     "PlatingServices": {
@@ -93,7 +93,7 @@
         "0": {
           "tag": "DÂY CHUYỀN MẠ",
           "title": "Mạ tự động, mạ treo, mạ quay",
-          "desc": "Dây chuyền tự động 30–50 nghìn sản phẩm/ngày; mạ treo bán tự động 10–20 nghìn/ngày; mạ quay 3–5 tấn/ngày."
+          "desc": "Dây chuyền tự động {{auto:k}} nghìn sản phẩm/ngày; mạ treo bán tự động {{hang:k}} nghìn/ngày; mạ quay {{rot:ton}} tấn/ngày."
         },
         "1": {
           "tag": "THIẾT BỊ",
@@ -108,7 +108,7 @@
         "3": {
           "tag": "XỬ LÝ NƯỚC THẢI",
           "title": "Hệ thống xử lý nước thải",
-          "desc": "Công suất 130 m³/ngày đêm, có bể lắng và máy ép bùn."
+          "desc": "Công suất {{waste}} m³/ngày đêm, có bể lắng và máy ép bùn."
         }
       }
     },
@@ -119,9 +119,9 @@
         "0": {
           "label": "NHÀ MÁY",
           "sector": "Nhà máy",
-          "tagline": "Nhà máy tại Lô 49G, KCN Quang Minh",
+          "tagline": "Nhà máy tại Lô {{lot}}, KCN Quang Minh",
           "order": "Nhà xưởng",
-          "title": "Nhà máy mạ rộng 2.230 m²",
+          "title": "Nhà máy mạ rộng {{area}} m²",
           "desc": "Nhà máy có dây chuyền mạ, khu PVD, khu phun sơn, phòng phân tích và hệ thống xử lý nước thải."
         },
         "1": {
@@ -191,9 +191,9 @@
           "status": "Còn hiệu lực đến 10/08/2028"
         },
         "1": {
-          "label": "130 m³",
+          "label": "{{waste}} m³",
           "title": "Xử lý nước thải",
-          "desc": "Hệ thống công suất 130 m³/ngày đêm, có bể lắng và máy ép bùn.",
+          "desc": "Hệ thống công suất {{waste}} m³/ngày đêm, có bể lắng và máy ép bùn.",
           "status": "Xử lý nước thải"
         },
         "2": {
@@ -242,7 +242,7 @@
       "zaloCta": "NHẮN TIN QUA ZALO",
       "emailLabel": "EMAIL BÁO GIÁ",
       "addressLabel": "ĐỊA CHỈ NHÀ MÁY",
-      "addressValue": "Lô 49G, KCN Quang Minh, xã Quang Minh, Hà Nội"
+      "addressValue": "Lô {{lot}}, KCN Quang Minh, xã Quang Minh, Hà Nội"
     }
   }
 }

@@ -55,8 +55,8 @@
       "title": "웹사이트 운영 주체",
       "name": "회사명: HANIN 도금산업 주식회사(브랜드: HANIN Plating).",
       "tax": "사업자등록번호: 0110300983.",
-      "hq": "주소: 하노이시 꽝민사 꽝민공단 49G 부지.",
-      "fac": "모회사: Hanin Tech, 하노이시 꽝민공단 660 부지.",
+      "hq": "주소: 하노이시 꽝민사 꽝민공단 {{lot}} 부지.",
+      "fac": "모회사: Hanin Tech, 하노이시 꽝민공단 {{hqLot}} 부지.",
       "rep": "대표자: Nguyễn Huy Vinh 대표이사.",
       "mail": "이메일: huyvinh82@gmail.com, vankhanhminhkhang@gmail.com."
     }

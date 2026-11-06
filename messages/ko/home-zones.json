@@ -4,37 +4,37 @@
     "zones": {
       "0": {
         "title": "자동 도금 라인",
-        "capacity": "30,000–50,000개/일",
+        "capacity": "{{auto:full}}개/일",
         "detail": "제품 걸이 JIG, 크레인.",
         "alt": "주황색 크레인과 JIG를 갖춘 자동 도금 라인"
       },
       "1": {
         "title": "배럴 도금 라인",
-        "capacity": "3,000–5,000 kg/일",
-        "detail": "10,000–30,000개/일에 해당.",
+        "capacity": "{{rot:full}} kg/일",
+        "detail": "{{rotPcs:full}}개/일에 해당.",
         "alt": "도금조와 배기 설비가 보이는 배럴 도금 라인 전경"
       },
       "2": {
         "title": "반자동 금속 도금 라인(랙 도금)",
-        "capacity": "10,000–20,000 pcs/일",
+        "capacity": "{{hang:full}} pcs/일",
         "detail": "걸이 지그에 부품을 걸어 도금.",
         "alt": "반자동 도금 라인의 도금조"
       },
       "3": {
         "title": "자동 도장 및 PVD 진공 증착",
-        "capacity": "PVD 2대, PVD 라인 2개",
+        "capacity": "PVD 장비 2대",
         "detail": "자동 도장 라인 1개, 이오나이저 부스 20개.",
         "alt": "공장 내 원형 챔버 PVD 진공 증착기"
       },
       "4": {
         "title": "분석 및 검사실",
-        "capacity": "APC-100, NSS, CASS, Hull cell",
-        "detail": "APC-100 도금 두께 측정기, NSS 염수분무시험기, CASS 염수분무시험기, Hull cell 시험기, 분석용 화학약품. 도장 후 신뢰성 시험 장비 10종: RCA Tester, Hot Water, High Temp & Humidity, UV Measure, Alcohol/Eraser Rubbing, Pencil Rubbing, Dropping Tester, Thickness Measure, Polisher, Bending Tester.",
+        "capacity": "{{apc}}, NSS, CASS, Hull cell",
+        "detail": "{{apc}} 도금 두께 측정기, NSS 염수분무시험기, CASS 염수분무시험기, Hull cell 시험기, 분석용 화학약품. 도장 후 신뢰성 시험 장비 10종: RCA Tester, Hot Water, High Temp & Humidity, UV Measure, Alcohol/Eraser Rubbing, Pencil Rubbing, Dropping Tester, Thickness Measure, Polisher, Bending Tester.",
         "alt": "실험대 위의 분석용 화학약품과 적정 장비"
       },
       "5": {
         "title": "폐수 처리 시스템",
-        "capacity": "130 m³/일",
+        "capacity": "{{waste}} m³/일",
         "detail": "침전조, 슬러지 압착기. 관련 규정 준수를 약속합니다.",
         "alt": "폐수 처리 시스템의 파란색 침전조"
       }

@@ -3,8 +3,8 @@
 import { useEffect, useMemo, useState } from "react";
 import { api, ApiError } from "./api";
 import { MediaPickerModal } from "./MediaPicker";
-import { useToast } from "./Toast";
-import { useConfirm } from "./ConfirmDialog";
+import { toast } from "@/components/ct999/thong-bao-toast/store";
+import { confirm } from "./dialog";
 
 interface Slot {
   key: string;
@@ -28,8 +28,6 @@ export default function SiteImages() {
   const [overrides, setOverrides] = useState<Record<string, string>>({});
   const [picking, setPicking] = useState<string | null>(null);
   const [error, setError] = useState("");
-  const toast = useToast();
-  const confirm = useConfirm();
   const [version, setVersion] = useState(0);
   const [onlyChanged, setOnlyChanged] = useState(false);
 

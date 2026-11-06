@@ -23,7 +23,7 @@
         "description": "Niken điện phân sáng bóng, niken hóa chống mài mòn và chịu nhiệt, cùng niken đen, niken satin, niken crom trên sắt, đồng, thép, nhôm.",
         "applicationLabel": "Ứng dụng điển hình:",
         "applicationText": "Tay nắm, bản lề, bánh răng, chốt, khóa và chi tiết máy.",
-        "statLabel": "Mạ treo 10.000–20.000 sp/ngày · Mạ quay 3.000–5.000 kg/ngày",
+        "statLabel": "Mạ treo {{hang:full}} sp/ngày · Mạ quay {{rot:full}} kg/ngày",
         "imageAlt": "Chi tiết kim loại mạ niken"
       },
       "kemNiken": {
@@ -31,7 +31,7 @@
         "description": "Mạ kẽm, mạ đồng, mạ thiếc và phốt phát mangan đen cho chi tiết kim loại nhỏ, giúp chống gỉ sét, tăng độ bám dính và bền màu.",
         "applicationLabel": "Ứng dụng điển hình:",
         "applicationText": "Vít, bu lông, nắp che, đầu cos, đai ốc, đinh tán.",
-        "statLabel": "Mạ quay 3.000–5.000 kg/ngày",
+        "statLabel": "Mạ quay {{rot:full}} kg/ngày",
         "imageAlt": "Vít và bu lông mạ kẽm, phốt phát đen"
       },
       "sonMaKetHop": {
@@ -44,10 +44,10 @@
       },
       "xuLyNhom": {
         "title": "Mạ chân không PVD",
-        "description": "Mạ chân không PVD với 2 máy và 2 dây chuyền, cho bề mặt có tính thẩm mỹ cao và độ bền tốt.",
+        "description": "Mạ chân không PVD với 2 máy, cho bề mặt có tính thẩm mỹ cao và độ bền tốt.",
         "applicationLabel": "Ứng dụng điển hình:",
         "applicationText": "Chi tiết cần bề mặt thẩm mỹ cao và độ bền tốt.",
-        "statLabel": "2 máy PVD · 2 dây chuyền PVD",
+        "statLabel": "2 máy PVD",
         "imageAlt": "Chi tiết mạ chân không PVD"
       }
     },
@@ -63,18 +63,18 @@
     },
     "CapacityOverview": {
       "heading": "Dây chuyền và hệ thống mạ",
-      "subtitle": "Nhà máy tại Lô 49G, KCN Quang Minh có dây chuyền mạ tự động, mạ treo bán tự động, mạ quay và hệ thống xử lý nước thải đi kèm.",
+      "subtitle": "Nhà máy tại Lô {{lot}}, KCN Quang Minh có dây chuyền mạ tự động, mạ treo bán tự động, mạ quay và hệ thống xử lý nước thải đi kèm.",
       "auto": {
         "title": "Dây chuyền mạ tự động",
-        "desc": "JIG móc hàng, cẩu trục và khu bể mạ; 30–50 nghìn sản phẩm mỗi ngày, mạ crom, niken, satin."
+        "desc": "JIG móc hàng, cẩu trục và khu bể mạ; {{auto:k}} nghìn sản phẩm mỗi ngày, mạ crom, niken, satin."
       },
       "complex": {
         "title": "Mạ treo bán tự động và mạ quay",
-        "desc": "Mạ treo 10.000–20.000 sản phẩm mỗi ngày; mạ quay 3.000–5.000 kg mỗi ngày (10.000–30.000 sản phẩm)."
+        "desc": "Mạ treo {{hang:full}} sản phẩm mỗi ngày; mạ quay {{rot:full}} kg mỗi ngày ({{rotPcs:full}} sản phẩm)."
       },
       "wastewater": {
         "title": "Xử lý nước thải",
-        "desc": "Hệ thống xử lý nước thải công suất 130 m³/ngày đêm, có bể lắng và máy ép bùn."
+        "desc": "Hệ thống xử lý nước thải công suất {{waste}} m³/ngày đêm, có bể lắng và máy ép bùn."
       }
     },
     "CategoryHero": {
@@ -96,11 +96,11 @@
       },
       "stat3": {
         "label": "Mạ treo bán tự động",
-        "value": "10.000–20.000 sp/ngày"
+        "value": "{{hang:full}} sp/ngày"
       },
       "stat4": {
         "label": "Mạ quay",
-        "value": "3.000–5.000 kg/ngày"
+        "value": "{{rot:full}} kg/ngày"
       },
       "ctaPrimary": "YÊU CẦU BÁO GIÁ",
       "ctaSecondary": "LIÊN HỆ TƯ VẤN KỸ THUẬT"
@@ -167,22 +167,22 @@
     "DetailCapability": {
       "imageAlt": "Khu vực sản xuất tại nhà máy HANIN",
       "lineCapacityLabel": "Mạ treo bán tự động",
-      "lineCapacityValue": "10.000–20.000 sp/ngày",
+      "lineCapacityValue": "{{hang:full}} sp/ngày",
       "tankSizeLabel": "Mạ quay",
-      "tankSizeValue": "3.000–5.000 kg/ngày",
+      "tankSizeValue": "{{rot:full}} kg/ngày",
       "heading": "Dây chuyền mạ treo và mạ quay",
       "subtitle": "Hai dây chuyền cùng làm niken điện phân, niken hóa, niken đen, phốt phát mangan đen và mạ kẽm.",
       "f1": {
         "title": "Mạ treo bán tự động:",
-        "desc": "10.000–20.000 sản phẩm mỗi ngày."
+        "desc": "{{hang:full}} sản phẩm mỗi ngày."
       },
       "f2": {
         "title": "Mạ quay:",
-        "desc": "3.000–5.000 kg mỗi ngày, tương đương 10.000–30.000 sản phẩm; có máy rung, tẩy dầu, bể mạ đồng và bể mạ niken."
+        "desc": "{{rot:full}} kg mỗi ngày, tương đương {{rotPcs:full}} sản phẩm; có máy rung, tẩy dầu, bể mạ đồng và bể mạ niken."
       },
       "f3": {
         "title": "Dây chuyền mạ tự động:",
-        "desc": "30–50 nghìn sản phẩm mỗi ngày, mạ crom, niken, satin."
+        "desc": "{{auto:k}} nghìn sản phẩm mỗi ngày, mạ crom, niken, satin."
       }
     },
     "DetailApplications": {
@@ -191,25 +191,25 @@
       "a1": {
         "tag": "Chi tiết máy",
         "title": "Bánh răng, chốt, trục",
-        "desc": "Bánh răng, chốt, tấm chi tiết máy, trục-chốt, chi tiết lắp ráp.",
+        "desc": "Niken hóa: lớp mạ đều cả trong ren và lỗ sâu, độ cứng cao, chống mài mòn.",
         "note": "Niken hóa"
       },
       "a2": {
         "tag": "Phụ kiện cửa, khóa",
         "title": "Tay nắm, bản lề, chốt",
-        "desc": "Tay nắm kim loại, bản lề, khóa, chốt định vị, bu lông đặc biệt.",
+        "desc": "Niken điện phân: lớp mạ sáng bóng, bền.",
         "note": "Niken điện phân"
       },
       "a3": {
         "tag": "Vệ sinh",
         "title": "Vòi nước và phụ kiện",
-        "desc": "Vòi nước, phụ kiện phòng tắm, tay nắm.",
+        "desc": "Niken đen, niken satin hoặc niken crom theo yêu cầu bề mặt.",
         "note": "Mạ crom"
       },
       "a4": {
         "tag": "Trang trí",
         "title": "Inox satin và chi tiết trang trí",
-        "desc": "Tấm inox satin, tay nắm cửa, thanh inox, bản lề, chi tiết trang trí.",
+        "desc": "Niken satin hoặc niken crom cho bề mặt mờ mịn hoặc sáng bóng.",
         "note": "Mạ satin"
       }
     },
@@ -231,7 +231,7 @@
       },
       "r3": {
         "item": "Độ dày lớp mạ",
-        "device": "Máy đo độ dày lớp mạ APC-100",
+        "device": "Máy đo độ dày lớp mạ {{apc}}",
         "criteria": "Đo độ dày lớp mạ, đối chiếu yêu cầu bản vẽ."
       },
       "r4": {
@@ -247,7 +247,7 @@
     },
     "DetailGallery": {
       "heading": "Hình ảnh tại nhà máy",
-      "subtitle": "Nhà máy HANIN, lô 49G KCN Quang Minh",
+      "subtitle": "Nhà máy HANIN, lô {{lot}} KCN Quang Minh",
       "line": {
         "alt": "Khu vực mạ tại nhà máy HANIN",
         "tag": "Khu vực mạ",
@@ -258,7 +258,7 @@
         "alt": "Khu vực sản xuất của nhà máy HANIN",
         "tag": "Sản xuất",
         "title": "Khu vực sản xuất",
-        "desc": "Nhà máy có mặt bằng 2.230 m²."
+        "desc": "Nhà máy có mặt bằng {{area}} m²."
       },
       "prep": {
         "alt": "Khu vực kho và phân tích của nhà máy HANIN",
@@ -342,10 +342,10 @@
         "desc": "Phòng phân tích và hóa chất phân tích; máy thử Hull cell kiểm tra dung dịch mạ."
       },
       "thickness": {
-        "title": "Máy đo độ dày APC-100",
+        "title": "Máy đo độ dày {{apc}}",
         "desc": "Đo độ dày lớp mạ để đối chiếu yêu cầu bản vẽ.",
         "method": "Độ dày lớp mạ",
-        "device": "Máy đo độ dày lớp mạ APC-100",
+        "device": "Máy đo độ dày lớp mạ {{apc}}",
         "criteria": "Đối chiếu với yêu cầu bản vẽ."
       },
       "saltSpray": {
@@ -483,7 +483,7 @@
           "stepLabel": "BƯỚC"
         },
         "DetailCapability": {
-          "imageAlt": "Khu vực sản xuất tại nhà máy HANIN",
+          "imageAlt": "Khu vực sản xuất tại nhà máy HANIN, phục vụ tiền xử lý bề mặt",
           "lineCapacityLabel": "Bước chính",
           "lineCapacityValue": "Tẩy dầu siêu âm",
           "tankSizeLabel": "Giữa các bước",
@@ -536,7 +536,7 @@
           "colDevice": "Thiết bị",
           "colCriteria": "Nội dung kiểm tra",
           "heading": "Kiểm soát chất lượng sau tiền xử lý",
-          "subtitle": "Thiết bị kiểm tra của nhà máy HANIN",
+          "subtitle": "Thiết bị kiểm tra của nhà máy HANIN áp dụng cho tiền xử lý bề mặt",
           "r1": {
             "item": "Dung dịch tiền xử lý",
             "device": "Phòng phân tích và hóa chất phân tích",
@@ -549,7 +549,7 @@
           },
           "r3": {
             "item": "Độ dày lớp mạ",
-            "device": "Máy đo độ dày lớp mạ APC-100",
+            "device": "Máy đo độ dày lớp mạ {{apc}}",
             "criteria": "Đo độ dày lớp mạ, đối chiếu yêu cầu bản vẽ."
           },
           "r4": {
@@ -565,24 +565,24 @@
         },
         "DetailGallery": {
           "heading": "Hình ảnh tại nhà máy",
-          "subtitle": "Nhà máy HANIN, lô 49G KCN Quang Minh",
+          "subtitle": "Tiền xử lý bề mặt: khu vực tại nhà máy HANIN, lô {{lot}} KCN Quang Minh",
           "line": {
-            "alt": "Khu vực mạ tại nhà máy HANIN",
+            "alt": "Khu vực mạ tại nhà máy HANIN, phục vụ tiền xử lý bề mặt",
             "tag": "Khu vực mạ",
             "title": "Khu vực mạ",
-            "desc": "Dây chuyền mạ tại nhà máy HANIN, KCN Quang Minh."
+            "desc": "Dây chuyền phục vụ tiền xử lý bề mặt tại nhà máy HANIN, KCN Quang Minh."
           },
           "surface": {
-            "alt": "Khu vực sản xuất của nhà máy HANIN",
+            "alt": "Khu vực sản xuất của nhà máy HANIN, nơi thực hiện tiền xử lý bề mặt",
             "tag": "Sản xuất",
             "title": "Khu vực sản xuất",
-            "desc": "Nhà máy có mặt bằng 2.230 m²."
+            "desc": "Nhà máy có mặt bằng {{area}} m², nơi thực hiện tiền xử lý bề mặt."
           },
           "prep": {
-            "alt": "Khu vực kho và phân tích của nhà máy HANIN",
+            "alt": "Khu vực kho và phân tích của nhà máy HANIN, chuẩn bị cho tiền xử lý bề mặt",
             "tag": "Kho và phân tích",
             "title": "Kho và phòng phân tích",
-            "desc": "Nhập hàng, lưu kho và phân tích hóa chất trước khi đưa vào dây chuyền."
+            "desc": "Nhập hàng, lưu kho và phân tích hóa chất trước khi đưa vào dây chuyền (tiền xử lý bề mặt)."
           }
         },
         "RfqFormDetail": {
@@ -703,9 +703,9 @@
           "stepLabel": "BƯỚC"
         },
         "DetailCapability": {
-          "imageAlt": "Khu vực sản xuất tại nhà máy HANIN",
+          "imageAlt": "Khu vực sản xuất tại nhà máy HANIN, phục vụ mạ niken-crom trên nhựa ABS",
           "lineCapacityLabel": "Dây chuyền mạ tự động",
-          "lineCapacityValue": "30–50 nghìn sản phẩm/ngày",
+          "lineCapacityValue": "{{auto:k}} nghìn sản phẩm/ngày",
           "tankSizeLabel": "Loại mạ",
           "tankSizeValue": "Crom, niken, satin",
           "heading": "Dây chuyền mạ tự động",
@@ -720,7 +720,7 @@
           },
           "f3": {
             "title": "Khu bể mạ:",
-            "desc": "Mạ crom, niken, satin; công suất 30–50 nghìn sản phẩm mỗi ngày."
+            "desc": "Mạ crom, niken, satin; công suất {{auto:k}} nghìn sản phẩm mỗi ngày."
           }
         },
         "DetailApplications": {
@@ -756,7 +756,7 @@
           "colDevice": "Thiết bị",
           "colCriteria": "Nội dung kiểm tra",
           "heading": "Kiểm soát chất lượng lớp mạ trên nhựa ABS",
-          "subtitle": "Thiết bị kiểm tra của nhà máy HANIN",
+          "subtitle": "Thiết bị kiểm tra của nhà máy HANIN áp dụng cho mạ niken-crom trên nhựa ABS",
           "r1": {
             "item": "Dung dịch và hóa chất",
             "device": "Phòng phân tích và hóa chất phân tích",
@@ -769,7 +769,7 @@
           },
           "r3": {
             "item": "Độ dày lớp mạ",
-            "device": "Máy đo độ dày lớp mạ APC-100",
+            "device": "Máy đo độ dày lớp mạ {{apc}}",
             "criteria": "Đo độ dày lớp mạ, đối chiếu yêu cầu bản vẽ."
           },
           "r4": {
@@ -785,24 +785,24 @@
         },
         "DetailGallery": {
           "heading": "Hình ảnh tại nhà máy",
-          "subtitle": "Nhà máy HANIN, lô 49G KCN Quang Minh",
+          "subtitle": "Mạ niken-crom trên nhựa ABS: khu vực tại nhà máy HANIN, lô {{lot}} KCN Quang Minh",
           "line": {
-            "alt": "Khu vực mạ tại nhà máy HANIN",
+            "alt": "Khu vực mạ tại nhà máy HANIN, phục vụ mạ niken-crom trên nhựa ABS",
             "tag": "Khu vực mạ",
             "title": "Khu vực mạ",
-            "desc": "Dây chuyền mạ tại nhà máy HANIN, KCN Quang Minh."
+            "desc": "Dây chuyền phục vụ mạ niken-crom trên nhựa ABS tại nhà máy HANIN, KCN Quang Minh."
           },
           "surface": {
-            "alt": "Khu vực sản xuất của nhà máy HANIN",
+            "alt": "Khu vực sản xuất của nhà máy HANIN, nơi thực hiện mạ niken-crom trên nhựa ABS",
             "tag": "Sản xuất",
             "title": "Khu vực sản xuất",
-            "desc": "Nhà máy có mặt bằng 2.230 m²."
+            "desc": "Nhà máy có mặt bằng {{area}} m², nơi thực hiện mạ niken-crom trên nhựa ABS."
           },
           "prep": {
-            "alt": "Khu vực kho và phân tích của nhà máy HANIN",
+            "alt": "Khu vực kho và phân tích của nhà máy HANIN, chuẩn bị cho mạ niken-crom trên nhựa ABS",
             "tag": "Kho và phân tích",
             "title": "Kho và phòng phân tích",
-            "desc": "Nhập hàng, lưu kho và phân tích hóa chất trước khi đưa vào dây chuyền."
+            "desc": "Nhập hàng, lưu kho và phân tích hóa chất trước khi đưa vào dây chuyền (mạ niken-crom trên nhựa ABS)."
           }
         },
         "RfqFormDetail": {
@@ -857,11 +857,11 @@
           },
           "stat3": {
             "label": "Mạ treo bán tự động",
-            "value": "10.000–20.000 sp/ngày"
+            "value": "{{hang:full}} sp/ngày"
           },
           "stat4": {
             "label": "Mạ quay",
-            "value": "3.000–5.000 kg/ngày"
+            "value": "{{rot:full}} kg/ngày"
           },
           "ctaPrimary": "YÊU CẦU BÁO GIÁ",
           "ctaSecondary": "LIÊN HỆ TƯ VẤN KỸ THUẬT"
@@ -926,24 +926,24 @@
           "stepLabel": "BƯỚC"
         },
         "DetailCapability": {
-          "imageAlt": "Khu vực sản xuất tại nhà máy HANIN",
+          "imageAlt": "Khu vực sản xuất tại nhà máy HANIN, phục vụ mạ niken trên nền kim loại",
           "lineCapacityLabel": "Mạ treo bán tự động",
-          "lineCapacityValue": "10.000–20.000 sp/ngày",
+          "lineCapacityValue": "{{hang:full}} sp/ngày",
           "tankSizeLabel": "Mạ quay",
-          "tankSizeValue": "3.000–5.000 kg/ngày",
+          "tankSizeValue": "{{rot:full}} kg/ngày",
           "heading": "Dây chuyền mạ treo và mạ quay",
           "subtitle": "Hai dây chuyền cùng làm niken điện phân, niken hóa, niken đen, phốt phát mangan đen và mạ kẽm.",
           "f1": {
             "title": "Mạ treo bán tự động:",
-            "desc": "10.000–20.000 sản phẩm mỗi ngày."
+            "desc": "{{hang:full}} sản phẩm mỗi ngày."
           },
           "f2": {
             "title": "Mạ quay:",
-            "desc": "3.000–5.000 kg mỗi ngày, tương đương 10.000–30.000 sản phẩm; có máy rung, tẩy dầu, bể mạ đồng và bể mạ niken."
+            "desc": "{{rot:full}} kg mỗi ngày, tương đương {{rotPcs:full}} sản phẩm; có máy rung, tẩy dầu, bể mạ đồng và bể mạ niken."
           },
           "f3": {
             "title": "Dây chuyền mạ tự động:",
-            "desc": "30–50 nghìn sản phẩm mỗi ngày, mạ crom, niken, satin."
+            "desc": "{{auto:k}} nghìn sản phẩm mỗi ngày, mạ crom, niken, satin."
           }
         },
         "DetailApplications": {
@@ -952,25 +952,25 @@
           "a1": {
             "tag": "Chi tiết máy",
             "title": "Bánh răng, chốt, trục",
-            "desc": "Bánh răng, chốt, tấm chi tiết máy, trục-chốt, chi tiết lắp ráp.",
+            "desc": "Niken hóa: lớp mạ đều cả trong ren và lỗ sâu, độ cứng cao, chống mài mòn.",
             "note": "Niken hóa"
           },
           "a2": {
             "tag": "Phụ kiện cửa, khóa",
             "title": "Tay nắm, bản lề, chốt",
-            "desc": "Tay nắm kim loại, bản lề, khóa, chốt định vị, bu lông đặc biệt.",
+            "desc": "Niken điện phân: lớp mạ sáng bóng, bền.",
             "note": "Niken điện phân"
           },
           "a3": {
             "tag": "Vệ sinh",
             "title": "Vòi nước và phụ kiện",
-            "desc": "Vòi nước, phụ kiện phòng tắm, tay nắm.",
+            "desc": "Niken đen, niken satin hoặc niken crom theo yêu cầu bề mặt.",
             "note": "Mạ crom"
           },
           "a4": {
             "tag": "Trang trí",
             "title": "Inox satin và chi tiết trang trí",
-            "desc": "Tấm inox satin, tay nắm cửa, thanh inox, bản lề, chi tiết trang trí.",
+            "desc": "Niken satin hoặc niken crom cho bề mặt mờ mịn hoặc sáng bóng.",
             "note": "Mạ satin"
           }
         },
@@ -979,7 +979,7 @@
           "colDevice": "Thiết bị",
           "colCriteria": "Nội dung kiểm tra",
           "heading": "Kiểm soát chất lượng lớp mạ niken",
-          "subtitle": "Thiết bị kiểm tra của nhà máy HANIN",
+          "subtitle": "Thiết bị kiểm tra của nhà máy HANIN áp dụng cho mạ niken trên nền kim loại",
           "r1": {
             "item": "Dung dịch và hóa chất",
             "device": "Phòng phân tích và hóa chất phân tích",
@@ -992,7 +992,7 @@
           },
           "r3": {
             "item": "Độ dày lớp mạ",
-            "device": "Máy đo độ dày lớp mạ APC-100",
+            "device": "Máy đo độ dày lớp mạ {{apc}}",
             "criteria": "Đo độ dày lớp mạ, đối chiếu yêu cầu bản vẽ."
           },
           "r4": {
@@ -1008,24 +1008,24 @@
         },
         "DetailGallery": {
           "heading": "Hình ảnh tại nhà máy",
-          "subtitle": "Nhà máy HANIN, lô 49G KCN Quang Minh",
+          "subtitle": "Mạ niken trên nền kim loại: khu vực tại nhà máy HANIN, lô {{lot}} KCN Quang Minh",
           "line": {
-            "alt": "Khu vực mạ tại nhà máy HANIN",
+            "alt": "Khu vực mạ tại nhà máy HANIN, phục vụ mạ niken trên nền kim loại",
             "tag": "Khu vực mạ",
             "title": "Khu vực mạ",
-            "desc": "Dây chuyền mạ tại nhà máy HANIN, KCN Quang Minh."
+            "desc": "Dây chuyền phục vụ mạ niken trên nền kim loại tại nhà máy HANIN, KCN Quang Minh."
           },
           "surface": {
-            "alt": "Khu vực sản xuất của nhà máy HANIN",
+            "alt": "Khu vực sản xuất của nhà máy HANIN, nơi thực hiện mạ niken trên nền kim loại",
             "tag": "Sản xuất",
             "title": "Khu vực sản xuất",
-            "desc": "Nhà máy có mặt bằng 2.230 m²."
+            "desc": "Nhà máy có mặt bằng {{area}} m², nơi thực hiện mạ niken trên nền kim loại."
           },
           "prep": {
-            "alt": "Khu vực kho và phân tích của nhà máy HANIN",
+            "alt": "Khu vực kho và phân tích của nhà máy HANIN, chuẩn bị cho mạ niken trên nền kim loại",
             "tag": "Kho và phân tích",
             "title": "Kho và phòng phân tích",
-            "desc": "Nhập hàng, lưu kho và phân tích hóa chất trước khi đưa vào dây chuyền."
+            "desc": "Nhập hàng, lưu kho và phân tích hóa chất trước khi đưa vào dây chuyền (mạ niken trên nền kim loại)."
           }
         },
         "RfqFormDetail": {
@@ -1084,7 +1084,7 @@
           },
           "stat4": {
             "label": "Mạ quay",
-            "value": "3.000–5.000 kg/ngày"
+            "value": "{{rot:full}} kg/ngày"
           },
           "ctaPrimary": "YÊU CẦU BÁO GIÁ",
           "ctaSecondary": "LIÊN HỆ TƯ VẤN KỸ THUẬT"
@@ -1148,11 +1148,11 @@
           "stepLabel": "BƯỚC"
         },
         "DetailCapability": {
-          "imageAlt": "Khu vực sản xuất tại nhà máy HANIN",
+          "imageAlt": "Khu vực sản xuất tại nhà máy HANIN, phục vụ mạ kẽm, đồng, thiếc và phốt phát đen",
           "lineCapacityLabel": "Mạ quay",
-          "lineCapacityValue": "3.000–5.000 kg/ngày",
+          "lineCapacityValue": "{{rot:full}} kg/ngày",
           "tankSizeLabel": "Mạ treo bán tự động",
-          "tankSizeValue": "10.000–20.000 sp/ngày",
+          "tankSizeValue": "{{hang:full}} sp/ngày",
           "heading": "Dây chuyền mạ quay và mạ treo",
           "subtitle": "Chi tiết nhỏ chạy trên dây chuyền mạ quay; chi tiết mạ treo chạy trên dây chuyền bán tự động.",
           "f1": {
@@ -1165,7 +1165,7 @@
           },
           "f3": {
             "title": "Công suất mạ quay:",
-            "desc": "3.000–5.000 kg mỗi ngày, tương đương 10.000–30.000 sản phẩm."
+            "desc": "{{rot:full}} kg mỗi ngày, tương đương {{rotPcs:full}} sản phẩm."
           }
         },
         "DetailApplications": {
@@ -1201,7 +1201,7 @@
           "colDevice": "Thiết bị",
           "colCriteria": "Nội dung kiểm tra",
           "heading": "Kiểm soát chất lượng lớp mạ",
-          "subtitle": "Thiết bị kiểm tra của nhà máy HANIN",
+          "subtitle": "Thiết bị kiểm tra của nhà máy HANIN áp dụng cho mạ kẽm, đồng, thiếc và phốt phát đen",
           "r1": {
             "item": "Dung dịch và hóa chất",
             "device": "Phòng phân tích và hóa chất phân tích",
@@ -1214,7 +1214,7 @@
           },
           "r3": {
             "item": "Độ dày lớp mạ",
-            "device": "Máy đo độ dày lớp mạ APC-100",
+            "device": "Máy đo độ dày lớp mạ {{apc}}",
             "criteria": "Đo độ dày lớp mạ, đối chiếu yêu cầu bản vẽ."
           },
           "r4": {
@@ -1230,24 +1230,24 @@
         },
         "DetailGallery": {
           "heading": "Hình ảnh tại nhà máy",
-          "subtitle": "Nhà máy HANIN, lô 49G KCN Quang Minh",
+          "subtitle": "Mạ kẽm, đồng, thiếc và phốt phát đen: khu vực tại nhà máy HANIN, lô {{lot}} KCN Quang Minh",
           "line": {
-            "alt": "Khu vực mạ tại nhà máy HANIN",
+            "alt": "Khu vực mạ tại nhà máy HANIN, phục vụ mạ kẽm, đồng, thiếc và phốt phát đen",
             "tag": "Khu vực mạ",
             "title": "Khu vực mạ",
-            "desc": "Dây chuyền mạ tại nhà máy HANIN, KCN Quang Minh."
+            "desc": "Dây chuyền phục vụ mạ kẽm, đồng, thiếc và phốt phát đen tại nhà máy HANIN, KCN Quang Minh."
           },
           "surface": {
-            "alt": "Khu vực sản xuất của nhà máy HANIN",
+            "alt": "Khu vực sản xuất của nhà máy HANIN, nơi thực hiện mạ kẽm, đồng, thiếc và phốt phát đen",
             "tag": "Sản xuất",
             "title": "Khu vực sản xuất",
-            "desc": "Nhà máy có mặt bằng 2.230 m²."
+            "desc": "Nhà máy có mặt bằng {{area}} m², nơi thực hiện mạ kẽm, đồng, thiếc và phốt phát đen."
           },
           "prep": {
-            "alt": "Khu vực kho và phân tích của nhà máy HANIN",
+            "alt": "Khu vực kho và phân tích của nhà máy HANIN, chuẩn bị cho mạ kẽm, đồng, thiếc và phốt phát đen",
             "tag": "Kho và phân tích",
             "title": "Kho và phòng phân tích",
-            "desc": "Nhập hàng, lưu kho và phân tích hóa chất trước khi đưa vào dây chuyền."
+            "desc": "Nhập hàng, lưu kho và phân tích hóa chất trước khi đưa vào dây chuyền (mạ kẽm, đồng, thiếc và phốt phát đen)."
           }
         },
         "RfqFormDetail": {
@@ -1360,7 +1360,7 @@
           "stepLabel": "BƯỚC"
         },
         "DetailCapability": {
-          "imageAlt": "Khu vực sản xuất tại nhà máy HANIN",
+          "imageAlt": "Khu vực sản xuất tại nhà máy HANIN, phục vụ phun sơn, in và laser",
           "lineCapacityLabel": "Phòng phun 6 trụ",
           "lineCapacityValue": "3 phòng (6 súng)",
           "tankSizeLabel": "Phun sơn tự động",
@@ -1407,7 +1407,7 @@
           "colDevice": "Thiết bị",
           "colCriteria": "Nội dung kiểm tra",
           "heading": "Kiểm tra độ tin cậy sau khi phun sơn",
-          "subtitle": "10 loại thiết bị test của nhà máy",
+          "subtitle": "Thiết bị kiểm tra của nhà máy HANIN áp dụng cho phun sơn, in và laser",
           "r1": {
             "item": "Độ mài mòn",
             "device": "RCA Tester",
@@ -1436,24 +1436,24 @@
         },
         "DetailGallery": {
           "heading": "Hình ảnh tại nhà máy",
-          "subtitle": "Nhà máy HANIN, lô 49G KCN Quang Minh",
+          "subtitle": "Phun sơn, in và laser: khu vực tại nhà máy HANIN, lô {{lot}} KCN Quang Minh",
           "line": {
-            "alt": "Khu vực mạ tại nhà máy HANIN",
+            "alt": "Khu vực mạ tại nhà máy HANIN, phục vụ phun sơn, in và laser",
             "tag": "Khu vực mạ",
             "title": "Khu vực mạ",
-            "desc": "Dây chuyền mạ tại nhà máy HANIN, KCN Quang Minh."
+            "desc": "Dây chuyền phục vụ phun sơn, in và laser tại nhà máy HANIN, KCN Quang Minh."
           },
           "surface": {
-            "alt": "Khu vực sản xuất của nhà máy HANIN",
+            "alt": "Khu vực sản xuất của nhà máy HANIN, nơi thực hiện phun sơn, in và laser",
             "tag": "Sản xuất",
             "title": "Khu vực sản xuất",
-            "desc": "Nhà máy có mặt bằng 2.230 m²."
+            "desc": "Nhà máy có mặt bằng {{area}} m², nơi thực hiện phun sơn, in và laser."
           },
           "prep": {
-            "alt": "Khu vực kho và phân tích của nhà máy HANIN",
+            "alt": "Khu vực kho và phân tích của nhà máy HANIN, chuẩn bị cho phun sơn, in và laser",
             "tag": "Kho và phân tích",
             "title": "Kho và phòng phân tích",
-            "desc": "Nhập hàng, lưu kho và phân tích hóa chất trước khi đưa vào dây chuyền."
+            "desc": "Nhập hàng, lưu kho và phân tích hóa chất trước khi đưa vào dây chuyền (phun sơn, in và laser)."
           }
         },
         "RfqFormDetail": {
@@ -1503,8 +1503,8 @@
             "value": "2 máy"
           },
           "stat2": {
-            "label": "Dây chuyền PVD",
-            "value": "2 dây chuyền"
+            "label": "Nhà máy",
+            "value": "KCN Quang Minh"
           },
           "stat3": {
             "label": "Bề mặt",
@@ -1526,8 +1526,8 @@
             "intro": "Nhà máy có:",
             "item1Strong": "2 máy PVD:",
             "item1": "Mạ chân không theo mẻ.",
-            "item2Strong": "2 dây chuyền PVD:",
-            "item2": "Xử lý chi tiết theo đơn hàng.",
+            "item2Strong": "Vị trí:",
+            "item2": "Lô {{lot}}, KCN Quang Minh, Hà Nội, cùng khu nhà máy mạ HANIN.",
             "item3Strong": "Bề mặt hoàn thiện:",
             "item3": "Thẩm mỹ cao, độ bền tốt."
           },
@@ -1553,7 +1553,7 @@
           },
           "s3": {
             "title": "Mạ chân không",
-            "desc": "Mạ lớp phủ PVD trên máy hoặc dây chuyền PVD."
+            "desc": "Mạ lớp phủ PVD trên máy PVD."
           },
           "s4": {
             "title": "Kiểm tra thành phẩm",
@@ -1562,20 +1562,20 @@
           "stepLabel": "BƯỚC"
         },
         "DetailCapability": {
-          "imageAlt": "Khu vực sản xuất tại nhà máy HANIN",
+          "imageAlt": "Khu vực sản xuất tại nhà máy HANIN, phục vụ mạ chân không PVD",
           "lineCapacityLabel": "Máy PVD",
           "lineCapacityValue": "2 máy",
-          "tankSizeLabel": "Dây chuyền PVD",
-          "tankSizeValue": "2 dây chuyền",
-          "heading": "Máy và dây chuyền PVD",
+          "tankSizeLabel": "Nhà máy",
+          "tankSizeValue": "KCN Quang Minh",
+          "heading": "Máy PVD",
           "subtitle": "Mạ chân không PVD là một dịch vụ riêng của nhà máy HANIN, bên cạnh mạ điện phân và mạ hóa học.",
           "f1": {
             "title": "Máy PVD:",
             "desc": "2 máy mạ chân không."
           },
           "f2": {
-            "title": "Dây chuyền PVD:",
-            "desc": "2 dây chuyền xử lý chi tiết theo đơn hàng."
+            "title": "Vị trí:",
+            "desc": "Lô {{lot}}, KCN Quang Minh, Hà Nội, cùng khu nhà máy mạ HANIN."
           },
           "f3": {
             "title": "Phòng phân tích:",
@@ -1609,7 +1609,7 @@
           "colDevice": "Thiết bị",
           "colCriteria": "Nội dung kiểm tra",
           "heading": "Kiểm soát chất lượng",
-          "subtitle": "Thiết bị kiểm tra của nhà máy HANIN",
+          "subtitle": "Thiết bị kiểm tra của nhà máy HANIN áp dụng cho mạ chân không PVD",
           "r1": {
             "item": "Dung dịch và hóa chất",
             "device": "Phòng phân tích và hóa chất phân tích",
@@ -1622,7 +1622,7 @@
           },
           "r3": {
             "item": "Độ dày lớp mạ",
-            "device": "Máy đo độ dày lớp mạ APC-100",
+            "device": "Máy đo độ dày lớp mạ {{apc}}",
             "criteria": "Đo độ dày lớp mạ, đối chiếu yêu cầu bản vẽ."
           },
           "r4": {
@@ -1638,24 +1638,24 @@
         },
         "DetailGallery": {
           "heading": "Hình ảnh tại nhà máy",
-          "subtitle": "Nhà máy HANIN, lô 49G KCN Quang Minh",
+          "subtitle": "Mạ chân không PVD: khu vực tại nhà máy HANIN, lô {{lot}} KCN Quang Minh",
           "line": {
-            "alt": "Khu vực mạ tại nhà máy HANIN",
+            "alt": "Khu vực mạ tại nhà máy HANIN, phục vụ mạ chân không PVD",
             "tag": "Khu vực mạ",
             "title": "Khu vực mạ",
-            "desc": "Dây chuyền mạ tại nhà máy HANIN, KCN Quang Minh."
+            "desc": "Dây chuyền phục vụ mạ chân không PVD tại nhà máy HANIN, KCN Quang Minh."
           },
           "surface": {
-            "alt": "Khu vực sản xuất của nhà máy HANIN",
+            "alt": "Khu vực sản xuất của nhà máy HANIN, nơi thực hiện mạ chân không PVD",
             "tag": "Sản xuất",
             "title": "Khu vực sản xuất",
-            "desc": "Nhà máy có mặt bằng 2.230 m²."
+            "desc": "Nhà máy có mặt bằng {{area}} m², nơi thực hiện mạ chân không PVD."
           },
           "prep": {
-            "alt": "Khu vực kho và phân tích của nhà máy HANIN",
+            "alt": "Khu vực kho và phân tích của nhà máy HANIN, chuẩn bị cho mạ chân không PVD",
             "tag": "Kho và phân tích",
             "title": "Kho và phòng phân tích",
-            "desc": "Nhập hàng, lưu kho và phân tích hóa chất trước khi đưa vào dây chuyền."
+            "desc": "Nhập hàng, lưu kho và phân tích hóa chất trước khi đưa vào dây chuyền (mạ chân không PVD)."
           }
         },
         "RfqFormDetail": {

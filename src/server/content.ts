@@ -2,6 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { all, get, run, transaction } from "./db";
 import { LOCALES, type Locale } from "./i18n";
+import { resolveFacts } from "@/lib/facts";
 
 /** Các file dịch trong /messages/<locale>/<name>.json (gộp thành 1 object khi chạy). */
 export const NAMESPACE_FILES = [
@@ -51,7 +52,7 @@ export function loadBaseMessages(locale: Locale): Tree {
       /* file thiếu thì bỏ qua */
     }
   }
-  return merged;
+  return resolveFacts(merged, locale);
 }
 
 /** Duỗi cây JSON thành map "A.b.0.c" -> chuỗi (chỉ lấy lá kiểu string). */
@@ -129,7 +130,7 @@ export const SCOPE_PREFIXES: Record<"svc" | "prd", string[]> = {
 export const SCOPE_SEP = "::";
 
 export function scopeFromPath(pathname: string): string {
-  const path = pathname.replace(/^\/(vi|zh|ko)(?=\/|$)/, "");
+  const path = pathname.replace(/^\/(vi|en|zh|ko)(?=\/|$)/, "");
   const svc = path.match(/^\/dich-vu-gia-cong-ma\/([^/]+)\/?$/);
   if (svc) return `svc:${decodeURIComponent(svc[1])}`;
   const prd = path.match(/^\/san-pham-du-an\/([^/]+)\/?$/);

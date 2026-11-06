@@ -119,7 +119,7 @@
       "giaDung": {
         "title": "家用电器：冰箱、洗衣机、净水器",
         "category": "家用电器",
-        "description": "日立、LG、松下、三星冰箱；LG洗衣机及洗衣机盖框；Karofi净水器；LG烤箱旋钮。ABS塑料装饰件电镀。",
+        "description": "日立、LG、松下冰箱；LG洗衣机及洗衣机盖框；Karofi净水器；LG烤箱旋钮。ABS塑料装饰件电镀。",
         "imageAlt": "电镀后的家电装饰零件",
         "imageBadge": "家用电器",
         "chips": {
@@ -212,7 +212,7 @@
         "item2": {
           "alt": "在质检室测量镀层厚度",
           "thumbLabel": "镀层厚度测量",
-          "caption": "在质检室使用APC-100测厚仪测量镀层厚度"
+          "caption": "在质检室使用{{apc}}测厚仪测量镀层厚度"
         },
         "item3": {
           "alt": "挂在挂具上的零件，位于电镀生产线",
@@ -271,7 +271,7 @@
         },
         "lab": {
           "label": "检测设备",
-          "value": "APC-100镀层测厚仪、NSS与CASS盐雾试验机、霍尔槽试验仪"
+          "value": "{{apc}}镀层测厚仪、NSS与CASS盐雾试验机、霍尔槽试验仪"
         }
       },
       "process": {
@@ -324,7 +324,7 @@
         },
         "item6": {
           "title": "PVD真空镀",
-          "description": "通过2台PVD设备和2条PVD生产线进行真空镀膜。",
+          "description": "通过 2 台 PVD 设备进行真空镀膜。",
           "cta": "了解服务"
         }
       }

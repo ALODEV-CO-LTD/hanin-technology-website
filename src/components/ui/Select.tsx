@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useId, useRef, useState, type KeyboardEvent } from "react";
-import { Check, ChevronDown } from "lucide-react";
+import { LucideIcon } from "./LucideIcon";
 
 export interface SelectOption {
   value: string;
@@ -164,8 +164,8 @@ export default function Select({
         className={`flex w-full items-center justify-between gap-2 text-left cursor-pointer focus:outline-none focus:ring-2 focus:ring-steel-600/40 ${className}`}
       >
         <span className="min-w-0 flex-1 truncate">{selected?.label}</span>
-        <ChevronDown
-          aria-hidden="true"
+        <LucideIcon
+          name="chevron-down"
           className={`h-[18px] w-[18px] shrink-0 text-slate-400 transition-transform duration-200 ${open ? "rotate-180" : ""}`}
         />
       </button>
@@ -192,7 +192,7 @@ export default function Select({
                 } ${isSelected ? "font-semibold" : ""}`}
               >
                 <span className="min-w-0 flex-1">{o.label}</span>
-                {isSelected && <Check aria-hidden="true" className="h-4 w-4 shrink-0 text-steel-600" />}
+                {isSelected && <LucideIcon name="check" className="h-4 w-4 shrink-0 text-steel-600" />}
               </li>
             );
           })}

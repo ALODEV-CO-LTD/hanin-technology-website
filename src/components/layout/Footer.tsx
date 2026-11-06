@@ -1,5 +1,5 @@
 import { useTranslations } from "next-intl";
-import { Clock, Mail, MapPin, Phone } from "lucide-react";
+import { LucideIcon } from "@/components/ui/LucideIcon";
 import { Link } from "@/i18n/navigation";
 import { getPhones, getSettings } from "@/server/settings";
 import { siteImg } from "@/server/site-images";
@@ -88,7 +88,7 @@ export default function Footer() {
             <div className="flex flex-col gap-space-sm text-body-sm font-medium text-slate-600">
               <div className="flex items-start gap-space-sm">
                 <span className="flex h-[1lh] shrink-0 items-center text-body-sm leading-tight">
-                  <MapPin aria-hidden="true" className="h-5 w-5 text-steel-600" strokeWidth={2} />
+                  <LucideIcon name="map-pin" className="h-5 w-5 text-steel-600" />
                 </span>
                 <p className="leading-tight">
                   <span className="text-slate-900 font-bold mr-1">{t("addressLabel")}</span>
@@ -97,7 +97,7 @@ export default function Footer() {
               </div>
               <div className="flex items-start gap-space-sm">
                 <span className="flex h-[1lh] shrink-0 items-center text-body-sm leading-tight">
-                  <Phone aria-hidden="true" className="h-5 w-5 text-steel-600" strokeWidth={2} />
+                  <LucideIcon name="phone" className="h-5 w-5 text-steel-600" />
                 </span>
                 <p className="leading-tight">
                   <span className="text-slate-900 font-bold mr-1">{t("hotlineLabel")}</span>
@@ -106,7 +106,7 @@ export default function Footer() {
               </div>
               <div className="flex items-start gap-space-sm">
                 <span className="flex h-[1lh] shrink-0 items-center text-body-sm leading-tight">
-                  <Mail aria-hidden="true" className="h-5 w-5 text-steel-600" strokeWidth={2} />
+                  <LucideIcon name="mail" className="h-5 w-5 text-steel-600" />
                 </span>
                 <p className="leading-tight break-all">
                   <span className="text-slate-900 font-bold mr-1">{t("emailLabel")}</span>
@@ -120,7 +120,7 @@ export default function Footer() {
               </div>
               <div className="flex items-start gap-space-sm">
                 <span className="flex h-[1lh] shrink-0 items-center text-body-sm leading-tight">
-                  <Clock aria-hidden="true" className="h-5 w-5 text-steel-600" strokeWidth={2} />
+                  <LucideIcon name="clock" className="h-5 w-5 text-steel-600" />
                 </span>
                 <p className="leading-tight">
                   <span className="text-slate-900 font-bold mr-1">{t("hoursLabel")}</span>
@@ -129,7 +129,7 @@ export default function Footer() {
               </div>
               <div className="hidden sm:flex items-start gap-space-sm">
                 <span className="flex h-[1lh] shrink-0 items-center text-body-sm leading-tight">
-                  <MapPin aria-hidden="true" className="h-5 w-5 text-steel-600" strokeWidth={2} />
+                  <LucideIcon name="map-pin" className="h-5 w-5 text-steel-600" />
                 </span>
                 <p className="leading-tight">
                   <span className="text-slate-900 font-bold mr-1">Google Maps:</span>

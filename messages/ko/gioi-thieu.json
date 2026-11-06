@@ -10,11 +10,11 @@
     "CompanyIntroduction": {
       "imageAlt": "하노이 꽝민공단에 위치한 공장의 현대적인 외관",
       "scaleBadge": "꽝민공단 공장",
-      "areaBadge": "부지 면적: 2,230 m²",
+      "areaBadge": "부지 면적: {{area}} m²",
       "heading": "산업 고객을 위한 도금 가공",
       "paragraph1Strong": "HANIN 도금산업 주식회사",
       "paragraph1Rest": "ABS 플라스틱과 금속 소재의 도금 처리를 전문으로 하며, 플라스틱·금속 제품의 도장과 인쇄도 수행합니다.",
-      "paragraph2": "2023년 설립. 공장은 하노이 꽝민 산업단지 Lô 49G에 있으며 부지 면적은 2,230 m², 직원은 70명입니다. 100곳 이상의 고객사가 가공 서비스를 이용하고 있습니다.",
+      "paragraph2": "{{founded}}년 설립. 공장은 하노이 꽝민 산업단지 Lô {{lot}}에 있으며 부지 면적은 {{area}} m², 직원은 {{staff}}명입니다. {{customers}}곳 이상의 고객사가 가공 서비스를 이용하고 있습니다.",
       "field": {
         "label": "사업 분야",
         "value": "플라스틱·금속 도금 처리",
@@ -28,9 +28,9 @@
       "location": {
         "label": "위치",
         "value": "하노이 꽝민공단",
-        "note": "주소: 꽝민공단 49G 구역"
+        "note": "주소: 꽝민공단 {{lot}} 구역"
       },
-      "paragraph3": "HANIN은 IPM 금형 공장, HANIN 도금 공장, Press 공장, Showa 공장으로 구성된 Hanin Tech 그룹(350명)에 속해 있습니다."
+      "paragraph3": "HANIN은 IPM 금형 공장, HANIN 도금 공장, Press 공장, Showa 공장으로 구성된 Hanin Tech 그룹({{hqStaff}}명)에 속해 있습니다."
     },
     "CompanyJourney": {
       "heading": "발전 과정",
@@ -48,7 +48,7 @@
       "m3": {
         "yearTag": "2023",
         "title": "HANIN 도금 공장",
-        "desc": "꽝민공단 49G 구역에 HANIN Plating 도금 공장을 설립했습니다."
+        "desc": "꽝민공단 {{lot}} 구역에 HANIN Plating 도금 공장을 설립했습니다."
       },
       "m4": {
         "yearTag": "2025",
@@ -71,7 +71,7 @@
       "heading": "생산 및 검사 능력",
       "production": {
         "title": "생산 능력",
-        "desc": "자동 라인 일 3만~5만 개, 반자동 랙 도금 일 1만~2만 개, 배럴 도금 일 3~5톤.",
+        "desc": "자동 라인 일 3만~5만 개, 반자동 랙 도금 일 1만~2만 개, 배럴 도금 일 {{rot:tonTilde}}톤.",
         "metricLabel": "라인",
         "metricValue": "도금 라인 3개"
       },
@@ -166,15 +166,15 @@
       "wastewater": {
         "tag": "환경",
         "title": "폐수 처리",
-        "desc": "처리 용량 일 130 m³이며 침전조와 슬러지 압착기를 갖추고 있습니다.",
-        "standard": "처리 용량: 일 130 m³",
+        "desc": "처리 용량 일 {{waste}} m³이며 침전조와 슬러지 압착기를 갖추고 있습니다.",
+        "standard": "처리 용량: 일 {{waste}} m³",
         "status": "도금 공장 내"
       },
       "equipment": {
         "tag": "검사",
         "title": "검사 설비",
         "desc": "도금 두께 측정기, NSS·CASS 염수분무 시험기, Hull cell 시험기.",
-        "standard": "설비: APC-100, NSS, CASS, Hull cell",
+        "standard": "설비: {{apc}}, NSS, CASS, Hull cell",
         "status": "분석실 보유"
       }
     },
@@ -203,7 +203,7 @@
       "staff": {
         "label": "도금 공장 직원",
         "desc": "명",
-        "note": "꽝민공단 49G 구역",
+        "note": "꽝민공단 {{lot}} 구역",
         "end": "70",
         "suffix": ""
       }
@@ -211,7 +211,7 @@
     "FeaturedClients": {
       "eyebrow": "대표 고객사",
       "title": "제조업 고객사",
-      "description": "100곳 이상의 고객사가 HANIN에 가공을 의뢰하고 있으며, LG Electronics, Panasonic Vietnam, VinFast, Viglacera 등이 포함됩니다."
+      "description": "{{customers}}곳 이상의 고객사가 HANIN에 가공을 의뢰하고 있으며, LG Electronics, Panasonic Vietnam, VinFast, Viglacera 등이 포함됩니다."
     }
   }
 }

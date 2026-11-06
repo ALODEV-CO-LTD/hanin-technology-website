@@ -1,0 +1,43 @@
+{
+  "HomeZones": {
+    "title": "Factory and Equipment",
+    "zones": {
+      "0": {
+        "title": "Automatic Plating Line",
+        "capacity": "{{auto:full}} products/day",
+        "detail": "Hanging jigs, overhead cranes.",
+        "alt": "Automatic plating line with cam overhead cranes and hanging jigs"
+      },
+      "1": {
+        "title": "Barrel Plating Line",
+        "capacity": "{{rot:full}} kg/day",
+        "detail": "Equal to {{rotPcs:full}} products/day.",
+        "alt": "Panorama of the barrel plating line with plating tanks and fume extraction"
+      },
+      "2": {
+        "title": "Semi-Automatic Metal Plating Line (Rack Plating)",
+        "capacity": "{{hang:full}} pcs/day",
+        "detail": "Rack plating on part-holding racks.",
+        "alt": "Row of plating tanks on the semi-automatic metal plating line"
+      },
+      "3": {
+        "title": "Automatic Painting and PVD Vacuum Coating",
+        "capacity": "2 PVD machines",
+        "detail": "1 automatic spray painting line, 20 ionizer booths.",
+        "alt": "Round-chamber PVD vacuum coating machine in the factory"
+      },
+      "4": {
+        "title": "Analysis and Measurement Lab",
+        "capacity": "{{apc}}, NSS, CASS, Hull cell",
+        "detail": "{{apc}} thickness gauge, NSS salt spray chamber, CASS salt spray chamber, Hull cell tester, analytical chemicals. A set of 10 reliability test devices after painting: RCA Tester, Hot Water, High Temp & Humidity, UV Measure, Alcohol/Eraser Rubbing, Pencil Rubbing, Dropping Tester, Thickness Measure, Polisher, Bending Tester.",
+        "alt": "Analytical chemicals and titration equipment on a lab bench"
+      },
+      "5": {
+        "title": "Wastewater Treatment System",
+        "capacity": "{{waste}} m³/day and night",
+        "detail": "Settling tank, filter press. Committed to regulatory compliance.",
+        "alt": "Blue settling tank cluster of the wastewater treatment system"
+      }
+    }
+  }
+}

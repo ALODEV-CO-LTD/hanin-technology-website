@@ -50,4 +50,24 @@ transaction(() => {
     }
   }
 });
+// Sửa số liệu PVD cho đúng profile 11126 (chỉ có 2 máy PVD, không nêu "dây chuyền PVD"); chỉ thay khi bản ghi còn đúng văn bản cũ.
+const PVD_FIX = {
+  slug: "xu-ly-nhom-ma-kim-loai-khac",
+  description: {
+    vi: "Mạ chân không PVD với 2 máy, cho bề mặt có tính thẩm mỹ cao và độ bền tốt.",
+    zh: "配有 2 台 PVD 设备，镀层外观美观、耐用性好。",
+    ko: "PVD 장비 2대로 미관이 뛰어나고 내구성이 좋은 진공 도금을 제공합니다.",
+  },
+  statLabel: { vi: "2 máy PVD", zh: "2 台 PVD 设备", ko: "PVD 장비 2대" },
+};
+transaction(() => {
+  for (const r of all<{ id: number; description: string; stat_label: string }>("SELECT id, description, stat_label FROM services WHERE slug = ?", PVD_FIX.slug)) {
+    const d = JSON.parse(r.description || "{}");
+    const l = JSON.parse(r.stat_label || "{}");
+    if (/dây chuyền|条生产线|라인 2개/.test(`${d.vi ?? ""}${d.zh ?? ""}${d.ko ?? ""}`)) {
+      run("UPDATE services SET description = ?, stat_label = ?, updated_at = datetime('now') WHERE id = ?", JSON.stringify({ ...d, ...PVD_FIX.description }), JSON.stringify({ ...l, ...PVD_FIX.statLabel }), r.id);
+      rows++;
+    }
+  }
+});
 console.log(`Đã bỏ ${overrides} ghi đè ảnh vị trí sai, cập nhật ảnh cho ${rows} bản ghi dịch vụ/bài viết.`);

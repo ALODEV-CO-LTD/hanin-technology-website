@@ -11,7 +11,7 @@
       "card1": {
         "badge": "도금 공장",
         "title": "",
-        "address": "하노이시 꽝민사 꽝민 공단 49G 부지",
+        "address": "하노이시 꽝민사 꽝민 공단 {{lot}} 부지",
         "footerLabel": "생산 시설",
         "footerValue": "자동 도금 라인, 걸이 도금, 바렐 도금 및 분석·검사실"
       },
@@ -122,7 +122,7 @@
     },
     "LocationMap": {
       "heading": "공장 위치",
-      "description": "도금 공장은 하노이시 꽝민사 꽝민 공단 49G 부지에 있습니다.",
+      "description": "도금 공장은 하노이시 꽝민사 꽝민 공단 {{lot}} 부지에 있습니다.",
       "distances": {
         "airport": {
           "label": "노이바이 국제공항",
@@ -139,9 +139,9 @@
       },
       "openMapsCta": "Google 지도 열기",
       "downloadMapCta": "견적 요청 보내기",
-      "satelliteImageAlt": "하노이 꽝민 공업단지 49G 구역 HANIN 공장 외관",
+      "satelliteImageAlt": "하노이 꽝민 공업단지 {{lot}} 구역 HANIN 공장 외관",
       "gateLabel": "HANIN 도금 공장",
-      "plotLabel": "꽝민 공단 49G 부지"
+      "plotLabel": "꽝민 공단 {{lot}} 부지"
     },
     "RfqForm": {
       "heading": "견적 요청 및 기술 자료 보내기",

@@ -1,0 +1,225 @@
+{
+  "TuyenDung": {
+    "PageHero": {
+      "breadcrumbHome": "Home",
+      "breadcrumbCurrent": "Careers",
+      "statusBadge": "Now Hiring",
+      "titlePrefix": "Job Opportunities",
+      "titleHighlight": "at HANIN",
+      "companyName": "",
+      "description": "HANIN is hiring engineers and production staff for plastic plating, metal plating, PVD, spray painting and printing at Quang Minh Industrial Park, Hanoi.",
+      "ctaPrimary": "View open positions",
+      "ctaSecondary": "Contact HR",
+      "standardLabel": "Process",
+      "standardValue": "Working under 5S",
+      "benefitsLabel": "Income",
+      "benefitsValue": "Based on ability",
+      "developmentLabel": "Training",
+      "developmentValue": "On-site guidance",
+      "factoryLabel": "Factory",
+      "factoryValue": "Quang Minh Industrial Park",
+      "imageAlt": "Plating workshop at the HANIN factory",
+      "imageBadgeTag": "Plating Lines",
+      "imageBadgeTitle": "Production and plating area",
+      "imageBadgeLab": "QC room",
+      "floatingBadgeTitle": "Benefits per regulations",
+      "floatingBadgeSubtitle": "Insurance and allowances per company policy"
+    },
+    "WhyHanin": {
+      "title": "Working at HANIN",
+      "description": "A production environment with clear technical procedures and occupational safety rules. Each position has specific job requirements and a mentor.",
+      "pillar1": {
+        "tag": "Work Environment",
+        "title": "A Safe Work Environment",
+        "desc": "The workshop has an automatic plating line, full protective equipment and a separate testing area.",
+        "metricLabel": "Occupational Safety",
+        "metricValue": "Compliance with current regulations"
+      },
+      "pillar2": {
+        "tag": "Development Path",
+        "title": "Career Development",
+        "desc": "Develop along a specialist or management track; work results are assessed periodically.",
+        "metricLabel": "Performance Review",
+        "metricValue": "Periodic"
+      },
+      "pillar3": {
+        "tag": "Technical Training",
+        "title": "Technical Training",
+        "desc": "New staff receive internal guidance on the plating process, plating thickness measurement and line operation.",
+        "metricLabel": "Training",
+        "metricValue": "By position"
+      },
+      "pillar4": {
+        "tag": "Compensation and Benefits",
+        "title": "Compensation and Benefits",
+        "desc": "Pay based on ability; insurance and allowances per regulations and company policy.",
+        "metricLabel": "Insurance",
+        "metricValue": "Per regulations"
+      }
+    },
+    "JobBoard": {
+      "title": "Open Positions",
+      "description": "Positions at the HANIN office and factory.",
+      "boardStatus": "{count} open positions",
+      "searchPlaceholder": "Search by position or keyword (QA, chemicals, mechanical)",
+      "departmentLabel": "Department",
+      "typeLabel": "Work type",
+      "locationLabel": "Work location",
+      "resultsLabel": "Results:",
+      "resultsCount": "{count} positions",
+      "resetFilters": "Reset filters",
+      "deadlineLabel": "Deadline:",
+      "salaryLabel": "Salary",
+      "requirementsLabel": "Key requirements",
+      "applyNow": "Apply",
+      "noResults": "No positions match the current filter.",
+      "closeModal": "Close",
+      "fullNameLabel": "Full name *",
+      "fullNamePlaceholder": "e.g. Nguyen Van An",
+      "phoneLabel": "Phone number *",
+      "phonePlaceholder": "09xx xxx xxx",
+      "emailLabel": "Email *",
+      "emailPlaceholder": "name@email.com",
+      "experienceLabel": "Years of experience",
+      "experienceOptions": {
+        "fresh": "Fresh graduate or under 1 year",
+        "one_two": "1 - 2 years",
+        "three_five": "3 - 5 years",
+        "above_five": "Over 5 years"
+      },
+      "cvLabel": "Attach CV (PDF, DOCX) *",
+      "cvDropText": "Drag and drop a file here or click to choose a CV",
+      "cvSizeNote": "Max 50MB per file",
+      "messageLabel": "Message or self-introduction",
+      "messagePlaceholder": "A brief summary of your experience or the position you are interested in.",
+      "cancelButton": "Cancel",
+      "submitButton": "Submit application",
+      "submitSuccess": "Application received. The HANIN HR team will contact you by email or phone.",
+      "submitError": "The application could not be sent. Please check the information and attachment and try again.",
+      "submitting": "Sending..."
+    },
+    "WorkEnvironment": {
+      "title": "Work Environment",
+      "description": "Some photos at the factory.",
+      "mainImageAlt": "Automatic plating line operating area at the HANIN factory",
+      "mainBadge": "Production area",
+      "mainTitle": "Automatic plating line operating area",
+      "mainDesc": "Automatic plating line, plating tank area and wastewater treatment system.",
+      "secondaryImageAlt": "Mechanical parts after plating at the HANIN factory",
+      "secondaryBadge": "Quality Inspection",
+      "secondaryTitle": "Mechanical parts after plating",
+      "secondaryDesc": "Measuring Plating Thickness with the {{apc}} Gauge",
+      "labTitle": "Testing lab",
+      "labDesc": "NSS and CASS salt spray chambers, Hull cell tester and chemical analysis lab.",
+      "labImageAlt": "Photo of the chemical testing lab and plating solution analysis equipment",
+      "labFooter": "Products are given a final inspection before delivery",
+      "labBadge": "QC room"
+    },
+    "ApplicationCta": {
+      "title": "Send an Application",
+      "description": "Send your CV by email or contact the recruiting team for advice on a suitable position.",
+      "emailLabel": "Email to receive applications",
+      "hotlineLabel": "Recruitment hotline",
+      "quickApplyTitle": "Quick application",
+      "quickApplyDescription": "HANIN accepts applications even when the position you are interested in is not posted.",
+      "viewJobsCta": "View open positions",
+      "sendCvCta": "Send CV by email",
+      "securityNote": "Candidate applications are used only for recruitment purposes"
+    },
+    "jobs": {
+      "0": {
+        "title": "Chemical engineer / metal plating technology",
+        "departmentLabel": "Engineering and R&D",
+        "typeLabel": "Full-time",
+        "locationLabel": "Quang Minh Industrial Park, Hanoi",
+        "salary": "Salary: negotiable based on ability",
+        "tags": {
+          "0": "2+ years of experience",
+          "1": "Knowledge of nickel plating and ABS plating",
+          "2": "Plating solution analysis, Hull cell testing"
+        },
+        "deadline": "Contact HR"
+      },
+      "1": {
+        "title": "Quality management team lead (QA/QC)",
+        "departmentLabel": "Quality management (QA/QC)",
+        "typeLabel": "Full-time",
+        "locationLabel": "Quang Minh Industrial Park, Hanoi",
+        "salary": "Salary: negotiable based on ability",
+        "tags": {
+          "0": "Familiar with the ISO 9001 quality management system",
+          "1": "Plating thickness measurement, NSS/CASS salt spray testing",
+          "2": "3 - 5 years of experience"
+        },
+        "deadline": "Contact HR"
+      },
+      "2": {
+        "title": "Automatic plating line operator",
+        "departmentLabel": "Production and operations",
+        "typeLabel": "Shift work",
+        "locationLabel": "Quang Minh Industrial Park, Hanoi",
+        "salary": "Salary: negotiable based on ability, with shift allowance",
+        "tags": {
+          "0": "Vocational or college degree in mechanical or electrical engineering",
+          "1": "Operating the automatic plating line: hanging jigs, overhead cranes, plating tanks"
+        },
+        "deadline": "Hiring continuously"
+      },
+      "3": {
+        "title": "Plating line electromechanical maintenance engineer",
+        "departmentLabel": "Maintenance and electromechanical",
+        "typeLabel": "Full-time",
+        "locationLabel": "Quang Minh Industrial Park, Hanoi",
+        "salary": "Salary: negotiable based on ability",
+        "tags": {
+          "0": "Experience in electrical and mechanical maintenance of production equipment",
+          "1": "Maintaining overhead cranes, rectifier power supplies and recirculation filtration systems"
+        },
+        "deadline": "Contact HR"
+      },
+      "4": {
+        "title": "Project sales specialist (mechanical and ancillary processing)",
+        "departmentLabel": "Sales and market development",
+        "typeLabel": "Full-time",
+        "locationLabel": "Hanoi office and factory",
+        "salary": "Fixed salary and bonus per company policy",
+        "tags": {
+          "0": "Able to communicate in English, Korean or Japanese",
+          "1": "Working with domestic and international industrial customers"
+        },
+        "deadline": "Contact HR"
+      },
+      "5": {
+        "title": "Mechanical / metallurgy engineering intern",
+        "departmentLabel": "Engineering and technology",
+        "typeLabel": "Intern (3 - 6 months)",
+        "locationLabel": "Quang Minh Industrial Park, Hanoi",
+        "salary": "Internship allowance per company policy",
+        "tags": {
+          "0": "Directly guided by the factory's engineers",
+          "1": "May be considered for a full-time offer after the internship"
+        },
+        "deadline": "Hiring regularly"
+      }
+    },
+    "departmentOptions": {
+      "all": "All departments",
+      "engineering": "Engineering and R&D",
+      "production": "Production and operations",
+      "qc": "Quality management (QC/QA)",
+      "maintenance": "Maintenance and electromechanical",
+      "sales": "Sales and projects"
+    },
+    "typeOptions": {
+      "all": "All work types",
+      "fulltime": "Full-time",
+      "shift": "Shift work",
+      "intern": "Engineering intern"
+    },
+    "locationOptions": {
+      "all": "All locations",
+      "factory": "Quang Minh Industrial Park factory, Hanoi",
+      "office": "Hanoi office and factory"
+    }
+  }
+}

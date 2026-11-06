@@ -4,7 +4,7 @@ import CountUp from "@/components/ui/CountUp";
 export default function CompanySnapshot() {
   const t = useTranslations("Home.CompanySnapshot");
 
-  // Số liệu chính thức do Bên A cung cấp (khách hàng: "hơn 100"; nhân sự 58; mặt bằng xưởng 2.230 m²; thành lập 28/03/2023).
+  // Số liệu lấy từ src/lib/facts.ts qua messages (token); do Bên A cung cấp: khách hàng "hơn 100", mặt bằng 2.230 m², thành lập 28/03/2023; nhân sự theo profile 11126 (70 người).
   const STATS = [
     { key: "partners", separator: "" },
     { key: "staff", separator: "" },

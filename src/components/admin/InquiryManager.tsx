@@ -4,8 +4,8 @@ import { useEffect, useState } from "react";
 import { api, ApiError } from "./api";
 import Dropdown from "./Dropdown";
 import { formatSize } from "./MediaPicker";
-import { useToast } from "./Toast";
-import { useConfirm } from "./ConfirmDialog";
+import { toast } from "@/components/ct999/thong-bao-toast/store";
+import { confirm } from "./dialog";
 
 interface Inquiry {
   id: number;
@@ -43,8 +43,6 @@ export default function InquiryManager({ initialStatus = "" }: { initialStatus?:
   const [q, setQ] = useState("");
   const [open, setOpen] = useState<number | null>(null);
   const [error, setError] = useState("");
-  const toast = useToast();
-  const confirm = useConfirm();
 
   const [version, setVersion] = useState(0);
   const reload = () => setVersion((v) => v + 1);

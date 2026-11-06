@@ -17,7 +17,8 @@
     "label": "언어",
     "vi": "Tiếng Việt",
     "zh": "中文",
-    "ko": "한국어"
+    "ko": "한국어",
+    "en": "English"
   },
   "Footer": {
     "tagline": "플라스틱 및 금속 도금 처리",
@@ -40,7 +41,7 @@
     },
     "contactHeading": "기술 문의처",
     "addressLabel": "주소:",
-    "address": "하노이시 꽝민사 꽝민공단 49G 부지.",
+    "address": "하노이시 꽝민사 꽝민공단 {{lot}} 부지.",
     "hotlineLabel": "핫라인:",
     "emailLabel": "이메일:",
     "hoursLabel": "근무 시간:",
@@ -60,11 +61,11 @@
       "description": "산업 고객을 위한 ABS 플라스틱 및 금속 도금, 도장 및 인쇄."
     },
     "home": {
-      "title": "HANIN",
+      "title": "HANIN | ABS 플라스틱·금속 도금, PVD, 도장, 인쇄",
       "description": "산업 고객을 위한 ABS 플라스틱 및 금속 도금, 도장 및 인쇄."
     },
     "gioiThieu": {
-      "title": "회사 소개",
+      "title": "HANIN 소개 | 꽝민 산업단지 도금 공장",
       "description": "HANIN 소개 및 플라스틱·금속 도금 처리 역량."
     },
     "dichVu": {
@@ -84,8 +85,8 @@
       "description": "회사 소식, 도금 및 표면처리 기술 자료, HANIN 생산 활동."
     },
     "tuyenDung": {
-      "title": "채용",
-      "description": "HANIN 도금 공장의 현재 채용 중인 직무."
+      "title": "HANIN 도금 공장 채용",
+      "description": "하노이 꽝민 산업단지 HANIN 도금 공장의 현재 채용 중인 직무: 기술, 생산, 품질관리."
     },
     "lienHe": {
       "title": "문의 및 견적 요청",

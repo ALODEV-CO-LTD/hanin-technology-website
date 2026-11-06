@@ -55,8 +55,8 @@
       "title": "网站运营单位",
       "name": "公司名称：HANIN电镀工业股份公司（品牌：HANIN Plating）。",
       "tax": "税号：0110300983。",
-      "hq": "地址：河内市光明乡光明工业区49G地块。",
-      "fac": "母公司：Hanin Tech，河内市光明工业区660号地块。",
+      "hq": "地址：河内市光明乡光明工业区{{lot}}地块。",
+      "fac": "母公司：Hanin Tech，河内市光明工业区{{hqLot}}号地块。",
       "rep": "法定代表人：Nguyễn Huy Vinh 先生（总经理）。",
       "mail": "邮箱：huyvinh82@gmail.com、vankhanhminhkhang@gmail.com。"
     }

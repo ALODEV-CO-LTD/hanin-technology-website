@@ -2,16 +2,16 @@
   "NangLuc": {
     "AutomatedVsManual": {
       "title": "Dây chuyền tự động và bán tự động",
-      "description": "Dây chuyền mạ tự động đạt 30–50 nghìn sản phẩm/ngày. Chi tiết kim loại chạy trên dây chuyền mạ treo bán tự động (10.000–20.000 sản phẩm/ngày) hoặc mạ quay (3.000–5.000 kg/ngày).",
+      "description": "Dây chuyền mạ tự động đạt {{auto:k}} nghìn sản phẩm/ngày. Chi tiết kim loại chạy trên dây chuyền mạ treo bán tự động ({{hang:full}} sản phẩm/ngày) hoặc mạ quay ({{rot:full}} kg/ngày).",
       "automated": {
         "imageAlt": "Dây chuyền mạ tự động với các bể mạ và cẩu trục trong nhà xưởng",
         "title": "Dây chuyền mạ tự động",
-        "desc": "Sản phẩm được gắn trên JIG móc hàng, cẩu trục chuyển lần lượt qua các bể trong khu bể mạ. Sản lượng 30–50 nghìn sản phẩm/ngày, mạ được Crom, Niken, Satin."
+        "desc": "Sản phẩm được gắn trên JIG móc hàng, cẩu trục chuyển lần lượt qua các bể trong khu bể mạ. Sản lượng {{auto:k}} nghìn sản phẩm/ngày, mạ được Crom, Niken, Satin."
       },
       "manual": {
         "imageAlt": "Khu mạ treo và mạ quay trong nhà xưởng HANIN",
         "title": "Dây chuyền mạ treo bán tự động và mạ quay",
-        "desc": "Mạ treo bán tự động cho chi tiết kim loại, 10.000–20.000 sản phẩm/ngày. Mạ quay cho chi tiết nhỏ số lượng lớn, 3.000–5.000 kg/ngày."
+        "desc": "Mạ treo bán tự động cho chi tiết kim loại, {{hang:full}} sản phẩm/ngày. Mạ quay cho chi tiết nhỏ số lượng lớn, {{rot:full}} kg/ngày."
       }
     },
     "CapabilityHero": {
@@ -35,7 +35,7 @@
         },
         "pvd": {
           "label": "MÁY PVD",
-          "desc": "Mạ chân không, 2 dây chuyền PVD",
+          "desc": "Mạ chân không, 2 máy PVD",
           "end": "2",
           "prefix": "",
           "suffix": "",
@@ -76,12 +76,12 @@
         "pvd": {
           "badge": "Mạ chân không",
           "title": "Máy mạ chân không PVD",
-          "desc": "Hai máy PVD vận hành trên hai dây chuyền PVD.",
+          "desc": "Hai máy PVD mạ chân không.",
           "alt": "Máy mạ chân không PVD tại nhà máy HANIN",
           "spec1Label": "Số máy",
           "spec1Value": "2 máy",
-          "spec2Label": "Dây chuyền",
-          "spec2Value": "2 dây chuyền PVD",
+          "spec2Label": "Vị trí",
+          "spec2Value": "KCN Quang Minh",
           "spec3Label": "Phương pháp",
           "spec3Value": "Mạ chân không"
         },
@@ -107,7 +107,7 @@
           "spec1Label": "Dây chuyền",
           "spec1Value": "Mạ quay",
           "spec2Label": "Công suất",
-          "spec2Value": "3.000–5.000 kg/ngày",
+          "spec2Value": "{{rot:full}} kg/ngày",
           "spec3Label": "Bể mạ",
           "spec3Value": "Bể mạ đồng, bể mạ niken"
         },
@@ -117,7 +117,7 @@
           "desc": "Xử lý nước thải sản xuất bằng bể lắng và máy ép bùn.",
           "alt": "Khu xử lý nước thải của nhà máy HANIN",
           "spec1Label": "Công suất",
-          "spec1Value": "130 m³/ngày đêm",
+          "spec1Value": "{{waste}} m³/ngày đêm",
           "spec2Label": "Hạng mục",
           "spec2Value": "Bể lắng, máy ép bùn"
         }
@@ -133,7 +133,7 @@
       "items": {
         "campus": {
           "label": "Nhà máy",
-          "alt": "Nhà máy mạ HANIN tại Lô 49G, KCN Quang Minh"
+          "alt": "Nhà máy mạ HANIN tại Lô {{lot}}, KCN Quang Minh"
         },
         "control": {
           "label": "Vận hành sản xuất",
@@ -155,14 +155,14 @@
         "alt": "Khu mạ và xưởng sản xuất tại nhà máy HANIN, KCN Quang Minh"
       },
       "factoryTitle": "NHÀ MÁY",
-      "factoryDescription": "Nhà máy mạ HANIN tại Lô 49G, KCN Quang Minh, có dây chuyền mạ nhựa và kim loại, PVD, phun sơn và in. Hệ thống xử lý nước thải công suất 130 m³/ngày đêm.",
+      "factoryDescription": "Nhà máy mạ HANIN tại Lô {{lot}}, KCN Quang Minh, có dây chuyền mạ nhựa và kim loại, PVD, phun sơn và in. Hệ thống xử lý nước thải công suất {{waste}} m³/ngày đêm.",
       "specs": {
         "locationLabel": "Vị trí",
         "areaLabel": "Diện tích mặt bằng xưởng",
         "capabilityLabel": "Hạng mục gia công",
         "capabilityValue": "Mạ nhựa ABS, mạ kim loại, PVD, phun sơn và in",
-        "locationValue": "Lô 49G, KCN Quang Minh, xã Quang Minh, Hà Nội",
-        "areaValue": "2.230 m²"
+        "locationValue": "Lô {{lot}}, KCN Quang Minh, xã Quang Minh, Hà Nội",
+        "areaValue": "{{area}} m²"
       },
       "ctaGallery": "XEM HÌNH ẢNH NHÀ MÁY"
     },
@@ -215,7 +215,7 @@
           "desc": "Mạ chi tiết nhỏ số lượng lớn trong thùng quay. Có máy rung và tẩy dầu, bể mạ đồng, bể mạ niken.",
           "alt": "Dây chuyền mạ quay, thùng quay ngâm trong bể mạ",
           "capacityLabel": "CÔNG SUẤT:",
-          "capacityValue": "3.000–5.000 kg/ngày (10.000–30.000 sản phẩm/ngày)",
+          "capacityValue": "{{rot:full}} kg/ngày ({{rotPcs:full}} sản phẩm/ngày)",
           "techLabel": "CÔNG NGHỆ:",
           "techValue": "Niken điện phân, niken hóa, niken đen, phốt phát mangan đen, mạ kẽm"
         },
@@ -225,7 +225,7 @@
           "desc": "Mạ chi tiết kim loại gắn trên giá treo.",
           "alt": "Dây chuyền mạ treo kim loại bán tự động",
           "capacityLabel": "CÔNG SUẤT:",
-          "capacityValue": "10.000–20.000 sản phẩm/ngày",
+          "capacityValue": "{{hang:full}} sản phẩm/ngày",
           "techLabel": "CÔNG NGHỆ:",
           "techValue": "Niken điện phân, niken hóa, niken đen, phốt phát mangan đen, mạ kẽm"
         },
@@ -235,7 +235,7 @@
           "desc": "Sản phẩm gắn trên JIG móc hàng, cẩu trục chuyển qua các bể trong khu bể mạ.",
           "alt": "Dây chuyền mạ tự động với cẩu trục và khu bể mạ",
           "capacityLabel": "CÔNG SUẤT:",
-          "capacityValue": "30–50 nghìn sản phẩm/ngày",
+          "capacityValue": "{{auto:k}} nghìn sản phẩm/ngày",
           "techLabel": "CÔNG NGHỆ:",
           "techValue": "Crom, Niken, Satin"
         }
@@ -254,7 +254,7 @@
         "wastewater": {
           "tagLabel": "Môi trường",
           "desc": "Hệ thống xử lý nước thải có bể lắng và máy ép bùn. HANIN cam kết tuân thủ quy định về môi trường.",
-          "title": "Xử lý nước thải 130 m³/ngày đêm"
+          "title": "Xử lý nước thải {{waste}} m³/ngày đêm"
         },
         "testing": {
           "tagLabel": "Kiểm tra chất lượng",
@@ -280,7 +280,7 @@
         },
         "thickness": {
           "title": "Máy đo độ dày lớp mạ",
-          "desc": "Đo độ dày lớp mạ bằng máy APC-100."
+          "desc": "Đo độ dày lớp mạ bằng máy {{apc}}."
         },
         "saltSpray": {
           "title": "Máy phun muối NSS và CASS",

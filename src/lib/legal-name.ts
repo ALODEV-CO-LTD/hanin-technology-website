@@ -19,6 +19,13 @@ const FORMS = {
 };
 
 export function localizeLegalName(name: string, locale: string): string {
+  if (locale === "en") {
+    const e = name.trim().match(/^Công ty\s+(TNHH Một thành viên|TNHH MTV|TNHH|Cổ phần|CP)?\s*(.*)$/i);
+    if (!e) return name;
+    const suffix = /Một thành viên|MTV/i.test(e[1] ?? "") ? "Single-Member Co., Ltd" : /^TNHH$/i.test(e[1] ?? "") ? "Co., Ltd" : /Cổ phần|^CP$/i.test(e[1] ?? "") ? "JSC" : "Company";
+    const rest = e[2].trim().replace(/\s*Việt Nam$/i, " Vietnam");
+    return `${rest} ${suffix}`.replace(/\s+/g, " ").trim();
+  }
   if (locale !== "zh" && locale !== "ko") return name;
   const m = name.trim().match(/^Công ty\s+(TNHH Một thành viên|TNHH MTV|TNHH|Cổ phần|CP)?\s*(.*)$/i);
   if (!m) return name;

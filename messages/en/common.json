@@ -1,0 +1,119 @@
+{
+  "Nav": {
+    "trangChu": "Home",
+    "gioiThieu": "About",
+    "dichVu": "Plating Services",
+    "sanPham": "Projects",
+    "nangLuc": "Manufacturing Capability",
+    "tinTuc": "News",
+    "tuyenDung": "Careers",
+    "lienHe": "Contact",
+    "cta": "Request a Quote",
+    "menuOpen": "Open menu",
+    "menuClose": "Close menu",
+    "logoAlt": "HANIN Plating"
+  },
+  "LanguageSwitcher": {
+    "label": "Language",
+    "vi": "Tiếng Việt",
+    "zh": "中文",
+    "ko": "한국어",
+    "en": "English"
+  },
+  "Footer": {
+    "tagline": "PLASTIC AND METAL PLATING",
+    "description": "ABS plastic and metal plating, plus painting and printing, at Quang Minh Industrial Park, Hanoi.",
+    "companyHeading": "Company",
+    "companyLinks": {
+      "trangChu": "Home",
+      "gioiThieu": "About the Company",
+      "nangLuc": "Manufacturing Capability",
+      "tinTuc": "News and Events",
+      "tuyenDung": "Careers"
+    },
+    "serviceHeading": "Services and Products",
+    "serviceLinks": {
+      "abs": "Nickel-Chrome Plating on ABS",
+      "nickel": "Nickel Plating on Metal",
+      "zincCopperTin": "Zinc, Copper, Tin Plating and Black Phosphating",
+      "paintPrint": "Painting and Printing",
+      "pvd": "PVD Vacuum Coating"
+    },
+    "contactHeading": "Technical Contact",
+    "addressLabel": "Address:",
+    "address": "Lot {{lot}}, Quang Minh Industrial Park, Quang Minh Commune, Hanoi.",
+    "hotlineLabel": "Hotline:",
+    "emailLabel": "Email:",
+    "hoursLabel": "Working hours:",
+    "hours": "Monday - Saturday: 08:00 - 17:30",
+    "zaloChat": "Technical Zalo",
+    "googleMaps": "Directions on Google Maps",
+    "statusLine": "Plastic and metal plating · Quang Minh Industrial Park, Hanoi",
+    "copyright": "© 2026 HANIN Plating Industrial Joint Stock Company · Tax code 0110300983. All rights reserved.",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "certIso9001": "ISO 9001:2015",
+    "logoAlt": "HANIN Plating"
+  },
+  "Meta": {
+    "site": {
+      "title": "HANIN",
+      "description": "Plating on ABS plastic and metal, plus painting and printing, for industrial customers."
+    },
+    "home": {
+      "title": "HANIN | ABS Plastic and Metal Plating, PVD, Painting, Printing",
+      "description": "Plating on ABS plastic and metal, plus painting and printing, for industrial customers."
+    },
+    "gioiThieu": {
+      "title": "About HANIN | Plating Factory at Quang Minh, Hanoi",
+      "description": "About HANIN and its plating capability on plastic and metal substrates."
+    },
+    "dichVu": {
+      "title": "Plating and Surface Treatment Services",
+      "description": "Nickel-chrome plating on ABS, nickel plating on metal, zinc, copper, tin plating, black phosphating, PVD, spray painting and printing."
+    },
+    "sanPham": {
+      "title": "Products & Projects",
+      "description": "HANIN plated products for automotive, smart home, home appliances, sanitary ware and kitchen equipment."
+    },
+    "nangLuc": {
+      "title": "Manufacturing Capability",
+      "description": "Factory floor, automatic plating line, rack plating, barrel plating and plating inspection area."
+    },
+    "tinTuc": {
+      "title": "News and Technical Bulletins",
+      "description": "Company news, technical articles on plating and surface treatment, and production activities at HANIN."
+    },
+    "tuyenDung": {
+      "title": "Careers at the HANIN Plating Factory",
+      "description": "Open positions at the HANIN plating factory in Quang Minh Industrial Park, Hanoi: engineering, production and QA/QC."
+    },
+    "lienHe": {
+      "title": "Contact and Request a Quote",
+      "description": "Contact us about ABS plating and metal plating, and send a quote request with a sample or drawing."
+    },
+    "chinhSachBaoMat": {
+      "title": "Privacy Policy",
+      "description": "How HANIN collects, uses and protects customer information submitted through the website."
+    },
+    "dieuKhoan": {
+      "title": "Terms of Service",
+      "description": "Terms of use for the website and general rules for sending quote requests to HANIN."
+    }
+  },
+  "Common": {
+    "profileUnavailable": "The company profile is not available for download yet. Please contact HANIN to receive it."
+  },
+  "AttachField": {
+    "hint": "PDF, DWG, DXF, STEP, ZIP, JPG, PNG. Up to 5 files, 50 MB each.",
+    "tooMany": "Up to 5 files per submission.",
+    "tooBig": "A file is larger than 50 MB.",
+    "badType": "File format not supported. Use PDF, DWG, DXF, STEP, ZIP, JPG or PNG."
+  },
+  "StickyContact": {
+    "label": "Call",
+    "zalo": "Zalo",
+    "quote": "Quote",
+    "aria": "Quick contact"
+  }
+}

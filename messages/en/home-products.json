@@ -1,0 +1,37 @@
+{
+  "HomeProducts": {
+    "platingLabel": "Plating layer",
+    "substrateLabel": "Substrate Materials",
+    "byDrawing": "Per drawing requirements",
+    "badges": {
+      "banh-rang-truc-vit-ma-niken-hoa-hoc": {
+        "plating": "Nickel, zinc, tin, black phosphating, satin",
+        "substrate": "Per drawing requirements"
+      },
+      "truc-piston-ty-ben-thuy-luc-o-to": {
+        "plating": "Nickel-chrome",
+        "substrate": "ABS plastic"
+      },
+      "thanh-busbar-dong-ma-thiec-dan-dien": {
+        "plating": "Nickel-chrome",
+        "substrate": "ABS plastic"
+      },
+      "bu-long-chot-dinh-vi-khoi-be-hoa-chat": {
+        "plating": "Chrome",
+        "substrate": "Per drawing requirements"
+      },
+      "ong-lot-truc-ren-co-khi-chiu-mai-mon": {
+        "plating": "Satin nickel",
+        "substrate": "ABS, ABS/PC plastic"
+      },
+      "cum-linh-kien-khung-vo-banh-rang-b2b": {
+        "plating": "Black nickel chrome",
+        "substrate": "ABS plastic"
+      },
+      "chi-tiet-kim-loai-ma-treo-day-chuyen-tu-dong": {
+        "plating": "Satin chrome",
+        "substrate": "ABS plastic"
+      }
+    }
+  }
+}

@@ -20,13 +20,13 @@ const BANNED_VI = [
 let problems = 0;
 for (const f of files) {
   let data = {};
-  for (const l of ["vi", "zh", "ko"]) {
+  for (const l of ["vi", "en", "zh", "ko"]) {
     try { data[l] = flat(JSON.parse(fs.readFileSync(path.join(ROOT, l, f + ".json"), "utf8"))); }
     catch (e) { console.log(`✗ ${l}/${f}.json: JSON lỗi: ${e.message}`); problems++; }
   }
-  if (!data.vi || !data.zh || !data.ko) continue;
+  if (!data.vi || !data.en || !data.zh || !data.ko) continue;
   const keys = new Set(Object.keys(data.vi));
-  for (const l of ["zh", "ko"]) {
+  for (const l of ["en", "zh", "ko"]) {
     const other = new Set(Object.keys(data[l]));
     const miss = [...keys].filter((k) => !other.has(k)), extra = [...other].filter((k) => !keys.has(k));
     if (miss.length || extra.length) { console.log(`✗ ${f}: ${l} lệch khoá (thiếu ${miss.length}, thừa ${extra.length}) ${[...miss, ...extra].slice(0, 4).join(", ")}`); problems++; }

@@ -79,7 +79,7 @@
       "0": {
         "categoryLabel": "质量",
         "readTime": "阅读时长 4 分钟",
-        "title": "使用APC-100测量镀层厚度",
+        "title": "使用{{apc}}测量镀层厚度",
         "excerpt": "质检室测量成品镀层厚度，对照客户要求，并结合NSS与CASS盐雾试验。",
         "author": "QC 部",
         "imageAlt": "电子卡尺测量小型齿轮，钢制零件置于质量检测台上"

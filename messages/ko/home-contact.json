@@ -3,7 +3,7 @@
     "Direct": {
       "heading": "직접 연락",
       "addressLabel": "공장 주소",
-      "address": "하노이시 꽝민 산업단지 49G 구획",
+      "address": "하노이시 꽝민 산업단지 {{lot}} 구획",
       "taxLabel": "사업자 등록번호",
       "hotlineLabel": "핫라인",
       "consultLabel": "Zalo / WeChat / KakaoTalk 상담",

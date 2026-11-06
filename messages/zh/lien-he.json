@@ -11,7 +11,7 @@
       "card1": {
         "badge": "电镀工厂",
         "title": "",
-        "address": "河内市光明乡光明工业区49G地块",
+        "address": "河内市光明乡光明工业区{{lot}}地块",
         "footerLabel": "生产设施",
         "footerValue": "自动电镀线、挂镀、滚镀及分析检测室"
       },
@@ -122,7 +122,7 @@
     },
     "LocationMap": {
       "heading": "工厂位置",
-      "description": "电镀工厂位于河内市光明乡光明工业区49G地块。",
+      "description": "电镀工厂位于河内市光明乡光明工业区{{lot}}地块。",
       "distances": {
         "airport": {
           "label": "内排国际机场",
@@ -139,9 +139,9 @@
       },
       "openMapsCta": "打开 Google 地图",
       "downloadMapCta": "发送报价申请",
-      "satelliteImageAlt": "HANIN工厂外观,位于河内光明工业区49G地块",
+      "satelliteImageAlt": "HANIN工厂外观,位于河内光明工业区{{lot}}地块",
       "gateLabel": "HANIN电镀工厂",
-      "plotLabel": "光明工业区49G地块"
+      "plotLabel": "光明工业区{{lot}}地块"
     },
     "RfqForm": {
       "heading": "提交报价申请及技术资料",

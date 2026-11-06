@@ -1,0 +1,59 @@
+{
+  "HomeAbout": {
+    "eyebrow": "About HANIN and the Hanin Tech System",
+    "title": "HANIN Plating Factory",
+    "intro1": "HANIN plates on ABS plastic and metal substrates. The factory has PVD vacuum coating and also paints and prints on plastic and metal products.",
+    "intro2": "The factory is at Lot {{lot}}, Quang Minh Industrial Park, Hanoi, on a site of {{area}} m² with {{staff}} employees. HANIN belongs to the Hanin Tech system.",
+    "imageAlt": "Barrel plating line in the HANIN plating factory at Lot {{lot}}, Quang Minh Industrial Park",
+    "statsLabel": "Key Figures",
+    "stats": {
+      "0": {
+        "value": "350",
+        "label": "Employees across the Hanin Tech system"
+      },
+      "1": {
+        "value": "70",
+        "label": "Employees at the HANIN plating factory"
+      },
+      "2": {
+        "value": "25",
+        "label": "Plastic injection machines, 75–1,000 tons (Hanin Tech system)"
+      },
+      "3": {
+        "value": "{{area}} m²",
+        "label": "Plating factory site area"
+      }
+    },
+    "timelineTitle": "Development Roadmap of the Hanin Tech System",
+    "timelineIntro": "Hanin Tech is the parent company that invests in and develops the factories in the system. Hanin Tech headquarters is at Lot {{hqLot}}, Quang Minh Industrial Park; the HANIN plating factory is at Lot {{lot}}.",
+    "thisFactory": "This factory",
+    "milestones": {
+      "0": {
+        "year": "2018",
+        "name": "Hanin Tech Founded",
+        "desc": "Parent company of the system."
+      },
+      "1": {
+        "year": "2021",
+        "name": "IPM Mold Factory",
+        "desc": "Press molds, plastic molds, aluminum die-casting molds."
+      },
+      "2": {
+        "year": "2023",
+        "name": "Hanin Plating Factory",
+        "desc": "Plastic and metal plating, PVD, painting and printing."
+      },
+      "3": {
+        "year": "2025",
+        "name": "Factory No. 4 – Press",
+        "desc": "Metal stamping."
+      },
+      "4": {
+        "year": "2026",
+        "name": "Factory No. 5 – Showa",
+        "desc": "Casting and assembly."
+      }
+    },
+    "ctaLink": "Learn more about HANIN"
+  }
+}

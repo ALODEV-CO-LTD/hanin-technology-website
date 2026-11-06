@@ -2,8 +2,8 @@
 
 import { useEffect, useState, type FormEvent } from "react";
 import { api, ApiError } from "./api";
-import { useToast } from "./Toast";
-import { useConfirm } from "./ConfirmDialog";
+import { toast } from "@/components/ct999/thong-bao-toast/store";
+import { confirm } from "./dialog";
 import Dropdown from "./Dropdown";
 
 interface User {
@@ -18,8 +18,6 @@ interface User {
 export default function UserManager() {
   const [users, setUsers] = useState<User[]>([]);
   const [error, setError] = useState("");
-  const toast = useToast();
-  const confirm = useConfirm();
 
   const [version, setVersion] = useState(0);
   const [newRole, setNewRole] = useState("editor");

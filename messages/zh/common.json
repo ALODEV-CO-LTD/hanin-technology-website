@@ -17,7 +17,8 @@
     "label": "语言",
     "vi": "Tiếng Việt",
     "zh": "中文",
-    "ko": "한국어"
+    "ko": "한국어",
+    "en": "English"
   },
   "Footer": {
     "tagline": "塑料与金属电镀处理",
@@ -40,7 +41,7 @@
     },
     "contactHeading": "技术联系方式",
     "addressLabel": "地址：",
-    "address": "河内市光明乡光明工业区49G地块。",
+    "address": "河内市光明乡光明工业区{{lot}}地块。",
     "hotlineLabel": "热线：",
     "emailLabel": "邮箱：",
     "hoursLabel": "工作时间：",
@@ -60,11 +61,11 @@
       "description": "面向工业客户的ABS塑料与金属电镀、喷漆及印刷。"
     },
     "home": {
-      "title": "HANIN",
+      "title": "HANIN | ABS塑料与金属电镀、PVD、喷漆及印刷",
       "description": "面向工业客户的ABS塑料与金属电镀、喷漆及印刷。"
     },
     "gioiThieu": {
-      "title": "关于我们",
+      "title": "关于HANIN | 光明工业区电镀工厂",
       "description": "HANIN简介及塑料与金属电镀处理能力。"
     },
     "dichVu": {
@@ -84,8 +85,8 @@
       "description": "公司动态、电镀与表面处理技术文章及HANIN生产动态。"
     },
     "tuyenDung": {
-      "title": "招聘",
-      "description": "HANIN电镀工厂目前开放的招聘职位。"
+      "title": "HANIN电镀工厂招聘",
+      "description": "HANIN电镀工厂（河内光明工业区）目前开放的招聘职位：技术、生产及质量管理。"
     },
     "lienHe": {
       "title": "联系我们与报价需求",

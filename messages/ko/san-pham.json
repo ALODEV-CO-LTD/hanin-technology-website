@@ -119,7 +119,7 @@
       "giaDung": {
         "title": "가전제품: 냉장고, 세탁기, 정수기",
         "category": "가전제품",
-        "description": "Hitachi, LG, Panasonic, Samsung 냉장고, LG 세탁기와 세탁기 뚜껑 프레임, Karofi 정수기, LG 오븐 손잡이. ABS 수지 장식 부품 도금.",
+        "description": "Hitachi, LG, Panasonic 냉장고, LG 세탁기와 세탁기 뚜껑 프레임, Karofi 정수기, LG 오븐 손잡이. ABS 수지 장식 부품 도금.",
         "imageAlt": "도금한 가전제품 장식 부품",
         "imageBadge": "가전제품",
         "chips": {
@@ -212,7 +212,7 @@
         "item2": {
           "alt": "품질 검사실에서 도금 두께 측정",
           "thumbLabel": "도금 두께 측정",
-          "caption": "품질 검사실에서 APC-100으로 도금 두께 측정"
+          "caption": "품질 검사실에서 {{apc}}으로 도금 두께 측정"
         },
         "item3": {
           "alt": "도금 라인에서 지그에 걸린 부품",
@@ -271,7 +271,7 @@
         },
         "lab": {
           "label": "검사 설비",
-          "value": "APC-100 도금 두께 측정기, NSS 및 CASS 염수분무기, 헐셀 시험기"
+          "value": "{{apc}} 도금 두께 측정기, NSS 및 CASS 염수분무기, 헐셀 시험기"
         }
       },
       "process": {
@@ -324,7 +324,7 @@
         },
         "item6": {
           "title": "PVD 진공 증착",
-          "description": "PVD 장비 2대와 PVD 라인 2개로 진공 증착을 합니다.",
+          "description": "PVD 장비 2대로 진공 증착을 합니다.",
           "cta": "서비스 알아보기"
         }
       }

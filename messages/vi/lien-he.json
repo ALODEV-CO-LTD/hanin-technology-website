@@ -11,7 +11,7 @@
       "card1": {
         "badge": "Nhà máy mạ",
         "title": "",
-        "address": "Lô 49G, KCN Quang Minh, xã Quang Minh, TP Hà Nội",
+        "address": "Lô {{lot}}, KCN Quang Minh, xã Quang Minh, TP Hà Nội",
         "footerLabel": "Cơ sở sản xuất",
         "footerValue": "Dây chuyền mạ tự động, mạ treo, mạ quay và phòng phân tích, kiểm tra"
       },
@@ -122,7 +122,7 @@
     },
     "LocationMap": {
       "heading": "Vị trí nhà máy",
-      "description": "Nhà máy mạ nằm tại Lô 49G, KCN Quang Minh, xã Quang Minh, TP Hà Nội.",
+      "description": "Nhà máy mạ nằm tại Lô {{lot}}, KCN Quang Minh, xã Quang Minh, TP Hà Nội.",
       "distances": {
         "airport": {
           "label": "Sân bay quốc tế Nội Bài",
@@ -139,9 +139,9 @@
       },
       "openMapsCta": "Mở Google Maps",
       "downloadMapCta": "Gửi yêu cầu báo giá",
-      "satelliteImageAlt": "Mặt tiền nhà máy HANIN tại Lô 49G, KCN Quang Minh, Hà Nội",
+      "satelliteImageAlt": "Mặt tiền nhà máy HANIN tại Lô {{lot}}, KCN Quang Minh, Hà Nội",
       "gateLabel": "Nhà máy mạ HANIN",
-      "plotLabel": "Lô 49G, KCN Quang Minh"
+      "plotLabel": "Lô {{lot}}, KCN Quang Minh"
     },
     "RfqForm": {
       "heading": "Gửi yêu cầu báo giá và tài liệu kỹ thuật",

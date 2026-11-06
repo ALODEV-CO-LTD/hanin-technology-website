@@ -11,7 +11,7 @@
  */
 const base = (process.argv[2] || "http://localhost:3100").replace(/\/+$/, "");
 const CONCURRENCY = 6;
-const LOCALES = ["vi", "zh", "ko"];
+const LOCALES = ["vi", "en", "zh", "ko"];
 
 const decode = (s) =>
   s
@@ -93,13 +93,14 @@ function audit(html, finalUrl) {
   if (!title) errors.push("thiếu <title>");
   else {
     if (vlen(title) > 70) warns.push(`title dài ${vlen(title)} ký tự (>70)`);
-    if (vlen(title) < 15) warns.push(`title ngắn ${vlen(title)} ký tự (<15)`);
+    const cjk = /[\u3040-\u30ff\u3400-\u9fff\uac00-\ud7af]/.test(title); // chữ Hán/Hàn mang nhiều nghĩa hơn mỗi ký tự: ngưỡng thấp hơn
+    if (vlen(title) < (cjk ? 7 : 15)) warns.push(`title ngắn ${vlen(title)} ký tự (<${cjk ? 7 : 15})`);
   }
   const desc = metaContent(head, "name", "description");
   if (!desc) errors.push("thiếu meta description");
   else {
     if (vlen(desc) > 170) warns.push(`description dài ${vlen(desc)} ký tự (>170)`);
-    if (vlen(desc) < 50) warns.push(`description ngắn ${vlen(desc)} ký tự (<50)`);
+    if (vlen(desc) < (/[\u3040-\u30ff\u3400-\u9fff\uac00-\ud7af]/.test(desc) ? 28 : 50)) warns.push(`description ngắn ${vlen(desc)} ký tự`);
   }
 
   // canonical
@@ -127,7 +128,7 @@ function audit(html, finalUrl) {
   else {
     const h1 = stripTags(h1s[0]);
     if (!h1) errors.push("<h1> rỗng");
-    else if (title && finalPath.replace(/^\/(zh|ko)/, "") !== "" && finalPath.replace(/^\/(zh|ko)/, "") !== "/") {
+    else if (title && finalPath.replace(/^\/(en|zh|ko)/, "") !== "" && finalPath.replace(/^\/(en|zh|ko)/, "") !== "/") {
       const tw = new Set(words(title));
       if (!words(h1).some((w) => tw.has(w)) && !words(h1).some((w) => title.toLowerCase().includes(w)))
         warns.push(`h1 "${h1.slice(0, 50)}" không có từ chung với title`);

@@ -1,6 +1,6 @@
 "use client";
 
-import { useConfirm } from "./ConfirmDialog";
+import { confirm } from "./dialog";
 import { useEffect, useState } from "react";
 import { api, ApiError } from "./api";
 
@@ -13,7 +13,6 @@ interface Revision {
 
 /** Lịch sử các lần sửa của một mục + nút khôi phục về từng phiên bản. */
 export default function HistoryPanel({ resource, id }: { resource: string; id: number }) {
-  const confirm = useConfirm();
   const [items, setItems] = useState<Revision[] | null>(null);
   const [busy, setBusy] = useState(0);
   const [message, setMessage] = useState("");

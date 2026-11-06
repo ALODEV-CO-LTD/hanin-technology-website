@@ -1,0 +1,133 @@
+{
+  "TinTuc": {
+    "FeaturedArticle": {
+      "heading": "TECHNICAL SPOTLIGHT",
+      "badge": "Featured article",
+      "readArticle": "READ ARTICLE"
+    },
+    "NewsBreadcrumb": {
+      "home": "Home",
+      "news": "News",
+      "cmsPortal": "News and Technical Knowledge",
+      "realtimeSync": "Articles from the engineering team"
+    },
+    "NewsFilterBar": {
+      "searchPlaceholder": "Search technical articles...",
+      "showingCount": "Showing {shown} / {total} articles"
+    },
+    "NewsGrid": {
+      "readMore": "Read more",
+      "empty": "No matching articles found."
+    },
+    "NewsInquiryCta": {
+      "titlePrefix": "Technical Discussion on",
+      "titleHighlight": "parts to be plated",
+      "description": "HANIN engineers answer technical questions on plating and surface treatment by substrate and the requirements of each product.",
+      "hotlineLabel": "Hotline:",
+      "emailLabel": "Email:",
+      "ctaContact": "CONTACT",
+      "ctaQuote": "REQUEST A QUOTE"
+    },
+    "NewsIntro": {
+      "titlePrefix": "News &",
+      "titleHighlight": "bulletin",
+      "titleSuffix": "technical",
+      "description": "Company activity news, surface treatment technology, plating inspection measurements and technical articles from the HANIN factory.",
+      "archiveLabel": "Archive",
+      "archiveValue": "{count} articles",
+      "auditLabel": "Categories",
+      "auditValue": "{count} categories"
+    },
+    "NewsPagination": {
+      "summary": "Page {page} / {pages} ({total} articles in total)",
+      "prev": "Previous",
+      "next": "Next"
+    },
+    "categories": {
+      "all": "All",
+      "congTy": "Company",
+      "congNghe": "Technology",
+      "sanXuat": "Production",
+      "chatLuong": "Quality",
+      "tuyenDung": "Careers"
+    },
+    "featured": {
+      "tag": "Spotlight · Plating Technology",
+      "category": "TECHNOLOGY",
+      "date": "April 18, 2026",
+      "readTime": "5 min read",
+      "title": "Nickel-Chrome Plating on ABS: Steps from Pretreatment to Finished Part",
+      "excerpt": "ABS plastic parts go through degreasing, etching and palladium activation, then nickel-chrome plating.",
+      "metrics": {
+        "0": {
+          "label": "Substrate material"
+        },
+        "1": {
+          "label": "Plating technology"
+        },
+        "2": {
+          "label": "Inspection"
+        }
+      },
+      "location": "Automatic plating line, Quang Minh Industrial Park",
+      "liveLabel": "HANIN Engineering Department",
+      "author": "Engineering Department",
+      "authorRole": "Hanin Technology VN",
+      "imageAlt": "Automatic plating line with plating tanks and cranes lifting and lowering parts"
+    },
+    "articles": {
+      "0": {
+        "categoryLabel": "QUALITY",
+        "readTime": "4 min read",
+        "title": "Measuring Plating Thickness with the {{apc}} Gauge",
+        "excerpt": "The QC room measures plating thickness on finished goods to compare with customer requirements, combined with NSS and CASS salt spray testing.",
+        "author": "QC Department",
+        "imageAlt": "Digital caliper measuring a small gear, steel part on a quality inspection table"
+      },
+      "1": {
+        "categoryLabel": "PRODUCTION",
+        "readTime": "6 min read",
+        "title": "Automatic Plating Line for ABS Plastic Parts",
+        "excerpt": "Parts hang on jigs (JIG) and cranes move them through the plating tanks; the line handles {{auto:k}} thousand products per day.",
+        "author": "Production Department",
+        "imageAlt": "Automatic plating line in the HANIN factory"
+      },
+      "2": {
+        "categoryLabel": "COMPANY",
+        "readTime": "3 min read",
+        "title": "Plating and Quality Inspection Area at the Factory",
+        "excerpt": "An introduction to the plating area, analysis lab and finished goods inspection area at the HANIN production site.",
+        "author": "Sales Department",
+        "imageAlt": "Front of the Hanin Technology headquarters in Vietnam"
+      },
+      "3": {
+        "categoryLabel": "TECHNOLOGY",
+        "readTime": "7 min read",
+        "title": "Satin and Black Chrome Plating for Decorative Parts",
+        "excerpt": "Satin nickel for a matte surface, black nickel chrome for a dark surface; a hairline finish can be made on nickel chrome.",
+        "author": "Engineering Department",
+        "imageAlt": "Decorative parts with satin and black chrome plating"
+      },
+      "4": {
+        "categoryLabel": "PRODUCTION",
+        "readTime": "5 min read",
+        "title": "Nickel Plating Process on Zinc",
+        "excerpt": "From degreasing and H2SO4 pickling, copper plating and bright nickel to drying, thickness measurement and salt spray before packing.",
+        "author": "Production Department",
+        "imageAlt": "A technician in protective clothing checks rack-plated parts over a chemical tank"
+      },
+      "5": {
+        "categoryLabel": "CAREERS",
+        "readTime": "3 min read",
+        "title": "Technical Training for New Staff on Electroplating",
+        "excerpt": "Workshop guidance content: the electroplating process, plating thickness measurement and inspection in the QC room.",
+        "author": "Human Resources",
+        "imageAlt": "Plating technical training at the HANIN factory"
+      }
+    },
+    "PostDetail": {
+      "backToNews": "Back to News",
+      "related": "Related Articles"
+    }
+  }
+}

@@ -10,6 +10,8 @@ const eslintConfig = defineConfig([
   globalIgnores([
     // Default ignores of eslint-config-next:
     ".next/**",
+    // Mã chép nguyên từ thư viện ct999 (src/components/ct999/README.md): không sửa tại đây.
+    "src/components/ct999/**",
     "out/**",
     "build/**",
     "next-env.d.ts",

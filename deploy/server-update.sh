@@ -42,6 +42,7 @@ npm ci --no-audit --no-fund >>"$LOG" 2>&1 || fail "npm ci"
 DATA_DIR="$DATA_DIR" npm run db:seed >>"$LOG" 2>&1 || fail "db:seed"
 DATA_DIR="$DATA_DIR" npm run db:client-logos >>"$LOG" 2>&1 || fail "db:client-logos"
 DATA_DIR="$DATA_DIR" npm run db:hanin-images >>"$LOG" 2>&1 || fail "db:hanin-images"
+DATA_DIR="$DATA_DIR" npm run db:add-en >>"$LOG" 2>&1 || fail "db:add-en"
 DATA_DIR="$DATA_DIR" SWC_NATIVE_BINDING_CACHE=/tmp/swc-cache npm run build >>"$LOG" 2>&1 || fail "build"
 
 # Giữ lại ảnh đã tối ưu (/_next/image) của bản trước: khoá bộ nhớ đệm theo URL ảnh + kích thước + chất lượng, không phụ thuộc

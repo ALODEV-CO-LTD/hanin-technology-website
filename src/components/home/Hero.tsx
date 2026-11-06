@@ -6,7 +6,7 @@ import HeroImage from "@/components/ui/HeroImage";
 import CountUp from "@/components/ui/CountUp";
 import HeroStatBar from "@/components/ui/HeroStatBar";
 
-// Số liệu chính thức do Bên A cung cấp (khách hàng: "hơn 100"; nhân sự 58; mặt bằng xưởng 2.230 m²). Ô cuối là chứng nhận ISO 9001 (chữ, không đếm số).
+// Số liệu lấy từ src/lib/facts.ts qua messages (token); ghi chú gốc: do Bên A cung cấp (khách hàng "hơn 100", mặt bằng 2.230 m²). Ô cuối là chứng nhận ISO 9001 (chữ, không đếm số).
 const STATS = [
   { key: "partners", separator: "", icon: "handshake" },
   { key: "staff", separator: "", icon: "engineering" },
@@ -29,6 +29,7 @@ export default function Hero() {
       </div>
 
       <div aria-hidden="true" className="absolute inset-y-0 left-0 w-full lg:w-3/4 banner-scrim" />
+      <div aria-hidden="true" className="absolute inset-0 hero-dots" />
       {/* Lệch lên khoảng 50px so với tâm vùng giữa header và dải số liệu: đáy đệm lớn hơn đỉnh 100px trở lên. */}
       <div className="relative z-10 w-full flex-1 px-margin pt-space-lg pb-space-xl sm:pt-space-md sm:pb-[116px] flex flex-col justify-center">
         <div className="max-w-3xl flex flex-col">

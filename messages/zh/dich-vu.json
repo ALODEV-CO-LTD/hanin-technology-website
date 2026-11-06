@@ -23,7 +23,7 @@
         "description": "在铁、铜、钢、铝上提供光亮的电解镍、耐磨耐热的化学镍，以及黑镍、缎面镍和镍铬。",
         "applicationLabel": "典型应用：",
         "applicationText": "把手、合页、齿轮、销、锁具和机械零件。",
-        "statLabel": "挂镀每天 1–2 万件 · 滚镀每天 3,000–5,000 公斤",
+        "statLabel": "挂镀每天 1–2 万件 · 滚镀每天 {{rot:full}} 公斤",
         "imageAlt": "镀镍金属零件"
       },
       "kemNiken": {
@@ -31,7 +31,7 @@
         "description": "为小型金属零件提供镀锌、镀铜、镀锡和锰系黑色磷化，防锈、增强附着力且不易褪色。",
         "applicationLabel": "典型应用：",
         "applicationText": "螺钉、螺栓、护盖、接线端子、螺母、铆钉。",
-        "statLabel": "滚镀每天 3,000–5,000 公斤",
+        "statLabel": "滚镀每天 {{rot:full}} 公斤",
         "imageAlt": "镀锌及黑色磷化的螺钉和螺栓"
       },
       "sonMaKetHop": {
@@ -44,10 +44,10 @@
       },
       "xuLyNhom": {
         "title": "PVD 真空镀",
-        "description": "配有 2 台 PVD 设备和 2 条生产线，镀层外观美观、耐用性好。",
+        "description": "配有 2 台 PVD 设备，镀层外观美观、耐用性好。",
         "applicationLabel": "典型应用：",
         "applicationText": "对外观和耐用性要求较高的零件。",
-        "statLabel": "2 台 PVD 设备 · 2 条 PVD 线",
+        "statLabel": "2 台 PVD 设备",
         "imageAlt": "PVD 真空镀零件"
       }
     },
@@ -63,18 +63,18 @@
     },
     "CapacityOverview": {
       "heading": "生产线与电镀系统",
-      "subtitle": "位于光明工业区 49G 地块的工厂配有自动电镀线、半自动挂镀线、滚镀线及配套废水处理系统。",
+      "subtitle": "位于光明工业区 {{lot}} 地块的工厂配有自动电镀线、半自动挂镀线、滚镀线及配套废水处理系统。",
       "auto": {
         "title": "自动电镀线",
-        "desc": "JIG 挂具、行车和镀槽区；每天 3–5 万件，可镀铬、镍、缎面镍。"
+        "desc": "JIG 挂具、行车和镀槽区；每天 {{auto:wan}} 万件，可镀铬、镍、缎面镍。"
       },
       "complex": {
         "title": "半自动挂镀与滚镀",
-        "desc": "挂镀每天 1–2 万件；滚镀每天 3,000–5,000 公斤（1–3 万件）。"
+        "desc": "挂镀每天 1–2 万件；滚镀每天 {{rot:full}} 公斤（{{rotPcs:wan}} 万件）。"
       },
       "wastewater": {
         "title": "废水处理",
-        "desc": "废水处理系统处理能力为 130 立方米/昼夜，配有沉淀池和压泥机。"
+        "desc": "废水处理系统处理能力为 {{waste}} 立方米/昼夜，配有沉淀池和压泥机。"
       }
     },
     "CategoryHero": {
@@ -100,7 +100,7 @@
       },
       "stat4": {
         "label": "滚镀",
-        "value": "每天 3,000–5,000 公斤"
+        "value": "每天 {{rot:full}} 公斤"
       },
       "ctaPrimary": "索取报价",
       "ctaSecondary": "联系技术咨询"
@@ -169,7 +169,7 @@
       "lineCapacityLabel": "半自动挂镀",
       "lineCapacityValue": "每天 1–2 万件",
       "tankSizeLabel": "滚镀",
-      "tankSizeValue": "每天 3,000–5,000 公斤",
+      "tankSizeValue": "每天 {{rot:full}} 公斤",
       "heading": "挂镀线与滚镀线",
       "subtitle": "两条生产线均可进行电解镍、化学镍、黑镍、锰系黑色磷化和镀锌。",
       "f1": {
@@ -178,11 +178,11 @@
       },
       "f2": {
         "title": "滚镀线：",
-        "desc": "每天 3,000–5,000 公斤，约合 1–3 万件；配有振动机、除油、镀铜槽和镀镍槽。"
+        "desc": "每天 {{rot:full}} 公斤，约合 {{rotPcs:wan}} 万件；配有振动机、除油、镀铜槽和镀镍槽。"
       },
       "f3": {
         "title": "自动电镀线：",
-        "desc": "每天 3–5 万件，可镀铬、镍、缎面镍。"
+        "desc": "每天 {{auto:wan}} 万件，可镀铬、镍、缎面镍。"
       }
     },
     "DetailApplications": {
@@ -191,25 +191,25 @@
       "a1": {
         "tag": "机械零件",
         "title": "齿轮、销、轴",
-        "desc": "齿轮、销、机械板件、轴销、装配零件。",
+        "desc": "化学镍：螺纹和深孔内镀层均匀，硬度高、耐磨。",
         "note": "化学镍"
       },
       "a2": {
         "tag": "门窗五金、锁具",
         "title": "把手、合页、销",
-        "desc": "金属把手、合页、锁具、定位销、特种螺栓。",
+        "desc": "电解镍：镀层光亮、耐用。",
         "note": "电解镍"
       },
       "a3": {
         "tag": "卫浴",
         "title": "水龙头与配件",
-        "desc": "水龙头、浴室配件、把手。",
+        "desc": "黑镍、缎面镍或镍铬，按表面要求选择。",
         "note": "镀铬"
       },
       "a4": {
         "tag": "装饰",
         "title": "缎面不锈钢与装饰件",
-        "desc": "缎面不锈钢板、门把手、不锈钢条、合页、装饰件。",
+        "desc": "缎面镍或镍铬，可得细腻哑光或光亮表面。",
         "note": "缎面电镀"
       }
     },
@@ -231,7 +231,7 @@
       },
       "r3": {
         "item": "镀层厚度",
-        "device": "APC-100 镀层测厚仪",
+        "device": "{{apc}} 镀层测厚仪",
         "criteria": "测量镀层厚度，与图纸要求对照。"
       },
       "r4": {
@@ -247,7 +247,7 @@
     },
     "DetailGallery": {
       "heading": "工厂现场图片",
-      "subtitle": "HANIN 工厂，光明工业区 49G 地块",
+      "subtitle": "HANIN 工厂，光明工业区 {{lot}} 地块",
       "line": {
         "alt": "HANIN 工厂电镀区域",
         "tag": "电镀区域",
@@ -258,7 +258,7 @@
         "alt": "HANIN 工厂生产区域",
         "tag": "生产",
         "title": "生产区域",
-        "desc": "工厂占地 2,230 平方米。"
+        "desc": "工厂占地 {{area}} 平方米。"
       },
       "prep": {
         "alt": "HANIN 工厂仓储与分析区域",
@@ -342,10 +342,10 @@
         "desc": "配有分析室和分析用化学试剂；用赫尔槽试验机检查镀液。"
       },
       "thickness": {
-        "title": "APC-100 测厚仪",
+        "title": "{{apc}} 测厚仪",
         "desc": "测量镀层厚度，与图纸要求对照。",
         "method": "镀层厚度",
-        "device": "APC-100 镀层测厚仪",
+        "device": "{{apc}} 镀层测厚仪",
         "criteria": "与图纸要求对照。"
       },
       "saltSpray": {
@@ -483,7 +483,7 @@
           "stepLabel": "步骤"
         },
         "DetailCapability": {
-          "imageAlt": "HANIN 工厂生产区域",
+          "imageAlt": "HANIN 工厂生产区域，服务于表面前处理",
           "lineCapacityLabel": "主要工序",
           "lineCapacityValue": "超声波除油",
           "tankSizeLabel": "工序之间",
@@ -536,7 +536,7 @@
           "colDevice": "设备",
           "colCriteria": "检验内容",
           "heading": "前处理后的质量控制",
-          "subtitle": "HANIN 工厂的检测设备",
+          "subtitle": "HANIN 工厂适用于表面前处理的检测设备",
           "r1": {
             "item": "前处理溶液",
             "device": "分析室及分析用化学试剂",
@@ -549,7 +549,7 @@
           },
           "r3": {
             "item": "镀层厚度",
-            "device": "APC-100 镀层测厚仪",
+            "device": "{{apc}} 镀层测厚仪",
             "criteria": "测量镀层厚度，与图纸要求对照。"
           },
           "r4": {
@@ -565,24 +565,24 @@
         },
         "DetailGallery": {
           "heading": "工厂现场图片",
-          "subtitle": "HANIN 工厂，光明工业区 49G 地块",
+          "subtitle": "表面前处理：HANIN 工厂厂区（光明工业区 {{lot}} 地块）",
           "line": {
-            "alt": "HANIN 工厂电镀区域",
+            "alt": "HANIN 工厂电镀区域，服务于表面前处理",
             "tag": "电镀区域",
             "title": "电镀区域",
-            "desc": "位于光明工业区的 HANIN 工厂电镀线。"
+            "desc": "HANIN 工厂（光明工业区）中服务于表面前处理的生产线。"
           },
           "surface": {
-            "alt": "HANIN 工厂生产区域",
+            "alt": "HANIN 工厂生产区域，表面前处理在此进行",
             "tag": "生产",
             "title": "生产区域",
-            "desc": "工厂占地 2,230 平方米。"
+            "desc": "工厂占地 {{area}} 平方米，表面前处理在此进行。"
           },
           "prep": {
-            "alt": "HANIN 工厂仓储与分析区域",
+            "alt": "HANIN 工厂仓储与分析区域，为表面前处理做准备",
             "tag": "仓储与分析",
             "title": "仓库与分析室",
-            "desc": "来料入库，并在上线前进行化学品分析。"
+            "desc": "收货、仓储及化学分析，之后进入生产线（表面前处理）。"
           }
         },
         "RfqFormDetail": {
@@ -703,9 +703,9 @@
           "stepLabel": "步骤"
         },
         "DetailCapability": {
-          "imageAlt": "HANIN 工厂生产区域",
+          "imageAlt": "HANIN 工厂生产区域，服务于ABS塑料镍铬电镀",
           "lineCapacityLabel": "自动电镀线",
-          "lineCapacityValue": "每天 3–5 万件",
+          "lineCapacityValue": "每天 {{auto:wan}} 万件",
           "tankSizeLabel": "镀种",
           "tankSizeValue": "铬、镍、缎面镍",
           "heading": "自动电镀线",
@@ -720,7 +720,7 @@
           },
           "f3": {
             "title": "镀槽区：",
-            "desc": "可镀铬、镍、缎面镍；产能每天 3–5 万件。"
+            "desc": "可镀铬、镍、缎面镍；产能每天 {{auto:wan}} 万件。"
           }
         },
         "DetailApplications": {
@@ -756,7 +756,7 @@
           "colDevice": "设备",
           "colCriteria": "检验内容",
           "heading": "ABS 塑料镀层质量控制",
-          "subtitle": "HANIN 工厂的检测设备",
+          "subtitle": "HANIN 工厂适用于ABS塑料镍铬电镀的检测设备",
           "r1": {
             "item": "溶液与化学品",
             "device": "分析室及分析用化学试剂",
@@ -769,7 +769,7 @@
           },
           "r3": {
             "item": "镀层厚度",
-            "device": "APC-100 镀层测厚仪",
+            "device": "{{apc}} 镀层测厚仪",
             "criteria": "测量镀层厚度，与图纸要求对照。"
           },
           "r4": {
@@ -785,24 +785,24 @@
         },
         "DetailGallery": {
           "heading": "工厂现场图片",
-          "subtitle": "HANIN 工厂，光明工业区 49G 地块",
+          "subtitle": "ABS塑料镍铬电镀：HANIN 工厂厂区（光明工业区 {{lot}} 地块）",
           "line": {
-            "alt": "HANIN 工厂电镀区域",
+            "alt": "HANIN 工厂电镀区域，服务于ABS塑料镍铬电镀",
             "tag": "电镀区域",
             "title": "电镀区域",
-            "desc": "位于光明工业区的 HANIN 工厂电镀线。"
+            "desc": "HANIN 工厂（光明工业区）中服务于ABS塑料镍铬电镀的生产线。"
           },
           "surface": {
-            "alt": "HANIN 工厂生产区域",
+            "alt": "HANIN 工厂生产区域，ABS塑料镍铬电镀在此进行",
             "tag": "生产",
             "title": "生产区域",
-            "desc": "工厂占地 2,230 平方米。"
+            "desc": "工厂占地 {{area}} 平方米，ABS塑料镍铬电镀在此进行。"
           },
           "prep": {
-            "alt": "HANIN 工厂仓储与分析区域",
+            "alt": "HANIN 工厂仓储与分析区域，为ABS塑料镍铬电镀做准备",
             "tag": "仓储与分析",
             "title": "仓库与分析室",
-            "desc": "来料入库，并在上线前进行化学品分析。"
+            "desc": "收货、仓储及化学分析，之后进入生产线（ABS塑料镍铬电镀）。"
           }
         },
         "RfqFormDetail": {
@@ -861,7 +861,7 @@
           },
           "stat4": {
             "label": "滚镀",
-            "value": "每天 3,000–5,000 公斤"
+            "value": "每天 {{rot:full}} 公斤"
           },
           "ctaPrimary": "索取报价",
           "ctaSecondary": "联系技术咨询"
@@ -926,11 +926,11 @@
           "stepLabel": "步骤"
         },
         "DetailCapability": {
-          "imageAlt": "HANIN 工厂生产区域",
+          "imageAlt": "HANIN 工厂生产区域，服务于金属基材镀镍",
           "lineCapacityLabel": "半自动挂镀",
           "lineCapacityValue": "每天 1–2 万件",
           "tankSizeLabel": "滚镀",
-          "tankSizeValue": "每天 3,000–5,000 公斤",
+          "tankSizeValue": "每天 {{rot:full}} 公斤",
           "heading": "挂镀线与滚镀线",
           "subtitle": "两条生产线均可进行电解镍、化学镍、黑镍、锰系黑色磷化和镀锌。",
           "f1": {
@@ -939,11 +939,11 @@
           },
           "f2": {
             "title": "滚镀线：",
-            "desc": "每天 3,000–5,000 公斤，约合 1–3 万件；配有振动机、除油、镀铜槽和镀镍槽。"
+            "desc": "每天 {{rot:full}} 公斤，约合 {{rotPcs:wan}} 万件；配有振动机、除油、镀铜槽和镀镍槽。"
           },
           "f3": {
             "title": "自动电镀线：",
-            "desc": "每天 3–5 万件，可镀铬、镍、缎面镍。"
+            "desc": "每天 {{auto:wan}} 万件，可镀铬、镍、缎面镍。"
           }
         },
         "DetailApplications": {
@@ -952,25 +952,25 @@
           "a1": {
             "tag": "机械零件",
             "title": "齿轮、销、轴",
-            "desc": "齿轮、销、机械板件、轴销、装配零件。",
+            "desc": "化学镍：螺纹和深孔内镀层均匀，硬度高、耐磨。",
             "note": "化学镍"
           },
           "a2": {
             "tag": "门窗五金、锁具",
             "title": "把手、合页、销",
-            "desc": "金属把手、合页、锁具、定位销、特种螺栓。",
+            "desc": "电解镍：镀层光亮、耐用。",
             "note": "电解镍"
           },
           "a3": {
             "tag": "卫浴",
             "title": "水龙头与配件",
-            "desc": "水龙头、浴室配件、把手。",
+            "desc": "黑镍、缎面镍或镍铬，按表面要求选择。",
             "note": "镀铬"
           },
           "a4": {
             "tag": "装饰",
             "title": "缎面不锈钢与装饰件",
-            "desc": "缎面不锈钢板、门把手、不锈钢条、合页、装饰件。",
+            "desc": "缎面镍或镍铬，可得细腻哑光或光亮表面。",
             "note": "缎面电镀"
           }
         },
@@ -979,7 +979,7 @@
           "colDevice": "设备",
           "colCriteria": "检验内容",
           "heading": "镀镍层质量控制",
-          "subtitle": "HANIN 工厂的检测设备",
+          "subtitle": "HANIN 工厂适用于金属基材镀镍的检测设备",
           "r1": {
             "item": "溶液与化学品",
             "device": "分析室及分析用化学试剂",
@@ -992,7 +992,7 @@
           },
           "r3": {
             "item": "镀层厚度",
-            "device": "APC-100 镀层测厚仪",
+            "device": "{{apc}} 镀层测厚仪",
             "criteria": "测量镀层厚度，与图纸要求对照。"
           },
           "r4": {
@@ -1008,24 +1008,24 @@
         },
         "DetailGallery": {
           "heading": "工厂现场图片",
-          "subtitle": "HANIN 工厂，光明工业区 49G 地块",
+          "subtitle": "金属基材镀镍：HANIN 工厂厂区（光明工业区 {{lot}} 地块）",
           "line": {
-            "alt": "HANIN 工厂电镀区域",
+            "alt": "HANIN 工厂电镀区域，服务于金属基材镀镍",
             "tag": "电镀区域",
             "title": "电镀区域",
-            "desc": "位于光明工业区的 HANIN 工厂电镀线。"
+            "desc": "HANIN 工厂（光明工业区）中服务于金属基材镀镍的生产线。"
           },
           "surface": {
-            "alt": "HANIN 工厂生产区域",
+            "alt": "HANIN 工厂生产区域，金属基材镀镍在此进行",
             "tag": "生产",
             "title": "生产区域",
-            "desc": "工厂占地 2,230 平方米。"
+            "desc": "工厂占地 {{area}} 平方米，金属基材镀镍在此进行。"
           },
           "prep": {
-            "alt": "HANIN 工厂仓储与分析区域",
+            "alt": "HANIN 工厂仓储与分析区域，为金属基材镀镍做准备",
             "tag": "仓储与分析",
             "title": "仓库与分析室",
-            "desc": "来料入库，并在上线前进行化学品分析。"
+            "desc": "收货、仓储及化学分析，之后进入生产线（金属基材镀镍）。"
           }
         },
         "RfqFormDetail": {
@@ -1084,7 +1084,7 @@
           },
           "stat4": {
             "label": "滚镀",
-            "value": "每天 3,000–5,000 公斤"
+            "value": "每天 {{rot:full}} 公斤"
           },
           "ctaPrimary": "索取报价",
           "ctaSecondary": "联系技术咨询"
@@ -1148,9 +1148,9 @@
           "stepLabel": "步骤"
         },
         "DetailCapability": {
-          "imageAlt": "HANIN 工厂生产区域",
+          "imageAlt": "HANIN 工厂生产区域，服务于镀锌、镀铜、镀锡及黑色磷化",
           "lineCapacityLabel": "滚镀",
-          "lineCapacityValue": "每天 3,000–5,000 公斤",
+          "lineCapacityValue": "每天 {{rot:full}} 公斤",
           "tankSizeLabel": "半自动挂镀",
           "tankSizeValue": "每天 1–2 万件",
           "heading": "滚镀线与挂镀线",
@@ -1165,7 +1165,7 @@
           },
           "f3": {
             "title": "滚镀产能：",
-            "desc": "每天 3,000–5,000 公斤，约合 1–3 万件。"
+            "desc": "每天 {{rot:full}} 公斤，约合 {{rotPcs:wan}} 万件。"
           }
         },
         "DetailApplications": {
@@ -1201,7 +1201,7 @@
           "colDevice": "设备",
           "colCriteria": "检验内容",
           "heading": "镀层质量控制",
-          "subtitle": "HANIN 工厂的检测设备",
+          "subtitle": "HANIN 工厂适用于镀锌、镀铜、镀锡及黑色磷化的检测设备",
           "r1": {
             "item": "溶液与化学品",
             "device": "分析室及分析用化学试剂",
@@ -1214,7 +1214,7 @@
           },
           "r3": {
             "item": "镀层厚度",
-            "device": "APC-100 镀层测厚仪",
+            "device": "{{apc}} 镀层测厚仪",
             "criteria": "测量镀层厚度，与图纸要求对照。"
           },
           "r4": {
@@ -1230,24 +1230,24 @@
         },
         "DetailGallery": {
           "heading": "工厂现场图片",
-          "subtitle": "HANIN 工厂，光明工业区 49G 地块",
+          "subtitle": "镀锌、镀铜、镀锡及黑色磷化：HANIN 工厂厂区（光明工业区 {{lot}} 地块）",
           "line": {
-            "alt": "HANIN 工厂电镀区域",
+            "alt": "HANIN 工厂电镀区域，服务于镀锌、镀铜、镀锡及黑色磷化",
             "tag": "电镀区域",
             "title": "电镀区域",
-            "desc": "位于光明工业区的 HANIN 工厂电镀线。"
+            "desc": "HANIN 工厂（光明工业区）中服务于镀锌、镀铜、镀锡及黑色磷化的生产线。"
           },
           "surface": {
-            "alt": "HANIN 工厂生产区域",
+            "alt": "HANIN 工厂生产区域，镀锌、镀铜、镀锡及黑色磷化在此进行",
             "tag": "生产",
             "title": "生产区域",
-            "desc": "工厂占地 2,230 平方米。"
+            "desc": "工厂占地 {{area}} 平方米，镀锌、镀铜、镀锡及黑色磷化在此进行。"
           },
           "prep": {
-            "alt": "HANIN 工厂仓储与分析区域",
+            "alt": "HANIN 工厂仓储与分析区域，为镀锌、镀铜、镀锡及黑色磷化做准备",
             "tag": "仓储与分析",
             "title": "仓库与分析室",
-            "desc": "来料入库，并在上线前进行化学品分析。"
+            "desc": "收货、仓储及化学分析，之后进入生产线（镀锌、镀铜、镀锡及黑色磷化）。"
           }
         },
         "RfqFormDetail": {
@@ -1360,7 +1360,7 @@
           "stepLabel": "步骤"
         },
         "DetailCapability": {
-          "imageAlt": "HANIN 工厂生产区域",
+          "imageAlt": "HANIN 工厂生产区域，服务于喷漆、印刷及激光加工",
           "lineCapacityLabel": "6 轴喷涂房",
           "lineCapacityValue": "3 间（6 枪）",
           "tankSizeLabel": "自动喷涂",
@@ -1407,7 +1407,7 @@
           "colDevice": "设备",
           "colCriteria": "检验内容",
           "heading": "喷涂后的可靠性检测",
-          "subtitle": "工厂的 10 类检测设备",
+          "subtitle": "HANIN 工厂适用于喷漆、印刷及激光加工的检测设备",
           "r1": {
             "item": "耐磨性",
             "device": "RCA 测试仪",
@@ -1436,24 +1436,24 @@
         },
         "DetailGallery": {
           "heading": "工厂现场图片",
-          "subtitle": "HANIN 工厂，光明工业区 49G 地块",
+          "subtitle": "喷漆、印刷及激光加工：HANIN 工厂厂区（光明工业区 {{lot}} 地块）",
           "line": {
-            "alt": "HANIN 工厂电镀区域",
+            "alt": "HANIN 工厂电镀区域，服务于喷漆、印刷及激光加工",
             "tag": "电镀区域",
             "title": "电镀区域",
-            "desc": "位于光明工业区的 HANIN 工厂电镀线。"
+            "desc": "HANIN 工厂（光明工业区）中服务于喷漆、印刷及激光加工的生产线。"
           },
           "surface": {
-            "alt": "HANIN 工厂生产区域",
+            "alt": "HANIN 工厂生产区域，喷漆、印刷及激光加工在此进行",
             "tag": "生产",
             "title": "生产区域",
-            "desc": "工厂占地 2,230 平方米。"
+            "desc": "工厂占地 {{area}} 平方米，喷漆、印刷及激光加工在此进行。"
           },
           "prep": {
-            "alt": "HANIN 工厂仓储与分析区域",
+            "alt": "HANIN 工厂仓储与分析区域，为喷漆、印刷及激光加工做准备",
             "tag": "仓储与分析",
             "title": "仓库与分析室",
-            "desc": "来料入库，并在上线前进行化学品分析。"
+            "desc": "收货、仓储及化学分析，之后进入生产线（喷漆、印刷及激光加工）。"
           }
         },
         "RfqFormDetail": {
@@ -1503,8 +1503,8 @@
             "value": "2 台"
           },
           "stat2": {
-            "label": "PVD 生产线",
-            "value": "2 条线"
+            "label": "工厂",
+            "value": "光明工业区"
           },
           "stat3": {
             "label": "表面",
@@ -1526,8 +1526,8 @@
             "intro": "工厂配备：",
             "item1Strong": "2 台 PVD 设备：",
             "item1": "按批次真空镀膜。",
-            "item2Strong": "2 条 PVD 生产线：",
-            "item2": "按订单加工零件。",
+            "item2Strong": "位置：",
+            "item2": "河内光明工业区 {{lot}} 地块，与 HANIN 电镀工厂在同一厂区。",
             "item3Strong": "表面效果：",
             "item3": "外观美观，耐用性好。"
           },
@@ -1553,7 +1553,7 @@
           },
           "s3": {
             "title": "真空镀膜",
-            "desc": "在 PVD 设备或生产线上镀膜。"
+            "desc": "在 PVD 设备上镀膜。"
           },
           "s4": {
             "title": "成品检验",
@@ -1562,20 +1562,20 @@
           "stepLabel": "步骤"
         },
         "DetailCapability": {
-          "imageAlt": "HANIN 工厂生产区域",
+          "imageAlt": "HANIN 工厂生产区域，服务于PVD真空镀膜",
           "lineCapacityLabel": "PVD 设备",
           "lineCapacityValue": "2 台",
-          "tankSizeLabel": "PVD 生产线",
-          "tankSizeValue": "2 条线",
-          "heading": "PVD 设备与生产线",
+          "tankSizeLabel": "工厂",
+          "tankSizeValue": "光明工业区",
+          "heading": "PVD 设备",
           "subtitle": "PVD 真空镀是 HANIN 工厂在电镀和化学镀之外的独立服务。",
           "f1": {
             "title": "PVD 设备：",
             "desc": "2 台真空镀设备。"
           },
           "f2": {
-            "title": "PVD 生产线：",
-            "desc": "2 条生产线，按订单加工零件。"
+            "title": "位置：",
+            "desc": "河内光明工业区 {{lot}} 地块，与 HANIN 电镀工厂在同一厂区。"
           },
           "f3": {
             "title": "分析室：",
@@ -1609,7 +1609,7 @@
           "colDevice": "设备",
           "colCriteria": "检验内容",
           "heading": "质量控制",
-          "subtitle": "HANIN 工厂的检测设备",
+          "subtitle": "HANIN 工厂适用于PVD真空镀膜的检测设备",
           "r1": {
             "item": "溶液与化学品",
             "device": "分析室及分析用化学试剂",
@@ -1622,7 +1622,7 @@
           },
           "r3": {
             "item": "镀层厚度",
-            "device": "APC-100 镀层测厚仪",
+            "device": "{{apc}} 镀层测厚仪",
             "criteria": "测量镀层厚度，与图纸要求对照。"
           },
           "r4": {
@@ -1638,24 +1638,24 @@
         },
         "DetailGallery": {
           "heading": "工厂现场图片",
-          "subtitle": "HANIN 工厂，光明工业区 49G 地块",
+          "subtitle": "PVD真空镀膜：HANIN 工厂厂区（光明工业区 {{lot}} 地块）",
           "line": {
-            "alt": "HANIN 工厂电镀区域",
+            "alt": "HANIN 工厂电镀区域，服务于PVD真空镀膜",
             "tag": "电镀区域",
             "title": "电镀区域",
-            "desc": "位于光明工业区的 HANIN 工厂电镀线。"
+            "desc": "HANIN 工厂（光明工业区）中服务于PVD真空镀膜的生产线。"
           },
           "surface": {
-            "alt": "HANIN 工厂生产区域",
+            "alt": "HANIN 工厂生产区域，PVD真空镀膜在此进行",
             "tag": "生产",
             "title": "生产区域",
-            "desc": "工厂占地 2,230 平方米。"
+            "desc": "工厂占地 {{area}} 平方米，PVD真空镀膜在此进行。"
           },
           "prep": {
-            "alt": "HANIN 工厂仓储与分析区域",
+            "alt": "HANIN 工厂仓储与分析区域，为PVD真空镀膜做准备",
             "tag": "仓储与分析",
             "title": "仓库与分析室",
-            "desc": "来料入库，并在上线前进行化学品分析。"
+            "desc": "收货、仓储及化学分析，之后进入生产线（PVD真空镀膜）。"
           }
         },
         "RfqFormDetail": {

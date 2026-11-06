@@ -108,7 +108,7 @@
       "secondaryImageAlt": "HANIN 工厂电镀后的机械零件",
       "secondaryBadge": "质量检验",
       "secondaryTitle": "电镀后的机械零件",
-      "secondaryDesc": "使用APC-100测量镀层厚度",
+      "secondaryDesc": "使用{{apc}}测量镀层厚度",
       "labTitle": "检测实验室",
       "labDesc": "NSS与CASS盐雾试验机、霍尔槽试验仪及化学分析室。",
       "labImageAlt": "镀液分析实验室与检测设备",

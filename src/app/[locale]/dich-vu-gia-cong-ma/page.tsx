@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 
 export default function DichVuGiaCongMaPage() {
   return (
-    <ClientMessages keys={["DichVu.RfqFormCategory"]}>
+    <ClientMessages keys={["AttachField", "DichVu.RfqFormCategory"]}>
     <>
       <ServiceBanner />
       <div className="px-margin py-space-lg flex flex-col w-full">
