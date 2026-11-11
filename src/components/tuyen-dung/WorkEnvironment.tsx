@@ -22,7 +22,7 @@ export default function WorkEnvironment() {
               <Photo
                 alt={t("mainImageAlt")}
                 className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                src={siteImg("tuyen-dung/WorkEnvironment#1", "/images/hanin/slide04-khu-vuc-be-ma.webp")}
+                src={siteImg("tuyen-dung/WorkEnvironment#1", "/images/profile-lib/cong-nhan-kiem-tra-gia-treo-ma.jpg")}
               />
               </div>
               <div className="p-space-lg bg-white flex flex-col gap-1 text-slate-900">
@@ -46,7 +46,7 @@ export default function WorkEnvironment() {
               <Photo
                 alt={t("secondaryImageAlt")}
                 className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                src={siteImg("tuyen-dung/WorkEnvironment#2", "/images/hanin/slide11-kim-loai-ma-crom-tay-nam.webp")}
+                src={siteImg("tuyen-dung/WorkEnvironment#2", "/images/factory/qc-5.jpg")}
               />
               </div>
               <div className="p-space-md bg-white flex flex-col text-slate-900">
@@ -67,7 +67,7 @@ export default function WorkEnvironment() {
                 <Photo
                   alt={t("labImageAlt")}
                   className="w-full h-full object-cover"
-                  src={siteImg("tuyen-dung/WorkEnvironment#3", "/images/hanin/slide10-phong-phan-tich.webp")}
+                  src={siteImg("tuyen-dung/WorkEnvironment#3", "/images/profile-lib/thiet-bi-dien-phan-thi-nghiem-coc-thuy-tinh.jpg")}
                 />
               </div>
               <div className="p-space-md flex flex-col gap-1">

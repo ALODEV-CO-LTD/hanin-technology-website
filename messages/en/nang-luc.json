@@ -18,7 +18,7 @@
       "breadcrumbHome": "Home",
       "breadcrumbCurrent": "Manufacturing Capability",
       "title": "MANUFACTURING CAPABILITY",
-      "description": "The workshop, plating lines, inspection equipment and wastewater treatment system of HANIN.",
+      "description": "HANIN's three plating lines, 2 PVD machines, spray booths, analysis lab, inspection equipment and {{waste}} m³/day wastewater treatment system.",
       "ctaExplore": "VIEW THE FACTORY",
       "ctaLines": "PRODUCTION LINES",
       "ctaQa": "TESTING LAB"
@@ -114,7 +114,7 @@
         "wastewater": {
           "badge": "Environment",
           "title": "Wastewater Treatment System",
-          "desc": "Production wastewater is treated with a settling tank and filter press.",
+          "desc": "Process wastewater is treated through settling tanks and a filter press, operated from a control cabinet.",
           "alt": "Wastewater treatment area of the HANIN factory",
           "spec1Label": "Capacity",
           "spec1Value": "{{waste}} m³/day and night",
@@ -187,7 +187,7 @@
         },
         "mainPlating": {
           "title": "Plating",
-          "desc": "Plating by line type: barrel plating, rack plating or automatic line."
+          "desc": "Plating on the suitable line: automatic on JIG, semi-automatic rack or barrel; copper, nickel, chrome, zinc or tin tanks as required."
         },
         "thickness": {
           "title": "Thickness and Salt Spray",
@@ -212,7 +212,7 @@
         "barrel": {
           "tag": "Barrel Plating",
           "title": "Barrel Plating Line",
-          "desc": "Plating small parts in large quantities in a rotating barrel. With a vibratory machine and degreasing, a copper plating tank and a nickel plating tank.",
+          "desc": "Barrel plating of small parts in large quantities (bolts, screws, nuts, cable lugs...). Includes a vibratory degreasing machine, copper plating tank and nickel plating tank.",
           "alt": "Barrel plating line, with the barrel immersed in the plating tank",
           "capacityLabel": "CAPACITY:",
           "capacityValue": "{{rot:full}} kg/day ({{rotPcs:full}} products/day)",
@@ -222,7 +222,7 @@
         "rack": {
           "tag": "Rack plating",
           "title": "Semi-Automatic Metal Rack Plating Line",
-          "desc": "Plating metal parts mounted on racks.",
+          "desc": "Plating of metal parts mounted one by one on JIG racks, suited to handles, hinges, pins and assembly parts. Includes a staging area for racks awaiting plating and the plating tanks.",
           "alt": "Semi-Automatic Metal Rack Plating Line",
           "capacityLabel": "CAPACITY:",
           "capacityValue": "{{hang:full}} products/day",
@@ -272,19 +272,19 @@
       "items": {
         "lab": {
           "title": "Analysis lab",
-          "desc": "Analyzing the plating solution with analytical chemicals."
+          "desc": "Analyzes the composition of plating solutions with analytical chemicals and instruments to keep the coating stable."
         },
         "hullCell": {
           "title": "Hull Cell Tester",
-          "desc": "Testing the plating solution on a sample panel to assess the plating quality in the tank."
+          "desc": "Tests plating solution on a sample panel to assess coating quality and provide a basis for adjusting the bath."
         },
         "thickness": {
           "title": "Plating thickness gauge",
-          "desc": "Measuring plating thickness with the {{apc}} gauge."
+          "desc": "Measures plating thickness with the {{apc}} (Automatic Precision Control) and compares it with the drawing requirement."
         },
         "saltSpray": {
           "title": "NSS and CASS Salt Spray Chambers",
-          "desc": "Corrosion testing in neutral salt spray (NSS) and acid salt spray (CASS) chambers."
+          "desc": "Corrosion tests in neutral salt spray (NSS) and acid salt spray (CASS) chambers to evaluate the corrosion resistance of the coating."
         }
       },
       "reliability": {

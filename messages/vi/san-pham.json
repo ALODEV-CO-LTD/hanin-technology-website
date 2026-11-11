@@ -201,7 +201,7 @@
           "note": "Phun muối trung tính và phun muối axit"
         }
       },
-      "heroDescription": "Chi tiết trang trí hoặc chống ăn mòn được mạ trên nền nhựa ABS, ABS/PC hoặc kim loại. Trình tự: tiền xử lý bề mặt, mạ theo công nghệ phù hợp với vật liệu nền, kiểm tra lớp mạ.",
+      "heroDescription": "Chi tiết trang trí hoặc chống ăn mòn được mạ trên nền nhựa ABS, ABS/PC hoặc kim loại. Trình tự: tiền xử lý bề mặt, mạ theo công nghệ phù hợp với vật liệu nền (niken crom trên nhựa; niken, kẽm, đồng, thiếc, phốt phát mangan đen trên kim loại), đo độ dày và thử phun muối.",
       "heroImageAlt": "Chi tiết trang trí sau khi mạ tại nhà máy HANIN",
       "gallery": {
         "item1": {
@@ -226,7 +226,7 @@
         }
       },
       "overviewParagraphs": {
-        "p1": "Với nhựa ABS hoặc ABS/PC, chi tiết được lắp lên móc treo rồi qua các bước tẩy dầu, xâm thực, trung hòa, hoạt hóa HCl và hoạt hóa Paradi trước khi mạ niken-crom. Các lớp niken satin, crom đen và xước Hair Line được làm trên nền này.",
+        "p1": "Với nhựa ABS hoặc ABS/PC, chi tiết được lắp lên móc treo rồi qua các bước tẩy dầu, xâm thực, trung hòa, hoạt hóa HCl và hoạt hóa paladi trước khi mạ niken-crom. Các lớp niken satin, crom đen và xước Hair Line được làm trên nền này.",
         "p2": "Với kim loại như sắt, thép, đồng, nhôm, quy trình gồm tẩy dầu, tẩy gỉ, hoạt hóa rồi mạ niken, kẽm, đồng, thiếc hoặc phốt phát đen, tùy yêu cầu của chi tiết. Chi tiết nhỏ có thể mạ quay, chi tiết lớn hơn mạ treo.",
         "p3": "Sau khi mạ, chi tiết được sấy khô, đo độ dày lớp mạ, thử phun muối theo yêu cầu và kiểm tra thành phẩm trước khi đóng gói."
       },
@@ -319,7 +319,7 @@
         },
         "item5": {
           "title": "Phun sơn và in",
-          "description": "Phun sơn thủ công và tự động, in lụa, in phun, laser trên sản phẩm nhựa và kim loại.",
+          "description": "Phun sơn thủ công, phòng 6 trụ và dây chuyền phun tự động; in và laser cutting trên sản phẩm nhựa và kim loại.",
           "cta": "TÌM HIỂU DỊCH VỤ"
         },
         "item6": {

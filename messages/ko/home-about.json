@@ -8,15 +8,15 @@
     "statsLabel": "주요 수치",
     "stats": {
       "0": {
-        "value": "350",
+        "value": "350명",
         "label": "Hanin Tech 그룹 전체 직원"
       },
       "1": {
-        "value": "70",
+        "value": "70명",
         "label": "HANIN 도금 공장 직원"
       },
       "2": {
-        "value": "25",
+        "value": "25대",
         "label": "사출기, 75–1,000톤 (Hanin Tech 그룹)"
       },
       "3": {

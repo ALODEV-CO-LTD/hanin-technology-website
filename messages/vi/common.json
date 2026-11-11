@@ -58,19 +58,19 @@
   "Meta": {
     "site": {
       "title": "HANIN",
-      "description": "Xử lý mạ trên nền nhựa ABS và kim loại, sơn và in cho khách hàng công nghiệp."
+      "description": "Gia công mạ niken crom trên nhựa ABS; mạ niken, kẽm, đồng, thiếc, phốt phát mangan đen trên kim loại; PVD, sơn và in tại KCN Quang Minh, Hà Nội."
     },
     "home": {
       "title": "HANIN | Gia công mạ nhựa ABS và kim loại, PVD, sơn, in",
-      "description": "Xử lý mạ trên nền nhựa ABS và kim loại, sơn và in cho khách hàng công nghiệp."
+      "description": "Gia công mạ niken crom trên nhựa ABS; mạ niken, kẽm, đồng, thiếc, phốt phát mangan đen trên kim loại; PVD, sơn và in tại KCN Quang Minh, Hà Nội."
     },
     "gioiThieu": {
       "title": "Giới thiệu HANIN | Nhà máy mạ tại KCN Quang Minh",
-      "description": "Thông tin về HANIN và năng lực xử lý mạ trên nền nhựa và kim loại."
+      "description": "HANIN thuộc hệ thống Hanin Tech: nhà máy mạ nhựa ABS và kim loại tại KCN Quang Minh, có dây chuyền mạ, PVD, phun sơn và phòng phân tích."
     },
     "dichVu": {
       "title": "Dịch vụ mạ và xử lý bề mặt",
-      "description": "Mạ niken-crom nhựa ABS, mạ niken kim loại, mạ kẽm, đồng, thiếc, phốt phát đen, PVD, phun sơn và in."
+      "description": "Mạ niken crom nhựa ABS (crom 3+, 6+, satin, crom đen, Hair Line); niken điện phân, niken hóa, kẽm, đồng, thiếc, phốt phát mangan đen; PVD, sơn, in."
     },
     "sanPham": {
       "title": "Sản phẩm & Dự án",
@@ -78,7 +78,7 @@
     },
     "nangLuc": {
       "title": "Năng lực sản xuất",
-      "description": "Nhà xưởng, dây chuyền mạ tự động, mạ treo, mạ quay và khu kiểm tra lớp mạ."
+      "description": "Dây chuyền mạ tự động {{auto:k}} nghìn sản phẩm/ngày, mạ treo, mạ quay, PVD, phòng phân tích, đo độ dày, phun muối NSS/CASS, xử lý nước thải."
     },
     "tinTuc": {
       "title": "Tin tức và bản tin kỹ thuật",

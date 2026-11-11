@@ -58,19 +58,19 @@
   "Meta": {
     "site": {
       "title": "HANIN",
-      "description": "面向工业客户的ABS塑料与金属电镀、喷漆及印刷。"
+      "description": "ABS 塑料镀镍铬；金属镀镍、锌、铜、锡及黑色锰系磷化；PVD、喷漆与印刷。河内光明工业区。"
     },
     "home": {
       "title": "HANIN | ABS塑料与金属电镀、PVD、喷漆及印刷",
-      "description": "面向工业客户的ABS塑料与金属电镀、喷漆及印刷。"
+      "description": "ABS 塑料镀镍铬；金属镀镍、锌、铜、锡及黑色锰系磷化；PVD、喷漆与印刷。河内光明工业区。"
     },
     "gioiThieu": {
       "title": "关于HANIN | 光明工业区电镀工厂",
-      "description": "HANIN简介及塑料与金属电镀处理能力。"
+      "description": "HANIN 隶属 Hanin Tech 集团：位于光明工业区的 ABS 与金属电镀工厂，设有电镀线、PVD、喷漆和分析室。"
     },
     "dichVu": {
       "title": "电镀与表面处理服务",
-      "description": "ABS塑料镍铬电镀、金属镀镍、镀锌铜锡、黑色磷化、PVD、喷漆与印刷。"
+      "description": "ABS 镀镍铬（三价铬、六价铬、缎面、黑铬、拉丝）；电解镍、化学镍、镀锌、铜、锡、黑色锰系磷化；PVD、喷漆、印刷。"
     },
     "sanPham": {
       "title": "产品与项目",
@@ -78,7 +78,7 @@
     },
     "nangLuc": {
       "title": "生产能力",
-      "description": "厂房、自动电镀线、挂镀线、滚镀线及镀层检验区。"
+      "description": "日产 {{auto:wan}} 万件的自动电镀线、挂镀、滚镀、PVD、分析室、测厚、NSS/CASS 盐雾试验及废水处理。"
     },
     "tinTuc": {
       "title": "新闻与技术简报",

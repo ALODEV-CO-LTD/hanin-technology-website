@@ -5,7 +5,7 @@
       "breadcrumbHome": "Trang chủ",
       "breadcrumbCurrent": "Giới thiệu",
       "title": "Giới thiệu HANIN",
-      "subtitle": "Thông tin công ty, hệ thống Hanin Tech, dây chuyền mạ và chứng nhận."
+      "subtitle": "Nhà máy gia công mạ nhựa ABS và kim loại thuộc hệ thống Hanin Tech: dây chuyền mạ, sơn, in, PVD, phòng phân tích và chứng nhận ISO 9001:2015."
     },
     "CompanyIntroduction": {
       "imageAlt": "Mặt tiền kiến trúc hiện đại của nhà máy tại KCN Quang Minh, Hà Nội",
@@ -13,7 +13,7 @@
       "areaBadge": "Diện tích mặt bằng: {{area}} m²",
       "heading": "Gia công mạ cho khách hàng công nghiệp",
       "paragraph1Strong": "Công ty Cổ phần Công nghiệp Mạ HANIN",
-      "paragraph1Rest": "chuyên xử lý mạ trên nền nhựa ABS và kim loại, đồng thời nhận sơn và in trên sản phẩm nhựa, kim loại.",
+      "paragraph1Rest": "chuyên xử lý mạ trên nền nhựa ABS, ABS/PC và kim loại (sắt, đồng, thép, nhôm), đồng thời nhận sơn và in trên sản phẩm nhựa, kim loại. Công nghệ gồm niken crom, niken satin, niken điện phân, niken hóa, niken đen, mạ kẽm, mạ đồng, mạ thiếc và phốt phát mangan đen.",
       "paragraph2": "Công ty thành lập năm {{founded}}, nhà máy đặt tại Lô {{lot}}, KCN Quang Minh, Hà Nội, trên mặt bằng {{area}} m². Nhà máy có {{staff}} nhân sự. Hơn {{customers}} khách hàng sử dụng dịch vụ gia công.",
       "field": {
         "label": "Lĩnh vực",
@@ -30,7 +30,7 @@
         "value": "KCN Quang Minh, Hà Nội",
         "note": "Địa chỉ: Lô {{lot}}, KCN Quang Minh"
       },
-      "paragraph3": "HANIN thuộc hệ thống Hanin Tech, gồm xưởng khuôn IPM, nhà máy mạ HANIN, xưởng Press và xưởng Showa, với {{hqStaff}} người."
+      "paragraph3": "HANIN thuộc hệ thống Hanin Tech (thành lập {{hqFounded}}), gồm xưởng khuôn IPM, nhà máy mạ HANIN, nhà máy số 4 (Press, dập kim loại) và nhà máy số 5 (Showa, đúc và lắp ráp), với {{hqStaff}} người."
     },
     "CompanyJourney": {
       "heading": "Hành trình phát triển",
@@ -77,19 +77,19 @@
       },
       "technology": {
         "title": "Công nghệ và thiết bị",
-        "desc": "2 máy PVD, buồng phun sơn thủ công và tự động, dây chuyền mạ tự động dùng JIG và cẩu trục.",
+        "desc": "2 máy mạ chân không PVD, phòng phun sơn thủ công và phòng 6 trụ, dây chuyền phun sơn tự động, dây chuyền mạ tự động dùng JIG và cẩu trục.",
         "metricLabel": "Công nghệ",
         "metricValue": "Mạ, PVD, phun sơn"
       },
       "quality": {
         "title": "Kiểm soát chất lượng",
-        "desc": "Đo độ dày lớp mạ, phun muối NSS và CASS, thử Hull cell, phòng phân tích.",
+        "desc": "Đo độ dày lớp mạ bằng {{apc}}, thử phun muối NSS và CASS, thử Hull cell, phòng phân tích dung dịch bể mạ; 10 thiết bị test độ tin cậy sau phun sơn.",
         "metricLabel": "Kiểm tra",
         "metricValue": "NSS, CASS, Hull cell"
       },
       "support": {
         "title": "Kỹ thuật",
-        "desc": "Xác định quy trình mạ theo bản vẽ và yêu cầu kỹ thuật của từng chi tiết.",
+        "desc": "Kỹ sư tư vấn công nghệ mạ phù hợp nền ABS, ABS/PC hoặc kim loại, yêu cầu bề mặt (bóng, satin, đen, Hair Line) và lớp mạ theo bản vẽ của từng chi tiết.",
         "metricLabel": "Tư vấn kỹ thuật",
         "metricValue": "Theo bản vẽ"
       }
@@ -99,17 +99,17 @@
       "subtitle": "Yêu cầu kỹ thuật được xác định trên bản vẽ và kiểm tra bằng thiết bị tại nhà máy.",
       "precision": {
         "title": "Theo bản vẽ",
-        "desc": "Mạ theo yêu cầu trên bản vẽ của khách hàng và đo độ dày lớp mạ.",
+        "desc": "Lớp mạ, bề mặt và độ dày theo yêu cầu trên bản vẽ của khách hàng; độ dày được đo bằng máy {{apc}}.",
         "note": "Đo độ dày lớp mạ"
       },
       "stability": {
         "title": "Kiểm soát bể mạ",
-        "desc": "Phân tích dung dịch bể mạ và thử Hull cell tại phòng phân tích.",
+        "desc": "Dung dịch bể mạ được phân tích hóa học và thử Hull cell tại phòng phân tích để giữ lớp mạ ổn định.",
         "note": "Phòng phân tích, Hull cell"
       },
       "partnership": {
         "title": "Trao đổi kỹ thuật",
-        "desc": "Trao đổi với bộ phận kỹ thuật của khách hàng về yêu cầu bề mặt.",
+        "desc": "Kỹ sư HANIN trao đổi với bộ phận kỹ thuật, QA của khách hàng về nền vật liệu, lớp mạ, bề mặt và phương pháp thử.",
         "note": "Làm việc với bộ phận kỹ thuật của khách hàng"
       }
     },
@@ -149,7 +149,7 @@
       "cta": "XEM CHỨNG NHẬN",
       "certificateImageAlt": "Giấy chứng nhận ISO 9001:2015 của Hanin Technology Việt Nam do ICB cấp",
       "certificateTag": "Giấy chứng nhận",
-      "certificateTitle": "ISO 9001:2015 — Hệ thống quản lý chất lượng",
+      "certificateTitle": "ISO 9001:2015 - Hệ thống quản lý chất lượng",
       "certificateIssuer": "Tổ chức chứng nhận: Công ty Cổ phần Chứng nhận Quốc tế (ICB)",
       "certificateHolderLabel": "Đơn vị được chứng nhận",
       "certificateHolderValue": "Công ty Cổ phần Công nghệ Hanin Việt Nam",

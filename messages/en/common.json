@@ -58,19 +58,19 @@
   "Meta": {
     "site": {
       "title": "HANIN",
-      "description": "Plating on ABS plastic and metal, plus painting and printing, for industrial customers."
+      "description": "Nickel-chrome plating on ABS; nickel, zinc, copper, tin and black manganese phosphating on metal; PVD, painting and printing in Quang Minh, Hanoi."
     },
     "home": {
       "title": "HANIN | ABS Plastic and Metal Plating, PVD, Painting, Printing",
-      "description": "Plating on ABS plastic and metal, plus painting and printing, for industrial customers."
+      "description": "Nickel-chrome plating on ABS; nickel, zinc, copper, tin and black manganese phosphating on metal; PVD, painting and printing in Quang Minh, Hanoi."
     },
     "gioiThieu": {
       "title": "About HANIN | Plating Factory at Quang Minh, Hanoi",
-      "description": "About HANIN and its plating capability on plastic and metal substrates."
+      "description": "HANIN, part of the Hanin Tech group: a plating plant for ABS and metal in Quang Minh with plating lines, PVD, spray painting and an analysis lab."
     },
     "dichVu": {
       "title": "Plating and Surface Treatment Services",
-      "description": "Nickel-chrome plating on ABS, nickel plating on metal, zinc, copper, tin plating, black phosphating, PVD, spray painting and printing."
+      "description": "Nickel-chrome on ABS (Cr3+, Cr6+, satin, black, hairline); electrolytic and electroless nickel, zinc, copper, tin, black manganese phosphating; PVD, paint, print."
     },
     "sanPham": {
       "title": "Products & Projects",
@@ -78,7 +78,7 @@
     },
     "nangLuc": {
       "title": "Manufacturing Capability",
-      "description": "Factory floor, automatic plating line, rack plating, barrel plating and plating inspection area."
+      "description": "Automatic plating line at {{auto:k}} thousand pieces/day, rack and barrel plating, PVD, analysis lab, thickness gauge, NSS/CASS salt spray, wastewater treatment."
     },
     "tinTuc": {
       "title": "News and Technical Bulletins",

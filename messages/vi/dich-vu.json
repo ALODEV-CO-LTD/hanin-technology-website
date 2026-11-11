@@ -650,7 +650,7 @@
           "heading": "Các loại mạ và phạm vi ứng dụng",
           "col1": {
             "title": "Mạ trên nền nhựa",
-            "p1": "Nhựa không dẫn điện nên phải xử lý bề mặt trước khi mạ kim loại. Hàng ABS đi qua các bước xâm thực, trung hòa, hoạt hóa Paradi, sau đó",
+            "p1": "Nhựa không dẫn điện nên phải kim loại hóa bề mặt trước khi mạ. Hàng ABS đi qua các bước xâm thực, trung hòa, hoạt hóa paladi, sau đó",
             "p1Strong": "mạ niken và crom",
             "p2": "Có thể tạo xước Hair Line trên lớp niken crom khi sản phẩm yêu cầu."
           },
@@ -658,11 +658,11 @@
             "title": "Các loại mạ",
             "intro": "Bốn loại mạ trên nền nhựa ABS:",
             "item1Strong": "Niken Crom 3+ và Niken Crom 6+:",
-            "item1": "Hai công nghệ mạ crom, bề mặt sáng bóng.",
+            "item1": "Hai công nghệ mạ crom: crom hóa trị 3 và crom hóa trị 6, cho bề mặt sáng bóng trên lớp niken.",
             "item2Strong": "Niken Satin:",
-            "item2": "Bề mặt satin.",
+            "item2": "Bề mặt mờ mịn, ít phản chiếu, dùng cho chi tiết trang trí.",
             "item3Strong": "Niken Crom đen:",
-            "item3": "Bề mặt đen; tạo xước Hair Line trên niken crom khi cần."
+            "item3": "Bề mặt đen bóng; có thể tạo xước Hair Line trên lớp niken crom khi sản phẩm yêu cầu."
           },
           "col3": {
             "title": "Vật liệu nền",
@@ -693,8 +693,8 @@
             "desc": "Trung hòa hóa chất còn lại; có bước thu hồi và sóng rung để rửa sạch."
           },
           "s5": {
-            "title": "Hoạt hóa HCl và Paradi",
-            "desc": "Hoạt hóa bằng HCl rồi hoạt hóa Paradi để nhựa nhận lớp kim loại đầu tiên."
+            "title": "Hoạt hóa HCl và paladi",
+            "desc": "Hoạt hóa bằng HCl rồi hoạt hóa paladi để nhựa nhận lớp kim loại đầu tiên."
           },
           "s6": {
             "title": "Mạ niken, crom và kiểm tra",
@@ -760,17 +760,17 @@
           "r1": {
             "item": "Dung dịch và hóa chất",
             "device": "Phòng phân tích và hóa chất phân tích",
-            "criteria": "Phân tích thành phần dung dịch, hóa chất trước khi đưa vào sản xuất."
+            "criteria": "Phân tích thành phần dung dịch các bể mạ nhựa (đồng, niken, crom) bằng hóa chất và thiết bị phân tích."
           },
           "r2": {
             "item": "Dung dịch mạ",
             "device": "Máy thử Hull cell",
-            "criteria": "Thử Hull cell để kiểm tra dung dịch mạ."
+            "criteria": "Thử Hull cell trên tấm mẫu để đánh giá dung dịch mạ."
           },
           "r3": {
             "item": "Độ dày lớp mạ",
             "device": "Máy đo độ dày lớp mạ {{apc}}",
-            "criteria": "Đo độ dày lớp mạ, đối chiếu yêu cầu bản vẽ."
+            "criteria": "Đo độ dày các lớp mạ trên thành phẩm, đối chiếu yêu cầu bản vẽ."
           },
           "r4": {
             "item": "Chống ăn mòn (trung tính)",
@@ -872,7 +872,7 @@
             "title": "Các loại niken",
             "p1": "HANIN mạ năm nhóm niken trên nền kim loại:",
             "p1Strong": "niken điện phân, niken hóa, niken đen, niken satin và niken crom",
-            "p2": "Niken điện phân cho lớp mạ sáng bóng, bền. Niken hóa có độ cứng cao, chống mài mòn và chịu nhiệt tốt."
+            "p2": "Niken điện phân cho lớp mạ sáng bóng, bền, tăng tính thẩm mỹ. Niken hóa (niken hóa học) có độ cứng cao, chống mài mòn và chịu nhiệt tốt."
           },
           "col2": {
             "title": "Sản phẩm tiêu biểu",
@@ -965,7 +965,7 @@
             "tag": "Vệ sinh",
             "title": "Vòi nước và phụ kiện",
             "desc": "Niken đen, niken satin hoặc niken crom theo yêu cầu bề mặt.",
-            "note": "Mạ crom"
+            "note": "Niken đen, satin hoặc crom"
           },
           "a4": {
             "tag": "Trang trí",
@@ -983,17 +983,17 @@
           "r1": {
             "item": "Dung dịch và hóa chất",
             "device": "Phòng phân tích và hóa chất phân tích",
-            "criteria": "Phân tích thành phần dung dịch, hóa chất trước khi đưa vào sản xuất."
+            "criteria": "Phân tích thành phần dung dịch bể niken bằng hóa chất và thiết bị phân tích của phòng phân tích."
           },
           "r2": {
             "item": "Dung dịch mạ",
             "device": "Máy thử Hull cell",
-            "criteria": "Thử Hull cell để kiểm tra dung dịch mạ."
+            "criteria": "Thử Hull cell trên tấm mẫu để đánh giá dung dịch mạ niken."
           },
           "r3": {
             "item": "Độ dày lớp mạ",
             "device": "Máy đo độ dày lớp mạ {{apc}}",
-            "criteria": "Đo độ dày lớp mạ, đối chiếu yêu cầu bản vẽ."
+            "criteria": "Đo độ dày lớp niken trên thành phẩm, đối chiếu yêu cầu bản vẽ."
           },
           "r4": {
             "item": "Chống ăn mòn (trung tính)",
@@ -1095,7 +1095,7 @@
             "title": "Các lớp mạ và xử lý",
             "p1": "HANIN mạ kẽm, mạ đồng, mạ thiếc và xử lý phốt phát mangan đen cho chi tiết kim loại nhỏ. Lớp phốt phát mangan đen",
             "p1Strong": "chống gỉ sét, tăng độ bám dính và bền màu",
-            "p2": "Mạ kẽm và phốt phát mangan đen chạy được trên cả dây chuyền mạ treo bán tự động và mạ quay."
+            "p2": "Mạ kẽm và phốt phát mangan đen chạy được trên cả dây chuyền mạ treo bán tự động và mạ quay. Phốt phát mangan đen là lớp chuyển hóa màu đen, thường được nhúng dầu chống gỉ sau khi tạo màng."
           },
           "col2": {
             "title": "Sản phẩm tiêu biểu",
@@ -1174,25 +1174,25 @@
           "a1": {
             "tag": "Phốt phát đen",
             "title": "Vít, bu lông, nắp che",
-            "desc": "Vít, bu lông, nắp che, bản mã.",
+            "desc": "Phốt phát mangan đen cho chi tiết thép cần chống gỉ, tăng độ bám dính và bền màu.",
             "note": "Chống gỉ sét, bền màu"
           },
           "a2": {
             "tag": "Mạ thiếc",
             "title": "Đai ốc, đinh tán",
-            "desc": "Bu lông, thanh kim loại, đai ốc, đinh tán.",
+            "desc": "Mạ thiếc cho bu lông, thanh kim loại, đai ốc và đinh tán.",
             "note": "Mạ thiếc"
           },
           "a3": {
             "tag": "Mạ kẽm",
             "title": "Ống lót, chốt trục",
-            "desc": "Tấm kim loại, ống lót, chốt trục, vít, trục định vị.",
+            "desc": "Mạ kẽm cho tấm kim loại, ống lót, chốt trục, vít và trục định vị.",
             "note": "Mạ kẽm"
           },
           "a4": {
             "tag": "Chi tiết điện",
             "title": "Đầu cos",
-            "desc": "Đầu cos mạ thiếc.",
+            "desc": "Mạ thiếc cho đầu cos dùng nối dây điện.",
             "note": "Mạ thiếc"
           }
         },
@@ -1205,7 +1205,7 @@
           "r1": {
             "item": "Dung dịch và hóa chất",
             "device": "Phòng phân tích và hóa chất phân tích",
-            "criteria": "Phân tích thành phần dung dịch, hóa chất trước khi đưa vào sản xuất."
+            "criteria": "Phân tích thành phần dung dịch bể mạ kẽm, đồng, thiếc và dung dịch phốt phát bằng hóa chất và thiết bị phân tích."
           },
           "r2": {
             "item": "Dung dịch mạ",
@@ -1215,7 +1215,7 @@
           "r3": {
             "item": "Độ dày lớp mạ",
             "device": "Máy đo độ dày lớp mạ {{apc}}",
-            "criteria": "Đo độ dày lớp mạ, đối chiếu yêu cầu bản vẽ."
+            "criteria": "Đo độ dày lớp mạ kẽm, đồng, thiếc trên thành phẩm, đối chiếu yêu cầu bản vẽ."
           },
           "r4": {
             "item": "Chống ăn mòn (trung tính)",
@@ -1323,11 +1323,11 @@
             "title": "Sản phẩm tiêu biểu",
             "intro": "Một số sản phẩm đã sơn và in tại nhà máy:",
             "item1Strong": "Linh kiện đèn ô tô:",
-            "item1": "Holder sơn spray.",
+            "item1": "Holder đèn sơn spray (mặt trong sơn bạc, chi tiết nhựa trắng nền).",
             "item2Strong": "Khung màn hình:",
-            "item2": "Sơn và in.",
+            "item2": "Sơn nền đen, có lỗ loa và lỗ nút, in và cắt laser chi tiết.",
             "item3Strong": "Bảng điều khiển:",
-            "item3": "Sơn và in."
+            "item3": "Bảng điều khiển kim loại sơn và in ký hiệu chức năng (POWER, AUTO, START...)."
           },
           "col3": {
             "title": "Vật liệu nền",
@@ -1525,7 +1525,7 @@
             "title": "Năng lực PVD",
             "intro": "Nhà máy có:",
             "item1Strong": "2 máy PVD:",
-            "item1": "Mạ chân không theo mẻ.",
+            "item1": "Mạ chân không theo mẻ: chi tiết được xếp lên giá trong buồng, hút chân không rồi phủ lớp kim loại.",
             "item2Strong": "Vị trí:",
             "item2": "Lô {{lot}}, KCN Quang Minh, Hà Nội, cùng khu nhà máy mạ HANIN.",
             "item3Strong": "Bề mặt hoàn thiện:",

@@ -201,7 +201,7 @@
           "note": "Neutral salt spray and acid salt spray"
         }
       },
-      "heroDescription": "Decorative or corrosion-resistant parts plated on ABS, ABS/PC or metal substrates. Sequence: surface pretreatment, plating by the technology suited to the substrate, plating inspection.",
+      "heroDescription": "Decorative or corrosion-resistant parts plated on ABS, ABS/PC or metal substrates. Sequence: surface pretreatment, plating by the process suited to the substrate (nickel-chrome on plastic; nickel, zinc, copper, tin and black manganese phosphating on metal), then thickness measurement and salt spray testing.",
       "heroImageAlt": "Decorative parts after plating at the HANIN factory",
       "gallery": {
         "item1": {
@@ -319,7 +319,7 @@
         },
         "item5": {
           "title": "Painting and Printing",
-          "description": "Manual and automatic spray painting, screen printing, inkjet printing and laser on plastic and metal products.",
+          "description": "Manual spray booths, 6-gun booths and the automatic spray line; printing and laser cutting on plastic and metal products.",
           "cta": "EXPLORE THE SERVICE"
         },
         "item6": {

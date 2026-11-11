@@ -6,7 +6,7 @@
     "pillars": [
       {
         "title": "Plating on ABS and ABS/PC Substrates",
-        "desc": "Surface treatment of ABS and ABS/PC plastic parts by rack plating; a hairline finish can be applied on the nickel layer.",
+        "desc": "Rack plating on the automatic line, {{auto:k}} thousand pieces per day: trivalent and hexavalent nickel-chrome, satin nickel and black nickel-chrome; hairline finish can be made on the nickel-chrome layer.",
         "imageAlt": "ABS plastic grille trim part after nickel-chrome plating",
         "chips": [
           "Nickel Chrome 3+",
@@ -18,7 +18,7 @@
       },
       {
         "title": "Plating on Metal Substrates",
-        "desc": "Plating on iron, copper, steel, aluminum and other metals.",
+        "desc": "Electrolytic nickel (bright, durable), electroless nickel (high hardness, wear and heat resistance), black nickel, nickel-chrome and satin plating on iron, copper, steel and aluminum.",
         "imageAlt": "Metal part after electroless nickel plating",
         "chips": [
           "Electrolytic Nickel",

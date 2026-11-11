@@ -273,6 +273,10 @@
    "section": "tuyen-dung/PageHero"
   },
   {
+   "page": "tuyen-dung",
+   "section": "tuyen-dung/WorkEnvironment"
+  },
+  {
    "page": "dung-chung",
    "section": "dung-chung/photo-focus"
   }
@@ -317,14 +321,6 @@
  ],
  "/images/hanin/slide04-day-chuyen-ma-tu-dong.webp": [
   {
-   "page": "gioi-thieu",
-   "section": "gioi-thieu/FactoryOverview"
-  },
-  {
-   "page": "home",
-   "section": "home/FactoryShowcase"
-  },
-  {
    "page": "nang-luc",
    "section": "nang-luc/ProductionLines"
   }
@@ -337,16 +333,6 @@
   {
    "page": "nang-luc",
    "section": "nang-luc/AutomatedVsManual"
-  },
-  {
-   "page": "tuyen-dung",
-   "section": "tuyen-dung/WorkEnvironment"
-  }
- ],
- "/images/hanin/slide04-san-pham-moc-vao-jig.webp": [
-  {
-   "page": "gioi-thieu",
-   "section": "gioi-thieu/FactoryOverview"
   }
  ],
  "/images/hanin/slide05-tay-gat-sen-tam.webp": [
@@ -361,27 +347,13 @@
    "section": "nang-luc/AutomatedVsManual"
   }
  ],
- "/images/hanin/slide08-may-rung-va-tay-dau.webp": [
-  {
-   "page": "nang-luc",
-   "section": "nang-luc/EquipmentGrid"
-  }
- ],
  "/images/hanin/slide08-toan-canh-day-chuyen-ma-quay.webp": [
-  {
-   "page": "home",
-   "section": "home/FactoryShowcase"
-  },
   {
    "page": "nang-luc",
    "section": "nang-luc/FactoryOverview"
   }
  ],
  "/images/hanin/slide09-be-ma.webp": [
-  {
-   "page": "home",
-   "section": "home/FactoryShowcase"
-  },
   {
    "page": "nang-luc",
    "section": "nang-luc/FactoryGallery"
@@ -395,18 +367,8 @@
  ],
  "/images/hanin/slide09-line-ma-ban-tu-dong.webp": [
   {
-   "page": "gioi-thieu",
-   "section": "gioi-thieu/FactoryOverview"
-  },
-  {
    "page": "nang-luc",
    "section": "nang-luc/FactoryGallery"
-  }
- ],
- "/images/hanin/slide10-hoa-chat-va-thiet-bi-phan-tich.webp": [
-  {
-   "page": "home",
-   "section": "home/FactoryShowcase"
   }
  ],
  "/images/hanin/slide10-may-thu-hull-cell.webp": [
@@ -415,45 +377,11 @@
    "section": "nang-luc/TestingAnalysis"
   }
  ],
- "/images/hanin/slide10-phong-phan-tich.webp": [
-  {
-   "page": "gioi-thieu",
-   "section": "gioi-thieu/FactoryOverview"
-  },
-  {
-   "page": "tuyen-dung",
-   "section": "tuyen-dung/WorkEnvironment"
-  }
- ],
- "/images/hanin/slide11-kim-loai-ma-crom-tay-nam.webp": [
-  {
-   "page": "tuyen-dung",
-   "section": "tuyen-dung/WorkEnvironment"
-  }
- ],
- "/images/hanin/slide13-day-chuyen-phun-son-tu-dong.webp": [
-  {
-   "page": "nang-luc",
-   "section": "nang-luc/EquipmentGrid"
-  }
- ],
  "/images/hanin/slide13-may-ma-chan-khong-pvd.webp": [
   {
    "page": "home",
    "section": "home/FactoryShowcase"
   },
-  {
-   "page": "nang-luc",
-   "section": "nang-luc/EquipmentGrid"
-  }
- ],
- "/images/hanin/slide16-cum-be-lang.webp": [
-  {
-   "page": "home",
-   "section": "home/FactoryShowcase"
-  }
- ],
- "/images/hanin/slide16-tu-dieu-khien-va-be-xanh.webp": [
   {
    "page": "nang-luc",
    "section": "nang-luc/EquipmentGrid"
@@ -472,6 +400,10 @@
   }
  ],
  "/images/process/ky-thuat-nhan-vien-kiem-tra-gia-treo.jpg": [
+  {
+   "page": "gioi-thieu",
+   "section": "gioi-thieu/FactoryOverview"
+  },
   {
    "page": "dung-chung",
    "section": "dung-chung/block-images-data"
@@ -639,6 +571,10 @@
  ],
  "/images/profile-lib/be-nhua-xanh-xu-ly-nuoc-thai.jpg": [
   {
+   "page": "home",
+   "section": "home/FactoryShowcase"
+  },
+  {
    "page": "dung-chung",
    "section": "dung-chung/block-images-data"
   }
@@ -743,6 +679,10 @@
  ],
  "/images/profile-lib/cong-nhan-kiem-tra-gia-treo-ma.jpg": [
   {
+   "page": "tuyen-dung",
+   "section": "tuyen-dung/WorkEnvironment"
+  },
+  {
    "page": "dung-chung",
    "section": "dung-chung/block-images-data"
   },
@@ -771,6 +711,14 @@
  ],
  "/images/profile-lib/day-chuyen-ma-tu-dong-cau-truc-cam.jpg": [
   {
+   "page": "gioi-thieu",
+   "section": "gioi-thieu/FactoryOverview"
+  },
+  {
+   "page": "home",
+   "section": "home/FactoryShowcase"
+  },
+  {
    "page": "dung-chung",
    "section": "dung-chung/block-images-data"
   },
@@ -783,6 +731,10 @@
   {
    "page": "home",
    "section": "home/PlatingServices"
+  },
+  {
+   "page": "nang-luc",
+   "section": "nang-luc/EquipmentGrid"
   },
   {
    "page": "dung-chung",
@@ -915,6 +867,14 @@
  ],
  "/images/profile-lib/may-rung-tay-dau-day-chuyen-ma-quay.jpg": [
   {
+   "page": "home",
+   "section": "home/FactoryShowcase"
+  },
+  {
+   "page": "nang-luc",
+   "section": "nang-luc/EquipmentGrid"
+  },
+  {
    "page": "dung-chung",
    "section": "dung-chung/factory-pool"
   }
@@ -965,7 +925,17 @@
    "section": "dung-chung/factory-pool"
   }
  ],
+ "/images/profile-lib/nha-xuong-ma-hut-khi-be-ma.jpg": [
+  {
+   "page": "home",
+   "section": "home/FactoryShowcase"
+  }
+ ],
  "/images/profile-lib/nha-xuong-ma-treo-be-ma.jpg": [
+  {
+   "page": "gioi-thieu",
+   "section": "gioi-thieu/FactoryOverview"
+  },
   {
    "page": "dung-chung",
    "section": "dung-chung/block-images-data"
@@ -1022,6 +992,14 @@
   }
  ],
  "/images/profile-lib/phong-phan-tich-toan-canh.jpg": [
+  {
+   "page": "gioi-thieu",
+   "section": "gioi-thieu/FactoryOverview"
+  },
+  {
+   "page": "home",
+   "section": "home/FactoryShowcase"
+  },
   {
    "page": "dung-chung",
    "section": "dung-chung/block-images-data"
@@ -1083,6 +1061,12 @@
    "section": "dung-chung/block-images-data"
   }
  ],
+ "/images/profile-lib/thiet-bi-dien-phan-thi-nghiem-coc-thuy-tinh.jpg": [
+  {
+   "page": "tuyen-dung",
+   "section": "tuyen-dung/WorkEnvironment"
+  }
+ ],
  "/images/profile-lib/thiet-bi-thu-nuoc-nong-hot-water.jpg": [
   {
    "page": "nang-luc",
@@ -1096,6 +1080,10 @@
   }
  ],
  "/images/profile-lib/tu-dieu-khien-be-chua-xu-ly-nuoc-thai.jpg": [
+  {
+   "page": "nang-luc",
+   "section": "nang-luc/EquipmentGrid"
+  },
   {
    "page": "dung-chung",
    "section": "dung-chung/block-images-data"

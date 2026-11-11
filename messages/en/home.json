@@ -33,7 +33,7 @@
       "titlePrefix": "CONTRACT PLATING ON",
       "titleHighlight": "ABS PLASTIC & METAL",
       "badge": "Factory at Quang Minh Industrial Park, Hanoi",
-      "description": "Automatic painting and PVD vacuum coating at the Lot {{lot}} factory, Quang Minh Industrial Park, Hanoi.",
+      "description": "Nickel-chrome, satin nickel and black chrome plating on ABS and ABS/PC; nickel, zinc, copper, tin and black manganese phosphating on metal. Painting, printing and PVD in the same plant at Lot {{lot}}, Quang Minh Industrial Park, Hanoi.",
       "ctaPrimary": "VIEW MANUFACTURING CAPABILITY",
       "ctaSecondary": "REQUEST ADVICE",
       "locationLabel": "LOCATION:",
@@ -53,7 +53,7 @@
       "badgeTitle": "Thickness measurement and salt spray testing",
       "badgeSubtitle": "PLASTIC AND METAL SURFACE TREATMENT",
       "title": "About HANIN",
-      "paragraph1": "HANIN specializes in plating on ABS plastic and metal substrates, and also paints and prints on plastic and metal products.",
+      "paragraph1": "HANIN plates ABS, ABS/PC and metal substrates (iron, copper, steel, aluminum): nickel-chrome, satin nickel, electrolytic nickel, electroless nickel, zinc, copper, tin and black manganese phosphating. The plant also paints and prints on plastic and metal products.",
       "paragraph2": "HANIN was founded in {{founded}} and belongs to the Hanin Tech system (founded in {{hqFounded}}). The factory covers {{area}} m² at Lot {{lot}}, Quang Minh Industrial Park, Hanoi, with {{staff}} employees and more than {{customers}} customers.",
       "ctaLink": "LEARN MORE ABOUT HANIN"
     },
@@ -86,7 +86,7 @@
     },
     "ManufacturingCapability": {
       "title": "MANUFACTURING CAPABILITY",
-      "description": "The plating lines, PVD machines, spray booths and analysis lab are in the same factory.",
+      "description": "Three plating lines, 2 PVD machines, the spray booths and the analysis lab are in the same plant at Lot {{lot}}, Quang Minh Industrial Park.",
       "imageAlt": "Automatic plating tanks at the HANIN factory",
       "cta": "VIEW MANUFACTURING CAPABILITY",
       "specs": {
@@ -103,7 +103,7 @@
         "2": {
           "tag": "QUALITY CONTROL",
           "title": "Plating inspection equipment",
-          "desc": "Plating thickness gauge, NSS and CASS salt spray chambers, Hull cell tester, analysis lab."
+          "desc": "{{apc}} plating thickness gauge, neutral salt spray (NSS) and acid salt spray (CASS) chambers, Hull cell tester, and chemicals and instruments for plating-bath analysis."
         },
         "3": {
           "tag": "WASTEWATER TREATMENT",
@@ -181,7 +181,7 @@
     },
     "QualityCertification": {
       "title": "Plating inspection before delivery.",
-      "description": "Plating thickness is measured and salt spray tested; plating solutions are analyzed in a dedicated analysis lab.",
+      "description": "Plating thickness is measured with the {{apc}} gauge and corrosion tested in NSS and CASS salt spray chambers; plating solutions are analyzed and Hull cell tested in the plant's own analysis lab.",
       "ctaView": "VIEW CERTIFICATE",
       "certs": {
         "0": {
@@ -234,7 +234,7 @@
     },
     "FinalCta": {
       "title": "REQUEST A PLATING QUOTE",
-      "description": "Send a drawing or sample, substrate material, required plating and quantity. The technical team will reply by email or phone.",
+      "description": "Send a drawing or sample, substrate (ABS, ABS/PC or metal), plating type and required finish (bright, satin, black, hairline), thickness, test requirements and quantity. The technical team replies by email or phone.",
       "cta": "REQUEST A QUOTE",
       "contactTitle": "DIRECT CONTACT",
       "hotlineLabel": "HOTLINE",

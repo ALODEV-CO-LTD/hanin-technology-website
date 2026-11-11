@@ -282,7 +282,7 @@
         "desc": "A short soak in dilute acid to prepare the surface for the catalyst step."
       },
       "catalyst": {
-        "name": "Palladium Activation (Catalyst)",
+        "name": "Palladium activation (catalyst)",
         "desc": "Palladium catalyst particles are deposited on the plastic surface. Plastic does not conduct electricity, so this catalyst layer is needed for electroless nickel plating, which is the base for the later electroplated layers."
       },
       "colorCompare": {

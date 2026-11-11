@@ -33,7 +33,7 @@
       "titlePrefix": "ABS 塑料与金属基材",
       "titleHighlight": "电镀加工",
       "badge": "工厂位于河内光明工业区",
-      "description": "自动喷涂与 PVD 真空镀，工厂位于河内光明工业区 {{lot}} 地块。",
+      "description": "ABS、ABS/PC 塑料镀镍铬、缎面镍与黑铬；金属件镀镍、镀锌、镀铜、镀锡及黑色锰系磷化。喷漆、印刷和 PVD 在同一工厂完成，位于河内光明工业区 {{lot}} 地块。",
       "ctaPrimary": "了解生产能力",
       "ctaSecondary": "咨询报价",
       "locationLabel": "厂址:",
@@ -53,7 +53,7 @@
       "badgeTitle": "测厚与盐雾试验",
       "badgeSubtitle": "塑料与金属表面处理",
       "title": "关于 HANIN",
-      "paragraph1": "HANIN 专业从事 ABS 塑料及金属基材的电镀处理，同时承接塑料、金属产品的喷漆与印刷。",
+      "paragraph1": "HANIN 承接 ABS、ABS/PC 塑料及金属基材（铁、铜、钢、铝）的电镀加工：镍铬、缎面镍、电解镍、化学镍、镀锌、镀铜、镀锡和黑色锰系磷化。工厂同时承接塑料、金属产品的喷漆与印刷。",
       "paragraph2": "HANIN 成立于 {{founded}} 年，隶属于 {{hqFounded}} 年成立的 Hanin Tech 体系。工厂位于河内光明工业区 {{lot}} 号地块，占地 {{area}} 平方米，员工 {{staff}} 人，客户超过 {{customers}} 家。",
       "ctaLink": "了解更多关于 HANIN"
     },
@@ -86,7 +86,7 @@
     },
     "ManufacturingCapability": {
       "title": "生产能力",
-      "description": "电镀线、PVD 设备、喷漆房和分析室都在同一座工厂内。",
+      "description": "三条电镀线、2 台 PVD 设备、各喷漆房和分析室都位于光明工业区 {{lot}} 地块的同一座工厂内。",
       "imageAlt": "HANIN 工厂自动镀槽",
       "cta": "了解生产能力",
       "specs": {
@@ -103,7 +103,7 @@
         "2": {
           "tag": "质量控制",
           "title": "镀层检测设备",
-          "desc": "镀层测厚仪、NSS 和 CASS 盐雾试验机、Hull cell 试验机及分析室。"
+          "desc": "{{apc}} 镀层测厚仪、中性盐雾（NSS）与酸性盐雾（CASS）试验机、赫尔槽试验机，以及镀槽溶液分析用的化学品和仪器。"
         },
         "3": {
           "tag": "废水处理",
@@ -181,7 +181,7 @@
     },
     "QualityCertification": {
       "title": "交货前检测镀层。",
-      "description": "镀层经过测厚和盐雾试验；镀槽溶液在专门的分析室进行分析。",
+      "description": "镀层厚度由 {{apc}} 测厚仪测量，并在 NSS、CASS 盐雾箱中做耐腐蚀试验；镀槽溶液在工厂自有分析室进行分析和赫尔槽试验。",
       "ctaView": "查看认证",
       "certs": {
         "0": {
@@ -234,7 +234,7 @@
     },
     "FinalCta": {
       "title": "电镀加工报价申请",
-      "description": "请提供图纸或样品、基材、所需镀层及数量。技术部门将通过邮件或电话回复。",
+      "description": "请提供图纸或样品、基材（ABS、ABS/PC 或金属）、镀种及所需表面（光亮、缎面、黑色、拉丝）、厚度、测试要求和数量。技术部门将通过邮件或电话回复。",
       "cta": "提交报价需求",
       "contactTitle": "直接联系",
       "hotlineLabel": "热线",

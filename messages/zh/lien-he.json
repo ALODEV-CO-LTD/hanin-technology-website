@@ -72,7 +72,7 @@
       "titlePrefix": "联系我们与",
       "titleHighlight": "技术报价",
       "titleSuffix": "申请",
-      "description": "HANIN承接塑胶（ABS）及金属基材电镀，以及喷涂和印刷，服务于汽车、家电、卫浴及厨房设备制造企业。请发送样品或图纸以获取报价。",
+      "description": "HANIN 承接 ABS、ABS/PC 塑料镀镍铬和金属电镀（镍、锌、铜、锡、黑色锰系磷化），以及喷漆、印刷和 PVD，服务汽车、家电、卫浴和厨房设备制造商。请发送样品或图纸获取报价。",
       "ctaPrimary": "提交报价申请",
       "ctaSecondary": "查看工厂位置",
       "specHighlights": {
@@ -86,7 +86,7 @@
         },
         "consulting": {
           "label": "技术沟通",
-          "desc": "工程师就基材、镀层类型和所需表面效果进行沟通"
+          "desc": "工程师就基材（ABS、ABS/PC 或金属）、镀层类型和所需表面（光亮、缎面、黑色、拉丝）进行沟通。"
         }
       },
       "imageAlt": "工厂全景"

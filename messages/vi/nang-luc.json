@@ -18,7 +18,7 @@
       "breadcrumbHome": "Trang chủ",
       "breadcrumbCurrent": "Năng lực sản xuất",
       "title": "NĂNG LỰC SẢN XUẤT",
-      "description": "Nhà xưởng, dây chuyền mạ, thiết bị kiểm tra và hệ thống xử lý nước thải của HANIN.",
+      "description": "Ba dây chuyền mạ, 2 máy PVD, phòng phun sơn, phòng phân tích, thiết bị đo kiểm và hệ thống xử lý nước thải {{waste}} m³/ngày đêm của HANIN.",
       "ctaExplore": "XEM NHÀ MÁY",
       "ctaLines": "DÂY CHUYỀN SẢN XUẤT",
       "ctaQa": "PHÒNG KIỂM NGHIỆM"
@@ -114,7 +114,7 @@
         "wastewater": {
           "badge": "Môi trường",
           "title": "Hệ thống xử lý nước thải",
-          "desc": "Xử lý nước thải sản xuất bằng bể lắng và máy ép bùn.",
+          "desc": "Xử lý nước thải sản xuất qua bể lắng và máy ép bùn, vận hành bằng tủ điều khiển.",
           "alt": "Khu xử lý nước thải của nhà máy HANIN",
           "spec1Label": "Công suất",
           "spec1Value": "{{waste}} m³/ngày đêm",
@@ -187,7 +187,7 @@
         },
         "mainPlating": {
           "title": "Mạ",
-          "desc": "Mạ theo loại dây chuyền: mạ quay, mạ treo hoặc dây chuyền tự động."
+          "desc": "Mạ theo dây chuyền phù hợp: mạ tự động trên JIG, mạ treo bán tự động hoặc mạ quay; các bể mạ đồng, niken, crom, kẽm, thiếc theo yêu cầu."
         },
         "thickness": {
           "title": "Đo độ dày và phun muối",
@@ -212,7 +212,7 @@
         "barrel": {
           "tag": "Mạ quay",
           "title": "Dây chuyền mạ quay",
-          "desc": "Mạ chi tiết nhỏ số lượng lớn trong thùng quay. Có máy rung và tẩy dầu, bể mạ đồng, bể mạ niken.",
+          "desc": "Mạ số lượng lớn chi tiết nhỏ (bu lông, vít, đai ốc, đầu cos...) trong thùng quay. Có máy rung và tẩy dầu, bể mạ đồng, bể mạ niken.",
           "alt": "Dây chuyền mạ quay, thùng quay ngâm trong bể mạ",
           "capacityLabel": "CÔNG SUẤT:",
           "capacityValue": "{{rot:full}} kg/ngày ({{rotPcs:full}} sản phẩm/ngày)",
@@ -222,7 +222,7 @@
         "rack": {
           "tag": "Mạ treo",
           "title": "Dây chuyền mạ treo kim loại bán tự động",
-          "desc": "Mạ chi tiết kim loại gắn trên giá treo.",
+          "desc": "Mạ từng chi tiết kim loại gắn trên giá treo (JIG), phù hợp tay nắm, bản lề, chốt, chi tiết lắp ráp. Gồm khu JIG chờ mạ và các bể mạ.",
           "alt": "Dây chuyền mạ treo kim loại bán tự động",
           "capacityLabel": "CÔNG SUẤT:",
           "capacityValue": "{{hang:full}} sản phẩm/ngày",
@@ -272,19 +272,19 @@
       "items": {
         "lab": {
           "title": "Phòng phân tích",
-          "desc": "Phân tích dung dịch bể mạ bằng hóa chất phân tích."
+          "desc": "Phân tích thành phần dung dịch bể mạ bằng hóa chất và thiết bị phân tích để giữ lớp mạ ổn định."
         },
         "hullCell": {
           "title": "Máy thử Hull cell",
-          "desc": "Thử dung dịch mạ trên tấm mẫu để đánh giá chất lượng lớp mạ trong bể."
+          "desc": "Thử dung dịch bể mạ trên tấm mẫu để đánh giá chất lượng lớp mạ và có cơ sở điều chỉnh bể."
         },
         "thickness": {
           "title": "Máy đo độ dày lớp mạ",
-          "desc": "Đo độ dày lớp mạ bằng máy {{apc}}."
+          "desc": "Đo độ dày lớp mạ bằng máy {{apc}} (Automatic Precision Control), đối chiếu yêu cầu bản vẽ."
         },
         "saltSpray": {
           "title": "Máy phun muối NSS và CASS",
-          "desc": "Thử ăn mòn bằng buồng phun muối trung tính (NSS) và phun muối axit (CASS)."
+          "desc": "Thử ăn mòn trong buồng phun muối trung tính (NSS) và phun muối axit (CASS) để đánh giá khả năng chống ăn mòn của lớp mạ."
         }
       },
       "reliability": {

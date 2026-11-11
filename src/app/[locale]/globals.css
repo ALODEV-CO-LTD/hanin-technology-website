@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @theme {
-  /* ---- Steel blue accent (thay cho cam) — xanh thép + bạc + trắng ---- */
+  /* ---- Steel blue accent (thay cho cam) - xanh thép + bạc + trắng ---- */
   --color-steel-50: #eef4f8;
   --color-steel-100: #dbe8f0;
   --color-steel-200: #b7d1e2;
@@ -507,4 +507,28 @@ main img:not([src*=".svg"]) {
   background-size: 16px 16px;
   opacity: 0.06;
   pointer-events: none;
+}
+
+/* Nội dung nhập từ CMS có thể chứa xuống dòng: giữ đúng các lần xuống dòng, vẫn gộp khoảng trắng thừa. */
+body {
+  white-space: pre-line;
+}
+
+/* Ô văn bản để trống trong CMS (xoá hết chữ) thì không hiện gì: bỏ luôn khoảng cách của thẻ rỗng. */
+p:empty,
+h1:empty,
+h2:empty,
+h3:empty,
+h4:empty,
+h5:empty,
+h6:empty,
+li:empty,
+dt:empty,
+dd:empty,
+label:empty,
+blockquote:empty,
+figcaption:empty,
+a:empty,
+button:empty {
+  display: none;
 }

@@ -5,7 +5,7 @@
       "breadcrumbHome": "홈",
       "breadcrumbCurrent": "회사 소개",
       "title": "HANIN 소개",
-      "subtitle": "회사 정보, Hanin Tech 그룹, 도금 라인 및 인증."
+      "subtitle": "Hanin Tech 그룹 소속의 ABS 플라스틱·금속 도금 공장: 도금 라인, 도장, 인쇄, PVD, 분석실, ISO 9001:2015 인증."
     },
     "CompanyIntroduction": {
       "imageAlt": "하노이 꽝민공단에 위치한 공장의 현대적인 외관",
@@ -13,7 +13,7 @@
       "areaBadge": "부지 면적: {{area}} m²",
       "heading": "산업 고객을 위한 도금 가공",
       "paragraph1Strong": "HANIN 도금산업 주식회사",
-      "paragraph1Rest": "ABS 플라스틱과 금속 소재의 도금 처리를 전문으로 하며, 플라스틱·금속 제품의 도장과 인쇄도 수행합니다.",
+      "paragraph1Rest": "ABS, ABS/PC 플라스틱과 금속(철, 구리, 강철, 알루미늄) 도금을 전문으로 하며, 플라스틱·금속 제품의 도장과 인쇄도 수행합니다. 공정은 니켈 크롬, 새틴 니켈, 전해 니켈, 무전해 니켈, 블랙 니켈, 아연, 구리, 주석 도금과 흑색 망간 인산염 처리입니다.",
       "paragraph2": "{{founded}}년 설립. 공장은 하노이 꽝민 산업단지 Lô {{lot}}에 있으며 부지 면적은 {{area}} m², 직원은 {{staff}}명입니다. {{customers}}곳 이상의 고객사가 가공 서비스를 이용하고 있습니다.",
       "field": {
         "label": "사업 분야",
@@ -30,7 +30,7 @@
         "value": "하노이 꽝민공단",
         "note": "주소: 꽝민공단 {{lot}} 구역"
       },
-      "paragraph3": "HANIN은 IPM 금형 공장, HANIN 도금 공장, Press 공장, Showa 공장으로 구성된 Hanin Tech 그룹({{hqStaff}}명)에 속해 있습니다."
+      "paragraph3": "HANIN은 Hanin Tech 그룹({{hqFounded}}년 설립) 소속이며, 그룹에는 IPM 금형 공장, HANIN 도금 공장, 제4공장(Press, 금속 프레스), 제5공장(Showa, 주조·조립)이 있고 총 {{hqStaff}}명이 근무합니다."
     },
     "CompanyJourney": {
       "heading": "발전 과정",
@@ -77,19 +77,19 @@
       },
       "technology": {
         "title": "기술 및 설비",
-        "desc": "PVD 설비 2대, 수동·자동 도장 부스, JIG와 크레인을 사용하는 자동 도금 라인.",
+        "desc": "PVD 진공 코팅 설비 2대, 수동 도장 부스와 6건 도장 부스, 자동 도장 라인, 지그(JIG)와 크레인을 쓰는 자동 도금 라인.",
         "metricLabel": "공정",
         "metricValue": "도금, PVD, 도장"
       },
       "quality": {
         "title": "품질 관리",
-        "desc": "도금 두께 측정, NSS·CASS 염수분무 시험, Hull cell 시험, 분석실 운영.",
+        "desc": "{{apc}}로 도금 두께 측정, NSS·CASS 염수 분무 시험, 헐셀 시험, 도금조 용액 분석실, 도장 후 신뢰성 시험 장비 10종.",
         "metricLabel": "검사",
         "metricValue": "NSS, CASS, Hull cell"
       },
       "support": {
         "title": "기술",
-        "desc": "도면과 부품별 기술 요구사항에 따라 도금 공정을 정합니다.",
+        "desc": "엔지니어가 ABS, ABS/PC 또는 금속 소재, 요구 표면(광택, 새틴, 블랙, 헤어라인), 부품별 도면의 도금층에 맞는 도금 공정을 안내합니다.",
         "metricLabel": "기술 상담",
         "metricValue": "도면 기준"
       }
@@ -99,17 +99,17 @@
       "subtitle": "기술 요구사항은 도면을 기준으로 하며 공장 내 장비로 검사합니다.",
       "precision": {
         "title": "도면 기준",
-        "desc": "고객 도면 요구에 따라 도금하고 도금층 두께를 측정합니다.",
+        "desc": "도금층, 표면, 두께는 고객 도면 요구에 따르며 두께는 {{apc}} 측정기로 측정합니다.",
         "note": "도금 두께 측정"
       },
       "stability": {
         "title": "도금조 관리",
-        "desc": "분석실에서 도금액을 분석하고 Hull cell 시험을 합니다.",
+        "desc": "도금조 용액은 분석실에서 화학 분석과 헐셀 시험을 거쳐 도금층을 안정적으로 유지합니다.",
         "note": "분석실, Hull cell"
       },
       "partnership": {
         "title": "기술 협의",
-        "desc": "고객사 기술 부서와 표면 요구사항을 협의합니다.",
+        "desc": "HANIN 엔지니어가 고객의 기술·QA 부서와 소재, 도금층, 표면, 시험 방법을 협의합니다.",
         "note": "고객 기술 부서와 직접 협의"
       }
     },
@@ -149,7 +149,7 @@
       "cta": "인증서 보기",
       "certificateImageAlt": "ICB가 발급한 Hanin Technology Vietnam의 ISO 9001:2015 인증서",
       "certificateTag": "인증서",
-      "certificateTitle": "ISO 9001:2015 — 품질경영시스템",
+      "certificateTitle": "ISO 9001:2015 - 품질경영시스템",
       "certificateIssuer": "인증기관: 국제인증 주식회사(ICB)",
       "certificateHolderLabel": "인증 취득 기관",
       "certificateHolderValue": "Hanin Technology Vietnam Joint-Stock Company (Hanin 베트남 기술 주식회사)",

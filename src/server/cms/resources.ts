@@ -32,7 +32,9 @@ export const RESOURCES: ResourceDef[] = [
     description: "Ảnh banner đầu trang của từng trang. Nếu vị trí có nhiều banner đang bật, website dùng banner có thứ tự nhỏ nhất.",
     titleField: "placement",
     listColumns: ["image", "placement", "sort", "active"],
-    orderBy: "placement ASC, sort ASC, id ASC",
+    // Theo đúng thứ tự trang trên website (Trang chủ → Liên hệ), không theo bảng chữ cái.
+    orderBy:
+      "CASE placement WHEN 'home-hero' THEN 0 WHEN 'gioi-thieu' THEN 1 WHEN 'dich-vu' THEN 2 WHEN 'san-pham' THEN 3 WHEN 'nang-luc' THEN 4 WHEN 'tin-tuc' THEN 5 WHEN 'tuyen-dung' THEN 6 WHEN 'lien-he' THEN 7 ELSE 8 END, sort ASC, id ASC",
     publishField: "active",
     fields: [
       { name: "placement", label: "Vị trí", type: "select", required: true, options: BANNER_PLACEMENTS },

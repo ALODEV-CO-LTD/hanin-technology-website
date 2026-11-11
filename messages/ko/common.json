@@ -58,19 +58,19 @@
   "Meta": {
     "site": {
       "title": "HANIN",
-      "description": "산업 고객을 위한 ABS 플라스틱 및 금속 도금, 도장 및 인쇄."
+      "description": "ABS 니켈 크롬 도금, 금속 니켈·아연·구리·주석 도금과 흑색 망간 인산염, PVD, 도장, 인쇄. 하노이 꽝민공단."
     },
     "home": {
       "title": "HANIN | ABS 플라스틱·금속 도금, PVD, 도장, 인쇄",
-      "description": "산업 고객을 위한 ABS 플라스틱 및 금속 도금, 도장 및 인쇄."
+      "description": "ABS 니켈 크롬 도금, 금속 니켈·아연·구리·주석 도금과 흑색 망간 인산염, PVD, 도장, 인쇄. 하노이 꽝민공단."
     },
     "gioiThieu": {
       "title": "HANIN 소개 | 꽝민 산업단지 도금 공장",
-      "description": "HANIN 소개 및 플라스틱·금속 도금 처리 역량."
+      "description": "Hanin Tech 그룹 소속 HANIN: 꽝민공단의 ABS·금속 도금 공장으로 도금 라인, PVD, 도장, 분석실을 갖추고 있습니다."
     },
     "dichVu": {
       "title": "도금 및 표면 처리 서비스",
-      "description": "ABS 플라스틱 니켈-크롬 도금, 금속 니켈 도금, 아연·구리·주석 도금, 흑색 인산염, PVD, 도장 및 인쇄."
+      "description": "ABS 니켈 크롬(3가·6가 크롬, 새틴, 블랙, 헤어라인), 전해·무전해 니켈, 아연, 구리, 주석, 흑색 망간 인산염, PVD, 도장, 인쇄."
     },
     "sanPham": {
       "title": "제품 및 프로젝트",
@@ -78,7 +78,7 @@
     },
     "nangLuc": {
       "title": "생산 역량",
-      "description": "공장, 자동 도금 라인, 걸이·배럴 도금 라인 및 도금층 검사 구역."
+      "description": "일 {{auto:k}}천 개 자동 도금 라인, 걸이·바렐 도금, PVD, 분석실, 두께 측정, NSS/CASS 염수 분무 시험, 폐수 처리."
     },
     "tinTuc": {
       "title": "뉴스 및 기술 소식",

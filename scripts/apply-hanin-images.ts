@@ -70,6 +70,24 @@ transaction(() => {
     }
   }
 });
+// Đổi ảnh theo bảng gợi ý ảnh (11/2026): chỉ đổi hàng còn đang dùng ảnh cũ, không ghi đè ảnh người dùng đã chọn trong CMS.
+const PHOTO_SWAPS: { table: "banners" | "services"; where: string; arg: string; col: string; oldLike: string; image: string }[] = [
+  { table: "banners", where: "placement", arg: "san-pham", col: "image", oldLike: "%qc-1.jpg", image: "/images/profile-lib/nhom-chi-tiet-den-bong-num-vong-tay-nam.jpg" },
+  { table: "banners", where: "placement", arg: "nang-luc", col: "image", oldLike: "%ma-quay-5.jpg", image: "/images/profile-lib/nha-xuong-ma-treo-be-ma.jpg" },
+  { table: "services", where: "slug", arg: "ma-crom-cung-cong-nghiep", col: "image", oldLike: "%ma-treo-3.jpg", image: "/images/profile-lib/chu-noi-logo-vinfast-ma-crom.jpg" },
+  { table: "services", where: "slug", arg: "ma-niken-hoa-hoc-enp", col: "image", oldLike: "%ma-quay-5.jpg", image: "/images/profile-lib/dia-tron-xuoc-dong-tam-niken-satin.jpg" },
+  { table: "services", where: "slug", arg: "ma-kem-hop-kim-kem-niken", col: "image", oldLike: "%ma-quay-7.jpg", image: "/images/profile-lib/nhom-chi-tiet-tru-ren-ma-kem-nen-xanh.jpg" },
+  { table: "services", where: "slug", arg: "day-chuyen-son-ma-ket-hop", col: "image", oldLike: "%ma-treo-2.jpg", image: "/images/profile-lib/dan-phun-son-tu-dong-bang-tai.jpg" },
+  { table: "services", where: "slug", arg: "xu-ly-nhom-ma-kim-loai-khac", col: "image", oldLike: "%ma-quay-6.jpg", image: "/images/profile-lib/hai-may-pvd-phong-sach.jpg" },
+  { table: "services", where: "slug", arg: "tien-xu-ly-be-mat", col: "image", oldLike: "%ma-quay-1.jpg", image: "/images/profile-lib/cong-nhan-kiem-tra-gia-treo-ma.jpg" },
+];
+let swapped = 0;
+transaction(() => {
+  for (const w of PHOTO_SWAPS) {
+    swapped += Number(run(`UPDATE ${w.table} SET ${w.col} = ?, updated_at = datetime('now') WHERE ${w.where} = ? AND ${w.col} LIKE ?`, w.image, w.arg, w.oldLike).changes);
+  }
+});
+console.log(`Đã đổi ${swapped} vị trí ảnh theo bảng gợi ý.`);
 // Thư viện ảnh: thêm ảnh mới và cập nhật kích thước các ảnh đã thay bản nét hơn (chỉ ảnh trong public/images, chạy lại an toàn).
 import fs from "node:fs";
 import path from "node:path";

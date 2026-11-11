@@ -33,7 +33,7 @@
       "titlePrefix": "GIA CÔNG MẠ TRÊN NỀN",
       "titleHighlight": "NHỰA ABS & KIM LOẠI",
       "badge": "Nhà máy tại KCN Quang Minh, Hà Nội",
-      "description": "Sơn tự động và mạ chân không PVD tại nhà máy Lô {{lot}}, KCN Quang Minh, TP Hà Nội.",
+      "description": "Mạ niken crom, niken satin và crom đen trên nhựa ABS, ABS/PC; mạ niken, kẽm, đồng, thiếc và phốt phát mangan đen trên kim loại. Sơn, in và PVD cùng một nhà máy tại Lô {{lot}}, KCN Quang Minh, Hà Nội.",
       "ctaPrimary": "XEM NĂNG LỰC SẢN XUẤT",
       "ctaSecondary": "YÊU CẦU TƯ VẤN",
       "locationLabel": "ĐỊA ĐIỂM:",
@@ -53,7 +53,7 @@
       "badgeTitle": "Đo độ dày và thử phun muối",
       "badgeSubtitle": "XỬ LÝ BỀ MẶT NHỰA VÀ KIM LOẠI",
       "title": "Về HANIN",
-      "paragraph1": "HANIN chuyên xử lý mạ trên nền nhựa ABS và kim loại, đồng thời nhận sơn và in trên sản phẩm nhựa, kim loại.",
+      "paragraph1": "HANIN gia công mạ trên nền nhựa ABS, ABS/PC và nền kim loại (sắt, đồng, thép, nhôm): niken crom, niken satin, niken điện phân, niken hóa, mạ kẽm, mạ đồng, mạ thiếc và phốt phát mangan đen. Nhà máy nhận thêm sơn và in trên sản phẩm nhựa, kim loại.",
       "paragraph2": "HANIN thành lập năm {{founded}}, thuộc hệ thống Hanin Tech (thành lập năm {{hqFounded}}). Nhà máy rộng {{area}} m² tại Lô {{lot}}, KCN Quang Minh, Hà Nội, có {{staff}} nhân sự và hơn {{customers}} khách hàng.",
       "ctaLink": "XEM THÊM VỀ HANIN"
     },
@@ -86,7 +86,7 @@
     },
     "ManufacturingCapability": {
       "title": "NĂNG LỰC SẢN XUẤT",
-      "description": "Dây chuyền mạ, máy PVD, buồng phun sơn và phòng phân tích nằm trong cùng một nhà máy.",
+      "description": "Ba dây chuyền mạ, 2 máy PVD, các phòng phun sơn và phòng phân tích nằm trong cùng một nhà máy tại Lô {{lot}}, KCN Quang Minh.",
       "imageAlt": "Bể mạ tự động tại nhà máy HANIN",
       "cta": "XEM NĂNG LỰC SẢN XUẤT",
       "specs": {
@@ -103,7 +103,7 @@
         "2": {
           "tag": "KIỂM SOÁT CHẤT LƯỢNG",
           "title": "Thiết bị kiểm tra lớp mạ",
-          "desc": "Máy đo độ dày lớp mạ, máy phun muối NSS và CASS, máy thử Hull cell, phòng phân tích."
+          "desc": "Máy đo độ dày lớp mạ {{apc}}, máy phun muối trung tính NSS và phun muối axit CASS, máy thử Hull cell, hóa chất và thiết bị phân tích dung dịch bể mạ."
         },
         "3": {
           "tag": "XỬ LÝ NƯỚC THẢI",
@@ -181,7 +181,7 @@
     },
     "QualityCertification": {
       "title": "Kiểm tra lớp mạ trước khi giao hàng.",
-      "description": "Lớp mạ được đo độ dày và thử phun muối; dung dịch bể mạ được phân tích tại phòng phân tích riêng.",
+      "description": "Lớp mạ được đo độ dày bằng máy {{apc}} và thử ăn mòn trong buồng phun muối NSS, CASS; dung dịch bể mạ được phân tích và thử Hull cell tại phòng phân tích riêng của nhà máy.",
       "ctaView": "XEM CHỨNG NHẬN",
       "certs": {
         "0": {
@@ -234,7 +234,7 @@
     },
     "FinalCta": {
       "title": "YÊU CẦU BÁO GIÁ GIA CÔNG MẠ",
-      "description": "Gửi bản vẽ hoặc mẫu, vật liệu nền, lớp mạ yêu cầu và số lượng. Bộ phận kỹ thuật sẽ phản hồi qua email hoặc điện thoại.",
+      "description": "Gửi bản vẽ hoặc mẫu, vật liệu nền (nhựa ABS, ABS/PC hay kim loại), loại mạ và bề mặt yêu cầu (bóng, satin, đen, Hair Line), độ dày, yêu cầu thử nghiệm và số lượng. Bộ phận kỹ thuật phản hồi qua email hoặc điện thoại.",
       "cta": "GỬI YÊU CẦU BÁO GIÁ",
       "contactTitle": "LIÊN HỆ TRỰC TIẾP",
       "hotlineLabel": "HOTLINE",

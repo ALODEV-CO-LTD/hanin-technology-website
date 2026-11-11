@@ -72,7 +72,7 @@
       "titlePrefix": "Contact and",
       "titleHighlight": "request a quote",
       "titleSuffix": "technical",
-      "description": "HANIN plates on ABS plastic and metal substrates, plus painting and printing, for manufacturers of automobiles, home appliances, sanitary ware and kitchen equipment. Send a sample or drawing to get a quote.",
+      "description": "HANIN accepts nickel-chrome plating on ABS and ABS/PC and metal plating (nickel, zinc, copper, tin, black manganese phosphating), plus painting, printing and PVD, for manufacturers of automobiles, home appliances, sanitary ware and kitchen equipment. Send a sample or drawing to get a quote.",
       "ctaPrimary": "Send a quote request",
       "ctaSecondary": "View factory location",
       "specHighlights": {
@@ -86,7 +86,7 @@
         },
         "consulting": {
           "label": "Technical Exchange",
-          "desc": "Engineers discuss the substrate, plating type and desired surface"
+          "desc": "Engineers discuss the substrate (ABS, ABS/PC or metal), plating type and required finish: bright, satin, black or hairline."
         }
       },
       "imageAlt": "Factory panorama"

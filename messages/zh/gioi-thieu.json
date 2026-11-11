@@ -5,7 +5,7 @@
       "breadcrumbHome": "首页",
       "breadcrumbCurrent": "关于我们",
       "title": "关于 HANIN",
-      "subtitle": "公司信息、Hanin Tech 体系、电镀生产线及认证。"
+      "subtitle": "Hanin Tech 集团旗下的 ABS 塑料与金属电镀工厂：电镀线、喷漆、印刷、PVD、分析室及 ISO 9001:2015 认证。"
     },
     "CompanyIntroduction": {
       "imageAlt": "位于河内光明工业区的现代化厂区外观",
@@ -13,7 +13,7 @@
       "areaBadge": "厂区面积：{{area}} 平方米",
       "heading": "面向工业客户的电镀加工",
       "paragraph1Strong": "HANIN 电镀工业股份公司",
-      "paragraph1Rest": "专业从事 ABS 塑料及金属基材的电镀处理，同时承接塑料、金属产品的喷漆与印刷。",
+      "paragraph1Rest": "专注于 ABS、ABS/PC 塑料及金属（铁、铜、钢、铝）的电镀加工，同时承接塑料、金属产品的喷漆与印刷。工艺包括镍铬、缎面镍、电解镍、化学镍、黑镍、镀锌、镀铜、镀锡和黑色锰系磷化。",
       "paragraph2": "公司成立于{{founded}}年，工厂位于河内光明工业区{{lot}}地块，占地{{area}} m²，现有员工{{staff}}人。已有{{customers}}多家客户使用加工服务。",
       "field": {
         "label": "经营领域",
@@ -30,7 +30,7 @@
         "value": "河内光明工业区",
         "note": "地址：光明工业区 {{lot}} 号地块"
       },
-      "paragraph3": "HANIN 隶属于 Hanin Tech 体系，该体系包括 IPM 模具厂、HANIN 电镀厂、Press 冲压厂和 Showa 厂，共 {{hqStaff}} 人。"
+      "paragraph3": "HANIN 隶属 Hanin Tech 集团（成立于 {{hqFounded}} 年），集团包括 IPM 模具厂、HANIN 电镀厂、第 4 工厂（Press，金属冲压）和第 5 工厂（Showa，压铸与组装），共 {{hqStaff}} 人。"
     },
     "CompanyJourney": {
       "heading": "发展历程",
@@ -77,19 +77,19 @@
       },
       "technology": {
         "title": "技术与设备",
-        "desc": "2 台 PVD 设备，手工和自动喷漆房，自动电镀线采用 JIG 挂具和行车。",
+        "desc": "2 台 PVD 真空镀设备，手动喷漆房和 6 枪喷漆房，自动喷漆线，以及采用挂具（JIG）和行车的自动电镀线。",
         "metricLabel": "工艺",
         "metricValue": "电镀、PVD、喷漆"
       },
       "quality": {
         "title": "质量控制",
-        "desc": "镀层测厚、NSS 和 CASS 盐雾试验、Hull cell 试验，设有分析室。",
+        "desc": "用 {{apc}} 测镀层厚度，NSS 与 CASS 盐雾试验，赫尔槽试验，镀槽溶液分析室，以及喷漆后 10 项可靠性测试设备。",
         "metricLabel": "检测",
         "metricValue": "NSS、CASS、Hull cell"
       },
       "support": {
         "title": "技术",
-        "desc": "按图纸及各零件的技术要求确定电镀工艺。",
+        "desc": "工程师根据 ABS、ABS/PC 或金属基材、表面要求（光亮、缎面、黑色、拉丝）以及每个零件图纸规定的镀层，提供合适的电镀工艺建议。",
         "metricLabel": "技术咨询",
         "metricValue": "按图纸"
       }
@@ -99,17 +99,17 @@
       "subtitle": "技术要求以图纸为准，并在工厂内用设备检测。",
       "precision": {
         "title": "按图纸",
-        "desc": "按客户图纸要求电镀并测量镀层厚度。",
+        "desc": "镀层、表面和厚度按客户图纸要求执行；厚度用 {{apc}} 测厚仪测量。",
         "note": "镀层测厚"
       },
       "stability": {
         "title": "槽液控制",
-        "desc": "在分析室对镀液进行分析并做赫尔槽试验。",
+        "desc": "镀槽溶液在分析室进行化学分析和赫尔槽试验，以保持镀层稳定。",
         "note": "分析室、赫尔槽试验"
       },
       "partnership": {
         "title": "技术沟通",
-        "desc": "与客户技术部门沟通表面处理要求。",
+        "desc": "HANIN 工程师与客户的技术、QA 部门就基材、镀层、表面和测试方法进行沟通。",
         "note": "与客户技术部门对接"
       }
     },
@@ -149,7 +149,7 @@
       "cta": "查看认证证书",
       "certificateImageAlt": "ICB 颁发的 Hanin Technology 越南公司 ISO 9001:2015 证书",
       "certificateTag": "认证证书",
-      "certificateTitle": "ISO 9001:2015 — 质量管理体系",
+      "certificateTitle": "ISO 9001:2015 - 质量管理体系",
       "certificateIssuer": "认证机构：国际认证股份公司（ICB）",
       "certificateHolderLabel": "获证单位",
       "certificateHolderValue": "Hanin 越南科技股份公司（HANIN TECHNOLOGY VIETNAM JOINT-STOCK COMPANY）",

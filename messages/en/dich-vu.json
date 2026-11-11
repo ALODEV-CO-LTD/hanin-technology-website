@@ -650,7 +650,7 @@
           "heading": "Plating Types and Applications",
           "col1": {
             "title": "Plating on Plastic Substrates",
-            "p1": "Plastic does not conduct electricity, so the surface must be treated before metal plating. ABS goods pass through etching, neutralization and palladium activation, then",
+            "p1": "Plastic does not conduct electricity, so the surface must be metallized before plating. ABS goods pass through etching, neutralization and palladium activation, then",
             "p1Strong": "nickel and chrome plating",
             "p2": "A hairline finish can be applied on the nickel-chrome layer when the product requires it."
           },
@@ -658,11 +658,11 @@
             "title": "Plating Types",
             "intro": "Four plating types on ABS plastic:",
             "item1Strong": "Nickel Chrome 3+ and Nickel Chrome 6+:",
-            "item1": "Two chrome plating technologies, with a bright glossy surface.",
+            "item1": "Two chrome processes, trivalent and hexavalent chromium, giving a bright surface over the nickel layer.",
             "item2Strong": "Satin Nickel:",
-            "item2": "Satin surface.",
+            "item2": "A fine matte, low-reflection surface for decorative parts.",
             "item3Strong": "Black Nickel Chrome:",
-            "item3": "Black surface; hairline finish on nickel chrome when needed."
+            "item3": "A glossy black surface; a hairline finish can be made on the nickel-chrome layer when required."
           },
           "col3": {
             "title": "Substrate Materials",
@@ -760,17 +760,17 @@
           "r1": {
             "item": "Solutions and Chemicals",
             "device": "Analysis Lab and Analytical Chemicals",
-            "criteria": "Analyzing the composition of solutions and chemicals before they go into production."
+            "criteria": "Analysis of the plastic-plating baths (copper, nickel, chrome) with analytical chemicals and instruments."
           },
           "r2": {
             "item": "Plating solution",
             "device": "Hull Cell Tester",
-            "criteria": "Hull cell test to check the plating solution."
+            "criteria": "Hull cell test on a sample panel to assess the plating solution."
           },
           "r3": {
             "item": "Plating Thickness",
             "device": "{{apc}} Plating Thickness Gauge",
-            "criteria": "Measure plating thickness and compare it with the drawing requirement."
+            "criteria": "Measures coating thickness on finished parts and compares it with the drawing requirement."
           },
           "r4": {
             "item": "Corrosion Resistance (Neutral)",
@@ -872,7 +872,7 @@
             "title": "Nickel Types",
             "p1": "HANIN plates five nickel groups on metal substrates:",
             "p1Strong": "electrolytic nickel, electroless nickel, black nickel, satin nickel and nickel chrome",
-            "p2": "Electrolytic nickel gives a bright, durable plating layer. Electroless nickel has high hardness, wear resistance and good heat resistance."
+            "p2": "Electrolytic nickel gives a bright, durable coating that improves appearance. Electroless nickel has high hardness and good wear and heat resistance."
           },
           "col2": {
             "title": "Featured Products",
@@ -965,7 +965,7 @@
             "tag": "Sanitary",
             "title": "Faucets and accessories",
             "desc": "Black nickel, satin nickel or nickel chrome per the surface requirement.",
-            "note": "Chrome plating"
+            "note": "Black nickel, satin or chrome"
           },
           "a4": {
             "tag": "Decorative",
@@ -983,17 +983,17 @@
           "r1": {
             "item": "Solutions and Chemicals",
             "device": "Analysis Lab and Analytical Chemicals",
-            "criteria": "Analyzing the composition of solutions and chemicals before they go into production."
+            "criteria": "Analysis of the nickel bath composition with the analysis lab's chemicals and instruments."
           },
           "r2": {
             "item": "Plating solution",
             "device": "Hull Cell Tester",
-            "criteria": "Hull cell test to check the plating solution."
+            "criteria": "Hull cell test on a sample panel to assess the nickel plating solution."
           },
           "r3": {
             "item": "Plating Thickness",
             "device": "{{apc}} Plating Thickness Gauge",
-            "criteria": "Measure plating thickness and compare it with the drawing requirement."
+            "criteria": "Measures nickel layer thickness on finished parts and compares it with the drawing requirement."
           },
           "r4": {
             "item": "Corrosion Resistance (Neutral)",
@@ -1095,7 +1095,7 @@
             "title": "Plating and Treatment Layers",
             "p1": "HANIN performs zinc plating, copper plating, tin plating and black manganese phosphating for small metal parts. The black manganese phosphate layer",
             "p1Strong": "resists rust, improves adhesion and keeps color",
-            "p2": "Zinc plating and black manganese phosphating run on both the semi-automatic rack plating line and barrel plating."
+            "p2": "Zinc plating and black manganese phosphating run on both the semi-automatic rack line and the barrel line. Black manganese phosphate is a black conversion coating, usually followed by a rust-preventive oil dip."
           },
           "col2": {
             "title": "Featured Products",
@@ -1174,25 +1174,25 @@
           "a1": {
             "tag": "Black phosphating",
             "title": "Screws, bolts, cover caps",
-            "desc": "Screws, bolts, cover caps, base plates.",
+            "desc": "Black manganese phosphating for steel parts that need rust protection, better adhesion and color stability.",
             "note": "Rust resistant, color-fast"
           },
           "a2": {
             "tag": "Tin plating",
             "title": "Nuts, rivets",
-            "desc": "Bolts, metal bars, nuts, rivets.",
+            "desc": "Tin plating for bolts, metal bars, nuts and rivets.",
             "note": "Tin plating"
           },
           "a3": {
             "tag": "Zinc plating",
             "title": "Bushings, shaft pins",
-            "desc": "Metal plates, bushings, shaft pins, screws, locating shafts.",
+            "desc": "Zinc plating for metal plates, bushings, shaft pins, screws and locating pins.",
             "note": "Zinc plating"
           },
           "a4": {
             "tag": "Electrical parts",
             "title": "Cable lugs",
-            "desc": "Tin-plated cable lugs.",
+            "desc": "Tin plating for cable lugs used to terminate electrical wires.",
             "note": "Tin plating"
           }
         },
@@ -1205,7 +1205,7 @@
           "r1": {
             "item": "Solutions and Chemicals",
             "device": "Analysis Lab and Analytical Chemicals",
-            "criteria": "Analyzing the composition of solutions and chemicals before they go into production."
+            "criteria": "Analysis of zinc, copper and tin plating baths and the phosphating solution with analytical chemicals and instruments."
           },
           "r2": {
             "item": "Plating solution",
@@ -1215,7 +1215,7 @@
           "r3": {
             "item": "Plating Thickness",
             "device": "{{apc}} Plating Thickness Gauge",
-            "criteria": "Measure plating thickness and compare it with the drawing requirement."
+            "criteria": "Measures zinc, copper and tin coating thickness on finished parts and compares it with the drawing requirement."
           },
           "r4": {
             "item": "Corrosion Resistance (Neutral)",
@@ -1323,11 +1323,11 @@
             "title": "Featured Products",
             "intro": "Some products painted and printed at the factory:",
             "item1Strong": "Automotive lamp components:",
-            "item1": "Spray-painted holders.",
+            "item1": "Spray-painted lamp holders (silver-painted reflector side on white plastic).",
             "item2Strong": "Display frames:",
-            "item2": "Painted and printed.",
+            "item2": "Black painted frame with speaker and button openings, with printing and laser cutting of details.",
             "item3Strong": "Control panels:",
-            "item3": "Painted and printed."
+            "item3": "Metal control panels painted and printed with function symbols (POWER, AUTO, START...)."
           },
           "col3": {
             "title": "Substrate Materials",
@@ -1525,7 +1525,7 @@
             "title": "PVD Capability",
             "intro": "The factory has:",
             "item1Strong": "2 PVD machines:",
-            "item1": "Batch vacuum coating.",
+            "item1": "Batch vacuum coating: parts are loaded on fixtures in the chamber, the chamber is evacuated and the metal layer is deposited.",
             "item2Strong": "Location:",
             "item2": "Lot {{lot}}, Quang Minh Industrial Park, Hanoi, in the same area as the HANIN plating factory.",
             "item3Strong": "Finished surface:",

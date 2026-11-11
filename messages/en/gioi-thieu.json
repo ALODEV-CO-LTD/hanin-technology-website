@@ -5,7 +5,7 @@
       "breadcrumbHome": "Home",
       "breadcrumbCurrent": "About",
       "title": "About HANIN",
-      "subtitle": "Company information, the Hanin Tech system, plating lines and certification."
+      "subtitle": "A plating plant for ABS plastic and metal within the Hanin Tech group: plating lines, painting, printing, PVD, analysis lab and ISO 9001:2015 certification."
     },
     "CompanyIntroduction": {
       "imageAlt": "Modern architectural facade of the factory at Quang Minh Industrial Park, Hanoi",
@@ -13,7 +13,7 @@
       "areaBadge": "Site area: {{area}} m²",
       "heading": "Plating Services for Industrial Customers",
       "paragraph1Strong": "HANIN Plating Industrial Joint Stock Company",
-      "paragraph1Rest": "specializes in plating on ABS plastic and metal substrates, and also paints and prints on plastic and metal products.",
+      "paragraph1Rest": "specializes in plating on ABS, ABS/PC and metal (iron, copper, steel, aluminum), and also paints and prints on plastic and metal products. Processes include nickel-chrome, satin nickel, electrolytic nickel, electroless nickel, black nickel, zinc, copper, tin and black manganese phosphating.",
       "paragraph2": "The company was founded in {{founded}}; the factory is at Lot {{lot}}, Quang Minh Industrial Park, Hanoi, on a site of {{area}} m². The factory has {{staff}} employees. More than {{customers}} customers use the processing services.",
       "field": {
         "label": "Field",
@@ -30,7 +30,7 @@
         "value": "Quang Minh Industrial Park, Hanoi",
         "note": "Address: Lot {{lot}}, Quang Minh Industrial Park"
       },
-      "paragraph3": "HANIN belongs to the Hanin Tech system, which includes the IPM mold workshop, the HANIN plating factory, the Press workshop and the Showa workshop, with {{hqStaff}} people."
+      "paragraph3": "HANIN is part of the Hanin Tech group (founded {{hqFounded}}), which includes the IPM mold plant, the HANIN plating plant, Plant No. 4 (Press, metal stamping) and Plant No. 5 (Showa, casting and assembly), with {{hqStaff}} people."
     },
     "CompanyJourney": {
       "heading": "Development Journey",
@@ -77,19 +77,19 @@
       },
       "technology": {
         "title": "Technology and Equipment",
-        "desc": "2 PVD machines, manual and automatic spray booths, an automatic plating line using jigs and overhead cranes.",
+        "desc": "2 PVD vacuum coating machines, manual and 6-gun spray booths, an automatic spray line, and an automatic plating line using JIG racks and overhead cranes.",
         "metricLabel": "Technology",
         "metricValue": "Plating, PVD, spray painting"
       },
       "quality": {
         "title": "Quality Control",
-        "desc": "Plating thickness measurement, NSS and CASS salt spray, Hull cell test, analysis lab.",
+        "desc": "Plating thickness with the {{apc}}, NSS and CASS salt spray tests, Hull cell tests, a lab for plating-bath analysis, and 10 reliability tests for painted parts.",
         "metricLabel": "Inspection",
         "metricValue": "NSS, CASS, Hull cell"
       },
       "support": {
         "title": "Engineering",
-        "desc": "The plating process is determined from the drawing and technical requirements of each part.",
+        "desc": "Engineers advise on the plating process suited to ABS, ABS/PC or metal, the required finish (bright, satin, black, hairline) and the coating specified on each part drawing.",
         "metricLabel": "Technical consultation",
         "metricValue": "Per drawing"
       }
@@ -99,17 +99,17 @@
       "subtitle": "Technical requirements are set on the drawing and checked with equipment at the factory.",
       "precision": {
         "title": "Per drawing",
-        "desc": "Plating follows the requirements on the customer's drawing, with plating thickness measured.",
+        "desc": "Plating, finish and thickness follow the customer's drawing; thickness is measured with the {{apc}} gauge.",
         "note": "Plating thickness measurement"
       },
       "stability": {
         "title": "Plating Tank Control",
-        "desc": "Plating solution analysis and Hull cell tests in the analysis lab.",
+        "desc": "Plating solutions are chemically analyzed and Hull cell tested in the analysis lab to keep the coating stable.",
         "note": "Analysis lab, Hull cell"
       },
       "partnership": {
         "title": "Technical Exchange",
-        "desc": "Discuss surface requirements with the customer's technical team.",
+        "desc": "HANIN engineers work with the customer's engineering and QA teams on substrate, plating, finish and test methods.",
         "note": "Working with the customer's technical team"
       }
     },
@@ -149,7 +149,7 @@
       "cta": "VIEW CERTIFICATE",
       "certificateImageAlt": "ISO 9001:2015 certificate of Hanin Technology Vietnam, issued by ICB",
       "certificateTag": "Certificate",
-      "certificateTitle": "ISO 9001:2015 — Quality Management System",
+      "certificateTitle": "ISO 9001:2015 - Quality Management System",
       "certificateIssuer": "Certification body: International Certification Body Joint Stock Company (ICB)",
       "certificateHolderLabel": "Certified entity",
       "certificateHolderValue": "Hanin Technology Vietnam Joint Stock Company",

@@ -18,7 +18,7 @@
       "breadcrumbHome": "首页",
       "breadcrumbCurrent": "生产能力",
       "title": "生产能力",
-      "description": "HANIN 的厂房、电镀生产线、检测设备及废水处理系统。",
+      "description": "HANIN 的三条电镀线、2 台 PVD 设备、喷漆房、分析室、检测设备以及日处理 {{waste}} 立方米的废水处理系统。",
       "ctaExplore": "查看厂区",
       "ctaLines": "生产线",
       "ctaQa": "检测实验室"
@@ -114,7 +114,7 @@
         "wastewater": {
           "badge": "环保",
           "title": "废水处理系统",
-          "desc": "生产废水经沉淀池和压泥机处理。",
+          "desc": "生产废水经沉淀池和压滤机处理，由控制柜操作运行。",
           "alt": "HANIN 工厂的废水处理区",
           "spec1Label": "处理能力",
           "spec1Value": "{{waste}} 立方米/昼夜",
@@ -187,7 +187,7 @@
         },
         "mainPlating": {
           "title": "电镀",
-          "desc": "按生产线类型电镀：滚镀、挂镀或自动线。"
+          "desc": "按产品选择合适的产线：JIG 自动线、半自动挂镀或滚镀；按要求使用镀铜、镍、铬、锌、锡各镀槽。"
         },
         "thickness": {
           "title": "测厚与盐雾试验",
@@ -212,7 +212,7 @@
         "barrel": {
           "tag": "滚镀",
           "title": "滚镀线",
-          "desc": "小件大批量在滚筒中电镀。配有振动除油设备、镀铜槽和镀镍槽。",
+          "desc": "在滚筒内大批量电镀小零件（螺栓、螺钉、螺母、线鼻等）。配有振动除油机、镀铜槽和镀镍槽。",
           "alt": "滚镀线，滚筒浸入电镀槽",
           "capacityLabel": "产能：",
           "capacityValue": "{{rot:full}} 公斤/天（1 万–3 万件/天）",
@@ -222,7 +222,7 @@
         "rack": {
           "tag": "挂镀",
           "title": "金属半自动挂镀线",
-          "desc": "金属零件装挂在挂具上电镀。",
+          "desc": "将金属零件逐件挂在挂具（JIG）上电镀，适用于拉手、合页、销轴和装配件。包括待镀挂具区和各镀槽。",
           "alt": "金属半自动挂镀线",
           "capacityLabel": "产能：",
           "capacityValue": "1 万–2 万件/天",
@@ -272,19 +272,19 @@
       "items": {
         "lab": {
           "title": "分析室",
-          "desc": "使用分析试剂对镀槽溶液进行分析。"
+          "desc": "使用分析化学品和仪器分析镀槽溶液成分，以保持镀层稳定。"
         },
         "hullCell": {
           "title": "哈林槽（Hull cell）试验机",
-          "desc": "在试片上试验镀液，评估槽内镀层质量。"
+          "desc": "在试片上试验镀槽溶液，评估镀层质量，为调整镀槽提供依据。"
         },
         "thickness": {
           "title": "镀层测厚仪",
-          "desc": "使用 {{apc}} 测量镀层厚度。"
+          "desc": "使用 {{apc}}（Automatic Precision Control）测量镀层厚度，并与图纸要求对照。"
         },
         "saltSpray": {
           "title": "NSS 与 CASS 盐雾试验机",
-          "desc": "通过中性盐雾（NSS）和醋酸盐雾（CASS）箱进行耐腐蚀试验。"
+          "desc": "在中性盐雾（NSS）和酸性盐雾（CASS）试验箱中做腐蚀试验，评估镀层的耐腐蚀性能。"
         }
       },
       "reliability": {
